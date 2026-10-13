@@ -32,6 +32,7 @@ Tests cover causality, the original leakage regression, dense float64 kernel/gra
 |ASSIST2009|DKT|42|14|9|0.755294|0.736889|0.822058|0.189177|0.563864|
 |ASSIST2009|DKT+|42|21|16|0.753788|0.734248|0.816238|0.193745|0.574353|
 |ASSIST2009|DKVMN|42|49|44|0.753237|0.735931|0.820487|0.178819|0.535500|
+|ASSIST2009|GKT|42|13|8|0.757626|0.734993|0.820675|0.178737|0.535156|
 |ASSIST2009|LightSAKT|42|11|6|0.749537|0.731947|0.814641|0.180871|0.540315|
 
 Completed smoke runs: 1. Smoke validation is not a final research comparison.
@@ -39,9 +40,9 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 ## Experiment schedule status
 
 {
-  "completed": 4,
+  "completed": 5,
   "running": 1,
-  "pending": 952
+  "pending": 951
 }
 
 Total requested schedule slots: 957. Counts include 21 seed-42 checkpoint reuse slots and 15 regularization aliases, which are not new independent trainings. The five-seed primary result is the mean, never the best seed. All remaining pending slots have no experimental result yet.

@@ -53,3 +53,13 @@ Traceback (most recent call last):
     return _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
 KeyboardInterrupt
 ASSIST2009-GKT-primary-42-bf2b95e7f1ff epoch=3 validation_auc=0.741434 seconds=168.7
+ASSIST2009-GKT-primary-42-bf2b95e7f1ff epoch=4 validation_auc=0.748107 seconds=169.8
+ASSIST2009-GKT-primary-42-bf2b95e7f1ff epoch=5 validation_auc=0.749170 seconds=169.0
+ASSIST2009-GKT-primary-42-bf2b95e7f1ff epoch=6 validation_auc=0.749902 seconds=169.2
+ASSIST2009-GKT-primary-42-bf2b95e7f1ff epoch=7 validation_auc=0.751848 seconds=167.5
+ASSIST2009-GKT-primary-42-bf2b95e7f1ff epoch=8 validation_auc=0.752687 seconds=167.2
+ASSIST2009-GKT-primary-42-bf2b95e7f1ff epoch=9 validation_auc=0.752041 seconds=167.3
+ASSIST2009-GKT-primary-42-bf2b95e7f1ff epoch=10 validation_auc=0.752669 seconds=167.6
+ASSIST2009-GKT-primary-42-bf2b95e7f1ff epoch=11 validation_auc=0.752637 seconds=167.3
+ASSIST2009-GKT-primary-42-bf2b95e7f1ff epoch=12 validation_auc=0.752150 seconds=167.5
+ASSIST2009-GKT-primary-42-bf2b95e7f1ff epoch=13 validation_auc=0.750171 seconds=167.7
