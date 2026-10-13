@@ -50,8 +50,9 @@
     "Opportunity(Default)": 202669
   },
   "identifier_semantics": "KC(Default) full composite string; original training subset only",
+  "ordering_semantics": "First Transaction Time: first-attempt response availability, not step start; stable source-row ties",
   "nonbinary_rows_excluded": 0,
-  "clean_interactions": 606401,
+  "clean_interactions": 607025,
   "students": 574,
   "unique_skill_identifiers": 436,
   "num_q": 388,
@@ -61,16 +62,16 @@
     "test": 116
   },
   "split_interactions": {
-    "test": 113670,
-    "train": 398473,
-    "validation": 94258
+    "test": 113820,
+    "train": 398886,
+    "validation": 94319
   },
   "split_unknown_interactions": {
     "test": 60,
     "validation": 31
   },
   "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
-  "processed_sha256": "d34e75f0b39343fa7523a4319e438d3e875e3dd646c014600e1e7f053a264d70",
+  "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
   "student_overlap": 0,
   "order": "stable ascending order, source-row tie break",
   "normalization": "none; only exact binary labels retained",

@@ -17,12 +17,16 @@ def status(manifest):
         if p.exists():j.update({k:v for k,v in json.loads(p.read_text()).items() if k in ['status','last_completed_epoch','failure_reason','resume_command']})
         counts[j['status']]=counts.get(j['status'],0)+1
     write_json('experiments/manifest.json',manifest)
-    Path('reports/EXPERIMENT_STATUS.md').write_text('# Experiment status\n\n'+json.dumps(counts,indent=2)+'\n\nTotal training slots: '+str(len(manifest['jobs']))+'\nIncludes 108 LightSAKT grid configurations, equal 36-configuration baseline tuning budgets, five matched training seeds, and 15 blocked undefined regularization ablation slots. Default ablation reuses the 15 LightSAKT final runs. Split seed remains 42 across every model seed. Run details: experiments/manifest.json.\n')
+    Path('reports/EXPERIMENT_STATUS.md').write_text('# Experiment status\n\n'+json.dumps(counts,indent=2)+'\n\nTotal experiment slots: '+str(len(manifest['jobs']))+'\nIncludes 108 LightSAKT grid configurations, equal 36-configuration baseline tuning budgets, and five matched training seeds. Seed-42 final runs reuse selected tuning checkpoints (21 slots); no_regularization aliases no_dropout by user instruction (15 slots). Default ablation reuses the 15 LightSAKT final runs. These reused slots are not independent new trainings. Split seed remains 42 across every model seed. Run details: experiments/manifest.json.\n')
     return counts
 
 
 def materialize(job,manifest):
     if 'config' in job:return True
+    if job.get('variant')=='no_regularization':
+        source=next(j for j in manifest['jobs'] if j['phase']==8 and j['dataset']==job['dataset'] and j['seed']==job['seed'] and j.get('variant')=='no_dropout')
+        if source['status']!='completed':return False
+        job['reuse_alias_run']=source['run_id'];return True
     model=job['model'];dataset=job['dataset']
     deps=[j for j in manifest['jobs'] if j['phase']==6 and j['run_id'].startswith(dataset+'-'+model.replace('+','plus')+'-')]
     if len(deps)!=36 or any(j['status']!='completed' for j in deps):return False
@@ -79,7 +83,8 @@ def main():
             runnable['status']='running';write_json('experiments/manifest.json',manifest)
             attempted.add(runnable['run_id'])
             log=Path('reports/run_logs')/(runnable['run_id']+'.log');log.parent.mkdir(parents=True,exist_ok=True)
-            cmd=(['python','-m','scripts.evaluate_selected','--job',runnable['run_id']] if runnable.get('reuse_selected_run') else
+            cmd=(['python','-m','scripts.alias_ablation','--job',runnable['run_id']] if runnable.get('reuse_alias_run') else
+                 ['python','-m','scripts.evaluate_selected','--job',runnable['run_id']] if runnable.get('reuse_selected_run') else
                  ['python','-m','scripts.run','--config',runnable['config']])
             with open(log,'a') as stream:
                 child=subprocess.Popen(cmd,stdout=stream,stderr=subprocess.STDOUT)

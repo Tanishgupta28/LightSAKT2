@@ -89,7 +89,7 @@ def main():
         c=json.load(open(Path('results/raw')/row.run_id/'config.json'))
         for metric in ['auc','accuracy','f1','mse','bce']:
             value=getattr(row,f'test_{metric}');base=float(default.iloc[0][f'test_{metric}'])
-            ablation_rows.append({'dataset':row.dataset,'variant':c['model_config']['variant'],'seed':row.seed,'metric':metric,'value':value,'default':base,'relative_change':(value-base)/base if base else None,'run_id':row.run_id})
+            ablation_rows.append({'dataset':row.dataset,'variant':c.get('scientific_variant',c['model_config']['variant']),'equivalent_to':c.get('equivalent_to'),'seed':row.seed,'metric':metric,'value':value,'default':base,'relative_change':(value-base)/base if base else None,'run_id':row.run_id})
     pd.DataFrame(ablation_rows).to_csv('results/tables/paired_ablations.csv',index=False)
 
 if __name__=='__main__':main()

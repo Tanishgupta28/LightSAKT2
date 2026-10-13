@@ -72,8 +72,9 @@ def main():
         jobs.append({'run_id':f'{dataset}-{model}-final-{seed}','phase':7,'dataset':dataset,'model':model,'seed':seed,'status':'pending','dependency':'all 36 tuning runs for this dataset/model'})
     for dataset,variant,seed in itertools.product(DATASETS,['no_dropout','no_position','single_head','no_attention','no_regularization'],SEEDS):
         jobs.append({'run_id':f'{dataset}-LightSAKT-{variant}-{seed}','phase':8,'dataset':dataset,'model':'LightSAKT','seed':seed,
-                     'variant':variant,'status':'blocked' if variant=='no_regularization' else 'pending',
-                     'dependency':'selected LightSAKT config','failure_reason':'No distinct historical regularizer defined' if variant=='no_regularization' else None})
+                     'variant':variant,'status':'pending',
+                     'dependency':'equivalent no_dropout run' if variant=='no_regularization' else 'selected LightSAKT config',
+                     'failure_reason':None})
     write_json('experiments/manifest.json',{'protocol':'configs/protocol.json','jobs':jobs})
     print('Scheduled',len(jobs),'slots; exact LightSAKT grid',sum(j.get('phase')==6 and 'LightSAKT-grid' in j['run_id'] for j in jobs))
 

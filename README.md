@@ -13,4 +13,4 @@ python -m scripts.verify_artifacts
 
 See [REPRODUCIBILITY.md](REPRODUCIBILITY.md), [PAPER_CORRECTIONS.md](PAPER_CORRECTIONS.md), [DATA_PROVENANCE.md](DATA_PROVENANCE.md), [reports/INITIAL_CODE_AUDIT.md](reports/INITIAL_CODE_AUDIT.md), and [FINAL_RESEARCH_REPORT.md](FINAL_RESEARCH_REPORT.md). Original source is in `original_snapshot/`, original checksums in `reports/original_checksums.json`, fresh weights in `checkpoints/<run>/`, and genuine numerical records in `results/raw/<run>/metrics.json`.
 
-GKT results are explicitly historical simplified PAM/MHA variants, not claims of canonical published GKT reproduction. The distinct no_regularization ablation remains blocked unless its semantics are resolved; no additional LightSAKT component is invented.
+GKT results are explicitly historical simplified PAM/MHA variants, not claims of canonical published GKT reproduction. The no_regularization ablation is equivalent to no_dropout by user instruction; it reuses the same evidence.
