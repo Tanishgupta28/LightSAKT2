@@ -1,14 +1,14 @@
 # Experiment status
 
-Updated UTC: 2026-10-13T23:20:24.569553+00:00
+Updated UTC: 2026-10-13T23:21:05.563688+00:00
 
-Completed: **74**. Remaining: **883**. Total schedule slots: 957.
+Completed: **77**. Remaining: **880**. Total schedule slots: 957.
 
 ```json
 {
-  "completed": 74,
+  "completed": 77,
   "running": 1,
-  "pending": 882
+  "pending": 879
 }
 ```
 
@@ -20,13 +20,13 @@ Eta process: running (PID 51531).
 
 Offsite process: running (PID 49211).
 
-Current run: `ASSIST2009-DKTplus-baseline_tuning-42-8e037827c6da`; last completed epoch: 27.
+Current run: `ASSIST2009-DKTplus-baseline_tuning-42-a5363bef6c4e`; last completed epoch: 4.
 
 The 45 reuse/alias slots are not independent new training experiments. Default ablation reuses final LightSAKT evidence. The separate smoke run is excluded from schedule counts.
 
 Distinct planned trainings: 912. The live manifest plus experiments/reuse_plan.json form the effective schedule; 9 exact primary/grid duplicates reuse verified evidence without removing grid rows. See reports/SCHEDULE_AUDIT.md.
 
-Measured-reference training ETA: 746.7 GPU reserved hours; scenario envelope 107.1–4,101.9 hours. Estimate updated 2026-10-13T23:19:29.606387+00:00; unmeasured final GPU analysis adds time. See reports/ETA_REPORT.md.
+Measured-reference training ETA: 746.7 GPU reserved hours; scenario envelope 107.1–4,101.8 hours. Estimate updated 2026-10-13T23:20:30.630799+00:00; unmeasured final GPU analysis adds time. See reports/ETA_REPORT.md.
 
 Process existence alone is not a health guarantee. Last independently sampled CPU/checkpoint progress and checkpoint integrity are recorded in reports/EXECUTION_HEALTH.md. A detached scheduler survives a terminal disconnect, but no automatic restart after environment shutdown is configured.
 
