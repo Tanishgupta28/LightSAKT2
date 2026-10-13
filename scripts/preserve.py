@@ -1,14 +1,51 @@
 """Preserve completed milestones while training runs in a separate process."""
 import argparse
+import fcntl
 import json
 import subprocess
+import tarfile
 import time
 from pathlib import Path
 from src.datasets.preprocess import sha256
 from src.training.engine import write_json
+from scripts.progress import write_progress
+from scripts.verify_artifacts import verify_stored_result
 
 
-def preserve():
+def archive_completed():
+    """Back up each unique completed training once; aliases reuse its archive."""
+    archives=Path('backups/completed_runs');archives.mkdir(parents=True,exist_ok=True)
+    references=[]
+    for path in sorted(Path('results/raw').glob('*/metrics.json')):
+        result,_,_=verify_stored_result(path)
+        source=result.get('reused_training_run',result['run_id'])
+        archive=archives/(source+'.tar.gz');record=archives/(source+'.json')
+        if not archive.exists() or not record.exists():
+            evidence=json.load(open(Path('results/raw')/source/'metrics.json'))
+            members=[Path('results/raw')/source,Path(evidence['checkpoint']).parent]
+            if evidence.get('prediction_path'):members.append(Path(evidence['prediction_path']))
+            members += [Path('configs/runs')/(source+'.json')]
+            tmp=archive.with_suffix('.tmp')
+            with tarfile.open(tmp,'w:gz') as bundle:
+                for member in members:
+                    if member.exists():bundle.add(member,arcname=str(member))
+            # Verify every regular file against its still-immutable source before publication.
+            import hashlib
+            with tarfile.open(tmp,'r:gz') as bundle:
+                for member in bundle:
+                    if member.isfile():
+                        h=hashlib.sha256()
+                        with bundle.extractfile(member) as stream:
+                            while block:=stream.read(1024*1024):h.update(block)
+                        assert h.hexdigest()==sha256(member.name), f'Backup content mismatch: {member.name}'
+            tmp.replace(archive)
+            write_json(record,{'source_run_id':source,'path':str(archive),'sha256':sha256(archive),'verified_contents':True})
+        references.append({'run_id':result['run_id'],**json.load(open(record))})
+    write_json('reports/completed_run_backups.json',references)
+
+
+def _preserve():
+    archive_completed()
     subprocess.run(['python','-m','scripts.summarize'],check=True)
     subprocess.run(['python','-m','scripts.report'],check=True)
     subprocess.run(['git','add','.'],check=True)
@@ -25,12 +62,24 @@ def preserve():
     return commit
 
 
+def preserve():
+    # The watcher and explicit milestone saves must never race over Git's index.
+    with open('experiments/preservation.lock','w') as lock:
+        fcntl.flock(lock,fcntl.LOCK_EX)
+        return _preserve()
+
+
 def main(watch=False):
     previous=-1
     while True:
+        write_progress()
         completed=sum(json.load(open(p)).get('status')=='completed' for p in Path('results/raw').glob('*/status.json'))
         if not watch or completed>previous or previous<0:
-            preserve();previous=completed
+            try:
+                preserve();previous=completed
+            except Exception as error:
+                print(f'Preservation failed: {type(error).__name__}: {error}',flush=True)
+                if not watch:raise
         if not watch:return
         time.sleep(30)
 
