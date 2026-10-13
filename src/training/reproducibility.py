@@ -4,6 +4,8 @@ import random
 import subprocess
 import platform
 import importlib.metadata
+import hashlib
+from pathlib import Path
 import numpy as np
 import torch
 
@@ -47,4 +49,7 @@ def environment():
             "git_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
             "git_dirty": bool(subprocess.check_output(["git", "status", "--porcelain"], text=True).strip()),
             "CUBLAS_WORKSPACE_CONFIG": os.environ.get("CUBLAS_WORKSPACE_CONFIG"),
-            "deterministic_algorithms": torch.are_deterministic_algorithms_enabled()}
+            "deterministic_algorithms": torch.are_deterministic_algorithms_enabled(),
+            "training_code_sha256": hashlib.sha256(b"".join(
+                str(p).encode()+p.read_bytes() for p in sorted(Path("src").rglob("*.py"))
+                if "visualization" not in p.parts)).hexdigest()}

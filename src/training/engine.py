@@ -89,6 +89,8 @@ def run(config, root=".", resume=True, stop_after_epoch=None):
         state=torch.load(latest,map_location=device,weights_only=False)
         if state["config"]!=config or state["processed_sha256"]!=stats["processed_sha256"]:
             raise ValueError("Resume metadata mismatch")
+        if state["environment"]["training_code_sha256"]!=env["training_code_sha256"]:
+            raise ValueError("Training source changed; cannot mix implementations inside one run")
         model.load_state_dict(state["model"]);optimizer.load_state_dict(state["optimizer"])
         epoch,best,bad,best_epoch=state["epoch"],state["best_auc"],state["bad_epochs"],state["best_epoch"]
         history,elapsed=state["history"],state["elapsed_seconds"]
@@ -140,6 +142,7 @@ def run(config, root=".", resume=True, stop_after_epoch=None):
                 "training_seconds":elapsed+time.perf_counter()-clock,"checkpoint":str(best_path),
                 "checkpoint_sha256":sha256(best_path),"processed_sha256":stats["processed_sha256"],
                 "split_sha256":stats["split_sha256"],"git_commit":selected["git_commit"],
+                "training_code_sha256":env["training_code_sha256"],
                 "parameters":sum(x.numel() for x in model.parameters() if x.requires_grad),
                 "peak_allocated_bytes":torch.cuda.max_memory_allocated() if device.type=="cuda" else None,
                 "peak_reserved_bytes":torch.cuda.max_memory_reserved() if device.type=="cuda" else None,

@@ -159,3 +159,17 @@ def test_cuda_cpu_kernel_agreement():
     m=LightSAKT(7,16,2,0,8).eval();data=batch();p=predict(m,"LightSAKT",data)[0]
     gpu=predict(m.cuda(),"LightSAKT",[x.cuda() for x in data])[0].cpu()
     torch.testing.assert_close(p,gpu,atol=2e-6,rtol=2e-5)
+
+
+@pytest.mark.skipif(not torch.cuda.is_available(),reason="CUDA unavailable")
+@pytest.mark.parametrize("name", CONFIGS)
+def test_cuda_baselines_backward_repeatable(name):
+    results=[]
+    for _ in range(2):
+        seed_everything(42)
+        m=build_model(name,7,CONFIGS[name]).cuda().train()
+        data=[x.cuda() for x in batch(1,8)]
+        p,_=predict(m,name,data);masked_bce(p,data[3],data[4]).backward()
+        assert all(torch.isfinite(x.grad).all() for x in m.parameters() if x.grad is not None)
+        results.append(p.detach())
+    torch.testing.assert_close(*results,atol=0,rtol=0)

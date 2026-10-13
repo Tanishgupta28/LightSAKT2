@@ -1,0 +1,24 @@
+{
+  "dataset": "Algebra2005",
+  "model": "GKT_MHA",
+  "group": "baseline_tuning",
+  "seed": 42,
+  "seq_len": 200,
+  "batch_size": 8,
+  "max_epochs": 50,
+  "patience": 5,
+  "learning_rate": 0.005,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.0,
+  "epsilon": 1e-08,
+  "model_config": {
+    "hidden_size": 64,
+    "num_attn_heads": 1,
+    "method": "MHA"
+  },
+  "evaluate_test": false,
+  "run_id": "Algebra2005-GKT_MHA-baseline_tuning-42-efac75b2d859"
+}

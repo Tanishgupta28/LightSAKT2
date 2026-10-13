@@ -22,7 +22,7 @@ def model_defaults(model,length,dataset):
 
 def config(dataset,model,group,model_config,lr=.001,seed=42,evaluate_test=False):
     length=200 if dataset=='Algebra2005' else 100
-    c={'dataset':dataset,'model':model,'group':group,'seed':seed,'seq_len':length,'batch_size':64,
+    c={'dataset':dataset,'model':model,'group':group,'seed':seed,'seq_len':length,'batch_size':8 if model.startswith('GKT') else 64,
        'max_epochs':50,'patience':5,'learning_rate':lr,'betas':[.9,.999],'weight_decay':0.,'epsilon':1e-8,
        'model_config':model_config,'evaluate_test':evaluate_test}
     suffix=hashlib.sha256(json.dumps(c,sort_keys=True).encode()).hexdigest()[:12]
@@ -60,7 +60,7 @@ def main():
                 if model=='GKT':
                     mc={'hidden_size':hidden,'num_attn_heads':2,'method':'PAM'}
                     # Additional coordinate is neighbor width via overall hidden size, with no duplicates.
-                    mc['hidden_size']={16:[16,24,32,40],30:[48,56,64,72],64:[80,88,96,104]}[hidden][[1,2,4,8].index(heads)]
+                    mc['hidden_size']={16:[16,30,32,40],30:[48,56,64,72],64:[80,88,96,104]}[hidden][[1,2,4,8].index(heads)]
                 else:mc={'hidden_size':32 if hidden==30 else hidden,'num_attn_heads':heads,'method':'MHA'}
                 candidates.append((lr,mc))
         assert len(candidates)==36 and len({json.dumps(c,sort_keys=True) for c in candidates})==36
