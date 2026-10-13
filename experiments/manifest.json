@@ -122,13 +122,16 @@
       "config": "configs/runs/ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6.json",
       "run_id": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6",
       "phase": 5,
-      "status": "running"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 23,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6/config.json"
     },
     {
       "config": "configs/runs/Algebra2005-DKT-primary-42-0a42097f8641.json",
       "run_id": "Algebra2005-DKT-primary-42-0a42097f8641",
       "phase": 5,
-      "status": "pending"
+      "status": "running"
     },
     {
       "config": "configs/runs/Algebra2005-DKTplus-primary-42-8c85af12bd21.json",

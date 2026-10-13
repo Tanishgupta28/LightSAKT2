@@ -1,14 +1,14 @@
 # Execution health
 
-Observed UTC: 2026-10-13T15:48:35.178084+00:00
+Observed UTC: 2026-10-13T19:14:34.279480+00:00
 
-Scheduler PID 32646; healthy progress sampled: True; failed/interrupted/blocked slots: 0.
+Scheduler PID 32646; healthy progress sampled: False; failed/interrupted/blocked slots: 0.
 
-Child PID 45556: CPU seconds advanced 60.81999999999971 over 60.79717206954956 observed seconds. Session 32646, parent 32646.
+Child PID 67198: CPU seconds advanced None over None observed seconds. Session 32646, parent 32646.
 
-Run `ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6`: epoch 3; measured recent epoch average 636.6473815479985; extrapolated first-epoch duration None; progress age 392.0014922618866 seconds (history checkpoint); stall flag False. Threshold uses three measured epoch durations, or the provisional ETA epoch estimate before the first checkpoint.
+Run `Algebra2005-DKT-primary-42-0a42097f8641`: epoch 18; measured recent epoch average 0.3113655407971237; extrapolated first-epoch duration None; progress age 0.020592689514160156 seconds (history checkpoint); stall flag False. Threshold uses three measured epoch durations, or the provisional ETA epoch estimate before the first checkpoint.
 
-MIG memory allocation: 732 / 40320 MiB. Utilization percentage is unavailable; no percentage is inferred from board power or PID existence.
+MIG memory allocation: 704 / 40320 MiB. Utilization percentage is unavailable; no percentage is inferred from board power or PID existence.
 
 Best/latest state loads, finite parameters and optimizer/RNG integrity are independently recorded in reports/active_checkpoint_verification.json; saved result verification is in reports/stored_artifact_verification.json. Archive and recovery evidence is in reports/backup_integrity.json and reports/recovery_validation.json.
 

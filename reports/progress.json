@@ -1,12 +1,12 @@
 {
-  "updated_utc": "2026-10-13T15:49:00.832443+00:00",
+  "updated_utc": "2026-10-13T19:14:34.348694+00:00",
   "total_slots": 957,
-  "completed": 13,
-  "remaining": 944,
+  "completed": 14,
+  "remaining": 943,
   "counts": {
-    "completed": 13,
+    "completed": 14,
     "running": 1,
-    "pending": 943
+    "pending": 942
   },
   "processes": {
     "scheduler": {
@@ -28,17 +28,17 @@
   },
   "running_jobs": [
     {
-      "run_id": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6",
-      "last_completed_epoch": 3,
-      "best_checkpoint": "checkpoints/ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6/config.json"
+      "run_id": "Algebra2005-DKT-primary-42-0a42097f8641",
+      "last_completed_epoch": 20,
+      "best_checkpoint": "checkpoints/Algebra2005-DKT-primary-42-0a42097f8641/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKT-primary-42-0a42097f8641/config.json"
     }
   ],
   "phase_counts": {
     "5": {
-      "completed": 13,
+      "completed": 14,
       "running": 1,
-      "pending": 7
+      "pending": 6
     },
     "6": {
       "pending": 756
