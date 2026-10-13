@@ -1,8 +1,8 @@
 # Measured runtime estimate
 
-Updated UTC: 2026-10-13T15:16:50.878006+00:00
+Updated UTC: 2026-10-13T15:37:25.339525+00:00
 
-Remaining training: **664.4 GPU reserved hours**; scenario range **110.0–5,582.7 hours**. Serial wall time: 27.7 days; continuous-availability training finish 2026-11-10T07:43:22.754499+00:00.
+Remaining training: **689.2 GPU reserved hours**; scenario range **113.1–5,761.0 hours**. Serial wall time: 28.7 days; continuous-availability training finish 2026-11-11T08:48:35.881818+00:00.
 
 This is a provisional measured-reference extrapolation, not a validated confidence interval. Hardware-active GPU utilization is unavailable. Epochs include training and validation, and reserved hours include their CPU work. Unmeasured final benchmarking and artifact verification add time beyond this training-only date.
 
@@ -25,7 +25,7 @@ Saved cumulative training_seconds include training and validation through checkp
 |ASSIST2015|DKT+|1|18|1.271|0.386|
 |ASSIST2015|DKVMN|1|36|23.941|14.382|
 |ASSIST2015|GKT|1|14|605.806|141.706|
-|ASSIST2015|GKT_MHA|0|0|not measured|not measured|
+|ASSIST2015|GKT_MHA|0|2|637.590|not measured|
 |ASSIST2015|SAKT|1|15|1.267|0.321|
 |ASSIST2015|LightSAKT|1|12|5.794|1.164|
 |Algebra2005|DKT|0|0|not measured|not measured|
@@ -42,20 +42,20 @@ Saved cumulative training_seconds include training and validation through checkp
 |---|---|---|---|
 |LightSAKT_grid|0.22|0.58|4.52|
 |ablations|0.02|0.30|2.73|
-|baseline_tuning|102.59|590.56|4,422.82|
-|primary|1.48|6.78|27.05|
-|repeated_seeds|5.66|66.22|1,125.59|
+|baseline_tuning|105.41|612.79|4,560.13|
+|primary|1.48|6.82|26.52|
+|repeated_seeds|5.97|68.69|1,167.04|
 
 ## Longest forecast runs
 
 |Run|Reference|Central hours|Scenario hours|
 |---|---|---|---|
-|ASSIST2015-GKT-baseline_tuning-42-442278608a15|ASSIST2015-GKT-primary-42-c3a67383f961|7.52|1.01–91.78|
-|ASSIST2015-GKT-baseline_tuning-42-7da03b3a60b0|ASSIST2015-GKT-primary-42-c3a67383f961|7.52|1.01–91.78|
-|ASSIST2015-GKT-baseline_tuning-42-fae9a2b48dba|ASSIST2015-GKT-primary-42-c3a67383f961|7.52|1.01–91.78|
-|ASSIST2015-GKT-baseline_tuning-42-1651c86ef2c2|ASSIST2015-GKT-primary-42-c3a67383f961|6.95|1.01–78.33|
-|ASSIST2015-GKT-baseline_tuning-42-e01b589e46cc|ASSIST2015-GKT-primary-42-c3a67383f961|6.95|1.01–78.33|
-|ASSIST2015-GKT-baseline_tuning-42-60865c6f3363|ASSIST2015-GKT-primary-42-c3a67383f961|6.95|1.01–78.33|
+|ASSIST2015-GKT_MHA-baseline_tuning-42-55ef256295ef|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|7.93|1.06–40.29|
+|ASSIST2015-GKT_MHA-baseline_tuning-42-40031d9f8cb4|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|7.93|1.06–40.29|
+|ASSIST2015-GKT_MHA-baseline_tuning-42-333c8f50dc55|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|7.93|1.06–40.29|
+|ASSIST2015-GKT_MHA-baseline_tuning-42-ebf0bd893198|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|7.93|1.06–40.25|
+|ASSIST2015-GKT_MHA-baseline_tuning-42-5d49bd1029f9|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|7.93|1.06–40.25|
+|ASSIST2015-GKT_MHA-baseline_tuning-42-6e76f8e10a56|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|7.93|1.06–40.25|
 
 ## Dependent analysis duration
 

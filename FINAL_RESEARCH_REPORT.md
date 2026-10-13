@@ -26,9 +26,9 @@ Running 67 items in this shard
 Additional CPU verification during active GPU training:
 
 ```
-Running 84 items in this shard
-.....................................sssssssssssssss................................                                                                 [100%]
-69 passed, 15 skipped in 13.44s
+Running 87 items in this shard
+.....................................sssssssssssssss...................................                                                              [100%]
+72 passed, 15 skipped in 12.99s
 ```
 
 CUDA tests were skipped in this additional invocation to avoid GPU contention; the preceding full CPU/CUDA correctness gate remains the GPU evidence. Model/training source fingerprints are unchanged.
@@ -95,3 +95,5 @@ The detached scheduler process can survive a terminal disconnect; it cannot auto
 Private repository: https://github.com/Tanishgupta28/LightSAKT2, branch `research-rebuild`. No force pushes. Local Git bundles and the original/raw archive are under `backups/`; their references are under `reports/`. Git synchronization details are in GITHUB_SYNC_PENDING.md. Large raw files and checkpoints remain on the durable /workspace network mount, excluded from ordinary Git. These local archives are not independent offsite artifact copies.
 
 Originals: `original_snapshot/`; raw datasets: `data/raw/`; fresh preprocessing: `data/processed/`; student manifests: `data/splits/`; fresh weights: `checkpoints/<run>/`; raw metrics/configs: `results/raw/<run>/`; predictions: `results/predictions/`; generated tables/figures: `results/tables/`, `results/figures/`; paper evidence: `paper/`, PAPER_CORRECTIONS.md.
+
+Independent private GitHub draft recovery artifacts: 16 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.

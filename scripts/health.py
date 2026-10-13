@@ -59,6 +59,8 @@ def inspect():
     gpu=subprocess.run(['nvidia-smi'],capture_output=True,text=True)
     Path('reports/gpu_health_sample.txt').write_text(gpu.stdout+gpu.stderr)
     memory=re.search(r'(\d+)MiB /\s*(\d+)MiB',gpu.stdout)
+    offsite_path=Path('reports/offsite_backup.json')
+    backup=json.load(open(offsite_path)) if offsite_path.exists() else None
     record={'updated_utc':datetime.now(timezone.utc).isoformat(),'sample_time':now,
         'counts':progress['counts'],'scheduler':progress['processes']['scheduler'],
         'training_processes':samples,'active_runs':active,
@@ -69,7 +71,8 @@ def inspect():
             bool(active) and all(r['checkpoint_stalled'] is False for r in active),
         'failed_or_interrupted_runs':sum(progress['counts'].get(k,0) for k in ['failed','interrupted','blocked']),
         'restart_policy':'Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.',
-        'storage':'/workspace is an NFS mount. Retention after deprovisioning and independent offsite artifact copies are not verified.'}
+        'storage':'/workspace is an NFS mount; retention after deprovisioning is not verified. '+
+            (f"Private GitHub draft assets: {len(backup['assets'])} independently downloaded/checksum verified; completed-archive synchronization {backup.get('all_available_completed_archives_synced',False)}." if backup else 'Independent offsite artifact copies are not yet verified.')}
     write_json(previous_path,record)
     text='# Execution health\n\nObserved UTC: '+record['updated_utc']+'\n\n'
     text+=f"Scheduler PID {pid}; healthy progress sampled: {record['healthy_progress_observed']}; failed/interrupted/blocked slots: {record['failed_or_interrupted_runs']}.\n\n"

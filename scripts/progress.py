@@ -16,13 +16,14 @@ def snapshot(root=Path('.')):
         jobs.append({**job, **saved})
     counts = dict(Counter(j['status'] for j in jobs))
     live = {}
-    for name in ['scheduler', 'preservation']:
+    for name in ['scheduler', 'preservation', 'eta', 'offsite']:
         pidfile = root / f'experiments/{name}.pid'
         pid = int(pidfile.read_text()) if pidfile.exists() else None
         try:
             stat = Path(f'/proc/{pid}/stat').read_text().split(') ', 1)[1].split()[0]
             command = Path(f'/proc/{pid}/cmdline').read_bytes().replace(b'\0', b' ').decode()
-            expected = 'scripts.schedule' if name == 'scheduler' else 'scripts.preserve'
+            expected = {'scheduler':'scripts.schedule','preservation':'scripts.preserve',
+                        'eta':'scripts.eta','offsite':'scripts.offsite'}[name]
             live[name] = {'pid': pid, 'alive': stat != 'Z' and expected in command}
         except (FileNotFoundError, ProcessLookupError):
             live[name] = {'pid': pid, 'alive': False}
@@ -64,6 +65,10 @@ def write_progress(root=Path('.')):
         eta=json.loads(eta_path.read_text());hours=eta['remaining_training_gpu_reserved_hours']
         text+=f"Measured-reference training ETA: {hours['central']:,.1f} GPU reserved hours; scenario envelope {hours['low']:,.1f}–{hours['high']:,.1f} hours. Estimate updated {eta['updated_utc']}; unmeasured final GPU analysis adds time. See reports/ETA_REPORT.md.\n\n"
     text+='Process existence alone is not a health guarantee. Last independently sampled CPU/checkpoint progress and checkpoint integrity are recorded in reports/EXECUTION_HEALTH.md. A detached scheduler survives a terminal disconnect, but no automatic restart after environment shutdown is configured.\n\n'
+    offsite=root/'reports/offsite_backup.json'
+    if offsite.exists():
+        backup=json.loads(offsite.read_text())
+        text+=f"Private draft recovery assets independently download/checksum verified: {len(backup['assets'])}. All available completed archives synchronized: {backup.get('all_available_completed_archives_synced',False)}. See reports/OFFSITE_RECOVERY.md and reports/offsite_backup.json.\n\n"
     text += 'The 108 LightSAKT grid configurations, equal baseline tuning budgets, and five matched final seeds use the frozen student splits. See experiments/manifest.json and per-run status files.\n\n'
     text += 'Research completion requires every scheduled slot and all dependent analyses, plots, checkpoints, and traceability checks to pass. Raw-data provenance limitations and the historical simplified GKT label remain disclosed.\n'
     path=root / 'reports/EXPERIMENT_STATUS.md';tmp=path.with_suffix(f'.{os.getpid()}.tmp');tmp.write_text(text);tmp.replace(path)
