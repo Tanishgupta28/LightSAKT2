@@ -1,0 +1,45 @@
+{
+  "dataset": "ASSIST2015",
+  "raw_rows": 708631,
+  "columns": [
+    "user_id",
+    "log_id",
+    "sequence_id",
+    "correct"
+  ],
+  "raw_sha256": "75e1f46131d5897a388c82411bc3032279899cb1f1e66a9043354d41234407a0",
+  "source_url": "https://sites.google.com/site/assistmentsdata/datasets/2015-assistments-skill-builder-data",
+  "raw_path": "data/raw/ASSIST2015.csv",
+  "preprocessing_version": "student-disjoint-v1",
+  "split_seed": 42,
+  "raw_exact_duplicate_rows": 0,
+  "missing_by_column": {
+    "user_id": 0,
+    "log_id": 0,
+    "sequence_id": 0,
+    "correct": 0
+  },
+  "identifier_semantics": "sequence_id (skill-builder); no exercise ID in four-column release",
+  "nonbinary_rows_excluded": 24830,
+  "clean_interactions": 683801,
+  "students": 19840,
+  "unique_skill_identifiers": 100,
+  "num_q": 101,
+  "split_students": {
+    "train": 13888,
+    "validation": 1984,
+    "test": 3968
+  },
+  "split_interactions": {
+    "test": 137012,
+    "train": 477840,
+    "validation": 68949
+  },
+  "split_unknown_interactions": {},
+  "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+  "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+  "student_overlap": 0,
+  "order": "stable ascending order, source-row tie break",
+  "normalization": "none; only exact binary labels retained",
+  "license": "Publisher public research availability; no explicit redistribution license established. Raw files excluded from Git."
+}

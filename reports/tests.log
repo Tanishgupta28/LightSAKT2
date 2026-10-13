@@ -1,0 +1,22 @@
+Running 43 items in this shard
+...........................................                                                                                                          [100%]
+43 passed in 11.74s
+===================================================== FAILURES =========================================================================
+______________________________________________________________ test_cuda_cpu_kernel_agreement ______________________________________________________________
+
+    @pytest.mark.skipif(not torch.cuda.is_available(),reason="CUDA unavailable")
+    def test_cuda_cpu_kernel_agreement():
+        seed_everything(42)
+        m=LightSAKT(7,16,2,0,8).eval();data=batch();p=predict(m,"LightSAKT",data)[0]
+        gpu=predict(m.cuda(),"LightSAKT",[x.cuda() for x in data])[0].cpu()
+>       torch.testing.assert_close(p,gpu,atol=2e-6,rtol=2e-5)
+E       AssertionError: Tensor-likes are not close!
+E       
+E       Mismatched elements: 3 / 16 (18.8%)
+E       Greatest absolute difference: 1.7881393432617188e-05 at index (0, 4) (up to 2e-06 allowed)
+E       Greatest relative difference: 3.178644328727387e-05 at index (0, 3) (up to 2e-05 allowed)
+
+tests/test_correctness.py:161: AssertionError
+================================================================= short test summary info ==================================================================
+FAILED tests/test_correctness.py::test_cuda_cpu_kernel_agreement - AssertionError: Tensor-likes are not close!
+1 failed, 42 passed in 12.24s

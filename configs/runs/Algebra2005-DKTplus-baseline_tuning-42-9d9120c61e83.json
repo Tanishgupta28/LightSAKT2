@@ -1,0 +1,26 @@
+{
+  "dataset": "Algebra2005",
+  "model": "DKT+",
+  "group": "baseline_tuning",
+  "seed": 42,
+  "seq_len": 200,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "patience": 5,
+  "learning_rate": 0.005,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.0,
+  "epsilon": 1e-08,
+  "model_config": {
+    "emb_size": 64,
+    "hidden_size": 100,
+    "lambda_r": 0.01,
+    "lambda_w1": 0.003,
+    "lambda_w2": 3.0
+  },
+  "evaluate_test": false,
+  "run_id": "Algebra2005-DKTplus-baseline_tuning-42-9d9120c61e83"
+}

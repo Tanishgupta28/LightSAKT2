@@ -1,0 +1,2584 @@
+[
+  {
+    "path": "original_snapshot/plot_light_sakt.py",
+    "lines": 345,
+    "sha256": "7456ed4085e301df06bf8c9238e1b807145db748a6bf31852e28706599fcd2fa",
+    "functions": [
+      "load_results",
+      "plot_single_model_results",
+      "compare_with_original_sakt",
+      "create_performance_table",
+      "load_results",
+      "plot_single_model_results",
+      "plot_combined_light_sakt_results",
+      "main",
+      "convert"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/re.py",
+    "lines": 18,
+    "sha256": "587aea62a745473e09948e62c3ccfe25141439f5d5b19089c543f0cab0ef3bb1",
+    "functions": [],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/test_light_sakt.py",
+    "lines": 38,
+    "sha256": "632cb18321037e4690c1e6e906176105e82cb68506e35cab2575359bda0adf4f",
+    "functions": [
+      "test_model"
+    ],
+    "risk_patterns": [
+      "triu"
+    ]
+  },
+  {
+    "path": "original_snapshot/test.py",
+    "lines": 189,
+    "sha256": "b52fe563ac7466f8a5cb9bfe690c915b4175cdf06d8aa33ff98b7727f5c90fa5",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "manual_seed",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/check.py",
+    "lines": 10,
+    "sha256": "3fb2682a97653ff1551a9668b970ea89b20828c0ded13558bfd87adb632dc1d0",
+    "functions": [],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/experiment.py",
+    "lines": 235,
+    "sha256": "f0b89cac3ad3b7639a7ddf3733c9249750d440780a3b267a29b6cdd0aa519653",
+    "functions": [
+      "train_and_evaluate",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/sakt_attention_maps.py",
+    "lines": 418,
+    "sha256": "ccfdd9fc206238c90c247fae180c2f90b9813f7c5810ba3e0fbfd2cb856ae796",
+    "functions": [
+      "SAKTTrainer",
+      "__init__",
+      "setup",
+      "train"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/tempCodeRunnerFile.py",
+    "lines": 4,
+    "sha256": "700160b05e39a1c93ccd4a617bf4c86d2f5cb180fb441435b5610c420a4f21e8",
+    "functions": [],
+    "risk_patterns": []
+  },
+  {
+    "path": "original_snapshot/train/train_all.py",
+    "lines": 169,
+    "sha256": "183aa669455e77a563bea41fdb7787fb76faf7afd4d711452b20e495d44ac821",
+    "functions": [
+      "train_model_on_dataset",
+      "test_critical_path",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_dkt_algebra2005.py",
+    "lines": 590,
+    "sha256": "49adb0a238ebf00fb5a2126ceb8925236c813f0eb381b2bff3717b4c8935ab34",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_dkt_assist2009.py",
+    "lines": 619,
+    "sha256": "061a27a0b3993376ad091c061bc3e2f3bca5415443f64ded2910590a9c3a1bae",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_dkt_assist2015.py",
+    "lines": 618,
+    "sha256": "c2945ee57481bce924f31e5dc381dcde9512654959d06e716d1728dd48f4ab72",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_dkt_assist2018.py",
+    "lines": 168,
+    "sha256": "2ebd8bb17f818baf28580f1df31349a46b6ad6cf7430543c2ab3959f10d9e62d",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_dkt+_algebra2005.py",
+    "lines": 514,
+    "sha256": "6336521141849ab25b430305fc17e05c3996f9f5dd2f4233ee1e82c17ec50e1f",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_dkt+_assist2009.py",
+    "lines": 532,
+    "sha256": "581bc5dbb50c3975f188562658b92317d86480d0879f69ef2d7e4a86f3026d61",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_dkt+_assist2015.py",
+    "lines": 524,
+    "sha256": "bce76a9348dc25a40339d682775bf79e8ed7f52737135fe73734e1310ca973d0",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_dkt+_assist2018.py",
+    "lines": 162,
+    "sha256": "8e3604d6e34c70a7aacafa75e1dfe14de85d33cc077b4634eb218b24a989d955",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_dkvmn_algebra2005.py",
+    "lines": 731,
+    "sha256": "c6ab3c024043a4e557f2ef684d77860efec5b71a53a4cb108b3336498ae39015",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_dkvmn_assist2009.py",
+    "lines": 507,
+    "sha256": "10c7f3befe40c5d8163b44f59fbad981f1e58fdfce81c18bc416986ba215e45d",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_dkvmn_assist2015.py",
+    "lines": 500,
+    "sha256": "59a8469d091b8fbb9885e75983c7141a971e1372052f19c7fffc1480bd9b1732",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_dkvmn_assist2018.py",
+    "lines": 162,
+    "sha256": "ea7f66a86640e8adda968efc3ee4bbd8ed2f7257b548bed35f4ebdf8a4f29ba1",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_gkt_algebra2005.py",
+    "lines": 696,
+    "sha256": "3ed73d3dbc8c59887be836b13308c82a712821976a6166e0d8da97419eac8c23",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_gkt_assist_2018.py",
+    "lines": 160,
+    "sha256": "fe6949cfba6b3158c52a2ccb8f1286e179fa881f55cb6ee0f18be00595ce8285",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_gkt_assist2009.py",
+    "lines": 550,
+    "sha256": "5c72b236ed5cf20ea7eb55460f05da0dfa1f8e9d34632440f0008dce3301a45e",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_gkt_assist2015.py",
+    "lines": 703,
+    "sha256": "5422f7a48d319c466da4e1e1dbb3df8d9d0fc15d21d96aca267dd68000c4c068",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_light_sakt_assist2009.py",
+    "lines": 451,
+    "sha256": "4a2b34210d6606687226829df9d301ec472abd7ef6130d953a413a1aec3f31c7",
+    "functions": [
+      "plot_training_curves",
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_light_sakt_assist2018.py",
+    "lines": 148,
+    "sha256": "a5072d432f9e23ac7b542bdd5ebe3d43ccd33bff896762110773dac5efd09c3a",
+    "functions": [
+      "plot_training_curves",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_light_sakt.py",
+    "lines": 148,
+    "sha256": "7cfea08495e39e71f2acb6561794696894e1580d35059a2ee097419d85d7c7f4",
+    "functions": [
+      "plot_training_curves",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_sakt_assist2018.py",
+    "lines": 162,
+    "sha256": "706fcfa7f1da44882457ef49a761333cc146f20e31ab9d0fafd1f0a3c02fea4f",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train.py",
+    "lines": 157,
+    "sha256": "9994508fc94fc1d2e4cfdaa8f9bbe6ef984a0ebb4ca550ba265977198a107322",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/visualizeLightSakt.py",
+    "lines": 80,
+    "sha256": "f2cfcd3ec40da06b4f6989cb322989abb88ce0f6a09e98d9fad8826c9520c087",
+    "functions": [
+      "generate_and_plot_heatmap"
+    ],
+    "risk_patterns": [
+      "test_loader",
+      "get_attn_weights",
+      "torch.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/plot_results.py",
+    "lines": 373,
+    "sha256": "384d4e4853a0c77e31fa8182c2cad9035b8daba6295f45b5b36f9684de827c3f",
+    "functions": [
+      "normalize_metrics",
+      "plot_dataset_comparison"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/inspect_metrics.py",
+    "lines": 27,
+    "sha256": "88aca5ff81b5b5fa8e7baee14dfd6611ca5b40f8d508946faa4b2b8c9bd1873c",
+    "functions": [],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_light_sakt_algebra2005.py",
+    "lines": 801,
+    "sha256": "93b87c55b75b5fd89244c1dbe1b80c5b17a508070b61851b65772eb8ee325521",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_light_sakt_assist2015.py",
+    "lines": 782,
+    "sha256": "142803dba9df6655c42a19104bac88d51ce2573dba6b0441c2977135789829bc",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_sakt_assist2015.py",
+    "lines": 528,
+    "sha256": "a6bf54e2545f74fb156970d4146ef113633673ce754c8fa1d3fe5497856b3812",
+    "functions": [
+      "train_single_run",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_sakt_algebra2005.py",
+    "lines": 1296,
+    "sha256": "522a3d5e689a247e4a4b7559679010c069a8e1b16db65fc8fde9430e78a294ab",
+    "functions": [
+      "train_and_evaluate",
+      "grid_search",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/train_sakt_assist2009.py",
+    "lines": 537,
+    "sha256": "a035045ea606a3d5b28360c58ab43b29e2dd18567d7763a0d4d4de7fd7f6750a",
+    "functions": [
+      "train_and_evaluate",
+      "grid_search",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/plot_results-checkpoint.py",
+    "lines": 322,
+    "sha256": "b8492d80d49670048b1bc3dbe851d62f34f46d4c853906f5ecccd540c1cc31ff",
+    "functions": [
+      "plot_dataset_comparison"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/sakt_attention_maps-checkpoint.py",
+    "lines": 418,
+    "sha256": "ccfdd9fc206238c90c247fae180c2f90b9813f7c5810ba3e0fbfd2cb856ae796",
+    "functions": [
+      "SAKTTrainer",
+      "__init__",
+      "setup",
+      "train"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_dkt+_assist2015-checkpoint.py",
+    "lines": 524,
+    "sha256": "bce76a9348dc25a40339d682775bf79e8ed7f52737135fe73734e1310ca973d0",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/check-checkpoint.py",
+    "lines": 10,
+    "sha256": "3fb2682a97653ff1551a9668b970ea89b20828c0ded13558bfd87adb632dc1d0",
+    "functions": [],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/experiment-checkpoint.py",
+    "lines": 235,
+    "sha256": "f0b89cac3ad3b7639a7ddf3733c9249750d440780a3b267a29b6cdd0aa519653",
+    "functions": [
+      "train_and_evaluate",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/tempCodeRunnerFile-checkpoint.py",
+    "lines": 4,
+    "sha256": "700160b05e39a1c93ccd4a617bf4c86d2f5cb180fb441435b5610c420a4f21e8",
+    "functions": [],
+    "risk_patterns": []
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_all-checkpoint.py",
+    "lines": 169,
+    "sha256": "183aa669455e77a563bea41fdb7787fb76faf7afd4d711452b20e495d44ac821",
+    "functions": [
+      "train_model_on_dataset",
+      "test_critical_path",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_dkt_algebra2005-checkpoint.py",
+    "lines": 590,
+    "sha256": "49adb0a238ebf00fb5a2126ceb8925236c813f0eb381b2bff3717b4c8935ab34",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_dkt_assist2009-checkpoint.py",
+    "lines": 619,
+    "sha256": "061a27a0b3993376ad091c061bc3e2f3bca5415443f64ded2910590a9c3a1bae",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_dkt_assist2015-checkpoint.py",
+    "lines": 618,
+    "sha256": "c2945ee57481bce924f31e5dc381dcde9512654959d06e716d1728dd48f4ab72",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_dkt_assist2018-checkpoint.py",
+    "lines": 168,
+    "sha256": "a4bbd3bc77911bc8d26ed7ac04ad885d4fc63a591b3ea58d4f6ccd3404c5af6a",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_dkt+_algebra2005-checkpoint.py",
+    "lines": 322,
+    "sha256": "bd23580a554e2d466a08cc328c8d96b620576e4c968150c157765b9c926b7d58",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_dkt+_assist2009-checkpoint.py",
+    "lines": 323,
+    "sha256": "01cccb2040eed607917e3488353e0c66ebdbf0164e85dd206c4417ce08e9a3fa",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_dkt+_assist2018-checkpoint.py",
+    "lines": 162,
+    "sha256": "8e3604d6e34c70a7aacafa75e1dfe14de85d33cc077b4634eb218b24a989d955",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_dkvmn_algebra2005-checkpoint.py",
+    "lines": 526,
+    "sha256": "f34f0edf5832a0a3d75e0a8532f53cc77db14faed8c7d0a197bdd6654d442f91",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_dkvmn_assist2009-checkpoint.py",
+    "lines": 507,
+    "sha256": "10c7f3befe40c5d8163b44f59fbad981f1e58fdfce81c18bc416986ba215e45d",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_dkvmn_assist2015-checkpoint.py",
+    "lines": 500,
+    "sha256": "59a8469d091b8fbb9885e75983c7141a971e1372052f19c7fffc1480bd9b1732",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_dkvmn_assist2018-checkpoint.py",
+    "lines": 162,
+    "sha256": "ea7f66a86640e8adda968efc3ee4bbd8ed2f7257b548bed35f4ebdf8a4f29ba1",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_gkt_algebra2005-checkpoint.py",
+    "lines": 696,
+    "sha256": "3ed73d3dbc8c59887be836b13308c82a712821976a6166e0d8da97419eac8c23",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_gkt_assist_2018-checkpoint.py",
+    "lines": 160,
+    "sha256": "fe6949cfba6b3158c52a2ccb8f1286e179fa881f55cb6ee0f18be00595ce8285",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_gkt_assist2009-checkpoint.py",
+    "lines": 377,
+    "sha256": "7e405fa8eeb2512c7920c5a38506bd1978d91748b2892a3916a17fda4836e2e5",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_gkt_assist2015-checkpoint.py",
+    "lines": 703,
+    "sha256": "5422f7a48d319c466da4e1e1dbb3df8d9d0fc15d21d96aca267dd68000c4c068",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_light_sakt_algebra2005-checkpoint.py",
+    "lines": 801,
+    "sha256": "9ea13e6e07ab2e697f990e9fdcf340c638ff8db73266dd6cad4597e2ffe5d04b",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_light_sakt_assist2009-checkpoint.py",
+    "lines": 451,
+    "sha256": "4a2b34210d6606687226829df9d301ec472abd7ef6130d953a413a1aec3f31c7",
+    "functions": [
+      "plot_training_curves",
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_light_sakt_assist2015-checkpoint.py",
+    "lines": 410,
+    "sha256": "3271a5d014af106960d575446734ebebea0be88e8ce95cae812ee6d4ab79666d",
+    "functions": [
+      "plot_training_curves",
+      "safe_floats",
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_light_sakt_assist2018-checkpoint.py",
+    "lines": 148,
+    "sha256": "a5072d432f9e23ac7b542bdd5ebe3d43ccd33bff896762110773dac5efd09c3a",
+    "functions": [
+      "plot_training_curves",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_light_sakt-checkpoint.py",
+    "lines": 148,
+    "sha256": "7cfea08495e39e71f2acb6561794696894e1580d35059a2ee097419d85d7c7f4",
+    "functions": [
+      "plot_training_curves",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_sakt_algebra2005-checkpoint.py",
+    "lines": 1296,
+    "sha256": "522a3d5e689a247e4a4b7559679010c069a8e1b16db65fc8fde9430e78a294ab",
+    "functions": [
+      "train_and_evaluate",
+      "grid_search",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_sakt_assist2009-checkpoint.py",
+    "lines": 537,
+    "sha256": "a035045ea606a3d5b28360c58ab43b29e2dd18567d7763a0d4d4de7fd7f6750a",
+    "functions": [
+      "train_and_evaluate",
+      "grid_search",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_sakt_assist2015-checkpoint.py",
+    "lines": 528,
+    "sha256": "a6bf54e2545f74fb156970d4146ef113633673ce754c8fa1d3fe5497856b3812",
+    "functions": [
+      "train_single_run",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/.ipynb_checkpoints/train_sakt_assist2018-checkpoint.py",
+    "lines": 162,
+    "sha256": "706fcfa7f1da44882457ef49a761333cc146f20e31ab9d0fafd1f0a3c02fea4f",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/kaggle_utils.py",
+    "lines": 161,
+    "sha256": "488346f98133cb3129f055287a052752cb4a7f1e7a3fce157359bbedc0ece11a",
+    "functions": [
+      "detect_environment",
+      "get_dataset_path",
+      "get_cache_path",
+      "setup_kaggle_paths",
+      "print_environment_info"
+    ],
+    "risk_patterns": []
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/plot_light_sakt.py",
+    "lines": 345,
+    "sha256": "7456ed4085e301df06bf8c9238e1b807145db748a6bf31852e28706599fcd2fa",
+    "functions": [
+      "load_results",
+      "plot_single_model_results",
+      "compare_with_original_sakt",
+      "create_performance_table",
+      "load_results",
+      "plot_single_model_results",
+      "plot_combined_light_sakt_results",
+      "main",
+      "convert"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/re.py",
+    "lines": 18,
+    "sha256": "587aea62a745473e09948e62c3ccfe25141439f5d5b19089c543f0cab0ef3bb1",
+    "functions": [],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/test_light_sakt.py",
+    "lines": 38,
+    "sha256": "632cb18321037e4690c1e6e906176105e82cb68506e35cab2575359bda0adf4f",
+    "functions": [
+      "test_model"
+    ],
+    "risk_patterns": [
+      "triu"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train_kaggle.py",
+    "lines": 355,
+    "sha256": "affe5fc65ba1c46414fdda04e5484a09577d6dad3b7a951b5fde1309ed5a9508",
+    "functions": [
+      "plot_training_curves",
+      "load_dataset",
+      "load_model",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/.ipynb_checkpoints/plot_light_sakt-checkpoint.py",
+    "lines": 345,
+    "sha256": "7456ed4085e301df06bf8c9238e1b807145db748a6bf31852e28706599fcd2fa",
+    "functions": [
+      "load_results",
+      "plot_single_model_results",
+      "compare_with_original_sakt",
+      "create_performance_table",
+      "load_results",
+      "plot_single_model_results",
+      "plot_combined_light_sakt_results",
+      "main",
+      "convert"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/.ipynb_checkpoints/re-checkpoint.py",
+    "lines": 18,
+    "sha256": "587aea62a745473e09948e62c3ccfe25141439f5d5b19089c543f0cab0ef3bb1",
+    "functions": [],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/.ipynb_checkpoints/test_light_sakt-checkpoint.py",
+    "lines": 38,
+    "sha256": "632cb18321037e4690c1e6e906176105e82cb68506e35cab2575359bda0adf4f",
+    "functions": [
+      "test_model"
+    ],
+    "risk_patterns": [
+      "triu"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/experiment.py",
+    "lines": 235,
+    "sha256": "f0b89cac3ad3b7639a7ddf3733c9249750d440780a3b267a29b6cdd0aa519653",
+    "functions": [
+      "train_and_evaluate",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/sakt_attention_maps.py",
+    "lines": 418,
+    "sha256": "ccfdd9fc206238c90c247fae180c2f90b9813f7c5810ba3e0fbfd2cb856ae796",
+    "functions": [
+      "SAKTTrainer",
+      "__init__",
+      "setup",
+      "train"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/tempCodeRunnerFile.py",
+    "lines": 4,
+    "sha256": "700160b05e39a1c93ccd4a617bf4c86d2f5cb180fb441435b5610c420a4f21e8",
+    "functions": [],
+    "risk_patterns": []
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_all.py",
+    "lines": 169,
+    "sha256": "183aa669455e77a563bea41fdb7787fb76faf7afd4d711452b20e495d44ac821",
+    "functions": [
+      "train_model_on_dataset",
+      "test_critical_path",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_dkt_algebra2005.py",
+    "lines": 590,
+    "sha256": "49adb0a238ebf00fb5a2126ceb8925236c813f0eb381b2bff3717b4c8935ab34",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_dkt_assist2009.py",
+    "lines": 619,
+    "sha256": "061a27a0b3993376ad091c061bc3e2f3bca5415443f64ded2910590a9c3a1bae",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_dkt_assist2018.py",
+    "lines": 168,
+    "sha256": "2ebd8bb17f818baf28580f1df31349a46b6ad6cf7430543c2ab3959f10d9e62d",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_dkvmn_assist2015.py",
+    "lines": 500,
+    "sha256": "59a8469d091b8fbb9885e75983c7141a971e1372052f19c7fffc1480bd9b1732",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_gkt_assist2015.py",
+    "lines": 703,
+    "sha256": "5422f7a48d319c466da4e1e1dbb3df8d9d0fc15d21d96aca267dd68000c4c068",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_sakt_assist2018.py",
+    "lines": 162,
+    "sha256": "706fcfa7f1da44882457ef49a761333cc146f20e31ab9d0fafd1f0a3c02fea4f",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train.py",
+    "lines": 157,
+    "sha256": "9994508fc94fc1d2e4cfdaa8f9bbe6ef984a0ebb4ca550ba265977198a107322",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/check.py",
+    "lines": 10,
+    "sha256": "3fb2682a97653ff1551a9668b970ea89b20828c0ded13558bfd87adb632dc1d0",
+    "functions": [],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/inspect_metrics.py",
+    "lines": 27,
+    "sha256": "88aca5ff81b5b5fa8e7baee14dfd6611ca5b40f8d508946faa4b2b8c9bd1873c",
+    "functions": [],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/plot_results.py",
+    "lines": 373,
+    "sha256": "384d4e4853a0c77e31fa8182c2cad9035b8daba6295f45b5b36f9684de827c3f",
+    "functions": [
+      "normalize_metrics",
+      "plot_dataset_comparison"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_dkt_assist2015.py",
+    "lines": 618,
+    "sha256": "c2945ee57481bce924f31e5dc381dcde9512654959d06e716d1728dd48f4ab72",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_dkt+_algebra2005.py",
+    "lines": 514,
+    "sha256": "6336521141849ab25b430305fc17e05c3996f9f5dd2f4233ee1e82c17ec50e1f",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_dkt+_assist2009.py",
+    "lines": 532,
+    "sha256": "581bc5dbb50c3975f188562658b92317d86480d0879f69ef2d7e4a86f3026d61",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_dkt+_assist2015.py",
+    "lines": 524,
+    "sha256": "bce76a9348dc25a40339d682775bf79e8ed7f52737135fe73734e1310ca973d0",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_dkt+_assist2018.py",
+    "lines": 162,
+    "sha256": "8e3604d6e34c70a7aacafa75e1dfe14de85d33cc077b4634eb218b24a989d955",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_dkvmn_algebra2005.py",
+    "lines": 731,
+    "sha256": "c6ab3c024043a4e557f2ef684d77860efec5b71a53a4cb108b3336498ae39015",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_dkvmn_assist2009.py",
+    "lines": 507,
+    "sha256": "10c7f3befe40c5d8163b44f59fbad981f1e58fdfce81c18bc416986ba215e45d",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_dkvmn_assist2018.py",
+    "lines": 162,
+    "sha256": "ea7f66a86640e8adda968efc3ee4bbd8ed2f7257b548bed35f4ebdf8a4f29ba1",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_gkt_algebra2005.py",
+    "lines": 696,
+    "sha256": "3ed73d3dbc8c59887be836b13308c82a712821976a6166e0d8da97419eac8c23",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_gkt_assist_2018.py",
+    "lines": 160,
+    "sha256": "fe6949cfba6b3158c52a2ccb8f1286e179fa881f55cb6ee0f18be00595ce8285",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_gkt_assist2009.py",
+    "lines": 550,
+    "sha256": "5c72b236ed5cf20ea7eb55460f05da0dfa1f8e9d34632440f0008dce3301a45e",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_light_sakt_algebra2005.py",
+    "lines": 801,
+    "sha256": "93b87c55b75b5fd89244c1dbe1b80c5b17a508070b61851b65772eb8ee325521",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_light_sakt_assist2009.py",
+    "lines": 451,
+    "sha256": "4a2b34210d6606687226829df9d301ec472abd7ef6130d953a413a1aec3f31c7",
+    "functions": [
+      "plot_training_curves",
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_light_sakt_assist2015.py",
+    "lines": 590,
+    "sha256": "80e60efe3c92163c860c3b99ec208123b9ffadcf1cc5113cfae5ae11177bb698",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_light_sakt_assist2018.py",
+    "lines": 148,
+    "sha256": "a5072d432f9e23ac7b542bdd5ebe3d43ccd33bff896762110773dac5efd09c3a",
+    "functions": [
+      "plot_training_curves",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_light_sakt.py",
+    "lines": 148,
+    "sha256": "7cfea08495e39e71f2acb6561794696894e1580d35059a2ee097419d85d7c7f4",
+    "functions": [
+      "plot_training_curves",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_sakt_algebra2005.py",
+    "lines": 1296,
+    "sha256": "522a3d5e689a247e4a4b7559679010c069a8e1b16db65fc8fde9430e78a294ab",
+    "functions": [
+      "train_and_evaluate",
+      "grid_search",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_sakt_assist2009.py",
+    "lines": 537,
+    "sha256": "a035045ea606a3d5b28360c58ab43b29e2dd18567d7763a0d4d4de7fd7f6750a",
+    "functions": [
+      "train_and_evaluate",
+      "grid_search",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/train_sakt_assist2015.py",
+    "lines": 528,
+    "sha256": "a6bf54e2545f74fb156970d4146ef113633673ce754c8fa1d3fe5497856b3812",
+    "functions": [
+      "train_single_run",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/visualizeLightSakt.py",
+    "lines": 80,
+    "sha256": "f2cfcd3ec40da06b4f6989cb322989abb88ce0f6a09e98d9fad8826c9520c087",
+    "functions": [
+      "generate_and_plot_heatmap"
+    ],
+    "risk_patterns": [
+      "test_loader",
+      "get_attn_weights",
+      "torch.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/check-checkpoint.py",
+    "lines": 10,
+    "sha256": "3fb2682a97653ff1551a9668b970ea89b20828c0ded13558bfd87adb632dc1d0",
+    "functions": [],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/experiment-checkpoint.py",
+    "lines": 235,
+    "sha256": "f0b89cac3ad3b7639a7ddf3733c9249750d440780a3b267a29b6cdd0aa519653",
+    "functions": [
+      "train_and_evaluate",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/plot_results-checkpoint.py",
+    "lines": 322,
+    "sha256": "b8492d80d49670048b1bc3dbe851d62f34f46d4c853906f5ecccd540c1cc31ff",
+    "functions": [
+      "plot_dataset_comparison"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/sakt_attention_maps-checkpoint.py",
+    "lines": 418,
+    "sha256": "ccfdd9fc206238c90c247fae180c2f90b9813f7c5810ba3e0fbfd2cb856ae796",
+    "functions": [
+      "SAKTTrainer",
+      "__init__",
+      "setup",
+      "train"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/tempCodeRunnerFile-checkpoint.py",
+    "lines": 4,
+    "sha256": "700160b05e39a1c93ccd4a617bf4c86d2f5cb180fb441435b5610c420a4f21e8",
+    "functions": [],
+    "risk_patterns": []
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_all-checkpoint.py",
+    "lines": 169,
+    "sha256": "183aa669455e77a563bea41fdb7787fb76faf7afd4d711452b20e495d44ac821",
+    "functions": [
+      "train_model_on_dataset",
+      "test_critical_path",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_dkt_algebra2005-checkpoint.py",
+    "lines": 590,
+    "sha256": "49adb0a238ebf00fb5a2126ceb8925236c813f0eb381b2bff3717b4c8935ab34",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_dkt_assist2009-checkpoint.py",
+    "lines": 619,
+    "sha256": "061a27a0b3993376ad091c061bc3e2f3bca5415443f64ded2910590a9c3a1bae",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_dkt_assist2015-checkpoint.py",
+    "lines": 618,
+    "sha256": "c2945ee57481bce924f31e5dc381dcde9512654959d06e716d1728dd48f4ab72",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_dkt_assist2018-checkpoint.py",
+    "lines": 168,
+    "sha256": "a4bbd3bc77911bc8d26ed7ac04ad885d4fc63a591b3ea58d4f6ccd3404c5af6a",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_dkt+_algebra2005-checkpoint.py",
+    "lines": 322,
+    "sha256": "bd23580a554e2d466a08cc328c8d96b620576e4c968150c157765b9c926b7d58",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_dkt+_assist2009-checkpoint.py",
+    "lines": 323,
+    "sha256": "01cccb2040eed607917e3488353e0c66ebdbf0164e85dd206c4417ce08e9a3fa",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_dkt+_assist2015-checkpoint.py",
+    "lines": 524,
+    "sha256": "bce76a9348dc25a40339d682775bf79e8ed7f52737135fe73734e1310ca973d0",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_dkt+_assist2018-checkpoint.py",
+    "lines": 162,
+    "sha256": "8e3604d6e34c70a7aacafa75e1dfe14de85d33cc077b4634eb218b24a989d955",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_dkvmn_algebra2005-checkpoint.py",
+    "lines": 526,
+    "sha256": "f34f0edf5832a0a3d75e0a8532f53cc77db14faed8c7d0a197bdd6654d442f91",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_dkvmn_assist2009-checkpoint.py",
+    "lines": 507,
+    "sha256": "10c7f3befe40c5d8163b44f59fbad981f1e58fdfce81c18bc416986ba215e45d",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_dkvmn_assist2015-checkpoint.py",
+    "lines": 500,
+    "sha256": "59a8469d091b8fbb9885e75983c7141a971e1372052f19c7fffc1480bd9b1732",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_dkvmn_assist2018-checkpoint.py",
+    "lines": 162,
+    "sha256": "ea7f66a86640e8adda968efc3ee4bbd8ed2f7257b548bed35f4ebdf8a4f29ba1",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_gkt_algebra2005-checkpoint.py",
+    "lines": 696,
+    "sha256": "3ed73d3dbc8c59887be836b13308c82a712821976a6166e0d8da97419eac8c23",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_gkt_assist_2018-checkpoint.py",
+    "lines": 160,
+    "sha256": "fe6949cfba6b3158c52a2ccb8f1286e179fa881f55cb6ee0f18be00595ce8285",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_gkt_assist2009-checkpoint.py",
+    "lines": 377,
+    "sha256": "7e405fa8eeb2512c7920c5a38506bd1978d91748b2892a3916a17fda4836e2e5",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_gkt_assist2015-checkpoint.py",
+    "lines": 703,
+    "sha256": "5422f7a48d319c466da4e1e1dbb3df8d9d0fc15d21d96aca267dd68000c4c068",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "manual_seed",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_light_sakt_algebra2005-checkpoint.py",
+    "lines": 801,
+    "sha256": "9ea13e6e07ab2e697f990e9fdcf340c638ff8db73266dd6cad4597e2ffe5d04b",
+    "functions": [
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_light_sakt_assist2009-checkpoint.py",
+    "lines": 451,
+    "sha256": "4a2b34210d6606687226829df9d301ec472abd7ef6130d953a413a1aec3f31c7",
+    "functions": [
+      "plot_training_curves",
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_light_sakt_assist2015-checkpoint.py",
+    "lines": 410,
+    "sha256": "3271a5d014af106960d575446734ebebea0be88e8ce95cae812ee6d4ab79666d",
+    "functions": [
+      "plot_training_curves",
+      "safe_floats",
+      "main",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_light_sakt_assist2018-checkpoint.py",
+    "lines": 148,
+    "sha256": "a5072d432f9e23ac7b542bdd5ebe3d43ccd33bff896762110773dac5efd09c3a",
+    "functions": [
+      "plot_training_curves",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_light_sakt-checkpoint.py",
+    "lines": 148,
+    "sha256": "7cfea08495e39e71f2acb6561794696894e1580d35059a2ee097419d85d7c7f4",
+    "functions": [
+      "plot_training_curves",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_sakt_algebra2005-checkpoint.py",
+    "lines": 1296,
+    "sha256": "522a3d5e689a247e4a4b7559679010c069a8e1b16db65fc8fde9430e78a294ab",
+    "functions": [
+      "train_and_evaluate",
+      "grid_search",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_sakt_assist2009-checkpoint.py",
+    "lines": 537,
+    "sha256": "a035045ea606a3d5b28360c58ab43b29e2dd18567d7763a0d4d4de7fd7f6750a",
+    "functions": [
+      "train_and_evaluate",
+      "grid_search",
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_sakt_assist2015-checkpoint.py",
+    "lines": 528,
+    "sha256": "a6bf54e2545f74fb156970d4146ef113633673ce754c8fa1d3fe5497856b3812",
+    "functions": [
+      "train_single_run",
+      "grid_search"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/train/.ipynb_checkpoints/train_sakt_assist2018-checkpoint.py",
+    "lines": 162,
+    "sha256": "706fcfa7f1da44882457ef49a761333cc146f20e31ab9d0fafd1f0a3c02fea4f",
+    "functions": [
+      "main"
+    ],
+    "risk_patterns": [
+      "random_split",
+      "test_loader",
+      "train_indices",
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/data_loaders/algebra2005.py",
+    "lines": 94,
+    "sha256": "88ce3100c2cb3085638ae2df5fecf92bd16bab07fafbd82e9e7887af6f912d13",
+    "functions": [
+      "Algebra2005",
+      "__init__",
+      "__getitem__",
+      "__len__",
+      "preprocess"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/data_loaders/assist2009_kaggle.py",
+    "lines": 207,
+    "sha256": "ea743f606f1411e66ecda43d5523cf1db184c6dc0a2d23f40b3a689457985d9f",
+    "functions": [
+      "ASSIST2009",
+      "__init__",
+      "_load_or_preprocess",
+      "_preprocess_and_cache",
+      "__getitem__",
+      "__len__",
+      "detect_environment",
+      "get_dataset_path",
+      "get_cache_path"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/data_loaders/assist2009.py",
+    "lines": 96,
+    "sha256": "1562455f117057afda17d22e9e343034352b4145c5cd23cf7d90f609d09a3271",
+    "functions": [
+      "ASSIST2009",
+      "__init__",
+      "__getitem__",
+      "__len__",
+      "preprocess"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/data_loaders/assist2015.py",
+    "lines": 95,
+    "sha256": "dc12ae6d5593f103331b6e6fe6f454a9e171b91c7330b48ec5896de99ff1623e",
+    "functions": [
+      "ASSIST2015",
+      "__init__",
+      "__getitem__",
+      "__len__",
+      "preprocess"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/data_loaders/assist2018.py",
+    "lines": 96,
+    "sha256": "972bc0c8980cddb9b50f46836665ff4f4525de9a01d2debed195c9d01296d04a",
+    "functions": [
+      "ASSIST2018",
+      "__init__",
+      "__getitem__",
+      "__len__",
+      "preprocess"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/data_loaders/statics2011.py",
+    "lines": 105,
+    "sha256": "9e0a543bf73cd89e0a76ee323c18612d11f8792c8399196b726440f22e96c481",
+    "functions": [
+      "Statics2011",
+      "__init__",
+      "__getitem__",
+      "__len__",
+      "preprocess"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/data_loaders/.ipynb_checkpoints/algebra2005-checkpoint.py",
+    "lines": 94,
+    "sha256": "88ce3100c2cb3085638ae2df5fecf92bd16bab07fafbd82e9e7887af6f912d13",
+    "functions": [
+      "Algebra2005",
+      "__init__",
+      "__getitem__",
+      "__len__",
+      "preprocess"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/ckpts/light_sakt/Algebra2005/learning#/data_loaders/.ipynb_checkpoints/assist2009-checkpoint.py",
+    "lines": 96,
+    "sha256": "1562455f117057afda17d22e9e343034352b4145c5cd23cf7d90f609d09a3271",
+    "functions": [
+      "ASSIST2009",
+      "__init__",
+      "__getitem__",
+      "__len__",
+      "preprocess"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/models/__init__.py",
+    "lines": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "functions": [],
+    "risk_patterns": []
+  },
+  {
+    "path": "original_snapshot/train/models/dkt_plus.py",
+    "lines": 152,
+    "sha256": "443a87aba3d3af808ec1aba0f107604e4d7f08b81384d2c0e9a65a46282743c6",
+    "functions": [
+      "DKTPlus",
+      "__init__",
+      "forward",
+      "train_model"
+    ],
+    "risk_patterns": [
+      "test_loader"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/models/dkt.py",
+    "lines": 137,
+    "sha256": "66f4fedf66c1192b0475a9d8e6efb4100634ad21ac0f697f47d74fd6d74272a7",
+    "functions": [
+      "DKT",
+      "__init__",
+      "forward",
+      "train_model"
+    ],
+    "risk_patterns": [
+      "test_loader"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/models/dkvmn.py",
+    "lines": 173,
+    "sha256": "5f7238504962615d54b180e7a85e9cef07e28e3e859641098ecc2e12339b73ad",
+    "functions": [
+      "DKVMN",
+      "__init__",
+      "forward",
+      "train_model"
+    ],
+    "risk_patterns": [
+      "test_loader",
+      "softmax"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/models/gkt.py",
+    "lines": 309,
+    "sha256": "982d1a79c55a5b6b87834c057038ec6d9221fca3801a9cb44d148d3340433074",
+    "functions": [
+      "mlp",
+      "GKT",
+      "PAM",
+      "MHA",
+      "__init__",
+      "forward",
+      "aggregate",
+      "f_self",
+      "f_neighbor",
+      "update",
+      "predict",
+      "train_model",
+      "__init__",
+      "f_neighbor",
+      "__init__",
+      "f_neighbor"
+    ],
+    "risk_patterns": [
+      "test_loader"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/models/utils.py",
+    "lines": 142,
+    "sha256": "cb92d74f7a9dcd7fb7d90f20ec7e77f405bef8fad46dc9889939e506851c32fb",
+    "functions": [
+      "match_seq_len",
+      "collate_fn"
+    ],
+    "risk_patterns": []
+  },
+  {
+    "path": "original_snapshot/train/models/visualization.py",
+    "lines": 145,
+    "sha256": "c8dd6556b8c9e741126b20c5c3a870a335840add274a2f34ed16e130b704daa4",
+    "functions": [
+      "plot_learning_curves",
+      "load_training_metrics",
+      "plot_dataset_comparison",
+      "create_summary_table"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/models/sakt.py",
+    "lines": 147,
+    "sha256": "09a11d9ae2ab56ecf1805309dfb4ed635b042a080085e2a18da49bdc80d67f21",
+    "functions": [
+      "SAKT",
+      "__init__",
+      "forward",
+      "train_model"
+    ],
+    "risk_patterns": [
+      "test_loader",
+      "triu"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/models/light_sakt.py",
+    "lines": 212,
+    "sha256": "6915cbac212202c5bb93ed2de62015a24a6b677e9ae37d0ba3cc2c2a86027366",
+    "functions": [
+      "LinearAttention",
+      "Light_SAKT",
+      "__init__",
+      "forward",
+      "__init__",
+      "forward",
+      "train_model"
+    ],
+    "risk_patterns": [
+      "test_loader",
+      "get_attn_weights",
+      "softmax",
+      "triu"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/models/.ipynb_checkpoints/dkt-checkpoint.py",
+    "lines": 137,
+    "sha256": "66f4fedf66c1192b0475a9d8e6efb4100634ad21ac0f697f47d74fd6d74272a7",
+    "functions": [
+      "DKT",
+      "__init__",
+      "forward",
+      "train_model"
+    ],
+    "risk_patterns": [
+      "test_loader"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/models/.ipynb_checkpoints/dkvmn-checkpoint.py",
+    "lines": 173,
+    "sha256": "5f7238504962615d54b180e7a85e9cef07e28e3e859641098ecc2e12339b73ad",
+    "functions": [
+      "DKVMN",
+      "__init__",
+      "forward",
+      "train_model"
+    ],
+    "risk_patterns": [
+      "test_loader",
+      "softmax"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/models/.ipynb_checkpoints/gkt-checkpoint.py",
+    "lines": 309,
+    "sha256": "982d1a79c55a5b6b87834c057038ec6d9221fca3801a9cb44d148d3340433074",
+    "functions": [
+      "mlp",
+      "GKT",
+      "PAM",
+      "MHA",
+      "__init__",
+      "forward",
+      "aggregate",
+      "f_self",
+      "f_neighbor",
+      "update",
+      "predict",
+      "train_model",
+      "__init__",
+      "f_neighbor",
+      "__init__",
+      "f_neighbor"
+    ],
+    "risk_patterns": [
+      "test_loader"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/models/.ipynb_checkpoints/kqn-checkpoint.py",
+    "lines": 117,
+    "sha256": "8752d1d2e13feca49a7b79949a35d5aefdb1a6052c0d71a9682067bbed9d0b35",
+    "functions": [
+      "KQN",
+      "__init__",
+      "forward",
+      "train_model"
+    ],
+    "risk_patterns": [
+      "test_loader"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/models/.ipynb_checkpoints/light_sakt-checkpoint.py",
+    "lines": 185,
+    "sha256": "414df6a055e84736a88c027cd0c492cb99238583f08b6b35e174b28a43eb5f7e",
+    "functions": [
+      "LinearAttention",
+      "Light_SAKT",
+      "__init__",
+      "forward",
+      "__init__",
+      "forward",
+      "train_model"
+    ],
+    "risk_patterns": [
+      "test_loader",
+      "triu"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/models/.ipynb_checkpoints/sakt-checkpoint.py",
+    "lines": 147,
+    "sha256": "09a11d9ae2ab56ecf1805309dfb4ed635b042a080085e2a18da49bdc80d67f21",
+    "functions": [
+      "SAKT",
+      "__init__",
+      "forward",
+      "train_model"
+    ],
+    "risk_patterns": [
+      "test_loader",
+      "triu"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/models/.ipynb_checkpoints/utils-checkpoint.py",
+    "lines": 142,
+    "sha256": "cb92d74f7a9dcd7fb7d90f20ec7e77f405bef8fad46dc9889939e506851c32fb",
+    "functions": [
+      "match_seq_len",
+      "collate_fn"
+    ],
+    "risk_patterns": []
+  },
+  {
+    "path": "original_snapshot/train/models/.ipynb_checkpoints/visualization-checkpoint.py",
+    "lines": 145,
+    "sha256": "c8dd6556b8c9e741126b20c5c3a870a335840add274a2f34ed16e130b704daa4",
+    "functions": [
+      "plot_learning_curves",
+      "load_training_metrics",
+      "plot_dataset_comparison",
+      "create_summary_table"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/train/models/.ipynb_checkpoints/dkt_plus-checkpoint.py",
+    "lines": 152,
+    "sha256": "443a87aba3d3af808ec1aba0f107604e4d7f08b81384d2c0e9a65a46282743c6",
+    "functions": [
+      "DKTPlus",
+      "__init__",
+      "forward",
+      "train_model"
+    ],
+    "risk_patterns": [
+      "test_loader"
+    ]
+  },
+  {
+    "path": "original_snapshot/__pycache__/.ipynb_checkpoints/plot_light_sakt-checkpoint.py",
+    "lines": 345,
+    "sha256": "7456ed4085e301df06bf8c9238e1b807145db748a6bf31852e28706599fcd2fa",
+    "functions": [
+      "load_results",
+      "plot_single_model_results",
+      "compare_with_original_sakt",
+      "create_performance_table",
+      "load_results",
+      "plot_single_model_results",
+      "plot_combined_light_sakt_results",
+      "main",
+      "convert"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/__pycache__/.ipynb_checkpoints/re-checkpoint.py",
+    "lines": 18,
+    "sha256": "587aea62a745473e09948e62c3ccfe25141439f5d5b19089c543f0cab0ef3bb1",
+    "functions": [],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/__pycache__/.ipynb_checkpoints/test_light_sakt-checkpoint.py",
+    "lines": 38,
+    "sha256": "632cb18321037e4690c1e6e906176105e82cb68506e35cab2575359bda0adf4f",
+    "functions": [
+      "test_model"
+    ],
+    "risk_patterns": [
+      "triu"
+    ]
+  },
+  {
+    "path": "original_snapshot/data_loaders/algebra2005.py",
+    "lines": 94,
+    "sha256": "88ce3100c2cb3085638ae2df5fecf92bd16bab07fafbd82e9e7887af6f912d13",
+    "functions": [
+      "Algebra2005",
+      "__init__",
+      "__getitem__",
+      "__len__",
+      "preprocess"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/data_loaders/assist2009_kaggle.py",
+    "lines": 207,
+    "sha256": "ea743f606f1411e66ecda43d5523cf1db184c6dc0a2d23f40b3a689457985d9f",
+    "functions": [
+      "ASSIST2009",
+      "__init__",
+      "_load_or_preprocess",
+      "_preprocess_and_cache",
+      "__getitem__",
+      "__len__",
+      "detect_environment",
+      "get_dataset_path",
+      "get_cache_path"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/data_loaders/assist2009.py",
+    "lines": 96,
+    "sha256": "1562455f117057afda17d22e9e343034352b4145c5cd23cf7d90f609d09a3271",
+    "functions": [
+      "ASSIST2009",
+      "__init__",
+      "__getitem__",
+      "__len__",
+      "preprocess"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/data_loaders/statics2011.py",
+    "lines": 105,
+    "sha256": "9e0a543bf73cd89e0a76ee323c18612d11f8792c8399196b726440f22e96c481",
+    "functions": [
+      "Statics2011",
+      "__init__",
+      "__getitem__",
+      "__len__",
+      "preprocess"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/data_loaders/assist2018.py",
+    "lines": 96,
+    "sha256": "972bc0c8980cddb9b50f46836665ff4f4525de9a01d2debed195c9d01296d04a",
+    "functions": [
+      "ASSIST2018",
+      "__init__",
+      "__getitem__",
+      "__len__",
+      "preprocess"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/data_loaders/assist2015.py",
+    "lines": 95,
+    "sha256": "dc12ae6d5593f103331b6e6fe6f454a9e171b91c7330b48ec5896de99ff1623e",
+    "functions": [
+      "ASSIST2015",
+      "__init__",
+      "__getitem__",
+      "__len__",
+      "preprocess"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/data_loaders/.ipynb_checkpoints/algebra2005-checkpoint.py",
+    "lines": 94,
+    "sha256": "88ce3100c2cb3085638ae2df5fecf92bd16bab07fafbd82e9e7887af6f912d13",
+    "functions": [
+      "Algebra2005",
+      "__init__",
+      "__getitem__",
+      "__len__",
+      "preprocess"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  },
+  {
+    "path": "original_snapshot/data_loaders/.ipynb_checkpoints/assist2009-checkpoint.py",
+    "lines": 96,
+    "sha256": "1562455f117057afda17d22e9e343034352b4145c5cd23cf7d90f609d09a3271",
+    "functions": [
+      "ASSIST2009",
+      "__init__",
+      "__getitem__",
+      "__len__",
+      "preprocess"
+    ],
+    "risk_patterns": [
+      "pickle.load"
+    ]
+  }
+]
