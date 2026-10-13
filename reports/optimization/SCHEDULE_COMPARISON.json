@@ -1,0 +1,28 @@
+{
+  "updated_utc": "2026-10-13T23:53:57.889146+00:00",
+  "logical_total": 957,
+  "completed": 98,
+  "fresh_remaining": 814,
+  "reuse_remaining": 45,
+  "distinct_fresh_total": 912,
+  "proposed_deferred_fresh": 162,
+  "accelerated_fresh_remaining": 652,
+  "complete_training_hours": {
+    "low": 107.04445196459179,
+    "central": 747.3835026615361,
+    "high": 4100.680682780549
+  },
+  "accelerated_proposal_training_hours": {
+    "low": 28.406106377849433,
+    "central": 231.33974439726197,
+    "high": 1374.6987271014477
+  },
+  "hour_scope": "Same measured-reference model as current ETA; no unverified implementation speedup applied; additional test inference/final benchmarking excluded.",
+  "grid_seeds": [
+    42
+  ],
+  "repeated_grid_configurations": 0,
+  "required_light_grid": 108,
+  "scope_approval_required": true,
+  "proposal_active": false
+}
