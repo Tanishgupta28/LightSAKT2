@@ -1,12 +1,12 @@
 # Measured runtime estimate
 
-Updated UTC: 2026-10-13T23:14:24.906945+00:00
+Updated UTC: 2026-10-13T23:15:25.957877+00:00
 
-Remaining training: **746.5 GPU reserved hours**; scenario range **107.1–4,101.4 hours**. Serial wall time: 31.1 days; continuous-availability training finish 2026-11-14T01:42:17.273871+00:00.
+Remaining training: **746.8 GPU reserved hours**; scenario range **107.1–4,102.1 hours**. Serial wall time: 31.1 days; continuous-availability training finish 2026-11-14T02:00:46.109976+00:00.
 
 This is a provisional measured-reference extrapolation, not a validated confidence interval. Hardware-active GPU utilization is unavailable. Epochs include training and validation, and reserved hours include their CPU work. Unmeasured final benchmarking and artifact verification add time beyond this training-only date.
 
-Overall mean completed-run duration: 13.08 minutes, over 56 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
+Overall mean completed-run duration: 12.43 minutes, over 59 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
 
 Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.
 
@@ -14,8 +14,8 @@ Saved cumulative training_seconds include training and validation through checkp
 
 |Dataset|Model|Completed runs|Measured epochs|Mean epoch seconds|Mean completed run minutes|
 |---|---|---|---|---|---|
-|ASSIST2009|DKT|36|695|0.273|0.091|
-|ASSIST2009|DKT+|1|21|0.384|0.139|
+|ASSIST2009|DKT|37|706|0.273|0.090|
+|ASSIST2009|DKT+|3|128|0.328|0.212|
 |ASSIST2009|DKVMN|1|49|6.288|5.146|
 |ASSIST2009|GKT|1|13|168.209|36.544|
 |ASSIST2009|GKT_MHA|1|21|175.622|61.598|
@@ -42,8 +42,8 @@ Saved cumulative training_seconds include training and validation through checkp
 |---|---|---|---|
 |LightSAKT_grid|0.20|0.71|4.24|
 |ablations|0.02|0.37|2.83|
-|baseline_tuning|102.32|670.33|3,268.57|
-|repeated_seeds|4.57|75.05|825.74|
+|baseline_tuning|102.33|670.59|3,269.17|
+|repeated_seeds|4.57|75.08|825.91|
 
 ## Longest forecast runs
 
