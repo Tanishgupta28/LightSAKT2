@@ -12,7 +12,9 @@ def summarize():
     rows=[]
     for path in sorted(Path('results/raw').glob('*/metrics.json')):
         result=json.load(open(path));config_path=path.parent/'config.json';config=json.load(open(config_path)) if config_path.exists() else {}
-        row={k:result.get(k) for k in ['run_id','dataset','model','group','seed','best_epoch','epochs_trained','training_seconds','parameters','checkpoint','checkpoint_sha256','split_sha256','git_commit','peak_allocated_bytes','peak_reserved_bytes']}
+        row={k:result.get(k) for k in ['run_id','dataset','model','group','seed','best_epoch','epochs_trained','training_seconds','parameters','checkpoint','checkpoint_sha256','split_sha256','git_commit','training_code_sha256','peak_allocated_bytes','peak_reserved_bytes','reused_training_run','independent_observation','prediction_path','prediction_sha256']}
+        row['fresh_training']=not bool(result.get('reused_training_run'))
+        row['additional_training_seconds']=result['training_seconds'] if row['fresh_training'] else 0.
         row.update(learning_rate=config.get('learning_rate'),**config.get('model_config',{}))
         row['variant']=config.get('scientific_variant',config.get('model_config',{}).get('variant','default'))
         row['equivalent_to']=config.get('equivalent_to')
@@ -22,6 +24,11 @@ def summarize():
     frame=pd.DataFrame(rows)
     Path('results/tables').mkdir(parents=True,exist_ok=True)
     frame.to_csv('results/tables/all_verified_runs.csv',index=False)
+    if not frame.empty:
+        budget=frame.groupby(['dataset','model','group']).agg(completed_slots=('run_id','count'),
+                  fresh_training_runs=('fresh_training','sum'),additional_training_seconds=('additional_training_seconds','sum'),
+                  largest_peak_allocated_bytes=('peak_allocated_bytes','max')).reset_index()
+        budget.to_csv('results/tables/computational_budgets.csv',index=False)
     stats=[json.load(open(f'reports/{d}_statistics.json')) for d in ['ASSIST2009','ASSIST2015','Algebra2005']]
     pd.DataFrame([{k:s[k] for k in ['dataset','raw_rows','clean_interactions','students','unique_skill_identifiers','num_q','raw_sha256','processed_sha256','split_sha256']} for s in stats]).to_csv('results/tables/Table_2.csv',index=False)
     manifest=json.load(open('experiments/manifest.json'))

@@ -18,9 +18,9 @@
 ## Executed tests
 
 ```
-Running 63 items in this shard
-...............................................................                                                                                      [100%]
-63 passed in 13.30s
+Running 67 items in this shard
+...................................................................                                                                                  [100%]
+67 passed in 13.83s
 ```
 
 Tests cover causality, the original leakage regression, dense float64 kernel/gradient equivalence, padding, all baseline forwards/backwards, batch independence, CPU/CUDA agreement, CUDA repeatability, data coverage/chronology, validation-only selection, heldout-label update independence, no evaluation updates, exact interruption/resume, checkpoints, undefined AUC, tuning budgets and regularization alias semantics.
@@ -45,7 +45,7 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 
 {
   "completed": 9,
-  "interrupted": 1,
+  "running": 1,
   "pending": 947
 }
 

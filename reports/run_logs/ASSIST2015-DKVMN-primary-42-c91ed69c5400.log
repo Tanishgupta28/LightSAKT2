@@ -55,3 +55,8 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py", line 116, in forward
     return F.linear(input, self.weight, self.bias)
 KeyboardInterrupt
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=30 validation_auc=0.729828 seconds=23.1
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=31 validation_auc=0.730295 seconds=22.4
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=32 validation_auc=0.729797 seconds=22.7
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=33 validation_auc=0.729986 seconds=22.3
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=34 validation_auc=0.729885 seconds=22.5
