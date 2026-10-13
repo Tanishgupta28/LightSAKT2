@@ -40,7 +40,7 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 
 {
   "completed": 4,
-  "interrupted": 1,
+  "running": 1,
   "pending": 952
 }
 

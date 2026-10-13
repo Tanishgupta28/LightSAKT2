@@ -2,7 +2,7 @@
 
 {
   "completed": 4,
-  "interrupted": 1,
+  "running": 1,
   "pending": 952
 }
 

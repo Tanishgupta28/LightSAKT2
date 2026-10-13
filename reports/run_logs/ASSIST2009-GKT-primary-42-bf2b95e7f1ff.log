@@ -16,3 +16,40 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py", line 767, in _engine_run_backward
     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
 KeyboardInterrupt
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/workspace/LightSAKT2/scripts/run.py", line 7, in <module>
+    args=parser.parse_args();run(json.load(open(args.config)))
+  File "/workspace/LightSAKT2/src/training/engine.py", line 110, in run
+    p,all_p=predict(model,config["model"],batch)
+  File "/workspace/LightSAKT2/src/models/factory.py", line 18, in predict
+    out = model(q, r, valid)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/LightSAKT2/src/models/gkt.py", line 65, in forward
+    ht = torch.where(keep[:, None, None], self.update(ht, ht_, qt, qt_onehot), ht)
+  File "/workspace/LightSAKT2/src/models/gkt.py", line 87, in update
+    m = qt_onehot * self.f_self(ht_) + (1 - qt_onehot) * self.f_neighbor(ht_, qt)
+  File "/workspace/LightSAKT2/src/models/gkt.py", line 110, in f_neighbor
+    outgo_part = Aij.unsqueeze(-1) * self.mlp_outgo(torch.cat([tgt.repeat(1, self.num_q, 1), src], dim=-1))
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/dropout.py", line 59, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/functional.py", line 1295, in dropout
+    return _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+KeyboardInterrupt
+ASSIST2009-GKT-primary-42-bf2b95e7f1ff epoch=3 validation_auc=0.741434 seconds=168.7

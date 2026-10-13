@@ -10,6 +10,10 @@
     "cuda"
   ],
   "compatible_training_source": true,
-  "status": "checkpoint verified; scheduler restart pending",
-  "archived_checkpoint": "backups/interruptions/GKT_epoch2.pt"
+  "status": "actual resume and clean shutdown verified; restarting continued schedule",
+  "archived_checkpoint": "backups/interruptions/GKT_epoch2.pt",
+  "shutdown_handler_deadlock_fixed": true,
+  "real_gpu_resume_loaded": true,
+  "clean_shutdown_verified": true,
+  "last_completed_epoch_after_resume_check": 2
 }

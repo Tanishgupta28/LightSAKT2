@@ -2,6 +2,7 @@
 import argparse
 import fcntl
 import json
+import os
 import signal
 import subprocess
 import time
@@ -59,10 +60,15 @@ def main():
     lock=open('experiments/scheduler.lock','w')
     try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     except BlockingIOError:raise SystemExit('A scheduler is already running')
-    child=None
+    child=None;shutdown_requested=0
     def interrupted(signum,frame):
-        if child and child.poll() is None:child.send_signal(signal.SIGINT);child.wait()
-        raise SystemExit(128+signum)
+        nonlocal shutdown_requested
+        shutdown_requested=signum
+        if child is not None:
+            # Never reenter Popen.wait from a signal handler: its wait lock is non-reentrant.
+            try:os.kill(child.pid,signal.SIGINT)
+            except ProcessLookupError:pass
+        else:raise SystemExit(128+signum)
     signal.signal(signal.SIGTERM,interrupted);signal.signal(signal.SIGINT,interrupted)
     subprocess.run(['python','-m','pytest','-q'],check=True)
     manifest=json.load(open('experiments/manifest.json'));completed=0
@@ -89,8 +95,10 @@ def main():
             with open(log,'a') as stream:
                 child=subprocess.Popen(cmd,stdout=stream,stderr=subprocess.STDOUT)
                 rc=child.wait();child=None
-            runnable['status']='completed' if rc==0 else 'failed';runnable['failure_reason']=None if rc==0 else f'Process exit {rc}; see {log}'
+            runnable['status']='interrupted' if shutdown_requested else 'completed' if rc==0 else 'failed'
+            runnable['failure_reason']=None if rc==0 else f'Process exit {rc}; see {log}'
             write_json('experiments/manifest.json',manifest);status(manifest)
+            if shutdown_requested:raise SystemExit(128+shutdown_requested)
             subprocess.run(['python','-m','scripts.summarize'],check=False)
             completed+=1
             print('Scheduler finished',runnable['run_id'],'status',runnable['status'],flush=True)

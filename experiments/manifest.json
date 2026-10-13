@@ -32,7 +32,10 @@
       "config": "configs/runs/ASSIST2009-GKT-primary-42-bf2b95e7f1ff.json",
       "run_id": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff",
       "phase": 5,
-      "status": "running"
+      "status": "running",
+      "last_completed_epoch": 2,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT-primary-42-bf2b95e7f1ff/config.json",
+      "failure_reason": "KeyboardInterrupt: "
     },
     {
       "config": "configs/runs/ASSIST2009-SAKT-primary-42-3c4dd6ec486d.json",
