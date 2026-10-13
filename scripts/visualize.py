@@ -62,16 +62,17 @@ def visualize(run_id):
             selection=(qry[0,:length].numpy()==skill);actual[i,selection]=target[0,:length].numpy()[selection]
         np.savez_compressed(f'experiments/case_studies/{prefix}_skill_probabilities.npz',probabilities=matrix,skills=np.array(observed),actual_next_response=actual)
         trajectory_rows=[{'history_index':t,'encoded_skill':skill,'skill_name':reverse[skill],
+                          'observed_interactions_in_chunk':t+1,
                           'predicted_correctness':float(matrix[i,t]),'actual_next_response':float(actual[i,t]) if np.isfinite(actual[i,t]) else None}
                          for i,skill in enumerate(observed) for t in range(length)]
         pd.DataFrame(trajectory_rows).to_csv(f'results/figures/Figure_11_{prefix}.csv',index=False)
         metadata.update(requested_original_skill_ids=requested,selected_encoded_skills={str(x):reverse[x] for x in observed},
                         skill_selection='up to five most frequent observed encoded categories in the selected heldout chunk, lexical category tie break; requested historical IDs audited separately')
-        plt.figure(figsize=(10,4));plt.imshow(matrix,aspect='auto',vmin=0,vmax=1,cmap='viridis');plt.yticks(range(len(observed)),[reverse[x][:45] for x in observed],fontsize=8);plt.xlabel('Observed interactions completed (chunk index)');plt.colorbar(label='Predicted next-response correctness');plt.title('LightSAKT conditional correctness — heldout ASSIST2009');save_figure('Figure_10_'+prefix)
+        plt.figure(figsize=(10,4));plt.imshow(matrix,aspect='auto',vmin=0,vmax=1,cmap='viridis',extent=[.5,length+.5,len(observed)-.5,-.5]);plt.yticks(range(len(observed)),[reverse[x][:45] for x in observed],fontsize=8);plt.xlabel('Observed interactions completed within chunk');plt.colorbar(label='Predicted next-response correctness');plt.title('LightSAKT conditional correctness — heldout ASSIST2009');save_figure('Figure_10_'+prefix)
         plt.figure(figsize=(10,4))
         for i,skill in enumerate(observed):
-            plt.plot(np.arange(length),matrix[i],label=reverse[skill][:40]);positions=np.flatnonzero(np.isfinite(actual[i]));plt.scatter(positions,actual[i,positions],s=12,alpha=.5)
-        plt.ylim(0,1);plt.xlabel('Observed interactions completed (chunk index)');plt.ylabel('Predicted correctness probability');plt.title('LightSAKT skill queries; dots = corresponding actual next responses');plt.legend(fontsize=7);save_figure('Figure_11_'+prefix)
+            plt.plot(np.arange(1,length+1),matrix[i],label=reverse[skill][:40]);positions=np.flatnonzero(np.isfinite(actual[i]));plt.scatter(positions+1,actual[i,positions],s=12,alpha=.5)
+        plt.ylim(0,1);plt.xlabel('Observed interactions completed within chunk');plt.ylabel('Predicted correctness probability');plt.title('LightSAKT skill queries; dots = corresponding actual next responses');plt.legend(fontsize=7);save_figure('Figure_11_'+prefix)
     write_json(f'experiments/case_studies/{prefix}_metadata.json',metadata)
 
 
