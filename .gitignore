@@ -16,3 +16,7 @@ original_snapshot/**/*.csv
 original_snapshot/**/*.pt
 results/predictions/
 *.egg-info/
+experiments/scheduler.pid
+experiments/scheduler.lock
+experiments/preservation.pid
+experiments/reporting.lock

@@ -1,0 +1,10 @@
+{
+  "run_id": "ASSIST2009-DKT-primary-42-26e196b6a6d5",
+  "status": "completed",
+  "last_completed_epoch": 14,
+  "config": "results/raw/ASSIST2009-DKT-primary-42-26e196b6a6d5/config.json",
+  "seed": 42,
+  "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKT-primary-42-26e196b6a6d5/config.json",
+  "best_checkpoint": "checkpoints/ASSIST2009-DKT-primary-42-26e196b6a6d5/best.pt",
+  "failure_reason": null
+}

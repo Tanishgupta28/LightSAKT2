@@ -1,4 +1,5 @@
 import csv
+import fcntl
 import json
 from pathlib import Path
 import numpy as np
@@ -13,6 +14,8 @@ def summarize():
         result=json.load(open(path));config_path=path.parent/'config.json';config=json.load(open(config_path)) if config_path.exists() else {}
         row={k:result.get(k) for k in ['run_id','dataset','model','group','seed','best_epoch','epochs_trained','training_seconds','parameters','checkpoint','checkpoint_sha256','split_sha256','git_commit','peak_allocated_bytes','peak_reserved_bytes']}
         row.update(learning_rate=config.get('learning_rate'),**config.get('model_config',{}))
+        row['variant']=config.get('scientific_variant',config.get('model_config',{}).get('variant','default'))
+        row['equivalent_to']=config.get('equivalent_to')
         for split in ['validation','test']:
             for metric in ['auc','accuracy','f1','mse','bce','n_targets']:row[f'{split}_{metric}']=(result.get(split) or {}).get(metric)
         rows.append(row)
@@ -48,6 +51,23 @@ def summarize():
             row[f'{metric}_ci95_halfwidth']=float(interval) if interval is not None else None
         summary.append(row)
     pd.DataFrame(summary).to_csv('results/tables/repeated_seed_summary.csv',index=False)
+    pd.DataFrame(summary).to_csv('results/tables/Table_7.csv',index=False)
+    ablation_summary=[]
+    ablations=frame[frame.group=='ablation']
+    for (dataset,variant),group in ablations.groupby(['dataset','variant']):
+        # Aliases retain their explicit scientific labels in all_verified_runs.
+        row={'dataset':dataset,'variant':variant,'completed_seeds':len(group),'required_seeds':5}
+        for metric in ['auc','accuracy','f1','mse','bce']:
+            values=group[f'test_{metric}'].dropna().to_numpy()
+            row[f'{metric}_mean']=float(values.mean()) if len(values) else None
+            row[f'{metric}_std']=float(values.std(ddof=1)) if len(values)>1 else None
+        ablation_summary.append(row)
+    for row in summary:
+        if row['model']=='LightSAKT':ablation_summary.append({**row,'variant':'default','evidence_reused_from':'final LightSAKT'})
+    pd.DataFrame(ablation_summary).to_csv('results/tables/Table_8.csv',index=False)
     write_json('results/summary/traceability.json',[{'run_id':r['run_id'],'source':f"results/raw/{r['run_id']}/metrics.json",'checkpoint':r['checkpoint'],'split_sha256':r['split_sha256'],'git_commit':r['git_commit']} for r in rows])
 
-if __name__=='__main__':summarize()
+if __name__=='__main__':
+    with open('experiments/reporting.lock','w') as lock:
+        fcntl.flock(lock,fcntl.LOCK_EX)
+        summarize()
