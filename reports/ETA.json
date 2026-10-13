@@ -1,22 +1,22 @@
 {
-  "updated_utc": "2026-10-13T20:15:33.625218+00:00",
+  "updated_utc": "2026-10-13T23:07:17.567919+00:00",
   "counts": {
-    "completed": 18,
+    "completed": 21,
     "running": 1,
-    "pending": 938
+    "pending": 935
   },
-  "remaining_slots": 939,
-  "mean_completed_run_seconds": 1885.133901891445,
+  "remaining_slots": 936,
+  "mean_completed_run_seconds": 2084.106660150142,
   "completed_duration_scope": "Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.",
   "remaining_training_gpu_reserved_hours": {
-    "low": 110.61994046307112,
-    "central": 671.6257407559897,
-    "high": 4574.601433725514
+    "low": 107.11453658212656,
+    "central": 746.4987824737086,
+    "high": 4101.527119300646
   },
   "conditional_training_finish_utc": {
-    "low": "2026-10-18T10:52:45.410885+00:00",
-    "central": "2026-11-10T19:53:06.291940+00:00",
-    "high": "2027-04-22T10:51:38.786630+00:00"
+    "low": "2026-10-18T10:14:09.899615+00:00",
+    "central": "2026-11-14T01:37:13.184824+00:00",
+    "high": "2027-04-02T20:38:55.197401+00:00"
   },
   "wall_clock_assumption": "One current MIG worker remains continuously available; no outages or new paid resources.",
   "interpretation": "GPU reserved wall hours from end-to-end measured epochs, not hardware GPU-active time. Scenario envelope, not a statistical confidence interval or guaranteed bound.",
@@ -36,11 +36,11 @@
       "model": "GKT_MHA",
       "action": "training",
       "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 22.0,
+      "central_expected_total_epochs": 30.666666666666668,
       "reference_runs": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6",
       "dataset_model_timing_measured": true,
       "low_hours": 1.055321412418767,
-      "central_hours": 8.270357983013591,
+      "central_hours": 11.521874767439927,
       "high_hours": 40.029802922136014
     },
     {
@@ -50,11 +50,11 @@
       "model": "GKT_MHA",
       "action": "training",
       "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 22.0,
+      "central_expected_total_epochs": 30.666666666666668,
       "reference_runs": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6",
       "dataset_model_timing_measured": true,
       "low_hours": 1.055321412418767,
-      "central_hours": 8.270357983013591,
+      "central_hours": 11.521874767439927,
       "high_hours": 40.029802922136014
     },
     {
@@ -64,11 +64,11 @@
       "model": "GKT_MHA",
       "action": "training",
       "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 22.0,
+      "central_expected_total_epochs": 30.666666666666668,
       "reference_runs": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6",
       "dataset_model_timing_measured": true,
       "low_hours": 1.055321412418767,
-      "central_hours": 8.270357983013591,
+      "central_hours": 11.521874767439927,
       "high_hours": 40.029802922136014
     },
     {
@@ -78,11 +78,11 @@
       "model": "GKT_MHA",
       "action": "training",
       "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 22.0,
+      "central_expected_total_epochs": 30.666666666666668,
       "reference_runs": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6",
       "dataset_model_timing_measured": true,
       "low_hours": 1.055321412418767,
-      "central_hours": 8.266326611590534,
+      "central_hours": 11.516258449890806,
       "high_hours": 39.990795562397
     },
     {
@@ -92,11 +92,11 @@
       "model": "GKT_MHA",
       "action": "training",
       "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 22.0,
+      "central_expected_total_epochs": 30.666666666666668,
       "reference_runs": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6",
       "dataset_model_timing_measured": true,
       "low_hours": 1.055321412418767,
-      "central_hours": 8.266326611590534,
+      "central_hours": 11.516258449890806,
       "high_hours": 39.990795562397
     },
     {
@@ -106,11 +106,11 @@
       "model": "GKT_MHA",
       "action": "training",
       "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 22.0,
+      "central_expected_total_epochs": 30.666666666666668,
       "reference_runs": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6",
       "dataset_model_timing_measured": true,
       "low_hours": 1.055321412418767,
-      "central_hours": 8.266326611590534,
+      "central_hours": 11.516258449890806,
       "high_hours": 39.990795562397
     },
     {
@@ -120,11 +120,11 @@
       "model": "GKT_MHA",
       "action": "training",
       "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 22.0,
+      "central_expected_total_epochs": 30.666666666666668,
       "reference_runs": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6",
       "dataset_model_timing_measured": true,
       "low_hours": 1.055321412418767,
-      "central_hours": 8.264310188432933,
+      "central_hours": 11.513449263740975,
       "high_hours": 39.97129188105552
     },
     {
@@ -134,11 +134,11 @@
       "model": "GKT_MHA",
       "action": "training",
       "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 22.0,
+      "central_expected_total_epochs": 30.666666666666668,
       "reference_runs": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6",
       "dataset_model_timing_measured": true,
       "low_hours": 1.055321412418767,
-      "central_hours": 8.264310188432933,
+      "central_hours": 11.513449263740975,
       "high_hours": 39.97129188105552
     },
     {
@@ -148,11 +148,11 @@
       "model": "GKT_MHA",
       "action": "training",
       "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 22.0,
+      "central_expected_total_epochs": 30.666666666666668,
       "reference_runs": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6",
       "dataset_model_timing_measured": true,
       "low_hours": 1.055321412418767,
-      "central_hours": 8.264310188432933,
+      "central_hours": 11.513449263740975,
       "high_hours": 39.97129188105552
     },
     {
@@ -162,11 +162,11 @@
       "model": "GKT_MHA",
       "action": "training",
       "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 22.0,
+      "central_expected_total_epochs": 30.666666666666668,
       "reference_runs": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6",
       "dataset_model_timing_measured": true,
       "low_hours": 1.055321412418767,
-      "central_hours": 8.263301792335174,
+      "central_hours": 11.512044413602899,
       "high_hours": 39.961540040016494
     },
     {
@@ -176,11 +176,11 @@
       "model": "GKT_MHA",
       "action": "training",
       "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 22.0,
+      "central_expected_total_epochs": 30.666666666666668,
       "reference_runs": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6",
       "dataset_model_timing_measured": true,
       "low_hours": 1.055321412418767,
-      "central_hours": 8.263301792335174,
+      "central_hours": 11.512044413602899,
       "high_hours": 39.961540040016494
     },
     {
@@ -190,11 +190,11 @@
       "model": "GKT_MHA",
       "action": "training",
       "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 22.0,
+      "central_expected_total_epochs": 30.666666666666668,
       "reference_runs": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6",
       "dataset_model_timing_measured": true,
       "low_hours": 1.055321412418767,
-      "central_hours": 8.263301792335174,
+      "central_hours": 11.512044413602899,
       "high_hours": 39.961540040016494
     }
   ],

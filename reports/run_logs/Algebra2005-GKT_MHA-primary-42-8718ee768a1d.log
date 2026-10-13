@@ -1,0 +1,64 @@
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=1 validation_auc=0.743658 seconds=212.3
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=2 validation_auc=0.770480 seconds=214.5
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/workspace/LightSAKT2/scripts/run.py", line 9, in <module>
+    if not reuse_if_available(config):run(config)
+  File "/workspace/LightSAKT2/src/training/engine.py", line 113, in run
+    loss.backward()
+  File "/usr/local/lib/python3.10/dist-packages/torch/_tensor.py", line 523, in backward
+    torch.autograd.backward(
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py", line 767, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=3 validation_auc=0.783354 seconds=207.8
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=4 validation_auc=0.790663 seconds=207.1
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=5 validation_auc=0.796086 seconds=207.0
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=6 validation_auc=0.799350 seconds=208.0
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=7 validation_auc=0.801686 seconds=207.6
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=8 validation_auc=0.803779 seconds=208.0
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=9 validation_auc=0.806088 seconds=209.1
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=10 validation_auc=0.806586 seconds=204.3
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=11 validation_auc=0.807789 seconds=204.8
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=12 validation_auc=0.809137 seconds=205.9
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=13 validation_auc=0.810232 seconds=204.6
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=14 validation_auc=0.809570 seconds=203.6
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=15 validation_auc=0.811029 seconds=204.1
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=16 validation_auc=0.811849 seconds=203.5
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=17 validation_auc=0.811475 seconds=203.9
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=18 validation_auc=0.812373 seconds=203.9
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=19 validation_auc=0.812534 seconds=204.8
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=20 validation_auc=0.812402 seconds=202.3
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=21 validation_auc=0.812808 seconds=202.6
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=22 validation_auc=0.813372 seconds=202.1
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=23 validation_auc=0.813660 seconds=202.1
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=24 validation_auc=0.813150 seconds=202.0
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=25 validation_auc=0.813901 seconds=202.3
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=26 validation_auc=0.814640 seconds=202.7
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=27 validation_auc=0.813990 seconds=203.1
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=28 validation_auc=0.815281 seconds=203.6
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=29 validation_auc=0.815530 seconds=202.9
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=30 validation_auc=0.815868 seconds=202.6
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=31 validation_auc=0.815420 seconds=203.3
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=32 validation_auc=0.815504 seconds=203.4
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=33 validation_auc=0.815780 seconds=203.2
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=34 validation_auc=0.816048 seconds=203.5
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=35 validation_auc=0.816409 seconds=204.1
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=36 validation_auc=0.816140 seconds=202.0
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=37 validation_auc=0.816624 seconds=202.4
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=38 validation_auc=0.816948 seconds=202.0
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=39 validation_auc=0.817224 seconds=202.6
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=40 validation_auc=0.816914 seconds=202.3
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=41 validation_auc=0.817238 seconds=201.6
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=42 validation_auc=0.816643 seconds=201.6
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=43 validation_auc=0.817553 seconds=201.4
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=44 validation_auc=0.815715 seconds=201.7
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=45 validation_auc=0.816455 seconds=201.8
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=46 validation_auc=0.816638 seconds=201.5
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=47 validation_auc=0.816689 seconds=201.7
+Algebra2005-GKT_MHA-primary-42-8718ee768a1d epoch=48 validation_auc=0.816586 seconds=201.3

@@ -185,13 +185,16 @@
       "config": "configs/runs/Algebra2005-GKT_MHA-primary-42-8718ee768a1d.json",
       "run_id": "Algebra2005-GKT_MHA-primary-42-8718ee768a1d",
       "phase": 5,
-      "status": "running"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 48,
+      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-GKT_MHA-primary-42-8718ee768a1d/config.json"
     },
     {
       "config": "configs/runs/ASSIST2009-DKT-baseline_tuning-42-fcf4cdf340d2.json",
       "run_id": "ASSIST2009-DKT-baseline_tuning-42-fcf4cdf340d2",
       "phase": 6,
-      "status": "pending"
+      "status": "running"
     },
     {
       "config": "configs/runs/ASSIST2009-DKT-baseline_tuning-42-d18331e9e1ae.json",

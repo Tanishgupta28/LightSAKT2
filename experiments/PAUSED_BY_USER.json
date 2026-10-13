@@ -1,0 +1,30 @@
+{
+  "requested_utc": "2026-10-13T20:26:24.527275+00:00",
+  "reason": "Explicit user request to pause research execution",
+  "automatic_resume_authorized": true,
+  "scheduler_pid": 32646,
+  "child_pids": [
+    75014
+  ],
+  "status": "resumed",
+  "resume_policy": "Resume only after a new explicit user request; use existing checkpoints and skip completed runs.",
+  "scheduler_alive": false,
+  "children_alive": [],
+  "verified_utc": "2026-10-13T20:26:26.131268+00:00",
+  "interrupted_runs": [
+    {
+      "run_id": "Algebra2005-GKT_MHA-primary-42-8718ee768a1d",
+      "last_completed_epoch": 2,
+      "best_checkpoint": "checkpoints/Algebra2005-GKT_MHA-primary-42-8718ee768a1d/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-GKT_MHA-primary-42-8718ee768a1d/config.json"
+    }
+  ],
+  "resume_requested_utc": "2026-10-13T20:30:11.265130+00:00",
+  "resume_reason": "Explicit user request: restart it again",
+  "resumed_scheduler_pid": 78472,
+  "resume_verified_utc": "2026-10-13T20:31:32.190091+00:00",
+  "resumed_training_pid": 78865,
+  "resumed_from_checkpoint_epoch": 2,
+  "resumed_test_gate_passed": true,
+  "observed_training_cpu_seconds_advanced": 1.0
+}

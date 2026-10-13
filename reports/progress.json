@@ -1,16 +1,15 @@
 {
-  "updated_utc": "2026-10-13T20:16:31.655073+00:00",
+  "updated_utc": "2026-10-13T23:07:32.331764+00:00",
   "total_slots": 957,
-  "completed": 20,
-  "remaining": 937,
+  "completed": 22,
+  "remaining": 935,
   "counts": {
-    "completed": 20,
-    "running": 1,
-    "pending": 936
+    "completed": 22,
+    "pending": 935
   },
   "processes": {
     "scheduler": {
-      "pid": 32646,
+      "pid": 78472,
       "alive": true
     },
     "preservation": {
@@ -26,21 +25,14 @@
       "alive": true
     }
   },
-  "running_jobs": [
-    {
-      "run_id": "Algebra2005-GKT_MHA-primary-42-8718ee768a1d",
-      "last_completed_epoch": 0,
-      "best_checkpoint": "checkpoints/Algebra2005-GKT_MHA-primary-42-8718ee768a1d/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-GKT_MHA-primary-42-8718ee768a1d/config.json"
-    }
-  ],
+  "running_jobs": [],
   "phase_counts": {
     "5": {
-      "completed": 20,
-      "running": 1
+      "completed": 21
     },
     "6": {
-      "pending": 756
+      "completed": 1,
+      "pending": 755
     },
     "7": {
       "pending": 105

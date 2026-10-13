@@ -1,12 +1,12 @@
 # Measured runtime estimate
 
-Updated UTC: 2026-10-13T20:15:33.625218+00:00
+Updated UTC: 2026-10-13T23:07:17.567919+00:00
 
-Remaining training: **671.6 GPU reserved hours**; scenario range **110.6–4,574.6 hours**. Serial wall time: 28.0 days; continuous-availability training finish 2026-11-10T19:53:06.291940+00:00.
+Remaining training: **746.5 GPU reserved hours**; scenario range **107.1–4,101.5 hours**. Serial wall time: 31.1 days; continuous-availability training finish 2026-11-14T01:37:13.184824+00:00.
 
 This is a provisional measured-reference extrapolation, not a validated confidence interval. Hardware-active GPU utilization is unavailable. Epochs include training and validation, and reserved hours include their CPU work. Unmeasured final benchmarking and artifact verification add time beyond this training-only date.
 
-Overall mean completed-run duration: 31.42 minutes, over 18 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
+Overall mean completed-run duration: 34.74 minutes, over 21 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
 
 Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.
 
@@ -32,30 +32,29 @@ Saved cumulative training_seconds include training and validation through checkp
 |Algebra2005|DKT+|1|33|0.322|0.185|
 |Algebra2005|DKVMN|1|50|7.359|6.148|
 |Algebra2005|GKT|1|16|200.815|53.731|
-|Algebra2005|GKT_MHA|0|0|not measured|not measured|
-|Algebra2005|SAKT|0|18|0.307|not measured|
-|Algebra2005|LightSAKT|0|0|not measured|not measured|
+|Algebra2005|GKT_MHA|1|48|204.052|163.480|
+|Algebra2005|SAKT|1|31|0.293|0.164|
+|Algebra2005|LightSAKT|1|22|0.674|0.253|
 
 ## Remaining phases
 
 |Phase|Low hours|Central hours|High hours|
 |---|---|---|---|
-|LightSAKT_grid|0.22|0.58|4.52|
-|ablations|0.02|0.30|2.73|
-|baseline_tuning|104.74|601.23|3,635.71|
-|primary|0.35|2.15|8.24|
-|repeated_seeds|5.30|67.36|923.40|
+|LightSAKT_grid|0.20|0.71|4.24|
+|ablations|0.02|0.37|2.83|
+|baseline_tuning|102.33|670.36|3,268.72|
+|repeated_seeds|4.57|75.05|825.74|
 
 ## Longest forecast runs
 
 |Run|Reference|Central hours|Scenario hours|
 |---|---|---|---|
-|ASSIST2015-GKT_MHA-baseline_tuning-42-55ef256295ef|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|8.27|1.06–40.03|
-|ASSIST2015-GKT_MHA-baseline_tuning-42-40031d9f8cb4|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|8.27|1.06–40.03|
-|ASSIST2015-GKT_MHA-baseline_tuning-42-333c8f50dc55|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|8.27|1.06–40.03|
-|ASSIST2015-GKT_MHA-baseline_tuning-42-ebf0bd893198|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|8.27|1.06–39.99|
-|ASSIST2015-GKT_MHA-baseline_tuning-42-5d49bd1029f9|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|8.27|1.06–39.99|
-|ASSIST2015-GKT_MHA-baseline_tuning-42-6e76f8e10a56|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|8.27|1.06–39.99|
+|ASSIST2015-GKT_MHA-baseline_tuning-42-55ef256295ef|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|11.52|1.06–40.03|
+|ASSIST2015-GKT_MHA-baseline_tuning-42-40031d9f8cb4|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|11.52|1.06–40.03|
+|ASSIST2015-GKT_MHA-baseline_tuning-42-333c8f50dc55|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|11.52|1.06–40.03|
+|ASSIST2015-GKT_MHA-baseline_tuning-42-ebf0bd893198|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|11.52|1.06–39.99|
+|ASSIST2015-GKT_MHA-baseline_tuning-42-5d49bd1029f9|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|11.52|1.06–39.99|
+|ASSIST2015-GKT_MHA-baseline_tuning-42-6e76f8e10a56|ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6|11.52|1.06–39.99|
 
 ## Dependent analysis duration
 
