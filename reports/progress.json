@@ -1,12 +1,12 @@
 {
-  "updated_utc": "2026-10-13T23:14:16.952631+00:00",
+  "updated_utc": "2026-10-13T23:14:57.556209+00:00",
   "total_slots": 957,
-  "completed": 55,
-  "remaining": 902,
+  "completed": 58,
+  "remaining": 899,
   "counts": {
-    "completed": 55,
+    "completed": 58,
     "running": 1,
-    "pending": 901
+    "pending": 898
   },
   "processes": {
     "scheduler": {
@@ -28,7 +28,7 @@
   },
   "running_jobs": [
     {
-      "run_id": "ASSIST2009-DKT-baseline_tuning-42-7172ac284808",
+      "run_id": "ASSIST2009-DKTplus-baseline_tuning-42-bd671f6a5624",
       "last_completed_epoch": null,
       "best_checkpoint": null,
       "resume_command": null
@@ -39,9 +39,9 @@
       "completed": 21
     },
     "6": {
-      "completed": 34,
+      "completed": 37,
       "running": 1,
-      "pending": 721
+      "pending": 718
     },
     "7": {
       "pending": 105
