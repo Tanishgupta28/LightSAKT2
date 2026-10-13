@@ -11,14 +11,17 @@ from src.training.engine import evaluate,write_json
 from src.training.reproducibility import seed_everything
 
 
-def verify_stored_result(path):
+def verify_stored_result(path, data_verified=None):
     """Verify immutable saved evidence without allocating GPU memory."""
     path=Path(path);result=json.load(open(path));config=json.load(open(path.parent/'config.json'))
     assert sha256(result['checkpoint'])==result['checkpoint_sha256'], f'Checkpoint checksum: {path}'
     stats=json.load(open(f"reports/{result['dataset']}_statistics.json"))
     assert stats['processed_sha256']==result['processed_sha256'] and stats['split_sha256']==result['split_sha256']
-    assert sha256(f"data/processed/{result['dataset']}/interactions.csv")==result['processed_sha256']
-    assert sha256(f"data/splits/{result['dataset']}.json")==result['split_sha256']
+    identity=(result['dataset'],result['processed_sha256'],result['split_sha256'])
+    if data_verified is None or identity not in data_verified:
+        assert sha256(f"data/processed/{result['dataset']}/interactions.csv")==result['processed_sha256']
+        assert sha256(f"data/splits/{result['dataset']}.json")==result['split_sha256']
+        if data_verified is not None:data_verified.add(identity)
     if result.get('prediction_path'):
         assert sha256(result['prediction_path'])==result['prediction_sha256']
         with np.load(result['prediction_path']) as arrays:
@@ -28,9 +31,9 @@ def verify_stored_result(path):
 
 
 def main(stored_only=False):
-    verified=[]
+    verified=[];data_verified=set()
     for path in sorted(Path('results/raw').glob('*/metrics.json')):
-        result,config,stats=verify_stored_result(path)
+        result,config,stats=verify_stored_result(path,data_verified)
         if stored_only:
             verified.append({'run_id':result['run_id'],'checkpoint':result['checkpoint'],'checksum_verified':True,
                              'validation_recomputed':False,'test_prediction_metrics_recomputed':bool(result.get('prediction_path'))})

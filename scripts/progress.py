@@ -1,5 +1,6 @@
 """Read-only progress accounting; never mutate the scheduler's job ledger."""
 import json
+import os
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
@@ -34,7 +35,7 @@ def snapshot(root=Path('.')):
         'phase_counts': {str(p): dict(Counter(j['status'] for j in jobs if j['phase'] == p)) for p in [5, 6, 7, 8]},
         'reused_slots': sum(j['phase'] == 7 and j['seed'] == 42 or j.get('variant') == 'no_regularization' for j in jobs),
         'all_training_slots_completed': completed == len(jobs),
-        'research_verified_complete': (root / 'reports/research_verification.json').exists() and
+        'research_verified_complete': completed==len(jobs) and (root / 'reports/research_verification.json').exists() and
             json.loads((root / 'reports/research_verification.json').read_text()).get('verified', False),
     }
 
@@ -43,7 +44,7 @@ def write_progress(root=Path('.')):
     root = Path(root); progress = snapshot(root)
     path = root / 'reports/progress.json'
     # A single preservation worker refreshes this heartbeat; it does not own the manifest.
-    path.write_text(json.dumps(progress, indent=2) + '\n')
+    tmp=path.with_suffix(f'.{os.getpid()}.tmp');tmp.write_text(json.dumps(progress, indent=2) + '\n');tmp.replace(path)
     text = '# Experiment status\n\n'
     text += f"Updated UTC: {progress['updated_utc']}\n\n"
     text += f"Completed: **{progress['completed']}**. Remaining: **{progress['remaining']}**. Total schedule slots: {progress['total_slots']}.\n\n"
@@ -55,7 +56,7 @@ def write_progress(root=Path('.')):
     text += f"The {progress['reused_slots']} reuse/alias slots are not independent new training experiments. Default ablation reuses final LightSAKT evidence. The separate smoke run is excluded from schedule counts.\n\n"
     text += 'The 108 LightSAKT grid configurations, equal baseline tuning budgets, and five matched final seeds use the frozen student splits. See experiments/manifest.json and per-run status files.\n\n'
     text += 'Research completion requires every scheduled slot and all dependent analyses, plots, checkpoints, and traceability checks to pass. Raw-data provenance limitations and the historical simplified GKT label remain disclosed.\n'
-    (root / 'reports/EXPERIMENT_STATUS.md').write_text(text)
+    path=root / 'reports/EXPERIMENT_STATUS.md';tmp=path.with_suffix(f'.{os.getpid()}.tmp');tmp.write_text(text);tmp.replace(path)
     return progress
 
 

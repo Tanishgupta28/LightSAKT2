@@ -6,6 +6,7 @@ import os
 import signal
 import subprocess
 import time
+from datetime import datetime,timezone
 from pathlib import Path
 from src.training.engine import write_json
 from scripts.make_schedule import config, write_config
@@ -70,7 +71,13 @@ def main():
             except ProcessLookupError:pass
         else:raise SystemExit(128+signum)
     signal.signal(signal.SIGTERM,interrupted);signal.signal(signal.SIGINT,interrupted)
-    subprocess.run(['python','-m','pytest','-q'],check=True)
+    test_log=Path('reports/test_runs')/(datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S')+f'-{os.getpid()}.log')
+    test_log.parent.mkdir(parents=True,exist_ok=True)
+    with open(test_log,'w') as stream:
+        rc=subprocess.run(['python','-m','pytest','-q'],stdout=stream,stderr=subprocess.STDOUT).returncode
+    write_json('reports/latest_test_run.json',{'log':str(test_log),'tests_passed':rc==0,'exit_code':rc})
+    print(test_log.read_text(),flush=True)
+    if rc:raise SystemExit(f'Correctness gate failed: {test_log}; training was not started.')
     manifest=json.load(open('experiments/manifest.json'));completed=0
     status(manifest)
     for job in manifest['jobs']:
@@ -104,13 +111,8 @@ def main():
             print('Scheduler finished',runnable['run_id'],'status',runnable['status'],flush=True)
             if args.max_jobs and completed>=args.max_jobs:return
     status(manifest)
-    subprocess.run(['python','-m','scripts.analyze'],check=False)
-    for dataset in ['ASSIST2009','Algebra2005']:
-        jobs=[j for j in manifest['jobs'] if j['phase']==7 and j['dataset']==dataset and j['model']=='LightSAKT' and j['seed']==42 and j['status']=='completed']
-        if jobs:subprocess.run(['python','-m','scripts.visualize','--run-id',jobs[0]['run_id']],check=False)
-    subprocess.run(['python','-m','scripts.benchmark'],check=False)
-    subprocess.run(['python','-m','pytest','-q'],check=True)
-    subprocess.run(['python','-m','scripts.verify_artifacts'],check=True)
-    subprocess.run(['python','-m','scripts.preserve'],check=True)
+    command=['python','-m','scripts.finalize']
+    if args.retry_failed:command.append('--retry-failed')
+    subprocess.run(command,check=True)
 
 if __name__=='__main__':main()

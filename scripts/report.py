@@ -11,8 +11,10 @@ def main():
     for path in Path('results/raw').glob('*/metrics.json'):
         result=json.load(open(path));metrics.append(result)
     primary=[r for r in metrics if r['group']=='primary'];smoke=[r for r in metrics if r['group']=='smoke']
+    completion=('**All scheduled experiments and final output checks have passed.** The dataset provenance and historical simplified GKT limitations below still apply.' if progress['research_verified_complete'] else
+                '**The complete research rebuild is not yet finished.** This report distinguishes executed work from queued work. Historical manuscript values are not used as new results.')
     lines=['# LightSAKT2 research rebuild — verified progress report','',
-           '**The complete research rebuild is not yet finished.** This report distinguishes executed work from queued work. Historical manuscript values are not used as new results.','',
+           completion,'',
            '## Completed implementation and verification','',
            '* Verified root `/workspace/LightSAKT2`; all development and new artifacts are inside it.',
            '* Preserved 1,613 inventoried original files with matching byte sizes, SHA256 manifests, and a readable archival copy. Original Drive files were never modified. Read-only local artifact copies have explicitly limited provenance.',
@@ -26,6 +28,12 @@ def main():
            '* Implemented programmatic tables, paired Wilcoxon/Holm analysis, controlled efficiency benchmarks, true kernel heatmaps, and heldout skill-probability case studies. Implementation does not mean those dependent analyses have executed.','',
            '## Executed tests','']
     test=Path('reports/tests_final.log')
+    latest=Path('reports/latest_test_run.json')
+    if latest.exists():test=Path(json.load(open(latest))['log'])
+    analyses=Path('experiments/analyses.json')
+    if analyses.exists():
+        task=json.load(open(analyses))['tasks'].get('full_tests',{})
+        if task.get('status')=='completed':test=Path(task['log'])
     if test.exists():lines+=['```',test.read_text().strip(),'```','']
     lines+=['Tests cover causality, the original leakage regression, dense float64 kernel/gradient equivalence, padding, all baseline forwards/backwards, batch independence, CPU/CUDA agreement, CUDA repeatability, data coverage/chronology, validation-only selection, heldout-label update independence, no evaluation updates, exact interruption/resume, checkpoints, undefined AUC, tuning budgets and regularization alias semantics.','',
             '## Genuine completed primary training results','',

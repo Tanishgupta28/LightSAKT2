@@ -15,9 +15,14 @@ from scripts.verify_artifacts import verify_stored_result
 def archive_completed():
     """Back up each unique completed training once; aliases reuse its archive."""
     archives=Path('backups/completed_runs');archives.mkdir(parents=True,exist_ok=True)
-    references=[]
+    index=Path('reports/completed_run_backups.json')
+    previous={r['run_id']:r for r in json.load(open(index))} if index.exists() else {}
+    references=[];data_verified=set()
     for path in sorted(Path('results/raw').glob('*/metrics.json')):
-        result,_,_=verify_stored_result(path)
+        digest=sha256(path);old=previous.get(path.parent.name)
+        if old and old.get('metrics_sha256')==digest and Path(old['path']).exists():
+            references.append(old);continue
+        result,_,_=verify_stored_result(path,data_verified)
         source=result.get('reused_training_run',result['run_id'])
         archive=archives/(source+'.tar.gz');record=archives/(source+'.json')
         if not archive.exists() or not record.exists():
@@ -40,7 +45,7 @@ def archive_completed():
                         assert h.hexdigest()==sha256(member.name), f'Backup content mismatch: {member.name}'
             tmp.replace(archive)
             write_json(record,{'source_run_id':source,'path':str(archive),'sha256':sha256(archive),'verified_contents':True})
-        references.append({'run_id':result['run_id'],**json.load(open(record))})
+        references.append({'run_id':result['run_id'],'metrics_sha256':digest,**json.load(open(record))})
     write_json('reports/completed_run_backups.json',references)
 
 

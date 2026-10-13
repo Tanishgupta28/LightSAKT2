@@ -64,7 +64,14 @@ def summarize():
         ablation_summary.append(row)
     for row in summary:
         if row['model']=='LightSAKT':ablation_summary.append({**row,'variant':'default','evidence_reused_from':'final LightSAKT'})
+    for row in ablation_summary:
+        default=next((r for r in summary if r['dataset']==row['dataset'] and r['model']=='LightSAKT'),None)
+        row['equivalent_to']='no_dropout' if row['variant']=='no_regularization' else None
+        for metric in ['auc','accuracy','f1','mse','bce']:
+            base=default.get(f'{metric}_mean') if default else None;value=row.get(f'{metric}_mean')
+            row[f'{metric}_relative_change']=(value-base)/base if base and value is not None else None
     pd.DataFrame(ablation_summary).to_csv('results/tables/Table_8.csv',index=False)
+    pd.json_normalize(stats).to_csv('results/tables/dataset_preprocessing_audit.csv',index=False)
     write_json('results/summary/traceability.json',[{'run_id':r['run_id'],'source':f"results/raw/{r['run_id']}/metrics.json",'checkpoint':r['checkpoint'],'split_sha256':r['split_sha256'],'git_commit':r['git_commit']} for r in rows])
 
 if __name__=='__main__':

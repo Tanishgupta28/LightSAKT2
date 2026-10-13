@@ -86,7 +86,10 @@
       "config": "configs/runs/ASSIST2015-DKVMN-primary-42-c91ed69c5400.json",
       "run_id": "ASSIST2015-DKVMN-primary-42-c91ed69c5400",
       "phase": 5,
-      "status": "running"
+      "status": "interrupted",
+      "failure_reason": "KeyboardInterrupt: ",
+      "last_completed_epoch": 29,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-DKVMN-primary-42-c91ed69c5400/config.json"
     },
     {
       "config": "configs/runs/ASSIST2015-GKT-primary-42-c3a67383f961.json",

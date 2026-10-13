@@ -1,22 +1,20 @@
 # Experiment status
 
-Updated UTC: 2026-10-13T12:31:55.230008+00:00
+Updated UTC: 2026-10-13T12:42:48.326093+00:00
 
 Completed: **9**. Remaining: **948**. Total schedule slots: 957.
 
 ```json
 {
   "completed": 9,
-  "running": 1,
+  "interrupted": 1,
   "pending": 947
 }
 ```
 
-Scheduler process: running (PID 25426).
+Scheduler process: running (PID 32646).
 
-Preservation process: running (PID 31281).
-
-Current run: `ASSIST2015-DKVMN-primary-42-c91ed69c5400`; last completed epoch: 3.
+Preservation process: running (PID 32647).
 
 The 36 reuse/alias slots are not independent new training experiments. Default ablation reuses final LightSAKT evidence. The separate smoke run is excluded from schedule counts.
 

@@ -1,3 +1,57 @@
 ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=1 validation_auc=0.694995 seconds=25.6
 ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=2 validation_auc=0.704990 seconds=24.3
 ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=3 validation_auc=0.709966 seconds=24.4
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=4 validation_auc=0.712729 seconds=25.2
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=5 validation_auc=0.715697 seconds=23.9
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=6 validation_auc=0.716761 seconds=24.3
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=7 validation_auc=0.718785 seconds=24.1
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=8 validation_auc=0.719758 seconds=24.1
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=9 validation_auc=0.721251 seconds=24.4
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=10 validation_auc=0.723723 seconds=24.0
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=11 validation_auc=0.723569 seconds=23.9
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=12 validation_auc=0.724322 seconds=24.1
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=13 validation_auc=0.725924 seconds=24.0
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=14 validation_auc=0.726119 seconds=24.1
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=15 validation_auc=0.727230 seconds=24.2
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=16 validation_auc=0.726307 seconds=24.1
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=17 validation_auc=0.728024 seconds=24.0
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=18 validation_auc=0.728214 seconds=24.1
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=19 validation_auc=0.728586 seconds=24.1
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=20 validation_auc=0.728091 seconds=24.0
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=21 validation_auc=0.728500 seconds=24.3
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=22 validation_auc=0.728721 seconds=24.2
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=23 validation_auc=0.728551 seconds=24.2
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=24 validation_auc=0.728776 seconds=24.2
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=25 validation_auc=0.728939 seconds=24.1
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=26 validation_auc=0.728744 seconds=24.1
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=27 validation_auc=0.728905 seconds=24.4
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=28 validation_auc=0.728868 seconds=24.6
+ASSIST2015-DKVMN-primary-42-c91ed69c5400 epoch=29 validation_auc=0.729114 seconds=24.3
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/workspace/LightSAKT2/scripts/run.py", line 7, in <module>
+    args=parser.parse_args();run(json.load(open(args.config)))
+  File "/workspace/LightSAKT2/src/training/engine.py", line 117, in run
+    validation_metrics,_,_=evaluate(model,config["model"],validation,device)
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/workspace/LightSAKT2/src/training/engine.py", line 44, in evaluate
+    p,_=predict(model,name,batch);valid=batch[-1]
+  File "/workspace/LightSAKT2/src/models/factory.py", line 21, in predict
+    return model(q, r, qry, valid)[0], None
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/LightSAKT2/src/models/dkvmn.py", line 50, in forward
+    predictions.append(torch.sigmoid(self.p_layer(f)).squeeze(-1))
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt

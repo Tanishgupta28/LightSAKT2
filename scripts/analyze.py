@@ -7,6 +7,7 @@ from scipy.stats import rankdata, t
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+from sklearn.metrics import roc_curve
 from scripts.summarize import summarize
 
 
@@ -74,8 +75,9 @@ def main():
             plt.plot([x['epoch'] for x in h],[x['validation']['auc'] for x in h],label=label)
             for x in h:curve_rows.append({'run_id':row.run_id,'model':row.model,'epoch':x['epoch'],'validation_auc':x['validation']['auc'],'train_objective':x['train_objective'],'validation_accuracy':x['validation']['accuracy']})
         plt.xlabel('Epoch');plt.ylabel('Validation AUC');plt.title(dataset+' — completed primary runs, seed 42');plt.legend(fontsize=7);plt.grid(alpha=.2)
-        save_figure(f'Figure_{fig}_partial')
-        pd.DataFrame(curve_rows).to_csv(f'results/figures/Figure_{fig}_partial.csv',index=False)
+        figure_name=f'Figure_{fig}' if data.model.nunique()==7 else f'Figure_{fig}_partial'
+        save_figure(figure_name)
+        pd.DataFrame(curve_rows).to_csv(f'results/figures/{figure_name}.csv',index=False)
         for metric in ['train_objective','validation_accuracy']:
             plt.figure(figsize=(7,4));curves=pd.DataFrame(curve_rows)
             for model,data in curves.groupby('model'):plt.plot(data.epoch,data[metric],label=model)
@@ -87,7 +89,7 @@ def main():
             summary.to_csv(f'results/figures/{metric}_seed_summary.csv',index=False)
             for dataset,data in summary.groupby('dataset'):
                 plt.figure(figsize=(8,4));plt.bar(data.model,data['mean'],yerr=data['std'].fillna(0));plt.ylabel('Test '+metric.upper());plt.xticks(rotation=30);plt.title(dataset+' — completed seeds; counts in CSV');save_figure(dataset+'_'+metric+'_repeated')
-    for dataset,data in frame[frame.group=='grid'].groupby('dataset'):
+    for dataset,data in frame[(frame.group=='grid') & (frame.model=='LightSAKT')].groupby('dataset'):
         pivot=data.pivot_table(index='embed_dim',columns='learning_rate',values='validation_auc',aggfunc='max')
         pivot.to_csv(f'results/figures/{dataset}_grid_heatmap.csv')
         plt.figure(figsize=(5,4));plt.imshow(pivot.values,aspect='auto',cmap='viridis');plt.xticks(range(len(pivot.columns)),pivot.columns);plt.yticks(range(len(pivot.index)),pivot.index.astype(int));plt.xlabel('Learning rate');plt.ylabel('Embedding width');plt.title(dataset+' — best heads/dropout, completed grids');plt.colorbar(label='Validation AUC');save_figure(dataset+'_grid_heatmap')
@@ -101,5 +103,41 @@ def main():
             value=getattr(row,f'test_{metric}');base=float(default.iloc[0][f'test_{metric}'])
             ablation_rows.append({'dataset':row.dataset,'variant':c.get('scientific_variant',c['model_config']['variant']),'equivalent_to':c.get('equivalent_to'),'seed':row.seed,'metric':metric,'value':value,'default':base,'relative_change':(value-base)/base if base else None,'run_id':row.run_id})
     pd.DataFrame(ablation_rows).to_csv('results/tables/paired_ablations.csv',index=False)
+    if ablation_rows:
+        ablations=pd.DataFrame(ablation_rows)
+        for (dataset,metric),data in ablations.groupby(['dataset','metric']):
+            summary=data.groupby('variant').agg(mean=('value','mean'),std=('value','std'),
+                                               relative_change_mean=('relative_change','mean'),count=('value','count')).reset_index()
+            name=f'{dataset}_ablation_{metric}'
+            summary.to_csv(f'results/figures/{name}.csv',index=False)
+            plt.figure(figsize=(8,4));plt.bar(summary.variant,summary['mean'],yerr=summary['std'].fillna(0))
+            base=float(data.default.mean());plt.axhline(base,color='black',linestyle='--',label='Matched default mean')
+            plt.ylabel('Test '+metric.upper());plt.xticks(rotation=25,ha='right');plt.legend(fontsize=8)
+            plt.title(dataset+' — no regularization equals no dropout; counts in CSV');save_figure(name)
+    for dataset,data in final.groupby('dataset'):
+        # All five observed seeds are retained; fixed horizontal offsets are display-only.
+        values=data[['model','seed','test_auc']].sort_values(['model','seed'])
+        name=dataset+'_seed_variability';values.to_csv(f'results/figures/{name}.csv',index=False)
+        models=sorted(values.model.unique());plt.figure(figsize=(8,4))
+        for i,model in enumerate(models):
+            group=values[values.model==model];positions=i+np.linspace(-.12,.12,len(group))
+            plt.scatter(positions,group.test_auc,s=25)
+        plt.xticks(range(len(models)),models,rotation=25);plt.ylabel('Individual-seed test AUC');plt.title(dataset+' — all completed matched seeds');save_figure(name)
+        # AUC/parameter comparisons retain individual runs rather than hiding seed variability.
+        name=dataset+'_parameter_efficiency'
+        data[['run_id','model','seed','parameters','test_auc']].to_csv(f'results/figures/{name}.csv',index=False)
+        plt.figure(figsize=(7,4))
+        for model,group in data.groupby('model'):plt.scatter(group.parameters,group.test_auc,label=model,s=25)
+        plt.xscale('log');plt.xlabel('Trainable parameters');plt.ylabel('Individual-seed test AUC');plt.legend(fontsize=7);save_figure(name)
+        # Display one prespecified seed for ROC curves; model selection is already frozen.
+        plt.figure(figsize=(6,5));roc_rows=[]
+        for row in data[data.seed==42].itertuples():
+            result=json.load(open(Path('results/raw')/row.run_id/'metrics.json'))
+            with np.load(result['prediction_path']) as arrays:
+                fpr,tpr,thresholds=roc_curve(arrays['target'],arrays['probability'])
+            plt.plot(fpr,tpr,label=row.model)
+            roc_rows.extend({'run_id':row.run_id,'model':row.model,'false_positive_rate':float(f),'true_positive_rate':float(t),'threshold':float(s)} for f,t,s in zip(fpr,tpr,thresholds))
+        pd.DataFrame(roc_rows).to_csv(f'results/figures/{dataset}_ROC_seed42.csv',index=False)
+        plt.plot([0,1],[0,1],'k--',alpha=.3);plt.xlabel('False positive rate');plt.ylabel('True positive rate');plt.title(dataset+' — selected models, prespecified seed 42');plt.legend(fontsize=7);save_figure(dataset+'_ROC_seed42')
 
 if __name__=='__main__':main()
