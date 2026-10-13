@@ -62,13 +62,22 @@ def main():
     signal.signal(signal.SIGTERM,interrupted);signal.signal(signal.SIGINT,interrupted)
     subprocess.run(['python','-m','pytest','-q'],check=True)
     manifest=json.load(open('experiments/manifest.json'));completed=0
+    status(manifest)
+    for job in manifest['jobs']:
+        if job['status']=='running':
+            job['status']='interrupted'
+            p=Path('results/raw')/job['run_id']/'status.json'
+            if p.exists():
+                saved=json.load(open(p));saved['status']='interrupted';saved['failure_reason']='Previous scheduler stopped; resuming last completed epoch';write_json(p,saved)
+    attempted=set()
     for phase in [5,6,7,8]:
         while True:
             status(manifest)
-            jobs=[j for j in manifest['jobs'] if j['phase']==phase and j['status'] in (['pending','interrupted','failed'] if args.retry_failed else ['pending','interrupted'])]
+            jobs=[j for j in manifest['jobs'] if j['phase']==phase and j['run_id'] not in attempted and j['status'] in (['pending','interrupted','failed'] if args.retry_failed else ['pending','interrupted'])]
             runnable=next((j for j in jobs if materialize(j,manifest)),None)
             if runnable is None:break
             runnable['status']='running';write_json('experiments/manifest.json',manifest)
+            attempted.add(runnable['run_id'])
             log=Path('reports/run_logs')/(runnable['run_id']+'.log');log.parent.mkdir(parents=True,exist_ok=True)
             cmd=(['python','-m','scripts.evaluate_selected','--job',runnable['run_id']] if runnable.get('reuse_selected_run') else
                  ['python','-m','scripts.run','--config',runnable['config']])
@@ -83,5 +92,9 @@ def main():
             if args.max_jobs and completed>=args.max_jobs:return
     status(manifest)
     subprocess.run(['python','-m','scripts.analyze'],check=False)
+    for dataset in ['ASSIST2009','Algebra2005']:
+        jobs=[j for j in manifest['jobs'] if j['phase']==7 and j['dataset']==dataset and j['model']=='LightSAKT' and j['seed']==42 and j['status']=='completed']
+        if jobs:subprocess.run(['python','-m','scripts.visualize','--run-id',jobs[0]['run_id']],check=False)
+    subprocess.run(['python','-m','scripts.benchmark'],check=False)
 
 if __name__=='__main__':main()
