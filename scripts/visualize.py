@@ -37,6 +37,7 @@ def visualize(run_id):
               'probability_interpretation':'predicted correctness conditional on observed history; not directly observed mastery',
               'context':'within chunk only; state resets at chunk boundary'}
     np.savez_compressed(f'experiments/case_studies/{prefix}_attention.npz',weights=w,q=q.numpy(),r=r.numpy(),query=qry.numpy(),target=target.numpy(),probability=p.numpy(),valid=valid.numpy())
+    pd.DataFrame(w).to_csv(f'results/figures/Figure_9_{prefix}.csv',index_label='target_query_index')
     plt.figure(figsize=(6,5));shown=min(25,length);plt.imshow(w[:shown,:shown],cmap='viridis',vmin=0);plt.colorbar(label='Normalized kernel attention');plt.xlabel('History interaction j');plt.ylabel('Target query after interaction t');plt.title('LightSAKT causal attention — '+c['dataset']);save_figure('Figure_9_'+prefix)
     if c['dataset']=='ASSIST2009':
         vocab=json.load(open('data/processed/ASSIST2009/vocabulary.json'));reverse={v:k for k,v in vocab.items()}
@@ -55,10 +56,15 @@ def visualize(run_id):
                 trajectories.append(predictions)
         matrix=np.stack(trajectories)
         pd.DataFrame(matrix.T,columns=[reverse[x] for x in observed]).to_csv(f'results/figures/{prefix}_skill_probabilities.csv',index_label='history_index')
+        pd.DataFrame(matrix.T,columns=[reverse[x] for x in observed]).to_csv(f'results/figures/Figure_10_{prefix}.csv',index_label='history_index')
         actual=np.full_like(matrix,np.nan)
         for i,skill in enumerate(observed):
             selection=(qry[0,:length].numpy()==skill);actual[i,selection]=target[0,:length].numpy()[selection]
         np.savez_compressed(f'experiments/case_studies/{prefix}_skill_probabilities.npz',probabilities=matrix,skills=np.array(observed),actual_next_response=actual)
+        trajectory_rows=[{'history_index':t,'encoded_skill':skill,'skill_name':reverse[skill],
+                          'predicted_correctness':float(matrix[i,t]),'actual_next_response':float(actual[i,t]) if np.isfinite(actual[i,t]) else None}
+                         for i,skill in enumerate(observed) for t in range(length)]
+        pd.DataFrame(trajectory_rows).to_csv(f'results/figures/Figure_11_{prefix}.csv',index=False)
         metadata.update(requested_original_skill_ids=requested,selected_encoded_skills={str(x):reverse[x] for x in observed},
                         skill_selection='up to five most frequent observed encoded categories in the selected heldout chunk, lexical category tie break; requested historical IDs audited separately')
         plt.figure(figsize=(10,4));plt.imshow(matrix,aspect='auto',vmin=0,vmax=1,cmap='viridis');plt.yticks(range(len(observed)),[reverse[x][:45] for x in observed],fontsize=8);plt.xlabel('Observed interactions completed (chunk index)');plt.colorbar(label='Predicted next-response correctness');plt.title('LightSAKT conditional correctness — heldout ASSIST2009');save_figure('Figure_10_'+prefix)

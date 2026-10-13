@@ -2,6 +2,7 @@
 import argparse
 import fcntl
 import json
+import os
 import subprocess
 import tarfile
 import time
@@ -75,6 +76,11 @@ def preserve():
 
 
 def main(watch=False):
+    if watch:
+        watch_lock=open('experiments/preservation_watch.lock','w')
+        try:fcntl.flock(watch_lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+        except BlockingIOError:raise SystemExit('A preservation watcher is already running')
+        Path('experiments/preservation.pid').write_text(str(os.getpid())+'\n')
     previous=-1
     while True:
         write_progress()

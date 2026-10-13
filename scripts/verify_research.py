@@ -81,6 +81,8 @@ def verify():
         for extension in ['png','svg','pdf']:
             path=Path('results/figures')/(name+'.'+extension)
             assert path.exists() and path.stat().st_size>0, f'Missing figure: {path}'
+        if name.startswith(('Figure_5','Figure_6','Figure_7','Figure_8','Figure_9','Figure_10','Figure_11')):
+            require_table(Path('results/figures')/(name+'.csv'))
     backups=json.load(open('reports/completed_run_backups.json'))
     assert set(j['run_id'] for j in manifest['jobs']) <= {r['run_id'] for r in backups}
     for entry in backups:

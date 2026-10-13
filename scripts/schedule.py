@@ -61,6 +61,7 @@ def main():
     lock=open('experiments/scheduler.lock','w')
     try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     except BlockingIOError:raise SystemExit('A scheduler is already running')
+    Path('experiments/scheduler.pid').write_text(str(os.getpid())+'\n')
     child=None;shutdown_requested=0
     def interrupted(signum,frame):
         nonlocal shutdown_requested

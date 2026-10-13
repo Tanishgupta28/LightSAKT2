@@ -21,8 +21,8 @@ def measure(model,forward,backward,device,repeats):
     def sync():
         if device=='cuda':torch.cuda.synchronize()
     def iteration():
-        model.zero_grad(set_to_none=True)
         if backward:
+            model.zero_grad(set_to_none=True)
             out=forward();out.square().mean().backward()
         else:
             with torch.no_grad():forward()
@@ -42,6 +42,7 @@ def measure(model,forward,backward,device,repeats):
 
 
 def main(repeats=10):
+    if repeats<2:raise ValueError('At least two timed repeats are required to report variability')
     seed_everything(42);device='cuda' if torch.cuda.is_available() else 'cpu';rows=[]
     Path('experiments/efficiency').mkdir(parents=True,exist_ok=True)
     Path('experiments/efficiency/environment.json').write_text(json.dumps(environment(),indent=2))
@@ -73,7 +74,7 @@ def main(repeats=10):
                         result=measure(model,forward,backward,device,repeats)
                         result.update(scope=scope,model=model_name,length=length,batch=batch,width=width,heads=heads,dropout=dropout,config_path=config_path,
                                       capacity='positional capacity equals benchmark length; freshly initialized weights',
-                                      implementation='dense MHA need_weights=True' if scope=='equal_attention' and model_name=='SAKT' else 'training model forward; SAKT MHA need_weights=False',
+                                      implementation='dense MHA need_weights=True' if scope=='equal_attention' and model_name=='SAKT' else 'causal ELU+1 tree prefix scan' if model_name=='LightSAKT' else 'training SAKT MHA need_weights=False',
                                       operation='forward_backward' if backward else 'inference_forward',parameters=sum(p.numel() for p in model.parameters()),
                                       serialized_bytes=len(stream.getvalue()),throughput_tokens_per_second=batch*length/(result['latency_ms_mean']/1000))
                         rows.append(result)
