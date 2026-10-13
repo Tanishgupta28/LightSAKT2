@@ -1,0 +1,39 @@
+{
+  "run_id": "ASSIST2009-GKT_MHA-primary-42-e63b12ce3815",
+  "dataset": "ASSIST2009",
+  "model": "GKT_MHA",
+  "seed": 42,
+  "group": "primary",
+  "validation": {
+    "auc": 0.7611946957055243,
+    "auc_reason": null,
+    "accuracy": 0.737652972027972,
+    "f1": 0.8167968054531118,
+    "mse": 0.1784513509939642,
+    "bce": 0.5354227228408056,
+    "n_targets": 27456
+  },
+  "best_epoch": 16,
+  "epochs_trained": 21,
+  "training_seconds": 3695.8989702399995,
+  "checkpoint": "checkpoints/ASSIST2009-GKT_MHA-primary-42-e63b12ce3815/best.pt",
+  "checkpoint_sha256": "2f7516d7c87ca29ec4f553797902d4ece6bf85a01b996907fe9502094294ff71",
+  "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+  "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+  "git_commit": "7736f589eecc55f50f9fce778b8b807d249d495c",
+  "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "parameters": 38567,
+  "peak_allocated_bytes": 386234368,
+  "peak_reserved_bytes": 411041792,
+  "test": {
+    "auc": 0.7626304892284996,
+    "auc_reason": null,
+    "accuracy": 0.7391897073233076,
+    "f1": 0.8185428893236114,
+    "mse": 0.17688588742208375,
+    "bce": 0.5308797377963055,
+    "n_targets": 46946
+  },
+  "prediction_path": "results/predictions/ASSIST2009-GKT_MHA-primary-42-e63b12ce3815.npz",
+  "prediction_sha256": "13ae301fa8d13bfb4c7d48628435df3840e2e5418d830cc6c1c053d867fbba8a"
+}
