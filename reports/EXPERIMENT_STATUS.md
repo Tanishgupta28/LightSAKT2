@@ -1,14 +1,14 @@
 # Experiment status
 
-Updated UTC: 2026-10-13T20:15:50.450553+00:00
+Updated UTC: 2026-10-13T20:16:31.655073+00:00
 
-Completed: **19**. Remaining: **938**. Total schedule slots: 957.
+Completed: **20**. Remaining: **937**. Total schedule slots: 957.
 
 ```json
 {
-  "completed": 19,
+  "completed": 20,
   "running": 1,
-  "pending": 937
+  "pending": 936
 }
 ```
 
@@ -20,7 +20,7 @@ Eta process: running (PID 51531).
 
 Offsite process: running (PID 49211).
 
-Current run: `Algebra2005-LightSAKT-primary-42-dca5e1830530`; last completed epoch: 6.
+Current run: `Algebra2005-GKT_MHA-primary-42-8718ee768a1d`; last completed epoch: 0.
 
 The 45 reuse/alias slots are not independent new training experiments. Default ablation reuses final LightSAKT evidence. The separate smoke run is excluded from schedule counts.
 
