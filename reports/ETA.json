@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-13T15:37:25.339525+00:00",
+  "updated_utc": "2026-10-13T15:39:27.364702+00:00",
   "counts": {
     "completed": 13,
     "running": 1,
@@ -9,9 +9,9 @@
   "mean_completed_run_seconds": 1209.9193863766134,
   "completed_duration_scope": "Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.",
   "remaining_training_gpu_reserved_hours": {
-    "low": 113.09140318035202,
-    "central": 689.1862617480374,
-    "high": 5760.956588025028
+    "low": 113.05750729785149,
+    "central": 689.1523658655367,
+    "high": 5760.922692142528
   },
   "conditional_training_finish_utc": {
     "low": "2026-10-18T08:42:54.390974+00:00",

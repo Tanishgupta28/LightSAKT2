@@ -1,8 +1,8 @@
 # Measured runtime estimate
 
-Updated UTC: 2026-10-13T15:37:25.339525+00:00
+Updated UTC: 2026-10-13T15:39:27.364702+00:00
 
-Remaining training: **689.2 GPU reserved hours**; scenario range **113.1–5,761.0 hours**. Serial wall time: 28.7 days; continuous-availability training finish 2026-11-11T08:48:35.881818+00:00.
+Remaining training: **689.2 GPU reserved hours**; scenario range **113.1–5,760.9 hours**. Serial wall time: 28.7 days; continuous-availability training finish 2026-11-11T08:48:35.881818+00:00.
 
 This is a provisional measured-reference extrapolation, not a validated confidence interval. Hardware-active GPU utilization is unavailable. Epochs include training and validation, and reserved hours include their CPU work. Unmeasured final benchmarking and artifact verification add time beyond this training-only date.
 
@@ -43,7 +43,7 @@ Saved cumulative training_seconds include training and validation through checkp
 |LightSAKT_grid|0.22|0.58|4.52|
 |ablations|0.02|0.30|2.73|
 |baseline_tuning|105.41|612.79|4,560.13|
-|primary|1.48|6.82|26.52|
+|primary|1.45|6.79|26.49|
 |repeated_seeds|5.97|68.69|1,167.04|
 
 ## Longest forecast runs

@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-10-13T15:37:26.100311+00:00",
-  "sample_time": 1791905845.459449,
+  "updated_utc": "2026-10-13T15:40:17.788320+00:00",
+  "sample_time": 1791906017.3733397,
   "counts": {
     "completed": 13,
     "running": 1,
@@ -13,12 +13,12 @@
   "training_processes": [
     {
       "pid": 45556,
-      "cpu_seconds": 1638.08,
-      "process_state": "S",
+      "cpu_seconds": 1809.23,
+      "process_state": "R",
       "ppid": 32646,
       "session_id": 32646,
-      "observed_seconds": 18.473690509796143,
-      "cpu_seconds_advanced": 17.730000000000018
+      "observed_seconds": 49.891663789749146,
+      "cpu_seconds_advanced": 49.58999999999992
     }
   ],
   "active_runs": [
@@ -28,7 +28,7 @@
       "best_checkpoint": "checkpoints/ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6/best.pt",
       "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6/config.json",
       "recent_mean_epoch_seconds": 637.5895083165015,
-      "seconds_since_last_epoch": 357.5502920150757,
+      "seconds_since_last_epoch": 529.4641826152802,
       "startup_epoch_seconds_extrapolated": null,
       "age_reference": "history checkpoint",
       "stall_threshold_seconds": 1912.7685249495044,
