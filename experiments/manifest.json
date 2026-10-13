@@ -428,31 +428,43 @@
       "config": "configs/runs/ASSIST2009-DKT-baseline_tuning-42-bfffd3cbcdc9.json",
       "run_id": "ASSIST2009-DKT-baseline_tuning-42-bfffd3cbcdc9",
       "phase": 6,
-      "status": "running"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 13,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKT-baseline_tuning-42-bfffd3cbcdc9/config.json"
     },
     {
       "config": "configs/runs/ASSIST2009-DKT-baseline_tuning-42-0e47a08205e9.json",
       "run_id": "ASSIST2009-DKT-baseline_tuning-42-0e47a08205e9",
       "phase": 6,
-      "status": "pending"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 14,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKT-baseline_tuning-42-0e47a08205e9/config.json"
     },
     {
       "config": "configs/runs/ASSIST2009-DKT-baseline_tuning-42-ba9272f0beda.json",
       "run_id": "ASSIST2009-DKT-baseline_tuning-42-ba9272f0beda",
       "phase": 6,
-      "status": "pending"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 12,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKT-baseline_tuning-42-ba9272f0beda/config.json"
     },
     {
       "config": "configs/runs/ASSIST2009-DKT-baseline_tuning-42-afc3b66054ff.json",
       "run_id": "ASSIST2009-DKT-baseline_tuning-42-afc3b66054ff",
       "phase": 6,
-      "status": "pending"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 12,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKT-baseline_tuning-42-afc3b66054ff/config.json"
     },
     {
       "config": "configs/runs/ASSIST2009-DKT-baseline_tuning-42-b78da99cc256.json",
       "run_id": "ASSIST2009-DKT-baseline_tuning-42-b78da99cc256",
       "phase": 6,
-      "status": "pending"
+      "status": "running"
     },
     {
       "config": "configs/runs/ASSIST2009-DKT-baseline_tuning-42-ca560b6de796.json",

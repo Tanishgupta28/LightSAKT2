@@ -1,12 +1,12 @@
 # Measured runtime estimate
 
-Updated UTC: 2026-10-13T23:12:23.027540+00:00
+Updated UTC: 2026-10-13T23:13:23.916851+00:00
 
-Remaining training: **746.5 GPU reserved hours**; scenario range **107.1–4,101.5 hours**. Serial wall time: 31.1 days; continuous-availability training finish 2026-11-14T01:44:03.756721+00:00.
+Remaining training: **746.5 GPU reserved hours**; scenario range **107.1–4,101.4 hours**. Serial wall time: 31.1 days; continuous-availability training finish 2026-11-14T01:42:54.968954+00:00.
 
 This is a provisional measured-reference extrapolation, not a validated confidence interval. Hardware-active GPU utilization is unavailable. Epochs include training and validation, and reserved hours include their CPU work. Unmeasured final benchmarking and artifact verification add time beyond this training-only date.
 
-Overall mean completed-run duration: 16.63 minutes, over 44 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
+Overall mean completed-run duration: 14.65 minutes, over 50 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
 
 Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.
 
@@ -14,7 +14,7 @@ Saved cumulative training_seconds include training and validation through checkp
 
 |Dataset|Model|Completed runs|Measured epochs|Mean epoch seconds|Mean completed run minutes|
 |---|---|---|---|---|---|
-|ASSIST2009|DKT|24|549|0.269|0.106|
+|ASSIST2009|DKT|30|629|0.270|0.098|
 |ASSIST2009|DKT+|1|21|0.384|0.139|
 |ASSIST2009|DKVMN|1|49|6.288|5.146|
 |ASSIST2009|GKT|1|13|168.209|36.544|
@@ -42,8 +42,8 @@ Saved cumulative training_seconds include training and validation through checkp
 |---|---|---|---|
 |LightSAKT_grid|0.20|0.71|4.24|
 |ablations|0.02|0.37|2.83|
-|baseline_tuning|102.33|670.38|3,268.65|
-|repeated_seeds|4.57|75.06|825.76|
+|baseline_tuning|102.33|670.35|3,268.60|
+|repeated_seeds|4.57|75.06|825.74|
 
 ## Longest forecast runs
 
