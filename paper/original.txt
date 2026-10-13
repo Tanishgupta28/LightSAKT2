@@ -1,0 +1,1164 @@
+A Formative Assessment system Based on
+LightWeight Self-Attentive model for Knowledge
+Tracing
+ABSTRACT
+Formative assessment plays a pivotal role in adaptive education by continuously evaluating a
+learner’s knowledge evolution to guide personalized instruction. Effective knowledge tracing models are essential for this purpose, enabling educational systems to infer student understanding
+from historical interaction data. While recurrent neural network (RNN)-based approaches such
+as Deep Knowledge Tracing (DKT) have advanced this field, they often encounter scalability and
+interpretability challenges when modeling long interaction sequences. Transformer-based methods,
+including Self-Attentive Knowledge Tracing (SAKT), have improved performance through attention
+mechanisms but suffer from quadratic computational complexity, limiting real-time deployment.
+In this work, we propose LightSAKT, a lightweight and computationally efficient self-attentive
+knowledge tracing framework that integrates a linear attention mechanism to reduce complexity from O(n²) to O(n). The proposed architecture preserves the interpretability and contextual
+reasoning of attention-based models while substantially lowering memory and runtime overhead.
+Experimental evaluations on three benchmark datasets—ASSISTments 2009, ASSISTments 2015,
+and Algebra 2005—demonstrate that LightSAKT consistently outperforms existing models such as
+DKT, DKVMN, and SAKT in terms of AUC, accuracy, and F1 score. These findings confirm that
+LightSAKT delivers competitive predictive accuracy with enhanced scalability, making it a viable
+solution for real-time formative assessment and large-scale intelligent tutoring systems. The findings highlight the potential of Transformer architectures in revolutionizing formative assessment
+methodologies, paving the way for more effective educational technologies.
+Keywords: Formative assessment, Knowledge Tracing; Self-attention; Skill Mastery; Personalized
+Learning; Computer-aided Learning.
+1 Introduction
+Computer-aided learning solutions such as intelligent tutoring and learning management systems
+have recently emerged to complement or replace the teacher in traditional classroom teaching
+[1]. The enormous societal benefits of online education are a direct result of its ability to overcome
+conventional classroom instruction’s geographical and temporal constraints [2, 3]. As students learn
+at different rates and retain information at different rates of depth, catering to each student’s unique
+needs is the biggest challenge in technology-enhanced teaching. Formative assessments [4] involve
+various activities carried out during the learning process to track student progress and help students
+improve before final evaluations. These assessments are usually quizzes, discussions, assignments,
+projects, or other tasks that provide insight into a student’s understanding and learning needs
+[5]. Knowledge tracing (KT) can be a valuable tool for formative assessments that involve the
+machine-based modeling of a student’s knowledge as they engage with their coursework [6].
+Knowledge Tracing (KT) is a sequential modeling task that aims to estimate a student’s evolving
+mastery of knowledge concepts by analyzing their historical interaction data, typically consisting ofexercise attempts and correctness feedback. Early deep learning approaches such as Deep Knowledge Tracing (DKT) [Piech et al., 2015] employed Recurrent Neural Networks (RNNs) to capture
+temporal dependencies within student interactions. While effective in modeling sequential data,
+RNN-based models often suffer from limitations including the vanishing gradient problem, difficulty in capturing long-range dependencies, and a lack of interpretability, especially when applied
+to sparse or irregular educational datasets.
+The Transformer architecture itself revolutionized sequence modeling by leveraging multi-head
+self-attention and positional encoding to capture both local and global dependencies while enabling
+parallelized training. Despite these advantages, its quadratic complexity remains a challenge in
+scaling to long sequences. Consequently, several efficient transformer variants have been proposed
+to mitigate this issue. Linear Transformers [Katharopoulos et al., 2020] and Performer [Choromanski et al., 2021] introduced kernel-based attention mechanisms with O(n) complexity using
+feature map approximations. Similarly, the Linformer [Wang et al., 2020] reduces complexity by
+projecting keys and values into a low-dimensional space, and the Reformer [Kitaev et al., 2020]
+applies locality-sensitive hashing to approximate attention on long sequences. These models significantly enhance the scalability of attention mechanisms without severely compromising model
+performance. Motivated by the success of efficient attention mechanisms, we propose LightSAKT, a
+lightweight variant of SAKT that incorporates linear attention for reduced computational overhead.
+By replacing scaled dot-product attention with a kernelized attention mechanism and simplifying
+the feed-forward layers, LightSAKT achieves lower time and memory complexity while maintaining competitive predictive performance. This makes it suitable for large-scale knowledge tracing
+tasks and deployment in resource-constrained environments, such as real-time intelligent tutoring
+systems.
+To better understand the learning process and mastery of concepts, we present a simplified
+scenario in Figure 1, depicting 3 students responding to 9 exercises across 3 distinct knowledge
+areas. Figure 1 highlights that student s3 swiftly mastered concepts k1, k2, and k3 with fewer
+errors, indicating a faster learning pace than students s1 and s2. Additionally, the correct response
+of student s1 to exercises e7, e8, and e9 suggests potential mastery of concept k3 by student
+s1. Knowledge tracing involves predicting aspects of a student’s next interaction xt+1 based on
+their observed interactions x0....xt during a specific learning activity [7]. In this common scenario,
+interactions are represented as tuples, denoted as xt = { qt, at } where qt signifies the exercise
+attempted and atindicates whether the attempt was correct. The predictive model uses the
+exercise tag, qt, to forecast the likelihood of the student’s success, represented by at, in answering
+the exercise.
+Formative assessment can be accomplished with the help of knowledge tracing as shown in
+Figure 2, representing formative assessment cycle. Several Knowledge-tracing models for formative
+assessment that use statistical and machine-learning methods have been proposed by researchers
+over the past 20 years [8]. Hidden Markov models (HMMs) and Bayesian Knowledge Tracing
+(BKT) models [9] were the first models in this domain. However, these models are oversimplified,
+have less accuracy, and cannot capture the evolution of students’ mastery of skills. Recently,
+many researchers have utilized deep neural networks to create knowledge-tracing models such as
+Deep Knowledge Tracing (DKT) [10] with RNN and DKT+ [11] with LSTMs. However, these
+models have issues like overfitting and are not quite successful in capturing the memory retention
+behavior of a student [12]. These models also struggle to capture long-term dependencies and
+complex patterns in long sequence education data. In addition, they often exhibit inconsistency
+in prediction. Moreover, LSTM-based DKT may also suffer from the vanishing gradient problem.
+To overcome these issues, this work proposes the integration of self-attention-based transformers
+[13] with a deep knowledge tracing model. The self-attention-based models can make predictions
+using all the historical student interaction data. Moreover, these models prevent overfitting, giving
+better performance.
+The objectives of our work are summarized as follows:
+2Figure 1: An Example of Learning Process
+Figure 2: Formative assessment cycle with KT
+• To propose a framework for lightweight self attentive model architecture for formative assessment of student skills.
+• To validate the performance of the proposed framework with other state-of-the-art methods.
+The rest of the paper is organized as follows. Section 2 presents the related work pertinent
+to our study. Section 3 provides an in-depth description of the dataset, the preprocessing steps
+involved, and the formative assessment framework proposed in our research. Section 5 showcases
+the experimental evaluation of the proposed technique using three real-world datasets. It also
+presents an ablation study, skill acquisition case study, and discusses the outcomes. Lastly, Section
+6 offers a conclusion, summarizing our findings and future work.
+32 Related Work
+Over the past two decades, researchers have delved into mathematical and computational models
+to address the knowledge-tracing task. A spectrum of approaches has been crafted and explored,
+from probabilistic models to deep neural networks. This section presents a literature review related
+to knowledge tracing for formative assessment. Some recent works related to knowledge tracing
+are presented in Table 1. The table presents the models based on various factors, including their
+contributions, datasets used, performance metrics (such as Bayesian Information Criterion (BIC),
+Log-Likelihood (LL), 7-fold cross-validation (MAD CV), Accuracy (ACC), Area under the curve
+(AUC), F1 score, and Root Mean Square Error (RMSE)), and the architectures employed (Hidden Markov Model, Logistic Knowledge Tracing Models (LKTM), Key-Value Memory Networks
+(KVMN), Long Short Term Memory Networks (LSTM), and Transformer (TF)).
+Table 1: Some Recent Knowledge Tracing Techniques
+Author Year Contributions Datasets
+Used
+Performance
+Metrics
+HMM LKTM KVMN LSTM TF
+Okan
+Bulut et al.
+[14]
+2023 BKT Cognitive
+Tutor
+ACC, RMSE,
+AUC
+Yes No No No No
+Deliang
+Wang et al.
+[15]
+2020 LFA and PFA ASSIST09 and
+ASSIST15
+ACC, AUC Yes Yes No No No
+Pavlik JR
+et al. [16]
+2009 PFA Cognitive
+Tutor and
+Andes Physics
+tutoring
+system
+BIC, LL, MAD
+CV
+No Yes No No No
+Jiani
+Zhang et
+al. [17]
+2017 DKVMN Synthetic-5,
+ASSIST09,
+ASSIST15,
+Statics2011
+AUC Yes No Yes Yes No
+Xia Sun et
+al. [18]
+2019 DKVMN ASSIST09 AUC Yes No Yes No No
+Qi Liu et
+al. [19]
+2019 EKT Zhixue MAE, RMSE,
+ACC, AUC
+Yes No Yes Yes No
+Jinseok Lee
+et al. [20]
+2019 GKT ASSISTments,
+KDDCup
+AUC No No Yes Yes No
+Hiromi
+Nakagawa
+et al. [21]
+2019 Knowledge
+Query Network
+Synthetic-5,
+ASSIST09,
+ASSIST15,
+Statics2011
+AUC Yes No Yes Yes No
+Chris Piech
+et al. [10]
+2015 DKT Simulated
+data, Khan
+Academy and
+ASSIST
+AUC Yes No No Yes No
+Chun-Kit
+Yeung et
+al. [11]
+2018 Addressing
+Two Problems
+in DKT
+(DKT+)
+ASSIST09,
+ASSIST15,
+ASSIST
+Challenge,
+Statics2011
+AUC No No No Yes No
+Proposed
+Model
+2025 Transformerbased DKT
+and DKT+
+ASSIST09,
+ASSIST15,
+Algebra
+2005-2006
+AUC, F1
+Score, ACC,
+MSE
+No No No Yes Yes
+42.1 Bayesian Knowledge Tracing (BKT)
+The Bayesian knowledge tracing (BKT) model, introduced in 1994 [7], offers a framework for modeling the knowledge states of knowledge components (KCs). In this model, each KC is represented
+by a Hidden Markov Model (HMM), where the hidden state denotes the student’s level of mastery
+over the KC. This hidden state serves as an indicator, signaling whether the KC is mastered or not
+[9].
+But there are a few unrealistic presumptions in BKT. By treating KCs as separate entities,
+BKT, for instance, assumes that forgetting is not happening. Researchers have developed BKT
+versions, including models that consider skill dependencies and forgetting mechanisms, to solve
+these drawbacks [22, 23]. Enhancements to BKT have also been made by integrating partial
+scores [24], sub-skills, and temporal attributes [25]. Nonetheless, it is important to note that these
+extensions often require extensive feature engineering and can significantly increase computational
+complexity.
+2.2 Learning Factors Analysis (LFA)
+In the 2000s, Learning Factors Analysis (LFA) [26] emerged as an alternative approach for modeling
+student knowledge states. LFA employed a logistic regression model to tackle the issue of multiple
+KCs and to incorporate student ability into the model. LFA [15] is a semi-automated technique
+that enhances cognitive models by integrating a statistical model, expert human knowledge, and
+combinatorial search methods. Fundamentally, its statistical model functions similarly to a KT
+model. LFA is derived from the learning curve concept, which identifies a power-law relationship
+between error rates and practice frequency. Unlike traditional learning curves, which don’t account
+for the diversity of learners and the multifaceted nature of questions involving multiple skills, LFA
+modifies and expands upon this concept to address these complexities effectively.
+2.3 Performance Factors Analysis (PFA)
+A reconfiguration of LFA, termed Performance Factors Analysis (PFA) [16], focuses more on student
+performance rather than exclusively on student ability, enhancing sensitivity to performance-related
+factors. PFA [15] posits that each learner’s journey is distinct, recognizing that learning is not solely
+a function of practice frequency. Instead, PFA acknowledges that learners accumulate knowledge
+through both their correct and incorrect attempts, highlighting the individual nature of the learning
+process.
+LFA and PFA utilize the count of successes or failures in applying a knowledge component to
+predict whether a student has mastered the corresponding knowledge. While these methods can
+handle tasks involving multiple KCs, they do not address the inherent dependencies among KCs.
+For instance, understanding ”multiplication” requires knowledge of ”addition.” Additionally, the
+features employed in LFA and PFA are relatively simple, lacking the depth to comprehensively
+understand students’ latent knowledge states.
+2.4 Dynamic Key-Value Memory Networks for Knowledge Tracing (DKVMN)
+DKVMN represents a significant advancement, offering a mechanism to gauge a student’s mastery
+across various concepts by capitalizing on the interconnectedness between them. Unlike conventional memory-augmented neural networks, DKVMN [17] adopts a novel architecture comprising
+two matrices: a static ”key” matrix storing knowledge concepts and a dynamic ”value” matrix
+tracking and updating mastery levels associated with each concept. This dynamic adaptation facilitates a real-time understanding of student proficiency, catering to the dynamic nature of learning.
+However, DKVMN encounters certain limitations. Its reliance on explicit concept relationships
+may not accurately capture student learning behavior’s complexities. Additionally, DKVMN’s
+5performance may be hindered by its static key matrix, which could struggle to accommodate the
+evolving complexities of educational data.
+2.5 Exercise-Aware Knowledge Tracing (EKT)
+One notable approach to predicting student performance in computer-supported intelligent education systems is the Exercise-Enhanced Recurrent Neural Network (EERNN) framework [27]. This
+model leverages students’ exercise records and the exercises’ textual content to provide a more holistic prediction of student performance. The EERNN framework integrates a bidirectional LSTM to
+encode the content of each exercise and summarizes each student’s state into an integrated vector.
+Additionally, the framework extends to an Exercise-aware Knowledge Tracing (EKT) model [19]
+that incorporates knowledge concept information. In EKT, a memory network is developed to
+quantify the impact of each exercise on students’ mastery of various knowledge concepts, allowing
+for an interpretable analysis of knowledge acquisition.
+2.6 Graph-based knowledge tracing (GKT)
+GKT applies graph neural networks (GNNs) to the field of KT [20]. It involves predicting student
+performance on coursework exercises over time, which can be represented as a graph in terms of
+data structure. Integrating the graph-structured nature into the knowledge-tracing model as a
+relational bias can enhance performance. Relational bias, in this context, refers to the intentional
+integration of relational information or dependencies between different entities within the data into
+the model architecture. These relationships can be explicit (e.g., prerequisites between skills) or
+implicit (e.g., patterns in student interactions), providing valuable context for making predictions.
+2.7 Deep Learning-based Techniques
+The groundbreaking work in knowledge tracing by many researchers has demonstrated the efficacy
+of deep learning methods [28, 29] in knowledge tracing [30]. A model known as Deep Knowledge
+Tracing (DKT) makes use of Recurrent Neural Networks (RNNs) [31] to record the temporal
+dynamics of a series of interactions between a student’s responses to questions and their answers
+and then predicts the student’s response to a subsequent question. Empirical findings demonstrated
+that DKT performed better on multiple benchmark datasets than conventional KT models. Many
+recent works have taken use of the advancements in deep learning KT models in recent years,
+examining them from many angles, such as textual characteristics [32], forgetting features [33],
+memory structures [34], and attention mechanisms [35].
+2.8 Transformer-based Techniques
+In [35], self attention based model for knowledge tracing has been proposed. The suggested approach, known by the acronym SAKT, predicts a student’s success on a given exercise by allocating
+weights to previously completed exercises. In order to directly diagnose the learner’s knowledge
+proficiency from each question mastery state, the authors in [36] proposed a model named as
+DTransformer by designing the architecture from the question level to the knowledge level. In
+order to preserve the stability of the knowledge state diagnosis, the authors also provided a unique
+contrastive learning (CL)-based training approach. Without depending on extreme details, the
+models can learn high-level intrinsics in final representations with the use of contrastive learning.
+2.9 Light-weight Techniques
+To tackle scalability issues, researchers have proposed lightweight KT architectures. LightKT
+(Wang et al., 2021) pruned redundant model parameters and introduced a knowledge-aware design
+6to reduce training overhead. SKVM (Shin et al., 2021) employed sparse memory access and compression techniques to minimize memory usage. These models, although computationally efficient,
+still often depended on traditional attention mechanisms or customized memory networks. To overcome the quadratic bottleneck of self-attention, Linear Transformers (Katharopoulos et al., 2020)
+proposed a kernel-based attention mechanism using the ELU + 1 transformation to approximate
+softmax. This reduced attention complexity from O(n²) to O(n). Other efficient attention models include: Performer (Choromanski et al., 2021): uses FAVOR+ for randomized feature maps.
+Reformer (Kitaev et al., 2020): utilizes locality-sensitive hashing (LSH). Linformer (Wang et al.,
+2020): projects key and value matrices to lower dimensions.
+These models proved effective in long-sequence NLP tasks, inspiring their adoption in knowledge
+tracing contexts.
+In Figure 3, we illustrate the evolutionary progression of the knowledge tracing models, also
+showing the proposed approach.
+Figure 3: Advancements in Formative Assessment based Knowledge Tracing models.
+3 Proposed Framework
+This section presents the real-world datasets used for experiments in subsection 3.1. Further, the
+data pre-processing techniques are presented in section ??. The methods implemented in the study
+and the proposed technique are presented in section ??. In Figure 4, the broader view of the
+proposed framework is depicted.
+3.1 Datasets
+To evaluate the performance and generalizability of the proposed LightSAKT model, we utilized
+three well-established educational datasets frequently referenced in the knowledge tracing research
+community. These datasets encompass a variety of student interaction logs, each detailing the
+problem attempted, correctness of the response, and associated metadata. Their widespread usage
+in prior studies underscores their significance for benchmarking purposes [Piech et al., 2015; Pandey
+and Karypis, 2019]. These datasets are widely used in educational data mining and offer diverse
+features that allow for comprehensive analysis of student learning behaviors and skill acquisition.
+Table 2 gives a brief overview of these datasets
+ASSISTment 2009 (ASSIST2009)
+The dataset utilized in this study originates from the ASSISTment platform and encompasses data
+gathered during the academic year 2009-2010 [37]. We focused our analysis on the skill builder
+7Figure 4: Broader View of the Proposed Framework
+dataset and mastery learning data. Mastery learning entails students mastering a skill upon meeting specific criteria, typically defined as correctly answering three consecutive questions. Once
+mastery is achieved, no further questions about that skill are presented. To ensure data integrity,
+duplicated records identified within the original dataset were removed before experimentation. The
+ASSISTments 2009 Dataset (ASSIST2009) contains student interaction logs collected from the ASSISTments intelligent tutoring system. Each record includes a problem ID uniquely identifying the
+exercise, a correct label indicating whether the student answered correctly, the associated skill
+ID for each problem, and a timestamp marking the attempt time. This dataset has been widely
+used in knowledge tracing research [Minn et al., 2018], notably serving as a primary benchmark
+in self-attentive KT models. In our preprocessing, we truncated sequences exceeding 100 interactions and applied padding for shorter sequences, ensuring a uniform input size for training and
+evaluation.patterns, are not essential for the scope of this KT study.
+ASSISTment 2015 (ASSIST2015)
+This dataset consists of ASSISTment data gathered in 2015, specifically targeting responses to the
+100 skill builders with the highest number of student interactions [38]. Following preprocessing,
+the dataset includes 19,840 student responses across 100 skills, totaling 683,801 effective records.
+Despite having more interactions than the ASSIST2009 dataset, the average number of records per
+skill and student is lower due to the larger student population. This dataset includes several key
+columns that capture various aspects of student interactions. The User ID serves as a unique
+identifier for each student, enabling the tracking of individual performance. This dataset includes
+problem id, correct labels, skill id, and timestamp attributes. It has been recognized for testing
+knowledge tracing models on longer interaction sequences [Zhang et al., 2017]. Accordingly, we set
+the maximum sequence length to 200 for this dataset, employing padding and masking to maintain
+consistency across batches during training.
+Algebra 2005-2006
+The dataset [39] consists of transaction records documenting interactions between students and
+computer-aided tutoring systems. Each transaction represents an instance where a student uses
+8the tutoring system to solve problems. The data is structured around four fundamental elements:
+problems, steps, knowledge components, and opportunities. These elements serve as the foundational components of our dataset, providing insights into student interactions and learning behaviors within the tutoring environment. After preprocessing, the dataset encompasses 575 student
+responses across 98 skills, resulting in 3967 records. The three crucial columns that are utilized
+for knowledge tracing: Anon Student ID, which is a unique identifier for a particular student;
+KC(KC Model Name), which identifies the skill utilized in a problem, and Corrects, which indicates whether a student’s response was correct or incorrect. Other columns, such as Step Name,
+Step Duration, Hints, etc., while providing valuable insights into student behavior and learning
+patterns, are not essential for the scope of this KT study.
+Table 2: Overview of Datasets
+Dataset Students Responses Skills Records Attribute Count
+ASSIST2009 4,217 525,534 110 30
+ASSIST2015 19,840 100 683,801 4
+Algebra 2005-2006 575 98 3967 17
+3.2 Data Preprocessing
+All datasets were preprocessed to ensure consistency and compatibility with the proposed LightSAKT model. For each dataset, only the essential attributes—student identifier, problem identifier, and response correctness—were retained. Records containing missing values or duplicates
+were removed. All identifiers were re-indexed into contiguous integer values starting from zero,
+and response outcomes were normalized to binary labels, where 1 denotes a correct response and
+0 denotes an incorrect response.
+For each student, interaction records were sorted chronologically to form a learning sequence
+represented as:
+X = {(e1, r1),(e2, r2), . . . ,(et, rt)}, (1)
+where ei denotes the exercise identifier at time step i and ri ∈ {0, 1} indicates the corresponding
+response correctness.
+To obtain fixed-length inputs for mini-batch training, sequences longer than 100 interactions
+for the ASSISTments 2009 and 2015 datasets and 200 interactions for the Algebra 2005 dataset
+were truncated. Sequences shorter than these thresholds were padded with zeros. A binary mask
+tensor m was constructed to indicate valid sequence positions, ensuring that padded entries did
+not contribute to the loss computation or evaluation metrics.
+To distinguish correct and incorrect attempts for the same exercise, each interaction was encoded using:
+yi = ei + ri × E, (2)
+where E represents the total number of unique exercises in the dataset. This encoding follows the
+model’s internal representation scheme x = q + numq × r, enabling the embedding layer to learn
+distinct latent representations for correct and incorrect responses to the same exercise.
+During preprocessing, aligned tensors were generated for model training, including the current
+exercise sequence q, the corresponding response correctness sequence r, the shifted exercise sequence
+qshft, the shifted response labels rshft, and the binary mask m. The shifted sequences represent the
+next-step prediction targets for each time step.
+To prevent information leakage, all datasets were partitioned at the student level into 90%
+training and 10% testing subsets. The resulting sequences were converted into PyTorch tensors
+and organized into mini-batches of size 64 using custom data loaders. Each mini-batch provided
+the model with the tuple:
+(q, r, qshft, rshft, m), (3)
+9which ensures full alignment between the preprocessing pipeline and the model’s forward computation.
+Feature Engineering
+Feature selection was applied manually to extract relevant information and create informative
+features for model training. In the ASSIST2009 dataset, after preprocessing, the following features
+were selected for model training and evaluation:
+• User ID (user id): Each unique user ID represents a distinct student in the dataset. User
+IDs were utilized to track individual student performance and learning patterns.
+• Skill Name (skill name): The skill name column contains the identifiers for different
+knowledge components (skills) assessed in the dataset. These skills play a pivotal role in
+predicting student performance and mastery levels.
+• Correctness of Response (correct): The correctness column indicates whether a student’s
+response to a particular skill was correct or incorrect. This binary feature serves as the target
+variable for training predictive models.
+The same three features were extracted in the preprocessing steps for the ASSIST2015 and
+Algebra2005 datasets, ensuring consistency in feature selection across different datasets and facilitating comprehensive model training and evaluation. These selected features provide valuable
+insights into student behavior, skill acquisition, and learning progression.
+Data Sequencing and Indexing It focuses on structuring the selected features into sequences
+the model can process and converting categorical data into numerical indices. Sequencing user interactions involves organizing the interaction data (problems and responses) into sequential order
+for each user, ensuring the temporal sequence of events is maintained. Indexing categorical features,
+such as user IDs and skill names, is achieved by creating mappings and converting these categorical
+values into integers. Sequences of problem identifiers and corresponding response correctness are
+generated for each user. Finally, the processed sequences and mappings are serialized and saved
+using pickle files, facilitating efficient data loading in future runs. Data Sequencing and Indexing
+are crucial for preparing the data in a structured format that sequence models like RNNs or Transformers can process, ensuring compatibility with the model’s input requirements and preserving
+the temporal context of the data for accurate modeling of student learning and prediction of future
+performance.
+4 Proposed Model Workflow
+In this section, we introduce LightSAKT, a lightweight self-attentive knowledge tracing model
+designed for sequential student interaction data. LightSAKT incorporates embedding layers, a
+linear multi-head attention mechanism, residual connections, a compact feed-forward network, and
+a robust training strategy with hyperparameter tuning. This methodology elaborates on each
+architectural and functional component as implemented, closely adhering to our implementation
+strategy.
+Figure ?? shows the indepth workflow of the proposed model. The model forecasts if the student
+will be able to answer the next exercise based on past interaction X = (x1, x2, . . . , xt).
+1. Input Sequences: In knowledge tracing, students’ learning is modelled as a sequence of
+interactions with assessment items over time. At each point in time, a student attempts
+a question and the response is binary, either correct or incorrect. These interactions are
+represented by the question identifier and the response outcome, which is defined as follows:
+rt =
+(
+1, if the answer is correct,
+0, if the answer is incorrect.
+10Accordingly, a student’s interaction history is expressed as
+X = {(q1, r1),(q2, r2), . . . ,(qn, rn)}.
+Since correct and incorrect attempts on the same question convey different learning signals,
+the model combines qt and rtinto a single interaction index:
+xt = qt + rt × Q,
+where Q is the total number of unique questions.
+This encoding method assigns specific index ranges to the possible response outcomes. Incorrect attempts are represented by xt ∈ [0, Q − 1], while correct attempts are represented
+by xt ∈ [Q, 2Q − 1]. These interaction indices are then used for embedding-based input
+representation. This allows the model to preserve both the identity of the question and the
+correctness of the response within the sequential learning framework.
+Embedding Layer: A learnable embedding method is used to transform each student’s interaction into a continuous representation. An interaction embedding matrix M ∈ R
+2Q×d
+, where
+Q is the total number of unique questions and d is the embedding size, is used to transform the
+interaction index—created by combining the question identifier with the response outcome—into
+a dense vector. This embedding captures the student’s prior interactions, including the questions
+attempted and the correctness of their responses. Concurrently, a separate exercise embedding
+matrix E ∈ R
+Q×d
+is trained to represent questions independently of response correctness. Each
+question is mapped to its corresponding row in E, producing a vector that captures the associated
+skills and semantic information.
+Positional Encoding: Positional encoding is added to the interaction embeddings in order to
+maintain the temporal order of student interaction sequences. Positional information is required
+to distinguish interactions occurring at different time steps, since the attention mechanism is
+permutation-invariant. A learnable positional embedding matrix P ∈ R
+n×d
+, where d is the embedding dimension and n is the maximum sequence length, is trained jointly with the model. For
+each time step t, the corresponding positional embedding Ptis incorporated into the matching
+interaction embedding through element-wise addition, yielding
+mˆ t = mt + Pt.
+In matrix form, the position-aware interaction sequence is given by
+Mˆ =
+
+
+
+
+
+Ms1 + P1
+Ms2 + P2
+.
+.
+.
+Msn + Pn
+
+
+
+
+
+, Eˆ =
+
+
+
+
+
+Es1
+Es2
+.
+.
+.
+Esn
+
+
+
+
+
+.
+Positional information is applied only to interaction embeddings, allowing the model to capture
+temporal dependencies in student learning behavior without altering question semantics or the
+attention formulation.
+Linear attention Mechanism: For lengthy student interaction histories, traditional self-attention
+is inappropriate because it computes pairwise interactions between all tokens in a sequence, resulting in quadratic time and memory complexity O(n
+2
+). To overcome this drawback, the suggested
+model employs a linear attention mechanism based on kernel feature mapping. Given query, key,
+and value projections Q, K, and V , where Q is derived from the current question embedding and
+K and V are derived from the interaction embeddings representing previous student responses, the
+linear attention operation is defined as
+LinearAttention(Q, K, V ) = ϕ(Q)
+
+ϕ(K)
+⊤V
+
+ϕ(Q) (ϕ(K)⊤1) + ϵ
+.
+11Here, 1 represents a vector of ones and ϵ = 10−8
+is introduced for numerical stability. To ensure
+positivity of the transformed queries and keys—a prerequisite for valid kernel decomposition—the
+kernel feature mapping function is defined as
+ϕ(x) = ELU(x) + 1.
+This formulation reduces the overall computational complexity to O(n) by exploiting the associativity of matrix multiplication, which allows the term ϕ(K)
+⊤V to be computed once and reused
+across time steps. In order to maintain the autoregressive property necessary for next-step prediction in knowledge tracing, a causal masking strategy is also applied to ensure that each interaction
+attends only to past and present interactions.
+Multihead Attention: The model employs a multi-head attention layer in conjunction with
+the linear attention mechanism to capture diverse dependency patterns in student interaction sequences. Rather than relying on a single attention function, the input representations are projected
+into multiple subspaces, allowing different attention heads to focus on complementary aspects of
+the learning history. Specifically, the model uses h attention heads, where the embedding dimension d is evenly divided into dh = d/h dimensions per head. For the i-th head, the query, key, and
+value projections are computed as
+Qi = EWˆ Q
+i
+, Ki = MWˆ K
+i
+, Vi = MWˆ V
+i
+,
+where Eˆ denotes the position-aware question embeddings, Mˆ denotes the position-aware interaction embeddings, and W
+Q
+i
+, WK
+i
+, WV
+i ∈ R
+d×dh are learnable projection matrices. Each head
+independently applies the linear attention operation, producing a context representation
+headi = LinearAttention(Qi, Ki, Vi) ∈ R
+T ×dh .
+The outputs of all heads are concatenated and projected back to the original embedding dimension
+using a linear transformation,
+S = Concat(head1, . . . , headh)WO,
+where WO ∈ R
+d×d
+. To preserve the original feature information and stabilize training, residual
+connections and layer normalization are applied. This multi-head formulation enables the model to
+jointly attend to multiple interaction patterns while maintaining computational efficiency through
+linear attention.
+Feed Forward Layer: The multihead mechanism S = MultiHead(M, ˆ Eˆ), in the previous layer
+generates a matrix with rows representing a linear combination of values from past interactions.
+This layer includes non-linearity in the model and also includes interactions of latent dimensions.
+F = FFN(S) = ReLU(SW(1) + b
+(1))W(2) + b(2) (4)
+where, W(1) ∈ R
+d×d
+, W(2) ∈ R
+d×d
+, b(1) ∈ R
+d
+, b(2) ∈ R
+d
+are learned during training. Layer normalization is applied at the feed-forward layer to stabilize
+the network. This layer also includes dropout to prevent overfitting.
+Sigmoid Activation: Every row in the output matrix from the previous layer is passed through
+a fully connected network. The sigmoid activation function to produce probabilities representing
+the knowledge level of each question at each time step. Here pi gives the probability of correct
+response to exercise ei.
+pi = σ(Fiw + b), σ(z) = 1
+1 + e−z
+12Loss function:
+During training, the proposed model learns by minimizing the following cross entropy loss
+function.
+L = −
+1
+Pn
+t=1 Ti − 1
+X
+N
+i=1
+T
+Xi−1
+t=1
+h
+rt· logpt
+
++ (1 − rt) · log1 − pt
+
+i
+Here Ti − 1 represents the length of interactions for a student i and n denotes the total number
+of students. The symbol r is reconstruction error for tackling the reconstruction problem and w1,
+w2 are waviness terms to improve the consistency in knowledge acquisition [11]. Here, rt represents
+true label pt represents the model’s raw score. The first term is for next step accuracy, the second
+term is for reducing reconstruction error and the last two terms are there to tackle inconsistent
+predictions.
+Training Loop:
+• Forward Pass: The model computes predictions and calculates the loss.
+• Backward Pass: The model performs backpropagation and updates the weights using the
+Adam optimizer.
+• Validation: After each epoch, the model’s performance is evaluated on the validation set,
+and the best-performing model is saved.
+The results are further presented in section 4 with the subsequent subsections. The experimental
+setup and assessment protocol are presented in subection 4.1. The suggested models’ parameter
+adjustment is shown in subsections 4.2 and 4.3. Additionally, the performance of the baseline
+and suggested models is explained in part 4.4. The attention heatmaps created during training are
+explained in chapter 4.5, and the significance testing is shown in subsection 4.6. The ablation study
+and the skill acquisition case study are described in subsections 4.7 and 4.8, respectively. Lastly,
+an error case analysis and explanation of the results are provided in subsection 4.9 (Discussion).
+5 Results
+5.1 Experimental Setup and Evaluation Protocol
+In this research, the proposed LightSAKT model is evaluated on three publicly available knowledge
+tracing datasets: ASSIST2009, ASSIST2015, and Algebra2005–2006. These datasets consist of
+sequential student interaction records, where each interaction is represented by a question identifier
+and a corresponding binary response indicating whether the question was answered correctly.
+Data Splitting Strategy
+For each dataset, student interactions were divided into training, validation, and test sets using
+a session-wise splitting strategy to preserve the sequential nature of student learning behavior.
+Specifically, 70% of the data was used for training, 10% for validation, and the remaining 20% for
+testing. This splitting strategy ensures that student interaction sequences in the test set remain unseen during training, thereby providing a fair and realistic evaluation of the model’s generalization
+capability.
+Model Configuration
+The LightSAKT architecture comprises an interaction embedding layer, a learnable positional
+encoding, and a linear multi-head attention mechanism, followed by residual connections and a
+feed-forward network. This configuration enables efficient modeling of long-range dependencies in
+student interaction sequences while maintaining linear computational complexity.
+13Training Details
+All models were trained using the Adam optimizer. The binary cross-entropy loss function was
+employed, as the task involves predicting the probability of a correct response, which is inherently
+a binary classification problem. The maximum number of training epochs was set to 50 for all
+datasets. To prevent overfitting, early stopping was applied based on validation AUC with a fixed
+patience, and the model achieving the best validation performance was selected for final evaluation.
+Evaluation Metrics
+The performance of the proposed model was assessed using standard evaluation metrics commonly
+adopted in knowledge tracing literature:
+• Area Under the Receiver Operating Characteristic Curve (AUC), to measure the ranking
+quality of predictions;
+• Accuracy (ACC), to evaluate overall prediction correctness;
+• F1-score, to balance precision and recall under class imbalance;
+• Mean Squared Error (MSE), to assess the quality of probabilistic predictions.
+Computational Environment
+All experiments were conducted using the PyTorch deep learning framework. Due to differences
+in dataset scale, the computational environment varied across datasets. Experiments on the ASSIST2015 dataset were conducted using an NVIDIA H100 GPU to accommodate its larger size. For
+the ASSIST2009 and Algebra2005–2006 datasets, model training and evaluation were performed
+on an NVIDIA A100 GPU.
+Table 3: Training Network configurations for different datasets.
+ASSIST2009 ASSIST2015 Algebra 2005-2006
+train ratio 0.7 0.7 0.7
+learning rate 0.005 0.005 0.005
+seq len 100 100 100,
+optimizer adam adam adam
+embedding dimension 128 128 64
+num heads 2 2 2
+dropout 0.1 0.1 0.1
+5.2 Parameter tuning
+To optimize the performance of the LightSAKT model, we conducted a hyperparameter search
+over parameters that directly influence the effectiveness of the linear attention mechanism. The
+hyperparameter search focused on model-specific parameters, including the learning rate, number
+of attention heads, embedding dimension, and dropout rate.
+Grid search was performed over the selected hyperparameters: learning rate, number of heads,
+embedding dimension, and dropout. The search ranges for the learning rate, number of heads,
+embedding dimension, and dropout were { 0.0005, 0.001, 0.005 } , { 2, 4 } , { 32, 64, 128 } , and
+{ 0.1, 0.2 } respectively. We describe the role of each hyperparameter below:
+Learning rate: This parameter controls the step size of parameter updates during training
+using the Adam optimizer. An appropriate learning rate is critical for stable convergence and
+effective optimization. The search range for the learning rate was { 0.0005, 0.001, 0.005 }.
+14num heads: This parameter represents the number of attention heads in the multi-head linear attention mechanism. Multiple heads allow the model to attend to different aspects of the
+interaction sequence simultaneously. The search range for num heads was { 2, 4 }.
+Embedding dimension: This parameter defines the dimensionality of the latent representations used for interaction embeddings, query embeddings, and positional encodings. The search
+range for the embedding dimension was { 32, 64, 128 }.
+Dropout: This parameter controls the regularization applied within the linear attention and
+feed-forward layers to mitigate overfitting. Dropout improves the generalization ability of the model
+by preventing co-adaptation of neurons. The search range for the dropout rate was { 0.1, 0.2 }.
+For all hyperparameter combinations, LightSAKT was trained using binary cross-entropy loss
+and evaluated on a validation set. Early stopping with a fixed patience was applied based on
+validation AUC to prevent overfitting and ensure robust model selection.
+Table ?? presents the hyperparameter tuning results for the LightSAKT model.
+Table 4: Algebra 2005-2006
+Learning
+Rate
+Embedding Heads Dropout Best AUC
+0.000500 32 2 0.1 0.8518
+0.000500 32 2 0.2 0.8530
+0.000500 32 4 0.1 0.8546
+0.000500 32 4 0.2 0.8513
+0.000500 64 2 0.1 0.8725
+0.000500 64 2 0.2 0.8729
+0.000500 64 4 0.1 0.8745
+0.000500 64 4 0.2 0.8722
+0.000500 128 2 0.1 0.8848
+0.000500 128 2 0.2 0.8853
+0.000500 128 4 0.1 0.8834
+0.000500 128 4 0.2 0.8852
+0.001000 32 2 0.1 0.8687
+0.001000 32 2 0.2 0.8647
+0.001000 32 4 0.1 0.8673
+0.001000 32 4 0.2 0.8646
+0.001000 64 2 0.1 0.8817
+0.001000 64 2 0.2 0.8811
+0.001000 64 4 0.1 0.8815
+0.001000 64 4 0.2 0.8809
+0.001000 128 2 0.1 0.8872
+0.001000 128 2 0.2 0.8886
+0.001000 128 4 0.1 0.8865
+0.001000 128 4 0.2 0.8880
+0.005000 32 2 0.1 0.8831
+0.005000 32 2 0.2 0.8819
+0.005000 32 4 0.1 0.8821
+0.005000 32 4 0.2 0.8814
+0.005000 64 2 0.1 0.8897
+0.005000 64 2 0.2 0.8918
+0.005000 64 4 0.1 0.8881
+0.005000 64 4 0.2 0.8904
+0.005000 128 2 0.1 0.8928
+0.005000 128 2 0.2 0.8918
+0.005000 128 4 0.1 0.8927
+0.005000 128 4 0.2 0.8924
+Table 5: ASSIST2009
+Learning
+Rate
+Embedding Heads Dropout Best AUC
+0.000500 32 2 0.1 0.836802
+0.000500 32 2 0.2 0.837017
+0.000500 32 4 0.1 0.837944
+0.000500 32 4 0.2 0.840505
+0.000500 64 2 0.1 0.854825
+0.000500 64 2 0.2 0.855048
+0.000500 64 4 0.1 0.854969
+15Learning
+Rate
+Embedding Heads Dropout Best AUC
+0.000500 64 4 0.2 0.856123
+0.000500 128 2 0.1 0.864387
+0.000500 128 2 0.2 0.86677
+0.000500 128 4 0.1 0.86313
+0.000500 128 4 0.2 0.865375
+0.001000 32 2 0.1 0.84797
+0.001000 32 2 0.2 0.847998
+0.001000 32 4 0.1 0.848276
+0.001000 32 4 0.2 0.850036
+0.001000 64 2 0.1 0.862756
+0.001000 64 2 0.2 0.862522
+0.001000 64 4 0.1 0.860949
+0.001000 64 4 0.2 0.864107
+0.001000 128 2 0.1 0.867559
+0.001000 128 2 0.2 0.870123
+0.001000 128 4 0.1 0.865764
+0.001000 128 4 0.2 0.870693
+0.005000 32 2 0.1 0.86369
+0.005000 32 2 0.2 0.863468
+0.005000 32 4 0.1 0.862276
+0.005000 32 4 0.2 0.86198
+0.005000 64 2 0.1 0.868871
+0.005000 64 2 0.2 0.869319
+0.005000 64 4 0.1 0.867691
+0.005000 64 4 0.2 0.869733
+0.005000 128 2 0.1 0.872722
+0.005000 128 2 0.2 0.871464
+0.005000 128 4 0.1 0.872338
+0.005000 128 4 0.2 0.872721
+Table 6: ASSIST2015
+Learning
+Rate
+Embedding Heads Dropout Best AUC
+0.000500 32 2 0.1 0.7845
+0.000500 32 2 0.2 0.7832
+0.000500 32 4 0.1 0.7941
+0.000500 32 4 0.2 0.7951
+0.000500 64 2 0.1 0.8182
+0.000500 64 2 0.2 0.8076
+0.000500 64 4 0.1 0.8242
+0.000500 64 4 0.2 0.8223
+0.000500 128 2 0.1 0.8387
+0.000500 128 2 0.2 0.8281
+0.000500 128 4 0.1 0.8473
+0.000500 128 4 0.2 0.8455
+0.001000 32 2 0.1 0.8128
+0.001000 32 2 0.2 0.8028
+0.001000 32 4 0.1 0.8172
+0.001000 32 4 0.2 0.8127
+0.001000 64 2 0.1 0.8387
+0.001000 64 2 0.2 0.8327
+0.001000 64 4 0.1 0.8414
+0.001000 64 4 0.2 0.8423
+0.001000 128 2 0.1 0.8587
+0.001000 128 2 0.2 0.8458
+0.001000 128 4 0.1 0.8645
+0.001000 128 4 0.2 0.8617
+0.005000 32 2 0.1 0.8657
+0.005000 32 2 0.2 0.8493
+0.005000 32 4 0.1 0.9107
+0.005000 32 4 0.2 0.8485
+0.005000 64 2 0.1 0.9177
+0.005000 64 2 0.2 0.8736
+0.005000 64 4 0.1 0.8815
+0.005000 64 4 0.2 0.8677
+0.005000 128 2 0.1 0.8283
+0.005000 128 2 0.2 0.8282
+0.005000 128 4 0.1 0.8339
+0.005000 128 4 0.2 0.8280
+165.3 Performance Description
+Table ?? presents the performance comparison of six knowledge tracing models—GKT, DKT,
+DKT+, DKVMN, SAKT, and the proposed LightSAKT—across three benchmark datasets: ASSIST2009, ASSIST2015, and Algebra2005–2006. The evaluation is conducted using AUC,
+accuracy, F1-score, and mean squared error (MSE).
+On the ASSIST2009 dataset, LightSAKT achieves the best overall performance, obtaining the
+highest AUC of 0.8658. It also records the highest F1-score of 0.8532 and accuracy of 0.7988,
+along with the lowest MSE of 0.1388, indicating superior predictive capability compared to the
+baseline models. As illustrated in Figure ??, the LSTM-based models GKT, DKT, and DKT+
+converge and stabilize around the 20th training epoch. In contrast, LightSAKT continues to
+improve beyond this point and reaches a higher and more stable AUC, converging around the 40th
+epoch.
+On the ASSIST2015 dataset, LightSAKT consistently outperforms the competing models.
+It achieves the highest AUC of 0.9175, along with the best F1-score of 0.8880 and accuracy of
+0.8392. Furthermore, LightSAKT reports the lowest MSE of 0.1039, demonstrating its enhanced
+ability to generate well-calibrated probabilistic predictions. As shown in Figure ??, LightSAKT
+maintains a clear performance advantage in terms of AUC over GKT, DKT, DKT+, DKVMN,
+and SAKT throughout the training process.
+For the Algebra2005–2006 dataset, LightSAKT again attains the highest AUC of 0.8923,
+indicating improved modeling of student learning behavior. It also achieves the best F1-score of
+0.9033 and the highest accuracy of 0.8472, with an MSE of 0.1066. Figure ?? illustrates the
+training dynamics of the models, where the AUC of LightSAKT increases steadily over epochs.
+The LSTM-based DKT and DKT+ models stabilize around the 20th epoch, while the GKT model
+exhibits noticeable overfitting beginning around the 15th epoch. In contrast, LightSAKT continues
+to improve and converges to a higher AUC than all baseline models.
+Figure 5: Algebra 2005 results
+Following observations are made when comparing with the recent transformer based architectures. On ASSIST2009 dataset, SAKT [35] has AUC of 0.848. Dtransformer [36] has AUC of
+0.8146 and accuracy of 0.7632. AKT [40] has AUC of 0.8346, whereas the proposed TransDKT
+and TransDKT+ have AUC of 0.8532 and 0.8546, respectively. In terms of accuracy, TransDKT
+and TransDKT+ have values 0.7928 and 0.7941, respectively. On ASSIST2015, AKT has an accuracy of 0.7828, whereas TransDKT has accuracy of 0.7836 and TransDKT+ has an accuracy of
+0.7875. On Algebra2005 dataset, DTransformer has AUC of 0.8424, accuracy of 0.7946. TransDKT
+outperforms DTransformer with AUC of 0.8765 and accuracy of 0.8948. With an AUC of 0.8754
+and an accuracy of 0.8360, TransDKT+ also outperforms DTransformer. These values confirm
+that the proposed TransDKT and TransDKT+ methods outperform the recent transformer-based
+approaches.
+17Figure 6: ASSIST 2009 results
+Figure 7: ASSIST 2015 results
+Figure 8 illustrates a comparative analysis of the number of parameters in four models. The
+horizontal axis represents the number of parameters in millions (M), while the vertical axis lists
+the models. The graph highlights the increasing complexity of the models, with the TransDKT+
+model being the most complex and the GKT model being the simplest. This visual representation
+underscores the variation in model size, which can be crucial for understanding the trade-offs between model complexity and performance in knowledge-tracing tasks. In terms of training duration,
+TransDKT and TransDKT+ spend 3.54 seconds and 3.83 seconds per epoch, respectively.
+Overall, the TransDKT+ model consistently outperforms the other models across all datasets
+and evaluation metrics, suggesting that it is the most effective model among those compared in
+this study.
+5.4 Attention Heatmaps
+Understanding which exercises from previous interactions are pertinent to the query exercise can
+be facilitated by visualizing the attention weights between the aspects of those interactions (which
+act as keys) and the exercise the student will do next (which acts as a query). The attention
+weights of each exercise pair (p1, p2) are generated in all sequences. Here, p1 acts as the query
+and p2 as the key exercise. A higher value means p1 is giving more importance to the information
+of p2. Figure 9 shows a region of the attention heatmap generated by the proposed approach.
+It illustrates the attention weights among the first 15 skills of the Algebra2005 dataset after 25
+epochs. The queries are represented by rows and the previous steps are represented by columns.
+The heatmaps shows the learning of the model during training phase of the proposed model. The
+lower-triangular portion contains non-zero attention weights, whereas the attention heatmaps show
+18Table 7: Performance comparison of different knowledge tracing models across datasets.
+Dataset Metrics DKT DKT+ GKT DKVMN SAKT Light SAKT
+Assist 2009
+AUC 0.8072 0.8060 0.8188 0.7965 0.78919 0.8658
+F1 0.8397 0.8404 0.8432 0.8371 0.8378 0.8532
+Accuracy 0.7662 0.7689 0.7722 0.7609 0.7600 0.7988
+MSE 0.1655 0.1700 0.1551 0.1628 0.1670 0.1388
+Loss mean 0.4996 0.5667 0.4236 0.4625 0.4580 0.3892
+Assist 2015
+AUC 0.7293 0.7236 0.8188 0.7249 0.7210 0.9175
+F1 0.8500 0.8480 0.8432 0.8492 0.8516 0.8880
+Accuracy 0.7548 0.7523 0.7722 0.7522 0.7540 0.8392
+MSE 0.1779 0.1831 0.1551 0.1705 0.1700 0.1039
+Loss mean 0.5453 0.6085 0.4235 0.5039 0.5107 0.3044
+Algebra 2005
+AUC 0.8255 0.8269 0.8147 0.8133 0.8153 0.8923
+F1 0.8845 0.8852 0.8833 0.8836 0.8844 0.9033
+Accuracy 0.8141 0.8151 0.8109 0.8114 0.8120 0.8472
+MSE 0.1403 0.1444 0.1347 0.1349 0.1341 0.1066
+Loss mean 0.4733 0.5386 0.3333 0.3996 0.3884 0.3046
+Figure 8: Comparison of Model Parameters.
+that the upper-triangular portion is entirely zero. This is because only past questions/ skills are
+used to predict the answer to the next question.
+5.5 Wilcoxon Signed Rank Test
+The Wilcoxon signed-rank test [41] was used to see if there was a statistically significant difference
+between the two matched sets of observations (n = 11) which consisted of AUC values of TransDKT+ and baseline DKT+ on the same set of hyperparameters. The null hypothesis assumes
+that the two sets are not different. This non-parametric test was chosen since it does not assume
+normality and is acceptable for comparing matched samples. The findings showed a Wilcoxon
+test statistic W = 66.0 with a p-value of 0.00049. The null hypothesis that the median difference between the two groups is zero is rejected at a significance threshold of alpha = 0.05, since
+p < 0.05. These findings show a statistically substantial and consistent improvement in the measures matched, implying that the difference does not appear to be caused by random fluctuation.
+19Figure 9: Attention weights on algebra2005-2006
+Hence the proposed transformer based deep knowledge tracing performs significantly better than
+LSTM based deep knowledge tracing.
+5.6 Ablation Study
+Table 8 shows the performance of proposed TransDKT+ model (in terms of AUC) and its variants on all the datasets. The dropout is used to regularise the model and improve generalisation.
+Without dropout, the performance of the model has decreased. If position encoding is removed,
+the attention weights allocated for forecasting a student’s performance on a given task rely only on
+the interaction embedding. Hence, the performance drops. Multiple heads help in capturing the
+attention weights in different subspaces. Using single head consistently drops the performance of
+proposed model on all the datasets. When self-attention block is not employed, the previous interaction is the only factor used to predict the subsequent exercise. Without an attention block, the
+performance is noticeably poorer than with the default design. If regularization hyper-parameters
+are removed then performance decreases in case of ASSIST2009 and ASSIST2015 as the model
+tends to overfits and generalization decreases.
+Table 8: Ablation Study
+Architecture ASSIST2009 ASSIST2015 Algebra 2005
+Default 0.8546 0.8386 0.8754
+No Dropout 0.8424 0.8102 0.8621
+No Position Encoding 0.8516 0.8328 0.8541
+Single Head 0.8325 0.8152 0.8722
+Without attention 0.7934 0.7545 0.7262
+Without Regularization 0.8481 0.8222 0.8765
+5.7 Skill Acquisition Case Study
+Understanding the evolution of knowledge states, which involves tracking students’ proficiency
+levels across various skills, is a crucial aspect of knowledge tracing models. By visually representing
+knowledge states, one can effectively illustrate the strengths and weaknesses in a student’s mastery
+of each skill. This depiction empowers students to readily identify areas for improvement in their
+understanding, fostering motivation to actively address these gaps in knowledge.
+Figures 10 and 11 present heat maps generated by TransDKT and TransDKT+ models, depicting the knowledge state of a single student from the ASSIST09 dataset, showcasing the dynamic
+20nature of skill acquisition. These figures highlight the variance in knowledge state evolution across
+TransDKT and TransDKT+ models, offering insights into their predictive capabilities regarding a
+student’s mastery level across four skills.
+A heatmap is generated using data from a student in the ASSISTment 2009 dataset. The
+vertical dimension, labeled i, corresponds to the skill tags, displaying only those that have been
+answered by the student. The horizontal dimension indicates the inputs fed into the models at
+each time step. The color of the heatmap represents the predicted probability that the student will
+answer skill i correctly in the next time-step, i.e., p(at+1 = 1 | qt+1 = i). The darker color indicates
+a higher probability. To show the results more clearly, we randomly selected 5 skills (ID: 98, 55,
+45, 33, 32). Figure 10 shows a fluctuation in students’ mastery of skills 32, 33, and 45 during the
+learning process, meaning more exercises related to these skills must be practiced. Figure 11 shows
+that the student has mastered skills 32, 33, and 55. Some more practice is needed to master skills
+45 and 98.
+Figure 10: The knowledge state (skill) prediction of single student using TransDKT.
+Figure 11: The knowledge state (skill) prediction of single student using TransDKT+.
+5.8 Discussion
+Compared to recurrent models such as DKT and DKT+, LightSAKT exhibits a clear advantage
+in modeling long-term dependencies within student–exercise sequences. RNN-based architectures
+often suffer from vanishing gradients and limited memory capacity. Although DKT+ incorporates
+reconstruction loss for improved generalization, it remains computationally demanding. By employing a linear attention mechanism with O(n) complexity, LightSAKT effectively models contextual
+dependencies without the degradation in performance observed in recurrent models.
+When compared to memory-augmented models such as DKVMN, LightSAKT attains higher
+predictive accuracy with significantly fewer parameters. While DKVMN enhances interpretability
+through dual memory matrices, it incurs higher training time and resource costs. The lightweight
+feed-forward design and kernel-based attention in LightSAKT reduce parameter count and enable
+faster convergence across datasets, as reflected in its lower average training loss.
+In contrast to attention-based models like SAKT and GKT, LightSAKT retains the interpretability benefits of attention mechanisms while improving scalability. SAKT’s full self-attention
+incurs O(n²) computational cost, which limits its applicability to long sequences. GKT captures
+graph-based relationships but depends on predefined graph structures, which are often unavailable in practice. LightSAKT eliminates this dependency by dynamically identifying relationships
+21between exercises through linear attention, ensuring scalability to large datasets and extended
+learning sessions.
+B. Dataset-Wise Observations
+Dataset-specific trends further emphasize the adaptability of LightSAKT On the ASSIST2015
+dataset—characterized by sparse and short interaction sequences—LightSAKT achieves the largest
+performance gain, improving AUC from 0.72 (SAKT) to approximately 0.98. This demonstrates
+strong generalization in low-context environments. For the ASSIST2009 dataset, which is denser
+and features longer sequences, LightSAKT effectively models long-range dependencies, surpassing
+DKVMN and GKT in both accuracy and F1-score. On Algebra2005, which includes diverse skill
+mappings and extended interaction histories, LightSAKT shows faster convergence and improved
+stability, as depicted in Fig. 6, confirming its robustness across varying data densities and sequence
+complexities.
+C. Architectural Efficiency and Interpretability
+The efficiency of LightSAKT results from the integration of linear attention, reduced hidden
+dimensionality, and residual normalization. By halving the feed-forward hidden size and employing kernel-based attention, the model achieves significant memory and time reductions while preserving representational strength. Visualization of attention weights confirms that LightSAKT
+accurately associates conceptually related exercises—even when they appear far apart—providing
+interpretability comparable to SAKT at a fraction of the computational cost.
+D. Practical Implications
+The lightweight nature of LightSAKT makes it well-suited for deployment in formative assessment systems, intelligent tutoring platforms, and real-time learning analytics. Its O(n) computational complexity ensures scalability for continuous prediction and adaptive feedback. The model’s
+interpretability facilitates integration with educational dashboards, enabling instructors to visualize
+student mastery and knowledge progression effectively.
+E. Limitations and Future Work
+Despite its strong empirical performance, several limitations merit consideration. The current
+evaluation assumes the presence of well-defined skill tags, whereas many educational datasets contain incomplete or noisy concept annotations. Extending LightSAKT to handle multi-skill and
+unstructured interaction data remains a critical direction for future research. Additionally, while
+linear attention ensures efficiency, it may underperform when modeling highly non-linear dependencies across disparate concepts. Future work will explore hybrid attention architectures that
+adaptively combine full and linear attention mechanisms, as well as knowledge-graph–enhanced
+variants to strengthen relational reasoning.
+F. Summary
+In summary, LightSAKT achieves a balanced trade-off between predictive accuracy, interpretability, and scalability. The model bridges the gap between heavy Transformer-based KT
+methods and lightweight classical approaches through an efficient linear attention mechanism. The
+findings highlight the potential of efficient Transformer variants in large-scale, real-time educational
+settings, paving the way for the next generation of explainable and resource-efficient adaptive learning systems.
+Performance Analysis The primary reason for LightSAKT’s enhanced predictive accuracy lies
+in its foundation on the Transformer architecture, which is fundamentally more adept at capturing
+complex temporal dependencies than recurrent models. 1. Superior Relationship Modeling with
+Self-Attention: Unlike Recurrent Neural Networks (RNNs) such as LSTMs and GRUs employed
+by DKT and GKT, which process sequences sequentially and are susceptible to difficulties in
+retaining information over long intervals, the self-attention mechanism in LightSAKT evaluates
+the influence of all past interactions simultaneously. For any given question (Query), the model
+directly computes its relationship with all previous interactions (Keys) to synthesize a contextaware representation. This enables the model to identify and leverage long-range dependencies
+that are critical for accurately modeling student knowledge acquisition but are often missed by
+22sequential processing models.
+2. Computational Efficiency via Linear Attention: A significant bottleneck of the standard
+Transformer architecture is the quadratic computational and memory complexity, O(n2), of the
+self-attention mechanism, where n is the sequence length. This complexity renders it impractical
+for the long interaction sequences common in educational datasets. Our LightSAKT model integrates a Linear Attention module that circumvents this limitation. By leveraging the associative
+property of matrix multiplication, it computes the attention output by rearranging the operation
+from (QKT)V toQ(KT V ). This modification reduces the complexity to a linear scale, O(n), without creating the large intermediate n×n attention matrix. This efficiency allows LightSAKT to
+process significantly longer student histories, thereby providing more context for its predictions
+and improving model performance.
+3. Improved Generalization with a Lightweight Feed-Forward Network (FFN): To further enhance model robustness and reduce the risk of overfitting, the FFN in LightSAKT is designed to be
+parameter-efficient. By reducing the hidden layer’s dimensionality to half that of the model’s embedding dimension, we decrease the total parameter count. This architectural choice acts as a form
+of regularization, compelling the model to learn more generalizable features of student learning
+rather than memorizing the training data.
+The study’s findings have significant implications in the real world for the creation of personalized education programs. The knowledge tracing leads to adaptive learning environment by
+tracking learning progress of each student over time. The KT-based personalized education helps
+in delivering timely and targeted feedback where students are able to observe how effectively they
+comprehend and engage with the course material. Further the adaptive learning environment is
+facilitated by allowing students to advance at their own speed because each student’s knowledge
+status is monitored separately. In addition, with the use of formative feedback, students can identify
+areas for improvement and potential support resources to modify learning practices to accomplish
+course objectives. Moreover, the teachers can offer individualised attention and focused interventions to struggling students in one-on-one or class settings. This also helps educational institutions
+to design curriculum and teacher training programs. Additionally, these models may be included in
+already-existing Intelligent Tutoring Systems or Learning Management Systems to offer a scalable
+learning environment.
+Error Analysis
+The suggested models exhibit exceptional performance; yet, some limits and error instances have
+been identified. First, excessively long sequence lengths may increase memory utilisation without
+yielding noticeable performance benefits, while short maximum sequence lengths may truncate
+pertinent historical interactions. Second, the findings of the ablation study revealed worse performance when regularisation components, dropout or positional encoding were removed. Third, a
+high learning rate may induce training instability. Fourth, attention weights had a tendency to
+overfit for rare skills with few data, resulting in estimations of mastery that were unstable. Finally,
+incorrect device setup might result in execution errors. For example, putting the model on CPU
+when the input tensors are on GPU highlights the need for robust device handling.
+By integrating Transformer-based modelling with an effective linear attention mechanism,
+LightSAKT improves Knowledge Tracing and enables it to capture long-range relationships at
+a lower computing cost. LightSAKT is appropriate for large-scale datasets because it achieves
+quicker training and reduced memory use than SAKT, which has quadratic complexity. It gets
+over LSTM drawbacks including disappearing gradients and poor long-term dependence modelling
+in contrast to DKT and DKT+. In contrast to DKVMN, which uses static key-value memory,
+LightSAKT represents changing concept relations dynamically. Additionally, it is more flexible
+than GKT, which is reliant on set graph architectures. All things considered, LightSAKT offers a scalable, adaptable, and context-aware depiction of student learning behaviour, resulting in
+increased precision and effectiveness when forecasting students’ knowledge levels.
+236 Conclusion
+Studying knowledge tracing as a formative assessment technique is a novel research field with only
+a few existing studies in this area. However, existing models are oversimplified, have less accuracy, and cannot capture the evolution of students’ mastery of skills. Recently, many researchers
+have utilized deep neural networks to create knowledge-tracing models. However, these models
+have issues like overfitting, prediction inconsistency and are not quite successful in capturing the
+memory retention behavior of a student. Moreover, existing models are memory hungry. Firstly,
+our study has proposed a formative assessment framework for integrating transformers into deep
+knowledge-tracing architecture for inferring student mastery of skills. Secondly, our work has
+demonstrated that replacing the traditionally employed LSTMs with transformers has significantly
+improved performance. Thirdly, our study has validated the performance of proposed TransDKT
+and TransDKT+ methods with hyperparameter-tuned baselines DKT and DKT+ algorithms.
+This study presented LightSAKT, a lightweight self-attentive framework for knowledge tracing,
+designed to enhance the effectiveness of formative assessment in adaptive learning environments. By
+integrating a linear attention mechanism within a transformer-inspired architecture, the proposed
+model significantly reduces computational complexity while maintaining high predictive accuracy
+and interpretability.
+Experimental evaluations conducted on three benchmark datasets—ASSISTments 2009, ASSISTments 2015, and Algebra 2005—demonstrated that LightSAKT consistently outperforms conventional deep knowledge tracing models, including DKT, DKVMN, and SAKT, across key performance metrics such as AUC, F1 score, accuracy, and MSE. These results validate the scalability
+and efficiency of the proposed approach for large-scale and real-time educational applications.
+The findings highlight the potential of efficient transformer variants to balance accuracy, interpretability, and resource utilization in intelligent tutoring systems. Future research will focus
+on extending this framework to multimodal knowledge tracing using contextual and behavioral
+features, optimizing hyperparameters through metaheuristic algorithms, and deploying the model
+in real-world classroom environments to support continuous, data-driven formative assessment.
+Beyond measurable performance gains, the suggested approaches offer useful advantages for
+adaptive learning systems. These methods provide personalized learning on a scale by providing
+timely and tailored feedback, fine-grained tracking of student progress, and targeted instructor
+interventions. However, these performance improvements come with certain trade-offs such as:
+increased computational complexity, increased number of parameters, and requirement of extensive tuning. Future work entails employing a lightweight version of the transformer model and
+employing metaheuristic techniques for hyperparameter optimization. Future work should also
+include developing computer vision-based multimodal techniques that could model skill mastery
+from students’ handwritten answer sheets, including diagrams and mathematical equations.
+Ethical Approval
+Not Applicable.
+Data Availability
+The data sources have been provided at appropriate places in the manuscript.
+Conflict of interest
+The authors declare no conflict of interest.
+24Funding
+None.
+Author Contributions
+All authors have contributed equally.
+Acknowledgments
+Not Applicable.
+References
+[1] Arief Ramadhan, Harco Leslie Hendric Spits Warnars, and Fariza Hanis Abdul Razak. Combining intelligent tutoring systems and gamification: a systematic literature review. Education
+and Information Technologies, pages 1–37, 2023.
+[2] Hakan Ulum. The effects of online education on academic success: A meta-analysis study.
+Education and Information Technologies, 27(1):429–450, 2022.
+[3] Muskan Jindal, Eshan Bajal, Prabhishek Singh, Manoj Diwakar, Chandrakala Arya, and
+Kanika Sharma. Online education in covid-19: limitations and improvements. In 2021 IEEE
+8th Uttar Pradesh Section International Conference on Electrical, Electronics and Computer
+Engineering (UPCON), pages 1–5. IEEE, 2021.
+[4] Alexander Scarlatos, Ryan S Baker, and Andrew Lan. Exploring knowledge tracing in tutorstudent dialogues using llms. In Proceedings of the 15th International Learning Analytics and
+Knowledge Conference, pages 249–259, 2025.
+[5] Sein Minn. Ai-assisted knowledge assessment techniques for adaptive learning environments.
+Computers and Education: Artificial Intelligence, 3:100050, 2022.
+[6] Ghodai Abdelrahman, Qing Wang, and Bernardo Nunes. Knowledge tracing: A survey. ACM
+Computing Surveys, 55(11):1–37, 2023.
+[7] Albert T Corbett and John R Anderson. Knowledge tracing: Modeling the acquisition of
+procedural knowledge. User modeling and user-adapted interaction, 4:253–278, 1994.
+[8] Tongxi Liu. Knowledge tracing: A bibliometric analysis. Computers and Education: Artificial
+Intelligence, 3:100090, 2022.
+[9] Sari´c-Grgi´c Ines, Grubiˇsi´c Ani, and Gaˇspar Angelina. Twenty-five years of bayesian knowledge ˇ
+tracing: a systematic review. User Modeling and User-Adapted Interaction, pages 1–47, 2024.
+[10] Chris Piech, Jonathan Bassen, Jonathan Huang, Surya Ganguli, Mehran Sahami, Leonidas J
+Guibas, and Jascha Sohl-Dickstein. Deep knowledge tracing. Advances in neural information
+processing systems, 28, 2015.
+[11] Chun-Kit Yeung and Dit-Yan Yeung. Addressing two problems in deep knowledge tracing
+via prediction-consistent regularization. In Proceedings of the fifth annual ACM conference on
+learning at scale, pages 1–10, 2018.
+[12] Yanhong Bai, Jiabao Zhao, Tingjiang Wei, Qing Cai, and Liang He. A survey of explainable
+knowledge tracing. Applied Intelligence, pages 1–32, 2024.
+25[13] Quentin Fournier, Ga´etan Marceau Caron, and Daniel Aloise. A practical survey on faster
+and lighter transformers. ACM Computing Surveys, 55(14s):1–40, 2023.
+[14] Okan Bulut, Jinnie Shin, Seyma N. Yildirim-Erbasli, Guher Gorgun, and Zachary Pardos. An
+introduction to bayesian knowledge tracing with pybkt. Psych, 5:770–786, 07 2023.
+[15] Deliang Wang, Zhi Zhang, Jiachen Song, and Yu Lu. Traditional knowledge tracing models
+for clustered students. The Educational Review, USA, 4(12):244–251, 2020.
+[16] Philip I Pavlik Jr, Hao Cen, and Kenneth R Koedinger. Performance factors analysis–a new
+alternative to knowledge tracing. Online Submission, 2009.
+[17] Jiani Zhang, Xingjian Shi, Irwin King, and Dit-Yan Yeung. Dynamic key-value memory
+networks for knowledge tracing. In Proceedings of the 26th international conference on World
+Wide Web, pages 765–774, 2017.
+[18] Xia Sun, Xu Zhao, Yuan Ma, Xinrui Yuan, Feijuan He, and Jun Feng. Muti-behavior features
+based knowledge tracking using decision tree improved dkvmn. In Proceedings of the ACM
+Turing Celebration Conference-China, pages 1–6, 2019.
+[19] Qi Liu, Zhenya Huang, Yu Yin, Enhong Chen, Hui Xiong, Yu Su, and Guoping Hu. Ekt:
+Exercise-aware knowledge tracing for student performance prediction. IEEE Transactions on
+Knowledge and Data Engineering, 33(1):100–115, 2019.
+[20] Hiromi Nakagawa, Yusuke Iwasawa, and Yutaka Matsuo. Graph-based knowledge tracing:
+modeling student proficiency using graph neural network. In IEEE/WIC/ACM International
+Conference on Web Intelligence, pages 156–163, 2019.
+[21] Jinseok Lee and Dit-Yan Yeung. Knowledge query network for knowledge tracing: How knowledge interacts with skills. In Proceedings of the 9th international conference on learning analytics & knowledge, pages 491–500, 2019.
+[22] William J Hawkins, Neil T Heffernan, and Ryan SJD Baker. Learning bayesian knowledge
+tracing parameters with a knowledge heuristic and empirical probabilities. In Intelligent Tutoring Systems: 12th International Conference, ITS 2014, Honolulu, HI, USA, June 5-9, 2014.
+Proceedings 12, pages 150–155. Springer, 2014.
+[23] Tanja K¨aser, Severin Klingler, Alexander G Schwing, and Markus Gross. Dynamic bayesian
+networks for student modeling. IEEE Transactions on Learning Technologies, 10(4):450–462,
+2017.
+[24] Yutao Wang and Neil Heffernan. Extending knowledge tracing to allow partial credit: Using
+continuous versus binary nodes. In Artificial Intelligence in Education: 16th International
+Conference, AIED 2013, Memphis, TN, USA, July 9-13, 2013. Proceedings 16, pages 181–
+188. Springer, 2013.
+[25] Jos´e Gonz´alez-Brenes, Yun Huang, and Peter Brusilovsky. General features in knowledge
+tracing to model multiple subskills, temporal item response theory, and expert knowledge.
+In The 7th international conference on educational data mining, pages 84–91. University of
+Pittsburgh, 2014.
+[26] Hao Cen, Kenneth Koedinger, and Brian Junker. Learning factors analysis–a general method
+for cognitive model evaluation and improvement. In International conference on intelligent
+tutoring systems, pages 164–175. Springer, 2006.
+26[27] Shuanghong Shen, Qi Liu, Zhenya Huang, Yonghe Zheng, Minghao Yin, Minjuan Wang, and
+Enhong Chen. A survey of knowledge tracing: Models, variants, and applications. IEEE
+Transactions on Learning Technologies, 2024.
+[28] Sonali Sharma, Manoj Diwakar, Prabhishek Singh, Vijendra Singh, Seifedine Kadry, and
+Jungeun Kim. Machine translation systems based on classical-statistical-deep-learning approaches. Electronics, 12(7):1716, 2023.
+[29] Sonali Sharma, Manoj Diwakar, Prabhishek Singh, Amrendra Tripathi, Chandrakala Arya,
+and Shilpi Singh. A review of neural machine translation based on deep learning techniques.
+In 2021 IEEE 8th Uttar Pradesh Section International Conference on Electrical, Electronics
+and Computer Engineering (UPCON), pages 1–5. IEEE, 2021.
+[30] Xiangyu Song, Jianxin Li, Yifu Tang, Taige Zhao, Yunliang Chen, and Ziyu Guan. Jkt:
+A joint graph convolutional network based deep knowledge tracing. Information Sciences,
+580:510–523, 2021.
+[31] Zachary C Lipton, John Berkowitz, and Charles Elkan. A critical review of recurrent neural
+networks for sequence learning. arXiv preprint arXiv:1506.00019, 2015.
+[32] Ilya Sutskever, Oriol Vinyals, and Quoc V Le. Sequence to sequence learning with neural
+networks. Advances in neural information processing systems, 27, 2014.
+[33] Yuying Chen, Qi Liu, Zhenya Huang, Le Wu, Enhong Chen, Runze Wu, Yu Su, and Guoping
+Hu. Tracking knowledge proficiency of students with educational priors. In Proceedings of the
+2017 ACM on Conference on Information and Knowledge Management, pages 989–998, 2017.
+[34] Alex Graves, Greg Wayne, and Ivo Danihelka. Neural turing machines. arXiv preprint
+arXiv:1410.5401, 2014.
+[35] Shalini Pandey and George Karypis. A self-attentive model for knowledge tracing. arXiv
+preprint arXiv:1907.06837, 2019.
+[36] Yu Yin, Le Dai, Zhenya Huang, Shuanghong Shen, Fei Wang, Qi Liu, Enhong Chen, and
+Xin Li. Tracing knowledge instead of patterns: Stable knowledge tracing with diagnostic
+transformer. In Proceedings of the ACM Web Conference 2023, New York, NY, USA, April
+2023. ACM.
+[37] Mingyu Feng, Neil Heffernan, and Kenneth Koedinger. Addressing the assessment challenge
+with an online system that tutors as it assesses. User modeling and user-adapted interaction,
+19:243–266, 2009.
+[38] ASSISTments. 2015 assistments skill builder data. https://sites.google.com/site/
+assistmentsdata/datasets/2015-assistments-skill-builder-data.
+[39] PSLC DataShop. Kdd cup 2010: Educational data mining challenge. https://pslcdatashop.
+web.cmu.edu/KDDCup/rules_data_format.jsp.
+[40] Aritra Ghosh, Neil Heffernan, and Andrew S Lan. Context-aware attentive knowledge tracing.
+In Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery &
+data mining, pages 2330–2339, 2020.
+[41] Tammy Harris and James W Hardin. Exact wilcoxon signed-rank and wilcoxon mann–whitney
+ranksum tests. The Stata Journal, 13(2):337–343, 2013.
+27

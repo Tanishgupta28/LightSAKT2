@@ -1,0 +1,79 @@
+{
+    "train_config": {
+        "batch_size": 16,
+        "num_epochs": 50,
+        "train_ratio": 0.8,
+        "learning_rate": 0.001,
+        "optimizer": "adam",
+        "seq_len": 100
+    },
+    "visualization": {
+        "figure_size": [
+            10,
+            6
+        ],
+        "colors": {
+            "dkt": "blue",
+            "dkt+": "orange",
+            "dkvmn": "green",
+            "sakt": "red",
+            "gkt_pam": "purple",
+            "gkt_mha": "brown"
+        },
+        "save_format": "png",
+        "dpi": 300
+    },
+    "dataset_config": {
+        "ASSIST2009": {
+            "seq_len": 100,
+            "batch_size": 256
+        },
+        "ASSIST2015": {
+            "seq_len": 100,
+            "batch_size": 256
+        },
+        "Algebra2005": {
+            "seq_len": 200,
+            "batch_size": 128
+        }
+    },
+    "dkt": {
+        "emb_size": 100,
+        "hidden_size": 100
+    },
+    "dkt+": {
+        "emb_size": 100,
+        "hidden_size": 128,
+        "lambda_r": 0.01,
+        "lambda_w1": 0.003,
+        "lambda_w2": 3.0
+    },
+    "dkvmn": {
+        "dim_s": 50,
+        "size_m": 20
+    },
+    "sakt": {
+        "n": 100,
+        "d": 100,
+        "num_attn_heads": 5,
+        "dropout": 0.2
+    },
+    "light_sakt": {
+        "num_heads": 4,
+        "dropout": 0.2,
+        "max_seq_len": 100,
+        "embed_dim": 64
+    },
+    "saint": {
+        "n": 100,
+        "d": 100,
+        "num_attn_heads": 5,
+        "dropout": 0.2,
+        "num_tr_layers": 1
+    },
+    "gkt": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "PAM"
+    }
+}
