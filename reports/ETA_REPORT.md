@@ -1,12 +1,12 @@
 # Measured runtime estimate
 
-Updated UTC: 2026-10-13T15:06:20.491910+00:00
+Updated UTC: 2026-10-13T15:08:22.356410+00:00
 
-Remaining training: **652.0 GPU reserved hours**; scenario range **110.0–5,587.8 hours**. Serial wall time: 27.2 days; continuous-availability training finish 2026-11-09T19:08:59.661429+00:00.
+Remaining training: **664.5 GPU reserved hours**; scenario range **110.0–5,583.0 hours**. Serial wall time: 27.7 days; continuous-availability training finish 2026-11-10T07:40:01.159775+00:00.
 
 This is a provisional measured-reference extrapolation, not a validated confidence interval. Hardware-active GPU utilization is unavailable. Epochs include training and validation, and reserved hours include their CPU work. Unmeasured final benchmarking and artifact verification add time beyond this training-only date.
 
-Overall mean completed-run duration: 11.90 minutes, over 10 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
+Overall mean completed-run duration: 23.70 minutes, over 11 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
 
 ## Observed model/dataset averages
 
@@ -22,7 +22,7 @@ Overall mean completed-run duration: 11.90 minutes, over 10 actual independent c
 |ASSIST2015|DKT|1|15|0.994|0.253|
 |ASSIST2015|DKT+|1|18|1.271|0.386|
 |ASSIST2015|DKVMN|1|36|23.941|14.382|
-|ASSIST2015|GKT|0|13|605.543|not measured|
+|ASSIST2015|GKT|1|14|605.806|141.706|
 |ASSIST2015|GKT_MHA|0|0|not measured|not measured|
 |ASSIST2015|SAKT|0|0|not measured|not measured|
 |ASSIST2015|LightSAKT|0|0|not measured|not measured|
@@ -40,20 +40,20 @@ Overall mean completed-run duration: 11.90 minutes, over 10 actual independent c
 |---|---|---|---|
 |LightSAKT_grid|0.22|0.56|4.53|
 |ablations|0.02|0.29|2.74|
-|baseline_tuning|102.58|579.46|4,421.93|
-|primary|1.51|6.77|33.22|
-|repeated_seeds|5.66|64.96|1,125.40|
+|baseline_tuning|102.60|590.65|4,422.93|
+|primary|1.50|6.81|27.15|
+|repeated_seeds|5.66|66.22|1,125.60|
 
 ## Longest forecast runs
 
 |Run|Reference|Central hours|Scenario hours|
 |---|---|---|---|
-|ASSIST2015-GKT-baseline_tuning-42-442278608a15|ASSIST2015-GKT-primary-42-c3a67383f961|7.22|1.01–91.72|
-|ASSIST2015-GKT-baseline_tuning-42-7da03b3a60b0|ASSIST2015-GKT-primary-42-c3a67383f961|7.22|1.01–91.72|
-|ASSIST2015-GKT-baseline_tuning-42-fae9a2b48dba|ASSIST2015-GKT-primary-42-c3a67383f961|7.22|1.01–91.72|
-|ASSIST2015-GKT_MHA-baseline_tuning-42-55ef256295ef|ASSIST2009-GKT_MHA-primary-42-e63b12ce3815|6.88|1.07–29.93|
-|ASSIST2015-GKT_MHA-baseline_tuning-42-40031d9f8cb4|ASSIST2009-GKT_MHA-primary-42-e63b12ce3815|6.88|1.07–29.93|
-|ASSIST2015-GKT_MHA-baseline_tuning-42-333c8f50dc55|ASSIST2009-GKT_MHA-primary-42-e63b12ce3815|6.88|1.07–29.93|
+|ASSIST2015-GKT-baseline_tuning-42-442278608a15|ASSIST2015-GKT-primary-42-c3a67383f961|7.52|1.01–91.78|
+|ASSIST2015-GKT-baseline_tuning-42-7da03b3a60b0|ASSIST2015-GKT-primary-42-c3a67383f961|7.52|1.01–91.78|
+|ASSIST2015-GKT-baseline_tuning-42-fae9a2b48dba|ASSIST2015-GKT-primary-42-c3a67383f961|7.52|1.01–91.78|
+|ASSIST2015-GKT-baseline_tuning-42-1651c86ef2c2|ASSIST2015-GKT-primary-42-c3a67383f961|6.95|1.01–78.33|
+|ASSIST2015-GKT-baseline_tuning-42-e01b589e46cc|ASSIST2015-GKT-primary-42-c3a67383f961|6.95|1.01–78.33|
+|ASSIST2015-GKT-baseline_tuning-42-60865c6f3363|ASSIST2015-GKT-primary-42-c3a67383f961|6.95|1.01–78.33|
 
 ## Dependent analysis duration
 

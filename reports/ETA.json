@@ -1,21 +1,21 @@
 {
-  "updated_utc": "2026-10-13T15:06:20.491910+00:00",
+  "updated_utc": "2026-10-13T15:08:22.356410+00:00",
   "counts": {
-    "completed": 10,
+    "completed": 11,
     "running": 1,
-    "pending": 946
+    "pending": 945
   },
-  "remaining_slots": 947,
-  "mean_completed_run_seconds": 713.7484210990981,
+  "remaining_slots": 946,
+  "mean_completed_run_seconds": 1421.8030047590887,
   "remaining_training_gpu_reserved_hours": {
-    "low": 109.98395540751648,
-    "central": 652.0442137554085,
-    "high": 5587.82062931652
+    "low": 109.98491861487003,
+    "central": 664.527445379066,
+    "high": 5582.954391418166
   },
   "conditional_training_finish_utc": {
-    "low": "2026-10-18T05:05:22.731377+00:00",
-    "central": "2026-11-09T19:08:59.661429+00:00",
-    "high": "2027-06-03T10:55:34.757449+00:00"
+    "low": "2026-10-18T05:07:28.063424+00:00",
+    "central": "2026-11-10T07:40:01.159775+00:00",
+    "high": "2027-06-03T06:05:38.165515+00:00"
   },
   "wall_clock_assumption": "One current MIG worker remains continuously available; no outages or new paid resources.",
   "interpretation": "GPU reserved wall hours from end-to-end measured epochs, not hardware GPU-active time. Scenario envelope, not a statistical confidence interval or guaranteed bound.",
@@ -35,12 +35,12 @@
       "model": "GKT",
       "action": "training",
       "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 13.0,
+      "central_expected_total_epochs": 13.5,
       "reference_runs": "ASSIST2015-GKT-primary-42-c3a67383f961",
       "dataset_model_timing_measured": true,
-      "low_hours": 1.009237965473587,
-      "central_hours": 7.221381644985888,
-      "high_hours": 91.72370020875081
+      "low_hours": 1.0096769040066647,
+      "central_hours": 7.521710490960256,
+      "high_hours": 91.78291462136625
     },
     {
       "run_id": "ASSIST2015-GKT-baseline_tuning-42-7da03b3a60b0",
@@ -49,12 +49,12 @@
       "model": "GKT",
       "action": "training",
       "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 13.0,
+      "central_expected_total_epochs": 13.5,
       "reference_runs": "ASSIST2015-GKT-primary-42-c3a67383f961",
       "dataset_model_timing_measured": true,
-      "low_hours": 1.009237965473587,
-      "central_hours": 7.221381644985888,
-      "high_hours": 91.72370020875081
+      "low_hours": 1.0096769040066647,
+      "central_hours": 7.521710490960256,
+      "high_hours": 91.78291462136625
     },
     {
       "run_id": "ASSIST2015-GKT-baseline_tuning-42-fae9a2b48dba",
@@ -63,12 +63,54 @@
       "model": "GKT",
       "action": "training",
       "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 13.0,
+      "central_expected_total_epochs": 13.5,
       "reference_runs": "ASSIST2015-GKT-primary-42-c3a67383f961",
       "dataset_model_timing_measured": true,
-      "low_hours": 1.009237965473587,
-      "central_hours": 7.221381644985888,
-      "high_hours": 91.72370020875081
+      "low_hours": 1.0096769040066647,
+      "central_hours": 7.521710490960256,
+      "high_hours": 91.78291462136625
+    },
+    {
+      "run_id": "ASSIST2015-GKT-baseline_tuning-42-1651c86ef2c2",
+      "phase": "baseline_tuning",
+      "dataset": "ASSIST2015",
+      "model": "GKT",
+      "action": "training",
+      "last_completed_epoch": 0.0,
+      "central_expected_total_epochs": 13.5,
+      "reference_runs": "ASSIST2015-GKT-primary-42-c3a67383f961",
+      "dataset_model_timing_measured": true,
+      "low_hours": 1.0096769040066647,
+      "central_hours": 6.94869110473421,
+      "high_hours": 78.33253283110253
+    },
+    {
+      "run_id": "ASSIST2015-GKT-baseline_tuning-42-e01b589e46cc",
+      "phase": "baseline_tuning",
+      "dataset": "ASSIST2015",
+      "model": "GKT",
+      "action": "training",
+      "last_completed_epoch": 0.0,
+      "central_expected_total_epochs": 13.5,
+      "reference_runs": "ASSIST2015-GKT-primary-42-c3a67383f961",
+      "dataset_model_timing_measured": true,
+      "low_hours": 1.0096769040066647,
+      "central_hours": 6.94869110473421,
+      "high_hours": 78.33253283110253
+    },
+    {
+      "run_id": "ASSIST2015-GKT-baseline_tuning-42-60865c6f3363",
+      "phase": "baseline_tuning",
+      "dataset": "ASSIST2015",
+      "model": "GKT",
+      "action": "training",
+      "last_completed_epoch": 0.0,
+      "central_expected_total_epochs": 13.5,
+      "reference_runs": "ASSIST2015-GKT-primary-42-c3a67383f961",
+      "dataset_model_timing_measured": true,
+      "low_hours": 1.0096769040066647,
+      "central_hours": 6.94869110473421,
+      "high_hours": 78.33253283110253
     },
     {
       "run_id": "ASSIST2015-GKT_MHA-baseline_tuning-42-55ef256295ef",
@@ -153,48 +195,6 @@
       "low_hours": 1.0703431359486302,
       "central_hours": 6.87228306033475,
       "high_hours": 29.904143532302474
-    },
-    {
-      "run_id": "ASSIST2015-GKT_MHA-baseline_tuning-42-b53e443cf30e",
-      "phase": "baseline_tuning",
-      "dataset": "ASSIST2015",
-      "model": "GKT_MHA",
-      "action": "training",
-      "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 21.0,
-      "reference_runs": "ASSIST2009-GKT_MHA-primary-42-e63b12ce3815",
-      "dataset_model_timing_measured": false,
-      "low_hours": 1.0703431359486302,
-      "central_hours": 6.8706066892742355,
-      "high_hours": 29.88955969525741
-    },
-    {
-      "run_id": "ASSIST2015-GKT_MHA-baseline_tuning-42-bf0659f5cb99",
-      "phase": "baseline_tuning",
-      "dataset": "ASSIST2015",
-      "model": "GKT_MHA",
-      "action": "training",
-      "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 21.0,
-      "reference_runs": "ASSIST2009-GKT_MHA-primary-42-e63b12ce3815",
-      "dataset_model_timing_measured": false,
-      "low_hours": 1.0703431359486302,
-      "central_hours": 6.8706066892742355,
-      "high_hours": 29.88955969525741
-    },
-    {
-      "run_id": "ASSIST2015-GKT_MHA-baseline_tuning-42-a609c35fb916",
-      "phase": "baseline_tuning",
-      "dataset": "ASSIST2015",
-      "model": "GKT_MHA",
-      "action": "training",
-      "last_completed_epoch": 0.0,
-      "central_expected_total_epochs": 21.0,
-      "reference_runs": "ASSIST2009-GKT_MHA-primary-42-e63b12ce3815",
-      "dataset_model_timing_measured": false,
-      "low_hours": 1.0703431359486302,
-      "central_hours": 6.8706066892742355,
-      "high_hours": 29.88955969525741
     }
   ],
   "postprocessing_cpu_pilot_timings": {
