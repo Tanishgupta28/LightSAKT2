@@ -1,9 +1,9 @@
 # Experiment status
 
 {
-  "completed": 7,
+  "completed": 8,
   "running": 1,
-  "pending": 949
+  "pending": 948
 }
 
 Total scheduled experiment slots: 957. This includes 21 selected-checkpoint reuse slots and 15 no_regularization aliases; these are not new independent trainings. Default ablation reuses final LightSAKT evidence. Detailed current run status is in results/raw/<run>/status.json and experiments/manifest.json.

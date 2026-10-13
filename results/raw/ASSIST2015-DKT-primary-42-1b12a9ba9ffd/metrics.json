@@ -1,0 +1,39 @@
+{
+  "run_id": "ASSIST2015-DKT-primary-42-1b12a9ba9ffd",
+  "dataset": "ASSIST2015",
+  "model": "DKT",
+  "seed": 42,
+  "group": "primary",
+  "validation": {
+    "auc": 0.7285436339610714,
+    "auc_reason": null,
+    "accuracy": 0.7544388859852161,
+    "f1": 0.8492703673828554,
+    "mse": 0.17952218969951428,
+    "bce": 0.5413380811619842,
+    "n_targets": 66965
+  },
+  "best_epoch": 10,
+  "epochs_trained": 15,
+  "training_seconds": 15.15008334799495,
+  "checkpoint": "checkpoints/ASSIST2015-DKT-primary-42-1b12a9ba9ffd/best.pt",
+  "checkpoint_sha256": "ba6a2aeecac07c78194e5d59dd3de334530289fd2da1979ac85c13ce1d274508",
+  "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+  "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+  "git_commit": "a61cccf3204189cebd0672282dc65acc482bd90b",
+  "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "parameters": 111201,
+  "peak_allocated_bytes": 165441024,
+  "peak_reserved_bytes": 199229440,
+  "test": {
+    "auc": 0.7264898139670747,
+    "auc_reason": null,
+    "accuracy": 0.7492107874086769,
+    "f1": 0.8451118744777644,
+    "mse": 0.18166115757900264,
+    "bce": 0.5460798791001084,
+    "n_targets": 133044
+  },
+  "prediction_path": "results/predictions/ASSIST2015-DKT-primary-42-1b12a9ba9ffd.npz",
+  "prediction_sha256": "eee72cec06698d16df437167678686e0117eb77022472700e9206b9a2983ab67"
+}

@@ -68,13 +68,16 @@
       "config": "configs/runs/ASSIST2015-DKT-primary-42-1b12a9ba9ffd.json",
       "run_id": "ASSIST2015-DKT-primary-42-1b12a9ba9ffd",
       "phase": 5,
-      "status": "running"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 15,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-DKT-primary-42-1b12a9ba9ffd/config.json"
     },
     {
       "config": "configs/runs/ASSIST2015-DKTplus-primary-42-3bf5cb94131c.json",
       "run_id": "ASSIST2015-DKTplus-primary-42-3bf5cb94131c",
       "phase": 5,
-      "status": "pending"
+      "status": "running"
     },
     {
       "config": "configs/runs/ASSIST2015-DKVMN-primary-42-c91ed69c5400.json",
