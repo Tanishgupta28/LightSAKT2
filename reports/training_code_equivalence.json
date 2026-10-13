@@ -1,0 +1,19 @@
+[
+  {
+    "source_sha256": "42a9f1b495f793154d4788e778edecb2637443bb109c1473f28ab970c2a49783",
+    "current_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "source_tree": "41b7420",
+    "current_tree": "27901b7",
+    "datasets": [
+      "ASSIST2009",
+      "ASSIST2015"
+    ],
+    "verified": true,
+    "verified_utc": "2026-10-13T15:03:08.234254+00:00",
+    "changed_source_files": [
+      "src/datasets/preprocess.py"
+    ],
+    "evidence": "reports/training_code_transition.diff",
+    "reason": "Only Algebra2005 prepare() branch changed from Step Start Time to First Transaction Time and added ordering documentation. ASSIST preprocessing, models, sequence loaders, training, evaluation and SHA256 utility are byte-identical. Stored processed/split/checkpoint hashes are independently verified. Algebra2005 is excluded."
+  }
+]

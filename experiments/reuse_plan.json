@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "created_utc": "20261013T144224",
+  "jobs": {
+    "ASSIST2009-DKVMN-baseline_tuning-42-35063687bb25": {
+      "source_run_id": "ASSIST2009-DKVMN-primary-42-902c00823fa6",
+      "identity_sha256": "b8583dc21af74a69cfb59f4da90eebe1537ac1e3311679f7adc559c622c33248",
+      "reason": "Identical data/model/seed/optimizer/batching/epoch limits; only reporting group and final-test flag differ."
+    },
+    "ASSIST2009-GKT-baseline_tuning-42-1d9e4935301d": {
+      "source_run_id": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff",
+      "identity_sha256": "fbcc63e680088c168655fcc200831db6e11b9d76f2ff009278792dbfba2562a8",
+      "reason": "Identical data/model/seed/optimizer/batching/epoch limits; only reporting group and final-test flag differ."
+    },
+    "ASSIST2009-LightSAKT-grid-42-48c411be10b6": {
+      "source_run_id": "ASSIST2009-LightSAKT-primary-42-440d619b7547",
+      "identity_sha256": "92ae5a04f4bf05e4f067df427cb940b530a25d98e2d0117f91690e40cba29c17",
+      "reason": "Identical data/model/seed/optimizer/batching/epoch limits; only reporting group and final-test flag differ."
+    },
+    "ASSIST2015-DKVMN-baseline_tuning-42-3982d37828fa": {
+      "source_run_id": "ASSIST2015-DKVMN-primary-42-c91ed69c5400",
+      "identity_sha256": "b5b8c0ddbbc3d95d831e7127da0cf24d0766bcca614b721c0c7be2915357e673",
+      "reason": "Identical data/model/seed/optimizer/batching/epoch limits; only reporting group and final-test flag differ."
+    },
+    "ASSIST2015-GKT-baseline_tuning-42-bc5df7d0769a": {
+      "source_run_id": "ASSIST2015-GKT-primary-42-c3a67383f961",
+      "identity_sha256": "d96a25056d2a3dca783a944b8cac123b8e2c075e0d60d6a832cbbf7d3a14e15e",
+      "reason": "Identical data/model/seed/optimizer/batching/epoch limits; only reporting group and final-test flag differ."
+    },
+    "ASSIST2015-LightSAKT-grid-42-08c3ea752993": {
+      "source_run_id": "ASSIST2015-LightSAKT-primary-42-301d9bff60e9",
+      "identity_sha256": "64c14d422044281f39cbce567afca00f88bfccab66c0a8fa521e9eba5fc02b09",
+      "reason": "Identical data/model/seed/optimizer/batching/epoch limits; only reporting group and final-test flag differ."
+    },
+    "Algebra2005-DKVMN-baseline_tuning-42-0aecd459f4c2": {
+      "source_run_id": "Algebra2005-DKVMN-primary-42-7f8a895e7d8e",
+      "identity_sha256": "f6abc23652c1ab63eb66e6159a60eb3a1dd6bad8194e309b7fbbac9d848c14e2",
+      "reason": "Identical data/model/seed/optimizer/batching/epoch limits; only reporting group and final-test flag differ."
+    },
+    "Algebra2005-GKT-baseline_tuning-42-05ddf03d7e41": {
+      "source_run_id": "Algebra2005-GKT-primary-42-b5d7512cd82b",
+      "identity_sha256": "fb02de4acb8f61ad33711930ab104f71e4194f5fbb5cb149a797891448b309f5",
+      "reason": "Identical data/model/seed/optimizer/batching/epoch limits; only reporting group and final-test flag differ."
+    },
+    "Algebra2005-LightSAKT-grid-42-4faf97b35b89": {
+      "source_run_id": "Algebra2005-LightSAKT-primary-42-dca5e1830530",
+      "identity_sha256": "235a58502b4fd7794a1ad1866de1b2b93d62bfc1f3bcdc614d1fa6eb447c66f7",
+      "reason": "Identical data/model/seed/optimizer/batching/epoch limits; only reporting group and final-test flag differ."
+    }
+  },
+  "scientific_rule": "Source must be completed, checksum verified, and training-identical. Grid selection reads validation only."
+}

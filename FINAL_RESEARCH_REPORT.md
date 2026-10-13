@@ -23,6 +23,16 @@ Running 67 items in this shard
 67 passed in 13.83s
 ```
 
+Additional CPU verification during active GPU training:
+
+```
+Running 82 items in this shard
+.....................................sssssssssssssss..............................                                                                   [100%]
+67 passed, 15 skipped in 13.36s
+```
+
+CUDA tests were skipped in this additional invocation to avoid GPU contention; the preceding full CPU/CUDA correctness gate remains the GPU evidence. Model/training source fingerprints are unchanged.
+
 Tests cover causality, the original leakage regression, dense float64 kernel/gradient equivalence, padding, all baseline forwards/backwards, batch independence, CPU/CUDA agreement, CUDA repeatability, data coverage/chronology, validation-only selection, heldout-label update independence, no evaluation updates, exact interruption/resume, checkpoints, undefined AUC, tuning budgets and regularization alias semantics.
 
 ## Genuine completed primary training results
@@ -50,7 +60,7 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
   "pending": 946
 }
 
-Total requested schedule slots: 957. Counts include 21 seed-42 checkpoint reuse slots and 15 regularization aliases, which are not new independent trainings. The five-seed primary result is the mean, never the best seed. All remaining pending slots have no experimental result yet.
+Total requested schedule slots: 957. Counts include 21 seed-42 checkpoint reuse slots, 15 regularization aliases, and 9 verified primary/grid reuse slots, which are not new independent trainings. Distinct planned trainings: 912. Every required grid row is retained. The five-seed primary result is the mean, never the best seed. All remaining pending slots have no experimental result yet.
 
 ## Findings and limitations
 
@@ -59,6 +69,8 @@ The original future-response leakage and non-normalized attention are reproduced
 Raw data came from available local original/reference materials because the shared folder lacked required raw CSV/TSV files. Exact hashes and publisher references are documented, but publisher byte identity and an explicit redistribution license are not established. Algebra uses the labelled training subset, not complete official master coverage. GKT is the historical simplified implementation; canonical published GKT reproducibility remains a limitation. All 27 manuscript pages were rendered and visually inspected, including Figures 1–11; inconsistencies are documented in PAPER_CORRECTIONS.md. No editable manuscript source was present.
 
 The no_regularization row is scientifically identical to no_dropout by user instruction and cannot be treated as another independent ablation. Five paired seeds yield weak statistical power, with minimum exact two-sided Wilcoxon p=.0625 for five nonzero pairs before correction; seed variation on one fixed split does not estimate new-student sampling uncertainty.
+
+Measured runtimes, phase/model/dataset extrapolations, uncertainty scenarios and conditional completion dates are in reports/ETA_REPORT.md and reports/ETA.json. The schedule audit and before/after effective manifests are in reports/SCHEDULE_AUDIT.md. Live health samples and recovery checks are in reports/EXECUTION_HEALTH.md. GPU utilization is unavailable on the current MIG partition.
 
 ## Reproduce and continue
 

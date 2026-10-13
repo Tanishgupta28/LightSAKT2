@@ -35,6 +35,11 @@ def main():
         task=json.load(open(analyses))['tasks'].get('full_tests',{})
         if task.get('status')=='completed':test=Path(task['log'])
     if test.exists():lines+=['```',test.read_text().strip(),'```','']
+    cpu_test=Path('reports/latest_cpu_test_run.json')
+    if cpu_test.exists():
+        record=json.load(open(cpu_test))
+        lines+=['Additional CPU verification during active GPU training:','', '```',Path(record['log']).read_text().strip(),'```','',
+                'CUDA tests were skipped in this additional invocation to avoid GPU contention; the preceding full CPU/CUDA correctness gate remains the GPU evidence. Model/training source fingerprints are unchanged.','']
     lines+=['Tests cover causality, the original leakage regression, dense float64 kernel/gradient equivalence, padding, all baseline forwards/backwards, batch independence, CPU/CUDA agreement, CUDA repeatability, data coverage/chronology, validation-only selection, heldout-label update independence, no evaluation updates, exact interruption/resume, checkpoints, undefined AUC, tuning budgets and regularization alias semantics.','',
             '## Genuine completed primary training results','',
             '|Dataset|Model|Seed|Epochs trained|Selected epoch|Test AUC|Accuracy|F1|MSE|BCE|','|---|---|---|---|---|---|---|---|---|---|']
@@ -42,11 +47,12 @@ def main():
         m=r['test'];lines.append('|'+ '|'.join([r['dataset'],r['model'],str(r['seed']),str(r['epochs_trained']),str(r['best_epoch'])]+[f"{m[k]:.6f}" for k in ['auc','accuracy','f1','mse','bce']])+'|')
     lines+=['',f"Completed smoke runs: {len(smoke)}. Smoke validation is not a final research comparison.",'',
             '## Experiment schedule status','',json.dumps(counts,indent=2),'',
-            f"Total requested schedule slots: {len(manifest['jobs'])}. Counts include 21 seed-42 checkpoint reuse slots and 15 regularization aliases, which are not new independent trainings. The five-seed primary result is the mean, never the best seed. All remaining pending slots have no experimental result yet.",'',
+            f"Total requested schedule slots: {len(manifest['jobs'])}. Counts include 21 seed-42 checkpoint reuse slots, 15 regularization aliases, and {progress['additional_primary_grid_reuses']} verified primary/grid reuse slots, which are not new independent trainings. Distinct planned trainings: {progress['distinct_training_runs_planned']}. Every required grid row is retained. The five-seed primary result is the mean, never the best seed. All remaining pending slots have no experimental result yet.",'',
             '## Findings and limitations','',
             'The original future-response leakage and non-normalized attention are reproduced by executed tests. The corrected default retains the original contribution but historical scores are no longer valid evidence. Completed primary results are new fixed-configuration single-seed measurements; a superiority claim requires the unfinished matched final comparisons. No fresh statistical significance or measured efficiency conclusion is established until the corresponding artifact files exist. O(L) sequence-length complexity alone does not establish lower latency or lower measured memory.',
             '', 'Raw data came from available local original/reference materials because the shared folder lacked required raw CSV/TSV files. Exact hashes and publisher references are documented, but publisher byte identity and an explicit redistribution license are not established. Algebra uses the labelled training subset, not complete official master coverage. GKT is the historical simplified implementation; canonical published GKT reproducibility remains a limitation. All 27 manuscript pages were rendered and visually inspected, including Figures 1–11; inconsistencies are documented in PAPER_CORRECTIONS.md. No editable manuscript source was present.',
             '', 'The no_regularization row is scientifically identical to no_dropout by user instruction and cannot be treated as another independent ablation. Five paired seeds yield weak statistical power, with minimum exact two-sided Wilcoxon p=.0625 for five nonzero pairs before correction; seed variation on one fixed split does not estimate new-student sampling uncertainty.',
+            '', 'Measured runtimes, phase/model/dataset extrapolations, uncertainty scenarios and conditional completion dates are in reports/ETA_REPORT.md and reports/ETA.json. The schedule audit and before/after effective manifests are in reports/SCHEDULE_AUDIT.md. Live health samples and recovery checks are in reports/EXECUTION_HEALTH.md. GPU utilization is unavailable on the current MIG partition.',
             '', '## Reproduce and continue','', '```',
             'cd /workspace/LightSAKT2','python -m pytest -q','python -m scripts.schedule',
             'python -m scripts.summarize','python -m scripts.analyze','python -m scripts.verify_artifacts','```','',

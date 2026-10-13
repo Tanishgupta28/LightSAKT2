@@ -11,6 +11,24 @@ from src.datasets.preprocess import sha256
 from src.training.engine import write_json
 from scripts.progress import write_progress
 from scripts.verify_artifacts import verify_stored_result
+from scripts.reuse_training import physical_source
+
+
+def make_archive(archive,members):
+    import hashlib
+    archive.parent.mkdir(parents=True,exist_ok=True);tmp=archive.with_suffix('.tmp')
+    with tarfile.open(tmp,'w:gz') as bundle:
+        for member in members:
+            if member.exists():bundle.add(member,arcname=str(member))
+    with tarfile.open(tmp,'r:gz') as bundle:
+        for member in bundle:
+            if member.isfile():
+                h=hashlib.sha256()
+                with bundle.extractfile(member) as stream:
+                    while block:=stream.read(1024*1024):h.update(block)
+                assert h.hexdigest()==sha256(member.name), f'Backup content mismatch: {member.name}'
+    tmp.replace(archive)
+    return {'path':str(archive),'sha256':sha256(archive),'verified_contents':True}
 
 
 def archive_completed():
@@ -21,37 +39,32 @@ def archive_completed():
     references=[];data_verified=set()
     for path in sorted(Path('results/raw').glob('*/metrics.json')):
         digest=sha256(path);old=previous.get(path.parent.name)
-        if old and old.get('metrics_sha256')==digest and Path(old['path']).exists():
+        if old and old.get('archive_schema')==2 and old.get('metrics_sha256')==digest and Path(old['path']).exists() and (not old.get('result_archive') or Path(old['result_archive']['path']).exists()):
             references.append(old);continue
         result,_,_=verify_stored_result(path,data_verified)
-        source=result.get('reused_training_run',result['run_id'])
+        source,evidence=physical_source(result['run_id'])
         archive=archives/(source+'.tar.gz');record=archives/(source+'.json')
         if not archive.exists() or not record.exists():
-            evidence=json.load(open(Path('results/raw')/source/'metrics.json'))
             members=[Path('results/raw')/source,Path(evidence['checkpoint']).parent]
             if evidence.get('prediction_path'):members.append(Path(evidence['prediction_path']))
             members += [Path('configs/runs')/(source+'.json')]
-            tmp=archive.with_suffix('.tmp')
-            with tarfile.open(tmp,'w:gz') as bundle:
-                for member in members:
-                    if member.exists():bundle.add(member,arcname=str(member))
-            # Verify every regular file against its still-immutable source before publication.
-            import hashlib
-            with tarfile.open(tmp,'r:gz') as bundle:
-                for member in bundle:
-                    if member.isfile():
-                        h=hashlib.sha256()
-                        with bundle.extractfile(member) as stream:
-                            while block:=stream.read(1024*1024):h.update(block)
-                        assert h.hexdigest()==sha256(member.name), f'Backup content mismatch: {member.name}'
-            tmp.replace(archive)
-            write_json(record,{'source_run_id':source,'path':str(archive),'sha256':sha256(archive),'verified_contents':True})
-        references.append({'run_id':result['run_id'],'metrics_sha256':digest,**json.load(open(record))})
+            write_json(record,{'source_run_id':source,**make_archive(archive,members)})
+        reference={'run_id':result['run_id'],'archive_schema':2,'metrics_sha256':digest,**json.load(open(record))}
+        if result['run_id']!=source:
+            # Reused training may acquire a new test evaluation after its original archive.
+            # Save logical metrics/configs/predictions without duplicating the weights.
+            supplemental=Path('backups/reused_results')/(result['run_id']+'.tar.gz')
+            members=[path.parent,Path('configs/runs')/(result['run_id']+'.json')]
+            if result.get('prediction_path') and result['prediction_path']!=evidence.get('prediction_path'):
+                members.append(Path(result['prediction_path']))
+            reference['result_archive']=make_archive(supplemental,members)
+        references.append(reference)
     write_json('reports/completed_run_backups.json',references)
 
 
 def _preserve():
     archive_completed()
+    subprocess.run(['python','-m','scripts.eta'],check=True)
     subprocess.run(['python','-m','scripts.summarize'],check=True)
     subprocess.run(['python','-m','scripts.report'],check=True)
     subprocess.run(['git','add','.'],check=True)
@@ -63,8 +76,11 @@ def _preserve():
     subprocess.run(['git','bundle','verify',str(backup)],check=True,stdout=subprocess.DEVNULL)
     write_json('reports/git_backup.json',{'path':str(backup),'sha256':sha256(backup),'git_commit':commit,'verified':True,'storage':'durable /workspace mount; not independent offsite artifact storage'})
     push=subprocess.run(['git','push'],capture_output=True,text=True)
-    status='synchronized' if push.returncode==0 else 'push pending'
-    Path('GITHUB_SYNC_PENDING.md').write_text(f'# GitHub synchronization\n\nStatus: {status}\n\nBranch: research-rebuild\n\nLatest pushed or pending milestone commit: {commit}\n\nVerified recovery bundle: {backup}\n\nRemote: https://github.com/Tanishgupta28/LightSAKT2 (private).\n\nPending operation: '+('none for the milestone above; the live scheduler may generate newer uncommitted results.' if push.returncode==0 else 'git push origin research-rebuild; inspect reports/preservation.log for failure details.')+'\n\nRestore: git clone '+str(backup)+' recovered-history (choose an authorized recovery location). Raw files and checkpoints are in the durable workspace archive, not Git bundles.\n')
+    remote=subprocess.run(['git','ls-remote','origin','refs/heads/research-rebuild'],capture_output=True,text=True)
+    remote_commit=remote.stdout.split()[0] if remote.returncode==0 and remote.stdout.strip() else None
+    status='synchronized' if push.returncode==0 and remote_commit==commit else 'push pending'
+    write_json('reports/github_sync.json',{'commit':commit,'remote_commit':remote_commit,'push_exit_code':push.returncode,'verified':status=='synchronized'})
+    Path('GITHUB_SYNC_PENDING.md').write_text(f'# GitHub synchronization\n\nStatus: {status}\n\nBranch: research-rebuild\n\nLatest pushed or pending milestone commit: {commit}\n\nVerified recovery bundle: {backup}\n\nRemote: https://github.com/Tanishgupta28/LightSAKT2 (private).\n\nPending operation: '+('none for the milestone above; the live scheduler may generate newer uncommitted results.' if status=='synchronized' else 'git push origin research-rebuild; inspect reports/preservation.log for failure details.')+'\n\nRestore: git clone '+str(backup)+' recovered-history (choose an authorized recovery location). Raw files and checkpoints are in the durable workspace archive, not Git bundles.\n')
     return commit
 
 

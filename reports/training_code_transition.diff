@@ -1,0 +1,17 @@
+diff --git a/src/datasets/preprocess.py b/src/datasets/preprocess.py
+index 24c2811..ca4a7b6 100644
+--- a/src/datasets/preprocess.py
++++ b/src/datasets/preprocess.py
+@@ -69,10 +69,11 @@ def prepare(dataset, path, root=".", seed=42):
+         frame = frame.dropna(subset=["student", "order", "skill", "label"]).copy()
+         stats["identifier_semantics"] = "sequence_id (skill-builder); no exercise ID in four-column release"
+     elif dataset == "Algebra2005":
+-        frame = raw.rename(columns={"Anon Student Id": "student", "Step Start Time": "order", "KC(Default)": "skill", "Correct First Attempt": "label"})
++        frame = raw.rename(columns={"Anon Student Id": "student", "First Transaction Time": "order", "KC(Default)": "skill", "Correct First Attempt": "label"})
+         frame = frame.dropna(subset=["student", "order", "skill", "label"]).copy()
+         frame["order"] = pd.to_datetime(frame.order, errors="raise")
+         stats["identifier_semantics"] = "KC(Default) full composite string; original training subset only"
++        stats["ordering_semantics"] = "First Transaction Time: first-attempt response availability, not step start; stable source-row ties"
+     else:
+         raise ValueError(dataset)
+     stats["nonbinary_rows_excluded"] = int((~frame.label.isin([0, 1])).sum())

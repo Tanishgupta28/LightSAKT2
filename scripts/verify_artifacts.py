@@ -31,22 +31,31 @@ def verify_stored_result(path, data_verified=None):
 
 
 def main(stored_only=False):
-    verified=[];data_verified=set()
+    verified=[];data_verified=set();inference_cache={}
     for path in sorted(Path('results/raw').glob('*/metrics.json')):
         result,config,stats=verify_stored_result(path,data_verified)
         if stored_only:
             verified.append({'run_id':result['run_id'],'checkpoint':result['checkpoint'],'checksum_verified':True,
                              'validation_recomputed':False,'test_prediction_metrics_recomputed':bool(result.get('prediction_path'))})
             continue
-        seed_everything(config['seed']);device='cuda' if torch.cuda.is_available() else 'cpu'
-        model=build_model(config['model'],stats['num_q'],config['model_config']).to(device)
-        checkpoint=torch.load(result['checkpoint'],map_location=device,weights_only=False)
-        model.load_state_dict(checkpoint['model'])
-        dataset=Sequences(f"data/processed/{result['dataset']}/interactions.csv",'validation',config['seq_len'])
-        regenerated,_,_=evaluate(model,config['model'],DataLoader(dataset,batch_size=config['batch_size']),device)
+        device='cuda' if torch.cuda.is_available() else 'cpu'
+        identity=(result['checkpoint_sha256'],result['processed_sha256'],result['split_sha256'],
+                  config['model'],stats['num_q'],json.dumps(config['model_config'],sort_keys=True),
+                  config['seq_len'],config['batch_size'],device)
+        reused_inference=identity in inference_cache
+        if not reused_inference:
+            seed_everything(config['seed'])
+            model=build_model(config['model'],stats['num_q'],config['model_config']).to(device)
+            checkpoint=torch.load(result['checkpoint'],map_location=device,weights_only=False)
+            model.load_state_dict(checkpoint['model'])
+            dataset=Sequences(f"data/processed/{result['dataset']}/interactions.csv",'validation',config['seq_len'])
+            regenerated,_,_=evaluate(model,config['model'],DataLoader(dataset,batch_size=config['batch_size']),device)
+            inference_cache[identity]=regenerated
+            del model,checkpoint,dataset
+        regenerated=inference_cache[identity]
         for key in ['auc','accuracy','f1','mse','bce']:
             assert np.isclose(regenerated[key],result['validation'][key],atol=1e-7,rtol=1e-6)
-        verified.append({'run_id':result['run_id'],'checkpoint':result['checkpoint'],'checksum_verified':True,'validation_recomputed':True,'test_prediction_metrics_recomputed':bool(result.get('prediction_path'))})
+        verified.append({'run_id':result['run_id'],'checkpoint':result['checkpoint'],'checksum_verified':True,'validation_recomputed':True,'reused_identical_checkpoint_inference':reused_inference,'test_prediction_metrics_recomputed':bool(result.get('prediction_path'))})
     write_json('reports/stored_artifact_verification.json' if stored_only else 'reports/artifact_verification.json',verified)
     print('Verified',len(verified),'completed runs', '(stored evidence; no GPU inference)' if stored_only else '(checkpoint inference and stored evidence)')
 

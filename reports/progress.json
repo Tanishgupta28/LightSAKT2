@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-13T12:58:42.147005+00:00",
+  "updated_utc": "2026-10-13T15:06:25.342806+00:00",
   "total_slots": 957,
   "completed": 10,
   "remaining": 947,
@@ -14,14 +14,14 @@
       "alive": true
     },
     "preservation": {
-      "pid": 35785,
+      "pid": 42683,
       "alive": true
     }
   },
   "running_jobs": [
     {
       "run_id": "ASSIST2015-GKT-primary-42-c3a67383f961",
-      "last_completed_epoch": 1,
+      "last_completed_epoch": 13,
       "best_checkpoint": "checkpoints/ASSIST2015-GKT-primary-42-c3a67383f961/best.pt",
       "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-GKT-primary-42-c3a67383f961/config.json"
     }
@@ -42,7 +42,9 @@
       "pending": 75
     }
   },
-  "reused_slots": 36,
+  "reused_slots": 45,
+  "additional_primary_grid_reuses": 9,
+  "distinct_training_runs_planned": 912,
   "all_training_slots_completed": false,
   "research_verified_complete": false
 }

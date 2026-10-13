@@ -1,0 +1,20 @@
+[
+  {
+    "path": "checkpoints/ASSIST2015-GKT-primary-42-c3a67383f961/best.pt",
+    "sha256": "b521c46da685cb583c3f95cf5635efab7edf6c315c1e7e2ac0baa6918c2ffacd",
+    "epoch": 9,
+    "strict_state_load": true,
+    "finite_parameters": true,
+    "split_data_match": true,
+    "optimizer_rng_verified": false
+  },
+  {
+    "path": "checkpoints/ASSIST2015-GKT-primary-42-c3a67383f961/latest.pt",
+    "sha256": "61ebaa993961f92a225ded48d34989232f96e5190f07723f7bb6c24da46daa9a",
+    "epoch": 13,
+    "strict_state_load": true,
+    "finite_parameters": true,
+    "split_data_match": true,
+    "optimizer_rng_verified": true
+  }
+]

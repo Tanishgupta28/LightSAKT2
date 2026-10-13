@@ -1,0 +1,29 @@
+{
+  "ASSIST2009": {
+    "num_q": 137,
+    "length": 100,
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "train_chunks": 3993,
+    "validation_chunks": 567,
+    "test_chunks": 1071
+  },
+  "ASSIST2015": {
+    "num_q": 101,
+    "length": 100,
+    "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+    "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+    "train_chunks": 14615,
+    "validation_chunks": 2084,
+    "test_chunks": 4191
+  },
+  "Algebra2005": {
+    "num_q": 388,
+    "length": 200,
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "train_chunks": 2201,
+    "validation_chunks": 504,
+    "test_chunks": 638
+  }
+}

@@ -27,13 +27,17 @@ def snapshot(root=Path('.')):
         except (FileNotFoundError, ProcessLookupError):
             live[name] = {'pid': pid, 'alive': False}
     completed = counts.get('completed', 0)
+    reuse_path=root/'experiments/reuse_plan.json'
+    extra_reuses=len(json.loads(reuse_path.read_text())['jobs']) if reuse_path.exists() else 0
     return {
         'updated_utc': datetime.now(timezone.utc).isoformat(),
         'total_slots': len(jobs), 'completed': completed,
         'remaining': len(jobs) - completed, 'counts': counts, 'processes': live,
         'running_jobs': [{k: j.get(k) for k in ['run_id', 'last_completed_epoch', 'best_checkpoint', 'resume_command']} for j in jobs if j['status'] == 'running'],
         'phase_counts': {str(p): dict(Counter(j['status'] for j in jobs if j['phase'] == p)) for p in [5, 6, 7, 8]},
-        'reused_slots': sum(j['phase'] == 7 and j['seed'] == 42 or j.get('variant') == 'no_regularization' for j in jobs),
+        'reused_slots': sum(j['phase'] == 7 and j['seed'] == 42 or j.get('variant') == 'no_regularization' for j in jobs)+extra_reuses,
+        'additional_primary_grid_reuses':extra_reuses,
+        'distinct_training_runs_planned':len(jobs)-sum(j['phase'] == 7 and j['seed'] == 42 or j.get('variant') == 'no_regularization' for j in jobs)-extra_reuses,
         'all_training_slots_completed': completed == len(jobs),
         'research_verified_complete': completed==len(jobs) and (root / 'reports/research_verification.json').exists() and
             json.loads((root / 'reports/research_verification.json').read_text()).get('verified', False),
@@ -54,6 +58,12 @@ def write_progress(root=Path('.')):
     for job in progress['running_jobs']:
         text += f"Current run: `{job['run_id']}`; last completed epoch: {job['last_completed_epoch']}.\n\n"
     text += f"The {progress['reused_slots']} reuse/alias slots are not independent new training experiments. Default ablation reuses final LightSAKT evidence. The separate smoke run is excluded from schedule counts.\n\n"
+    text += f"Distinct planned trainings: {progress['distinct_training_runs_planned']}. The live manifest plus experiments/reuse_plan.json form the effective schedule; {progress['additional_primary_grid_reuses']} exact primary/grid duplicates reuse verified evidence without removing grid rows. See reports/SCHEDULE_AUDIT.md.\n\n"
+    eta_path=root/'reports/ETA.json'
+    if eta_path.exists():
+        eta=json.loads(eta_path.read_text());hours=eta['remaining_training_gpu_reserved_hours']
+        text+=f"Measured-reference training ETA: {hours['central']:,.1f} GPU reserved hours; scenario envelope {hours['low']:,.1f}–{hours['high']:,.1f} hours. Estimate updated {eta['updated_utc']}; unmeasured final GPU analysis adds time. See reports/ETA_REPORT.md.\n\n"
+    text+='Process existence alone is not a health guarantee. Last independently sampled CPU/checkpoint progress and checkpoint integrity are recorded in reports/EXECUTION_HEALTH.md. A detached scheduler survives a terminal disconnect, but no automatic restart after environment shutdown is configured.\n\n'
     text += 'The 108 LightSAKT grid configurations, equal baseline tuning budgets, and five matched final seeds use the frozen student splits. See experiments/manifest.json and per-run status files.\n\n'
     text += 'Research completion requires every scheduled slot and all dependent analyses, plots, checkpoints, and traceability checks to pass. Raw-data provenance limitations and the historical simplified GKT label remain disclosed.\n'
     path=root / 'reports/EXPERIMENT_STATUS.md';tmp=path.with_suffix(f'.{os.getpid()}.tmp');tmp.write_text(text);tmp.replace(path)

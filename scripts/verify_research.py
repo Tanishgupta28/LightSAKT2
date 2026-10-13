@@ -87,6 +87,8 @@ def verify():
     assert set(j['run_id'] for j in manifest['jobs']) <= {r['run_id'] for r in backups}
     for entry in backups:
         assert sha256(entry['path'])==entry['sha256'], f'Backup checksum: {entry["path"]}'
+        if entry.get('result_archive'):
+            record=entry['result_archive'];assert sha256(record['path'])==record['sha256']
     verified=json.load(open('reports/artifact_verification.json'))
     assert set(j['run_id'] for j in manifest['jobs']) <= {r['run_id'] for r in verified if r['validation_recomputed']}
     assert Path('paper/CORRECTED_RESULTS.md').exists()

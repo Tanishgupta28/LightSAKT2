@@ -1,0 +1,95 @@
+{
+  "logical_slots_before": 957,
+  "logical_slots_after": 957,
+  "training_jobs_before": 921,
+  "training_jobs_after": 912,
+  "new_primary_grid_reuses": 9,
+  "existing_final_seed42_reuses": 21,
+  "existing_regularization_aliases": 15,
+  "before_snapshot": "reports/schedule_before_20261013T144224.json",
+  "before_manifest_sha256": "e0232e95978c77a55fad72345345a0733eed55269fe5ca76e6e60a94782e8e3f",
+  "after_effective_snapshot": "reports/schedule_after_20261013T144224.json",
+  "coverage_errors": [],
+  "merged_entries": [
+    {
+      "destination": "ASSIST2009-DKVMN-baseline_tuning-42-35063687bb25",
+      "source": "ASSIST2009-DKVMN-primary-42-902c00823fa6",
+      "dataset": "ASSIST2009",
+      "model": "DKVMN",
+      "action": "retain logical grid row; reuse verified primary training; expose validation only"
+    },
+    {
+      "destination": "ASSIST2009-GKT-baseline_tuning-42-1d9e4935301d",
+      "source": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff",
+      "dataset": "ASSIST2009",
+      "model": "GKT",
+      "action": "retain logical grid row; reuse verified primary training; expose validation only"
+    },
+    {
+      "destination": "ASSIST2009-LightSAKT-grid-42-48c411be10b6",
+      "source": "ASSIST2009-LightSAKT-primary-42-440d619b7547",
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "action": "retain logical grid row; reuse verified primary training; expose validation only"
+    },
+    {
+      "destination": "ASSIST2015-DKVMN-baseline_tuning-42-3982d37828fa",
+      "source": "ASSIST2015-DKVMN-primary-42-c91ed69c5400",
+      "dataset": "ASSIST2015",
+      "model": "DKVMN",
+      "action": "retain logical grid row; reuse verified primary training; expose validation only"
+    },
+    {
+      "destination": "ASSIST2015-GKT-baseline_tuning-42-bc5df7d0769a",
+      "source": "ASSIST2015-GKT-primary-42-c3a67383f961",
+      "dataset": "ASSIST2015",
+      "model": "GKT",
+      "action": "retain logical grid row; reuse verified primary training; expose validation only"
+    },
+    {
+      "destination": "ASSIST2015-LightSAKT-grid-42-08c3ea752993",
+      "source": "ASSIST2015-LightSAKT-primary-42-301d9bff60e9",
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "action": "retain logical grid row; reuse verified primary training; expose validation only"
+    },
+    {
+      "destination": "Algebra2005-DKVMN-baseline_tuning-42-0aecd459f4c2",
+      "source": "Algebra2005-DKVMN-primary-42-7f8a895e7d8e",
+      "dataset": "Algebra2005",
+      "model": "DKVMN",
+      "action": "retain logical grid row; reuse verified primary training; expose validation only"
+    },
+    {
+      "destination": "Algebra2005-GKT-baseline_tuning-42-05ddf03d7e41",
+      "source": "Algebra2005-GKT-primary-42-b5d7512cd82b",
+      "dataset": "Algebra2005",
+      "model": "GKT",
+      "action": "retain logical grid row; reuse verified primary training; expose validation only"
+    },
+    {
+      "destination": "Algebra2005-LightSAKT-grid-42-4faf97b35b89",
+      "source": "Algebra2005-LightSAKT-primary-42-dca5e1830530",
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "action": "retain logical grid row; reuse verified primary training; expose validation only"
+    }
+  ],
+  "split_rule": "Identical student split across model/seed runs is deliberate pairing, not duplicate training.",
+  "dependencies": "All source primaries precede phase-6 reuses; final configs require all 36 validation candidates; no_regularization depends on same-seed no_dropout.",
+  "activation": "scripts.run reads the overlay in each future child; the active scheduler and training process are not restarted.",
+  "required_post_training_analyses": [
+    "verified paper tables",
+    "paired statistical comparisons",
+    "efficiency and GPU memory/latency benchmarks",
+    "three causal attention maps",
+    "ASSIST2009 conditional correctness case study",
+    "manuscript text",
+    "full CPU/CUDA tests",
+    "unique checkpoint inference",
+    "research traceability verification"
+  ],
+  "post_training_dependency": "scripts.schedule automatically invokes scripts.finalize after every required training/reuse slot is completed. Failed or missing slots block completion; analyses have a separate resumable ledger.",
+  "primary_coverage_verified": true,
+  "reuse_dependencies_acyclic_verified": true
+}
