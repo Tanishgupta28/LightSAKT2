@@ -770,31 +770,43 @@
       "config": "configs/runs/ASSIST2009-DKTplus-baseline_tuning-42-00e2e0c04695.json",
       "run_id": "ASSIST2009-DKTplus-baseline_tuning-42-00e2e0c04695",
       "phase": 6,
-      "status": "running"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 26,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKTplus-baseline_tuning-42-00e2e0c04695/config.json"
     },
     {
       "config": "configs/runs/ASSIST2009-DKTplus-baseline_tuning-42-a3223be06c80.json",
       "run_id": "ASSIST2009-DKTplus-baseline_tuning-42-a3223be06c80",
       "phase": 6,
-      "status": "pending"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 11,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKTplus-baseline_tuning-42-a3223be06c80/config.json"
     },
     {
       "config": "configs/runs/ASSIST2009-DKTplus-baseline_tuning-42-9c00270e1694.json",
       "run_id": "ASSIST2009-DKTplus-baseline_tuning-42-9c00270e1694",
       "phase": 6,
-      "status": "pending"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 14,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKTplus-baseline_tuning-42-9c00270e1694/config.json"
     },
     {
       "config": "configs/runs/ASSIST2009-DKTplus-baseline_tuning-42-750e8107942a.json",
       "run_id": "ASSIST2009-DKTplus-baseline_tuning-42-750e8107942a",
       "phase": 6,
-      "status": "pending"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 14,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKTplus-baseline_tuning-42-750e8107942a/config.json"
     },
     {
       "config": "configs/runs/ASSIST2009-DKTplus-baseline_tuning-42-c3d39e22ff10.json",
       "run_id": "ASSIST2009-DKTplus-baseline_tuning-42-c3d39e22ff10",
       "phase": 6,
-      "status": "pending"
+      "status": "running"
     },
     {
       "config": "configs/runs/ASSIST2009-DKTplus-baseline_tuning-42-4fa58ee8f7eb.json",
