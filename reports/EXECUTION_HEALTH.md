@@ -1,12 +1,12 @@
 # Execution health
 
-Observed UTC: 2026-10-13T15:10:24.760538+00:00
+Observed UTC: 2026-10-13T15:16:51.567165+00:00
 
-Scheduler PID 32646; healthy progress sampled: False; failed/interrupted/blocked slots: 0.
+Scheduler PID 32646; healthy progress sampled: True; failed/interrupted/blocked slots: 0.
 
-Child PID 45556: CPU seconds advanced None over None observed seconds. Session 32646, parent 32646.
+Child PID 45556: CPU seconds advanced 60.74000000000001 over 60.75462079048157 observed seconds. Session 32646, parent 32646.
 
-Run `ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6`: epoch 0; recent epoch average None; last checkpoint epoch age None seconds; stall flag None (three observed epoch durations).
+Run `ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6`: epoch 0; measured recent epoch average None; extrapolated first-epoch duration 552.5805389513434; progress age 398.2748041152954 seconds (initial running status; first checkpoint not yet saved); stall flag False. Threshold uses three measured epoch durations, or the provisional ETA epoch estimate before the first checkpoint.
 
 MIG memory allocation: 732 / 40320 MiB. Utilization percentage is unavailable; no percentage is inferred from board power or PID existence.
 

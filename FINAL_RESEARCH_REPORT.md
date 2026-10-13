@@ -26,9 +26,9 @@ Running 67 items in this shard
 Additional CPU verification during active GPU training:
 
 ```
-Running 82 items in this shard
-.....................................sssssssssssssss..............................                                                                   [100%]
-67 passed, 15 skipped in 13.36s
+Running 84 items in this shard
+.....................................sssssssssssssss................................                                                                 [100%]
+69 passed, 15 skipped in 13.44s
 ```
 
 CUDA tests were skipped in this additional invocation to avoid GPU contention; the preceding full CPU/CUDA correctness gate remains the GPU evidence. Model/training source fingerprints are unchanged.

@@ -1,12 +1,14 @@
 # Measured runtime estimate
 
-Updated UTC: 2026-10-13T15:10:24.251535+00:00
+Updated UTC: 2026-10-13T15:16:50.878006+00:00
 
-Remaining training: **664.4 GPU reserved hours**; scenario range **110.0–5,582.7 hours**. Serial wall time: 27.7 days; continuous-availability training finish 2026-11-10T07:36:56.128028+00:00.
+Remaining training: **664.4 GPU reserved hours**; scenario range **110.0–5,582.7 hours**. Serial wall time: 27.7 days; continuous-availability training finish 2026-11-10T07:43:22.754499+00:00.
 
 This is a provisional measured-reference extrapolation, not a validated confidence interval. Hardware-active GPU utilization is unavailable. Epochs include training and validation, and reserved hours include their CPU work. Unmeasured final benchmarking and artifact verification add time beyond this training-only date.
 
 Overall mean completed-run duration: 20.17 minutes, over 13 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
+
+Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.
 
 ## Observed model/dataset averages
 
@@ -58,14 +60,14 @@ Overall mean completed-run duration: 20.17 minutes, over 13 actual independent c
 ## Dependent analysis duration
 
 * benchmark: 120 cases, 3 warmups plus 10 repeats each. GPU duration not measured during active training; excluded from training ETA.
-* statistics: 18 paired comparisons, five seeds; CPU enumeration only. Timing not yet measured.
-* visualizations: Three final attention maps, two ASSIST2009 case figures; CPU render timing not yet measured.
+* statistics: 18 paired comparisons, five seeds; engineering microbenchmark timing is reported below; real paired research results still require final training.
+* visualizations: Three final attention maps, two ASSIST2009 case figures; measured plot-render pilot below; final-case CPU inference remains unmeasured.
 * verification: Fresh checkpoint inference for each unique source; redundant aliases will use cached inference. Duration not separately measured.
 
 Measured CPU pilot timing (actual completed primary plots; not final research completion): {"measured_utc": "2026-10-13T14:57:20.174838+00:00", "actual_primary_analysis_seconds": 4.55341371500981, "png_figures_existing_after": 11, "includes_png_svg_pdf_and_csv": true, "scope": "Incomplete primary-only genuine data; timing includes startup and summary verification. Final five-seed graphics workload differs.", "png_figures_rendered": 6, "mean_render_seconds_per_figure_including_all_exports": 0.7589022858349684, "eighteen_five_pair_signed_rank_compute_seconds": 0.002166819991543889, "statistical_timing_scope": "Algorithm workload microbenchmark only, synthetic differences; no research p-values or completed paired experiments produced.", "five_final_attention_case_figure_render_only_estimate_seconds": 3.7945114291748423, "render_estimate_limit": "Rendering reference only; future CPU inference, dataset reads, tables and GPU benchmarks are additional and unmeasured."}
 
 Per-model measured epochs; matching dataset references where available. Extrapolate by actual padded batch-timesteps and arithmetic proxies for nodes, widths and sequence lengths. Central is geometric mean of launch and arithmetic ratios. Six-epoch earliest-stop versus 50-epoch maximum scenarios; central epoch counts are completed-run model means. Unknown selected configs use the unweighted mean of candidate runtime estimates, not a claim about selection probabilities.
 
-No Algebra timings yet; most model/dataset/config strata have zero or one completed observation. GKT hidden-width performance and future stopping epochs are unmeasured. Final checkpoint verification and exclusive GPU benchmarks remain additional work.
+No Algebra timings yet; most model/dataset/config strata have zero or one completed observation. GKT hidden-width performance and future stopping epochs are unmeasured. Post-selection test inference, subprocess initialization, final checkpoint verification and exclusive GPU benchmarks remain additional work.
 
 The preserved equal 36-configuration baseline tuning budget includes 216 GKT variant configurations across all datasets; GKT is the main measured bottleneck. No dimensions, batches, split assignments, seeds, learning rates or early-stopping rules were changed to shorten this forecast.

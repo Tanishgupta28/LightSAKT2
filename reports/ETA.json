@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-13T15:10:24.251535+00:00",
+  "updated_utc": "2026-10-13T15:16:50.878006+00:00",
   "counts": {
     "completed": 13,
     "running": 1,
@@ -7,24 +7,25 @@
   },
   "remaining_slots": 944,
   "mean_completed_run_seconds": 1209.9193863766134,
+  "completed_duration_scope": "Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.",
   "remaining_training_gpu_reserved_hours": {
     "low": 109.96677077037211,
     "central": 664.4421879146068,
     "high": 5582.716016490923
   },
   "conditional_training_finish_utc": {
-    "low": "2026-10-18T05:08:24.626308+00:00",
-    "central": "2026-11-10T07:36:56.128028+00:00",
-    "high": "2027-06-03T05:53:21.910902+00:00"
+    "low": "2026-10-18T05:14:51.252779+00:00",
+    "central": "2026-11-10T07:43:22.754499+00:00",
+    "high": "2027-06-03T05:59:48.537373+00:00"
   },
   "wall_clock_assumption": "One current MIG worker remains continuously available; no outages or new paid resources.",
   "interpretation": "GPU reserved wall hours from end-to-end measured epochs, not hardware GPU-active time. Scenario envelope, not a statistical confidence interval or guaranteed bound.",
   "method": "Per-model measured epochs; matching dataset references where available. Extrapolate by actual padded batch-timesteps and arithmetic proxies for nodes, widths and sequence lengths. Central is geometric mean of launch and arithmetic ratios. Six-epoch earliest-stop versus 50-epoch maximum scenarios; central epoch counts are completed-run model means. Unknown selected configs use the unweighted mean of candidate runtime estimates, not a claim about selection probabilities.",
-  "unknowns": "No Algebra timings yet; most model/dataset/config strata have zero or one completed observation. GKT hidden-width performance and future stopping epochs are unmeasured. Final checkpoint verification and exclusive GPU benchmarks remain additional work.",
+  "unknowns": "No Algebra timings yet; most model/dataset/config strata have zero or one completed observation. GKT hidden-width performance and future stopping epochs are unmeasured. Post-selection test inference, subprocess initialization, final checkpoint verification and exclusive GPU benchmarks remain additional work.",
   "postprocessing": {
     "benchmark": "120 cases, 3 warmups plus 10 repeats each. GPU duration not measured during active training; excluded from training ETA.",
-    "statistics": "18 paired comparisons, five seeds; CPU enumeration only. Timing not yet measured.",
-    "visualizations": "Three final attention maps, two ASSIST2009 case figures; CPU render timing not yet measured.",
+    "statistics": "18 paired comparisons, five seeds; engineering microbenchmark timing is reported below; real paired research results still require final training.",
+    "visualizations": "Three final attention maps, two ASSIST2009 case figures; measured plot-render pilot below; final-case CPU inference remains unmeasured.",
     "verification": "Fresh checkpoint inference for each unique source; redundant aliases will use cached inference. Duration not separately measured."
   },
   "longest_expected_remaining": [

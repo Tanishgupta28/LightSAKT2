@@ -1,0 +1,258 @@
+{
+  "verified_utc": "2026-10-13T15:17:12.615834+00:00",
+  "verified": true,
+  "checkpoints": [
+    {
+      "run_id": "ASSIST2009-DKT-primary-42-26e196b6a6d5",
+      "checkpoint": "checkpoints/ASSIST2009-DKT-primary-42-26e196b6a6d5/best.pt",
+      "epoch": 9,
+      "sha256": "52fd89799dcb239f46306fa2930c9f06b30f19bcafbe65313974b00138147657",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "run_id": "ASSIST2009-DKT-primary-42-26e196b6a6d5",
+      "checkpoint": "checkpoints/ASSIST2009-DKT-primary-42-26e196b6a6d5/latest.pt",
+      "epoch": 14,
+      "sha256": "ab832ed4c8bfb29c63c008ad4db5177c56b212158d1b908a629480ea72c29956",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-DKTplus-primary-42-21f9b124f6e4",
+      "checkpoint": "checkpoints/ASSIST2009-DKTplus-primary-42-21f9b124f6e4/best.pt",
+      "epoch": 16,
+      "sha256": "1b5f963de14e78298a83df6352891f39e1347d50625c8226bb5e6f4be4aba018",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "run_id": "ASSIST2009-DKTplus-primary-42-21f9b124f6e4",
+      "checkpoint": "checkpoints/ASSIST2009-DKTplus-primary-42-21f9b124f6e4/latest.pt",
+      "epoch": 21,
+      "sha256": "222ddb7601e0b4bb9f6f108a0d6c7940d3fc40e1c64f07350a28bdb690e1afdc",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-DKVMN-primary-42-902c00823fa6",
+      "checkpoint": "checkpoints/ASSIST2009-DKVMN-primary-42-902c00823fa6/best.pt",
+      "epoch": 44,
+      "sha256": "6c1fa971d91340c89be7665c934009a3103902abaa27d16b7ddf5132143164a5",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "run_id": "ASSIST2009-DKVMN-primary-42-902c00823fa6",
+      "checkpoint": "checkpoints/ASSIST2009-DKVMN-primary-42-902c00823fa6/latest.pt",
+      "epoch": 49,
+      "sha256": "7b2745d454e6da81c8098a14e2cccdc6c25f4771b2c44318109f5212c5abfaa4",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff",
+      "checkpoint": "checkpoints/ASSIST2009-GKT-primary-42-bf2b95e7f1ff/best.pt",
+      "epoch": 8,
+      "sha256": "46cc3132904e506941ecc4e00f924300f94bb66d01139b90fe28e8bc8e7a8135",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "run_id": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff",
+      "checkpoint": "checkpoints/ASSIST2009-GKT-primary-42-bf2b95e7f1ff/latest.pt",
+      "epoch": 13,
+      "sha256": "a283df4dc38f5e535c86c67a2b2a867028a336ea91170915ae48d6377244f71c",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-GKT_MHA-primary-42-e63b12ce3815",
+      "checkpoint": "checkpoints/ASSIST2009-GKT_MHA-primary-42-e63b12ce3815/best.pt",
+      "epoch": 16,
+      "sha256": "2f7516d7c87ca29ec4f553797902d4ece6bf85a01b996907fe9502094294ff71",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "run_id": "ASSIST2009-GKT_MHA-primary-42-e63b12ce3815",
+      "checkpoint": "checkpoints/ASSIST2009-GKT_MHA-primary-42-e63b12ce3815/latest.pt",
+      "epoch": 21,
+      "sha256": "2954e0a719d88d8d2e772a2d60b290c1261d4e9efee4b60508342fad61e0eb4d",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-primary-42-440d619b7547",
+      "checkpoint": "checkpoints/ASSIST2009-LightSAKT-primary-42-440d619b7547/best.pt",
+      "epoch": 6,
+      "sha256": "3cd1be71efd7acd6cb046b338e5698c041b36f8149be7c505b5b36b96296973a",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-primary-42-440d619b7547",
+      "checkpoint": "checkpoints/ASSIST2009-LightSAKT-primary-42-440d619b7547/latest.pt",
+      "epoch": 11,
+      "sha256": "0133fe1c495465995cbf692f241e45d36fd1d43c7d4192ddd47f1e3c487f9e9a",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-smoke-42",
+      "checkpoint": "checkpoints/ASSIST2009-LightSAKT-smoke-42/best.pt",
+      "epoch": 2,
+      "sha256": "9b0ce962167f75baaa2f2d496e8536ce6906021536f4e5e06098dd2239487468",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-smoke-42",
+      "checkpoint": "checkpoints/ASSIST2009-LightSAKT-smoke-42/latest.pt",
+      "epoch": 2,
+      "sha256": "dcd0cbb4b0925d27a85e2183796eae6793562975395bd7077385f3b5bac2c6d7",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-primary-42-3c4dd6ec486d",
+      "checkpoint": "checkpoints/ASSIST2009-SAKT-primary-42-3c4dd6ec486d/best.pt",
+      "epoch": 16,
+      "sha256": "6055f2e525e2decb9d6dba8f38c53a970118e53df0063890170ae52718f8d7e5",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-primary-42-3c4dd6ec486d",
+      "checkpoint": "checkpoints/ASSIST2009-SAKT-primary-42-3c4dd6ec486d/latest.pt",
+      "epoch": 21,
+      "sha256": "deab02cfa4264519a70d6a5d83dc6c3d3466ed319703ef2a78085799be071872",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-DKT-primary-42-1b12a9ba9ffd",
+      "checkpoint": "checkpoints/ASSIST2015-DKT-primary-42-1b12a9ba9ffd/best.pt",
+      "epoch": 10,
+      "sha256": "ba6a2aeecac07c78194e5d59dd3de334530289fd2da1979ac85c13ce1d274508",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "run_id": "ASSIST2015-DKT-primary-42-1b12a9ba9ffd",
+      "checkpoint": "checkpoints/ASSIST2015-DKT-primary-42-1b12a9ba9ffd/latest.pt",
+      "epoch": 15,
+      "sha256": "b06efb483c3e82274acdcd12e10032fc6c6d6193a0ab778d279f178080c4b586",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-DKTplus-primary-42-3bf5cb94131c",
+      "checkpoint": "checkpoints/ASSIST2015-DKTplus-primary-42-3bf5cb94131c/best.pt",
+      "epoch": 13,
+      "sha256": "aa0daab45fee53094ff441271a9efdb4aa6c828c9d3c81ac38fefcfd6e3cba8f",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "run_id": "ASSIST2015-DKTplus-primary-42-3bf5cb94131c",
+      "checkpoint": "checkpoints/ASSIST2015-DKTplus-primary-42-3bf5cb94131c/latest.pt",
+      "epoch": 18,
+      "sha256": "1131a5b49042454793cc380bfdc311e99a0c32d009525270d8e11a98ab655311",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-DKVMN-primary-42-c91ed69c5400",
+      "checkpoint": "checkpoints/ASSIST2015-DKVMN-primary-42-c91ed69c5400/best.pt",
+      "epoch": 31,
+      "sha256": "c6fe6fb357bcb8d7aede1bbea7c923f879bee2f0e7f306f824c9918f741eaa77",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "run_id": "ASSIST2015-DKVMN-primary-42-c91ed69c5400",
+      "checkpoint": "checkpoints/ASSIST2015-DKVMN-primary-42-c91ed69c5400/latest.pt",
+      "epoch": 36,
+      "sha256": "82370dee31ad075032cd79ca43c032c2a2cddf666ebc98289a4795bdd5f9ed2e",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-GKT-primary-42-c3a67383f961",
+      "checkpoint": "checkpoints/ASSIST2015-GKT-primary-42-c3a67383f961/best.pt",
+      "epoch": 9,
+      "sha256": "b521c46da685cb583c3f95cf5635efab7edf6c315c1e7e2ac0baa6918c2ffacd",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "run_id": "ASSIST2015-GKT-primary-42-c3a67383f961",
+      "checkpoint": "checkpoints/ASSIST2015-GKT-primary-42-c3a67383f961/latest.pt",
+      "epoch": 14,
+      "sha256": "6c2ca9ca72222d4d16a5a217f91c36216f22b15ef554cbfe8224d4d13754dc6b",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-primary-42-301d9bff60e9",
+      "checkpoint": "checkpoints/ASSIST2015-LightSAKT-primary-42-301d9bff60e9/best.pt",
+      "epoch": 7,
+      "sha256": "1a3133ab28882d02ee985cb18848caae3c703160e43b80a6c79d6ff532e7b6ab",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-primary-42-301d9bff60e9",
+      "checkpoint": "checkpoints/ASSIST2015-LightSAKT-primary-42-301d9bff60e9/latest.pt",
+      "epoch": 12,
+      "sha256": "c60b764c19d38cce91b09c898de4f5157880a5f7f9f561d55c84c6dfe1cee9be",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-primary-42-c67b62d42456",
+      "checkpoint": "checkpoints/ASSIST2015-SAKT-primary-42-c67b62d42456/best.pt",
+      "epoch": 10,
+      "sha256": "4a4f679c0d906d9a85f54f7cc97e35064cef89d55aa012c6e6a8c6f280ea255e",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-primary-42-c67b62d42456",
+      "checkpoint": "checkpoints/ASSIST2015-SAKT-primary-42-c67b62d42456/latest.pt",
+      "epoch": 15,
+      "sha256": "da9621cffd4864e7e0cc35eb291939b2721376c0c9215bc0869ee9678714e3ec",
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "optimizer_rng_verified": true
+    }
+  ]
+}

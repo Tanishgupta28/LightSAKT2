@@ -134,21 +134,23 @@ def estimate():
             **{k+'_hours':v/3600 for k,v in values.items()}})
     frame=pd.DataFrame(estimates) if estimates else pd.DataFrame(columns=[
         'run_id','phase','dataset','model','action','low_hours','central_hours','high_hours'])
+    if not estimates:frame[['low_hours','central_hours','high_hours']]=frame[['low_hours','central_hours','high_hours']].astype(float)
     frame.to_csv('reports/ETA_REMAINING_RUNS.csv',index=False)
     grouped=frame.groupby(['phase','dataset','model'])[['low_hours','central_hours','high_hours']].sum().reset_index()
     grouped.to_csv('reports/ETA_PHASE_MODEL_DATASET.csv',index=False)
     totals={k:float(frame[k+'_hours'].sum()) for k in ['low','central','high']}
     record={'updated_utc':now.isoformat(),'counts':progress['counts'],'remaining_slots':progress['remaining'],
         'mean_completed_run_seconds':statistics.mean(r['run_seconds'] for r in known if 'run_seconds' in r),
+        'completed_duration_scope':'Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.',
         'remaining_training_gpu_reserved_hours':totals,
         'conditional_training_finish_utc':{k:(now+timedelta(hours=v)).isoformat() for k,v in totals.items()},
         'wall_clock_assumption':'One current MIG worker remains continuously available; no outages or new paid resources.',
         'interpretation':'GPU reserved wall hours from end-to-end measured epochs, not hardware GPU-active time. Scenario envelope, not a statistical confidence interval or guaranteed bound.',
         'method':'Per-model measured epochs; matching dataset references where available. Extrapolate by actual padded batch-timesteps and arithmetic proxies for nodes, widths and sequence lengths. Central is geometric mean of launch and arithmetic ratios. Six-epoch earliest-stop versus 50-epoch maximum scenarios; central epoch counts are completed-run model means. Unknown selected configs use the unweighted mean of candidate runtime estimates, not a claim about selection probabilities.',
-        'unknowns':'No Algebra timings yet; most model/dataset/config strata have zero or one completed observation. GKT hidden-width performance and future stopping epochs are unmeasured. Final checkpoint verification and exclusive GPU benchmarks remain additional work.',
+        'unknowns':'No Algebra timings yet; most model/dataset/config strata have zero or one completed observation. GKT hidden-width performance and future stopping epochs are unmeasured. Post-selection test inference, subprocess initialization, final checkpoint verification and exclusive GPU benchmarks remain additional work.',
         'postprocessing':{'benchmark':'120 cases, 3 warmups plus 10 repeats each. GPU duration not measured during active training; excluded from training ETA.',
-                          'statistics':'18 paired comparisons, five seeds; CPU enumeration only. Timing not yet measured.',
-                          'visualizations':'Three final attention maps, two ASSIST2009 case figures; CPU render timing not yet measured.',
+                          'statistics':'18 paired comparisons, five seeds; engineering microbenchmark timing is reported below; real paired research results still require final training.',
+                          'visualizations':'Three final attention maps, two ASSIST2009 case figures; measured plot-render pilot below; final-case CPU inference remains unmeasured.',
                           'verification':'Fresh checkpoint inference for each unique source; redundant aliases will use cached inference. Duration not separately measured.'},
         'longest_expected_remaining':frame[frame.action=='training'].nlargest(12,'central_hours').to_dict('records')}
     write_json('reports/ETA.json',record)
@@ -156,6 +158,7 @@ def estimate():
     text+=f"Remaining training: **{totals['central']:,.1f} GPU reserved hours**; scenario range **{totals['low']:,.1f}–{totals['high']:,.1f} hours**. Serial wall time: {totals['central']/24:,.1f} days; continuous-availability training finish {record['conditional_training_finish_utc']['central']}.\n\n"
     text+='This is a provisional measured-reference extrapolation, not a validated confidence interval. Hardware-active GPU utilization is unavailable. Epochs include training and validation, and reserved hours include their CPU work. Unmeasured final benchmarking and artifact verification add time beyond this training-only date.\n\n'
     text+=f"Overall mean completed-run duration: {record['mean_completed_run_seconds']/60:.2f} minutes, over {sum('run_seconds' in r for r in known)} actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.\n\n"
+    text+=record['completed_duration_scope']+'\n\n'
     text+='## Observed model/dataset averages\n\n|Dataset|Model|Completed runs|Measured epochs|Mean epoch seconds|Mean completed run minutes|\n|---|---|---|---|---|---|\n'
     for r in observed_rows:
         ep=f"{r['average_epoch_seconds']:.3f}" if r['average_epoch_seconds'] is not None else 'not measured'
