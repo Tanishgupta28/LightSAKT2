@@ -1,12 +1,12 @@
 # Measured runtime estimate
 
-Updated UTC: 2026-10-13T19:14:33.371167+00:00
+Updated UTC: 2026-10-13T19:20:39.336210+00:00
 
-Remaining training: **701.2 GPU reserved hours**; scenario range **112.1–5,746.9 hours**. Serial wall time: 29.2 days; continuous-availability training finish 2026-11-12T00:24:02.697843+00:00.
+Remaining training: **701.1 GPU reserved hours**; scenario range **112.1–5,746.5 hours**. Serial wall time: 29.2 days; continuous-availability training finish 2026-11-12T00:26:35.589457+00:00.
 
 This is a provisional measured-reference extrapolation, not a validated confidence interval. Hardware-active GPU utilization is unavailable. Epochs include training and validation, and reserved hours include their CPU work. Unmeasured final benchmarking and artifact verification add time beyond this training-only date.
 
-Overall mean completed-run duration: 36.10 minutes, over 14 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
+Overall mean completed-run duration: 31.60 minutes, over 16 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
 
 Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.
 
@@ -28,9 +28,9 @@ Saved cumulative training_seconds include training and validation through checkp
 |ASSIST2015|GKT_MHA|1|23|633.193|243.188|
 |ASSIST2015|SAKT|1|15|1.267|0.321|
 |ASSIST2015|LightSAKT|1|12|5.794|1.164|
-|Algebra2005|DKT|0|17|0.303|not measured|
-|Algebra2005|DKT+|0|0|not measured|not measured|
-|Algebra2005|DKVMN|0|0|not measured|not measured|
+|Algebra2005|DKT|1|27|0.285|0.138|
+|Algebra2005|DKT+|1|33|0.322|0.185|
+|Algebra2005|DKVMN|0|45|7.365|not measured|
 |Algebra2005|GKT|0|0|not measured|not measured|
 |Algebra2005|GKT_MHA|0|0|not measured|not measured|
 |Algebra2005|SAKT|0|0|not measured|not measured|
@@ -42,9 +42,9 @@ Saved cumulative training_seconds include training and validation through checkp
 |---|---|---|---|
 |LightSAKT_grid|0.22|0.58|4.52|
 |ablations|0.02|0.30|2.73|
-|baseline_tuning|105.20|626.42|4,555.53|
-|primary|0.70|3.66|18.12|
-|repeated_seeds|5.96|70.20|1,165.96|
+|baseline_tuning|105.19|626.44|4,555.32|
+|primary|0.69|3.57|18.01|
+|repeated_seeds|5.96|70.20|1,165.91|
 
 ## Longest forecast runs
 

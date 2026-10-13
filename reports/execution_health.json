@@ -1,10 +1,10 @@
 {
-  "updated_utc": "2026-10-13T19:14:34.279480+00:00",
-  "sample_time": 1791918873.4727447,
+  "updated_utc": "2026-10-13T19:20:39.812623+00:00",
+  "sample_time": 1791919239.4393244,
   "counts": {
-    "completed": 14,
+    "completed": 16,
     "running": 1,
-    "pending": 942
+    "pending": 940
   },
   "scheduler": {
     "pid": 32646,
@@ -12,35 +12,35 @@
   },
   "training_processes": [
     {
-      "pid": 67198,
-      "cpu_seconds": 15.08,
+      "pid": 68371,
+      "cpu_seconds": 344.55,
       "process_state": "R",
       "ppid": 32646,
       "session_id": 32646,
-      "observed_seconds": null,
-      "cpu_seconds_advanced": null
+      "observed_seconds": 60.73272204399109,
+      "cpu_seconds_advanced": 60.639999999999986
     }
   ],
   "active_runs": [
     {
-      "run_id": "Algebra2005-DKT-primary-42-0a42097f8641",
-      "last_completed_epoch": 18,
-      "best_checkpoint": "checkpoints/Algebra2005-DKT-primary-42-0a42097f8641/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKT-primary-42-0a42097f8641/config.json",
-      "recent_mean_epoch_seconds": 0.3113655407971237,
-      "seconds_since_last_epoch": 0.020592689514160156,
+      "run_id": "Algebra2005-DKVMN-primary-42-7f8a895e7d8e",
+      "last_completed_epoch": 45,
+      "best_checkpoint": "checkpoints/Algebra2005-DKVMN-primary-42-7f8a895e7d8e/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKVMN-primary-42-7f8a895e7d8e/config.json",
+      "recent_mean_epoch_seconds": 7.2990873728063885,
+      "seconds_since_last_epoch": 3.941965341567993,
       "startup_epoch_seconds_extrapolated": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 0.9340966223913711,
+      "stall_threshold_seconds": 21.897262118419164,
       "checkpoint_stalled": false
     }
   ],
-  "gpu_memory_mib": 704,
+  "gpu_memory_mib": 654,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
-  "healthy_progress_observed": false,
+  "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 16 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 19 independently downloaded/checksum verified; completed-archive synchronization True."
 }

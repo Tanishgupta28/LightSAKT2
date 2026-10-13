@@ -1,14 +1,14 @@
 # Experiment status
 
-Updated UTC: 2026-10-13T19:15:21.942803+00:00
+Updated UTC: 2026-10-13T19:21:32.843432+00:00
 
-Completed: **16**. Remaining: **941**. Total schedule slots: 957.
+Completed: **17**. Remaining: **940**. Total schedule slots: 957.
 
 ```json
 {
-  "completed": 16,
+  "completed": 17,
   "running": 1,
-  "pending": 940
+  "pending": 939
 }
 ```
 
@@ -20,17 +20,17 @@ Eta process: running (PID 51531).
 
 Offsite process: running (PID 49211).
 
-Current run: `Algebra2005-DKVMN-primary-42-7f8a895e7d8e`; last completed epoch: 2.
+Current run: `Algebra2005-GKT-primary-42-b5d7512cd82b`; last completed epoch: 0.
 
 The 45 reuse/alias slots are not independent new training experiments. Default ablation reuses final LightSAKT evidence. The separate smoke run is excluded from schedule counts.
 
 Distinct planned trainings: 912. The live manifest plus experiments/reuse_plan.json form the effective schedule; 9 exact primary/grid duplicates reuse verified evidence without removing grid rows. See reports/SCHEDULE_AUDIT.md.
 
-Measured-reference training ETA: 701.2 GPU reserved hours; scenario envelope 112.1–5,746.9 hours. Estimate updated 2026-10-13T19:14:33.371167+00:00; unmeasured final GPU analysis adds time. See reports/ETA_REPORT.md.
+Measured-reference training ETA: 701.1 GPU reserved hours; scenario envelope 112.1–5,746.5 hours. Estimate updated 2026-10-13T19:20:39.336210+00:00; unmeasured final GPU analysis adds time. See reports/ETA_REPORT.md.
 
 Process existence alone is not a health guarantee. Last independently sampled CPU/checkpoint progress and checkpoint integrity are recorded in reports/EXECUTION_HEALTH.md. A detached scheduler survives a terminal disconnect, but no automatic restart after environment shutdown is configured.
 
-Private draft recovery assets independently download/checksum verified: 17. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md and reports/offsite_backup.json.
+Private draft recovery assets independently download/checksum verified: 19. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md and reports/offsite_backup.json.
 
 The 108 LightSAKT grid configurations, equal baseline tuning budgets, and five matched final seeds use the frozen student splits. See experiments/manifest.json and per-run status files.
 

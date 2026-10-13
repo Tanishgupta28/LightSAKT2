@@ -55,15 +55,16 @@ Tests cover causality, the original leakage regression, dense float64 kernel/gra
 |ASSIST2015|SAKT|42|15|10|0.724443|0.749143|0.847193|0.172060|0.518539|
 |Algebra2005|DKT|42|27|22|0.822137|0.800368|0.872351|0.149487|0.466205|
 |Algebra2005|DKT+|42|33|28|0.823264|0.800227|0.872682|0.153568|0.478078|
+|Algebra2005|DKVMN|42|50|50|0.809766|0.795944|0.869996|0.143876|0.444578|
 
 Completed smoke runs: 1. Smoke validation is not a final research comparison.
 
 ## Experiment schedule status
 
 {
-  "completed": 16,
+  "completed": 17,
   "running": 1,
-  "pending": 940
+  "pending": 939
 }
 
 Total requested schedule slots: 957. Counts include 21 seed-42 checkpoint reuse slots, 15 regularization aliases, and 9 verified primary/grid reuse slots, which are not new independent trainings. Distinct planned trainings: 912. Every required grid row is retained. The five-seed primary result is the mean, never the best seed. All remaining pending slots have no experimental result yet.
@@ -99,4 +100,4 @@ Private repository: https://github.com/Tanishgupta28/LightSAKT2, branch `researc
 
 Originals: `original_snapshot/`; raw datasets: `data/raw/`; fresh preprocessing: `data/processed/`; student manifests: `data/splits/`; fresh weights: `checkpoints/<run>/`; raw metrics/configs: `results/raw/<run>/`; predictions: `results/predictions/`; generated tables/figures: `results/tables/`, `results/figures/`; paper evidence: `paper/`, PAPER_CORRECTIONS.md.
 
-Independent private GitHub draft recovery artifacts: 17 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
+Independent private GitHub draft recovery artifacts: 19 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
