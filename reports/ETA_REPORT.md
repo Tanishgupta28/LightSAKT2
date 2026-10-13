@@ -1,12 +1,12 @@
 # Measured runtime estimate
 
-Updated UTC: 2026-10-13T15:08:22.356410+00:00
+Updated UTC: 2026-10-13T15:10:24.251535+00:00
 
-Remaining training: **664.5 GPU reserved hours**; scenario range **110.0–5,583.0 hours**. Serial wall time: 27.7 days; continuous-availability training finish 2026-11-10T07:40:01.159775+00:00.
+Remaining training: **664.4 GPU reserved hours**; scenario range **110.0–5,582.7 hours**. Serial wall time: 27.7 days; continuous-availability training finish 2026-11-10T07:36:56.128028+00:00.
 
 This is a provisional measured-reference extrapolation, not a validated confidence interval. Hardware-active GPU utilization is unavailable. Epochs include training and validation, and reserved hours include their CPU work. Unmeasured final benchmarking and artifact verification add time beyond this training-only date.
 
-Overall mean completed-run duration: 23.70 minutes, over 11 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
+Overall mean completed-run duration: 20.17 minutes, over 13 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
 
 ## Observed model/dataset averages
 
@@ -24,8 +24,8 @@ Overall mean completed-run duration: 23.70 minutes, over 11 actual independent c
 |ASSIST2015|DKVMN|1|36|23.941|14.382|
 |ASSIST2015|GKT|1|14|605.806|141.706|
 |ASSIST2015|GKT_MHA|0|0|not measured|not measured|
-|ASSIST2015|SAKT|0|0|not measured|not measured|
-|ASSIST2015|LightSAKT|0|0|not measured|not measured|
+|ASSIST2015|SAKT|1|15|1.267|0.321|
+|ASSIST2015|LightSAKT|1|12|5.794|1.164|
 |Algebra2005|DKT|0|0|not measured|not measured|
 |Algebra2005|DKT+|0|0|not measured|not measured|
 |Algebra2005|DKVMN|0|0|not measured|not measured|
@@ -38,11 +38,11 @@ Overall mean completed-run duration: 23.70 minutes, over 11 actual independent c
 
 |Phase|Low hours|Central hours|High hours|
 |---|---|---|---|
-|LightSAKT_grid|0.22|0.56|4.53|
-|ablations|0.02|0.29|2.74|
-|baseline_tuning|102.60|590.65|4,422.93|
-|primary|1.50|6.81|27.15|
-|repeated_seeds|5.66|66.22|1,125.60|
+|LightSAKT_grid|0.22|0.58|4.52|
+|ablations|0.02|0.30|2.73|
+|baseline_tuning|102.59|590.56|4,422.82|
+|primary|1.48|6.78|27.05|
+|repeated_seeds|5.66|66.22|1,125.59|
 
 ## Longest forecast runs
 
