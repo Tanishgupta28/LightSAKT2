@@ -1,0 +1,10 @@
+{
+  "run_id": "ASSIST2015-DKVMN-primary-42-c91ed69c5400",
+  "status": "running",
+  "last_completed_epoch": 0,
+  "config": "results/raw/ASSIST2015-DKVMN-primary-42-c91ed69c5400/config.json",
+  "seed": 42,
+  "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-DKVMN-primary-42-c91ed69c5400/config.json",
+  "best_checkpoint": "checkpoints/ASSIST2015-DKVMN-primary-42-c91ed69c5400/best.pt",
+  "failure_reason": null
+}

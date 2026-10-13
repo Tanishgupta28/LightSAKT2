@@ -2,15 +2,11 @@ import json
 import subprocess
 from pathlib import Path
 import pandas as pd
+from scripts.progress import write_progress
 
 
 def main():
-    manifest=json.load(open('experiments/manifest.json'));counts={}
-    for job in manifest['jobs']:
-        path=Path('results/raw')/job['run_id']/'status.json'
-        current=json.load(open(path)).get('status',job['status']) if path.exists() else job['status']
-        counts[current]=counts.get(current,0)+1
-    Path('reports/EXPERIMENT_STATUS.md').write_text('# Experiment status\n\n'+json.dumps(counts,indent=2)+'\n\nTotal scheduled experiment slots: 957. This includes 21 selected-checkpoint reuse slots and 15 no_regularization aliases; these are not new independent trainings. Default ablation reuses final LightSAKT evidence. Detailed current run status is in results/raw/<run>/status.json and experiments/manifest.json.\n\nThe 108 LightSAKT grid configurations and matched final-seed comparisons remain pending until their run files are completed. Raw-data acquisition limitations and the historical simplified GKT label remain disclosed.\n')
+    manifest=json.load(open('experiments/manifest.json'));progress=write_progress();counts=progress['counts']
     metrics=[]
     for path in Path('results/raw').glob('*/metrics.json'):
         result=json.load(open(path));metrics.append(result)
