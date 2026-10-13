@@ -1,7 +1,7 @@
 {
   "run_id": "ASSIST2009-DKTplus-baseline_tuning-42-a5363bef6c4e",
-  "status": "running",
-  "last_completed_epoch": 4,
+  "status": "completed",
+  "last_completed_epoch": 32,
   "config": "results/raw/ASSIST2009-DKTplus-baseline_tuning-42-a5363bef6c4e/config.json",
   "seed": 42,
   "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKTplus-baseline_tuning-42-a5363bef6c4e/config.json",

@@ -1,14 +1,14 @@
 # Execution health
 
-Observed UTC: 2026-10-13T23:20:31.228288+00:00
+Observed UTC: 2026-10-13T23:21:32.171929+00:00
 
 Scheduler PID 78472; healthy progress sampled: False; failed/interrupted/blocked slots: 0.
 
-Child PID 141619: CPU seconds advanced None over None observed seconds. Session 78472, parent 78472.
+Child PID 143686: CPU seconds advanced None over None observed seconds. Session 78472, parent 78472.
 
-Run `ASSIST2009-DKTplus-baseline_tuning-42-697f05c7d5f7`: epoch None; measured recent epoch average None; extrapolated first-epoch duration 0.8113106578213687; progress age None seconds (initial running status; first checkpoint not yet saved); stall flag None. Threshold uses three measured epoch durations, or the provisional ETA epoch estimate before the first checkpoint.
+Run `ASSIST2009-DKTplus-baseline_tuning-42-63104ac58064`: epoch None; measured recent epoch average None; extrapolated first-epoch duration 0.36285308884007117; progress age None seconds (initial running status; first checkpoint not yet saved); stall flag None. Threshold uses three measured epoch durations, or the provisional ETA epoch estimate before the first checkpoint.
 
-MIG memory allocation: 41 / 40320 MiB. Utilization percentage is unavailable; no percentage is inferred from board power or PID existence.
+MIG memory allocation: 37 / 40320 MiB. Utilization percentage is unavailable; no percentage is inferred from board power or PID existence.
 
 Best/latest state loads, finite parameters and optimizer/RNG integrity are independently recorded in reports/active_checkpoint_verification.json; saved result verification is in reports/stored_artifact_verification.json. Archive and recovery evidence is in reports/backup_integrity.json and reports/recovery_validation.json.
 
