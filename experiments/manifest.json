@@ -104,13 +104,16 @@
       "config": "configs/runs/ASSIST2015-SAKT-primary-42-c67b62d42456.json",
       "run_id": "ASSIST2015-SAKT-primary-42-c67b62d42456",
       "phase": 5,
-      "status": "running"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 15,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-SAKT-primary-42-c67b62d42456/config.json"
     },
     {
       "config": "configs/runs/ASSIST2015-LightSAKT-primary-42-301d9bff60e9.json",
       "run_id": "ASSIST2015-LightSAKT-primary-42-301d9bff60e9",
       "phase": 5,
-      "status": "pending"
+      "status": "running"
     },
     {
       "config": "configs/runs/ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6.json",
