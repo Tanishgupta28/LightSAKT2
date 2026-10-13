@@ -38,15 +38,16 @@ Tests cover causality, the original leakage regression, dense float64 kernel/gra
 |ASSIST2009|SAKT|42|21|16|0.750656|0.733438|0.818968|0.180896|0.540641|
 |ASSIST2015|DKT|42|15|10|0.726490|0.749211|0.845112|0.181661|0.546080|
 |ASSIST2015|DKT+|42|18|13|0.720112|0.745265|0.842337|0.187538|0.559814|
+|ASSIST2015|DKVMN|42|36|31|0.726157|0.750421|0.845956|0.171135|0.515765|
 
 Completed smoke runs: 1. Smoke validation is not a final research comparison.
 
 ## Experiment schedule status
 
 {
-  "completed": 9,
+  "completed": 10,
   "running": 1,
-  "pending": 947
+  "pending": 946
 }
 
 Total requested schedule slots: 957. Counts include 21 seed-42 checkpoint reuse slots and 15 regularization aliases, which are not new independent trainings. The five-seed primary result is the mean, never the best seed. All remaining pending slots have no experimental result yet.
