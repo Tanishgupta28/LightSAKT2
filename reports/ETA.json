@@ -1,22 +1,22 @@
 {
-  "updated_utc": "2026-10-13T23:09:19.406499+00:00",
+  "updated_utc": "2026-10-13T23:10:20.422224+00:00",
   "counts": {
-    "completed": 29,
+    "completed": 34,
     "running": 1,
-    "pending": 927
+    "pending": 922
   },
-  "remaining_slots": 928,
-  "mean_completed_run_seconds": 1511.2686035603788,
+  "remaining_slots": 923,
+  "mean_completed_run_seconds": 1290.1024178079717,
   "completed_duration_scope": "Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.",
   "remaining_training_gpu_reserved_hours": {
-    "low": 107.11489424814863,
-    "central": 746.6251249309676,
-    "high": 4101.834066204088
+    "low": 107.10872534079591,
+    "central": 746.5655106270875,
+    "high": 4101.454596229783
   },
   "conditional_training_finish_utc": {
-    "low": "2026-10-18T10:16:13.025792+00:00",
-    "central": "2026-11-14T01:46:49.856250+00:00",
-    "high": "2027-04-02T20:59:22.044834+00:00"
+    "low": "2026-10-18T10:16:51.833451+00:00",
+    "central": "2026-11-14T01:44:16.260482+00:00",
+    "high": "2027-04-02T20:37:36.968651+00:00"
   },
   "wall_clock_assumption": "One current MIG worker remains continuously available; no outages or new paid resources.",
   "interpretation": "GPU reserved wall hours from end-to-end measured epochs, not hardware GPU-active time. Scenario envelope, not a statistical confidence interval or guaranteed bound.",

@@ -302,25 +302,34 @@
       "config": "configs/runs/ASSIST2009-DKT-baseline_tuning-42-f600f590ec58.json",
       "run_id": "ASSIST2009-DKT-baseline_tuning-42-f600f590ec58",
       "phase": 6,
-      "status": "running"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 30,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKT-baseline_tuning-42-f600f590ec58/config.json"
     },
     {
       "config": "configs/runs/ASSIST2009-DKT-baseline_tuning-42-84dbf5c38384.json",
       "run_id": "ASSIST2009-DKT-baseline_tuning-42-84dbf5c38384",
       "phase": 6,
-      "status": "pending"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 21,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKT-baseline_tuning-42-84dbf5c38384/config.json"
     },
     {
       "config": "configs/runs/ASSIST2009-DKT-baseline_tuning-42-7106c5dd86d8.json",
       "run_id": "ASSIST2009-DKT-baseline_tuning-42-7106c5dd86d8",
       "phase": 6,
-      "status": "pending"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 21,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKT-baseline_tuning-42-7106c5dd86d8/config.json"
     },
     {
       "config": "configs/runs/ASSIST2009-DKT-baseline_tuning-42-6bd0e6ba13b5.json",
       "run_id": "ASSIST2009-DKT-baseline_tuning-42-6bd0e6ba13b5",
       "phase": 6,
-      "status": "pending"
+      "status": "running"
     },
     {
       "config": "configs/runs/ASSIST2009-DKT-baseline_tuning-42-14462678e129.json",
