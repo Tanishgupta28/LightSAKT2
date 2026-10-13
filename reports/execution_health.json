@@ -1,10 +1,10 @@
 {
-  "updated_utc": "2026-10-13T23:10:21.479757+00:00",
-  "sample_time": 1791933020.537975,
+  "updated_utc": "2026-10-13T23:11:22.706001+00:00",
+  "sample_time": 1791933081.8895442,
   "counts": {
-    "completed": 34,
+    "completed": 39,
     "running": 1,
-    "pending": 922
+    "pending": 917
   },
   "scheduler": {
     "pid": 78472,
@@ -12,8 +12,8 @@
   },
   "training_processes": [
     {
-      "pid": 116639,
-      "cpu_seconds": 4.42,
+      "pid": 119149,
+      "cpu_seconds": 4.05,
       "process_state": "R",
       "ppid": 78472,
       "session_id": 78472,
@@ -23,15 +23,15 @@
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2009-DKT-baseline_tuning-42-84dbf5c38384",
+      "run_id": "ASSIST2009-DKT-baseline_tuning-42-85a14611c8a9",
       "last_completed_epoch": null,
       "best_checkpoint": null,
       "resume_command": null,
       "recent_mean_epoch_seconds": null,
       "seconds_since_last_epoch": null,
-      "startup_epoch_seconds_extrapolated": 0.1461537608585408,
+      "startup_epoch_seconds_extrapolated": 0.35474918231117497,
       "age_reference": "initial running status; first checkpoint not yet saved",
-      "stall_threshold_seconds": 0.43846128257562234,
+      "stall_threshold_seconds": 1.0642475469335249,
       "checkpoint_stalled": null
     }
   ],
@@ -42,5 +42,5 @@
   "healthy_progress_observed": false,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 30 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 33 independently downloaded/checksum verified; completed-archive synchronization False."
 }
