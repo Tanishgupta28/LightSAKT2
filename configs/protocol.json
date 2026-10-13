@@ -1,21 +1,62 @@
 {
   "split_seed": 42,
-  "split_ratios": [0.7, 0.1, 0.2],
+  "split_ratios": [
+    0.7,
+    0.1,
+    0.2
+  ],
   "split_unit": "student",
-  "training_seeds": [42, 123, 2026, 3407, 7777],
-  "seq_len": {"ASSIST2009": 100, "ASSIST2015": 100, "Algebra2005": 200},
+  "training_seeds": [
+    42,
+    123,
+    2026,
+    3407,
+    7777
+  ],
+  "seq_len": {
+    "ASSIST2009": 100,
+    "ASSIST2015": 100,
+    "Algebra2005": 200
+  },
   "batch_size": 64,
   "max_epochs": 50,
   "patience": 5,
   "optimizer": "Adam",
-  "betas": [0.9, 0.999],
-  "epsilon": 1e-8,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "epsilon": 1e-08,
   "weight_decay": 0.0,
   "selection": "validation_auc",
   "precision": "float32; TF32 and AMP disabled",
   "chunking": "stride L; one historical boundary interaction shared; all n-1 targets covered; context resets",
   "vocabulary": "training students only; unseen identifiers map to UNK=0",
   "baseline_tuning_configurations_per_dataset": 36,
-  "lightsakt_grid": {"learning_rate": [0.0005,0.001,0.005], "embed_dim": [32,64,128], "num_heads": [2,4], "dropout": [0.1,0.2]},
-  "gkt_label": "Historical simplified GKT; PAM primary, MHA separately labeled. Canonical published GKT not established."
+  "lightsakt_grid": {
+    "learning_rate": [
+      0.0005,
+      0.001,
+      0.005
+    ],
+    "embed_dim": [
+      32,
+      64,
+      128
+    ],
+    "num_heads": [
+      2,
+      4
+    ],
+    "dropout": [
+      0.1,
+      0.2
+    ]
+  },
+  "gkt_label": "Historical simplified GKT; PAM primary, MHA separately labeled. Canonical published GKT not established.",
+  "batch_size_overrides": {
+    "GKT": 8,
+    "GKT_MHA": 8
+  },
+  "no_regularization_definition": "Equivalent to no_dropout, explicitly authorized by user; same evidence reused"
 }

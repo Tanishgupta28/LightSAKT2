@@ -32,3 +32,5 @@ Tuning budget: 36 LightSAKT configurations per dataset and 36 for each baseline 
 CSV tables are generated from run JSON files. Empty numerical cells are pending results, never zeros. Student split sampling uncertainty is not captured by seed confidence intervals. Five seeds are too few for strong Wilcoxon claims: two-sided exact minimum p is .0625 before multiple-comparison correction for five nonzero pairs.
 
 The scheduler is a process on this machine, not a hosted service. It can survive a terminal disconnect when launched with nohup, but does not restart after machine loss. Latest checkpoints and the durable workspace allow manual continuation. Do not claim automatic future completion after an environment shutdown.
+
+Runtime limitation: training_seconds aggregates checkpointed epoch segments and resumed completed work. Compute discarded by an interruption within an epoch is not included in that aggregate; failed/interrupted logs are retained. Controlled efficiency timing is separate and must be run after training contention stops.

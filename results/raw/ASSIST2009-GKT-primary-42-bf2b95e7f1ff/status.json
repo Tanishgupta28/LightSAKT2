@@ -1,0 +1,10 @@
+{
+  "run_id": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff",
+  "status": "interrupted",
+  "last_completed_epoch": 2,
+  "config": "results/raw/ASSIST2009-GKT-primary-42-bf2b95e7f1ff/config.json",
+  "seed": 42,
+  "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT-primary-42-bf2b95e7f1ff/config.json",
+  "best_checkpoint": "checkpoints/ASSIST2009-GKT-primary-42-bf2b95e7f1ff/best.pt",
+  "failure_reason": "KeyboardInterrupt: "
+}

@@ -18,9 +18,9 @@
 ## Executed tests
 
 ```
-Running 54 items in this shard
-......................................................                                                                                               [100%]
-54 passed in 13.27s
+Running 63 items in this shard
+...............................................................                                                                                      [100%]
+63 passed in 13.30s
 ```
 
 Tests cover causality, the original leakage regression, dense float64 kernel/gradient equivalence, padding, all baseline forwards/backwards, batch independence, CPU/CUDA agreement, CUDA repeatability, data coverage/chronology, validation-only selection, heldout-label update independence, no evaluation updates, exact interruption/resume, checkpoints, undefined AUC, tuning budgets and regularization alias semantics.
@@ -31,6 +31,7 @@ Tests cover causality, the original leakage regression, dense float64 kernel/gra
 |---|---|---|---|---|---|---|---|---|---|
 |ASSIST2009|DKT|42|14|9|0.755294|0.736889|0.822058|0.189177|0.563864|
 |ASSIST2009|DKT+|42|21|16|0.753788|0.734248|0.816238|0.193745|0.574353|
+|ASSIST2009|DKVMN|42|49|44|0.753237|0.735931|0.820487|0.178819|0.535500|
 |ASSIST2009|LightSAKT|42|11|6|0.749537|0.731947|0.814641|0.180871|0.540315|
 
 Completed smoke runs: 1. Smoke validation is not a final research comparison.
@@ -38,9 +39,9 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 ## Experiment schedule status
 
 {
-  "completed": 3,
-  "running": 1,
-  "pending": 953
+  "completed": 4,
+  "interrupted": 1,
+  "pending": 952
 }
 
 Total requested schedule slots: 957. Counts include 21 seed-42 checkpoint reuse slots and 15 regularization aliases, which are not new independent trainings. The five-seed primary result is the mean, never the best seed. All remaining pending slots have no experimental result yet.
@@ -49,7 +50,7 @@ Total requested schedule slots: 957. Counts include 21 seed-42 checkpoint reuse 
 
 The original future-response leakage and non-normalized attention are reproduced by executed tests. The corrected default retains the original contribution but historical scores are no longer valid evidence. Completed primary results are new fixed-configuration single-seed measurements; a superiority claim requires the unfinished matched final comparisons. No fresh statistical significance or measured efficiency conclusion is established until the corresponding artifact files exist. O(L) sequence-length complexity alone does not establish lower latency or lower measured memory.
 
-Raw data came from available local original/reference materials because the shared folder lacked required raw CSV/TSV files. Exact hashes and publisher references are documented, but publisher byte identity and an explicit redistribution license are not established. Algebra uses the labelled training subset, not complete official master coverage. GKT is the historical simplified implementation; canonical published GKT reproducibility remains a limitation. Manuscript text was read in full; embedded diagram visual inspection remains pending. No editable manuscript source was present.
+Raw data came from available local original/reference materials because the shared folder lacked required raw CSV/TSV files. Exact hashes and publisher references are documented, but publisher byte identity and an explicit redistribution license are not established. Algebra uses the labelled training subset, not complete official master coverage. GKT is the historical simplified implementation; canonical published GKT reproducibility remains a limitation. All 27 manuscript pages were rendered and visually inspected, including Figures 1–11; inconsistencies are documented in PAPER_CORRECTIONS.md. No editable manuscript source was present.
 
 The no_regularization row is scientifically identical to no_dropout by user instruction and cannot be treated as another independent ablation. Five paired seeds yield weak statistical power, with minimum exact two-sided Wilcoxon p=.0625 for five nonzero pairs before correction; seed variation on one fixed split does not estimate new-student sampling uncertainty.
 

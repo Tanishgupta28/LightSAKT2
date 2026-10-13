@@ -1,8 +1,9 @@
 import json
+import itertools
 from pathlib import Path
 import numpy as np
 import pandas as pd
-from scipy.stats import wilcoxon, rankdata, t
+from scipy.stats import rankdata, t
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -22,6 +23,17 @@ def holm(pvalues):
     return adjusted
 
 
+def exact_signed_rank(differences):
+    """Enumerate sign assignments; handles ties and zero differences explicitly."""
+    nonzero=np.asarray(differences)[np.asarray(differences)!=0]
+    if not len(nonzero):return 0.,1.,0.
+    ranks=rankdata(np.abs(nonzero));observed=float((ranks*np.sign(nonzero)).sum())
+    permutations=[abs(float(np.dot(signs,ranks))) for signs in itertools.product([-1,1],repeat=len(nonzero))]
+    p=sum(value>=abs(observed)-1e-12 for value in permutations)/len(permutations)
+    positive=ranks[nonzero>0].sum();negative=ranks[nonzero<0].sum()
+    return float(min(positive,negative)),float(p),float(observed/ranks.sum())
+
+
 def significance(frame):
     rows=[];final=frame[frame.group=='final']
     for dataset,data in final.groupby('dataset'):
@@ -31,20 +43,18 @@ def significance(frame):
             differences=np.array([light.loc[s,'test_auc']-baseline.loc[s,'test_auc'] for s in seeds],dtype=float)
             differences=differences[np.isfinite(differences)];n=len(differences)
             if n<2:continue
-            nonzero=differences[differences!=0]
-            result=wilcoxon(differences,alternative='two-sided',zero_method='wilcox',method='auto') if len(nonzero) else None
-            ranks=rankdata(np.abs(nonzero))
-            effect=float((ranks*np.sign(nonzero)).sum()/ranks.sum()) if len(nonzero) else 0.
+            statistic,p_value,effect=exact_signed_rank(differences)
             half=t.ppf(.975,n-1)*differences.std(ddof=1)/np.sqrt(n)
             rows.append({'dataset':dataset,'baseline':model,'n_pairs':n,'seeds':json.dumps(seeds),
                          'pairing':'same model seed; one fixed student split; conditional initialization variability',
-                         'test':'two-sided Wilcoxon signed-rank','statistic':float(result.statistic) if result else 0.,
-                         'p_value':float(result.pvalue) if result else 1.,'rank_biserial_effect':effect,
+                         'test':'exact two-sided signed-rank sign enumeration; zeros omitted, midranks for ties','statistic':statistic,
+                         'p_value':p_value,'rank_biserial_effect':effect,
                          'mean_auc_difference':float(differences.mean()),'difference_ci95_lower':float(differences.mean()-half),
                          'difference_ci95_upper':float(differences.mean()+half),
                          'limitation':'Five seeds cannot support exact two-sided p<.05; seed repeats do not sample new students.'})
     if rows:
-        adjusted=holm([r['p_value'] for r in rows])
+        # Prespecified family: 3 datasets x 6 baseline variants; incomplete comparisons have p=1.
+        adjusted=holm([r['p_value'] for r in rows]+[1.]*(18-len(rows)))[:len(rows)]
         for row,p in zip(rows,adjusted):row['holm_p']=float(p);row['interpretation']='reject conditional null' if p<.05 else 'insufficient evidence to reject'
     pd.DataFrame(rows).to_csv('results/tables/significance.csv',index=False)
 

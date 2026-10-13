@@ -101,5 +101,8 @@ def main():
         jobs=[j for j in manifest['jobs'] if j['phase']==7 and j['dataset']==dataset and j['model']=='LightSAKT' and j['seed']==42 and j['status']=='completed']
         if jobs:subprocess.run(['python','-m','scripts.visualize','--run-id',jobs[0]['run_id']],check=False)
     subprocess.run(['python','-m','scripts.benchmark'],check=False)
+    subprocess.run(['python','-m','pytest','-q'],check=True)
+    subprocess.run(['python','-m','scripts.verify_artifacts'],check=True)
+    subprocess.run(['python','-m','scripts.preserve'],check=True)
 
 if __name__=='__main__':main()

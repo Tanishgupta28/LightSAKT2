@@ -1,0 +1,12 @@
+flowchart TD
+ history[Observed q_t and r_t] --> interaction[M of q_t+Q*r_t plus P_t]
+ query[Known q_t+1] --> exercise[E of q_t+1]
+ interaction --> kv[Learned K and V]
+ exercise --> q[Learned Q]
+ kv --> prefix[Valid causal prefix sums]
+ prefix --> attn[Normalized ELU+1 multihead attention]
+ q --> attn
+ attn --> residual[Output projection, dropout, residual m+e, layer norm]
+ residual --> ffn[Compact FFN d to d/2 to d, residual and norm]
+ ffn --> probability[Sigmoid next-response probability]
+ probability --> loss[Masked BCE against r_t+1]

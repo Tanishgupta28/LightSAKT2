@@ -1,0 +1,18 @@
+ASSIST2009-GKT-primary-42-bf2b95e7f1ff epoch=1 validation_auc=0.725106 seconds=170.1
+ASSIST2009-GKT-primary-42-bf2b95e7f1ff epoch=2 validation_auc=0.740204 seconds=167.8
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/workspace/LightSAKT2/scripts/run.py", line 7, in <module>
+    args=parser.parse_args();run(json.load(open(args.config)))
+  File "/workspace/LightSAKT2/src/training/engine.py", line 113, in run
+    loss.backward()
+  File "/usr/local/lib/python3.10/dist-packages/torch/_tensor.py", line 523, in backward
+    torch.autograd.backward(
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py", line 767, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

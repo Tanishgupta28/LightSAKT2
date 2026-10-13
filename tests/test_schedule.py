@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 from src.training.engine import write_json
 from scripts.schedule import materialize
-from scripts.analyze import holm
+from scripts.analyze import holm, exact_signed_rank
 
 
 def test_grid_count_and_equal_tuning_budget():
@@ -39,3 +39,10 @@ def test_no_regularization_alias_requires_completed_no_dropout():
 
 def test_holm_correction():
     values=holm([.01,.03,.04]);assert values.tolist()==[.03,.06,.06]
+
+
+def test_exact_wilcoxon_small_seed_limit_and_ties():
+    statistic,p,effect=exact_signed_rank([.1,.2,.3,.4,.5])
+    assert statistic==0 and p==.0625 and effect==1
+    assert exact_signed_rank([0,0,0])==(0.,1.,0.)
+    assert exact_signed_rank([.2,-.2,0])[1]==1.

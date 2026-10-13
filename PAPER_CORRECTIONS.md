@@ -1,6 +1,6 @@
 # Manuscript corrections — evidence, not replacement historical scores
 
-Reference: preserved `original_snapshot/new_sakt__1_.pdf`, 27 pages, full extracted text `paper/original.txt`. The Drive PDF is the authority; the older local PDF differs. Text extraction was reviewed across the introduction, related work, methodology, all tables, empirical sections, conclusion and references. Embedded graphical content has not yet received a full visual audit; diagram verification remains pending. No editable manuscript source was found in the Drive inventory.
+Reference: preserved `original_snapshot/new_sakt__1_.pdf`, 27 pages, full extracted text `paper/original.txt`. The Drive PDF is the authority; the older local PDF differs. Text extraction was reviewed across the introduction, related work, methodology, all tables, empirical sections, conclusion and references. All 27 PDF pages were rendered and visually inspected as contact sheets, with detailed inspection of conceptual diagrams and Figures 5–11. Rendered evidence is retained under paper/rendered/. No editable manuscript source was found in the Drive inventory.
 
 |Page; location|Original claim|Discrepancy / evidence|Required correction and suggested wording|New number / evidence path|
 |---|---|---|---|---|
@@ -27,3 +27,5 @@ Reference: preserved `original_snapshot/new_sakt__1_.pdf`, 27 pages, full extrac
 |Throughout|Table ??, Figure ?? and incorrect section references|Unresolved manuscript cross references|Repair references to Sections 3–5 and Tables 2–8/Figures 1–11 in a separate editable manuscript version|paper/original.txt|
 
 Historical significance values, runtimes, AUCs, graphs and checkpoint outputs remain unverified and are not copied into corrected numerical tables. The rebuild does not establish what exact data/seed/code produced historical scores. Any current performance conclusion is explicitly limited to completed runs.
+
+Visual audit additions: Figure 1 labels rows as sessions while prose describes students. Figure 3 names DKT/DKT+ transformer extensions instead of the proposed LightSAKT. Figure 4 adds position vectors to question queries (E+P), contradicting both prose and original code; its attention expressions do not show consistent causal kernel normalization. Corrected conceptual diagrams must use E(q_next) without P and masked prefix sums. Figure 8 actually shows seven models and absolute parameter counts at num_q=100, contradicting prose describing four models and units of millions; it does not represent dataset-specific vocabularies. Figures 5–7 show validation curves, not independently heldout test curves. Preserve their purpose with fresh labeled validation curves and separate test tables.

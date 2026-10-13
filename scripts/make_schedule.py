@@ -35,6 +35,8 @@ def write_config(c):
 
 
 def main():
+    if Path('experiments/manifest.json').exists():
+        raise SystemExit('Existing schedule preserved; use python -m scripts.schedule to continue it')
     jobs=[]
     for dataset,model in itertools.product(DATASETS,MODELS):
         length=200 if dataset=='Algebra2005' else 100

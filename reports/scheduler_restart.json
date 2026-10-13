@@ -1,0 +1,15 @@
+{
+  "run_id": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff",
+  "interrupted_at_last_completed_epoch": 2,
+  "latest_checkpoint_sha256": "5004604d2ec3a459cf07256e07b96c43f4b1846dfd1dccf66cdf84893e1f331a",
+  "optimizer_state_present": true,
+  "rng_states_present": [
+    "python",
+    "numpy",
+    "torch",
+    "cuda"
+  ],
+  "compatible_training_source": true,
+  "status": "checkpoint verified; scheduler restart pending",
+  "archived_checkpoint": "backups/interruptions/GKT_epoch2.pt"
+}

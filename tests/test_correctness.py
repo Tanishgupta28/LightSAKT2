@@ -33,6 +33,12 @@ def test_architecture_parameter_names_and_shapes():
     assert new.FFN[0].out_features == 8
 
 
+def test_original_snapshot_is_unchanged():
+    from src.datasets.preprocess import sha256
+    for item in json.load(open('reports/original_checksums.json')):
+        assert sha256(item['path'])==item['sha256']
+
+
 def test_original_future_leakage_regression():
     seed_everything(42)
     old = original_model()(7, 16, 2, 0, 8).eval()
@@ -173,3 +179,17 @@ def test_cuda_baselines_backward_repeatable(name):
         assert all(torch.isfinite(x.grad).all() for x in m.parameters() if x.grad is not None)
         results.append(p.detach())
     torch.testing.assert_close(*results,atol=0,rtol=0)
+
+
+@pytest.mark.skipif(not torch.cuda.is_available(),reason="CUDA unavailable")
+@pytest.mark.parametrize("length", [1,3,7,8,13,100,1000])
+def test_deterministic_cuda_tree_prefix_and_gradient(length):
+    from src.attention.linear import prefix_sum
+    seed_everything(42)
+    cpu=torch.randn(2,2,length,3,4,dtype=torch.float64)
+    gpu=cpu.cuda().requires_grad_(True)
+    output=prefix_sum(gpu)
+    torch.testing.assert_close(output.cpu(),cpu.cumsum(2),atol=1e-10,rtol=1e-10)
+    output.sum().backward()
+    expected=torch.arange(length,0,-1,dtype=torch.float64)[None,None,:,None,None].expand_as(cpu)
+    torch.testing.assert_close(gpu.grad.cpu(),expected,atol=0,rtol=0)

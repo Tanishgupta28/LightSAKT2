@@ -23,13 +23,16 @@
       "config": "configs/runs/ASSIST2009-DKVMN-primary-42-902c00823fa6.json",
       "run_id": "ASSIST2009-DKVMN-primary-42-902c00823fa6",
       "phase": 5,
-      "status": "running"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 49,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKVMN-primary-42-902c00823fa6/config.json"
     },
     {
       "config": "configs/runs/ASSIST2009-GKT-primary-42-bf2b95e7f1ff.json",
       "run_id": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff",
       "phase": 5,
-      "status": "pending"
+      "status": "running"
     },
     {
       "config": "configs/runs/ASSIST2009-SAKT-primary-42-3c4dd6ec486d.json",

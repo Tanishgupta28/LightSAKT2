@@ -29,7 +29,7 @@ def main(watch=False):
     previous=-1
     while True:
         completed=sum(json.load(open(p)).get('status')=='completed' for p in Path('results/raw').glob('*/status.json'))
-        if not watch or completed>=previous+5 or previous<0:
+        if not watch or completed>previous or previous<0:
             preserve();previous=completed
         if not watch:return
         time.sleep(30)
