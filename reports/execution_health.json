@@ -1,10 +1,10 @@
 {
-  "updated_utc": "2026-10-13T23:07:18.186989+00:00",
-  "sample_time": 1791932837.6760502,
+  "updated_utc": "2026-10-13T23:08:19.121564+00:00",
+  "sample_time": 1791932898.5731955,
   "counts": {
-    "completed": 21,
+    "completed": 25,
     "running": 1,
-    "pending": 935
+    "pending": 931
   },
   "scheduler": {
     "pid": 78472,
@@ -12,8 +12,8 @@
   },
   "training_processes": [
     {
-      "pid": 108918,
-      "cpu_seconds": 3.94,
+      "pid": 111442,
+      "cpu_seconds": 8.99,
       "process_state": "R",
       "ppid": 78472,
       "session_id": 78472,
@@ -23,24 +23,24 @@
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2009-DKT-baseline_tuning-42-fcf4cdf340d2",
+      "run_id": "ASSIST2009-DKT-baseline_tuning-42-372c06f0fe27",
       "last_completed_epoch": null,
       "best_checkpoint": null,
       "resume_command": null,
       "recent_mean_epoch_seconds": null,
       "seconds_since_last_epoch": null,
-      "startup_epoch_seconds_extrapolated": 0.11028810653889501,
+      "startup_epoch_seconds_extrapolated": 0.1388385787068966,
       "age_reference": "initial running status; first checkpoint not yet saved",
-      "stall_threshold_seconds": 0.33086431961668505,
+      "stall_threshold_seconds": 0.41651573612068976,
       "checkpoint_stalled": null
     }
   ],
-  "gpu_memory_mib": 37,
+  "gpu_memory_mib": 348,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
   "healthy_progress_observed": false,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 23 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 24 independently downloaded/checksum verified; completed-archive synchronization True."
 }
