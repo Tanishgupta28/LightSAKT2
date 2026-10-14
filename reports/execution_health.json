@@ -1,10 +1,9 @@
 {
-  "updated_utc": "2026-10-14T04:04:20.446766+00:00",
-  "sample_time": 1791950659.6045861,
+  "updated_utc": "2026-10-14T04:05:22.532466+00:00",
+  "sample_time": 1791950721.671805,
   "counts": {
-    "completed": 403,
-    "pending": 553,
-    "running": 1
+    "completed": 404,
+    "pending": 553
   },
   "scheduler": {
     "pid": 78472,
@@ -12,34 +11,21 @@
   },
   "training_processes": [
     {
-      "pid": 435695,
-      "cpu_seconds": 4.53,
+      "pid": 436645,
+      "cpu_seconds": 9.39,
       "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
       "observed_seconds": 0.2,
-      "cpu_seconds_advanced": 2.8199999999999994
+      "cpu_seconds_advanced": 0.1999999999999993
     }
   ],
-  "active_runs": [
-    {
-      "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-c5a11aa4b096",
-      "last_completed_epoch": null,
-      "best_checkpoint": null,
-      "resume_command": null,
-      "recent_mean_epoch_seconds": null,
-      "seconds_since_last_epoch": 1.2765331268310547,
-      "startup_epoch_seconds_extrapolated": 1.2997813328258814,
-      "age_reference": "initial running status; first checkpoint not yet saved",
-      "stall_threshold_seconds": 3.899343998477644,
-      "checkpoint_stalled": false
-    }
-  ],
-  "gpu_memory_mib": 548,
+  "active_runs": [],
+  "gpu_memory_mib": 856,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
-  "healthy_progress_observed": true,
+  "healthy_progress_observed": false,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
   "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 405 independently downloaded/checksum verified; completed-archive synchronization True."
