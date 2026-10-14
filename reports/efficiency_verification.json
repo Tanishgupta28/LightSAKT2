@@ -1,0 +1,28 @@
+{
+  "verified": true,
+  "cases": 120,
+  "matched_comparisons": 60,
+  "timed_repetitions_verified": 1200,
+  "higher_light_latency": 60,
+  "lower_light_latency": 0,
+  "lower_light_peak_allocated_memory": 7,
+  "artifacts": [
+    {
+      "path": "results/tables/efficiency.csv",
+      "sha256": "278fd59ab7cd3d6b30935acc415ec987f2981cb55f2848583cb287f73685c2b9"
+    },
+    {
+      "path": "experiments/efficiency/raw_timings.json",
+      "sha256": "222179f3b047762388cb1367a74b59e9a89b2de22e08e8679a9b07746ef7293e"
+    },
+    {
+      "path": "experiments/efficiency/environment.json",
+      "sha256": "343b58dcacda1ecca73dc7c0c919463e5d7ac585206505b6fdf74dc15b65be67"
+    },
+    {
+      "path": "results/tables/parameters.csv",
+      "sha256": "dfb0903c1e02e2c2cca17d4a1152a94afba16e9f881fcccd95aae36da97de6b1"
+    }
+  ],
+  "scope": "CPU-only rederivation of saved measurements; no new benchmark or model change"
+}

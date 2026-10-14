@@ -67,6 +67,10 @@ def main():
     if efficiency.exists():
         with Path('FINAL_RESEARCH_REPORT.md').open('a') as output:
             output.write('\n## Executed efficiency evidence\n\nThe exclusive 120-case benchmark has completed; its measured latency, memory, throughput, parameter counts and scope-specific limits are reported in paper/EFFICIENCY_RESULTS.md. The current measurements contradict an unconditional LightSAKT speed claim. Training continues on the preserved complete schedule; the efficiency benchmark is reused, and full epoch-time documentation is refreshed at final analysis.\n')
+            verified=Path('reports/efficiency_verification.json')
+            if verified.exists():
+                record=json.load(open(verified))
+                output.write(f"\nIndependent CPU rederivation verified {record['timed_repetitions_verified']} original timing repetitions across {record['cases']} cases. LightSAKT was slower in {record['higher_light_latency']}/{record['matched_comparisons']} matched comparisons; peak allocated memory was lower in {record['lower_light_peak_allocated_memory']}/{record['matched_comparisons']}. Primary parameter counts favor LightSAKT only on Algebra2005, with different documented widths. The generated main manuscript now separates theoretical O(L) attention work, measured latency, allocated/reserved memory and parameter counts. Evidence hashes and numeric checks are in reports/efficiency_verification.json; no training or benchmark mathematics was changed.\n")
     optimization=Path('reports/optimization/SCHEDULE_COMPARISON.json')
     if optimization.exists():
         record=json.load(open(optimization))
