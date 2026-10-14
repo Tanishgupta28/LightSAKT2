@@ -1,0 +1,16 @@
+{
+  "run_id": "Algebra2005-LightSAKT-primary-42-dca5e1830530",
+  "dataset": "Algebra2005",
+  "checkpoint": "checkpoints/Algebra2005-LightSAKT-primary-42-dca5e1830530/best.pt",
+  "checkpoint_sha256": "e42d80da8c7bc2b2b9c7c18152f74442f32b10b9175cbce4cc883ad7ed36a3bc",
+  "sample": {
+    "student": "02i5jCrfQK",
+    "start": 0,
+    "n_targets": 200
+  },
+  "sample_index": 0,
+  "selection": "longest heldout chunk, lexical student and start tie break; no label or score criterion",
+  "attention": "head-averaged normalized ELU+1 causal kernel; no softmax",
+  "probability_interpretation": "predicted correctness conditional on observed history; not directly observed mastery",
+  "context": "within chunk only; state resets at chunk boundary"
+}

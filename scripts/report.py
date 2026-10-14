@@ -63,6 +63,13 @@ def main():
             '', 'Originals: `original_snapshot/`; raw datasets: `data/raw/`; fresh preprocessing: `data/processed/`; student manifests: `data/splits/`; fresh weights: `checkpoints/<run>/`; raw metrics/configs: `results/raw/<run>/`; predictions: `results/predictions/`; generated tables/figures: `results/tables/`, `results/figures/`; paper evidence: `paper/`, PAPER_CORRECTIONS.md.']
     Path('FINAL_RESEARCH_REPORT.md').write_text('\n'.join(lines)+'\n')
     offsite=Path('reports/offsite_backup.json')
+    optimization=Path('reports/optimization/SCHEDULE_COMPARISON.json')
+    if optimization.exists():
+        record=json.load(open(optimization))
+        with Path('FINAL_RESEARCH_REPORT.md').open('a') as output:
+            output.write('\n## Execution optimization and unchanged scientific scope\n\n')
+            output.write(f"Latest schedule audit: {record['fresh_remaining']} fresh trainings remain plus {record['reuse_remaining']} reuse/evaluation entries. All 108 LightSAKT candidates are retained, with one seed per grid candidate and five matched seeds only for selected final configurations and ablations. The 162-candidate supplementary GKT tuning reduction is a proposal requiring approval and is not active. Full inventory and changes: reports/optimization/SCHEDULE_AUDIT.md and PROPOSED_DIFFERENCES.csv.\n\n")
+            output.write('Exact immutable sequence caches preserve every tensor, identity, batch order and RNG sequence; CPU training/resume equivalence is tested. Inter-run GPU probes and CPU/CUDA gates verify independent worker updates before two-worker GKT execution. Full required scope, FP32, batch sizes, Adam, stopping criteria, LightSAKT architecture, splits and untouched final test selections remain unchanged. Prioritization runs LightSAKT grid/finals/ablations before slow remaining baseline tuning. See reports/optimization/EXECUTION_OPTIMIZATION.md and reports/profiling/.\n')
     if offsite.exists():
         record=json.load(open(offsite))
         with Path('FINAL_RESEARCH_REPORT.md').open('a') as output:

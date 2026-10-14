@@ -1,0 +1,2 @@
+/workspace/LightSAKT2/scripts/visualize.py:44: DtypeWarning: Columns (17) have mixed types. Specify dtype option on import or set low_memory=False.
+  raw=pd.read_csv('data/raw/ASSIST2009.csv',encoding='latin1',usecols=['skill_id','skill_name'])

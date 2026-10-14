@@ -18,6 +18,8 @@ def audit():
     manifest=json.load(open('experiments/manifest.json'));reuse=json.load(open('experiments/reuse_plan.json'))['jobs']
     timings=pd.read_csv('reports/ETA_REMAINING_RUNS.csv').set_index('run_id');rows=[];accelerated=[]
     for job in manifest['jobs']:
+        runtime=Path('experiments/runtime_jobs')/(job['run_id']+'.json')
+        if runtime.exists():job.update(json.load(open(runtime)))
         c=json.load(open(job['config'])) if 'config' in job else job
         status_path=Path('results/raw')/job['run_id']/'status.json'
         state=json.load(open(status_path))['status'] if status_path.exists() else job['status']
@@ -50,6 +52,10 @@ def audit():
         'jobs':accelerated,'deferred_run_ids':frame.loc[~frame.accelerated_retained,'run_id'].tolist()})
     full={k:float(frame[k+'_hours'].sum()) for k in ['low','central','high']}
     fast={k:float(frame.loc[frame.accelerated_retained,k+'_hours'].sum()) for k in ['low','central','high']}
+    eta=json.load(open('reports/ETA.json'));factor=eta.get('two_worker_measured_throughput_speedup',1.)
+    def occupied(subset):
+        gkt=subset.model.str.startswith('GKT')
+        return {k:float(subset.loc[~gkt,k+'_hours'].sum()+subset.loc[gkt,k+'_hours'].sum()/(factor if k!='high' else 1.)) for k in ['low','central','high']}
     # Final GKT config is not known. This conservative comparison retains the same
     # final-training cost envelope instead of assuming a favorable selected width.
     summary={'updated_utc':datetime.now(timezone.utc).isoformat(),'logical_total':len(frame),
@@ -58,6 +64,8 @@ def audit():
         'proposed_deferred_fresh':int((~frame.accelerated_retained & frame.fresh_remaining).sum()),
         'accelerated_fresh_remaining':int((frame.accelerated_retained & frame.fresh_remaining).sum()),
         'complete_training_hours':full,'accelerated_proposal_training_hours':fast,
+        'complete_two_worker_wall_hours':occupied(frame),'proposal_two_worker_wall_hours':occupied(frame[frame.accelerated_retained]),
+        'measured_gkt_concurrency_speedup':factor,
         'hour_scope':'Same measured-reference model as current ETA; no unverified implementation speedup applied; additional test inference/final benchmarking excluded.',
         'grid_seeds':sorted(set(frame.loc[frame.category.isin(['LightSAKT_grid','baseline_tuning']),'seed'])),
         'repeated_grid_configurations':0,'required_light_grid':int((frame.category=='LightSAKT_grid').sum()),
@@ -70,6 +78,7 @@ def audit():
     text+='\nEvery one of the 756 grid rows uses seed 42 only. Five matched seeds are scheduled only for validation-selected final configurations and controlled ablations. There is no grid-seed replication to remove. Splits remain frozen and identical across model seeds. No-regularization remains a no-dropout alias; default ablations reuse final LightSAKT evidence.\n\n'
     text+='Primary comparisons, all 108 LightSAKT candidates, matched five-seed final comparisons and four distinct ablations per dataset remain essential to the requested paper. The equal 36-candidate baseline tuning budget was an expanded fairness/reproducibility design; it is not an exact search space stated in Tables 4–6. Those tables specify LightSAKT only. Both historical simplified GKT variants remain present. Removing supplementary tuning still changes the established comparison protocol and requires approval.\n\n'
     text+=f"Complete remaining training forecast: {full['central']:.1f} hours ({full['low']:.1f}–{full['high']:.1f} scenarios). Proposal: {fast['central']:.1f} hours ({fast['low']:.1f}–{fast['high']:.1f}). Proposed deferred fresh trainings: {summary['proposed_deferred_fresh']}; remaining fresh trainings under proposal: {summary['accelerated_fresh_remaining']}. This is a training-only forecast, not a confidence interval. Selected-configuration uncertainty remains.\n\n"
+    text+=f"Using measured independent GKT-worker throughput {factor:.3f}: complete schedule {summary['complete_two_worker_wall_hours']['central']:.1f} occupied MIG wall hours; proposal {summary['proposal_two_worker_wall_hours']['central']:.1f} hours. These forecasts retain identical final-training envelopes. The short pilot may not predict sustained full-epoch throughput; upper scenarios assume no concurrent speedup. Serial worker-hours and occupied MIG hours are distinct. See ETA_REPORT.md.\n\n"
     text+='Proposed GKT-PAM grid: learning rates [.0005,.001,.005] × hidden widths [16,30,64]. Proposed GKT-MHA grid: the same learning rates × widths [16,32,64], heads fixed at 2; historical primary width 30/head 2 remains an additional validation candidate using completed evidence. Every other baseline keeps all 36 configurations. Previously completed/running entries are retained regardless of membership. All five final seeds and all ablations remain.\n\n'
     text+='Paper impact: LightSAKT grid tables and ablation design remain intact. Table 7 and significance comparisons would describe GKT chosen using a smaller, disclosed tuning budget, not an exhaustive 36-configuration GKT search. Equal validation access is preserved; tuning-count equality is lost, while GKT still receives substantially more measured compute than LightSAKT. No test score or response label determines the retained configurations.\n\n'
     text+='Full run-level before/after membership is in PROPOSED_DIFFERENCES.csv and the two schedule JSON files. The proposal is not active. No completed result, architecture, batch size, optimizer, split, precision, maximum epoch or early-stopping rule was changed.\n'

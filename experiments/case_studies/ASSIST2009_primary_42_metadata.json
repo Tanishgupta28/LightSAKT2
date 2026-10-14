@@ -1,0 +1,50 @@
+{
+  "run_id": "ASSIST2009-LightSAKT-primary-42-440d619b7547",
+  "dataset": "ASSIST2009",
+  "checkpoint": "checkpoints/ASSIST2009-LightSAKT-primary-42-440d619b7547/best.pt",
+  "checkpoint_sha256": "3cd1be71efd7acd6cb046b338e5698c041b36f8149be7c505b5b36b96296973a",
+  "sample": {
+    "student": "70687",
+    "start": 0,
+    "n_targets": 100
+  },
+  "sample_index": 2,
+  "selection": "longest heldout chunk, lexical student and start tie break; no label or score criterion",
+  "attention": "head-averaged normalized ELU+1 causal kernel; no softmax",
+  "probability_interpretation": "predicted correctness conditional on observed history; not directly observed mastery",
+  "context": "within chunk only; state resets at chunk boundary",
+  "requested_original_skill_ids": {
+    "98": {
+      "original_names": [],
+      "direct_training_vocabulary_matches": {}
+    },
+    "55": {
+      "original_names": [],
+      "direct_training_vocabulary_matches": {}
+    },
+    "45": {
+      "original_names": [],
+      "direct_training_vocabulary_matches": {}
+    },
+    "33": {
+      "original_names": [],
+      "direct_training_vocabulary_matches": {}
+    },
+    "32": {
+      "original_names": [
+        "Nets of 3D Figures"
+      ],
+      "direct_training_vocabulary_matches": {
+        "Nets of 3D Figures": 77
+      }
+    }
+  },
+  "selected_encoded_skills": {
+    "7": "Addition and Subtraction Integers",
+    "4": "Addition Whole Numbers",
+    "36": "Conversion of Fraction Decimals Percents",
+    "75": "Multiplication and Division Integers",
+    "82": "Ordering Fractions"
+  },
+  "skill_selection": "up to five most frequent observed encoded categories in the selected heldout chunk, lexical category tie break; requested historical IDs audited separately"
+}

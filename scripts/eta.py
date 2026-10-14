@@ -55,7 +55,12 @@ def features(c,work):
 
 def estimate():
     progress=snapshot();work=work_counts();manifest=json.load(open('experiments/manifest.json'))
-    known=[];epochs=defaultdict(list);observed_rows=[];observed_groups=defaultdict(list)
+    for job in manifest['jobs']:
+        runtime=Path('experiments/runtime_jobs')/(job['run_id']+'.json')
+        if runtime.exists():job.update(json.load(open(runtime)))
+    known=[];epochs=defaultdict(list);dataset_epochs=defaultdict(list);observed_rows=[];observed_groups=defaultdict(list)
+    pilot_path=Path('reports/profiling/representative_cases.json')
+    pilots=json.load(open(pilot_path)) if pilot_path.exists() else []
     for path in sorted(Path('results/raw').glob('*/history.json')):
         directory=path.parent;c=json.load(open(directory/'config.json'));h=json.load(open(path))
         if not h or c['group']=='smoke':continue
@@ -65,6 +70,7 @@ def estimate():
         observation={'config':c,'epoch_seconds':statistics.mean(times),'history_epochs':len(h),'run_id':c['run_id']}
         if result:
             epochs[c['model']].append(result['epochs_trained'])
+            dataset_epochs[(c['dataset'],c['model'])].append(result['epochs_trained'])
             observation['run_seconds']=result['training_seconds']
             observation['overhead_seconds']=max(0.,result['training_seconds']-sum(times))
         else:observation['overhead_seconds']=0.
@@ -84,9 +90,30 @@ def estimate():
         if not same:raise ValueError('No measured reference for '+c['model'])
         direct=[r for r in same if r['config']['dataset']==c['dataset']]
         target=features(c,work)
-        ref=min(direct or same,key=lambda r:abs(math.log(target[0]/features(r['config'],work)[0])))
+        # Prefer measured configurations close in both launch count and arithmetic.
+        ref=min(direct or same,key=lambda r:sum(abs(math.log(target[i]/features(r['config'],work)[i])) for i in [0,1]))
         reference=features(ref['config'],work);ratios=[target[i]/reference[i] for i in [0,1]]
         lo,hi=min(ratios),max(ratios)
+        anchors=[r for r in pilots if r['dataset']==c['dataset'] and r['model']==c['model']]
+        if c['model'].startswith('GKT') and len(anchors)>=2:
+            # CPU dispatch dominates this implementation. Actual primary-to-wide
+            # measurements replace the inaccurate quadratic-width runtime proxy.
+            base=next(r for r in anchors if r['case'].endswith('primary'))
+            wide=next(r for r in anchors if r['case'].endswith('wide'))
+            primaries=[r for r in direct if r['config']['group']=='primary']
+            if primaries:ref=primaries[0]
+            ntrain=math.ceil(work[c['dataset']]['train_chunks']/c['batch_size'])
+            nval=math.ceil(work[c['dataset']]['validation_chunks']/c['batch_size'])
+            weighted=lambda r:ntrain*r['train_step_mean']+nval*r['eval_step_mean']
+            width0=base['config']['model_config']['hidden_size'];width1=wide['config']['model_config']['hidden_size']
+            weight=max(0.,min(1.,(c['model_config']['hidden_size']-width0)/(width1-width0)))
+            measured_ratio=1+weight*(weighted(wide)/weighted(base)-1)
+            estimate_seconds=ref['epoch_seconds']*measured_ratio
+            spread=max(.2,max(base['train_step_seconds'])/min(base['train_step_seconds'])-1,
+                       max(wide['train_step_seconds'])/min(wide['train_step_seconds'])-1)
+            return {'low':estimate_seconds*(1-spread),'central':estimate_seconds,
+                    'high':estimate_seconds*(1+spread),'ref':ref['run_id']+';measured primary/wide engineering anchors',
+                    'direct_stratum':True,'overhead':ref['overhead_seconds']}
         return {'low':ref['epoch_seconds']*lo,'central':ref['epoch_seconds']*math.sqrt(lo*hi),
                 'high':ref['epoch_seconds']*hi,'ref':ref['run_id'],'direct_stratum':bool(direct),
                 'overhead':ref['overhead_seconds']*math.sqrt(lo*hi)}
@@ -119,7 +146,8 @@ def estimate():
                 if entry['validation']['auc']>best:best=entry['validation']['auc'];bad=0
                 else:bad+=1
         floor_remaining=patience-bad if done else patience+1
-        mean_epochs=statistics.mean(epochs[model]) if epochs[model] else max_epochs
+        observations=dataset_epochs[(dataset,model)] or epochs[model]
+        mean_epochs=statistics.mean(observations) if observations else max_epochs
         central_remaining=max(floor_remaining,min(max_epochs,mean_epochs)-done)
         fraction=0.
         if state=='running' and history_path.exists():
@@ -139,15 +167,29 @@ def estimate():
     grouped=frame.groupby(['phase','dataset','model'])[['low_hours','central_hours','high_hours']].sum().reset_index()
     grouped.to_csv('reports/ETA_PHASE_MODEL_DATASET.csv',index=False)
     totals={k:float(frame[k+'_hours'].sum()) for k in ['low','central','high']}
+    concurrency=[]
+    for path in [Path('reports/profiling/concurrency_probe.json'),Path('reports/profiling/execution_validation.json')]:
+        if path.exists():
+            data=json.load(open(path));concurrency.extend(data if isinstance(data,list) else data.get('concurrency',[]))
+    concurrent_totals={};factor=1.
+    if concurrency:
+        valid=[r for r in concurrency if r['workers']==2 and r['exact_parameters_and_gradients']]
+        factor=statistics.mean(r['loop_throughput_speedup'] for r in valid) if valid else 1.
+        gkt=frame['model'].str.startswith('GKT')
+        for scenario,speed in [('low',max(1.,factor)),('central',max(1.,factor)),('high',1.)]:
+            concurrent_totals[scenario]=float(frame.loc[~gkt,scenario+'_hours'].sum()+frame.loc[gkt,scenario+'_hours'].sum()/speed)
     record={'updated_utc':now.isoformat(),'counts':progress['counts'],'remaining_slots':progress['remaining'],
         'mean_completed_run_seconds':statistics.mean(r['run_seconds'] for r in known if 'run_seconds' in r),
         'completed_duration_scope':'Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.',
         'remaining_training_gpu_reserved_hours':totals,
+        'two_worker_training_wall_hours':concurrent_totals,
+        'two_worker_measured_throughput_speedup':factor,
+        'two_worker_estimate_limit':'Serial isolated-equivalent hours differ from MIG occupied wall hours. Independent two-worker GKT only; other models remain serial. Short-step throughput is extrapolated, not guaranteed. High scenario assumes no sustained concurrency benefit. Startup/test/analysis excluded. Aggregate worker elapsed-hours may increase under contention.',
         'conditional_training_finish_utc':{k:(now+timedelta(hours=v)).isoformat() for k,v in totals.items()},
         'wall_clock_assumption':'One current MIG worker remains continuously available; no outages or new paid resources.',
         'interpretation':'GPU reserved wall hours from end-to-end measured epochs, not hardware GPU-active time. Scenario envelope, not a statistical confidence interval or guaranteed bound.',
-        'method':'Per-model measured epochs; matching dataset references where available. Extrapolate by actual padded batch-timesteps and arithmetic proxies for nodes, widths and sequence lengths. Central is geometric mean of launch and arithmetic ratios. Six-epoch earliest-stop versus 50-epoch maximum scenarios; central epoch counts are completed-run model means. Unknown selected configs use the unweighted mean of candidate runtime estimates, not a claim about selection probabilities.',
-        'unknowns':'No Algebra timings yet; most model/dataset/config strata have zero or one completed observation. GKT hidden-width performance and future stopping epochs are unmeasured. Post-selection test inference, subprocess initialization, final checkpoint verification and exclusive GPU benchmarks remain additional work.',
+        'method':'Measured complete train/validation epochs and dataset/model-specific stopping counts. GKT epoch costs are calibrated with primary and wide configurations measured on each dataset, using weighted train/validation step ratios and interpolation by width; a minimum 20% runtime scenario spread is applied. Smaller-than-primary widths conservatively retain primary cost. Other models use closest measured configurations and batch-timestep/arithmetic proxies. Six-epoch earliest-stop and 50-epoch maximum scenarios bracket the observed dataset/model mean stopping count. Unknown selections use mean candidate cost, not selection probabilities. FP32 mathematics, batch sizes and stopping rules are unchanged.',
+        'unknowns':'All 21 model/dataset primary strata including Algebra2005 have measured complete epochs. GKT primary/wide steps were measured on all three datasets; most future configuration stopping counts remain unknown, with only one completed GKT run per stratum. Short concurrency probes do not guarantee whole-run throughput. Post-selection test inference, subprocess initialization, final artifact verification and exclusive GPU benchmarks add time.',
         'postprocessing':{'benchmark':'120 cases, 3 warmups plus 10 repeats each. GPU duration not measured during active training; excluded from training ETA.',
                           'statistics':'18 paired comparisons, five seeds; engineering microbenchmark timing is reported below; real paired research results still require final training.',
                           'visualizations':'Three final attention maps, two ASSIST2009 case figures; measured plot-render pilot below; final-case CPU inference remains unmeasured.',
@@ -156,6 +198,8 @@ def estimate():
     write_json('reports/ETA.json',record)
     text='# Measured runtime estimate\n\nUpdated UTC: '+record['updated_utc']+'\n\n'
     text+=f"Remaining training: **{totals['central']:,.1f} GPU reserved hours**; scenario range **{totals['low']:,.1f}–{totals['high']:,.1f} hours**. Serial wall time: {totals['central']/24:,.1f} days; continuous-availability training finish {record['conditional_training_finish_utc']['central']}.\n\n"
+    if concurrent_totals:
+        text+=f"Two-worker execution forecast: **{concurrent_totals['central']:,.1f} MIG occupied wall hours** ({concurrent_totals['central']/24:.1f} continuous days), with measured GKT throughput factor {factor:.3f}. Scenario envelope {concurrent_totals['low']:,.1f}–{concurrent_totals['high']:,.1f} hours; the high scenario assumes no sustained concurrency benefit. "+record['two_worker_estimate_limit']+'\n\n'
     text+='This is a provisional measured-reference extrapolation, not a validated confidence interval. Hardware-active GPU utilization is unavailable. Epochs include training and validation, and reserved hours include their CPU work. Unmeasured final benchmarking and artifact verification add time beyond this training-only date.\n\n'
     text+=f"Overall mean completed-run duration: {record['mean_completed_run_seconds']/60:.2f} minutes, over {sum('run_seconds' in r for r in known)} actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.\n\n"
     text+=record['completed_duration_scope']+'\n\n'

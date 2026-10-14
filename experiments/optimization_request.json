@@ -1,5 +1,10 @@
 {
   "profile_between_runs": true,
   "scope_change_approved": false,
-  "complete_research_schedule_retained": true
+  "complete_research_schedule_retained": true,
+  "validate_concurrency": true,
+  "coordinate_complete_schedule": true,
+  "validated_gkt_workers": 2,
+  "activation_rule": "Only at completed-run boundary after new CPU/CUDA gate and bit-exact PAM/MHA concurrency proof",
+  "scientific_scope_reduced": false
 }

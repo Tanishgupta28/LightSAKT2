@@ -1,21 +1,21 @@
 {
-  "updated_utc": "2026-10-14T00:09:23.721699+00:00",
+  "updated_utc": "2026-10-14T00:37:01.872651+00:00",
   "logical_total": 957,
-  "completed": 101,
-  "fresh_remaining": 811,
+  "completed": 106,
+  "fresh_remaining": 806,
   "reuse_remaining": 45,
   "distinct_fresh_total": 912,
   "proposed_deferred_fresh": 162,
-  "accelerated_fresh_remaining": 649,
+  "accelerated_fresh_remaining": 644,
   "complete_training_hours": {
-    "low": 107.00820494559042,
-    "central": 747.2459156677123,
-    "high": 4100.270661320481
+    "low": 106.32622528618394,
+    "central": 501.07470206443406,
+    "high": 1465.7623204262775
   },
   "accelerated_proposal_training_hours": {
-    "low": 28.369859358848057,
-    "central": 231.2021574034381,
-    "high": 1374.2887056413786
+    "low": 34.69800265284554,
+    "central": 171.85967413296208,
+    "high": 493.67720531735756
   },
   "hour_scope": "Same measured-reference model as current ETA; no unverified implementation speedup applied; additional test inference/final benchmarking excluded.",
   "grid_seeds": [

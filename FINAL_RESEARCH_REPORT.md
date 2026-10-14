@@ -26,9 +26,9 @@ Running 87 items in this shard
 Additional CPU verification during active GPU training:
 
 ```
-Running 87 items in this shard
-.....................................sssssssssssssss...................................                                                              [100%]
-72 passed, 15 skipped in 12.99s
+Running 95 items in this shard
+........................................sssssssssssssss........................................                                                      [100%]
+80 passed, 15 skipped in 14.63s
 ```
 
 CUDA tests were skipped in this additional invocation to avoid GPU contention; the preceding full CPU/CUDA correctness gate remains the GPU evidence. Model/training source fingerprints are unchanged.
@@ -66,8 +66,7 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 ## Experiment schedule status
 
 {
-  "completed": 106,
-  "running": 1,
+  "completed": 107,
   "pending": 850
 }
 
@@ -104,4 +103,10 @@ Private repository: https://github.com/Tanishgupta28/LightSAKT2, branch `researc
 
 Originals: `original_snapshot/`; raw datasets: `data/raw/`; fresh preprocessing: `data/processed/`; student manifests: `data/splits/`; fresh weights: `checkpoints/<run>/`; raw metrics/configs: `results/raw/<run>/`; predictions: `results/predictions/`; generated tables/figures: `results/tables/`, `results/figures/`; paper evidence: `paper/`, PAPER_CORRECTIONS.md.
 
-Independent private GitHub draft recovery artifacts: 108 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
+## Execution optimization and unchanged scientific scope
+
+Latest schedule audit: 806 fresh trainings remain plus 45 reuse/evaluation entries. All 108 LightSAKT candidates are retained, with one seed per grid candidate and five matched seeds only for selected final configurations and ablations. The 162-candidate supplementary GKT tuning reduction is a proposal requiring approval and is not active. Full inventory and changes: reports/optimization/SCHEDULE_AUDIT.md and PROPOSED_DIFFERENCES.csv.
+
+Exact immutable sequence caches preserve every tensor, identity, batch order and RNG sequence; CPU training/resume equivalence is tested. Inter-run GPU probes and CPU/CUDA gates verify independent worker updates before two-worker GKT execution. Full required scope, FP32, batch sizes, Adam, stopping criteria, LightSAKT architecture, splits and untouched final test selections remain unchanged. Prioritization runs LightSAKT grid/finals/ablations before slow remaining baseline tuning. See reports/optimization/EXECUTION_OPTIMIZATION.md and reports/profiling/.
+
+Independent private GitHub draft recovery artifacts: 109 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.

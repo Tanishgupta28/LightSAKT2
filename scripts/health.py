@@ -17,15 +17,25 @@ def cpu_sample(pid):
             'process_state':fields[0],'ppid':int(fields[1]),'session_id':int(fields[3])}
 
 
+def descendants(pid):
+    try:children=Path(f'/proc/{pid}/task/{pid}/children').read_text().split()
+    except FileNotFoundError:return []
+    result=[]
+    for child in children:
+        result.append(int(child));result.extend(descendants(int(child)))
+    return result
+
+
 def inspect():
     now=time.time();progress=snapshot();pid=progress['processes']['scheduler']['pid']
     samples=[]
     if progress['processes']['scheduler']['alive']:
-        children=Path(f'/proc/{pid}/task/{pid}/children').read_text().split()
+        children=descendants(pid)
         for child in children:
             try:
                 cmd=Path(f'/proc/{child}/cmdline').read_bytes().replace(b'\0',b' ').decode()
-                if 'scripts.run' in cmd:samples.append(cpu_sample(int(child)))
+                # Exclude completed owning processes waiting on the coordinator.
+                if 'scripts.run' in cmd and not descendants(child):samples.append(cpu_sample(int(child)))
             except (FileNotFoundError,ProcessLookupError):pass
     previous_path=Path('reports/execution_health.json')
     previous=json.load(open(previous_path)) if previous_path.exists() else {}

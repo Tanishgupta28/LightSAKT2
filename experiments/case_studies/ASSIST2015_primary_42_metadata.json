@@ -1,0 +1,16 @@
+{
+  "run_id": "ASSIST2015-LightSAKT-primary-42-301d9bff60e9",
+  "dataset": "ASSIST2015",
+  "checkpoint": "checkpoints/ASSIST2015-LightSAKT-primary-42-301d9bff60e9/best.pt",
+  "checkpoint_sha256": "1a3133ab28882d02ee985cb18848caae3c703160e43b80a6c79d6ff532e7b6ab",
+  "sample": {
+    "student": "119747",
+    "start": 0,
+    "n_targets": 100
+  },
+  "sample_index": 1,
+  "selection": "longest heldout chunk, lexical student and start tie break; no label or score criterion",
+  "attention": "head-averaged normalized ELU+1 causal kernel; no softmax",
+  "probability_interpretation": "predicted correctness conditional on observed history; not directly observed mastery",
+  "context": "within chunk only; state resets at chunk boundary"
+}
