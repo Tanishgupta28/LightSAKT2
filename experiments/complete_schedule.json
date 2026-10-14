@@ -5090,7 +5090,9 @@
       "model": "DKVMN",
       "seed": 42,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "reuse_selected_run": "ASSIST2009-DKVMN-baseline_tuning-42-d813a6987bf2",
+      "selection_path": "experiments/selections/ASSIST2009-DKVMN.json"
     },
     {
       "run_id": "ASSIST2009-DKVMN-final-123",
@@ -5099,7 +5101,8 @@
       "model": "DKVMN",
       "seed": 123,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/ASSIST2009-DKVMN-final-123.json"
     },
     {
       "run_id": "ASSIST2009-DKVMN-final-2026",
@@ -5108,7 +5111,8 @@
       "model": "DKVMN",
       "seed": 2026,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/ASSIST2009-DKVMN-final-2026.json"
     },
     {
       "run_id": "ASSIST2009-DKVMN-final-3407",
@@ -5117,7 +5121,8 @@
       "model": "DKVMN",
       "seed": 3407,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/ASSIST2009-DKVMN-final-3407.json"
     },
     {
       "run_id": "ASSIST2009-DKVMN-final-7777",
@@ -5126,7 +5131,8 @@
       "model": "DKVMN",
       "seed": 7777,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/ASSIST2009-DKVMN-final-7777.json"
     },
     {
       "run_id": "ASSIST2009-GKT-final-42",
@@ -5429,7 +5435,9 @@
       "model": "DKVMN",
       "seed": 42,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "reuse_selected_run": "ASSIST2015-DKVMN-baseline_tuning-42-d2dc815dee5e",
+      "selection_path": "experiments/selections/ASSIST2015-DKVMN.json"
     },
     {
       "run_id": "ASSIST2015-DKVMN-final-123",
@@ -5438,7 +5446,8 @@
       "model": "DKVMN",
       "seed": 123,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/ASSIST2015-DKVMN-final-123.json"
     },
     {
       "run_id": "ASSIST2015-DKVMN-final-2026",
@@ -5447,7 +5456,8 @@
       "model": "DKVMN",
       "seed": 2026,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/ASSIST2015-DKVMN-final-2026.json"
     },
     {
       "run_id": "ASSIST2015-DKVMN-final-3407",
@@ -5456,7 +5466,8 @@
       "model": "DKVMN",
       "seed": 3407,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/ASSIST2015-DKVMN-final-3407.json"
     },
     {
       "run_id": "ASSIST2015-DKVMN-final-7777",
@@ -5465,7 +5476,8 @@
       "model": "DKVMN",
       "seed": 7777,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/ASSIST2015-DKVMN-final-7777.json"
     },
     {
       "run_id": "ASSIST2015-GKT-final-42",
