@@ -247,6 +247,9 @@ def estimate(output_dir=Path('reports')):
         text+='\nMeasured CPU pilot timing (actual completed primary plots; not final research completion): '+json.dumps(measured)+'\n'
         record['postprocessing_cpu_pilot_timings']=measured
     text+='\n'+record['method']+'\n\n'+record['unknowns']+'\n\nThe preserved equal 36-configuration baseline tuning budget includes 216 GKT variant configurations across all datasets; GKT is the main measured bottleneck. No dimensions, batches, split assignments, seeds, learning rates or early-stopping rules were changed to shorten this forecast.\n'
+    if (Path('reports/eta_history_enabled.json').exists() and concurrent_totals.get('central',0)>0 and len(frame)):
+        from scripts.eta_history import generate as history_audit
+        text+='\n'+history_audit(record,frame,output_dir)
     write_json(output_dir/'ETA.json',record)
     (output_dir/'ETA_REPORT.md').write_text(text);print(json.dumps({'remaining_training_hours':totals,'finish_utc':record['conditional_training_finish_utc']},indent=2))
     return record
