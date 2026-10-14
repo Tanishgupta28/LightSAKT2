@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T02:21:18.334342+00:00",
-  "sample_time": 1791944477.3979828,
+  "updated_utc": "2026-10-14T02:22:20.173775+00:00",
+  "sample_time": 1791944539.3512843,
   "counts": {
-    "completed": 231,
-    "pending": 725,
+    "completed": 235,
+    "pending": 721,
     "running": 1
   },
   "scheduler": {
@@ -12,35 +12,35 @@
   },
   "training_processes": [
     {
-      "pid": 310300,
-      "cpu_seconds": 16.14,
+      "pid": 312749,
+      "cpu_seconds": 11.06,
       "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
       "observed_seconds": 0.2,
-      "cpu_seconds_advanced": 0.1999999999999993
+      "cpu_seconds_advanced": 0.1899999999999995
     }
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2009-LightSAKT-no_attention-2026",
-      "last_completed_epoch": 19,
-      "best_checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_attention-2026/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-LightSAKT-no_attention-2026/config.json",
-      "recent_mean_epoch_seconds": 0.33488602899597025,
-      "seconds_since_last_epoch": 0.005513906478881836,
+      "run_id": "ASSIST2009-LightSAKT-no_dropout-123",
+      "last_completed_epoch": 1,
+      "best_checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_dropout-123/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-LightSAKT-no_dropout-123/config.json",
+      "recent_mean_epoch_seconds": 1.069624619500246,
+      "seconds_since_last_epoch": 0.0,
       "startup_epoch_seconds_extrapolated": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 1.0046580869879107,
+      "stall_threshold_seconds": 3.2088738585007377,
       "checkpoint_stalled": false
     }
   ],
-  "gpu_memory_mib": 1034,
+  "gpu_memory_mib": 1280,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 230 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 234 independently downloaded/checksum verified; completed-archive synchronization True."
 }

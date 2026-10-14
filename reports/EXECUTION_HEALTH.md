@@ -1,15 +1,15 @@
 # Execution health
 
-Observed UTC: 2026-10-14T02:21:18.334342+00:00
+Observed UTC: 2026-10-14T02:22:20.173775+00:00
 
 Scheduler PID 78472; healthy progress sampled: True; failed/interrupted/blocked slots: 0.
 
-Child PID 310300: CPU seconds advanced 0.1999999999999993 over 0.2 observed seconds. Session 78472, parent 191761.
+Child PID 312749: CPU seconds advanced 0.1899999999999995 over 0.2 observed seconds. Session 78472, parent 191761.
 
-Run `ASSIST2009-LightSAKT-no_attention-2026`: epoch 19; measured recent epoch average 0.33488602899597025; extrapolated first-epoch duration None; progress age 0.005513906478881836 seconds (history checkpoint); stall flag False. Threshold uses three measured epoch durations, or the provisional ETA epoch estimate before the first checkpoint.
+Run `ASSIST2009-LightSAKT-no_dropout-123`: epoch 1; measured recent epoch average 1.069624619500246; extrapolated first-epoch duration None; progress age 0.0 seconds (history checkpoint); stall flag False. Threshold uses three measured epoch durations, or the provisional ETA epoch estimate before the first checkpoint.
 
-MIG memory allocation: 1034 / 40320 MiB. Utilization percentage is unavailable; no percentage is inferred from board power or PID existence.
+MIG memory allocation: 1280 / 40320 MiB. Utilization percentage is unavailable; no percentage is inferred from board power or PID existence.
 
 Best/latest state loads, finite parameters and optimizer/RNG integrity are independently recorded in reports/active_checkpoint_verification.json; saved result verification is in reports/stored_artifact_verification.json. Archive and recovery evidence is in reports/backup_integrity.json and reports/recovery_validation.json.
 
-Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured. /workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 230 independently downloaded/checksum verified; completed-archive synchronization True.
+Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured. /workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 234 independently downloaded/checksum verified; completed-archive synchronization True.

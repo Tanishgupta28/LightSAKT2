@@ -36,7 +36,7 @@ These configurations maximize validation AUC among all 36 prespecified candidate
 |---|---|---|---|---|---|---|---|---|
 |ASSIST2009|LightSAKT|5|0.751056|0.000766|0.732229|0.816533|0.180233|0.538615|
 |ASSIST2015|LightSAKT|5|0.726088|0.000315|0.749526|0.846282|0.171233|0.516098|
-|Algebra2005|LightSAKT|4|0.810697|0.000399|0.795572|0.870278|0.144079|0.445300|
+|Algebra2005|LightSAKT|5|0.810590|0.000422|0.795574|0.870356|0.144069|0.445272|
 
 Means summarize every completed prespecified seed. Sample standard deviations and Student-t intervals describe conditional initialization variability on one fixed student split; they do not measure new-student sampling uncertainty. Partial seed counts are not complete five-seed results.
 

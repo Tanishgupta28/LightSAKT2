@@ -1,0 +1,174 @@
+{
+  "verified_utc": "2026-10-14T02:22:30.906044+00:00",
+  "verified": true,
+  "completed_seed_slots": 15,
+  "fresh_training_runs": 12,
+  "scope": "All five selected LightSAKT seeds on all three datasets; baseline final comparisons and remaining analyses still pending",
+  "runs": [
+    {
+      "run_id": "ASSIST2009-LightSAKT-final-123",
+      "dataset": "ASSIST2009",
+      "seed": 123,
+      "test_auc": 0.7515491260119282,
+      "checkpoint_sha256": "aef075f40bf25d3f59fb8b65930c6f361c80adb72920809d09b5c60a0e1b97a9",
+      "prediction_sha256": "6cfceba58562ed1962a944e8d8e347a3da5f280e867f4a46b6ed56db123edc31",
+      "configuration_frozen_before_evaluation": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "reused_training_run": null
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-final-2026",
+      "dataset": "ASSIST2009",
+      "seed": 2026,
+      "test_auc": 0.7520935800156365,
+      "checkpoint_sha256": "2a8f9d128b5f019f7da897d6faefef988dcd5790087cd3f14ba1fb194b58cae8",
+      "prediction_sha256": "50bc67729c6a2a76b245f12b6105fbb551aa2f97aca7bb9b6b063a7d28e5afd5",
+      "configuration_frozen_before_evaluation": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "reused_training_run": null
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-final-3407",
+      "dataset": "ASSIST2009",
+      "seed": 3407,
+      "test_auc": 0.7502163532815885,
+      "checkpoint_sha256": "d306739251bd3471081b2d5703e218456696ffd3cbc3cf10668a227070a783ef",
+      "prediction_sha256": "83a78020b7ccdee4f92fbc4de33dadf92eb6daa9a2cd24feee239539ec3bc34c",
+      "configuration_frozen_before_evaluation": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "reused_training_run": null
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-final-42",
+      "dataset": "ASSIST2009",
+      "seed": 42,
+      "test_auc": 0.7505083746944516,
+      "checkpoint_sha256": "d0af3a20f40cf3734883634c23053dbfbf187dee9e7a556c85fcb27b4841197d",
+      "prediction_sha256": "6f5040c85966496fd4d34469b23ac21681d4c23349c921413a3519a0ad803711",
+      "configuration_frozen_before_evaluation": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "reused_training_run": "ASSIST2009-LightSAKT-grid-42-f08e9494d270"
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-final-7777",
+      "dataset": "ASSIST2009",
+      "seed": 7777,
+      "test_auc": 0.7509122717632764,
+      "checkpoint_sha256": "4bdf2c3fde63c4e885c1c400fde2af7f88fd6e4ed2151d3c1bdedce2166162d8",
+      "prediction_sha256": "a0743f941174f61cf7b91911a226499e68478f5f7cd40f76a8bb1d7dc177d78b",
+      "configuration_frozen_before_evaluation": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "reused_training_run": null
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-final-123",
+      "dataset": "ASSIST2015",
+      "seed": 123,
+      "test_auc": 0.7258972614170165,
+      "checkpoint_sha256": "3e3a98cc956129faf1407b041c0ed65dfa1d5abf082c85dd498872fd63377331",
+      "prediction_sha256": "296e14c091ec8a65ec223544452ce9e7fe5135275cb0196204d045da7b9ab463",
+      "configuration_frozen_before_evaluation": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "reused_training_run": null
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-final-2026",
+      "dataset": "ASSIST2015",
+      "seed": 2026,
+      "test_auc": 0.7260103485193647,
+      "checkpoint_sha256": "8377a4cf83ff90054638cafa1cedfeb514ac6a34311cce313b711b95b54f308e",
+      "prediction_sha256": "e39281b14f74c8b16508ea6d2a64a8c99f2b824355e25faaf33caa2d174c8e90",
+      "configuration_frozen_before_evaluation": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "reused_training_run": null
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-final-3407",
+      "dataset": "ASSIST2015",
+      "seed": 3407,
+      "test_auc": 0.7266454752807574,
+      "checkpoint_sha256": "e468362d0ab14f7e16342a472c2c796a1456bf3519c521bfe98632ed18f29ba3",
+      "prediction_sha256": "b785282424749b98f105af0dde88ba692fb5a1634d8c3b76dfd6ce124e6654f1",
+      "configuration_frozen_before_evaluation": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "reused_training_run": null
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-final-42",
+      "dataset": "ASSIST2015",
+      "seed": 42,
+      "test_auc": 0.7259766786074406,
+      "checkpoint_sha256": "c08f06c27d9bd31c155dcaff06bbe17b8464578df7e058930233ffbea68d7136",
+      "prediction_sha256": "3c0980f1121b4caac218c37d19fd750a7d026b95ffeddf09001e08a2cfddfa65",
+      "configuration_frozen_before_evaluation": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "reused_training_run": "ASSIST2015-LightSAKT-grid-42-64640d03b0d3"
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-final-7777",
+      "dataset": "ASSIST2015",
+      "seed": 7777,
+      "test_auc": 0.7259120108779604,
+      "checkpoint_sha256": "9b8260ac274f98826818a72ca0d6060ac7a057585cf7748834128cf3e0323beb",
+      "prediction_sha256": "b1dc9049f1641154e5deaea6f853513f1e2acc09438fc79f4af876485336dd34",
+      "configuration_frozen_before_evaluation": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "reused_training_run": null
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-final-123",
+      "dataset": "Algebra2005",
+      "seed": 123,
+      "test_auc": 0.8106133460191884,
+      "checkpoint_sha256": "e096183fb960c4cd0ba6c89ef8f5715f72e6c759b1c22b513f334fda45c87845",
+      "prediction_sha256": "0b60353a96e883d6d91c5e5b259d7f7f19b01741f32fef0d9e9195a05560adc1",
+      "configuration_frozen_before_evaluation": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "reused_training_run": null
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-final-2026",
+      "dataset": "Algebra2005",
+      "seed": 2026,
+      "test_auc": 0.8101659925280229,
+      "checkpoint_sha256": "257e8e410c0a4e7153b9d3b358f3c52b1f5f47147bc265eba2fa4948551ed15f",
+      "prediction_sha256": "fee5edc5fbb96c0b3e8b41050110f772acb4f2df7d818f7a5cb44e39ac89c32c",
+      "configuration_frozen_before_evaluation": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "reused_training_run": null
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-final-3407",
+      "dataset": "Algebra2005",
+      "seed": 3407,
+      "test_auc": 0.8110004928189894,
+      "checkpoint_sha256": "65ec77b47c35ae06039c357b7da2edf6e030abfbdbcfe7fbf764d546328bfede",
+      "prediction_sha256": "82ac3d1976608099d78030974e43b7b35ac42e1fd8aa86ccf93e353aae7d7cec",
+      "configuration_frozen_before_evaluation": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "reused_training_run": null
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-final-42",
+      "dataset": "Algebra2005",
+      "seed": 42,
+      "test_auc": 0.8110095040165662,
+      "checkpoint_sha256": "14b64e7450e0610c300913e933a7dd2ab0d6d3881951e3475557a8e673ee1390",
+      "prediction_sha256": "2aa3ad3befcdb9ef54464320fd3464917e0aaac7aa6dc2824be38a3532c608b2",
+      "configuration_frozen_before_evaluation": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "reused_training_run": "Algebra2005-LightSAKT-grid-42-06884c8943b2"
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-final-7777",
+      "dataset": "Algebra2005",
+      "seed": 7777,
+      "test_auc": 0.810158172651323,
+      "checkpoint_sha256": "a3da82abe09e86df4fa76c5ddd2c7edc0069d0f5166cc8677ec94d09a059cd77",
+      "prediction_sha256": "2432fdbbf5271b228b8131e23491e952063585969d95666df7c6536ae1595689",
+      "configuration_frozen_before_evaluation": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "reused_training_run": null
+    }
+  ]
+}
