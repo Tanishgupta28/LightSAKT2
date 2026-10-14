@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T02:18:12.385123+00:00",
-  "sample_time": 1791944291.359294,
+  "updated_utc": "2026-10-14T02:19:14.494111+00:00",
+  "sample_time": 1791944353.3902466,
   "counts": {
-    "completed": 225,
-    "pending": 731,
+    "completed": 226,
+    "pending": 730,
     "running": 1
   },
   "scheduler": {
@@ -12,35 +12,35 @@
   },
   "training_processes": [
     {
-      "pid": 305860,
-      "cpu_seconds": 4.86,
+      "pid": 306964,
+      "cpu_seconds": 29.9,
       "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
       "observed_seconds": 0.2,
-      "cpu_seconds_advanced": 3.2700000000000005
+      "cpu_seconds_advanced": 0.15000000000000213
     }
   ],
   "active_runs": [
     {
-      "run_id": "Algebra2005-LightSAKT-final-123",
-      "last_completed_epoch": null,
-      "best_checkpoint": null,
-      "resume_command": null,
-      "recent_mean_epoch_seconds": null,
-      "seconds_since_last_epoch": 1.2208199501037598,
-      "startup_epoch_seconds_extrapolated": 1.0325608641341752,
-      "age_reference": "initial running status; first checkpoint not yet saved",
-      "stall_threshold_seconds": 3.097682592402526,
+      "run_id": "Algebra2005-LightSAKT-final-2026",
+      "last_completed_epoch": 20,
+      "best_checkpoint": "checkpoints/Algebra2005-LightSAKT-final-2026/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-LightSAKT-final-2026/config.json",
+      "recent_mean_epoch_seconds": 1.1029358056024647,
+      "seconds_since_last_epoch": 0.4728696346282959,
+      "startup_epoch_seconds_extrapolated": null,
+      "age_reference": "history checkpoint",
+      "stall_threshold_seconds": 3.308807416807394,
       "checkpoint_stalled": false
     }
   ],
-  "gpu_memory_mib": 548,
+  "gpu_memory_mib": 2214,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 227 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 227 independently downloaded/checksum verified; completed-archive synchronization False."
 }
