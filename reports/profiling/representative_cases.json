@@ -528,5 +528,791 @@
     "host_to_device_seconds": 0.00013966200640425086,
     "training_chunks": 14615,
     "num_q": 101
+  },
+  {
+    "case": "ASSIST2015-SAKT-primary",
+    "dataset": "ASSIST2015",
+    "model": "SAKT",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 100,
+        "d": 100,
+        "num_attn_heads": 5,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-SAKT-primary-42-c67b62d42456"
+    },
+    "train_step_seconds": [
+      0.004592253011651337,
+      0.004547666001599282,
+      0.00452255000709556
+    ],
+    "eval_step_seconds": [
+      0.0012059069995302707,
+      0.0010704140004236251,
+      0.001024252997012809
+    ],
+    "train_step_mean": 0.0045541563401153935,
+    "eval_step_mean": 0.001100191332322235,
+    "peak_allocated_bytes": 155345920,
+    "peak_reserved_bytes": 167772160,
+    "dataset_construction_seconds": 1.054181184998015,
+    "batch_collation_seconds": 0.0006450490036513656,
+    "host_to_device_seconds": 0.0001674000232014805,
+    "training_chunks": 14615,
+    "num_q": 101
+  },
+  {
+    "case": "ASSIST2015-LightSAKT-primary",
+    "dataset": "ASSIST2015",
+    "model": "LightSAKT",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 128,
+        "num_heads": 2,
+        "dropout": 0.1
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-LightSAKT-primary-42-301d9bff60e9"
+    },
+    "train_step_seconds": [
+      0.023733795009320602,
+      0.023793189990101382,
+      0.023726553976302966
+    ],
+    "eval_step_seconds": [
+      0.0042995529947802424,
+      0.004161752003710717,
+      0.004146524996031076
+    ],
+    "train_step_mean": 0.023751179658574983,
+    "eval_step_mean": 0.004202609998174012,
+    "peak_allocated_bytes": 829632512,
+    "peak_reserved_bytes": 1396703232,
+    "dataset_construction_seconds": 1.27261096300208,
+    "batch_collation_seconds": 0.0006641809886787087,
+    "host_to_device_seconds": 0.00016025500372052193,
+    "training_chunks": 14615,
+    "num_q": 101
+  },
+  {
+    "case": "ASSIST2015-GKT_MHA-primary",
+    "dataset": "ASSIST2015",
+    "model": "GKT_MHA",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6"
+    },
+    "train_step_seconds": [
+      0.31532239401713014,
+      0.3212742469913792,
+      0.3209713170072064
+    ],
+    "eval_step_seconds": [
+      0.10665830899961293,
+      0.10305315599543974,
+      0.10590992501238361
+    ],
+    "train_step_mean": 0.3191893193385719,
+    "eval_step_mean": 0.10520713000247876,
+    "peak_allocated_bytes": 311429632,
+    "peak_reserved_bytes": 348127232,
+    "dataset_construction_seconds": 1.0757431270030793,
+    "batch_collation_seconds": 0.0005880609969608486,
+    "host_to_device_seconds": 0.00011862500105053186,
+    "training_chunks": 14615,
+    "num_q": 101
+  },
+  {
+    "case": "Algebra2005-DKT-primary",
+    "dataset": "Algebra2005",
+    "model": "DKT",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "DKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "emb_size": 100,
+        "hidden_size": 100
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-DKT-primary-42-0a42097f8641"
+    },
+    "train_step_seconds": [
+      0.0049499380111228675,
+      0.004955746990162879,
+      0.0049081710167229176
+    ],
+    "eval_step_seconds": [
+      0.0015186799864750355,
+      0.0015178410103544593,
+      0.0014657049905508757
+    ],
+    "train_step_mean": 0.004937952006002888,
+    "eval_step_mean": 0.001500741995793457,
+    "peak_allocated_bytes": 268247552,
+    "peak_reserved_bytes": 377487360,
+    "dataset_construction_seconds": 0.7084562639938667,
+    "batch_collation_seconds": 0.0005090259946882725,
+    "host_to_device_seconds": 0.00018589399405755103,
+    "training_chunks": 2201,
+    "num_q": 388,
+    "profile_cpu_self_microseconds": 5881.0679999999975,
+    "profile_cuda_self_microseconds": 7890.003000000025
+  },
+  {
+    "case": "Algebra2005-DKTplus-primary",
+    "dataset": "Algebra2005",
+    "model": "DKT+",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "DKT+",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "emb_size": 100,
+        "hidden_size": 100,
+        "lambda_r": 0.01,
+        "lambda_w1": 0.003,
+        "lambda_w2": 3.0
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-DKTplus-primary-42-8c85af12bd21"
+    },
+    "train_step_seconds": [
+      0.007303994003450498,
+      0.0073367690201848745,
+      0.00737455501803197
+    ],
+    "eval_step_seconds": [
+      0.0016416529833804816,
+      0.001573836023453623,
+      0.0015640569909010082
+    ],
+    "train_step_mean": 0.007338439347222447,
+    "eval_step_mean": 0.0015931819992450376,
+    "peak_allocated_bytes": 268247552,
+    "peak_reserved_bytes": 377487360,
+    "dataset_construction_seconds": 0.6859169570088852,
+    "batch_collation_seconds": 0.0005095990200061351,
+    "host_to_device_seconds": 0.00021028800983913243,
+    "training_chunks": 2201,
+    "num_q": 388,
+    "profile_cpu_self_microseconds": 8129.857999999999,
+    "profile_cuda_self_microseconds": 10156.792999999989
+  },
+  {
+    "case": "Algebra2005-DKVMN-primary",
+    "dataset": "Algebra2005",
+    "model": "DKVMN",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "DKVMN",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "dim_s": 50,
+        "size_m": 20
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-DKVMN-primary-42-7f8a895e7d8e"
+    },
+    "train_step_seconds": [
+      0.2239124400075525,
+      0.22020474702003412,
+      0.22801931799040176
+    ],
+    "eval_step_seconds": [
+      0.04857405798975378,
+      0.050449183996533975,
+      0.047064778016647324
+    ],
+    "train_step_mean": 0.2240455016726628,
+    "eval_step_mean": 0.04869600666764503,
+    "peak_allocated_bytes": 228647936,
+    "peak_reserved_bytes": 253755392,
+    "dataset_construction_seconds": 0.725936204980826,
+    "batch_collation_seconds": 0.0005052869964856654,
+    "host_to_device_seconds": 0.00020948800374753773,
+    "training_chunks": 2201,
+    "num_q": 388,
+    "profile_cpu_self_microseconds": 274249.42600000056,
+    "profile_cuda_self_microseconds": 92818.93700000457
+  },
+  {
+    "case": "Algebra2005-GKT-primary",
+    "dataset": "Algebra2005",
+    "model": "GKT",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT-primary-42-b5d7512cd82b"
+    },
+    "train_step_seconds": [
+      0.7813642359978985,
+      0.7775436850206461,
+      0.7880420279980171
+    ],
+    "eval_step_seconds": [
+      0.19231111599947326,
+      0.192191214999184,
+      0.1918409329955466
+    ],
+    "train_step_mean": 0.7823166496721873,
+    "eval_step_mean": 0.1921144213314013,
+    "peak_allocated_bytes": 4269354496,
+    "peak_reserved_bytes": 4469030912,
+    "dataset_construction_seconds": 0.7151810869982,
+    "batch_collation_seconds": 0.0003785050066653639,
+    "host_to_device_seconds": 0.00017321098130196333,
+    "training_chunks": 2201,
+    "num_q": 388,
+    "profile_cpu_self_microseconds": 949096.5999999982,
+    "profile_cuda_self_microseconds": 368126.4509999761
+  },
+  {
+    "case": "Algebra2005-SAKT-primary",
+    "dataset": "Algebra2005",
+    "model": "SAKT",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 200,
+        "d": 100,
+        "num_attn_heads": 5,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-SAKT-primary-42-67291648991d"
+    },
+    "train_step_seconds": [
+      0.006310963013675064,
+      0.006287538999458775,
+      0.00627842202084139
+    ],
+    "eval_step_seconds": [
+      0.0016408149967901409,
+      0.0015503920149058104,
+      0.001530713983811438
+    ],
+    "train_step_mean": 0.006292308011325076,
+    "eval_step_mean": 0.0015739736651691298,
+    "peak_allocated_bytes": 231685632,
+    "peak_reserved_bytes": 268435456,
+    "dataset_construction_seconds": 0.7542646960064303,
+    "batch_collation_seconds": 0.0008736969903111458,
+    "host_to_device_seconds": 0.00023253797553479671,
+    "training_chunks": 2201,
+    "num_q": 388,
+    "profile_cpu_self_microseconds": 7966.808000000002,
+    "profile_cuda_self_microseconds": 7512.674999999986
+  },
+  {
+    "case": "Algebra2005-LightSAKT-primary",
+    "dataset": "Algebra2005",
+    "model": "LightSAKT",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 200,
+        "embed_dim": 64,
+        "num_heads": 2,
+        "dropout": 0.1
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-LightSAKT-primary-42-dca5e1830530"
+    },
+    "train_step_seconds": [
+      0.016350813006283715,
+      0.016325103992130607,
+      0.016355866013327613
+    ],
+    "eval_step_seconds": [
+      0.004100916994502768,
+      0.0032190860074479133,
+      0.003195753990439698
+    ],
+    "train_step_mean": 0.016343927670580644,
+    "eval_step_mean": 0.003505252330796793,
+    "peak_allocated_bytes": 462775808,
+    "peak_reserved_bytes": 740294656,
+    "dataset_construction_seconds": 0.6924303169944324,
+    "batch_collation_seconds": 0.000522143003763631,
+    "host_to_device_seconds": 0.0002093880029860884,
+    "training_chunks": 2201,
+    "num_q": 388,
+    "profile_cpu_self_microseconds": 16410.365000000027,
+    "profile_cuda_self_microseconds": 22772.836999999938
+  },
+  {
+    "case": "Algebra2005-GKT_MHA-primary",
+    "dataset": "Algebra2005",
+    "model": "GKT_MHA",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT_MHA-primary-42-8718ee768a1d"
+    },
+    "train_step_seconds": [
+      0.7682026909897104,
+      0.7628609639941715,
+      0.7555531290126964
+    ],
+    "eval_step_seconds": [
+      0.24418820097343996,
+      0.24606952600879595,
+      0.24267092399531975
+    ],
+    "train_step_mean": 0.7622055946655261,
+    "eval_step_mean": 0.2443095503258519,
+    "peak_allocated_bytes": 1738410496,
+    "peak_reserved_bytes": 1866465280,
+    "dataset_construction_seconds": 0.7068213789898437,
+    "batch_collation_seconds": 0.0003698450163938105,
+    "host_to_device_seconds": 0.0001516579941380769,
+    "training_chunks": 2201,
+    "num_q": 388,
+    "profile_cpu_self_microseconds": 868471.4509999972,
+    "profile_cuda_self_microseconds": 273641.2370000174
+  },
+  {
+    "case": "ASSIST2009-GKT-wide",
+    "dataset": "ASSIST2009",
+    "model": "GKT",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 104,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff"
+    },
+    "train_step_seconds": [
+      0.3769049739930779,
+      0.3832121880259365,
+      0.3925943149952218
+    ],
+    "eval_step_seconds": [
+      0.09696878600516357,
+      0.09416981699177995,
+      0.09419428699766286
+    ],
+    "train_step_mean": 0.38423715900474537,
+    "eval_step_mean": 0.09511096333153546,
+    "peak_allocated_bytes": 1572473344,
+    "peak_reserved_bytes": 1654652928,
+    "dataset_construction_seconds": 0.30103599300491624,
+    "batch_collation_seconds": 0.00106744997901842,
+    "host_to_device_seconds": 0.00018881401047110558,
+    "training_chunks": 3993,
+    "num_q": 137
+  },
+  {
+    "case": "ASSIST2009-GKT_MHA-wide",
+    "dataset": "ASSIST2009",
+    "model": "GKT_MHA",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 64,
+        "num_attn_heads": 8,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-GKT_MHA-primary-42-e63b12ce3815"
+    },
+    "train_step_seconds": [
+      0.3756905470218044,
+      0.3803706819890067,
+      0.3853680250176694
+    ],
+    "eval_step_seconds": [
+      0.12774781900225207,
+      0.12054349199752323,
+      0.12039613499655388
+    ],
+    "train_step_mean": 0.3804764180094935,
+    "eval_step_mean": 0.12289581533210973,
+    "peak_allocated_bytes": 714511872,
+    "peak_reserved_bytes": 771751936,
+    "dataset_construction_seconds": 0.2995213679969311,
+    "batch_collation_seconds": 0.0007517390185967088,
+    "host_to_device_seconds": 0.00016225900617428124,
+    "training_chunks": 3993,
+    "num_q": 137
+  },
+  {
+    "case": "ASSIST2015-GKT-wide",
+    "dataset": "ASSIST2015",
+    "model": "GKT",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 104,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-GKT-primary-42-c3a67383f961"
+    },
+    "train_step_seconds": [
+      0.3735869580123108,
+      0.39593959201010875,
+      0.38191224599722773
+    ],
+    "eval_step_seconds": [
+      0.09596258000237867,
+      0.09384139298344962,
+      0.09395505700376816
+    ],
+    "train_step_mean": 0.3838129320065491,
+    "eval_step_mean": 0.09458634332986549,
+    "peak_allocated_bytes": 1150133760,
+    "peak_reserved_bytes": 1193279488,
+    "dataset_construction_seconds": 1.0109330370032694,
+    "batch_collation_seconds": 0.0011973619984928519,
+    "host_to_device_seconds": 0.00014836800983175635,
+    "training_chunks": 14615,
+    "num_q": 101
+  },
+  {
+    "case": "ASSIST2015-GKT_MHA-wide",
+    "dataset": "ASSIST2015",
+    "model": "GKT_MHA",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 64,
+        "num_attn_heads": 8,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6"
+    },
+    "train_step_seconds": [
+      0.37480867200065404,
+      0.3706940009724349,
+      0.36815201299032196
+    ],
+    "eval_step_seconds": [
+      0.12399923699558713,
+      0.1204955989960581,
+      0.12071635900065303
+    ],
+    "train_step_mean": 0.3712182286544703,
+    "eval_step_mean": 0.12173706499743275,
+    "peak_allocated_bytes": 549832704,
+    "peak_reserved_bytes": 595591168,
+    "dataset_construction_seconds": 1.0208235809986945,
+    "batch_collation_seconds": 0.001157392020104453,
+    "host_to_device_seconds": 0.00014782301150262356,
+    "training_chunks": 14615,
+    "num_q": 101
+  },
+  {
+    "case": "Algebra2005-GKT-wide",
+    "dataset": "Algebra2005",
+    "model": "GKT",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 104,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT-primary-42-b5d7512cd82b"
+    },
+    "train_step_seconds": [
+      0.7785859450232238,
+      0.784031760005746,
+      0.7841062179941218
+    ],
+    "eval_step_seconds": [
+      0.19235221997951157,
+      0.19687740498920903,
+      0.19045066201942973
+    ],
+    "train_step_mean": 0.7822413076743638,
+    "eval_step_mean": 0.19322676232938343,
+    "peak_allocated_bytes": 9578841088,
+    "peak_reserved_bytes": 9764339712,
+    "dataset_construction_seconds": 0.7006930240022484,
+    "batch_collation_seconds": 0.0005803329986520112,
+    "host_to_device_seconds": 0.0001649530022405088,
+    "training_chunks": 2201,
+    "num_q": 388
+  },
+  {
+    "case": "Algebra2005-GKT_MHA-wide",
+    "dataset": "Algebra2005",
+    "model": "GKT_MHA",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 64,
+        "num_attn_heads": 8,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT_MHA-primary-42-8718ee768a1d"
+    },
+    "train_step_seconds": [
+      0.7718498469912447,
+      0.7776704200077802,
+      0.7775400039972737
+    ],
+    "eval_step_seconds": [
+      0.25347168900771067,
+      0.2653547170048114,
+      0.2449741080054082
+    ],
+    "train_step_mean": 0.7756867569987662,
+    "eval_step_mean": 0.25460017133931007,
+    "peak_allocated_bytes": 3544380928,
+    "peak_reserved_bytes": 3858759680,
+    "dataset_construction_seconds": 0.6956510189920664,
+    "batch_collation_seconds": 0.0006128509994596243,
+    "host_to_device_seconds": 0.00017421800293959677,
+    "training_chunks": 2201,
+    "num_q": 388
   }
 ]

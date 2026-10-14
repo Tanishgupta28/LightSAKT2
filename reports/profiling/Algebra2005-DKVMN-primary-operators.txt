@@ -1,0 +1,31 @@
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                       cudaLaunchKernel        21.54%      59.072ms        21.54%      59.072ms       3.029us       0.000us         0.00%       0.000us       0.000us         19500  
+                                               aten::mm        13.38%      36.707ms        14.61%      40.063ms      49.460us       2.994ms         6.43%       2.994ms       3.696us           810  
+                                            aten::addmm         7.44%      20.406ms         8.38%      22.980ms      57.163us       1.792ms         3.85%       1.792ms       4.459us           402  
+                                            aten::fill_         6.27%      17.189ms        15.94%      43.722ms       4.589us      13.882ms        29.81%      13.882ms       1.457us          9527  
+                                            aten::empty         5.08%      13.943ms        13.78%      37.784ms       7.435us       0.000us         0.00%       6.909ms       1.359us          5082  
+                                              aten::mul         3.78%      10.355ms         6.50%      17.817ms       7.369us       5.271ms        11.32%       5.271ms       2.180us          2418  
+                                              aten::sum         3.59%       9.850ms         5.41%      14.844ms       9.254us       6.120ms        13.14%       6.124ms       3.818us          1604  
+                                        cudaMemcpyAsync         3.18%       8.729ms         3.18%       8.729ms       3.921us       0.000us         0.00%       0.000us       0.000us          2226  
+                                            aten::copy_         2.92%       8.009ms         7.40%      20.281ms       5.949us       6.755ms        14.51%       6.755ms       1.982us          3409  
+    autograd::engine::evaluate_function: SliceBackward0         2.43%       6.659ms        22.76%      62.412ms      28.369us       0.000us         0.00%      14.437ms       6.562us          2200  
+                                             aten::add_         1.89%       5.197ms         4.42%      12.123ms       5.049us       4.710ms        10.11%       4.710ms       1.962us          2401  
+                                            aten::slice         1.82%       4.982ms         2.23%       6.128ms       1.226us       0.000us         0.00%       0.000us       0.000us          5000  
+      autograd::engine::evaluate_function: MulBackward0         1.72%       4.727ms        10.34%      28.365ms      35.456us       0.000us         0.00%       7.697ms       9.621us           800  
+                                            aten::zero_         1.46%       4.014ms         6.95%      19.067ms       5.601us       0.000us         0.00%       5.714ms       1.679us          3404  
+                                          aten::resize_         1.42%       3.886ms         4.41%      12.093ms      19.380us       0.000us         0.00%       1.490ms       2.388us           624  
+                                            aten::where         1.25%       3.439ms        13.22%      36.259ms      36.259us       1.388ms         2.98%       5.572ms       5.572us          1000  
+                                           aten::select         1.14%       3.116ms         1.38%       3.775ms       1.345us       0.000us         0.00%       0.000us       0.000us          2806  
+                                   aten::slice_backward         1.12%       3.081ms        17.71%      48.561ms      22.073us       0.000us         0.00%      11.387ms       5.176us          2200  
+                                            aten::zeros         1.12%       3.064ms        18.23%      50.005ms      14.694us       0.000us         0.00%      11.442ms       3.362us          3403  
+                                       aten::as_strided         1.10%       3.013ms         1.10%       3.013ms       0.221us       0.000us         0.00%       0.000us       0.000us         13652  
+autograd::engine::evaluate_function: SelectBackward0...         1.04%       2.840ms        11.93%      32.716ms      27.264us       0.000us         0.00%       6.787ms       5.656us          1200  
+    autograd::engine::evaluate_function: AddmmBackward0         1.03%       2.830ms        18.77%      51.474ms     128.046us       0.000us         0.00%       5.175ms      12.872us           402  
+autograd::engine::evaluate_function: UnsqueezeBackwa...         0.75%       2.069ms         1.39%       3.809ms       3.805us       0.000us         0.00%       0.000us       0.000us          1001  
+                                    cudaLaunchKernelExC         0.71%       1.942ms         0.71%       1.942ms       3.194us       0.000us         0.00%       0.000us       0.000us           608  
+                                        aten::unsqueeze         0.62%       1.713ms         0.77%       2.113ms       1.056us       0.000us         0.00%       0.000us       0.000us          2001  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 274.249ms
+Self CUDA time total: 46.567ms

@@ -1,0 +1,33 @@
+         46215 function calls (39318 primitive calls) in 0.798 seconds
+
+   Ordered by: cumulative time
+   List reduced from 238 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.798    0.798 /workspace/LightSAKT2/scripts/profile_runtime.py:22(step)
+        1    0.000    0.000    0.546    0.546 /usr/local/lib/python3.10/dist-packages/torch/_tensor.py:464(backward)
+        1    0.000    0.000    0.546    0.546 /usr/local/lib/python3.10/dist-packages/torch/autograd/__init__.py:165(backward)
+        1    0.000    0.000    0.546    0.546 /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:762(_engine_run_backward)
+        1    0.546    0.546    0.546    0.546 {method 'run_backward' of 'torch._C._EngineBase' objects}
+        1    0.000    0.000    0.248    0.248 /workspace/LightSAKT2/src/models/factory.py:15(predict)
+   3402/1    0.002    0.000    0.248    0.248 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py:1528(_wrapped_call_impl)
+   3402/1    0.003    0.000    0.248    0.248 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py:1534(_call_impl)
+        1    0.004    0.004    0.248    0.248 /workspace/LightSAKT2/src/models/gkt.py:43(forward)
+      200    0.007    0.000    0.200    0.001 /workspace/LightSAKT2/src/models/gkt.py:85(update)
+      200    0.009    0.000    0.113    0.001 /workspace/LightSAKT2/src/models/gkt.py:105(f_neighbor)
+      600    0.002    0.000    0.102    0.000 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/container.py:215(forward)
+     1400    0.002    0.000    0.084    0.000 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py:115(forward)
+     1400    0.082    0.000    0.082    0.000 {built-in method torch._C._nn.linear}
+      200    0.000    0.000    0.037    0.000 /workspace/LightSAKT2/src/models/gkt.py:79(f_self)
+      200    0.001    0.000    0.036    0.000 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/rnn.py:1085(forward)
+      200    0.031    0.000    0.031    0.000 {built-in method torch.gru}
+     1602    0.028    0.000    0.028    0.000 {method 'repeat' of 'torch._C.TensorBase' objects}
+      200    0.003    0.000    0.019    0.000 /workspace/LightSAKT2/src/models/gkt.py:93(predict)
+      200    0.006    0.000    0.019    0.000 /workspace/LightSAKT2/src/models/gkt.py:73(aggregate)
+      600    0.000    0.000    0.016    0.000 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/dropout.py:58(forward)
+      600    0.001    0.000    0.016    0.000 /usr/local/lib/python3.10/dist-packages/torch/nn/functional.py:1279(dropout)
+      600    0.014    0.000    0.014    0.000 {built-in method torch.dropout}
+     1000    0.010    0.000    0.010    0.000 {built-in method torch.cat}
+      600    0.000    0.000    0.007    0.000 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/activation.py:102(forward)
+
+

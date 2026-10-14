@@ -1,0 +1,47 @@
+{
+  "config": {
+    "dataset": "Algebra2005",
+    "model": "GKT_MHA",
+    "group": "primary",
+    "seed": 42,
+    "seq_len": 200,
+    "batch_size": 8,
+    "max_epochs": 50,
+    "patience": 5,
+    "learning_rate": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0.0,
+    "epsilon": 1e-08,
+    "model_config": {
+      "hidden_size": 30,
+      "num_attn_heads": 2,
+      "method": "MHA"
+    },
+    "evaluate_test": true,
+    "run_id": "Algebra2005-GKT_MHA-primary-42-8718ee768a1d"
+  },
+  "steps": 10,
+  "wall_seconds": 8.294961222010897,
+  "step_seconds": [
+    0.8895429639960639,
+    0.8779195100069046,
+    0.8366503629949875,
+    0.8029595910047647,
+    0.8191693000262603,
+    0.820629366004141,
+    0.820025277993409,
+    0.7978533169953153,
+    0.825272521993611,
+    0.8049243439745624
+  ],
+  "peak_reserved_bytes": 1853882368,
+  "peak_allocated_bytes": 1738328064,
+  "dataset_construction_seconds": 0.8057017939863726,
+  "batch_collation_seconds": 0.0007607309962622821,
+  "host_to_device_seconds": 0.0003509399830363691,
+  "training_chunks": 2201,
+  "num_q": 388
+}

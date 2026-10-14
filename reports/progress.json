@@ -1,11 +1,12 @@
 {
-  "updated_utc": "2026-10-14T00:16:12.879273+00:00",
+  "updated_utc": "2026-10-14T00:24:25.875763+00:00",
   "total_slots": 957,
-  "completed": 103,
-  "remaining": 854,
+  "completed": 104,
+  "remaining": 853,
   "counts": {
-    "completed": 103,
-    "pending": 854
+    "completed": 104,
+    "running": 1,
+    "pending": 852
   },
   "processes": {
     "scheduler": {
@@ -25,14 +26,22 @@
       "alive": true
     }
   },
-  "running_jobs": [],
+  "running_jobs": [
+    {
+      "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-be841b2268f5",
+      "last_completed_epoch": 1,
+      "best_checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-be841b2268f5/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKVMN-baseline_tuning-42-be841b2268f5/config.json"
+    }
+  ],
   "phase_counts": {
     "5": {
       "completed": 21
     },
     "6": {
-      "completed": 82,
-      "pending": 674
+      "completed": 83,
+      "running": 1,
+      "pending": 672
     },
     "7": {
       "pending": 105

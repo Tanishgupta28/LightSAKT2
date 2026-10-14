@@ -1,0 +1,33 @@
+         2006 function calls (1863 primitive calls) in 0.017 seconds
+
+   Ordered by: cumulative time
+   List reduced from 229 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.017    0.017 /workspace/LightSAKT2/scripts/profile_runtime.py:22(step)
+        1    0.000    0.000    0.007    0.007 /usr/local/lib/python3.10/dist-packages/torch/_tensor.py:464(backward)
+        1    0.000    0.000    0.007    0.007 /usr/local/lib/python3.10/dist-packages/torch/autograd/__init__.py:165(backward)
+        1    0.000    0.000    0.007    0.007 /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:762(_engine_run_backward)
+        1    0.007    0.007    0.007    0.007 {method 'run_backward' of 'torch._C._EngineBase' objects}
+        6    0.000    0.000    0.005    0.001 {built-in method builtins.any}
+       22    0.004    0.000    0.005    0.000 /workspace/LightSAKT2/scripts/profile_runtime.py:28(<genexpr>)
+        1    0.000    0.000    0.003    0.003 /workspace/LightSAKT2/src/models/factory.py:15(predict)
+     18/1    0.000    0.000    0.003    0.003 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py:1528(_wrapped_call_impl)
+     18/1    0.000    0.000    0.003    0.003 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py:1534(_call_impl)
+        1    0.000    0.000    0.003    0.003 /workspace/LightSAKT2/src/models/light_sakt.py:32(forward)
+        1    0.000    0.000    0.002    0.002 /workspace/LightSAKT2/src/attention/linear.py:39(forward)
+     18/2    0.001    0.000    0.002    0.001 /workspace/LightSAKT2/src/attention/linear.py:7(prefix_sum)
+       22    0.001    0.000    0.001    0.000 {built-in method torch.isfinite}
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.10/dist-packages/torch/optim/optimizer.py:418(wrapper)
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.10/dist-packages/torch/optim/optimizer.py:68(_use_grad)
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.10/dist-packages/torch/optim/adam.py:188(step)
+        7    0.000    0.000    0.000    0.000 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py:115(forward)
+        7    0.000    0.000    0.000    0.000 {built-in method torch._C._nn.linear}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.10/dist-packages/torch/optim/adam.py:317(adam)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.10/dist-packages/torch/optim/adam.py:522(_multi_tensor_adam)
+        1    0.000    0.000    0.000    0.000 /workspace/LightSAKT2/src/training/engine.py:25(training_loss)
+        1    0.000    0.000    0.000    0.000 /workspace/LightSAKT2/src/evaluation/metrics.py:6(masked_bce)
+       22    0.000    0.000    0.000    0.000 {built-in method torch.cat}
+       22    0.000    0.000    0.000    0.000 {built-in method torch.zeros_like}
+
+

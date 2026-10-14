@@ -1,0 +1,33 @@
+         6514 function calls (5669 primitive calls) in 0.224 seconds
+
+   Ordered by: cumulative time
+   List reduced from 208 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.224    0.224 /workspace/LightSAKT2/scripts/profile_runtime.py:22(step)
+        1    0.000    0.000    0.168    0.168 /usr/local/lib/python3.10/dist-packages/torch/_tensor.py:464(backward)
+        1    0.000    0.000    0.168    0.168 /usr/local/lib/python3.10/dist-packages/torch/autograd/__init__.py:165(backward)
+        1    0.000    0.000    0.168    0.168 /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:762(_engine_run_backward)
+        1    0.168    0.168    0.168    0.168 {method 'run_backward' of 'torch._C._EngineBase' objects}
+        1    0.000    0.000    0.053    0.053 /workspace/LightSAKT2/src/models/factory.py:15(predict)
+    406/1    0.000    0.000    0.053    0.053 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py:1528(_wrapped_call_impl)
+    406/1    0.000    0.000    0.053    0.053 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py:1534(_call_impl)
+        1    0.017    0.017    0.053    0.053 /workspace/LightSAKT2/src/models/dkvmn.py:34(forward)
+      402    0.000    0.000    0.022    0.000 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py:115(forward)
+      402    0.021    0.000    0.021    0.000 {built-in method torch._C._nn.linear}
+      200    0.004    0.000    0.004    0.000 {built-in method torch.where}
+      200    0.000    0.000    0.002    0.000 /usr/local/lib/python3.10/dist-packages/torch/_tensor.py:34(wrapped)
+      200    0.002    0.000    0.002    0.000 {built-in method torch.cat}
+      201    0.002    0.000    0.002    0.000 {method 'sum' of 'torch._C.TensorBase' objects}
+      200    0.000    0.000    0.002    0.000 /usr/local/lib/python3.10/dist-packages/torch/_tensor.py:962(__rsub__)
+      200    0.002    0.000    0.002    0.000 {built-in method torch.rsub}
+      201    0.002    0.000    0.002    0.000 {built-in method torch.tanh}
+      201    0.001    0.000    0.001    0.000 {built-in method torch.sigmoid}
+        6    0.000    0.000    0.001    0.000 {built-in method builtins.any}
+       13    0.000    0.000    0.001    0.000 /workspace/LightSAKT2/scripts/profile_runtime.py:28(<genexpr>)
+       13    0.001    0.000    0.001    0.000 {built-in method torch.isfinite}
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.10/dist-packages/torch/optim/optimizer.py:418(wrapper)
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.10/dist-packages/torch/optim/optimizer.py:68(_use_grad)
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.10/dist-packages/torch/optim/adam.py:188(step)
+
+

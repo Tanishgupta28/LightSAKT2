@@ -1,0 +1,33 @@
+         889 function calls (854 primitive calls) in 0.005 seconds
+
+   Ordered by: cumulative time
+   List reduced from 215 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.005    0.005 /workspace/LightSAKT2/scripts/profile_runtime.py:22(step)
+        6    0.000    0.000    0.002    0.000 {built-in method builtins.any}
+        8    0.001    0.000    0.002    0.000 /workspace/LightSAKT2/scripts/profile_runtime.py:28(<genexpr>)
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.10/dist-packages/torch/_tensor.py:464(backward)
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.10/dist-packages/torch/autograd/__init__.py:165(backward)
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:762(_engine_run_backward)
+        1    0.001    0.001    0.001    0.001 {method 'run_backward' of 'torch._C._EngineBase' objects}
+        1    0.000    0.000    0.001    0.001 /workspace/LightSAKT2/src/training/engine.py:25(training_loss)
+        1    0.001    0.001    0.001    0.001 /workspace/LightSAKT2/src/evaluation/metrics.py:6(masked_bce)
+        1    0.000    0.000    0.001    0.001 /workspace/LightSAKT2/src/models/factory.py:15(predict)
+      5/1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py:1528(_wrapped_call_impl)
+      5/1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py:1534(_call_impl)
+        1    0.000    0.000    0.001    0.001 /workspace/LightSAKT2/src/models/dkt.py:27(forward)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.10/dist-packages/torch/optim/optimizer.py:418(wrapper)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.10/dist-packages/torch/optim/optimizer.py:68(_use_grad)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.10/dist-packages/torch/optim/adam.py:188(step)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.10/dist-packages/torch/optim/adam.py:317(adam)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/rnn.py:851(forward)
+        8    0.000    0.000    0.000    0.000 {built-in method torch.isfinite}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.10/dist-packages/torch/optim/adam.py:522(_multi_tensor_adam)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.10/dist-packages/torch/_compile.py:20(inner)
+        1    0.000    0.000    0.000    0.000 {built-in method torch.lstm}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py:115(forward)
+        1    0.000    0.000    0.000    0.000 {built-in method torch._C._nn.linear}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.10/dist-packages/torch/_dynamo/decorators.py:36(disable)
+
+

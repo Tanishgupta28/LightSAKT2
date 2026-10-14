@@ -1,4 +1,52 @@
 {
-  "status": "running",
-  "scope": "Bounded engineering probes between completed research runs; no test labels"
+  "status": "completed",
+  "updated_utc": "2026-10-14T00:18:51.621253+00:00",
+  "case_count": 27,
+  "concurrent_probes": [
+    {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "workers": 2,
+      "exact_parameters_and_gradients": true,
+      "serial_step_mean": 0.3216084466897883,
+      "parallel_step_means": [
+        0.3999278840987245,
+        0.39987727990373967
+      ],
+      "loop_throughput_speedup": 1.6083293741915727,
+      "parent_observed_parallel_wall_seconds_including_result_serialization": 4.733820260997163,
+      "memory_admission_per_worker_bytes": 10838081536
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "GKT_MHA",
+      "workers": 2,
+      "exact_parameters_and_gradients": true,
+      "serial_step_mean": 0.32485258680244444,
+      "parallel_step_means": [
+        0.4081440298934467,
+        0.4075718379986938
+      ],
+      "loop_throughput_speedup": 1.5918529096800067,
+      "parent_observed_parallel_wall_seconds_including_result_serialization": 4.852680684009101,
+      "memory_admission_per_worker_bytes": 10838081536
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "GKT_MHA",
+      "workers": 2,
+      "exact_parameters_and_gradients": true,
+      "serial_step_mean": 0.6618883525050479,
+      "parallel_step_means": [
+        0.827667441801168,
+        0.8294946554990019
+      ],
+      "loop_throughput_speedup": 1.5958834496902645,
+      "parent_observed_parallel_wall_seconds_including_result_serialization": 9.205974955984857,
+      "memory_admission_per_worker_bytes": 10838081536
+    }
+  ],
+  "precision": "FP32; TF32 off; AMP off",
+  "published_research_results": false,
+  "original_architecture_unchanged": true
 }

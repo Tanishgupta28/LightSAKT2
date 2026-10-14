@@ -9,3 +9,57 @@ Measured engineering probe ASSIST2015-DKT-primary train step 0.00356175099538328
 Measured engineering probe ASSIST2015-DKTplus-primary train step 0.004757401009555906
 Measured engineering probe ASSIST2015-DKVMN-primary train step 0.09210573833358164
 Measured engineering probe ASSIST2015-GKT-primary train step 0.3462286116652346
+Measured engineering probe ASSIST2015-SAKT-primary train step 0.0045541563401153935
+Measured engineering probe ASSIST2015-LightSAKT-primary train step 0.023751179658574983
+Measured engineering probe ASSIST2015-GKT_MHA-primary train step 0.3191893193385719
+/usr/local/lib/python3.10/dist-packages/torch/autograd/profiler.py:215: UserWarning: The attribute `use_cuda` will be deprecated soon, please use ``use_device = 'cuda'`` instead.
+  warn(
+STAGE:2026-10-14 00:16:19 173226:173226 ActivityProfilerController.cpp:316] Completed Stage: Warm Up
+STAGE:2026-10-14 00:16:19 173226:173226 ActivityProfilerController.cpp:322] Completed Stage: Collection
+STAGE:2026-10-14 00:16:19 173226:173226 ActivityProfilerController.cpp:326] Completed Stage: Post Processing
+Measured engineering probe Algebra2005-DKT-primary train step 0.004937952006002888
+/usr/local/lib/python3.10/dist-packages/torch/autograd/profiler.py:215: UserWarning: The attribute `use_cuda` will be deprecated soon, please use ``use_device = 'cuda'`` instead.
+  warn(
+STAGE:2026-10-14 00:16:20 173226:173226 ActivityProfilerController.cpp:316] Completed Stage: Warm Up
+STAGE:2026-10-14 00:16:20 173226:173226 ActivityProfilerController.cpp:322] Completed Stage: Collection
+STAGE:2026-10-14 00:16:20 173226:173226 ActivityProfilerController.cpp:326] Completed Stage: Post Processing
+Measured engineering probe Algebra2005-DKTplus-primary train step 0.007338439347222447
+/usr/local/lib/python3.10/dist-packages/torch/autograd/profiler.py:215: UserWarning: The attribute `use_cuda` will be deprecated soon, please use ``use_device = 'cuda'`` instead.
+  warn(
+STAGE:2026-10-14 00:16:23 173226:173226 ActivityProfilerController.cpp:316] Completed Stage: Warm Up
+STAGE:2026-10-14 00:16:23 173226:173226 ActivityProfilerController.cpp:322] Completed Stage: Collection
+STAGE:2026-10-14 00:16:23 173226:173226 ActivityProfilerController.cpp:326] Completed Stage: Post Processing
+Measured engineering probe Algebra2005-DKVMN-primary train step 0.2240455016726628
+/usr/local/lib/python3.10/dist-packages/torch/autograd/profiler.py:215: UserWarning: The attribute `use_cuda` will be deprecated soon, please use ``use_device = 'cuda'`` instead.
+  warn(
+STAGE:2026-10-14 00:16:35 173226:173226 ActivityProfilerController.cpp:316] Completed Stage: Warm Up
+STAGE:2026-10-14 00:16:37 173226:173226 ActivityProfilerController.cpp:322] Completed Stage: Collection
+STAGE:2026-10-14 00:16:37 173226:173226 ActivityProfilerController.cpp:326] Completed Stage: Post Processing
+Measured engineering probe Algebra2005-GKT-primary train step 0.7823166496721873
+/usr/local/lib/python3.10/dist-packages/torch/autograd/profiler.py:215: UserWarning: The attribute `use_cuda` will be deprecated soon, please use ``use_device = 'cuda'`` instead.
+  warn(
+STAGE:2026-10-14 00:16:55 173226:173226 ActivityProfilerController.cpp:316] Completed Stage: Warm Up
+STAGE:2026-10-14 00:16:55 173226:173226 ActivityProfilerController.cpp:322] Completed Stage: Collection
+STAGE:2026-10-14 00:16:55 173226:173226 ActivityProfilerController.cpp:326] Completed Stage: Post Processing
+Measured engineering probe Algebra2005-SAKT-primary train step 0.006292308011325076
+/usr/local/lib/python3.10/dist-packages/torch/autograd/profiler.py:215: UserWarning: The attribute `use_cuda` will be deprecated soon, please use ``use_device = 'cuda'`` instead.
+  warn(
+STAGE:2026-10-14 00:16:56 173226:173226 ActivityProfilerController.cpp:316] Completed Stage: Warm Up
+STAGE:2026-10-14 00:16:56 173226:173226 ActivityProfilerController.cpp:322] Completed Stage: Collection
+STAGE:2026-10-14 00:16:56 173226:173226 ActivityProfilerController.cpp:326] Completed Stage: Post Processing
+Measured engineering probe Algebra2005-LightSAKT-primary train step 0.016343927670580644
+/usr/local/lib/python3.10/dist-packages/torch/autograd/profiler.py:215: UserWarning: The attribute `use_cuda` will be deprecated soon, please use ``use_device = 'cuda'`` instead.
+  warn(
+STAGE:2026-10-14 00:17:03 173226:173226 ActivityProfilerController.cpp:316] Completed Stage: Warm Up
+STAGE:2026-10-14 00:17:04 173226:173226 ActivityProfilerController.cpp:322] Completed Stage: Collection
+STAGE:2026-10-14 00:17:04 173226:173226 ActivityProfilerController.cpp:326] Completed Stage: Post Processing
+Measured engineering probe Algebra2005-GKT_MHA-primary train step 0.7622055946655261
+Measured engineering probe ASSIST2009-GKT-wide train step 0.38423715900474537
+Measured engineering probe ASSIST2009-GKT_MHA-wide train step 0.3804764180094935
+Measured engineering probe ASSIST2015-GKT-wide train step 0.3838129320065491
+Measured engineering probe ASSIST2015-GKT_MHA-wide train step 0.3712182286544703
+Measured engineering probe Algebra2005-GKT-wide train step 0.7822413076743638
+Measured engineering probe Algebra2005-GKT_MHA-wide train step 0.7756867569987662
+Concurrent equivalence probe {'dataset': 'ASSIST2009', 'model': 'GKT_MHA', 'workers': 2, 'exact_parameters_and_gradients': True, 'serial_step_mean': 0.3216084466897883, 'parallel_step_means': [0.3999278840987245, 0.39987727990373967], 'loop_throughput_speedup': 1.6083293741915727, 'parent_observed_parallel_wall_seconds_including_result_serialization': 4.733820260997163, 'memory_admission_per_worker_bytes': 10838081536}
+Concurrent equivalence probe {'dataset': 'ASSIST2015', 'model': 'GKT_MHA', 'workers': 2, 'exact_parameters_and_gradients': True, 'serial_step_mean': 0.32485258680244444, 'parallel_step_means': [0.4081440298934467, 0.4075718379986938], 'loop_throughput_speedup': 1.5918529096800067, 'parent_observed_parallel_wall_seconds_including_result_serialization': 4.852680684009101, 'memory_admission_per_worker_bytes': 10838081536}
+Concurrent equivalence probe {'dataset': 'Algebra2005', 'model': 'GKT_MHA', 'workers': 2, 'exact_parameters_and_gradients': True, 'serial_step_mean': 0.6618883525050479, 'parallel_step_means': [0.827667441801168, 0.8294946554990019], 'loop_throughput_speedup': 1.5958834496902645, 'parent_observed_parallel_wall_seconds_including_result_serialization': 9.205974955984857, 'memory_admission_per_worker_bytes': 10838081536}

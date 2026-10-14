@@ -1,0 +1,33 @@
+         43142 function calls (38672 primitive calls) in 0.777 seconds
+
+   Ordered by: cumulative time
+   List reduced from 253 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.777    0.777 /workspace/LightSAKT2/scripts/profile_runtime.py:22(step)
+        1    0.000    0.000    0.476    0.476 /usr/local/lib/python3.10/dist-packages/torch/_tensor.py:464(backward)
+        1    0.000    0.000    0.476    0.476 /usr/local/lib/python3.10/dist-packages/torch/autograd/__init__.py:165(backward)
+        1    0.000    0.000    0.476    0.476 /usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:762(_engine_run_backward)
+        1    0.476    0.476    0.476    0.476 {method 'run_backward' of 'torch._C._EngineBase' objects}
+        1    0.000    0.000    0.296    0.296 /workspace/LightSAKT2/src/models/factory.py:15(predict)
+   2202/1    0.002    0.000    0.296    0.296 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py:1528(_wrapped_call_impl)
+   2202/1    0.003    0.000    0.296    0.296 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py:1534(_call_impl)
+        1    0.004    0.004    0.296    0.296 /workspace/LightSAKT2/src/models/gkt.py:43(forward)
+      200    0.010    0.000    0.246    0.001 /workspace/LightSAKT2/src/models/gkt.py:85(update)
+      200    0.004    0.000    0.152    0.001 /workspace/LightSAKT2/src/models/gkt.py:125(f_neighbor)
+     2000    0.122    0.000    0.122    0.000 {built-in method torch._C._nn.linear}
+      200    0.002    0.000    0.097    0.000 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/activation.py:1063(forward)
+      200    0.007    0.000    0.094    0.000 /usr/local/lib/python3.10/dist-packages/torch/nn/functional.py:5178(multi_head_attention_forward)
+     1200    0.002    0.000    0.071    0.000 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py:115(forward)
+      200    0.000    0.000    0.045    0.000 /usr/local/lib/python3.10/dist-packages/torch/nn/functional.py:4869(_in_projection_packed)
+      200    0.000    0.000    0.040    0.000 /workspace/LightSAKT2/src/models/gkt.py:79(f_self)
+      200    0.001    0.000    0.038    0.000 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/container.py:215(forward)
+      200    0.002    0.000    0.038    0.000 /usr/local/lib/python3.10/dist-packages/torch/nn/modules/rnn.py:1085(forward)
+      200    0.032    0.000    0.032    0.000 {built-in method torch.gru}
+      400    0.021    0.000    0.021    0.000 {built-in method torch.bmm}
+      200    0.006    0.000    0.019    0.000 /workspace/LightSAKT2/src/models/gkt.py:73(aggregate)
+      200    0.003    0.000    0.019    0.000 /workspace/LightSAKT2/src/models/gkt.py:93(predict)
+      602    0.013    0.000    0.013    0.000 {method 'repeat' of 'torch._C.TensorBase' objects}
+      800    0.009    0.000    0.009    0.000 {built-in method torch.cat}
+
+
