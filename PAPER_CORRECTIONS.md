@@ -47,3 +47,19 @@ Paper pages 18–19, Figure 8/efficiency, and pages 21–23, discussion: the his
 |18–19|Figure 8; Algebra2005 parameter efficiency|Historical model counts establish LightSAKT parameter savings|Counts used the wrong architecture or vocabulary; primary widths also differ|Actual rebuilt parameter counts with documented configurations|Report dataset-specific counts and distinguish equal-width controls|LightSAKT 108449; SAKT 197501; ratio 0.549106|“For Algebra2005, the documented primary configurations contain 108449 LightSAKT and 197501 SAKT trainable parameters; architecture and width both affect this comparison.”|results/tables/parameters.csv; configs/runs/*primary*.json; results/figures/Figure_8_Algebra2005.csv|
 
 <!-- measured-efficiency-corrections:end -->
+
+<!-- selected-light-results:start -->
+
+## Verified selected LightSAKT results (Tables 4–7; pages 14–19)
+
+Replace historical LightSAKT scores with the following fresh five-seed results under the corrected causal, student-disjoint protocol. The original PDF is preserved. Hyperparameters were selected using all 36 validation candidates per dataset; historical numbers and pending baseline runs are excluded from these final LightSAKT measurements.
+
+|dataset|AUC|ACCURACY|F1|MSE|BCE|
+|---|---|---|---|---|---|
+|ASSIST2009|0.751056 ± 0.000766|0.732229 ± 0.000801|0.816533 ± 0.001517|0.180233 ± 0.000319|0.538615 ± 0.000886|
+|ASSIST2015|0.726088 ± 0.000315|0.749526 ± 0.000419|0.846282 ± 0.000392|0.171233 ± 0.000106|0.516098 ± 0.000340|
+|Algebra2005|0.810590 ± 0.000422|0.795574 ± 0.000639|0.870356 ± 0.000350|0.144069 ± 0.000364|0.445272 ± 0.001018|
+
+Numbers are mean ± sample SD on one fixed split. A complete baseline superiority statement still requires the matched selected five-seed comparisons. Fresh primary seed-42 comparisons remain descriptive, with different replication and tuning stages. Source: results/tables/LightSAKT_final_summary.csv, LightSAKT_final_individual_seeds.csv, LightSAKT_completed_baseline_comparisons.csv and reports/light_final_summary_verification.json. All original efficiency findings remain preserved.
+
+<!-- selected-light-results:end -->

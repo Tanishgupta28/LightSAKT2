@@ -178,6 +178,17 @@ def generate(eta_dir=Path('reports'), refresh_eta=False):
               "CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m scripts.light_final_report --refresh-eta --eta-dir reports/summary_eta/latest", '```', '',
               'This command performs CPU-only evidence checks and regenerates reports/tables. It does not start, stop or reset GPU training. Source metric/checkpoint/prediction hashes and per-run verification are recorded in reports/light_final_summary_verification.json.']
     Path('reports/LIGHTSAKT_FINAL_RESULTS.md').write_text('\n'.join(lines) + '\n')
+    corrections=Path('PAPER_CORRECTIONS.md')
+    begin='<!-- selected-light-results:start -->'; end='<!-- selected-light-results:end -->'
+    wording=[begin,'','## Verified selected LightSAKT results (Tables 4–7; pages 14–19)','',
+             'Replace historical LightSAKT scores with the following fresh five-seed results under the corrected causal, student-disjoint protocol. The original PDF is preserved. Hyperparameters were selected using all 36 validation candidates per dataset; historical numbers and pending baseline runs are excluded from these final LightSAKT measurements.','',
+             table(formatted,['dataset']+[m.upper() for m in METRICS]),'',
+             'Numbers are mean ± sample SD on one fixed split. A complete baseline superiority statement still requires the matched selected five-seed comparisons. Fresh primary seed-42 comparisons remain descriptive, with different replication and tuning stages. Source: results/tables/LightSAKT_final_summary.csv, LightSAKT_final_individual_seeds.csv, LightSAKT_completed_baseline_comparisons.csv and reports/light_final_summary_verification.json. All original efficiency findings remain preserved.','',end]
+    original=corrections.read_text(); replacement='\n'.join(wording)
+    if begin in original:
+        first,tail=original.split(begin,1); assert end in tail
+        _,last=tail.split(end,1); corrections.write_text(first+replacement+last)
+    else:corrections.write_text(original+'\n'+replacement+'\n')
     write_json('reports/light_final_summary_verification.json', {'verified': True, 'verified_utc': now,
                'light_final_seed_slots': len(individual), 'summary_method': 'Five prespecified seeds; arithmetic mean and sample SD; saved metrics independently recomputed',
                'completed_five_seed_baseline_comparisons': len(final_rows), 'fresh_primary_baseline_comparisons': len(primary_rows),
