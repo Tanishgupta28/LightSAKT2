@@ -1,0 +1,29 @@
+{
+  "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-74ec9172397d",
+  "dataset": "ASSIST2015",
+  "model": "DKVMN",
+  "seed": 42,
+  "group": "baseline_tuning",
+  "validation": {
+    "auc": 0.725136531380614,
+    "auc_reason": null,
+    "accuracy": 0.7553946091241693,
+    "f1": 0.850990666448338,
+    "mse": 0.16917344732191048,
+    "bce": 0.511893521968506,
+    "n_targets": 66965
+  },
+  "best_epoch": 19,
+  "epochs_trained": 24,
+  "training_seconds": 526.6714537650114,
+  "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-74ec9172397d/best.pt",
+  "checkpoint_sha256": "c2b227f8613c79cdfb043106c5a9c2d3a0d3b609dc917ca9229546fbdf5e5cfe",
+  "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+  "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+  "git_commit": "c6a69d7d8590d806fb8a7092c99799dadb5bb5ee",
+  "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "parameters": 48833,
+  "peak_allocated_bytes": 459144704,
+  "peak_reserved_bytes": 633339904,
+  "test": null
+}
