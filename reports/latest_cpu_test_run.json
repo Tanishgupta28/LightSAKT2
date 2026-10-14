@@ -1,7 +1,7 @@
 {
-  "log": "reports/test_runs/20261014T061432-locked-summary-history-cpu.log",
+  "log": "reports/test_runs/20261014T061948-selected-inference-cpu.log",
   "exit_code": 0,
   "tests_passed": true,
-  "scope": "Full CPU suite including locked test identities/labels, historical ETA and five-seed summary; CUDA cases skipped during uninterrupted active GPU training",
-  "verified_utc": "2026-10-14T06:14:49.628202+00:00"
+  "scope": "Full CPU suite including independent selected inference, locked test records, ETA history and causal/padding tests; CUDA deferred during uninterrupted training",
+  "verified_utc": "2026-10-14T06:20:05.051189+00:00"
 }

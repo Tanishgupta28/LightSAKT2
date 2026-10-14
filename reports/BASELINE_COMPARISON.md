@@ -1,6 +1,6 @@
 # Verified baseline comparison
 
-Generated UTC: 2026-10-14T06:15:13.552007+00:00
+Generated UTC: 2026-10-14T06:23:15.368907+00:00
 
 Only completed artifacts on the same locked data/splits and context lengths are used. Matched final comparisons require all five prespecified seeds. Incomplete rows are pending, with no historical-paper substitution.
 
@@ -42,6 +42,8 @@ Only completed artifacts on the same locked data/splits and context lengths are 
 Differences compare five-seed means on the same split; they are descriptive effect estimates, not significance claims. Paired significance and Holm correction are generated from genuinely matched seeds.
 
 ## Fresh primary runs — separate descriptive evidence
+
+Independent CPU validation/test inference verified for 45 completed baseline final-seed runs. Exact per-probability checks, tolerance values and checkpoint hashes are recorded in reports/selected_final_inference_verification.json.
 
 Fresh completed seed-42 primary runs are fixed-configuration, single-seed measurements. They do not substitute for pending validation-selected five-seed comparisons. Original simplified GKT-PAM/MHA implementations remain separately labelled and do not establish canonical GKT reproduction.
 

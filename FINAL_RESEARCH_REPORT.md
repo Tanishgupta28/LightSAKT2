@@ -26,9 +26,9 @@ Running 95 items in this shard
 Additional CPU verification during active GPU training:
 
 ```
-Running 111 items in this shard
-.........................................sssssssssssssss.......................................................                                      [100%]
-96 passed, 15 skipped in 16.05s
+Running 112 items in this shard
+.........................................sssssssssssssss........................................................                                     [100%]
+97 passed, 15 skipped in 15.62s
 ```
 
 CUDA tests were skipped in this additional invocation to avoid GPU contention; the preceding full CPU/CUDA correctness gate remains the GPU evidence. Model/training source fingerprints are unchanged.
@@ -66,8 +66,8 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 ## Experiment schedule status
 
 {
-  "completed": 618,
-  "pending": 338,
+  "completed": 619,
+  "pending": 337,
   "running": 1
 }
 
@@ -114,6 +114,8 @@ Originals: `original_snapshot/`; raw datasets: `data/raw/`; fresh preprocessing:
 
 Mean ± sample SD across prespecified seeds on one frozen student split. Selected hyperparameters, strict checkpoint/prediction checks, completed-only baseline evidence and model-specific ETA decomposition are in reports/LIGHTSAKT_FINAL_RESULTS.md. Single-seed primary baselines are explicitly descriptive; pending selected baseline seed sets are excluded from final comparisons. Reproduce with the CPU-only scripts.light_final_report command recorded there.
 
+Independent CPU inference reproduced validation metrics and every saved test probability for 60 selected final checkpoints, including 15 LightSAKT seeds. Exact identities, target labels, per-probability tolerances, hashes and timings are in reports/selected_final_inference_verification.json. All individual five-metric results, selected epochs, seeds, run IDs and checkpoint/Git references are in reports/LIGHTSAKT_FINAL_SEED_RESULTS.md. Complete matched baseline comparisons and pending models are in reports/BASELINE_COMPARISON.md. The forensic explanation of the earlier 391-hour forecast is in reports/ETA_HISTORY_AUDIT.md. This does not mark the unfinished research schedule complete.
+
 ## Executed efficiency evidence
 
 The exclusive 120-case benchmark has completed; its measured latency, memory, throughput, parameter counts and scope-specific limits are reported in paper/EFFICIENCY_RESULTS.md. The current measurements contradict an unconditional LightSAKT speed claim. Training continues on the preserved complete schedule; the efficiency benchmark is reused, and full epoch-time documentation is refreshed at final analysis.
@@ -122,8 +124,8 @@ Independent CPU rederivation verified 1200 original timing repetitions across 12
 
 ## Execution optimization and unchanged scientific scope
 
-Latest schedule audit: 406 fresh trainings remain plus 24 reuse/evaluation entries. All 108 LightSAKT candidates are retained, with one seed per grid candidate and five matched seeds only for selected final configurations and ablations. The author chose the complete schedule with execution improvements only; all 162 GKT configurations discussed in the archived reduction proposal remain scheduled. Evidence: experiments/schedule_decision.json. Full inventory and proposal: reports/optimization/SCHEDULE_AUDIT.md and PROPOSED_DIFFERENCES.csv.
+Latest schedule audit: 325 fresh trainings remain plus 14 reuse/evaluation entries. All 108 LightSAKT candidates are retained, with one seed per grid candidate and five matched seeds only for selected final configurations and ablations. The author chose the complete schedule with execution improvements only; all 162 GKT configurations discussed in the archived reduction proposal remain scheduled. Evidence: experiments/schedule_decision.json. Full inventory and proposal: reports/optimization/SCHEDULE_AUDIT.md and PROPOSED_DIFFERENCES.csv.
 
 Exact immutable sequence caches preserve every tensor, identity, batch order and RNG sequence; CPU training/resume equivalence is tested. Inter-run GPU probes and CPU/CUDA gates verify independent worker updates before two-worker GKT execution. Full required scope, FP32, batch sizes, Adam, stopping criteria, LightSAKT architecture, splits and untouched final test selections remain unchanged. Prioritization runs LightSAKT grid/finals/ablations before slow remaining baseline tuning. See reports/optimization/EXECUTION_OPTIMIZATION.md and reports/profiling/.
 
-Independent private GitHub draft recovery artifacts: 620 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
+Independent private GitHub draft recovery artifacts: 621 assets have been downloaded and SHA256 verified. All available completed archives synchronized: False. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.

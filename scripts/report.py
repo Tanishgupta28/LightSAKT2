@@ -72,6 +72,10 @@ def main():
                 cells=[row['dataset'],str(row['completed_seeds'])]+[f'{row[m+"_mean"]:.6f} ± {row[m+"_std"]:.6f}' for m in ['auc','accuracy','f1','mse','bce']]
                 output.write('|'+ '|'.join(cells)+'|\n')
             output.write('\nMean ± sample SD across prespecified seeds on one frozen student split. Selected hyperparameters, strict checkpoint/prediction checks, completed-only baseline evidence and model-specific ETA decomposition are in reports/LIGHTSAKT_FINAL_RESULTS.md. Single-seed primary baselines are explicitly descriptive; pending selected baseline seed sets are excluded from final comparisons. Reproduce with the CPU-only scripts.light_final_report command recorded there.\n')
+            proof_path=Path('reports/selected_final_inference_verification.json')
+            if proof_path.exists():
+                proof=json.load(open(proof_path));runs=[r for r in proof['runs'] if r['verified']]
+                output.write(f'\nIndependent CPU inference reproduced validation metrics and every saved test probability for {len(runs)} selected final checkpoints, including {sum(r["model"]=="LightSAKT" for r in runs)} LightSAKT seeds. Exact identities, target labels, per-probability tolerances, hashes and timings are in {proof_path}. All individual five-metric results, selected epochs, seeds, run IDs and checkpoint/Git references are in reports/LIGHTSAKT_FINAL_SEED_RESULTS.md. Complete matched baseline comparisons and pending models are in reports/BASELINE_COMPARISON.md. The forensic explanation of the earlier 391-hour forecast is in reports/ETA_HISTORY_AUDIT.md. This does not mark the unfinished research schedule complete.\n')
     offsite=Path('reports/offsite_backup.json')
     efficiency=Path('paper/EFFICIENCY_RESULTS.md')
     if efficiency.exists():
