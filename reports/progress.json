@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-10-14T15:57:58.272949+00:00",
+  "updated_utc": "2026-10-14T16:03:48.772369+00:00",
   "total_slots": 957,
-  "completed": 670,
-  "remaining": 287,
+  "completed": 672,
+  "remaining": 285,
   "counts": {
-    "completed": 670,
-    "pending": 286,
+    "completed": 672,
+    "pending": 284,
     "running": 1
   },
   "processes": {
@@ -40,10 +40,10 @@
   },
   "running_jobs": [
     {
-      "run_id": "Algebra2005-DKVMN-baseline_tuning-42-07e13b8356b9",
+      "run_id": "Algebra2005-DKVMN-baseline_tuning-42-0c7d75af9bf6",
       "last_completed_epoch": 1,
-      "best_checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-07e13b8356b9/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKVMN-baseline_tuning-42-07e13b8356b9/config.json"
+      "best_checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-0c7d75af9bf6/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKVMN-baseline_tuning-42-0c7d75af9bf6/config.json"
     }
   ],
   "phase_counts": {
@@ -51,8 +51,8 @@
       "completed": 21
     },
     "6": {
-      "completed": 504,
-      "pending": 251,
+      "completed": 506,
+      "pending": 249,
       "running": 1
     },
     "7": {

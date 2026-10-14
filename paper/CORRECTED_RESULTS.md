@@ -41,7 +41,7 @@ These configurations maximize validation AUC among all 36 prespecified candidate
 |ASSIST2009|SAKT|5|0.750322 ± 0.000648|0.732718 ± 0.000669|0.817401 ± 0.000943|0.180373 ± 0.000252|0.539191 ± 0.000666|
 |ASSIST2015|DKT|5|0.728235 ± 0.000327|0.749869 ± 0.000281|0.845662 ± 0.000528|0.182124 ± 0.000394|0.547349 ± 0.001032|
 |ASSIST2015|DKT+|5|0.720802 ± 0.001036|0.745974 ± 0.000619|0.842588 ± 0.000766|0.187262 ± 0.000415|0.559082 ± 0.001053|
-|ASSIST2015|DKVMN|4|0.727332 ± 0.000899|0.750949 ± 0.000465|0.847114 ± 0.000515|0.170830 ± 0.000223|0.515173 ± 0.000574|
+|ASSIST2015|DKVMN|5|0.727605 ± 0.000989|0.751034 ± 0.000445|0.847155 ± 0.000456|0.170776 ± 0.000228|0.515011 ± 0.000615|
 |ASSIST2015|LightSAKT|5|0.726088 ± 0.000315|0.749526 ± 0.000419|0.846282 ± 0.000392|0.171233 ± 0.000106|0.516098 ± 0.000340|
 |ASSIST2015|SAKT|5|0.725180 ± 0.000258|0.749418 ± 0.000386|0.846664 ± 0.000609|0.171635 ± 0.000129|0.517255 ± 0.000332|
 |Algebra2005|DKT|5|0.822181 ± 0.000683|0.800524 ± 0.001175|0.872422 ± 0.000891|0.149683 ± 0.000862|0.466820 ± 0.002433|
@@ -57,6 +57,7 @@ ASSIST2009: LightSAKT mean test AUC minus DKVMN was -0.003960 across the five pr
 ASSIST2009: LightSAKT mean test AUC minus SAKT was +0.000734 across the five prespecified seeds (Table 7).
 ASSIST2015: LightSAKT mean test AUC minus DKT was -0.002146 across the five prespecified seeds (Table 7).
 ASSIST2015: LightSAKT mean test AUC minus DKT+ was +0.005287 across the five prespecified seeds (Table 7).
+ASSIST2015: LightSAKT mean test AUC minus DKVMN was -0.001517 across the five prespecified seeds (Table 7).
 ASSIST2015: LightSAKT mean test AUC minus SAKT was +0.000909 across the five prespecified seeds (Table 7).
 Algebra2005: LightSAKT mean test AUC minus DKT was -0.011592 across the five prespecified seeds (Table 7).
 Algebra2005: LightSAKT mean test AUC minus DKT+ was -0.012866 across the five prespecified seeds (Table 7).

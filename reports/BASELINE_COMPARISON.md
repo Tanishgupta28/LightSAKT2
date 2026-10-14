@@ -1,6 +1,6 @@
 # Verified baseline comparison
 
-Generated UTC: 2026-10-14T15:45:23.508670+00:00
+Generated UTC: 2026-10-14T16:00:58.032331+00:00
 
 Only completed artifacts on the same locked data/splits and context lengths are used. Matched final comparisons require all five prespecified seeds. Incomplete rows are pending, with no historical-paper substitution.
 
@@ -14,7 +14,7 @@ Only completed artifacts on the same locked data/splits and context lengths are 
 |ASSIST2009|SAKT|5|5|completed and verified|
 |ASSIST2015|DKT|5|5|completed and verified|
 |ASSIST2015|DKT+|5|5|completed and verified|
-|ASSIST2015|DKVMN|4|5|pending; partial evidence excluded from final comparison|
+|ASSIST2015|DKVMN|5|5|completed and verified|
 |ASSIST2015|GKT|0|5|pending; partial evidence excluded from final comparison|
 |ASSIST2015|GKT_MHA|0|5|pending; partial evidence excluded from final comparison|
 |ASSIST2015|SAKT|5|5|completed and verified|
@@ -35,6 +35,7 @@ Only completed artifacts on the same locked data/splits and context lengths are 
 |ASSIST2009|SAKT|0.750322 ± 0.000648|0.732718 ± 0.000669|0.817401 ± 0.000943|0.180373 ± 0.000252|0.539191 ± 0.000666|0.000734|
 |ASSIST2015|DKT|0.728235 ± 0.000327|0.749869 ± 0.000281|0.845662 ± 0.000528|0.182124 ± 0.000394|0.547349 ± 0.001032|-0.002146|
 |ASSIST2015|DKT+|0.720802 ± 0.001036|0.745974 ± 0.000619|0.842588 ± 0.000766|0.187262 ± 0.000415|0.559082 ± 0.001053|0.005287|
+|ASSIST2015|DKVMN|0.727605 ± 0.000989|0.751034 ± 0.000445|0.847155 ± 0.000456|0.170776 ± 0.000228|0.515011 ± 0.000615|-0.001517|
 |ASSIST2015|SAKT|0.725180 ± 0.000258|0.749418 ± 0.000386|0.846664 ± 0.000609|0.171635 ± 0.000129|0.517255 ± 0.000332|0.000909|
 |Algebra2005|DKT|0.822181 ± 0.000683|0.800524 ± 0.001175|0.872422 ± 0.000891|0.149683 ± 0.000862|0.466820 ± 0.002433|-0.011592|
 |Algebra2005|DKT+|0.823456 ± 0.000649|0.801094 ± 0.000253|0.872982 ± 0.000347|0.152382 ± 0.000488|0.474735 ± 0.001334|-0.012866|
