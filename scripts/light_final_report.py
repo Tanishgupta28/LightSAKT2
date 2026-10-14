@@ -74,6 +74,7 @@ def generate(eta_dir=Path('reports'), refresh_eta=False):
         if not status.exists() or json.load(open(status)).get('status') != 'completed':
             continue
         result, config, stats = verify_stored_result(path, data_checked)
+        assert stats['split_seed'] == protocol['split_seed'], 'Recorded dataset split seed mismatch'
         locked=locked_tests.check(result, config)
         assert result['training_code_sha256'] == code_hash, 'Training architecture/code version mismatch'
         assert config['seed'] == result['seed'] and config['model'] == result['model']
@@ -152,6 +153,17 @@ def generate(eta_dir=Path('reports'), refresh_eta=False):
              'results/tables/LightSAKT_completed_baseline_comparisons.csv']
     for frame, path in zip([summary, pd.DataFrame(individual), comparison], paths): save_csv(frame, path)
     eta = json.load(open(eta_dir / 'ETA.json')); remaining = pd.read_csv(eta_dir / 'ETA_REMAINING_RUNS.csv')
+    # Keep the forensic audit available beside the live forecast. This does not
+    # replace the ETA watcher's owned JSON/CSV or signal any running worker.
+    if eta_dir.resolve() != Path('reports').resolve():
+        for name in ['ETA_HISTORY_AUDIT.md', 'ETA_HISTORY_MILESTONES.csv',
+                     'ETA_ARCHIVED_HISTORY.csv', 'ETA_CATEGORY_OCCUPIED_HOURS.csv',
+                     'ETA_HISTORY_VERIFICATION.json']:
+            source = eta_dir / name
+            if source.exists():
+                target = Path('reports') / name
+                temporary = target.with_suffix(f'.{os.getpid()}.tmp')
+                temporary.write_bytes(source.read_bytes()); temporary.replace(target)
     factor = eta['two_worker_measured_throughput_speedup']
     remaining['occupied_mig_hours'] = remaining.central_hours.where(remaining.model != 'GKT_MHA', remaining.central_hours / factor)
     costs = remaining.groupby('model').agg(remaining_entries=('run_id', 'count'), fresh_training_runs=('action', lambda x: int((x == 'training').sum())),
