@@ -1,14 +1,14 @@
 # Execution health
 
-Observed UTC: 2026-10-14T03:23:05.638859+00:00
+Observed UTC: 2026-10-14T03:24:07.424530+00:00
 
 Scheduler PID 78472; healthy progress sampled: True; failed/interrupted/blocked slots: 0.
 
-Child PID 368071: CPU seconds advanced 61.56000000000001 over 61.91097617149353 observed seconds. Session 78472, parent 191761.
+Child PID 369503: CPU seconds advanced 0.20000000000000284 over 0.2 observed seconds. Session 78472, parent 191761.
 
-Run `Algebra2005-LightSAKT-single_head-7777`: epoch 39; measured recent epoch average 2.697416844998952; extrapolated first-epoch duration None; progress age 0.9122638702392578 seconds (history checkpoint); stall flag False. Threshold uses three measured epoch durations, or the provisional ETA epoch estimate before the first checkpoint.
+Run `ASSIST2009-SAKT-baseline_tuning-42-1ea6d0e3af0c`: epoch 28; measured recent epoch average 0.391509134194348; extrapolated first-epoch duration None; progress age 0.0022530555725097656 seconds (history checkpoint); stall flag False. Threshold uses three measured epoch durations, or the provisional ETA epoch estimate before the first checkpoint.
 
-MIG memory allocation: 5858 / 40320 MiB. Utilization percentage is unavailable; no percentage is inferred from board power or PID existence.
+MIG memory allocation: 1056 / 40320 MiB. Utilization percentage is unavailable; no percentage is inferred from board power or PID existence.
 
 Best/latest state loads, finite parameters and optimizer/RNG integrity are independently recorded in reports/active_checkpoint_verification.json; saved result verification is in reports/stored_artifact_verification.json. Archive and recovery evidence is in reports/backup_integrity.json and reports/recovery_validation.json.
 

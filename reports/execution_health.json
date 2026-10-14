@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T03:23:05.638859+00:00",
-  "sample_time": 1791948184.8713748,
+  "updated_utc": "2026-10-14T03:24:07.424530+00:00",
+  "sample_time": 1791948246.540436,
   "counts": {
-    "completed": 304,
-    "pending": 652,
+    "completed": 306,
+    "pending": 650,
     "running": 1
   },
   "scheduler": {
@@ -12,30 +12,30 @@
   },
   "training_processes": [
     {
-      "pid": 368071,
-      "cpu_seconds": 115.93,
-      "process_state": "S",
+      "pid": 369503,
+      "cpu_seconds": 20.65,
+      "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 61.91097617149353,
-      "cpu_seconds_advanced": 61.56000000000001
+      "observed_seconds": 0.2,
+      "cpu_seconds_advanced": 0.20000000000000284
     }
   ],
   "active_runs": [
     {
-      "run_id": "Algebra2005-LightSAKT-single_head-7777",
-      "last_completed_epoch": 39,
-      "best_checkpoint": "checkpoints/Algebra2005-LightSAKT-single_head-7777/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-LightSAKT-single_head-7777/config.json",
-      "recent_mean_epoch_seconds": 2.697416844998952,
-      "seconds_since_last_epoch": 0.9122638702392578,
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-1ea6d0e3af0c",
+      "last_completed_epoch": 28,
+      "best_checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-1ea6d0e3af0c/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-SAKT-baseline_tuning-42-1ea6d0e3af0c/config.json",
+      "recent_mean_epoch_seconds": 0.391509134194348,
+      "seconds_since_last_epoch": 0.0022530555725097656,
       "startup_epoch_seconds_extrapolated": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 8.092250534996857,
+      "stall_threshold_seconds": 1.1745274025830441,
       "checkpoint_stalled": false
     }
   ],
-  "gpu_memory_mib": 5858,
+  "gpu_memory_mib": 1056,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
