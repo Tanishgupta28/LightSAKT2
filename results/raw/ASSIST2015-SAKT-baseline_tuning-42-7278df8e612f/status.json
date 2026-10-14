@@ -1,0 +1,10 @@
+{
+  "run_id": "ASSIST2015-SAKT-baseline_tuning-42-7278df8e612f",
+  "status": "running",
+  "last_completed_epoch": 5,
+  "config": "results/raw/ASSIST2015-SAKT-baseline_tuning-42-7278df8e612f/config.json",
+  "seed": 42,
+  "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-SAKT-baseline_tuning-42-7278df8e612f/config.json",
+  "best_checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-7278df8e612f/best.pt",
+  "failure_reason": null
+}
