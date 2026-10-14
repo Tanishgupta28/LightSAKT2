@@ -1,0 +1,39 @@
+{
+  "run_id": "Algebra2005-LightSAKT-single_head-42",
+  "dataset": "Algebra2005",
+  "model": "LightSAKT",
+  "seed": 42,
+  "group": "ablation",
+  "validation": {
+    "auc": 0.8084578478447888,
+    "auc_reason": null,
+    "accuracy": 0.8011287687509283,
+    "f1": 0.8764532201513194,
+    "mse": 0.14092323985498095,
+    "bce": 0.43752840278561383,
+    "n_targets": 94262
+  },
+  "best_epoch": 36,
+  "epochs_trained": 41,
+  "training_seconds": 110.93696177500533,
+  "checkpoint": "checkpoints/Algebra2005-LightSAKT-single_head-42/best.pt",
+  "checkpoint_sha256": "8de60761f18e67a1660aef9dd071611b6ccd9d4b3f86ed15789cfb2ab7fee73c",
+  "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+  "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+  "git_commit": "dc5c3637924da78dfef4cde9158a78d4c637486e",
+  "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "parameters": 257857,
+  "peak_allocated_bytes": 3059606528,
+  "peak_reserved_bytes": 5188354048,
+  "test": {
+    "auc": 0.8114670287222656,
+    "auc_reason": null,
+    "accuracy": 0.796497924435376,
+    "f1": 0.8712260764551693,
+    "mse": 0.1442320849214352,
+    "bce": 0.4461982026376819,
+    "n_targets": 113704
+  },
+  "prediction_path": "results/predictions/Algebra2005-LightSAKT-single_head-42.npz",
+  "prediction_sha256": "aefa7456758771551daee65b5c1f91aebe8a7ac809423911f2d35495b50d650c"
+}
