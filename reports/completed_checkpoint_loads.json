@@ -1,5 +1,5 @@
 {
-  "verified_utc": "2026-10-14T01:14:47.891954+00:00",
+  "verified_utc": "2026-10-14T02:03:47.132130+00:00",
   "verified": true,
   "checkpoints": [
     {
@@ -2595,6 +2595,474 @@
       "optimizer_rng_verified": true
     },
     {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-3de8a446858c/best.pt",
+      "sha256": "6264e7fc726ca101c7f86104ea1fb0f237532924c816b46fbcad3a1970a0fb9c",
+      "epoch": 33,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-3de8a446858c/latest.pt",
+      "sha256": "b37d693f3475ca2ec80a9a68a7fca116f5fba444c44a9091b5962f1f8b8d4bac",
+      "epoch": 38,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-445182637f37/best.pt",
+      "sha256": "fa544b203623fea74ca0d957a93ca23899ea609b214b4fa6c75a94859cbcf3ff",
+      "epoch": 7,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-445182637f37/latest.pt",
+      "sha256": "9b2f85ccbc18b70a1c6ec9f95ea40018212d2c7fa94173ed68254f87c1b59ded",
+      "epoch": 12,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-5d0c2dacb4af/best.pt",
+      "sha256": "e05522938257c869a964edb49785f56ebb39d3a15f445b85e7870aa2bb7a6c63",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-5d0c2dacb4af/latest.pt",
+      "sha256": "86ffad124ed465b4ce24011675066c30d89d57317f0a1d5a5ec19981f55e7874",
+      "epoch": 23,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-61850ea7cf03/best.pt",
+      "sha256": "a2e9ce6461cccd116dce17326793fa2ecdbe5f60f913c5f139048c865238570e",
+      "epoch": 8,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-61850ea7cf03/latest.pt",
+      "sha256": "e51045cadd22a3e59b4143414184627b6a944b324ae93eda8073e26d82681deb",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-64640d03b0d3/best.pt",
+      "sha256": "c08f06c27d9bd31c155dcaff06bbe17b8464578df7e058930233ffbea68d7136",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-64640d03b0d3/latest.pt",
+      "sha256": "27a32932ae158e379dcffcc7911d7769b7f3721e9351e8e0e6f2270bacedf0a7",
+      "epoch": 23,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-6aad389a9ff2/best.pt",
+      "sha256": "eba085fcae24fcf7f197971a6e5fbefdada0539e855f4b310cbe4a9e07b0b9b5",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-6aad389a9ff2/latest.pt",
+      "sha256": "6cfd31a23698650f0a4efccbdc47b6c46582b345a6c44cc0f2c2c128e49a92b7",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-6bd53e61d1a0/best.pt",
+      "sha256": "cf907ea48a5fe0f34985350806af8b185295a3e587ed89bcd84b17c7097fa9e4",
+      "epoch": 10,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-6bd53e61d1a0/latest.pt",
+      "sha256": "321ba7056f92255ce7c0ac236e0184765e4f366b3013d6085814df9aba0b3770",
+      "epoch": 15,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-6cbd6e38b46e/best.pt",
+      "sha256": "1603b46aebaad5a97823c44677ebd351d1bff10f0445aa2984915b94b0f9c939",
+      "epoch": 15,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-6cbd6e38b46e/latest.pt",
+      "sha256": "782b9a43b132197c28efe4ab6b863e945ef6d6ae1b6eed6dc2bf2291b4c6fbdf",
+      "epoch": 20,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-7f6c59d24a33/best.pt",
+      "sha256": "b5eefb7a20b6c2f0e485a05c97f9fb10fae62fccacb01e5d46affab98c4c7cb8",
+      "epoch": 25,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-7f6c59d24a33/latest.pt",
+      "sha256": "e9605e61b907b3cbc68d92aed549a37b307a99789ac17b3a2ade93596c41c71f",
+      "epoch": 30,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-8a618101270c/best.pt",
+      "sha256": "483a8bdcd1db571ac23a9dce4e996288a9165c759f52706ca698a3a4f9d7c65a",
+      "epoch": 10,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-8a618101270c/latest.pt",
+      "sha256": "bf98b8031466583994e930788887813076a2957b3767f2b478fff05c2bda0599",
+      "epoch": 15,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-9349926da302/best.pt",
+      "sha256": "27541bc05c60370dee047ec999c4a6f5270c0ec854fcc47c1ff9f8f99fa8b9dd",
+      "epoch": 33,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-9349926da302/latest.pt",
+      "sha256": "02418cc2ea8256f319c2dab0dc9799046a7d39c1a1d814a073617e8b8b463d5d",
+      "epoch": 38,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-9b758c5a3448/best.pt",
+      "sha256": "996b46ab28f65976b4ada674e225ba1761caff137e991cd1bc0f70923e640e44",
+      "epoch": 10,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-9b758c5a3448/latest.pt",
+      "sha256": "7676d448c9605f22035fbf9a6d2e81c8be8bb95e76c8094bd9c5c840f2982e20",
+      "epoch": 15,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-a0f261d0be90/best.pt",
+      "sha256": "a7b5bcac31e6ab3de0263b0602c198e34190a74bf1a16d9300e7619c96a2e6e6",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-a0f261d0be90/latest.pt",
+      "sha256": "22e52ecc67bd1d35345e989f6b3b7bce83c9ff71da1dc6f05c5594c574af0be9",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-a540855228ac/best.pt",
+      "sha256": "a6526eb7cb4945b18c1bc258a41a2d0e912967cffca875310c95e0700011922f",
+      "epoch": 7,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-a540855228ac/latest.pt",
+      "sha256": "aaa38693a0e63354ac463c00f6180991bd475c723e1c7409724fe6b25877009a",
+      "epoch": 12,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-a5627c7ce7bc/best.pt",
+      "sha256": "a71abad6721ffde2c9ad9b143a88a540816572cf83a6d9ed219e577ad5ee5b22",
+      "epoch": 20,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-a5627c7ce7bc/latest.pt",
+      "sha256": "8d12a2ed4917f39fe90bc1fc09127752ff7ba8fa595dde6fb2bc7ebba4b7f4e1",
+      "epoch": 25,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-a628603467cc/best.pt",
+      "sha256": "6337c6676eb89e701ead4eaff99c998cf745fbd3e2a01e9e1eda9ec0cc966b80",
+      "epoch": 42,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-a628603467cc/latest.pt",
+      "sha256": "acd5662d22f4109fb97059b8a479c79bb3eff639aa2615303b4a8a02933b2bcc",
+      "epoch": 47,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-a69da8e923df/best.pt",
+      "sha256": "38a55f8be30dd78e42d197b3cdb481b5c661b0a05aa73e63ff59f08d39164599",
+      "epoch": 5,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-a69da8e923df/latest.pt",
+      "sha256": "60e14bd05da0c60c4e4187c18ddbfd9ecd7cc68a10a71f52e5ef9a2e1c50f781",
+      "epoch": 10,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-b0aeca4e3190/best.pt",
+      "sha256": "e2639d37ab4f07cab0c1161468e0d1e2c1750eb117f398d7ab432225653f4633",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-b0aeca4e3190/latest.pt",
+      "sha256": "0cbdd4f54063e41e6d023d10cd2a9370441f16e64b7a449d4febfc235ef1ac67",
+      "epoch": 23,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-b39fa45105b4/best.pt",
+      "sha256": "26285d3aba3e60495fb24355227877b4b199984db9bae32235939d3ee08799f0",
+      "epoch": 7,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-b39fa45105b4/latest.pt",
+      "sha256": "901368aeac1124ebe75fd828cc6ad2c0be0fb861881297e6e367e5a4f5339e3d",
+      "epoch": 12,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-b529d6901c60/best.pt",
+      "sha256": "a1163daba4bd3655a01ec23a6d81e9491dfe6170f5b14c0c49730d528fa83021",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-b529d6901c60/latest.pt",
+      "sha256": "6ccfa357ea419c1e28900450299070334b70c99bb2031d25d93112b98db844ce",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-b7a847dd2b34/best.pt",
+      "sha256": "e6ea0c6bceddb798fd29798c985b947f6bd97007b21d6bc1e8191477f56c456d",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-b7a847dd2b34/latest.pt",
+      "sha256": "6a3a7196efb9e23a7b90d4ebef8bec83b420926b10fe565dfbd09c3daa4e5c70",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-b95f4b0e409b/best.pt",
+      "sha256": "cb53e44031a33914df5b13dab61c461d5938be521384ed4ec6b480859b47fc83",
+      "epoch": 7,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-b95f4b0e409b/latest.pt",
+      "sha256": "b05a43a682b9a44187208bcc4f47e8b979a8584030802379000649a2c610cb5e",
+      "epoch": 12,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-ca3f37a65ba6/best.pt",
+      "sha256": "5b09049497430b5bc2f5d026cde2dd07aece69c6a6bd099ad25d185821ef7ca4",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-ca3f37a65ba6/latest.pt",
+      "sha256": "923d250d34de45616d1d7f918e4b1e8e6e1f3a94ab7fdca23c6705e228f667b1",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-e1f81f69cd99/best.pt",
+      "sha256": "5368bd78bcba2d20eaa7561b49541a3e932461ed4370b3ed673d93eb5cc052a9",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-e1f81f69cd99/latest.pt",
+      "sha256": "22bdef50ed62fb6fb4bd3d376e964b711cb33de9567af1a0de30cda033aa69d3",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-f53e52b77c73/best.pt",
+      "sha256": "ae03dff05540109d466492168788ca8a85497df999e4f111da0f70c0d67dcc3e",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-f53e52b77c73/latest.pt",
+      "sha256": "aa584b9fde3330bc7e3f769369abfb1d006ac07b519ef1a9f1d087ca59e66a9e",
+      "epoch": 23,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-f8bde96560d6/best.pt",
+      "sha256": "48c92f232aced0c4eee1fe58a0fb6360ebd2370d698028a7f1fc2c0c59dc43ce",
+      "epoch": 10,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-f8bde96560d6/latest.pt",
+      "sha256": "4b70b3fdc707bca754b39280f7c62d7451ee091feec31fefe29f6c0360623075",
+      "epoch": 15,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
       "path": "checkpoints/ASSIST2015-SAKT-primary-42-c67b62d42456/best.pt",
       "sha256": "4a4f679c0d906d9a85f54f7cc97e35064cef89d55aa012c6e6a8c6f280ea255e",
       "epoch": 10,
@@ -2703,6 +3171,276 @@
       "optimizer_rng_verified": true
     },
     {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-06884c8943b2/best.pt",
+      "sha256": "14b64e7450e0610c300913e933a7dd2ab0d6d3881951e3475557a8e673ee1390",
+      "epoch": 26,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-06884c8943b2/latest.pt",
+      "sha256": "de098f24ba9cf6db9065b0b3f079c2c3ced2a8ead9f1cb340a8c836e4da1fecc",
+      "epoch": 31,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-09240f4e7b64/best.pt",
+      "sha256": "4e8b0c716cfa68c33b5377b1141a3988fbf39de555aa66a422e800fb6f35315e",
+      "epoch": 17,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-09240f4e7b64/latest.pt",
+      "sha256": "6d4f9f072604c45e7f67e79cb1f819bef152600431dcaf5f47f0dd61e76dcb53",
+      "epoch": 22,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-0d79ab6430b7/best.pt",
+      "sha256": "1d760f29a297e581f4cc62f5b3eeff9ccb29b171b30722673a6efa55392ad730",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-0d79ab6430b7/latest.pt",
+      "sha256": "78e48ca6226a20181d465ba233dcb4793c8da48621e64c01fdeb482278753280",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-0ecd7ce70f64/best.pt",
+      "sha256": "4ec4e51875e2d9f91ac284a88b78d903effbe1ad9a1997905f18bde94feed6b4",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-0ecd7ce70f64/latest.pt",
+      "sha256": "d6d37c9988ef9e8bd71bd3afa1d68c2cab947cc678a88fc744c9f5fe8c001c6c",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-1070ef8912e9/best.pt",
+      "sha256": "691b823c61b1cb0aa0b40de5401399e13f19151a60f4d358f8054a419872dc7f",
+      "epoch": 36,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-1070ef8912e9/latest.pt",
+      "sha256": "d5ae606c927cd326238be5fd41a359438a282be9ec76e27f1d1b538cf5bca67d",
+      "epoch": 41,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-152abd80a946/best.pt",
+      "sha256": "2d602e902b9f95652d191615fcc54476b8975f9ed1c4e57e5f7cd886762cf43d",
+      "epoch": 17,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-152abd80a946/latest.pt",
+      "sha256": "c35bacf94b6d49b0621bce6227c49c606cca2feedac52ed73bc4864f85c30b77",
+      "epoch": 22,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-15db10686e87/best.pt",
+      "sha256": "e6bdf7f41963e77b612ecb04c3f45cce29962bae12dc4c576069f8bd1f2ade52",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-15db10686e87/latest.pt",
+      "sha256": "3787bc6df3e63cd780810fdceda2f9d372a1499f9feb3e3646a368a19115d68c",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-1c1163efe639/best.pt",
+      "sha256": "56770e2669f458ba08ba7bec5e5b72c5ee3b0e2f47b3cfc566e9b34bfc376e92",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-1c1163efe639/latest.pt",
+      "sha256": "2dc53c9d0f6efe5e19b4628780045131c19e4d4380b3ea6c2d136c7dc911a5e4",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-1ea403e8809d/best.pt",
+      "sha256": "2735481c12f48a18ec9f16b2e56d15221d6be7cab78ce62dba9d406ebe39bb97",
+      "epoch": 25,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-1ea403e8809d/latest.pt",
+      "sha256": "23a5844ad1a47e36255c03d0a8a04144c898b0149fbd4b52ad393b12f65b39ce",
+      "epoch": 30,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-20a36e0471b8/best.pt",
+      "sha256": "b5e9f8d5f028a3c87776d1386e6e07bf2333a4acf2867e89d527ec2b3290a624",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-20a36e0471b8/latest.pt",
+      "sha256": "7efa327c291f67972ca335894d33ef11f118488309d0584a6ded3797157675c5",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-21f5ed213eb1/best.pt",
+      "sha256": "c70d581677616ce0c9573cd3713b82a1fce235fc53c9e5e9cbe403b21ee3ed5e",
+      "epoch": 28,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-21f5ed213eb1/latest.pt",
+      "sha256": "9241b503aeee2ab3e589cba6471e78abec4010cbc316c19ac2d1f19e87d11ba1",
+      "epoch": 33,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-23f0fff3ef23/best.pt",
+      "sha256": "752ff055f45beefde084e5edf8db1439e7f44e971ab3e05450cedb010efa5d08",
+      "epoch": 27,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-23f0fff3ef23/latest.pt",
+      "sha256": "6c1f535287c3810fde3bbc7584a330a3a2d01d6eaaddd389a2eb743cb5b47a31",
+      "epoch": 32,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-284988a0a2ec/best.pt",
+      "sha256": "987f1ee6f7fb2089140718e0b235ebb2e211b139b5e497cbb1edd4b0e147bb1e",
+      "epoch": 9,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-284988a0a2ec/latest.pt",
+      "sha256": "94d769fa8fc70b2aaa66148c52a6eb7dd0667552be27862894f533cba6d6e059",
+      "epoch": 14,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-3366bcbcf17e/best.pt",
+      "sha256": "016f301f69057220207b4ccf0f26f3598cddcfdf182db0c77f6d8aa0d1ce1258",
+      "epoch": 44,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-3366bcbcf17e/latest.pt",
+      "sha256": "2fa0b0eaa5c1978f12fbd51846f1ebb2546927e56f5e29ab360bed2a87fe5586",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-3a9d31d0a0d5/best.pt",
+      "sha256": "79ec6eadac5d3e1cea32126520c5b0f32cf4cdfb075b8e7c8280936b0ef9ed01",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-3a9d31d0a0d5/latest.pt",
+      "sha256": "ec5a1976119fad5ef77c34f845afe9793c7bd4c20c839e19493edb11048b816a",
+      "epoch": 23,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
       "path": "checkpoints/Algebra2005-LightSAKT-primary-42-dca5e1830530/best.pt",
       "sha256": "e42d80da8c7bc2b2b9c7c18152f74442f32b10b9175cbce4cc883ad7ed36a3bc",
       "epoch": 17,
@@ -2715,6 +3453,186 @@
       "path": "checkpoints/Algebra2005-LightSAKT-primary-42-dca5e1830530/latest.pt",
       "sha256": "f4992ec9df35f5896cd4d6297290990df4da7af7318d0bead94b2ea6e119ec51",
       "epoch": 22,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-57249c130ef5/best.pt",
+      "sha256": "bccd55af69642d259954f61153fd28fa3ceb1bf4cb7f6f4821f9ab8a53d79546",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-57249c130ef5/latest.pt",
+      "sha256": "3343e01daa8b0aebef8060310302625117cd073e22ede5a8b02acf940d40037f",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-57c33f26d242/best.pt",
+      "sha256": "086ed1f0f157c3acce63e07eb27e1380ee8da0cdb10962d2e485d31688858063",
+      "epoch": 17,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-57c33f26d242/latest.pt",
+      "sha256": "8e659460488940237dffa8210fcd2f2e3b2c9a0ec7a5c76dc469424b53a4e2a1",
+      "epoch": 22,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-69acf3f16996/best.pt",
+      "sha256": "a9e9fc82514164d2501440e49a9d175fd95a404e8fa9df1f920282c1d784c7d6",
+      "epoch": 44,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-69acf3f16996/latest.pt",
+      "sha256": "5280ad5c0d28e733fcbfad2104378efddb0fa251844202e3067c6a21629011c8",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-6c8a4bab15f1/best.pt",
+      "sha256": "aad06bd64da7bb56d9f1434af5288557914559aeae07ecea7cbd902148e3a863",
+      "epoch": 43,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-6c8a4bab15f1/latest.pt",
+      "sha256": "fd674d2b393618353d42eeca8b6d481b59f50263a0ff331d850350706d412c84",
+      "epoch": 48,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-8930ef5a2a35/best.pt",
+      "sha256": "1006bddc50e35f47887efef88fb43e48077a505fb07d212918f407d9b887244d",
+      "epoch": 9,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-8930ef5a2a35/latest.pt",
+      "sha256": "11f6fdfd92a826cd1851bac4b13c1b909ca07e740820f663f13c3581cfff9749",
+      "epoch": 14,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-893445b0fab3/best.pt",
+      "sha256": "8326389ae2d77a74dda85bab118e336796b83c525729c60582f0a7268f55c8f9",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-893445b0fab3/latest.pt",
+      "sha256": "f1ff7983b2fe011fb349deea3e3b58aaa4f8f3cac79f4798bfa588b7db7f42dc",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-9337e03ea1cc/best.pt",
+      "sha256": "af04d09143e0f6c793621e6af246ab92397ef81cd15d2c7ac6fd04141d5cdd0b",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-9337e03ea1cc/latest.pt",
+      "sha256": "ab951b87b72eccf5c55ebfc580598a68097fce11557cf8fd4a2d60542e576f32",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-a697ea4034ab/best.pt",
+      "sha256": "25ea9a865da7329cb49053990aea54842913d6c4b413f5265d0a47b0911d87b5",
+      "epoch": 46,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-a697ea4034ab/latest.pt",
+      "sha256": "48d98e85fe54542d90b9f250294a151ac47beb719a3677e6fee8da1eb6813333",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-c18b6004e26c/best.pt",
+      "sha256": "88d796a07ea2d6370b2aa106f7e26c8e8cd160de43cf20efdbc6eaadf4d90b76",
+      "epoch": 29,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-c18b6004e26c/latest.pt",
+      "sha256": "8ac5241446473e49961952fc12eda7b4593dc5f3e0bdd606ef274a2f4ca72762",
+      "epoch": 34,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-cc537d7e1c4b/best.pt",
+      "sha256": "fdb13d694e93b10580abd5afa90e3a6f4ea5d1e51b8c255e82b413545e38d7b8",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-grid-42-cc537d7e1c4b/latest.pt",
+      "sha256": "b51ab2fd18885105ef67866f13b17e3a5055fb96d8f95144899eb4d5353dfeed",
+      "epoch": 50,
       "strict_state_load": true,
       "finite_parameters": true,
       "split_data_match": true,
