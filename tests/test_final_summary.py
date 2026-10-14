@@ -3,8 +3,18 @@ import copy
 import numpy as np
 import pytest
 
-from scripts.light_final_report import METRICS, SEEDS, seed_statistics
+from scripts.light_final_report import METRICS, SEEDS, eligible_result, seed_statistics
 from src.training.engine import write_json
+
+
+def test_report_scope_includes_final_models_and_baseline_primaries_only():
+    assert eligible_result({'group': 'final', 'model': 'LightSAKT'})
+    assert eligible_result({'group': 'final', 'model': 'DKT'})
+    assert eligible_result({'group': 'primary', 'model': 'DKT'})
+    assert not eligible_result({'group': 'primary', 'model': 'LightSAKT'})
+    assert not eligible_result({'group': 'baseline_tuning', 'model': 'DKT'})
+    assert not eligible_result({'group': 'grid', 'model': 'LightSAKT'})
+    assert not eligible_result({'group': 'ablation', 'model': 'LightSAKT'})
 
 
 def test_final_summary_requires_all_seeds_and_sample_standard_deviation():

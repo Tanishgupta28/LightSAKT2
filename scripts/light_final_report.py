@@ -22,6 +22,10 @@ SEEDS = [42, 123, 2026, 3407, 7777]
 METRICS = ['auc', 'accuracy', 'f1', 'mse', 'bce']
 
 
+def eligible_result(result):
+    return result['group'] == 'final' or result['group'] == 'primary' and result['model'] != 'LightSAKT'
+
+
 def seed_statistics(records):
     seeds = [r['seed'] for r in records]
     if len(seeds) != 5 or sorted(seeds) != SEEDS:
@@ -61,7 +65,7 @@ def generate(eta_dir=Path('reports'), refresh_eta=False):
                                       if 'visualization' not in p.parts)).hexdigest()
     for path in sorted(Path('results/raw').glob('*/metrics.json')):
         result = json.load(open(path))
-        if result['group'] not in ['final', 'primary']:
+        if not eligible_result(result):
             continue
         status = path.parent / 'status.json'
         if not status.exists() or json.load(open(status)).get('status') != 'completed':
@@ -145,7 +149,7 @@ def generate(eta_dir=Path('reports'), refresh_eta=False):
     formatted = summary[['dataset']].copy()
     for metric in METRICS: formatted[metric.upper()] = summary.apply(lambda r: f'{r[metric + "_mean"]:.6f} ± {r[metric + "_std"]:.6f}', axis=1)
     lines = ['# Verified final LightSAKT results and ongoing comparisons', '', 'Generated UTC: ' + now, '',
-             'All numbers below are generated from fresh completed experiment files. Five selected seeds per dataset are complete; the overall research schedule remains incomplete.', '',
+             'All numbers below are generated from fresh completed experiment files. Five selected seeds per dataset are complete; the overall research schedule remains incomplete. The three fixed-configuration LightSAKT primary runs are outside this selected-final summary; baseline primary runs are labelled separately.', '',
              '## Selected configurations', '', table(summary, ['dataset', 'learning_rate', 'embed_dim', 'num_heads', 'dropout', 'seq_len', 'batch_size']), '',
              'Each dataset selection used all 36 prespecified validation candidates and a lexical run-ID tie-break. Adam betas (0.9, 0.999), epsilon 1e-8, weight decay zero, maximum 50 epochs and validation-AUC patience five are unchanged. Student split seed 42 remains fixed at 70/10/20 before chronological chunking.', '',
              '## Five-seed test results', '', table(formatted, ['dataset'] + [m.upper() for m in METRICS]), '',
