@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-10-14T06:09:05.866470+00:00",
-  "sample_time": 1791958145.2002325,
+  "updated_utc": "2026-10-14T06:11:10.108567+00:00",
+  "sample_time": 1791958269.5679927,
   "counts": {
     "completed": 615,
     "pending": 341,
@@ -13,26 +13,26 @@
   "training_processes": [
     {
       "pid": 589803,
-      "cpu_seconds": 19.57,
+      "cpu_seconds": 142.26,
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 0.2,
-      "cpu_seconds_advanced": 0.21000000000000085
+      "observed_seconds": 62.37929058074951,
+      "cpu_seconds_advanced": 62.28999999999999
     }
   ],
   "active_runs": [
     {
       "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-cf55c749459e",
-      "last_completed_epoch": 1,
+      "last_completed_epoch": 19,
       "best_checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-cf55c749459e/best.pt",
       "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKVMN-baseline_tuning-42-cf55c749459e/config.json",
-      "recent_mean_epoch_seconds": 6.661117523995927,
-      "seconds_since_last_epoch": 3.4957034587860107,
+      "recent_mean_epoch_seconds": 6.749548297806177,
+      "seconds_since_last_epoch": 3.7336137294769287,
       "startup_epoch_seconds_extrapolated": null,
       "first_checkpoint_startup_grace_seconds": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 19.98335257198778,
+      "stall_threshold_seconds": 20.24864489341853,
       "checkpoint_stalled": false
     }
   ],
@@ -43,5 +43,5 @@
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 617 independently downloaded/checksum verified; completed-archive synchronization False."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 618 independently downloaded/checksum verified; completed-archive synchronization True."
 }

@@ -1,0 +1,47 @@
+{
+  "verified": true,
+  "source": "Git-archived ETA.json objects and current measured run timings",
+  "snapshots_read": 238,
+  "milestones": [
+    {
+      "requested_completed_milestone": 183,
+      "git_commit": "3b53f28278b8237fc2dbd55e711e6e407335c1c1",
+      "updated_utc": "2026-10-14T01:52:25.176860+00:00",
+      "completed_entries": 183,
+      "remaining_entries": 774,
+      "serial_equivalent_hours": 501.1401790791577,
+      "occupied_mig_hours": 391.10634190175324
+    },
+    {
+      "requested_completed_milestone": 254,
+      "git_commit": "1be758a7379d01102f07b54e3434c524f49ed7e4",
+      "updated_utc": "2026-10-14T02:30:33.484506+00:00",
+      "completed_entries": 255,
+      "remaining_entries": 702,
+      "serial_equivalent_hours": 500.5846526300032,
+      "occupied_mig_hours": 390.5508154525987
+    },
+    {
+      "requested_completed_milestone": 551,
+      "git_commit": "ee6996362af625ed7dba9769e34a77b9cb590a5f",
+      "updated_utc": "2026-10-14T05:03:39.739302+00:00",
+      "completed_entries": 551,
+      "remaining_entries": 406,
+      "serial_equivalent_hours": 499.32306836374363,
+      "occupied_mig_hours": 389.28923118633924
+    },
+    {
+      "requested_completed_milestone": "current",
+      "git_commit": "live saved artifacts",
+      "updated_utc": "2026-10-14T06:09:33.337491+00:00",
+      "completed_entries": 615,
+      "remaining_entries": 342,
+      "serial_equivalent_hours": 498.03086927113776,
+      "occupied_mig_hours": 387.9970320937333
+    }
+  ],
+  "gkt_occupied_hours": 372.3714161941859,
+  "occupied_hours": 387.99703209373325,
+  "scope_changed": false,
+  "forecast_algorithm_changed": false
+}
