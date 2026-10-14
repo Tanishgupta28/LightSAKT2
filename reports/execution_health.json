@@ -1,46 +1,22 @@
 {
-  "updated_utc": "2026-10-14T00:59:41.805066+00:00",
-  "sample_time": 1791939581.0574315,
+  "updated_utc": "2026-10-14T01:01:44.518466+00:00",
+  "sample_time": 1791939704.1139157,
   "counts": {
-    "completed": 141,
-    "pending": 815,
-    "running": 1
+    "completed": 145,
+    "pending": 812
   },
   "scheduler": {
     "pid": 78472,
     "alive": true
   },
-  "training_processes": [
-    {
-      "pid": 222002,
-      "cpu_seconds": 31.96,
-      "process_state": "R",
-      "ppid": 191761,
-      "session_id": 78472,
-      "observed_seconds": 0.2,
-      "cpu_seconds_advanced": 0.19999999999999574
-    }
-  ],
-  "active_runs": [
-    {
-      "run_id": "ASSIST2009-LightSAKT-grid-42-ee695dce7311",
-      "last_completed_epoch": 32,
-      "best_checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-ee695dce7311/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-LightSAKT-grid-42-ee695dce7311/config.json",
-      "recent_mean_epoch_seconds": 0.734516868001083,
-      "seconds_since_last_epoch": 0.22750234603881836,
-      "startup_epoch_seconds_extrapolated": null,
-      "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 2.203550604003249,
-      "checkpoint_stalled": false
-    }
-  ],
-  "gpu_memory_mib": 1168,
+  "training_processes": [],
+  "active_runs": [],
+  "gpu_memory_mib": 548,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
-  "healthy_progress_observed": true,
+  "healthy_progress_observed": false,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 141 independently downloaded/checksum verified; completed-archive synchronization False."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 146 independently downloaded/checksum verified; completed-archive synchronization True."
 }

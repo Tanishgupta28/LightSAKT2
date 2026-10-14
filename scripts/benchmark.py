@@ -90,6 +90,10 @@ def main(repeats=10):
             plt.figure(figsize=(6,4))
             for model,group in data.groupby('model'):plt.plot(group.length,group[metric],marker='o',label=model)
             plt.xlabel('Sequence length');plt.ylabel(metric.replace('_',' '));plt.title(f'{scope}, batch {batch}, {operation}');plt.legend();save_figure(name)
+    cpu_artifacts()
+
+
+def cpu_artifacts():
     parameter_rows=[]
     for job in json.load(open('experiments/manifest.json'))['jobs']:
         if job['phase']!=5:continue
@@ -113,4 +117,7 @@ def main(repeats=10):
     pd.DataFrame(complexity).to_csv('results/tables/model_complexity.csv',index=False)
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--repeats',type=int,default=10);main(parser.parse_args().repeats)
+    parser=argparse.ArgumentParser();parser.add_argument('--repeats',type=int,default=10);parser.add_argument('--paper-only',action='store_true')
+    args=parser.parse_args()
+    if args.paper_only:cpu_artifacts()
+    else:main(args.repeats)

@@ -1220,6 +1220,29 @@
     "verified_contents": true
   },
   {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-081855fbb02d",
+    "archive_schema": 2,
+    "metrics_sha256": "ade408f1c15af6c560f188cc6ca6e9e8de66b7647d55f631f62976799be60572",
+    "source_run_id": "ASSIST2015-LightSAKT-grid-42-081855fbb02d",
+    "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-081855fbb02d.tar.gz",
+    "sha256": "39efff01954cdb951826193abfb65c97c6cf7fcc527df2dc8590ff77dfe40dfb",
+    "verified_contents": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-08c3ea752993",
+    "archive_schema": 2,
+    "metrics_sha256": "85ce78aa71163eda796340d2408737bb7591f4f354deb37003deaf8fdd423f76",
+    "source_run_id": "ASSIST2015-LightSAKT-primary-42-301d9bff60e9",
+    "path": "backups/completed_runs/ASSIST2015-LightSAKT-primary-42-301d9bff60e9.tar.gz",
+    "sha256": "565d592ed5b9a626b3ad5bccfa2297651048547ef0767d2240c45b7ee7d3286d",
+    "verified_contents": true,
+    "result_archive": {
+      "path": "backups/reused_results/ASSIST2015-LightSAKT-grid-42-08c3ea752993.tar.gz",
+      "sha256": "6aae4d7e4a88092ce309cd9065998713c3f8564296556ff53a54066ea919ed96",
+      "verified_contents": true
+    }
+  },
+  {
     "run_id": "ASSIST2015-LightSAKT-primary-42-301d9bff60e9",
     "archive_schema": 2,
     "metrics_sha256": "31e6c3d69145150dfb3a2d9a70ceaefbd448b88d9f3567a6dcfd5d21d6455562",

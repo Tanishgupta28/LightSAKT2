@@ -9,7 +9,8 @@ from src.training.engine import write_json
 
 
 def after_run():
-    if os.environ.get('LIGHTSAKT_COORDINATED_CHILD'):return
+    if os.environ.get('LIGHTSAKT_COORDINATED_CHILD'):
+        required_efficiency();return
     request=Path('experiments/optimization_request.json')
     if not request.exists() or not json.load(open(request)).get('profile_between_runs'):return
     status=Path('reports/profiling/pilot_status.json')
@@ -57,4 +58,35 @@ def coordinate():
         except BaseException:
             process.send_signal(2);process.wait();raise
     if code:print('Coordinator stopped with unresolved entries; original complete schedule and all evidence remain available',flush=True)
+
+
+def required_efficiency():
+    request=Path('experiments/optimization_request.json')
+    if not request.exists() or not json.load(open(request)).get('exclusive_efficiency_between_runs'):return
+    status=Path('reports/profiling/efficiency_execution.json')
+    if status.exists() and json.load(open(status)).get('status') in ['completed','failed']:return
+    with open('experiments/efficiency_execution.lock','a') as lock:
+        try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+        except BlockingIOError:return
+        from scripts.progress import snapshot
+        if snapshot()['counts'].get('running',0):return
+        from scripts.gpu_admission import admission
+        from datetime import datetime,timezone
+        import time
+        with admission('exclusive_efficiency_benchmark'):
+            write_json(status,{'status':'running','purpose':'Required 120-case controlled efficiency benchmark after completed training checkpoint; no prediction-performance claim'})
+            started=time.perf_counter();log=Path('reports/analysis_logs/efficiency.log');log.parent.mkdir(parents=True,exist_ok=True)
+            with open(log,'a') as stream:
+                process=subprocess.Popen(['python','-u','-m','scripts.benchmark'],stdout=stream,stderr=subprocess.STDOUT)
+                Path('experiments/profiling.pid').write_text(str(process.pid)+'\n');code=process.wait()
+            completed=datetime.now(timezone.utc).isoformat();elapsed=time.perf_counter()-started
+            write_json(status,{'status':'completed' if code==0 else 'failed','exit_code':code,'log':str(log),
+                'updated_utc':completed,'actual_execution_seconds':elapsed,'research_training_interrupted':False})
+            if code==0:
+                import pandas as pd
+                assert len(pd.read_csv('results/tables/efficiency.csv'))==120
+                ledger=Path('experiments/analyses.json');record=json.load(open(ledger)) if ledger.exists() else {'tasks':{}}
+                record['tasks']['efficiency']={'status':'completed','command':['python','-m','scripts.benchmark'],
+                    'exit_code':0,'log':str(log),'executed_exclusively_between_runs':True,'completed_utc':completed}
+                write_json(ledger,record)
 

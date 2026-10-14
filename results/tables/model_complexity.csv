@@ -1,0 +1,3 @@
+model,attention_time,attention_prefix_storage,additional_operations
+LightSAKT,O(B H L d_k d_v),O(B H L d_k d_v) in the vectorized training scan,O(B L d^2) projections and reduced-width FFN; O(L d) learned positional parameters
+SAKT dense reference,O(B H L^2 d_k),O(B H L^2) dense attention weights,O(B L d^2) projections and full-width FFN; backend-specific complete-model memory measured separately

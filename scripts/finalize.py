@@ -13,7 +13,8 @@ from src.training.engine import write_json
 def commands(manifest):
     tasks=[('tables',['python','-m','scripts.summarize']),
            ('statistics_and_performance_figures',['python','-m','scripts.analyze']),
-           ('efficiency',['python','-m','scripts.benchmark'])]
+           ('efficiency',['python','-m','scripts.benchmark']),
+           ('efficiency_documentation',['python','-m','scripts.benchmark','--paper-only'])]
     for dataset in ['ASSIST2009','ASSIST2015','Algebra2005']:
         selected=next(j for j in manifest['jobs'] if j['phase']==7 and j['dataset']==dataset and j['model']=='LightSAKT' and j['seed']==42)
         tasks.append(('visualization_'+dataset,['python','-m','scripts.visualize','--run-id',selected['run_id']]))
