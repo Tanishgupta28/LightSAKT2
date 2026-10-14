@@ -1,14 +1,13 @@
 # Experiment status
 
-Updated UTC: 2026-10-14T04:34:31.820221+00:00
+Updated UTC: 2026-10-14T04:35:13.015011+00:00
 
-Completed: **452**. Remaining: **505**. Total schedule slots: 957.
+Completed: **455**. Remaining: **502**. Total schedule slots: 957.
 
 ```json
 {
-  "completed": 452,
-  "pending": 504,
-  "running": 1
+  "completed": 455,
+  "pending": 502
 }
 ```
 
@@ -25,8 +24,6 @@ Coordinator process: running (PID 191761).
 Progressive process: running (PID 185610).
 
 Active_recovery process: running (PID 203682).
-
-Current run: `Algebra2005-DKT-baseline_tuning-42-0fe87503e8ba`; last completed epoch: 11.
 
 The 45 reuse/alias slots are not independent new training experiments. Default ablation reuses final LightSAKT evidence. The separate smoke run is excluded from schedule counts.
 
