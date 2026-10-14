@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-10-14T05:18:29.101854+00:00",
+  "updated_utc": "2026-10-14T05:19:13.665884+00:00",
   "total_slots": 957,
-  "completed": 597,
-  "remaining": 360,
+  "completed": 599,
+  "remaining": 358,
   "counts": {
-    "completed": 597,
-    "pending": 359,
+    "completed": 599,
+    "pending": 357,
     "running": 1
   },
   "processes": {
@@ -40,10 +40,10 @@
   },
   "running_jobs": [
     {
-      "run_id": "Algebra2005-SAKT-final-123",
-      "last_completed_epoch": 18,
-      "best_checkpoint": "checkpoints/Algebra2005-SAKT-final-123/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-SAKT-final-123/config.json"
+      "run_id": "Algebra2005-SAKT-final-3407",
+      "last_completed_epoch": 21,
+      "best_checkpoint": "checkpoints/Algebra2005-SAKT-final-3407/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-SAKT-final-3407/config.json"
     }
   ],
   "phase_counts": {
@@ -55,8 +55,8 @@
       "pending": 310
     },
     "7": {
-      "completed": 55,
-      "pending": 49,
+      "completed": 57,
+      "pending": 47,
       "running": 1
     },
     "8": {
