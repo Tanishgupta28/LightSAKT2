@@ -2,6 +2,9 @@
 import argparse
 import json
 import subprocess
+import fcntl
+import os
+import signal
 from pathlib import Path
 from scripts.progress import snapshot, write_progress
 from src.training.engine import write_json
@@ -26,6 +29,16 @@ def main(retry_failed=False):
     progress=snapshot()
     if not progress['all_training_slots_completed']:
         raise SystemExit(f"Final analyses pending: {progress['remaining']} experiment slots remain; no completion claim.")
+    lock=open('experiments/final_analysis.lock','w')
+    try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+    except BlockingIOError:raise SystemExit('Final analyses already have an owner')
+    # Stop only the independently detached CPU figure writer after all GPU
+    # training has completed, so publication artifacts cannot be overwritten.
+    worker=Path('experiments/progressive.pid')
+    if worker.exists():
+        pid=int(worker.read_text());proc=Path(f'/proc/{pid}/cmdline')
+        if proc.exists() and b'scripts.progressive' in proc.read_bytes() and os.getpgid(pid)==pid:
+            os.killpg(pid,signal.SIGTERM)
     manifest=json.load(open('experiments/manifest.json'));path=Path('experiments/analyses.json')
     ledger=json.load(open(path)) if path.exists() else {'tasks':{}}
     for name,command in commands(manifest):

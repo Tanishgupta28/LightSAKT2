@@ -55,6 +55,10 @@ if __name__=='__main__':
         Path('experiments/progressive.pid').write_text(str(os.getpid())+'\n')
     previous=None
     while True:
+        from scripts.progress import snapshot
+        if snapshot()['all_training_slots_completed']:
+            print('All training slots completed; final analysis pipeline owns final artifacts',flush=True)
+            break
         observed=sorted((p.parent.name,p.stat().st_mtime) for p in Path('results/raw').glob('*/metrics.json'))
         if observed!=previous:
             try:update();previous=observed
