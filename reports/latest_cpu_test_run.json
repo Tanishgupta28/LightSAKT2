@@ -1,7 +1,7 @@
 {
-  "log": "reports/test_runs/20261014T184242-recovery-publication-cpu.log",
+  "log": "reports/test_runs/20261014T191821-recovery-hook-final-cpu.log",
   "exit_code": 0,
   "tests_passed": true,
-  "scope": "Full CPU suite including SIGKILL/resume equivalence, supervisor locks, alias identities, archive restore and deterministic publication bytes; CUDA deferred during continuous healthy training",
-  "verified_utc": "2026-10-14T18:43:02.809467+00:00"
+  "scope": "Full CPU suite including recovery, publication hashes and inter-run hook idempotence; CUDA deferred during healthy training",
+  "verified_utc": "2026-10-14T19:18:42.986794+00:00"
 }
