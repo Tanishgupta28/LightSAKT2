@@ -1,1 +1,2 @@
-
+dataset,model,completed_seeds,required_seeds,auc_mean,auc_std,auc_ci95_halfwidth,accuracy_mean,accuracy_std,accuracy_ci95_halfwidth,f1_mean,f1_std,f1_ci95_halfwidth,mse_mean,mse_std,mse_ci95_halfwidth,bce_mean,bce_std,bce_ci95_halfwidth,variant,evidence_reused_from,equivalent_to,auc_relative_change,accuracy_relative_change,f1_relative_change,mse_relative_change,bce_relative_change
+ASSIST2009,LightSAKT,1,5,0.7515491260119282,,,0.7323094619349891,,,0.8177612784408127,,,0.1799546584251517,,,0.5379412487486973,,,default,final LightSAKT,,0.0,0.0,0.0,0.0,0.0
