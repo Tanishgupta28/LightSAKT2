@@ -46,7 +46,7 @@ These configurations maximize validation AUC among all 36 prespecified candidate
 |ASSIST2015|SAKT|5|0.725180 ± 0.000258|0.749418 ± 0.000386|0.846664 ± 0.000609|0.171635 ± 0.000129|0.517255 ± 0.000332|
 |Algebra2005|DKT|5|0.822181 ± 0.000683|0.800524 ± 0.001175|0.872422 ± 0.000891|0.149683 ± 0.000862|0.466820 ± 0.002433|
 |Algebra2005|DKT+|5|0.823456 ± 0.000649|0.801094 ± 0.000253|0.872982 ± 0.000347|0.152382 ± 0.000488|0.474735 ± 0.001334|
-|Algebra2005|DKVMN|2|0.817439 ± 0.001343|0.798195 ± 0.000721|0.871983 ± 0.000904|0.142130 ± 0.000461|0.440176 ± 0.001305|
+|Algebra2005|DKVMN|5|0.817725 ± 0.001099|0.798950 ± 0.000818|0.872047 ± 0.000572|0.141806 ± 0.000514|0.439274 ± 0.001405|
 |Algebra2005|LightSAKT|5|0.810590 ± 0.000422|0.795574 ± 0.000639|0.870356 ± 0.000350|0.144069 ± 0.000364|0.445272 ± 0.001018|
 |Algebra2005|SAKT|5|0.813373 ± 0.000367|0.796382 ± 0.000504|0.871012 ± 0.000372|0.143309 ± 0.000206|0.443098 ± 0.000598|
 
@@ -62,6 +62,7 @@ ASSIST2015: LightSAKT mean test AUC minus DKVMN was -0.001517 across the five pr
 ASSIST2015: LightSAKT mean test AUC minus SAKT was +0.000909 across the five prespecified seeds (Table 7).
 Algebra2005: LightSAKT mean test AUC minus DKT was -0.011592 across the five prespecified seeds (Table 7).
 Algebra2005: LightSAKT mean test AUC minus DKT+ was -0.012866 across the five prespecified seeds (Table 7).
+Algebra2005: LightSAKT mean test AUC minus DKVMN was -0.007135 across the five prespecified seeds (Table 7).
 Algebra2005: LightSAKT mean test AUC minus SAKT was -0.002784 across the five prespecified seeds (Table 7).
 
 Independent CPU inference reproduced validation metrics and saved test probabilities for 70 completed selected-final checkpoints. Verification checked exact frozen test identities/labels and FP32 cross-device probability tolerances (atol=1e-6, rtol=1e-6). Per-run hashes, source Git commits and metric checks are recorded in reports/selected_final_inference_verification.json; all 15 individual LightSAKT seed results and selected validation epochs are in reports/LIGHTSAKT_FINAL_SEED_RESULTS.md. Final verification of the remaining experimental schedule is still pending.
