@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-14T01:21:37.718878+00:00",
+  "updated_utc": "2026-10-14T01:22:39.440743+00:00",
   "counts": {
     "completed": 157,
     "pending": 799,
@@ -9,21 +9,21 @@
   "mean_completed_run_seconds": 326.5484536806256,
   "completed_duration_scope": "Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.",
   "remaining_training_gpu_reserved_hours": {
-    "low": 106.36530074391496,
-    "central": 501.5206166498854,
-    "high": 1462.9735490096077
+    "low": 106.3628714338157,
+    "central": 501.5031732592115,
+    "high": 1462.956105618934
   },
   "two_worker_training_wall_hours": {
-    "low": 87.27042027661881,
-    "central": 391.486779472481,
-    "high": 1462.9735490096077
+    "low": 87.26799096651955,
+    "central": 391.4693360818071,
+    "high": 1462.956105618934
   },
   "two_worker_measured_throughput_speedup": 1.5122888289676635,
   "two_worker_estimate_limit": "Serial isolated-equivalent hours differ from MIG occupied wall hours. Two independent GKT-MHA workers only; PAM and other models remain serial. Use the smallest measured MHA throughput factor across tested datasets/widths. Wide PAM measured 0.90x and was rejected for parallel execution. Short-step throughput is extrapolated, not guaranteed. High scenario assumes no sustained benefit. Startup/test/analysis excluded. Aggregate worker elapsed-hours may increase under contention.",
   "conditional_training_finish_utc": {
-    "low": "2026-10-18T11:43:32.801556+00:00",
-    "central": "2026-11-03T22:52:51.938818+00:00",
-    "high": "2026-12-14T00:20:02.495313+00:00"
+    "low": "2026-10-18T11:44:25.777905+00:00",
+    "central": "2026-11-03T22:52:50.864476+00:00",
+    "high": "2026-12-14T00:20:01.420971+00:00"
   },
   "wall_clock_assumption": "One current MIG worker remains continuously available; no outages or new paid resources.",
   "interpretation": "GPU reserved wall hours from end-to-end measured epochs, not hardware GPU-active time. Scenario envelope, not a statistical confidence interval or guaranteed bound.",

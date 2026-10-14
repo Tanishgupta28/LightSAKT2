@@ -1,0 +1,29 @@
+{
+  "run_id": "ASSIST2015-LightSAKT-grid-42-64640d03b0d3",
+  "dataset": "ASSIST2015",
+  "model": "LightSAKT",
+  "seed": 42,
+  "group": "grid",
+  "validation": {
+    "auc": 0.7300652943795162,
+    "auc_reason": null,
+    "accuracy": 0.7572015231837527,
+    "f1": 0.8513163790659607,
+    "mse": 0.16802957368493224,
+    "bce": 0.5087857915954037,
+    "n_targets": 66965
+  },
+  "best_epoch": 18,
+  "epochs_trained": 23,
+  "training_seconds": 94.39831412100466,
+  "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-64640d03b0d3/best.pt",
+  "checkpoint_sha256": "c08f06c27d9bd31c155dcaff06bbe17b8464578df7e058930233ffbea68d7136",
+  "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+  "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+  "git_commit": "6130a79ff0d2986c116ceddb04398d19127f2afe",
+  "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "parameters": 134849,
+  "peak_allocated_bytes": 462413824,
+  "peak_reserved_bytes": 706740224,
+  "test": null
+}
