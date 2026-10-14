@@ -1,5 +1,10 @@
 {
   "run_id": "ASSIST2009-SAKT-baseline_tuning-42-86ecdf28f694",
-  "status": "running",
-  "execution_coordinator_pid": 191761
+  "status": "completed",
+  "last_completed_epoch": 11,
+  "config": "results/raw/ASSIST2009-SAKT-baseline_tuning-42-86ecdf28f694/config.json",
+  "seed": 42,
+  "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-SAKT-baseline_tuning-42-86ecdf28f694/config.json",
+  "best_checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-86ecdf28f694/best.pt",
+  "failure_reason": null
 }
