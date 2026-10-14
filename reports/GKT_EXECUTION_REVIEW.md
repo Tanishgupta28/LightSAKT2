@@ -6,7 +6,20 @@ The complete 957-entry/912-distinct-training schedule remains active. Neither mo
 
 The probe ran exclusively between completed research runs, with no signals to healthy training. It used genuine train batches for both GKT variants on all three datasets, plus the widest Algebra PAM/MHA settings: eight configurations, each measured with four, one and two CPU dispatch threads (24 cases). Each case executed two warm-up and three timed FP32 Adam steps. Initialization, CPU RNG, step probabilities, gradients, parameter updates and CUDA RNG were compared through exact tensor-byte digests at every step.
 
-All cases passed exact equivalence. One-thread speedups ranged from **0.8312 to 1.0632** versus the original four threads; two-thread speedups ranged from **0.7603 to 1.0297**. There was no consistent gain across configurations, and the short timing window cannot establish sustained epoch throughput. The original four-thread policy stays active; no improvement is credited to the ETA. Raw per-step measurements and proofs are in `reports/profiling/gkt_threads/measurements.json` and `verification.json`.
+All retained completed batches passed exact initialization/step/RNG equivalence. A hook-placement error accidentally repeated the engineering probe at four completed-run boundaries (96 diagnostic case lines). The hook was corrected, the completed request disabled, and regression tests prevent repeat launches. Research experiments/checkpoints were not repeated or changed. Failed-hook logs and Git-recovered measurement summaries remain preserved.
+
+|Recorded batch UTC|Threads|Minimum speedup|Maximum speedup|All cases exact|
+|---|---|---|---|---|
+|2026-10-14T17:31:32.467640+00:00|1|0.8312|1.0632|True|
+|2026-10-14T17:31:32.467640+00:00|2|0.7603|1.0297|True|
+|2026-10-14T17:38:47.319050+00:00|1|0.9307|1.1901|True|
+|2026-10-14T17:38:47.319050+00:00|2|0.9097|1.0676|True|
+|2026-10-14T17:46:43.389600+00:00|1|0.9893|1.0068|True|
+|2026-10-14T17:46:43.389600+00:00|2|0.7700|1.0278|True|
+|2026-10-14T17:59:40.136473+00:00|1|0.9864|1.1642|True|
+|2026-10-14T17:59:40.136473+00:00|2|0.9889|1.2292|True|
+
+The variable short-window timings show no consistently faster setting across all configurations. The original four-thread policy stays active, and no speedup is credited to the ETA. Raw/latest observations and archived batch summaries are in reports/profiling/gkt_threads/.
 
 ## Existing accepted and rejected measures
 

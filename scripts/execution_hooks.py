@@ -106,6 +106,13 @@ def additional_gkt_probe():
             from datetime import datetime,timezone
             write_json(status,{'status':'running','started_utc':datetime.now(timezone.utc).isoformat(),
                               'healthy_training_interrupted':False,'enabled_for_research':False})
+            log=Path('reports/profiling/gkt_threads/probe.log');log.parent.mkdir(parents=True,exist_ok=True)
+            with log.open('a') as output:
+                child=subprocess.Popen(['python','-u','-m','scripts.probe_gkt_threads'],stdout=output,stderr=subprocess.STDOUT)
+                code=child.wait()
+            write_json(status,{'status':'completed' if code==0 else 'failed','exit_code':code,'log':str(log),
+                              'completed_utc':datetime.now(timezone.utc).isoformat(),
+                              'healthy_training_interrupted':False,'enabled_for_research':False})
 
 
 def verify_ablations_between_runs():
@@ -135,11 +142,4 @@ def verify_ablations_between_runs():
                     code=subprocess.run(['python','-u','-m','scripts.verify_light_grid_inference'],stdout=output,stderr=subprocess.STDOUT).returncode
             write_json(status,{'status':'completed' if code==0 else 'failed','exit_code':code,'log':str(log),
                               'healthy_training_interrupted':False})
-            log=Path('reports/profiling/gkt_threads/probe.log');log.parent.mkdir(parents=True,exist_ok=True)
-            with log.open('a') as output:
-                child=subprocess.Popen(['python','-u','-m','scripts.probe_gkt_threads'],stdout=output,stderr=subprocess.STDOUT)
-                code=child.wait()
-            write_json(status,{'status':'completed' if code==0 else 'failed','exit_code':code,'log':str(log),
-                              'completed_utc':datetime.now(timezone.utc).isoformat(),
-                              'healthy_training_interrupted':False,'enabled_for_research':False})
 

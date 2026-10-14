@@ -1,8 +1,9 @@
 {
   "status": "completed",
-  "exit_code": 0,
-  "log": "reports/profiling/gkt_threads/probe.log",
-  "completed_utc": "2026-10-14T17:31:33.560568+00:00",
-  "healthy_training_interrupted": false,
-  "enabled_for_research": false
+  "actual_diagnostic_batches": 4,
+  "case_lines_logged": 96,
+  "enabled_for_research": false,
+  "research_experiments_repeated": 0,
+  "hook_placement_regression_corrected": true,
+  "log": "reports/profiling/gkt_threads/probe.log"
 }

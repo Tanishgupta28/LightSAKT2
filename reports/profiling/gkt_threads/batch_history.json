@@ -1,0 +1,83 @@
+{
+  "batches_preserved": [
+    {
+      "git_commit": "fbd596b6a92cf98c97f93ca0493918b97fc54a62",
+      "updated_utc": "2026-10-14T17:59:40.136473+00:00",
+      "cases": 24,
+      "candidates": [
+        {
+          "threads": 1,
+          "all_cases_exact": true,
+          "minimum_measured_speedup": 0.9864087892676606,
+          "maximum_measured_speedup": 1.1641566079508934
+        },
+        {
+          "threads": 2,
+          "all_cases_exact": true,
+          "minimum_measured_speedup": 0.9888853867786302,
+          "maximum_measured_speedup": 1.2291953731011345
+        }
+      ]
+    },
+    {
+      "git_commit": "da9be82992043c9a2679f0248f86fa96bc25f27e",
+      "updated_utc": "2026-10-14T17:46:43.389600+00:00",
+      "cases": 24,
+      "candidates": [
+        {
+          "threads": 1,
+          "all_cases_exact": true,
+          "minimum_measured_speedup": 0.9893104500058179,
+          "maximum_measured_speedup": 1.0068458281605002
+        },
+        {
+          "threads": 2,
+          "all_cases_exact": true,
+          "minimum_measured_speedup": 0.7699578797448692,
+          "maximum_measured_speedup": 1.0278454195942694
+        }
+      ]
+    },
+    {
+      "git_commit": "5946ea52198d2448c6c9dd4c71447077b932516a",
+      "updated_utc": "2026-10-14T17:38:47.319050+00:00",
+      "cases": 24,
+      "candidates": [
+        {
+          "threads": 1,
+          "all_cases_exact": true,
+          "minimum_measured_speedup": 0.9307197679205823,
+          "maximum_measured_speedup": 1.1900790907197552
+        },
+        {
+          "threads": 2,
+          "all_cases_exact": true,
+          "minimum_measured_speedup": 0.9097157374313084,
+          "maximum_measured_speedup": 1.0675723457704063
+        }
+      ]
+    },
+    {
+      "git_commit": "4eeae0129c68c2c146c89692bb5590c148a3c8c9",
+      "updated_utc": "2026-10-14T17:31:32.467640+00:00",
+      "cases": 24,
+      "candidates": [
+        {
+          "threads": 1,
+          "all_cases_exact": true,
+          "minimum_measured_speedup": 0.8311982533016166,
+          "maximum_measured_speedup": 1.063201381446189
+        },
+        {
+          "threads": 2,
+          "all_cases_exact": true,
+          "minimum_measured_speedup": 0.7603480482107475,
+          "maximum_measured_speedup": 1.0297174293734728
+        }
+      ]
+    }
+  ],
+  "diagnostic_cases_logged": 96,
+  "research_runs_repeated": 0,
+  "enabled_for_research": false
+}
