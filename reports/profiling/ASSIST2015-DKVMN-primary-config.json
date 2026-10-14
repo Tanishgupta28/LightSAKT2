@@ -1,0 +1,23 @@
+{
+  "dataset": "ASSIST2015",
+  "model": "DKVMN",
+  "group": "primary",
+  "seed": 42,
+  "seq_len": 100,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "patience": 5,
+  "learning_rate": 0.001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.0,
+  "epsilon": 1e-08,
+  "model_config": {
+    "dim_s": 50,
+    "size_m": 20
+  },
+  "evaluate_test": true,
+  "run_id": "ASSIST2015-DKVMN-primary-42-c91ed69c5400"
+}

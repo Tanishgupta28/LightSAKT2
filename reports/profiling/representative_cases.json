@@ -1,0 +1,532 @@
+[
+  {
+    "case": "ASSIST2009-DKT-primary",
+    "dataset": "ASSIST2009",
+    "model": "DKT",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "DKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "emb_size": 100,
+        "hidden_size": 100
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-DKT-primary-42-26e196b6a6d5"
+    },
+    "train_step_seconds": [
+      0.003679115994600579,
+      0.0035830110136885196,
+      0.0035772639967035502
+    ],
+    "eval_step_seconds": [
+      0.0010410489921923727,
+      0.0009924109908752143,
+      0.0009290919988416135
+    ],
+    "train_step_mean": 0.0036131303349975497,
+    "eval_step_mean": 0.0009875173273030668,
+    "peak_allocated_bytes": 167431168,
+    "peak_reserved_bytes": 192937984,
+    "dataset_construction_seconds": 0.3847845339914784,
+    "batch_collation_seconds": 0.0009951950050890446,
+    "host_to_device_seconds": 0.0003151550190523267,
+    "training_chunks": 3993,
+    "num_q": 137
+  },
+  {
+    "case": "ASSIST2009-DKTplus-primary",
+    "dataset": "ASSIST2009",
+    "model": "DKT+",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "DKT+",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "emb_size": 100,
+        "hidden_size": 100,
+        "lambda_r": 0.01,
+        "lambda_w1": 0.003,
+        "lambda_w2": 3.0
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-DKTplus-primary-42-21f9b124f6e4"
+    },
+    "train_step_seconds": [
+      0.004843425995204598,
+      0.004775126988533884,
+      0.004811296006664634
+    ],
+    "eval_step_seconds": [
+      0.000991011009318754,
+      0.0009370270126964897,
+      0.000930914975469932
+    ],
+    "train_step_mean": 0.004809949663467705,
+    "eval_step_mean": 0.0009529843324950585,
+    "peak_allocated_bytes": 167902208,
+    "peak_reserved_bytes": 239075328,
+    "dataset_construction_seconds": 0.37563868300640024,
+    "batch_collation_seconds": 0.000491543993121013,
+    "host_to_device_seconds": 0.00015777497901581228,
+    "training_chunks": 3993,
+    "num_q": 137
+  },
+  {
+    "case": "ASSIST2009-DKVMN-primary",
+    "dataset": "ASSIST2009",
+    "model": "DKVMN",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "DKVMN",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "dim_s": 50,
+        "size_m": 20
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-DKVMN-primary-42-902c00823fa6"
+    },
+    "train_step_seconds": [
+      0.09158036398002878,
+      0.090169766015606,
+      0.0915664540079888
+    ],
+    "eval_step_seconds": [
+      0.020970209006918594,
+      0.02039769900147803,
+      0.020368894009152427
+    ],
+    "train_step_mean": 0.09110552800120786,
+    "eval_step_mean": 0.020578934005849685,
+    "peak_allocated_bytes": 165239808,
+    "peak_reserved_bytes": 195035136,
+    "dataset_construction_seconds": 0.3087795850005932,
+    "batch_collation_seconds": 0.00041507300920784473,
+    "host_to_device_seconds": 0.00016364399925805628,
+    "training_chunks": 3993,
+    "num_q": 137
+  },
+  {
+    "case": "ASSIST2009-GKT-primary",
+    "dataset": "ASSIST2009",
+    "model": "GKT",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff"
+    },
+    "train_step_seconds": [
+      0.318585015978897,
+      0.3087655959825497,
+      0.30754244001582265
+    ],
+    "eval_step_seconds": [
+      0.08376658600172959,
+      0.07895493501564488,
+      0.07890197800588794
+    ],
+    "train_step_mean": 0.31163101732575643,
+    "eval_step_mean": 0.08054116634108748,
+    "peak_allocated_bytes": 605724672,
+    "peak_reserved_bytes": 645922816,
+    "dataset_construction_seconds": 0.31398286402691156,
+    "batch_collation_seconds": 0.00037595300818793476,
+    "host_to_device_seconds": 0.00012163101928308606,
+    "training_chunks": 3993,
+    "num_q": 137
+  },
+  {
+    "case": "ASSIST2009-SAKT-primary",
+    "dataset": "ASSIST2009",
+    "model": "SAKT",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 100,
+        "d": 100,
+        "num_attn_heads": 5,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-SAKT-primary-42-3c4dd6ec486d"
+    },
+    "train_step_seconds": [
+      0.004630438983440399,
+      0.004602972010616213,
+      0.004572083009406924
+    ],
+    "eval_step_seconds": [
+      0.0011978500115219504,
+      0.0010767280182335526,
+      0.0010628309973981231
+    ],
+    "train_step_mean": 0.004601831334487845,
+    "eval_step_mean": 0.0011124696757178754,
+    "peak_allocated_bytes": 155478016,
+    "peak_reserved_bytes": 169869312,
+    "dataset_construction_seconds": 0.37257541698636487,
+    "batch_collation_seconds": 0.0004659380065277219,
+    "host_to_device_seconds": 0.00016413599951192737,
+    "training_chunks": 3993,
+    "num_q": 137
+  },
+  {
+    "case": "ASSIST2009-LightSAKT-primary",
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 128,
+        "num_heads": 2,
+        "dropout": 0.1
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-LightSAKT-primary-42-440d619b7547"
+    },
+    "train_step_seconds": [
+      0.024851210007909685,
+      0.023811994004063308,
+      0.023865047987783328
+    ],
+    "eval_step_seconds": [
+      0.004315473022870719,
+      0.00420049499371089,
+      0.004176408983767033
+    ],
+    "train_step_mean": 0.024176083999918774,
+    "eval_step_mean": 0.004230792333449547,
+    "peak_allocated_bytes": 829798400,
+    "peak_reserved_bytes": 1396703232,
+    "dataset_construction_seconds": 0.29010962901520543,
+    "batch_collation_seconds": 0.0004306370101403445,
+    "host_to_device_seconds": 0.00015011901268735528,
+    "training_chunks": 3993,
+    "num_q": 137
+  },
+  {
+    "case": "ASSIST2009-GKT_MHA-primary",
+    "dataset": "ASSIST2009",
+    "model": "GKT_MHA",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-GKT_MHA-primary-42-e63b12ce3815"
+    },
+    "train_step_seconds": [
+      0.3256722280057147,
+      0.3213868309976533,
+      0.3200383390067145
+    ],
+    "eval_step_seconds": [
+      0.10506659897509962,
+      0.1035448340117,
+      0.10375709398067556
+    ],
+    "train_step_mean": 0.3223657993366942,
+    "eval_step_mean": 0.10412284232249173,
+    "peak_allocated_bytes": 385814016,
+    "peak_reserved_bytes": 432013312,
+    "dataset_construction_seconds": 0.29903670301428065,
+    "batch_collation_seconds": 0.0003915240231435746,
+    "host_to_device_seconds": 0.00012446098844520748,
+    "training_chunks": 3993,
+    "num_q": 137
+  },
+  {
+    "case": "ASSIST2015-DKT-primary",
+    "dataset": "ASSIST2015",
+    "model": "DKT",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "DKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "emb_size": 100,
+        "hidden_size": 100
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-DKT-primary-42-1b12a9ba9ffd"
+    },
+    "train_step_seconds": [
+      0.0036286149988882244,
+      0.003521459992043674,
+      0.003535177995217964
+    ],
+    "eval_step_seconds": [
+      0.0009621669887565076,
+      0.0009142240160144866,
+      0.0009258909849449992
+    ],
+    "train_step_mean": 0.0035617509953832873,
+    "eval_step_mean": 0.0009340939965719978,
+    "peak_allocated_bytes": 165896192,
+    "peak_reserved_bytes": 171966464,
+    "dataset_construction_seconds": 1.1466928269946948,
+    "batch_collation_seconds": 0.0007885599916335195,
+    "host_to_device_seconds": 0.00015430798521265388,
+    "training_chunks": 14615,
+    "num_q": 101
+  },
+  {
+    "case": "ASSIST2015-DKTplus-primary",
+    "dataset": "ASSIST2015",
+    "model": "DKT+",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "DKT+",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "emb_size": 100,
+        "hidden_size": 100,
+        "lambda_r": 0.01,
+        "lambda_w1": 0.003,
+        "lambda_w2": 3.0
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-DKTplus-primary-42-3bf5cb94131c"
+    },
+    "train_step_seconds": [
+      0.00475524298963137,
+      0.004731907014502212,
+      0.004785053024534136
+    ],
+    "eval_step_seconds": [
+      0.0009668339916970581,
+      0.0009424180025234818,
+      0.0009165040100924671
+    ],
+    "train_step_mean": 0.004757401009555906,
+    "eval_step_mean": 0.0009419186681043357,
+    "peak_allocated_bytes": 165910016,
+    "peak_reserved_bytes": 171966464,
+    "dataset_construction_seconds": 1.049672241002554,
+    "batch_collation_seconds": 0.0007924940146040171,
+    "host_to_device_seconds": 0.00015294001786969602,
+    "training_chunks": 14615,
+    "num_q": 101
+  },
+  {
+    "case": "ASSIST2015-DKVMN-primary",
+    "dataset": "ASSIST2015",
+    "model": "DKVMN",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "DKVMN",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "dim_s": 50,
+        "size_m": 20
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-DKVMN-primary-42-c91ed69c5400"
+    },
+    "train_step_seconds": [
+      0.09528830900671892,
+      0.09082879099878483,
+      0.09020011499524117
+    ],
+    "eval_step_seconds": [
+      0.020968010008800775,
+      0.020541834994219244,
+      0.020208244008244947
+    ],
+    "train_step_mean": 0.09210573833358164,
+    "eval_step_mean": 0.02057269633708832,
+    "peak_allocated_bytes": 165173760,
+    "peak_reserved_bytes": 195035136,
+    "dataset_construction_seconds": 1.0462683450023178,
+    "batch_collation_seconds": 0.0008787759870756418,
+    "host_to_device_seconds": 0.00016536202747374773,
+    "training_chunks": 14615,
+    "num_q": 101
+  },
+  {
+    "case": "ASSIST2015-GKT-primary",
+    "dataset": "ASSIST2015",
+    "model": "GKT",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-GKT-primary-42-c3a67383f961"
+    },
+    "train_step_seconds": [
+      0.31208300800062716,
+      0.3125377690012101,
+      0.4140650579938665
+    ],
+    "eval_step_seconds": [
+      0.08016756500001065,
+      0.09046638201107271,
+      0.0835171660000924
+    ],
+    "train_step_mean": 0.3462286116652346,
+    "eval_step_mean": 0.08471703767039192,
+    "peak_allocated_bytes": 450204160,
+    "peak_reserved_bytes": 497025024,
+    "dataset_construction_seconds": 1.2731939229997806,
+    "batch_collation_seconds": 0.0006235290202312171,
+    "host_to_device_seconds": 0.00013966200640425086,
+    "training_chunks": 14615,
+    "num_q": 101
+  }
+]

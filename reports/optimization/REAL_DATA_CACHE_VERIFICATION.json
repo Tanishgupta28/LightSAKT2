@@ -1,0 +1,83 @@
+[
+  {
+    "dataset": "ASSIST2009",
+    "split": "train",
+    "all_samples_exact": true,
+    "samples": 3993,
+    "targets": 196037,
+    "original_construction_seconds": 0.35935343397432007,
+    "cache_construction_seconds": 0.04446886698133312
+  },
+  {
+    "dataset": "ASSIST2009",
+    "split": "validation",
+    "all_samples_exact": true,
+    "samples": 567,
+    "targets": 27456,
+    "original_construction_seconds": 0.16262254401226528,
+    "cache_construction_seconds": 0.03262716199969873
+  },
+  {
+    "dataset": "ASSIST2009",
+    "split": "test",
+    "all_samples_exact": true,
+    "samples": 1071,
+    "targets": 46946,
+    "original_construction_seconds": 0.1594012150017079,
+    "cache_construction_seconds": 0.034420182986650616
+  },
+  {
+    "dataset": "ASSIST2015",
+    "split": "train",
+    "all_samples_exact": true,
+    "samples": 14615,
+    "targets": 463952,
+    "original_construction_seconds": 1.1380995360086672,
+    "cache_construction_seconds": 0.09891141200205311
+  },
+  {
+    "dataset": "ASSIST2015",
+    "split": "validation",
+    "all_samples_exact": true,
+    "samples": 2084,
+    "targets": 66965,
+    "original_construction_seconds": 0.4331495049991645,
+    "cache_construction_seconds": 0.057584488997235894
+  },
+  {
+    "dataset": "ASSIST2015",
+    "split": "test",
+    "all_samples_exact": true,
+    "samples": 4191,
+    "targets": 133044,
+    "original_construction_seconds": 0.498159365990432,
+    "cache_construction_seconds": 0.06141049298457801
+  },
+  {
+    "dataset": "Algebra2005",
+    "split": "train",
+    "all_samples_exact": true,
+    "samples": 2201,
+    "targets": 398485,
+    "original_construction_seconds": 0.7449009990086779,
+    "cache_construction_seconds": 0.17858885499299504
+  },
+  {
+    "dataset": "Algebra2005",
+    "split": "validation",
+    "all_samples_exact": true,
+    "samples": 504,
+    "targets": 94262,
+    "original_construction_seconds": 0.5982053370098583,
+    "cache_construction_seconds": 0.16687372099841014
+  },
+  {
+    "dataset": "Algebra2005",
+    "split": "test",
+    "all_samples_exact": true,
+    "samples": 638,
+    "targets": 113704,
+    "original_construction_seconds": 0.6068554910016246,
+    "cache_construction_seconds": 0.16896699598873965
+  }
+]

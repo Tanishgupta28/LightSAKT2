@@ -66,8 +66,7 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 ## Experiment schedule status
 
 {
-  "completed": 102,
-  "running": 1,
+  "completed": 103,
   "pending": 854
 }
 
@@ -104,4 +103,4 @@ Private repository: https://github.com/Tanishgupta28/LightSAKT2, branch `researc
 
 Originals: `original_snapshot/`; raw datasets: `data/raw/`; fresh preprocessing: `data/processed/`; student manifests: `data/splits/`; fresh weights: `checkpoints/<run>/`; raw metrics/configs: `results/raw/<run>/`; predictions: `results/predictions/`; generated tables/figures: `results/tables/`, `results/figures/`; paper evidence: `paper/`, PAPER_CORRECTIONS.md.
 
-Independent private GitHub draft recovery artifacts: 104 assets have been downloaded and SHA256 verified. All available completed archives synchronized: False. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
+Independent private GitHub draft recovery artifacts: 105 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
