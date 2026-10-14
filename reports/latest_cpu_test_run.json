@@ -1,6 +1,6 @@
 {
-  "log": "reports/test_runs/20261014T020927-progressive-paper-cpu.log",
+  "log": "reports/test_runs/20261014T045042-final-summary-cpu.log",
   "exit_code": 0,
   "tests_passed": true,
-  "scope": "Full current CPU suite, preserved benchmark evidence and live grid-table reporting; CUDA skipped to protect active training"
+  "scope": "Full CPU suite including five-seed summary, isolated ETA outputs and startup-aware observer; CUDA skipped during active training"
 }
