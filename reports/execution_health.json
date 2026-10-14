@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T07:09:11.163746+00:00",
-  "sample_time": 1791961750.6050444,
+  "updated_utc": "2026-10-14T07:27:53.068601+00:00",
+  "sample_time": 1791962872.357948,
   "counts": {
-    "completed": 629,
-    "pending": 327,
+    "completed": 630,
+    "pending": 326,
     "running": 1
   },
   "scheduler": {
@@ -12,27 +12,27 @@
   },
   "training_processes": [
     {
-      "pid": 613894,
-      "cpu_seconds": 1199.89,
-      "process_state": "R",
+      "pid": 618990,
+      "cpu_seconds": 1093.21,
+      "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.09321427345276,
-      "cpu_seconds_advanced": 62.0
+      "observed_seconds": 62.21273922920227,
+      "cpu_seconds_advanced": 62.100000000000136
     }
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-047a5f4ce889",
-      "last_completed_epoch": 48,
-      "best_checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-047a5f4ce889/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-DKVMN-baseline_tuning-42-047a5f4ce889/config.json",
-      "recent_mean_epoch_seconds": 24.17057312900433,
-      "seconds_since_last_epoch": 20.339744329452515,
+      "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-0a5d05893267",
+      "last_completed_epoch": 49,
+      "best_checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-0a5d05893267/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-DKVMN-baseline_tuning-42-0a5d05893267/config.json",
+      "recent_mean_epoch_seconds": 21.82993120360188,
+      "seconds_since_last_epoch": 0.20687603950500488,
       "startup_epoch_seconds_extrapolated": null,
       "first_checkpoint_startup_grace_seconds": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 72.51171938701299,
+      "stall_threshold_seconds": 65.48979361080563,
       "checkpoint_stalled": false
     }
   ],
@@ -43,5 +43,5 @@
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 632 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 633 independently downloaded/checksum verified; completed-archive synchronization True."
 }
