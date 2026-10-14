@@ -53,7 +53,8 @@ def features(c,work):
     return calls,calls*batch*arithmetic
 
 
-def estimate():
+def estimate(output_dir=Path('reports')):
+    output_dir=Path(output_dir);output_dir.mkdir(parents=True,exist_ok=True)
     progress=snapshot();work=work_counts();manifest=json.load(open('experiments/manifest.json'))
     for job in manifest['jobs']:
         runtime=Path('experiments/runtime_jobs')/(job['run_id']+'.json')
@@ -82,7 +83,7 @@ def estimate():
                 'measured_epochs':sum(r['history_epochs'] for r in group),
                 'average_epoch_seconds':sum(r['epoch_seconds']*r['history_epochs'] for r in group)/sum(r['history_epochs'] for r in group) if group else None,
                 'average_completed_run_seconds':statistics.mean(r['run_seconds'] for r in complete) if complete else None})
-    pd.DataFrame(observed_rows).to_csv('reports/ETA_MEASURED_TIMINGS.csv',index=False)
+    pd.DataFrame(observed_rows).to_csv(output_dir/'ETA_MEASURED_TIMINGS.csv',index=False)
     configs={j['run_id']:json.load(open(j['config'])) for j in manifest['jobs'] if 'config' in j}
     overlay=json.load(open('experiments/reuse_plan.json'))['jobs'] if Path('experiments/reuse_plan.json').exists() else {}
     def epoch_profile(c):
@@ -163,9 +164,9 @@ def estimate():
     frame=pd.DataFrame(estimates) if estimates else pd.DataFrame(columns=[
         'run_id','phase','dataset','model','action','low_hours','central_hours','high_hours'])
     if not estimates:frame[['low_hours','central_hours','high_hours']]=frame[['low_hours','central_hours','high_hours']].astype(float)
-    frame.to_csv('reports/ETA_REMAINING_RUNS.csv',index=False)
+    frame.to_csv(output_dir/'ETA_REMAINING_RUNS.csv',index=False)
     grouped=frame.groupby(['phase','dataset','model'])[['low_hours','central_hours','high_hours']].sum().reset_index()
-    grouped.to_csv('reports/ETA_PHASE_MODEL_DATASET.csv',index=False)
+    grouped.to_csv(output_dir/'ETA_PHASE_MODEL_DATASET.csv',index=False)
     totals={k:float(frame[k+'_hours'].sum()) for k in ['low','central','high']}
     concurrency=[]
     for path in [Path('reports/profiling/concurrency_probe.json'),Path('reports/profiling/execution_validation.json')]:
@@ -198,7 +199,7 @@ def estimate():
                           'visualizations':'Three final attention maps, two ASSIST2009 case figures; measured plot-render pilot below; final-case CPU inference remains unmeasured.',
                           'verification':'Fresh checkpoint inference for each unique source; redundant aliases will use cached inference. Duration not separately measured.'},
         'longest_expected_remaining':frame[frame.action=='training'].nlargest(12,'central_hours').to_dict('records')}
-    write_json('reports/ETA.json',record)
+    write_json(output_dir/'ETA.json',record)
     efficiency=Path('reports/profiling/efficiency_execution.json')
     if efficiency.exists():
         timing=json.load(open(efficiency))
@@ -246,21 +247,25 @@ def estimate():
         text+='\nMeasured CPU pilot timing (actual completed primary plots; not final research completion): '+json.dumps(measured)+'\n'
         record['postprocessing_cpu_pilot_timings']=measured
     text+='\n'+record['method']+'\n\n'+record['unknowns']+'\n\nThe preserved equal 36-configuration baseline tuning budget includes 216 GKT variant configurations across all datasets; GKT is the main measured bottleneck. No dimensions, batches, split assignments, seeds, learning rates or early-stopping rules were changed to shorten this forecast.\n'
-    write_json('reports/ETA.json',record)
-    Path('reports/ETA_REPORT.md').write_text(text);print(json.dumps({'remaining_training_hours':totals,'finish_utc':record['conditional_training_finish_utc']},indent=2))
+    write_json(output_dir/'ETA.json',record)
+    (output_dir/'ETA_REPORT.md').write_text(text);print(json.dumps({'remaining_training_hours':totals,'finish_utc':record['conditional_training_finish_utc']},indent=2))
     return record
 
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--watch',action='store_true');args=parser.parse_args()
-    lock=open('experiments/eta.lock','w')
-    try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
-    except BlockingIOError:
-        if args.watch:raise SystemExit('An ETA worker is already running')
-        raise SystemExit(0)
+    parser=argparse.ArgumentParser();parser.add_argument('--watch',action='store_true')
+    parser.add_argument('--output-dir',type=Path,default=Path('reports'));args=parser.parse_args()
+    if args.watch and args.output_dir.resolve()!=Path('reports').resolve():
+        raise SystemExit('The live ETA watcher owns reports/; use an isolated output directory for one-off recalculation')
+    if args.output_dir.resolve()==Path('reports').resolve():
+        lock=open('experiments/eta.lock','w')
+        try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+        except BlockingIOError:
+            if args.watch:raise SystemExit('An ETA worker is already running')
+            raise SystemExit(0)
     if args.watch:Path('experiments/eta.pid').write_text(str(os.getpid())+'\n')
     while True:
-        estimate()
+        estimate(args.output_dir)
         if args.watch:
             from scripts.health import inspect
             from scripts.progress import write_progress
