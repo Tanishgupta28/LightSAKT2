@@ -1,0 +1,10 @@
+{
+  "run_id": "Algebra2005-DKT-baseline_tuning-42-5e533f9aba4e",
+  "status": "completed",
+  "last_completed_epoch": 28,
+  "config": "results/raw/Algebra2005-DKT-baseline_tuning-42-5e533f9aba4e/config.json",
+  "seed": 42,
+  "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKT-baseline_tuning-42-5e533f9aba4e/config.json",
+  "best_checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-5e533f9aba4e/best.pt",
+  "failure_reason": null
+}
