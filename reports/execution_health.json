@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T02:41:55.428271+00:00",
-  "sample_time": 1791945714.5718567,
+  "updated_utc": "2026-10-14T02:42:57.145625+00:00",
+  "sample_time": 1791945776.4057639,
   "counts": {
-    "completed": 267,
-    "pending": 689,
+    "completed": 268,
+    "pending": 688,
     "running": 1
   },
   "scheduler": {
@@ -12,26 +12,26 @@
   },
   "training_processes": [
     {
-      "pid": 338182,
-      "cpu_seconds": 27.91,
+      "pid": 339240,
+      "cpu_seconds": 16.8,
       "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
       "observed_seconds": 0.2,
-      "cpu_seconds_advanced": 0.19000000000000128
+      "cpu_seconds_advanced": 0.21000000000000085
     }
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2015-LightSAKT-no_position-3407",
-      "last_completed_epoch": 4,
-      "best_checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_position-3407/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-LightSAKT-no_position-3407/config.json",
-      "recent_mean_epoch_seconds": 4.028580233258253,
-      "seconds_since_last_epoch": 2.411388635635376,
+      "run_id": "ASSIST2015-LightSAKT-no_position-42",
+      "last_completed_epoch": 1,
+      "best_checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_position-42/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-LightSAKT-no_position-42/config.json",
+      "recent_mean_epoch_seconds": 4.396003564004786,
+      "seconds_since_last_epoch": 3.111388921737671,
       "startup_epoch_seconds_extrapolated": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 12.08574069977476,
+      "stall_threshold_seconds": 13.188010692014359,
       "checkpoint_stalled": false
     }
   ],
@@ -42,5 +42,5 @@
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 269 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 270 independently downloaded/checksum verified; completed-archive synchronization True."
 }
