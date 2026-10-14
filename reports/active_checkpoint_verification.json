@@ -1,17 +1,17 @@
 [
   {
-    "path": "checkpoints/ASSIST2015-LightSAKT-final-7777/best.pt",
-    "sha256": "67f1259e6222e23d317fab57278c0906813dbf3880f8ecaf92d6b967dadc35ac",
-    "epoch": 4,
+    "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-d813a6987bf2/best.pt",
+    "sha256": "f460467fff72fa1091bbee5cafe5567736050badca3bc6623ba36cf4ea10fc7f",
+    "epoch": 13,
     "strict_state_load": true,
     "finite_parameters": true,
     "split_data_match": true,
     "optimizer_rng_verified": false
   },
   {
-    "path": "checkpoints/ASSIST2015-LightSAKT-final-7777/latest.pt",
-    "sha256": "934ad1fbc9db9ded69df12d0c5cff47df227031dba4e0c2263e75568004fce54",
-    "epoch": 4,
+    "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-d813a6987bf2/latest.pt",
+    "sha256": "2c674caee5462473b28dc615570cc387cc2f4f1e9b1240f6adcc0d8f4be92970",
+    "epoch": 15,
     "strict_state_load": true,
     "finite_parameters": true,
     "split_data_match": true,

@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-14T06:24:15.566180+00:00",
+  "updated_utc": "2026-10-14T06:25:52.265233+00:00",
   "total_slots": 957,
   "completed": 619,
   "remaining": 338,
@@ -41,7 +41,7 @@
   "running_jobs": [
     {
       "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-d813a6987bf2",
-      "last_completed_epoch": 1,
+      "last_completed_epoch": 17,
       "best_checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-d813a6987bf2/best.pt",
       "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKVMN-baseline_tuning-42-d813a6987bf2/config.json"
     }
