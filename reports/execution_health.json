@@ -1,10 +1,10 @@
 {
-  "updated_utc": "2026-10-14T19:35:38.618065+00:00",
-  "sample_time": 1792006537.7494042,
+  "updated_utc": "2026-10-14T19:36:41.288377+00:00",
+  "sample_time": 1792006600.227507,
   "counts": {
-    "completed": 710,
-    "pending": 246,
-    "running": 1
+    "completed": 711,
+    "pending": 244,
+    "running": 2
   },
   "scheduler": {
     "pid": 78472,
@@ -12,31 +12,53 @@
   },
   "training_processes": [
     {
-      "pid": 861422,
-      "cpu_seconds": 166.95,
+      "pid": 863598,
+      "cpu_seconds": 5.2,
+      "process_state": "S",
+      "ppid": 191761,
+      "session_id": 78472,
+      "observed_seconds": 0.2,
+      "cpu_seconds_advanced": 0.0
+    },
+    {
+      "pid": 863599,
+      "cpu_seconds": 5.35,
       "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.59308171272278,
-      "cpu_seconds_advanced": 62.50999999999999
+      "observed_seconds": 0.2,
+      "cpu_seconds_advanced": 0.27000000000000046
     }
   ],
   "active_runs": [
     {
-      "run_id": "Algebra2005-DKVMN-final-7777",
-      "last_completed_epoch": 22,
-      "best_checkpoint": "checkpoints/Algebra2005-DKVMN-final-7777/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKVMN-final-7777/config.json",
-      "recent_mean_epoch_seconds": 6.904927170200972,
-      "seconds_since_last_epoch": 5.295040130615234,
-      "startup_epoch_seconds_extrapolated": null,
-      "first_checkpoint_startup_grace_seconds": null,
-      "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 20.71478151060292,
+      "run_id": "ASSIST2009-GKT-baseline_tuning-42-07dec7ef0623",
+      "last_completed_epoch": null,
+      "best_checkpoint": null,
+      "resume_command": null,
+      "recent_mean_epoch_seconds": null,
+      "seconds_since_last_epoch": 0.0,
+      "startup_epoch_seconds_extrapolated": 186.52875631184287,
+      "first_checkpoint_startup_grace_seconds": 30.0,
+      "age_reference": "initial running status; first checkpoint not yet saved",
+      "stall_threshold_seconds": 559.5862689355286,
+      "checkpoint_stalled": false
+    },
+    {
+      "run_id": "ASSIST2009-GKT-baseline_tuning-42-19094af02366",
+      "last_completed_epoch": null,
+      "best_checkpoint": null,
+      "resume_command": null,
+      "recent_mean_epoch_seconds": null,
+      "seconds_since_last_epoch": 0.0,
+      "startup_epoch_seconds_extrapolated": 194.93532637439358,
+      "first_checkpoint_startup_grace_seconds": 30.0,
+      "age_reference": "initial running status; first checkpoint not yet saved",
+      "stall_threshold_seconds": 584.8059791231808,
       "checkpoint_stalled": false
     }
   ],
-  "gpu_memory_mib": 1110,
+  "gpu_memory_mib": 856,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
