@@ -1,12 +1,12 @@
 {
-  "updated_utc": "2026-10-14T06:38:40.531493+00:00",
+  "updated_utc": "2026-10-14T06:39:54.163035+00:00",
   "total_slots": 957,
-  "completed": 623,
-  "remaining": 334,
+  "completed": 624,
+  "remaining": 333,
   "counts": {
-    "completed": 623,
-    "running": 1,
-    "pending": 333
+    "completed": 624,
+    "pending": 332,
+    "running": 1
   },
   "processes": {
     "scheduler": {
@@ -40,10 +40,10 @@
   },
   "running_jobs": [
     {
-      "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-fb3461972e79",
-      "last_completed_epoch": 3,
-      "best_checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-fb3461972e79/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKVMN-baseline_tuning-42-fb3461972e79/config.json"
+      "run_id": "ASSIST2009-DKVMN-final-123",
+      "last_completed_epoch": 0,
+      "best_checkpoint": "checkpoints/ASSIST2009-DKVMN-final-123/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKVMN-final-123/config.json"
     }
   ],
   "phase_counts": {
@@ -51,13 +51,13 @@
       "completed": 21
     },
     "6": {
-      "completed": 467,
-      "running": 1,
+      "completed": 468,
       "pending": 288
     },
     "7": {
       "completed": 60,
-      "pending": 45
+      "pending": 44,
+      "running": 1
     },
     "8": {
       "completed": 75
