@@ -1,6 +1,6 @@
 {
   "verified": true,
-  "verified_utc": "2026-10-14T15:14:15.416536+00:00",
+  "verified_utc": "2026-10-14T15:29:49.037389+00:00",
   "light_final_seed_slots": 15,
   "summary_method": "Five prespecified seeds; arithmetic mean and sample SD; saved metrics independently recomputed",
   "completed_five_seed_baseline_comparisons": 10,
@@ -10,7 +10,7 @@
     {
       "dataset": "ASSIST2015",
       "model": "DKVMN",
-      "completed_seeds": 1,
+      "completed_seeds": 2,
       "scope": "Excluded from final comparison until all five seeds finish"
     }
   ],
@@ -984,6 +984,28 @@
       "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
+      "run_id": "ASSIST2015-DKVMN-final-2026",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "DKVMN",
+      "seed": 2026,
+      "checkpoint_sha256": "7342dbae8b90049cbc76bee998d75e114a42254cc8c36d8d79103a3bc66cd974",
+      "prediction_sha256": "fb1bfa2698864159a029fc9ae946a683ab499d9803e4a3feacd7eba5855d22b2",
+      "metrics_sha256": "4f6c113905730e4555cfbcf72bf028b11427371c6740011a6461e0ef1f5c8303",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "af14ad79d7a6e770ea7a98b46cf7589d4abe994f",
+      "validation_inference_recomputed": false,
+      "test_probabilities_recomputed": false,
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
+    },
+    {
       "run_id": "ASSIST2015-DKVMN-primary-42-c91ed69c5400",
       "group": "primary",
       "dataset": "ASSIST2015",
@@ -1866,8 +1888,8 @@
   ],
   "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
   "eta_source": "reports/summary_eta/progressive/ETA.json",
-  "eta_source_sha256": "5c2f1fc97c5035b790e9544366b04334af54ef5d8c56ca8efd9bea98de8eb2fd",
-  "remaining_occupied_mig_hours": 377.3785719251564,
+  "eta_source_sha256": "d67e64f8f20fe43f440e3afa831c3ae98519030652dbb1eeebee98141d72fa8f",
+  "remaining_occupied_mig_hours": 377.1535502411027,
   "gkt_remaining_occupied_mig_hours": 372.3714161941859,
   "artifacts": [
     {
@@ -1884,7 +1906,7 @@
     },
     {
       "path": "reports/LightSAKT_summary_ETA_by_model.csv",
-      "sha256": "2fd28de34b55015d039dd11fcf04b053797e48d508b31981918a3c67d8140e97"
+      "sha256": "612a27b7ddba2cda43bfe8b67d7df62fb1082dd3da6ac636dcde5198913ce33a"
     }
   ]
 }

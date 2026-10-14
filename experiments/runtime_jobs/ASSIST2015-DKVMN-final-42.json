@@ -1,0 +1,11 @@
+{
+  "run_id": "ASSIST2015-DKVMN-final-42",
+  "phase": 7,
+  "dataset": "ASSIST2015",
+  "model": "DKVMN",
+  "seed": 42,
+  "status": "pending",
+  "dependency": "all 36 tuning runs for this dataset/model",
+  "reuse_selected_run": "ASSIST2015-DKVMN-baseline_tuning-42-d2dc815dee5e",
+  "selection_path": "experiments/selections/ASSIST2015-DKVMN.json"
+}
