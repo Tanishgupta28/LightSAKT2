@@ -1,6 +1,6 @@
 {
   "verified": true,
-  "verified_utc": "2026-10-14T19:25:55.379425+00:00",
+  "verified_utc": "2026-10-14T19:31:29.583263+00:00",
   "light_final_seed_slots": 15,
   "summary_method": "Five prespecified seeds; arithmetic mean and sample SD; saved metrics independently recomputed",
   "completed_five_seed_baseline_comparisons": 11,
@@ -10,7 +10,7 @@
     {
       "dataset": "Algebra2005",
       "model": "DKVMN",
-      "completed_seeds": 1,
+      "completed_seeds": 2,
       "scope": "Excluded from final comparison until all five seeds finish"
     }
   ],
@@ -1741,6 +1741,29 @@
       "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
+      "run_id": "Algebra2005-DKVMN-final-2026",
+      "group": "final",
+      "dataset": "Algebra2005",
+      "model": "DKVMN",
+      "seed": 2026,
+      "checkpoint_sha256": "206c6393ac45dd2363617792ee85b29d93cc8d9ace8993245362129660f60423",
+      "prediction_sha256": "224b2b16219c72b0e73088300694fd05ae4726b37da63d378a39e78abf0c8af4",
+      "metrics_sha256": "195860d7e5b3a368e72dc03e1eb67be3f14c224a3f66f6162f7b723837027c0d",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "c5d370f4ef6dde754c1006d1456ce4dd6a6d99d0",
+      "validation_inference_recomputed": false,
+      "test_probabilities_recomputed": false,
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "prediction_identity_source_run": "Algebra2005-DKVMN-final-2026",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
+    },
+    {
       "run_id": "Algebra2005-DKVMN-primary-42-7f8a895e7d8e",
       "group": "primary",
       "dataset": "Algebra2005",
@@ -2065,8 +2088,8 @@
   ],
   "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
   "eta_source": "reports/summary_eta/progressive/ETA.json",
-  "eta_source_sha256": "4e4db1e576c0f530038571672dfed8aac9968c29b5cffc09427bfef2a57111aa",
-  "remaining_occupied_mig_hours": 372.64797957031067,
+  "eta_source_sha256": "e1f4bdd6457b434695cd400f77bf1e498ebe1df3ebbe3f974ef2758bf8e3c1be",
+  "remaining_occupied_mig_hours": 372.5180628792069,
   "gkt_remaining_occupied_mig_hours": 372.3714161941859,
   "artifacts": [
     {
@@ -2083,7 +2106,7 @@
     },
     {
       "path": "reports/LightSAKT_summary_ETA_by_model.csv",
-      "sha256": "ffae943aec8fdd9596928b21776c9c5de8e10f1b71963754aee8f83baaff2ee5"
+      "sha256": "d86e707a7a16e45ffb7bc2815678e0d8bbf29209907be2fff6c9b144ccab9855"
     }
   ]
 }

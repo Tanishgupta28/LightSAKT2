@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-10-14T19:29:24.248670+00:00",
+  "updated_utc": "2026-10-14T19:33:09.885085+00:00",
   "total_slots": 957,
-  "completed": 708,
-  "remaining": 249,
+  "completed": 710,
+  "remaining": 247,
   "counts": {
-    "completed": 708,
-    "pending": 248,
+    "completed": 710,
+    "pending": 246,
     "running": 1
   },
   "processes": {
@@ -36,14 +36,18 @@
     "active_recovery": {
       "pid": 818712,
       "alive": true
+    },
+    "recovery_supervisor": {
+      "pid": 818850,
+      "alive": true
     }
   },
   "running_jobs": [
     {
-      "run_id": "Algebra2005-DKVMN-final-3407",
+      "run_id": "Algebra2005-DKVMN-final-7777",
       "last_completed_epoch": 1,
-      "best_checkpoint": "checkpoints/Algebra2005-DKVMN-final-3407/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKVMN-final-3407/config.json"
+      "best_checkpoint": "checkpoints/Algebra2005-DKVMN-final-7777/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKVMN-final-7777/config.json"
     }
   ],
   "phase_counts": {
@@ -55,8 +59,8 @@
       "pending": 216
     },
     "7": {
-      "completed": 72,
-      "pending": 32,
+      "completed": 74,
+      "pending": 30,
       "running": 1
     },
     "8": {

@@ -1,6 +1,6 @@
 # Verified baseline comparison
 
-Generated UTC: 2026-10-14T19:25:55.379425+00:00
+Generated UTC: 2026-10-14T19:31:29.583263+00:00
 
 Only completed artifacts on the same locked data/splits and context lengths are used. Matched final comparisons require all five prespecified seeds. Incomplete rows are pending, with no historical-paper substitution.
 
@@ -20,7 +20,7 @@ Only completed artifacts on the same locked data/splits and context lengths are 
 |ASSIST2015|SAKT|5|5|completed and verified|
 |Algebra2005|DKT|5|5|completed and verified|
 |Algebra2005|DKT+|5|5|completed and verified|
-|Algebra2005|DKVMN|1|5|pending; partial evidence excluded from final comparison|
+|Algebra2005|DKVMN|2|5|pending; partial evidence excluded from final comparison|
 |Algebra2005|GKT|0|5|pending; partial evidence excluded from final comparison|
 |Algebra2005|GKT_MHA|0|5|pending; partial evidence excluded from final comparison|
 |Algebra2005|SAKT|5|5|completed and verified|
