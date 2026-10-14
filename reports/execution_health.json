@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T04:28:08.184325+00:00",
-  "sample_time": 1791952087.1235847,
+  "updated_utc": "2026-10-14T04:29:10.104971+00:00",
+  "sample_time": 1791952149.3392184,
   "counts": {
-    "completed": 441,
-    "pending": 515,
+    "completed": 443,
+    "pending": 513,
     "running": 1
   },
   "scheduler": {
@@ -12,35 +12,35 @@
   },
   "training_processes": [
     {
-      "pid": 468584,
-      "cpu_seconds": 11.82,
-      "process_state": "R",
+      "pid": 469851,
+      "cpu_seconds": 9.71,
+      "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
       "observed_seconds": 0.2,
-      "cpu_seconds_advanced": 0.20999999999999908
+      "cpu_seconds_advanced": 0.1999999999999993
     }
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-adb0a37c45ee",
-      "last_completed_epoch": 1,
-      "best_checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-adb0a37c45ee/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-SAKT-baseline_tuning-42-adb0a37c45ee/config.json",
-      "recent_mean_epoch_seconds": 1.789199646009365,
-      "seconds_since_last_epoch": 0.5254666805267334,
-      "startup_epoch_seconds_extrapolated": null,
-      "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 5.367598938028095,
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-be65c6ce2c83",
+      "last_completed_epoch": 0,
+      "best_checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-be65c6ce2c83/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-SAKT-baseline_tuning-42-be65c6ce2c83/config.json",
+      "recent_mean_epoch_seconds": null,
+      "seconds_since_last_epoch": 0.6712102890014648,
+      "startup_epoch_seconds_extrapolated": 1.4390518981766078,
+      "age_reference": "initial running status; first checkpoint not yet saved",
+      "stall_threshold_seconds": 4.3171556945298235,
       "checkpoint_stalled": false
     }
   ],
-  "gpu_memory_mib": 1060,
+  "gpu_memory_mib": 1044,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 439 independently downloaded/checksum verified; completed-archive synchronization False."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 443 independently downloaded/checksum verified; completed-archive synchronization True."
 }
