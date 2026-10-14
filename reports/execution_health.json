@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T02:22:20.173775+00:00",
-  "sample_time": 1791944539.3512843,
+  "updated_utc": "2026-10-14T02:23:21.891965+00:00",
+  "sample_time": 1791944601.2057996,
   "counts": {
-    "completed": 235,
-    "pending": 721,
+    "completed": 237,
+    "pending": 719,
     "running": 1
   },
   "scheduler": {
@@ -12,26 +12,26 @@
   },
   "training_processes": [
     {
-      "pid": 312749,
-      "cpu_seconds": 11.06,
-      "process_state": "R",
+      "pid": 314321,
+      "cpu_seconds": 20.86,
+      "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
       "observed_seconds": 0.2,
-      "cpu_seconds_advanced": 0.1899999999999995
+      "cpu_seconds_advanced": 0.1999999999999993
     }
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2009-LightSAKT-no_dropout-123",
-      "last_completed_epoch": 1,
-      "best_checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_dropout-123/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-LightSAKT-no_dropout-123/config.json",
-      "recent_mean_epoch_seconds": 1.069624619500246,
-      "seconds_since_last_epoch": 0.0,
+      "run_id": "ASSIST2009-LightSAKT-no_dropout-3407",
+      "last_completed_epoch": 14,
+      "best_checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_dropout-3407/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-LightSAKT-no_dropout-3407/config.json",
+      "recent_mean_epoch_seconds": 0.7923932119971141,
+      "seconds_since_last_epoch": 0.20234251022338867,
       "startup_epoch_seconds_extrapolated": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 3.2088738585007377,
+      "stall_threshold_seconds": 2.377179635991342,
       "checkpoint_stalled": false
     }
   ],
