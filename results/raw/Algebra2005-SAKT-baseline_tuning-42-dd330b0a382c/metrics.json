@@ -1,0 +1,29 @@
+{
+  "run_id": "Algebra2005-SAKT-baseline_tuning-42-dd330b0a382c",
+  "dataset": "Algebra2005",
+  "model": "SAKT",
+  "seed": 42,
+  "group": "baseline_tuning",
+  "validation": {
+    "auc": 0.807294783169126,
+    "auc_reason": null,
+    "accuracy": 0.8016698139228957,
+    "f1": 0.8768761648851744,
+    "mse": 0.1409091375260558,
+    "bce": 0.4383276021094257,
+    "n_targets": 94262
+  },
+  "best_epoch": 9,
+  "epochs_trained": 14,
+  "training_seconds": 5.2681673869956285,
+  "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-dd330b0a382c/best.pt",
+  "checkpoint_sha256": "e36abca62152761b158489da9b0a0b7ca0d3d96670a75f3ec50173073d2e2e18",
+  "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+  "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+  "git_commit": "ee6996362af625ed7dba9769e34a77b9cb590a5f",
+  "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "parameters": 274305,
+  "peak_allocated_bytes": 242232832,
+  "peak_reserved_bytes": 289406976,
+  "test": null
+}
