@@ -66,8 +66,9 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 ## Experiment schedule status
 
 {
-  "completed": 506,
-  "pending": 451
+  "completed": 508,
+  "pending": 448,
+  "running": 1
 }
 
 Total requested schedule slots: 957. Counts include 21 seed-42 checkpoint reuse slots, 15 regularization aliases, and 9 verified primary/grid reuse slots, which are not new independent trainings. Distinct planned trainings: 912. Every required grid row is retained. The five-seed primary result is the mean, never the best seed. All remaining pending slots have no experimental result yet.
@@ -103,6 +104,16 @@ Private repository: https://github.com/Tanishgupta28/LightSAKT2, branch `researc
 
 Originals: `original_snapshot/`; raw datasets: `data/raw/`; fresh preprocessing: `data/processed/`; student manifests: `data/splits/`; fresh weights: `checkpoints/<run>/`; raw metrics/configs: `results/raw/<run>/`; predictions: `results/predictions/`; generated tables/figures: `results/tables/`, `results/figures/`; paper evidence: `paper/`, PAPER_CORRECTIONS.md.
 
+## Verified selected five-seed LightSAKT results
+
+|Dataset|Seeds|Test AUC|Accuracy|F1|MSE|BCE|
+|---|---|---|---|---|---|---|
+|ASSIST2009|5|0.751056 ± 0.000766|0.732229 ± 0.000801|0.816533 ± 0.001517|0.180233 ± 0.000319|0.538615 ± 0.000886|
+|ASSIST2015|5|0.726088 ± 0.000315|0.749526 ± 0.000419|0.846282 ± 0.000392|0.171233 ± 0.000106|0.516098 ± 0.000340|
+|Algebra2005|5|0.810590 ± 0.000422|0.795574 ± 0.000639|0.870356 ± 0.000350|0.144069 ± 0.000364|0.445272 ± 0.001018|
+
+Mean ± sample SD across prespecified seeds on one frozen student split. Selected hyperparameters, strict checkpoint/prediction checks, completed-only baseline evidence and model-specific ETA decomposition are in reports/LIGHTSAKT_FINAL_RESULTS.md. Single-seed primary baselines are explicitly descriptive; pending selected baseline seed sets are excluded from final comparisons. Reproduce with the CPU-only scripts.light_final_report command recorded there.
+
 ## Executed efficiency evidence
 
 The exclusive 120-case benchmark has completed; its measured latency, memory, throughput, parameter counts and scope-specific limits are reported in paper/EFFICIENCY_RESULTS.md. The current measurements contradict an unconditional LightSAKT speed claim. Training continues on the preserved complete schedule; the efficiency benchmark is reused, and full epoch-time documentation is refreshed at final analysis.
@@ -115,4 +126,4 @@ Latest schedule audit: 676 fresh trainings remain plus 39 reuse/evaluation entri
 
 Exact immutable sequence caches preserve every tensor, identity, batch order and RNG sequence; CPU training/resume equivalence is tested. Inter-run GPU probes and CPU/CUDA gates verify independent worker updates before two-worker GKT execution. Full required scope, FP32, batch sizes, Adam, stopping criteria, LightSAKT architecture, splits and untouched final test selections remain unchanged. Prioritization runs LightSAKT grid/finals/ablations before slow remaining baseline tuning. See reports/optimization/EXECUTION_OPTIMIZATION.md and reports/profiling/.
 
-Independent private GitHub draft recovery artifacts: 499 assets have been downloaded and SHA256 verified. All available completed archives synchronized: False. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
+Independent private GitHub draft recovery artifacts: 503 assets have been downloaded and SHA256 verified. All available completed archives synchronized: False. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.

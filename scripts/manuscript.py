@@ -21,6 +21,9 @@ def main():
         # selected-settings table from immutable evidence, never test scores.
         from scripts.light_grid_results import generate
         generate()
+    if Path('reports/light_final_summary_verification.json').exists():
+        from scripts.light_final_report import generate as final_summary
+        final_summary(Path('reports/summary_eta/progressive'), refresh_eta=True)
     lines=['# Corrected results text — generated from experiment artifacts','',
            'This document accompanies the preserved manuscript; it does not overwrite historical claims. Incomplete experiments remain explicitly pending.','',
            '## Corrected protocol','',
@@ -44,7 +47,11 @@ def main():
     except pd.errors.EmptyDataError:summary=pd.DataFrame()
     if summary.empty:lines += ['Final selected-configuration repeated-seed experiments are pending; primary single-seed results are recorded separately in FINAL_RESEARCH_REPORT.md.','']
     else:
-        lines += [readable_table(summary[['dataset','model','completed_seeds','auc_mean','auc_std','accuracy_mean','f1_mean','mse_mean','bce_mean']]),'',
+        displayed=summary[['dataset','model','completed_seeds']].copy()
+        for metric in ['auc','accuracy','f1','mse','bce']:
+            displayed[metric+' (mean ± sample SD)']=summary.apply(
+                lambda r:f'{r[metric+"_mean"]:.6f} ± {r[metric+"_std"]:.6f}' if pd.notna(r[metric+'_std']) else f'{r[metric+"_mean"]:.6f} (SD unavailable)',axis=1)
+        lines += [readable_table(displayed),'',
                   'Means summarize every completed prespecified seed. Sample standard deviations and Student-t intervals describe conditional initialization variability on one fixed student split; they do not measure new-student sampling uncertainty. Partial seed counts are not complete five-seed results.','']
         for dataset,data in summary.groupby('dataset'):
             light=data[data.model=='LightSAKT']
@@ -80,7 +87,9 @@ def main():
         elif item in ['Table 4','Table 5','Table 6']:
             dataset={'Table 4':'Algebra2005','Table 5':'ASSIST2009','Table 6':'ASSIST2015'}[item]
             n=len(runs[(runs.dataset==dataset)&(runs.model=='LightSAKT')&(runs.group=='grid')]);state=f'{n}/36 configurations completed'
-        elif item=='Table 7':state=f'{len(runs[runs.group=="final"])}/105 final seed slots completed (21 checkpoint reuse slots)'
+        elif item=='Table 7':
+            state=f'{len(runs[runs.group=="final"])}/105 final seed slots completed (21 checkpoint reuse slots)'
+            trace.loc[index,'source_artifacts']='results/tables/Table_7.csv; LightSAKT_final_summary.csv; LightSAKT_final_individual_seeds.csv; reports/light_final_summary_verification.json; all_verified_runs.csv'
         elif item=='Table 8':state=f'{len(runs[runs.group=="ablation"])}/75 ablation slots completed (15 equivalent aliases); default reuses final LightSAKT'
         elif item in ['Figure 5','Figure 6','Figure 7']:
             dataset={'Figure 5':'Algebra2005','Figure 6':'ASSIST2009','Figure 7':'ASSIST2015'}[item]

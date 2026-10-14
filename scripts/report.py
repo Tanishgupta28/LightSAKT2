@@ -62,6 +62,16 @@ def main():
             'Private repository: https://github.com/Tanishgupta28/LightSAKT2, branch `research-rebuild`. No force pushes. Local Git bundles and the original/raw archive are under `backups/`; their references are under `reports/`. Git synchronization details are in GITHUB_SYNC_PENDING.md. Large raw files and checkpoints remain on the /workspace NFS mount, excluded from ordinary Git. Retention after environment deprovisioning is unverified; local archives are not independent offsite artifact copies.',
             '', 'Originals: `original_snapshot/`; raw datasets: `data/raw/`; fresh preprocessing: `data/processed/`; student manifests: `data/splits/`; fresh weights: `checkpoints/<run>/`; raw metrics/configs: `results/raw/<run>/`; predictions: `results/predictions/`; generated tables/figures: `results/tables/`, `results/figures/`; paper evidence: `paper/`, PAPER_CORRECTIONS.md.']
     Path('FINAL_RESEARCH_REPORT.md').write_text('\n'.join(lines)+'\n')
+    summary_path=Path('results/tables/LightSAKT_final_summary.csv')
+    if summary_path.exists():
+        summary=pd.read_csv(summary_path)
+        with Path('FINAL_RESEARCH_REPORT.md').open('a') as output:
+            output.write('\n## Verified selected five-seed LightSAKT results\n\n')
+            output.write('|Dataset|Seeds|Test AUC|Accuracy|F1|MSE|BCE|\n|---|---|---|---|---|---|---|\n')
+            for row in summary.to_dict('records'):
+                cells=[row['dataset'],str(row['completed_seeds'])]+[f'{row[m+"_mean"]:.6f} ± {row[m+"_std"]:.6f}' for m in ['auc','accuracy','f1','mse','bce']]
+                output.write('|'+ '|'.join(cells)+'|\n')
+            output.write('\nMean ± sample SD across prespecified seeds on one frozen student split. Selected hyperparameters, strict checkpoint/prediction checks, completed-only baseline evidence and model-specific ETA decomposition are in reports/LIGHTSAKT_FINAL_RESULTS.md. Single-seed primary baselines are explicitly descriptive; pending selected baseline seed sets are excluded from final comparisons. Reproduce with the CPU-only scripts.light_final_report command recorded there.\n')
     offsite=Path('reports/offsite_backup.json')
     efficiency=Path('paper/EFFICIENCY_RESULTS.md')
     if efficiency.exists():
