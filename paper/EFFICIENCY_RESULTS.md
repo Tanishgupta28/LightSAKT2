@@ -6,12 +6,12 @@ LightSAKT had lower mean latency in 0/60 measured matched comparisons, and lower
 
 |Scope|Length|Batch|Operation|LightSAKT ms|SAKT ms|Latency ratio|Peak allocated memory ratio|
 |---|---|---|---|---|---|---|---|
-|equal_attention|1000|8|inference_forward|2.063|0.799|2.581|1.447|
-|equal_attention|1000|8|forward_backward|9.037|1.753|5.156|0.909|
-|equal_complete|1000|8|inference_forward|2.400|1.067|2.249|1.668|
-|equal_complete|1000|8|forward_backward|10.873|6.498|1.673|1.596|
-|documented_complete|1000|8|inference_forward|4.687|1.641|2.857|3.483|
 |documented_complete|1000|8|forward_backward|25.300|7.293|3.469|3.278|
+|documented_complete|1000|8|inference_forward|4.687|1.641|2.857|3.483|
+|equal_attention|1000|8|forward_backward|9.037|1.753|5.156|0.909|
+|equal_attention|1000|8|inference_forward|2.063|0.799|2.581|1.447|
+|equal_complete|1000|8|forward_backward|10.873|6.498|1.673|1.596|
+|equal_complete|1000|8|inference_forward|2.400|1.067|2.249|1.668|
 
 Actual primary-model parameter counts:
 
