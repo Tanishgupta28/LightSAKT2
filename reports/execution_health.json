@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T13:25:42.706892+00:00",
-  "sample_time": 1791984341.968599,
+  "updated_utc": "2026-10-14T13:38:08.893367+00:00",
+  "sample_time": 1791985088.1592026,
   "counts": {
-    "completed": 657,
-    "pending": 299,
+    "completed": 659,
+    "pending": 297,
     "running": 1
   },
   "scheduler": {
@@ -12,27 +12,27 @@
   },
   "training_processes": [
     {
-      "pid": 718748,
-      "cpu_seconds": 478.36,
+      "pid": 725239,
+      "cpu_seconds": 14.08,
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 61.93102407455444,
-      "cpu_seconds_advanced": 61.85000000000002
+      "observed_seconds": 0.2,
+      "cpu_seconds_advanced": 0.1999999999999993
     }
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-cee9b38cefe3",
-      "last_completed_epoch": 21,
-      "best_checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-cee9b38cefe3/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-DKVMN-baseline_tuning-42-cee9b38cefe3/config.json",
-      "recent_mean_epoch_seconds": 21.478321251209127,
-      "seconds_since_last_epoch": 15.104748964309692,
-      "startup_epoch_seconds_extrapolated": null,
-      "first_checkpoint_startup_grace_seconds": null,
-      "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 64.43496375362739,
+      "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-d2dc815dee5e",
+      "last_completed_epoch": 0,
+      "best_checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-d2dc815dee5e/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-DKVMN-baseline_tuning-42-d2dc815dee5e/config.json",
+      "recent_mean_epoch_seconds": null,
+      "seconds_since_last_epoch": 4.310609579086304,
+      "startup_epoch_seconds_extrapolated": 22.092326113481477,
+      "first_checkpoint_startup_grace_seconds": 30.0,
+      "age_reference": "initial running status; first checkpoint not yet saved",
+      "stall_threshold_seconds": 66.27697834044443,
       "checkpoint_stalled": false
     }
   ],
@@ -43,5 +43,5 @@
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 660 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 661 independently downloaded/checksum verified; completed-archive synchronization True."
 }
