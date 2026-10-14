@@ -307,3 +307,12 @@ backups/c0f706137ec8b140e78a9730b1911a4691d22e16.bundle is okay
 backups/5880156961896e141992e92111ba795c83ce29e4.bundle is okay
 backups/9dc619cf619c9373003e70c99c53ec680e56c544.bundle is okay
 backups/e58b94f78b571db00388489cd070cd1310bbebb4.bundle is okay
+backups/ac57973037b8490373a3d0e4e20a2b472b07ae59.bundle is okay
+fatal: Unable to create '/workspace/LightSAKT2/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+Preservation failed: CalledProcessError: Command '['git', 'add', '.']' returned non-zero exit status 128.
