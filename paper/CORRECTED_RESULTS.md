@@ -32,7 +32,29 @@ Relative changes and sample standard deviations are generated in Table 8 and pai
 
 ## Efficiency and interpretation
 
-The ELU+1 prefix mechanism scales linearly with sequence length at fixed head dimensions; this theoretical fact does not establish measured speed. Controlled timings separately compare equal-width attention kernels, equal-width complete models, and complete models using documented primary ASSIST2009 dimensions and dropout. Benchmark positional capacity equals the tested length, and weights are freshly initialized. Measured forward/backward timings use a squared-output surrogate; recorded dataset epoch times include validation. All raw repeats, memory measurements, hardware, and parameter counts remain available.
+**Measured runtime:** LightSAKT had higher mean latency in 60 of 60 matched comparisons and lower mean latency in 0. These genuine findings contradict an unconditional speed advantage. The saved 120 FP32 cases cover lengths 50, 100, 200, 500 and 1000, batch sizes 1 and 8, inference and forward/backward, and three separately labelled comparison scopes on the H100 MIG partition. Each case used three warm-ups and ten synchronized timed repetitions. We preserved the original architecture and these measurements.
+
+**Measured memory:** LightSAKT had lower peak allocated memory in 7 of 60 matched comparisons. Allocated peaks, reserved peaks and baseline allocations are reported separately; these process measurements include model, inputs, workspace and warm-up state. They do not establish an unconditional memory advantage or the asymptotic storage behavior of a different attention backend.
+
+|Comparison scope|Matched cases|LightSAKT slower|LightSAKT lower peak allocated memory|
+|---|---|---|---|
+|documented_complete|20|20|0|
+|equal_attention|20|20|4|
+|equal_complete|20|20|3|
+
+**Parameter efficiency:** Counts for the documented primary configurations are:
+
+|Dataset|LightSAKT parameters|SAKT parameters|LightSAKT/SAKT|
+|---|---|---|---|
+|ASSIST2009|148673|112201|1.325059|
+|ASSIST2015|134849|101401|1.329859|
+|Algebra2005|108449|197501|0.549106|
+
+Primary model widths differ, so these counts cannot be attributed solely to the kernel or feed-forward reduction. Equal-width complete-model comparisons isolate parameter differences more closely. Benchmark positional capacity grows with tested length; parameter counts and serialized sizes are recorded for each case.
+
+**Theoretical scaling and interpretation:** At fixed head dimensions, the causal ELU+1 kernel performs O(B H L d_k d_v) attention work. This vectorized training implementation also stores sequence-length key/value prefixes; its dimension-dependent constants matter. This theoretical O(L) work does not imply lower measured latency or lower memory throughout the tested range. The isolated dense SAKT reference requests attention weights, while the existing complete SAKT uses PyTorch MHA without requesting them. Backend and comparison scope remain explicit.
+
+Benchmark weights were newly initialized, and forward/backward used a squared-output surrogate. These timings are distinct from dataset epoch times, which include training and validation. Ten timing repetitions measure engineering variability on one recorded device, not independent student or training-seed uncertainty. Scope-specific numerical results, complete raw repetitions and hardware metadata are preserved in results/tables/efficiency.csv, results/tables/efficiency_paired_comparisons.csv, results/tables/parameters.csv, experiments/efficiency/raw_timings.json and experiments/efficiency/environment.json. The full measured discussion is in paper/EFFICIENCY_RESULTS.md.
 
 Kernel heatmaps reconstruct normalized causal ELU+1 weights from selected trained checkpoints and genuine held-out sequences; requesting weights leaves predictions unchanged. Skill trajectories are predicted next-response correctness conditional on observed history, rather than directly observed mastery. Historical TransDKT/TransDKT+ figures are not relabelled as LightSAKT.
 

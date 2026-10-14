@@ -1,18 +1,13 @@
 """Generate manuscript-ready measured findings without claiming theoretical speed."""
 from pathlib import Path
 import pandas as pd
+from scripts.efficiency_evidence import paired_measurements, verify_saved_measurements
 
 
 def main():
     frame=pd.read_csv('results/tables/efficiency.csv')
-    keys=['scope','length','batch','operation']
-    light=frame[frame.model=='LightSAKT'].set_index(keys)
-    sakt=frame[frame.model=='SAKT'].set_index(keys)
-    pairs=light[['latency_ms_mean','peak_allocated_bytes','parameters']].join(
-        sakt[['latency_ms_mean','peak_allocated_bytes','parameters']],lsuffix='_light',rsuffix='_sakt')
-    pairs['latency_ratio_light_over_sakt']=pairs.latency_ms_mean_light/pairs.latency_ms_mean_sakt
-    pairs['peak_allocated_ratio_light_over_sakt']=pairs.peak_allocated_bytes_light/pairs.peak_allocated_bytes_sakt
-    pairs['parameter_ratio_light_over_sakt']=pairs.parameters_light/pairs.parameters_sakt
+    verify_saved_measurements()
+    pairs=paired_measurements(frame)
     pairs.to_csv('results/tables/efficiency_paired_comparisons.csv')
     text='# Fresh controlled efficiency results\n\n'
     text+=f"Executed {len(frame)} cases ({len(pairs)} matched comparisons) on the H100 MIG partition. Sequence lengths 50/100/200/500/1000; batches 1/8; equal attention, equal complete dimensions, and documented primary complete models; forward and forward/backward; FP32, three warm-ups and ten timed repetitions with synchronization. Models are newly initialized for compute measurement; this is not predictive-performance evidence. Raw timings and hardware/source manifests are under experiments/efficiency/.\n\n"

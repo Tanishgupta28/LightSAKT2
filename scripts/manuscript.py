@@ -46,8 +46,14 @@ def main():
     lines += ['## Ablations and paired inference','',
               'Default LightSAKT reused the final-model evidence. Component variants removed dropout, positional contributions, multiple heads, or attention. Without attention, the attention contribution was zero while the original embedding residual and feed-forward pathway remained. By explicit author instruction, “without regularization” was equivalent to “without dropout,” because the original model supplied no other explicit regularizer and weight decay was zero. These two rows reuse the same evidence and are not independent observations.','',
               'Relative changes and sample standard deviations are generated in Table 8 and paired_ablations.csv. No outcome was required to favor the default architecture. Paired signed-rank comparisons used matching model seeds and the same frozen student split, with exact sign enumeration, zero omission, midranks for ties, and Holm adjustment across the 18 prespecified comparisons. Five nonzero pairs permit a minimum two-sided exact p-value of 0.0625, so conventional significance cannot be established with that design even before correction.','',
-              '## Efficiency and interpretation','',
-              'The ELU+1 prefix mechanism scales linearly with sequence length at fixed head dimensions; this theoretical fact does not establish measured speed. Controlled timings separately compare equal-width attention kernels, equal-width complete models, and complete models using documented primary ASSIST2009 dimensions and dropout. Benchmark positional capacity equals the tested length, and weights are freshly initialized. Measured forward/backward timings use a squared-output surrogate; recorded dataset epoch times include validation. All raw repeats, memory measurements, hardware, and parameter counts remain available.','',
+              '## Efficiency and interpretation','']
+    if Path('results/tables/efficiency.csv').exists():
+        from scripts.efficiency_evidence import manuscript_findings
+        lines += [manuscript_findings(pd.read_csv('results/tables/efficiency.csv'),
+                                     pd.read_csv('results/tables/parameters.csv')), '']
+    else:
+        lines += ['The ELU+1 prefix mechanism has linear sequence-length work at fixed head dimensions. Controlled runtime, memory and parameter measurements remain pending; no measured efficiency advantage is established.', '']
+    lines += [
               'Kernel heatmaps reconstruct normalized causal ELU+1 weights from selected trained checkpoints and genuine held-out sequences; requesting weights leaves predictions unchanged. Skill trajectories are predicted next-response correctness conditional on observed history, rather than directly observed mastery. Historical TransDKT/TransDKT+ figures are not relabelled as LightSAKT.','',
               '## Artifact sources','',
               'Tables: results/tables/. Numerical figure data: results/figures/*.csv, experiments/efficiency/raw_timings.json, and experiments/case_studies/*.npz. Each run records the checkpoint, split hash, configuration, seed, code version, predictions, and metrics. PAPER_CORRECTIONS.md documents page-specific discrepancies with suggested wording.']

@@ -10,6 +10,7 @@ from src.models.factory import build_model
 from src.training.engine import write_json
 from src.training.reproducibility import seed_everything
 from src.datasets.sequences import Sequences
+from scripts.efficiency_evidence import verify_saved_measurements
 
 
 def require_table(path, rows=None):
@@ -45,6 +46,7 @@ def verify():
     assert (significance.n_pairs==5).all() and (significance.holm_p>=significance.p_value).all()
     timings=require_table('results/tables/efficiency.csv',120)
     assert (timings.latency_ms_mean>0).all() and (timings.throughput_tokens_per_second>0).all()
+    verify_saved_measurements()
     require_table('results/tables/parameters.csv',21)
     require_table('results/tables/model_complexity.csv',2)
     require_table('results/tables/epoch_runtime.csv')
