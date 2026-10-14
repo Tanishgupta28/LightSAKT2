@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-10-14T05:05:25.960106+00:00",
+  "updated_utc": "2026-10-14T05:06:08.449912+00:00",
   "total_slots": 957,
-  "completed": 557,
-  "remaining": 400,
+  "completed": 559,
+  "remaining": 398,
   "counts": {
-    "completed": 557,
-    "pending": 399,
+    "completed": 559,
+    "pending": 397,
     "running": 1
   },
   "processes": {
@@ -40,10 +40,10 @@
   },
   "running_jobs": [
     {
-      "run_id": "ASSIST2009-DKT+-final-123",
-      "last_completed_epoch": 2,
-      "best_checkpoint": "checkpoints/ASSIST2009-DKT+-final-123/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKT+-final-123/config.json"
+      "run_id": "ASSIST2009-DKT+-final-3407",
+      "last_completed_epoch": 10,
+      "best_checkpoint": "checkpoints/ASSIST2009-DKT+-final-3407/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKT+-final-3407/config.json"
     }
   ],
   "phase_counts": {
@@ -55,9 +55,9 @@
       "pending": 310
     },
     "7": {
-      "pending": 89,
-      "running": 1,
-      "completed": 15
+      "pending": 87,
+      "completed": 17,
+      "running": 1
     },
     "8": {
       "completed": 75
