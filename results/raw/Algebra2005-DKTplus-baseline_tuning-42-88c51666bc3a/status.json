@@ -1,7 +1,7 @@
 {
   "run_id": "Algebra2005-DKTplus-baseline_tuning-42-88c51666bc3a",
-  "status": "running",
-  "last_completed_epoch": 0,
+  "status": "completed",
+  "last_completed_epoch": 50,
   "config": "results/raw/Algebra2005-DKTplus-baseline_tuning-42-88c51666bc3a/config.json",
   "seed": 42,
   "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKTplus-baseline_tuning-42-88c51666bc3a/config.json",
