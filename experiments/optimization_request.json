@@ -6,5 +6,18 @@
   "coordinate_complete_schedule": true,
   "validated_gkt_workers": 2,
   "activation_rule": "Only at completed-run boundary after new CPU/CUDA gate and bit-exact PAM/MHA concurrency proof",
-  "scientific_scope_reduced": false
+  "scientific_scope_reduced": false,
+  "schedule_decision": "experiments/schedule_decision.json",
+  "parallel_models": [
+    "GKT_MHA"
+  ],
+  "exclusive_models": [
+    "GKT",
+    "DKT",
+    "DKT+",
+    "DKVMN",
+    "SAKT",
+    "LightSAKT"
+  ],
+  "gpu_admission_enforced": true
 }

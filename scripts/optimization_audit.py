@@ -70,8 +70,13 @@ def audit():
         'grid_seeds':sorted(set(frame.loc[frame.category.isin(['LightSAKT_grid','baseline_tuning']),'seed'])),
         'repeated_grid_configurations':0,'required_light_grid':int((frame.category=='LightSAKT_grid').sum()),
         'scope_approval_required':True,'proposal_active':False}
+    decision=Path('experiments/schedule_decision.json')
+    if decision.exists():
+        summary['user_schedule_decision']=json.load(open(decision))
+        summary['scope_approval_required']=False
     write_json('reports/optimization/SCHEDULE_COMPARISON.json',summary)
     text='# Schedule and scientific-scope audit\n\n'
+    if decision.exists():text+='Author decision: **Keep the complete schedule; execution improvements only.** The reduction proposal is retained for audit and is not active. No approval is pending. Evidence: experiments/schedule_decision.json.\n\n'
     text+=f"Observed completion: {summary['completed']}/{len(frame)}; remaining fresh trainings {summary['fresh_remaining']}, reuse/evaluation slots {summary['reuse_remaining']}. The 912 figure was the planned total of distinct trainings, not the remaining count.\n\n"
     text+='|Category|Dataset|Completed|Fresh remaining|Reuse remaining|\n|---|---|---|---|---|\n'
     for r in grouped.itertuples():text+=f'|{r.category}|{r.dataset}|{r.completed}|{r.fresh_remaining}|{r.reuse_remaining}|\n'
