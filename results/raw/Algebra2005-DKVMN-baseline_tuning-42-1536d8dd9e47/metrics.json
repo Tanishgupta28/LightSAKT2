@@ -1,0 +1,29 @@
+{
+  "run_id": "Algebra2005-DKVMN-baseline_tuning-42-1536d8dd9e47",
+  "dataset": "Algebra2005",
+  "model": "DKVMN",
+  "seed": 42,
+  "group": "baseline_tuning",
+  "validation": {
+    "auc": 0.8038690597602062,
+    "auc_reason": null,
+    "accuracy": 0.7992722412000595,
+    "f1": 0.8746031851228386,
+    "mse": 0.14195161134294323,
+    "bce": 0.44000137041800486,
+    "n_targets": 94262
+  },
+  "best_epoch": 50,
+  "epochs_trained": 50,
+  "training_seconds": 346.44991044700146,
+  "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-1536d8dd9e47/best.pt",
+  "checkpoint_sha256": "d00a4ef920c81a4d297dec716af7ba26662f1e10b4b2709c06f3b9b10cf8f081",
+  "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+  "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+  "git_commit": "ef974329c2433102d510e212e9546719de545750",
+  "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "parameters": 42113,
+  "peak_allocated_bytes": 149201408,
+  "peak_reserved_bytes": 165675008,
+  "test": null
+}
