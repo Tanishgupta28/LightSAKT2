@@ -32,11 +32,11 @@ These configurations maximize validation AUC among all 36 prespecified candidate
 
 ## Matched final comparisons
 
-|dataset|model|completed_seeds|auc_mean|auc_std|accuracy_mean|f1_mean|mse_mean|bce_mean|
-|---|---|---|---|---|---|---|---|---|
-|ASSIST2009|LightSAKT|5|0.751056|0.000766|0.732229|0.816533|0.180233|0.538615|
-|ASSIST2015|LightSAKT|5|0.726088|0.000315|0.749526|0.846282|0.171233|0.516098|
-|Algebra2005|LightSAKT|5|0.810590|0.000422|0.795574|0.870356|0.144069|0.445272|
+|dataset|model|completed_seeds|auc (mean ± sample SD)|accuracy (mean ± sample SD)|f1 (mean ± sample SD)|mse (mean ± sample SD)|bce (mean ± sample SD)|
+|---|---|---|---|---|---|---|---|
+|ASSIST2009|LightSAKT|5|0.751056 ± 0.000766|0.732229 ± 0.000801|0.816533 ± 0.001517|0.180233 ± 0.000319|0.538615 ± 0.000886|
+|ASSIST2015|LightSAKT|5|0.726088 ± 0.000315|0.749526 ± 0.000419|0.846282 ± 0.000392|0.171233 ± 0.000106|0.516098 ± 0.000340|
+|Algebra2005|LightSAKT|5|0.810590 ± 0.000422|0.795574 ± 0.000639|0.870356 ± 0.000350|0.144069 ± 0.000364|0.445272 ± 0.001018|
 
 Means summarize every completed prespecified seed. Sample standard deviations and Student-t intervals describe conditional initialization variability on one fixed student split; they do not measure new-student sampling uncertainty. Partial seed counts are not complete five-seed results.
 

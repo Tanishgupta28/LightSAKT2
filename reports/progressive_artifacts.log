@@ -4,3 +4,15 @@
   raw=pd.read_csv('data/raw/ASSIST2009.csv',encoding='latin1',usecols=['skill_id','skill_name'])
 /workspace/LightSAKT2/scripts/analyze.py:141: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
   plt.plot([0,1],[0,1],'k--',alpha=.3);plt.xlabel('False positive rate');plt.ylabel('True positive rate');plt.title(dataset+' — selected models, prespecified seed 42');plt.legend(fontsize=7);save_figure(dataset+'_ROC_seed42')
+{
+  "remaining_training_hours": {
+    "low": 105.96921996178409,
+    "central": 499.39681199834877,
+    "high": 1455.493364919371
+  },
+  "finish_utc": {
+    "low": "2026-10-18T14:50:32.875132+00:00",
+    "central": "2026-11-04T00:16:12.206464+00:00",
+    "high": "2026-12-13T20:21:59.796980+00:00"
+  }
+}
