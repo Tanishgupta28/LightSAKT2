@@ -776,3 +776,6 @@ Retrying interrupted artifact download: ASSIST2015-LightSAKT-grid-42-9b758c5a344
 Retrying interrupted artifact download: ASSIST2015-LightSAKT-grid-42-9b758c5a3448.tar.gz
 Verified private offsite assets: 168
 Offsite synchronization pending: CalledProcessError Command '['gh', 'api', 'repos/Tanishgupta28/LightSAKT2/releases/411825133/assets?per_page=100', '--paginate', '--jq', '.[] | @json']' returned non-zero exit status 1.
+Uploading private recovery asset: ASSIST2015-LightSAKT-grid-42-a0f261d0be90.tar.gz
+Uploading private recovery asset: ASSIST2015-LightSAKT-grid-42-a540855228ac.tar.gz
+Offsite synchronization pending: CalledProcessError Command '['gh', 'release', 'upload', 'research-recovery-20261013', 'backups/completed_runs/ASSIST2015-LightSAKT-grid-42-a540855228ac.tar.gz', '--repo', 'Tanishgupta28/LightSAKT2']' returned non-zero exit status 1.
