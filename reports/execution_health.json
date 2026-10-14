@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T02:12:00.187506+00:00",
-  "sample_time": 1791943919.5586052,
+  "updated_utc": "2026-10-14T02:12:23.720272+00:00",
+  "sample_time": 1791943942.8896384,
   "counts": {
-    "completed": 216,
-    "pending": 740,
+    "completed": 217,
+    "pending": 739,
     "running": 1
   },
   "scheduler": {
@@ -12,8 +12,8 @@
   },
   "training_processes": [
     {
-      "pid": 297660,
-      "cpu_seconds": 28.99,
+      "pid": 298419,
+      "cpu_seconds": 22.31,
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
@@ -23,15 +23,15 @@
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2009-LightSAKT-final-2026",
-      "last_completed_epoch": 25,
-      "best_checkpoint": "checkpoints/ASSIST2009-LightSAKT-final-2026/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-LightSAKT-final-2026/config.json",
-      "recent_mean_epoch_seconds": 0.8045300074038095,
-      "seconds_since_last_epoch": 0.25921630859375,
+      "run_id": "ASSIST2009-LightSAKT-final-3407",
+      "last_completed_epoch": 15,
+      "best_checkpoint": "checkpoints/ASSIST2009-LightSAKT-final-3407/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-LightSAKT-final-3407/config.json",
+      "recent_mean_epoch_seconds": 0.8885280259943101,
+      "seconds_since_last_epoch": 0.0,
       "startup_epoch_seconds_extrapolated": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 2.4135900222114284,
+      "stall_threshold_seconds": 2.6655840779829303,
       "checkpoint_stalled": false
     }
   ],
@@ -42,5 +42,5 @@
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 216 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 218 independently downloaded/checksum verified; completed-archive synchronization True."
 }
