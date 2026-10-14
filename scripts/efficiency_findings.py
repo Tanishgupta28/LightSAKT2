@@ -32,6 +32,10 @@ def main():
     text+='Suggested manuscript wording: “LightSAKT preserves causal ELU+1 kernel attention and linear sequence-length work for fixed dimensions. In the tested deterministic FP32 implementation and H100 MIG environment, kernel complexity did not yield a consistent latency advantage over PyTorch SAKT. Memory and parameter advantages depended on sequence length, comparison scope and selected dimensions; the measured tables disclose these conditions.”\n\n'
     text+='Evidence: results/tables/efficiency.csv, efficiency_paired_comparisons.csv, parameters.csv; experiments/efficiency/raw_timings.json and environment.json; reports/profiling/efficiency_execution.json; results/figures/efficiency_*.{csv,png,svg,pdf}.\n'
     Path('paper/EFFICIENCY_RESULTS.md').write_text(text)
+    corrections=Path('PAPER_CORRECTIONS.md');existing=corrections.read_text()
+    marker='## Fresh efficiency evidence (October 2026)'
+    if marker not in existing:
+        corrections.write_text(existing+'\n'+marker+'\n\nPaper pages 18–19, Figure 8/efficiency, and pages 21–23, discussion: the historical architecture attribution and uncontrolled runtime statements do not establish LightSAKT speed or parameter efficiency. Fresh evidence now exists: the 120-case exclusive FP32 benchmark and dataset-specific parameter counts. The measured matched latency comparisons contradict an unconditional speed advantage; memory and parameter differences depend on scope and dimensions. The original architecture was preserved. Corrected numerical tables and manuscript-ready wording are generated in paper/EFFICIENCY_RESULTS.md from results/tables/efficiency.csv, efficiency_paired_comparisons.csv and parameters.csv; hardware, raw timings and execution evidence are in experiments/efficiency/ and reports/profiling/efficiency_execution.json. Original PDF and historical claims remain preserved.\n')
     print('Genuine efficiency pairs',len(pairs),'lower LightSAKT latency',int((pairs.latency_ratio_light_over_sakt<1).sum()))
 
 

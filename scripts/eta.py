@@ -186,6 +186,7 @@ def estimate():
         'remaining_training_gpu_reserved_hours':totals,
         'two_worker_training_wall_hours':concurrent_totals,
         'two_worker_measured_throughput_speedup':factor,
+        'conditional_two_worker_training_finish_utc':{k:(now+timedelta(hours=v)).isoformat() for k,v in concurrent_totals.items()},
         'two_worker_estimate_limit':'Serial isolated-equivalent hours differ from MIG occupied wall hours. Two independent GKT-MHA workers only; PAM and other models remain serial. Use the smallest measured MHA throughput factor across tested datasets/widths. Wide PAM measured 0.90x and was rejected for parallel execution. Short-step throughput is extrapolated, not guaranteed. High scenario assumes no sustained benefit. Startup/test/analysis excluded. Aggregate worker elapsed-hours may increase under contention.',
         'conditional_training_finish_utc':{k:(now+timedelta(hours=v)).isoformat() for k,v in totals.items()},
         'wall_clock_assumption':'One current MIG worker remains continuously available; no outages or new paid resources.',

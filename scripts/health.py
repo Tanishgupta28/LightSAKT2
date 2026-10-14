@@ -66,7 +66,7 @@ def inspect():
         root=Path('results/raw')/job['run_id'];history_path=root/'history.json'
         history=json.load(open(history_path)) if history_path.exists() else []
         epoch_mean=statistics.mean(h['epoch_seconds'] for h in history[-5:]) if history else None
-        age=now-history_path.stat().st_mtime if history else now-(root/'status.json').stat().st_mtime if (root/'status.json').exists() else None
+        age=max(0.,now-history_path.stat().st_mtime) if history else max(0.,now-(root/'status.json').stat().st_mtime) if (root/'status.json').exists() else None
         planned=estimates.get(job['run_id'],{})
         estimated_mean=float(planned['central_hours'])*3600/float(planned['central_expected_total_epochs']) if not history and planned.get('central_expected_total_epochs') else None
         reference_mean=epoch_mean or estimated_mean
