@@ -1,7 +1,7 @@
 {
-  "log": "reports/test_runs/20261014T183033-recovery-light-outputs-cpu.log",
+  "log": "reports/test_runs/20261014T184242-recovery-publication-cpu.log",
   "exit_code": 0,
   "tests_passed": true,
-  "scope": "Full CPU suite including SIGKILL/resume equivalence, non-destructive archive recovery, supervisor admission guards and original causal/padding tests; CUDA deferred during healthy GPU training",
-  "verified_utc": "2026-10-14T18:30:53.521092+00:00"
+  "scope": "Full CPU suite including SIGKILL/resume equivalence, supervisor locks, alias identities, archive restore and deterministic publication bytes; CUDA deferred during continuous healthy training",
+  "verified_utc": "2026-10-14T18:43:02.809467+00:00"
 }

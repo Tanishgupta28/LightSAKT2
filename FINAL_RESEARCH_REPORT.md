@@ -26,9 +26,9 @@ Running 95 items in this shard
 Additional CPU verification during active GPU training:
 
 ```
-Running 122 items in this shard
-..........................................sssssssssssssss.................................................................                           [100%]
-107 passed, 15 skipped in 19.62s
+Running 123 items in this shard
+..........................................sssssssssssssss..................................................................                          [100%]
+108 passed, 15 skipped in 20.09s
 ```
 
 CUDA tests were skipped in this additional invocation to avoid GPU contention; the preceding full CPU/CUDA correctness gate remains the GPU evidence. Model/training source fingerprints are unchanged.
@@ -66,8 +66,8 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 ## Experiment schedule status
 
 {
-  "completed": 699,
-  "pending": 257,
+  "completed": 700,
+  "pending": 256,
   "running": 1
 }
 
@@ -128,4 +128,10 @@ Latest schedule audit: 325 fresh trainings remain plus 14 reuse/evaluation entri
 
 Exact immutable sequence caches preserve every tensor, identity, batch order and RNG sequence; CPU training/resume equivalence is tested. Inter-run GPU probes and CPU/CUDA gates verify independent worker updates before two-worker GKT execution. Full required scope, FP32, batch sizes, Adam, stopping criteria, LightSAKT architecture, splits and untouched final test selections remain unchanged. Prioritization runs LightSAKT grid/finals/ablations before slow remaining baseline tuning. See reports/optimization/EXECUTION_OPTIMIZATION.md and reports/profiling/.
 
-Independent private GitHub draft recovery artifacts: 701 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
+Independent private GitHub draft recovery artifacts: 702 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
+
+## Finished LightSAKT outputs and recovery
+
+All 108 LightSAKT grid rows and 75 ablation slots are independently verified; 18 grid/ablation plot sets retain source CSVs and PNG/SVG/PDF files. Reports: LIGHTSAKT_GRID_ABLATION_RESULTS.md and light_outputs_verification.json. Original-device ablation test probabilities reproduced bit-for-bit; 15 regularization aliases reuse dropout-removal evidence. A measured CPU/GPU AUC rank-sensitivity diagnosis is preserved without relaxing the strict CPU check or changing experimental metrics.
+
+The CPU recovery supervisor protects existing training, recovers missing processes with lock/source/version/data/checkpoint checks, and resumes latest optimizer/RNG states. Automatic platform shutdown recovery is not installed: controller/startup permissions are unavailable. The tested manual bootstrap, raw-data reconstruction and non-destructive offsite restoration commands are in reports/RECOVERY_PROCEDURE.md. Additional exact GKT thread-count probes showed no consistent speedup; four threads remain active. Stable publication serialization reduces NFS/Git churn while retaining numerical observations. No architecture, gradient or scientific-scope change was made.

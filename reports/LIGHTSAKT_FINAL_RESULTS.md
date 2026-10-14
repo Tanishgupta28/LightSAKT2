@@ -1,6 +1,6 @@
 # Verified final LightSAKT results and ongoing comparisons
 
-Generated UTC: 2026-10-14T18:41:19.445979+00:00
+Generated UTC: 2026-10-14T18:46:52.916383+00:00
 
 All numbers below are generated from fresh completed experiment files. Five selected seeds per dataset are complete; the overall research schedule remains incomplete. The three fixed-configuration LightSAKT primary runs are outside this selected-final summary; baseline primary runs are labelled separately.
 
@@ -24,7 +24,7 @@ Each dataset selection used all 36 prespecified validation candidates and a lexi
 
 Mean ± sample standard deviation (ddof=1), with seeds 42, 123, 2026, 3407 and 7777. Seed 42 reuses the selected genuine tuning checkpoint. These quantities describe initialization variability on one fixed student split; they do not estimate uncertainty across new student samples. They never report the best seed.
 
-Verification recalculated every saved test-prediction metric, checked checkpoint and prediction hashes, strictly loaded finite checkpoint states, verified the best validation epoch, confirmed unchanged training-source fingerprints and independently reproduced validation-only configuration selection. Independent selected-final CPU inference evidence is reported below; inference verification of remaining grid/baseline checkpoints stays in the final research schedule.
+Verification recalculated every saved test-prediction metric, checked checkpoint and prediction hashes, strictly loaded finite checkpoint states, verified the best validation epoch, confirmed unchanged training-source fingerprints and independently reproduced validation-only configuration selection. Independent selected-final CPU inference evidence is reported below; the completed LightSAKT grid has its own original-device inference proof, and remaining baseline checkpoints stay in the final verification schedule.
 
 ## Completed baseline evidence
 
@@ -71,19 +71,19 @@ All five baseline metrics, deltas and evidence scope are in LightSAKT_completed_
 
 ## Recalculated remaining training time
 
-ETA measurements refreshed: 2026-10-14T18:41:10.648933+00:00. Serial isolated-equivalent remaining training: 483.429 hours. Current execution forecast: 373.395 occupied MIG wall hours (15.56 continuous days), applying the measured 1.512 two-worker throughput factor only to GKT-MHA.
+ETA measurements refreshed: 2026-10-14T18:46:44.887125+00:00. Serial isolated-equivalent remaining training: 483.346 hours. Current execution forecast: 373.312 occupied MIG wall hours (15.55 continuous days), applying the measured 1.512 two-worker throughput factor only to GKT-MHA.
 
 |model|remaining_entries|fresh_training_runs|serial_equivalent_hours|occupied_mig_hours|
 |---|---|---|---|---|
-|DKVMN|13|12|1.023657|1.023657|
+|DKVMN|12|11|0.940563|0.940563|
 |GKT|123|117|157.582744|157.582744|
 |GKT_MHA|123|120|324.822509|214.788672|
 
-GKT-PAM and GKT-MHA account for 372.371 of 373.395 remaining occupied MIG hours (99.73%). Completion count is a poor proxy for compute progress. The priority order completed short LightSAKT grids, selected seeds, ablations and fast baseline tuning first. Reuse/alias entries add no training; the current category table identifies remaining GKT work.
+GKT-PAM and GKT-MHA account for 372.371 of 373.312 remaining occupied MIG hours (99.75%). Completion count is a poor proxy for compute progress. The priority order completed short LightSAKT grids, selected seeds, ablations and fast baseline tuning first. Reuse/alias entries add no training; the current category table identifies remaining GKT work.
 
 The GKT forecast is calibrated by six completed primary model/dataset runs plus real primary/wide engineering profiles, rather than multiplying the global mean runtime by remaining entries. Recent fast-model completions refine those strata but add little evidence about the still-untrained slow GKT configurations. One GKT epoch has measured durations of minutes, whereas many DKT/SAKT/LightSAKT epochs take seconds or less; planned configuration widths and stopping counts also differ.
 
-The occupied-MIG planning envelope is 85.0–1427.3 hours. It is an early-stop/maximum-epoch scenario envelope, not a confidence interval or guarantee. Most future GKT stopping counts and sustained concurrency performance are unknown. Startup, selected test inference and final artifact verification are additional; the completed controlled efficiency benchmark is reused.
+The occupied-MIG planning envelope is 85.0–1427.2 hours. It is an early-stop/maximum-epoch scenario envelope, not a confidence interval or guarantee. Most future GKT stopping counts and sustained concurrency performance are unknown. Startup, selected test inference and final artifact verification are additional; the completed controlled efficiency benchmark is reused.
 
 ## Continuing execution and preserved findings
 
