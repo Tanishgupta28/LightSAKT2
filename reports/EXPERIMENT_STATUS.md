@@ -1,13 +1,13 @@
 # Experiment status
 
-Updated UTC: 2026-10-14T09:20:25.978572+00:00
+Updated UTC: 2026-10-14T09:38:51.172385+00:00
 
-Completed: **639**. Remaining: **318**. Total schedule slots: 957.
+Completed: **640**. Remaining: **317**. Total schedule slots: 957.
 
 ```json
 {
-  "completed": 639,
-  "pending": 317,
+  "completed": 640,
+  "pending": 316,
   "running": 1
 }
 ```
@@ -26,17 +26,17 @@ Progressive process: running (PID 185610).
 
 Active_recovery process: running (PID 203682).
 
-Current run: `ASSIST2015-DKVMN-baseline_tuning-42-520623824044`; last completed epoch: 0.
+Current run: `ASSIST2015-DKVMN-baseline_tuning-42-53dce185492d`; last completed epoch: 0.
 
 The 45 reuse/alias slots are not independent new training experiments. Default ablation reuses final LightSAKT evidence. The separate smoke run is excluded from schedule counts.
 
 Distinct planned trainings: 912. The live manifest plus experiments/reuse_plan.json form the effective schedule; 9 exact primary/grid duplicates reuse verified evidence without removing grid rows. See reports/SCHEDULE_AUDIT.md.
 
-Measured-reference serial equivalent: 494.7 training hours; scenario envelope 105.4–1,442.5 hours. Current execution forecast: 384.7 occupied MIG wall hours; scenario envelope 86.3–1,442.5 hours, using independently verified two-worker GKT-MHA throughput only. Estimate updated 2026-10-14T09:19:55.237081+00:00; startup, test inference and final verification add time. This is a planning scenario, not a confidence interval or guarantee. See reports/ETA_REPORT.md.
+Measured-reference serial equivalent: 495.1 training hours; scenario envelope 105.5–1,442.3 hours. Current execution forecast: 385.1 occupied MIG wall hours; scenario envelope 86.4–1,442.3 hours, using independently verified two-worker GKT-MHA throughput only. Estimate updated 2026-10-14T09:38:35.068782+00:00; startup, test inference and final verification add time. This is a planning scenario, not a confidence interval or guarantee. See reports/ETA_REPORT.md.
 
 Process existence alone is not a health guarantee. Last independently sampled CPU/checkpoint progress and checkpoint integrity are recorded in reports/EXECUTION_HEALTH.md. A detached scheduler survives a terminal disconnect, but no automatic restart after environment shutdown is configured.
 
-Private draft recovery assets independently download/checksum verified: 641. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md and reports/offsite_backup.json.
+Private draft recovery assets independently download/checksum verified: 642. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md and reports/offsite_backup.json.
 
 The 108 LightSAKT grid configurations, equal baseline tuning budgets, and five matched final seeds use the frozen student splits. See experiments/manifest.json and per-run status files.
 
