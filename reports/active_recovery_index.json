@@ -114,5 +114,43 @@
     "draft": true,
     "download_sha256_verified": true,
     "verified_utc": "2026-10-14T08:03:57.198405+00:00"
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-423cf83838e1",
+    "epoch": 37,
+    "path": "backups/active_runs/ASSIST2015-DKVMN-baseline_tuning-42-423cf83838e1-epoch37.tar.gz",
+    "sha256": "023878483558423b99c8b5249d8f8d223c6901bdb6d1c87c96daebae68bc6386",
+    "captured_time": 1791967138.8360667,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "DKVMN",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "dim_s": 50,
+        "size_m": 50
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-423cf83838e1"
+    },
+    "asset_id": 639769861,
+    "release_tag": "research-active-recovery-20261014",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-14T08:39:07.425890+00:00"
   }
 ]
