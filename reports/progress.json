@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-10-14T04:24:40.811923+00:00",
+  "updated_utc": "2026-10-14T04:25:22.937631+00:00",
   "total_slots": 957,
-  "completed": 434,
-  "remaining": 523,
+  "completed": 436,
+  "remaining": 521,
   "counts": {
-    "completed": 434,
-    "pending": 522,
+    "completed": 436,
+    "pending": 520,
     "running": 1
   },
   "processes": {
@@ -40,10 +40,10 @@
   },
   "running_jobs": [
     {
-      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-94e59fd4ef76",
-      "last_completed_epoch": 11,
-      "best_checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-94e59fd4ef76/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-SAKT-baseline_tuning-42-94e59fd4ef76/config.json"
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-99ea7a53ea76",
+      "last_completed_epoch": 0,
+      "best_checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-99ea7a53ea76/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-SAKT-baseline_tuning-42-99ea7a53ea76/config.json"
     }
   ],
   "phase_counts": {
@@ -51,8 +51,8 @@
       "completed": 21
     },
     "6": {
-      "completed": 323,
-      "pending": 432,
+      "completed": 325,
+      "pending": 430,
       "running": 1
     },
     "7": {
