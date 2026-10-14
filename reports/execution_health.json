@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T05:02:38.765157+00:00",
-  "sample_time": 1791954157.5015683,
+  "updated_utc": "2026-10-14T05:03:51.714231+00:00",
+  "sample_time": 1791954230.8927817,
   "counts": {
-    "completed": 547,
-    "pending": 409,
+    "completed": 551,
+    "pending": 405,
     "running": 1
   },
   "scheduler": {
@@ -12,36 +12,36 @@
   },
   "training_processes": [
     {
-      "pid": 533205,
-      "cpu_seconds": 20.54,
+      "pid": 535920,
+      "cpu_seconds": 24.85,
       "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 0.2,
-      "cpu_seconds_advanced": 0.1999999999999993
+      "observed_seconds": 10.703056335449219,
+      "cpu_seconds_advanced": 10.120000000000001
     }
   ],
   "active_runs": [
     {
-      "run_id": "Algebra2005-SAKT-baseline_tuning-42-a94b2bcee87c",
-      "last_completed_epoch": 36,
-      "best_checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-a94b2bcee87c/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-SAKT-baseline_tuning-42-a94b2bcee87c/config.json",
-      "recent_mean_epoch_seconds": 0.27571082580834627,
-      "seconds_since_last_epoch": 0.0,
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-c8977b8be751",
+      "last_completed_epoch": 45,
+      "best_checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-c8977b8be751/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-SAKT-baseline_tuning-42-c8977b8be751/config.json",
+      "recent_mean_epoch_seconds": 0.3553445638041012,
+      "seconds_since_last_epoch": 0.04510974884033203,
       "startup_epoch_seconds_extrapolated": null,
       "first_checkpoint_startup_grace_seconds": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 0.8271324774250388,
+      "stall_threshold_seconds": 1.0660336914123034,
       "checkpoint_stalled": false
     }
   ],
-  "gpu_memory_mib": 1108,
+  "gpu_memory_mib": 1168,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 541 independently downloaded/checksum verified; completed-archive synchronization False."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 542 independently downloaded/checksum verified; completed-archive synchronization False."
 }
