@@ -1,13 +1,13 @@
 # Experiment status
 
-Updated UTC: 2026-10-14T05:16:11.982690+00:00
+Updated UTC: 2026-10-14T05:16:56.872349+00:00
 
-Completed: **588**. Remaining: **369**. Total schedule slots: 957.
+Completed: **591**. Remaining: **366**. Total schedule slots: 957.
 
 ```json
 {
-  "completed": 588,
-  "pending": 369
+  "completed": 591,
+  "pending": 366
 }
 ```
 

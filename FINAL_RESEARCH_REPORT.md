@@ -66,8 +66,8 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 ## Experiment schedule status
 
 {
-  "completed": 588,
-  "pending": 369
+  "completed": 591,
+  "pending": 366
 }
 
 Total requested schedule slots: 957. Counts include 21 seed-42 checkpoint reuse slots, 15 regularization aliases, and 9 verified primary/grid reuse slots, which are not new independent trainings. Distinct planned trainings: 912. Every required grid row is retained. The five-seed primary result is the mean, never the best seed. All remaining pending slots have no experimental result yet.
