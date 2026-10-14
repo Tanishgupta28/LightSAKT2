@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T04:08:28.425634+00:00",
-  "sample_time": 1791950907.561817,
+  "updated_utc": "2026-10-14T04:09:30.733098+00:00",
+  "sample_time": 1791950969.546664,
   "counts": {
-    "completed": 409,
-    "pending": 547,
+    "completed": 411,
+    "pending": 545,
     "running": 1
   },
   "scheduler": {
@@ -12,30 +12,30 @@
   },
   "training_processes": [
     {
-      "pid": 440857,
-      "cpu_seconds": 16.56,
-      "process_state": "S",
+      "pid": 442449,
+      "cpu_seconds": 14.08,
+      "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
       "observed_seconds": 0.2,
-      "cpu_seconds_advanced": 0.20000000000000284
+      "cpu_seconds_advanced": 0.1999999999999993
     }
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-f0e949a00a8c",
-      "last_completed_epoch": 4,
-      "best_checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-f0e949a00a8c/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-DKTplus-baseline_tuning-42-f0e949a00a8c/config.json",
-      "recent_mean_epoch_seconds": 1.610614021999936,
-      "seconds_since_last_epoch": 0.696821928024292,
+      "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-f252c9e66ebb",
+      "last_completed_epoch": 3,
+      "best_checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-f252c9e66ebb/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-DKTplus-baseline_tuning-42-f252c9e66ebb/config.json",
+      "recent_mean_epoch_seconds": 1.68208408166538,
+      "seconds_since_last_epoch": 0.9397599697113037,
       "startup_epoch_seconds_extrapolated": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 4.831842065999808,
+      "stall_threshold_seconds": 5.04625224499614,
       "checkpoint_stalled": false
     }
   ],
-  "gpu_memory_mib": 1128,
+  "gpu_memory_mib": 1114,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
