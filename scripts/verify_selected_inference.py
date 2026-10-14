@@ -25,16 +25,18 @@ def compare_predictions(target, probability, saved_target, saved_probability):
             'threshold_classification_disagreements': int(((probability >= .5) != (saved_probability >= .5)).sum())}
 
 
-def verify(models):
+def verify(models, groups=('final',)):
     assert not torch.cuda.is_available(), 'Run with CUDA_VISIBLE_DEVICES empty; active GPU training must remain untouched'
     output = Path('reports/selected_final_inference_verification.json')
     previous = json.load(open(output)) if output.exists() else {'runs': []}
     old = {r['run_id']: r for r in previous['runs']}
-    datasets = {}; data_checked = set(); locked = LockedTestEvidence(); records = []
+    datasets = {}; data_checked = set(); locked = LockedTestEvidence()
+    records = [r for r in previous['runs'] if r['model'] not in models or r.get('group','final') not in groups]
+    inference_cache = {}
     fingerprint = environment()['training_code_sha256']
     for path in sorted(Path('results/raw').glob('*/metrics.json')):
         raw = json.load(open(path))
-        if raw['group'] != 'final' or raw['model'] not in models:
+        if raw['group'] not in groups or raw['model'] not in models:
             continue
         assert json.load(open(path.parent/'status.json'))['status'] == 'completed'
         result, config, stats = verify_stored_result(path, data_checked)
@@ -48,6 +50,18 @@ def verify(models):
         if prior and all(prior.get(k) == v for k,v in identity.items()) and prior.get('verified'):
             records.append(prior)
             continue
+        cache_key = (result['checkpoint_sha256'], result['processed_sha256'], result['split_sha256'],
+                     json.dumps(config['model_config'],sort_keys=True),config['seq_len'],config['batch_size'],result['prediction_sha256'])
+        if cache_key in inference_cache:
+            peer=inference_cache[cache_key]
+            for split in ['validation','test']:
+                for metric in ['auc','accuracy','f1','mse','bce']:
+                    np.testing.assert_allclose(peer['regenerated_metrics'][split][metric],result[split][metric],atol=1e-7,rtol=1e-6)
+            record={**peer,**identity,**proof,'run_id':result['run_id'],'group':result['group'],
+                    'dataset':result['dataset'],'model':result['model'],'seed':result['seed'],
+                    'training_git_commit':result['git_commit'],'checkpoint':result['checkpoint'],
+                    'prediction_path':result['prediction_path'],'seconds':0.,'inference_reused_from':peer['run_id']}
+            records.append(record);continue
         started = time.perf_counter(); seed_everything(config['seed'])
         model = build_model(config['model'], stats['num_q'], config['model_config']).eval()
         state = torch.load(result['checkpoint'], map_location='cpu', weights_only=False)
@@ -67,7 +81,7 @@ def verify(models):
             if split == 'test':
                 with np.load(result['prediction_path']) as saved:
                     differences = compare_predictions(target, probability, saved['target'], saved['probability'])
-        record = {'run_id': result['run_id'], 'dataset': result['dataset'], 'model': result['model'],
+        record = {'run_id': result['run_id'], 'dataset': result['dataset'], 'model': result['model'], 'group':result['group'],
                   'seed': result['seed'], 'verified': True, 'device': 'cpu', 'selected_validation_epoch': state['epoch'],
                   'validation_recomputed': True, 'test_probabilities_recomputed': True,
                   'verified_utc': datetime.now(timezone.utc).isoformat(), 'seconds': time.perf_counter()-started,
@@ -76,20 +90,23 @@ def verify(models):
                   'probability_atol': 1e-6, 'probability_rtol': 1e-6,
                   'metric_atol': 1e-7, 'metric_rtol': 1e-6, **identity, **proof, **differences}
         records.append(record)
+        inference_cache[cache_key]=record
         # Preserve independently verified observations after every model. Source
         # checkpoints, probabilities and historical metrics are never rewritten.
         write_json(output, {'verified': True, 'verified_utc': record['verified_utc'],
-                           'scope': 'Completed selected final runs for requested models; complete research verification remains pending',
-                           'requested_models': models, 'runs': records})
+                           'scope': 'Completed final/ablation runs; identical aliases reuse verified checkpoint inference; complete research verification remains pending',
+                           'requested_models': models,'requested_groups':list(groups), 'runs': records})
         print(f'{result["run_id"]}: CPU validation/test verified in {record["seconds"]:.3f}s', flush=True)
         del model, state
     write_json(output, {'verified': True, 'verified_utc': datetime.now(timezone.utc).isoformat(),
-                       'scope': 'Completed selected final runs for requested models; complete research verification remains pending',
-                       'requested_models': models, 'runs': records})
+                       'scope': 'Completed final/ablation runs; identical aliases reuse verified checkpoint inference; complete research verification remains pending',
+                       'requested_models': models,'requested_groups':list(groups), 'runs': records})
     return records
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--models', nargs='+', default=['LightSAKT','DKT','DKT+','SAKT'])
-    print('Verified selected final runs:', len(verify(parser.parse_args().models)))
+    parser.add_argument('--groups',nargs='+',default=['final'],choices=['final','ablation'])
+    args=parser.parse_args()
+    print('Verified completed inference records:', len(verify(args.models,args.groups)))

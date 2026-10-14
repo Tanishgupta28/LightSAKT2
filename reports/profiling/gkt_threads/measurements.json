@@ -1,0 +1,527 @@
+[
+  {
+    "case": "ASSIST2009-GKT-primary",
+    "dataset": "ASSIST2009",
+    "model": "GKT",
+    "cpu_threads": 4,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "ec4932253f30e458c14a5d5a6eee34a650ceb814afa3ac509f665fa056a1c969",
+    "initial_cpu_rng_sha256": "19a1a7948858bdaee2435295f19fc73c9593f123f46f00ab321984baab8e939d",
+    "trajectory": [
+      {
+        "probabilities": "9a3c6fbfd9c013ccdc1c10c56ba45b52d7cc99ac91a3d171c365b05a10b5a163",
+        "gradients": "d6145d2352ef961c50376b0202167ec542f93bbc36553764f6e945643af6cd3e",
+        "parameters": "996e2017f7f4440cd0148d8d301cf334665433063157df9a30b991540b308a6f",
+        "cuda_rng": "2decee4f7b6244566b639384828fc2ff38fe00806decc0bac248fd4e7659e749"
+      },
+      {
+        "probabilities": "651f805711edd026d9ad2b90757e1d52f977bc7f045b919939e73a269067f253",
+        "gradients": "25f36a70c737ab3686b7e920f89be380dad0cf1603eb389916785649dee3fa7a",
+        "parameters": "53b73f8544c4edeebbd0b52cad87385d1cec4ffe1f7c31f7505cbfb909b1ec8d",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "93b851590647f0764f244cfdfea155bdbc9c1f68c0c56a9801f2eb842fae9eb2",
+        "gradients": "c5fe2b10694a27eb3f8fc5064148b57ef0d78028a96f26a819bb47090eca6e52",
+        "parameters": "be8d4a85d853599b0ba754b3a5de703f94b32116d0a2b05905c0c584a5de50e9",
+        "cuda_rng": "2c3fdf26dd5f7083ff9d3d8ecc8746c35a35c464e5a4639fba025c552f2e771a"
+      },
+      {
+        "probabilities": "d7878d5172e13bdb3b15968e1064eef3c3587a54c621ce800b12dcfb521c2387",
+        "gradients": "971b9634ba1534ddda6ec4334dee4ad4fbcb81b6053d9301a3b1d78239d72228",
+        "parameters": "27bfb466482d75972ce19868232a7c6c2bf809d20a794dd559b7183ba675f109",
+        "cuda_rng": "fc6a851eeaac90edaba4a88bb5beddec12cc014fc832c65a87a76c0d24349edd"
+      },
+      {
+        "probabilities": "58b00c90bb00747a8d8f601dfa3a78adbfb36c5861e285ab8041249718adc265",
+        "gradients": "52d5cc7237ac8ad067523c4d1ecbc78512d1d768f633b5a6f1d0b096310eca19",
+        "parameters": "eae8ebc789aeda2cf5b6b94e0718eaa28f9db2f3d644a06a99ae121a10da4469",
+        "cuda_rng": "be0f92297cb49b63c803302eb6a3d27333c70f3d345724cd4f40f24d25bda66e"
+      }
+    ],
+    "timed_steps": [
+      0.3494569339964073,
+      0.3298243229801301,
+      0.3118726379761938
+    ],
+    "mean_step_seconds": 0.3303846316509104,
+    "peak_reserved_bytes": 624951296,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.0
+  },
+  {
+    "case": "ASSIST2009-GKT-primary",
+    "dataset": "ASSIST2009",
+    "model": "GKT",
+    "cpu_threads": 1,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "ec4932253f30e458c14a5d5a6eee34a650ceb814afa3ac509f665fa056a1c969",
+    "initial_cpu_rng_sha256": "19a1a7948858bdaee2435295f19fc73c9593f123f46f00ab321984baab8e939d",
+    "trajectory": [
+      {
+        "probabilities": "9a3c6fbfd9c013ccdc1c10c56ba45b52d7cc99ac91a3d171c365b05a10b5a163",
+        "gradients": "d6145d2352ef961c50376b0202167ec542f93bbc36553764f6e945643af6cd3e",
+        "parameters": "996e2017f7f4440cd0148d8d301cf334665433063157df9a30b991540b308a6f",
+        "cuda_rng": "2decee4f7b6244566b639384828fc2ff38fe00806decc0bac248fd4e7659e749"
+      },
+      {
+        "probabilities": "651f805711edd026d9ad2b90757e1d52f977bc7f045b919939e73a269067f253",
+        "gradients": "25f36a70c737ab3686b7e920f89be380dad0cf1603eb389916785649dee3fa7a",
+        "parameters": "53b73f8544c4edeebbd0b52cad87385d1cec4ffe1f7c31f7505cbfb909b1ec8d",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "93b851590647f0764f244cfdfea155bdbc9c1f68c0c56a9801f2eb842fae9eb2",
+        "gradients": "c5fe2b10694a27eb3f8fc5064148b57ef0d78028a96f26a819bb47090eca6e52",
+        "parameters": "be8d4a85d853599b0ba754b3a5de703f94b32116d0a2b05905c0c584a5de50e9",
+        "cuda_rng": "2c3fdf26dd5f7083ff9d3d8ecc8746c35a35c464e5a4639fba025c552f2e771a"
+      },
+      {
+        "probabilities": "d7878d5172e13bdb3b15968e1064eef3c3587a54c621ce800b12dcfb521c2387",
+        "gradients": "971b9634ba1534ddda6ec4334dee4ad4fbcb81b6053d9301a3b1d78239d72228",
+        "parameters": "27bfb466482d75972ce19868232a7c6c2bf809d20a794dd559b7183ba675f109",
+        "cuda_rng": "fc6a851eeaac90edaba4a88bb5beddec12cc014fc832c65a87a76c0d24349edd"
+      },
+      {
+        "probabilities": "58b00c90bb00747a8d8f601dfa3a78adbfb36c5861e285ab8041249718adc265",
+        "gradients": "52d5cc7237ac8ad067523c4d1ecbc78512d1d768f633b5a6f1d0b096310eca19",
+        "parameters": "eae8ebc789aeda2cf5b6b94e0718eaa28f9db2f3d644a06a99ae121a10da4469",
+        "cuda_rng": "be0f92297cb49b63c803302eb6a3d27333c70f3d345724cd4f40f24d25bda66e"
+      }
+    ],
+    "timed_steps": [
+      0.3108346830122173,
+      0.31081585999345407,
+      0.31058479100465775
+    ],
+    "mean_step_seconds": 0.31074511133677635,
+    "peak_reserved_bytes": 624951296,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.063201381446189
+  },
+  {
+    "case": "ASSIST2009-GKT-primary",
+    "dataset": "ASSIST2009",
+    "model": "GKT",
+    "cpu_threads": 2,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "ec4932253f30e458c14a5d5a6eee34a650ceb814afa3ac509f665fa056a1c969",
+    "initial_cpu_rng_sha256": "19a1a7948858bdaee2435295f19fc73c9593f123f46f00ab321984baab8e939d",
+    "trajectory": [
+      {
+        "probabilities": "9a3c6fbfd9c013ccdc1c10c56ba45b52d7cc99ac91a3d171c365b05a10b5a163",
+        "gradients": "d6145d2352ef961c50376b0202167ec542f93bbc36553764f6e945643af6cd3e",
+        "parameters": "996e2017f7f4440cd0148d8d301cf334665433063157df9a30b991540b308a6f",
+        "cuda_rng": "2decee4f7b6244566b639384828fc2ff38fe00806decc0bac248fd4e7659e749"
+      },
+      {
+        "probabilities": "651f805711edd026d9ad2b90757e1d52f977bc7f045b919939e73a269067f253",
+        "gradients": "25f36a70c737ab3686b7e920f89be380dad0cf1603eb389916785649dee3fa7a",
+        "parameters": "53b73f8544c4edeebbd0b52cad87385d1cec4ffe1f7c31f7505cbfb909b1ec8d",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "93b851590647f0764f244cfdfea155bdbc9c1f68c0c56a9801f2eb842fae9eb2",
+        "gradients": "c5fe2b10694a27eb3f8fc5064148b57ef0d78028a96f26a819bb47090eca6e52",
+        "parameters": "be8d4a85d853599b0ba754b3a5de703f94b32116d0a2b05905c0c584a5de50e9",
+        "cuda_rng": "2c3fdf26dd5f7083ff9d3d8ecc8746c35a35c464e5a4639fba025c552f2e771a"
+      },
+      {
+        "probabilities": "d7878d5172e13bdb3b15968e1064eef3c3587a54c621ce800b12dcfb521c2387",
+        "gradients": "971b9634ba1534ddda6ec4334dee4ad4fbcb81b6053d9301a3b1d78239d72228",
+        "parameters": "27bfb466482d75972ce19868232a7c6c2bf809d20a794dd559b7183ba675f109",
+        "cuda_rng": "fc6a851eeaac90edaba4a88bb5beddec12cc014fc832c65a87a76c0d24349edd"
+      },
+      {
+        "probabilities": "58b00c90bb00747a8d8f601dfa3a78adbfb36c5861e285ab8041249718adc265",
+        "gradients": "52d5cc7237ac8ad067523c4d1ecbc78512d1d768f633b5a6f1d0b096310eca19",
+        "parameters": "eae8ebc789aeda2cf5b6b94e0718eaa28f9db2f3d644a06a99ae121a10da4469",
+        "cuda_rng": "be0f92297cb49b63c803302eb6a3d27333c70f3d345724cd4f40f24d25bda66e"
+      }
+    ],
+    "timed_steps": [
+      0.3169406710076146,
+      0.3271170380176045,
+      0.3302331180020701
+    ],
+    "mean_step_seconds": 0.3247636090090964,
+    "peak_reserved_bytes": 624951296,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.0173080434072175
+  },
+  {
+    "case": "ASSIST2009-GKT_MHA-primary",
+    "dataset": "ASSIST2009",
+    "model": "GKT_MHA",
+    "cpu_threads": 4,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-GKT_MHA-primary-42-e63b12ce3815"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "adf5b56b0405cab1cb8e28d4af0dd824b0ebe32b28688ea80f73019967e5b354",
+    "initial_cpu_rng_sha256": "2fa2a0cb41ee30583a0df42b8586939313439319d4fa2ea8898fae1b01d6e0b3",
+    "trajectory": [
+      {
+        "probabilities": "de9dcc0dfd50e5c3980a8de1c147c9c2b77b6c77d861b380609057b756443cff",
+        "gradients": "596ab4ed18b777f6773f9ae29d8d7685eabc0a2cc94911dd230c46c6bf74e7f4",
+        "parameters": "00d9efa2304402dcfc2e1f49ff88db24c42ebc9521d753d23bc81988495b4679",
+        "cuda_rng": "da56eca31c34c39bf151e5d42acdaf5f9286b8ae0549df329161f53ccc2b31b6"
+      },
+      {
+        "probabilities": "96566799df6f8057eba830a5141b8d10938d0710b558b092bcf9604af8aa2ef0",
+        "gradients": "b808f030691a2e551d9d96a3a71a8a856543f6ee5597e4ba60091fdbcc7fa842",
+        "parameters": "95b5a49e0333550fa3db1cd9f0d410d87ae1758462daa2b663fc65626a1d9075",
+        "cuda_rng": "de81b62cda1dc372f466d88183fd52ca9817807eca5d8e2b6bcbc03a28fdfd56"
+      },
+      {
+        "probabilities": "eec5bfdf467d142caf426ee0db30533aeac29fd2f89a1c3ce3f50f150d16cc17",
+        "gradients": "eb81d5784c319a74a59ba8617dd332aa3b4d092233afdb397bdfb46009992dcb",
+        "parameters": "f23a4ddf0ea2732d63ae47272e92c0278a26188dd701b537b4b9e45df41c6e4f",
+        "cuda_rng": "2decee4f7b6244566b639384828fc2ff38fe00806decc0bac248fd4e7659e749"
+      },
+      {
+        "probabilities": "d8be85c0b782ff1ccfc8d7f020c0c7884a3acc777c71ca699529b9399182329b",
+        "gradients": "ed91b8ff37af2002ddaee1555fdaca422019cdf0a82c9bb293bbb2524f0b418f",
+        "parameters": "67619db2c9d1478ca689f9ce472a0ff51b5d6a9b39d11891eaae3455fd76b661",
+        "cuda_rng": "4c68923ff1c2401061033672212cd25e24a2cd5e89de6751cf7868c7075283d6"
+      },
+      {
+        "probabilities": "30e2666497ea47770d83f4673c3c04988a0b08ea25f04e1968bb860747617702",
+        "gradients": "cf09d509a344cef358546471a1f9d26d59835ed8d2ed34f0d5560c66cdfd12c6",
+        "parameters": "f1463687c59383e9f49423eb61cb3873dcaa87a4536325bb282ea36fd89ff004",
+        "cuda_rng": "1da73b0c8545665bd393386e7a8d98239f97e56a2f7457221c5f89d7fd7de21b"
+      }
+    ],
+    "timed_steps": [
+      0.3322372999973595,
+      0.3334555019973777,
+      0.3341088810120709
+    ],
+    "mean_step_seconds": 0.3332672276689361,
+    "peak_reserved_bytes": 624951296,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.0
+  },
+  {
+    "case": "ASSIST2009-GKT_MHA-primary",
+    "dataset": "ASSIST2009",
+    "model": "GKT_MHA",
+    "cpu_threads": 1,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-GKT_MHA-primary-42-e63b12ce3815"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "adf5b56b0405cab1cb8e28d4af0dd824b0ebe32b28688ea80f73019967e5b354",
+    "initial_cpu_rng_sha256": "2fa2a0cb41ee30583a0df42b8586939313439319d4fa2ea8898fae1b01d6e0b3",
+    "trajectory": [
+      {
+        "probabilities": "de9dcc0dfd50e5c3980a8de1c147c9c2b77b6c77d861b380609057b756443cff",
+        "gradients": "596ab4ed18b777f6773f9ae29d8d7685eabc0a2cc94911dd230c46c6bf74e7f4",
+        "parameters": "00d9efa2304402dcfc2e1f49ff88db24c42ebc9521d753d23bc81988495b4679",
+        "cuda_rng": "da56eca31c34c39bf151e5d42acdaf5f9286b8ae0549df329161f53ccc2b31b6"
+      },
+      {
+        "probabilities": "96566799df6f8057eba830a5141b8d10938d0710b558b092bcf9604af8aa2ef0",
+        "gradients": "b808f030691a2e551d9d96a3a71a8a856543f6ee5597e4ba60091fdbcc7fa842",
+        "parameters": "95b5a49e0333550fa3db1cd9f0d410d87ae1758462daa2b663fc65626a1d9075",
+        "cuda_rng": "de81b62cda1dc372f466d88183fd52ca9817807eca5d8e2b6bcbc03a28fdfd56"
+      },
+      {
+        "probabilities": "eec5bfdf467d142caf426ee0db30533aeac29fd2f89a1c3ce3f50f150d16cc17",
+        "gradients": "eb81d5784c319a74a59ba8617dd332aa3b4d092233afdb397bdfb46009992dcb",
+        "parameters": "f23a4ddf0ea2732d63ae47272e92c0278a26188dd701b537b4b9e45df41c6e4f",
+        "cuda_rng": "2decee4f7b6244566b639384828fc2ff38fe00806decc0bac248fd4e7659e749"
+      },
+      {
+        "probabilities": "d8be85c0b782ff1ccfc8d7f020c0c7884a3acc777c71ca699529b9399182329b",
+        "gradients": "ed91b8ff37af2002ddaee1555fdaca422019cdf0a82c9bb293bbb2524f0b418f",
+        "parameters": "67619db2c9d1478ca689f9ce472a0ff51b5d6a9b39d11891eaae3455fd76b661",
+        "cuda_rng": "4c68923ff1c2401061033672212cd25e24a2cd5e89de6751cf7868c7075283d6"
+      },
+      {
+        "probabilities": "30e2666497ea47770d83f4673c3c04988a0b08ea25f04e1968bb860747617702",
+        "gradients": "cf09d509a344cef358546471a1f9d26d59835ed8d2ed34f0d5560c66cdfd12c6",
+        "parameters": "f1463687c59383e9f49423eb61cb3873dcaa87a4536325bb282ea36fd89ff004",
+        "cuda_rng": "1da73b0c8545665bd393386e7a8d98239f97e56a2f7457221c5f89d7fd7de21b"
+      }
+    ],
+    "timed_steps": [
+      0.3387122419953812,
+      0.5255576960043982,
+      0.3385738829965703
+    ],
+    "mean_step_seconds": 0.40094794033211656,
+    "peak_reserved_bytes": 624951296,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 0.8311982533016166
+  },
+  {
+    "case": "ASSIST2009-GKT_MHA-primary",
+    "dataset": "ASSIST2009",
+    "model": "GKT_MHA",
+    "cpu_threads": 2,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-GKT_MHA-primary-42-e63b12ce3815"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "adf5b56b0405cab1cb8e28d4af0dd824b0ebe32b28688ea80f73019967e5b354",
+    "initial_cpu_rng_sha256": "2fa2a0cb41ee30583a0df42b8586939313439319d4fa2ea8898fae1b01d6e0b3",
+    "trajectory": [
+      {
+        "probabilities": "de9dcc0dfd50e5c3980a8de1c147c9c2b77b6c77d861b380609057b756443cff",
+        "gradients": "596ab4ed18b777f6773f9ae29d8d7685eabc0a2cc94911dd230c46c6bf74e7f4",
+        "parameters": "00d9efa2304402dcfc2e1f49ff88db24c42ebc9521d753d23bc81988495b4679",
+        "cuda_rng": "da56eca31c34c39bf151e5d42acdaf5f9286b8ae0549df329161f53ccc2b31b6"
+      },
+      {
+        "probabilities": "96566799df6f8057eba830a5141b8d10938d0710b558b092bcf9604af8aa2ef0",
+        "gradients": "b808f030691a2e551d9d96a3a71a8a856543f6ee5597e4ba60091fdbcc7fa842",
+        "parameters": "95b5a49e0333550fa3db1cd9f0d410d87ae1758462daa2b663fc65626a1d9075",
+        "cuda_rng": "de81b62cda1dc372f466d88183fd52ca9817807eca5d8e2b6bcbc03a28fdfd56"
+      },
+      {
+        "probabilities": "eec5bfdf467d142caf426ee0db30533aeac29fd2f89a1c3ce3f50f150d16cc17",
+        "gradients": "eb81d5784c319a74a59ba8617dd332aa3b4d092233afdb397bdfb46009992dcb",
+        "parameters": "f23a4ddf0ea2732d63ae47272e92c0278a26188dd701b537b4b9e45df41c6e4f",
+        "cuda_rng": "2decee4f7b6244566b639384828fc2ff38fe00806decc0bac248fd4e7659e749"
+      },
+      {
+        "probabilities": "d8be85c0b782ff1ccfc8d7f020c0c7884a3acc777c71ca699529b9399182329b",
+        "gradients": "ed91b8ff37af2002ddaee1555fdaca422019cdf0a82c9bb293bbb2524f0b418f",
+        "parameters": "67619db2c9d1478ca689f9ce472a0ff51b5d6a9b39d11891eaae3455fd76b661",
+        "cuda_rng": "4c68923ff1c2401061033672212cd25e24a2cd5e89de6751cf7868c7075283d6"
+      },
+      {
+        "probabilities": "30e2666497ea47770d83f4673c3c04988a0b08ea25f04e1968bb860747617702",
+        "gradients": "cf09d509a344cef358546471a1f9d26d59835ed8d2ed34f0d5560c66cdfd12c6",
+        "parameters": "f1463687c59383e9f49423eb61cb3873dcaa87a4536325bb282ea36fd89ff004",
+        "cuda_rng": "1da73b0c8545665bd393386e7a8d98239f97e56a2f7457221c5f89d7fd7de21b"
+      }
+    ],
+    "timed_steps": [
+      0.39799193901126273,
+      0.45068141899537295,
+      0.46625299099832773
+    ],
+    "mean_step_seconds": 0.4383087830016545,
+    "peak_reserved_bytes": 624951296,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 0.7603480482107475
+  },
+  {
+    "case": "ASSIST2015-GKT-primary",
+    "dataset": "ASSIST2015",
+    "model": "GKT",
+    "cpu_threads": 4,
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-GKT-primary-42-c3a67383f961"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "8ac6fa77fe24ce5862aeab4c1c641036a036ebaba5b84a411672e761c5399afd",
+    "initial_cpu_rng_sha256": "ea16eb931f3bd95cf4e6647b12567ae7cd2fbcd08740685664e92aa1a53f2513",
+    "trajectory": [
+      {
+        "probabilities": "68aba91bf7e0cfe186e6ca4f9b7fa0e372c8170c3c659672a9fceb8224e1748f",
+        "gradients": "96f84986f7edc0f5cf0e0248f45921cbca34671b5db38306c302dd391e8fe192",
+        "parameters": "8732814c04840c707a7eb818052cef32f7051c9535f19107c4dd1d1942fdeeff",
+        "cuda_rng": "2decee4f7b6244566b639384828fc2ff38fe00806decc0bac248fd4e7659e749"
+      },
+      {
+        "probabilities": "45c6a3d4e5d49132c30feab6282e90f7e95f73bd0457dbb54bd35b99b8dcfffc",
+        "gradients": "9407164e28a8fdb781ed48b6f593f76f72428e28e6dee0c71c7b85183ea423f0",
+        "parameters": "7fa031bb3d777370ed518f69b237dc7ee9e853388c8d435038fd47016b81da37",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "d20feb76cdeffcd2817a27db8826b85d83458331dc16ff4dbd4467b5354d584b",
+        "gradients": "93a244133896ad76d2657b6a7b38aff7ae33c135398d84d5fac048a44551d8b9",
+        "parameters": "9939229ea404aca2aed4861ab99e13f83b6ed0f14b4dd5aaa5ca6f682c87295d",
+        "cuda_rng": "2c3fdf26dd5f7083ff9d3d8ecc8746c35a35c464e5a4639fba025c552f2e771a"
+      },
+      {
+        "probabilities": "35c95053f423b92267180198db20d8d1f457495ab37009110df249016d1e097b",
+        "gradients": "47d88622969cb7baf3d385b9130824cd7bf147119c25b871559bb0997b4af867",
+        "parameters": "549e8ce4d2ac1c76d6343b2114db3414f5222f97847e68026016f12a77a9c4be",
+        "cuda_rng": "fc6a851eeaac90edaba4a88bb5beddec12cc014fc832c65a87a76c0d24349edd"
+      },
+      {
+        "probabilities": "45134af2f7914a3c7f1f92c7ec6d3c67846c59012cef023738bf2d3a3fffa6fd",
+        "gradients": "7e6134a8d9590aabc5ad7fc42c3c4c1c3563106c52fc5806ac629fbc37818808",
+        "parameters": "e3f15603aadba538dae2b6859be50373189d32bc93d5dd8d3bbd54cf63eeb5d2",
+        "cuda_rng": "be0f92297cb49b63c803302eb6a3d27333c70f3d345724cd4f40f24d25bda66e"
+      }
+    ],
+    "timed_steps": [
+      0.31927590499981306,
+      0.35815975299919955,
+      0.43815817098948173
+    ],
+    "mean_step_seconds": 0.37186460966283147,
+    "peak_reserved_bytes": 624951296,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.0
+  }
+]

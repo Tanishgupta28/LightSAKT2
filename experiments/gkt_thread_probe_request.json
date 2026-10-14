@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "purpose": "Bounded FP32 CPU dispatch-thread profiling and exact initialization/gradient/update/RNG checks for both GKT variants",
+  "activation": "Exclusive GPU-free completed-run boundary; no signals to healthy training",
+  "enable_execution_change_automatically": false,
+  "scientific_scope_reduced": false
+}

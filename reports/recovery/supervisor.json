@@ -1,0 +1,68 @@
+{
+  "observed_utc": "2026-10-14T17:30:07.003853+00:00",
+  "supervisor_pid": 802503,
+  "completed": 686,
+  "remaining": 271,
+  "processes": [
+    {
+      "pid": 49211,
+      "module": "scripts.offsite",
+      "watchdog": false
+    },
+    {
+      "pid": 78472,
+      "module": "scripts.schedule",
+      "watchdog": false
+    },
+    {
+      "pid": 182135,
+      "module": "scripts.run",
+      "watchdog": false
+    },
+    {
+      "pid": 185610,
+      "module": "scripts.progressive",
+      "watchdog": false
+    },
+    {
+      "pid": 191761,
+      "module": "scripts.coordinator",
+      "watchdog": false
+    },
+    {
+      "pid": 203682,
+      "module": "scripts.active_recovery",
+      "watchdog": false
+    },
+    {
+      "pid": 212401,
+      "module": "scripts.preserve",
+      "watchdog": false
+    },
+    {
+      "pid": 508657,
+      "module": "scripts.eta",
+      "watchdog": false
+    },
+    {
+      "pid": 800469,
+      "module": "scripts.run",
+      "watchdog": false
+    },
+    {
+      "pid": 802503,
+      "module": "scripts.recover",
+      "watchdog": true
+    }
+  ],
+  "controller_present": true,
+  "gpu_worker_present": true,
+  "start_scheduler": false,
+  "start_finalizer": false,
+  "leave_healthy_training_untouched": true,
+  "launched": [],
+  "automatic_platform_restart": false,
+  "limitation": "A platform startup hook must invoke scripts/resume_research.sh after replacement; RBAC/startup access is unavailable",
+  "signals_sent": 0,
+  "completed_training_restarted": false
+}

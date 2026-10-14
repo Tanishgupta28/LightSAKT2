@@ -1,0 +1,20 @@
+{
+  "checked_utc": "2026-10-14T17:27:32.218511+00:00",
+  "pid1_program": "jupyter-lab",
+  "systemd_running": false,
+  "cron_available": false,
+  "supervisord_available": false,
+  "supported_platform_startup_hook_found": false,
+  "serviceaccount_permission_checks": {
+    "get_current_pod": false,
+    "exec_current_pod": false,
+    "get_deployments": false,
+    "patch_deployments": false,
+    "create_cronjobs": false
+  },
+  "current_pod_read_http_status": 403,
+  "automatic_platform_restart_configured": false,
+  "credentials_recorded": false,
+  "workspace_filesystem": "NFS",
+  "retention_after_deprovisioning_verified": false
+}

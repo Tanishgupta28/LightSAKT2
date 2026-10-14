@@ -16,7 +16,7 @@ def snapshot(root=Path('.')):
         jobs.append({**job, **saved})
     counts = dict(Counter(j['status'] for j in jobs))
     live = {}
-    for name in ['scheduler', 'preservation', 'eta', 'offsite', 'coordinator', 'progressive', 'active_recovery']:
+    for name in ['scheduler', 'preservation', 'eta', 'offsite', 'coordinator', 'progressive', 'active_recovery','recovery_supervisor']:
         pidfile = root / f'experiments/{name}.pid'
         pid = int(pidfile.read_text()) if pidfile.exists() else None
         try:
@@ -24,7 +24,7 @@ def snapshot(root=Path('.')):
             command = Path(f'/proc/{pid}/cmdline').read_bytes().replace(b'\0', b' ').decode()
             expected = {'scheduler':'scripts.schedule','preservation':'scripts.preserve',
                         'eta':'scripts.eta','offsite':'scripts.offsite','coordinator':'scripts.coordinator',
-                        'progressive':'scripts.progressive','active_recovery':'scripts.active_recovery'}[name]
+                        'progressive':'scripts.progressive','active_recovery':'scripts.active_recovery','recovery_supervisor':'scripts.recover'}[name]
             live[name] = {'pid': pid, 'alive': stat != 'Z' and expected in command}
         except (FileNotFoundError, ProcessLookupError):
             live[name] = {'pid': pid, 'alive': False}
