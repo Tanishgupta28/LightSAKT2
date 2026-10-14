@@ -114,7 +114,7 @@ def verify_ablations_between_runs():
     status=Path('reports/ablation_gpu_verification_status.json')
     prior=json.load(open(status)).get('status') if status.exists() else None
     if prior=='failed':return
-    if prior=='completed' and Path('reports/ablation_cpu_gpu_ranking_diagnostic.json').exists():return
+    if prior=='completed' and Path('reports/ablation_cpu_gpu_ranking_diagnostic.json').exists() and Path('reports/light_grid_inference_verification.json').exists():return
     from scripts.recover import available_lock
     with available_lock('experiments/ablation_verification.lock') as owner:
         if not owner:return
@@ -128,8 +128,11 @@ def verify_ablations_between_runs():
                     child=subprocess.Popen(['python','-u','-m','scripts.verify_selected_inference','--models','LightSAKT',
                         '--groups','ablation','--device','cuda'],stdout=output,stderr=subprocess.STDOUT)
                     code=child.wait()
-                if code==0:
+                if code==0 and not Path('reports/ablation_cpu_gpu_ranking_diagnostic.json').exists():
                     code=subprocess.run(['python','-u','-m','scripts.diagnose_ablation_ranking'],stdout=output,stderr=subprocess.STDOUT).returncode
+                grid=Path('reports/light_grid_inference_verification.json')
+                if code==0 and (not grid.exists() or not json.load(open(grid)).get('verified')):
+                    code=subprocess.run(['python','-u','-m','scripts.verify_light_grid_inference'],stdout=output,stderr=subprocess.STDOUT).returncode
             write_json(status,{'status':'completed' if code==0 else 'failed','exit_code':code,'log':str(log),
                               'healthy_training_interrupted':False})
             log=Path('reports/profiling/gkt_threads/probe.log');log.parent.mkdir(parents=True,exist_ok=True)

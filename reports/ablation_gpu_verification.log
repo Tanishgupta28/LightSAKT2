@@ -71,3 +71,25 @@ Algebra2005-LightSAKT-single_head-3407: cuda validation/test verified in 0.335s
 Algebra2005-LightSAKT-single_head-42: cuda validation/test verified in 0.335s
 Algebra2005-LightSAKT-single_head-7777: cuda validation/test verified in 0.338s
 Verified completed inference records: 145
+{
+  "verified": true,
+  "verified_utc": "2026-10-14T17:58:06.335923+00:00",
+  "run_id": "ASSIST2009-LightSAKT-no_position-123",
+  "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_position-123/best.pt",
+  "checkpoint_sha256": "1a44392fbda9f858ad05e453d7740df0e28fe69730b93c1714d76a8ec1968ba9",
+  "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+  "training_git_commit": "6c2ee003eeeec3f1aa44cc04e287350051d46e4d",
+  "cpu_validation_auc": 0.7498460235099204,
+  "gpu_validation_auc": 0.7498434870263341,
+  "cpu_minus_gpu_auc": 2.5364835862795587e-06,
+  "maximum_probability_difference": 2.384185791015625e-07,
+  "near_tie_positive_negative_pairs": 6794,
+  "auc_rank_uncertainty_bound": 4.0547928200206735e-05,
+  "gpu_metrics_exactly_match_original": true,
+  "probability_atol": 1e-06,
+  "probability_rtol": 1e-06,
+  "cpu_metric_tolerance_relaxed": false,
+  "experimental_metrics_changed": false,
+  "explanation": "AUC is discontinuous at score ties. Only pairs within twice the measured probability difference can change ordering; the observed AUC difference lies within that measured pair bound."
+}
+Independently verified LightSAKT validation grid checkpoints: 108
