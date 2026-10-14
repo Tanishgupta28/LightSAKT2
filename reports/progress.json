@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-10-14T01:41:09.191038+00:00",
+  "updated_utc": "2026-10-14T01:41:49.888159+00:00",
   "total_slots": 957,
-  "completed": 171,
-  "remaining": 786,
+  "completed": 172,
+  "remaining": 785,
   "counts": {
-    "completed": 171,
-    "pending": 785,
+    "completed": 172,
+    "pending": 784,
     "running": 1
   },
   "processes": {
@@ -40,10 +40,10 @@
   },
   "running_jobs": [
     {
-      "run_id": "ASSIST2015-LightSAKT-grid-42-b39fa45105b4",
-      "last_completed_epoch": 7,
-      "best_checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-b39fa45105b4/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-LightSAKT-grid-42-b39fa45105b4/config.json"
+      "run_id": "ASSIST2015-LightSAKT-grid-42-b529d6901c60",
+      "last_completed_epoch": 8,
+      "best_checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-b529d6901c60/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-LightSAKT-grid-42-b529d6901c60/config.json"
     }
   ],
   "phase_counts": {
@@ -51,8 +51,8 @@
       "completed": 21
     },
     "6": {
-      "completed": 150,
-      "pending": 605,
+      "completed": 151,
+      "pending": 604,
       "running": 1
     },
     "7": {
