@@ -1,0 +1,29 @@
+{
+  "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-098d81f09fe4",
+  "dataset": "ASSIST2015",
+  "model": "DKT+",
+  "seed": 42,
+  "group": "baseline_tuning",
+  "validation": {
+    "auc": 0.7151210061939604,
+    "auc_reason": null,
+    "accuracy": 0.7485850817591279,
+    "f1": 0.8451862068965518,
+    "mse": 0.18522830235548143,
+    "bce": 0.5541500131791148,
+    "n_targets": 66965
+  },
+  "best_epoch": 10,
+  "epochs_trained": 15,
+  "training_seconds": 23.58346262399573,
+  "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-098d81f09fe4/best.pt",
+  "checkpoint_sha256": "5f25d7306b9d662fb92230993cb08b72e65f25e2d516b4bea3549af712be5086",
+  "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+  "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+  "git_commit": "c487ef2c1b35ed10b69a51486bc20c682dd8f636",
+  "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "parameters": 170981,
+  "peak_allocated_bytes": 190511616,
+  "peak_reserved_bytes": 211812352,
+  "test": null
+}
