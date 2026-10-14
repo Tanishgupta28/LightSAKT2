@@ -41,7 +41,11 @@ These configurations maximize validation AUC among all 36 prespecified candidate
 |ASSIST2015|DKT|5|0.728235 ± 0.000327|0.749869 ± 0.000281|0.845662 ± 0.000528|0.182124 ± 0.000394|0.547349 ± 0.001032|
 |ASSIST2015|DKT+|5|0.720802 ± 0.001036|0.745974 ± 0.000619|0.842588 ± 0.000766|0.187262 ± 0.000415|0.559082 ± 0.001053|
 |ASSIST2015|LightSAKT|5|0.726088 ± 0.000315|0.749526 ± 0.000419|0.846282 ± 0.000392|0.171233 ± 0.000106|0.516098 ± 0.000340|
+|ASSIST2015|SAKT|5|0.725180 ± 0.000258|0.749418 ± 0.000386|0.846664 ± 0.000609|0.171635 ± 0.000129|0.517255 ± 0.000332|
+|Algebra2005|DKT|5|0.822181 ± 0.000683|0.800524 ± 0.001175|0.872422 ± 0.000891|0.149683 ± 0.000862|0.466820 ± 0.002433|
+|Algebra2005|DKT+|5|0.823456 ± 0.000649|0.801094 ± 0.000253|0.872982 ± 0.000347|0.152382 ± 0.000488|0.474735 ± 0.001334|
 |Algebra2005|LightSAKT|5|0.810590 ± 0.000422|0.795574 ± 0.000639|0.870356 ± 0.000350|0.144069 ± 0.000364|0.445272 ± 0.001018|
+|Algebra2005|SAKT|2|0.813603 ± 0.000023|0.795970 ± 0.000547|0.870893 ± 0.000702|0.143342 ± 0.000110|0.442934 ± 0.000006|
 
 Means summarize every completed prespecified seed. Sample standard deviations and Student-t intervals describe conditional initialization variability on one fixed student split; they do not measure new-student sampling uncertainty. Partial seed counts are not complete five-seed results.
 
@@ -50,6 +54,9 @@ ASSIST2009: LightSAKT mean test AUC minus DKT+ was -0.000146 across the five pre
 ASSIST2009: LightSAKT mean test AUC minus SAKT was +0.000734 across the five prespecified seeds (Table 7).
 ASSIST2015: LightSAKT mean test AUC minus DKT was -0.002146 across the five prespecified seeds (Table 7).
 ASSIST2015: LightSAKT mean test AUC minus DKT+ was +0.005287 across the five prespecified seeds (Table 7).
+ASSIST2015: LightSAKT mean test AUC minus SAKT was +0.000909 across the five prespecified seeds (Table 7).
+Algebra2005: LightSAKT mean test AUC minus DKT was -0.011592 across the five prespecified seeds (Table 7).
+Algebra2005: LightSAKT mean test AUC minus DKT+ was -0.012866 across the five prespecified seeds (Table 7).
 
 ## Ablations and paired inference
 

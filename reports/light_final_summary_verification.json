@@ -1,15 +1,15 @@
 {
   "verified": true,
-  "verified_utc": "2026-10-14T05:14:17.346797+00:00",
+  "verified_utc": "2026-10-14T05:19:48.761739+00:00",
   "light_final_seed_slots": 15,
   "summary_method": "Five prespecified seeds; arithmetic mean and sample SD; saved metrics independently recomputed",
-  "completed_five_seed_baseline_comparisons": 5,
+  "completed_five_seed_baseline_comparisons": 8,
   "fresh_primary_baseline_comparisons": 18,
   "partial_final_baselines_excluded": [
     {
-      "dataset": "ASSIST2015",
+      "dataset": "Algebra2005",
       "model": "SAKT",
-      "completed_seeds": 1,
+      "completed_seeds": 4,
       "scope": "Excluded from final comparison until all five seeds finish"
     }
   ],
@@ -626,6 +626,58 @@
       "test_metrics_recomputed_from_saved_predictions": true
     },
     {
+      "run_id": "ASSIST2015-SAKT-final-2026",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "seed": 2026,
+      "checkpoint_sha256": "4bb9a9fdbbe0a5b574387d674a4b4b2117a8cd7b235a3da2cebb98c377610ca4",
+      "prediction_sha256": "78fd09a6179454678444727be810b00c088cc862bb31cbfe00defd98029057ae",
+      "metrics_sha256": "88f0aaf3c78e736d60904bac03eb5e2294b0e75eb00375c05870961f61cb21d3",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-final-3407",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "seed": 3407,
+      "checkpoint_sha256": "095bdf2de11bd7f0a947973ffe9dfb6dd754606be555edc541fd2a8abb0d7685",
+      "prediction_sha256": "f94672fb8819cb0284cb9be476e7659676a2c9b151758f5493dfd332549ea266",
+      "metrics_sha256": "53bc6e1f195ffca6dde8d1f0aea876c591389f6c772778618862d6f5afa8de69",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-final-42",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "seed": 42,
+      "checkpoint_sha256": "d5a6980a25bb9dc689f4298a476757d5c3808dcecf650619d38b0f4dc3fe1c1c",
+      "prediction_sha256": "ac91ff238d292564389e76df9d9e0c21e98d1a02c021dbe616d9f8c4a4bfec3b",
+      "metrics_sha256": "6e54a995373f27d3a95f0bb231c5bfed59cc72f7981cc06e1b4d5a9db8a3a6b2",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-final-7777",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "seed": 7777,
+      "checkpoint_sha256": "a057445f3eeeb02f771f17433bab119dd526bbec92a34970d22e2a0c1b7a908a",
+      "prediction_sha256": "d1b7237408584d962303f059230e65528e452e3a682eb3b917122e3d536ec6be",
+      "metrics_sha256": "53d4b92432df92ac9e712dfa41ae66be8d8304c8eadf492024156ed50fe5a05f",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
       "run_id": "ASSIST2015-SAKT-primary-42-c67b62d42456",
       "group": "primary",
       "dataset": "ASSIST2015",
@@ -635,6 +687,136 @@
       "prediction_sha256": "2d662063c8ee64fa6d553ba81cd9607b07887b7e59f62780ebc4ad164d3d3027",
       "metrics_sha256": "538e477f929acebe1e0dc21a110402e7da502ac571aad127b94f7b89a7346548",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "Algebra2005-DKT+-final-123",
+      "group": "final",
+      "dataset": "Algebra2005",
+      "model": "DKT+",
+      "seed": 123,
+      "checkpoint_sha256": "a51dd6153cf50c30788e812241da5699d772bf3069fe75b83d65a0539d55583e",
+      "prediction_sha256": "84d4462717bd639098a0586bd24f9e170941e32f2b481bfc237fec00ee91861f",
+      "metrics_sha256": "5a10af5a81137cd657e7257312ba3ef054a07322328f3de18bfbaa9c79c453c4",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "Algebra2005-DKT+-final-2026",
+      "group": "final",
+      "dataset": "Algebra2005",
+      "model": "DKT+",
+      "seed": 2026,
+      "checkpoint_sha256": "a10cfb122ba728a8fdfe7ea228649af6318c02c21fed01eff69537ff6d6e624f",
+      "prediction_sha256": "2e5f1805aaa629903f99a383e3495f913fc28f7be683966d3e6d378bb7399233",
+      "metrics_sha256": "5ee5ef95178e7fc6b5734bf707ebb2fb1f02b2e4c134da12d01ef6d414276acc",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "Algebra2005-DKT+-final-3407",
+      "group": "final",
+      "dataset": "Algebra2005",
+      "model": "DKT+",
+      "seed": 3407,
+      "checkpoint_sha256": "2624968a63c5a8c0161304996383ce87c6202977aeec988007110aaa08c424fb",
+      "prediction_sha256": "cafd4682178ef5dbe6c18b032b00ea8af2d988132d7aa57505ce8b1e5446ca98",
+      "metrics_sha256": "ecb25d3e95727aa7342c25e4ab45ffb5e40169a20e736970d9f0fb77cf9fab83",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "Algebra2005-DKT+-final-42",
+      "group": "final",
+      "dataset": "Algebra2005",
+      "model": "DKT+",
+      "seed": 42,
+      "checkpoint_sha256": "2aa469292085dd73256c9112222ff77e4de395dc636d1b1ae3ca422a91e75828",
+      "prediction_sha256": "c5a12061dbf5c115587f999ea0d86bea4025ad5c8f0ad045b6e56ddbdb4416a5",
+      "metrics_sha256": "1ab1b2756f08c29df9a17301ab7c01e88705a9f4faeea7320349c54a728dbe28",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "Algebra2005-DKT+-final-7777",
+      "group": "final",
+      "dataset": "Algebra2005",
+      "model": "DKT+",
+      "seed": 7777,
+      "checkpoint_sha256": "610bacc7e06bbe514271af46a7c51fea64ea6e71e1f19bfc18d6d2800582a22d",
+      "prediction_sha256": "360ead2eddea2676c93ae7698209283e5daa17a9a203e25316a279e5d1b23c7f",
+      "metrics_sha256": "e44e21adf4f5e12f0fc6d886ca9689196028d088eb48485cf764cca8b82b9f99",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "Algebra2005-DKT-final-123",
+      "group": "final",
+      "dataset": "Algebra2005",
+      "model": "DKT",
+      "seed": 123,
+      "checkpoint_sha256": "d43d3024cb251e3f56888ba21935335a52eda67d8d138ccb0b521984afdf0305",
+      "prediction_sha256": "7e76bff013eaad87338b680e0c69add415bf16e8dce8d7845d8675889fd6b842",
+      "metrics_sha256": "7a44441c85b565b7c81e36c5003427d6365b76a3c0202ebf19ce93a95dad6107",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "Algebra2005-DKT-final-2026",
+      "group": "final",
+      "dataset": "Algebra2005",
+      "model": "DKT",
+      "seed": 2026,
+      "checkpoint_sha256": "5c0f564dbd6087b6d2ca0262ba8346c4cd5e7f136913d2011e67490d98644312",
+      "prediction_sha256": "f9048d39c2c76af48918aed9ba77d5a3c56979e854299a2ca48cfb2a0b76daf2",
+      "metrics_sha256": "374772f013afd59cd85b851bc58727ae5f407d6936486b398953dda89af8e140",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "Algebra2005-DKT-final-3407",
+      "group": "final",
+      "dataset": "Algebra2005",
+      "model": "DKT",
+      "seed": 3407,
+      "checkpoint_sha256": "d8ec5ef4fae2c79cfbee38f5bf52399f6c6b4e6c2ed87a7ac49c95137122ae1a",
+      "prediction_sha256": "56bdc09de77fd2c1153975dcbc6e43bd498cc1a786eb45bdb83b7825e18908b1",
+      "metrics_sha256": "e957d3ccf626d1fe876f7f4e77e5777dab7f69e5e56292f258aa4ab2f2a38e7f",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "Algebra2005-DKT-final-42",
+      "group": "final",
+      "dataset": "Algebra2005",
+      "model": "DKT",
+      "seed": 42,
+      "checkpoint_sha256": "ebbd778f87f3acd7116384333c07dfdd5eacbea1ef89b359d4c004f6e176b9a4",
+      "prediction_sha256": "c8abc2ab1d9cc9814fedd97521ba13f279e90099da22115cf9509037e3cf3320",
+      "metrics_sha256": "6575a27e499954b2179ba4247d774ae6afccdfe7f928a232f35b0c061d7e3824",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "Algebra2005-DKT-final-7777",
+      "group": "final",
+      "dataset": "Algebra2005",
+      "model": "DKT",
+      "seed": 7777,
+      "checkpoint_sha256": "6ac43d1656d1eb3b1da9192bb378b80a57970f960c71bfaa8628675a483344a9",
+      "prediction_sha256": "221ca2e700fee8c9257afa7e9b1f31d0ed9dd6fb3e29c33096c5efbea3559a51",
+      "metrics_sha256": "38b9b9d9e2c524745c51a9ffedf99877915348fb78bdbdbb377ade57c58ea8e0",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
       "test_metrics_recomputed_from_saved_predictions": true
     },
@@ -769,6 +951,58 @@
       "test_metrics_recomputed_from_saved_predictions": true
     },
     {
+      "run_id": "Algebra2005-SAKT-final-123",
+      "group": "final",
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "seed": 123,
+      "checkpoint_sha256": "8791975938e063f83c26698d4f1e55142f1485ee8759058c233c50fa341f604c",
+      "prediction_sha256": "305f96d6b1b5395397daf0a048f5fa1670ce22c3fdac734b85773338e91418b6",
+      "metrics_sha256": "3656ed3fba8741eeb21fee0ee0d47e78a0d696ea9a5fb8dd7ebb610370018004",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "Algebra2005-SAKT-final-2026",
+      "group": "final",
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "seed": 2026,
+      "checkpoint_sha256": "e8a522c23975aababc190817cd7465aefdb63655a445c68c43bedbf9448fa429",
+      "prediction_sha256": "f36bc19fb3df431bce118db25d448b1880ac3149d73e680e679ae40ec646eb13",
+      "metrics_sha256": "96efc70b739947ca3e3b584db884d8e9dc16ce7dad6018aa62cb1015ac1fe971",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "Algebra2005-SAKT-final-3407",
+      "group": "final",
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "seed": 3407,
+      "checkpoint_sha256": "2dff8a22f77c6a05e7c55a2419f67c1a6fab31b39a821e27699a12577c88794f",
+      "prediction_sha256": "f4bd03b1aab56e44cf9e1b27fd8c697a8c63248bfa1d91cd3c9ca59d3911cef1",
+      "metrics_sha256": "6f7a369188f6f5524f63103a370f01e79c9c4dd5a1f6389acefaf22ca6f1c7f0",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "Algebra2005-SAKT-final-42",
+      "group": "final",
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "seed": 42,
+      "checkpoint_sha256": "0420adc72834ffa11722acbd302aaa58824bdecf6819859316d3b864a0d5bb57",
+      "prediction_sha256": "b81021575392559140c13b38c187ae5d841743e396e1cfa354ca5b33bf4d8a1f",
+      "metrics_sha256": "70a71d6b51778d2693c3abb68d70312df363b6ab0b109629ac7655ec882158f6",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
       "run_id": "Algebra2005-SAKT-primary-42-67291648991d",
       "group": "primary",
       "dataset": "Algebra2005",
@@ -784,8 +1018,8 @@
   ],
   "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
   "eta_source": "reports/summary_eta/progressive/ETA.json",
-  "eta_source_sha256": "c29dcc80ccb3e2df38e33fa5c27ee004c23238b9b30789291577f022d7eb91ab",
-  "remaining_occupied_mig_hours": 389.1722797626177,
+  "eta_source_sha256": "f444b68a3cbbf8cb45d502e8d3496cd0649f9b99fe0d8b696627968a1aa34398",
+  "remaining_occupied_mig_hours": 389.1065880916167,
   "gkt_remaining_occupied_mig_hours": 372.3714161941859,
   "artifacts": [
     {
@@ -798,11 +1032,11 @@
     },
     {
       "path": "results/tables/LightSAKT_completed_baseline_comparisons.csv",
-      "sha256": "b47f94cf7fcdff9b0405a4b98785990534c471c2bea5e4a1abff976b00781d00"
+      "sha256": "8e8d9e754fb659675f2a7e6e3919d02f6c9159a62c565cc7220f280d92a66238"
     },
     {
       "path": "reports/LightSAKT_summary_ETA_by_model.csv",
-      "sha256": "2641c3ba56f5117ff363c43b4f1575b7d98d3b00660a1b5104a2f548d0851d66"
+      "sha256": "6cfbd77298a74142b92db9e138d9be09a25c30ddcc64bad83f05c63cd332d222"
     }
   ]
 }
