@@ -22,7 +22,12 @@ The GKT PAM and MHA rows refer to the corrected historical simplified implementa
 
 ## Matched final comparisons
 
-Final selected-configuration repeated-seed experiments are pending; primary single-seed results are recorded separately in FINAL_RESEARCH_REPORT.md.
+|dataset|model|completed_seeds|auc_mean|auc_std|accuracy_mean|f1_mean|mse_mean|bce_mean|
+|---|---|---|---|---|---|---|---|---|
+|ASSIST2009|LightSAKT|1|0.751549|pending|0.732309|0.817761|0.179955|0.537941|
+
+Means summarize every completed prespecified seed. Sample standard deviations and Student-t intervals describe conditional initialization variability on one fixed student split; they do not measure new-student sampling uncertainty. Partial seed counts are not complete five-seed results.
+
 
 ## Ablations and paired inference
 
