@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-14T01:35:26.993997+00:00",
-  "reason": "CalledProcessError: Command '['gh', 'release', 'upload', 'research-recovery-20261013', 'backups/completed_runs/ASSIST2015-LightSAKT-grid-42-a540855228ac.tar.gz', '--repo', 'Tanishgupta28/LightSAKT2']' returned non-zero exit status 1.",
+  "updated_utc": "2026-10-14T02:29:31.935895+00:00",
+  "reason": "CalledProcessError: Command '['gh', 'api', '-H', 'Accept: application/octet-stream', 'repos/Tanishgupta28/LightSAKT2/releases/assets/638958906']' returned non-zero exit status 1.",
   "local_backups_retained": true
 }

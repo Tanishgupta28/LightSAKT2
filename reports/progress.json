@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-10-14T02:28:27.907964+00:00",
+  "updated_utc": "2026-10-14T02:29:48.192907+00:00",
   "total_slots": 957,
-  "completed": 251,
-  "remaining": 706,
+  "completed": 254,
+  "remaining": 703,
   "counts": {
-    "completed": 251,
-    "pending": 705,
+    "completed": 254,
+    "pending": 702,
     "running": 1
   },
   "processes": {
@@ -40,10 +40,10 @@
   },
   "running_jobs": [
     {
-      "run_id": "ASSIST2009-LightSAKT-single_head-2026",
-      "last_completed_epoch": 26,
-      "best_checkpoint": "checkpoints/ASSIST2009-LightSAKT-single_head-2026/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-LightSAKT-single_head-2026/config.json"
+      "run_id": "ASSIST2009-LightSAKT-single_head-7777",
+      "last_completed_epoch": null,
+      "best_checkpoint": null,
+      "resume_command": null
     }
   ],
   "phase_counts": {
@@ -59,9 +59,9 @@
       "completed": 15
     },
     "8": {
-      "completed": 21,
-      "pending": 53,
-      "running": 1
+      "completed": 24,
+      "running": 1,
+      "pending": 50
     }
   },
   "reused_slots": 45,
