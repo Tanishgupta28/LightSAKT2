@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T03:50:54.595343+00:00",
-  "sample_time": 1791949853.873719,
+  "updated_utc": "2026-10-14T03:51:56.419403+00:00",
+  "sample_time": 1791949915.7655137,
   "counts": {
-    "completed": 383,
-    "pending": 573,
+    "completed": 385,
+    "pending": 571,
     "running": 1
   },
   "scheduler": {
@@ -12,9 +12,9 @@
   },
   "training_processes": [
     {
-      "pid": 417079,
-      "cpu_seconds": 26.45,
-      "process_state": "R",
+      "pid": 419044,
+      "cpu_seconds": 17.3,
+      "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
       "observed_seconds": 0.2,
@@ -23,15 +23,15 @@
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-169270b0ab91",
-      "last_completed_epoch": 11,
-      "best_checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-169270b0ab91/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-DKTplus-baseline_tuning-42-169270b0ab91/config.json",
-      "recent_mean_epoch_seconds": 1.5468603043991607,
-      "seconds_since_last_epoch": 0.0,
+      "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-1f3ce9740385",
+      "last_completed_epoch": 5,
+      "best_checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-1f3ce9740385/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-DKTplus-baseline_tuning-42-1f3ce9740385/config.json",
+      "recent_mean_epoch_seconds": 1.5781786601990462,
+      "seconds_since_last_epoch": 0.6735327243804932,
       "startup_epoch_seconds_extrapolated": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 4.640580913197482,
+      "stall_threshold_seconds": 4.734535980597139,
       "checkpoint_stalled": false
     }
   ],
@@ -42,5 +42,5 @@
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 383 independently downloaded/checksum verified; completed-archive synchronization False."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 385 independently downloaded/checksum verified; completed-archive synchronization True."
 }
