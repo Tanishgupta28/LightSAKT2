@@ -174,8 +174,10 @@ def estimate():
     concurrent_totals={};factor=1.
     if concurrency:
         valid=[r for r in concurrency if r['workers']==2 and r['exact_parameters_and_gradients']]
-        factor=statistics.mean(r['loop_throughput_speedup'] for r in valid) if valid else 1.
-        gkt=frame['model'].str.startswith('GKT')
+        # MHA benefits; wide PAM measured slower in parallel and remains serial.
+        mha=[r for r in valid if r['model']=='GKT_MHA']
+        factor=min(r['loop_throughput_speedup'] for r in mha) if mha else 1.
+        gkt=frame['model']=='GKT_MHA'
         for scenario,speed in [('low',max(1.,factor)),('central',max(1.,factor)),('high',1.)]:
             concurrent_totals[scenario]=float(frame.loc[~gkt,scenario+'_hours'].sum()+frame.loc[gkt,scenario+'_hours'].sum()/speed)
     record={'updated_utc':now.isoformat(),'counts':progress['counts'],'remaining_slots':progress['remaining'],
@@ -184,7 +186,7 @@ def estimate():
         'remaining_training_gpu_reserved_hours':totals,
         'two_worker_training_wall_hours':concurrent_totals,
         'two_worker_measured_throughput_speedup':factor,
-        'two_worker_estimate_limit':'Serial isolated-equivalent hours differ from MIG occupied wall hours. Independent two-worker GKT only; other models remain serial. Short-step throughput is extrapolated, not guaranteed. High scenario assumes no sustained concurrency benefit. Startup/test/analysis excluded. Aggregate worker elapsed-hours may increase under contention.',
+        'two_worker_estimate_limit':'Serial isolated-equivalent hours differ from MIG occupied wall hours. Two independent GKT-MHA workers only; PAM and other models remain serial. Use the smallest measured MHA throughput factor across tested datasets/widths. Wide PAM measured 0.90x and was rejected for parallel execution. Short-step throughput is extrapolated, not guaranteed. High scenario assumes no sustained benefit. Startup/test/analysis excluded. Aggregate worker elapsed-hours may increase under contention.',
         'conditional_training_finish_utc':{k:(now+timedelta(hours=v)).isoformat() for k,v in totals.items()},
         'wall_clock_assumption':'One current MIG worker remains continuously available; no outages or new paid resources.',
         'interpretation':'GPU reserved wall hours from end-to-end measured epochs, not hardware GPU-active time. Scenario envelope, not a statistical confidence interval or guaranteed bound.',

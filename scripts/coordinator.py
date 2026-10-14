@@ -74,7 +74,8 @@ def main():
             for job in sorted(pending,key=lambda j:(rank(j),j['run_id'])):
                 if job['run_id'] in processes:continue
                 name=model_name(job)
-                can_share=limit==2 and name.startswith('GKT') and all(model_name(j).startswith('GKT') for _,j in processes.values())
+                # Wide PAM is slower in parallel; admit only independent MHA workers.
+                can_share=limit==2 and name=='GKT_MHA' and all(model_name(j)=='GKT_MHA' for _,j in processes.values())
                 if len(processes)>=(2 if can_share else 1):continue
                 if not eligible(job,jobs):continue
                 job_file=Path('experiments/runtime_jobs')/(job['run_id']+'.json');write_json(job_file,job)
@@ -91,7 +92,7 @@ def main():
                 print('Started required run',job['run_id'],'PID',process.pid,flush=True)
         write_json('reports/optimization/coordinator_status.json',{'coordinator_pid':os.getpid(),'stopping':stop,
             'running':{run_id:process.pid for run_id,(process,_) in processes.items()},'scope':'complete 957-entry schedule; no scope reduction',
-            'worker_limit_gkt':limit,'worker_limit_other_models':1,'batch_sizes_unchanged':True})
+            'worker_limit_gkt_mha':limit,'worker_limit_gkt_pam':1,'worker_limit_other_models':1,'batch_sizes_unchanged':True})
         if not processes:
             unresolved=[j for j in jobs if j['status']!='completed']
             if unresolved:raise RuntimeError(f'{len(unresolved)} unresolved entries; inspect failures/dependencies; original scheduler will retain evidence')

@@ -24,6 +24,7 @@ def install(config):
             'configuration_unchanged':True}
         record['execution']['maximum_concurrent_gkt_workers']=int(os.environ.get('LIGHTSAKT_MAX_CONCURRENT_GKT','1'))
         record['execution']['coordinated_child']=bool(os.environ.get('LIGHTSAKT_COORDINATED_CHILD'))
+        record['execution']['parallel_admission']='GKT_MHA only; GKT PAM and other models serial'
         return record
     engine.Sequences=sequences;engine.environment=environment
 

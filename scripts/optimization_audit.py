@@ -54,7 +54,7 @@ def audit():
     fast={k:float(frame.loc[frame.accelerated_retained,k+'_hours'].sum()) for k in ['low','central','high']}
     eta=json.load(open('reports/ETA.json'));factor=eta.get('two_worker_measured_throughput_speedup',1.)
     def occupied(subset):
-        gkt=subset.model.str.startswith('GKT')
+        gkt=subset.model=='GKT_MHA'
         return {k:float(subset.loc[~gkt,k+'_hours'].sum()+subset.loc[gkt,k+'_hours'].sum()/(factor if k!='high' else 1.)) for k in ['low','central','high']}
     # Final GKT config is not known. This conservative comparison retains the same
     # final-training cost envelope instead of assuming a favorable selected width.
