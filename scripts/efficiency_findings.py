@@ -31,6 +31,29 @@ def main():
     marker='## Fresh efficiency evidence (October 2026)'
     if marker not in existing:
         corrections.write_text(existing+'\n'+marker+'\n\nPaper pages 18–19, Figure 8/efficiency, and pages 21–23, discussion: the historical architecture attribution and uncontrolled runtime statements do not establish LightSAKT speed or parameter efficiency. Fresh evidence now exists: the 120-case exclusive FP32 benchmark and dataset-specific parameter counts. The measured matched latency comparisons contradict an unconditional speed advantage; memory and parameter differences depend on scope and dimensions. The original architecture was preserved. Corrected numerical tables and manuscript-ready wording are generated in paper/EFFICIENCY_RESULTS.md from results/tables/efficiency.csv, efficiency_paired_comparisons.csv and parameters.csv; hardware, raw timings and execution evidence are in experiments/efficiency/ and reports/profiling/efficiency_execution.json. Original PDF and historical claims remain preserved.\n')
+    # Update a bounded generated block, preserving the historical audit and any
+    # unrelated manuscript corrections added later.
+    begin='<!-- measured-efficiency-corrections:start -->'
+    end='<!-- measured-efficiency-corrections:end -->'
+    block=[begin,'','### Measurement-backed efficiency amendments','',
+           '|Paper page|Section / figure|Original claim|Discrepancy|Fresh evidence|Required correction|Corrected measurement|Suggested manuscript wording|Evidence files|',
+           '|---|---|---|---|---|---|---|---|---|']
+    slower=int((pairs.latency_ratio_light_over_sakt>1).sum())
+    memory=int((pairs.peak_allocated_ratio_light_over_sakt<1).sum())
+    block.append(f'|18–19; 21–23|Efficiency / discussion|Historical runtimes establish LightSAKT speed|Architecture attribution and uncontrolled comparison were invalid|Exclusive FP32 benchmark; all raw repeats rederived on CPU|Replace the general speed claim with measured scope and hardware|LightSAKT slower in {slower}/{len(pairs)} matched comparisons|“Linear sequence-length attention work did not produce a latency advantage in the tested deterministic FP32 implementation and H100 MIG environment.”|results/tables/efficiency.csv; experiments/efficiency/raw_timings.json; reports/efficiency_verification.json|')
+    block.append(f'|18–19; 21–23|Memory / complexity discussion|Lightweight attention implies generally lower memory|Theoretical work does not determine process peak memory or backend storage|Baseline, peak allocated and peak reserved measurements recorded separately|Separate asymptotic work from measured memory and comparison scope|Lower LightSAKT peak allocated memory in {memory}/{len(pairs)} cases|“Measured memory differences depended on sequence length and comparison scope; no unconditional memory advantage was established.”|results/tables/efficiency.csv; results/tables/model_complexity.csv; paper/EFFICIENCY_RESULTS.md|')
+    for dataset,data in params.groupby('dataset'):
+        a=int(data[data.model=='LightSAKT'].parameters.iloc[0]);b=int(data[data.model=='SAKT'].parameters.iloc[0])
+        block.append(f'|18–19|Figure 8; {dataset} parameter efficiency|Historical model counts establish LightSAKT parameter savings|Counts used the wrong architecture or vocabulary; primary widths also differ|Actual rebuilt parameter counts with documented configurations|Report dataset-specific counts and distinguish equal-width controls|LightSAKT {a}; SAKT {b}; ratio {a/b:.6f}|“For {dataset}, the documented primary configurations contain {a} LightSAKT and {b} SAKT trainable parameters; architecture and width both affect this comparison.”|results/tables/parameters.csv; configs/runs/*primary*.json; results/figures/Figure_8_{dataset}.csv|')
+    block+=['',end]
+    existing=corrections.read_text()
+    replacement='\n'.join(block)
+    if begin in existing:
+        first,tail=existing.split(begin,1)
+        assert end in tail,'Incomplete generated correction block'
+        _,last=tail.split(end,1)
+        corrections.write_text(first+replacement+last)
+    else:corrections.write_text(existing+'\n'+replacement+'\n')
     print('Genuine efficiency pairs',len(pairs),'lower LightSAKT latency',int((pairs.latency_ratio_light_over_sakt<1).sum()))
 
 

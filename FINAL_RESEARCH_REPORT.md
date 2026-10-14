@@ -66,8 +66,8 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 ## Experiment schedule status
 
 {
-  "completed": 208,
-  "pending": 748,
+  "completed": 210,
+  "pending": 746,
   "running": 1
 }
 
@@ -112,8 +112,8 @@ Independent CPU rederivation verified 1200 original timing repetitions across 12
 
 ## Execution optimization and unchanged scientific scope
 
-Latest schedule audit: 731 fresh trainings remain plus 43 reuse/evaluation entries. All 108 LightSAKT candidates are retained, with one seed per grid candidate and five matched seeds only for selected final configurations and ablations. The author chose the complete schedule with execution improvements only; all 162 GKT configurations discussed in the archived reduction proposal remain scheduled. Evidence: experiments/schedule_decision.json. Full inventory and proposal: reports/optimization/SCHEDULE_AUDIT.md and PROPOSED_DIFFERENCES.csv.
+Latest schedule audit: 707 fresh trainings remain plus 42 reuse/evaluation entries. All 108 LightSAKT candidates are retained, with one seed per grid candidate and five matched seeds only for selected final configurations and ablations. The author chose the complete schedule with execution improvements only; all 162 GKT configurations discussed in the archived reduction proposal remain scheduled. Evidence: experiments/schedule_decision.json. Full inventory and proposal: reports/optimization/SCHEDULE_AUDIT.md and PROPOSED_DIFFERENCES.csv.
 
 Exact immutable sequence caches preserve every tensor, identity, batch order and RNG sequence; CPU training/resume equivalence is tested. Inter-run GPU probes and CPU/CUDA gates verify independent worker updates before two-worker GKT execution. Full required scope, FP32, batch sizes, Adam, stopping criteria, LightSAKT architecture, splits and untouched final test selections remain unchanged. Prioritization runs LightSAKT grid/finals/ablations before slow remaining baseline tuning. See reports/optimization/EXECUTION_OPTIMIZATION.md and reports/profiling/.
 
-Independent private GitHub draft recovery artifacts: 209 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
+Independent private GitHub draft recovery artifacts: 211 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
