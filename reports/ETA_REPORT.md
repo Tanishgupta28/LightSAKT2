@@ -1,14 +1,14 @@
 # Measured runtime estimate
 
-Updated UTC: 2026-10-14T04:38:28.450275+00:00
+Updated UTC: 2026-10-14T04:39:30.886355+00:00
 
-Remaining training: **499.5 GPU reserved hours**; scenario range **106.0–1,455.7 hours**. Serial wall time: 20.8 days; continuous-availability training finish 2026-11-04T00:09:21.332641+00:00.
+Remaining training: **499.5 GPU reserved hours**; scenario range **106.0–1,455.7 hours**. Serial wall time: 20.8 days; continuous-availability training finish 2026-11-04T00:09:27.045142+00:00.
 
 Two-worker execution forecast: **389.5 MIG occupied wall hours** (16.2 continuous days), with measured GKT throughput factor 1.512. Scenario envelope 86.9–1,455.7 hours; the high scenario assumes no sustained concurrency benefit. Serial isolated-equivalent hours differ from MIG occupied wall hours. Two independent GKT-MHA workers only; PAM and other models remain serial. Use the smallest measured MHA throughput factor across tested datasets/widths. Wide PAM measured 0.90x and was rejected for parallel execution. Short-step throughput is extrapolated, not guaranteed. High scenario assumes no sustained benefit. Startup/test/analysis excluded. Aggregate worker elapsed-hours may increase under contention.
 
 This is a provisional measured-reference extrapolation, not a validated confidence interval. Hardware-active GPU utilization is unavailable. Epochs include training and validation, and reserved hours include their CPU work. Unmeasured final benchmarking and artifact verification add time beyond this training-only date.
 
-Overall mean completed-run duration: 2.27 minutes, over 446 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
+Overall mean completed-run duration: 2.26 minutes, over 450 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
 
 Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.
 
@@ -30,7 +30,7 @@ Saved cumulative training_seconds include training and validation through checkp
 |ASSIST2015|GKT_MHA|1|23|633.193|243.188|
 |ASSIST2015|SAKT|37|822|1.470|0.550|
 |ASSIST2015|LightSAKT|60|1331|3.796|1.411|
-|Algebra2005|DKT|19|671|0.271|0.164|
+|Algebra2005|DKT|23|789|0.277|0.161|
 |Algebra2005|DKT+|1|33|0.322|0.185|
 |Algebra2005|DKVMN|1|50|7.359|6.148|
 |Algebra2005|GKT|1|16|200.815|53.731|
@@ -42,7 +42,7 @@ Saved cumulative training_seconds include training and validation through checkp
 
 |Phase|Low hours|Central hours|High hours|
 |---|---|---|---|
-|baseline_tuning|95.74|448.90|1,296.65|
+|baseline_tuning|95.74|448.88|1,296.63|
 |repeated_seeds|10.24|50.61|159.07|
 
 ## Longest forecast runs
