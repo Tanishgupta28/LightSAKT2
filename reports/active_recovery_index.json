@@ -1,0 +1,42 @@
+[
+  {
+    "run_id": "Algebra2005-GKT_MHA-primary-42-8718ee768a1d",
+    "epoch": 48,
+    "path": "backups/active_runs/Algebra2005-GKT_MHA-primary-42-8718ee768a1d-epoch48.tar.gz",
+    "sha256": "d0f7e4426e993680c538a050d6f92ecda906cbb3c38f5af125b9a2bad342a6aa",
+    "captured_time": 1791938894.6377556,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT_MHA-primary-42-8718ee768a1d"
+    },
+    "asset_id": 638724329,
+    "release_tag": "research-active-recovery-20261014",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-14T00:48:24.197050+00:00",
+    "snapshot_purpose": "Verify active recovery capture/upload/download pipeline on a completed long-run reference; no live training interrupted"
+  }
+]
