@@ -1,5 +1,5 @@
 {
-  "verified_utc": "2026-10-14T06:24:32.959485+00:00",
+  "verified_utc": "2026-10-14T18:55:09.782173+00:00",
   "verified": true,
   "checkpoints": [
     {
@@ -2019,6 +2019,96 @@
       "optimizer_rng_verified": true
     },
     {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-d813a6987bf2/best.pt",
+      "sha256": "bb35a44150f930bd8a5b7bfde820c460839c09e3e3bc4deb08ecf349ba60dafe",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-d813a6987bf2/latest.pt",
+      "sha256": "2d2f53316c64c6156790cffff7e4425efb1e6dc6e536b16ccb3ce9202e9ecb18",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-e041fd6a4c5a/best.pt",
+      "sha256": "536d691d7cb32688102ea1ced67d6621dd5a064467557b66481543447903e427",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-e041fd6a4c5a/latest.pt",
+      "sha256": "603688100fe6c42c67896b1a930fa4da827ab59e50ce7bc3cdda2f857379ba74",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-ea0228840259/best.pt",
+      "sha256": "1ba8a77ce4246f74247f9256b11a7ab08928077ae0a0d1d9ffaca8f8fe637773",
+      "epoch": 34,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-ea0228840259/latest.pt",
+      "sha256": "7391b402d1662c04d26ac0679a8bcbd114e4839498640c4a91017971ea637be8",
+      "epoch": 39,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-efca17b0b55b/best.pt",
+      "sha256": "4e33fe0e9965bc34d9380b534c8db1b4e6cc7b716ae2d3de4ac0c6900c35f670",
+      "epoch": 20,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-efca17b0b55b/latest.pt",
+      "sha256": "f63a2afc0c9f56d71be2ddba2e6de1637b5dc708f0530f92d479a363b43beb70",
+      "epoch": 25,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-fb3461972e79/best.pt",
+      "sha256": "63c575408be2efbadb0fe801450352b35b9f253eb093f0183c59ab20f11c2da8",
+      "epoch": 10,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-fb3461972e79/latest.pt",
+      "sha256": "5228a955a89473cdf34f2f7d61d477bd2231f0ddcfceba15311dd54c883fb478",
+      "epoch": 15,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
       "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-fd56ddf71417/best.pt",
       "sha256": "484c62aa449041c55c36f76cf2ae2f6c317cc793f317f9e292a05cf082b01c95",
       "epoch": 44,
@@ -2031,6 +2121,78 @@
       "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-fd56ddf71417/latest.pt",
       "sha256": "d10afe056376430162f773bbd28ab543cf7be4605b98204114ae6dc669b810b0",
       "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-final-123/best.pt",
+      "sha256": "8c6c83d5addbde3c92cd0edfc4988bdba5f80368ddd42ffa4113d2a290a0688a",
+      "epoch": 11,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-final-123/latest.pt",
+      "sha256": "54813f3817f7e6893cbcc4cd9879e438aa2a129d5b009bf0bc57c13a6f12100f",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-final-2026/best.pt",
+      "sha256": "17f1057ff4df549f513407e0d4dc2680d00686c47cf1cf0ad3260821f63d904d",
+      "epoch": 15,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-final-2026/latest.pt",
+      "sha256": "b01cdd9a3b743525643b2f71f95afaf0f4e75e28f546c7a073428578227dd17a",
+      "epoch": 20,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-final-3407/best.pt",
+      "sha256": "321e6d2753c5cf3cc172b7660f8683d5b6eb25dbd70d94b1758239ae3e70100d",
+      "epoch": 20,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-final-3407/latest.pt",
+      "sha256": "b49e4dd4d18f3c66d0e43db2d033e8fbe5de26f347bef23fac7190aafa365b1a",
+      "epoch": 25,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-final-7777/best.pt",
+      "sha256": "316c2d00f4cf276de17de820728c44422d4b074c8c1c2941c910b6e84e2ad5c9",
+      "epoch": 17,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-final-7777/latest.pt",
+      "sha256": "b2c081b26e4ce8e724219a2bf059f01e3d952a97c30a407eb7605a6f54c6f1e4",
+      "epoch": 22,
       "strict_state_load": true,
       "finite_parameters": true,
       "split_data_match": true,
@@ -5385,6 +5547,114 @@
       "optimizer_rng_verified": true
     },
     {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-047a5f4ce889/best.pt",
+      "sha256": "c0025cc5d453b1e8de15acae6239a3bb7a00674e1d4281d2b0b65ec599947ad3",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-047a5f4ce889/latest.pt",
+      "sha256": "8b0bf42cc50f0820890b3e738109b1eb70699b83ddb81e6e6c3886f49a448379",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-0a5d05893267/best.pt",
+      "sha256": "9648cda0e63e5a4c5e0872fb2723d0ed3cb34c966e0c0e8933fde6aa00eda151",
+      "epoch": 47,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-0a5d05893267/latest.pt",
+      "sha256": "4454a80e9b418d11844a4400882e2f4fb1057c6adeb14895f2f1316a73230cc2",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-0b02861738a5/best.pt",
+      "sha256": "4c4f1563081dc7d4f2078ba9441321db095e769ab7b86ad3780499e7bfc7e64e",
+      "epoch": 19,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-0b02861738a5/latest.pt",
+      "sha256": "74048b69495fd06eb1b077315fdfe0afd82b760b3625d0dbabf92245bdc1a968",
+      "epoch": 24,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-1cf7bd2a7ab6/best.pt",
+      "sha256": "0fa101cb16506ebb1e20ce8e9c72fd7c82295a60a3842e8a75af914258174225",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-1cf7bd2a7ab6/latest.pt",
+      "sha256": "8cc41a62bfa356f32814451e8fb2883e2eb2be6bbe05d513f5f264178c5f3834",
+      "epoch": 23,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-1fd4a1335151/best.pt",
+      "sha256": "60bc840ad1a26e05ae4ff58f61338c336b9f2c7826964afbcbefc15a7b7487a0",
+      "epoch": 47,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-1fd4a1335151/latest.pt",
+      "sha256": "ec915b261dd9ae5482882cec4965be5875139cbfbcf5f9c1134e048539cfcdc7",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-29e53cd0859a/best.pt",
+      "sha256": "d717fe02bb2a918104d2206f036b13c64fe8b71d3c87abcaae45d619ae155542",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-29e53cd0859a/latest.pt",
+      "sha256": "43d52426d82220bccb15f1b8ec745ca70651b467dbae2be1979040794c8a81ad",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
       "path": "checkpoints/ASSIST2015-DKVMN-primary-42-c91ed69c5400/best.pt",
       "sha256": "c6fe6fb357bcb8d7aede1bbea7c923f879bee2f0e7f306f824c9918f741eaa77",
       "epoch": 31,
@@ -5397,6 +5667,600 @@
       "path": "checkpoints/ASSIST2015-DKVMN-primary-42-c91ed69c5400/latest.pt",
       "sha256": "82370dee31ad075032cd79ca43c032c2a2cddf666ebc98289a4795bdd5f9ed2e",
       "epoch": 36,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-423cf83838e1/best.pt",
+      "sha256": "8ee9b4bee4ab6ba943f4f5ab580810d04e42c7098fe797989387fcd59976e716",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-423cf83838e1/latest.pt",
+      "sha256": "de9875481dbb5e4386338cffcc90697ea550532ee0a7b13c2328a6a88759496d",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-452e178d23ff/best.pt",
+      "sha256": "c368b95649e1f83ba1a3cb115fd607f3cf6073cd7b73e53bc4ed56d920d59e58",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-452e178d23ff/latest.pt",
+      "sha256": "4428cf966c496f626444d3f4eeacae1cc216a177fa052af056585bb4d1b5b86b",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-48cf87dfa0ef/best.pt",
+      "sha256": "38403394bf7d9d90943597a612e1a9932ea2b850b7b7b981fcbcd1eefd3b0fb3",
+      "epoch": 42,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-48cf87dfa0ef/latest.pt",
+      "sha256": "1c5fcf6e5f37bacbfcdbb8781f5b9a2a88f5eee5294e4b3bc93da2fcbe64a396",
+      "epoch": 47,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-520623824044/best.pt",
+      "sha256": "6914a64dc6efc32a5d1aae207c7c1c51c7624589179f67be46c32247120d4595",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-520623824044/latest.pt",
+      "sha256": "0735700a85b336e8b836ee464e81ec1122ee0f63089792b2708f363ac030dec5",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-53dce185492d/best.pt",
+      "sha256": "5e8605c897c95faca120da4adcaeada755bf72c29f4e1649e9f658b009956b9f",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-53dce185492d/latest.pt",
+      "sha256": "bbfc7d5d3736a7d049e6818cc6bc83bbeb3450317db253ef40655e0bde6d82cc",
+      "epoch": 23,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-60683f8e88d1/best.pt",
+      "sha256": "66925724833e5a0420cf0971a8c4b8fe5028997f4dfcf5a6d68dad353aafae39",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-60683f8e88d1/latest.pt",
+      "sha256": "204573abc1a203df329b96987ae0e36df4784d8fb0b4c351b6f6f2ebdc2490a8",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-61711846e097/best.pt",
+      "sha256": "3edd110ec13f4e6075b689cfbdbea3746761411a67ed93543a721bdf65158476",
+      "epoch": 35,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-61711846e097/latest.pt",
+      "sha256": "724e9ed3ea5340a19e94a71b8b8588d64f8f5691af8abc73c2c1680746813302",
+      "epoch": 40,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-64c2d5059a73/best.pt",
+      "sha256": "8c974afd9870a356ab3d9e2dabcfb00957a86c36c2890d2137aa4016d98175c9",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-64c2d5059a73/latest.pt",
+      "sha256": "aff411522c54bd5347ebc66e36ada90530843d5a86ae234d862ecf8430f5fc48",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-6b174d033540/best.pt",
+      "sha256": "f4254b6ce4ed04c0c95d5da0f4ba049d67a45a273a34d8888a268b23d158ed23",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-6b174d033540/latest.pt",
+      "sha256": "ffcf706a55424cee3188f383185eaf3a82507e910a2a290fd99af3911244ba9b",
+      "epoch": 26,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-6e60c939f5b9/best.pt",
+      "sha256": "be0ac66ee907683aa60b4530acf89d48b1fd69a079fed31d39dbe5850c920521",
+      "epoch": 9,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-6e60c939f5b9/latest.pt",
+      "sha256": "110ea8a0a66b4f7d873b66e2fc19086e379e907cec7b3c8cfb594519166e0ba4",
+      "epoch": 14,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-74ec9172397d/best.pt",
+      "sha256": "c2b227f8613c79cdfb043106c5a9c2d3a0d3b609dc917ca9229546fbdf5e5cfe",
+      "epoch": 19,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-74ec9172397d/latest.pt",
+      "sha256": "e66219d48a99e70ef6ca96029527a5e15645f23f326d570c0a6380267b703d55",
+      "epoch": 24,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-765cb8ab742e/best.pt",
+      "sha256": "d4618e48021c91502e7fcaa37f3989492b00336856ade603a0bd2abec983a156",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-765cb8ab742e/latest.pt",
+      "sha256": "0413fcd7e91acc4ff46e775a63e3fa1ba33349c4c0254227f9d5ee7b7010637e",
+      "epoch": 26,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-8a460c69719d/best.pt",
+      "sha256": "8a30e61f5bbd4453b63562a52785ae5c47f292378e0d6dd337a824843400f34c",
+      "epoch": 47,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-8a460c69719d/latest.pt",
+      "sha256": "3da484f50ffef1c8dcb3888d462c8c69423627901f95297a272e46733a0d9e9b",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-92af7cba3fd3/best.pt",
+      "sha256": "f9e62c3bed8a1e71a54dff2541b6b5a2886729f82db947f265a256ea9ab40f3e",
+      "epoch": 23,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-92af7cba3fd3/latest.pt",
+      "sha256": "28ffe0644ae4e2095d70b05b1f34634c7e03d02ba024c80359b432be2df403e3",
+      "epoch": 28,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-9b89089e454f/best.pt",
+      "sha256": "ea226372591475cb32b20f96bbaca0196b52317130a0886912e8faa0c5ec11c2",
+      "epoch": 20,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-9b89089e454f/latest.pt",
+      "sha256": "ef0c0a3cebbdba0397daec3732f8bf6f41c15b21af5a8da892eab611907ff707",
+      "epoch": 25,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-a1812d767a89/best.pt",
+      "sha256": "27fb44f4d2d3d9eb427189a5dc7af312310af658360d565d393f654f68a7d242",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-a1812d767a89/latest.pt",
+      "sha256": "389394189ac4d2c3cf88da8101bb0fffba951ffff06fe91f8c24a99fa15dd0a2",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-b80aae38647b/best.pt",
+      "sha256": "5a2b3f200c14dc8716c2049ab3fb0e679d28fb96455e2e0e203bd375c7958439",
+      "epoch": 31,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-b80aae38647b/latest.pt",
+      "sha256": "a56a0e400fcd2ed13aa3263eebf9b6d0ef71d7a671de317034ec54efeedbea9d",
+      "epoch": 36,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-bac21a5a4764/best.pt",
+      "sha256": "4d086a7ab1f1d6c9a36b38103daafa5e34cce5bd0e0fb73eca0e65f9d6813c5f",
+      "epoch": 15,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-bac21a5a4764/latest.pt",
+      "sha256": "c550a512b3629c280c5cc06f1e9456eae2c5e140a6f3d7d1b152bea02f39d62a",
+      "epoch": 20,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-beae628fc78a/best.pt",
+      "sha256": "9d0bba88b481d9fa74ab18f1c475555bda9b03d5e22a2b492406e07c906a2fb7",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-beae628fc78a/latest.pt",
+      "sha256": "b4bd796e18aa107b1befa6304ac7db23b8d573de34fe6d6ce6fb78a514460237",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-c6fc141f800f/best.pt",
+      "sha256": "9867e3596506226c8437abd7c016f9b93a8559ac837623574a10f924e77f17ce",
+      "epoch": 25,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-c6fc141f800f/latest.pt",
+      "sha256": "d585d6e34e0151f1bc5babd865930b6acf72e50dae9caf4b0cb5ed9ce25181cb",
+      "epoch": 30,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-c9e6d97f1b4b/best.pt",
+      "sha256": "fa8fddff6faa8ac912df4321b21f06bf8cbb09ec3e22dc53822ab77d5ed9a0a0",
+      "epoch": 47,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-c9e6d97f1b4b/latest.pt",
+      "sha256": "08d8f82f312ceaa9d17ef2e482979b4cbe6a51bfcb5baf3c0363a3d1c7446464",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-cee9b38cefe3/best.pt",
+      "sha256": "db0818e529177be45cb844da5d3cf62a569cbb18af196eacc9281bc25e01d913",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-cee9b38cefe3/latest.pt",
+      "sha256": "112e324798afd940b1f2b4f94f94db0c8692e64bb6b96b333d48208c9a532f68",
+      "epoch": 23,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-cf0ba53d7b6d/best.pt",
+      "sha256": "cc19e096dc2df3e926dac6ede41cf5e1c3268f587c646d475fe3398bed472575",
+      "epoch": 27,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-cf0ba53d7b6d/latest.pt",
+      "sha256": "e54930186b402360ccb8209c395b66de71d0a4642ce269ac157ec3696a3a08af",
+      "epoch": 32,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-d2dc815dee5e/best.pt",
+      "sha256": "f1c1144215697476e41b159026b298e9b22589b08f9fbba20386bdadf88caa2e",
+      "epoch": 35,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-d2dc815dee5e/latest.pt",
+      "sha256": "d0ab3075dfb2a26417ff78f5005df3ea29ebd21fc0b1ede34ce9222bddadf34a",
+      "epoch": 40,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-df2be8408873/best.pt",
+      "sha256": "8231d68a2d21ef47da680e476c9829446826f3157736f98bc066aa3cbac257d5",
+      "epoch": 23,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-df2be8408873/latest.pt",
+      "sha256": "16979e2f2c658f362682fcc78a2e036deffd3d4de2184731a835067c7acfe838",
+      "epoch": 28,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-e8423ad3f7f0/best.pt",
+      "sha256": "fee581bbb1604176c5957ca91bc0bfc262a7deecc3f1eb8656b77c61cc0bfcee",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-e8423ad3f7f0/latest.pt",
+      "sha256": "d1f4948d6135523ab31a090bb5c80b99d35ba5aafc91f46c4ab8462699bc0bf7",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-f45d5f355d9e/best.pt",
+      "sha256": "1ae11906e70de66ea8dc49343cb6701e585ee5c2289cf131bd8a285ed435b7d0",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-f45d5f355d9e/latest.pt",
+      "sha256": "33c1fc7f62eab699b097c8edecde3d52834fb165ae0b3a10106c63cddf0e25e5",
+      "epoch": 26,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-f4fa388a714b/best.pt",
+      "sha256": "9254314dbe328efd0022936cd79d93ea2d48c9355fb87e10d12b67badb84436b",
+      "epoch": 42,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-f4fa388a714b/latest.pt",
+      "sha256": "0a1cf4f72152111dbeb05c479b22a33f71ef888d1d8280194987e4f116b21334",
+      "epoch": 47,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-ffc49f271f93/best.pt",
+      "sha256": "6bbe5be145dd5080b1396f1ce0090472affbcd98ab097f091b930c821ea8d4d9",
+      "epoch": 23,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-ffc49f271f93/latest.pt",
+      "sha256": "7a91e040a8f9a06b420fad8b82326d312cbb032d1329514c7cafbb9921862eb6",
+      "epoch": 28,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-final-123/best.pt",
+      "sha256": "7796800cf3ed737f93b145a4018a4d89a6f01decf90e90dba94f728bf413b160",
+      "epoch": 24,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-final-123/latest.pt",
+      "sha256": "6b60c41c81b6e47e3c3e89b7cb46b590fa0d69bfd8413f7ce731c9826cf1de1e",
+      "epoch": 29,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-final-2026/best.pt",
+      "sha256": "7342dbae8b90049cbc76bee998d75e114a42254cc8c36d8d79103a3bc66cd974",
+      "epoch": 38,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-final-2026/latest.pt",
+      "sha256": "e56d7f56448d3637b39de42c0441cf19c59632c21d9bee2e37ce2d6cc31e2559",
+      "epoch": 43,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-final-3407/best.pt",
+      "sha256": "899072a98ef3f6560b1dde07b199dab4c86dfa3f557480d98ad8fbd5e06a1349",
+      "epoch": 35,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-final-3407/latest.pt",
+      "sha256": "d127bc0f0d5fb3d31c88b9b1de3d26ef5eafb28e7784a606c2c9aaea7f0cbc28",
+      "epoch": 40,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-final-7777/best.pt",
+      "sha256": "75d40116d2bde14457eb43271fa7be97485b967062b403c3c7070c511cb273c1",
+      "epoch": 37,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-final-7777/latest.pt",
+      "sha256": "e767198c63d1d1fc0f6ab04780e2e1b2add4506617792f3439ea277e55e46dc0",
+      "epoch": 42,
       "strict_state_load": true,
       "finite_parameters": true,
       "split_data_match": true,
@@ -8733,6 +9597,24 @@
       "optimizer_rng_verified": true
     },
     {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-07e13b8356b9/best.pt",
+      "sha256": "ef965a1a6cec5fd88a1280600624f32e880093688d21ce0599b3b820f26c13ec",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-07e13b8356b9/latest.pt",
+      "sha256": "2303bccb5afa3847b7a68ae8c7b44bed44feb4af2f8c5be2c44cce3d81236483",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
       "path": "checkpoints/Algebra2005-DKVMN-primary-42-7f8a895e7d8e/best.pt",
       "sha256": "852559a7df905743c2c69b3f64ccdcb3f1c2029355723f11eb971b26f8217254",
       "epoch": 50,
@@ -8744,6 +9626,528 @@
     {
       "path": "checkpoints/Algebra2005-DKVMN-primary-42-7f8a895e7d8e/latest.pt",
       "sha256": "c7873adb3ffd1023f0d3111b3834bc1367ebb3a182af0049624f375ea4df1dbd",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-0c7d75af9bf6/best.pt",
+      "sha256": "86cebd56d87f1d172cdfc8341a59a5c243828b4d39bbedcd841cf8c05705f59b",
+      "epoch": 44,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-0c7d75af9bf6/latest.pt",
+      "sha256": "c688df2e4b3b5621e9874c8185f34d8951aae5ee3fe8ccffbaf8ec91b3880c35",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-1536d8dd9e47/best.pt",
+      "sha256": "d00a4ef920c81a4d297dec716af7ba26662f1e10b4b2709c06f3b9b10cf8f081",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-1536d8dd9e47/latest.pt",
+      "sha256": "9bd1d6251a33c9a4aa8ece853ec895bdd3d6e0b65c0ec1534cb95524c8fd34a2",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-15ff363872ee/best.pt",
+      "sha256": "a8cf63222df750348b0810ff9698335c581a9cffd84d5a65915d4447f7f60dad",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-15ff363872ee/latest.pt",
+      "sha256": "7160a320729a71fdcb17653536ca8db20d6e8f7ad139d8cc106f088ce6d973bd",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-18b844be66f0/best.pt",
+      "sha256": "ee38a88da8cf7328239de5b55097461ee9381b92a3cfa0f6c563f9bec6dc0495",
+      "epoch": 31,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-18b844be66f0/latest.pt",
+      "sha256": "8655e87d6c2f7007886736b9d0ae9f5253c2e262329ed8f9e0467da178759e7c",
+      "epoch": 36,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-194fd6d5c1ad/best.pt",
+      "sha256": "affb4eb8e6c04467fe2ae177aa689caa669da3c798d7bec6e2e2aef5d4dc3251",
+      "epoch": 43,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-194fd6d5c1ad/latest.pt",
+      "sha256": "51007f3566f041dcc2c24f1068b3ea524d5e4ebd8b93ec933450b8ea56165607",
+      "epoch": 48,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-216a8c2bd5a5/best.pt",
+      "sha256": "e8b08090e23c50b4ca0363770a14d45f32573f5bc839321abb16c2e2b01ec852",
+      "epoch": 48,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-216a8c2bd5a5/latest.pt",
+      "sha256": "63e16a3c5104c863409628b0b2572a9c0b05ad23178309e59c6d519daf1b28d7",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-21987a9529b6/best.pt",
+      "sha256": "90fbb6d13be2edf3cfb472fd5877c54b5ae55a8501a36502fad9ee8fa1d32fe6",
+      "epoch": 43,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-21987a9529b6/latest.pt",
+      "sha256": "09f868206308967c8f88162336c8e3cbf1abaf470f5b47a581bc8c7e934c5a00",
+      "epoch": 48,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-30c93a04e0b7/best.pt",
+      "sha256": "ddfbedd285675c8fb96cd546e71cd130f00653abc3f9fc7d655686146ed2ab8a",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-30c93a04e0b7/latest.pt",
+      "sha256": "e91e6d49fdcc2f700f51ed4fb647dd136c00c6ee9c3baff161927e2bb15a5953",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-3227216e345e/best.pt",
+      "sha256": "48f677fa6adfcb1844f19d9bbd51ee887a76805424e90cb8c078409c6f3f2a7f",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-3227216e345e/latest.pt",
+      "sha256": "e8541a94b252a45a038689024e6fa5db0756674210a5b43af018037bfed9bbce",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-3242f4da6a60/best.pt",
+      "sha256": "3e5d1e34cfe4219acd1dfd35da9543e9f5f26ed54b27d3231445989c7fee650b",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-3242f4da6a60/latest.pt",
+      "sha256": "4b517013bcc40439ff27b1896c22d6e2dea6873d8ec5738a4c65fcd99fbab396",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-3786db01d014/best.pt",
+      "sha256": "7b4ba31daafe0972c400d045f4cfafc6863ea95adb3fede717e405c71cb064cc",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-3786db01d014/latest.pt",
+      "sha256": "580a596f8435eb5fe5980d2260fe2ccfceb0a0e5ce6020c80d5caa0e0b0ffca7",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-4458f0a482d3/best.pt",
+      "sha256": "ea65ac0df3f96fba447da98f607548982a39559c51df6a519114ddaba18db9d1",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-4458f0a482d3/latest.pt",
+      "sha256": "9b9786ef4d665fbc585d31a0d69b83b740ebc32a4613c8966aea9ce19d7cc870",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-49d270171757/best.pt",
+      "sha256": "e2bd1447464f63f1c647a6e6ad9fa3e7b9936f69296f4a6ff43051c67ee1a19d",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-49d270171757/latest.pt",
+      "sha256": "895f4367f871fb8633fead1eb83f35cf38905268900612fdfb0ff73f132f0a12",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-5c06bb237f85/best.pt",
+      "sha256": "8247c3315eba76ebf913138730bfc74000876730aa7e6412aa449d7c42102f26",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-5c06bb237f85/latest.pt",
+      "sha256": "88a010a1537f1d7995b315802851476844a0bccdf22c3c20bef988f1d92dd065",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-60f0daf0d978/best.pt",
+      "sha256": "92d7b684189d06f053f28366a66eec6fcaa522a77cef2462a8c91081b45b99b5",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-60f0daf0d978/latest.pt",
+      "sha256": "95665b288d86c9abbc3bc3ecdc0791fac79340819de6860d42ab46593d8c6b4d",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-83acc2738ec2/best.pt",
+      "sha256": "9ae952274c19901ef1d7b7d00eeeef5d7289ffd91cd3b9ed09b67f962d0cbc0c",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-83acc2738ec2/latest.pt",
+      "sha256": "df95c97ded4a808a07fdef766f30742bd35fea0d49a5f50dafa03f73c4bb5ea2",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-9ac8dfcdf0d4/best.pt",
+      "sha256": "fca94638a13043c7be7560a6c5eca876e946f491511500f364e2b2ccaeb4b56c",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-9ac8dfcdf0d4/latest.pt",
+      "sha256": "ed7a170b84bd647efdf8fdd9517c0c8464fecc2be0078270773b28a745d494cf",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-9ec020471e4b/best.pt",
+      "sha256": "d3a9d0487850a62d6b2fc588792ce2ee56274231fab1bf1912d5c1d08f9cdb76",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-9ec020471e4b/latest.pt",
+      "sha256": "9ad4e2d83a16532732e07939c74cce26d21cdeb313c8dc8de080cba3ac199a2b",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-9fad707aa8e1/best.pt",
+      "sha256": "51b55d88da4c3a50eeed4d3a6f0f9b54bba302f5ef60760f991142e3c8e1b01d",
+      "epoch": 43,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-9fad707aa8e1/latest.pt",
+      "sha256": "af9093565c783a164e3be470ca5c81edcef6871e7427427877f2d2edb63b6f63",
+      "epoch": 48,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-b331a62ce441/best.pt",
+      "sha256": "b675747816aa763380bd0730d0965d73ba183571e21ceaf1a01eee18b1659d9b",
+      "epoch": 30,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-b331a62ce441/latest.pt",
+      "sha256": "5c11c1a3fe794f7aca8079a41729383bdcdedfed305ccd2ae9dcfc30ad5cd7e8",
+      "epoch": 35,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-bc6cb4053755/best.pt",
+      "sha256": "a84c11251a58bd9a405b8767b18cd272328e902077668f2bf3d3af715ac92237",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-bc6cb4053755/latest.pt",
+      "sha256": "0faff994b97751e76b39578fc18d0c84b5047c641005a0a1d1875c5eb3bad9c7",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-c39dbeb9467b/best.pt",
+      "sha256": "befad1ee759edb81e3a5c0acb928fead59c1c64862ffeeeed3fd2c34e1157814",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-c39dbeb9467b/latest.pt",
+      "sha256": "f6687f877e3a80b45ec82f3e76784885a25d89d3f1579e9d487f34cf7ee99a42",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-c5f966a0d50a/best.pt",
+      "sha256": "330cdef19c4f723679a8670f585b147893bd8ec9d6a468eabcb7f785718e68a5",
+      "epoch": 30,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-c5f966a0d50a/latest.pt",
+      "sha256": "769de05d20f8b239a460a93a86f39bc988f68cc328cae5984a378774b65147a0",
+      "epoch": 35,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-cc1aecad2385/best.pt",
+      "sha256": "450c926fac89efcf7ce47c14bdd137e7efb3a4a4b057858eb1180f565a85b0cb",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-cc1aecad2385/latest.pt",
+      "sha256": "54b938b29a3ffe9c3923d5f90e0d013f021db0d7ad2dacaebee35f9c51c16cdd",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-cd1b0675a7b7/best.pt",
+      "sha256": "32d366e9051640e39ba9f72f9bbd0357ed65d4b065962772e351beeb1b8300c9",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-cd1b0675a7b7/latest.pt",
+      "sha256": "18d8f6673f043729b8a27ad3ced6e85865205405f4b03cb697cde334eda1fb4f",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-ce41e9ef641e/best.pt",
+      "sha256": "b6831d44bb2a7b6a7752c288827775d2f8ec3bdc87125b98dcd95fe608978c96",
+      "epoch": 38,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-ce41e9ef641e/latest.pt",
+      "sha256": "b98db798bdc0e264d08914cf729f643d1e6fd846fcb186475499b7ff561fe442",
+      "epoch": 43,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-de0a23dea5b8/best.pt",
+      "sha256": "7729dd9bf9f9a3d2d044963a1b10acf8afcd94c5808c66e8b20c4f5c08e683b6",
+      "epoch": 43,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-de0a23dea5b8/latest.pt",
+      "sha256": "bbd4dd58ba60fc73d6455c2005fb7f06bfb4ee0f9bb8c0f9eaa90dc482968587",
+      "epoch": 48,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-dec46446fe09/best.pt",
+      "sha256": "386f0464f797f7a379611ff2c78fa149f77e47ea914a0486363c1d594c3b2b65",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-dec46446fe09/latest.pt",
+      "sha256": "db7f5c3311cf3c16ea8ac2e8b481047ad69ac667ce7ba953c9d0383c1057bbba",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-dfe7bc247ce0/best.pt",
+      "sha256": "74f45f4a8840ff91650aeb5aed5a288d99feb888e926fb04fd18a246603a08df",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-dfe7bc247ce0/latest.pt",
+      "sha256": "e351ae8f706ee4122f38858ccf2a257a09450322d04ba62b312bf944f7525093",
       "epoch": 50,
       "strict_state_load": true,
       "finite_parameters": true,
