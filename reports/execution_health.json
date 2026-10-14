@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T19:25:15.382940+00:00",
-  "sample_time": 1792005914.9481869,
+  "updated_utc": "2026-10-14T19:29:24.097546+00:00",
+  "sample_time": 1792006163.4100678,
   "counts": {
-    "completed": 706,
-    "pending": 250,
+    "completed": 708,
+    "pending": 248,
     "running": 1
   },
   "scheduler": {
@@ -12,27 +12,27 @@
   },
   "training_processes": [
     {
-      "pid": 855501,
-      "cpu_seconds": 232.85,
+      "pid": 859118,
+      "cpu_seconds": 20.1,
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.283419370651245,
-      "cpu_seconds_advanced": 62.19999999999999
+      "observed_seconds": 0.2,
+      "cpu_seconds_advanced": 0.1999999999999993
     }
   ],
   "active_runs": [
     {
-      "run_id": "Algebra2005-DKVMN-final-123",
-      "last_completed_epoch": 32,
-      "best_checkpoint": "checkpoints/Algebra2005-DKVMN-final-123/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKVMN-final-123/config.json",
-      "recent_mean_epoch_seconds": 6.94268353980151,
-      "seconds_since_last_epoch": 0.5867929458618164,
+      "run_id": "Algebra2005-DKVMN-final-3407",
+      "last_completed_epoch": 1,
+      "best_checkpoint": "checkpoints/Algebra2005-DKVMN-final-3407/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKVMN-final-3407/config.json",
+      "recent_mean_epoch_seconds": 7.897303661971819,
+      "seconds_since_last_epoch": 3.0689847469329834,
       "startup_epoch_seconds_extrapolated": null,
       "first_checkpoint_startup_grace_seconds": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 20.82805061940453,
+      "stall_threshold_seconds": 23.691910985915456,
       "checkpoint_stalled": false
     }
   ],
@@ -43,5 +43,5 @@
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 709 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 710 independently downloaded/checksum verified; completed-archive synchronization True."
 }

@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-10-14T19:26:03.499162+00:00",
+  "observed_utc": "2026-10-14T19:29:04.628157+00:00",
   "supervisor_pid": 818850,
   "completed": 707,
   "remaining": 250,
@@ -52,11 +52,6 @@
     {
       "pid": 857350,
       "module": "scripts.run",
-      "watchdog": false
-    },
-    {
-      "pid": 857992,
-      "module": "scripts.summarize",
       "watchdog": false
     }
   ],
