@@ -1,11 +1,12 @@
 {
-  "updated_utc": "2026-10-14T04:58:46.236908+00:00",
+  "updated_utc": "2026-10-14T04:58:59.664340+00:00",
   "total_slots": 957,
   "completed": 535,
   "remaining": 422,
   "counts": {
     "completed": 535,
-    "pending": 422
+    "pending": 421,
+    "running": 1
   },
   "processes": {
     "scheduler": {
@@ -37,14 +38,22 @@
       "alive": true
     }
   },
-  "running_jobs": [],
+  "running_jobs": [
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-597f3d08ea42",
+      "last_completed_epoch": 38,
+      "best_checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-597f3d08ea42/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-SAKT-baseline_tuning-42-597f3d08ea42/config.json"
+    }
+  ],
   "phase_counts": {
     "5": {
       "completed": 21
     },
     "6": {
       "completed": 424,
-      "pending": 332
+      "pending": 331,
+      "running": 1
     },
     "7": {
       "pending": 90,
