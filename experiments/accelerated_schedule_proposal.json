@@ -4330,7 +4330,7 @@
       "run_id": "Algebra2005-LightSAKT-grid-42-f3c14818b7d3",
       "phase": 6,
       "status": "pending",
-      "observed_status": "pending"
+      "observed_status": "completed"
     },
     {
       "config": "configs/runs/Algebra2005-LightSAKT-grid-42-e58e3f7d95a8.json",
@@ -4372,14 +4372,14 @@
       "run_id": "Algebra2005-LightSAKT-grid-42-e70b10a66385",
       "phase": 6,
       "status": "pending",
-      "observed_status": "running"
+      "observed_status": "completed"
     },
     {
       "config": "configs/runs/Algebra2005-LightSAKT-grid-42-ed1d54fdc077.json",
       "run_id": "Algebra2005-LightSAKT-grid-42-ed1d54fdc077",
       "phase": 6,
       "status": "pending",
-      "observed_status": "pending"
+      "observed_status": "completed"
     },
     {
       "config": "configs/runs/Algebra2005-LightSAKT-grid-42-69acf3f16996.json",
@@ -4400,7 +4400,7 @@
       "run_id": "Algebra2005-LightSAKT-grid-42-feeec30289e8",
       "phase": 6,
       "status": "pending",
-      "observed_status": "pending"
+      "observed_status": "completed"
     },
     {
       "config": "configs/runs/Algebra2005-LightSAKT-grid-42-cc537d7e1c4b.json",
@@ -4442,7 +4442,7 @@
       "run_id": "Algebra2005-LightSAKT-grid-42-fbb9d4e5119c",
       "phase": 6,
       "status": "pending",
-      "observed_status": "pending"
+      "observed_status": "completed"
     },
     {
       "config": "configs/runs/Algebra2005-LightSAKT-grid-42-1c1163efe639.json",
@@ -4456,7 +4456,7 @@
       "run_id": "Algebra2005-LightSAKT-grid-42-fea98a03a2bd",
       "phase": 6,
       "status": "pending",
-      "observed_status": "pending"
+      "observed_status": "completed"
     },
     {
       "config": "configs/runs/Algebra2005-LightSAKT-grid-42-1070ef8912e9.json",
@@ -4519,7 +4519,7 @@
       "run_id": "Algebra2005-LightSAKT-grid-42-e807df10d3a6",
       "phase": 6,
       "status": "pending",
-      "observed_status": "pending"
+      "observed_status": "completed"
     },
     {
       "config": "configs/runs/Algebra2005-LightSAKT-grid-42-09240f4e7b64.json",
@@ -4884,7 +4884,9 @@
       "seed": 42,
       "status": "pending",
       "dependency": "all 36 tuning runs for this dataset/model",
-      "observed_status": "pending"
+      "reuse_selected_run": "ASSIST2009-LightSAKT-grid-42-f08e9494d270",
+      "selection_path": "experiments/selections/ASSIST2009-LightSAKT.json",
+      "observed_status": "completed"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-final-123",
@@ -4894,7 +4896,8 @@
       "seed": 123,
       "status": "pending",
       "dependency": "all 36 tuning runs for this dataset/model",
-      "observed_status": "pending"
+      "config": "configs/runs/ASSIST2009-LightSAKT-final-123.json",
+      "observed_status": "completed"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-final-2026",
@@ -4904,7 +4907,8 @@
       "seed": 2026,
       "status": "pending",
       "dependency": "all 36 tuning runs for this dataset/model",
-      "observed_status": "pending"
+      "config": "configs/runs/ASSIST2009-LightSAKT-final-2026.json",
+      "observed_status": "completed"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-final-3407",
@@ -4914,7 +4918,8 @@
       "seed": 3407,
       "status": "pending",
       "dependency": "all 36 tuning runs for this dataset/model",
-      "observed_status": "pending"
+      "config": "configs/runs/ASSIST2009-LightSAKT-final-3407.json",
+      "observed_status": "completed"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-final-7777",
@@ -4924,7 +4929,8 @@
       "seed": 7777,
       "status": "pending",
       "dependency": "all 36 tuning runs for this dataset/model",
-      "observed_status": "pending"
+      "config": "configs/runs/ASSIST2009-LightSAKT-final-7777.json",
+      "observed_status": "completed"
     },
     {
       "run_id": "ASSIST2009-GKT_MHA-final-42",
@@ -5234,7 +5240,9 @@
       "seed": 42,
       "status": "pending",
       "dependency": "all 36 tuning runs for this dataset/model",
-      "observed_status": "pending"
+      "reuse_selected_run": "ASSIST2015-LightSAKT-grid-42-64640d03b0d3",
+      "selection_path": "experiments/selections/ASSIST2015-LightSAKT.json",
+      "observed_status": "completed"
     },
     {
       "run_id": "ASSIST2015-LightSAKT-final-123",
@@ -5244,7 +5252,8 @@
       "seed": 123,
       "status": "pending",
       "dependency": "all 36 tuning runs for this dataset/model",
-      "observed_status": "pending"
+      "config": "configs/runs/ASSIST2015-LightSAKT-final-123.json",
+      "observed_status": "completed"
     },
     {
       "run_id": "ASSIST2015-LightSAKT-final-2026",
@@ -5254,7 +5263,8 @@
       "seed": 2026,
       "status": "pending",
       "dependency": "all 36 tuning runs for this dataset/model",
-      "observed_status": "pending"
+      "config": "configs/runs/ASSIST2015-LightSAKT-final-2026.json",
+      "observed_status": "completed"
     },
     {
       "run_id": "ASSIST2015-LightSAKT-final-3407",
@@ -5264,7 +5274,8 @@
       "seed": 3407,
       "status": "pending",
       "dependency": "all 36 tuning runs for this dataset/model",
-      "observed_status": "pending"
+      "config": "configs/runs/ASSIST2015-LightSAKT-final-3407.json",
+      "observed_status": "completed"
     },
     {
       "run_id": "ASSIST2015-LightSAKT-final-7777",
@@ -5274,7 +5285,8 @@
       "seed": 7777,
       "status": "pending",
       "dependency": "all 36 tuning runs for this dataset/model",
-      "observed_status": "pending"
+      "config": "configs/runs/ASSIST2015-LightSAKT-final-7777.json",
+      "observed_status": "completed"
     },
     {
       "run_id": "ASSIST2015-GKT_MHA-final-42",
@@ -5594,7 +5606,8 @@
       "seed": 123,
       "status": "pending",
       "dependency": "all 36 tuning runs for this dataset/model",
-      "observed_status": "pending"
+      "config": "configs/runs/Algebra2005-LightSAKT-final-123.json",
+      "observed_status": "running"
     },
     {
       "run_id": "Algebra2005-LightSAKT-final-2026",

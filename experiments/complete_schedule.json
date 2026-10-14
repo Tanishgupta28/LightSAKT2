@@ -5213,7 +5213,9 @@
       "model": "LightSAKT",
       "seed": 42,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "reuse_selected_run": "ASSIST2009-LightSAKT-grid-42-f08e9494d270",
+      "selection_path": "experiments/selections/ASSIST2009-LightSAKT.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-final-123",
@@ -5222,7 +5224,8 @@
       "model": "LightSAKT",
       "seed": 123,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/ASSIST2009-LightSAKT-final-123.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-final-2026",
@@ -5231,7 +5234,8 @@
       "model": "LightSAKT",
       "seed": 2026,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/ASSIST2009-LightSAKT-final-2026.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-final-3407",
@@ -5240,7 +5244,8 @@
       "model": "LightSAKT",
       "seed": 3407,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/ASSIST2009-LightSAKT-final-3407.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-final-7777",
@@ -5249,7 +5254,8 @@
       "model": "LightSAKT",
       "seed": 7777,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/ASSIST2009-LightSAKT-final-7777.json"
     },
     {
       "run_id": "ASSIST2009-GKT_MHA-final-42",
@@ -5528,7 +5534,9 @@
       "model": "LightSAKT",
       "seed": 42,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "reuse_selected_run": "ASSIST2015-LightSAKT-grid-42-64640d03b0d3",
+      "selection_path": "experiments/selections/ASSIST2015-LightSAKT.json"
     },
     {
       "run_id": "ASSIST2015-LightSAKT-final-123",
@@ -5537,7 +5545,8 @@
       "model": "LightSAKT",
       "seed": 123,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/ASSIST2015-LightSAKT-final-123.json"
     },
     {
       "run_id": "ASSIST2015-LightSAKT-final-2026",
@@ -5546,7 +5555,8 @@
       "model": "LightSAKT",
       "seed": 2026,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/ASSIST2015-LightSAKT-final-2026.json"
     },
     {
       "run_id": "ASSIST2015-LightSAKT-final-3407",
@@ -5555,7 +5565,8 @@
       "model": "LightSAKT",
       "seed": 3407,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/ASSIST2015-LightSAKT-final-3407.json"
     },
     {
       "run_id": "ASSIST2015-LightSAKT-final-7777",
@@ -5564,7 +5575,8 @@
       "model": "LightSAKT",
       "seed": 7777,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/ASSIST2015-LightSAKT-final-7777.json"
     },
     {
       "run_id": "ASSIST2015-GKT_MHA-final-42",
@@ -5852,7 +5864,8 @@
       "model": "LightSAKT",
       "seed": 123,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/Algebra2005-LightSAKT-final-123.json"
     },
     {
       "run_id": "Algebra2005-LightSAKT-final-2026",

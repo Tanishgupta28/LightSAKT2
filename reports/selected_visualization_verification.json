@@ -1,0 +1,18 @@
+{
+  "verified_utc": "2026-10-14T02:18:37.182861+00:00",
+  "verified": true,
+  "cases": [
+    {
+      "dataset": "ASSIST2009",
+      "run_id": "ASSIST2009-LightSAKT-final-42",
+      "checkpoint_sha256": "d0af3a20f40cf3734883634c23053dbfbf187dee9e7a556c85fcb27b4841197d",
+      "genuine_test_sequence_verified": true,
+      "causal_normalized_weights_verified": true,
+      "visualization_prediction_identity_verified": true,
+      "skill_predictions_recomputed": true,
+      "context": "within chronological chunk, not observed mastery",
+      "metadata_sha256": "14d51d25fa880330b3bf54f86bbe1a7ce9d846866855c29d522941aa8db29de7"
+    }
+  ],
+  "scope": "CPU-only independent verification of available selected-checkpoint figures; remaining datasets stay pending"
+}
