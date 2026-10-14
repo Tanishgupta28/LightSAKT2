@@ -802,6 +802,15 @@
     "verified_contents": true
   },
   {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-2a7e728e4d1c",
+    "archive_schema": 2,
+    "metrics_sha256": "84f46dcffccea8b4f488aa4dbdb1768da3d7d5fd49357c233dc3a7bab5692576",
+    "source_run_id": "ASSIST2009-DKVMN-baseline_tuning-42-2a7e728e4d1c",
+    "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-2a7e728e4d1c.tar.gz",
+    "sha256": "9d33cfa645c392f24b590d08d42ea26ae83b5ff016fb5c09d38ae462756dd84a",
+    "verified_contents": true
+  },
+  {
     "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-3259bb3a9360",
     "archive_schema": 2,
     "metrics_sha256": "3fff5269d8af1677ba08a6e204b681cfa8088c47cdf1cef5e71244c24152106e",
@@ -809,6 +818,20 @@
     "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-3259bb3a9360.tar.gz",
     "sha256": "05d6a4c3f5654fb662b4c2c986a21726ffc01268c2caeb2fc8d467fe60b3e0d3",
     "verified_contents": true
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-35063687bb25",
+    "archive_schema": 2,
+    "metrics_sha256": "ccade8b5aef71a7dc3f9164551df512283e45d73b9c5b550928b8f01bd478138",
+    "source_run_id": "ASSIST2009-DKVMN-primary-42-902c00823fa6",
+    "path": "backups/completed_runs/ASSIST2009-DKVMN-primary-42-902c00823fa6.tar.gz",
+    "sha256": "e5a160ab43267a5630df3fd89dfa1e6b455a24210c43c8190449fbf1e58cc50d",
+    "verified_contents": true,
+    "result_archive": {
+      "path": "backups/reused_results/ASSIST2009-DKVMN-baseline_tuning-42-35063687bb25.tar.gz",
+      "sha256": "a8e4e13800f4f2bfa3da40304e292bd73df9281511f950bf706d29c699bce4d6",
+      "verified_contents": true
+    }
   },
   {
     "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-4be7dc9b13b5",
