@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-14T02:29:48.192907+00:00",
+  "updated_utc": "2026-10-14T02:30:31.095864+00:00",
   "total_slots": 957,
   "completed": 254,
   "remaining": 703,
@@ -41,9 +41,9 @@
   "running_jobs": [
     {
       "run_id": "ASSIST2009-LightSAKT-single_head-7777",
-      "last_completed_epoch": null,
-      "best_checkpoint": null,
-      "resume_command": null
+      "last_completed_epoch": 38,
+      "best_checkpoint": "checkpoints/ASSIST2009-LightSAKT-single_head-7777/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-LightSAKT-single_head-7777/config.json"
     }
   ],
   "phase_counts": {
