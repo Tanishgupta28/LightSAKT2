@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T01:27:46.230526+00:00",
-  "sample_time": 1791941265.388635,
+  "updated_utc": "2026-10-14T01:28:47.995866+00:00",
+  "sample_time": 1791941327.028315,
   "counts": {
-    "completed": 162,
-    "pending": 794,
+    "completed": 163,
+    "pending": 793,
     "running": 1
   },
   "scheduler": {
@@ -12,9 +12,9 @@
   },
   "training_processes": [
     {
-      "pid": 246146,
-      "cpu_seconds": 17.09,
-      "process_state": "S",
+      "pid": 247015,
+      "cpu_seconds": 31.38,
+      "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
       "observed_seconds": 0.2,
@@ -23,19 +23,19 @@
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2015-LightSAKT-grid-42-8a618101270c",
-      "last_completed_epoch": 2,
-      "best_checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-8a618101270c/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-LightSAKT-grid-42-8a618101270c/config.json",
-      "recent_mean_epoch_seconds": 2.865958890004549,
-      "seconds_since_last_epoch": 1.8190679550170898,
+      "run_id": "ASSIST2015-LightSAKT-grid-42-9349926da302",
+      "last_completed_epoch": 7,
+      "best_checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-9349926da302/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-LightSAKT-grid-42-9349926da302/config.json",
+      "recent_mean_epoch_seconds": 3.133851539005991,
+      "seconds_since_last_epoch": 0.7605409622192383,
       "startup_epoch_seconds_extrapolated": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 8.597876670013648,
+      "stall_threshold_seconds": 9.401554617017972,
       "checkpoint_stalled": false
     }
   ],
-  "gpu_memory_mib": 1106,
+  "gpu_memory_mib": 1280,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",

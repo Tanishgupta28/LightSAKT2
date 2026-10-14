@@ -6,10 +6,10 @@ The current full 957-entry research ledger is retained. The complete and acceler
 
 |Schedule|Remaining isolated serial hours|Occupied MIG hours with admitted concurrency|Scope|
 |---|---|---|---|
-|Complete|501.1|391.1|All distinct requested and expanded tuning runs|
-|Accelerated proposal|171.9|136.1|Only supplementary GKT tuning 36→9 per variant/dataset; requires approval|
+|Complete|501.3|391.3|All distinct requested and expanded tuning runs|
+|Accelerated proposal|172.1|136.4|Only supplementary GKT tuning 36→9 per variant/dataset; requires approval|
 
-These are conditional training-only forecasts, using measured full epochs for all 21 model/dataset strata and primary/wide GKT step measurements on all three datasets. They exclude process startup, final test inference, exclusive efficiency benchmarks and final artifact verification. Stopping epoch is the largest unknown: many future GKT configurations have only a single primary stopping-count reference. Full low/high scenarios are {'low': 87.23084558918359, 'central': 391.0907253816104, 'high': 1465.123822904926}; these are an earliest-stopping versus maximum-epoch/runtime envelope, not a confidence interval. Parallel throughput uses the smallest observed MHA gain. The high scenario assumes no sustained concurrency gain. Epochs include validation CPU work; isolated worker hours, summed concurrent process hours, and occupied GPU wall hours are distinct quantities.
+These are conditional training-only forecasts, using measured full epochs for all 21 model/dataset strata and primary/wide GKT step measurements on all three datasets. They exclude process startup, final test inference, exclusive efficiency benchmarks and final artifact verification. Stopping epoch is the largest unknown: many future GKT configurations have only a single primary stopping-count reference. Full low/high scenarios are {'low': 87.23934404452754, 'central': 391.29401474911805, 'high': 1462.7069296336208}; these are an earliest-stopping versus maximum-epoch/runtime envelope, not a confidence interval. Parallel throughput uses the smallest observed MHA gain. The high scenario assumes no sustained concurrency gain. Epochs include validation CPU work; isolated worker hours, summed concurrent process hours, and occupied GPU wall hours are distinct quantities.
 
 ## Profiling and accepted implementation changes
 
