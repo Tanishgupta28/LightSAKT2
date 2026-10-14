@@ -882,6 +882,38 @@
     "verified_contents": true
   },
   {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-4462e183cff2",
+    "archive_schema": 2,
+    "metrics_sha256": "63e94d78d6a2a3d3bb04e5c1ab4950c9ee97546495168133d26b9a164905f336",
+    "source_run_id": "ASSIST2009-LightSAKT-grid-42-4462e183cff2",
+    "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-4462e183cff2.tar.gz",
+    "sha256": "723a386d0c62aac38dc0d0fcc1850915c14dbcc476dec04c9c3e5083377a8185",
+    "verified_contents": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-48c411be10b6",
+    "archive_schema": 2,
+    "metrics_sha256": "8976dd4d877de582d221e1684df4a3e0757b743fb46d325528288ead1fae5cf5",
+    "source_run_id": "ASSIST2009-LightSAKT-primary-42-440d619b7547",
+    "path": "backups/completed_runs/ASSIST2009-LightSAKT-primary-42-440d619b7547.tar.gz",
+    "sha256": "fda9fd6268121f545e5d20211a4760148ca51a3a16d280b9233ba3c3cac2c099",
+    "verified_contents": true,
+    "result_archive": {
+      "path": "backups/reused_results/ASSIST2009-LightSAKT-grid-42-48c411be10b6.tar.gz",
+      "sha256": "c3d1294d19de6acda2d5c911a4dc37c50ed196900e45d0a5c2fba5bdb00bd917",
+      "verified_contents": true
+    }
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-519f6ddfded5",
+    "archive_schema": 2,
+    "metrics_sha256": "a0e3a4a859c37e81c5c2fed256ad8a6ef2ad2d04c4b5ecf26b76a319cc8b6eb6",
+    "source_run_id": "ASSIST2009-LightSAKT-grid-42-519f6ddfded5",
+    "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-519f6ddfded5.tar.gz",
+    "sha256": "63883f864cc1f5274342bc977249fecbdd3cee2a43137f3e3bddd98bf5765bd5",
+    "verified_contents": true
+  },
+  {
     "run_id": "ASSIST2009-LightSAKT-primary-42-440d619b7547",
     "archive_schema": 2,
     "metrics_sha256": "2f3e3d48a65af85fb7b3751b69be46bbd64bb75bd10a35eb0625b1a66c0099ef",

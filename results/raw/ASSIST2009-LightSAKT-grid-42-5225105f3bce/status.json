@@ -1,0 +1,10 @@
+{
+  "run_id": "ASSIST2009-LightSAKT-grid-42-5225105f3bce",
+  "status": "running",
+  "last_completed_epoch": 7,
+  "config": "results/raw/ASSIST2009-LightSAKT-grid-42-5225105f3bce/config.json",
+  "seed": 42,
+  "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-LightSAKT-grid-42-5225105f3bce/config.json",
+  "best_checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-5225105f3bce/best.pt",
+  "failure_reason": null
+}
