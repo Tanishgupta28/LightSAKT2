@@ -1,5 +1,7 @@
 import json
 import itertools
+import io
+import os
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -13,7 +15,15 @@ from scripts.summarize import summarize
 
 def save_figure(name):
     Path('results/figures').mkdir(parents=True,exist_ok=True)
-    for ext in ['png','svg','pdf']:plt.savefig(f'results/figures/{name}.{ext}',dpi=300,bbox_inches='tight')
+    # Stable vector IDs and omitted creation dates make unchanged observations
+    # produce identical artifacts instead of needless NFS writes/Git churn.
+    with matplotlib.rc_context({'svg.hashsalt':'LightSAKT2/'+name}):
+        for ext in ['png','svg','pdf']:
+            metadata={'Date':None} if ext=='svg' else {'CreationDate':None,'ModDate':None} if ext=='pdf' else None
+            output=io.BytesIO();plt.savefig(output,format=ext,dpi=300,bbox_inches='tight',metadata=metadata)
+            path=Path('results/figures')/(name+'.'+ext);payload=output.getvalue()
+            if not path.exists() or path.read_bytes()!=payload:
+                temporary=path.with_suffix(f'.{os.getpid()}.tmp');temporary.write_bytes(payload);temporary.replace(path)
     plt.close()
 
 
