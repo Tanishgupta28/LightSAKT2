@@ -1,0 +1,10 @@
+{
+  "run_id": "Algebra2005-SAKT-baseline_tuning-42-4c385a071fc0",
+  "status": "completed",
+  "last_completed_epoch": 18,
+  "config": "results/raw/Algebra2005-SAKT-baseline_tuning-42-4c385a071fc0/config.json",
+  "seed": 42,
+  "resume_command": "python -m scripts.run --config results/raw/Algebra2005-SAKT-baseline_tuning-42-4c385a071fc0/config.json",
+  "best_checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-4c385a071fc0/best.pt",
+  "failure_reason": null
+}
