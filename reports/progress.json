@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-10-14T04:33:10.638822+00:00",
+  "updated_utc": "2026-10-14T04:33:50.935171+00:00",
   "total_slots": 957,
-  "completed": 448,
-  "remaining": 509,
+  "completed": 449,
+  "remaining": 508,
   "counts": {
-    "completed": 448,
-    "pending": 508,
+    "completed": 449,
+    "pending": 507,
     "running": 1
   },
   "processes": {
@@ -40,10 +40,10 @@
   },
   "running_jobs": [
     {
-      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-f617b0c5117f",
-      "last_completed_epoch": 16,
-      "best_checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-f617b0c5117f/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-SAKT-baseline_tuning-42-f617b0c5117f/config.json"
+      "run_id": "Algebra2005-DKT-baseline_tuning-42-026868bd5f71",
+      "last_completed_epoch": 17,
+      "best_checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-026868bd5f71/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKT-baseline_tuning-42-026868bd5f71/config.json"
     }
   ],
   "phase_counts": {
@@ -51,8 +51,8 @@
       "completed": 21
     },
     "6": {
-      "completed": 337,
-      "pending": 418,
+      "completed": 338,
+      "pending": 417,
       "running": 1
     },
     "7": {

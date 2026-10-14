@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T04:32:16.428374+00:00",
-  "sample_time": 1791952335.4315367,
+  "updated_utc": "2026-10-14T04:33:18.353878+00:00",
+  "sample_time": 1791952397.6341448,
   "counts": {
-    "completed": 446,
-    "pending": 510,
+    "completed": 448,
+    "pending": 508,
     "running": 1
   },
   "scheduler": {
@@ -12,26 +12,26 @@
   },
   "training_processes": [
     {
-      "pid": 473215,
-      "cpu_seconds": 47.99,
+      "pid": 475008,
+      "cpu_seconds": 39.76,
       "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
       "observed_seconds": 0.2,
-      "cpu_seconds_advanced": 0.19999999999999574
+      "cpu_seconds_advanced": 0.21000000000000085
     }
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-d7e81d4048b1",
-      "last_completed_epoch": 26,
-      "best_checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-d7e81d4048b1/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-SAKT-baseline_tuning-42-d7e81d4048b1/config.json",
-      "recent_mean_epoch_seconds": 1.435366707999492,
-      "seconds_since_last_epoch": 0.3126657009124756,
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-f617b0c5117f",
+      "last_completed_epoch": 21,
+      "best_checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-f617b0c5117f/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-SAKT-baseline_tuning-42-f617b0c5117f/config.json",
+      "recent_mean_epoch_seconds": 1.4996334582043347,
+      "seconds_since_last_epoch": 0.0,
       "startup_epoch_seconds_extrapolated": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 4.306100123998476,
+      "stall_threshold_seconds": 4.4989003746130045,
       "checkpoint_stalled": false
     }
   ],
@@ -42,5 +42,5 @@
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 448 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 450 independently downloaded/checksum verified; completed-archive synchronization True."
 }
