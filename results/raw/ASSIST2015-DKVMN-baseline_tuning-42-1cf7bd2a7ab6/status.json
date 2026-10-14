@@ -1,0 +1,10 @@
+{
+  "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-1cf7bd2a7ab6",
+  "status": "running",
+  "last_completed_epoch": 0,
+  "config": "results/raw/ASSIST2015-DKVMN-baseline_tuning-42-1cf7bd2a7ab6/config.json",
+  "seed": 42,
+  "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-DKVMN-baseline_tuning-42-1cf7bd2a7ab6/config.json",
+  "best_checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-1cf7bd2a7ab6/best.pt",
+  "failure_reason": null
+}
