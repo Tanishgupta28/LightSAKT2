@@ -66,8 +66,8 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 ## Experiment schedule status
 
 {
-  "completed": 400,
-  "pending": 556,
+  "completed": 401,
+  "pending": 555,
   "running": 1
 }
 
