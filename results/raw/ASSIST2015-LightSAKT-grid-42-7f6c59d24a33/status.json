@@ -1,0 +1,10 @@
+{
+  "run_id": "ASSIST2015-LightSAKT-grid-42-7f6c59d24a33",
+  "status": "running",
+  "last_completed_epoch": 4,
+  "config": "results/raw/ASSIST2015-LightSAKT-grid-42-7f6c59d24a33/config.json",
+  "seed": 42,
+  "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-LightSAKT-grid-42-7f6c59d24a33/config.json",
+  "best_checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-7f6c59d24a33/best.pt",
+  "failure_reason": null
+}

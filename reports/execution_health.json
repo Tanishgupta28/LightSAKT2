@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-10-14T01:24:41.693018+00:00",
-  "sample_time": 1791941080.8717222,
+  "updated_utc": "2026-10-14T01:25:43.031353+00:00",
+  "sample_time": 1791941142.5295556,
   "counts": {
     "completed": 160,
     "pending": 796,
@@ -13,34 +13,34 @@
   "training_processes": [
     {
       "pid": 243944,
-      "cpu_seconds": 3.33,
+      "cpu_seconds": 66.72,
       "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 0.2,
-      "cpu_seconds_advanced": 0.10000000000000009
+      "observed_seconds": 61.65783333778381,
+      "cpu_seconds_advanced": 63.39
     }
   ],
   "active_runs": [
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-6cbd6e38b46e",
-      "last_completed_epoch": null,
-      "best_checkpoint": null,
-      "resume_command": null,
-      "recent_mean_epoch_seconds": null,
-      "seconds_since_last_epoch": 0.710050106048584,
-      "startup_epoch_seconds_extrapolated": 4.169595254325951,
-      "age_reference": "initial running status; first checkpoint not yet saved",
-      "stall_threshold_seconds": 12.508785762977851,
+      "last_completed_epoch": 14,
+      "best_checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-6cbd6e38b46e/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-LightSAKT-grid-42-6cbd6e38b46e/config.json",
+      "recent_mean_epoch_seconds": 4.059630792401731,
+      "seconds_since_last_epoch": 0.4339916706085205,
+      "startup_epoch_seconds_extrapolated": null,
+      "age_reference": "history checkpoint",
+      "stall_threshold_seconds": 12.178892377205194,
       "checkpoint_stalled": false
     }
   ],
-  "gpu_memory_mib": 548,
+  "gpu_memory_mib": 1586,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 162 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 163 independently downloaded/checksum verified; completed-archive synchronization True."
 }
