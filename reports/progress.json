@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-10-14T03:10:58.107466+00:00",
+  "updated_utc": "2026-10-14T03:11:40.697245+00:00",
   "total_slots": 957,
-  "completed": 292,
-  "remaining": 665,
+  "completed": 293,
+  "remaining": 664,
   "counts": {
-    "completed": 292,
-    "pending": 664,
+    "completed": 293,
+    "pending": 663,
     "running": 1
   },
   "processes": {
@@ -40,10 +40,10 @@
   },
   "running_jobs": [
     {
-      "run_id": "Algebra2005-LightSAKT-no_position-3407",
-      "last_completed_epoch": 28,
-      "best_checkpoint": "checkpoints/Algebra2005-LightSAKT-no_position-3407/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-LightSAKT-no_position-3407/config.json"
+      "run_id": "Algebra2005-LightSAKT-no_position-42",
+      "last_completed_epoch": 34,
+      "best_checkpoint": "checkpoints/Algebra2005-LightSAKT-no_position-42/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-LightSAKT-no_position-42/config.json"
     }
   ],
   "phase_counts": {
@@ -59,9 +59,9 @@
       "completed": 15
     },
     "8": {
-      "completed": 62,
-      "pending": 12,
-      "running": 1
+      "completed": 63,
+      "running": 1,
+      "pending": 11
     }
   },
   "reused_slots": 45,
