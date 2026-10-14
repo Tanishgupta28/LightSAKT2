@@ -1,4 +1,120 @@
 {
-  "status": "running",
-  "scope": "Train-only bit-exact concurrency probes and full correctness gate"
+  "status": "completed",
+  "updated_utc": "2026-10-14T00:41:52.562894+00:00",
+  "concurrency": [
+    {
+      "case": "ASSIST2009-GKT-primary",
+      "dataset": "ASSIST2009",
+      "model": "GKT",
+      "workers": 2,
+      "exact_parameters_and_gradients": true,
+      "loop_throughput_speedup": 1.0600644596955624,
+      "serial_step_mean": 0.3110282789071789,
+      "parallel_step_means": [
+        0.586810480998247,
+        0.579795012701652
+      ],
+      "peak_reserved_bytes_per_worker": 624951296
+    },
+    {
+      "case": "ASSIST2015-GKT-primary",
+      "dataset": "ASSIST2015",
+      "model": "GKT",
+      "workers": 2,
+      "exact_parameters_and_gradients": true,
+      "loop_throughput_speedup": 1.1753027870481738,
+      "serial_step_mean": 0.33184130330046174,
+      "parallel_step_means": [
+        0.5646913906035479,
+        0.5620124862965895
+      ],
+      "peak_reserved_bytes_per_worker": 476053504
+    },
+    {
+      "case": "Algebra2005-GKT-primary",
+      "dataset": "Algebra2005",
+      "model": "GKT",
+      "workers": 2,
+      "exact_parameters_and_gradients": true,
+      "loop_throughput_speedup": 1.1563521870968578,
+      "serial_step_mean": 0.7001571906002937,
+      "parallel_step_means": [
+        1.210976253496483,
+        1.2106225455005188
+      ],
+      "peak_reserved_bytes_per_worker": 4456448000
+    },
+    {
+      "case": "Algebra2005-GKT-wide",
+      "dataset": "Algebra2005",
+      "model": "GKT",
+      "workers": 2,
+      "exact_parameters_and_gradients": true,
+      "loop_throughput_speedup": 0.9003105386856802,
+      "serial_step_mean": 0.6690300665970426,
+      "parallel_step_means": [
+        1.4861871914967195,
+        1.4862217166024494
+      ],
+      "peak_reserved_bytes_per_worker": 9741271040
+    },
+    {
+      "case": "Algebra2005-GKT_MHA-wide",
+      "dataset": "Algebra2005",
+      "model": "GKT_MHA",
+      "workers": 2,
+      "exact_parameters_and_gradients": true,
+      "loop_throughput_speedup": 1.5122888289676635,
+      "serial_step_mean": 0.6774080628005322,
+      "parallel_step_means": [
+        0.8958716626977548,
+        0.89395323949866
+      ],
+      "peak_reserved_bytes_per_worker": 3846176768
+    }
+  ],
+  "maximum_validated_workers": 2,
+  "tests_log": "reports/test_runs/20261014T004136-execution-gate.log",
+  "tests_passed": true,
+  "mixed_precision_probe": [
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "comparison": "FP32 versus BF16 autocast on identical train batch and dropout RNG",
+      "max_probability_absolute_difference": 0.003106534481048584,
+      "max_gradient_absolute_difference": 0.0003066733479499817,
+      "loss_difference": 3.075599670410156e-05,
+      "strict_probability_tolerance": 1e-06,
+      "strict_gradient_tolerance": 1e-06,
+      "passes_strict_equivalence": false,
+      "enabled_for_research": false
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "comparison": "FP32 versus BF16 autocast on identical train batch and dropout RNG",
+      "max_probability_absolute_difference": 0.0026714205741882324,
+      "max_gradient_absolute_difference": 0.00031960010528564453,
+      "loss_difference": 1.811981201171875e-05,
+      "strict_probability_tolerance": 1e-06,
+      "strict_gradient_tolerance": 1e-06,
+      "passes_strict_equivalence": false,
+      "enabled_for_research": false
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "comparison": "FP32 versus BF16 autocast on identical train batch and dropout RNG",
+      "max_probability_absolute_difference": 0.0030283331871032715,
+      "max_gradient_absolute_difference": 0.0003987327218055725,
+      "loss_difference": 3.1828880310058594e-05,
+      "strict_probability_tolerance": 1e-06,
+      "strict_gradient_tolerance": 1e-06,
+      "passes_strict_equivalence": false,
+      "enabled_for_research": false
+    }
+  ],
+  "mixed_precision_enabled": false,
+  "source_and_architecture_unchanged": true,
+  "precision": "FP32; deterministic; AMP/TF32/compile disabled"
 }

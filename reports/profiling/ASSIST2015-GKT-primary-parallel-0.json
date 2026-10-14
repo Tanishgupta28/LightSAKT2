@@ -1,0 +1,47 @@
+{
+  "config": {
+    "dataset": "ASSIST2015",
+    "model": "GKT",
+    "group": "primary",
+    "seed": 42,
+    "seq_len": 100,
+    "batch_size": 8,
+    "max_epochs": 50,
+    "patience": 5,
+    "learning_rate": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0.0,
+    "epsilon": 1e-08,
+    "model_config": {
+      "hidden_size": 30,
+      "num_attn_heads": 2,
+      "method": "PAM"
+    },
+    "evaluate_test": true,
+    "run_id": "ASSIST2015-GKT-primary-42-c3a67383f961"
+  },
+  "steps": 10,
+  "wall_seconds": 5.646930991002591,
+  "step_seconds": [
+    0.5596546590095386,
+    0.5581526010064408,
+    0.5509900600009132,
+    0.5570977170136757,
+    0.5751341349969152,
+    0.5774819850048516,
+    0.5762793040194083,
+    0.5645296490110923,
+    0.5682289619871881,
+    0.5593648339854553
+  ],
+  "peak_reserved_bytes": 476053504,
+  "peak_allocated_bytes": 450178560,
+  "dataset_construction_seconds": 1.2077460850123316,
+  "batch_collation_seconds": 0.0019805949996225536,
+  "host_to_device_seconds": 0.0003660549991764128,
+  "training_chunks": 14615,
+  "num_q": 101
+}

@@ -1,22 +1,33 @@
 {
-  "updated_utc": "2026-10-14T00:37:01.872651+00:00",
+  "updated_utc": "2026-10-14T00:40:23.031636+00:00",
   "logical_total": 957,
-  "completed": 106,
-  "fresh_remaining": 806,
+  "completed": 107,
+  "fresh_remaining": 805,
   "reuse_remaining": 45,
   "distinct_fresh_total": 912,
   "proposed_deferred_fresh": 162,
-  "accelerated_fresh_remaining": 644,
+  "accelerated_fresh_remaining": 643,
   "complete_training_hours": {
-    "low": 106.32622528618394,
-    "central": 501.07470206443406,
-    "high": 1465.7623204262775
+    "low": 106.32075928908993,
+    "central": 501.0391694457968,
+    "high": 1465.7244440695004
   },
   "accelerated_proposal_training_hours": {
-    "low": 34.69800265284554,
-    "central": 171.85967413296208,
-    "high": 493.67720531735756
+    "low": 34.69253665575153,
+    "central": 171.8241415143248,
+    "high": 493.6393289605803
   },
+  "complete_two_worker_wall_hours": {
+    "low": 67.37163236545604,
+    "central": 320.3845259516867,
+    "high": 1465.7244440695004
+  },
+  "proposal_two_worker_wall_hours": {
+    "low": 22.567269823821515,
+    "central": 114.45634676033686,
+    "high": 493.63932896058026
+  },
+  "measured_gkt_concurrency_speedup": 1.598688577853948,
   "hour_scope": "Same measured-reference model as current ETA; no unverified implementation speedup applied; additional test inference/final benchmarking excluded.",
   "grid_seeds": [
     42
