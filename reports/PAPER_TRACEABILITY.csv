@@ -1,7 +1,7 @@
 item,paper_location,source_artifacts,execution_status
 Table 2,p9 dataset statistics,reports/*_statistics.json; results/tables/Table_2.csv,executed; raw and processed statistics verified
 Table 3,p14 training configuration,configs/protocol.json; configs/runs/*primary*.json; results/tables/Table_3.csv,"executed; configured primary protocol, distinct from selected final settings"
-Table 4,p15 Algebra grid,results/raw/Algebra2005-LightSAKT-grid-*/metrics.json; results/tables/Table_4.csv,29/36 configurations completed
+Table 4,p15 Algebra grid,results/raw/Algebra2005-LightSAKT-grid-*/metrics.json; results/tables/Table_4.csv,33/36 configurations completed
 Table 5,p15-16 ASSIST2009 grid,results/raw/ASSIST2009-LightSAKT-grid-*/metrics.json; results/tables/Table_5.csv,36/36 configurations completed
 Table 6,p16 ASSIST2015 grid,results/raw/ASSIST2015-LightSAKT-grid-*/metrics.json; results/tables/Table_6.csv,36/36 configurations completed
 Table 7,p19 model performance,results/tables/Table_7.csv; repeated_seed_summary.csv; all_verified_runs.csv,0/105 final seed slots completed (21 checkpoint reuse slots)
