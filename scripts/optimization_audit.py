@@ -26,6 +26,7 @@ def audit():
         keep=state in ['completed','running'] or job['phase']!=6 or coarse_gkt(c)
         row={'run_id':job['run_id'],'dataset':c['dataset'],'model':c['model'],'category':category,
              'seed':c['seed'],'status':state,'fresh_remaining':state!='completed' and not alias,
+             'training_reuse':alias,
              'reuse_remaining':state!='completed' and alias,'accelerated_retained':keep,
              'scientific_role':'Required paper grid' if category=='LightSAKT_grid' else
                 'Required matched five-seed comparison' if category=='repeated_selected' else
@@ -53,7 +54,7 @@ def audit():
     # final-training cost envelope instead of assuming a favorable selected width.
     summary={'updated_utc':datetime.now(timezone.utc).isoformat(),'logical_total':len(frame),
         'completed':int((frame.status=='completed').sum()),'fresh_remaining':int(frame.fresh_remaining.sum()),
-        'reuse_remaining':int(frame.reuse_remaining.sum()),'distinct_fresh_total':len(frame)-int((frame.fresh_remaining|frame.reuse_remaining).sum())+int(frame.fresh_remaining.sum()),
+        'reuse_remaining':int(frame.reuse_remaining.sum()),'distinct_fresh_total':len(frame)-int(frame.training_reuse.sum()),
         'proposed_deferred_fresh':int((~frame.accelerated_retained & frame.fresh_remaining).sum()),
         'accelerated_fresh_remaining':int((frame.accelerated_retained & frame.fresh_remaining).sum()),
         'complete_training_hours':full,'accelerated_proposal_training_hours':fast,

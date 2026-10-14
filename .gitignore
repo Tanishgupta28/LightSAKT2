@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 data/raw/
 data/processed/
+data/cache/
 checkpoints/
 backups/
 original_snapshot/**/*.pkl
@@ -28,3 +29,6 @@ experiments/offsite.pid
 experiments/offsite.lock
 *.tmp
 .tools/
+experiments/profiling.pid
+experiments/profiling.lock
+reports/profiling/*.pt
