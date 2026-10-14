@@ -266,5 +266,44 @@
     "draft": true,
     "download_sha256_verified": true,
     "verified_utc": "2026-10-14T13:15:01.034580+00:00"
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-final-2026",
+    "epoch": 43,
+    "path": "backups/active_runs/ASSIST2015-DKVMN-final-2026-epoch43.tar.gz",
+    "sha256": "f7d4091c87f7a5c0abb43f0f03495502473913c952325efb5f3e1787d65f4688",
+    "captured_time": 1791991524.8145397,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "DKVMN",
+      "group": "final",
+      "seed": 2026,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "dim_s": 64,
+        "size_m": 10
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-DKVMN-final-2026",
+      "selection_path": "experiments/selections/ASSIST2015-DKVMN.json"
+    },
+    "asset_id": 640786952,
+    "release_tag": "research-active-recovery-20261014",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-14T15:25:32.459345+00:00"
   }
 ]
