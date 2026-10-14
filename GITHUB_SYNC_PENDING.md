@@ -4,12 +4,12 @@ Status: synchronized
 
 Branch: research-rebuild
 
-Latest pushed or pending milestone commit: 98a84eeb807c65a8b4ff7bf44b5a0c45668f753b
+Latest pushed or pending milestone commit: 4b902a71aec59d4a0583f8f9e481be231067d341
 
-Verified recovery bundle: backups/98a84eeb807c65a8b4ff7bf44b5a0c45668f753b.bundle
+Verified recovery bundle: backups/4b902a71aec59d4a0583f8f9e481be231067d341.bundle
 
 Remote: https://github.com/Tanishgupta28/LightSAKT2 (private).
 
 Pending operation: none for the milestone above; the live scheduler may generate newer uncommitted results.
 
-Restore: git clone backups/98a84eeb807c65a8b4ff7bf44b5a0c45668f753b.bundle recovered-history (choose an authorized recovery location). Raw files and checkpoints are in the durable workspace archive, not Git bundles.
+Restore: git clone backups/4b902a71aec59d4a0583f8f9e481be231067d341.bundle recovered-history (choose an authorized recovery location). Raw files and checkpoints are in the durable workspace archive, not Git bundles.
