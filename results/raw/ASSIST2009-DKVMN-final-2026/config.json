@@ -1,0 +1,24 @@
+{
+  "dataset": "ASSIST2009",
+  "model": "DKVMN",
+  "group": "final",
+  "seed": 2026,
+  "seq_len": 100,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "patience": 5,
+  "learning_rate": 0.005,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.0,
+  "epsilon": 1e-08,
+  "model_config": {
+    "dim_s": 64,
+    "size_m": 10
+  },
+  "evaluate_test": true,
+  "run_id": "ASSIST2009-DKVMN-final-2026",
+  "selection_path": "experiments/selections/ASSIST2009-DKVMN.json"
+}
