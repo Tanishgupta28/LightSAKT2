@@ -1333,6 +1333,76 @@
     "verified_contents": true
   },
   {
+    "run_id": "ASSIST2009-LightSAKT-no_regularization-123",
+    "archive_schema": 2,
+    "metrics_sha256": "e53e0b075ed0e2f1ac1ca333e113d65d488325fa8fe55faa941158edf4ed9fb3",
+    "source_run_id": "ASSIST2009-LightSAKT-no_dropout-123",
+    "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_dropout-123.tar.gz",
+    "sha256": "f720984b2f7d7dd5cd17ccbcf88d2f3708b0e585eeb5c66ddfb5e3aa63e9e600",
+    "verified_contents": true,
+    "result_archive": {
+      "path": "backups/reused_results/ASSIST2009-LightSAKT-no_regularization-123.tar.gz",
+      "sha256": "7c69cc07b1e6ebb7fcc3b69e492109cdc74236dcf9afa9d2d61b7885b9921a39",
+      "verified_contents": true
+    }
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_regularization-2026",
+    "archive_schema": 2,
+    "metrics_sha256": "7ad471ba48156f7180df950ead52572dcf76f0190c998f571bf62ed2d0d1de25",
+    "source_run_id": "ASSIST2009-LightSAKT-no_dropout-2026",
+    "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_dropout-2026.tar.gz",
+    "sha256": "f2c68352df9055d1f5a7c8167584e88e8c21a979d30ef94301e41c50d53b2bd3",
+    "verified_contents": true,
+    "result_archive": {
+      "path": "backups/reused_results/ASSIST2009-LightSAKT-no_regularization-2026.tar.gz",
+      "sha256": "b9a7fd0fba7d407e9cb56cf7171643f3d14a35f7402f90adb00527b3ec24bc23",
+      "verified_contents": true
+    }
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_regularization-3407",
+    "archive_schema": 2,
+    "metrics_sha256": "787b06869ed40009229b8e9c57a42afaa9135f0cd4ac6ce6061075b0ae61288b",
+    "source_run_id": "ASSIST2009-LightSAKT-no_dropout-3407",
+    "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_dropout-3407.tar.gz",
+    "sha256": "72f1e8d6d5ab992c7031271f8edd59a9212f6ba112c6da90c42ed4a0e40e0e9b",
+    "verified_contents": true,
+    "result_archive": {
+      "path": "backups/reused_results/ASSIST2009-LightSAKT-no_regularization-3407.tar.gz",
+      "sha256": "84574d6910d11ef8620cd8c4a8029fcd59900b9ec7aaa50845aac7430d527bc7",
+      "verified_contents": true
+    }
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_regularization-42",
+    "archive_schema": 2,
+    "metrics_sha256": "0ff735d05e8b0ed35b5cf74190d6ba79f248c8c19cb277cfa9735f77615cf26a",
+    "source_run_id": "ASSIST2009-LightSAKT-no_dropout-42",
+    "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_dropout-42.tar.gz",
+    "sha256": "a889743184496b8a3067eb15912ac292a2cb194a00a1163d4df3ab5935a1295a",
+    "verified_contents": true,
+    "result_archive": {
+      "path": "backups/reused_results/ASSIST2009-LightSAKT-no_regularization-42.tar.gz",
+      "sha256": "3459c6c131d75de580508045179231a37537fb7c5dbd4fba1173c4627c25b31f",
+      "verified_contents": true
+    }
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_regularization-7777",
+    "archive_schema": 2,
+    "metrics_sha256": "34324c4fe324fad70a81ee4e26a9517b276a86274abf8440eeab59b35abb3b9f",
+    "source_run_id": "ASSIST2009-LightSAKT-no_dropout-7777",
+    "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_dropout-7777.tar.gz",
+    "sha256": "8eb9dcbf90676aad5d3bb9347d641213fdd0303c5ed70a8f69a34fdfd361d1d3",
+    "verified_contents": true,
+    "result_archive": {
+      "path": "backups/reused_results/ASSIST2009-LightSAKT-no_regularization-7777.tar.gz",
+      "sha256": "afdd494c2d9806cd856f0704f796d5f67eb211e5c70abdfb0b8c5ea8932d70df",
+      "verified_contents": true
+    }
+  },
+  {
     "run_id": "ASSIST2009-LightSAKT-primary-42-440d619b7547",
     "archive_schema": 2,
     "metrics_sha256": "2f3e3d48a65af85fb7b3751b69be46bbd64bb75bd10a35eb0625b1a66c0099ef",
