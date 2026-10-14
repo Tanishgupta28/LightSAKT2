@@ -1,0 +1,10 @@
+{
+  "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-7d21b2506b5c",
+  "status": "running",
+  "last_completed_epoch": 24,
+  "config": "results/raw/ASSIST2015-DKTplus-baseline_tuning-42-7d21b2506b5c/config.json",
+  "seed": 42,
+  "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-DKTplus-baseline_tuning-42-7d21b2506b5c/config.json",
+  "best_checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-7d21b2506b5c/best.pt",
+  "failure_reason": null
+}
