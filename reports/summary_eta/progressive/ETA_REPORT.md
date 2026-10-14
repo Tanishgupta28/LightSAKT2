@@ -1,14 +1,14 @@
 # Measured runtime estimate
 
-Updated UTC: 2026-10-14T05:08:43.416284+00:00
+Updated UTC: 2026-10-14T05:14:12.841688+00:00
 
-Remaining training: **499.3 GPU reserved hours**; scenario range **106.0–1,455.2 hours**. Serial wall time: 20.8 days; continuous-availability training finish 2026-11-04T00:25:20.922813+00:00.
+Remaining training: **499.2 GPU reserved hours**; scenario range **105.9–1,455.0 hours**. Serial wall time: 20.8 days; continuous-availability training finish 2026-11-04T00:26:34.862672+00:00.
 
-Two-worker execution forecast: **389.2 MIG occupied wall hours** (16.2 continuous days), with measured GKT throughput factor 1.512. Scenario envelope 86.9–1,455.2 hours; the high scenario assumes no sustained concurrency benefit. Serial isolated-equivalent hours differ from MIG occupied wall hours. Two independent GKT-MHA workers only; PAM and other models remain serial. Use the smallest measured MHA throughput factor across tested datasets/widths. Wide PAM measured 0.90x and was rejected for parallel execution. Short-step throughput is extrapolated, not guaranteed. High scenario assumes no sustained benefit. Startup/test/analysis excluded. Aggregate worker elapsed-hours may increase under contention.
+Two-worker execution forecast: **389.2 MIG occupied wall hours** (16.2 continuous days), with measured GKT throughput factor 1.512. Scenario envelope 86.8–1,455.0 hours; the high scenario assumes no sustained concurrency benefit. Serial isolated-equivalent hours differ from MIG occupied wall hours. Two independent GKT-MHA workers only; PAM and other models remain serial. Use the smallest measured MHA throughput factor across tested datasets/widths. Wide PAM measured 0.90x and was rejected for parallel execution. Short-step throughput is extrapolated, not guaranteed. High scenario assumes no sustained benefit. Startup/test/analysis excluded. Aggregate worker elapsed-hours may increase under contention.
 
 This is a provisional measured-reference extrapolation, not a validated confidence interval. Hardware-active GPU utilization is unavailable. Epochs include training and validation, and reserved hours include their CPU work. Startup, final test inference and artifact verification add time beyond this training-only date; completed efficiency benchmarking is reused.
 
-Overall mean completed-run duration: 1.89 minutes, over 547 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
+Overall mean completed-run duration: 1.87 minutes, over 557 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
 
 Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.
 
@@ -21,14 +21,14 @@ Saved cumulative training_seconds include training and validation through checkp
 |ASSIST2009|DKVMN|15|733|6.135|5.007|
 |ASSIST2009|GKT|1|13|168.209|36.544|
 |ASSIST2009|GKT_MHA|1|21|175.622|61.598|
-|ASSIST2009|SAKT|40|1019|0.420|0.183|
+|ASSIST2009|SAKT|41|1061|0.421|0.187|
 |ASSIST2009|LightSAKT|60|1726|0.864|0.420|
-|ASSIST2015|DKT|37|583|1.154|0.307|
-|ASSIST2015|DKT+|37|873|1.409|0.559|
+|ASSIST2015|DKT|41|645|1.167|0.310|
+|ASSIST2015|DKT+|41|962|1.416|0.559|
 |ASSIST2015|DKVMN|1|36|23.941|14.382|
 |ASSIST2015|GKT|1|14|605.806|141.706|
 |ASSIST2015|GKT_MHA|1|23|633.193|243.188|
-|ASSIST2015|SAKT|37|822|1.470|0.550|
+|ASSIST2015|SAKT|38|838|1.473|0.547|
 |ASSIST2015|LightSAKT|60|1331|3.796|1.411|
 |Algebra2005|DKT|37|1212|0.276|0.158|
 |Algebra2005|DKT+|37|1367|0.351|0.225|
@@ -43,7 +43,7 @@ Saved cumulative training_seconds include training and validation through checkp
 |Phase|Low hours|Central hours|High hours|
 |---|---|---|---|
 |baseline_tuning|95.71|448.68|1,296.22|
-|repeated_seeds|10.24|50.60|159.00|
+|repeated_seeds|10.22|50.53|158.81|
 
 ## Longest forecast runs
 

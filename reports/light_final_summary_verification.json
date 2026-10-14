@@ -1,15 +1,15 @@
 {
   "verified": true,
-  "verified_utc": "2026-10-14T05:08:47.149614+00:00",
+  "verified_utc": "2026-10-14T05:14:17.346797+00:00",
   "light_final_seed_slots": 15,
   "summary_method": "Five prespecified seeds; arithmetic mean and sample SD; saved metrics independently recomputed",
-  "completed_five_seed_baseline_comparisons": 2,
+  "completed_five_seed_baseline_comparisons": 5,
   "fresh_primary_baseline_comparisons": 18,
   "partial_final_baselines_excluded": [
     {
-      "dataset": "ASSIST2009",
+      "dataset": "ASSIST2015",
       "model": "SAKT",
-      "completed_seeds": 4,
+      "completed_seeds": 1,
       "scope": "Excluded from final comparison until all five seeds finish"
     }
   ],
@@ -327,6 +327,19 @@
       "test_metrics_recomputed_from_saved_predictions": true
     },
     {
+      "run_id": "ASSIST2009-SAKT-final-7777",
+      "group": "final",
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "seed": 7777,
+      "checkpoint_sha256": "5fa4d9ac3257b8f748e192783ef87b908f294dd2a90ecde5f633d260bcade13e",
+      "prediction_sha256": "19605cdaced8d2d1ae015a2dbe3e046cbb4d3b17c2ba681b8dee5154def5f412",
+      "metrics_sha256": "f00772e5b592df02e687d70df50acd3664c35c1ba073658c13b82cad0a183d1a",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
       "run_id": "ASSIST2009-SAKT-primary-42-3c4dd6ec486d",
       "group": "primary",
       "dataset": "ASSIST2009",
@@ -336,6 +349,136 @@
       "prediction_sha256": "53dcfa4b0c0c9852580246d44ee03b6efb4e5918ca3095f3549e555984425904",
       "metrics_sha256": "fcc95788266cc7d83cc6a96bee5913cf6d8adf964fd795a937b3ec5ed61930f0",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "ASSIST2015-DKT+-final-123",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "DKT+",
+      "seed": 123,
+      "checkpoint_sha256": "95ad11a50fa0da0adad9060ffd4aeb67c7369c427200a0dc05ea6c2f9e976fd8",
+      "prediction_sha256": "6a1f92967fb2a281a241ac30706eb374b4ef2a679202994ee9ee52a70a554a99",
+      "metrics_sha256": "1791af2bd59b2624ae65fb613d92755dade789b11271601a19884cd7a2ab18b1",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "ASSIST2015-DKT+-final-2026",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "DKT+",
+      "seed": 2026,
+      "checkpoint_sha256": "84a5a972baa77381de9a819dcaaa2f2d302ef8acafd44c8c23d6820f0b476f4d",
+      "prediction_sha256": "fcb9b23eae8a17db2e0638058b6f519cd7e1c45207b998e526adf745e3820c50",
+      "metrics_sha256": "a81db2e97953870e61e0850a161b55ad6f98672fd55aee6e8ed742ce4d2d278d",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "ASSIST2015-DKT+-final-3407",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "DKT+",
+      "seed": 3407,
+      "checkpoint_sha256": "2414acc525cfa13478f08f2592e2ac4cb82d00be228ad88d9792d6d872ff567a",
+      "prediction_sha256": "c61ad25dd3aa424b6da1711517595ac944993a3899dc0eecffaf16737b67539b",
+      "metrics_sha256": "2fd86295dceebcdc252917e186118e03f4e976900aae88889ad65eab864cd71a",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "ASSIST2015-DKT+-final-42",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "DKT+",
+      "seed": 42,
+      "checkpoint_sha256": "4ca2bd210019464fac22426167a606a423bf64757580b6328b20d14854e39fcc",
+      "prediction_sha256": "69faab40fe7318f0371e9e7ce8098871bcb8d39fa61bbd51c7afc4c16375f1fd",
+      "metrics_sha256": "5bf6affe71dbfa1d07363cce9824b625218759ff076b368f3fb8c4ad1e36afa4",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "ASSIST2015-DKT+-final-7777",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "DKT+",
+      "seed": 7777,
+      "checkpoint_sha256": "798203103b2fab7928d9f64096893103d1fe5e32ded7f123e7e38eb7f9401a2f",
+      "prediction_sha256": "66e382c5c11c8a5844e8e8d7f86c0ccd5fe283b900992fd41527d24642055791",
+      "metrics_sha256": "4a4ba955f84427d1ad92d0f391ffc91b99520ce3353432468d8f39c7d2e68568",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "ASSIST2015-DKT-final-123",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "DKT",
+      "seed": 123,
+      "checkpoint_sha256": "52392f3fbe24b570b4fc8ee988fb3464680eabe9a77e7a84f4440042c8d1041a",
+      "prediction_sha256": "e63cacfc1033e28ab0fe92d2c6a38dceb48a4734fcbc7438f38ea3548098c49b",
+      "metrics_sha256": "502c70d63600c472b342f2f1d3db515c1524815caa579dd76e7d3ba28bbb4d81",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "ASSIST2015-DKT-final-2026",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "DKT",
+      "seed": 2026,
+      "checkpoint_sha256": "3d277ac028ef05bdd4849332f2ab1fbc653d9a7650c227c8f1060af942b46160",
+      "prediction_sha256": "4d922fd29e53a17a1ed2adac6c81102b7c612736c342a9a4e9bfe3671da50408",
+      "metrics_sha256": "fd064de8b35c474e9a274e5685f987b56d28f899a1bbe38cdef2c702efa0cc97",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "ASSIST2015-DKT-final-3407",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "DKT",
+      "seed": 3407,
+      "checkpoint_sha256": "d2103716a551a277d10d5033c66dcb1470d2f38b503b347ad2d3087831727dce",
+      "prediction_sha256": "40fa4719962a5ca97fdab65724166dface9f3704b7452a278ed1955afba4a704",
+      "metrics_sha256": "8641b010eb55f852145b9332c57b3c3f2d9d95a1cd6e66a0d4035f2774a4fdee",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "ASSIST2015-DKT-final-42",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "DKT",
+      "seed": 42,
+      "checkpoint_sha256": "1d818047b994d6660cf1c475a8c5ed83a86153933b470337a54181067d47d991",
+      "prediction_sha256": "7e0691ee89d3a9c1589d8c906a609279ed6fc73ea039b6178c17b1cc3ca3a5bc",
+      "metrics_sha256": "665e55c6b348e75f21e043614a21abca5819423cd29576c77b0f2df200cea26b",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "ASSIST2015-DKT-final-7777",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "DKT",
+      "seed": 7777,
+      "checkpoint_sha256": "96786829ac819748062c192a62e19f9532b49e0a15b8155531d8d704576818a7",
+      "prediction_sha256": "2a125daa5fb86a56d5e072a7b8cb6fb873488f227b133085af51fdfd8ebc0c89",
+      "metrics_sha256": "0395f603d776fbe132687e6df3338e0537e8502cbc6f74fa431841dacb5c0e80",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
       "test_metrics_recomputed_from_saved_predictions": true
     },
@@ -465,6 +608,19 @@
       "checkpoint_sha256": "9b8260ac274f98826818a72ca0d6060ac7a057585cf7748834128cf3e0323beb",
       "prediction_sha256": "b1dc9049f1641154e5deaea6f853513f1e2acc09438fc79f4af876485336dd34",
       "metrics_sha256": "4feb385ad291dc1e34ace3910d752e31d477bec46d3edd981d7f623d668f1a4d",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-final-123",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "seed": 123,
+      "checkpoint_sha256": "a0e5da3f33969c3cbfd67685d573f3562e5f75286bca39fc0d2adb7bf17fb3c8",
+      "prediction_sha256": "0f1bac7f042ede04e8a8840339d26f94e5a7ef6cbb9790f69126114c7cab819f",
+      "metrics_sha256": "7396d68e405e5e4936176b6fda168697e4ae5dd97088d075548b69a547ff4277",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
       "test_metrics_recomputed_from_saved_predictions": true
@@ -628,8 +784,8 @@
   ],
   "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
   "eta_source": "reports/summary_eta/progressive/ETA.json",
-  "eta_source_sha256": "31028c1d37f96d9b9287f6cb150218ac56210c8f5e1ee8b62e00cc3f310d1e7e",
-  "remaining_occupied_mig_hours": 389.24324796961173,
+  "eta_source_sha256": "c29dcc80ccb3e2df38e33fa5c27ee004c23238b9b30789291577f022d7eb91ab",
+  "remaining_occupied_mig_hours": 389.1722797626177,
   "gkt_remaining_occupied_mig_hours": 372.3714161941859,
   "artifacts": [
     {
@@ -642,11 +798,11 @@
     },
     {
       "path": "results/tables/LightSAKT_completed_baseline_comparisons.csv",
-      "sha256": "10f6c10997b30b3dc5cf2f58ece9a84a8190c649f46ac0a747d86f413eaa12fa"
+      "sha256": "b47f94cf7fcdff9b0405a4b98785990534c471c2bea5e4a1abff976b00781d00"
     },
     {
       "path": "reports/LightSAKT_summary_ETA_by_model.csv",
-      "sha256": "fe56df61d18d818e242f2505b092f7a32159905678cdbc5ec837742ee1cdfadf"
+      "sha256": "2641c3ba56f5117ff363c43b4f1575b7d98d3b00660a1b5104a2f548d0851d66"
     }
   ]
 }
