@@ -1,7 +1,7 @@
 {
-  "log": "reports/test_runs/20261014T061948-selected-inference-cpu.log",
+  "log": "reports/test_runs/20261014T183033-recovery-light-outputs-cpu.log",
   "exit_code": 0,
   "tests_passed": true,
-  "scope": "Full CPU suite including independent selected inference, locked test records, ETA history and causal/padding tests; CUDA deferred during uninterrupted training",
-  "verified_utc": "2026-10-14T06:20:05.051189+00:00"
+  "scope": "Full CPU suite including SIGKILL/resume equivalence, non-destructive archive recovery, supervisor admission guards and original causal/padding tests; CUDA deferred during healthy GPU training",
+  "verified_utc": "2026-10-14T18:30:53.521092+00:00"
 }
