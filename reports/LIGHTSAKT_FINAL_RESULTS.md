@@ -1,6 +1,6 @@
 # Verified final LightSAKT results and ongoing comparisons
 
-Generated UTC: 2026-10-14T06:48:33.630457+00:00
+Generated UTC: 2026-10-14T06:54:07.173360+00:00
 
 All numbers below are generated from fresh completed experiment files. Five selected seeds per dataset are complete; the overall research schedule remains incomplete. The three fixed-configuration LightSAKT primary runs are outside this selected-final summary; baseline primary runs are labelled separately.
 
@@ -34,6 +34,7 @@ Independent CPU validation and test checkpoint inference verified: 15/15 selecte
 |---|---|---|---|---|---|
 |ASSIST2009|DKT|5|0.757165|0.000527|-0.006109|
 |ASSIST2009|DKT+|5|0.751202|0.000876|-0.000146|
+|ASSIST2009|DKVMN|5|0.755016|0.001395|-0.003960|
 |ASSIST2009|SAKT|5|0.750322|0.000648|0.000734|
 |ASSIST2015|DKT|5|0.728235|0.000327|-0.002146|
 |ASSIST2015|DKT+|5|0.720802|0.001036|0.005287|
@@ -69,23 +70,23 @@ All five baseline metrics, deltas and evidence scope are in LightSAKT_completed_
 
 ## Recalculated remaining training time
 
-ETA measurements refreshed: 2026-10-14T06:48:25.549104+00:00. Serial isolated-equivalent remaining training: 497.101 hours. Current execution forecast: 387.067 occupied MIG wall hours (16.13 continuous days), applying the measured 1.512 two-worker throughput factor only to GKT-MHA.
+ETA measurements refreshed: 2026-10-14T06:53:59.266660+00:00. Serial isolated-equivalent remaining training: 495.530 hours. Current execution forecast: 385.496 occupied MIG wall hours (16.06 continuous days), applying the measured 1.512 two-worker throughput factor only to GKT-MHA.
 
 |model|remaining_entries|fresh_training_runs|serial_equivalent_hours|occupied_mig_hours|
 |---|---|---|---|---|
-|DKVMN|83|79|14.695402|14.695402|
+|DKVMN|82|78|13.124650|13.124650|
 |GKT|123|117|157.582744|157.582744|
 |GKT_MHA|123|120|324.822509|214.788672|
 
-GKT-PAM and GKT-MHA account for 372.371 of 387.067 remaining occupied MIG hours (96.20%). Completion count is a poor proxy for compute progress. The priority order completed short LightSAKT grids, selected seeds, ablations and fast baseline tuning first. Reuse/alias entries add no training; the current category table identifies remaining GKT work.
+GKT-PAM and GKT-MHA account for 372.371 of 385.496 remaining occupied MIG hours (96.60%). Completion count is a poor proxy for compute progress. The priority order completed short LightSAKT grids, selected seeds, ablations and fast baseline tuning first. Reuse/alias entries add no training; the current category table identifies remaining GKT work.
 
 The GKT forecast is calibrated by six completed primary model/dataset runs plus real primary/wide engineering profiles, rather than multiplying the global mean runtime by remaining entries. Recent fast-model completions refine those strata but add little evidence about the still-untrained slow GKT configurations. One GKT epoch has measured durations of minutes, whereas many DKT/SAKT/LightSAKT epochs take seconds or less; planned configuration widths and stopping counts also differ.
 
-The occupied-MIG planning envelope is 86.6–1452.8 hours. It is an early-stop/maximum-epoch scenario envelope, not a confidence interval or guarantee. Most future GKT stopping counts and sustained concurrency performance are unknown. Startup, selected test inference and final artifact verification are additional; the completed controlled efficiency benchmark is reused.
+The occupied-MIG planning envelope is 86.5–1447.0 hours. It is an early-stop/maximum-epoch scenario envelope, not a confidence interval or guarantee. Most future GKT stopping counts and sustained concurrency performance are unknown. Startup, selected test inference and final artifact verification are additional; the completed controlled efficiency benchmark is reused.
 
 ## Continuing execution and preserved findings
 
-Live schedule snapshot: 628/957 entries complete; 329 remain. Phase counts: {"5": {"completed": 21}, "6": {"completed": 468, "pending": 288}, "7": {"completed": 64, "running": 1, "pending": 40}, "8": {"completed": 75}}.
+Live schedule snapshot: 629/957 entries complete; 328 remain. Phase counts: {"5": {"completed": 21}, "6": {"completed": 468, "pending": 287, "running": 1}, "7": {"completed": 65, "pending": 40}, "8": {"completed": 75}}.
 
 Scheduler and independent CPU reporting, Git preservation, checkpoint recovery and offsite workers remain active. No completed training was restarted and no experimental scope was removed. Detached execution survives client disconnect while the environment stays up; no automatic restart after environment shutdown is configured.
 

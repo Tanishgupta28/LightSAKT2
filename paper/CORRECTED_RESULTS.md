@@ -36,7 +36,7 @@ These configurations maximize validation AUC among all 36 prespecified candidate
 |---|---|---|---|---|---|---|---|
 |ASSIST2009|DKT|5|0.757165 ± 0.000527|0.736135 ± 0.001022|0.818332 ± 0.000993|0.189594 ± 0.000669|0.564732 ± 0.001604|
 |ASSIST2009|DKT+|5|0.751202 ± 0.000876|0.733004 ± 0.001809|0.816546 ± 0.002508|0.194971 ± 0.000512|0.577168 ± 0.001301|
-|ASSIST2009|DKVMN|4|0.754622 ± 0.001250|0.735712 ± 0.000324|0.819804 ± 0.001753|0.178822 ± 0.000219|0.535549 ± 0.000505|
+|ASSIST2009|DKVMN|5|0.755016 ± 0.001395|0.736225 ± 0.001179|0.819802 ± 0.001518|0.178742 ± 0.000262|0.535401 ± 0.000548|
 |ASSIST2009|LightSAKT|5|0.751056 ± 0.000766|0.732229 ± 0.000801|0.816533 ± 0.001517|0.180233 ± 0.000319|0.538615 ± 0.000886|
 |ASSIST2009|SAKT|5|0.750322 ± 0.000648|0.732718 ± 0.000669|0.817401 ± 0.000943|0.180373 ± 0.000252|0.539191 ± 0.000666|
 |ASSIST2015|DKT|5|0.728235 ± 0.000327|0.749869 ± 0.000281|0.845662 ± 0.000528|0.182124 ± 0.000394|0.547349 ± 0.001032|
@@ -52,6 +52,7 @@ Means summarize every completed prespecified seed. Sample standard deviations an
 
 ASSIST2009: LightSAKT mean test AUC minus DKT was -0.006109 across the five prespecified seeds (Table 7).
 ASSIST2009: LightSAKT mean test AUC minus DKT+ was -0.000146 across the five prespecified seeds (Table 7).
+ASSIST2009: LightSAKT mean test AUC minus DKVMN was -0.003960 across the five prespecified seeds (Table 7).
 ASSIST2009: LightSAKT mean test AUC minus SAKT was +0.000734 across the five prespecified seeds (Table 7).
 ASSIST2015: LightSAKT mean test AUC minus DKT was -0.002146 across the five prespecified seeds (Table 7).
 ASSIST2015: LightSAKT mean test AUC minus DKT+ was +0.005287 across the five prespecified seeds (Table 7).

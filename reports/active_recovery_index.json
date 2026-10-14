@@ -38,5 +38,43 @@
     "download_sha256_verified": true,
     "verified_utc": "2026-10-14T00:48:24.197050+00:00",
     "snapshot_purpose": "Verify active recovery capture/upload/download pipeline on a completed long-run reference; no live training interrupted"
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-047a5f4ce889",
+    "epoch": 47,
+    "path": "backups/active_runs/ASSIST2015-DKVMN-baseline_tuning-42-047a5f4ce889-epoch47.tar.gz",
+    "sha256": "0b913ed94d875b551b0dce8c6fe1fb10445037bd8c9272c40ffb4f73aaf25518",
+    "captured_time": 1791961719.5499904,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "DKVMN",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "dim_s": 50,
+        "size_m": 100
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-047a5f4ce889"
+    },
+    "asset_id": 639558974,
+    "release_tag": "research-active-recovery-20261014",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-14T07:08:47.740205+00:00"
   }
 ]
