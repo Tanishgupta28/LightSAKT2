@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T19:32:30.934102+00:00",
-  "sample_time": 1792006350.3140543,
+  "updated_utc": "2026-10-14T19:35:38.618065+00:00",
+  "sample_time": 1792006537.7494042,
   "counts": {
-    "completed": 708,
-    "pending": 248,
+    "completed": 710,
+    "pending": 246,
     "running": 1
   },
   "scheduler": {
@@ -12,27 +12,27 @@
   },
   "training_processes": [
     {
-      "pid": 859118,
-      "cpu_seconds": 206.04,
-      "process_state": "S",
+      "pid": 861422,
+      "cpu_seconds": 166.95,
+      "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.267518281936646,
-      "cpu_seconds_advanced": 62.19999999999999
+      "observed_seconds": 62.59308171272278,
+      "cpu_seconds_advanced": 62.50999999999999
     }
   ],
   "active_runs": [
     {
-      "run_id": "Algebra2005-DKVMN-final-3407",
-      "last_completed_epoch": 28,
-      "best_checkpoint": "checkpoints/Algebra2005-DKVMN-final-3407/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKVMN-final-3407/config.json",
-      "recent_mean_epoch_seconds": 6.918371440598276,
-      "seconds_since_last_epoch": 3.453677177429199,
+      "run_id": "Algebra2005-DKVMN-final-7777",
+      "last_completed_epoch": 22,
+      "best_checkpoint": "checkpoints/Algebra2005-DKVMN-final-7777/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKVMN-final-7777/config.json",
+      "recent_mean_epoch_seconds": 6.904927170200972,
+      "seconds_since_last_epoch": 5.295040130615234,
       "startup_epoch_seconds_extrapolated": null,
       "first_checkpoint_startup_grace_seconds": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 20.755114321794828,
+      "stall_threshold_seconds": 20.71478151060292,
       "checkpoint_stalled": false
     }
   ],
@@ -43,5 +43,5 @@
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 711 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 713 independently downloaded/checksum verified; completed-archive synchronization True."
 }

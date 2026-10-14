@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-14T19:33:09.885085+00:00",
+  "updated_utc": "2026-10-14T19:36:19.794987+00:00",
   "total_slots": 957,
   "completed": 710,
   "remaining": 247,
@@ -45,7 +45,7 @@
   "running_jobs": [
     {
       "run_id": "Algebra2005-DKVMN-final-7777",
-      "last_completed_epoch": 1,
+      "last_completed_epoch": 28,
       "best_checkpoint": "checkpoints/Algebra2005-DKVMN-final-7777/best.pt",
       "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKVMN-final-7777/config.json"
     }
