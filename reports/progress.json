@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-14T00:53:24.072180+00:00",
+  "updated_utc": "2026-10-14T00:53:38.547319+00:00",
   "total_slots": 957,
   "completed": 129,
   "remaining": 828,
@@ -14,11 +14,11 @@
       "alive": true
     },
     "preservation": {
-      "pid": 195694,
+      "pid": 212401,
       "alive": true
     },
     "eta": {
-      "pid": 195630,
+      "pid": 211919,
       "alive": true
     },
     "offsite": {
@@ -41,7 +41,7 @@
   "running_jobs": [
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-bc44304c7e6a",
-      "last_completed_epoch": 27,
+      "last_completed_epoch": 45,
       "best_checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-bc44304c7e6a/best.pt",
       "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-LightSAKT-grid-42-bc44304c7e6a/config.json"
     }

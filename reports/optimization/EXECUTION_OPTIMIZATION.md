@@ -6,10 +6,10 @@ The current full 957-entry research ledger is retained. The complete and acceler
 
 |Schedule|Remaining isolated serial hours|Occupied MIG hours with admitted concurrency|Scope|
 |---|---|---|---|
-|Complete|501.3|391.3|All distinct requested and expanded tuning runs|
-|Accelerated proposal|172.1|136.3|Only supplementary GKT tuning 36→9 per variant/dataset; requires approval|
+|Complete|501.1|391.1|All distinct requested and expanded tuning runs|
+|Accelerated proposal|171.9|136.1|Only supplementary GKT tuning 36→9 per variant/dataset; requires approval|
 
-These are conditional training-only forecasts, using measured full epochs for all 21 model/dataset strata and primary/wide GKT step measurements on all three datasets. They exclude process startup, final test inference, exclusive efficiency benchmarks and final artifact verification. Stopping epoch is the largest unknown: many future GKT configurations have only a single primary stopping-count reference. Full low/high scenarios are {'low': 87.26070784241692, 'central': 391.27396164515596, 'high': 1465.3843023882318}; these are an earliest-stopping versus maximum-epoch/runtime envelope, not a confidence interval. Parallel throughput uses the smallest observed MHA gain. The high scenario assumes no sustained concurrency gain. Epochs include validation CPU work; isolated worker hours, summed concurrent process hours, and occupied GPU wall hours are distinct quantities.
+These are conditional training-only forecasts, using measured full epochs for all 21 model/dataset strata and primary/wide GKT step measurements on all three datasets. They exclude process startup, final test inference, exclusive efficiency benchmarks and final artifact verification. Stopping epoch is the largest unknown: many future GKT configurations have only a single primary stopping-count reference. Full low/high scenarios are {'low': 87.23084558918359, 'central': 391.0907253816104, 'high': 1465.123822904926}; these are an earliest-stopping versus maximum-epoch/runtime envelope, not a confidence interval. Parallel throughput uses the smallest observed MHA gain. The high scenario assumes no sustained concurrency gain. Epochs include validation CPU work; isolated worker hours, summed concurrent process hours, and occupied GPU wall hours are distinct quantities.
 
 ## Profiling and accepted implementation changes
 
@@ -25,7 +25,9 @@ The original healthy GPU run finished and saved its checkpoint before inter-run 
 
 BF16 probes on identical real train batches and dropout RNG exceeded strict 1e-6 probability and gradient tolerances on all datasets (maximum probability differences 0.00267–0.00311). AMP/TF32 remain off. Larger batches alter Adam update sequences; padding trimming and length bucketing can change dropout RNG and batches, so these were not applied. torch.compile is not enabled: the full recurrent graph and compilation overhead have not passed numerical/RNG/resume equivalence or demonstrated a net runtime gain. No compilation speedup is included in forecasts. Aggregating finite checks could reduce synchronization, but no model/training-source rewrite is adopted without gradient/resume proof; correctness checks remain intact.
 
-## Scientific impact and pending decision
+## Scientific impact and author decision
+
+The author selected the **complete schedule with execution improvements only**. The reduction proposal remains archival evidence and is not active; no scope decision is pending. All original distinct GKT candidates remain. Evidence: experiments/schedule_decision.json.
 
 Executed changes affect storage, orchestration and implementation overhead. LightSAKT embeddings, learned positions, ELU+1 learned multi-head projections, causal prefix aggregation, reduced FFN, residuals, LayerNorm, dropout and shifted sigmoid response objective are unchanged. The source-tree training fingerprint remains 0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6. Student-disjoint split hashes, seeds, Adam settings, epochs/patience and validation-only frozen selection are preserved. Historical simplified GKT limitations remain disclosed.
 

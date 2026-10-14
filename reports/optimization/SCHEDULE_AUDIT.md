@@ -1,10 +1,12 @@
 # Schedule and scientific-scope audit
 
-Observed completion: 112/957; remaining fresh trainings 800, reuse/evaluation slots 45. The 912 figure was the planned total of distinct trainings, not the remaining count.
+Author decision: **Keep the complete schedule; execution improvements only.** The reduction proposal is retained for audit and is not active. No approval is pending. Evidence: experiments/schedule_decision.json.
+
+Observed completion: 129/957; remaining fresh trainings 784, reuse/evaluation slots 44. The 912 figure was the planned total of distinct trainings, not the remaining count.
 
 |Category|Dataset|Completed|Fresh remaining|Reuse remaining|
 |---|---|---|---|---|
-|LightSAKT_grid|ASSIST2009|5|30|1|
+|LightSAKT_grid|ASSIST2009|22|14|0|
 |LightSAKT_grid|ASSIST2015|0|35|1|
 |LightSAKT_grid|Algebra2005|0|35|1|
 |ablations|ASSIST2009|0|20|5|
@@ -24,9 +26,9 @@ Every one of the 756 grid rows uses seed 42 only. Five matched seeds are schedul
 
 Primary comparisons, all 108 LightSAKT candidates, matched five-seed final comparisons and four distinct ablations per dataset remain essential to the requested paper. The equal 36-candidate baseline tuning budget was an expanded fairness/reproducibility design; it is not an exact search space stated in Tables 4–6. Those tables specify LightSAKT only. Both historical simplified GKT variants remain present. Removing supplementary tuning still changes the established comparison protocol and requires approval.
 
-Complete remaining training forecast: 501.3 hours (106.4–1465.4 scenarios). Proposal: 172.1 hours (34.7–493.3). Proposed deferred fresh trainings: 162; remaining fresh trainings under proposal: 638. This is a training-only forecast, not a confidence interval. Selected-configuration uncertainty remains.
+Complete remaining training forecast: 501.1 hours (106.3–1465.1 scenarios). Proposal: 171.9 hours (34.7–493.0). Proposed deferred fresh trainings: 162; remaining fresh trainings under proposal: 622. This is a training-only forecast, not a confidence interval. Selected-configuration uncertainty remains.
 
-Using measured independent GKT-worker throughput 1.512: complete schedule 391.3 occupied MIG wall hours; proposal 136.3 hours. These forecasts retain identical final-training envelopes. The short pilot may not predict sustained full-epoch throughput; upper scenarios assume no concurrent speedup. Serial worker-hours and occupied MIG hours are distinct. See ETA_REPORT.md.
+Using measured independent GKT-worker throughput 1.512: complete schedule 391.1 occupied MIG wall hours; proposal 136.1 hours. These forecasts retain identical final-training envelopes. The short pilot may not predict sustained full-epoch throughput; upper scenarios assume no concurrent speedup. Serial worker-hours and occupied MIG hours are distinct. See ETA_REPORT.md.
 
 Proposed GKT-PAM grid: learning rates [.0005,.001,.005] × hidden widths [16,30,64]. Proposed GKT-MHA grid: the same learning rates × widths [16,32,64], heads fixed at 2; historical primary width 30/head 2 remains an additional validation candidate using completed evidence. Every other baseline keeps all 36 configurations. Previously completed/running entries are retained regardless of membership. All five final seeds and all ablations remain.
 
