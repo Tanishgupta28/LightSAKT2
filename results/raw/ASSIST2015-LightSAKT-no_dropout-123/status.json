@@ -1,7 +1,7 @@
 {
   "run_id": "ASSIST2015-LightSAKT-no_dropout-123",
-  "status": "running",
-  "last_completed_epoch": 5,
+  "status": "completed",
+  "last_completed_epoch": 15,
   "config": "results/raw/ASSIST2015-LightSAKT-no_dropout-123/config.json",
   "seed": 123,
   "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-LightSAKT-no_dropout-123/config.json",
