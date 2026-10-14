@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-10-14T16:37:19.873383+00:00",
-  "sample_time": 1791995839.2233624,
+  "updated_utc": "2026-10-14T16:42:31.038708+00:00",
+  "sample_time": 1791996150.1882532,
   "counts": {
     "completed": 678,
     "pending": 278,
@@ -13,26 +13,26 @@
   "training_processes": [
     {
       "pid": 781156,
-      "cpu_seconds": 15.65,
-      "process_state": "S",
+      "cpu_seconds": 325.09,
+      "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 0.2,
-      "cpu_seconds_advanced": 0.20999999999999908
+      "observed_seconds": 62.29335904121399,
+      "cpu_seconds_advanced": 62.20999999999998
     }
   ],
   "active_runs": [
     {
       "run_id": "Algebra2005-DKVMN-baseline_tuning-42-21987a9529b6",
-      "last_completed_epoch": 0,
+      "last_completed_epoch": 45,
       "best_checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-21987a9529b6/best.pt",
       "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKVMN-baseline_tuning-42-21987a9529b6/config.json",
-      "recent_mean_epoch_seconds": null,
-      "seconds_since_last_epoch": 6.097321510314941,
-      "startup_epoch_seconds_extrapolated": 6.72348228908033,
-      "first_checkpoint_startup_grace_seconds": 30.0,
-      "age_reference": "initial running status; first checkpoint not yet saved",
-      "stall_threshold_seconds": 30.0,
+      "recent_mean_epoch_seconds": 6.804519666201668,
+      "seconds_since_last_epoch": 6.314284086227417,
+      "startup_epoch_seconds_extrapolated": null,
+      "first_checkpoint_startup_grace_seconds": null,
+      "age_reference": "history checkpoint",
+      "stall_threshold_seconds": 20.413558998605005,
       "checkpoint_stalled": false
     }
   ],
@@ -43,5 +43,5 @@
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 680 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 681 independently downloaded/checksum verified; completed-archive synchronization True."
 }
