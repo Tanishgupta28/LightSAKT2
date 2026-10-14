@@ -1,0 +1,29 @@
+{
+  "run_id": "Algebra2005-DKT-baseline_tuning-42-0ab2906ef07e",
+  "dataset": "Algebra2005",
+  "model": "DKT",
+  "seed": 42,
+  "group": "baseline_tuning",
+  "validation": {
+    "auc": 0.8151265053651607,
+    "auc_reason": null,
+    "accuracy": 0.804449300884768,
+    "f1": 0.8767130617404507,
+    "mse": 0.14846507181780738,
+    "bce": 0.46443114069823443,
+    "n_targets": 94262
+  },
+  "best_epoch": 13,
+  "epochs_trained": 18,
+  "training_seconds": 4.822802142007276,
+  "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-0ab2906ef07e/best.pt",
+  "checkpoint_sha256": "bbd7f1438cd0e27f26d983fc954b39331d84dd59358ca38dea4a0036be7e7932",
+  "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+  "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+  "git_commit": "5880156961896e141992e92111ba795c83ce29e4",
+  "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "parameters": 108164,
+  "peak_allocated_bytes": 207139328,
+  "peak_reserved_bytes": 266338304,
+  "test": null
+}
