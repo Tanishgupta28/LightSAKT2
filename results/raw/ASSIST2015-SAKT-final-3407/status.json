@@ -1,0 +1,10 @@
+{
+  "run_id": "ASSIST2015-SAKT-final-3407",
+  "status": "completed",
+  "last_completed_epoch": 15,
+  "config": "results/raw/ASSIST2015-SAKT-final-3407/config.json",
+  "seed": 3407,
+  "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-SAKT-final-3407/config.json",
+  "best_checkpoint": "checkpoints/ASSIST2015-SAKT-final-3407/best.pt",
+  "failure_reason": null
+}

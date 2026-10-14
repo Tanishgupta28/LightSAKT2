@@ -1,0 +1,11 @@
+{
+  "run_id": "ASSIST2015-SAKT-final-42",
+  "phase": 7,
+  "dataset": "ASSIST2015",
+  "model": "SAKT",
+  "seed": 42,
+  "status": "pending",
+  "dependency": "all 36 tuning runs for this dataset/model",
+  "reuse_selected_run": "ASSIST2015-SAKT-baseline_tuning-42-4cc38d7c6af6",
+  "selection_path": "experiments/selections/ASSIST2015-SAKT.json"
+}
