@@ -1,0 +1,29 @@
+{
+  "run_id": "ASSIST2015-SAKT-baseline_tuning-42-3f50a672d3be",
+  "dataset": "ASSIST2015",
+  "model": "SAKT",
+  "seed": 42,
+  "group": "baseline_tuning",
+  "validation": {
+    "auc": 0.726305810305363,
+    "auc_reason": null,
+    "accuracy": 0.7554991413424923,
+    "f1": 0.8511369525489376,
+    "mse": 0.16920060857203603,
+    "bce": 0.5123444677088353,
+    "n_targets": 66965
+  },
+  "best_epoch": 35,
+  "epochs_trained": 40,
+  "training_seconds": 59.64843890699558,
+  "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-3f50a672d3be/best.pt",
+  "checkpoint_sha256": "fa4ca28fc5727d9a7bb36cdfca9de894ffe69e81567d40079d41e326d11c3035",
+  "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+  "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+  "git_commit": "2bc2b598962db8ad2fe5988cdb0ad2092a0f0d82",
+  "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "parameters": 19393,
+  "peak_allocated_bytes": 120200704,
+  "peak_reserved_bytes": 138412032,
+  "test": null
+}
