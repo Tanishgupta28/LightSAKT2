@@ -1617,6 +1617,13 @@
     "git_commit": "001714c52f9eda0f3500f39963f7bfee08456f02"
   },
   {
+    "run_id": "ASSIST2015-LightSAKT-single_head-7777",
+    "source": "results/raw/ASSIST2015-LightSAKT-single_head-7777/metrics.json",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-single_head-7777/best.pt",
+    "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+    "git_commit": "a0bed43fb3d68daa5716634d042fcce30553c316"
+  },
+  {
     "run_id": "ASSIST2015-SAKT-primary-42-c67b62d42456",
     "source": "results/raw/ASSIST2015-SAKT-primary-42-c67b62d42456/metrics.json",
     "checkpoint": "checkpoints/ASSIST2015-SAKT-primary-42-c67b62d42456/best.pt",
@@ -1944,6 +1951,13 @@
     "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-feeec30289e8/best.pt",
     "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
     "git_commit": "93e982ad901941ed0f6143344d2ddf1c77088f7c"
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_attention-123",
+    "source": "results/raw/Algebra2005-LightSAKT-no_attention-123/metrics.json",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_attention-123/best.pt",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "git_commit": "ca30a3c16cd100491e709ab85185d29727c911b3"
   },
   {
     "run_id": "Algebra2005-LightSAKT-primary-42-dca5e1830530",
