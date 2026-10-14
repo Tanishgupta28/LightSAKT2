@@ -1,257 +1,2147 @@
 {
-  "verified_utc": "2026-10-13T15:17:12.615834+00:00",
+  "verified_utc": "2026-10-14T00:47:45.592864+00:00",
   "verified": true,
   "checkpoints": [
     {
-      "run_id": "ASSIST2009-DKT-primary-42-26e196b6a6d5",
-      "checkpoint": "checkpoints/ASSIST2009-DKT-primary-42-26e196b6a6d5/best.pt",
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-0e47a08205e9/best.pt",
+      "sha256": "64902dec74497d54817299a9f6d98b270f1b6e2d45bb7fc60e5531b06174c9e2",
       "epoch": 9,
-      "sha256": "52fd89799dcb239f46306fa2930c9f06b30f19bcafbe65313974b00138147657",
       "strict_state_load": true,
       "finite_parameters": true,
+      "split_data_match": true,
       "optimizer_rng_verified": false
     },
     {
-      "run_id": "ASSIST2009-DKT-primary-42-26e196b6a6d5",
-      "checkpoint": "checkpoints/ASSIST2009-DKT-primary-42-26e196b6a6d5/latest.pt",
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-0e47a08205e9/latest.pt",
+      "sha256": "bde88d4b20b6f5949bccaafe32c70c15823ae23c0821cddfa783b25f35cfe6a5",
       "epoch": 14,
-      "sha256": "ab832ed4c8bfb29c63c008ad4db5177c56b212158d1b908a629480ea72c29956",
       "strict_state_load": true,
       "finite_parameters": true,
+      "split_data_match": true,
       "optimizer_rng_verified": true
     },
     {
-      "run_id": "ASSIST2009-DKTplus-primary-42-21f9b124f6e4",
-      "checkpoint": "checkpoints/ASSIST2009-DKTplus-primary-42-21f9b124f6e4/best.pt",
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-1066e5c4d690/best.pt",
+      "sha256": "c154319995cf1a6085bea5d849ac364a665e3a3cf115bbd9155231b2f4eaabae",
       "epoch": 16,
-      "sha256": "1b5f963de14e78298a83df6352891f39e1347d50625c8226bb5e6f4be4aba018",
       "strict_state_load": true,
       "finite_parameters": true,
+      "split_data_match": true,
       "optimizer_rng_verified": false
     },
     {
-      "run_id": "ASSIST2009-DKTplus-primary-42-21f9b124f6e4",
-      "checkpoint": "checkpoints/ASSIST2009-DKTplus-primary-42-21f9b124f6e4/latest.pt",
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-1066e5c4d690/latest.pt",
+      "sha256": "a70ea9201eda6ad4914de5b53ebeab4e6396450ec72869ff321e4eefc91fd143",
       "epoch": 21,
-      "sha256": "222ddb7601e0b4bb9f6f108a0d6c7940d3fc40e1c64f07350a28bdb690e1afdc",
       "strict_state_load": true,
       "finite_parameters": true,
+      "split_data_match": true,
       "optimizer_rng_verified": true
     },
     {
-      "run_id": "ASSIST2009-DKVMN-primary-42-902c00823fa6",
-      "checkpoint": "checkpoints/ASSIST2009-DKVMN-primary-42-902c00823fa6/best.pt",
-      "epoch": 44,
-      "sha256": "6c1fa971d91340c89be7665c934009a3103902abaa27d16b7ddf5132143164a5",
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-14462678e129/best.pt",
+      "sha256": "3c0e8cf6dc1b6fd683247ae080d47aec3c7731d9e10269b8c344d89db1f9be2d",
+      "epoch": 19,
       "strict_state_load": true,
       "finite_parameters": true,
+      "split_data_match": true,
       "optimizer_rng_verified": false
     },
     {
-      "run_id": "ASSIST2009-DKVMN-primary-42-902c00823fa6",
-      "checkpoint": "checkpoints/ASSIST2009-DKVMN-primary-42-902c00823fa6/latest.pt",
-      "epoch": 49,
-      "sha256": "7b2745d454e6da81c8098a14e2cccdc6c25f4771b2c44318109f5212c5abfaa4",
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-14462678e129/latest.pt",
+      "sha256": "6d1c343be7b08072ce48a3b0493fc42e851b4b03017e531266242a621ea49457",
+      "epoch": 24,
       "strict_state_load": true,
       "finite_parameters": true,
+      "split_data_match": true,
       "optimizer_rng_verified": true
     },
     {
-      "run_id": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff",
-      "checkpoint": "checkpoints/ASSIST2009-GKT-primary-42-bf2b95e7f1ff/best.pt",
-      "epoch": 8,
-      "sha256": "46cc3132904e506941ecc4e00f924300f94bb66d01139b90fe28e8bc8e7a8135",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": false
-    },
-    {
-      "run_id": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff",
-      "checkpoint": "checkpoints/ASSIST2009-GKT-primary-42-bf2b95e7f1ff/latest.pt",
-      "epoch": 13,
-      "sha256": "a283df4dc38f5e535c86c67a2b2a867028a336ea91170915ae48d6377244f71c",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": true
-    },
-    {
-      "run_id": "ASSIST2009-GKT_MHA-primary-42-e63b12ce3815",
-      "checkpoint": "checkpoints/ASSIST2009-GKT_MHA-primary-42-e63b12ce3815/best.pt",
-      "epoch": 16,
-      "sha256": "2f7516d7c87ca29ec4f553797902d4ece6bf85a01b996907fe9502094294ff71",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": false
-    },
-    {
-      "run_id": "ASSIST2009-GKT_MHA-primary-42-e63b12ce3815",
-      "checkpoint": "checkpoints/ASSIST2009-GKT_MHA-primary-42-e63b12ce3815/latest.pt",
-      "epoch": 21,
-      "sha256": "2954e0a719d88d8d2e772a2d60b290c1261d4e9efee4b60508342fad61e0eb4d",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": true
-    },
-    {
-      "run_id": "ASSIST2009-LightSAKT-primary-42-440d619b7547",
-      "checkpoint": "checkpoints/ASSIST2009-LightSAKT-primary-42-440d619b7547/best.pt",
-      "epoch": 6,
-      "sha256": "3cd1be71efd7acd6cb046b338e5698c041b36f8149be7c505b5b36b96296973a",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": false
-    },
-    {
-      "run_id": "ASSIST2009-LightSAKT-primary-42-440d619b7547",
-      "checkpoint": "checkpoints/ASSIST2009-LightSAKT-primary-42-440d619b7547/latest.pt",
-      "epoch": 11,
-      "sha256": "0133fe1c495465995cbf692f241e45d36fd1d43c7d4192ddd47f1e3c487f9e9a",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": true
-    },
-    {
-      "run_id": "ASSIST2009-LightSAKT-smoke-42",
-      "checkpoint": "checkpoints/ASSIST2009-LightSAKT-smoke-42/best.pt",
-      "epoch": 2,
-      "sha256": "9b0ce962167f75baaa2f2d496e8536ce6906021536f4e5e06098dd2239487468",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": false
-    },
-    {
-      "run_id": "ASSIST2009-LightSAKT-smoke-42",
-      "checkpoint": "checkpoints/ASSIST2009-LightSAKT-smoke-42/latest.pt",
-      "epoch": 2,
-      "sha256": "dcd0cbb4b0925d27a85e2183796eae6793562975395bd7077385f3b5bac2c6d7",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": true
-    },
-    {
-      "run_id": "ASSIST2009-SAKT-primary-42-3c4dd6ec486d",
-      "checkpoint": "checkpoints/ASSIST2009-SAKT-primary-42-3c4dd6ec486d/best.pt",
-      "epoch": 16,
-      "sha256": "6055f2e525e2decb9d6dba8f38c53a970118e53df0063890170ae52718f8d7e5",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": false
-    },
-    {
-      "run_id": "ASSIST2009-SAKT-primary-42-3c4dd6ec486d",
-      "checkpoint": "checkpoints/ASSIST2009-SAKT-primary-42-3c4dd6ec486d/latest.pt",
-      "epoch": 21,
-      "sha256": "deab02cfa4264519a70d6a5d83dc6c3d3466ed319703ef2a78085799be071872",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": true
-    },
-    {
-      "run_id": "ASSIST2015-DKT-primary-42-1b12a9ba9ffd",
-      "checkpoint": "checkpoints/ASSIST2015-DKT-primary-42-1b12a9ba9ffd/best.pt",
-      "epoch": 10,
-      "sha256": "ba6a2aeecac07c78194e5d59dd3de334530289fd2da1979ac85c13ce1d274508",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": false
-    },
-    {
-      "run_id": "ASSIST2015-DKT-primary-42-1b12a9ba9ffd",
-      "checkpoint": "checkpoints/ASSIST2015-DKT-primary-42-1b12a9ba9ffd/latest.pt",
-      "epoch": 15,
-      "sha256": "b06efb483c3e82274acdcd12e10032fc6c6d6193a0ab778d279f178080c4b586",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": true
-    },
-    {
-      "run_id": "ASSIST2015-DKTplus-primary-42-3bf5cb94131c",
-      "checkpoint": "checkpoints/ASSIST2015-DKTplus-primary-42-3bf5cb94131c/best.pt",
-      "epoch": 13,
-      "sha256": "aa0daab45fee53094ff441271a9efdb4aa6c828c9d3c81ac38fefcfd6e3cba8f",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": false
-    },
-    {
-      "run_id": "ASSIST2015-DKTplus-primary-42-3bf5cb94131c",
-      "checkpoint": "checkpoints/ASSIST2015-DKTplus-primary-42-3bf5cb94131c/latest.pt",
-      "epoch": 18,
-      "sha256": "1131a5b49042454793cc380bfdc311e99a0c32d009525270d8e11a98ab655311",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": true
-    },
-    {
-      "run_id": "ASSIST2015-DKVMN-primary-42-c91ed69c5400",
-      "checkpoint": "checkpoints/ASSIST2015-DKVMN-primary-42-c91ed69c5400/best.pt",
-      "epoch": 31,
-      "sha256": "c6fe6fb357bcb8d7aede1bbea7c923f879bee2f0e7f306f824c9918f741eaa77",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": false
-    },
-    {
-      "run_id": "ASSIST2015-DKVMN-primary-42-c91ed69c5400",
-      "checkpoint": "checkpoints/ASSIST2015-DKVMN-primary-42-c91ed69c5400/latest.pt",
-      "epoch": 36,
-      "sha256": "82370dee31ad075032cd79ca43c032c2a2cddf666ebc98289a4795bdd5f9ed2e",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": true
-    },
-    {
-      "run_id": "ASSIST2015-GKT-primary-42-c3a67383f961",
-      "checkpoint": "checkpoints/ASSIST2015-GKT-primary-42-c3a67383f961/best.pt",
-      "epoch": 9,
-      "sha256": "b521c46da685cb583c3f95cf5635efab7edf6c315c1e7e2ac0baa6918c2ffacd",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": false
-    },
-    {
-      "run_id": "ASSIST2015-GKT-primary-42-c3a67383f961",
-      "checkpoint": "checkpoints/ASSIST2015-GKT-primary-42-c3a67383f961/latest.pt",
-      "epoch": 14,
-      "sha256": "6c2ca9ca72222d4d16a5a217f91c36216f22b15ef554cbfe8224d4d13754dc6b",
-      "strict_state_load": true,
-      "finite_parameters": true,
-      "optimizer_rng_verified": true
-    },
-    {
-      "run_id": "ASSIST2015-LightSAKT-primary-42-301d9bff60e9",
-      "checkpoint": "checkpoints/ASSIST2015-LightSAKT-primary-42-301d9bff60e9/best.pt",
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-184a035ed5d0/best.pt",
+      "sha256": "429379171457025bd457b00ce7e8d5331623bcfcdb8de94aac40f01cc7b0dd85",
       "epoch": 7,
-      "sha256": "1a3133ab28882d02ee985cb18848caae3c703160e43b80a6c79d6ff532e7b6ab",
       "strict_state_load": true,
       "finite_parameters": true,
+      "split_data_match": true,
       "optimizer_rng_verified": false
     },
     {
-      "run_id": "ASSIST2015-LightSAKT-primary-42-301d9bff60e9",
-      "checkpoint": "checkpoints/ASSIST2015-LightSAKT-primary-42-301d9bff60e9/latest.pt",
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-184a035ed5d0/latest.pt",
+      "sha256": "6c1447096f2893f55d138f2ca70fd714d5830ce5ed55d5d7ce0b356e8edde64a",
       "epoch": 12,
-      "sha256": "c60b764c19d38cce91b09c898de4f5157880a5f7f9f561d55c84c6dfe1cee9be",
       "strict_state_load": true,
       "finite_parameters": true,
+      "split_data_match": true,
       "optimizer_rng_verified": true
     },
     {
-      "run_id": "ASSIST2015-SAKT-primary-42-c67b62d42456",
-      "checkpoint": "checkpoints/ASSIST2015-SAKT-primary-42-c67b62d42456/best.pt",
-      "epoch": 10,
-      "sha256": "4a4f679c0d906d9a85f54f7cc97e35064cef89d55aa012c6e6a8c6f280ea255e",
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-26b33e957e76/best.pt",
+      "sha256": "fda2e0b50bc0781f36d7d678dce77f2e3964df6ccf19dc9a89f5c0f786c47d3d",
+      "epoch": 16,
       "strict_state_load": true,
       "finite_parameters": true,
+      "split_data_match": true,
       "optimizer_rng_verified": false
     },
     {
-      "run_id": "ASSIST2015-SAKT-primary-42-c67b62d42456",
-      "checkpoint": "checkpoints/ASSIST2015-SAKT-primary-42-c67b62d42456/latest.pt",
-      "epoch": 15,
-      "sha256": "da9621cffd4864e7e0cc35eb291939b2721376c0c9215bc0869ee9678714e3ec",
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-26b33e957e76/latest.pt",
+      "sha256": "88f8e6c59c2930bedd2b6fc284c3d4d4dd95ecaf241e896a855a4b7d7465c091",
+      "epoch": 21,
       "strict_state_load": true,
       "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-2ade21c644d1/best.pt",
+      "sha256": "1d169033699d7886fc73895f35857700a55713a355c131da9a113cb7fee49c5d",
+      "epoch": 8,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-2ade21c644d1/latest.pt",
+      "sha256": "6ddad447b642ce3c81de081e24d77f75d75753232c2c3821f3e647c707ce0001",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-2b140d19cee1/best.pt",
+      "sha256": "16ee2381a9013dba5d3a7c1bda23ce4114e7355c48ba429fef046e2869627998",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-2b140d19cee1/latest.pt",
+      "sha256": "6b35ea9037136e926b74c85fcea231b15e026c40d39cab24c909532897ac5df7",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-2e4c53dbf603/best.pt",
+      "sha256": "0e6a8e45f23ee0abb68a2f5296d888a3b468e5fc111aefa0a23f94e5e08a0009",
+      "epoch": 8,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-2e4c53dbf603/latest.pt",
+      "sha256": "b80ccebc0b649dcf37fc073fa4c6f60ea1e4830a40c77f5ec1e7d05074c1bf38",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-32e8064bf9da/best.pt",
+      "sha256": "73258248d22bae4e7bf9ea1447798634c3071c2d1b8fd37ec12be9e937a15a7a",
+      "epoch": 9,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-32e8064bf9da/latest.pt",
+      "sha256": "3b1c90627d8515b60a45d3589b31fda4513d2f90aaae3d63dbc827ab14c6eaaa",
+      "epoch": 14,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-372c06f0fe27/best.pt",
+      "sha256": "bbb3a22c610cf56204d8c6b8aa963e8e9c60e65348c0d17163c9dfb4edbf7c79",
+      "epoch": 35,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-372c06f0fe27/latest.pt",
+      "sha256": "f66a50961eda7b8682fff6e291bb251d26b8516ebf61548d42405e7af0fca59e",
+      "epoch": 40,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-39234fd23781/best.pt",
+      "sha256": "d347aa8122f5106b7448a54d6328e327db92cb370013d4691fc2ea1c4fd85b0b",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-39234fd23781/latest.pt",
+      "sha256": "845e14c21425517e09eacf61eaefd4aed27682c6c4f3b9a138f11fb4c36836a6",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-56a3642e16ad/best.pt",
+      "sha256": "62fdfff5e46c4db97b6890d72e7185bffeb63cd066083261d119a9a3ecdfb83a",
+      "epoch": 6,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-56a3642e16ad/latest.pt",
+      "sha256": "2eb179eb318f7ddc78a4dc707d7279f1902f3d5e6b31d600fa2ac8ea295ebd57",
+      "epoch": 11,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-5941ee9fa5d7/best.pt",
+      "sha256": "04e62d1bdb11e37d37e4c6e850477efe60590ad9d48d4183dae3b00fcf31b696",
+      "epoch": 5,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-5941ee9fa5d7/latest.pt",
+      "sha256": "72cb419094d9194a947eff858ea43f4b3c4590b5dbc586b8d27169a798ea5cae",
+      "epoch": 10,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-5d0ce623502d/best.pt",
+      "sha256": "0e89d5f9152694aafb450c58e95621f7a4f76f66e87c066bf8543d92fe7daad8",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-5d0ce623502d/latest.pt",
+      "sha256": "ec272adb5290b85a78785101a3a2b56191f3bbe7cd6e97680621c1e9c387996a",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-62c255ec6dfd/best.pt",
+      "sha256": "85589566e17eaba9985571d56b1f67d06a227d93748aac483e026f3ac025a1bc",
+      "epoch": 11,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-62c255ec6dfd/latest.pt",
+      "sha256": "180ba3af8ecdb3cef149a042f2f147e749c81fa43595dd263123c5e8cdb70a72",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-6bd0e6ba13b5/best.pt",
+      "sha256": "5393c6c949ed26196c37f8ce913903cc2aeded532a58a227ccc3547428a3475a",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-6bd0e6ba13b5/latest.pt",
+      "sha256": "77c3933cfffc32f61382299dcd300edaa5a03989e9d71c2127278ebfb784be10",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-7106c5dd86d8/best.pt",
+      "sha256": "aa4c8d5609ced305146e8393428a1b144e1e28a73649edbc2880930fe07d23c1",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-7106c5dd86d8/latest.pt",
+      "sha256": "26be83f08eea4fb261f0f77032b3e2092af0c24e69c7ea5f679092a86483d3de",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-7172ac284808/best.pt",
+      "sha256": "14d702bbb2d6c800f363090f18f2e8ba505c312c07acbfcf99dcc1e9837d2f80",
+      "epoch": 5,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-7172ac284808/latest.pt",
+      "sha256": "79f9fd5216f9fabd6e2bb96d9f62ab8e74bae4c933148f01c544d02348de74ba",
+      "epoch": 10,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-84dbf5c38384/best.pt",
+      "sha256": "bb9ed8b5bee7a44dc54ccb6f7232530872750b7369eb7a5c749741e8ad6bfe37",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-84dbf5c38384/latest.pt",
+      "sha256": "fa24a1a5ccee0ed303577e9ea0c8d0ffc2d11a5ca79eb22205b8966af069ef21",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-85a14611c8a9/best.pt",
+      "sha256": "f6c305ec1333bd7e3e1444230296ec166c0d367de5774c6d0968535335f2bac6",
+      "epoch": 10,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-85a14611c8a9/latest.pt",
+      "sha256": "fc0a886ce91b13be9683f3901b59b9089916fd43884ea5f7497f33df3700e778",
+      "epoch": 15,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-91f38d121182/best.pt",
+      "sha256": "e952f8230f78efd64a4b6767fb6a74bfb44e5cc5c6aba1ee18c128105f227980",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-91f38d121182/latest.pt",
+      "sha256": "ce4a20ef83d7bfd3663a25e6822c2f98855408bfa50c31e31c6ed6b4db8ab550",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-a3e2135b6af6/best.pt",
+      "sha256": "3515275663459d4e260d6219c0a34485d22c3acf0f2d8cb72c5c5e11dd82cf11",
+      "epoch": 8,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-a3e2135b6af6/latest.pt",
+      "sha256": "e0de197b0ef15f8dc664cc3c021d15678226917e635101c96efe95f682b4ba1c",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-a689fd4db376/best.pt",
+      "sha256": "69ca3e97d61ea6472a62baee9ac61e77aaacc5bbcaacf30401fddd7a1db08931",
+      "epoch": 35,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-a689fd4db376/latest.pt",
+      "sha256": "86f078db53b6361b9a5ca21e950df24d55607394bb7f1b52ff6609e57b20e9bf",
+      "epoch": 40,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-afc3b66054ff/best.pt",
+      "sha256": "fdfe84263b1163aecea40e080e8c469114b0de3da1307fd62c48b581b1e47197",
+      "epoch": 7,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-afc3b66054ff/latest.pt",
+      "sha256": "435426f75366925334f8950b81746d35121f4eeb240bf43ebd5d3ad10ac4c9e9",
+      "epoch": 12,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-b465f0b1e09d/best.pt",
+      "sha256": "8e109fa35f774be75c5378c5244e6b86ee1ae8b4546bdc16b338fe04b1ec4181",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-b465f0b1e09d/latest.pt",
+      "sha256": "d0170226edff9ac3f820f263bd3ecf7b10cba68afdeed57701aefc8a94f98172",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-b78da99cc256/best.pt",
+      "sha256": "ebe3cd5fb3d03e225c7ddfa2fa3192ff019940e7b491ff26f6e9671d27707b7f",
+      "epoch": 6,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-b78da99cc256/latest.pt",
+      "sha256": "c481e19d15ff7144af3c7ef7cb41b6944ae5870427435f0d0c9b107da6b21b86",
+      "epoch": 11,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-ba9272f0beda/best.pt",
+      "sha256": "841790a864501937810c5c14090083697dce26126d9be57161d8b1debd70d512",
+      "epoch": 7,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-ba9272f0beda/latest.pt",
+      "sha256": "628b04f0360fb2ae1355ef34a79afef3d3f2a6deac6b335962150408e843422a",
+      "epoch": 12,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-bd76c07b1a53/best.pt",
+      "sha256": "656801a0ed094d65d68fb80920a3ba525050f32a5780392267d7a82b2efbdabe",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-bd76c07b1a53/latest.pt",
+      "sha256": "6491c1f8f16b50269435c127738269009c44dfff3e4af39a61ff9a73538d1838",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-bfffd3cbcdc9/best.pt",
+      "sha256": "6445b531a415affcc718f5fbc95fd9847437c340090b786e475fb896a761940c",
+      "epoch": 8,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-bfffd3cbcdc9/latest.pt",
+      "sha256": "a16d49ffd566f13407485654eb6836d8b30b3733471b9eb2fe7130949eb31e5d",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-c8ade6039db7/best.pt",
+      "sha256": "d337b7b5b9f526ad124d2c697ef0433234fb1344b255bdd3378ed1e9ee336841",
+      "epoch": 8,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-c8ade6039db7/latest.pt",
+      "sha256": "554dd3707b64c491e6ffe6dd5c7685df16c64247baec66e78f4480f58b81d417",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-ca560b6de796/best.pt",
+      "sha256": "3399af24dabe586fd8867902105c1172a1e51550162579aa02d68d75043f3bad",
+      "epoch": 6,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-ca560b6de796/latest.pt",
+      "sha256": "e1d057e2205ea25b4dbc2686344e415d8416bf7a72d1ff7c52c7a0602cbe5867",
+      "epoch": 11,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-cb2b9afa6715/best.pt",
+      "sha256": "d1d52f46eca04b90f87bab7396c6b01d032cbc81ab406bd782da4a3cb77b09a6",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-cb2b9afa6715/latest.pt",
+      "sha256": "8136c8d9f30993e9672dbafd149eb05594afb9e889cf95a0ac01df0dd32c97dd",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-ce5f32fa723a/best.pt",
+      "sha256": "4096b4c041306f44330d6b6b1aa3c6bd6f7cc9dbe6e09c32a63d5d6d0abdd825",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-ce5f32fa723a/latest.pt",
+      "sha256": "707edfdf6164dfc84550a2a4685cad65a172874c4dee0b517d8159eafdc24228",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-d18331e9e1ae/best.pt",
+      "sha256": "07f87aa7d3bb776cc1a4e934d8dff3e7ce74ef53dbebb668b5aef4c6193f87f4",
+      "epoch": 25,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-d18331e9e1ae/latest.pt",
+      "sha256": "8a17210f5ebcbe2a6fd64c86a49c67c1eab1e5de6dd686096826b8f5dcf5bcf0",
+      "epoch": 30,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-f600f590ec58/best.pt",
+      "sha256": "d3a68daaeb12b8254896d0b15d6968847577c14130be8f2f6daa17f6b63ee81d",
+      "epoch": 25,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-f600f590ec58/latest.pt",
+      "sha256": "d53535d519677c7838cd63a1a3200b610d125f1cbf9f3c8f124e459a52f01264",
+      "epoch": 30,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-fcf4cdf340d2/best.pt",
+      "sha256": "75d4736a539b44c8b51d9eb9c77372bde432098521fbb82c46d4b0dc66137326",
+      "epoch": 40,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-fcf4cdf340d2/latest.pt",
+      "sha256": "4606f27cf4adcc6e9efa10e911e6c16e57efc36ab09ac622063e0ccf6f3a2a91",
+      "epoch": 45,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-primary-42-26e196b6a6d5/best.pt",
+      "sha256": "52fd89799dcb239f46306fa2930c9f06b30f19bcafbe65313974b00138147657",
+      "epoch": 9,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKT-primary-42-26e196b6a6d5/latest.pt",
+      "sha256": "ab832ed4c8bfb29c63c008ad4db5177c56b212158d1b908a629480ea72c29956",
+      "epoch": 14,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-00e2e0c04695/best.pt",
+      "sha256": "ad92d29874ae9b74cbcef356e1361b7b4598c6664c0d0a38e48cd1ba40073940",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-00e2e0c04695/latest.pt",
+      "sha256": "44ba773e3852e8047c2a2b06064c8d904f2705b6647ebf0a28ef02dcb62e15ca",
+      "epoch": 26,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-070f28dad9c7/best.pt",
+      "sha256": "0a93e2de28b66892b995aa0ef03168b9c996a519469d4af07a36fa7d80b2a9a6",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-070f28dad9c7/latest.pt",
+      "sha256": "3560bc3b099c8b9eae134173c98b608ada1ea9ccef9b1f05638b20401717669a",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-0bc7596d9685/best.pt",
+      "sha256": "bc36a8908bacd797f8b77793347cfcc08f5e279e62eb3e0635c7f311a5d0b5c6",
+      "epoch": 7,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-0bc7596d9685/latest.pt",
+      "sha256": "1e7e437de94bfb7e317f5518b9a52392646a104386cf276344e719abfd531443",
+      "epoch": 12,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-0d818cb40971/best.pt",
+      "sha256": "0e3f0621ad14df29d8ffecbe3f671957b6b114c9c51b04f7fc4419275e1328cd",
+      "epoch": 46,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-0d818cb40971/latest.pt",
+      "sha256": "e7ea69ae263ab28215c44bc6ff4ef4896531e278afece4df821d0b1b7a83430c",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-1be9921150e0/best.pt",
+      "sha256": "474c04f45b296a50e74ae2e6d8903afe8555c41bf9107f07d8bd154ecf3c7f94",
+      "epoch": 35,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-1be9921150e0/latest.pt",
+      "sha256": "f722f84a5bb2ced6b3e8ed579a80d1f285be002e4324500d55480402931c705d",
+      "epoch": 40,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-2a4e3157414c/best.pt",
+      "sha256": "04c3074e3430debdbb372a4be7f8dede9e2cc932e2f16eb7ce187c2d49b00d70",
+      "epoch": 9,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-2a4e3157414c/latest.pt",
+      "sha256": "51db2cecba3e1fce55b33d625fad1099f03679560b7964b2518b436a0b08c219",
+      "epoch": 14,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-2f40bc1d810a/best.pt",
+      "sha256": "912aaad839a2c6577c1fb8216c7daa8a441e823c3dd36801e44d15b1995e6b48",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-2f40bc1d810a/latest.pt",
+      "sha256": "adec10627224146438400df91ce899b05019a052197e0b2a0f877e60fd298427",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-30200807d1a5/best.pt",
+      "sha256": "9c36dc7a45b1f4a66594a86d7559969e4ff7967c8bda3e78a2a1559e8aa22dba",
+      "epoch": 27,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-30200807d1a5/latest.pt",
+      "sha256": "b4c1207590bc0886a3a528ff48ddf340a222780a1de34c155f878a28b9c98a1b",
+      "epoch": 32,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-46524ecb157b/best.pt",
+      "sha256": "d4ae6a991f72a5ad9582180aefdf28a1d46bca098db8254feaaa2cd6a164010e",
+      "epoch": 45,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-46524ecb157b/latest.pt",
+      "sha256": "a052e85ed7a7573cfa99409b23031183fcfc54f3098485398047382373c94da7",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-4991434183d5/best.pt",
+      "sha256": "eee15972ad47a2d85a6e43ca87c006ebaac69d179195e15b7d533dffc836c63d",
+      "epoch": 33,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-4991434183d5/latest.pt",
+      "sha256": "6bd289dece54cf310488d548da93b468f303efc0cbca58c9afaebfe66a6dad1b",
+      "epoch": 38,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-4cdf7a55f563/best.pt",
+      "sha256": "4913472ab3c4d67b4b58b363916b36ba8dcab57fb00e24b26485deff92742180",
+      "epoch": 27,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-4cdf7a55f563/latest.pt",
+      "sha256": "01c83c1ff019129ac4637fd054d7d6c69816c6fca1b060ea9be27e440b21699c",
+      "epoch": 32,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-4fa58ee8f7eb/best.pt",
+      "sha256": "db1e507b046c04e8741876bd78e9a066c24179d0931c71eb4f4e60a8b98e9f80",
+      "epoch": 8,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-4fa58ee8f7eb/latest.pt",
+      "sha256": "089e3e39dadb81e99ca49103df5f47c6f18fbdb77d02ed2ebe32376c73bc5f91",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-5065e110634f/best.pt",
+      "sha256": "b94a14f755c2597fc06c04bd9798cb4fd55afce55c805c905e5d837d0bda2e64",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-5065e110634f/latest.pt",
+      "sha256": "d4aa202a9a45bd4dd601e90f45de951aac32d49044ee4d8919bb914670ae58f1",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-51588a1209a6/best.pt",
+      "sha256": "e0a669741b7c0ae5a572c90960d847fec837b2d9552482eab65b379a586214ef",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-51588a1209a6/latest.pt",
+      "sha256": "63d9cb18d044c1d9500158158f659aa31aca41544be92d4fd3657f542bdcad77",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-56bdb69f0f89/best.pt",
+      "sha256": "f016024026d7aaf5d58950ad6d918beeb99edfbc77db7a52147c18d7129b9687",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-56bdb69f0f89/latest.pt",
+      "sha256": "5db1899c5ac091b3aeec3450ba53bd3df299984557e573d2adfe084523204688",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-5dde574022b9/best.pt",
+      "sha256": "4ac95e6609bad89920ac54e3daa6270805a897989beae583b7e537d0a4d84869",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-5dde574022b9/latest.pt",
+      "sha256": "ba4f8808d3f1327a5a1d82f0678991797d7196cc39712f2bc4070a77769a0113",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-63104ac58064/best.pt",
+      "sha256": "b35abce1291b0c48697fe1df0e3c821a358a5f7ceefc8ae8484a626c92069759",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-63104ac58064/latest.pt",
+      "sha256": "3c060a88bbe773a692261843dddcb306ea07e232bc29cd410887741acecef12a",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-697f05c7d5f7/best.pt",
+      "sha256": "5c669a6f811b50e22eba28f5be4a15af2e7c73463b194da8c81823d7a5b7e216",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-697f05c7d5f7/latest.pt",
+      "sha256": "5dcdc44c93c65e06b97f5fa847c58bd798689e6d1875c40241fd46cf444e567a",
+      "epoch": 26,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-6ca3440d8a20/best.pt",
+      "sha256": "aaccb52867dab2cd313b3152fbdd65d5f15e7c92d1fa0c363142becd7c212387",
+      "epoch": 39,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-6ca3440d8a20/latest.pt",
+      "sha256": "e2e064ee98163419c0f60532dd5a17088d26e0a91b6a24c19f1d75730a6d384f",
+      "epoch": 44,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-72c77847b0a0/best.pt",
+      "sha256": "90e3d2f9228cdaf23042c96e2a36298fc6bd4c010beb39c71e242d34fe1597ea",
+      "epoch": 35,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-72c77847b0a0/latest.pt",
+      "sha256": "8eda846926b2e2657cf98da51585cfb698d6712e890f6cc868c051c77d7e4d8b",
+      "epoch": 40,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-750e8107942a/best.pt",
+      "sha256": "64bb2c266a396d1a3de5a0de3dc2acdfb101e6873a9a786525b1acfe1eff870d",
+      "epoch": 9,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-750e8107942a/latest.pt",
+      "sha256": "927ec813daba7c8b66d8a5f4af2df6dec476850c2ded101f34ee7531c0445478",
+      "epoch": 14,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-82ada0fb6742/best.pt",
+      "sha256": "da87ed1714277fb21632d500576cf666d1263a0dec7b028afe22380243612853",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-82ada0fb6742/latest.pt",
+      "sha256": "81679c0180305bde14f0a98b89c759f6ef474f019323512afdc55455f51d3483",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-8d4cd9f8848c/best.pt",
+      "sha256": "6df5b268a8611c19090e3df1012634c46002db522a0c25fc63a70684f187bdbe",
+      "epoch": 35,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-8d4cd9f8848c/latest.pt",
+      "sha256": "aac9c199923ec49caab6e153cc6a5fd9f4d1c10599d6ba1f335aff904576f734",
+      "epoch": 40,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-8e037827c6da/best.pt",
+      "sha256": "653e0ac466ec9b6042ae299fc36fb4e4c0c640b5c6d2f41a93e5c659b623322d",
+      "epoch": 27,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-8e037827c6da/latest.pt",
+      "sha256": "1958cc2beb8bb158de88d49978c440fcd383a6df19997acf133188117c962dcb",
+      "epoch": 32,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-91028b814ba6/best.pt",
+      "sha256": "3bdd155e213556687f33456a1db90f5df5b683fba2c4aee9b977e1ef7d695c90",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-91028b814ba6/latest.pt",
+      "sha256": "dce496ba866957a75afbb87e8bcb6c561d96b0a0e6cbfa4b7f0ab9c9ebc660bf",
+      "epoch": 26,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-9ab23382c523/best.pt",
+      "sha256": "1cfba6bd02f5560169d2e18fb4d058ea12cee6a778668e43925e015dd9f17fb3",
+      "epoch": 25,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-9ab23382c523/latest.pt",
+      "sha256": "16c9de6283f1d1261cd8059c4357613bb4a6f810e696821a94dd644e6eb0cab8",
+      "epoch": 30,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-9c00270e1694/best.pt",
+      "sha256": "31ce259517ba46f58306c79ba50ff073928cff643181b2a1dc40c297c4ec0923",
+      "epoch": 9,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-9c00270e1694/latest.pt",
+      "sha256": "e965e0e654b64b5379d5b9caecddf9724d0e0d06423adafba507f66c69e3b28b",
+      "epoch": 14,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-a3223be06c80/best.pt",
+      "sha256": "e363b45a53d95c46525c5b8abd0935d54d41e08d66d21fc6808e9acf6855d9fb",
+      "epoch": 6,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-a3223be06c80/latest.pt",
+      "sha256": "a2fe243f985bdeb42c4f179b193af687c29f4cb03c2ccf7a6fd5f3fb010c0d98",
+      "epoch": 11,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-a5363bef6c4e/best.pt",
+      "sha256": "2ed5a922180a28b4a197e740540c81ed006a70c7cd1f0e42bda80fce6c6e9a1e",
+      "epoch": 27,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-a5363bef6c4e/latest.pt",
+      "sha256": "c46115058bf941d7e131ee42976eaa681477f3f2e82a945061da0dc439597404",
+      "epoch": 32,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-a812c533e6cf/best.pt",
+      "sha256": "5aed15e145d5d320a432425b677a478c87728f798b5f5e6a56cd9e65c91ff1d1",
+      "epoch": 27,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-a812c533e6cf/latest.pt",
+      "sha256": "444ac939e5dd4ee920114ee62fd451b8c77bb3e1dad64a91873f1994b1af2de1",
+      "epoch": 32,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-ab83d1fbeaf8/best.pt",
+      "sha256": "12a8e2a568d27ed1e40f5205b2c6151a68f64929a62090d2a33795b8ab3d0c56",
+      "epoch": 35,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-ab83d1fbeaf8/latest.pt",
+      "sha256": "b8831ab1d5277b2cdd17333bde56f3729b67dd6246fa9f76a189f1b50a68f014",
+      "epoch": 40,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-bd671f6a5624/best.pt",
+      "sha256": "39d97a937a386ae0b6b23216848964ca5fc0a699d36da9e43a113736ee0cca6a",
+      "epoch": 39,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-bd671f6a5624/latest.pt",
+      "sha256": "ac5e30d25c2852e30135cb10f900d0190ab89eb012fdb30dd105918cb1d2d7c9",
+      "epoch": 44,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-c3a4bf8e0416/best.pt",
+      "sha256": "5775943d91b8787a0379f05a163bcfafb47c52ea0f2abfba7efc9028bc138915",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-c3a4bf8e0416/latest.pt",
+      "sha256": "6af10c9e4234bba6418fba693a2aae6bd1fa6651eac09cfb902db49829b58cbf",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-c3d39e22ff10/best.pt",
+      "sha256": "4581f4c295f883d1b406e29d5718d0042ba2dec59268a12e99afe13f6aea1136",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-c3d39e22ff10/latest.pt",
+      "sha256": "c9a41bb559be4350a5d310776f2fdfc75118fa92240c8620f301f398331a54b0",
+      "epoch": 26,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-c9cf47be45f9/best.pt",
+      "sha256": "ac49f7d573b4e20c7a227c25b3bfd482f5c03cf31a57e3ca46337c8d99954ec8",
+      "epoch": 27,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-c9cf47be45f9/latest.pt",
+      "sha256": "063c2f9f9984281c6f1e650dd51eec975fbfa1ac7dd5707d029673b68f7ccdc9",
+      "epoch": 32,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-cb8f88b97a2a/best.pt",
+      "sha256": "437d9162b0d68c033f746d4fb30eff2ee9e856612251f0ccb4aca26ef11ec725",
+      "epoch": 27,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-cb8f88b97a2a/latest.pt",
+      "sha256": "937d81d321dc949a6e80e5ef229bd3b69b2155016002d19e19c4dbe67889748e",
+      "epoch": 32,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-primary-42-21f9b124f6e4/best.pt",
+      "sha256": "1b5f963de14e78298a83df6352891f39e1347d50625c8226bb5e6f4be4aba018",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKTplus-primary-42-21f9b124f6e4/latest.pt",
+      "sha256": "222ddb7601e0b4bb9f6f108a0d6c7940d3fc40e1c64f07350a28bdb690e1afdc",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-0528aee387d0/best.pt",
+      "sha256": "1741fc015e233ad72a80f96df2c9f5c867752e85a8b01a9a093a25ec7b2493ca",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-0528aee387d0/latest.pt",
+      "sha256": "8243b2200fc7dd6fde0c20100dba5070f0a6e119821f8ae02c5c8a659499010f",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-3259bb3a9360/best.pt",
+      "sha256": "7c77e01bb7dcc1b5323336ff1e54ae1ced7d03109c3210bdb5285a823e1ece5d",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-3259bb3a9360/latest.pt",
+      "sha256": "698f612b2c17edc14a8a0c95927707ff8d8c84cb3b81568b55e0868d0549981e",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-4be7dc9b13b5/best.pt",
+      "sha256": "7a970c537d23d3f994a05dfd02f2c93160f4bca979bc02e6f87a0a50440f3030",
+      "epoch": 47,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-4be7dc9b13b5/latest.pt",
+      "sha256": "15b2d6f10745e55a8bd9078c08ef4682d924fa63616df050e038720eee433f79",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-4ecdd8e0d80d/best.pt",
+      "sha256": "953b6c2e90ea3b3c2caee06843bc66053f7496d5abe07cd0c047049600531c32",
+      "epoch": 38,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-4ecdd8e0d80d/latest.pt",
+      "sha256": "cb2b31573eab5fd946f4025c2c364198f46933e153fa9a6ceb296993649c33c7",
+      "epoch": 43,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-5e4b7351be03/best.pt",
+      "sha256": "cdf5a2d3a78dce99f55095d33dabfa643e562d87d8c68908d22b4b12fccb5614",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-5e4b7351be03/latest.pt",
+      "sha256": "9155e362634167a40ba8908799cffb7a598d7b382749fbe6c04b476f7ac29672",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-66bfb02b2930/best.pt",
+      "sha256": "8aa59c34d34df2d4ce5464f4ab2efa40d5fdfa6b8b54cf79d4b41286bc87c9fc",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-66bfb02b2930/latest.pt",
+      "sha256": "5dfe6235ab67d1321b0b3228288d75c81ec8f251ec14affaf9a1a896e8e8979e",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-6e81291d1906/best.pt",
+      "sha256": "8b4c19430928f1443e6085deaf1bbb5d69fce7e95edc29825b552cd56d7dd473",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-6e81291d1906/latest.pt",
+      "sha256": "27f8156c2576a923a29fc0509c8e93bb4e7f3c1cbba03c671e6eb7d7e0f116d6",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-91251f1314cd/best.pt",
+      "sha256": "0a02dee3d296607cb1f877a8254afdf47afce200c1586e4562be9eb8d21cf3a1",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-91251f1314cd/latest.pt",
+      "sha256": "6c7c80905402489ec2890f73e0a2b6f45e67b51074b5f2917f116162b3f4ba5a",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-91a36a8e71d1/best.pt",
+      "sha256": "4a8e3d44715f1cc3a47484ec08c27c8f9bac9140a4b9956b00af05ff67a49fa9",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-91a36a8e71d1/latest.pt",
+      "sha256": "1c229a311db83a7a6b50f2f322ba6c75f2d1bb3c02c9b8662d5743fd8d474cc0",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-a8cfc6e8b2e1/best.pt",
+      "sha256": "c84c14a2f0e9a05aca636df1c99971ef1ee1e852cf0a636c3475d3dac8c96509",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-a8cfc6e8b2e1/latest.pt",
+      "sha256": "a7423a854cc37acc2d01b2366ae5b0c1f442fe3a2a35e80e57559c9ae886aaad",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-be841b2268f5/best.pt",
+      "sha256": "6343c6e23d23a296862011ad33403e5400853ff57cfd14001bc88c0cc2e8e0f6",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-be841b2268f5/latest.pt",
+      "sha256": "380b49c0d904b93b7878efb58e97a87f4ae66f17f8b6b715f0d23cb730670b46",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-c26faf3381fa/best.pt",
+      "sha256": "e715f59978b362d2419d08a9d904277b98e01f1ba64cd3481b61c484cbbc54ab",
+      "epoch": 38,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-c26faf3381fa/latest.pt",
+      "sha256": "98bf88a99890674b5d14aa7c5759085653060824b2400c575ef02c6e1b0c4865",
+      "epoch": 43,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-d2e6bef77fc8/best.pt",
+      "sha256": "489bb91e44179371bc3ee8ac86d7e6bbab1c2b2fa62370c931fe1461a4ebe5c0",
+      "epoch": 44,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-d2e6bef77fc8/latest.pt",
+      "sha256": "c6b608413cd026961006455427617c2a7572153197829f09f8217d1ca14af5fc",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-fd56ddf71417/best.pt",
+      "sha256": "484c62aa449041c55c36f76cf2ae2f6c317cc793f317f9e292a05cf082b01c95",
+      "epoch": 44,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-fd56ddf71417/latest.pt",
+      "sha256": "d10afe056376430162f773bbd28ab543cf7be4605b98204114ae6dc669b810b0",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-primary-42-902c00823fa6/best.pt",
+      "sha256": "6c1fa971d91340c89be7665c934009a3103902abaa27d16b7ddf5132143164a5",
+      "epoch": 44,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-DKVMN-primary-42-902c00823fa6/latest.pt",
+      "sha256": "7b2745d454e6da81c8098a14e2cccdc6c25f4771b2c44318109f5212c5abfaa4",
+      "epoch": 49,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-GKT-primary-42-bf2b95e7f1ff/best.pt",
+      "sha256": "46cc3132904e506941ecc4e00f924300f94bb66d01139b90fe28e8bc8e7a8135",
+      "epoch": 8,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-GKT-primary-42-bf2b95e7f1ff/latest.pt",
+      "sha256": "a283df4dc38f5e535c86c67a2b2a867028a336ea91170915ae48d6377244f71c",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-GKT_MHA-primary-42-e63b12ce3815/best.pt",
+      "sha256": "2f7516d7c87ca29ec4f553797902d4ece6bf85a01b996907fe9502094294ff71",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-GKT_MHA-primary-42-e63b12ce3815/latest.pt",
+      "sha256": "2954e0a719d88d8d2e772a2d60b290c1261d4e9efee4b60508342fad61e0eb4d",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-119c315c04ba/best.pt",
+      "sha256": "56af84832a0a555c1aa7808ad2cdc503de7e58c1a88f5c5e1f5357a9b64f19ee",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-119c315c04ba/latest.pt",
+      "sha256": "468484b5bca399c9450339cdf9866c9281cf789a01f9ad562c08dd041fd5c9bb",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-1d03fd716dc4/best.pt",
+      "sha256": "4b7aeaa831de4cd17a5b7a6ad6b02f75d1f0393c8a935e7fcdb5e6e72d109da3",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-1d03fd716dc4/latest.pt",
+      "sha256": "69dc92e04e0b931e302bca717209c0ab3829294f8318ee947005656f513403df",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-1dabce6d364e/best.pt",
+      "sha256": "d188e0fc180c19f3c0d8492bfb0a7d5b47c0e16c624685e0a91dc54f0b78388a",
+      "epoch": 42,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-1dabce6d364e/latest.pt",
+      "sha256": "14aa760e9bc77cddb66a99f9efc6738e4c7b59ba648284218c5630481d7775cd",
+      "epoch": 47,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-2052f5169d22/best.pt",
+      "sha256": "320aa08bc9c7d767bfee1a437518da618125c42713fd321c6ba5f14d9b74fbae",
+      "epoch": 36,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-2052f5169d22/latest.pt",
+      "sha256": "c602272db527ff4182a1f29f2e93abdba13fa52af3a15ed1bf1dce97261b2d99",
+      "epoch": 41,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-398feff49fe4/best.pt",
+      "sha256": "33a4c860d929758b1b43b60b1f4b72223468d5be5ce89fe1e69c84090542aa62",
+      "epoch": 6,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-398feff49fe4/latest.pt",
+      "sha256": "27e28d553963522410bdf843ac3ce0e1fa2a05744507161d7a1f1777577e6671",
+      "epoch": 11,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-3c973f2400ea/best.pt",
+      "sha256": "74dfcc1594926df766a5563b5e0e463a031ca73ed56e2e05be06e02c11212d14",
+      "epoch": 32,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-3c973f2400ea/latest.pt",
+      "sha256": "4305c4320535b86ba1954ce2d91b456db8a49bf647a6523c93930dd3685fa27f",
+      "epoch": 37,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-3d82f7b69e9e/best.pt",
+      "sha256": "28f168ff08599ef6b2a86e3ca64a6cdfc5f88bc5b79da34067356ff2f4bdafe0",
+      "epoch": 6,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-3d82f7b69e9e/latest.pt",
+      "sha256": "911216f19f4702810511ec40958520f4f8f1ce90912934daf99cb664ccf14414",
+      "epoch": 11,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-4462e183cff2/best.pt",
+      "sha256": "5022e6fe4b7cbd1fd7709d85bf53f2588e2c222b18bc80bf4b5cfa1403a1d1cf",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-4462e183cff2/latest.pt",
+      "sha256": "5a0538764f69aec39a32a88f06c19b0b7210a8422aa38eb3a7a0d1a48ada68ad",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-primary-42-440d619b7547/best.pt",
+      "sha256": "3cd1be71efd7acd6cb046b338e5698c041b36f8149be7c505b5b36b96296973a",
+      "epoch": 6,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-primary-42-440d619b7547/latest.pt",
+      "sha256": "0133fe1c495465995cbf692f241e45d36fd1d43c7d4192ddd47f1e3c487f9e9a",
+      "epoch": 11,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-519f6ddfded5/best.pt",
+      "sha256": "73bb6f24c39f93cd69d1e9d8c0a32e63407377e97105b47ca29223d1cc1e6fa7",
+      "epoch": 24,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-519f6ddfded5/latest.pt",
+      "sha256": "480237615653d901d8d4e2fa41dbfd57b1fc2a8f7e34495c87bf9f285ec90b25",
+      "epoch": 29,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-5225105f3bce/best.pt",
+      "sha256": "13d99a03b1eccd0ec1548c68164c1b60db730930d277a4aebbaec8fe3ccc12b4",
+      "epoch": 35,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-5225105f3bce/latest.pt",
+      "sha256": "9b80e06bece56e04cd420b21eda64ec852c4e9db8960bd81cde6c7a2f5f936eb",
+      "epoch": 40,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-5367c646f7fc/best.pt",
+      "sha256": "95011160ae84defb1af02c3d05d96e65c26413e7e06484a2ccecf97380786f53",
+      "epoch": 6,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-5367c646f7fc/latest.pt",
+      "sha256": "54ae377be39c0446d91a4f515bec33a8a2ef1b6e2f1b6ed4a27c13caddc46735",
+      "epoch": 11,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-smoke-42/best.pt",
+      "sha256": "9b0ce962167f75baaa2f2d496e8536ce6906021536f4e5e06098dd2239487468",
+      "epoch": 2,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-smoke-42/latest.pt",
+      "sha256": "dcd0cbb4b0925d27a85e2183796eae6793562975395bd7077385f3b5bac2c6d7",
+      "epoch": 2,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-SAKT-primary-42-3c4dd6ec486d/best.pt",
+      "sha256": "6055f2e525e2decb9d6dba8f38c53a970118e53df0063890170ae52718f8d7e5",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-SAKT-primary-42-3c4dd6ec486d/latest.pt",
+      "sha256": "deab02cfa4264519a70d6a5d83dc6c3d3466ed319703ef2a78085799be071872",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKT-primary-42-1b12a9ba9ffd/best.pt",
+      "sha256": "ba6a2aeecac07c78194e5d59dd3de334530289fd2da1979ac85c13ce1d274508",
+      "epoch": 10,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKT-primary-42-1b12a9ba9ffd/latest.pt",
+      "sha256": "b06efb483c3e82274acdcd12e10032fc6c6d6193a0ab778d279f178080c4b586",
+      "epoch": 15,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKTplus-primary-42-3bf5cb94131c/best.pt",
+      "sha256": "aa0daab45fee53094ff441271a9efdb4aa6c828c9d3c81ac38fefcfd6e3cba8f",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKTplus-primary-42-3bf5cb94131c/latest.pt",
+      "sha256": "1131a5b49042454793cc380bfdc311e99a0c32d009525270d8e11a98ab655311",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-primary-42-c91ed69c5400/best.pt",
+      "sha256": "c6fe6fb357bcb8d7aede1bbea7c923f879bee2f0e7f306f824c9918f741eaa77",
+      "epoch": 31,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-DKVMN-primary-42-c91ed69c5400/latest.pt",
+      "sha256": "82370dee31ad075032cd79ca43c032c2a2cddf666ebc98289a4795bdd5f9ed2e",
+      "epoch": 36,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-GKT-primary-42-c3a67383f961/best.pt",
+      "sha256": "b521c46da685cb583c3f95cf5635efab7edf6c315c1e7e2ac0baa6918c2ffacd",
+      "epoch": 9,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-GKT-primary-42-c3a67383f961/latest.pt",
+      "sha256": "6c2ca9ca72222d4d16a5a217f91c36216f22b15ef554cbfe8224d4d13754dc6b",
+      "epoch": 14,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6/best.pt",
+      "sha256": "5249d0aa182b1b5b27e1367ef0e675295927b8803deaa0f41ca9b2422b4a0f1e",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6/latest.pt",
+      "sha256": "7f0c75dc333cd5fbda56a9bb6b76c2292e7a18df634ff93fd34e6b48d3c487df",
+      "epoch": 23,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-primary-42-301d9bff60e9/best.pt",
+      "sha256": "1a3133ab28882d02ee985cb18848caae3c703160e43b80a6c79d6ff532e7b6ab",
+      "epoch": 7,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-primary-42-301d9bff60e9/latest.pt",
+      "sha256": "c60b764c19d38cce91b09c898de4f5157880a5f7f9f561d55c84c6dfe1cee9be",
+      "epoch": 12,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-SAKT-primary-42-c67b62d42456/best.pt",
+      "sha256": "4a4f679c0d906d9a85f54f7cc97e35064cef89d55aa012c6e6a8c6f280ea255e",
+      "epoch": 10,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-SAKT-primary-42-c67b62d42456/latest.pt",
+      "sha256": "da9621cffd4864e7e0cc35eb291939b2721376c0c9215bc0869ee9678714e3ec",
+      "epoch": 15,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKT-primary-42-0a42097f8641/best.pt",
+      "sha256": "e381262f4eb64b40e6e1624072cddb4159bfa933b06d62de7409aec76a1350ab",
+      "epoch": 22,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKT-primary-42-0a42097f8641/latest.pt",
+      "sha256": "f08cbc7522f3eed00ed4b977755a40215f208f46b4df180afba9d3763fa167c6",
+      "epoch": 27,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKTplus-primary-42-8c85af12bd21/best.pt",
+      "sha256": "ba79407678b24a2bb2294d6fca319c3364a490bf3e30453c6cf4032eefd3b6a5",
+      "epoch": 28,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKTplus-primary-42-8c85af12bd21/latest.pt",
+      "sha256": "f94ea9e1c290390c3af601e73d58caee7005f8f1b6dc5de27c0a166189982d8e",
+      "epoch": 33,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-primary-42-7f8a895e7d8e/best.pt",
+      "sha256": "852559a7df905743c2c69b3f64ccdcb3f1c2029355723f11eb971b26f8217254",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-DKVMN-primary-42-7f8a895e7d8e/latest.pt",
+      "sha256": "c7873adb3ffd1023f0d3111b3834bc1367ebb3a182af0049624f375ea4df1dbd",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-GKT-primary-42-b5d7512cd82b/best.pt",
+      "sha256": "385e42c3188a3e8b7496dc313d8980a97677bbe9f124a53634a41ef4d70d1252",
+      "epoch": 11,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-GKT-primary-42-b5d7512cd82b/latest.pt",
+      "sha256": "7ad2b9d1ab784ccb04346492c03edb455dec9fe8eb45ef6f97d995be911e0dda",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-GKT_MHA-primary-42-8718ee768a1d/best.pt",
+      "sha256": "85172f48d528e67f496d5b8cc582b43deddbcbdd5c3531dd764dac278246b220",
+      "epoch": 43,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-GKT_MHA-primary-42-8718ee768a1d/latest.pt",
+      "sha256": "2fa4041c13515b4b4e368c116537e6fb11d1767525275ec057f82e26e3d4b175",
+      "epoch": 48,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-primary-42-dca5e1830530/best.pt",
+      "sha256": "e42d80da8c7bc2b2b9c7c18152f74442f32b10b9175cbce4cc883ad7ed36a3bc",
+      "epoch": 17,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-LightSAKT-primary-42-dca5e1830530/latest.pt",
+      "sha256": "f4992ec9df35f5896cd4d6297290990df4da7af7318d0bead94b2ea6e119ec51",
+      "epoch": 22,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/Algebra2005-SAKT-primary-42-67291648991d/best.pt",
+      "sha256": "a683ed0428e8e704bb377472b1e96514383c483f359a96358db70e2ceb53283c",
+      "epoch": 26,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/Algebra2005-SAKT-primary-42-67291648991d/latest.pt",
+      "sha256": "5122ebb07a08aa169db2cd1367dde1bfec97ff1f52c58facd38cd37e1bd18be6",
+      "epoch": 31,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
       "optimizer_rng_verified": true
     }
   ]
