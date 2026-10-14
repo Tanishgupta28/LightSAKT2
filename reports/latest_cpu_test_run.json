@@ -1,5 +1,6 @@
 {
-  "log": "reports/test_runs/20261014T003701-cpu-optimization.log",
+  "log": "reports/test_runs/20261014T005058-cpu-optimization-final.log",
   "exit_code": 0,
-  "tests_passed": true
+  "tests_passed": true,
+  "scope": "Includes GPU admission and active recovery regressions; no CUDA allocation"
 }

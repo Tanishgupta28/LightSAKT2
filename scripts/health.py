@@ -47,6 +47,15 @@ def inspect():
         old=next((s for s in previous.get('training_processes',[]) if s['pid']==sample['pid']),None)
         sample['observed_seconds']=now-previous['sample_time'] if old else None
         sample['cpu_seconds_advanced']=sample['cpu_seconds']-old['cpu_seconds'] if old else None
+        if old is None:
+            # Fast experiments can finish between observer heartbeats. Observe
+            # the new leaf directly instead of treating PID churn as a stall.
+            time.sleep(.2)
+            try:
+                current=cpu_sample(sample['pid'])
+                sample['observed_seconds']=.2
+                sample['cpu_seconds_advanced']=current['cpu_seconds']-sample['cpu_seconds']
+            except FileNotFoundError:sample['process_finished_during_sample']=True
     active=[]
     estimate_path=Path('reports/ETA_REMAINING_RUNS.csv')
     estimates={}
