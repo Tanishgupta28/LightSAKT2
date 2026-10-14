@@ -1,10 +1,10 @@
 # Measured runtime estimate
 
-Updated UTC: 2026-10-14T01:07:52.112795+00:00
+Updated UTC: 2026-10-14T01:08:17.619813+00:00
 
-Remaining training: **501.8 GPU reserved hours**; scenario range **106.4–1,463.4 hours**. Serial wall time: 20.9 days; continuous-availability training finish 2026-11-03T22:57:24.645436+00:00.
+Remaining training: **501.8 GPU reserved hours**; scenario range **106.4–1,463.4 hours**. Serial wall time: 20.9 days; continuous-availability training finish 2026-11-03T22:55:11.812005+00:00.
 
-Two-worker execution forecast: **391.8 MIG occupied wall hours** (16.3 continuous days), with measured GKT throughput factor 1.512. Scenario envelope 87.3–1,463.4 hours; the high scenario assumes no sustained concurrency benefit. Serial isolated-equivalent hours differ from MIG occupied wall hours. Two independent GKT-MHA workers only; PAM and other models remain serial. Use the smallest measured MHA throughput factor across tested datasets/widths. Wide PAM measured 0.90x and was rejected for parallel execution. Short-step throughput is extrapolated, not guaranteed. High scenario assumes no sustained benefit. Startup/test/analysis excluded. Aggregate worker elapsed-hours may increase under contention.
+Two-worker execution forecast: **391.7 MIG occupied wall hours** (16.3 continuous days), with measured GKT throughput factor 1.512. Scenario envelope 87.3–1,463.4 hours; the high scenario assumes no sustained concurrency benefit. Serial isolated-equivalent hours differ from MIG occupied wall hours. Two independent GKT-MHA workers only; PAM and other models remain serial. Use the smallest measured MHA throughput factor across tested datasets/widths. Wide PAM measured 0.90x and was rejected for parallel execution. Short-step throughput is extrapolated, not guaranteed. High scenario assumes no sustained benefit. Startup/test/analysis excluded. Aggregate worker elapsed-hours may increase under contention.
 
 This is a provisional measured-reference extrapolation, not a validated confidence interval. Hardware-active GPU utilization is unavailable. Epochs include training and validation, and reserved hours include their CPU work. Unmeasured final benchmarking and artifact verification add time beyond this training-only date.
 
@@ -29,7 +29,7 @@ Saved cumulative training_seconds include training and validation through checkp
 |ASSIST2015|GKT|1|14|605.806|141.706|
 |ASSIST2015|GKT_MHA|1|23|633.193|243.188|
 |ASSIST2015|SAKT|1|15|1.267|0.321|
-|ASSIST2015|LightSAKT|6|157|2.949|1.280|
+|ASSIST2015|LightSAKT|6|163|2.990|1.280|
 |Algebra2005|DKT|1|27|0.285|0.138|
 |Algebra2005|DKT+|1|33|0.322|0.185|
 |Algebra2005|DKVMN|1|50|7.359|6.148|
@@ -42,10 +42,10 @@ Saved cumulative training_seconds include training and validation through checkp
 
 |Phase|Low hours|Central hours|High hours|
 |---|---|---|---|
-|LightSAKT_grid|0.21|0.96|2.16|
+|LightSAKT_grid|0.20|0.93|2.11|
 |ablations|0.09|0.71|2.60|
 |baseline_tuning|95.88|449.44|1,298.95|
-|repeated_seeds|10.24|50.72|159.72|
+|repeated_seeds|10.24|50.71|159.72|
 
 ## Longest forecast runs
 
@@ -60,10 +60,10 @@ Saved cumulative training_seconds include training and validation through checkp
 
 ## Dependent analysis duration
 
-* benchmark: 120 cases, 3 warmups plus 10 repeats each. GPU duration not measured during active training; excluded from training ETA.
+* benchmark: Exclusive 120-case benchmark status completed; actual execution seconds 25.469461232976755; results/tables/efficiency.csv. Completed benchmarking is reused by final analyses; CPU epoch-runtime documentation is refreshed later.
 * statistics: 18 paired comparisons, five seeds; engineering microbenchmark timing is reported below; real paired research results still require final training.
 * visualizations: Three final attention maps, two ASSIST2009 case figures; measured plot-render pilot below; final-case CPU inference remains unmeasured.
-* verification: Fresh checkpoint inference for each unique source; redundant aliases will use cached inference. Duration not separately measured.
+* verification: About 1.04 serial inference GPU hours from measured primary eval steps for 912 distinct projected states; future selected-config widths, AUC computation and model/cache setup add uncertainty and overhead. All unique checkpoints remain verified; identical aliases reuse inference.
 
 Measured CPU pilot timing (actual completed primary plots; not final research completion): {"measured_utc": "2026-10-13T14:57:20.174838+00:00", "actual_primary_analysis_seconds": 4.55341371500981, "png_figures_existing_after": 11, "includes_png_svg_pdf_and_csv": true, "scope": "Incomplete primary-only genuine data; timing includes startup and summary verification. Final five-seed graphics workload differs.", "png_figures_rendered": 6, "mean_render_seconds_per_figure_including_all_exports": 0.7589022858349684, "eighteen_five_pair_signed_rank_compute_seconds": 0.002166819991543889, "statistical_timing_scope": "Algorithm workload microbenchmark only, synthetic differences; no research p-values or completed paired experiments produced.", "five_final_attention_case_figure_render_only_estimate_seconds": 3.7945114291748423, "render_estimate_limit": "Rendering reference only; future CPU inference, dataset reads, tables and GPU benchmarks are additional and unmeasured."}
 

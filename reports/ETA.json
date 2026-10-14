@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-14T01:07:52.112795+00:00",
+  "updated_utc": "2026-10-14T01:08:17.619813+00:00",
   "counts": {
     "completed": 149,
     "pending": 807,
@@ -9,31 +9,31 @@
   "mean_completed_run_seconds": 339.10237956086365,
   "completed_duration_scope": "Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.",
   "remaining_training_gpu_reserved_hours": {
-    "low": 106.42758277471886,
-    "central": 501.8257035113186,
-    "high": 1463.439612703954
+    "low": 106.41785024915336,
+    "central": 501.7817200534637,
+    "high": 1463.3814285213175
   },
   "two_worker_training_wall_hours": {
-    "low": 87.33270230742271,
-    "central": 391.7918663339141,
-    "high": 1463.4396127039538
+    "low": 87.32296978185721,
+    "central": 391.74788287605924,
+    "high": 1463.3814285213175
   },
   "two_worker_measured_throughput_speedup": 1.5122888289676635,
   "two_worker_estimate_limit": "Serial isolated-equivalent hours differ from MIG occupied wall hours. Two independent GKT-MHA workers only; PAM and other models remain serial. Use the smallest measured MHA throughput factor across tested datasets/widths. Wide PAM measured 0.90x and was rejected for parallel execution. Short-step throughput is extrapolated, not guaranteed. High scenario assumes no sustained benefit. Startup/test/analysis excluded. Aggregate worker elapsed-hours may increase under contention.",
   "conditional_training_finish_utc": {
-    "low": "2026-10-18T11:33:31.410784+00:00",
-    "central": "2026-11-03T22:57:24.645436+00:00",
-    "high": "2026-12-14T00:34:14.718529+00:00"
+    "low": "2026-10-18T11:33:21.880710+00:00",
+    "central": "2026-11-03T22:55:11.812005+00:00",
+    "high": "2026-12-14T00:31:10.762490+00:00"
   },
   "wall_clock_assumption": "One current MIG worker remains continuously available; no outages or new paid resources.",
   "interpretation": "GPU reserved wall hours from end-to-end measured epochs, not hardware GPU-active time. Scenario envelope, not a statistical confidence interval or guaranteed bound.",
   "method": "Measured complete train/validation epochs and dataset/model-specific stopping counts. GKT epoch costs are calibrated with primary and wide configurations measured on each dataset, using weighted train/validation step ratios and interpolation by width; a minimum 20% runtime scenario spread is applied. Smaller-than-primary widths conservatively retain primary cost. Other models use closest measured configurations and batch-timestep/arithmetic proxies. Six-epoch earliest-stop and 50-epoch maximum scenarios bracket the observed dataset/model mean stopping count. Unknown selections use mean candidate cost, not selection probabilities. FP32 mathematics, batch sizes and stopping rules are unchanged.",
   "unknowns": "All 21 model/dataset primary strata including Algebra2005 have measured complete epochs. GKT primary/wide steps were measured on all three datasets; most future configuration stopping counts remain unknown, with only one completed GKT run per stratum. Short concurrency probes do not guarantee whole-run throughput. Post-selection test inference, subprocess initialization, final artifact verification and exclusive GPU benchmarks add time.",
   "postprocessing": {
-    "benchmark": "120 cases, 3 warmups plus 10 repeats each. GPU duration not measured during active training; excluded from training ETA.",
+    "benchmark": "Exclusive 120-case benchmark status completed; actual execution seconds 25.469461232976755; results/tables/efficiency.csv. Completed benchmarking is reused by final analyses; CPU epoch-runtime documentation is refreshed later.",
     "statistics": "18 paired comparisons, five seeds; engineering microbenchmark timing is reported below; real paired research results still require final training.",
     "visualizations": "Three final attention maps, two ASSIST2009 case figures; measured plot-render pilot below; final-case CPU inference remains unmeasured.",
-    "verification": "Fresh checkpoint inference for each unique source; redundant aliases will use cached inference. Duration not separately measured."
+    "verification": "About 1.04 serial inference GPU hours from measured primary eval steps for 912 distinct projected states; future selected-config widths, AUC computation and model/cache setup add uncertainty and overhead. All unique checkpoints remain verified; identical aliases reuse inference."
   },
   "longest_expected_remaining": [
     {

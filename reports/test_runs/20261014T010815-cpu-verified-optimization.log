@@ -1,0 +1,48 @@
+Running 98 items in this shard
+.........................................sssssssssssssss..............F...........................                                                   [100%]
+========================================================================= FAILURES =========================================================================
+___________________________________________ test_cached_checkpoint_verification_still_checks_each_logical_metric ___________________________________________
+
+tmp_path = PosixPath('/workspace/LightSAKT2/.pytest_cache/tmp/test_cached_checkpoint_verific0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7ffdb7b9f640>
+
+    def test_cached_checkpoint_verification_still_checks_each_logical_metric(tmp_path,monkeypatch):
+        from scripts import verify_artifacts as verify
+        monkeypatch.chdir(tmp_path)
+        result={'checkpoint':'same.pt','checkpoint_sha256':'weights','processed_sha256':'data',
+                'split_sha256':'split','dataset':'ASSIST2009','validation':{'auc':.7,'accuracy':.6,'f1':.5,'mse':.2,'bce':.6}}
+        config={'seed':42,'model':'LightSAKT','model_config':{},'seq_len':100,'batch_size':64}
+        for run in ['one','two']:write_json(f'results/raw/{run}/metrics.json',{**result,'run_id':run})
+        monkeypatch.setattr(verify,'verify_stored_result',lambda path,*args:(json.load(open(path)),config,{'num_q':2}))
+        class FakeModel:
+            def to(self,device):return self
+            def load_state_dict(self,state):pass
+        calls=[]
+        monkeypatch.setattr(verify,'seed_everything',lambda seed:None)
+        monkeypatch.setattr(verify,'build_model',lambda *args:FakeModel())
+        monkeypatch.setattr(verify.torch,'load',lambda *args,**kwargs:{'model':{}})
+        monkeypatch.setattr(verify.torch.cuda,'is_available',lambda:False)
+        monkeypatch.setattr(verify,'Sequences',lambda *args:[])
+        def evaluate(*args):calls.append(1);return result['validation'],[],[]
+        monkeypatch.setattr(verify,'evaluate',evaluate)
+>       verify.main()
+
+/workspace/LightSAKT2/tests/test_evidence_reuse.py:176: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/workspace/LightSAKT2/scripts/verify_artifacts.py:53: in main
+    cache=location(data_path,'validation',config['seq_len'])
+/workspace/LightSAKT2/scripts/sequence_cache.py:17: in location
+    path=Path(path);identity=hashlib.sha256((sha256(path)+split+str(length)+'exact-sequences-v1').encode()).hexdigest()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('data/processed/ASSIST2009/interactions.csv')
+
+    def sha256(path):
+        h = hashlib.sha256()
+>       with open(path, "rb") as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'data/processed/ASSIST2009/interactions.csv'
+
+/workspace/LightSAKT2/src/datasets/preprocess.py:18: FileNotFoundError
+================================================================= short test summary info ==================================================================
+FAILED tests/test_evidence_reuse.py::test_cached_checkpoint_verification_still_checks_each_logical_metric - FileNotFoundError: [Errno 2] No such file or ...
+1 failed, 82 passed, 15 skipped in 15.13s

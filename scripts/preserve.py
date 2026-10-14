@@ -62,14 +62,14 @@ def archive_completed():
     write_json('reports/completed_run_backups.json',references)
 
 
-def _preserve():
+def _preserve(message='Preserve verified experiment progress and status'):
     archive_completed()
     subprocess.run(['python','-m','scripts.eta'],check=True)
     subprocess.run(['python','-m','scripts.summarize'],check=True)
     subprocess.run(['python','-m','scripts.report'],check=True)
     subprocess.run(['git','add','.'],check=True)
     changed=subprocess.run(['git','diff','--cached','--quiet']).returncode!=0
-    if changed:subprocess.run(['git','commit','-qm','Preserve verified experiment progress and status'],check=True)
+    if changed:subprocess.run(['git','commit','-qm',message],check=True)
     commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
     backup=Path('backups')/(commit+'.bundle')
     if not backup.exists():subprocess.run(['git','bundle','create',str(backup),'--all'],check=True)
@@ -84,11 +84,11 @@ def _preserve():
     return commit
 
 
-def preserve():
+def preserve(message='Preserve verified experiment progress and status'):
     # The watcher and explicit milestone saves must never race over Git's index.
     with open('experiments/preservation.lock','w') as lock:
         fcntl.flock(lock,fcntl.LOCK_EX)
-        return _preserve()
+        return _preserve(message)
 
 
 def main(watch=False):
