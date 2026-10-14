@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T03:54:00.796503+00:00",
-  "sample_time": 1791950040.0095286,
+  "updated_utc": "2026-10-14T03:55:02.569191+00:00",
+  "sample_time": 1791950101.933632,
   "counts": {
-    "completed": 387,
-    "pending": 569,
+    "completed": 389,
+    "pending": 567,
     "running": 1
   },
   "scheduler": {
@@ -12,30 +12,30 @@
   },
   "training_processes": [
     {
-      "pid": 421364,
-      "cpu_seconds": 37.17,
+      "pid": 422957,
+      "cpu_seconds": 12.41,
       "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
       "observed_seconds": 0.2,
-      "cpu_seconds_advanced": 0.19999999999999574
+      "cpu_seconds_advanced": 0.1999999999999993
     }
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-3a9936df0310",
-      "last_completed_epoch": 20,
-      "best_checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-3a9936df0310/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-DKTplus-baseline_tuning-42-3a9936df0310/config.json",
-      "recent_mean_epoch_seconds": 1.2932003014080693,
-      "seconds_since_last_epoch": 0.6655595302581787,
+      "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-486d723b88f7",
+      "last_completed_epoch": 1,
+      "best_checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-486d723b88f7/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-DKTplus-baseline_tuning-42-486d723b88f7/config.json",
+      "recent_mean_epoch_seconds": 1.6329046534956433,
+      "seconds_since_last_epoch": 0.0,
       "startup_epoch_seconds_extrapolated": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 3.879600904224208,
+      "stall_threshold_seconds": 4.89871396048693,
       "checkpoint_stalled": false
     }
   ],
-  "gpu_memory_mib": 1082,
+  "gpu_memory_mib": 1046,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
