@@ -3013,6 +3013,29 @@
     "verified_contents": true
   },
   {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-29e53cd0859a",
+    "archive_schema": 2,
+    "metrics_sha256": "30a638f75470c99059d0688c76842cb9b1748011fab5a07ab0d7e60eaf906b10",
+    "source_run_id": "ASSIST2015-DKVMN-baseline_tuning-42-29e53cd0859a",
+    "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-29e53cd0859a.tar.gz",
+    "sha256": "66761a163e85247620ce2d35418e7f055c5fe3a0b01358a062b50e3a0b76c680",
+    "verified_contents": true
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-3982d37828fa",
+    "archive_schema": 2,
+    "metrics_sha256": "d91034fa134c9dcd15f9361f6afebcb137a04f9dcad2df524a8f5d844f093f9c",
+    "source_run_id": "ASSIST2015-DKVMN-primary-42-c91ed69c5400",
+    "path": "backups/completed_runs/ASSIST2015-DKVMN-primary-42-c91ed69c5400.tar.gz",
+    "sha256": "e9c298957dad09944c867a650079176560ee7dce30793f6ae0dfea107b77583d",
+    "verified_contents": true,
+    "result_archive": {
+      "path": "backups/reused_results/ASSIST2015-DKVMN-baseline_tuning-42-3982d37828fa.tar.gz",
+      "sha256": "cffe7ee78e0bc4b3e02efa4d48b1eb9771ecb0e407cbf54805dda849ef386752",
+      "verified_contents": true
+    }
+  },
+  {
     "run_id": "ASSIST2015-DKVMN-primary-42-c91ed69c5400",
     "archive_schema": 2,
     "metrics_sha256": "56c7a9f7a61b078fa4fbfeba98187450e602cc5681b53131888b66f85a75556c",
