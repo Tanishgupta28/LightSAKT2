@@ -1,5 +1,10 @@
 {
   "run_id": "Algebra2005-LightSAKT-grid-42-3366bcbcf17e",
   "status": "running",
-  "execution_coordinator_pid": 191761
+  "last_completed_epoch": 37,
+  "config": "results/raw/Algebra2005-LightSAKT-grid-42-3366bcbcf17e/config.json",
+  "seed": 42,
+  "resume_command": "python -m scripts.run --config results/raw/Algebra2005-LightSAKT-grid-42-3366bcbcf17e/config.json",
+  "best_checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-3366bcbcf17e/best.pt",
+  "failure_reason": null
 }
