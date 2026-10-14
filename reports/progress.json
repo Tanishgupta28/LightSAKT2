@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-10-14T03:28:05.916917+00:00",
+  "updated_utc": "2026-10-14T03:28:46.903441+00:00",
   "total_slots": 957,
-  "completed": 321,
-  "remaining": 636,
+  "completed": 324,
+  "remaining": 633,
   "counts": {
-    "completed": 321,
-    "pending": 635,
+    "completed": 324,
+    "pending": 632,
     "running": 1
   },
   "processes": {
@@ -40,10 +40,10 @@
   },
   "running_jobs": [
     {
-      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-a7a39eed4d33",
-      "last_completed_epoch": 1,
-      "best_checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-a7a39eed4d33/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-SAKT-baseline_tuning-42-a7a39eed4d33/config.json"
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-b783977b82fe",
+      "last_completed_epoch": null,
+      "best_checkpoint": null,
+      "resume_command": null
     }
   ],
   "phase_counts": {
@@ -51,8 +51,8 @@
       "completed": 21
     },
     "6": {
-      "completed": 210,
-      "pending": 545,
+      "completed": 213,
+      "pending": 542,
       "running": 1
     },
     "7": {
