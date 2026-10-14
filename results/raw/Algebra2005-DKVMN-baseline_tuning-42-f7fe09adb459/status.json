@@ -1,0 +1,10 @@
+{
+  "run_id": "Algebra2005-DKVMN-baseline_tuning-42-f7fe09adb459",
+  "status": "running",
+  "last_completed_epoch": 3,
+  "config": "results/raw/Algebra2005-DKVMN-baseline_tuning-42-f7fe09adb459/config.json",
+  "seed": 42,
+  "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKVMN-baseline_tuning-42-f7fe09adb459/config.json",
+  "best_checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-f7fe09adb459/best.pt",
+  "failure_reason": null
+}
