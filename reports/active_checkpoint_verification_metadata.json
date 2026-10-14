@@ -1,21 +1,21 @@
 {
-  "verified_utc": "2026-10-14T06:25:37.833379+00:00",
+  "verified_utc": "2026-10-14T06:29:57.933379+00:00",
   "verified_states": 2,
-  "scope": "CPU loads of immutable byte snapshots; a healthy trainer can save newer epochs immediately after verification",
+  "scope": "Loaded immutable checkpoint byte snapshots; newer epochs may be saved after inspection",
   "active_states": [
     {
-      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-d813a6987bf2/best.pt",
-      "sha256": "f460467fff72fa1091bbee5cafe5567736050badca3bc6623ba36cf4ea10fc7f",
-      "epoch": 13,
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-e041fd6a4c5a/best.pt",
+      "sha256": "2d2421d5949db1cb9cb90c5022fa20f353cd2a53d0b2b7a8dc5f81ac0b7f688e",
+      "epoch": 35,
       "strict_state_load": true,
       "finite_parameters": true,
       "split_data_match": true,
       "optimizer_rng_verified": false
     },
     {
-      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-d813a6987bf2/latest.pt",
-      "sha256": "2c674caee5462473b28dc615570cc387cc2f4f1e9b1240f6adcc0d8f4be92970",
-      "epoch": 15,
+      "path": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-e041fd6a4c5a/latest.pt",
+      "sha256": "bc9415121877e3d1674c415efcb87cf5de15db8bd118c05a113009d75755b2c4",
+      "epoch": 35,
       "strict_state_load": true,
       "finite_parameters": true,
       "split_data_match": true,
