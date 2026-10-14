@@ -66,8 +66,8 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 ## Experiment schedule status
 
 {
-  "completed": 147,
-  "pending": 809,
+  "completed": 148,
+  "pending": 808,
   "running": 1
 }
 
@@ -104,10 +104,14 @@ Private repository: https://github.com/Tanishgupta28/LightSAKT2, branch `researc
 
 Originals: `original_snapshot/`; raw datasets: `data/raw/`; fresh preprocessing: `data/processed/`; student manifests: `data/splits/`; fresh weights: `checkpoints/<run>/`; raw metrics/configs: `results/raw/<run>/`; predictions: `results/predictions/`; generated tables/figures: `results/tables/`, `results/figures/`; paper evidence: `paper/`, PAPER_CORRECTIONS.md.
 
+## Executed efficiency evidence
+
+The exclusive 120-case benchmark has completed; its measured latency, memory, throughput, parameter counts and scope-specific limits are reported in paper/EFFICIENCY_RESULTS.md. The current measurements contradict an unconditional LightSAKT speed claim. Training continues on the preserved complete schedule; the efficiency benchmark is reused, and full epoch-time documentation is refreshed at final analysis.
+
 ## Execution optimization and unchanged scientific scope
 
 Latest schedule audit: 784 fresh trainings remain plus 44 reuse/evaluation entries. All 108 LightSAKT candidates are retained, with one seed per grid candidate and five matched seeds only for selected final configurations and ablations. The author chose the complete schedule with execution improvements only; all 162 GKT configurations discussed in the archived reduction proposal remain scheduled. Evidence: experiments/schedule_decision.json. Full inventory and proposal: reports/optimization/SCHEDULE_AUDIT.md and PROPOSED_DIFFERENCES.csv.
 
 Exact immutable sequence caches preserve every tensor, identity, batch order and RNG sequence; CPU training/resume equivalence is tested. Inter-run GPU probes and CPU/CUDA gates verify independent worker updates before two-worker GKT execution. Full required scope, FP32, batch sizes, Adam, stopping criteria, LightSAKT architecture, splits and untouched final test selections remain unchanged. Prioritization runs LightSAKT grid/finals/ablations before slow remaining baseline tuning. See reports/optimization/EXECUTION_OPTIMIZATION.md and reports/profiling/.
 
-Independent private GitHub draft recovery artifacts: 149 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
+Independent private GitHub draft recovery artifacts: 150 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.

@@ -1,8 +1,8 @@
 # Measured runtime estimate
 
-Updated UTC: 2026-10-14T01:04:47.957082+00:00
+Updated UTC: 2026-10-14T01:05:49.376443+00:00
 
-Remaining training: **501.8 GPU reserved hours**; scenario range **106.4–1,463.6 hours**. Serial wall time: 20.9 days; continuous-availability training finish 2026-11-03T22:50:58.272435+00:00.
+Remaining training: **501.7 GPU reserved hours**; scenario range **106.4–1,463.6 hours**. Serial wall time: 20.9 days; continuous-availability training finish 2026-11-03T22:49:20.335745+00:00.
 
 Two-worker execution forecast: **391.7 MIG occupied wall hours** (16.3 continuous days), with measured GKT throughput factor 1.512. Scenario envelope 87.3–1,463.6 hours; the high scenario assumes no sustained concurrency benefit. Serial isolated-equivalent hours differ from MIG occupied wall hours. Two independent GKT-MHA workers only; PAM and other models remain serial. Use the smallest measured MHA throughput factor across tested datasets/widths. Wide PAM measured 0.90x and was rejected for parallel execution. Short-step throughput is extrapolated, not guaranteed. High scenario assumes no sustained benefit. Startup/test/analysis excluded. Aggregate worker elapsed-hours may increase under contention.
 
@@ -29,7 +29,7 @@ Saved cumulative training_seconds include training and validation through checkp
 |ASSIST2015|GKT|1|14|605.806|141.706|
 |ASSIST2015|GKT_MHA|1|23|633.193|243.188|
 |ASSIST2015|SAKT|1|15|1.267|0.321|
-|ASSIST2015|LightSAKT|4|94|3.058|1.190|
+|ASSIST2015|LightSAKT|4|115|3.044|1.190|
 |Algebra2005|DKT|1|27|0.285|0.138|
 |Algebra2005|DKT+|1|33|0.322|0.185|
 |Algebra2005|DKVMN|1|50|7.359|6.148|
@@ -42,8 +42,8 @@ Saved cumulative training_seconds include training and validation through checkp
 
 |Phase|Low hours|Central hours|High hours|
 |---|---|---|---|
-|LightSAKT_grid|0.22|0.95|2.36|
-|ablations|0.09|0.68|2.60|
+|LightSAKT_grid|0.22|0.92|2.31|
+|ablations|0.09|0.67|2.60|
 |baseline_tuning|95.88|449.44|1,298.95|
 |repeated_seeds|10.24|50.71|159.72|
 

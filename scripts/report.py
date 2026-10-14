@@ -63,6 +63,10 @@ def main():
             '', 'Originals: `original_snapshot/`; raw datasets: `data/raw/`; fresh preprocessing: `data/processed/`; student manifests: `data/splits/`; fresh weights: `checkpoints/<run>/`; raw metrics/configs: `results/raw/<run>/`; predictions: `results/predictions/`; generated tables/figures: `results/tables/`, `results/figures/`; paper evidence: `paper/`, PAPER_CORRECTIONS.md.']
     Path('FINAL_RESEARCH_REPORT.md').write_text('\n'.join(lines)+'\n')
     offsite=Path('reports/offsite_backup.json')
+    efficiency=Path('paper/EFFICIENCY_RESULTS.md')
+    if efficiency.exists():
+        with Path('FINAL_RESEARCH_REPORT.md').open('a') as output:
+            output.write('\n## Executed efficiency evidence\n\nThe exclusive 120-case benchmark has completed; its measured latency, memory, throughput, parameter counts and scope-specific limits are reported in paper/EFFICIENCY_RESULTS.md. The current measurements contradict an unconditional LightSAKT speed claim. Training continues on the preserved complete schedule; the efficiency benchmark is reused, and full epoch-time documentation is refreshed at final analysis.\n')
     optimization=Path('reports/optimization/SCHEDULE_COMPARISON.json')
     if optimization.exists():
         record=json.load(open(optimization))

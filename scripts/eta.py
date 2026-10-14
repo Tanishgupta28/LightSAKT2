@@ -210,8 +210,9 @@ def estimate():
             c=configs.get(job['run_id'])
             if not c:
                 c=model_defaults(job['model'],work[job['dataset']]['length'],job['dataset'])
+                if job.get('variant'):c={**c,'variant':job['variant']}
                 c={'dataset':job['dataset'],'model':job['model'],'model_config':c,
-                   'batch_size':8 if job['model'].startswith('GKT') else 64,'seq_len':work[job['dataset']]['length']}
+                   'seed':job['seed'],'batch_size':8 if job['model'].startswith('GKT') else 64,'seq_len':work[job['dataset']]['length']}
             key=json.dumps({k:v for k,v in c.items() if k not in ['run_id','group','evaluate_test','selection_path']},sort_keys=True)
             if job.get('variant')=='no_regularization' or job['phase']==7 and job['seed']==42 or job['run_id'] in overlay or key in identities:continue
             identities.add(key)
