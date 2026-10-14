@@ -1,0 +1,27 @@
+ASSIST2009-LightSAKT-no_attention-123: cuda validation/test verified in 0.778s
+ASSIST2009-LightSAKT-no_attention-2026: cuda validation/test verified in 0.091s
+ASSIST2009-LightSAKT-no_attention-3407: cuda validation/test verified in 0.112s
+ASSIST2009-LightSAKT-no_attention-42: cuda validation/test verified in 0.088s
+ASSIST2009-LightSAKT-no_attention-7777: cuda validation/test verified in 0.088s
+ASSIST2009-LightSAKT-no_dropout-123: cuda validation/test verified in 0.155s
+ASSIST2009-LightSAKT-no_dropout-2026: cuda validation/test verified in 0.126s
+ASSIST2009-LightSAKT-no_dropout-3407: cuda validation/test verified in 0.124s
+ASSIST2009-LightSAKT-no_dropout-42: cuda validation/test verified in 0.127s
+ASSIST2009-LightSAKT-no_dropout-7777: cuda validation/test verified in 0.126s
+ASSIST2009-LightSAKT-no_position-123: cuda validation/test verified in 0.125s
+ASSIST2009-LightSAKT-no_position-2026: cuda validation/test verified in 0.130s
+ASSIST2009-LightSAKT-no_position-3407: cuda validation/test verified in 0.129s
+ASSIST2009-LightSAKT-no_position-42: cuda validation/test verified in 0.125s
+ASSIST2009-LightSAKT-no_position-7777: cuda validation/test verified in 0.127s
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/workspace/LightSAKT2/scripts/verify_selected_inference.py", line 123, in <module>
+    print('Verified completed inference records:', len(verify(args.models,args.groups,args.device)))
+  File "/workspace/LightSAKT2/scripts/verify_selected_inference.py", line 54, in verify
+    proof = locked.check(result, config)
+  File "/workspace/LightSAKT2/scripts/locked_test_evidence.py", line 36, in check
+    assert json.load(open(identity_path)) == identities, 'Inference identity mismatch with locked test sequences'
+FileNotFoundError: [Errno 2] No such file or directory: 'results/raw/ASSIST2009-LightSAKT-no_regularization-123/prediction_identity.json'

@@ -66,8 +66,8 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 ## Experiment schedule status
 
 {
-  "completed": 687,
-  "pending": 270
+  "completed": 688,
+  "pending": 269
 }
 
 Total requested schedule slots: 957. Counts include 21 seed-42 checkpoint reuse slots, 15 regularization aliases, and 9 verified primary/grid reuse slots, which are not new independent trainings. Distinct planned trainings: 912. Every required grid row is retained. The five-seed primary result is the mean, never the best seed. All remaining pending slots have no experimental result yet.
@@ -113,7 +113,7 @@ Originals: `original_snapshot/`; raw datasets: `data/raw/`; fresh preprocessing:
 
 Mean ± sample SD across prespecified seeds on one frozen student split. Selected hyperparameters, strict checkpoint/prediction checks, completed-only baseline evidence and model-specific ETA decomposition are in reports/LIGHTSAKT_FINAL_RESULTS.md. Single-seed primary baselines are explicitly descriptive; pending selected baseline seed sets are excluded from final comparisons. Reproduce with the CPU-only scripts.light_final_report command recorded there.
 
-Independent CPU inference reproduced validation metrics and every saved test probability for 20 selected final checkpoints, including 5 LightSAKT seeds. Exact identities, target labels, per-probability tolerances, hashes and timings are in reports/selected_final_inference_verification.json. All individual five-metric results, selected epochs, seeds, run IDs and checkpoint/Git references are in reports/LIGHTSAKT_FINAL_SEED_RESULTS.md. Complete matched baseline comparisons and pending models are in reports/BASELINE_COMPARISON.md. The forensic explanation of the earlier 391-hour forecast is in reports/ETA_HISTORY_AUDIT.md. This does not mark the unfinished research schedule complete.
+Independent CPU inference reproduced validation metrics and every saved test probability for 65 selected final checkpoints, including 15 LightSAKT seeds. Exact identities, target labels, per-probability tolerances, hashes and timings are in reports/selected_final_inference_verification.json. All individual five-metric results, selected epochs, seeds, run IDs and checkpoint/Git references are in reports/LIGHTSAKT_FINAL_SEED_RESULTS.md. Complete matched baseline comparisons and pending models are in reports/BASELINE_COMPARISON.md. The forensic explanation of the earlier 391-hour forecast is in reports/ETA_HISTORY_AUDIT.md. This does not mark the unfinished research schedule complete.
 
 ## Executed efficiency evidence
 
@@ -127,4 +127,4 @@ Latest schedule audit: 325 fresh trainings remain plus 14 reuse/evaluation entri
 
 Exact immutable sequence caches preserve every tensor, identity, batch order and RNG sequence; CPU training/resume equivalence is tested. Inter-run GPU probes and CPU/CUDA gates verify independent worker updates before two-worker GKT execution. Full required scope, FP32, batch sizes, Adam, stopping criteria, LightSAKT architecture, splits and untouched final test selections remain unchanged. Prioritization runs LightSAKT grid/finals/ablations before slow remaining baseline tuning. See reports/optimization/EXECUTION_OPTIMIZATION.md and reports/profiling/.
 
-Independent private GitHub draft recovery artifacts: 689 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
+Independent private GitHub draft recovery artifacts: 690 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.

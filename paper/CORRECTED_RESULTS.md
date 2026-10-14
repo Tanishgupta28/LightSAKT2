@@ -63,7 +63,7 @@ Algebra2005: LightSAKT mean test AUC minus DKT was -0.011592 across the five pre
 Algebra2005: LightSAKT mean test AUC minus DKT+ was -0.012866 across the five prespecified seeds (Table 7).
 Algebra2005: LightSAKT mean test AUC minus SAKT was -0.002784 across the five prespecified seeds (Table 7).
 
-Independent CPU inference reproduced validation metrics and saved test probabilities for 60 completed selected-final checkpoints. Verification checked exact frozen test identities/labels and FP32 cross-device probability tolerances (atol=1e-6, rtol=1e-6). Per-run hashes, source Git commits and metric checks are recorded in reports/selected_final_inference_verification.json; all 15 individual LightSAKT seed results and selected validation epochs are in reports/LIGHTSAKT_FINAL_SEED_RESULTS.md. Final verification of the remaining experimental schedule is still pending.
+Independent CPU inference reproduced validation metrics and saved test probabilities for 65 completed selected-final checkpoints. Verification checked exact frozen test identities/labels and FP32 cross-device probability tolerances (atol=1e-6, rtol=1e-6). Per-run hashes, source Git commits and metric checks are recorded in reports/selected_final_inference_verification.json; all 15 individual LightSAKT seed results and selected validation epochs are in reports/LIGHTSAKT_FINAL_SEED_RESULTS.md. Final verification of the remaining experimental schedule is still pending.
 
 ## Ablations and paired inference
 

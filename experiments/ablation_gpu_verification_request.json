@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "reason": "Verify all 75 logical ablation results on original FP32 GPU; CPU no-position validation AUC mismatch needs investigation",
+  "activation": "Nonblocking exclusive completed-run boundary",
+  "rerun_training": false,
+  "weaken_cpu_tolerances": false
+}

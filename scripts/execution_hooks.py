@@ -10,7 +10,7 @@ from src.training.engine import write_json
 
 def after_run():
     if os.environ.get('LIGHTSAKT_COORDINATED_CHILD'):
-        required_efficiency();additional_gkt_probe();return
+        required_efficiency();additional_gkt_probe();verify_ablations_between_runs();return
     request=Path('experiments/optimization_request.json')
     if not request.exists() or not json.load(open(request)).get('profile_between_runs'):return
     status=Path('reports/profiling/pilot_status.json')
@@ -106,6 +106,26 @@ def additional_gkt_probe():
             from datetime import datetime,timezone
             write_json(status,{'status':'running','started_utc':datetime.now(timezone.utc).isoformat(),
                               'healthy_training_interrupted':False,'enabled_for_research':False})
+
+
+def verify_ablations_between_runs():
+    request=Path('experiments/ablation_gpu_verification_request.json')
+    if not request.exists() or not json.load(open(request)).get('enabled'):return
+    status=Path('reports/ablation_gpu_verification_status.json')
+    if status.exists() and json.load(open(status)).get('status') in ['completed','failed']:return
+    from scripts.recover import available_lock
+    with available_lock('experiments/ablation_verification.lock') as owner:
+        if not owner:return
+        with available_lock('experiments/gpu_admission.lock') as idle:
+            if not idle:return
+            write_json(status,{'status':'running','healthy_training_interrupted':False})
+            log=Path('reports/ablation_gpu_verification.log')
+            with log.open('a') as output:
+                child=subprocess.Popen(['python','-u','-m','scripts.verify_selected_inference','--models','LightSAKT',
+                    '--groups','ablation','--device','cuda'],stdout=output,stderr=subprocess.STDOUT)
+                code=child.wait()
+            write_json(status,{'status':'completed' if code==0 else 'failed','exit_code':code,'log':str(log),
+                              'healthy_training_interrupted':False})
             log=Path('reports/profiling/gkt_threads/probe.log');log.parent.mkdir(parents=True,exist_ok=True)
             with log.open('a') as output:
                 child=subprocess.Popen(['python','-u','-m','scripts.probe_gkt_threads'],stdout=output,stderr=subprocess.STDOUT)

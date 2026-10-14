@@ -64,11 +64,11 @@
       }
     ],
     "timed_steps": [
-      0.3494569339964073,
-      0.3298243229801301,
-      0.3118726379761938
+      0.3105350499972701,
+      0.3080345769994892,
+      0.3081387809943408
     ],
-    "mean_step_seconds": 0.3303846316509104,
+    "mean_step_seconds": 0.3089028026637,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
@@ -139,15 +139,15 @@
       }
     ],
     "timed_steps": [
-      0.3108346830122173,
-      0.31081585999345407,
-      0.31058479100465775
+      0.32099418400321156,
+      0.30787475997931324,
+      0.308568115986418
     ],
-    "mean_step_seconds": 0.31074511133677635,
+    "mean_step_seconds": 0.3124790199896476,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 1.063201381446189
+    "speedup_against_four_threads": 0.9885553362076402
   },
   {
     "case": "ASSIST2009-GKT-primary",
@@ -214,15 +214,15 @@
       }
     ],
     "timed_steps": [
-      0.3169406710076146,
-      0.3271170380176045,
-      0.3302331180020701
+      0.31892483797855675,
+      0.30806229999870993,
+      0.3107459309976548
     ],
-    "mean_step_seconds": 0.3247636090090964,
+    "mean_step_seconds": 0.3125776896583072,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 1.0173080434072175
+    "speedup_against_four_threads": 0.9882432844179495
   },
   {
     "case": "ASSIST2009-GKT_MHA-primary",
@@ -289,11 +289,11 @@
       }
     ],
     "timed_steps": [
-      0.3322372999973595,
-      0.3334555019973777,
-      0.3341088810120709
+      0.340463712986093,
+      0.3405104129924439,
+      0.32689497197861783
     ],
-    "mean_step_seconds": 0.3332672276689361,
+    "mean_step_seconds": 0.33595636598571826,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
@@ -364,15 +364,15 @@
       }
     ],
     "timed_steps": [
-      0.3387122419953812,
-      0.5255576960043982,
-      0.3385738829965703
+      0.36108872600016184,
+      0.3668499870109372,
+      0.35248586401576176
     ],
-    "mean_step_seconds": 0.40094794033211656,
+    "mean_step_seconds": 0.36014152567562024,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 0.8311982533016166
+    "speedup_against_four_threads": 0.9328454011390912
   },
   {
     "case": "ASSIST2009-GKT_MHA-primary",
@@ -439,15 +439,15 @@
       }
     ],
     "timed_steps": [
-      0.39799193901126273,
-      0.45068141899537295,
-      0.46625299099832773
+      0.3237579260021448,
+      0.3244194589788094,
+      0.3365223649889231
     ],
-    "mean_step_seconds": 0.4383087830016545,
+    "mean_step_seconds": 0.3282332499899591,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 0.7603480482107475
+    "speedup_against_four_threads": 1.0235293529707774
   },
   {
     "case": "ASSIST2015-GKT-primary",
@@ -514,11 +514,236 @@
       }
     ],
     "timed_steps": [
-      0.31927590499981306,
-      0.35815975299919955,
-      0.43815817098948173
+      0.32466011997894384,
+      0.3341239999863319,
+      0.31041540700243786
     ],
-    "mean_step_seconds": 0.37186460966283147,
+    "mean_step_seconds": 0.3230665089892379,
+    "peak_reserved_bytes": 624951296,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.0
+  },
+  {
+    "case": "ASSIST2015-GKT-primary",
+    "dataset": "ASSIST2015",
+    "model": "GKT",
+    "cpu_threads": 1,
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-GKT-primary-42-c3a67383f961"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "8ac6fa77fe24ce5862aeab4c1c641036a036ebaba5b84a411672e761c5399afd",
+    "initial_cpu_rng_sha256": "ea16eb931f3bd95cf4e6647b12567ae7cd2fbcd08740685664e92aa1a53f2513",
+    "trajectory": [
+      {
+        "probabilities": "68aba91bf7e0cfe186e6ca4f9b7fa0e372c8170c3c659672a9fceb8224e1748f",
+        "gradients": "96f84986f7edc0f5cf0e0248f45921cbca34671b5db38306c302dd391e8fe192",
+        "parameters": "8732814c04840c707a7eb818052cef32f7051c9535f19107c4dd1d1942fdeeff",
+        "cuda_rng": "2decee4f7b6244566b639384828fc2ff38fe00806decc0bac248fd4e7659e749"
+      },
+      {
+        "probabilities": "45c6a3d4e5d49132c30feab6282e90f7e95f73bd0457dbb54bd35b99b8dcfffc",
+        "gradients": "9407164e28a8fdb781ed48b6f593f76f72428e28e6dee0c71c7b85183ea423f0",
+        "parameters": "7fa031bb3d777370ed518f69b237dc7ee9e853388c8d435038fd47016b81da37",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "d20feb76cdeffcd2817a27db8826b85d83458331dc16ff4dbd4467b5354d584b",
+        "gradients": "93a244133896ad76d2657b6a7b38aff7ae33c135398d84d5fac048a44551d8b9",
+        "parameters": "9939229ea404aca2aed4861ab99e13f83b6ed0f14b4dd5aaa5ca6f682c87295d",
+        "cuda_rng": "2c3fdf26dd5f7083ff9d3d8ecc8746c35a35c464e5a4639fba025c552f2e771a"
+      },
+      {
+        "probabilities": "35c95053f423b92267180198db20d8d1f457495ab37009110df249016d1e097b",
+        "gradients": "47d88622969cb7baf3d385b9130824cd7bf147119c25b871559bb0997b4af867",
+        "parameters": "549e8ce4d2ac1c76d6343b2114db3414f5222f97847e68026016f12a77a9c4be",
+        "cuda_rng": "fc6a851eeaac90edaba4a88bb5beddec12cc014fc832c65a87a76c0d24349edd"
+      },
+      {
+        "probabilities": "45134af2f7914a3c7f1f92c7ec6d3c67846c59012cef023738bf2d3a3fffa6fd",
+        "gradients": "7e6134a8d9590aabc5ad7fc42c3c4c1c3563106c52fc5806ac629fbc37818808",
+        "parameters": "e3f15603aadba538dae2b6859be50373189d32bc93d5dd8d3bbd54cf63eeb5d2",
+        "cuda_rng": "be0f92297cb49b63c803302eb6a3d27333c70f3d345724cd4f40f24d25bda66e"
+      }
+    ],
+    "timed_steps": [
+      0.41008890498778783,
+      0.3173060319968499,
+      0.3139491500041913
+    ],
+    "mean_step_seconds": 0.347114695662943,
+    "peak_reserved_bytes": 624951296,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 0.9307197679205823
+  },
+  {
+    "case": "ASSIST2015-GKT-primary",
+    "dataset": "ASSIST2015",
+    "model": "GKT",
+    "cpu_threads": 2,
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-GKT-primary-42-c3a67383f961"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "8ac6fa77fe24ce5862aeab4c1c641036a036ebaba5b84a411672e761c5399afd",
+    "initial_cpu_rng_sha256": "ea16eb931f3bd95cf4e6647b12567ae7cd2fbcd08740685664e92aa1a53f2513",
+    "trajectory": [
+      {
+        "probabilities": "68aba91bf7e0cfe186e6ca4f9b7fa0e372c8170c3c659672a9fceb8224e1748f",
+        "gradients": "96f84986f7edc0f5cf0e0248f45921cbca34671b5db38306c302dd391e8fe192",
+        "parameters": "8732814c04840c707a7eb818052cef32f7051c9535f19107c4dd1d1942fdeeff",
+        "cuda_rng": "2decee4f7b6244566b639384828fc2ff38fe00806decc0bac248fd4e7659e749"
+      },
+      {
+        "probabilities": "45c6a3d4e5d49132c30feab6282e90f7e95f73bd0457dbb54bd35b99b8dcfffc",
+        "gradients": "9407164e28a8fdb781ed48b6f593f76f72428e28e6dee0c71c7b85183ea423f0",
+        "parameters": "7fa031bb3d777370ed518f69b237dc7ee9e853388c8d435038fd47016b81da37",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "d20feb76cdeffcd2817a27db8826b85d83458331dc16ff4dbd4467b5354d584b",
+        "gradients": "93a244133896ad76d2657b6a7b38aff7ae33c135398d84d5fac048a44551d8b9",
+        "parameters": "9939229ea404aca2aed4861ab99e13f83b6ed0f14b4dd5aaa5ca6f682c87295d",
+        "cuda_rng": "2c3fdf26dd5f7083ff9d3d8ecc8746c35a35c464e5a4639fba025c552f2e771a"
+      },
+      {
+        "probabilities": "35c95053f423b92267180198db20d8d1f457495ab37009110df249016d1e097b",
+        "gradients": "47d88622969cb7baf3d385b9130824cd7bf147119c25b871559bb0997b4af867",
+        "parameters": "549e8ce4d2ac1c76d6343b2114db3414f5222f97847e68026016f12a77a9c4be",
+        "cuda_rng": "fc6a851eeaac90edaba4a88bb5beddec12cc014fc832c65a87a76c0d24349edd"
+      },
+      {
+        "probabilities": "45134af2f7914a3c7f1f92c7ec6d3c67846c59012cef023738bf2d3a3fffa6fd",
+        "gradients": "7e6134a8d9590aabc5ad7fc42c3c4c1c3563106c52fc5806ac629fbc37818808",
+        "parameters": "e3f15603aadba538dae2b6859be50373189d32bc93d5dd8d3bbd54cf63eeb5d2",
+        "cuda_rng": "be0f92297cb49b63c803302eb6a3d27333c70f3d345724cd4f40f24d25bda66e"
+      }
+    ],
+    "timed_steps": [
+      0.4187549199850764,
+      0.3164371839957312,
+      0.31984011898748577
+    ],
+    "mean_step_seconds": 0.3516774076560978,
+    "peak_reserved_bytes": 624951296,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 0.9186444791618851
+  },
+  {
+    "case": "ASSIST2015-GKT_MHA-primary",
+    "dataset": "ASSIST2015",
+    "model": "GKT_MHA",
+    "cpu_threads": 4,
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "66c7e755f6ffce09d575f265120924593e48796383065b0bcc7e2a2d0eef94ca",
+    "initial_cpu_rng_sha256": "ea543753b35d83f870f901baa0ceb45c6e038800ab6d2e01af6ac015e25f6aef",
+    "trajectory": [
+      {
+        "probabilities": "906651cb41e828de37c3981346796af7e846ca4b4b8c7eea687026b91ad4bf75",
+        "gradients": "29ca68580817a61958c205a8a379e45cec5765cf2307e944d8d96acac565145f",
+        "parameters": "539d778b2aa37ea4937f9e1b3b6e1a8855bff348540cb510c5acbefa2d592ff6",
+        "cuda_rng": "da56eca31c34c39bf151e5d42acdaf5f9286b8ae0549df329161f53ccc2b31b6"
+      },
+      {
+        "probabilities": "15bc5c71dde29438166e625bf3681788e07397e7c552002c7258cc6c92e03fb6",
+        "gradients": "eed6312f3497cb000d3579d5954313f9aba466da41584b368973e44c598ca1e0",
+        "parameters": "842816a809e2978c6f5136af13c57b0515e6a7fc63b066fec20e00878cb7f00b",
+        "cuda_rng": "de81b62cda1dc372f466d88183fd52ca9817807eca5d8e2b6bcbc03a28fdfd56"
+      },
+      {
+        "probabilities": "d743c43097dabe5f0d5943a5b7253f83b17f15665782b174bbb50d0b736c8aad",
+        "gradients": "8f23b1c6603b9178966279d5caf4a53454a36b16f005addb0062512f2f4b5d9c",
+        "parameters": "23501d7c723a39c15f104a11e05ed64e0855fd65fcc607b53d7957b110a4e2b0",
+        "cuda_rng": "2decee4f7b6244566b639384828fc2ff38fe00806decc0bac248fd4e7659e749"
+      },
+      {
+        "probabilities": "9670c8b6e7df8ed477410dce47bf42c4625082bfd76d8193b08865677ca21925",
+        "gradients": "3849fcb5ae5b38fe0ce55b7e1f01209ecf0bc497491f2e4c01035c4b4664d861",
+        "parameters": "4d88f10821a8e9e8849735dc0faf66098c98473aedd13bf2d2f289b89cd202da",
+        "cuda_rng": "4c68923ff1c2401061033672212cd25e24a2cd5e89de6751cf7868c7075283d6"
+      },
+      {
+        "probabilities": "b097f5d2ee197d19becd9bcb094de2344143d99b2a3ea81360fd023a534155a9",
+        "gradients": "0b7b7be02ea75f47e04c941da594a1c3179b97b34c6242c4bb9f6122d5541206",
+        "parameters": "67af433a98728588950ead80b8b070b79b1edcde35fb0f2453d85514cde33c82",
+        "cuda_rng": "1da73b0c8545665bd393386e7a8d98239f97e56a2f7457221c5f89d7fd7de21b"
+      }
+    ],
+    "timed_steps": [
+      0.5268127899907995,
+      0.3288835670100525,
+      0.3439469840086531
+    ],
+    "mean_step_seconds": 0.39988111366983503,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
