@@ -15,7 +15,7 @@ from scripts.reuse_training import physical_source
 from scripts.verify_artifacts import verify_stored_result
 
 
-def main(job_id,job_file=None):
+def evaluate_selected(job_id,job_file=None):
     job=json.load(open(job_file)) if job_file else next(j for j in json.load(open('experiments/manifest.json'))['jobs'] if j['run_id']==job_id)
     assert job['run_id']==job_id
     source=job['reuse_selected_run'];directory=Path('results/raw')/job_id
@@ -49,6 +49,13 @@ def main(job_id,job_file=None):
     write_json(directory/'metrics.json',result);write_json(directory/'config.json',logical_config)
     write_json(directory/'prediction_identity.json',identities)
     write_json(directory/'status.json',{'run_id':job_id,'status':'completed','last_completed_epoch':result['epochs_trained'],'reused_training_run':physical})
+
+
+def main(job_id,job_file=None):
+    from scripts.gpu_admission import admission
+    job=json.load(open(job_file)) if job_file else next(j for j in json.load(open('experiments/manifest.json'))['jobs'] if j['run_id']==job_id)
+    config=json.load(open(Path('results/raw')/job['reuse_selected_run']/'config.json'))
+    with admission(config['model']):evaluate_selected(job_id,job_file)
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--job',required=True);parser.add_argument('--job-file')

@@ -15,6 +15,11 @@ def test_pam_and_light_runs_exclude_other_workers(tmp_path):
 def test_mha_shared_admission_excludes_pam(tmp_path):
     path=tmp_path/'gpu.lock'
     with admission('GKT_MHA',path),admission('GKT_MHA',path):
+        for i in range(2):
+            with open(str(path)+f'.mha{i}','a') as slot:
+                try:fcntl.flock(slot,fcntl.LOCK_EX|fcntl.LOCK_NB)
+                except BlockingIOError:pass
+                else:raise AssertionError('MHA concurrency bound is not enforced')
         with open(path,'a') as peer:
             try:fcntl.flock(peer,fcntl.LOCK_EX|fcntl.LOCK_NB)
             except BlockingIOError:pass
