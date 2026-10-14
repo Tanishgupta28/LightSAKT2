@@ -1,0 +1,9 @@
+{
+  "gkt_interval_seconds": 300,
+  "other_interval_seconds": 3600,
+  "other_minimum_training_seconds": 900,
+  "poll_seconds": 60,
+  "gkt_first_completed_epoch": true,
+  "duplicate_epoch_snapshots": false,
+  "purpose": "Reduce offsite loss window for expensive GKT runs without changing training or checkpoint content"
+}

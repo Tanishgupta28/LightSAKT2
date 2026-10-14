@@ -3,7 +3,20 @@ import tarfile
 import torch
 from tests.test_training import fixture
 from src.training.engine import run
-from scripts.active_recovery import capture
+from scripts.active_recovery import capture,snapshot_due
+
+
+def test_first_gkt_epoch_is_backed_up_and_duplicate_epochs_are_not_uploaded():
+    policy={'gkt_interval_seconds':300}
+    epochs=[{'epoch':1,'epoch_seconds':168}]
+    assert snapshot_due('GKT',epochs,[],1000,policy)
+    assert snapshot_due('GKT_MHA',epochs,[],1000,policy)
+    assert not snapshot_due('DKVMN',epochs,[],1000,policy)
+    prior=[{'epoch':1,'captured_time':1000}]
+    assert not snapshot_due('GKT',epochs,prior,2000,policy)
+    epochs.append({'epoch':2,'epoch_seconds':168})
+    assert not snapshot_due('GKT',epochs,prior,1200,policy)
+    assert snapshot_due('GKT',epochs,prior,1300,policy)
 
 
 def test_active_snapshot_contains_consistent_resumable_state(tmp_path,monkeypatch):

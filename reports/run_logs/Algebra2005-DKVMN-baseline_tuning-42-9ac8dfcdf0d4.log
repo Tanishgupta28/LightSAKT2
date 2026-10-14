@@ -48,3 +48,15 @@ Algebra2005-DKVMN-baseline_tuning-42-9ac8dfcdf0d4 epoch=47 validation_auc=0.8076
 Algebra2005-DKVMN-baseline_tuning-42-9ac8dfcdf0d4 epoch=48 validation_auc=0.808098 seconds=7.2
 Algebra2005-DKVMN-baseline_tuning-42-9ac8dfcdf0d4 epoch=49 validation_auc=0.808023 seconds=7.2
 Algebra2005-DKVMN-baseline_tuning-42-9ac8dfcdf0d4 epoch=50 validation_auc=0.808685 seconds=7.2
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/workspace/LightSAKT2/scripts/run.py", line 23, in <module>
+    after_run()
+  File "/workspace/LightSAKT2/scripts/execution_hooks.py", line 13, in after_run
+    required_efficiency();additional_gkt_probe();verify_ablations_between_runs();return
+  File "/workspace/LightSAKT2/scripts/execution_hooks.py", line 134, in verify_ablations_between_runs
+    'completed_utc':datetime.now(timezone.utc).isoformat(),
+NameError: name 'datetime' is not defined

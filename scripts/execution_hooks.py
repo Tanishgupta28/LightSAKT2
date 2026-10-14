@@ -112,7 +112,9 @@ def verify_ablations_between_runs():
     request=Path('experiments/ablation_gpu_verification_request.json')
     if not request.exists() or not json.load(open(request)).get('enabled'):return
     status=Path('reports/ablation_gpu_verification_status.json')
-    if status.exists() and json.load(open(status)).get('status') in ['completed','failed']:return
+    prior=json.load(open(status)).get('status') if status.exists() else None
+    if prior=='failed':return
+    if prior=='completed' and Path('reports/ablation_cpu_gpu_ranking_diagnostic.json').exists():return
     from scripts.recover import available_lock
     with available_lock('experiments/ablation_verification.lock') as owner:
         if not owner:return
@@ -121,9 +123,13 @@ def verify_ablations_between_runs():
             write_json(status,{'status':'running','healthy_training_interrupted':False})
             log=Path('reports/ablation_gpu_verification.log')
             with log.open('a') as output:
-                child=subprocess.Popen(['python','-u','-m','scripts.verify_selected_inference','--models','LightSAKT',
-                    '--groups','ablation','--device','cuda'],stdout=output,stderr=subprocess.STDOUT)
-                code=child.wait()
+                code=0
+                if prior!='completed':
+                    child=subprocess.Popen(['python','-u','-m','scripts.verify_selected_inference','--models','LightSAKT',
+                        '--groups','ablation','--device','cuda'],stdout=output,stderr=subprocess.STDOUT)
+                    code=child.wait()
+                if code==0:
+                    code=subprocess.run(['python','-u','-m','scripts.diagnose_ablation_ranking'],stdout=output,stderr=subprocess.STDOUT).returncode
             write_json(status,{'status':'completed' if code==0 else 'failed','exit_code':code,'log':str(log),
                               'healthy_training_interrupted':False})
             log=Path('reports/profiling/gkt_threads/probe.log');log.parent.mkdir(parents=True,exist_ok=True)

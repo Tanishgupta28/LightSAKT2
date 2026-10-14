@@ -56,16 +56,26 @@ def upload(record):
             'verified_utc':datetime.now(timezone.utc).isoformat()}
 
 
+def snapshot_due(model,epochs,prior,now,policy):
+    if not epochs:return False
+    epoch=epochs[-1]['epoch']
+    if prior and epoch<=max(r['epoch'] for r in prior):return False
+    gkt=model.startswith('GKT')
+    if not gkt and sum(r['epoch_seconds'] for r in epochs)<policy.get('other_minimum_training_seconds',900):return False
+    interval=policy.get('gkt_interval_seconds',300) if gkt else policy.get('other_interval_seconds',3600)
+    return not prior or now-max(r['captured_time'] for r in prior)>=interval
+
+
 def cycle():
     index=Path('reports/active_recovery_index.json');records=json.load(open(index)) if index.exists() else []
+    policy_path=Path('configs/active_recovery.json');policy=json.load(open(policy_path)) if policy_path.exists() else {}
     for job in snapshot()['running_jobs']:
         run_id=job['run_id'];history=Path('results/raw')/run_id/'history.json'
         if not history.exists():continue
         epochs=json.load(open(history))
-        # Fast jobs receive completed-run backups; long jobs additionally get resumable snapshots.
-        if not epochs or sum(r['epoch_seconds'] for r in epochs)<900:continue
+        config=json.load(open(Path('results/raw')/run_id/'config.json'))
         prior=[r for r in records if r['run_id']==run_id]
-        if prior and time.time()-max(r['captured_time'] for r in prior)<3600:continue
+        if not snapshot_due(config['model'],epochs,prior,time.time(),policy):continue
         record=capture(run_id);record=upload(record);records.append(record);write_json(index,records)
         print('Verified private active-run snapshot',run_id,'epoch',record['epoch'],flush=True)
 
@@ -81,4 +91,6 @@ if __name__=='__main__':
             write_json('reports/active_recovery_failure.json',{'failure_type':type(error).__name__,'local_checkpoints_retained':True,
                 'updated_utc':datetime.now(timezone.utc).isoformat()})
             print('Active recovery pending:',type(error).__name__,flush=True)
-        time.sleep(300)
+        policy_path=Path('configs/active_recovery.json')
+        policy=json.load(open(policy_path)) if policy_path.exists() else {}
+        time.sleep(policy.get('poll_seconds',60))

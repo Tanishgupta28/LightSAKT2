@@ -51,12 +51,47 @@ def asset_record(name):
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--asset');parser.add_argument('--archive',type=Path)
-    parser.add_argument('--sha256');parser.add_argument('--prefix');args=parser.parse_args()
+    parser.add_argument('--sha256');parser.add_argument('--prefix')
+    parser.add_argument('--all-completed',action='store_true');parser.add_argument('--latest-active',action='store_true');args=parser.parse_args()
     assert Path.cwd().resolve()==PROJECT, 'Restore only inside the existing project root'
     assert not any(p['module'] in GPU_MODULES | {'scripts.schedule','scripts.coordinator'} for p in processes()), \
         'Live project training/controller exists; restoration is deferred without signals'
-    if args.asset:
-        record=asset_record(args.asset);archive=Path('backups/downloaded_recovery')/args.asset
+    if args.all_completed:
+        names=set()
+        for row in json.load(open('reports/completed_run_backups.json')):
+            names.add(Path(row['path']).name)
+            if row.get('result_archive'):names.add(Path(row['result_archive']['path']).name)
+        for name in sorted(names):download_and_restore(name)
+        print('Verified completed-result archives restored:',len(names));return
+    if args.latest_active:
+        from scripts.coordinator import refreshed_jobs
+        done={j['run_id'] for j in refreshed_jobs() if j['status']=='completed'};latest={}
+        for row in json.load(open('reports/active_recovery_index.json')):
+            if row['run_id'] in done:continue
+            old=latest.get(row['run_id'])
+            if old is None or row['epoch']>old['epoch']:latest[row['run_id']]=row
+        for row in latest.values():
+            directory=Path('checkpoints')/row['run_id']
+            if (directory/'latest.pt').exists() and (directory/'best.pt').exists():continue
+            # Preserve any newer Git-carried history before resuming from the
+            # most recent offsite optimizer/RNG state; never restore old status
+            # or history bytes over existing logs.
+            source=Path('results/raw')/row['run_id']
+            for name in ['history.json','status.json']:
+                p=source/name
+                if p.exists():
+                    target=Path('reports/recovery/historical_logs')/row['run_id']/(sha256(p)+'-'+name)
+                    target.parent.mkdir(parents=True,exist_ok=True)
+                    if not target.exists():target.write_bytes(p.read_bytes())
+            download_and_restore(Path(row['path']).name,prefix='checkpoints/')
+        print('Incomplete runs with verified active snapshot references:',len(latest));return
+    if args.asset:print(json.dumps(download_and_restore(args.asset,args.prefix),indent=2));return
+    assert args.archive and args.sha256, 'Supply --asset, --all-completed, --latest-active, or --archive and --sha256'
+    print(json.dumps(restore(args.archive,args.sha256,prefix=args.prefix),indent=2))
+
+
+def download_and_restore(name,prefix=None):
+        record=asset_record(name);archive=Path('backups/downloaded_recovery')/name
         archive.parent.mkdir(parents=True,exist_ok=True)
         if not archive.exists():
             with archive.open('xb') as output:
@@ -64,10 +99,7 @@ def main():
                     f'repos/Tanishgupta28/LightSAKT2/releases/assets/{record["asset_id"]}'],
                     stdout=output,stderr=subprocess.PIPE,check=True)
         digest=record['sha256']
-    else:
-        assert args.archive and args.sha256, 'Supply --asset or --archive and --sha256'
-        archive,digest=args.archive,args.sha256
-    print(json.dumps(restore(archive,digest,prefix=args.prefix),indent=2))
+        return restore(archive,digest,prefix=prefix)
 
 
 if __name__=='__main__':main()
