@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-10-14T02:01:29.387605+00:00",
+  "updated_utc": "2026-10-14T02:02:10.669097+00:00",
   "total_slots": 957,
-  "completed": 200,
-  "remaining": 757,
+  "completed": 201,
+  "remaining": 756,
   "counts": {
-    "completed": 200,
-    "pending": 756,
+    "completed": 201,
+    "pending": 755,
     "running": 1
   },
   "processes": {
@@ -40,10 +40,10 @@
   },
   "running_jobs": [
     {
-      "run_id": "Algebra2005-LightSAKT-grid-42-893445b0fab3",
-      "last_completed_epoch": 30,
-      "best_checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-893445b0fab3/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-LightSAKT-grid-42-893445b0fab3/config.json"
+      "run_id": "Algebra2005-LightSAKT-grid-42-9337e03ea1cc",
+      "last_completed_epoch": 44,
+      "best_checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-9337e03ea1cc/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-LightSAKT-grid-42-9337e03ea1cc/config.json"
     }
   ],
   "phase_counts": {
@@ -51,8 +51,8 @@
       "completed": 21
     },
     "6": {
-      "completed": 179,
-      "pending": 576,
+      "completed": 180,
+      "pending": 575,
       "running": 1
     },
     "7": {
