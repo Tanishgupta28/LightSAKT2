@@ -1,13 +1,13 @@
 # Experiment status
 
-Updated UTC: 2026-10-14T03:07:46.599978+00:00
+Updated UTC: 2026-10-14T03:08:26.425198+00:00
 
-Completed: **287**. Remaining: **670**. Total schedule slots: 957.
+Completed: **288**. Remaining: **669**. Total schedule slots: 957.
 
 ```json
 {
-  "completed": 287,
-  "pending": 669,
+  "completed": 288,
+  "pending": 668,
   "running": 1
 }
 ```
@@ -26,7 +26,7 @@ Progressive process: running (PID 185610).
 
 Active_recovery process: running (PID 203682).
 
-Current run: `Algebra2005-LightSAKT-no_dropout-3407`; last completed epoch: 12.
+Current run: `Algebra2005-LightSAKT-no_dropout-42`; last completed epoch: 21.
 
 The 45 reuse/alias slots are not independent new training experiments. Default ablation reuses final LightSAKT evidence. The separate smoke run is excluded from schedule counts.
 
@@ -36,7 +36,7 @@ Measured-reference serial equivalent: 500.1 training hours; scenario envelope 10
 
 Process existence alone is not a health guarantee. Last independently sampled CPU/checkpoint progress and checkpoint integrity are recorded in reports/EXECUTION_HEALTH.md. A detached scheduler survives a terminal disconnect, but no automatic restart after environment shutdown is configured.
 
-Private draft recovery assets independently download/checksum verified: 287. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md and reports/offsite_backup.json.
+Private draft recovery assets independently download/checksum verified: 289. All available completed archives synchronized: False. See reports/OFFSITE_RECOVERY.md and reports/offsite_backup.json.
 
 The 108 LightSAKT grid configurations, equal baseline tuning budgets, and five matched final seeds use the frozen student splits. See experiments/manifest.json and per-run status files.
 
