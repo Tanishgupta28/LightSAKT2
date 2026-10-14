@@ -2025,6 +2025,85 @@
     "verified_contents": true
   },
   {
+    "run_id": "ASSIST2015-LightSAKT-no_position-7777",
+    "archive_schema": 2,
+    "metrics_sha256": "9c871f7fc47961d185f3635715dfda78b32204474c343b0e5d4cf464a3125149",
+    "source_run_id": "ASSIST2015-LightSAKT-no_position-7777",
+    "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_position-7777.tar.gz",
+    "sha256": "24e30602253356dc701d4e1d4ff6940c8ad556889f0f76afb54c16e3a8ce052a",
+    "verified_contents": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_regularization-123",
+    "archive_schema": 2,
+    "metrics_sha256": "1295e2f4383ddff16ddb8b2ee68e2699596d9984cbd4f0585f697f34583d915f",
+    "source_run_id": "ASSIST2015-LightSAKT-no_dropout-123",
+    "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_dropout-123.tar.gz",
+    "sha256": "c6cd7182435b4ecaa702adb8a2e5a5b6d0218f2c51a5ab70df7dc23b8233ff0f",
+    "verified_contents": true,
+    "result_archive": {
+      "path": "backups/reused_results/ASSIST2015-LightSAKT-no_regularization-123.tar.gz",
+      "sha256": "9734f7574ad0556f5fa313ff74f8067e2e04f8ae4530aa455f7bcb675245cb99",
+      "verified_contents": true
+    }
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_regularization-2026",
+    "archive_schema": 2,
+    "metrics_sha256": "47cee96f240f4bb751b921a74dcdbc4f97f09c9f53bafb6e9b1396eb503ce05b",
+    "source_run_id": "ASSIST2015-LightSAKT-no_dropout-2026",
+    "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_dropout-2026.tar.gz",
+    "sha256": "606c66b2d036035b2b6a78c79196a476602a0a3a545804766d5ede61c5d2e3c3",
+    "verified_contents": true,
+    "result_archive": {
+      "path": "backups/reused_results/ASSIST2015-LightSAKT-no_regularization-2026.tar.gz",
+      "sha256": "7304f31ec88d128a352676066aea7c04cefcaf83a457839d0b8e1cf34114943c",
+      "verified_contents": true
+    }
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_regularization-3407",
+    "archive_schema": 2,
+    "metrics_sha256": "f4b2476684075ea7e669ee4f40ecb6d59502e5c4587710303596fd0b9aacf286",
+    "source_run_id": "ASSIST2015-LightSAKT-no_dropout-3407",
+    "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_dropout-3407.tar.gz",
+    "sha256": "9cea435fb0a123b428c9f374dc552d405091474b91c0395da209b003e591e931",
+    "verified_contents": true,
+    "result_archive": {
+      "path": "backups/reused_results/ASSIST2015-LightSAKT-no_regularization-3407.tar.gz",
+      "sha256": "39c988b23e85f3641ddc49f609870e17deddaaa678351f4680073185ab3c1b72",
+      "verified_contents": true
+    }
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_regularization-42",
+    "archive_schema": 2,
+    "metrics_sha256": "eeca348631d25af676b98dea42c86179e01983b973f2e41f601e9829dac2cc5a",
+    "source_run_id": "ASSIST2015-LightSAKT-no_dropout-42",
+    "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_dropout-42.tar.gz",
+    "sha256": "c2fdc2ca0afcab82f49a05e8b341910c48e2e5c283e7f200c537b72c8307e903",
+    "verified_contents": true,
+    "result_archive": {
+      "path": "backups/reused_results/ASSIST2015-LightSAKT-no_regularization-42.tar.gz",
+      "sha256": "e5e17f8e5f6872c12de626bb081990a52abd3ee740967f2c38e4df3c3e22149e",
+      "verified_contents": true
+    }
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_regularization-7777",
+    "archive_schema": 2,
+    "metrics_sha256": "e6efebe8ba7651b3baa2045a9594bb6fc287f63cc1a333cbeae05c556497751d",
+    "source_run_id": "ASSIST2015-LightSAKT-no_dropout-7777",
+    "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_dropout-7777.tar.gz",
+    "sha256": "f7f6fcef1d5998bf31bd5d4f486876b33b4c5ee240b17524c3888f83865b8a36",
+    "verified_contents": true,
+    "result_archive": {
+      "path": "backups/reused_results/ASSIST2015-LightSAKT-no_regularization-7777.tar.gz",
+      "sha256": "443d085e7e297e8bd8d2c0b640d1ff945e464bdbdbb0bcc7e4ee1cd5d8cb6068",
+      "verified_contents": true
+    }
+  },
+  {
     "run_id": "ASSIST2015-LightSAKT-primary-42-301d9bff60e9",
     "archive_schema": 2,
     "metrics_sha256": "31e6c3d69145150dfb3a2d9a70ceaefbd448b88d9f3567a6dcfd5d21d6455562",
