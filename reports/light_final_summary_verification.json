@@ -1,18 +1,11 @@
 {
   "verified": true,
-  "verified_utc": "2026-10-14T05:19:48.761739+00:00",
+  "verified_utc": "2026-10-14T05:25:20.233487+00:00",
   "light_final_seed_slots": 15,
   "summary_method": "Five prespecified seeds; arithmetic mean and sample SD; saved metrics independently recomputed",
-  "completed_five_seed_baseline_comparisons": 8,
+  "completed_five_seed_baseline_comparisons": 9,
   "fresh_primary_baseline_comparisons": 18,
-  "partial_final_baselines_excluded": [
-    {
-      "dataset": "Algebra2005",
-      "model": "SAKT",
-      "completed_seeds": 4,
-      "scope": "Excluded from final comparison until all five seeds finish"
-    }
-  ],
+  "partial_final_baselines_excluded": [],
   "runs": [
     {
       "run_id": "ASSIST2009-DKT+-final-123",
@@ -1003,6 +996,19 @@
       "test_metrics_recomputed_from_saved_predictions": true
     },
     {
+      "run_id": "Algebra2005-SAKT-final-7777",
+      "group": "final",
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "seed": 7777,
+      "checkpoint_sha256": "f956adbdae3e28c335d8749631df9496eadf2a7d55944e0584436fe47c2de7fc",
+      "prediction_sha256": "4a993a0f5740783be1f3c797e95e6a6beb843e42c82df92fc77e9301e62eb5b3",
+      "metrics_sha256": "7f057302443a466e594d30599b00db7d8b56172a72200b24fc351127c773fb11",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true
+    },
+    {
       "run_id": "Algebra2005-SAKT-primary-42-67291648991d",
       "group": "primary",
       "dataset": "Algebra2005",
@@ -1018,8 +1024,8 @@
   ],
   "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
   "eta_source": "reports/summary_eta/progressive/ETA.json",
-  "eta_source_sha256": "f444b68a3cbbf8cb45d502e8d3496cd0649f9b99fe0d8b696627968a1aa34398",
-  "remaining_occupied_mig_hours": 389.1065880916167,
+  "eta_source_sha256": "9c4f6e563ad6fd08634b93e52190d1120253a940320b7885b42befb730d0d706",
+  "remaining_occupied_mig_hours": 388.92496284476624,
   "gkt_remaining_occupied_mig_hours": 372.3714161941859,
   "artifacts": [
     {
@@ -1032,11 +1038,11 @@
     },
     {
       "path": "results/tables/LightSAKT_completed_baseline_comparisons.csv",
-      "sha256": "8e8d9e754fb659675f2a7e6e3919d02f6c9159a62c565cc7220f280d92a66238"
+      "sha256": "e33f594040ae6d73db5789707b045aaf9bf07c637148f51b2b1e52aea2fd23f7"
     },
     {
       "path": "reports/LightSAKT_summary_ETA_by_model.csv",
-      "sha256": "6cfbd77298a74142b92db9e138d9be09a25c30ddcc64bad83f05c63cd332d222"
+      "sha256": "e13015a16029cb2255aa727b877cf4586ac818f38dfa3f5aca1f5dafb4ddf7d1"
     }
   ]
 }

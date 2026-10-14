@@ -45,7 +45,7 @@ These configurations maximize validation AUC among all 36 prespecified candidate
 |Algebra2005|DKT|5|0.822181 ± 0.000683|0.800524 ± 0.001175|0.872422 ± 0.000891|0.149683 ± 0.000862|0.466820 ± 0.002433|
 |Algebra2005|DKT+|5|0.823456 ± 0.000649|0.801094 ± 0.000253|0.872982 ± 0.000347|0.152382 ± 0.000488|0.474735 ± 0.001334|
 |Algebra2005|LightSAKT|5|0.810590 ± 0.000422|0.795574 ± 0.000639|0.870356 ± 0.000350|0.144069 ± 0.000364|0.445272 ± 0.001018|
-|Algebra2005|SAKT|2|0.813603 ± 0.000023|0.795970 ± 0.000547|0.870893 ± 0.000702|0.143342 ± 0.000110|0.442934 ± 0.000006|
+|Algebra2005|SAKT|5|0.813373 ± 0.000367|0.796382 ± 0.000504|0.871012 ± 0.000372|0.143309 ± 0.000206|0.443098 ± 0.000598|
 
 Means summarize every completed prespecified seed. Sample standard deviations and Student-t intervals describe conditional initialization variability on one fixed student split; they do not measure new-student sampling uncertainty. Partial seed counts are not complete five-seed results.
 
@@ -57,6 +57,7 @@ ASSIST2015: LightSAKT mean test AUC minus DKT+ was +0.005287 across the five pre
 ASSIST2015: LightSAKT mean test AUC minus SAKT was +0.000909 across the five prespecified seeds (Table 7).
 Algebra2005: LightSAKT mean test AUC minus DKT was -0.011592 across the five prespecified seeds (Table 7).
 Algebra2005: LightSAKT mean test AUC minus DKT+ was -0.012866 across the five prespecified seeds (Table 7).
+Algebra2005: LightSAKT mean test AUC minus SAKT was -0.002784 across the five prespecified seeds (Table 7).
 
 ## Ablations and paired inference
 
