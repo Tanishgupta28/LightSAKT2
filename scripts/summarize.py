@@ -38,7 +38,11 @@ def summarize():
         jobs=[j for j in manifest['jobs'] if j['phase']==6 and j['run_id'].startswith(dataset+'-LightSAKT-grid')]
         output=[]
         for job in jobs:
-            c=json.load(open(job['config']));r={'run_id':job['run_id'],'dataset':dataset,'learning_rate':c['learning_rate'],**c['model_config'],'seed':c['seed'],'status':job['status']}
+            # The detached coordinator saves per-run states without mutating the
+            # original scheduler's in-memory ledger. Report its live evidence.
+            saved=Path('results/raw')/job['run_id']/'status.json'
+            status=json.load(open(saved)).get('status',job['status']) if saved.exists() else job['status']
+            c=json.load(open(job['config']));r={'run_id':job['run_id'],'dataset':dataset,'learning_rate':c['learning_rate'],**c['model_config'],'seed':c['seed'],'status':status}
             found=next((x for x in rows if x['run_id']==job['run_id']),None)
             if found:r.update(found)
             output.append(r)
