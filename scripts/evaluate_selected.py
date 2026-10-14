@@ -15,8 +15,9 @@ from scripts.reuse_training import physical_source
 from scripts.verify_artifacts import verify_stored_result
 
 
-def main(job_id):
-    job=next(j for j in json.load(open('experiments/manifest.json'))['jobs'] if j['run_id']==job_id)
+def main(job_id,job_file=None):
+    job=json.load(open(job_file)) if job_file else next(j for j in json.load(open('experiments/manifest.json'))['jobs'] if j['run_id']==job_id)
+    assert job['run_id']==job_id
     source=job['reuse_selected_run'];directory=Path('results/raw')/job_id
     if (directory/'metrics.json').exists():return
     selection=json.load(open(job['selection_path']))
@@ -50,4 +51,5 @@ def main(job_id):
     write_json(directory/'status.json',{'run_id':job_id,'status':'completed','last_completed_epoch':result['epochs_trained'],'reused_training_run':physical})
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--job',required=True);main(parser.parse_args().job)
+    parser=argparse.ArgumentParser();parser.add_argument('--job',required=True);parser.add_argument('--job-file')
+    args=parser.parse_args();main(args.job,args.job_file)

@@ -1,5 +1,6 @@
 """Audited execution metadata and exact sequence-cache substitution."""
 import hashlib
+import os
 from pathlib import Path
 
 
@@ -21,6 +22,8 @@ def install(config):
             'sequence_cache_code_sha256':hashlib.sha256(Path('scripts/sequence_cache.py').read_bytes()).hexdigest(),
             'mixed_precision':False,'compiled_model':False,'batch_order_changed':False,
             'configuration_unchanged':True}
+        record['execution']['maximum_concurrent_gkt_workers']=int(os.environ.get('LIGHTSAKT_MAX_CONCURRENT_GKT','1'))
+        record['execution']['coordinated_child']=bool(os.environ.get('LIGHTSAKT_COORDINATED_CHILD'))
         return record
     engine.Sequences=sequences;engine.environment=environment
 

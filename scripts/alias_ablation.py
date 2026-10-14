@@ -4,8 +4,9 @@ from pathlib import Path
 from src.training.engine import write_json
 
 
-def main(job_id):
-    job=next(j for j in json.load(open('experiments/manifest.json'))['jobs'] if j['run_id']==job_id)
+def main(job_id,job_file=None):
+    job=json.load(open(job_file)) if job_file else next(j for j in json.load(open('experiments/manifest.json'))['jobs'] if j['run_id']==job_id)
+    assert job['run_id']==job_id
     source=Path('results/raw')/job['reuse_alias_run'];destination=Path('results/raw')/job_id
     result=json.load(open(source/'metrics.json'));config=json.load(open(source/'config.json'))
     result.update(run_id=job_id,reused_training_run=job['reuse_alias_run'],scientific_variant='no_regularization',
@@ -15,4 +16,5 @@ def main(job_id):
     write_json(destination/'status.json',{'run_id':job_id,'status':'completed','reused_training_run':job['reuse_alias_run'],'independent_observation':False})
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--job',required=True);main(parser.parse_args().job)
+    parser=argparse.ArgumentParser();parser.add_argument('--job',required=True);parser.add_argument('--job-file')
+    args=parser.parse_args();main(args.job,args.job_file)
