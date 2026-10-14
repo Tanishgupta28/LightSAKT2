@@ -1,5 +1,17 @@
 [
   {
+    "path": "results/tables/LightSAKT_completed_baseline_comparisons.csv",
+    "sha256": "0966c302eadcd1f1faea22b4f9662010fa27336d9c0d716ea28ba5e03f6ab6e6"
+  },
+  {
+    "path": "results/tables/LightSAKT_final_individual_seeds.csv",
+    "sha256": "0e63deb490dc9afd218a0627d6d9b7fd405726d9f7eee38f1e49f93ae8826ed5"
+  },
+  {
+    "path": "results/tables/LightSAKT_final_summary.csv",
+    "sha256": "b5d951353db4cee01bcf9dc6a5d26e80fa3f5590e2efd1603636ab1664fcf8e3"
+  },
+  {
     "path": "results/tables/LightSAKT_selected_configurations.csv",
     "sha256": "f1cd81b26729a04df20de9de159e957ac42654c25fa2720ab115c5b20a6e688d"
   },
@@ -41,11 +53,11 @@
   },
   {
     "path": "results/tables/all_verified_runs.csv",
-    "sha256": "25171513973cf5efbba7e391dc369c896969799f8da15716ddf7b426e018f250"
+    "sha256": "844ba969af2300f51171fce302ec842c2f892b67ba2e9ce8372e4094a88c132f"
   },
   {
     "path": "results/tables/computational_budgets.csv",
-    "sha256": "83200a0b1c867ded5e33d0421a15b8a3458b34c747e292a8e3141b3f30307c25"
+    "sha256": "429e0eded33358f847c3f3a682cc3c1147a6560aff9d300cfbe7b490f2bc822a"
   },
   {
     "path": "results/tables/dataset_preprocessing_audit.csv",
@@ -89,7 +101,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_ROC_seed42.pdf",
-    "sha256": "8d66b5e762de9fe7fe999838a6e06959f7ea8ff9220a00d9bbda2cd157d90241"
+    "sha256": "4a606cc7fd62c01bda5b7448596a690366584b8deadda3256ec39ab2ac298892"
   },
   {
     "path": "results/figures/ASSIST2009_ROC_seed42.png",
@@ -97,7 +109,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_ROC_seed42.svg",
-    "sha256": "5f6a6143067ae87a3834498aeec0dc334ff642a0417d2f6c6ec408a1d4934311"
+    "sha256": "898d97e32198f72915dcadf2f7ab94463e54eeb43b83a693f74b286029c3a8c6"
   },
   {
     "path": "results/figures/ASSIST2009_ablation_accuracy.csv",
@@ -105,7 +117,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_ablation_accuracy.pdf",
-    "sha256": "d2ab52723b9d74836b6db862d3115a776d44e54854a2abb266e15d1476889bb2"
+    "sha256": "c46184e0b7d23357c1d51203fa0c374d9af1761355a31c1a5c7b4776f61005c9"
   },
   {
     "path": "results/figures/ASSIST2009_ablation_accuracy.png",
@@ -113,7 +125,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_ablation_accuracy.svg",
-    "sha256": "19734b271f6693fb16f94761d523b0159c37101ed207aa7115e6da9aaaa2533c"
+    "sha256": "14597bf920665174a2577b0d8371fcb9752032416b0dd209c99e017b92936a5b"
   },
   {
     "path": "results/figures/ASSIST2009_ablation_auc.csv",
@@ -121,7 +133,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_ablation_auc.pdf",
-    "sha256": "a4e5b59c9ebfb78f05a45c7f755925859319a30ed46acafde623eb15698060ee"
+    "sha256": "937ab5077c501218bd60cb5bd7fa58d40b9087b81778dd2c690d424ac874fbe1"
   },
   {
     "path": "results/figures/ASSIST2009_ablation_auc.png",
@@ -129,7 +141,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_ablation_auc.svg",
-    "sha256": "c0f05fb3832492909679db0389d41cd508997ff5e2c88e6bf6f5ffb0d019a1a8"
+    "sha256": "c377b26269832f0a59a5f2f7c66d1c1d5f89480ac92d59bb02d8da2e3920ea02"
   },
   {
     "path": "results/figures/ASSIST2009_ablation_bce.csv",
@@ -137,7 +149,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_ablation_bce.pdf",
-    "sha256": "adcbabd5fd815cb8a1e2a334aab765e7f6c589e92bd8207976a3ebbf011ad962"
+    "sha256": "ead64523b6bea9b2621c5ae624603bf85520395036ec5bc7c0a7d365b18e4715"
   },
   {
     "path": "results/figures/ASSIST2009_ablation_bce.png",
@@ -145,7 +157,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_ablation_bce.svg",
-    "sha256": "86d8dd65185761986b8aaca78b5a3d0e5aa5a235492695bc8966cbedc7734505"
+    "sha256": "626ec445d5c27eae5dcc4ef035ac6d54ffe5b9451d1c6ef6a2e9994fd04250b2"
   },
   {
     "path": "results/figures/ASSIST2009_ablation_f1.csv",
@@ -153,7 +165,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_ablation_f1.pdf",
-    "sha256": "59f4ef5b66cf07b7981eb137be38aba12d4bc66ac07bd5304a59158fee5c1d2b"
+    "sha256": "934c3d6453a5ce70e97e3d2d04865f7057cf8172e296392f3813ae45e8a2b654"
   },
   {
     "path": "results/figures/ASSIST2009_ablation_f1.png",
@@ -161,7 +173,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_ablation_f1.svg",
-    "sha256": "852cdd886632e6a70100ab42388063e52efe4c403715d6b876ce7d65f1e15644"
+    "sha256": "9098cabed3c5bc063c6baeb667f6896fe83359170199159e11e61236c1e0bea7"
   },
   {
     "path": "results/figures/ASSIST2009_ablation_mse.csv",
@@ -169,7 +181,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_ablation_mse.pdf",
-    "sha256": "6a385753bc7b4e1841d3c1d75b0046313c5ee8c02e6be575c879340984fd6655"
+    "sha256": "e2786d76f1584dd35bbb6f18e3940997919c9e4afa51d6dff6a434e3879ba8f3"
   },
   {
     "path": "results/figures/ASSIST2009_ablation_mse.png",
@@ -177,11 +189,11 @@
   },
   {
     "path": "results/figures/ASSIST2009_ablation_mse.svg",
-    "sha256": "674153647d88c536a1c6b63f35d16b4ca71282568cebb3fbede81c2f1d83e128"
+    "sha256": "2f9fa49cadd3152c7cf66af77d2d62e91e4c05b67435fac274e251f29cb502b8"
   },
   {
     "path": "results/figures/ASSIST2009_accuracy_repeated.pdf",
-    "sha256": "192dedf34e9f456f70d2d264d761868843df9b9122d275b1c1dd4c300300dd65"
+    "sha256": "961e9e46111c18acb1fe8907bdd4add9336198f0be1eb2192470855ad173cfee"
   },
   {
     "path": "results/figures/ASSIST2009_accuracy_repeated.png",
@@ -189,11 +201,11 @@
   },
   {
     "path": "results/figures/ASSIST2009_accuracy_repeated.svg",
-    "sha256": "088185dfa98546e96c9e31a21480c7385b93efb1c7d6b2b947c63230580b5334"
+    "sha256": "04a9c09fb335c8d4d42e316a2cdbe5c8ddae303c77673eb1912a15e01a250011"
   },
   {
     "path": "results/figures/ASSIST2009_auc_repeated.pdf",
-    "sha256": "ad3fc21d6ce96c7097ac030effa60d4473afd6426e61037d02ad47bf7843b976"
+    "sha256": "d1e522fa164a0eca01295d432ab33d794e11cf99ffac61164ec60217ef2c8800"
   },
   {
     "path": "results/figures/ASSIST2009_auc_repeated.png",
@@ -201,11 +213,11 @@
   },
   {
     "path": "results/figures/ASSIST2009_auc_repeated.svg",
-    "sha256": "e624631568580555305957c38a1a8688a0d92d211cd52486edc32e0228666aec"
+    "sha256": "8c1628c7139a1b5b1a77879d68acfd28599a907fad4ed680b3908b83989b4a66"
   },
   {
     "path": "results/figures/ASSIST2009_bce_repeated.pdf",
-    "sha256": "051736f5beb37934e2e491b9f873d838dc4b7dd71ac5a82832374dcb1f03cb96"
+    "sha256": "399040378a9686a4ca203dcd7f51862f83dcf7f301d4a71ea11b5a875c6da10f"
   },
   {
     "path": "results/figures/ASSIST2009_bce_repeated.png",
@@ -213,11 +225,11 @@
   },
   {
     "path": "results/figures/ASSIST2009_bce_repeated.svg",
-    "sha256": "719f243df9e26e0889928dae441fc7faf362538ae9157ef6a4441ebf78512838"
+    "sha256": "5726368ff5490ab932ea30601fdd991c399e877872fda665659efd540b90f025"
   },
   {
     "path": "results/figures/ASSIST2009_f1_repeated.pdf",
-    "sha256": "4d9c5013b090c8c74a29409790b25604fa650f4c93fc074e3ab3a54ebd6bfc71"
+    "sha256": "142e80dcd3b6258fc052588230ab1f7cf0a16237bf9c3490ce198159cadc99c1"
   },
   {
     "path": "results/figures/ASSIST2009_f1_repeated.png",
@@ -225,7 +237,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_f1_repeated.svg",
-    "sha256": "5a419105cab5f3493d2e73c2d54df180da36471cd63a0691dc8538fe1e96d1b3"
+    "sha256": "f76a93b1bc9064d3927c0796c00eed5b76c4a993737f0eecb76c23602822fbcb"
   },
   {
     "path": "results/figures/ASSIST2009_final_42_skill_probabilities.csv",
@@ -237,7 +249,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_grid_heatmap.pdf",
-    "sha256": "159ca9f2f2a51aa27792d74f58d74ac395f335e6b8d4081e2e74a6361cc66b27"
+    "sha256": "dd130ba99b44650b9c5336e46a43a51ae5c3f734ce40d1fd42097617a4ba2000"
   },
   {
     "path": "results/figures/ASSIST2009_grid_heatmap.png",
@@ -245,11 +257,11 @@
   },
   {
     "path": "results/figures/ASSIST2009_grid_heatmap.svg",
-    "sha256": "cf983308aef482faea34ab1a2b1229fc3a05c5e1f8b76cc01dfacc6322c6194a"
+    "sha256": "7f51bd1cec5399b62e28799a24abc4c8137d83c8ef211263c89ed411d8280841"
   },
   {
     "path": "results/figures/ASSIST2009_mse_repeated.pdf",
-    "sha256": "66653e5e5e46dbf079b06a6b13d6cbda4af632aaa41f2164e925109589572f76"
+    "sha256": "dfc766231575f3a8ca795fd52a53785c3276055b3d545920f4e05ffa1c9b5696"
   },
   {
     "path": "results/figures/ASSIST2009_mse_repeated.png",
@@ -257,7 +269,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_mse_repeated.svg",
-    "sha256": "e9834d581d3ca9a60f7f706c2d74d4cf027c83dbea2a5889574885a9f9d1d704"
+    "sha256": "0bfa19725e7dbeaa9872fcf979c7ad0d42a2e0ce4d18fc56e0b4b24ba8bde37b"
   },
   {
     "path": "results/figures/ASSIST2009_parameter_efficiency.csv",
@@ -265,7 +277,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_parameter_efficiency.pdf",
-    "sha256": "1f0afc30695be2327ca2c7ac99043f9a02865276249b061ea2db08de5856c8da"
+    "sha256": "6033dd5249421ed78617404afcbfa52f78960e0ea95199749795fdfd1c30a38d"
   },
   {
     "path": "results/figures/ASSIST2009_parameter_efficiency.png",
@@ -273,7 +285,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_parameter_efficiency.svg",
-    "sha256": "6f21409a5b43682a4e13c655f335f426698b3a4b0876a8fb417f0836e36f4770"
+    "sha256": "4d527f4f95970281ecc3687e648a6ae7e1625c68a00dd07a978c9aa6381e3c76"
   },
   {
     "path": "results/figures/ASSIST2009_primary_42_skill_probabilities.csv",
@@ -285,7 +297,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_seed_variability.pdf",
-    "sha256": "94f70c0f15f9d9afcfec2d4b718ab539948015780cdd0f7b1bc24e74a9d4f18d"
+    "sha256": "ab795a9d88428311e0aa0408057deec78edf713830687547b400e4bb3f7d6ffc"
   },
   {
     "path": "results/figures/ASSIST2009_seed_variability.png",
@@ -293,11 +305,11 @@
   },
   {
     "path": "results/figures/ASSIST2009_seed_variability.svg",
-    "sha256": "a6fe4db244620045d57726b383521877c2282eb3dc3e0744fa190f9f69c95b75"
+    "sha256": "81963c91d37b87c7f6897ca5c4a0d8b36245aac77150c36597e7a281289af329"
   },
   {
     "path": "results/figures/ASSIST2009_train_objective.pdf",
-    "sha256": "b35143bb55ec9dac5922b23e3f9af301f07d20c9d9c3346f0b0018c4aedc662c"
+    "sha256": "4ca8e26138c75bfbc05c29a544c6c78a91d212f4826d91dcaecd66f19209a5dc"
   },
   {
     "path": "results/figures/ASSIST2009_train_objective.png",
@@ -305,11 +317,11 @@
   },
   {
     "path": "results/figures/ASSIST2009_train_objective.svg",
-    "sha256": "63c28cb6239ea082883294756f245fe4b72816ce8646b861529748d5044e4c37"
+    "sha256": "95f9711829abe0ee8203d4c16877f83aa35274e936d74801cd4f6cc2cc101072"
   },
   {
     "path": "results/figures/ASSIST2009_validation_accuracy.pdf",
-    "sha256": "f95ac793642749bdf6d9a95b67b85c22ab5db083a8125b69c84fba1824fe0c3e"
+    "sha256": "5cc99bd14e81457c375f16952dc5fe94fe7e88115850ef48b0e666556e09c456"
   },
   {
     "path": "results/figures/ASSIST2009_validation_accuracy.png",
@@ -317,7 +329,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_validation_accuracy.svg",
-    "sha256": "5303462a1c97c575d117b1694f404b0047773be4497e9451f0d23bc838751604"
+    "sha256": "5ef94cd6b20818a3ad3da177a4e8f56a6f874f1d085a5f1d1ce9f4bfc324db5f"
   },
   {
     "path": "results/figures/ASSIST2015_ROC_seed42.csv",
@@ -325,7 +337,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_ROC_seed42.pdf",
-    "sha256": "c2854658a81a7148cdba9c01643b7bf4e7f6ad501d18491c74d09cf6d8f60fac"
+    "sha256": "90eefb934d95e9c9c268cb2b542f70e998ebac38b549fc945571bb484d942e06"
   },
   {
     "path": "results/figures/ASSIST2015_ROC_seed42.png",
@@ -333,7 +345,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_ROC_seed42.svg",
-    "sha256": "60a2486c151f84b9a14d10eae37e6a6487623cf590318e87bb54a6d9ce4e6a18"
+    "sha256": "2f846e4481c369842e8a54666b2fb97bacffb819054c1322973cbf7991dd4125"
   },
   {
     "path": "results/figures/ASSIST2015_ablation_accuracy.csv",
@@ -341,7 +353,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_ablation_accuracy.pdf",
-    "sha256": "d4d23049049ef6a2ca2af640c064a358adc339ba5d30d9e2a1526ea9e9022164"
+    "sha256": "c410adaf5e5b919b2b76792f28881667a6a3b5a7ac77d9039bf5235e37755173"
   },
   {
     "path": "results/figures/ASSIST2015_ablation_accuracy.png",
@@ -349,7 +361,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_ablation_accuracy.svg",
-    "sha256": "722ee3c0fb9bf62d61c004c3e3d23c4fd2164003891bc1b26c4c0a23114a04d6"
+    "sha256": "1d8f953e780ea80157f79c812204e512189b0c710c80bf3412a2fd63b123132a"
   },
   {
     "path": "results/figures/ASSIST2015_ablation_auc.csv",
@@ -357,7 +369,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_ablation_auc.pdf",
-    "sha256": "a72326935642753f6fedc360202a7710354980160e885c6f50f0aa2d80b5309b"
+    "sha256": "b46a9f63ad42165a4555447c69c1d477125de46efbf3d1523199cf0f91df8edc"
   },
   {
     "path": "results/figures/ASSIST2015_ablation_auc.png",
@@ -365,7 +377,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_ablation_auc.svg",
-    "sha256": "68cda71dbc1f5b99c7c09360e11b54bd1bbf0d2f0137439f65f6fd2d7fa2a026"
+    "sha256": "429f1761b23329a4d041c47bd0c51d8f7728ef54a2edfe5813cf86920ce7c7c7"
   },
   {
     "path": "results/figures/ASSIST2015_ablation_bce.csv",
@@ -373,7 +385,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_ablation_bce.pdf",
-    "sha256": "e695bde28f6e986045990fb5d9f6ad6a56ce1db7a6050be553c8bab6720533f6"
+    "sha256": "f94c7d6152aa364942384253088315b30e75149c263c66a97217ce94a355f0a3"
   },
   {
     "path": "results/figures/ASSIST2015_ablation_bce.png",
@@ -381,7 +393,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_ablation_bce.svg",
-    "sha256": "0e380c78a6b1a2fe2c401c9f44cdc003b4963a9aa002940899960145c54377db"
+    "sha256": "e09ceecec462fca0817fb154bee9c06ed9e20a0d87fc2ea11eed5e86807256ff"
   },
   {
     "path": "results/figures/ASSIST2015_ablation_f1.csv",
@@ -389,7 +401,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_ablation_f1.pdf",
-    "sha256": "ed3f471e65e485e7e42efe4aaf3efd6c4ae84adfac44cbb1c64fc4014b736b88"
+    "sha256": "17220b9c45013649044088d0a5e7807bc6c4123ed3615052d11beb4e8b7fa1e1"
   },
   {
     "path": "results/figures/ASSIST2015_ablation_f1.png",
@@ -397,7 +409,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_ablation_f1.svg",
-    "sha256": "318f4f8a6fa8a61427d7b90f16a75485f3d027d76ea493eccffe50854f1f2723"
+    "sha256": "4d8987528f37abb85dee98c79cea3d48d494d28f28c889470f07e630b00a197b"
   },
   {
     "path": "results/figures/ASSIST2015_ablation_mse.csv",
@@ -405,7 +417,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_ablation_mse.pdf",
-    "sha256": "89349f373d56eb784edc7d30eff70071ecd721fdd77b427111480dc02b0af926"
+    "sha256": "86e4d917c3f306cba63f8c42058c68fd1aee5dbcd388d090675274031ac485af"
   },
   {
     "path": "results/figures/ASSIST2015_ablation_mse.png",
@@ -413,11 +425,11 @@
   },
   {
     "path": "results/figures/ASSIST2015_ablation_mse.svg",
-    "sha256": "d47cd160111076ad3e0826d057ea49712780acfc22a8acbfd5be454af36d2441"
+    "sha256": "bd9005fbd7538835cc849585a9fb377e70cacd641b6f7e9261444b26ecf79f6d"
   },
   {
     "path": "results/figures/ASSIST2015_accuracy_repeated.pdf",
-    "sha256": "624d80f974fc629b380d69c0efa2b6cc81871a818b2a1fd09fb3c68c8af1fa6f"
+    "sha256": "1e5849e6de1823b934866e5c88fef23588d3844b13e720a23ea08b788918862e"
   },
   {
     "path": "results/figures/ASSIST2015_accuracy_repeated.png",
@@ -425,11 +437,11 @@
   },
   {
     "path": "results/figures/ASSIST2015_accuracy_repeated.svg",
-    "sha256": "047202b3fc5c96ae433b22ebcd1188e7f79e3e288fe9a4b9e8e09a2799f8731f"
+    "sha256": "3b14fcd98f2a2591b436e92ba489c4f96e768976a29d2fca0482935ad64707f0"
   },
   {
     "path": "results/figures/ASSIST2015_auc_repeated.pdf",
-    "sha256": "920a3ee3a080fda37f2b940f2205f5b47eb4b0717d5ea4c82449e82b19ee31f3"
+    "sha256": "924083a3c799395da68a5c8a7e34f8383e2211eccf0cd012427256c78217115b"
   },
   {
     "path": "results/figures/ASSIST2015_auc_repeated.png",
@@ -437,11 +449,11 @@
   },
   {
     "path": "results/figures/ASSIST2015_auc_repeated.svg",
-    "sha256": "e158fe0ca3ae2cc0fa06ea0c185b48e0eaa0eb1802d7ab4ef63109be1cc3ed7f"
+    "sha256": "f0be1feee0e21b836c3e2f7e454edd873945a37b02e41cc36f331fe53a9682b7"
   },
   {
     "path": "results/figures/ASSIST2015_bce_repeated.pdf",
-    "sha256": "68eb52bc7ba04b9b2dfdd3d52251b8a7e07b97d30b13e5caf1ba4ef27655904c"
+    "sha256": "96c3a7aef81c9ece167b4c10ecca5d9ec5b965c74f7b5164ac0059948dff93d0"
   },
   {
     "path": "results/figures/ASSIST2015_bce_repeated.png",
@@ -449,11 +461,11 @@
   },
   {
     "path": "results/figures/ASSIST2015_bce_repeated.svg",
-    "sha256": "387280fde69e620e808fb05b403f26e3796d6f622dc9f6066e20c34e34a75d5d"
+    "sha256": "63280337d03edab86e1f629d5cab76b781b423541504f029b0a6711d16f78d42"
   },
   {
     "path": "results/figures/ASSIST2015_f1_repeated.pdf",
-    "sha256": "db163423a05167f50c119d24a83f3121856566bb5a8abcd6ca4d2ad08df6f452"
+    "sha256": "2b5550d66dcd6f0186781996631033881a548cb6779d807446ab9cb03aa51e6c"
   },
   {
     "path": "results/figures/ASSIST2015_f1_repeated.png",
@@ -461,7 +473,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_f1_repeated.svg",
-    "sha256": "15d1a2c1577c464916fca4d65ffe64851841de3e439d515b564e33626efa0678"
+    "sha256": "7dcb4c2361c82c56f7ca329f7c0afb90c15bf623a13873b7904d4998707510a3"
   },
   {
     "path": "results/figures/ASSIST2015_grid_heatmap.csv",
@@ -469,7 +481,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_grid_heatmap.pdf",
-    "sha256": "0d91869f8b158d11340ff642b0a91deefb95a6a0c08fec91566fde50ada7a1c9"
+    "sha256": "3393f23496aeedc3e5b7c256d730c0365945d2216580696cae2655f245c9f7f0"
   },
   {
     "path": "results/figures/ASSIST2015_grid_heatmap.png",
@@ -477,11 +489,11 @@
   },
   {
     "path": "results/figures/ASSIST2015_grid_heatmap.svg",
-    "sha256": "df5dd1c32a20a8bce7cb7f439d3217482af8e0ba82df47884b6b6e4a276bb33a"
+    "sha256": "a49a4fc707a4f2d9bc4a55ed0f90f6478152ce6d41e97a4a9f488ed1b1096c6b"
   },
   {
     "path": "results/figures/ASSIST2015_mse_repeated.pdf",
-    "sha256": "bdd7447be619d7c132c21100ed554f6f5e43c97859a230bccd07add55d1f4fe9"
+    "sha256": "ed0f51f435224874a1e75ce62913f830331e3d372792f934bbdd1f92bcc95fa6"
   },
   {
     "path": "results/figures/ASSIST2015_mse_repeated.png",
@@ -489,7 +501,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_mse_repeated.svg",
-    "sha256": "d89de7fef79a9da5e12bc55bea7ba2c8c3f7f9ddd7dc721cd7c705f4779c4890"
+    "sha256": "c47ff072b4e140c5da2eac8ae4ee9b1ec28bd93978a4f07d8ac0bd4dad09c1cd"
   },
   {
     "path": "results/figures/ASSIST2015_parameter_efficiency.csv",
@@ -497,7 +509,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_parameter_efficiency.pdf",
-    "sha256": "dd1ddd81a6cd24e62e79966d7e5c75c8cf210b63174781aff9669df0cdf316d9"
+    "sha256": "97f52ee40235341a056bc3b4751dcdbe26d5e17b52dfac60fe1d781d58fdc5b6"
   },
   {
     "path": "results/figures/ASSIST2015_parameter_efficiency.png",
@@ -505,7 +517,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_parameter_efficiency.svg",
-    "sha256": "fe86e0729e90772237318289cf721765eba8e64a8afd450788de473b8455ec43"
+    "sha256": "768ddb0e24149a5d8f61959b1863d8b1e27ca31642aca5cdd9f8006b910e4f1f"
   },
   {
     "path": "results/figures/ASSIST2015_seed_variability.csv",
@@ -513,7 +525,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_seed_variability.pdf",
-    "sha256": "0be0388f849f7a4c97133d2172503e6b8bdd23f8a8501e0a3bb729fd61345489"
+    "sha256": "9ed0200994feafe16133412f2fb653790c266f486151d912cc0a5c2fe460bf08"
   },
   {
     "path": "results/figures/ASSIST2015_seed_variability.png",
@@ -521,11 +533,11 @@
   },
   {
     "path": "results/figures/ASSIST2015_seed_variability.svg",
-    "sha256": "2a6249ef554dd1b94b6f4b0698f6169049f7cd73694cebecf8e0c96e6049a6ce"
+    "sha256": "0ea4521d2c80bb21ad22b07ff933a7fcf563aa85545504afd879073eca4efbee"
   },
   {
     "path": "results/figures/ASSIST2015_train_objective.pdf",
-    "sha256": "07d378f3770c2f00ec34e1f98159af08f85352a090d997c16362a962262a9a04"
+    "sha256": "93af66bf56d5c135112999115b7e18d8e2a613b0dd96aede43c294c2abd5bfbf"
   },
   {
     "path": "results/figures/ASSIST2015_train_objective.png",
@@ -533,11 +545,11 @@
   },
   {
     "path": "results/figures/ASSIST2015_train_objective.svg",
-    "sha256": "4c22b7ad1062fcba0ff9167321506133e36f0d8cc55b3fa5c1fa3c1f91a0c13b"
+    "sha256": "5319145ad76c5c0386fa84aeae461038f6e3dfcff65cb38eb66b6b20b427ef2e"
   },
   {
     "path": "results/figures/ASSIST2015_validation_accuracy.pdf",
-    "sha256": "5d40b1d040fc6736092e0298d40978e960e89d64cb6d32640744cb883c02552a"
+    "sha256": "0c3ffa9b756776885beb4ec9931fecc643591bddb6f0fadb5355aa58bb4e4729"
   },
   {
     "path": "results/figures/ASSIST2015_validation_accuracy.png",
@@ -545,7 +557,7 @@
   },
   {
     "path": "results/figures/ASSIST2015_validation_accuracy.svg",
-    "sha256": "51b6723b52a3f17f03dc29f72fefccc04d893325f6fee5cce62108a6e2860274"
+    "sha256": "98569976f83e4ecc58d8baf37c399480a72af7272f49633114632ac548173443"
   },
   {
     "path": "results/figures/Algebra2005_ROC_seed42.csv",
@@ -553,7 +565,7 @@
   },
   {
     "path": "results/figures/Algebra2005_ROC_seed42.pdf",
-    "sha256": "640ae1ca953db21191f6ac16556f24b11d22b3eda1c44c50501757603d0f5d12"
+    "sha256": "50b573ae132f895d58d184089a0ac29fdbf07e76d6b9d53677627195af5e2fe2"
   },
   {
     "path": "results/figures/Algebra2005_ROC_seed42.png",
@@ -561,7 +573,7 @@
   },
   {
     "path": "results/figures/Algebra2005_ROC_seed42.svg",
-    "sha256": "8ed62043e6fb2db501574d633f99b9c2126465ae4b5aae86abb63105879152c2"
+    "sha256": "df3eb3e9008b16b6da237515d75e16df09559db8246073f5c9519977e66b888e"
   },
   {
     "path": "results/figures/Algebra2005_ablation_accuracy.csv",
@@ -569,7 +581,7 @@
   },
   {
     "path": "results/figures/Algebra2005_ablation_accuracy.pdf",
-    "sha256": "6b7e910fd03e2f0d57ba98c8416c90558f7a1e018fac5e794b9f5c17fa0395f8"
+    "sha256": "76cabcdf6191ed9aba1c7b44d262abec7dedc11caf919b77f79d80a6ed0cf3e1"
   },
   {
     "path": "results/figures/Algebra2005_ablation_accuracy.png",
@@ -577,7 +589,7 @@
   },
   {
     "path": "results/figures/Algebra2005_ablation_accuracy.svg",
-    "sha256": "67cc61f485e8a7f8058771beaf66f06b273c5b090be8d1374b92ac70014ec2a7"
+    "sha256": "584c89743e450790dc0af59445a2d511c5c7a6ad97441b05cc3475da6c9ed679"
   },
   {
     "path": "results/figures/Algebra2005_ablation_auc.csv",
@@ -585,7 +597,7 @@
   },
   {
     "path": "results/figures/Algebra2005_ablation_auc.pdf",
-    "sha256": "9df7719869f02a430c6966956c08573b42c4b87fb70ce53824244de9fdc0df10"
+    "sha256": "971a2586f2aabe9b8f4640a0b6e1bb85ed959c197a208f9b156f61fdb87f946c"
   },
   {
     "path": "results/figures/Algebra2005_ablation_auc.png",
@@ -593,7 +605,7 @@
   },
   {
     "path": "results/figures/Algebra2005_ablation_auc.svg",
-    "sha256": "f51dde49254b564d0aba4367ae0bed85fe5026b6554a0b15b21da4f2c7d2bfe0"
+    "sha256": "dee34e84dafc17cc1f31dfea40b1fd63d7a15565b1881df331b633ff6473e2c9"
   },
   {
     "path": "results/figures/Algebra2005_ablation_bce.csv",
@@ -601,7 +613,7 @@
   },
   {
     "path": "results/figures/Algebra2005_ablation_bce.pdf",
-    "sha256": "a7a29c0b8aad31865f120ebaeaf47696c317fc219d9f28eebe58b02ef6a657a3"
+    "sha256": "6db06cad34098d7e2ea138ad7161b3ad392bc9ddc72b0ac4081431274ee9bc24"
   },
   {
     "path": "results/figures/Algebra2005_ablation_bce.png",
@@ -609,7 +621,7 @@
   },
   {
     "path": "results/figures/Algebra2005_ablation_bce.svg",
-    "sha256": "d73a33ca944536c96a317f5bd4f72f9e37211d4b3f131cbe93c1ac57869f334d"
+    "sha256": "4c0d3b58cbbfc2035ee22102e046ab7582af0e4817ac782cb926b019f0da73d8"
   },
   {
     "path": "results/figures/Algebra2005_ablation_f1.csv",
@@ -617,7 +629,7 @@
   },
   {
     "path": "results/figures/Algebra2005_ablation_f1.pdf",
-    "sha256": "ef2b520fd37f755c1c7ad3398e308d7b072ebfe37647da71f0d3acb102fb4ec9"
+    "sha256": "80960466f6c3197f97d31e0e6e7c7ecc9d651707de5bba80c9c525b23caff551"
   },
   {
     "path": "results/figures/Algebra2005_ablation_f1.png",
@@ -625,7 +637,7 @@
   },
   {
     "path": "results/figures/Algebra2005_ablation_f1.svg",
-    "sha256": "243d8874064f031ce9fd6750c7ce0c6fff745b9c2e6a9750cfcd106167e3254e"
+    "sha256": "9a15223724ad3517c873db5c020903eabd6954fc76304daa2d7f76f08cb2180a"
   },
   {
     "path": "results/figures/Algebra2005_ablation_mse.csv",
@@ -633,7 +645,7 @@
   },
   {
     "path": "results/figures/Algebra2005_ablation_mse.pdf",
-    "sha256": "eec389d8b018e7fb2655712e267e7237c4c5469169954f300ca52cece9dfbd62"
+    "sha256": "441a39e44eb295ced9b1d5488853fa879f5ddd87272865f10b13d3aa9e85b64e"
   },
   {
     "path": "results/figures/Algebra2005_ablation_mse.png",
@@ -641,11 +653,11 @@
   },
   {
     "path": "results/figures/Algebra2005_ablation_mse.svg",
-    "sha256": "8103804c60563965c740a820548d34f5c85a22270f1c219409ecd3d6dd63f15e"
+    "sha256": "4fec7be60f6c036fcbf0704fdc798abaa13d3274bb9065b563aeaceb5fb8590d"
   },
   {
     "path": "results/figures/Algebra2005_accuracy_repeated.pdf",
-    "sha256": "aa0daaaea61868665a0c347c764da8d3243a6b3edcb69a4520d5d615d8949cfa"
+    "sha256": "4001490d37dc0cf97959f4d18bf17fae658d56d50f7c16bbc25875564b974904"
   },
   {
     "path": "results/figures/Algebra2005_accuracy_repeated.png",
@@ -653,11 +665,11 @@
   },
   {
     "path": "results/figures/Algebra2005_accuracy_repeated.svg",
-    "sha256": "3d1054bb876353e53ed1c38f42f4fcab3214a635d2b38463249a24a163564625"
+    "sha256": "560bb8d826ff694a7f395bafae0fcc50922630c86734dbe0669892d06405aff9"
   },
   {
     "path": "results/figures/Algebra2005_auc_repeated.pdf",
-    "sha256": "2146c8b3076b7e9bc108e6d0c7f11a7b7759950fd50d7842728dc2255160fb28"
+    "sha256": "2ef4ee5e47f2852bf58a403479f8942bc711d7eeb57e29e4f1eb46daf0224a01"
   },
   {
     "path": "results/figures/Algebra2005_auc_repeated.png",
@@ -665,11 +677,11 @@
   },
   {
     "path": "results/figures/Algebra2005_auc_repeated.svg",
-    "sha256": "33fcbe699ed6e2448da12ca823fc2a1861eb5e1bce1701300fa4d32d831aed5e"
+    "sha256": "59352132d2481d49d1a87597859164833062177e2a2197313ef452b47cf3e1bd"
   },
   {
     "path": "results/figures/Algebra2005_bce_repeated.pdf",
-    "sha256": "fde6dc32aafe4bea3525ec05d83d33ad74c8f2ea83bf93d5076db0b008fc281b"
+    "sha256": "1108dadfb2f9d126bd32ce692f31c4e97881e64a00e9fa7c0bd3d5c878d62b78"
   },
   {
     "path": "results/figures/Algebra2005_bce_repeated.png",
@@ -677,11 +689,11 @@
   },
   {
     "path": "results/figures/Algebra2005_bce_repeated.svg",
-    "sha256": "4bbba3dffed08975dba2792cc0c15df01f3df531a0e3df1decd776eaba0165d8"
+    "sha256": "e8e60d38ea93dbb6e2064b6bdd7c5bea7311144b64faa5aa6c2ef060ba00e210"
   },
   {
     "path": "results/figures/Algebra2005_f1_repeated.pdf",
-    "sha256": "c90b9394ebc9ca69180cc737deb4ec065e17f83a4db04bee05cfe454f3a51134"
+    "sha256": "c845fcd68721e4dd17e8c936a5a874fba27bf2e85ac83e10ad668dea1e7d2009"
   },
   {
     "path": "results/figures/Algebra2005_f1_repeated.png",
@@ -689,7 +701,7 @@
   },
   {
     "path": "results/figures/Algebra2005_f1_repeated.svg",
-    "sha256": "557bb7c736dd5532e2776a53cef20e596961fc73b00c8989f44ad30c816f6dba"
+    "sha256": "b5dff3c8088a4853842f30a236865c143c6a8deff1eb2d855201da2b934714f5"
   },
   {
     "path": "results/figures/Algebra2005_grid_heatmap.csv",
@@ -697,7 +709,7 @@
   },
   {
     "path": "results/figures/Algebra2005_grid_heatmap.pdf",
-    "sha256": "b48ad1c69403aa2f64e2f102579fea4638a6b7f43445333a5b34250d5beabe5a"
+    "sha256": "98668f8b7ea8efe1573134a8ff0b5823a85455fdbecb6c2920d1d929a9f04f2c"
   },
   {
     "path": "results/figures/Algebra2005_grid_heatmap.png",
@@ -705,11 +717,11 @@
   },
   {
     "path": "results/figures/Algebra2005_grid_heatmap.svg",
-    "sha256": "be646d8598d80eabf62bd667821e9a4f5ade7c5cf9a60ca5fffe117ab7215743"
+    "sha256": "156a9adcda349959fc27d680ba4cea8b1469446acde5fd4bbd2bfc98e7e26160"
   },
   {
     "path": "results/figures/Algebra2005_mse_repeated.pdf",
-    "sha256": "5e4ead0376b01f5d131ae257c8e54723cb73e5f01ddfe295b9a68fade5fd1e1e"
+    "sha256": "62bc771faa7c231ce9f9411ed9d179a6aee38ad312ecfe337c46e3784a540480"
   },
   {
     "path": "results/figures/Algebra2005_mse_repeated.png",
@@ -717,7 +729,7 @@
   },
   {
     "path": "results/figures/Algebra2005_mse_repeated.svg",
-    "sha256": "8de82e172394a2e48895b1e22c72f9667c97064ecc1d18726049866d723cc275"
+    "sha256": "ad71d0ca2af34bc07d39c91eb2618d093025d713baa7b0bc45b4ff1922a2e381"
   },
   {
     "path": "results/figures/Algebra2005_parameter_efficiency.csv",
@@ -725,7 +737,7 @@
   },
   {
     "path": "results/figures/Algebra2005_parameter_efficiency.pdf",
-    "sha256": "a6fa6d71f735a1c6b5495a6f0342c1ec72e8218fe4a847c2f22ed4f8b71a86df"
+    "sha256": "8945b11e33f524aa0baa3c35a8f0fd0f2fcda7b2092ce276e6a774072d77b920"
   },
   {
     "path": "results/figures/Algebra2005_parameter_efficiency.png",
@@ -733,7 +745,7 @@
   },
   {
     "path": "results/figures/Algebra2005_parameter_efficiency.svg",
-    "sha256": "a5b8faa3c0489cd53a341c5ff7501f1c6c566cf84c1e0461962c932a334a31d1"
+    "sha256": "78a6846bcb4f489f481abfa97a235cf14078fdb1f0aefde8a85f658e33c27ac6"
   },
   {
     "path": "results/figures/Algebra2005_seed_variability.csv",
@@ -741,7 +753,7 @@
   },
   {
     "path": "results/figures/Algebra2005_seed_variability.pdf",
-    "sha256": "118094afd0207e3ae4312162e7b1d226a7b2e69725b7d785a5b9e1fbbf30bbbc"
+    "sha256": "8d6185582eca700587811d4eb5d3dc11f3e82f3ac3313b25fb2208fe3df429e1"
   },
   {
     "path": "results/figures/Algebra2005_seed_variability.png",
@@ -749,11 +761,11 @@
   },
   {
     "path": "results/figures/Algebra2005_seed_variability.svg",
-    "sha256": "5059e21df73a2d3e510ae2d64a3ae16345eb1d7484207810d2a5a2093b0da062"
+    "sha256": "22c766fd75a84acdaa4344c447136cbcdbe607d55d9557d575f3e53e90a9e5e9"
   },
   {
     "path": "results/figures/Algebra2005_train_objective.pdf",
-    "sha256": "0c2ffcc94721f0820f93fb00969b9ccfa554ddc2e2f7323fa54e97c8edace04e"
+    "sha256": "b69d055b98703480ffca1e69c5960697ebd1f1d56ab371671e729140de9a2072"
   },
   {
     "path": "results/figures/Algebra2005_train_objective.png",
@@ -761,11 +773,11 @@
   },
   {
     "path": "results/figures/Algebra2005_train_objective.svg",
-    "sha256": "9252b17b32b27b74a65263bce7567b3ee2bb588cec95344be4e1e8dcfcb9f1e1"
+    "sha256": "0fb36893e77ec4cb99193477f09b2168b43e56d57c49e0323cbb2873e3ecf475"
   },
   {
     "path": "results/figures/Algebra2005_validation_accuracy.pdf",
-    "sha256": "8337a04515d70d2a600a9eb2b3b4ef125a99a8bc369dc1ec693e68dc7caa8bc5"
+    "sha256": "fea4182c4d233e7f43514286f328bc6d1d271e5572edd383660a3d99b312e12d"
   },
   {
     "path": "results/figures/Algebra2005_validation_accuracy.png",
@@ -773,7 +785,7 @@
   },
   {
     "path": "results/figures/Algebra2005_validation_accuracy.svg",
-    "sha256": "c9a553e3dcf4c3bd24349180bfc1333cfef11980177049996bef34295c3edc18"
+    "sha256": "d8412002b46c482aa115290ece7965e93e82a8ad612e374c5b709b84068ff211"
   },
   {
     "path": "results/figures/Figure_10_ASSIST2009_final_42.csv",
@@ -893,7 +905,7 @@
   },
   {
     "path": "results/figures/Figure_5.pdf",
-    "sha256": "cd1720663d38fe7c0fb06e2f9db32ef31e099de95e3ecb435c2fd2a4fed7214c"
+    "sha256": "d4e722d5aef2fc4f72c81986b5a63ec71eae17da928a165353f23c40f3c42cc7"
   },
   {
     "path": "results/figures/Figure_5.png",
@@ -901,7 +913,7 @@
   },
   {
     "path": "results/figures/Figure_5.svg",
-    "sha256": "23eb9166888885ffcf41de82080ff40d0c68a04e997bf46ac643efae7a4750cd"
+    "sha256": "dffa02266ac3740ace6bcb3391e0a4b1e66db6565956bc480786e29b9baee73b"
   },
   {
     "path": "results/figures/Figure_6.csv",
@@ -909,7 +921,7 @@
   },
   {
     "path": "results/figures/Figure_6.pdf",
-    "sha256": "32fca49402db3707b81400b20f43e68df9060a627b765e7aa5bd30c97ef10300"
+    "sha256": "ced878a3f522f834dc038f9a6aa7ef3fb17acbc3d2e4405b1cd5f38f786df762"
   },
   {
     "path": "results/figures/Figure_6.png",
@@ -917,7 +929,7 @@
   },
   {
     "path": "results/figures/Figure_6.svg",
-    "sha256": "a07f4ed881cbfd9a56bbc16a07456e984884b2a6133ef7f83f388cc83415c5bb"
+    "sha256": "f21b482278ff8078f4756061650144a39771215d0006ed8f739ff932cf688628"
   },
   {
     "path": "results/figures/Figure_6_partial.csv",
@@ -941,7 +953,7 @@
   },
   {
     "path": "results/figures/Figure_7.pdf",
-    "sha256": "24a30cd5c055c5fc1b8c70fe5cdaff9d0ff77ce23d753bc23c1ab61090975ec5"
+    "sha256": "0a87efd7c110fcbaaf017f009d99f6658908a243aea9a8df27ff360b17565b3f"
   },
   {
     "path": "results/figures/Figure_7.png",
@@ -949,7 +961,7 @@
   },
   {
     "path": "results/figures/Figure_7.svg",
-    "sha256": "b570ded26e3ad6ba1127abfb4c4cada62b8f2b28423a8f8c43a3cb83d90c30d2"
+    "sha256": "dbe219e80d2804c465b57ec79a8ff5cdc280a3047f7ed542f96fbf8d4cef9f22"
   },
   {
     "path": "results/figures/Figure_7_partial.csv",
