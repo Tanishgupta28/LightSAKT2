@@ -1099,6 +1099,13 @@
     "git_commit": "e7ab9240d80dbc9a2d2b34e5790deb76696e4361"
   },
   {
+    "run_id": "ASSIST2009-LightSAKT-single_head-7777",
+    "source": "results/raw/ASSIST2009-LightSAKT-single_head-7777/metrics.json",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-single_head-7777/best.pt",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "git_commit": "c4f90d9c7b0d417704cfe8d1e73b6cb3d7da32f7"
+  },
+  {
     "run_id": "ASSIST2009-LightSAKT-smoke-42",
     "source": "results/raw/ASSIST2009-LightSAKT-smoke-42/metrics.json",
     "checkpoint": "checkpoints/ASSIST2009-LightSAKT-smoke-42/best.pt",
@@ -1433,6 +1440,13 @@
     "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-f8bde96560d6/best.pt",
     "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
     "git_commit": "9ab6b46c35e7c93db20d389bb4f7423754e3bb8e"
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_attention-123",
+    "source": "results/raw/ASSIST2015-LightSAKT-no_attention-123/metrics.json",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_attention-123/best.pt",
+    "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+    "git_commit": "dc20b98507fb3d9df88bc0a76cb4abc600ae5d88"
   },
   {
     "run_id": "ASSIST2015-LightSAKT-primary-42-301d9bff60e9",
