@@ -1,11 +1,12 @@
 {
-  "updated_utc": "2026-10-14T05:16:56.872349+00:00",
+  "updated_utc": "2026-10-14T05:17:43.455152+00:00",
   "total_slots": 957,
-  "completed": 591,
-  "remaining": 366,
+  "completed": 594,
+  "remaining": 363,
   "counts": {
-    "completed": 591,
-    "pending": 366
+    "completed": 594,
+    "pending": 362,
+    "running": 1
   },
   "processes": {
     "scheduler": {
@@ -37,7 +38,14 @@
       "alive": true
     }
   },
-  "running_jobs": [],
+  "running_jobs": [
+    {
+      "run_id": "Algebra2005-DKT-final-3407",
+      "last_completed_epoch": null,
+      "best_checkpoint": null,
+      "resume_command": null
+    }
+  ],
   "phase_counts": {
     "5": {
       "completed": 21
@@ -47,8 +55,9 @@
       "pending": 310
     },
     "7": {
-      "completed": 49,
-      "pending": 56
+      "completed": 52,
+      "pending": 52,
+      "running": 1
     },
     "8": {
       "completed": 75
