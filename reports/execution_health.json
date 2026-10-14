@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-10-14T03:14:52.028331+00:00",
-  "sample_time": 1791947691.1863322,
+  "updated_utc": "2026-10-14T03:16:55.167602+00:00",
+  "sample_time": 1791947814.7210102,
   "counts": {
     "completed": 301,
     "pending": 655,
@@ -13,25 +13,25 @@
   "training_processes": [
     {
       "pid": 363857,
-      "cpu_seconds": 10.76,
+      "cpu_seconds": 132.58,
       "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 0.2,
-      "cpu_seconds_advanced": 0.20000000000000107
+      "observed_seconds": 61.76428961753845,
+      "cpu_seconds_advanced": 61.390000000000015
     }
   ],
   "active_runs": [
     {
       "run_id": "Algebra2005-LightSAKT-single_head-2026",
-      "last_completed_epoch": 0,
+      "last_completed_epoch": 46,
       "best_checkpoint": "checkpoints/Algebra2005-LightSAKT-single_head-2026/best.pt",
       "resume_command": "python -m scripts.run --config results/raw/Algebra2005-LightSAKT-single_head-2026/config.json",
-      "recent_mean_epoch_seconds": null,
-      "seconds_since_last_epoch": 1.4829423427581787,
-      "startup_epoch_seconds_extrapolated": 2.705823698428106,
-      "age_reference": "initial running status; first checkpoint not yet saved",
-      "stall_threshold_seconds": 8.11747109528432,
+      "recent_mean_epoch_seconds": 2.658904856006848,
+      "seconds_since_last_epoch": 0.6128172874450684,
+      "startup_epoch_seconds_extrapolated": null,
+      "age_reference": "history checkpoint",
+      "stall_threshold_seconds": 7.976714568020544,
       "checkpoint_stalled": false
     }
   ],
@@ -42,5 +42,5 @@
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 301 independently downloaded/checksum verified; completed-archive synchronization False."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 304 independently downloaded/checksum verified; completed-archive synchronization True."
 }
