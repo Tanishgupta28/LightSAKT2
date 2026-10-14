@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T02:38:49.905370+00:00",
-  "sample_time": 1791945529.3429656,
+  "updated_utc": "2026-10-14T02:39:51.760980+00:00",
+  "sample_time": 1791945590.8872156,
   "counts": {
-    "completed": 264,
-    "pending": 692,
+    "completed": 265,
+    "pending": 691,
     "running": 1
   },
   "scheduler": {
@@ -12,26 +12,26 @@
   },
   "training_processes": [
     {
-      "pid": 334740,
-      "cpu_seconds": 70.65,
-      "process_state": "S",
+      "pid": 336069,
+      "cpu_seconds": 47.3,
+      "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.01231360435486,
-      "cpu_seconds_advanced": 60.480000000000004
+      "observed_seconds": 0.2,
+      "cpu_seconds_advanced": 0.20000000000000284
     }
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2015-LightSAKT-no_dropout-7777",
-      "last_completed_epoch": 15,
-      "best_checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_dropout-7777/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-LightSAKT-no_dropout-7777/config.json",
-      "recent_mean_epoch_seconds": 3.9345990303962024,
-      "seconds_since_last_epoch": 2.9366965293884277,
+      "run_id": "ASSIST2015-LightSAKT-no_position-123",
+      "last_completed_epoch": 9,
+      "best_checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_position-123/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-LightSAKT-no_position-123/config.json",
+      "recent_mean_epoch_seconds": 4.060482541797683,
+      "seconds_since_last_epoch": 2.0338706970214844,
       "startup_epoch_seconds_extrapolated": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 11.803797091188606,
+      "stall_threshold_seconds": 12.181447625393048,
       "checkpoint_stalled": false
     }
   ],
@@ -42,5 +42,5 @@
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 267 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 267 independently downloaded/checksum verified; completed-archive synchronization False."
 }
