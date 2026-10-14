@@ -198,6 +198,26 @@ def estimate():
                           'verification':'Fresh checkpoint inference for each unique source; redundant aliases will use cached inference. Duration not separately measured.'},
         'longest_expected_remaining':frame[frame.action=='training'].nlargest(12,'central_hours').to_dict('records')}
     write_json('reports/ETA.json',record)
+    efficiency=Path('reports/profiling/efficiency_execution.json')
+    if efficiency.exists():
+        timing=json.load(open(efficiency))
+        record['postprocessing']['benchmark']=f"Exclusive 120-case benchmark status {timing['status']}; actual execution seconds {timing.get('actual_execution_seconds')}; results/tables/efficiency.csv. Completed benchmarking is reused by final analyses; CPU epoch-runtime documentation is refreshed later."
+    if pilots:
+        # Independent full-checkpoint validation verification is retained; aliases
+        # reuse inference. Forecast from measured eval steps and actual batch counts.
+        seconds=0.;identities=set()
+        for job in manifest['jobs']:
+            c=configs.get(job['run_id'])
+            if not c:
+                c=model_defaults(job['model'],work[job['dataset']]['length'],job['dataset'])
+                c={'dataset':job['dataset'],'model':job['model'],'model_config':c,
+                   'batch_size':8 if job['model'].startswith('GKT') else 64,'seq_len':work[job['dataset']]['length']}
+            key=json.dumps({k:v for k,v in c.items() if k not in ['run_id','group','evaluate_test','selection_path']},sort_keys=True)
+            if job.get('variant')=='no_regularization' or job['phase']==7 and job['seed']==42 or job['run_id'] in overlay or key in identities:continue
+            identities.add(key)
+            anchor=next(r for r in pilots if r['dataset']==c['dataset'] and r['model']==c['model'] and r['case'].endswith('primary'))
+            seconds+=math.ceil(work[c['dataset']]['validation_chunks']/c['batch_size'])*anchor['eval_step_mean']
+        record['postprocessing']['verification']=f"About {seconds/3600:.2f} serial inference GPU hours from measured primary eval steps for {len(identities)} distinct projected states; future selected-config widths, AUC computation and model/cache setup add uncertainty and overhead. All unique checkpoints remain verified; identical aliases reuse inference."
     text='# Measured runtime estimate\n\nUpdated UTC: '+record['updated_utc']+'\n\n'
     text+=f"Remaining training: **{totals['central']:,.1f} GPU reserved hours**; scenario range **{totals['low']:,.1f}–{totals['high']:,.1f} hours**. Serial wall time: {totals['central']/24:,.1f} days; continuous-availability training finish {record['conditional_training_finish_utc']['central']}.\n\n"
     if concurrent_totals:

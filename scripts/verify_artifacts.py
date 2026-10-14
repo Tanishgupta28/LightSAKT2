@@ -48,7 +48,11 @@ def main(stored_only=False):
             model=build_model(config['model'],stats['num_q'],config['model_config']).to(device)
             checkpoint=torch.load(result['checkpoint'],map_location=device,weights_only=False)
             model.load_state_dict(checkpoint['model'])
-            dataset=Sequences(f"data/processed/{result['dataset']}/interactions.csv",'validation',config['seq_len'])
+            data_path=f"data/processed/{result['dataset']}/interactions.csv"
+            from scripts.sequence_cache import CachedSequences,location
+            cache=location(data_path,'validation',config['seq_len'])
+            dataset=(CachedSequences(data_path,'validation',config['seq_len']) if (cache/'manifest.json').exists()
+                     else Sequences(data_path,'validation',config['seq_len']))
             regenerated,_,_=evaluate(model,config['model'],DataLoader(dataset,batch_size=config['batch_size']),device)
             inference_cache[identity]=regenerated
             del model,checkpoint,dataset
