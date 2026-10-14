@@ -1,0 +1,39 @@
+{
+  "run_id": "ASSIST2015-DKT+-final-2026",
+  "dataset": "ASSIST2015",
+  "model": "DKT+",
+  "seed": 2026,
+  "group": "final",
+  "validation": {
+    "auc": 0.720508622354893,
+    "auc_reason": null,
+    "accuracy": 0.7506458597774958,
+    "f1": 0.8472697338333486,
+    "mse": 0.18495451534261567,
+    "bce": 0.5538653180674189,
+    "n_targets": 66965
+  },
+  "best_epoch": 12,
+  "epochs_trained": 17,
+  "training_seconds": 25.5673053440114,
+  "checkpoint": "checkpoints/ASSIST2015-DKT+-final-2026/best.pt",
+  "checkpoint_sha256": "84a5a972baa77381de9a819dcaaa2f2d302ef8acafd44c8c23d6820f0b476f4d",
+  "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+  "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+  "git_commit": "deb8633d86ba1a0ee8851a8797a18db201133d2f",
+  "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "parameters": 70265,
+  "peak_allocated_bytes": 157839360,
+  "peak_reserved_bytes": 195035136,
+  "test": {
+    "auc": 0.7193965190077999,
+    "auc_reason": null,
+    "accuracy": 0.7462042632512552,
+    "f1": 0.8435020393029292,
+    "mse": 0.18674918667387655,
+    "bce": 0.5578061675059844,
+    "n_targets": 133044
+  },
+  "prediction_path": "results/predictions/ASSIST2015-DKT+-final-2026.npz",
+  "prediction_sha256": "fcb9b23eae8a17db2e0638058b6f519cd7e1c45207b998e526adf745e3820c50"
+}
