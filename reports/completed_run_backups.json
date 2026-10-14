@@ -1967,6 +1967,29 @@
     "verified_contents": true
   },
   {
+    "run_id": "ASSIST2015-DKT+-final-3407",
+    "archive_schema": 2,
+    "metrics_sha256": "2fd86295dceebcdc252917e186118e03f4e976900aae88889ad65eab864cd71a",
+    "source_run_id": "ASSIST2015-DKT+-final-3407",
+    "path": "backups/completed_runs/ASSIST2015-DKT+-final-3407.tar.gz",
+    "sha256": "57ec60d6c50f31f40105b362821d5e03edef5e5a3fc2396527c86dc33b41fc38",
+    "verified_contents": true
+  },
+  {
+    "run_id": "ASSIST2015-DKT+-final-42",
+    "archive_schema": 2,
+    "metrics_sha256": "5bf6affe71dbfa1d07363cce9824b625218759ff076b368f3fb8c4ad1e36afa4",
+    "source_run_id": "ASSIST2015-DKTplus-baseline_tuning-42-1f3ce9740385",
+    "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-1f3ce9740385.tar.gz",
+    "sha256": "bf5f22259642463590f20aaed6c518273e572aa476176913dbe5123d5d235da6",
+    "verified_contents": true,
+    "result_archive": {
+      "path": "backups/reused_results/ASSIST2015-DKT+-final-42.tar.gz",
+      "sha256": "bada12949c589edded6aef4f0d14bf86a92558c0614443d5f3d889c47330bd5e",
+      "verified_contents": true
+    }
+  },
+  {
     "run_id": "ASSIST2015-DKT-baseline_tuning-42-00b0fcf26ac9",
     "archive_schema": 2,
     "metrics_sha256": "b0125878f202cbff370830454397c287c351b2e5841298647357f3b86b9c097d",
