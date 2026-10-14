@@ -1,7 +1,7 @@
 {
   "run_id": "ASSIST2015-DKVMN-final-123",
-  "status": "running",
-  "last_completed_epoch": 0,
+  "status": "completed",
+  "last_completed_epoch": 29,
   "config": "results/raw/ASSIST2015-DKVMN-final-123/config.json",
   "seed": 123,
   "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-DKVMN-final-123/config.json",
