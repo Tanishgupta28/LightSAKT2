@@ -1,10 +1,9 @@
 {
-  "updated_utc": "2026-10-14T01:08:18.506668+00:00",
-  "sample_time": 1791940097.9341557,
+  "updated_utc": "2026-10-14T01:10:21.731390+00:00",
+  "sample_time": 1791940220.9970918,
   "counts": {
-    "completed": 149,
-    "pending": 807,
-    "running": 1
+    "completed": 151,
+    "pending": 806
   },
   "scheduler": {
     "pid": 78472,
@@ -12,35 +11,22 @@
   },
   "training_processes": [
     {
-      "pid": 229720,
-      "cpu_seconds": 38.7,
-      "process_state": "S",
+      "pid": 232489,
+      "cpu_seconds": 10.1,
+      "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 25.455506324768066,
-      "cpu_seconds_advanced": 24.450000000000003
+      "observed_seconds": 0.2,
+      "cpu_seconds_advanced": 0.20000000000000107
     }
   ],
-  "active_runs": [
-    {
-      "run_id": "ASSIST2015-LightSAKT-grid-42-3769d3cd7356",
-      "last_completed_epoch": 7,
-      "best_checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-3769d3cd7356/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-LightSAKT-grid-42-3769d3cd7356/config.json",
-      "recent_mean_epoch_seconds": 4.027772795804776,
-      "seconds_since_last_epoch": 2.2784597873687744,
-      "startup_epoch_seconds_extrapolated": null,
-      "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 12.08331838741433,
-      "checkpoint_stalled": false
-    }
-  ],
-  "gpu_memory_mib": 1586,
+  "active_runs": [],
+  "gpu_memory_mib": 846,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
-  "healthy_progress_observed": true,
+  "healthy_progress_observed": false,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 152 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 153 independently downloaded/checksum verified; completed-archive synchronization True."
 }
