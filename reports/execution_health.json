@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T00:57:38.925915+00:00",
-  "sample_time": 1791939457.9197168,
+  "updated_utc": "2026-10-14T00:58:40.381995+00:00",
+  "sample_time": 1791939519.672267,
   "counts": {
-    "completed": 137,
-    "pending": 819,
+    "completed": 139,
+    "pending": 817,
     "running": 1
   },
   "scheduler": {
@@ -12,26 +12,26 @@
   },
   "training_processes": [
     {
-      "pid": 218818,
-      "cpu_seconds": 20.86,
+      "pid": 220073,
+      "cpu_seconds": 27.34,
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
       "observed_seconds": 0.2,
-      "cpu_seconds_advanced": 0.19000000000000128
+      "cpu_seconds_advanced": 0.1999999999999993
     }
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2009-LightSAKT-grid-42-dbc981c680af",
-      "last_completed_epoch": 15,
-      "best_checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-dbc981c680af/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-LightSAKT-grid-42-dbc981c680af/config.json",
-      "recent_mean_epoch_seconds": 0.7376664580078796,
-      "seconds_since_last_epoch": -0.12703609466552734,
+      "run_id": "ASSIST2009-LightSAKT-grid-42-e4d9677fea31",
+      "last_completed_epoch": 24,
+      "best_checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-e4d9677fea31/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-LightSAKT-grid-42-e4d9677fea31/config.json",
+      "recent_mean_epoch_seconds": 0.7183864139951766,
+      "seconds_since_last_epoch": 0.45058584213256836,
       "startup_epoch_seconds_extrapolated": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 2.2129993740236387,
+      "stall_threshold_seconds": 2.1551592419855297,
       "checkpoint_stalled": false
     }
   ],
@@ -42,5 +42,5 @@
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 137 independently downloaded/checksum verified; completed-archive synchronization False."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 138 independently downloaded/checksum verified; completed-archive synchronization True."
 }
