@@ -1899,6 +1899,38 @@
     "verified_contents": true
   },
   {
+    "run_id": "ASSIST2009-SAKT-final-2026",
+    "archive_schema": 2,
+    "metrics_sha256": "9811ef2d76acdc3491141755a3cff9b3f78d3f57ba6803948e533e8d4b0e1eed",
+    "source_run_id": "ASSIST2009-SAKT-final-2026",
+    "path": "backups/completed_runs/ASSIST2009-SAKT-final-2026.tar.gz",
+    "sha256": "38613b7d5d36010dda83b5dc92606ac4289d65ef60526015b85353c00c2e46c1",
+    "verified_contents": true
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-final-3407",
+    "archive_schema": 2,
+    "metrics_sha256": "e17b2e13d03ce12effb32c12dfc69f51e5e4a2f5a12bbe1700fff813c60a6073",
+    "source_run_id": "ASSIST2009-SAKT-final-3407",
+    "path": "backups/completed_runs/ASSIST2009-SAKT-final-3407.tar.gz",
+    "sha256": "d11fa5cc4e1a70bf502b22418347cab1e808320cef5bc47fe5bdfe878430b23a",
+    "verified_contents": true
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-final-42",
+    "archive_schema": 2,
+    "metrics_sha256": "5e85951d783e55db838933c699f3f06804d7a6132044448dad4686a52e78cde9",
+    "source_run_id": "ASSIST2009-SAKT-baseline_tuning-42-bc0a2a560ce1",
+    "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-bc0a2a560ce1.tar.gz",
+    "sha256": "4de2c02d57fe1a4e18e9e72928c6a1fcdd77572c479a536af74e2bf216c0d07a",
+    "verified_contents": true,
+    "result_archive": {
+      "path": "backups/reused_results/ASSIST2009-SAKT-final-42.tar.gz",
+      "sha256": "d866d9c126de885d58dc1c93e6a44429fb4baaef950c4e4277ce0e7d78377597",
+      "verified_contents": true
+    }
+  },
+  {
     "run_id": "ASSIST2009-SAKT-primary-42-3c4dd6ec486d",
     "archive_schema": 2,
     "metrics_sha256": "fcc95788266cc7d83cc6a96bee5913cf6d8adf964fd795a937b3ec5ed61930f0",

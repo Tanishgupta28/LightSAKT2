@@ -34,12 +34,17 @@ These configurations maximize validation AUC among all 36 prespecified candidate
 
 |dataset|model|completed_seeds|auc (mean ± sample SD)|accuracy (mean ± sample SD)|f1 (mean ± sample SD)|mse (mean ± sample SD)|bce (mean ± sample SD)|
 |---|---|---|---|---|---|---|---|
+|ASSIST2009|DKT|5|0.757165 ± 0.000527|0.736135 ± 0.001022|0.818332 ± 0.000993|0.189594 ± 0.000669|0.564732 ± 0.001604|
+|ASSIST2009|DKT+|5|0.751202 ± 0.000876|0.733004 ± 0.001809|0.816546 ± 0.002508|0.194971 ± 0.000512|0.577168 ± 0.001301|
 |ASSIST2009|LightSAKT|5|0.751056 ± 0.000766|0.732229 ± 0.000801|0.816533 ± 0.001517|0.180233 ± 0.000319|0.538615 ± 0.000886|
+|ASSIST2009|SAKT|2|0.750727 ± 0.000050|0.733151 ± 0.001039|0.818033 ± 0.001253|0.180215 ± 0.000227|0.538789 ± 0.000535|
 |ASSIST2015|LightSAKT|5|0.726088 ± 0.000315|0.749526 ± 0.000419|0.846282 ± 0.000392|0.171233 ± 0.000106|0.516098 ± 0.000340|
 |Algebra2005|LightSAKT|5|0.810590 ± 0.000422|0.795574 ± 0.000639|0.870356 ± 0.000350|0.144069 ± 0.000364|0.445272 ± 0.001018|
 
 Means summarize every completed prespecified seed. Sample standard deviations and Student-t intervals describe conditional initialization variability on one fixed student split; they do not measure new-student sampling uncertainty. Partial seed counts are not complete five-seed results.
 
+ASSIST2009: LightSAKT mean test AUC minus DKT was -0.006109 across the five prespecified seeds (Table 7).
+ASSIST2009: LightSAKT mean test AUC minus DKT+ was -0.000146 across the five prespecified seeds (Table 7).
 
 ## Ablations and paired inference
 
