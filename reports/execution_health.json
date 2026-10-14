@@ -1,22 +1,46 @@
 {
-  "updated_utc": "2026-10-14T02:30:34.424866+00:00",
-  "sample_time": 1791945033.8782003,
+  "updated_utc": "2026-10-14T02:31:36.261121+00:00",
+  "sample_time": 1791945095.4382336,
   "counts": {
-    "completed": 255,
-    "pending": 702
+    "completed": 256,
+    "pending": 700,
+    "running": 1
   },
   "scheduler": {
     "pid": 78472,
     "alive": true
   },
-  "training_processes": [],
-  "active_runs": [],
-  "gpu_memory_mib": 548,
+  "training_processes": [
+    {
+      "pid": 327303,
+      "cpu_seconds": 30.76,
+      "process_state": "S",
+      "ppid": 191761,
+      "session_id": 78472,
+      "observed_seconds": 0.2,
+      "cpu_seconds_advanced": 0.1999999999999993
+    }
+  ],
+  "active_runs": [
+    {
+      "run_id": "ASSIST2015-LightSAKT-no_attention-2026",
+      "last_completed_epoch": 18,
+      "best_checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_attention-2026/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-LightSAKT-no_attention-2026/config.json",
+      "recent_mean_epoch_seconds": 1.0888712574029342,
+      "seconds_since_last_epoch": 0.0,
+      "startup_epoch_seconds_extrapolated": null,
+      "age_reference": "history checkpoint",
+      "stall_threshold_seconds": 3.2666137722088027,
+      "checkpoint_stalled": false
+    }
+  ],
+  "gpu_memory_mib": 1032,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
-  "healthy_progress_observed": false,
+  "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 252 independently downloaded/checksum verified; completed-archive synchronization False."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 257 independently downloaded/checksum verified; completed-archive synchronization True."
 }
