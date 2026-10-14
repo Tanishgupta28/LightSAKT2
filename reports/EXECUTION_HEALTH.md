@@ -1,15 +1,15 @@
 # Execution health
 
-Observed UTC: 2026-10-14T14:48:34.348377+00:00
+Observed UTC: 2026-10-14T14:58:55.689807+00:00
 
 Scheduler PID 78472; healthy progress sampled: True; failed/interrupted/blocked slots: 0.
 
-Child PID 744748: CPU seconds advanced 0.1999999999999993 over 0.2 observed seconds. Session 78472, parent 191761.
+Child PID 747978: CPU seconds advanced 0.14000000000000057 over 0.2 observed seconds. Session 78472, parent 191761.
 
-Run `ASSIST2015-DKVMN-baseline_tuning-42-ffc49f271f93`: epoch 0; measured recent epoch average None; extrapolated first-epoch duration 21.932334036818926; progress age 15.603276014328003 seconds (initial running status; first checkpoint not yet saved); stall flag False. Threshold uses three measured epoch durations; before the first checkpoint it also allows a minimum 30-second setup grace. This diagnostic grace is separate from the measured training ETA.
+Run `ASSIST2015-DKVMN-final-123`: epoch 0; measured recent epoch average None; extrapolated first-epoch duration 22.09243568122395; progress age 3.975429058074951 seconds (initial running status; first checkpoint not yet saved); stall flag False. Threshold uses three measured epoch durations; before the first checkpoint it also allows a minimum 30-second setup grace. This diagnostic grace is separate from the measured training ETA.
 
-MIG memory allocation: 1252 / 40320 MiB. Utilization percentage is unavailable; no percentage is inferred from board power or PID existence.
+MIG memory allocation: 1068 / 40320 MiB. Utilization percentage is unavailable; no percentage is inferred from board power or PID existence.
 
 Best/latest state loads, finite parameters and optimizer/RNG integrity are independently recorded in reports/active_checkpoint_verification.json; saved result verification is in reports/stored_artifact_verification.json. Archive and recovery evidence is in reports/backup_integrity.json and reports/recovery_validation.json.
 
-Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured. /workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 666 independently downloaded/checksum verified; completed-archive synchronization True.
+Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured. /workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 667 independently downloaded/checksum verified; completed-archive synchronization True.
