@@ -20,12 +20,23 @@ The GKT PAM and MHA rows refer to the corrected historical simplified implementa
 |ASSIST2015|708631|683801|19840|100|101|
 |Algebra2005|809694|607025|574|436|388|
 
+## LightSAKT validation selection
+
+|dataset|learning_rate|embed_dim|num_heads|dropout|validation_auc|
+|---|---|---|---|---|---|
+|Algebra2005|0.001000|128|4|0.200000|0.808127|
+|ASSIST2009|0.001000|64|2|0.100000|0.750804|
+|ASSIST2015|0.000500|128|4|0.100000|0.730065|
+
+These configurations maximize validation AUC among all 36 prespecified candidates per dataset, with a lexical run-ID tie-break. The selection records are frozen before final evaluation. Validation scores are separate from held-out test performance; no test metric determined these choices. Run IDs and frozen split hashes are in LightSAKT_selected_configurations.csv and experiments/selections/.
+
 ## Matched final comparisons
 
 |dataset|model|completed_seeds|auc_mean|auc_std|accuracy_mean|f1_mean|mse_mean|bce_mean|
 |---|---|---|---|---|---|---|---|---|
 |ASSIST2009|LightSAKT|5|0.751056|0.000766|0.732229|0.816533|0.180233|0.538615|
-|ASSIST2015|LightSAKT|2|0.725954|0.000080|0.749605|0.846546|0.171227|0.516244|
+|ASSIST2015|LightSAKT|5|0.726088|0.000315|0.749526|0.846282|0.171233|0.516098|
+|Algebra2005|LightSAKT|4|0.810697|0.000399|0.795572|0.870278|0.144079|0.445300|
 
 Means summarize every completed prespecified seed. Sample standard deviations and Student-t intervals describe conditional initialization variability on one fixed student split; they do not measure new-student sampling uncertainty. Partial seed counts are not complete five-seed results.
 

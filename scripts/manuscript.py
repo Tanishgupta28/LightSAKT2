@@ -16,6 +16,11 @@ def readable_table(frame):
 
 
 def main():
+    if Path('reports/light_grid_verification.json').exists():
+        # This gate exists only after all 108 settings completed. Re-derive the
+        # selected-settings table from immutable evidence, never test scores.
+        from scripts.light_grid_results import generate
+        generate()
     lines=['# Corrected results text — generated from experiment artifacts','',
            'This document accompanies the preserved manuscript; it does not overwrite historical claims. Incomplete experiments remain explicitly pending.','',
            '## Corrected protocol','',

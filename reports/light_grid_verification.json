@@ -1,5 +1,5 @@
 {
-  "verified_utc": "2026-10-14T02:15:30.518972+00:00",
+  "verified_utc": "2026-10-14T02:20:42.367710+00:00",
   "verified": true,
   "completed_configurations": 108,
   "fresh_training_runs": 105,
@@ -8,6 +8,7 @@
   "selection": "All 36 prespecified candidates; validation AUC descending, run ID lexical tie-break; no test selection",
   "validation_checkpoint_inference_recomputed": false,
   "scope": "Saved checkpoint, data/split hashes and complete table coverage verified on CPU; final independent inference remains scheduled",
+  "reproduce_command": "CUDA_VISIBLE_DEVICES= python -m scripts.light_grid_results",
   "runs": [
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-20a36e0471b8",
