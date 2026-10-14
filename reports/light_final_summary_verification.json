@@ -1,6 +1,6 @@
 {
   "verified": true,
-  "verified_utc": "2026-10-14T05:55:14.568090+00:00",
+  "verified_utc": "2026-10-14T05:58:33.408793+00:00",
   "light_final_seed_slots": 15,
   "summary_method": "Five prespecified seeds; arithmetic mean and sample SD; saved metrics independently recomputed",
   "completed_five_seed_baseline_comparisons": 9,
@@ -18,7 +18,14 @@
       "metrics_sha256": "b9f4374d6cf3aec3db5f171f925a04b97e35e1cde89a857cb863f9649b6fe862",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "a1f921be797d8b31984588cdab63c0037db96030",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-DKT+-final-2026",
@@ -31,7 +38,14 @@
       "metrics_sha256": "2486fb86067610eea1f5f81cf6c80c8514a082f91ce50d38b90a5bf1f13a5a52",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "a5b1b8727f20bc34178f0b10c71a62683d09b545",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-DKT+-final-3407",
@@ -44,7 +58,14 @@
       "metrics_sha256": "15f8ca3f9031525963538edf5042a4e034deac8120f9e8e41545eb47fe763b31",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "a5b1b8727f20bc34178f0b10c71a62683d09b545",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-DKT+-final-42",
@@ -57,7 +78,14 @@
       "metrics_sha256": "237d191f1087bf1e7134d1d67e205f44fb29124ed9fefeb7579d941bd543bd00",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "92ddc3bdf5d9bb8f37c24bf298f9a0676ee358e9",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-DKT+-final-7777",
@@ -70,7 +98,14 @@
       "metrics_sha256": "5dd137a2d513668d82849d7f6f85ba62e8714c0243af1e25502b0d8d9b6e9015",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "0bd5610a57b74e37658daa00bb0fd17072037f53",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-DKT-final-123",
@@ -83,7 +118,14 @@
       "metrics_sha256": "5a57b3c4651a1504363ea9127ddb48ae6db28752d30a3c79195b601df99675b8",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "0bd5610a57b74e37658daa00bb0fd17072037f53",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-DKT-final-2026",
@@ -96,7 +138,14 @@
       "metrics_sha256": "3bb0cecac91854f7a3f65552984fcd05aaaf82d893b567b1f20bb707ca7ad2dc",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "86fbbff292a98f26668bae156e8bf68434573ce7",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-DKT-final-3407",
@@ -109,7 +158,14 @@
       "metrics_sha256": "004914f27f6271c1b3f61707b8ecf2d5a6ce505c4fe94efaa38eb6e55d7ffeeb",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "86fbbff292a98f26668bae156e8bf68434573ce7",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-DKT-final-42",
@@ -122,7 +178,14 @@
       "metrics_sha256": "312026531cd164196a058e802de92d0a015c094f65867968503ec88c66fc7200",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "b8c9f0ea83f4e2ff32b8b288b72ade6cec880045",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-DKT-final-7777",
@@ -135,7 +198,14 @@
       "metrics_sha256": "d64cf07fdb32a6d4d9a118cfb3fc1685de36f46d164d5383c4b4be100b6be012",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "86fbbff292a98f26668bae156e8bf68434573ce7",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-DKT-primary-42-26e196b6a6d5",
@@ -148,7 +218,14 @@
       "metrics_sha256": "b65f2697eea0b702071cf3d013409817823db775bb41c1e9cc52dd99cca39cc7",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "27901b7acf8841107219fe040a62b2df3e267966",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-DKTplus-primary-42-21f9b124f6e4",
@@ -161,7 +238,14 @@
       "metrics_sha256": "ca5cb838d11cdf340bf962e9ac09bb683d747d382bb91d06297735c1284e2528",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "27901b7acf8841107219fe040a62b2df3e267966",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-DKVMN-primary-42-902c00823fa6",
@@ -174,7 +258,14 @@
       "metrics_sha256": "ccc1965028193a55d4fd30e563f008046d066ec606e64e963f3ae1b6f40a623e",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "27901b7acf8841107219fe040a62b2df3e267966",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff",
@@ -187,7 +278,14 @@
       "metrics_sha256": "643dd6d3f9d668530030c7ff081c5fbc056febeee44550eb39cb12f85b10be4c",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "6a8d61e2586c804dd1e333e38310dedfae06d755",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-GKT_MHA-primary-42-e63b12ce3815",
@@ -200,7 +298,14 @@
       "metrics_sha256": "a8f81e15e4d172f7091f138a00af6cff96b90952f637aca98bc867c2b8568ee7",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "7736f589eecc55f50f9fce778b8b807d249d495c",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-final-123",
@@ -213,7 +318,14 @@
       "metrics_sha256": "c20823077d7f5c6f69cf57a14cea58a2e098ddc58c92d87576771e5ecb6a9b0c",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "1d97d8eb780579a6cf038f8c0329e81dc0e16e03",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-final-2026",
@@ -226,7 +338,14 @@
       "metrics_sha256": "6fb90bb752279e078dfc17505d0a5eeea57a00d25843e44b7ac8c03676b12b2d",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "8bd870e5774c2b83442ae95856eac05dabb110e8",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-final-3407",
@@ -239,7 +358,14 @@
       "metrics_sha256": "23b3e8075b85f0ea6ffa8d0fcc7034bbdc907f3c8b185a11e6049ef1e54dd1f7",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "8bd870e5774c2b83442ae95856eac05dabb110e8",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-final-42",
@@ -252,7 +378,14 @@
       "metrics_sha256": "644f89aa8b75b2a61075b978e244a742613e4a6cb5c35ce25d736a210c743b67",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "2420e8e85bf8bd101fd0866a8f83a10b2818a65d",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-final-7777",
@@ -265,7 +398,14 @@
       "metrics_sha256": "41a46e54ac59b91ebb7be07d22f91e927979fba325514c310c2b0c364e59ec9c",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "2ae4fae1508b68bf9052255543ca97b64136c655",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-SAKT-final-123",
@@ -278,7 +418,14 @@
       "metrics_sha256": "aea55f285b39c022c2446c8645876216a7e21215c53f7fff7370e16d1808e8cd",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "9cc756465896ba066557da49b20483cee95adb10",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-SAKT-final-2026",
@@ -291,7 +438,14 @@
       "metrics_sha256": "9811ef2d76acdc3491141755a3cff9b3f78d3f57ba6803948e533e8d4b0e1eed",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "9cc756465896ba066557da49b20483cee95adb10",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-SAKT-final-3407",
@@ -304,7 +458,14 @@
       "metrics_sha256": "e17b2e13d03ce12effb32c12dfc69f51e5e4a2f5a12bbe1700fff813c60a6073",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "a7af9f463fc969df4aa5d9527ffa204c6b71a338",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-SAKT-final-42",
@@ -317,7 +478,14 @@
       "metrics_sha256": "5e85951d783e55db838933c699f3f06804d7a6132044448dad4686a52e78cde9",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "68de5d880dca0d04d3f988b14f4ab2b36b04335d",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-SAKT-final-7777",
@@ -330,7 +498,14 @@
       "metrics_sha256": "f00772e5b592df02e687d70df50acd3664c35c1ba073658c13b82cad0a183d1a",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "a7af9f463fc969df4aa5d9527ffa204c6b71a338",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2009-SAKT-primary-42-3c4dd6ec486d",
@@ -343,7 +518,14 @@
       "metrics_sha256": "fcc95788266cc7d83cc6a96bee5913cf6d8adf964fd795a937b3ec5ed61930f0",
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "2fda8c366c3902fe954b1ee2f335003d0984b87c",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 46946,
+      "prediction_identity_sha256": "e81d024acaf97a365ba3819c172f2ac3aa7caee91bf969bd3b95c1e8ceced338",
+      "split_manifest": "data/splits/ASSIST2009.json",
+      "processed_data": "data/processed/ASSIST2009/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-DKT+-final-123",
@@ -356,7 +538,14 @@
       "metrics_sha256": "1791af2bd59b2624ae65fb613d92755dade789b11271601a19884cd7a2ab18b1",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "4cc02a1dcb21f3e278b2beec6110b6f318487ba5",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-DKT+-final-2026",
@@ -369,7 +558,14 @@
       "metrics_sha256": "a81db2e97953870e61e0850a161b55ad6f98672fd55aee6e8ed742ce4d2d278d",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "deb8633d86ba1a0ee8851a8797a18db201133d2f",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-DKT+-final-3407",
@@ -382,7 +578,14 @@
       "metrics_sha256": "2fd86295dceebcdc252917e186118e03f4e976900aae88889ad65eab864cd71a",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "deb8633d86ba1a0ee8851a8797a18db201133d2f",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-DKT+-final-42",
@@ -395,7 +598,14 @@
       "metrics_sha256": "5bf6affe71dbfa1d07363cce9824b625218759ff076b368f3fb8c4ad1e36afa4",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "6620b4a87e7c4ba8b108ba3427046a7839712afd",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-DKT+-final-7777",
@@ -408,7 +618,14 @@
       "metrics_sha256": "4a4ba955f84427d1ad92d0f391ffc91b99520ce3353432468d8f39c7d2e68568",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "7ab4bb5c1d0765fb86ba087cd4b2b436e16695ba",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-DKT-final-123",
@@ -421,7 +638,14 @@
       "metrics_sha256": "502c70d63600c472b342f2f1d3db515c1524815caa579dd76e7d3ba28bbb4d81",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "0a2fc70be8f7d16d1b2ac423226962111a0772a1",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-DKT-final-2026",
@@ -434,7 +658,14 @@
       "metrics_sha256": "fd064de8b35c474e9a274e5685f987b56d28f899a1bbe38cdef2c702efa0cc97",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "0a2fc70be8f7d16d1b2ac423226962111a0772a1",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-DKT-final-3407",
@@ -447,7 +678,14 @@
       "metrics_sha256": "8641b010eb55f852145b9332c57b3c3f2d9d95a1cd6e66a0d4035f2774a4fdee",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "2f8eea9f43a0a725a1e314be701244f4240b6e1c",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-DKT-final-42",
@@ -460,7 +698,14 @@
       "metrics_sha256": "665e55c6b348e75f21e043614a21abca5819423cd29576c77b0f2df200cea26b",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "32eda3533ba6c130240de8472ab60a118b53c282",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-DKT-final-7777",
@@ -473,7 +718,14 @@
       "metrics_sha256": "0395f603d776fbe132687e6df3338e0537e8502cbc6f74fa431841dacb5c0e80",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "b954a53fac5a139875e63abb3e1d51c881b35a29",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-DKT-primary-42-1b12a9ba9ffd",
@@ -486,7 +738,14 @@
       "metrics_sha256": "64fa2ae83ccb6fc6623598f152c1c96ebce710d1132be0000b7c4f10712bda6f",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "a61cccf3204189cebd0672282dc65acc482bd90b",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-DKTplus-primary-42-3bf5cb94131c",
@@ -499,7 +758,14 @@
       "metrics_sha256": "65f0c371465cbbd168f10a92b1454229680b3ebaf521a992dc88a674222ecabc",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "f6302e7705012882a0a4c923e2060ad994df5e0c",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-DKVMN-primary-42-c91ed69c5400",
@@ -512,7 +778,14 @@
       "metrics_sha256": "56c7a9f7a61b078fa4fbfeba98187450e602cc5681b53131888b66f85a75556c",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "5876ea228e8a0cd01b0b92d974a3414fcbe7bba8",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-GKT-primary-42-c3a67383f961",
@@ -525,7 +798,14 @@
       "metrics_sha256": "283434621d498f11a69fb6668783c4b5e94e80387379e83769ef4a1a28a62850",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "084d98f0ed585fb00402b9389466f0f07b0e48e1",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6",
@@ -538,7 +818,14 @@
       "metrics_sha256": "0603aadc95cb0ba7b3793b02f99ce30d2167404f6d99479518b77c2400f8f14f",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "cf1096660febf1a4c20a607a59383e1c0c65cfb9",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-LightSAKT-final-123",
@@ -551,7 +838,14 @@
       "metrics_sha256": "a7816d1bc237b2b2ec1d4acac6c203431203d41026bb6e80e8599bda221b959a",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "8dbeb81b48a0bcba7fcc9ed493856ad43d387a59",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-LightSAKT-final-2026",
@@ -564,7 +858,14 @@
       "metrics_sha256": "bb7b0e03f08cea3049f9fb7ce2909c67216b6483febf3a74d55a4612ab38bce9",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "51fc627601e56d833c438b01c8f7b08d46dd60f8",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-LightSAKT-final-3407",
@@ -577,7 +878,14 @@
       "metrics_sha256": "d84aa89c5dbf9305a6899366c9a0cd9aacbb9e15936eeb91c726a17bcdfb5a33",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "f82780d9497e6359f88454c6fc84e4a28fba78a4",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-LightSAKT-final-42",
@@ -590,7 +898,14 @@
       "metrics_sha256": "c1b94ea7b96b9aac95c6c69268680abcbb24666ce74a77e5020f107306a1539f",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "6130a79ff0d2986c116ceddb04398d19127f2afe",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-LightSAKT-final-7777",
@@ -603,7 +918,14 @@
       "metrics_sha256": "4feb385ad291dc1e34ace3910d752e31d477bec46d3edd981d7f623d668f1a4d",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "f35230055cb3eacc28f4b11c80bc28f19ef4e3f6",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-SAKT-final-123",
@@ -616,7 +938,14 @@
       "metrics_sha256": "7396d68e405e5e4936176b6fda168697e4ae5dd97088d075548b69a547ff4277",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "b954a53fac5a139875e63abb3e1d51c881b35a29",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-SAKT-final-2026",
@@ -629,7 +958,14 @@
       "metrics_sha256": "88f0aaf3c78e736d60904bac03eb5e2294b0e75eb00375c05870961f61cb21d3",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "3c46fd9008836d1dfff09506f5005a9d157a22b2",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-SAKT-final-3407",
@@ -642,7 +978,14 @@
       "metrics_sha256": "53bc6e1f195ffca6dde8d1f0aea876c591389f6c772778618862d6f5afa8de69",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "56dd4a50bfd24e9febd78a42928ac1a3d7e6d9dc",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-SAKT-final-42",
@@ -655,7 +998,14 @@
       "metrics_sha256": "6e54a995373f27d3a95f0bb231c5bfed59cc72f7981cc06e1b4d5a9db8a3a6b2",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "55aacd0e87e69119cd2e02f25bcad79968356540",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-SAKT-final-7777",
@@ -668,7 +1018,14 @@
       "metrics_sha256": "53d4b92432df92ac9e712dfa41ae66be8d8304c8eadf492024156ed50fe5a05f",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "56dd4a50bfd24e9febd78a42928ac1a3d7e6d9dc",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "ASSIST2015-SAKT-primary-42-c67b62d42456",
@@ -681,7 +1038,14 @@
       "metrics_sha256": "538e477f929acebe1e0dc21a110402e7da502ac571aad127b94f7b89a7346548",
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "641b1dbfbb6123284f61e3003d624b2d3c610630",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
       "run_id": "Algebra2005-DKT+-final-123",
@@ -694,7 +1058,14 @@
       "metrics_sha256": "5a10af5a81137cd657e7257312ba3ef054a07322328f3de18bfbaa9c79c453c4",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "e4f26f79b2f81aca8345fc69f76adaf14d735df8",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-DKT+-final-2026",
@@ -707,7 +1078,14 @@
       "metrics_sha256": "5ee5ef95178e7fc6b5734bf707ebb2fb1f02b2e4c134da12d01ef6d414276acc",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "e4f26f79b2f81aca8345fc69f76adaf14d735df8",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-DKT+-final-3407",
@@ -720,7 +1098,14 @@
       "metrics_sha256": "ecb25d3e95727aa7342c25e4ab45ffb5e40169a20e736970d9f0fb77cf9fab83",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "495368feca7cf0281a25086f0681967816ea22a9",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-DKT+-final-42",
@@ -733,7 +1118,14 @@
       "metrics_sha256": "1ab1b2756f08c29df9a17301ab7c01e88705a9f4faeea7320349c54a728dbe28",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "4e7e82c56c4c99d9fba4b74a220984267fde0185",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-DKT+-final-7777",
@@ -746,7 +1138,14 @@
       "metrics_sha256": "e44e21adf4f5e12f0fc6d886ca9689196028d088eb48485cf764cca8b82b9f99",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "13f533f515195224fad73e5297ebd7af69e19806",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-DKT-final-123",
@@ -759,7 +1158,14 @@
       "metrics_sha256": "7a44441c85b565b7c81e36c5003427d6365b76a3c0202ebf19ce93a95dad6107",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "13f533f515195224fad73e5297ebd7af69e19806",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-DKT-final-2026",
@@ -772,7 +1178,14 @@
       "metrics_sha256": "374772f013afd59cd85b851bc58727ae5f407d6936486b398953dda89af8e140",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "13f533f515195224fad73e5297ebd7af69e19806",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-DKT-final-3407",
@@ -785,7 +1198,14 @@
       "metrics_sha256": "e957d3ccf626d1fe876f7f4e77e5777dab7f69e5e56292f258aa4ab2f2a38e7f",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "07d2c7639768a4457ae6370c8ca6f082a62f76cb",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-DKT-final-42",
@@ -798,7 +1218,14 @@
       "metrics_sha256": "6575a27e499954b2179ba4247d774ae6afccdfe7f928a232f35b0c061d7e3824",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "97fc51baaef7ffda2236220cbe6ac72c734ee200",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-DKT-final-7777",
@@ -811,7 +1238,14 @@
       "metrics_sha256": "38b9b9d9e2c524745c51a9ffedf99877915348fb78bdbdbb377ade57c58ea8e0",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "07d2c7639768a4457ae6370c8ca6f082a62f76cb",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-DKT-primary-42-0a42097f8641",
@@ -824,7 +1258,14 @@
       "metrics_sha256": "5d571d4179fd5968033c7b796ab9cad5cb553812512274a4b240fee054582dd7",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "97e177e032e6f9b6f0bd19466ca539e11eb0cfc4",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-DKTplus-primary-42-8c85af12bd21",
@@ -837,7 +1278,14 @@
       "metrics_sha256": "5c67a6207f1d1f78a2c3c5c3ffb5c472b41d3b59a81d7cf3f0602068af7ad82e",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "f6fafcd8be4c4882c978889b344a9240581b3e7c",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-DKVMN-primary-42-7f8a895e7d8e",
@@ -850,7 +1298,14 @@
       "metrics_sha256": "93935c3192d59d4ff6b1980a0cfd6604ffc1185b3ec1723e674bdd2bd27d6ea2",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "f6fafcd8be4c4882c978889b344a9240581b3e7c",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-GKT-primary-42-b5d7512cd82b",
@@ -863,7 +1318,14 @@
       "metrics_sha256": "b3d6943189f531ae06a87d5fdc8c11e7d9abf6582504679281b141440766629d",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "d9f089d76bd25b864cf9ccfb2b44b8be7e3b8e19",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-GKT_MHA-primary-42-8718ee768a1d",
@@ -876,7 +1338,14 @@
       "metrics_sha256": "e759801fe27600ec9bd7cf8a791245da12b0975e041aae18ddfdc613b41c358f",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "2489946c5918e9624d9cc2969da4418c946f95e8",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-LightSAKT-final-123",
@@ -889,7 +1358,14 @@
       "metrics_sha256": "ed365e2da729f0f66493d63e16a64d3f5fa1e5b0b26986fa1d67bceca448e3e3",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "7875a6bfc7b9d6e2ee008df31296a1c355baee64",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-LightSAKT-final-2026",
@@ -902,7 +1378,14 @@
       "metrics_sha256": "9cd8e48156d0995840203bddf39b5ddceca70ee15fa6fcd57ad51fb32b36108c",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "7b8e3466643053e29745d59df55d1e9b2b6ce5d1",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-LightSAKT-final-3407",
@@ -915,7 +1398,14 @@
       "metrics_sha256": "01b99ae23e3283dbac95a13604af29b134bfded12ccc98e14e11fd6897cbd585",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "b90b88a0cb18206c82e6399014b5fbee216efd33",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-LightSAKT-final-42",
@@ -928,7 +1418,14 @@
       "metrics_sha256": "d3221a0716e4af95043598a81f192af1d323571104105e265798f2ed36c845d5",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "29a355135480044e6e8634311678eaaeab39165c",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-LightSAKT-final-7777",
@@ -941,7 +1438,14 @@
       "metrics_sha256": "620d2c309c95aaa573a3d29870e43fde1d4c49ba3b3a0c2fb506163d3d58466a",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "e597749acb3ee051fdac7744fef88702587ba692",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-SAKT-final-123",
@@ -954,7 +1458,14 @@
       "metrics_sha256": "3656ed3fba8741eeb21fee0ee0d47e78a0d696ea9a5fb8dd7ebb610370018004",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "07d2c7639768a4457ae6370c8ca6f082a62f76cb",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-SAKT-final-2026",
@@ -967,7 +1478,14 @@
       "metrics_sha256": "96efc70b739947ca3e3b584db884d8e9dc16ce7dad6018aa62cb1015ac1fe971",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "7d5d7783e481576ccbbcf827c5dcf4464d0d1b51",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-SAKT-final-3407",
@@ -980,7 +1498,14 @@
       "metrics_sha256": "6f7a369188f6f5524f63103a370f01e79c9c4dd5a1f6389acefaf22ca6f1c7f0",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "7d5d7783e481576ccbbcf827c5dcf4464d0d1b51",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-SAKT-final-42",
@@ -993,7 +1518,14 @@
       "metrics_sha256": "70a71d6b51778d2693c3abb68d70312df363b6ab0b109629ac7655ec882158f6",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "a25a5227f42d7258da665da099b211f0164f1431",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-SAKT-final-7777",
@@ -1006,7 +1538,14 @@
       "metrics_sha256": "7f057302443a466e594d30599b00db7d8b56172a72200b24fc351127c773fb11",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "98a84eeb807c65a8b4ff7bf44b5a0c45668f753b",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     },
     {
       "run_id": "Algebra2005-SAKT-primary-42-67291648991d",
@@ -1019,22 +1558,29 @@
       "metrics_sha256": "f23a2431a78d033e8e6bd1c471e5526df49e03ec085c90299e9e7a3e2b755f57",
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "strict_checkpoint_load": true,
-      "test_metrics_recomputed_from_saved_predictions": true
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "f69f20a4db5de4512b767a823708373a90c58295",
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 113704,
+      "prediction_identity_sha256": "7f7ab995cfd6f1cc66b41c88abbcbe6d975a5cad06cb7ae470b43da278cd0870",
+      "split_manifest": "data/splits/Algebra2005.json",
+      "processed_data": "data/processed/Algebra2005/interactions.csv"
     }
   ],
   "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
-  "eta_source": "reports/summary_eta/latest/ETA.json",
-  "eta_source_sha256": "fa2c51706e2f1bdbec3228e533d7ff501a87b5aeef2ac7a18f6c66d49933ee4b",
-  "remaining_occupied_mig_hours": 388.3007283998562,
+  "eta_source": "reports/summary_eta/progressive/ETA.json",
+  "eta_source_sha256": "e9c527e71cd88671981a5062a001633371b613d7fafc95a6be57ab1110067dfd",
+  "remaining_occupied_mig_hours": 388.19175066608796,
   "gkt_remaining_occupied_mig_hours": 372.3714161941859,
   "artifacts": [
     {
       "path": "results/tables/LightSAKT_final_summary.csv",
-      "sha256": "b5d951353db4cee01bcf9dc6a5d26e80fa3f5590e2efd1603636ab1664fcf8e3"
+      "sha256": "5f598c8845420e0879deea95af4c93f7cb2561e8093929a6559ba6a59af929d3"
     },
     {
       "path": "results/tables/LightSAKT_final_individual_seeds.csv",
-      "sha256": "0e63deb490dc9afd218a0627d6d9b7fd405726d9f7eee38f1e49f93ae8826ed5"
+      "sha256": "9161b1411ee251b6089ab0463c18afd6e4a54bbbaccc3f26ce64ccad79b60830"
     },
     {
       "path": "results/tables/LightSAKT_completed_baseline_comparisons.csv",
@@ -1042,7 +1588,7 @@
     },
     {
       "path": "reports/LightSAKT_summary_ETA_by_model.csv",
-      "sha256": "9580cec6dd054edfe20606d8da2d26bf8357732077f5f70f03a37d8d10962bf2"
+      "sha256": "e00d75494fe10aa349d1565204b7915d29335fb597e978ae501258eeb2bc70a7"
     }
   ]
 }

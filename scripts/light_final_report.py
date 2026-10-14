@@ -15,6 +15,7 @@ from src.models.factory import build_model
 from src.training.engine import write_json
 from scripts.progress import snapshot
 from scripts.verify_artifacts import verify_stored_result
+from scripts.locked_test_evidence import LockedTestEvidence
 
 
 DATASETS = ['ASSIST2009', 'ASSIST2015', 'Algebra2005']
@@ -60,7 +61,9 @@ def generate(eta_dir=Path('reports'), refresh_eta=False):
         assert eta_dir.resolve() != Path('reports').resolve(), 'Use an isolated ETA output directory during live training'
         from scripts.eta import estimate
         estimate(eta_dir)
-    selections = {}; checks = []; data_checked = set(); results = []
+    selections = {}; checks = []; data_checked = set(); results = []; configs = {}
+    protocol=json.load(open('configs/protocol.json')); locked_tests=LockedTestEvidence()
+    assert protocol['split_seed']==42 and protocol['training_seeds']==SEEDS
     code_hash = hashlib.sha256(b''.join(str(p).encode() + p.read_bytes() for p in sorted(Path('src').rglob('*.py'))
                                       if 'visualization' not in p.parts)).hexdigest()
     for path in sorted(Path('results/raw').glob('*/metrics.json')):
@@ -71,6 +74,7 @@ def generate(eta_dir=Path('reports'), refresh_eta=False):
         if not status.exists() or json.load(open(status)).get('status') != 'completed':
             continue
         result, config, stats = verify_stored_result(path, data_checked)
+        locked=locked_tests.check(result, config)
         assert result['training_code_sha256'] == code_hash, 'Training architecture/code version mismatch'
         assert config['seed'] == result['seed'] and config['model'] == result['model']
         state = torch.load(result['checkpoint'], map_location='cpu', weights_only=False)
@@ -94,11 +98,12 @@ def generate(eta_dir=Path('reports'), refresh_eta=False):
             if result['model'] == 'LightSAKT':
                 selections[result['dataset']] = {'config': config, 'selected_run_id': best, 'path': str(selection_path)}
         results.append(result)
+        configs[result['run_id']]=config
         checks.append({'run_id': result['run_id'], 'group': result['group'], 'dataset': result['dataset'],
                        'model': result['model'], 'seed': result['seed'], 'checkpoint_sha256': result['checkpoint_sha256'],
                        'prediction_sha256': result['prediction_sha256'], 'metrics_sha256': sha256(path),
                        'split_sha256': result['split_sha256'], 'strict_checkpoint_load': True,
-                       'test_metrics_recomputed_from_saved_predictions': True})
+                       'test_metrics_recomputed_from_saved_predictions': True, 'git_commit':result['git_commit'], **locked})
     light = []; individual = []; comparisons = []; partial = []
     for dataset in DATASETS:
         completed = [r for r in results if r['dataset'] == dataset and r['model'] == 'LightSAKT' and r['group'] == 'final']
@@ -106,18 +111,27 @@ def generate(eta_dir=Path('reports'), refresh_eta=False):
         c = selections[dataset]['config']
         row.update(learning_rate=c['learning_rate'], embed_dim=c['model_config']['embed_dim'],
                    num_heads=c['model_config']['num_heads'], dropout=c['model_config']['dropout'],
-                   seq_len=c['seq_len'], batch_size=c['batch_size'], selected_grid_run=selections[dataset]['selected_run_id'])
+                   seq_len=c['seq_len'], batch_size=c['batch_size'], selected_grid_run=selections[dataset]['selected_run_id'],
+                   split_seed=protocol['split_seed'], training_seeds=json.dumps(SEEDS))
         light.append(row)
         seed42 = next(r for r in completed if r['seed'] == 42)
         for r in completed:
             individual.append({'dataset': dataset, 'seed': r['seed'], 'run_id': r['run_id'], **r['test'],
                                'best_epoch': r['best_epoch'], 'epochs_trained': r['epochs_trained'],
                                'checkpoint': r['checkpoint'], 'checkpoint_sha256': r['checkpoint_sha256'],
-                               'prediction_path': r['prediction_path'], 'prediction_sha256': r['prediction_sha256']})
+                               'prediction_path': r['prediction_path'], 'prediction_sha256': r['prediction_sha256'],
+                               'split_seed':protocol['split_seed'], 'split_sha256':r['split_sha256'],
+                               'learning_rate':c['learning_rate'], 'embed_dim':c['model_config']['embed_dim'],
+                               'num_heads':c['model_config']['num_heads'], 'dropout':c['model_config']['dropout'],
+                               'git_commit':r['git_commit'], 'metrics_path':f'results/raw/{r["run_id"]}/metrics.json',
+                               'verification_status':'verified; locked test identities and labels checked'})
         primary = [r for r in results if r['dataset'] == dataset and r['model'] != 'LightSAKT' and r['group'] == 'primary']
         baseline_models = sorted({r['model'] for r in results if r['dataset'] == dataset and r['model'] != 'LightSAKT'})
         for model_name in baseline_models:
             final = [r for r in results if r['dataset'] == dataset and r['model'] == model_name and r['group'] == 'final']
+            for r in final:
+                assert r['split_sha256']==seed42['split_sha256'] and r['processed_sha256']==seed42['processed_sha256']
+                assert configs[r['run_id']]['seq_len']==c['seq_len'], 'Incompatible baseline context protocol'
             if len(final) == 5:
                 baseline = seed_statistics(final)
                 comparisons.append({'dataset': dataset, 'baseline': model_name, 'evidence_scope': 'selected five-seed final',
@@ -197,7 +211,56 @@ def generate(eta_dir=Path('reports'), refresh_eta=False):
                'eta_source_sha256': sha256(eta_dir / 'ETA.json'), 'remaining_occupied_mig_hours': wall,
                'gkt_remaining_occupied_mig_hours': gkt,
                'artifacts': [{'path': p, 'sha256': sha256(p)} for p in paths + [cost_path]]})
+    write_detailed_reports(summary, pd.DataFrame(individual), comparison, results, now)
     return summary
+
+
+def write_detailed_reports(summary, individual, comparison, results, now):
+    individual=individual.sort_values(['dataset','seed'])
+    heading=['# Verified selected LightSAKT final-seed results','',f'Generated UTC: {now}','',
+             'Completion and integrity were rechecked from saved artifacts. There are five distinct initialization seeds per dataset; seed 42 reuses the selected tuning checkpoint without retraining. Split seed is 42 for every run. All reported test labels and inference sequence identities match the locked student-disjoint test records.','',
+             '## Selected hyperparameters and five-seed summary','',
+             table(summary,['dataset','learning_rate','embed_dim','num_heads','dropout','split_seed','training_seeds','seq_len','batch_size']),'']
+    shown=summary[['dataset']].copy()
+    for m in METRICS:shown[m.upper()]=summary.apply(lambda r:f'{r[m+"_mean"]:.6f} ± {r[m+"_std"]:.6f}',axis=1)
+    heading += [table(shown,['dataset']+[m.upper() for m in METRICS]),'',
+                'Mean ± sample SD (ddof=1) on one fixed student split. All five individual results contribute; no best-seed substitution. Hyperparameters were independently checked against the highest validation AUC among all 36 candidates per dataset.','']
+    for dataset in DATASETS:
+        data=individual[individual.dataset==dataset]
+        heading += ['## '+dataset+' — all individual seeds','',table(data,['seed','split_seed','best_epoch']+METRICS+['run_id']),'',
+                    'best_epoch is the selected validation epoch, not the last epoch trained. Checkpoint and source references:','']
+        for r in data.to_dict('records'):
+            heading.append(f'- Seed {r["seed"]}: `{r["checkpoint"]}`; checkpoint SHA256 `{r["checkpoint_sha256"]}`; Git commit `{r["git_commit"]}`; metrics `{r["metrics_path"]}`; predictions `{r["prediction_path"]}`; split SHA256 `{r["split_sha256"]}`. Verification: {r["verification_status"]}.')
+        heading.append('')
+    heading += ['## Verification limits and reproducibility','',
+                'Checks include complete run status, checkpoint/prediction hashes, strict finite checkpoint loading, selected validation epoch and metrics, training-source fingerprint, validation-only configuration selection, disjoint students, locked test-sequence order and target labels, and metric recomputation from saved probabilities. Probabilities were not regenerated by GPU inference during this check; independent full validation-checkpoint inference remains scheduled.','',
+                'Source tables: results/tables/LightSAKT_final_summary.csv and LightSAKT_final_individual_seeds.csv. Full verification: reports/light_final_summary_verification.json. Grid verification: reports/light_grid_verification.json. Selection records: experiments/selections/<dataset>-LightSAKT.json.','',
+                "Reproduce on CPU without signalling training: `CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m scripts.light_final_report --refresh-eta --eta-dir reports/summary_eta/latest`."]
+    Path('reports/LIGHTSAKT_FINAL_SEED_RESULTS.md').write_text('\n'.join(heading)+'\n')
+    status=[]
+    for dataset in DATASETS:
+        for model in ['DKT','DKT+','DKVMN','GKT','GKT_MHA','SAKT']:
+            n=sum(r['dataset']==dataset and r['model']==model and r['group']=='final' for r in results)
+            status.append({'dataset':dataset,'model':model,'completed_seeds':n,'required_seeds':5,
+                           'status':'completed and verified' if n==5 else 'pending; partial evidence excluded from final comparison'})
+    save_csv(pd.DataFrame(status),'results/tables/baseline_final_status.csv')
+    final=comparison[comparison.evidence_scope=='selected five-seed final'].copy()
+    baseline=['# Verified baseline comparison','',f'Generated UTC: {now}','',
+              'Only completed artifacts on the same locked data/splits and context lengths are used. Matched final comparisons require all five prespecified seeds. Incomplete rows are pending, with no historical-paper substitution.','',
+              table(pd.DataFrame(status),['dataset','model','completed_seeds','required_seeds','status']),'',
+              '## Completed selected five-seed results','']
+    if final.empty:baseline+=['No complete selected five-seed baseline comparisons yet.','']
+    else:
+        displayed=final[['dataset','baseline']].copy()
+        for m in METRICS:displayed[m.upper()]=final.apply(lambda r:f'{r["baseline_"+m+"_mean"]:.6f} ± {r["baseline_"+m+"_std"]:.6f}',axis=1)
+        displayed['LightSAKT minus baseline AUC']=final.light_minus_baseline_auc_mean
+        baseline += [table(displayed,['dataset','baseline']+[m.upper() for m in METRICS]+['LightSAKT minus baseline AUC']),'',
+                     'Differences compare five-seed means on the same split; they are descriptive effect estimates, not significance claims. Paired significance and Holm correction are generated from genuinely matched seeds.','']
+    baseline += ['## Fresh primary runs — separate descriptive evidence','',
+                 'Fresh completed seed-42 primary runs are fixed-configuration, single-seed measurements. They do not substitute for pending validation-selected five-seed comparisons. Original simplified GKT-PAM/MHA implementations remain separately labelled and do not establish canonical GKT reproduction.','',
+                 table(comparison[comparison.evidence_scope.str.startswith('fresh primary')],['dataset','baseline','baseline_auc_mean','light_minus_baseline_auc_mean']),'',
+                 'All five metrics and deltas: results/tables/LightSAKT_completed_baseline_comparisons.csv. Exact per-run Git commits, checkpoint/prediction hashes, locked test verification and source paths: reports/light_final_summary_verification.json. No statistical superiority or completed research-project claim is made from pending comparisons.']
+    Path('reports/BASELINE_COMPARISON.md').write_text('\n'.join(baseline)+'\n')
 
 
 if __name__ == '__main__':
