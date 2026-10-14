@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T04:54:19.737197+00:00",
-  "sample_time": 1791953658.3349578,
+  "updated_utc": "2026-10-14T04:55:22.429962+00:00",
+  "sample_time": 1791953721.387315,
   "counts": {
-    "completed": 520,
-    "pending": 436,
+    "completed": 523,
+    "pending": 433,
     "running": 1
   },
   "scheduler": {
@@ -12,8 +12,8 @@
   },
   "training_processes": [
     {
-      "pid": 517253,
-      "cpu_seconds": 12.57,
+      "pid": 518701,
+      "cpu_seconds": 19.57,
       "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
@@ -23,25 +23,25 @@
   ],
   "active_runs": [
     {
-      "run_id": "Algebra2005-DKTplus-baseline_tuning-42-ecaf0972ec89",
-      "last_completed_epoch": 9,
-      "best_checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-ecaf0972ec89/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-DKTplus-baseline_tuning-42-ecaf0972ec89/config.json",
-      "recent_mean_epoch_seconds": 0.28094860780402087,
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-0cbf22fe27be",
+      "last_completed_epoch": 30,
+      "best_checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-0cbf22fe27be/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/Algebra2005-SAKT-baseline_tuning-42-0cbf22fe27be/config.json",
+      "recent_mean_epoch_seconds": 0.3562212458055001,
       "seconds_since_last_epoch": 0.0,
       "startup_epoch_seconds_extrapolated": null,
       "first_checkpoint_startup_grace_seconds": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 0.8428458234120626,
+      "stall_threshold_seconds": 1.0686637374165002,
       "checkpoint_stalled": false
     }
   ],
-  "gpu_memory_mib": 1196,
+  "gpu_memory_mib": 1128,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 513 independently downloaded/checksum verified; completed-archive synchronization False."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 515 independently downloaded/checksum verified; completed-archive synchronization False."
 }
