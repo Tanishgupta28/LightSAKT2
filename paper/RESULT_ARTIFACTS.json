@@ -13,11 +13,11 @@
   },
   {
     "path": "results/tables/Table_5.csv",
-    "sha256": "be651557cc2bb78c4e8d13ebef3744d6e1e6c40de4c1675f3a8d7ee0dea9e184"
+    "sha256": "18e6fbf973b7f0a792de1236cb1f5db09277fef492c40a1eed6bf815c0277e4e"
   },
   {
     "path": "results/tables/Table_6.csv",
-    "sha256": "e88d60a3107d435d2a02c75337c950982025f42031985900e1a875b6221a122a"
+    "sha256": "bc9f767897d2cfbb6ea1789d5852df6a7ce869659f6dd7c1fdb6689722cc3870"
   },
   {
     "path": "results/tables/Table_7.csv",
@@ -37,15 +37,27 @@
   },
   {
     "path": "results/tables/all_verified_runs.csv",
-    "sha256": "f32af38f2f93e665e4437aaae5356bc5efd3f641ed49dd1be0b8e589d5d94be1"
+    "sha256": "e7b8a3ff17d21b347975e1a56824ab6fe5b602a0233af2f41f3dfc47e795fd4e"
   },
   {
     "path": "results/tables/computational_budgets.csv",
-    "sha256": "146404ea464eb1e2e7589cb82f31e158074b2ff0a09c8bc1683fa80e12325071"
+    "sha256": "48bf6d6c5ac9d7c9fa5e979bc79e4bf31b3a7e7f5f86b2d6d9663930790c3dcf"
   },
   {
     "path": "results/tables/dataset_preprocessing_audit.csv",
     "sha256": "7fab37f00211db5bb081c299b02337ba98cad38766c95827515a9a71615560f9"
+  },
+  {
+    "path": "results/tables/efficiency.csv",
+    "sha256": "278fd59ab7cd3d6b30935acc415ec987f2981cb55f2848583cb287f73685c2b9"
+  },
+  {
+    "path": "results/tables/epoch_runtime.csv",
+    "sha256": "026201cae4a0c7c92e99fc8d7ebcd8150d95f828edda828c3fe212ce95965384"
+  },
+  {
+    "path": "results/tables/model_complexity.csv",
+    "sha256": "36fecc26485e77ec25818aabe921b905729922612e99a1ede81f149cdc2ad165"
   },
   {
     "path": "results/tables/paired_ablations.csv",
@@ -65,19 +77,19 @@
   },
   {
     "path": "results/figures/ASSIST2009_grid_heatmap.csv",
-    "sha256": "abb3ecf40b0003184611634025741a99dda112a8a1913815f4829bf5683da1ee"
+    "sha256": "c67f468bc6331a2910be4cf5bd2585aa0918b7c39842702064df16c408e3f670"
   },
   {
     "path": "results/figures/ASSIST2009_grid_heatmap.pdf",
-    "sha256": "e24c7bdedb8e197864b61a49fd4f4a962e3e23ce8653a2fb6fa9fdc0d7f0d15c"
+    "sha256": "47f91e2ec0c278680a6fa79fad95d74896b46ea92f0a576635bb0fd92481ba06"
   },
   {
     "path": "results/figures/ASSIST2009_grid_heatmap.png",
-    "sha256": "4c6d618f3b078eddd165232343c2d68b0a5e9cabb1696fe005ceb95789ad2a6c"
+    "sha256": "52367d0730355930639725ff637285d68d8007eea65bfe802ebc3e0f86b40af0"
   },
   {
     "path": "results/figures/ASSIST2009_grid_heatmap.svg",
-    "sha256": "91c9a328c611dd4f440b68dbfd08d6850629230fb2991ae80509bdc6a6b686a8"
+    "sha256": "11edace46acaabb35924213a8c8036a4487cdf2568e3dc4d42ff33a9c47c9e3c"
   },
   {
     "path": "results/figures/ASSIST2009_primary_42_skill_probabilities.csv",
@@ -85,7 +97,7 @@
   },
   {
     "path": "results/figures/ASSIST2009_train_objective.pdf",
-    "sha256": "490f150bc6708eacf69209058f1c373956210eb290e0a5435cd332e2352c8de6"
+    "sha256": "a285f32b8333f4ab41683748f5a9f181036699b1f7100b9c1388bb1ce5f895e9"
   },
   {
     "path": "results/figures/ASSIST2009_train_objective.png",
@@ -93,11 +105,11 @@
   },
   {
     "path": "results/figures/ASSIST2009_train_objective.svg",
-    "sha256": "34a21d8db3399dbbb51846fdf0e36bdebf9f42de30ecf78606aaf8c22647541d"
+    "sha256": "2c83fee2fd7bb7fa64d0ea4a3e4420af600132ec901d279cd8242e42a45809c6"
   },
   {
     "path": "results/figures/ASSIST2009_validation_accuracy.pdf",
-    "sha256": "a0808ac29a1daac59dec5081b778eb66ae28dfe74c9664270fd58f2eabd7fa47"
+    "sha256": "c481266da92f165966b4b36e359381ec75c6c9003d3d7673af8d219135b3a4aa"
   },
   {
     "path": "results/figures/ASSIST2009_validation_accuracy.png",
@@ -105,11 +117,27 @@
   },
   {
     "path": "results/figures/ASSIST2009_validation_accuracy.svg",
-    "sha256": "e27210c541735ae2b42c240b43d3cc895b9c98cad80f6ed9b280aa591f20d832"
+    "sha256": "f357da6f59a7cd8057302e89f875a47adb14378d6809012cd8a85e4dbdbbe5c2"
+  },
+  {
+    "path": "results/figures/ASSIST2015_grid_heatmap.csv",
+    "sha256": "febe3c839f5863cc1d472f07dd06b517cee1b015585c25990daa096708fd4139"
+  },
+  {
+    "path": "results/figures/ASSIST2015_grid_heatmap.pdf",
+    "sha256": "f13e5a03294bce7e24fa69e91f17f51b74862d479c0137b410df22d66569e402"
+  },
+  {
+    "path": "results/figures/ASSIST2015_grid_heatmap.png",
+    "sha256": "1c087d782c858f36699615b3aab3fc5c6fa37368d5e28354c8e759959bf67f8f"
+  },
+  {
+    "path": "results/figures/ASSIST2015_grid_heatmap.svg",
+    "sha256": "ba43d5d34a2ec07abef3444d0d4285627cdb3aa080956ef992caab2ed19bc95d"
   },
   {
     "path": "results/figures/ASSIST2015_train_objective.pdf",
-    "sha256": "f58c1e7d4c9e355552cf7c643f33a3b10a010808a2100b119fbb3d2612b38919"
+    "sha256": "3bb4999a46703bbae552f86926b563a20fc122957a047f2fe1323dab42b113f9"
   },
   {
     "path": "results/figures/ASSIST2015_train_objective.png",
@@ -117,11 +145,11 @@
   },
   {
     "path": "results/figures/ASSIST2015_train_objective.svg",
-    "sha256": "c98539d95545d8fd6c0b0a8d07e733dc8f508ba35e41b838ee761cae7ad7888e"
+    "sha256": "b44b9c54ba209ccb4ec733c3a8aeabc1a873d85afe0c092b68011e0b659b5477"
   },
   {
     "path": "results/figures/ASSIST2015_validation_accuracy.pdf",
-    "sha256": "660c9faf47d738dc4332b8c74223feac93f825fbd9581ffbc9d8c19250625a84"
+    "sha256": "f9233b7a2d10db93aedf9d66bfa639a61728e4457fe5dfd72edbbba2006b9321"
   },
   {
     "path": "results/figures/ASSIST2015_validation_accuracy.png",
@@ -129,11 +157,11 @@
   },
   {
     "path": "results/figures/ASSIST2015_validation_accuracy.svg",
-    "sha256": "6d9ab02da57dd3e94e1bc1348d9261c2da32655533c769b1ff31a5c99c23cf6a"
+    "sha256": "a2a68ecb1e6d5101911d20d3676cccc404ab9a98d3bb34fde148195e3fe049f5"
   },
   {
     "path": "results/figures/Algebra2005_train_objective.pdf",
-    "sha256": "9c08b2028181b5565cc37c754131d399ec9471c9680f3907104882838f2a431d"
+    "sha256": "748bb62dc9f9299ae57c7fee00e36721bcebc1bffb4115179cd0850774a71be3"
   },
   {
     "path": "results/figures/Algebra2005_train_objective.png",
@@ -141,11 +169,11 @@
   },
   {
     "path": "results/figures/Algebra2005_train_objective.svg",
-    "sha256": "7b257fa4ffb23374d3261df2f42f9a43adc13ddb589f5c905f3b5b75e342df8f"
+    "sha256": "29571f7f2ad436aa557608f10e43e08e25af1c3a39b01b177a0f3956428885e1"
   },
   {
     "path": "results/figures/Algebra2005_validation_accuracy.pdf",
-    "sha256": "a8280605c68248b080a4d2f9bb132d92801507abb9b3e616f42e4168d8aebefb"
+    "sha256": "423b2ab884ef2adf639da789f2ca269cfcecbac4efbb5c5786b3f2508796aad8"
   },
   {
     "path": "results/figures/Algebra2005_validation_accuracy.png",
@@ -153,7 +181,7 @@
   },
   {
     "path": "results/figures/Algebra2005_validation_accuracy.svg",
-    "sha256": "cf6201efd599e345ae8b17512fa1df856f87db5ceae8ef90b1e0dec322fc1959"
+    "sha256": "538b4dadaebb19a9e4364bec9007f6230f987dcccc53742757708356767af532"
   },
   {
     "path": "results/figures/Figure_10_ASSIST2009_primary_42.csv",
@@ -241,7 +269,7 @@
   },
   {
     "path": "results/figures/Figure_5.pdf",
-    "sha256": "e102683dbad046a26b6789f735e8b831ed6d6c1dfebf0e3e2fedd167d84b43c9"
+    "sha256": "42485ddbb7607d5030fb4896ebc1da670bab086e4558d1d5e51e36c3ac2f5b97"
   },
   {
     "path": "results/figures/Figure_5.png",
@@ -249,7 +277,7 @@
   },
   {
     "path": "results/figures/Figure_5.svg",
-    "sha256": "78d7a2e0312e59e3db71d35e30bc5adaf22d080fb78c9b1907260ef03246e7d7"
+    "sha256": "fb32650e7865ad4cb8070ae596d5de127d07898798f80ed02bd96a721c77b29b"
   },
   {
     "path": "results/figures/Figure_6.csv",
@@ -257,7 +285,7 @@
   },
   {
     "path": "results/figures/Figure_6.pdf",
-    "sha256": "2accba937b992b86a7931ec66a0bc6e7bcc8416b7b1c3e6a260effe869a79d53"
+    "sha256": "b9aee71e56a05d7d9359442aeda2d9770debc33e05305f4ae7f40bb1633ddf0a"
   },
   {
     "path": "results/figures/Figure_6.png",
@@ -265,7 +293,7 @@
   },
   {
     "path": "results/figures/Figure_6.svg",
-    "sha256": "2100765ddd0d27d5351b7dc86ad89a0c127716cd4a1a1c2808e98d7eb5120cd5"
+    "sha256": "880f282d8bd28a1088dfcb812db4d31ae14b4843e9f22a519345314f47f31a78"
   },
   {
     "path": "results/figures/Figure_6_partial.csv",
@@ -289,7 +317,7 @@
   },
   {
     "path": "results/figures/Figure_7.pdf",
-    "sha256": "5ddbad60c5f61c160aa17d45950b70fe51000fe3bc098d67e29022c4badd820f"
+    "sha256": "ee0e94071451e6f51ae72be9ab4d0b9dfcf51b00e8b3363cfce65eccaba495e7"
   },
   {
     "path": "results/figures/Figure_7.png",
@@ -297,7 +325,7 @@
   },
   {
     "path": "results/figures/Figure_7.svg",
-    "sha256": "5a5f2edb249bc8da1bb456dd098677538cb8776ff2b87b620dd08c11056ddc8b"
+    "sha256": "c742b0374d3f7a85c3e2a90515ca51ee768c14162b11a0378c3d98af4b8a1e04"
   },
   {
     "path": "results/figures/Figure_7_partial.csv",
@@ -321,7 +349,7 @@
   },
   {
     "path": "results/figures/Figure_8_ASSIST2009.pdf",
-    "sha256": "3d10df9450de4c1daa7d1a437554536292ceadb8001658cabc54d37cf355ba92"
+    "sha256": "e30f683e3b9b2f59edc75985c5078f59dff44af54754117a254f633d850c96bf"
   },
   {
     "path": "results/figures/Figure_8_ASSIST2009.png",
@@ -329,7 +357,7 @@
   },
   {
     "path": "results/figures/Figure_8_ASSIST2009.svg",
-    "sha256": "b7223aa54d12b623a2f86a20d755167388cd333fbe680859aa7f40ec5dde183b"
+    "sha256": "5f9dbe7cac53ae3f8c58253c17eb4eb1ce0f513c1d1a1e35e93d4a5d791092f6"
   },
   {
     "path": "results/figures/Figure_8_ASSIST2015.csv",
@@ -337,7 +365,7 @@
   },
   {
     "path": "results/figures/Figure_8_ASSIST2015.pdf",
-    "sha256": "3f374d06cef4b121b23bf05cbce56934a71fc2913eec688824a18e7f9eafeb63"
+    "sha256": "468d2fd61b75bfeb3bc43a8bb93fe7b1bbdce7df939a28d997ff5795e3d47a34"
   },
   {
     "path": "results/figures/Figure_8_ASSIST2015.png",
@@ -345,7 +373,7 @@
   },
   {
     "path": "results/figures/Figure_8_ASSIST2015.svg",
-    "sha256": "d62d066cc0c7f3fd0d3bb329adf436cfc1eb617d6c15219ddf91f6e9c209fb78"
+    "sha256": "114d139ca33b1a5a85263384596c9e5fbf10bc2defa4900a22a8a8b5537db113"
   },
   {
     "path": "results/figures/Figure_8_Algebra2005.csv",
@@ -353,7 +381,7 @@
   },
   {
     "path": "results/figures/Figure_8_Algebra2005.pdf",
-    "sha256": "af6872e1843f0b21e37add2565479e600b3d30b035f8f6bc69589786ba4e5e27"
+    "sha256": "5f7eecb8cd245f56f40fd2b89743a542c1dfd4d71aaa3c6caf96df6f45119e9d"
   },
   {
     "path": "results/figures/Figure_8_Algebra2005.png",
@@ -361,7 +389,7 @@
   },
   {
     "path": "results/figures/Figure_8_Algebra2005.svg",
-    "sha256": "abc60d0693b589c7ddb06ace00cd74b3ad633db96715abe01ae9cf10d71ac4bf"
+    "sha256": "b9c9bc6502ac8365dd7abde1a17819ab7a0774996b54f52fe277777a291a7b24"
   },
   {
     "path": "results/figures/Figure_9_ASSIST2009_primary_42.csv",
@@ -410,6 +438,774 @@
   {
     "path": "results/figures/Figure_9_Algebra2005_primary_42.svg",
     "sha256": "d08b43e2d20f66044837790e9c31eb59b97d365333016f062bde9246aacafa9f"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_forward_backward_latency_ms_mean.csv",
+    "sha256": "072859cdec81192ec3c79e763c72c81011d8b4096e50f49411ce671bccfe6209"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_forward_backward_latency_ms_mean.pdf",
+    "sha256": "ba9ca97336473f4c79130ef2916f588100ae067a38882e276a5dbf6d29c05ef4"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_forward_backward_latency_ms_mean.png",
+    "sha256": "bba6822ab02dfa88e2ccdced6136b0b325e70b121db0cdebe2c5ca09b34d473c"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_forward_backward_latency_ms_mean.svg",
+    "sha256": "4b9adfaf21bc675e255f50bd9b874581398595c0e9edfff36f0ad74420aa7474"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_forward_backward_peak_allocated_bytes.csv",
+    "sha256": "072859cdec81192ec3c79e763c72c81011d8b4096e50f49411ce671bccfe6209"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_forward_backward_peak_allocated_bytes.pdf",
+    "sha256": "77502dcc99d6db02c688ae4bc91a953231e04db1db2df6e7522c58d339343210"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_forward_backward_peak_allocated_bytes.png",
+    "sha256": "3613ae91e3a9971fc4ce06dc40774c007c3b3a540441998751ad177e6d55981d"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_forward_backward_peak_allocated_bytes.svg",
+    "sha256": "10bf40f41765d9fa5911457cb0041d6e4ef7a8b87910e80dc232e0115c9232f6"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_forward_backward_peak_reserved_bytes.csv",
+    "sha256": "072859cdec81192ec3c79e763c72c81011d8b4096e50f49411ce671bccfe6209"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_forward_backward_peak_reserved_bytes.pdf",
+    "sha256": "db55cbb2b092cb4ee6acf20248f8eebb55e8d628eda47aace0522543c25c9194"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_forward_backward_peak_reserved_bytes.png",
+    "sha256": "377af5568115b24df983251428eafca03f66b9ef70105bdc0c7964698466907d"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_forward_backward_peak_reserved_bytes.svg",
+    "sha256": "1f11d96746795633f878f502ddfbe3f410514f95d8b2fea4d75b9b598ff80009"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_forward_backward_throughput_tokens_per_second.csv",
+    "sha256": "072859cdec81192ec3c79e763c72c81011d8b4096e50f49411ce671bccfe6209"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_forward_backward_throughput_tokens_per_second.pdf",
+    "sha256": "16dc0479ce19fd436c4df11953fc4eeec5d5c4dfa4cad17645ce704fabfdef16"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_forward_backward_throughput_tokens_per_second.png",
+    "sha256": "aa7058f8595291f7b11227817cd40be5e14a3588a063d237da763128a6f5da6a"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_forward_backward_throughput_tokens_per_second.svg",
+    "sha256": "f10fd49e4e5bb9f9d263e46f2d87086c5a0f79833a5ca150818097741998c798"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_inference_forward_latency_ms_mean.csv",
+    "sha256": "488a8e4175e5062678cd3086b6e3a12924e6e2eaec8ed7b2f63985819947001b"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_inference_forward_latency_ms_mean.pdf",
+    "sha256": "968c3736ea6c6903c68dc63ca2bad9f5110bc07e82305cc9bfbca50b08302f14"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_inference_forward_latency_ms_mean.png",
+    "sha256": "aec8e6281eee85d04058393aee4dd2912f11e7b3d43d598743a3db70f20b88f6"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_inference_forward_latency_ms_mean.svg",
+    "sha256": "892dac244c7b3ec34cd4b39c89b4ffe4f6615581dea210b05d64269240cd823c"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_inference_forward_peak_allocated_bytes.csv",
+    "sha256": "488a8e4175e5062678cd3086b6e3a12924e6e2eaec8ed7b2f63985819947001b"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_inference_forward_peak_allocated_bytes.pdf",
+    "sha256": "ac25bc192a9122f343c179d8966c24a9d9e0464b8dd9ebbf834032d253a51db5"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_inference_forward_peak_allocated_bytes.png",
+    "sha256": "999af0c0b019a1610d2ab61366402742ad9765b0f7facf4e01fcf023f24d4fef"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_inference_forward_peak_allocated_bytes.svg",
+    "sha256": "ce8cf35130a354225315610aee048e67da0e3c3f41747d9691b5cc026db6b044"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_inference_forward_peak_reserved_bytes.csv",
+    "sha256": "488a8e4175e5062678cd3086b6e3a12924e6e2eaec8ed7b2f63985819947001b"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_inference_forward_peak_reserved_bytes.pdf",
+    "sha256": "653bc4b00b89bbf73e0c8c24b51005be79f46fdabf4b21b85ed479767465f09e"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_inference_forward_peak_reserved_bytes.png",
+    "sha256": "5e75e4b61473eab3676b5b83807f63562ebdb22dc0af58a0c0bea619b814cc95"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_inference_forward_peak_reserved_bytes.svg",
+    "sha256": "54f5ea407731d746103a03db73bafa0ff97e65a71db150077cf93bfbdcca908c"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_inference_forward_throughput_tokens_per_second.csv",
+    "sha256": "488a8e4175e5062678cd3086b6e3a12924e6e2eaec8ed7b2f63985819947001b"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_inference_forward_throughput_tokens_per_second.pdf",
+    "sha256": "5323b1a2f73345519b3a7854b5d45aa73a528ceacd787bc49b9eefd8989cd7f0"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_inference_forward_throughput_tokens_per_second.png",
+    "sha256": "48c1cffe35b29b5cda62c6be7f95de909d728c7fdefd37b123baacab887c20a1"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch1_inference_forward_throughput_tokens_per_second.svg",
+    "sha256": "7c2ba2b0df3bc01beefafe5625112bd0123411881f0f3542ff753d6b191b6ba2"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_forward_backward_latency_ms_mean.csv",
+    "sha256": "1cb2ddd0b21631571d7f68f9768e4896580ea984548cb99e343c32397a0143e5"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_forward_backward_latency_ms_mean.pdf",
+    "sha256": "f48195287c1bca7bf0659cafd5bc46743ed3e038df31fe0660df30c6cfa9be3f"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_forward_backward_latency_ms_mean.png",
+    "sha256": "bd75cd40b9759bc32e7f543472d9bd9bd9b28649ee75fcf24b3b0cf53feb80fe"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_forward_backward_latency_ms_mean.svg",
+    "sha256": "07ca96f17bc5654bd3ee08dc7ace3b662467b8dc679e737780c3fdd6fab85cd3"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_forward_backward_peak_allocated_bytes.csv",
+    "sha256": "1cb2ddd0b21631571d7f68f9768e4896580ea984548cb99e343c32397a0143e5"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_forward_backward_peak_allocated_bytes.pdf",
+    "sha256": "de667a7f78bb893b881a9dbf4cbcbd37310fca6fd1f5c58c298f0db7f48bd414"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_forward_backward_peak_allocated_bytes.png",
+    "sha256": "3530f1764a6d110615c6426b54884d86917cec44df5c3ff25c22020b176b2e54"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_forward_backward_peak_allocated_bytes.svg",
+    "sha256": "9219d0d4f70292c2cef80d3c642a06a7cb84c74763976ffde24d24af82143e62"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_forward_backward_peak_reserved_bytes.csv",
+    "sha256": "1cb2ddd0b21631571d7f68f9768e4896580ea984548cb99e343c32397a0143e5"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_forward_backward_peak_reserved_bytes.pdf",
+    "sha256": "27696173f76fc5d9d85203f217d909ac9dc4b1306035f916830e60891d515d4b"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_forward_backward_peak_reserved_bytes.png",
+    "sha256": "53273a7cfa0278b9cc48dd5f17889439cd6c27a9758f812da63488e94f7e04cb"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_forward_backward_peak_reserved_bytes.svg",
+    "sha256": "76b16c76a7046c07305cdde5c5b822f13dd5319fd510a7c409db639506d01269"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_forward_backward_throughput_tokens_per_second.csv",
+    "sha256": "1cb2ddd0b21631571d7f68f9768e4896580ea984548cb99e343c32397a0143e5"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_forward_backward_throughput_tokens_per_second.pdf",
+    "sha256": "9f4365868eb76a651f60b6422a447e5905ffee6365dc926294ef102fb375dfbc"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_forward_backward_throughput_tokens_per_second.png",
+    "sha256": "20ea94f2f50ea9e1a1792d2e97d5ebdfc5f70f94575920fd7c3de70f1b6d8e52"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_forward_backward_throughput_tokens_per_second.svg",
+    "sha256": "9d2e1bb53be5e8b7e2022a0b2d5728c7a8fe81195e54dc39309eff7c09366096"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_inference_forward_latency_ms_mean.csv",
+    "sha256": "979f6cf3951cf571cd2e458685a335cba3a6e645e8f47f8363206a91373d61e9"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_inference_forward_latency_ms_mean.pdf",
+    "sha256": "48cbc34cc2751a92b68fc3c700eeaabf387c15c4eca56c8108fc922fe7976bc2"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_inference_forward_latency_ms_mean.png",
+    "sha256": "96b72fef79922f3dbe95430b964ebd31c0269d52f95095fafb20161dfaa5cd8f"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_inference_forward_latency_ms_mean.svg",
+    "sha256": "ef3af617e88891efb9116cd9b86b9ea5b51ba9c885ae709a281f195e545c637f"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_inference_forward_peak_allocated_bytes.csv",
+    "sha256": "979f6cf3951cf571cd2e458685a335cba3a6e645e8f47f8363206a91373d61e9"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_inference_forward_peak_allocated_bytes.pdf",
+    "sha256": "944b5f78e1232981eeb2032611883b024c3a4d509737132d09563c962f236aa7"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_inference_forward_peak_allocated_bytes.png",
+    "sha256": "99c01c1aebd1affa141eec0760e1a623f8826a6ff010e583c69a023470937beb"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_inference_forward_peak_allocated_bytes.svg",
+    "sha256": "b459f8f9275be7465223245cc42f259b2a958f044ea8780463330769ba7ae5fa"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_inference_forward_peak_reserved_bytes.csv",
+    "sha256": "979f6cf3951cf571cd2e458685a335cba3a6e645e8f47f8363206a91373d61e9"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_inference_forward_peak_reserved_bytes.pdf",
+    "sha256": "dc0dfc608f23573d65651efb04ef6b635ea3ca16b57134cee231d29d56bb00a5"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_inference_forward_peak_reserved_bytes.png",
+    "sha256": "82a11cfa1cd63e049f19126319693b84004c8f9ca2fae225ba831333d4c71733"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_inference_forward_peak_reserved_bytes.svg",
+    "sha256": "d349820cf8d7699470747ba5793aff6fbb31e61540d7a518bc385f1a3d9bd822"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_inference_forward_throughput_tokens_per_second.csv",
+    "sha256": "979f6cf3951cf571cd2e458685a335cba3a6e645e8f47f8363206a91373d61e9"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_inference_forward_throughput_tokens_per_second.pdf",
+    "sha256": "0a1efa39e92334c27d7d8fb5387e35a21acbe75dd99e02f1470d4eb0bf293704"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_inference_forward_throughput_tokens_per_second.png",
+    "sha256": "94d58102b9c5a3852474ef7a5d0e0fed4d4f3965717438be77d57c61d56c196d"
+  },
+  {
+    "path": "results/figures/efficiency_documented_complete_batch8_inference_forward_throughput_tokens_per_second.svg",
+    "sha256": "402223526a0fdbff9725c5b8e916f7a46be1ae696ee7b4f522f362fd99502501"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_forward_backward_latency_ms_mean.csv",
+    "sha256": "cfc156fcfc5f0742c9ee85d768931138fc132d1d3b94edf1ec450668f17e3521"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_forward_backward_latency_ms_mean.pdf",
+    "sha256": "0fae00044cab61000e66ed61720e422fb2914fe3c710bb1acfaf92702af34c78"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_forward_backward_latency_ms_mean.png",
+    "sha256": "5ed474cbd31e7a120cca2f6c12cb369cc1d1f3d4e46e5af28d532c0f09318201"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_forward_backward_latency_ms_mean.svg",
+    "sha256": "658dea57779a264c5e1332ba75b76afc5b00f99019b266a45d66ca11595e1fba"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_forward_backward_peak_allocated_bytes.csv",
+    "sha256": "cfc156fcfc5f0742c9ee85d768931138fc132d1d3b94edf1ec450668f17e3521"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_forward_backward_peak_allocated_bytes.pdf",
+    "sha256": "2bacff526ff945bffcd279d9c3a43290b352dfcd6ddd87e053f2c2bacdbe1e1d"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_forward_backward_peak_allocated_bytes.png",
+    "sha256": "3dee1a5a805f193f43c7355c97e1077a6aaf9896f29002146a2a0cbbc44d8233"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_forward_backward_peak_allocated_bytes.svg",
+    "sha256": "aa93683bb677d449ab52231a74b990e4f5831e7f74a8383a582a3c52cd00c72f"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_forward_backward_peak_reserved_bytes.csv",
+    "sha256": "cfc156fcfc5f0742c9ee85d768931138fc132d1d3b94edf1ec450668f17e3521"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_forward_backward_peak_reserved_bytes.pdf",
+    "sha256": "b2a30885cdb5f899122c5fcf4a672b909a398996635359eb6bfb580d43030fe1"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_forward_backward_peak_reserved_bytes.png",
+    "sha256": "eeb6e2cc75643348eae89e4f20fd2b70a7fb20b6dfb648e92e055a91d522884b"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_forward_backward_peak_reserved_bytes.svg",
+    "sha256": "231eec2d42cfba7a74e97fce13c84dd0202c7c3c9cfbbf744512a8e357a8507a"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_forward_backward_throughput_tokens_per_second.csv",
+    "sha256": "cfc156fcfc5f0742c9ee85d768931138fc132d1d3b94edf1ec450668f17e3521"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_forward_backward_throughput_tokens_per_second.pdf",
+    "sha256": "247f74cb8382f5d21746d2b76e0b9fa4f673a58233876aea302d415019c8a01f"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_forward_backward_throughput_tokens_per_second.png",
+    "sha256": "e2ba4ff0d29b1f2977df0d6ce6ee4ce50f30aad0a8094c9c6cc2f52ed81c878f"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_forward_backward_throughput_tokens_per_second.svg",
+    "sha256": "8c254b7e5aea4c24771dba454b227c1cfa91ccf16a32d47198266952785ecbec"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_inference_forward_latency_ms_mean.csv",
+    "sha256": "6e824ec050f3a529bbc829fa5679553a0eb73eae790ea2cbb11d5ca850541c92"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_inference_forward_latency_ms_mean.pdf",
+    "sha256": "9549e4487e5dec1c1b1994937835b48ffac162d76b8615207272e21173298a5f"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_inference_forward_latency_ms_mean.png",
+    "sha256": "cffd6876da605b0e1daebec374d92eabbbf1ac16132843296f4bf04a60cd2478"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_inference_forward_latency_ms_mean.svg",
+    "sha256": "74fd6d4c8e5ff34ec3fcf84eeac73f274ca1a3b6b93bcb6d917e3bf80af6a05f"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_inference_forward_peak_allocated_bytes.csv",
+    "sha256": "6e824ec050f3a529bbc829fa5679553a0eb73eae790ea2cbb11d5ca850541c92"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_inference_forward_peak_allocated_bytes.pdf",
+    "sha256": "1711da036bfca1b5e648147bad13e96fefc145e55a5878d0b9d3ac8f6f05cc15"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_inference_forward_peak_allocated_bytes.png",
+    "sha256": "a5a40b560f068d091fdcb2307bbcd9f356d4868f922c38616f88f864339ad723"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_inference_forward_peak_allocated_bytes.svg",
+    "sha256": "fd133f1e25c7e09edd4f4d7c07f309d143cf7ac3effab7277a4a3871fdbdf6ac"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_inference_forward_peak_reserved_bytes.csv",
+    "sha256": "6e824ec050f3a529bbc829fa5679553a0eb73eae790ea2cbb11d5ca850541c92"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_inference_forward_peak_reserved_bytes.pdf",
+    "sha256": "3efe9c0aac321f7353f95ac97fc75791e3580d9da3eb090290004f9954a6882c"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_inference_forward_peak_reserved_bytes.png",
+    "sha256": "53cf6f07c341e754d7928ba80c9de489e40350303170f825776bb4ebeacf0007"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_inference_forward_peak_reserved_bytes.svg",
+    "sha256": "3fa350682a26b03c45b133221a727ad356e5dbaef030b79a22fc6cf3bca328b1"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_inference_forward_throughput_tokens_per_second.csv",
+    "sha256": "6e824ec050f3a529bbc829fa5679553a0eb73eae790ea2cbb11d5ca850541c92"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_inference_forward_throughput_tokens_per_second.pdf",
+    "sha256": "b7f5df4e2d14784401c1bab2aa9796e4b022b6c8a30c9862bb449a5364f4c5e7"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_inference_forward_throughput_tokens_per_second.png",
+    "sha256": "a49b68b4ac7b53d8b60915a73ba45c58b9bf9b3a120adaa8b7ea71e36e049f83"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch1_inference_forward_throughput_tokens_per_second.svg",
+    "sha256": "dcf6e0ca0787a89b5e03f6fcda2e04cbe54080491e6051b23d7f18e75052651a"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_forward_backward_latency_ms_mean.csv",
+    "sha256": "48257f3e0dcdaafefea2cf52093493f9390c5c616cac522496506f36185a2c3a"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_forward_backward_latency_ms_mean.pdf",
+    "sha256": "27db066ac7e138dce003931f5327cf34f80da143865a8c8362c612f11258e875"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_forward_backward_latency_ms_mean.png",
+    "sha256": "d2ae475cd730b06aadf26d640dab232f61bf103e2898f808e78520aa4d30819a"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_forward_backward_latency_ms_mean.svg",
+    "sha256": "d6f86550fc17773d830a50ca7c829129a53c87f168c7c4718fed99240fc25887"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_forward_backward_peak_allocated_bytes.csv",
+    "sha256": "48257f3e0dcdaafefea2cf52093493f9390c5c616cac522496506f36185a2c3a"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_forward_backward_peak_allocated_bytes.pdf",
+    "sha256": "a736b947c5a41bc0903140517d34eda5bdf85d2c21b4b45258f9dfd8b91663d8"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_forward_backward_peak_allocated_bytes.png",
+    "sha256": "1c23b261b9cd5f80a0cfe1f911ccb71abaa5be1337ccc6fd29ed8a723d4c9459"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_forward_backward_peak_allocated_bytes.svg",
+    "sha256": "ddf9fb3d71f23640a3ea7c88b5244bda7dd46e0f38c40fcb9c7ec03940b24a43"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_forward_backward_peak_reserved_bytes.csv",
+    "sha256": "48257f3e0dcdaafefea2cf52093493f9390c5c616cac522496506f36185a2c3a"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_forward_backward_peak_reserved_bytes.pdf",
+    "sha256": "4fbc2b9f9840a88c00d1432bc36f6667a94a3a9d9e6c46cb539a7a7ab1cb1aa3"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_forward_backward_peak_reserved_bytes.png",
+    "sha256": "faf6abdb0bdcdbea432ec90f0f58be12613e1b2a3f3b2877f3c1d1d049310665"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_forward_backward_peak_reserved_bytes.svg",
+    "sha256": "396b32bbd6e2b367f23fef7a012d220deca59fefb252fde1f0eb06469c9e8237"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_forward_backward_throughput_tokens_per_second.csv",
+    "sha256": "48257f3e0dcdaafefea2cf52093493f9390c5c616cac522496506f36185a2c3a"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_forward_backward_throughput_tokens_per_second.pdf",
+    "sha256": "8cab25f23f33c389c972ded050eac8a1a9dc343bae544faea5b0865497445e02"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_forward_backward_throughput_tokens_per_second.png",
+    "sha256": "b629ade2d267c00944650e798b00c38016a770eba4a5da8623c610b051c11bb7"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_forward_backward_throughput_tokens_per_second.svg",
+    "sha256": "28f6647b02095afc6d15fefae50f86b0575883a3d90f561b942148ce63e0444d"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_inference_forward_latency_ms_mean.csv",
+    "sha256": "efcab6cc24a4874393e1e4d679ff7af663a5670005a48299b32bd557fb5b5726"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_inference_forward_latency_ms_mean.pdf",
+    "sha256": "656abb7be79697c9de57e549af603b570091d691d9db9b1eabeb057ebece8956"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_inference_forward_latency_ms_mean.png",
+    "sha256": "31b9924ff252737c54cefa44410217578b3e1877fdd98aeb6913d244d971ccc1"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_inference_forward_latency_ms_mean.svg",
+    "sha256": "52846c421cfcee54db47f5283896d56c1213cc04be53a6c4e045ef46420fa374"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_inference_forward_peak_allocated_bytes.csv",
+    "sha256": "efcab6cc24a4874393e1e4d679ff7af663a5670005a48299b32bd557fb5b5726"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_inference_forward_peak_allocated_bytes.pdf",
+    "sha256": "ec5b686cef1e26e287ab7907241a377d5b5dfac4cf7f386c2baba87d408e545f"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_inference_forward_peak_allocated_bytes.png",
+    "sha256": "55f47ca32a4995cea4a67918e259575467ffc9067c631783e35365e32c1c3834"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_inference_forward_peak_allocated_bytes.svg",
+    "sha256": "519ada31dde633c21e7477b0323262937c5171e3e8fdbf28ede2107ea4b4bd2a"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_inference_forward_peak_reserved_bytes.csv",
+    "sha256": "efcab6cc24a4874393e1e4d679ff7af663a5670005a48299b32bd557fb5b5726"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_inference_forward_peak_reserved_bytes.pdf",
+    "sha256": "bd2d45820d1ee8bf804f95c05908824ad6a1d74f587e0176238fae4e0891e879"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_inference_forward_peak_reserved_bytes.png",
+    "sha256": "a334a04983d372769bde0237c4653c5e0063e2792ba87e45798862897cdfde3e"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_inference_forward_peak_reserved_bytes.svg",
+    "sha256": "0def85b3a97d5a108013f69f24df842a2a6ef6df3cb2248222b902f3f39cc099"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_inference_forward_throughput_tokens_per_second.csv",
+    "sha256": "efcab6cc24a4874393e1e4d679ff7af663a5670005a48299b32bd557fb5b5726"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_inference_forward_throughput_tokens_per_second.pdf",
+    "sha256": "221d848f787f1865a1f041afd11269d1e61d945623fd01ee2f01b6aa05df140d"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_inference_forward_throughput_tokens_per_second.png",
+    "sha256": "4f20b2a5852ad181be168ee0bda873625d116365e1c1c892b8d145ee9ff4d005"
+  },
+  {
+    "path": "results/figures/efficiency_equal_attention_batch8_inference_forward_throughput_tokens_per_second.svg",
+    "sha256": "0cda0d88eacb61daa7c6e769ff09f5c8624ef702a219a62f22e4a7b4d722f3c2"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_forward_backward_latency_ms_mean.csv",
+    "sha256": "035153510ce18ea3b5f6dbb17f1b0723b81d41c8a0c39bcb52eff50a400fd97f"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_forward_backward_latency_ms_mean.pdf",
+    "sha256": "6193efc4b2f21f6fda600b0f7a7ea993ebf9d1b4f04429de685935c1dd9f6fb4"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_forward_backward_latency_ms_mean.png",
+    "sha256": "134656ad8240b0446e04648984f06990932d5fbfe850a6f584cb7b0eae06f105"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_forward_backward_latency_ms_mean.svg",
+    "sha256": "a90d99cdadc91c3d3aee4b1e66b652bb70a6437395c6ad74dae9873746f2032f"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_forward_backward_peak_allocated_bytes.csv",
+    "sha256": "035153510ce18ea3b5f6dbb17f1b0723b81d41c8a0c39bcb52eff50a400fd97f"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_forward_backward_peak_allocated_bytes.pdf",
+    "sha256": "bbe2178bd56e92248adf9de7b18df584d76a6c78936a8147658e1597ab95dd96"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_forward_backward_peak_allocated_bytes.png",
+    "sha256": "8ae52d646ad15ced44d7237efa24842e2c935d5dac5962d044fb475c618e7a63"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_forward_backward_peak_allocated_bytes.svg",
+    "sha256": "74ead744436b4f0af199d30205e55b114b10f0b044958eca74a918f66c2bd6f0"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_forward_backward_peak_reserved_bytes.csv",
+    "sha256": "035153510ce18ea3b5f6dbb17f1b0723b81d41c8a0c39bcb52eff50a400fd97f"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_forward_backward_peak_reserved_bytes.pdf",
+    "sha256": "ecdbf3190acd1ede48af975e474d2b7a4ac41201e7e08218af292fdd4c34a353"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_forward_backward_peak_reserved_bytes.png",
+    "sha256": "d7b317b295cd8354a8279122634de06924eccf581956729c8223b5c54bb33a29"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_forward_backward_peak_reserved_bytes.svg",
+    "sha256": "e3110717d9b3aaac11d800ef83623916a83851a379f772ad49705bd225eb4866"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_forward_backward_throughput_tokens_per_second.csv",
+    "sha256": "035153510ce18ea3b5f6dbb17f1b0723b81d41c8a0c39bcb52eff50a400fd97f"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_forward_backward_throughput_tokens_per_second.pdf",
+    "sha256": "b7fe6f9d9dff428cf5597edc0f4e024fab09857c24f9e78f75a72488156f7e17"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_forward_backward_throughput_tokens_per_second.png",
+    "sha256": "c59264c8bf43ac4b25fd7d25f483e90ec58c30b06d2b0401097f0961e8f9bbe0"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_forward_backward_throughput_tokens_per_second.svg",
+    "sha256": "7b0d10323ad165dfbea1e74c1624509fbd4d9d4fa8953f2a08314cb5379bde07"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_inference_forward_latency_ms_mean.csv",
+    "sha256": "df2f13aea09ea2bde64fddda72ff2b21e41c8e847af08e9a0e2687975d818cfb"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_inference_forward_latency_ms_mean.pdf",
+    "sha256": "a856190ac379dafe1b2d7c4a5b4b81c0c78054984829abc5432d086df61a9432"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_inference_forward_latency_ms_mean.png",
+    "sha256": "edd350e728a1c7a5e0b578f3e5aeb13bb4cb5bfbda491b09cbb6629c835425d3"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_inference_forward_latency_ms_mean.svg",
+    "sha256": "57e2c08c224bd723158f8c704a68fbb8784066377bd13176a0952eab6773cd4a"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_inference_forward_peak_allocated_bytes.csv",
+    "sha256": "df2f13aea09ea2bde64fddda72ff2b21e41c8e847af08e9a0e2687975d818cfb"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_inference_forward_peak_allocated_bytes.pdf",
+    "sha256": "c54b2d68e54f280ea7fe241685e0665d4a34f4692d892bfb1dabdc96918c4680"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_inference_forward_peak_allocated_bytes.png",
+    "sha256": "4f3d74c0213c820c50bdc3726652b76933aba0dd4e72b39690ea2eec421c1324"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_inference_forward_peak_allocated_bytes.svg",
+    "sha256": "6f3930060e3104325e41ba694b9dfd4aff8068bc037352eeee262ebcc1cce3dd"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_inference_forward_peak_reserved_bytes.csv",
+    "sha256": "df2f13aea09ea2bde64fddda72ff2b21e41c8e847af08e9a0e2687975d818cfb"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_inference_forward_peak_reserved_bytes.pdf",
+    "sha256": "09d2850b666c47998cc7b69772c81d4949b0b300d16467e7fb0ea664837e75a6"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_inference_forward_peak_reserved_bytes.png",
+    "sha256": "cad08a54735f4976fe259deaa621bdef2f3950281bb1418b43b3700ab3be233a"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_inference_forward_peak_reserved_bytes.svg",
+    "sha256": "1ff0576b0bdf01008b976753fa1aec86eda24e73e2ff4a4590447fb412ce66c4"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_inference_forward_throughput_tokens_per_second.csv",
+    "sha256": "df2f13aea09ea2bde64fddda72ff2b21e41c8e847af08e9a0e2687975d818cfb"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_inference_forward_throughput_tokens_per_second.pdf",
+    "sha256": "0950ffdeb4a21c50e6676f96843540a2b476e539a9c597dc6d549b98da1761b2"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_inference_forward_throughput_tokens_per_second.png",
+    "sha256": "c7acdf17121f5c6f351899580038394529479ab9686e96d95684e5331b20b9ed"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch1_inference_forward_throughput_tokens_per_second.svg",
+    "sha256": "9d891e5ddf6033317ad86a1c917a5346b3116c2ff05939cf678d679fd6162457"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_forward_backward_latency_ms_mean.csv",
+    "sha256": "99d43b3d6e66f8b214fdcccb6e77e258d2a8342b4e51a0072da4220b64e8b1e3"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_forward_backward_latency_ms_mean.pdf",
+    "sha256": "0405c9ec9222a7994a6ae97b2a8efb3f95ac4cb728456a2bc076aba580d7f31d"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_forward_backward_latency_ms_mean.png",
+    "sha256": "1e1d2d0716d37edf1d7a92fff3f4aaab4e66480065c78b10708092d880e80a72"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_forward_backward_latency_ms_mean.svg",
+    "sha256": "2267645250d56f02cdd784efd15c7d8cb6b760d0ae2a81b5093164554ee21f03"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_forward_backward_peak_allocated_bytes.csv",
+    "sha256": "99d43b3d6e66f8b214fdcccb6e77e258d2a8342b4e51a0072da4220b64e8b1e3"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_forward_backward_peak_allocated_bytes.pdf",
+    "sha256": "0bb5524a53e337e1015ba7395bb75ba7e24643c5e810f70047248fc72332a1ba"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_forward_backward_peak_allocated_bytes.png",
+    "sha256": "676c80421ad9aa2d753e41e244e9b10a2cb9c63ac4cbe5b1c382bc3be6087de7"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_forward_backward_peak_allocated_bytes.svg",
+    "sha256": "46be13734cb62a74b4abb1ed227c65e1c6cf0b1f6169fd66e9fdc12246d53102"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_forward_backward_peak_reserved_bytes.csv",
+    "sha256": "99d43b3d6e66f8b214fdcccb6e77e258d2a8342b4e51a0072da4220b64e8b1e3"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_forward_backward_peak_reserved_bytes.pdf",
+    "sha256": "9a0c7e33bf7b22f1d653b8d3405a708faae5f121d2c3e7eaebe37c6e96897562"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_forward_backward_peak_reserved_bytes.png",
+    "sha256": "bf6e537c7563b06970d5d978ac0a61a7312d3dff945baa9a3cd43f5b7d45d197"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_forward_backward_peak_reserved_bytes.svg",
+    "sha256": "52c7e64ee763d781c99808c4ba5c706501e89ee88e3037114a8a5b23f6bee319"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_forward_backward_throughput_tokens_per_second.csv",
+    "sha256": "99d43b3d6e66f8b214fdcccb6e77e258d2a8342b4e51a0072da4220b64e8b1e3"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_forward_backward_throughput_tokens_per_second.pdf",
+    "sha256": "1fcef2bc80db9c3c4e67beed3d172e796072a31a03d9c3c3e9e56d8f72ca81d0"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_forward_backward_throughput_tokens_per_second.png",
+    "sha256": "c0fb8e7c55014a52e13b2e1b0bea0848434d38e3e8952cc0f8ac43ebf207019e"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_forward_backward_throughput_tokens_per_second.svg",
+    "sha256": "c62f190e1224de86bed78d238637e9dc049af723b59be12a33bf7e3cf0466370"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_inference_forward_latency_ms_mean.csv",
+    "sha256": "4b52cd5eb96973e77f1255c567b4c5a972269ea4544cf2304d9973af73241ddf"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_inference_forward_latency_ms_mean.pdf",
+    "sha256": "56723290009afae0ad6fb10ce1cca28969b06adcac3f3bec26a992e3b79d5418"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_inference_forward_latency_ms_mean.png",
+    "sha256": "4ffd231103b4b0354fee3a644b33d2b52671404f0f1af1a634faa0fed73087f8"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_inference_forward_latency_ms_mean.svg",
+    "sha256": "383b77b9cbb5e74f2e6aeaa710213f49c5c5047d9a5829f85c52f65421a30887"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_inference_forward_peak_allocated_bytes.csv",
+    "sha256": "4b52cd5eb96973e77f1255c567b4c5a972269ea4544cf2304d9973af73241ddf"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_inference_forward_peak_allocated_bytes.pdf",
+    "sha256": "61c698ba6cfe118b9401c61e38731126e4cef7c7165f1b34f80ff45edd378cc7"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_inference_forward_peak_allocated_bytes.png",
+    "sha256": "0fcdf4c3d5d677c0a353953208cfd8cd65485a547499c51b792dba62da6a2f0a"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_inference_forward_peak_allocated_bytes.svg",
+    "sha256": "a96cb61d52200b7b18e7dca579f4e7b2faa6fbb9943eec81748739c9b074b024"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_inference_forward_peak_reserved_bytes.csv",
+    "sha256": "4b52cd5eb96973e77f1255c567b4c5a972269ea4544cf2304d9973af73241ddf"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_inference_forward_peak_reserved_bytes.pdf",
+    "sha256": "fa7e07f5d112e01edc400a46dc46e190729e2e3a070797f20615625bc9e267c4"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_inference_forward_peak_reserved_bytes.png",
+    "sha256": "5f392a065f6340d9bc89346d68eda94f8534eb9192a5bad5fefcb590ea54f0ed"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_inference_forward_peak_reserved_bytes.svg",
+    "sha256": "fab6eca85cc00592b684d679389c8dd02d295129c5f117563c34e2de7ff63255"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_inference_forward_throughput_tokens_per_second.csv",
+    "sha256": "4b52cd5eb96973e77f1255c567b4c5a972269ea4544cf2304d9973af73241ddf"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_inference_forward_throughput_tokens_per_second.pdf",
+    "sha256": "99bcef5d072612277086890aa0e235f509916ed980c601b10f0ba541a894a53c"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_inference_forward_throughput_tokens_per_second.png",
+    "sha256": "49652c271a83d7cbd84cea26982b40d45727677e503d49cbd9575a74249f2ed1"
+  },
+  {
+    "path": "results/figures/efficiency_equal_complete_batch8_inference_forward_throughput_tokens_per_second.svg",
+    "sha256": "e654b15b4bc431afadd3cbfa464c6eff01a00984a0306f77c7c8ff1d653b285c"
   },
   {
     "path": "results/figures/engineering_step_latency_ASSIST2009.csv",
@@ -488,7 +1284,15 @@
     "sha256": "b5e0c6229eef72216fce2dc3e508005df1b4def234939d822ba1580046b02d83"
   },
   {
+    "path": "experiments/efficiency/environment.json",
+    "sha256": "343b58dcacda1ecca73dc7c0c919463e5d7ac585206505b6fdf74dc15b65be67"
+  },
+  {
+    "path": "experiments/efficiency/raw_timings.json",
+    "sha256": "222179f3b047762388cb1367a74b59e9a89b2de22e08e8679a9b07746ef7293e"
+  },
+  {
     "path": "reports/PAPER_TRACEABILITY.csv",
-    "sha256": "0b46f92f02b6517d741ce30fc4e93ef629e663e98ed85f2fd7a60b9f3d8d06d1"
+    "sha256": "6598d69232388b2c61327854d7b654248a1053ccf119e7aa2fa4cd5c2f9b5691"
   }
 ]
