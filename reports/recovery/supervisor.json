@@ -1,8 +1,8 @@
 {
-  "observed_utc": "2026-10-14T17:58:17.037539+00:00",
-  "supervisor_pid": 802503,
-  "completed": 691,
-  "remaining": 266,
+  "observed_utc": "2026-10-14T18:04:02.713911+00:00",
+  "supervisor_pid": 818850,
+  "completed": 692,
+  "remaining": 265,
   "processes": [
     {
       "pid": 49211,
@@ -30,11 +30,6 @@
       "watchdog": false
     },
     {
-      "pid": 203682,
-      "module": "scripts.active_recovery",
-      "watchdog": false
-    },
-    {
       "pid": 212401,
       "module": "scripts.preserve",
       "watchdog": false
@@ -45,18 +40,18 @@
       "watchdog": false
     },
     {
-      "pid": 802503,
+      "pid": 818712,
+      "module": "scripts.active_recovery",
+      "watchdog": false
+    },
+    {
+      "pid": 818850,
       "module": "scripts.recover",
       "watchdog": true
     },
     {
-      "pid": 814450,
+      "pid": 820358,
       "module": "scripts.run",
-      "watchdog": false
-    },
-    {
-      "pid": 817043,
-      "module": "scripts.verify_light_grid_inference",
       "watchdog": false
     }
   ],

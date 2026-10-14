@@ -1,13 +1,13 @@
 {
-  "verified_utc": "2026-10-14T17:56:38.767009+00:00",
+  "verified_utc": "2026-10-14T18:02:13.399649+00:00",
   "verified": true,
   "completed_configurations": 108,
   "fresh_training_runs": 105,
   "all_36_unique_per_dataset": true,
   "seed": 42,
   "selection": "All 36 prespecified candidates; validation AUC descending, run ID lexical tie-break; no test selection",
-  "validation_checkpoint_inference_recomputed": false,
-  "scope": "Saved checkpoint, data/split hashes and complete table coverage verified on CPU; final independent inference remains scheduled",
+  "validation_checkpoint_inference_recomputed": true,
+  "scope": "Saved checkpoint, data/split hashes and complete table coverage verified; independent original-device validation proofs are linked when available",
   "reproduce_command": "CUDA_VISIBLE_DEVICES= python -m scripts.light_grid_results",
   "runs": [
     {
@@ -17,7 +17,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.7888340398954901,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-d6bf5e5ea8bb",
@@ -26,7 +27,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.7876098971590952,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-f3c14818b7d3",
@@ -35,7 +37,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.7897005705982021,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-e58e3f7d95a8",
@@ -44,7 +47,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.7887282989789786,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-15db10686e87",
@@ -53,7 +57,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8005345487311932,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-57249c130ef5",
@@ -62,7 +67,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.7995744470155581,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-893445b0fab3",
@@ -71,7 +77,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8010172995483041,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-9337e03ea1cc",
@@ -80,7 +87,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8001869598462941,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-e70b10a66385",
@@ -89,7 +97,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8071814973647138,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-ed1d54fdc077",
@@ -98,7 +107,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8070491954907815,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-69acf3f16996",
@@ -107,7 +117,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8075729655726229,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-3366bcbcf17e",
@@ -116,7 +127,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8079421416334344,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-feeec30289e8",
@@ -125,7 +137,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.797396782691368,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-cc537d7e1c4b",
@@ -134,7 +147,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.796752148588057,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-0d79ab6430b7",
@@ -143,7 +157,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.7974030003646264,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-0ecd7ce70f64",
@@ -152,7 +167,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.7968802759850837,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-6c8a4bab15f1",
@@ -161,7 +177,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8036210134613745,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-a697ea4034ab",
@@ -170,7 +187,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.803010614056286,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-fbb9d4e5119c",
@@ -179,7 +197,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8040184083075823,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-1c1163efe639",
@@ -188,7 +207,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8038664338987708,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-fea98a03a2bd",
@@ -197,7 +217,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8071048051891225,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-1070ef8912e9",
@@ -206,7 +227,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8078423550303251,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-21f5ed213eb1",
@@ -215,7 +237,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8077690859376998,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-06884c8943b2",
@@ -224,7 +247,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8081265101972933,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-1ea403e8809d",
@@ -233,7 +257,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8015221431327346,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-c18b6004e26c",
@@ -242,7 +267,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8011056265754822,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-23f0fff3ef23",
@@ -251,7 +277,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8010529757325641,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-3a9d31d0a0d5",
@@ -260,7 +287,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8003651056780048,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-4faf97b35b89",
@@ -269,7 +297,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8035926964739979,
       "reused_training_run": "Algebra2005-LightSAKT-primary-42-dca5e1830530",
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-e807df10d3a6",
@@ -278,7 +307,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.80248097387668,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-09240f4e7b64",
@@ -287,7 +317,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8046320221908241,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-152abd80a946",
@@ -296,7 +327,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8038082855304494,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-8930ef5a2a35",
@@ -305,7 +337,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8074747156817137,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-d377782dabe8",
@@ -314,7 +347,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8071333007255543,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-284988a0a2ec",
@@ -323,7 +357,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8073669916803645,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "Algebra2005-LightSAKT-grid-42-57c33f26d242",
@@ -332,7 +367,8 @@
       "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
       "validation_auc": 0.8076729220949164,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-8488d393eb74",
@@ -341,7 +377,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7438014786804079,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-a22be35657b2",
@@ -350,7 +387,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7432857011556816,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-d61c17bff6d2",
@@ -359,7 +397,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7447147679445769,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-bc44304c7e6a",
@@ -368,7 +407,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7440409585401313,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-1dabce6d364e",
@@ -377,7 +417,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7501942319766428,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-cddb73383e58",
@@ -386,7 +427,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7502720602453645,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-ee695dce7311",
@@ -395,7 +437,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7497016140391084,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-dbc981c680af",
@@ -404,7 +447,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7497246453100717,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-78e7030a9c88",
@@ -413,7 +457,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7504941457958828,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-548bf9305dcd",
@@ -422,7 +467,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7507320440834879,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-4462e183cff2",
@@ -431,7 +477,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7505079442665922,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-ce7ac2d04d8c",
@@ -440,7 +487,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.750190955436669,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-5225105f3bce",
@@ -449,7 +497,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7454758383525868,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-cbb203a49770",
@@ -458,7 +507,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7449074481900846,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-3c973f2400ea",
@@ -467,7 +517,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.74568479983862,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-2052f5169d22",
@@ -476,7 +527,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7453976639284581,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-f08e9494d270",
@@ -485,7 +537,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7508035371114405,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-7ec15e323ab3",
@@ -494,7 +547,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7504082694139469,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-e4d9677fea31",
@@ -503,7 +557,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7506402353140584,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-519f6ddfded5",
@@ -512,7 +567,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7500682851222407,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-657c24e26014",
@@ -521,7 +577,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7492756101287459,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-5cac52478aa9",
@@ -530,7 +587,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.750502334161719,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-e8619daa8cf3",
@@ -539,7 +597,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.750433947580135,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-1d03fd716dc4",
@@ -548,7 +607,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7507321037654546,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-cbc759c49f4b",
@@ -557,7 +617,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7471094382255836,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-119c315c04ba",
@@ -566,7 +627,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7469472435286844,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-bc7909e3ec64",
@@ -575,7 +637,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7459642457273681,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-da59e9e82672",
@@ -584,7 +647,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7451976517533367,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-6a5b69a81950",
@@ -593,7 +657,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7480939459806583,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-876374e581c1",
@@ -602,7 +667,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7481846685382931,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-dc60492cb0c6",
@@ -611,7 +677,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7491933952354692,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-54eb65d6bac2",
@@ -620,7 +687,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7488495286318266,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-48c411be10b6",
@@ -629,7 +697,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7484366666905395,
       "reused_training_run": "ASSIST2009-LightSAKT-primary-42-440d619b7547",
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-398feff49fe4",
@@ -638,7 +707,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7488550969593232,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-5367c646f7fc",
@@ -647,7 +717,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.7480048139474369,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2009-LightSAKT-grid-42-3d82f7b69e9e",
@@ -656,7 +727,8 @@
       "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
       "validation_auc": 0.748093757982463,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-397bcc602116",
@@ -665,7 +737,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7266495588679057,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-a0f261d0be90",
@@ -674,7 +747,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7261479478735434,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-a628603467cc",
@@ -683,7 +757,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7268694860068403,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-b7a847dd2b34",
@@ -692,7 +767,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7261632853468085,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-9349926da302",
@@ -701,7 +777,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7293926135569984,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-3de8a446858c",
@@ -710,7 +787,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7291257207213261,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-f53e52b77c73",
@@ -719,7 +797,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7278121751970266,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-081855fbb02d",
@@ -728,7 +807,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7273733299332088,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-b0aeca4e3190",
@@ -737,7 +817,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7296967037301432,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-5d0c2dacb4af",
@@ -746,7 +827,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7291934493529867,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-64640d03b0d3",
@@ -755,7 +837,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7300652943795162,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-6cbd6e38b46e",
@@ -764,7 +847,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7298726008516037,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-39138de678ce",
@@ -773,7 +857,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7274556036518154,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-131e9e879505",
@@ -782,7 +867,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7264890612775221,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-7f6c59d24a33",
@@ -791,7 +877,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7267761947282013,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-355019985ef3",
@@ -800,7 +887,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7267506682816132,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-1512d57add2f",
@@ -809,7 +897,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7291345306321646,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-a5627c7ce7bc",
@@ -818,7 +907,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7284570587167318,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-b529d6901c60",
@@ -827,7 +917,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7285315257924575,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-ca3f37a65ba6",
@@ -836,7 +927,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7276588516046092,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-f8bde96560d6",
@@ -845,7 +937,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7290596257041001,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-37c34205659f",
@@ -854,7 +947,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7290327403063555,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-b95f4b0e409b",
@@ -863,7 +957,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7296634970547351,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-445182637f37",
@@ -872,7 +967,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7296578773751108,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-8a618101270c",
@@ -881,7 +977,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7265228270478458,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-6aad389a9ff2",
@@ -890,7 +987,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7270037159045504,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-a540855228ac",
@@ -899,7 +997,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7259875232585496,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-e1f81f69cd99",
@@ -908,7 +1007,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7257836587499034,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-b39fa45105b4",
@@ -917,7 +1017,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7281435351815837,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-6bd53e61d1a0",
@@ -926,7 +1027,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7279616954500336,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-13899ec8cbe4",
@@ -935,7 +1037,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7269515327547463,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-9b758c5a3448",
@@ -944,7 +1047,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7264018143148309,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-08c3ea752993",
@@ -953,7 +1057,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7257955008743797,
       "reused_training_run": "ASSIST2015-LightSAKT-primary-42-301d9bff60e9",
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-61850ea7cf03",
@@ -962,7 +1067,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7254892294840718,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-a69da8e923df",
@@ -971,7 +1077,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7260727062243891,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     },
     {
       "run_id": "ASSIST2015-LightSAKT-grid-42-3769d3cd7356",
@@ -980,7 +1087,8 @@
       "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
       "validation_auc": 0.7253306097171046,
       "reused_training_run": null,
-      "storage_verified": true
+      "storage_verified": true,
+      "validation_checkpoint_inference_recomputed": true
     }
   ]
 }

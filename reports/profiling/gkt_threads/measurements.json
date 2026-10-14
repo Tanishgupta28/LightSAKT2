@@ -64,11 +64,11 @@
       }
     ],
     "timed_steps": [
-      0.31344755698228255,
-      0.31481351298862137,
-      0.31183225600398146
+      0.4091402619960718,
+      0.406390146992635,
+      0.402570286008995
     ],
-    "mean_step_seconds": 0.31336444199162844,
+    "mean_step_seconds": 0.40603356499923393,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
@@ -139,15 +139,15 @@
       }
     ],
     "timed_steps": [
-      0.31231976399431005,
-      0.3143124080088455,
-      0.3127007769944612
+      0.33950016100425273,
+      0.34375226800329983,
+      0.36308505400666036
     ],
-    "mean_step_seconds": 0.3131109829992056,
+    "mean_step_seconds": 0.34877916100473766,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 1.000809486112544
+    "speedup_against_four_threads": 1.1641566079508934
   },
   {
     "case": "ASSIST2009-GKT-primary",
@@ -214,15 +214,15 @@
       }
     ],
     "timed_steps": [
-      0.3155064579914324,
-      0.3115430870093405,
-      0.3151962579868268
+      0.3213048850011546,
+      0.34955086998525076,
+      0.3201182770135347
     ],
-    "mean_step_seconds": 0.3140819343291999,
+    "mean_step_seconds": 0.33032467733331333,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 0.99771558864376
+    "speedup_against_four_threads": 1.2291953731011345
   },
   {
     "case": "ASSIST2009-GKT_MHA-primary",
@@ -289,11 +289,11 @@
       }
     ],
     "timed_steps": [
-      0.3233962429803796,
-      0.32578888599528,
-      0.32484358601504937
+      0.3230400100001134,
+      0.3290521149756387,
+      0.33155091901426204
     ],
-    "mean_step_seconds": 0.32467623833023634,
+    "mean_step_seconds": 0.327881014663338,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
@@ -364,15 +364,15 @@
       }
     ],
     "timed_steps": [
-      0.32457940600579605,
-      0.32522927099489607,
-      0.3274884419806767
+      0.326553581020562,
+      0.3273858540051151,
+      0.3324132449924946
     ],
-    "mean_step_seconds": 0.32576570632712293,
+    "mean_step_seconds": 0.3287842266727239,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 0.9966556700851974
+    "speedup_against_four_threads": 0.9972528730513434
   },
   {
     "case": "ASSIST2009-GKT_MHA-primary",
@@ -439,15 +439,15 @@
       }
     ],
     "timed_steps": [
-      0.35298394900746644,
-      0.46456682597636245,
-      0.4474907819821965
+      0.32821460100240074,
+      0.3248221910034772,
+      0.3401847709901631
     ],
-    "mean_step_seconds": 0.42168051898867515,
+    "mean_step_seconds": 0.3310738543320137,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 0.7699578797448692
+    "speedup_against_four_threads": 0.9903561104965004
   },
   {
     "case": "ASSIST2015-GKT-primary",
@@ -514,11 +514,11 @@
       }
     ],
     "timed_steps": [
-      0.32050055798026733,
-      0.313924770016456,
-      0.317412896984024
+      0.3112818730005529,
+      0.3146853670186829,
+      0.36969838000368327
     ],
-    "mean_step_seconds": 0.31727940832691576,
+    "mean_step_seconds": 0.3318885400076397,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
@@ -589,15 +589,15 @@
       }
     ],
     "timed_steps": [
-      0.3157563109998591,
-      0.3153978220070712,
-      0.3142122759891208
+      0.3122996989986859,
+      0.32379916799254715,
+      0.3114471040025819
     ],
-    "mean_step_seconds": 0.3151221363320171,
+    "mean_step_seconds": 0.31584865699793835,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 1.0068458281605002
+    "speedup_against_four_threads": 1.050783445344224
   },
   {
     "case": "ASSIST2015-GKT-primary",
@@ -664,15 +664,15 @@
       }
     ],
     "timed_steps": [
-      0.3212814489961602,
-      0.3147240770049393,
-      0.3145838280033786
+      0.31219045000034384,
+      0.3360867360024713,
+      0.3207490860077087
     ],
-    "mean_step_seconds": 0.3168631180014927,
+    "mean_step_seconds": 0.32300875733684126,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 1.0013137859907733
+    "speedup_against_four_threads": 1.0274908418707
   },
   {
     "case": "ASSIST2015-GKT_MHA-primary",
@@ -739,11 +739,11 @@
       }
     ],
     "timed_steps": [
-      0.3235685029940214,
-      0.32692745700478554,
-      0.3259543019812554
+      0.3369166500051506,
+      0.32507542602252215,
+      0.32090594997862354
     ],
-    "mean_step_seconds": 0.3254834206600208,
+    "mean_step_seconds": 0.3276326753354321,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
@@ -814,15 +814,15 @@
       }
     ],
     "timed_steps": [
-      0.32886173398583196,
-      0.3274856680072844,
-      0.33065345499198884
+      0.3222283630166203,
+      0.32558456499828026,
+      0.3276427520031575
     ],
-    "mean_step_seconds": 0.32900028566170175,
+    "mean_step_seconds": 0.3251518933393527,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 0.9893104500058179
+    "speedup_against_four_threads": 1.0076296095667827
   },
   {
     "case": "ASSIST2015-GKT_MHA-primary",
@@ -889,15 +889,15 @@
       }
     ],
     "timed_steps": [
-      0.32758937499602325,
-      0.3276127550052479,
-      0.327535649004858
+      0.3244722720119171,
+      0.325024013989605,
+      0.3230277099937666
     ],
-    "mean_step_seconds": 0.3275792596687097,
+    "mean_step_seconds": 0.3241746653317629,
     "peak_reserved_bytes": 624951296,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 0.9936020399740554
+    "speedup_against_four_threads": 1.0106671198384063
   },
   {
     "case": "Algebra2005-GKT-primary",
@@ -964,11 +964,11 @@
       }
     ],
     "timed_steps": [
-      0.6669580470188521,
-      0.6725072800181806,
-      0.6818846630048938
+      0.6704557070042938,
+      0.6646280419954564,
+      0.6660615270084236
     ],
-    "mean_step_seconds": 0.6737833300139755,
+    "mean_step_seconds": 0.6670484253360579,
     "peak_reserved_bytes": 4456448000,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
@@ -1039,15 +1039,15 @@
       }
     ],
     "timed_steps": [
-      0.6702272479888052,
-      0.6707494829897769,
-      0.6685967780067585
+      0.6843804069794714,
+      0.6580920859996695,
+      0.6862455170194153
     ],
-    "mean_step_seconds": 0.6698578363284469,
+    "mean_step_seconds": 0.6762393366661854,
     "peak_reserved_bytes": 4469030912,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 1.0058601892411152
+    "speedup_against_four_threads": 0.9864087892676606
   },
   {
     "case": "Algebra2005-GKT-primary",
@@ -1114,15 +1114,15 @@
       }
     ],
     "timed_steps": [
-      0.8023711229907349,
-      0.6738357259891927,
-      0.8460272750235163
+      0.6757839820056688,
+      0.6918834150128532,
+      0.6559698240016587
     ],
-    "mean_step_seconds": 0.7740780413344813,
+    "mean_step_seconds": 0.6745457403400602,
     "peak_reserved_bytes": 4469030912,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 0.8704333336370045
+    "speedup_against_four_threads": 0.9888853867786302
   },
   {
     "case": "Algebra2005-GKT_MHA-primary",
@@ -1189,11 +1189,11 @@
       }
     ],
     "timed_steps": [
-      0.6893656010215636,
-      0.6820693329791538,
-      0.6978253569977824
+      0.6758971039962489,
+      0.698778460995527,
+      0.6823824419989251
     ],
-    "mean_step_seconds": 0.6897534303328333,
+    "mean_step_seconds": 0.6856860023302337,
     "peak_reserved_bytes": 4469030912,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
@@ -1264,15 +1264,15 @@
       }
     ],
     "timed_steps": [
-      0.6952737770043314,
-      0.6804789610032458,
-      0.7112727870116942
+      0.6772491169977002,
+      0.6885757120035123,
+      0.6795990820100997
     ],
-    "mean_step_seconds": 0.6956751750064237,
+    "mean_step_seconds": 0.681807970337104,
     "peak_reserved_bytes": 4469030912,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 0.991487773480582
+    "speedup_against_four_threads": 1.0056878654428347
   },
   {
     "case": "Algebra2005-GKT_MHA-primary",
@@ -1339,15 +1339,15 @@
       }
     ],
     "timed_steps": [
-      0.6734898040012922,
-      0.6707625210110564,
-      0.6689495159953367
+      0.6907936389907263,
+      0.6786551709810738,
+      0.6725342370045837
     ],
-    "mean_step_seconds": 0.6710672803358951,
+    "mean_step_seconds": 0.6806610156587946,
     "peak_reserved_bytes": 4469030912,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 1.0278454195942694
+    "speedup_against_four_threads": 1.00738250987766
   },
   {
     "case": "Algebra2005-GKT-wide",
@@ -1414,11 +1414,11 @@
       }
     ],
     "timed_steps": [
-      0.6684138620039448,
-      0.668771286989795,
-      0.6685582700010855
+      0.7877598439808935,
+      0.6683628099854104,
+      0.6795031809888314
     ],
-    "mean_step_seconds": 0.6685811396649418,
+    "mean_step_seconds": 0.7118752783183785,
     "peak_reserved_bytes": 9779019776,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
@@ -1489,15 +1489,15 @@
       }
     ],
     "timed_steps": [
-      0.6679557230090722,
-      0.6632358159986325,
-      0.6672574859985616
+      0.6643861159973312,
+      0.6899931360094342,
+      0.6706936139962636
     ],
-    "mean_step_seconds": 0.6661496750020888,
+    "mean_step_seconds": 0.6750242886676764,
     "peak_reserved_bytes": 9779019776,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 1.003650027545004
+    "speedup_against_four_threads": 1.0545920943429108
   },
   {
     "case": "Algebra2005-GKT-wide",
@@ -1564,15 +1564,15 @@
       }
     ],
     "timed_steps": [
-      0.6703444590093568,
-      0.6705739269964397,
-      0.6695034410222434
+      0.664071225997759,
+      0.6895477880025283,
+      0.778985120006837
     ],
-    "mean_step_seconds": 0.6701406090093466,
+    "mean_step_seconds": 0.7108680446690414,
     "peak_reserved_bytes": 9779019776,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 0.9976729221846291
+    "speedup_against_four_threads": 1.001416906635332
   },
   {
     "case": "Algebra2005-GKT_MHA-wide",
@@ -1639,11 +1639,11 @@
       }
     ],
     "timed_steps": [
-      0.6803489180165343,
-      0.6767146829806734,
-      0.6779024220013525
+      0.8602592829847708,
+      0.7320177289948333,
+      0.6832974510034546
     ],
-    "mean_step_seconds": 0.6783220076661868,
+    "mean_step_seconds": 0.7585248209943529,
     "peak_reserved_bytes": 9779019776,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
@@ -1714,15 +1714,15 @@
       }
     ],
     "timed_steps": [
-      0.6835325419961009,
-      0.6826458740106318,
-      0.6812505470006727
+      0.6851272149942815,
+      0.6791665719938464,
+      0.686405754997395
     ],
-    "mean_step_seconds": 0.6824763210024685,
+    "mean_step_seconds": 0.6835665139951743,
     "peak_reserved_bytes": 9779019776,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 0.9939128828232757
+    "speedup_against_four_threads": 1.109657663833
   },
   {
     "case": "Algebra2005-GKT_MHA-wide",
@@ -1789,14 +1789,14 @@
       }
     ],
     "timed_steps": [
-      0.8668251020135358,
-      0.7004391379887238,
-      0.7040191150153987
+      0.7007759990228806,
+      0.6858882130181883,
+      0.7142701809934806
     ],
-    "mean_step_seconds": 0.7570944516725527,
+    "mean_step_seconds": 0.7003114643448498,
     "peak_reserved_bytes": 9779019776,
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
-    "speedup_against_four_threads": 0.8959542711846006
+    "speedup_against_four_threads": 1.0831249517012582
   }
 ]

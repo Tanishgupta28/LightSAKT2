@@ -7,6 +7,7 @@ from pathlib import Path
 import pandas as pd
 
 from src.training.engine import write_json
+from src.datasets.preprocess import sha256
 from scripts.verify_artifacts import verify_stored_result
 
 
@@ -29,7 +30,7 @@ def generate():
             assert config['seed'] == 42 and config['evaluate_test'] is False
             candidates.append((-result['validation']['auc'], job['run_id'], config))
             proof=inferred.get(job['run_id'],{})
-            inference_checked=bool(proof.get('verified') and proof.get('metrics_sha256')==__import__('src.datasets.preprocess',fromlist=['sha256']).sha256(path/'metrics.json')
+            inference_checked=bool(proof.get('verified') and proof.get('metrics_sha256')==sha256(path/'metrics.json')
                                    and proof.get('checkpoint_sha256')==result['checkpoint_sha256'] and proof.get('split_sha256')==result['split_sha256'])
             verified.append({'run_id': job['run_id'], 'dataset': dataset,
                              'checkpoint_sha256': result['checkpoint_sha256'], 'split_sha256': result['split_sha256'],
