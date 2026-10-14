@@ -1,5 +1,5 @@
 {
-  "verified_utc": "2026-10-14T02:18:37.182861+00:00",
+  "verified_utc": "2026-10-14T02:25:40.787064+00:00",
   "verified": true,
   "cases": [
     {
@@ -12,7 +12,29 @@
       "skill_predictions_recomputed": true,
       "context": "within chronological chunk, not observed mastery",
       "metadata_sha256": "14d51d25fa880330b3bf54f86bbe1a7ce9d846866855c29d522941aa8db29de7"
+    },
+    {
+      "dataset": "ASSIST2015",
+      "run_id": "ASSIST2015-LightSAKT-final-42",
+      "checkpoint_sha256": "c08f06c27d9bd31c155dcaff06bbe17b8464578df7e058930233ffbea68d7136",
+      "genuine_test_sequence_verified": true,
+      "causal_normalized_weights_verified": true,
+      "visualization_prediction_identity_verified": true,
+      "skill_predictions_recomputed": false,
+      "context": "within chronological chunk, not observed mastery",
+      "metadata_sha256": "e91fec61fcb5bcd1580f3e1f345f64ae8fca52780d17471c885b750851198731"
+    },
+    {
+      "dataset": "Algebra2005",
+      "run_id": "Algebra2005-LightSAKT-final-42",
+      "checkpoint_sha256": "14b64e7450e0610c300913e933a7dd2ab0d6d3881951e3475557a8e673ee1390",
+      "genuine_test_sequence_verified": true,
+      "causal_normalized_weights_verified": true,
+      "visualization_prediction_identity_verified": true,
+      "skill_predictions_recomputed": false,
+      "context": "within chronological chunk, not observed mastery",
+      "metadata_sha256": "117441d251f497e35d16954ddfceb3d667cae300138214b81f67c2e7e4328f1f"
     }
   ],
-  "scope": "CPU-only independent verification of available selected-checkpoint figures; remaining datasets stay pending"
+  "scope": "CPU-only independent verification of all three selected seed-42 causal maps and ASSIST2009 skill-probability figures; overall research verification remains pending"
 }

@@ -5855,7 +5855,9 @@
       "model": "LightSAKT",
       "seed": 42,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "reuse_selected_run": "Algebra2005-LightSAKT-grid-42-06884c8943b2",
+      "selection_path": "experiments/selections/Algebra2005-LightSAKT.json"
     },
     {
       "run_id": "Algebra2005-LightSAKT-final-123",
@@ -5874,7 +5876,8 @@
       "model": "LightSAKT",
       "seed": 2026,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/Algebra2005-LightSAKT-final-2026.json"
     },
     {
       "run_id": "Algebra2005-LightSAKT-final-3407",
@@ -5883,7 +5886,8 @@
       "model": "LightSAKT",
       "seed": 3407,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/Algebra2005-LightSAKT-final-3407.json"
     },
     {
       "run_id": "Algebra2005-LightSAKT-final-7777",
@@ -5892,7 +5896,8 @@
       "model": "LightSAKT",
       "seed": 7777,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/Algebra2005-LightSAKT-final-7777.json"
     },
     {
       "run_id": "Algebra2005-GKT_MHA-final-42",
@@ -5948,7 +5953,8 @@
       "variant": "no_dropout",
       "status": "pending",
       "dependency": "selected LightSAKT config",
-      "failure_reason": null
+      "failure_reason": null,
+      "config": "configs/runs/ASSIST2009-LightSAKT-no_dropout-42.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-no_dropout-123",
@@ -5959,7 +5965,8 @@
       "variant": "no_dropout",
       "status": "pending",
       "dependency": "selected LightSAKT config",
-      "failure_reason": null
+      "failure_reason": null,
+      "config": "configs/runs/ASSIST2009-LightSAKT-no_dropout-123.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-no_dropout-2026",
@@ -5970,7 +5977,8 @@
       "variant": "no_dropout",
       "status": "pending",
       "dependency": "selected LightSAKT config",
-      "failure_reason": null
+      "failure_reason": null,
+      "config": "configs/runs/ASSIST2009-LightSAKT-no_dropout-2026.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-no_dropout-3407",
@@ -5981,7 +5989,8 @@
       "variant": "no_dropout",
       "status": "pending",
       "dependency": "selected LightSAKT config",
-      "failure_reason": null
+      "failure_reason": null,
+      "config": "configs/runs/ASSIST2009-LightSAKT-no_dropout-3407.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-no_dropout-7777",
@@ -5992,7 +6001,8 @@
       "variant": "no_dropout",
       "status": "pending",
       "dependency": "selected LightSAKT config",
-      "failure_reason": null
+      "failure_reason": null,
+      "config": "configs/runs/ASSIST2009-LightSAKT-no_dropout-7777.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-no_position-42",
@@ -6014,7 +6024,8 @@
       "variant": "no_position",
       "status": "pending",
       "dependency": "selected LightSAKT config",
-      "failure_reason": null
+      "failure_reason": null,
+      "config": "configs/runs/ASSIST2009-LightSAKT-no_position-123.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-no_position-2026",
@@ -6025,7 +6036,8 @@
       "variant": "no_position",
       "status": "pending",
       "dependency": "selected LightSAKT config",
-      "failure_reason": null
+      "failure_reason": null,
+      "config": "configs/runs/ASSIST2009-LightSAKT-no_position-2026.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-no_position-3407",
@@ -6036,7 +6048,8 @@
       "variant": "no_position",
       "status": "pending",
       "dependency": "selected LightSAKT config",
-      "failure_reason": null
+      "failure_reason": null,
+      "config": "configs/runs/ASSIST2009-LightSAKT-no_position-3407.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-no_position-7777",
@@ -6113,7 +6126,8 @@
       "variant": "no_attention",
       "status": "pending",
       "dependency": "selected LightSAKT config",
-      "failure_reason": null
+      "failure_reason": null,
+      "config": "configs/runs/ASSIST2009-LightSAKT-no_attention-42.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-no_attention-123",
@@ -6124,7 +6138,8 @@
       "variant": "no_attention",
       "status": "pending",
       "dependency": "selected LightSAKT config",
-      "failure_reason": null
+      "failure_reason": null,
+      "config": "configs/runs/ASSIST2009-LightSAKT-no_attention-123.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-no_attention-2026",
@@ -6135,7 +6150,8 @@
       "variant": "no_attention",
       "status": "pending",
       "dependency": "selected LightSAKT config",
-      "failure_reason": null
+      "failure_reason": null,
+      "config": "configs/runs/ASSIST2009-LightSAKT-no_attention-2026.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-no_attention-3407",
@@ -6146,7 +6162,8 @@
       "variant": "no_attention",
       "status": "pending",
       "dependency": "selected LightSAKT config",
-      "failure_reason": null
+      "failure_reason": null,
+      "config": "configs/runs/ASSIST2009-LightSAKT-no_attention-3407.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-no_attention-7777",
@@ -6157,7 +6174,8 @@
       "variant": "no_attention",
       "status": "pending",
       "dependency": "selected LightSAKT config",
-      "failure_reason": null
+      "failure_reason": null,
+      "config": "configs/runs/ASSIST2009-LightSAKT-no_attention-7777.json"
     },
     {
       "run_id": "ASSIST2009-LightSAKT-no_regularization-42",
