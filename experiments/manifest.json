@@ -905,13 +905,16 @@
       "config": "configs/runs/ASSIST2009-DKVMN-baseline_tuning-42-91a36a8e71d1.json",
       "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-91a36a8e71d1",
       "phase": 6,
-      "status": "running"
+      "status": "completed",
+      "failure_reason": null,
+      "last_completed_epoch": 50,
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-DKVMN-baseline_tuning-42-91a36a8e71d1/config.json"
     },
     {
       "config": "configs/runs/ASSIST2009-DKVMN-baseline_tuning-42-c26faf3381fa.json",
       "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-c26faf3381fa",
       "phase": 6,
-      "status": "pending"
+      "status": "running"
     },
     {
       "config": "configs/runs/ASSIST2009-DKVMN-baseline_tuning-42-0528aee387d0.json",
