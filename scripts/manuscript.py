@@ -26,7 +26,14 @@ def main():
            '## Dataset statistics','']
     stats=pd.read_csv('results/tables/Table_2.csv')
     lines += [readable_table(stats[['dataset','raw_rows','clean_interactions','students','unique_skill_identifiers','num_q']]),'',
-              '## Matched final comparisons','']
+              '## LightSAKT validation selection','']
+    selected=Path('results/tables/LightSAKT_selected_configurations.csv')
+    if selected.exists():
+        candidates=pd.read_csv(selected)
+        lines += [readable_table(candidates[['dataset','learning_rate','embed_dim','num_heads','dropout','validation_auc']]),'',
+                  'These configurations maximize validation AUC among all 36 prespecified candidates per dataset, with a lexical run-ID tie-break. The selection records are frozen before final evaluation. Validation scores are separate from held-out test performance; no test metric determined these choices. Run IDs and frozen split hashes are in LightSAKT_selected_configurations.csv and experiments/selections/.','']
+    else:lines += ['The complete prespecified grid remains pending; no configuration is selected using test results.','']
+    lines += ['## Matched final comparisons','']
     summary_path=Path('results/tables/Table_7.csv')
     try:summary=pd.read_csv(summary_path)
     except pd.errors.EmptyDataError:summary=pd.DataFrame()

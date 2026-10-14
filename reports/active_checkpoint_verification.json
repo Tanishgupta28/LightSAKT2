@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "path": "checkpoints/ASSIST2015-LightSAKT-final-7777/best.pt",
+    "sha256": "67f1259e6222e23d317fab57278c0906813dbf3880f8ecaf92d6b967dadc35ac",
+    "epoch": 4,
+    "strict_state_load": true,
+    "finite_parameters": true,
+    "split_data_match": true,
+    "optimizer_rng_verified": false
+  },
+  {
+    "path": "checkpoints/ASSIST2015-LightSAKT-final-7777/latest.pt",
+    "sha256": "934ad1fbc9db9ded69df12d0c5cff47df227031dba4e0c2263e75568004fce54",
+    "epoch": 4,
+    "strict_state_load": true,
+    "finite_parameters": true,
+    "split_data_match": true,
+    "optimizer_rng_verified": true
+  }
+]

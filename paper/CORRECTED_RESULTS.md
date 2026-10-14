@@ -24,7 +24,8 @@ The GKT PAM and MHA rows refer to the corrected historical simplified implementa
 
 |dataset|model|completed_seeds|auc_mean|auc_std|accuracy_mean|f1_mean|mse_mean|bce_mean|
 |---|---|---|---|---|---|---|---|---|
-|ASSIST2009|LightSAKT|1|0.751549|pending|0.732309|0.817761|0.179955|0.537941|
+|ASSIST2009|LightSAKT|5|0.751056|0.000766|0.732229|0.816533|0.180233|0.538615|
+|ASSIST2015|LightSAKT|2|0.725954|0.000080|0.749605|0.846546|0.171227|0.516244|
 
 Means summarize every completed prespecified seed. Sample standard deviations and Student-t intervals describe conditional initialization variability on one fixed student split; they do not measure new-student sampling uncertainty. Partial seed counts are not complete five-seed results.
 

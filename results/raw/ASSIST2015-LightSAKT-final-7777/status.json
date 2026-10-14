@@ -1,0 +1,10 @@
+{
+  "run_id": "ASSIST2015-LightSAKT-final-7777",
+  "status": "running",
+  "last_completed_epoch": 5,
+  "config": "results/raw/ASSIST2015-LightSAKT-final-7777/config.json",
+  "seed": 7777,
+  "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-LightSAKT-final-7777/config.json",
+  "best_checkpoint": "checkpoints/ASSIST2015-LightSAKT-final-7777/best.pt",
+  "failure_reason": null
+}

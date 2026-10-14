@@ -1,2 +1,6 @@
 /workspace/LightSAKT2/scripts/visualize.py:44: DtypeWarning: Columns (17) have mixed types. Specify dtype option on import or set low_memory=False.
   raw=pd.read_csv('data/raw/ASSIST2009.csv',encoding='latin1',usecols=['skill_id','skill_name'])
+/workspace/LightSAKT2/scripts/visualize.py:44: DtypeWarning: Columns (17) have mixed types. Specify dtype option on import or set low_memory=False.
+  raw=pd.read_csv('data/raw/ASSIST2009.csv',encoding='latin1',usecols=['skill_id','skill_name'])
+/workspace/LightSAKT2/scripts/analyze.py:141: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  plt.plot([0,1],[0,1],'k--',alpha=.3);plt.xlabel('False positive rate');plt.ylabel('True positive rate');plt.title(dataset+' — selected models, prespecified seed 42');plt.legend(fontsize=7);save_figure(dataset+'_ROC_seed42')
