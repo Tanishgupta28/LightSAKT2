@@ -1,0 +1,10 @@
+{
+  "run_id": "ASSIST2009-SAKT-baseline_tuning-42-c296afbeddce",
+  "status": "completed",
+  "last_completed_epoch": 21,
+  "config": "results/raw/ASSIST2009-SAKT-baseline_tuning-42-c296afbeddce/config.json",
+  "seed": 42,
+  "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-SAKT-baseline_tuning-42-c296afbeddce/config.json",
+  "best_checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-c296afbeddce/best.pt",
+  "failure_reason": null
+}
