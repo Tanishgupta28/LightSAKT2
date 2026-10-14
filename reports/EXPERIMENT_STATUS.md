@@ -1,13 +1,14 @@
 # Experiment status
 
-Updated UTC: 2026-10-14T02:32:41.182999+00:00
+Updated UTC: 2026-10-14T02:33:24.804001+00:00
 
-Completed: **259**. Remaining: **698**. Total schedule slots: 957.
+Completed: **260**. Remaining: **697**. Total schedule slots: 957.
 
 ```json
 {
-  "completed": 259,
-  "pending": 698
+  "completed": 260,
+  "pending": 696,
+  "running": 1
 }
 ```
 
@@ -24,6 +25,8 @@ Coordinator process: running (PID 191761).
 Progressive process: running (PID 185610).
 
 Active_recovery process: running (PID 203682).
+
+Current run: `ASSIST2015-LightSAKT-no_dropout-123`; last completed epoch: 5.
 
 The 45 reuse/alias slots are not independent new training experiments. Default ablation reuses final LightSAKT evidence. The separate smoke run is excluded from schedule counts.
 
