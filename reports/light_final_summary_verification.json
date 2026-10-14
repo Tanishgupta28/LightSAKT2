@@ -1,6 +1,6 @@
 {
   "verified": true,
-  "verified_utc": "2026-10-14T15:29:49.037389+00:00",
+  "verified_utc": "2026-10-14T15:45:23.508670+00:00",
   "light_final_seed_slots": 15,
   "summary_method": "Five prespecified seeds; arithmetic mean and sample SD; saved metrics independently recomputed",
   "completed_five_seed_baseline_comparisons": 10,
@@ -10,7 +10,7 @@
     {
       "dataset": "ASSIST2015",
       "model": "DKVMN",
-      "completed_seeds": 2,
+      "completed_seeds": 4,
       "scope": "Excluded from final comparison until all five seeds finish"
     }
   ],
@@ -1006,6 +1006,50 @@
       "processed_data": "data/processed/ASSIST2015/interactions.csv"
     },
     {
+      "run_id": "ASSIST2015-DKVMN-final-3407",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "DKVMN",
+      "seed": 3407,
+      "checkpoint_sha256": "899072a98ef3f6560b1dde07b199dab4c86dfa3f557480d98ad8fbd5e06a1349",
+      "prediction_sha256": "98d1b2533be498bd5344127ed3d68c1de9d2e1b61fbd6a06c078161c0b51835f",
+      "metrics_sha256": "6733432c1571d868139834bb2c917502c166e6eb3aa5eda7cca164c53f2e1cb7",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "a35832c0d70beb4a5e64a86427f065fe7b5f0805",
+      "validation_inference_recomputed": false,
+      "test_probabilities_recomputed": false,
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
+    },
+    {
+      "run_id": "ASSIST2015-DKVMN-final-42",
+      "group": "final",
+      "dataset": "ASSIST2015",
+      "model": "DKVMN",
+      "seed": 42,
+      "checkpoint_sha256": "f1c1144215697476e41b159026b298e9b22589b08f9fbba20386bdadf88caa2e",
+      "prediction_sha256": "7de73aa8ce6bec8cbb89b0b12762d2da2756b0983480cec6dc9c8a7ddcbcf327",
+      "metrics_sha256": "e3903d1eb0fc99b8edec392aa76b8d590ada2e2520db838c138f155090160604",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "strict_checkpoint_load": true,
+      "test_metrics_recomputed_from_saved_predictions": true,
+      "git_commit": "c29e0cb7d5f751aba820a595b8064693f3eeb6f9",
+      "validation_inference_recomputed": false,
+      "test_probabilities_recomputed": false,
+      "locked_test_identity_verified": true,
+      "locked_test_labels_verified": true,
+      "locked_test_targets": 133044,
+      "prediction_identity_sha256": "43dd81d5a5638e14ad341f0a342152c31cd03d6301e08c310ee0e1a193519238",
+      "split_manifest": "data/splits/ASSIST2015.json",
+      "processed_data": "data/processed/ASSIST2015/interactions.csv"
+    },
+    {
       "run_id": "ASSIST2015-DKVMN-primary-42-c91ed69c5400",
       "group": "primary",
       "dataset": "ASSIST2015",
@@ -1888,8 +1932,8 @@
   ],
   "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
   "eta_source": "reports/summary_eta/progressive/ETA.json",
-  "eta_source_sha256": "d67e64f8f20fe43f440e3afa831c3ae98519030652dbb1eeebee98141d72fa8f",
-  "remaining_occupied_mig_hours": 377.1535502411027,
+  "eta_source_sha256": "bc250551eadcacf4de9bbd1edd2efa87a3ac29307e546a2f4634ab725bca92ff",
+  "remaining_occupied_mig_hours": 376.91714412487954,
   "gkt_remaining_occupied_mig_hours": 372.3714161941859,
   "artifacts": [
     {
@@ -1906,7 +1950,7 @@
     },
     {
       "path": "reports/LightSAKT_summary_ETA_by_model.csv",
-      "sha256": "612a27b7ddba2cda43bfe8b67d7df62fb1082dd3da6ac636dcde5198913ce33a"
+      "sha256": "cbf9b8eb9da944070956817e86d15e75bb94872e1cf8c81435b5171b9234a5ce"
     }
   ]
 }
