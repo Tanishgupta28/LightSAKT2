@@ -50,8 +50,8 @@ def main(stored_only=False):
             model.load_state_dict(checkpoint['model'])
             data_path=f"data/processed/{result['dataset']}/interactions.csv"
             from scripts.sequence_cache import CachedSequences,location
-            cache=location(data_path,'validation',config['seq_len'])
-            dataset=(CachedSequences(data_path,'validation',config['seq_len']) if (cache/'manifest.json').exists()
+            cache=location(data_path,'validation',config['seq_len']) if Path(data_path).exists() else None
+            dataset=(CachedSequences(data_path,'validation',config['seq_len']) if cache is not None and (cache/'manifest.json').exists()
                      else Sequences(data_path,'validation',config['seq_len']))
             regenerated,_,_=evaluate(model,config['model'],DataLoader(dataset,batch_size=config['batch_size']),device)
             inference_cache[identity]=regenerated

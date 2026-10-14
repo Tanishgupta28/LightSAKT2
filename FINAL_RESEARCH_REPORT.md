@@ -27,53 +27,8 @@ Additional CPU verification during active GPU training:
 
 ```
 Running 98 items in this shard
-.........................................sssssssssssssss..............F...........................                                                   [100%]
-========================================================================= FAILURES =========================================================================
-___________________________________________ test_cached_checkpoint_verification_still_checks_each_logical_metric ___________________________________________
-
-tmp_path = PosixPath('/workspace/LightSAKT2/.pytest_cache/tmp/test_cached_checkpoint_verific0')
-monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7ffdb7b9f640>
-
-    def test_cached_checkpoint_verification_still_checks_each_logical_metric(tmp_path,monkeypatch):
-        from scripts import verify_artifacts as verify
-        monkeypatch.chdir(tmp_path)
-        result={'checkpoint':'same.pt','checkpoint_sha256':'weights','processed_sha256':'data',
-                'split_sha256':'split','dataset':'ASSIST2009','validation':{'auc':.7,'accuracy':.6,'f1':.5,'mse':.2,'bce':.6}}
-        config={'seed':42,'model':'LightSAKT','model_config':{},'seq_len':100,'batch_size':64}
-        for run in ['one','two']:write_json(f'results/raw/{run}/metrics.json',{**result,'run_id':run})
-        monkeypatch.setattr(verify,'verify_stored_result',lambda path,*args:(json.load(open(path)),config,{'num_q':2}))
-        class FakeModel:
-            def to(self,device):return self
-            def load_state_dict(self,state):pass
-        calls=[]
-        monkeypatch.setattr(verify,'seed_everything',lambda seed:None)
-        monkeypatch.setattr(verify,'build_model',lambda *args:FakeModel())
-        monkeypatch.setattr(verify.torch,'load',lambda *args,**kwargs:{'model':{}})
-        monkeypatch.setattr(verify.torch.cuda,'is_available',lambda:False)
-        monkeypatch.setattr(verify,'Sequences',lambda *args:[])
-        def evaluate(*args):calls.append(1);return result['validation'],[],[]
-        monkeypatch.setattr(verify,'evaluate',evaluate)
->       verify.main()
-
-/workspace/LightSAKT2/tests/test_evidence_reuse.py:176: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-/workspace/LightSAKT2/scripts/verify_artifacts.py:53: in main
-    cache=location(data_path,'validation',config['seq_len'])
-/workspace/LightSAKT2/scripts/sequence_cache.py:17: in location
-    path=Path(path);identity=hashlib.sha256((sha256(path)+split+str(length)+'exact-sequences-v1').encode()).hexdigest()
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-path = PosixPath('data/processed/ASSIST2009/interactions.csv')
-
-    def sha256(path):
-        h = hashlib.sha256()
->       with open(path, "rb") as f:
-E       FileNotFoundError: [Errno 2] No such file or directory: 'data/processed/ASSIST2009/interactions.csv'
-
-/workspace/LightSAKT2/src/datasets/preprocess.py:18: FileNotFoundError
-================================================================= short test summary info ==================================================================
-FAILED tests/test_evidence_reuse.py::test_cached_checkpoint_verification_still_checks_each_logical_metric - FileNotFoundError: [Errno 2] No such file or ...
-1 failed, 82 passed, 15 skipped in 15.13s
+.........................................sssssssssssssss..........................................                                                   [100%]
+83 passed, 15 skipped in 14.37s
 ```
 
 CUDA tests were skipped in this additional invocation to avoid GPU contention; the preceding full CPU/CUDA correctness gate remains the GPU evidence. Model/training source fingerprints are unchanged.
@@ -111,8 +66,8 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 ## Experiment schedule status
 
 {
-  "completed": 153,
-  "pending": 803,
+  "completed": 154,
+  "pending": 802,
   "running": 1
 }
 
@@ -155,8 +110,8 @@ The exclusive 120-case benchmark has completed; its measured latency, memory, th
 
 ## Execution optimization and unchanged scientific scope
 
-Latest schedule audit: 784 fresh trainings remain plus 44 reuse/evaluation entries. All 108 LightSAKT candidates are retained, with one seed per grid candidate and five matched seeds only for selected final configurations and ablations. The author chose the complete schedule with execution improvements only; all 162 GKT configurations discussed in the archived reduction proposal remain scheduled. Evidence: experiments/schedule_decision.json. Full inventory and proposal: reports/optimization/SCHEDULE_AUDIT.md and PROPOSED_DIFFERENCES.csv.
+Latest schedule audit: 761 fresh trainings remain plus 43 reuse/evaluation entries. All 108 LightSAKT candidates are retained, with one seed per grid candidate and five matched seeds only for selected final configurations and ablations. The author chose the complete schedule with execution improvements only; all 162 GKT configurations discussed in the archived reduction proposal remain scheduled. Evidence: experiments/schedule_decision.json. Full inventory and proposal: reports/optimization/SCHEDULE_AUDIT.md and PROPOSED_DIFFERENCES.csv.
 
 Exact immutable sequence caches preserve every tensor, identity, batch order and RNG sequence; CPU training/resume equivalence is tested. Inter-run GPU probes and CPU/CUDA gates verify independent worker updates before two-worker GKT execution. Full required scope, FP32, batch sizes, Adam, stopping criteria, LightSAKT architecture, splits and untouched final test selections remain unchanged. Prioritization runs LightSAKT grid/finals/ablations before slow remaining baseline tuning. See reports/optimization/EXECUTION_OPTIMIZATION.md and reports/profiling/.
 
-Independent private GitHub draft recovery artifacts: 155 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
+Independent private GitHub draft recovery artifacts: 156 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.

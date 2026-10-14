@@ -1,5 +1,5 @@
 {
-  "verified_utc": "2026-10-14T00:47:45.592864+00:00",
+  "verified_utc": "2026-10-14T01:14:47.891954+00:00",
   "verified": true,
   "checkpoints": [
     {
@@ -1857,6 +1857,438 @@
       "optimizer_rng_verified": true
     },
     {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-548bf9305dcd/best.pt",
+      "sha256": "5a84800e9065ef8a5bcb7132530eaa4fd726dd4d6f5f11c0018c01ddbff9be7f",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-548bf9305dcd/latest.pt",
+      "sha256": "447a5cbfb81156fe4a330d269eb57f116ecdf5cc8229e8bfb9ada7faee262cdd",
+      "epoch": 26,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-54eb65d6bac2/best.pt",
+      "sha256": "36ad3280f85fc63cc08b4108a57caf11af28390ee80fb54d9a0341650e5ccba9",
+      "epoch": 8,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-54eb65d6bac2/latest.pt",
+      "sha256": "57572da37b6311a564460215a273805a75309d0875cc8a9ec7cb35b1ef84c154",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-5cac52478aa9/best.pt",
+      "sha256": "10c21986e42bfd74571d30dfd45025744b73da58941e8f870356c17c153fdb9b",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-5cac52478aa9/latest.pt",
+      "sha256": "6b261df78764b643adb43ef93e3969b54ac6e64d1752cbeed2fac43ffdc3a8f3",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-657c24e26014/best.pt",
+      "sha256": "cc42bafb36521725950de0b01764bcf0542767da3b60997be486d09ed88e71e6",
+      "epoch": 10,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-657c24e26014/latest.pt",
+      "sha256": "ca82beebb0912d1cd8577ece7eee48b1062579f5d4e7b9a3b8b08de0dc65260b",
+      "epoch": 15,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-6a5b69a81950/best.pt",
+      "sha256": "c4e279246a45abe23f487640ba8fb005a72597cc7867f54f2ffd49768f0bb28c",
+      "epoch": 8,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-6a5b69a81950/latest.pt",
+      "sha256": "ba8278673e99c9bcc7fc49e28e180b6208a7629c557ab7e15df9171ac961709d",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-78e7030a9c88/best.pt",
+      "sha256": "28c4f055dec62b0dcb4e4c1b50bcdd563b29f6755e01947cd2bb7968bd23a938",
+      "epoch": 26,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-78e7030a9c88/latest.pt",
+      "sha256": "2f8dfa915d0edc6aea6026e3f9765492f9aec22db23cf9a722bc6a1b7af23214",
+      "epoch": 31,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-7ec15e323ab3/best.pt",
+      "sha256": "11c37efdb85f2af2610114b2b5e78d94f6f497fac147f9ee5b7cac59ec640625",
+      "epoch": 24,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-7ec15e323ab3/latest.pt",
+      "sha256": "b3bcacc602ee6236795a596502018303d7f96121c4356559d1fffd95d1b766c4",
+      "epoch": 29,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-8488d393eb74/best.pt",
+      "sha256": "9f8494463352bd8606b639ce6f831ca337cc4d1e78f1d3db834a4f7d04461b9e",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-8488d393eb74/latest.pt",
+      "sha256": "9e5d159331669d51220ceafe8b425cf377e22555f56d7d9c4fb6d54455ff4f64",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-876374e581c1/best.pt",
+      "sha256": "0dfd9161c03fba46ae4d91a5a73f6a5fcc6f580687a777e44cd9b0afd78ff492",
+      "epoch": 8,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-876374e581c1/latest.pt",
+      "sha256": "5ac9180c2487d071b384e076b0a72fcfcc7e32cca5b6f0f1874b1631e645bbd6",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-a22be35657b2/best.pt",
+      "sha256": "552ad5aa360980e040307ab2c0548bacc392637ffdf1c171efb7763f6d50a2a7",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-a22be35657b2/latest.pt",
+      "sha256": "8d32833b08a3600c217a29530462150fb6bb8cf57b543e0b2b921d5202fec4e2",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-bc44304c7e6a/best.pt",
+      "sha256": "0340b5afbbfdad2ee1a051494f4ad783fb3bbabab884b345acc764aec0a96425",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-bc44304c7e6a/latest.pt",
+      "sha256": "3b6c933b67ee5a9c1f1edfd1803ea8eddb9966d389f0b4e57ce2ccb686fe0631",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-bc7909e3ec64/best.pt",
+      "sha256": "b637a056037016dd0488c952d560a34d574931dbc711dd8d4c271bafabe191c2",
+      "epoch": 12,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-bc7909e3ec64/latest.pt",
+      "sha256": "40a7a025266c9eb577ebbdd2188b2aedfc5e10ec7e7b0fe06503b3ee6d874d76",
+      "epoch": 17,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-cbb203a49770/best.pt",
+      "sha256": "ca578f4d68c6769f536d36c887d76f2052591e5b5e371737f76c277afbdbb9f8",
+      "epoch": 35,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-cbb203a49770/latest.pt",
+      "sha256": "dd572184eec151d10fbc98c9aa5b047e8c08087d35fedfc655ef3b9da624fc7c",
+      "epoch": 40,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-cbc759c49f4b/best.pt",
+      "sha256": "2c2821d6c44c34832edeb1b574c9ef36dbccb2b1772e7d7910d429fec3ecd7aa",
+      "epoch": 14,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-cbc759c49f4b/latest.pt",
+      "sha256": "6b8a6c0adb07e7db674a596ab5e7f532a35031ed524f68a2151ef72cd058e99d",
+      "epoch": 19,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-cddb73383e58/best.pt",
+      "sha256": "1b1d588d54a657fd73dc56e48b132c5e4942cbbf8464a9f91ec7acd40da79353",
+      "epoch": 42,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-cddb73383e58/latest.pt",
+      "sha256": "c3621133911d5ff32dddadbda303308f9972ec3dfded0fccfae4368a9d0ae267",
+      "epoch": 47,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-ce7ac2d04d8c/best.pt",
+      "sha256": "28a40baa8305bd6be728005760710c07e7cb1e362a9777c8b6c8569c39a367ee",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-ce7ac2d04d8c/latest.pt",
+      "sha256": "e35d06360b62d0d7b6501333f642f7bc41da8241a1b215ffb6505d61c375c624",
+      "epoch": 26,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-d61c17bff6d2/best.pt",
+      "sha256": "351968163337bba33bfe0d8ad817e68809fe6b32751c101523fad9af62bdd411",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-d61c17bff6d2/latest.pt",
+      "sha256": "874ca2af34cdce24609e326571fbc656a17607e8c14e771d26f41ef3e9dbb236",
+      "epoch": 50,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-da59e9e82672/best.pt",
+      "sha256": "91a885bff6ec653b7fe8341eadd49668e967e6d7230982ae984c086146abe2dc",
+      "epoch": 14,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-da59e9e82672/latest.pt",
+      "sha256": "ff2ea2ab42ca352796d412659501fc513db25ea143e41ebf5bcbbde19c60c6fb",
+      "epoch": 19,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-dbc981c680af/best.pt",
+      "sha256": "1d8a11b5ce231ba8088f282eb0b9a43cbf8d849a53a6b04be07528250f9886bc",
+      "epoch": 42,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-dbc981c680af/latest.pt",
+      "sha256": "a03956d5fa1060cf3c3be04d7109d07d8d02d99cd45cffe0244eb3343c0c1bb5",
+      "epoch": 47,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-dc60492cb0c6/best.pt",
+      "sha256": "2dff567a6ab6cc4f938c765511efbd21ad11c496ac4248c6815a2e92e4c49479",
+      "epoch": 8,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-dc60492cb0c6/latest.pt",
+      "sha256": "3489ca12e8590b12cd3a04bda1b0d2aca60aa6b2d29434f16195fc1b3816d176",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-e4d9677fea31/best.pt",
+      "sha256": "2fc6fe062658078f47a34d87c2c6b7829d46df7d1d494d588b12126db4fba58e",
+      "epoch": 24,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-e4d9677fea31/latest.pt",
+      "sha256": "fd0287382b625d55777f82e762d904b790759a9f3ea765af4d0ca25c9ac1a0a1",
+      "epoch": 29,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-e8619daa8cf3/best.pt",
+      "sha256": "95d03d73cc925999e5fb39e59f05c6aa2040318aafa29c14a0b1ac92843a7dc5",
+      "epoch": 16,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-e8619daa8cf3/latest.pt",
+      "sha256": "ca7fbbb64c67ed13fde939e40b1f583dc668bbb46979ff75adf7da870d937dc2",
+      "epoch": 21,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-ee695dce7311/best.pt",
+      "sha256": "925339309dba0756aa87e81a3d67470b8b37845e2c019c7af004fb872ebbe344",
+      "epoch": 38,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-ee695dce7311/latest.pt",
+      "sha256": "da9a3ba5d4de6628884234ea79ac72b10ab66e2d77a70cdcd42d2c5f440ffde5",
+      "epoch": 43,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-f08e9494d270/best.pt",
+      "sha256": "d0af3a20f40cf3734883634c23053dbfbf187dee9e7a556c85fcb27b4841197d",
+      "epoch": 24,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-LightSAKT-grid-42-f08e9494d270/latest.pt",
+      "sha256": "4c16f5da8d9493ab6e8626074eccfc3eeea01948a976a099fccb09d399d6768f",
+      "epoch": 29,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
       "path": "checkpoints/ASSIST2009-LightSAKT-smoke-42/best.pt",
       "sha256": "9b0ce962167f75baaa2f2d496e8536ce6906021536f4e5e06098dd2239487468",
       "epoch": 2,
@@ -1983,6 +2415,24 @@
       "optimizer_rng_verified": true
     },
     {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-081855fbb02d/best.pt",
+      "sha256": "95a6518715f59fa4cbce69f2efb5932314dffd2e7517add5ead4344cefd6f6ce",
+      "epoch": 24,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-081855fbb02d/latest.pt",
+      "sha256": "3b145ba33526cf486cd163de48f50bd4d784cf3149e25905cbae5243282fb9c8",
+      "epoch": 29,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
       "path": "checkpoints/ASSIST2015-LightSAKT-primary-42-301d9bff60e9/best.pt",
       "sha256": "1a3133ab28882d02ee985cb18848caae3c703160e43b80a6c79d6ff532e7b6ab",
       "epoch": 7,
@@ -1995,6 +2445,150 @@
       "path": "checkpoints/ASSIST2015-LightSAKT-primary-42-301d9bff60e9/latest.pt",
       "sha256": "c60b764c19d38cce91b09c898de4f5157880a5f7f9f561d55c84c6dfe1cee9be",
       "epoch": 12,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-131e9e879505/best.pt",
+      "sha256": "2350baa572df4c745bd175e22b75918f4d61c9570039bb583725cfb83ba4a59f",
+      "epoch": 35,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-131e9e879505/latest.pt",
+      "sha256": "83e029e04c0fa7133521a4bfd8aad5227a9c40f318e1d3242503c099d4aa018a",
+      "epoch": 40,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-13899ec8cbe4/best.pt",
+      "sha256": "33624de73f8537f5ea24a240cfd91ffba205404083d0c1b7755ce5032a830832",
+      "epoch": 7,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-13899ec8cbe4/latest.pt",
+      "sha256": "8adcaec8ea6332208c4ad09f39613130b2bb3d67d3e2802c20362e61d4d07cda",
+      "epoch": 12,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-1512d57add2f/best.pt",
+      "sha256": "e7b41b19d1fa601b6e4f02e9b99869879c383144889a02ec1fbcf69302761cc1",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-1512d57add2f/latest.pt",
+      "sha256": "540e73c61542c2f4274a1c11be6038b5d66bee65b368e425148cf6c2b79cde85",
+      "epoch": 23,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-355019985ef3/best.pt",
+      "sha256": "99b55e4b139eb93ef23e7f0c539d8686c442fa065729853640eb2f6b7d312719",
+      "epoch": 35,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-355019985ef3/latest.pt",
+      "sha256": "1a6eb6fb4b26fc596c0033e88641d2a4ecac724f513ac055b35822377a9339b4",
+      "epoch": 40,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-3769d3cd7356/best.pt",
+      "sha256": "ad54d135e07b0e16289882c9bcfb26a0051d7936790e24a45f8dc65859d77694",
+      "epoch": 4,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-3769d3cd7356/latest.pt",
+      "sha256": "39ba60f5a4d66312093ec1dc53410df8bfaa38b0c59bcfa819f761dcf14e8acc",
+      "epoch": 9,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-37c34205659f/best.pt",
+      "sha256": "b6281211bfc76c094ee6ebf1e514514fdeff6bf18142e6e651045aa3bce7be67",
+      "epoch": 13,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-37c34205659f/latest.pt",
+      "sha256": "26c11ded33afb1a91a9cf1466f7733221c7bea121f0b70c2f4754ccc8bce4f7d",
+      "epoch": 18,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-39138de678ce/best.pt",
+      "sha256": "b3e4a9d7d3bada8d410b986f73e5ba9735242dc8421d7ac18d59eafcb783a823",
+      "epoch": 34,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-39138de678ce/latest.pt",
+      "sha256": "ada8a960021cfc74b19d1b6ad7a8ecc5f83d2c26824da5b6568ec25c72e11551",
+      "epoch": 39,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-397bcc602116/best.pt",
+      "sha256": "5f2dcc9a700b835325887827a22b233dd566c96cc667b083254c4e942ff6800c",
+      "epoch": 42,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2015-LightSAKT-grid-42-397bcc602116/latest.pt",
+      "sha256": "0d6515a58d186197ee731dca76ae526785e837195d723b579df67861a45b3b10",
+      "epoch": 47,
       "strict_state_load": true,
       "finite_parameters": true,
       "split_data_match": true,

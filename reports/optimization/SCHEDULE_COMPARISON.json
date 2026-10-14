@@ -1,31 +1,31 @@
 {
-  "updated_utc": "2026-10-14T00:53:29.457814+00:00",
+  "updated_utc": "2026-10-14T01:14:39.297717+00:00",
   "logical_total": 957,
-  "completed": 129,
-  "fresh_remaining": 784,
-  "reuse_remaining": 44,
+  "completed": 153,
+  "fresh_remaining": 761,
+  "reuse_remaining": 43,
   "distinct_fresh_total": 912,
   "proposed_deferred_fresh": 162,
-  "accelerated_fresh_remaining": 622,
+  "accelerated_fresh_remaining": 599,
   "complete_training_hours": {
-    "low": 106.32572605647974,
-    "central": 501.12456255901486,
-    "high": 1465.123822904926
+    "low": 106.39786724896379,
+    "central": 501.73366367844983,
+    "high": 1463.2442609638924
   },
   "accelerated_proposal_training_hours": {
-    "low": 34.697503423141335,
-    "central": 171.90953462754285,
-    "high": 493.0387077960062
+    "low": 34.769644615625396,
+    "central": 172.51863574697788,
+    "high": 491.1591458549723
   },
   "complete_two_worker_wall_hours": {
-    "low": 87.23084558918359,
-    "central": 391.0907253816104,
-    "high": 1465.123822904926
+    "low": 87.30298678166764,
+    "central": 391.69982650104544,
+    "high": 1463.2442609638924
   },
   "proposal_two_worker_wall_hours": {
-    "low": 28.551345015797775,
-    "central": 136.14853754488638,
-    "high": 493.0387077960062
+    "low": 28.623486208281836,
+    "central": 136.7576386643214,
+    "high": 491.1591458549723
   },
   "measured_gkt_concurrency_speedup": 1.5122888289676635,
   "hour_scope": "Same measured-reference model as current ETA; no unverified implementation speedup applied; additional test inference/final benchmarking excluded.",
