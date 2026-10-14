@@ -1,6 +1,6 @@
 # Verified final LightSAKT results and ongoing comparisons
 
-Generated UTC: 2026-10-14T07:30:17.032233+00:00
+Generated UTC: 2026-10-14T07:40:50.996349+00:00
 
 All numbers below are generated from fresh completed experiment files. Five selected seeds per dataset are complete; the overall research schedule remains incomplete. The three fixed-configuration LightSAKT primary runs are outside this selected-final summary; baseline primary runs are labelled separately.
 
@@ -70,23 +70,23 @@ All five baseline metrics, deltas and evidence scope are in LightSAKT_completed_
 
 ## Recalculated remaining training time
 
-ETA measurements refreshed: 2026-10-14T07:30:09.338647+00:00. Serial isolated-equivalent remaining training: 497.002 hours. Current execution forecast: 386.968 occupied MIG wall hours (16.12 continuous days), applying the measured 1.512 two-worker throughput factor only to GKT-MHA.
+ETA measurements refreshed: 2026-10-14T07:40:42.994099+00:00. Serial isolated-equivalent remaining training: 495.493 hours. Current execution forecast: 385.459 occupied MIG wall hours (16.06 continuous days), applying the measured 1.512 two-worker throughput factor only to GKT-MHA.
 
 |model|remaining_entries|fresh_training_runs|serial_equivalent_hours|occupied_mig_hours|
 |---|---|---|---|---|
-|DKVMN|80|76|14.597062|14.597062|
+|DKVMN|79|75|13.087493|13.087493|
 |GKT|123|117|157.582744|157.582744|
 |GKT_MHA|123|120|324.822509|214.788672|
 
-GKT-PAM and GKT-MHA account for 372.371 of 386.968 remaining occupied MIG hours (96.23%). Completion count is a poor proxy for compute progress. The priority order completed short LightSAKT grids, selected seeds, ablations and fast baseline tuning first. Reuse/alias entries add no training; the current category table identifies remaining GKT work.
+GKT-PAM and GKT-MHA account for 372.371 of 385.459 remaining occupied MIG hours (96.60%). Completion count is a poor proxy for compute progress. The priority order completed short LightSAKT grids, selected seeds, ablations and fast baseline tuning first. Reuse/alias entries add no training; the current category table identifies remaining GKT work.
 
 The GKT forecast is calibrated by six completed primary model/dataset runs plus real primary/wide engineering profiles, rather than multiplying the global mean runtime by remaining entries. Recent fast-model completions refine those strata but add little evidence about the still-untrained slow GKT configurations. One GKT epoch has measured durations of minutes, whereas many DKT/SAKT/LightSAKT epochs take seconds or less; planned configuration widths and stopping counts also differ.
 
-The occupied-MIG planning envelope is 86.4–1445.8 hours. It is an early-stop/maximum-epoch scenario envelope, not a confidence interval or guarantee. Most future GKT stopping counts and sustained concurrency performance are unknown. Startup, selected test inference and final artifact verification are additional; the completed controlled efficiency benchmark is reused.
+The occupied-MIG planning envelope is 86.4–1445.1 hours. It is an early-stop/maximum-epoch scenario envelope, not a confidence interval or guarantee. Most future GKT stopping counts and sustained concurrency performance are unknown. Startup, selected test inference and final artifact verification are additional; the completed controlled efficiency benchmark is reused.
 
 ## Continuing execution and preserved findings
 
-Live schedule snapshot: 631/957 entries complete; 326 remain. Phase counts: {"5": {"completed": 21}, "6": {"completed": 470, "pending": 285, "running": 1}, "7": {"completed": 65, "pending": 40}, "8": {"completed": 75}}.
+Live schedule snapshot: 632/957 entries complete; 325 remain. Phase counts: {"5": {"completed": 21}, "6": {"completed": 471, "pending": 284, "running": 1}, "7": {"completed": 65, "pending": 40}, "8": {"completed": 75}}.
 
 Scheduler and independent CPU reporting, Git preservation, checkpoint recovery and offsite workers remain active. No completed training was restarted and no experimental scope was removed. Detached execution survives client disconnect while the environment stays up; no automatic restart after environment shutdown is configured.
 
