@@ -1,0 +1,4 @@
+dataset,validation_best_run_id,validation_auc,learning_rate,max_seq_len,embed_dim,num_heads,dropout,split_sha256,selection_metric,test_used_for_selection
+Algebra2005,Algebra2005-LightSAKT-grid-42-06884c8943b2,0.8081265101972933,0.001,200,128,4,0.2,e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643,validation_auc,False
+ASSIST2009,ASSIST2009-LightSAKT-grid-42-f08e9494d270,0.7508035371114405,0.001,100,64,2,0.1,134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0,validation_auc,False
+ASSIST2015,ASSIST2015-LightSAKT-grid-42-64640d03b0d3,0.7300652943795162,0.0005,100,128,4,0.1,1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce,validation_auc,False

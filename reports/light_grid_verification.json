@@ -1,0 +1,985 @@
+{
+  "verified_utc": "2026-10-14T02:15:30.518972+00:00",
+  "verified": true,
+  "completed_configurations": 108,
+  "fresh_training_runs": 105,
+  "all_36_unique_per_dataset": true,
+  "seed": 42,
+  "selection": "All 36 prespecified candidates; validation AUC descending, run ID lexical tie-break; no test selection",
+  "validation_checkpoint_inference_recomputed": false,
+  "scope": "Saved checkpoint, data/split hashes and complete table coverage verified on CPU; final independent inference remains scheduled",
+  "runs": [
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-20a36e0471b8",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "b5e9f8d5f028a3c87776d1386e6e07bf2333a4acf2867e89d527ec2b3290a624",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.7888340398954901,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-d6bf5e5ea8bb",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "aded2b54a77ec00647eec0d0deda5759f0e55e5f3aa1d021756fa22e2d575783",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.7876098971590952,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-f3c14818b7d3",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "8b3b9b1e0667213d00bcd5d32c67134074c8ec5daf4a102116bf9a5f4a0b0055",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.7897005705982021,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-e58e3f7d95a8",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "2fdcbc41f4e48b31ba222fda0ed1e02e7e79a4579f14271b308714b3552ba146",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.7887282989789786,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-15db10686e87",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "e6bdf7f41963e77b612ecb04c3f45cce29962bae12dc4c576069f8bd1f2ade52",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8005345487311932,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-57249c130ef5",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "bccd55af69642d259954f61153fd28fa3ceb1bf4cb7f6f4821f9ab8a53d79546",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.7995744470155581,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-893445b0fab3",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "8326389ae2d77a74dda85bab118e336796b83c525729c60582f0a7268f55c8f9",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8010172995483041,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-9337e03ea1cc",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "af04d09143e0f6c793621e6af246ab92397ef81cd15d2c7ac6fd04141d5cdd0b",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8001869598462941,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-e70b10a66385",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "f41d508eb6ac95bcdac36add8521782397b73158d2fa56b7b8020a23ce7bd08a",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8071814973647138,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-ed1d54fdc077",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "691b7a237516bc560c6e510bfc1798d15eefa338ec856f50e4e571c4af674223",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8070491954907815,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-69acf3f16996",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "a9e9fc82514164d2501440e49a9d175fd95a404e8fa9df1f920282c1d784c7d6",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8075729655726229,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-3366bcbcf17e",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "016f301f69057220207b4ccf0f26f3598cddcfdf182db0c77f6d8aa0d1ce1258",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8079421416334344,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-feeec30289e8",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "843ee2439c51aa9d9f834693e3b603cfbcd71f6158e0576039b4ff0577b8d445",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.797396782691368,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-cc537d7e1c4b",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "fdb13d694e93b10580abd5afa90e3a6f4ea5d1e51b8c255e82b413545e38d7b8",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.796752148588057,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-0d79ab6430b7",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "1d760f29a297e581f4cc62f5b3eeff9ccb29b171b30722673a6efa55392ad730",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.7974030003646264,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-0ecd7ce70f64",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "4ec4e51875e2d9f91ac284a88b78d903effbe1ad9a1997905f18bde94feed6b4",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.7968802759850837,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-6c8a4bab15f1",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "aad06bd64da7bb56d9f1434af5288557914559aeae07ecea7cbd902148e3a863",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8036210134613745,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-a697ea4034ab",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "25ea9a865da7329cb49053990aea54842913d6c4b413f5265d0a47b0911d87b5",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.803010614056286,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-fbb9d4e5119c",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "56d10194d778ad3eb5eb9aec471e75820449c58d84b1e8dddce5b2d4b84331b9",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8040184083075823,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-1c1163efe639",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "56770e2669f458ba08ba7bec5e5b72c5ee3b0e2f47b3cfc566e9b34bfc376e92",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8038664338987708,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-fea98a03a2bd",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "c1d0420117607030a7d478cfb37ba835a9bafdab83cdb3e337269e3710d8ef11",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8071048051891225,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-1070ef8912e9",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "691b823c61b1cb0aa0b40de5401399e13f19151a60f4d358f8054a419872dc7f",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8078423550303251,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-21f5ed213eb1",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "c70d581677616ce0c9573cd3713b82a1fce235fc53c9e5e9cbe403b21ee3ed5e",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8077690859376998,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-06884c8943b2",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "14b64e7450e0610c300913e933a7dd2ab0d6d3881951e3475557a8e673ee1390",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8081265101972933,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-1ea403e8809d",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "2735481c12f48a18ec9f16b2e56d15221d6be7cab78ce62dba9d406ebe39bb97",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8015221431327346,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-c18b6004e26c",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "88d796a07ea2d6370b2aa106f7e26c8e8cd160de43cf20efdbc6eaadf4d90b76",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8011056265754822,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-23f0fff3ef23",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "752ff055f45beefde084e5edf8db1439e7f44e971ab3e05450cedb010efa5d08",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8010529757325641,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-3a9d31d0a0d5",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "79ec6eadac5d3e1cea32126520c5b0f32cf4cdfb075b8e7c8280936b0ef9ed01",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8003651056780048,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-4faf97b35b89",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "e42d80da8c7bc2b2b9c7c18152f74442f32b10b9175cbce4cc883ad7ed36a3bc",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8035926964739979,
+      "reused_training_run": "Algebra2005-LightSAKT-primary-42-dca5e1830530",
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-e807df10d3a6",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "396a1a468a0e7393975fe02e278bd16778a65bf41b33e55b5480385ec9186480",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.80248097387668,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-09240f4e7b64",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "4e8b0c716cfa68c33b5377b1141a3988fbf39de555aa66a422e800fb6f35315e",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8046320221908241,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-152abd80a946",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "2d602e902b9f95652d191615fcc54476b8975f9ed1c4e57e5f7cd886762cf43d",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8038082855304494,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-8930ef5a2a35",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "1006bddc50e35f47887efef88fb43e48077a505fb07d212918f407d9b887244d",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8074747156817137,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-d377782dabe8",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "6475036d7665c17c4bb7044fe24324870c277f6dcf43d5d4e50423f15235f994",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8071333007255543,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-284988a0a2ec",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "987f1ee6f7fb2089140718e0b235ebb2e211b139b5e497cbb1edd4b0e147bb1e",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8073669916803645,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "Algebra2005-LightSAKT-grid-42-57c33f26d242",
+      "dataset": "Algebra2005",
+      "checkpoint_sha256": "086ed1f0f157c3acce63e07eb27e1380ee8da0cdb10962d2e485d31688858063",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "validation_auc": 0.8076729220949164,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-8488d393eb74",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "9f8494463352bd8606b639ce6f831ca337cc4d1e78f1d3db834a4f7d04461b9e",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7438014786804079,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-a22be35657b2",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "552ad5aa360980e040307ab2c0548bacc392637ffdf1c171efb7763f6d50a2a7",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7432857011556816,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-d61c17bff6d2",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "351968163337bba33bfe0d8ad817e68809fe6b32751c101523fad9af62bdd411",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7447147679445769,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-bc44304c7e6a",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "0340b5afbbfdad2ee1a051494f4ad783fb3bbabab884b345acc764aec0a96425",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7440409585401313,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-1dabce6d364e",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "d188e0fc180c19f3c0d8492bfb0a7d5b47c0e16c624685e0a91dc54f0b78388a",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7501942319766428,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-cddb73383e58",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "1b1d588d54a657fd73dc56e48b132c5e4942cbbf8464a9f91ec7acd40da79353",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7502720602453645,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-ee695dce7311",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "925339309dba0756aa87e81a3d67470b8b37845e2c019c7af004fb872ebbe344",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7497016140391084,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-dbc981c680af",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "1d8a11b5ce231ba8088f282eb0b9a43cbf8d849a53a6b04be07528250f9886bc",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7497246453100717,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-78e7030a9c88",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "28c4f055dec62b0dcb4e4c1b50bcdd563b29f6755e01947cd2bb7968bd23a938",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7504941457958828,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-548bf9305dcd",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "5a84800e9065ef8a5bcb7132530eaa4fd726dd4d6f5f11c0018c01ddbff9be7f",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7507320440834879,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-4462e183cff2",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "5022e6fe4b7cbd1fd7709d85bf53f2588e2c222b18bc80bf4b5cfa1403a1d1cf",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7505079442665922,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-ce7ac2d04d8c",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "28a40baa8305bd6be728005760710c07e7cb1e362a9777c8b6c8569c39a367ee",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.750190955436669,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-5225105f3bce",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "13d99a03b1eccd0ec1548c68164c1b60db730930d277a4aebbaec8fe3ccc12b4",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7454758383525868,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-cbb203a49770",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "ca578f4d68c6769f536d36c887d76f2052591e5b5e371737f76c277afbdbb9f8",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7449074481900846,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-3c973f2400ea",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "74dfcc1594926df766a5563b5e0e463a031ca73ed56e2e05be06e02c11212d14",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.74568479983862,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-2052f5169d22",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "320aa08bc9c7d767bfee1a437518da618125c42713fd321c6ba5f14d9b74fbae",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7453976639284581,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-f08e9494d270",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "d0af3a20f40cf3734883634c23053dbfbf187dee9e7a556c85fcb27b4841197d",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7508035371114405,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-7ec15e323ab3",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "11c37efdb85f2af2610114b2b5e78d94f6f497fac147f9ee5b7cac59ec640625",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7504082694139469,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-e4d9677fea31",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "2fc6fe062658078f47a34d87c2c6b7829d46df7d1d494d588b12126db4fba58e",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7506402353140584,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-519f6ddfded5",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "73bb6f24c39f93cd69d1e9d8c0a32e63407377e97105b47ca29223d1cc1e6fa7",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7500682851222407,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-657c24e26014",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "cc42bafb36521725950de0b01764bcf0542767da3b60997be486d09ed88e71e6",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7492756101287459,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-5cac52478aa9",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "10c21986e42bfd74571d30dfd45025744b73da58941e8f870356c17c153fdb9b",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.750502334161719,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-e8619daa8cf3",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "95d03d73cc925999e5fb39e59f05c6aa2040318aafa29c14a0b1ac92843a7dc5",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.750433947580135,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-1d03fd716dc4",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "4b7aeaa831de4cd17a5b7a6ad6b02f75d1f0393c8a935e7fcdb5e6e72d109da3",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7507321037654546,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-cbc759c49f4b",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "2c2821d6c44c34832edeb1b574c9ef36dbccb2b1772e7d7910d429fec3ecd7aa",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7471094382255836,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-119c315c04ba",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "56af84832a0a555c1aa7808ad2cdc503de7e58c1a88f5c5e1f5357a9b64f19ee",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7469472435286844,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-bc7909e3ec64",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "b637a056037016dd0488c952d560a34d574931dbc711dd8d4c271bafabe191c2",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7459642457273681,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-da59e9e82672",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "91a885bff6ec653b7fe8341eadd49668e967e6d7230982ae984c086146abe2dc",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7451976517533367,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-6a5b69a81950",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "c4e279246a45abe23f487640ba8fb005a72597cc7867f54f2ffd49768f0bb28c",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7480939459806583,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-876374e581c1",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "0dfd9161c03fba46ae4d91a5a73f6a5fcc6f580687a777e44cd9b0afd78ff492",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7481846685382931,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-dc60492cb0c6",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "2dff567a6ab6cc4f938c765511efbd21ad11c496ac4248c6815a2e92e4c49479",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7491933952354692,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-54eb65d6bac2",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "36ad3280f85fc63cc08b4108a57caf11af28390ee80fb54d9a0341650e5ccba9",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7488495286318266,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-48c411be10b6",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "3cd1be71efd7acd6cb046b338e5698c041b36f8149be7c505b5b36b96296973a",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7484366666905395,
+      "reused_training_run": "ASSIST2009-LightSAKT-primary-42-440d619b7547",
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-398feff49fe4",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "33a4c860d929758b1b43b60b1f4b72223468d5be5ce89fe1e69c84090542aa62",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7488550969593232,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-5367c646f7fc",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "95011160ae84defb1af02c3d05d96e65c26413e7e06484a2ccecf97380786f53",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.7480048139474369,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKT-grid-42-3d82f7b69e9e",
+      "dataset": "ASSIST2009",
+      "checkpoint_sha256": "28f168ff08599ef6b2a86e3ca64a6cdfc5f88bc5b79da34067356ff2f4bdafe0",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "validation_auc": 0.748093757982463,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-397bcc602116",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "5f2dcc9a700b835325887827a22b233dd566c96cc667b083254c4e942ff6800c",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7266495588679057,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-a0f261d0be90",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "a7b5bcac31e6ab3de0263b0602c198e34190a74bf1a16d9300e7619c96a2e6e6",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7261479478735434,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-a628603467cc",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "6337c6676eb89e701ead4eaff99c998cf745fbd3e2a01e9e1eda9ec0cc966b80",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7268694860068403,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-b7a847dd2b34",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "e6ea0c6bceddb798fd29798c985b947f6bd97007b21d6bc1e8191477f56c456d",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7261632853468085,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-9349926da302",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "27541bc05c60370dee047ec999c4a6f5270c0ec854fcc47c1ff9f8f99fa8b9dd",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7293926135569984,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-3de8a446858c",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "6264e7fc726ca101c7f86104ea1fb0f237532924c816b46fbcad3a1970a0fb9c",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7291257207213261,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-f53e52b77c73",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "ae03dff05540109d466492168788ca8a85497df999e4f111da0f70c0d67dcc3e",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7278121751970266,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-081855fbb02d",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "95a6518715f59fa4cbce69f2efb5932314dffd2e7517add5ead4344cefd6f6ce",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7273733299332088,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-b0aeca4e3190",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "e2639d37ab4f07cab0c1161468e0d1e2c1750eb117f398d7ab432225653f4633",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7296967037301432,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-5d0c2dacb4af",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "e05522938257c869a964edb49785f56ebb39d3a15f445b85e7870aa2bb7a6c63",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7291934493529867,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-64640d03b0d3",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "c08f06c27d9bd31c155dcaff06bbe17b8464578df7e058930233ffbea68d7136",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7300652943795162,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-6cbd6e38b46e",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "1603b46aebaad5a97823c44677ebd351d1bff10f0445aa2984915b94b0f9c939",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7298726008516037,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-39138de678ce",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "b3e4a9d7d3bada8d410b986f73e5ba9735242dc8421d7ac18d59eafcb783a823",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7274556036518154,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-131e9e879505",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "2350baa572df4c745bd175e22b75918f4d61c9570039bb583725cfb83ba4a59f",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7264890612775221,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-7f6c59d24a33",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "b5eefb7a20b6c2f0e485a05c97f9fb10fae62fccacb01e5d46affab98c4c7cb8",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7267761947282013,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-355019985ef3",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "99b55e4b139eb93ef23e7f0c539d8686c442fa065729853640eb2f6b7d312719",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7267506682816132,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-1512d57add2f",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "e7b41b19d1fa601b6e4f02e9b99869879c383144889a02ec1fbcf69302761cc1",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7291345306321646,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-a5627c7ce7bc",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "a71abad6721ffde2c9ad9b143a88a540816572cf83a6d9ed219e577ad5ee5b22",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7284570587167318,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-b529d6901c60",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "a1163daba4bd3655a01ec23a6d81e9491dfe6170f5b14c0c49730d528fa83021",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7285315257924575,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-ca3f37a65ba6",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "5b09049497430b5bc2f5d026cde2dd07aece69c6a6bd099ad25d185821ef7ca4",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7276588516046092,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-f8bde96560d6",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "48c92f232aced0c4eee1fe58a0fb6360ebd2370d698028a7f1fc2c0c59dc43ce",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7290596257041001,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-37c34205659f",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "b6281211bfc76c094ee6ebf1e514514fdeff6bf18142e6e651045aa3bce7be67",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7290327403063555,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-b95f4b0e409b",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "cb53e44031a33914df5b13dab61c461d5938be521384ed4ec6b480859b47fc83",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7296634970547351,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-445182637f37",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "fa544b203623fea74ca0d957a93ca23899ea609b214b4fa6c75a94859cbcf3ff",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7296578773751108,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-8a618101270c",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "483a8bdcd1db571ac23a9dce4e996288a9165c759f52706ca698a3a4f9d7c65a",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7265228270478458,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-6aad389a9ff2",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "eba085fcae24fcf7f197971a6e5fbefdada0539e855f4b310cbe4a9e07b0b9b5",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7270037159045504,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-a540855228ac",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "a6526eb7cb4945b18c1bc258a41a2d0e912967cffca875310c95e0700011922f",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7259875232585496,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-e1f81f69cd99",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "5368bd78bcba2d20eaa7561b49541a3e932461ed4370b3ed673d93eb5cc052a9",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7257836587499034,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-b39fa45105b4",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "26285d3aba3e60495fb24355227877b4b199984db9bae32235939d3ee08799f0",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7281435351815837,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-6bd53e61d1a0",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "cf907ea48a5fe0f34985350806af8b185295a3e587ed89bcd84b17c7097fa9e4",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7279616954500336,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-13899ec8cbe4",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "33624de73f8537f5ea24a240cfd91ffba205404083d0c1b7755ce5032a830832",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7269515327547463,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-9b758c5a3448",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "996b46ab28f65976b4ada674e225ba1761caff137e991cd1bc0f70923e640e44",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7264018143148309,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-08c3ea752993",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "1a3133ab28882d02ee985cb18848caae3c703160e43b80a6c79d6ff532e7b6ab",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7257955008743797,
+      "reused_training_run": "ASSIST2015-LightSAKT-primary-42-301d9bff60e9",
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-61850ea7cf03",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "a2e9ce6461cccd116dce17326793fa2ecdbe5f60f913c5f139048c865238570e",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7254892294840718,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-a69da8e923df",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "38a55f8be30dd78e42d197b3cdb481b5c661b0a05aa73e63ff59f08d39164599",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7260727062243891,
+      "reused_training_run": null,
+      "storage_verified": true
+    },
+    {
+      "run_id": "ASSIST2015-LightSAKT-grid-42-3769d3cd7356",
+      "dataset": "ASSIST2015",
+      "checkpoint_sha256": "ad54d135e07b0e16289882c9bcfb26a0051d7936790e24a45f8dc65859d77694",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "validation_auc": 0.7253306097171046,
+      "reused_training_run": null,
+      "storage_verified": true
+    }
+  ]
+}
