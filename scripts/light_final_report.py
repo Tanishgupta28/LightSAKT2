@@ -62,6 +62,8 @@ def generate(eta_dir=Path('reports'), refresh_eta=False):
         from scripts.eta import estimate
         estimate(eta_dir)
     selections = {}; checks = []; data_checked = set(); results = []; configs = {}
+    inference_path = Path('reports/selected_final_inference_verification.json')
+    inference_records = {r['run_id']: r for r in json.load(open(inference_path))['runs']} if inference_path.exists() else {}
     protocol=json.load(open('configs/protocol.json')); locked_tests=LockedTestEvidence()
     assert protocol['split_seed']==42 and protocol['training_seeds']==SEEDS
     code_hash = hashlib.sha256(b''.join(str(p).encode() + p.read_bytes() for p in sorted(Path('src').rglob('*.py'))
@@ -100,11 +102,19 @@ def generate(eta_dir=Path('reports'), refresh_eta=False):
                 selections[result['dataset']] = {'config': config, 'selected_run_id': best, 'path': str(selection_path)}
         results.append(result)
         configs[result['run_id']]=config
+        independent = inference_records.get(result['run_id'], {})
+        inference_matches = independent.get('verified', False) and all(independent.get(k) == v for k, v in {
+            'metrics_sha256': sha256(path), 'checkpoint_sha256': result['checkpoint_sha256'],
+            'prediction_sha256': result['prediction_sha256'], 'split_sha256': result['split_sha256'],
+            'processed_sha256': result['processed_sha256'], 'config_sha256': sha256(path.parent/'config.json'),
+            'training_code_sha256': code_hash}.items())
         checks.append({'run_id': result['run_id'], 'group': result['group'], 'dataset': result['dataset'],
                        'model': result['model'], 'seed': result['seed'], 'checkpoint_sha256': result['checkpoint_sha256'],
                        'prediction_sha256': result['prediction_sha256'], 'metrics_sha256': sha256(path),
                        'split_sha256': result['split_sha256'], 'strict_checkpoint_load': True,
-                       'test_metrics_recomputed_from_saved_predictions': True, 'git_commit':result['git_commit'], **locked})
+                       'test_metrics_recomputed_from_saved_predictions': True, 'git_commit':result['git_commit'],
+                       'validation_inference_recomputed': bool(inference_matches and independent.get('validation_recomputed')),
+                       'test_probabilities_recomputed': bool(inference_matches and independent.get('test_probabilities_recomputed')), **locked})
     light = []; individual = []; comparisons = []; partial = []
     for dataset in DATASETS:
         completed = [r for r in results if r['dataset'] == dataset and r['model'] == 'LightSAKT' and r['group'] == 'final']
@@ -183,6 +193,11 @@ def generate(eta_dir=Path('reports'), refresh_eta=False):
              'Verification recalculated every saved test-prediction metric, checked checkpoint and prediction hashes, strictly loaded finite checkpoint states, verified the best validation epoch, confirmed unchanged training-source fingerprints and independently reproduced validation-only configuration selection. Independent full validation-checkpoint inference remains in the final verification schedule.', '',
              '## Completed baseline evidence', '']
     final_rows = comparison[comparison.evidence_scope == 'selected five-seed final']
+    independent_light = sum(r['model']=='LightSAKT' and r['group']=='final' and
+                            r['validation_inference_recomputed'] and r['test_probabilities_recomputed'] for r in checks)
+    lines += [f'Independent CPU validation and test checkpoint inference verified: {independent_light}/15 selected LightSAKT runs. '
+              'Per-probability and metric tolerances, CPU timings and exact artifact hashes: reports/selected_final_inference_verification.json. '
+              'Independent verification of all remaining grid/baseline checkpoints remains in the final research schedule.', '']
     if final_rows.empty: lines += ['No baseline has a complete selected five-seed final comparison at this report time. No pending baseline score or historical manuscript score is included as final evidence.', '']
     else: lines += [table(final_rows, ['dataset', 'baseline', 'baseline_seed_count', 'baseline_auc_mean', 'baseline_auc_std', 'light_minus_baseline_auc_mean']), '']
     primary_rows = comparison[comparison.evidence_scope.str.startswith('fresh primary')]
@@ -218,16 +233,17 @@ def generate(eta_dir=Path('reports'), refresh_eta=False):
     write_json('reports/light_final_summary_verification.json', {'verified': True, 'verified_utc': now,
                'light_final_seed_slots': len(individual), 'summary_method': 'Five prespecified seeds; arithmetic mean and sample SD; saved metrics independently recomputed',
                'completed_five_seed_baseline_comparisons': len(final_rows), 'fresh_primary_baseline_comparisons': len(primary_rows),
+               'light_selected_independent_inference_verified': independent_light,
                'partial_final_baselines_excluded': partial, 'runs': checks,
                'training_code_sha256': code_hash, 'eta_source': str(eta_dir / 'ETA.json'),
                'eta_source_sha256': sha256(eta_dir / 'ETA.json'), 'remaining_occupied_mig_hours': wall,
                'gkt_remaining_occupied_mig_hours': gkt,
                'artifacts': [{'path': p, 'sha256': sha256(p)} for p in paths + [cost_path]]})
-    write_detailed_reports(summary, pd.DataFrame(individual), comparison, results, now)
+    write_detailed_reports(summary, pd.DataFrame(individual), comparison, results, now, checks)
     return summary
 
 
-def write_detailed_reports(summary, individual, comparison, results, now):
+def write_detailed_reports(summary, individual, comparison, results, now, checks):
     individual=individual.sort_values(['dataset','seed'])
     heading=['# Verified selected LightSAKT final-seed results','',f'Generated UTC: {now}','',
              'Completion and integrity were rechecked from saved artifacts. There are five distinct initialization seeds per dataset; seed 42 reuses the selected tuning checkpoint without retraining. Split seed is 42 for every run. All reported test labels and inference sequence identities match the locked student-disjoint test records.','',
@@ -245,7 +261,8 @@ def write_detailed_reports(summary, individual, comparison, results, now):
             heading.append(f'- Seed {r["seed"]}: `{r["checkpoint"]}`; checkpoint SHA256 `{r["checkpoint_sha256"]}`; Git commit `{r["git_commit"]}`; metrics `{r["metrics_path"]}`; predictions `{r["prediction_path"]}`; split SHA256 `{r["split_sha256"]}`. Verification: {r["verification_status"]}.')
         heading.append('')
     heading += ['## Verification limits and reproducibility','',
-                'Checks include complete run status, checkpoint/prediction hashes, strict finite checkpoint loading, selected validation epoch and metrics, training-source fingerprint, validation-only configuration selection, disjoint students, locked test-sequence order and target labels, and metric recomputation from saved probabilities. Probabilities were not regenerated by GPU inference during this check; independent full validation-checkpoint inference remains scheduled.','',
+                'Checks include complete run status, checkpoint/prediction hashes, strict finite checkpoint loading, selected validation epoch and metrics, training-source fingerprint, validation-only configuration selection, disjoint students, locked test-sequence order and target labels, and metric recomputation from saved probabilities.','',
+                f'Independent CPU validation/test checkpoint inference verified for {sum(r["model"]=="LightSAKT" and r["group"]=="final" and r["validation_inference_recomputed"] and r["test_probabilities_recomputed"] for r in checks)}/15 selected LightSAKT runs. Every test target and probability was checked against the saved evidence with FP32 cross-device tolerances (probabilities: atol=1e-6, rtol=1e-6; metrics: atol=1e-7, rtol=1e-6). Per-run proof: reports/selected_final_inference_verification.json. Independent verification of all remaining training checkpoints remains scheduled.','',
                 'Source tables: results/tables/LightSAKT_final_summary.csv and LightSAKT_final_individual_seeds.csv. Full verification: reports/light_final_summary_verification.json. Grid verification: reports/light_grid_verification.json. Selection records: experiments/selections/<dataset>-LightSAKT.json.','',
                 "Reproduce on CPU without signalling training: `CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m scripts.light_final_report --refresh-eta --eta-dir reports/summary_eta/latest`."]
     Path('reports/LIGHTSAKT_FINAL_SEED_RESULTS.md').write_text('\n'.join(heading)+'\n')
@@ -269,6 +286,7 @@ def write_detailed_reports(summary, individual, comparison, results, now):
         baseline += [table(displayed,['dataset','baseline']+[m.upper() for m in METRICS]+['LightSAKT minus baseline AUC']),'',
                      'Differences compare five-seed means on the same split; they are descriptive effect estimates, not significance claims. Paired significance and Holm correction are generated from genuinely matched seeds.','']
     baseline += ['## Fresh primary runs — separate descriptive evidence','',
+                 f'Independent CPU validation/test inference verified for {sum(r["model"]!="LightSAKT" and r["group"]=="final" and r["validation_inference_recomputed"] and r["test_probabilities_recomputed"] for r in checks)} completed baseline final-seed runs. Exact per-probability checks, tolerance values and checkpoint hashes are recorded in reports/selected_final_inference_verification.json.','',
                  'Fresh completed seed-42 primary runs are fixed-configuration, single-seed measurements. They do not substitute for pending validation-selected five-seed comparisons. Original simplified GKT-PAM/MHA implementations remain separately labelled and do not establish canonical GKT reproduction.','',
                  table(comparison[comparison.evidence_scope.str.startswith('fresh primary')],['dataset','baseline','baseline_auc_mean','light_minus_baseline_auc_mean']),'',
                  'All five metrics and deltas: results/tables/LightSAKT_completed_baseline_comparisons.csv. Exact per-run Git commits, checkpoint/prediction hashes, locked test verification and source paths: reports/light_final_summary_verification.json. No statistical superiority or completed research-project claim is made from pending comparisons.']
