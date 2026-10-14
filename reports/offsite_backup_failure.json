@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-13T23:20:57.337486+00:00",
-  "reason": "CalledProcessError: Command '['gh', 'api', '-H', 'Accept: application/octet-stream', 'repos/Tanishgupta28/LightSAKT2/releases/assets/638541574']' returned non-zero exit status 1.",
+  "updated_utc": "2026-10-14T01:34:18.209242+00:00",
+  "reason": "CalledProcessError: Command '['gh', 'api', 'repos/Tanishgupta28/LightSAKT2/releases/411825133/assets?per_page=100', '--paginate', '--jq', '.[] | @json']' returned non-zero exit status 1.",
   "local_backups_retained": true
 }
