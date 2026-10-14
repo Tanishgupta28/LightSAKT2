@@ -1,0 +1,11 @@
+{
+  "run_id": "ASSIST2015-DKT-final-42",
+  "phase": 7,
+  "dataset": "ASSIST2015",
+  "model": "DKT",
+  "seed": 42,
+  "status": "pending",
+  "dependency": "all 36 tuning runs for this dataset/model",
+  "reuse_selected_run": "ASSIST2015-DKT-baseline_tuning-42-753b64e7216a",
+  "selection_path": "experiments/selections/ASSIST2015-DKT.json"
+}
