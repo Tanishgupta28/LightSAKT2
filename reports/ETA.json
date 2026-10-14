@@ -1,34 +1,34 @@
 {
-  "updated_utc": "2026-10-14T13:38:07.910732+00:00",
+  "updated_utc": "2026-10-14T13:52:37.632140+00:00",
   "counts": {
-    "completed": 659,
-    "pending": 297,
+    "completed": 660,
+    "pending": 296,
     "running": 1
   },
-  "remaining_slots": 298,
-  "mean_completed_run_seconds": 147.19837128276228,
+  "remaining_slots": 297,
+  "mean_completed_run_seconds": 148.3452158998472,
   "completed_duration_scope": "Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.",
   "remaining_training_gpu_reserved_hours": {
-    "low": 104.76789065126124,
-    "central": 489.1496295474136,
-    "high": 1435.7850292200228
+    "low": 104.73110851351518,
+    "central": 488.9235274789984,
+    "high": 1435.478270942639
   },
   "two_worker_training_wall_hours": {
-    "low": 85.67301018396509,
-    "central": 379.1157923700092,
-    "high": 1435.7850292200226
+    "low": 85.63622804621902,
+    "central": 378.88969030159393,
+    "high": 1435.4782709426386
   },
   "two_worker_measured_throughput_speedup": 1.5122888289676635,
   "conditional_two_worker_training_finish_utc": {
-    "low": "2026-10-18T03:18:30.747394+00:00",
-    "central": "2026-10-30T08:45:04.763264+00:00",
-    "high": "2026-12-13T09:25:14.015924+00:00"
+    "low": "2026-10-18T03:30:48.053106+00:00",
+    "central": "2026-10-30T08:46:00.517226+00:00",
+    "high": "2026-12-13T09:21:19.407533+00:00"
   },
   "two_worker_estimate_limit": "Serial isolated-equivalent hours differ from MIG occupied wall hours. Two independent GKT-MHA workers only; PAM and other models remain serial. Use the smallest measured MHA throughput factor across tested datasets/widths. Wide PAM measured 0.90x and was rejected for parallel execution. Short-step throughput is extrapolated, not guaranteed. High scenario assumes no sustained benefit. Startup/test/analysis excluded. Aggregate worker elapsed-hours may increase under contention.",
   "conditional_training_finish_utc": {
-    "low": "2026-10-18T22:24:12.317077+00:00",
-    "central": "2026-11-03T22:47:06.577103+00:00",
-    "high": "2026-12-13T09:25:14.015924+00:00"
+    "low": "2026-10-18T22:36:29.622789+00:00",
+    "central": "2026-11-03T22:48:02.331064+00:00",
+    "high": "2026-12-13T09:21:19.407534+00:00"
   },
   "wall_clock_assumption": "One current MIG worker remains continuously available; no outages or new paid resources.",
   "interpretation": "GPU reserved wall hours from end-to-end measured epochs, not hardware GPU-active time. Scenario envelope, not a statistical confidence interval or guaranteed bound.",
