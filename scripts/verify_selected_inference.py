@@ -1,5 +1,6 @@
 """Independently reproduce completed selected-final inference on CPU only."""
 import argparse
+import fcntl
 import json
 import time
 from datetime import datetime, timezone
@@ -34,6 +35,13 @@ def store_record(records, record):
 
 
 def verify(models, groups=('final',), device='cpu'):
+    Path('experiments').mkdir(exist_ok=True)
+    with open('experiments/inference_verification.lock','a') as owner:
+        fcntl.flock(owner,fcntl.LOCK_EX)
+        return _verify(models,groups,device)
+
+
+def _verify(models, groups, device):
     if device=='cpu':
         assert not torch.cuda.is_available(), 'Run with CUDA_VISIBLE_DEVICES empty; active GPU training must remain untouched'
     else:assert device=='cuda' and torch.cuda.is_available()
@@ -57,11 +65,12 @@ def verify(models, groups=('final',), device='cpu'):
                     'processed_sha256': result['processed_sha256'], 'config_sha256': sha256(path.parent/'config.json'),
                     'training_code_sha256': fingerprint}
         prior = old.get(result['run_id'])
-        if prior and prior.get('device')==device and all(prior.get(k) == v for k,v in identity.items()) and prior.get('verified'):
-            store_record(records,prior)
-            continue
         cache_key = (result['checkpoint_sha256'], result['processed_sha256'], result['split_sha256'],
                      json.dumps(config['model_config'],sort_keys=True),config['seq_len'],config['batch_size'],result['prediction_sha256'])
+        if prior and prior.get('device')==device and all(prior.get(k) == v for k,v in identity.items()) and prior.get('verified'):
+            store_record(records,prior)
+            inference_cache[cache_key]=prior
+            continue
         if cache_key in inference_cache:
             peer=inference_cache[cache_key]
             for split in ['validation','test']:

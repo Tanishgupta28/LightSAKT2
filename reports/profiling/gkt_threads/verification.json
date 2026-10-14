@@ -1,6 +1,6 @@
 {
   "status": "completed",
-  "updated_utc": "2026-10-14T17:31:32.467640+00:00",
+  "updated_utc": "2026-10-14T17:38:47.319050+00:00",
   "cases": 24,
   "warmup_steps": 2,
   "timed_steps_per_case": 3,
@@ -8,14 +8,14 @@
     {
       "threads": 1,
       "all_cases_exact": true,
-      "minimum_measured_speedup": 0.8311982533016166,
-      "maximum_measured_speedup": 1.063201381446189
+      "minimum_measured_speedup": 0.9307197679205823,
+      "maximum_measured_speedup": 1.1900790907197552
     },
     {
       "threads": 2,
       "all_cases_exact": true,
-      "minimum_measured_speedup": 0.7603480482107475,
-      "maximum_measured_speedup": 1.0297174293734728
+      "minimum_measured_speedup": 0.9097157374313084,
+      "maximum_measured_speedup": 1.0675723457704063
     }
   ],
   "enabled_for_research": false,
@@ -291,7 +291,7 @@
       "looseversion": "1.3.0",
       "texttable": "1.7.0"
     },
-    "git_commit": "54738b97ef98c678987f8313fb7cfc48dae40a84",
+    "git_commit": "4eeae0129c68c2c146c89692bb5590c148a3c8c9",
     "git_dirty": true,
     "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
     "deterministic_algorithms": true,

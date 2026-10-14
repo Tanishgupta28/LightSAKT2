@@ -41,3 +41,16 @@ def test_locked_test_rejects_overlap_even_with_updated_manifest_hash(tmp_path,mo
     path=Path('data/splits/toy.json');write_json(path,{'train':['a','c'],'validation':['b'],'test':['c']})
     result['split_sha256']=sha256(path)
     with pytest.raises(AssertionError,match='Student split overlap'):LockedTestEvidence().check(result,config)
+
+
+def test_equivalent_alias_uses_only_checksum_bound_physical_inference_identity(tmp_path,monkeypatch):
+    result,config,_=fixture(tmp_path,monkeypatch)
+    result.update(checkpoint_sha256='same-checkpoint',prediction_sha256=sha256(result['prediction_path']))
+    write_json('results/raw/run/metrics.json',result)
+    alias={**result,'run_id':'alias','reused_training_run':'run'}
+    write_json('results/raw/alias/metrics.json',alias)
+    assert not Path('results/raw/alias/prediction_identity.json').exists()
+    checked=LockedTestEvidence().check(alias,config)
+    assert checked['prediction_identity_source_run']=='run' and checked['locked_test_labels_verified']
+    alias['checkpoint_sha256']='different-checkpoint'
+    with pytest.raises(AssertionError,match='Alias inference source differs'):LockedTestEvidence().check(alias,config)

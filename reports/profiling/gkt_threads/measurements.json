@@ -748,5 +748,1055 @@
     "exact_initialization_and_rng": true,
     "exact_step_probabilities_gradients_updates_rng": true,
     "speedup_against_four_threads": 1.0
+  },
+  {
+    "case": "ASSIST2015-GKT_MHA-primary",
+    "dataset": "ASSIST2015",
+    "model": "GKT_MHA",
+    "cpu_threads": 1,
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "66c7e755f6ffce09d575f265120924593e48796383065b0bcc7e2a2d0eef94ca",
+    "initial_cpu_rng_sha256": "ea543753b35d83f870f901baa0ceb45c6e038800ab6d2e01af6ac015e25f6aef",
+    "trajectory": [
+      {
+        "probabilities": "906651cb41e828de37c3981346796af7e846ca4b4b8c7eea687026b91ad4bf75",
+        "gradients": "29ca68580817a61958c205a8a379e45cec5765cf2307e944d8d96acac565145f",
+        "parameters": "539d778b2aa37ea4937f9e1b3b6e1a8855bff348540cb510c5acbefa2d592ff6",
+        "cuda_rng": "da56eca31c34c39bf151e5d42acdaf5f9286b8ae0549df329161f53ccc2b31b6"
+      },
+      {
+        "probabilities": "15bc5c71dde29438166e625bf3681788e07397e7c552002c7258cc6c92e03fb6",
+        "gradients": "eed6312f3497cb000d3579d5954313f9aba466da41584b368973e44c598ca1e0",
+        "parameters": "842816a809e2978c6f5136af13c57b0515e6a7fc63b066fec20e00878cb7f00b",
+        "cuda_rng": "de81b62cda1dc372f466d88183fd52ca9817807eca5d8e2b6bcbc03a28fdfd56"
+      },
+      {
+        "probabilities": "d743c43097dabe5f0d5943a5b7253f83b17f15665782b174bbb50d0b736c8aad",
+        "gradients": "8f23b1c6603b9178966279d5caf4a53454a36b16f005addb0062512f2f4b5d9c",
+        "parameters": "23501d7c723a39c15f104a11e05ed64e0855fd65fcc607b53d7957b110a4e2b0",
+        "cuda_rng": "2decee4f7b6244566b639384828fc2ff38fe00806decc0bac248fd4e7659e749"
+      },
+      {
+        "probabilities": "9670c8b6e7df8ed477410dce47bf42c4625082bfd76d8193b08865677ca21925",
+        "gradients": "3849fcb5ae5b38fe0ce55b7e1f01209ecf0bc497491f2e4c01035c4b4664d861",
+        "parameters": "4d88f10821a8e9e8849735dc0faf66098c98473aedd13bf2d2f289b89cd202da",
+        "cuda_rng": "4c68923ff1c2401061033672212cd25e24a2cd5e89de6751cf7868c7075283d6"
+      },
+      {
+        "probabilities": "b097f5d2ee197d19becd9bcb094de2344143d99b2a3ea81360fd023a534155a9",
+        "gradients": "0b7b7be02ea75f47e04c941da594a1c3179b97b34c6242c4bb9f6122d5541206",
+        "parameters": "67af433a98728588950ead80b8b070b79b1edcde35fb0f2453d85514cde33c82",
+        "cuda_rng": "1da73b0c8545665bd393386e7a8d98239f97e56a2f7457221c5f89d7fd7de21b"
+      }
+    ],
+    "timed_steps": [
+      0.3328943600063212,
+      0.3397692319995258,
+      0.3353730589733459
+    ],
+    "mean_step_seconds": 0.3360122169930643,
+    "peak_reserved_bytes": 624951296,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.1900790907197552
+  },
+  {
+    "case": "ASSIST2015-GKT_MHA-primary",
+    "dataset": "ASSIST2015",
+    "model": "GKT_MHA",
+    "cpu_threads": 2,
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "66c7e755f6ffce09d575f265120924593e48796383065b0bcc7e2a2d0eef94ca",
+    "initial_cpu_rng_sha256": "ea543753b35d83f870f901baa0ceb45c6e038800ab6d2e01af6ac015e25f6aef",
+    "trajectory": [
+      {
+        "probabilities": "906651cb41e828de37c3981346796af7e846ca4b4b8c7eea687026b91ad4bf75",
+        "gradients": "29ca68580817a61958c205a8a379e45cec5765cf2307e944d8d96acac565145f",
+        "parameters": "539d778b2aa37ea4937f9e1b3b6e1a8855bff348540cb510c5acbefa2d592ff6",
+        "cuda_rng": "da56eca31c34c39bf151e5d42acdaf5f9286b8ae0549df329161f53ccc2b31b6"
+      },
+      {
+        "probabilities": "15bc5c71dde29438166e625bf3681788e07397e7c552002c7258cc6c92e03fb6",
+        "gradients": "eed6312f3497cb000d3579d5954313f9aba466da41584b368973e44c598ca1e0",
+        "parameters": "842816a809e2978c6f5136af13c57b0515e6a7fc63b066fec20e00878cb7f00b",
+        "cuda_rng": "de81b62cda1dc372f466d88183fd52ca9817807eca5d8e2b6bcbc03a28fdfd56"
+      },
+      {
+        "probabilities": "d743c43097dabe5f0d5943a5b7253f83b17f15665782b174bbb50d0b736c8aad",
+        "gradients": "8f23b1c6603b9178966279d5caf4a53454a36b16f005addb0062512f2f4b5d9c",
+        "parameters": "23501d7c723a39c15f104a11e05ed64e0855fd65fcc607b53d7957b110a4e2b0",
+        "cuda_rng": "2decee4f7b6244566b639384828fc2ff38fe00806decc0bac248fd4e7659e749"
+      },
+      {
+        "probabilities": "9670c8b6e7df8ed477410dce47bf42c4625082bfd76d8193b08865677ca21925",
+        "gradients": "3849fcb5ae5b38fe0ce55b7e1f01209ecf0bc497491f2e4c01035c4b4664d861",
+        "parameters": "4d88f10821a8e9e8849735dc0faf66098c98473aedd13bf2d2f289b89cd202da",
+        "cuda_rng": "4c68923ff1c2401061033672212cd25e24a2cd5e89de6751cf7868c7075283d6"
+      },
+      {
+        "probabilities": "b097f5d2ee197d19becd9bcb094de2344143d99b2a3ea81360fd023a534155a9",
+        "gradients": "0b7b7be02ea75f47e04c941da594a1c3179b97b34c6242c4bb9f6122d5541206",
+        "parameters": "67af433a98728588950ead80b8b070b79b1edcde35fb0f2453d85514cde33c82",
+        "cuda_rng": "1da73b0c8545665bd393386e7a8d98239f97e56a2f7457221c5f89d7fd7de21b"
+      }
+    ],
+    "timed_steps": [
+      0.41492004500469193,
+      0.41436326000257395,
+      0.3779951510077808
+    ],
+    "mean_step_seconds": 0.4024261520050156,
+    "peak_reserved_bytes": 624951296,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 0.9936757630623647
+  },
+  {
+    "case": "Algebra2005-GKT-primary",
+    "dataset": "Algebra2005",
+    "model": "GKT",
+    "cpu_threads": 4,
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT-primary-42-b5d7512cd82b"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "11b87cbd9fb878f0a045d02dcf61a95aaef4770c919d5ccb59106c61824863bf",
+    "initial_cpu_rng_sha256": "ff53719eaaf1ee6051a3d38c5a3cc0c75d101de724d1c1d254c32b15f26774d7",
+    "trajectory": [
+      {
+        "probabilities": "c629c0aa8f010ba781d331ad2d579f5d230d023e880fa52cfc84561f8fa48970",
+        "gradients": "9fa73d5bdcd77b956484f53a07579bee4ece54ffb1d52e937615ecb8c28d9c57",
+        "parameters": "832c09f1c2f849ccf69c8d4678fcff54584536466453491bb39024366fcb03f0",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "27373d4e7c3caa24e42ac9059ea657b5f103bdd246f96f59b41242780d9d52ec",
+        "gradients": "287ec7060962cc33b3ad5d5d54233e5bd3cb253f8284806c4fcda97257016842",
+        "parameters": "df17bc55b807f1fa8d9b48489c5e4fc1f1370d1bccaed24cb4da39b032056fc3",
+        "cuda_rng": "fc6a851eeaac90edaba4a88bb5beddec12cc014fc832c65a87a76c0d24349edd"
+      },
+      {
+        "probabilities": "860aa298c4fb4fdc1f4dbd716270063fdac2d87b44db80bdcbd69ac646c278a1",
+        "gradients": "292da6ebcb751c4fd6b75b2cec98870df2dac87f12bcb20b2e3d23e1931611e1",
+        "parameters": "a76326f2de584f15e2f3dd84c509403690cbb6a87f6e4d64241efe81071d7db5",
+        "cuda_rng": "d7e14fd283afe59bfe6827de2f7991a5ff46a1d84a3e8e3547d596b89cc9c910"
+      },
+      {
+        "probabilities": "0ea7c138b1e6e4fdd259198f2bace1a85f37c4e2253a8bf307edd4c6a5232fdb",
+        "gradients": "da5e397776f13a76c43eafe01a3d895615daf6f8c16ab8ac1aec5d8f48555906",
+        "parameters": "c27ba43df336cb59f59cd34729ce4fd279cd6d5fb990d8df6904586e32afbdbf",
+        "cuda_rng": "ec69fcba597a3f55b02f7cbbd36e1e57c7b95132ac4c954221d763115fe0fd93"
+      },
+      {
+        "probabilities": "f27ffa6bde65579a2aaaced722498b613f18d1d08a9e251846274bb6ca5ebc72",
+        "gradients": "5cead438c1a8781fc141f5042d615d07e010f2153879967157ab03ecd0e21311",
+        "parameters": "b6feadf55598effe6924a341db4c229ec16ff38367510992ae8e53a0b39ea431",
+        "cuda_rng": "9c612874dfd8e0d190d39bff137e6e0e52e13c009326a01bde1a4c0d33a570ed"
+      }
+    ],
+    "timed_steps": [
+      0.694032277999213,
+      0.6735975699848495,
+      0.6689081790100317
+    ],
+    "mean_step_seconds": 0.6788460089980314,
+    "peak_reserved_bytes": 4456448000,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.0
+  },
+  {
+    "case": "Algebra2005-GKT-primary",
+    "dataset": "Algebra2005",
+    "model": "GKT",
+    "cpu_threads": 1,
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT-primary-42-b5d7512cd82b"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "11b87cbd9fb878f0a045d02dcf61a95aaef4770c919d5ccb59106c61824863bf",
+    "initial_cpu_rng_sha256": "ff53719eaaf1ee6051a3d38c5a3cc0c75d101de724d1c1d254c32b15f26774d7",
+    "trajectory": [
+      {
+        "probabilities": "c629c0aa8f010ba781d331ad2d579f5d230d023e880fa52cfc84561f8fa48970",
+        "gradients": "9fa73d5bdcd77b956484f53a07579bee4ece54ffb1d52e937615ecb8c28d9c57",
+        "parameters": "832c09f1c2f849ccf69c8d4678fcff54584536466453491bb39024366fcb03f0",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "27373d4e7c3caa24e42ac9059ea657b5f103bdd246f96f59b41242780d9d52ec",
+        "gradients": "287ec7060962cc33b3ad5d5d54233e5bd3cb253f8284806c4fcda97257016842",
+        "parameters": "df17bc55b807f1fa8d9b48489c5e4fc1f1370d1bccaed24cb4da39b032056fc3",
+        "cuda_rng": "fc6a851eeaac90edaba4a88bb5beddec12cc014fc832c65a87a76c0d24349edd"
+      },
+      {
+        "probabilities": "860aa298c4fb4fdc1f4dbd716270063fdac2d87b44db80bdcbd69ac646c278a1",
+        "gradients": "292da6ebcb751c4fd6b75b2cec98870df2dac87f12bcb20b2e3d23e1931611e1",
+        "parameters": "a76326f2de584f15e2f3dd84c509403690cbb6a87f6e4d64241efe81071d7db5",
+        "cuda_rng": "d7e14fd283afe59bfe6827de2f7991a5ff46a1d84a3e8e3547d596b89cc9c910"
+      },
+      {
+        "probabilities": "0ea7c138b1e6e4fdd259198f2bace1a85f37c4e2253a8bf307edd4c6a5232fdb",
+        "gradients": "da5e397776f13a76c43eafe01a3d895615daf6f8c16ab8ac1aec5d8f48555906",
+        "parameters": "c27ba43df336cb59f59cd34729ce4fd279cd6d5fb990d8df6904586e32afbdbf",
+        "cuda_rng": "ec69fcba597a3f55b02f7cbbd36e1e57c7b95132ac4c954221d763115fe0fd93"
+      },
+      {
+        "probabilities": "f27ffa6bde65579a2aaaced722498b613f18d1d08a9e251846274bb6ca5ebc72",
+        "gradients": "5cead438c1a8781fc141f5042d615d07e010f2153879967157ab03ecd0e21311",
+        "parameters": "b6feadf55598effe6924a341db4c229ec16ff38367510992ae8e53a0b39ea431",
+        "cuda_rng": "9c612874dfd8e0d190d39bff137e6e0e52e13c009326a01bde1a4c0d33a570ed"
+      }
+    ],
+    "timed_steps": [
+      0.6563833789841738,
+      0.6561169410124421,
+      0.6601725660148077
+    ],
+    "mean_step_seconds": 0.6575576286704745,
+    "peak_reserved_bytes": 4469030912,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.0323749271536855
+  },
+  {
+    "case": "Algebra2005-GKT-primary",
+    "dataset": "Algebra2005",
+    "model": "GKT",
+    "cpu_threads": 2,
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT-primary-42-b5d7512cd82b"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "11b87cbd9fb878f0a045d02dcf61a95aaef4770c919d5ccb59106c61824863bf",
+    "initial_cpu_rng_sha256": "ff53719eaaf1ee6051a3d38c5a3cc0c75d101de724d1c1d254c32b15f26774d7",
+    "trajectory": [
+      {
+        "probabilities": "c629c0aa8f010ba781d331ad2d579f5d230d023e880fa52cfc84561f8fa48970",
+        "gradients": "9fa73d5bdcd77b956484f53a07579bee4ece54ffb1d52e937615ecb8c28d9c57",
+        "parameters": "832c09f1c2f849ccf69c8d4678fcff54584536466453491bb39024366fcb03f0",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "27373d4e7c3caa24e42ac9059ea657b5f103bdd246f96f59b41242780d9d52ec",
+        "gradients": "287ec7060962cc33b3ad5d5d54233e5bd3cb253f8284806c4fcda97257016842",
+        "parameters": "df17bc55b807f1fa8d9b48489c5e4fc1f1370d1bccaed24cb4da39b032056fc3",
+        "cuda_rng": "fc6a851eeaac90edaba4a88bb5beddec12cc014fc832c65a87a76c0d24349edd"
+      },
+      {
+        "probabilities": "860aa298c4fb4fdc1f4dbd716270063fdac2d87b44db80bdcbd69ac646c278a1",
+        "gradients": "292da6ebcb751c4fd6b75b2cec98870df2dac87f12bcb20b2e3d23e1931611e1",
+        "parameters": "a76326f2de584f15e2f3dd84c509403690cbb6a87f6e4d64241efe81071d7db5",
+        "cuda_rng": "d7e14fd283afe59bfe6827de2f7991a5ff46a1d84a3e8e3547d596b89cc9c910"
+      },
+      {
+        "probabilities": "0ea7c138b1e6e4fdd259198f2bace1a85f37c4e2253a8bf307edd4c6a5232fdb",
+        "gradients": "da5e397776f13a76c43eafe01a3d895615daf6f8c16ab8ac1aec5d8f48555906",
+        "parameters": "c27ba43df336cb59f59cd34729ce4fd279cd6d5fb990d8df6904586e32afbdbf",
+        "cuda_rng": "ec69fcba597a3f55b02f7cbbd36e1e57c7b95132ac4c954221d763115fe0fd93"
+      },
+      {
+        "probabilities": "f27ffa6bde65579a2aaaced722498b613f18d1d08a9e251846274bb6ca5ebc72",
+        "gradients": "5cead438c1a8781fc141f5042d615d07e010f2153879967157ab03ecd0e21311",
+        "parameters": "b6feadf55598effe6924a341db4c229ec16ff38367510992ae8e53a0b39ea431",
+        "cuda_rng": "9c612874dfd8e0d190d39bff137e6e0e52e13c009326a01bde1a4c0d33a570ed"
+      }
+    ],
+    "timed_steps": [
+      0.6704977430053987,
+      0.6693517760140821,
+      0.670577526994748
+    ],
+    "mean_step_seconds": 0.6701423486714096,
+    "peak_reserved_bytes": 4469030912,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.0129877784083892
+  },
+  {
+    "case": "Algebra2005-GKT_MHA-primary",
+    "dataset": "Algebra2005",
+    "model": "GKT_MHA",
+    "cpu_threads": 4,
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT_MHA-primary-42-8718ee768a1d"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "f6f267b903764ce9063e4be0ec2d1a2335bad6850132cdf3412e86a5d657104f",
+    "initial_cpu_rng_sha256": "ea1dd37e37f384bb8b1f136749cbcb0ab7086a7fd7691dd98c88040f3757d4ee",
+    "trajectory": [
+      {
+        "probabilities": "ec16ad8eabdd0ed67bec2cd0fd8e385256525d1b15d94070ea665b3ad8f56274",
+        "gradients": "e6288a4370050c119f4f902e053b416733e354dcf21af4e9635daedc96882ad5",
+        "parameters": "d62f290c616592d9fa6735655b8cf23851351f669054cca6bb6d2faedac289da",
+        "cuda_rng": "de81b62cda1dc372f466d88183fd52ca9817807eca5d8e2b6bcbc03a28fdfd56"
+      },
+      {
+        "probabilities": "3df6bb974c3e121adae4c0792b66ba51666a9c83de0763b34b02bf32c619b623",
+        "gradients": "6bb8ff3d56afcd4838762e6abeb2d9d8372c19dfe373fd0c958b83fdbabab7be",
+        "parameters": "72d479cc89c51e48011d93484071bd0f90f21560c938b38b89d69c9854c694f2",
+        "cuda_rng": "4c68923ff1c2401061033672212cd25e24a2cd5e89de6751cf7868c7075283d6"
+      },
+      {
+        "probabilities": "dac39713e4460474920b098c7465ea9b0ad32f36958fceacfb12aaf9b114c6a7",
+        "gradients": "8b8504ca85536d85ee5a6d7bc5bcc93467f6610ab893a62c7f9625df2b3cfb1f",
+        "parameters": "ee39aac72f0201ce68e158eb47255e68707763b6f94570c00e368eb72e0d06da",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "e1980add3842c5cdf5f3b5799c8a7c2c7981216281cb8795819181d0ff7418ec",
+        "gradients": "80675d37bb4a7311d733801f5ccca81abd435013272cb0175f77ddc36e5491b4",
+        "parameters": "7ae88621277c175b2ff3203fd86f782b7f1148392f3cb3c638053c16d33d35f4",
+        "cuda_rng": "148127c98e46933feff11ea80406921b68ba9ac6e1433e8dfb27be3f78575800"
+      },
+      {
+        "probabilities": "1652d45dd672bdf25b1b92949b61c898282c064095e11133b9aebb797c71d0cf",
+        "gradients": "ad3254c9fa07f76a8bbd30276429f9d3f876b0d0e7187e55e1ca093171b484a0",
+        "parameters": "50158c414d4d81a10fb4633cd00baa1a3fa45b02c400b03c3ddfede05bb98748",
+        "cuda_rng": "321154a59cf5892133a0f0a27af2a68bf6c78e24e29c6375e1aa1fba30864414"
+      }
+    ],
+    "timed_steps": [
+      0.6825730619893875,
+      0.734040087001631,
+      0.6869244270201307
+    ],
+    "mean_step_seconds": 0.7011791920037164,
+    "peak_reserved_bytes": 4469030912,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.0
+  },
+  {
+    "case": "Algebra2005-GKT_MHA-primary",
+    "dataset": "Algebra2005",
+    "model": "GKT_MHA",
+    "cpu_threads": 1,
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT_MHA-primary-42-8718ee768a1d"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "f6f267b903764ce9063e4be0ec2d1a2335bad6850132cdf3412e86a5d657104f",
+    "initial_cpu_rng_sha256": "ea1dd37e37f384bb8b1f136749cbcb0ab7086a7fd7691dd98c88040f3757d4ee",
+    "trajectory": [
+      {
+        "probabilities": "ec16ad8eabdd0ed67bec2cd0fd8e385256525d1b15d94070ea665b3ad8f56274",
+        "gradients": "e6288a4370050c119f4f902e053b416733e354dcf21af4e9635daedc96882ad5",
+        "parameters": "d62f290c616592d9fa6735655b8cf23851351f669054cca6bb6d2faedac289da",
+        "cuda_rng": "de81b62cda1dc372f466d88183fd52ca9817807eca5d8e2b6bcbc03a28fdfd56"
+      },
+      {
+        "probabilities": "3df6bb974c3e121adae4c0792b66ba51666a9c83de0763b34b02bf32c619b623",
+        "gradients": "6bb8ff3d56afcd4838762e6abeb2d9d8372c19dfe373fd0c958b83fdbabab7be",
+        "parameters": "72d479cc89c51e48011d93484071bd0f90f21560c938b38b89d69c9854c694f2",
+        "cuda_rng": "4c68923ff1c2401061033672212cd25e24a2cd5e89de6751cf7868c7075283d6"
+      },
+      {
+        "probabilities": "dac39713e4460474920b098c7465ea9b0ad32f36958fceacfb12aaf9b114c6a7",
+        "gradients": "8b8504ca85536d85ee5a6d7bc5bcc93467f6610ab893a62c7f9625df2b3cfb1f",
+        "parameters": "ee39aac72f0201ce68e158eb47255e68707763b6f94570c00e368eb72e0d06da",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "e1980add3842c5cdf5f3b5799c8a7c2c7981216281cb8795819181d0ff7418ec",
+        "gradients": "80675d37bb4a7311d733801f5ccca81abd435013272cb0175f77ddc36e5491b4",
+        "parameters": "7ae88621277c175b2ff3203fd86f782b7f1148392f3cb3c638053c16d33d35f4",
+        "cuda_rng": "148127c98e46933feff11ea80406921b68ba9ac6e1433e8dfb27be3f78575800"
+      },
+      {
+        "probabilities": "1652d45dd672bdf25b1b92949b61c898282c064095e11133b9aebb797c71d0cf",
+        "gradients": "ad3254c9fa07f76a8bbd30276429f9d3f876b0d0e7187e55e1ca093171b484a0",
+        "parameters": "50158c414d4d81a10fb4633cd00baa1a3fa45b02c400b03c3ddfede05bb98748",
+        "cuda_rng": "321154a59cf5892133a0f0a27af2a68bf6c78e24e29c6375e1aa1fba30864414"
+      }
+    ],
+    "timed_steps": [
+      0.6921068650262896,
+      0.677929433004465,
+      0.6768043980118819
+    ],
+    "mean_step_seconds": 0.6822802320142122,
+    "peak_reserved_bytes": 4469030912,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.027699703293046
+  },
+  {
+    "case": "Algebra2005-GKT_MHA-primary",
+    "dataset": "Algebra2005",
+    "model": "GKT_MHA",
+    "cpu_threads": 2,
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 30,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT_MHA-primary-42-8718ee768a1d"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "f6f267b903764ce9063e4be0ec2d1a2335bad6850132cdf3412e86a5d657104f",
+    "initial_cpu_rng_sha256": "ea1dd37e37f384bb8b1f136749cbcb0ab7086a7fd7691dd98c88040f3757d4ee",
+    "trajectory": [
+      {
+        "probabilities": "ec16ad8eabdd0ed67bec2cd0fd8e385256525d1b15d94070ea665b3ad8f56274",
+        "gradients": "e6288a4370050c119f4f902e053b416733e354dcf21af4e9635daedc96882ad5",
+        "parameters": "d62f290c616592d9fa6735655b8cf23851351f669054cca6bb6d2faedac289da",
+        "cuda_rng": "de81b62cda1dc372f466d88183fd52ca9817807eca5d8e2b6bcbc03a28fdfd56"
+      },
+      {
+        "probabilities": "3df6bb974c3e121adae4c0792b66ba51666a9c83de0763b34b02bf32c619b623",
+        "gradients": "6bb8ff3d56afcd4838762e6abeb2d9d8372c19dfe373fd0c958b83fdbabab7be",
+        "parameters": "72d479cc89c51e48011d93484071bd0f90f21560c938b38b89d69c9854c694f2",
+        "cuda_rng": "4c68923ff1c2401061033672212cd25e24a2cd5e89de6751cf7868c7075283d6"
+      },
+      {
+        "probabilities": "dac39713e4460474920b098c7465ea9b0ad32f36958fceacfb12aaf9b114c6a7",
+        "gradients": "8b8504ca85536d85ee5a6d7bc5bcc93467f6610ab893a62c7f9625df2b3cfb1f",
+        "parameters": "ee39aac72f0201ce68e158eb47255e68707763b6f94570c00e368eb72e0d06da",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "e1980add3842c5cdf5f3b5799c8a7c2c7981216281cb8795819181d0ff7418ec",
+        "gradients": "80675d37bb4a7311d733801f5ccca81abd435013272cb0175f77ddc36e5491b4",
+        "parameters": "7ae88621277c175b2ff3203fd86f782b7f1148392f3cb3c638053c16d33d35f4",
+        "cuda_rng": "148127c98e46933feff11ea80406921b68ba9ac6e1433e8dfb27be3f78575800"
+      },
+      {
+        "probabilities": "1652d45dd672bdf25b1b92949b61c898282c064095e11133b9aebb797c71d0cf",
+        "gradients": "ad3254c9fa07f76a8bbd30276429f9d3f876b0d0e7187e55e1ca093171b484a0",
+        "parameters": "50158c414d4d81a10fb4633cd00baa1a3fa45b02c400b03c3ddfede05bb98748",
+        "cuda_rng": "321154a59cf5892133a0f0a27af2a68bf6c78e24e29c6375e1aa1fba30864414"
+      }
+    ],
+    "timed_steps": [
+      0.6719978949986398,
+      0.6951770720188506,
+      0.7152189109765459
+    ],
+    "mean_step_seconds": 0.6941312926646788,
+    "peak_reserved_bytes": 4469030912,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.0101535536771173
+  },
+  {
+    "case": "Algebra2005-GKT-wide",
+    "dataset": "Algebra2005",
+    "model": "GKT",
+    "cpu_threads": 4,
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 104,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT-primary-42-b5d7512cd82b"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "f1ec47a999d9cf2e077c9d0880b9f3137d4ebca9074ff379adb0a84a5c311208",
+    "initial_cpu_rng_sha256": "2009daa6a5f4924da7ed96008e6c5b3fabfdffb665e70eff875487c391bec6c9",
+    "trajectory": [
+      {
+        "probabilities": "ac0917a38cb2c3260a122ddd4fac7473e8f2286234d2f44627ce07d3c97f8702",
+        "gradients": "2fe093ed89d4d8d4a9a6a62fd3b3c16df135d497ff6320a21f2bf3a378fe5104",
+        "parameters": "e02f2e24173fe59dc4ea4295452ca1ffa76f2b0de2b1d2046ea31b0dc44897a2",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "b5ad8a115947d713927f06ef99ecd0dfae2bbbc6c84297f01f36ccc4c9d89061",
+        "gradients": "96acbe7baa408f79ac97a927f3991a9b43190bde46e91d7d2988d55a5fd0196e",
+        "parameters": "2aabec6aceec848d03ba17759c3a98c111f317c7fc707d030659668c6685a159",
+        "cuda_rng": "fc6a851eeaac90edaba4a88bb5beddec12cc014fc832c65a87a76c0d24349edd"
+      },
+      {
+        "probabilities": "89ea8ed07c172d8ae0bbcfaeafd442469542f1b82376c490137856b2418885b0",
+        "gradients": "efff52be7b138a9af143b3b87c03b7fbaf64033852efbf7458d71c67bf79522e",
+        "parameters": "0209e5c63391bfa62f8972e2682f0539b34f68ad12512fbde12ca8823d16fa31",
+        "cuda_rng": "d7e14fd283afe59bfe6827de2f7991a5ff46a1d84a3e8e3547d596b89cc9c910"
+      },
+      {
+        "probabilities": "3665ed9bae8e8772f0cf0b41239f893226167b083b3bee619564ebbaabb2c188",
+        "gradients": "0706d36b64e76d36f79bcd739206de7f86907d8748550e46333057c59babd6ba",
+        "parameters": "037167370ada5181a1adae1718d3c481893940cad14fd7e25539b0d245b603d1",
+        "cuda_rng": "ec69fcba597a3f55b02f7cbbd36e1e57c7b95132ac4c954221d763115fe0fd93"
+      },
+      {
+        "probabilities": "ca2dec8e15ffcdf8139fb8d0da534dcb4b00cdab44c4190ea9442a8ed4e24d20",
+        "gradients": "534fc7aad58263cb8f4159046455a59de1b41c4b31be9b79d7b18ed0de088dfc",
+        "parameters": "c4c5f99c3feab1183f422428f9a5e49dea6f86095847c3401b246d90e4006928",
+        "cuda_rng": "9c612874dfd8e0d190d39bff137e6e0e52e13c009326a01bde1a4c0d33a570ed"
+      }
+    ],
+    "timed_steps": [
+      0.665105627005687,
+      0.6649635179783218,
+      0.661787359014852
+    ],
+    "mean_step_seconds": 0.6639521679996202,
+    "peak_reserved_bytes": 9779019776,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.0
+  },
+  {
+    "case": "Algebra2005-GKT-wide",
+    "dataset": "Algebra2005",
+    "model": "GKT",
+    "cpu_threads": 1,
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 104,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT-primary-42-b5d7512cd82b"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "f1ec47a999d9cf2e077c9d0880b9f3137d4ebca9074ff379adb0a84a5c311208",
+    "initial_cpu_rng_sha256": "2009daa6a5f4924da7ed96008e6c5b3fabfdffb665e70eff875487c391bec6c9",
+    "trajectory": [
+      {
+        "probabilities": "ac0917a38cb2c3260a122ddd4fac7473e8f2286234d2f44627ce07d3c97f8702",
+        "gradients": "2fe093ed89d4d8d4a9a6a62fd3b3c16df135d497ff6320a21f2bf3a378fe5104",
+        "parameters": "e02f2e24173fe59dc4ea4295452ca1ffa76f2b0de2b1d2046ea31b0dc44897a2",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "b5ad8a115947d713927f06ef99ecd0dfae2bbbc6c84297f01f36ccc4c9d89061",
+        "gradients": "96acbe7baa408f79ac97a927f3991a9b43190bde46e91d7d2988d55a5fd0196e",
+        "parameters": "2aabec6aceec848d03ba17759c3a98c111f317c7fc707d030659668c6685a159",
+        "cuda_rng": "fc6a851eeaac90edaba4a88bb5beddec12cc014fc832c65a87a76c0d24349edd"
+      },
+      {
+        "probabilities": "89ea8ed07c172d8ae0bbcfaeafd442469542f1b82376c490137856b2418885b0",
+        "gradients": "efff52be7b138a9af143b3b87c03b7fbaf64033852efbf7458d71c67bf79522e",
+        "parameters": "0209e5c63391bfa62f8972e2682f0539b34f68ad12512fbde12ca8823d16fa31",
+        "cuda_rng": "d7e14fd283afe59bfe6827de2f7991a5ff46a1d84a3e8e3547d596b89cc9c910"
+      },
+      {
+        "probabilities": "3665ed9bae8e8772f0cf0b41239f893226167b083b3bee619564ebbaabb2c188",
+        "gradients": "0706d36b64e76d36f79bcd739206de7f86907d8748550e46333057c59babd6ba",
+        "parameters": "037167370ada5181a1adae1718d3c481893940cad14fd7e25539b0d245b603d1",
+        "cuda_rng": "ec69fcba597a3f55b02f7cbbd36e1e57c7b95132ac4c954221d763115fe0fd93"
+      },
+      {
+        "probabilities": "ca2dec8e15ffcdf8139fb8d0da534dcb4b00cdab44c4190ea9442a8ed4e24d20",
+        "gradients": "534fc7aad58263cb8f4159046455a59de1b41c4b31be9b79d7b18ed0de088dfc",
+        "parameters": "c4c5f99c3feab1183f422428f9a5e49dea6f86095847c3401b246d90e4006928",
+        "cuda_rng": "9c612874dfd8e0d190d39bff137e6e0e52e13c009326a01bde1a4c0d33a570ed"
+      }
+    ],
+    "timed_steps": [
+      0.6843100400001276,
+      0.698829127009958,
+      0.6883015240018722
+    ],
+    "mean_step_seconds": 0.6904802303373193,
+    "peak_reserved_bytes": 9779019776,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 0.9615802724362732
+  },
+  {
+    "case": "Algebra2005-GKT-wide",
+    "dataset": "Algebra2005",
+    "model": "GKT",
+    "cpu_threads": 2,
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 104,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT-primary-42-b5d7512cd82b"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "f1ec47a999d9cf2e077c9d0880b9f3137d4ebca9074ff379adb0a84a5c311208",
+    "initial_cpu_rng_sha256": "2009daa6a5f4924da7ed96008e6c5b3fabfdffb665e70eff875487c391bec6c9",
+    "trajectory": [
+      {
+        "probabilities": "ac0917a38cb2c3260a122ddd4fac7473e8f2286234d2f44627ce07d3c97f8702",
+        "gradients": "2fe093ed89d4d8d4a9a6a62fd3b3c16df135d497ff6320a21f2bf3a378fe5104",
+        "parameters": "e02f2e24173fe59dc4ea4295452ca1ffa76f2b0de2b1d2046ea31b0dc44897a2",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "b5ad8a115947d713927f06ef99ecd0dfae2bbbc6c84297f01f36ccc4c9d89061",
+        "gradients": "96acbe7baa408f79ac97a927f3991a9b43190bde46e91d7d2988d55a5fd0196e",
+        "parameters": "2aabec6aceec848d03ba17759c3a98c111f317c7fc707d030659668c6685a159",
+        "cuda_rng": "fc6a851eeaac90edaba4a88bb5beddec12cc014fc832c65a87a76c0d24349edd"
+      },
+      {
+        "probabilities": "89ea8ed07c172d8ae0bbcfaeafd442469542f1b82376c490137856b2418885b0",
+        "gradients": "efff52be7b138a9af143b3b87c03b7fbaf64033852efbf7458d71c67bf79522e",
+        "parameters": "0209e5c63391bfa62f8972e2682f0539b34f68ad12512fbde12ca8823d16fa31",
+        "cuda_rng": "d7e14fd283afe59bfe6827de2f7991a5ff46a1d84a3e8e3547d596b89cc9c910"
+      },
+      {
+        "probabilities": "3665ed9bae8e8772f0cf0b41239f893226167b083b3bee619564ebbaabb2c188",
+        "gradients": "0706d36b64e76d36f79bcd739206de7f86907d8748550e46333057c59babd6ba",
+        "parameters": "037167370ada5181a1adae1718d3c481893940cad14fd7e25539b0d245b603d1",
+        "cuda_rng": "ec69fcba597a3f55b02f7cbbd36e1e57c7b95132ac4c954221d763115fe0fd93"
+      },
+      {
+        "probabilities": "ca2dec8e15ffcdf8139fb8d0da534dcb4b00cdab44c4190ea9442a8ed4e24d20",
+        "gradients": "534fc7aad58263cb8f4159046455a59de1b41c4b31be9b79d7b18ed0de088dfc",
+        "parameters": "c4c5f99c3feab1183f422428f9a5e49dea6f86095847c3401b246d90e4006928",
+        "cuda_rng": "9c612874dfd8e0d190d39bff137e6e0e52e13c009326a01bde1a4c0d33a570ed"
+      }
+    ],
+    "timed_steps": [
+      0.6897112379956525,
+      0.8226686639827676,
+      0.677157358994009
+    ],
+    "mean_step_seconds": 0.7298457536574764,
+    "peak_reserved_bytes": 9779019776,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 0.9097157374313084
+  },
+  {
+    "case": "Algebra2005-GKT_MHA-wide",
+    "dataset": "Algebra2005",
+    "model": "GKT_MHA",
+    "cpu_threads": 4,
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 64,
+        "num_attn_heads": 8,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT_MHA-primary-42-8718ee768a1d"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "5fc21230520d9315455c4ed96a58c130e82ab9c3920b65153e52b7168db3be89",
+    "initial_cpu_rng_sha256": "f4ce60d5a201044f843e5cac3dc1bd153f06fb66caa5c778534e6bab5e0824bc",
+    "trajectory": [
+      {
+        "probabilities": "0b6edcbbd30e7e229d7255c486c4db9841a356f5c636ff335cbc99572993c28b",
+        "gradients": "1499811f08d1e3720a496416b7b26587d208402630ea0437623ee8a4c7c68e8c",
+        "parameters": "10320c1f84eaf947dc0a5c878872fdf4af8a47f6b8f93d80cbc3742af2b7143e",
+        "cuda_rng": "de81b62cda1dc372f466d88183fd52ca9817807eca5d8e2b6bcbc03a28fdfd56"
+      },
+      {
+        "probabilities": "0df3d86e5c458cab466f88976e3872e74886150c4df7b6851b3747732a7b7e99",
+        "gradients": "7a8c27c9e209d3e67e931c59f0ea543d9da8dcb4cdfaa6dffee4f2dc50361cc0",
+        "parameters": "f2e8e7b6fc4d48957b19607d9f8e1a33a2ba70653ab948dd9da13dd2d3a280f2",
+        "cuda_rng": "4c68923ff1c2401061033672212cd25e24a2cd5e89de6751cf7868c7075283d6"
+      },
+      {
+        "probabilities": "13bafa3bbf2eb5cba5cc5640141659ef7bc7cdd36f202508619a754d39e21892",
+        "gradients": "a9f0c800cb68f177da347ffbce3e72872285a5b0d31c5480b7fd60fbfe1101ec",
+        "parameters": "27f7b5f24689aefbd7d0be9955d97107cc7d22d96a6d536b68e5a3c962fbd6f1",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "2176e4e2411bbc734a5115113c5e31d9e0584ccdd772450fbbf6ce883b99d6a0",
+        "gradients": "85c922adf1c6e13555c4100fcfb66a65b302599d472bcee1c5b7d87811e9176e",
+        "parameters": "fefe8807b7c4138fc90388b5fa834ff85c96748892eee7540f6a2d6b89a257d8",
+        "cuda_rng": "148127c98e46933feff11ea80406921b68ba9ac6e1433e8dfb27be3f78575800"
+      },
+      {
+        "probabilities": "28339a7196db3b5279a344e55a95ee7e92696366338aa68a67a1f28aba83fa3c",
+        "gradients": "1a77d5ca719a2d237a4e67a8bc84ae179f66a5767a01b172f236da876675bc35",
+        "parameters": "4e9080dcc5ee88ec8b61b46f9efac326679eacd2ed35c37163f48aea16682887",
+        "cuda_rng": "321154a59cf5892133a0f0a27af2a68bf6c78e24e29c6375e1aa1fba30864414"
+      }
+    ],
+    "timed_steps": [
+      0.8074741149903275,
+      0.6900537179899402,
+      0.6985348020098172
+    ],
+    "mean_step_seconds": 0.7320208783300283,
+    "peak_reserved_bytes": 9779019776,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.0
+  },
+  {
+    "case": "Algebra2005-GKT_MHA-wide",
+    "dataset": "Algebra2005",
+    "model": "GKT_MHA",
+    "cpu_threads": 1,
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 64,
+        "num_attn_heads": 8,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT_MHA-primary-42-8718ee768a1d"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "5fc21230520d9315455c4ed96a58c130e82ab9c3920b65153e52b7168db3be89",
+    "initial_cpu_rng_sha256": "f4ce60d5a201044f843e5cac3dc1bd153f06fb66caa5c778534e6bab5e0824bc",
+    "trajectory": [
+      {
+        "probabilities": "0b6edcbbd30e7e229d7255c486c4db9841a356f5c636ff335cbc99572993c28b",
+        "gradients": "1499811f08d1e3720a496416b7b26587d208402630ea0437623ee8a4c7c68e8c",
+        "parameters": "10320c1f84eaf947dc0a5c878872fdf4af8a47f6b8f93d80cbc3742af2b7143e",
+        "cuda_rng": "de81b62cda1dc372f466d88183fd52ca9817807eca5d8e2b6bcbc03a28fdfd56"
+      },
+      {
+        "probabilities": "0df3d86e5c458cab466f88976e3872e74886150c4df7b6851b3747732a7b7e99",
+        "gradients": "7a8c27c9e209d3e67e931c59f0ea543d9da8dcb4cdfaa6dffee4f2dc50361cc0",
+        "parameters": "f2e8e7b6fc4d48957b19607d9f8e1a33a2ba70653ab948dd9da13dd2d3a280f2",
+        "cuda_rng": "4c68923ff1c2401061033672212cd25e24a2cd5e89de6751cf7868c7075283d6"
+      },
+      {
+        "probabilities": "13bafa3bbf2eb5cba5cc5640141659ef7bc7cdd36f202508619a754d39e21892",
+        "gradients": "a9f0c800cb68f177da347ffbce3e72872285a5b0d31c5480b7fd60fbfe1101ec",
+        "parameters": "27f7b5f24689aefbd7d0be9955d97107cc7d22d96a6d536b68e5a3c962fbd6f1",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "2176e4e2411bbc734a5115113c5e31d9e0584ccdd772450fbbf6ce883b99d6a0",
+        "gradients": "85c922adf1c6e13555c4100fcfb66a65b302599d472bcee1c5b7d87811e9176e",
+        "parameters": "fefe8807b7c4138fc90388b5fa834ff85c96748892eee7540f6a2d6b89a257d8",
+        "cuda_rng": "148127c98e46933feff11ea80406921b68ba9ac6e1433e8dfb27be3f78575800"
+      },
+      {
+        "probabilities": "28339a7196db3b5279a344e55a95ee7e92696366338aa68a67a1f28aba83fa3c",
+        "gradients": "1a77d5ca719a2d237a4e67a8bc84ae179f66a5767a01b172f236da876675bc35",
+        "parameters": "4e9080dcc5ee88ec8b61b46f9efac326679eacd2ed35c37163f48aea16682887",
+        "cuda_rng": "321154a59cf5892133a0f0a27af2a68bf6c78e24e29c6375e1aa1fba30864414"
+      }
+    ],
+    "timed_steps": [
+      0.7025852779916022,
+      0.7136186500138137,
+      0.6944241999881342
+    ],
+    "mean_step_seconds": 0.7035427093311833,
+    "peak_reserved_bytes": 9779019776,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.0404782376693484
+  },
+  {
+    "case": "Algebra2005-GKT_MHA-wide",
+    "dataset": "Algebra2005",
+    "model": "GKT_MHA",
+    "cpu_threads": 2,
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "GKT_MHA",
+      "group": "primary",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 64,
+        "num_attn_heads": 8,
+        "method": "MHA"
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-GKT_MHA-primary-42-8718ee768a1d"
+    },
+    "train_only": true,
+    "initial_parameters_sha256": "5fc21230520d9315455c4ed96a58c130e82ab9c3920b65153e52b7168db3be89",
+    "initial_cpu_rng_sha256": "f4ce60d5a201044f843e5cac3dc1bd153f06fb66caa5c778534e6bab5e0824bc",
+    "trajectory": [
+      {
+        "probabilities": "0b6edcbbd30e7e229d7255c486c4db9841a356f5c636ff335cbc99572993c28b",
+        "gradients": "1499811f08d1e3720a496416b7b26587d208402630ea0437623ee8a4c7c68e8c",
+        "parameters": "10320c1f84eaf947dc0a5c878872fdf4af8a47f6b8f93d80cbc3742af2b7143e",
+        "cuda_rng": "de81b62cda1dc372f466d88183fd52ca9817807eca5d8e2b6bcbc03a28fdfd56"
+      },
+      {
+        "probabilities": "0df3d86e5c458cab466f88976e3872e74886150c4df7b6851b3747732a7b7e99",
+        "gradients": "7a8c27c9e209d3e67e931c59f0ea543d9da8dcb4cdfaa6dffee4f2dc50361cc0",
+        "parameters": "f2e8e7b6fc4d48957b19607d9f8e1a33a2ba70653ab948dd9da13dd2d3a280f2",
+        "cuda_rng": "4c68923ff1c2401061033672212cd25e24a2cd5e89de6751cf7868c7075283d6"
+      },
+      {
+        "probabilities": "13bafa3bbf2eb5cba5cc5640141659ef7bc7cdd36f202508619a754d39e21892",
+        "gradients": "a9f0c800cb68f177da347ffbce3e72872285a5b0d31c5480b7fd60fbfe1101ec",
+        "parameters": "27f7b5f24689aefbd7d0be9955d97107cc7d22d96a6d536b68e5a3c962fbd6f1",
+        "cuda_rng": "f05c57be309c9ac41ba6151dbf6c2fc5f151f0621e15dc416299ac8dce0d0638"
+      },
+      {
+        "probabilities": "2176e4e2411bbc734a5115113c5e31d9e0584ccdd772450fbbf6ce883b99d6a0",
+        "gradients": "85c922adf1c6e13555c4100fcfb66a65b302599d472bcee1c5b7d87811e9176e",
+        "parameters": "fefe8807b7c4138fc90388b5fa834ff85c96748892eee7540f6a2d6b89a257d8",
+        "cuda_rng": "148127c98e46933feff11ea80406921b68ba9ac6e1433e8dfb27be3f78575800"
+      },
+      {
+        "probabilities": "28339a7196db3b5279a344e55a95ee7e92696366338aa68a67a1f28aba83fa3c",
+        "gradients": "1a77d5ca719a2d237a4e67a8bc84ae179f66a5767a01b172f236da876675bc35",
+        "parameters": "4e9080dcc5ee88ec8b61b46f9efac326679eacd2ed35c37163f48aea16682887",
+        "cuda_rng": "321154a59cf5892133a0f0a27af2a68bf6c78e24e29c6375e1aa1fba30864414"
+      }
+    ],
+    "timed_steps": [
+      0.6835633120208513,
+      0.6764886190067045,
+      0.6970101909828372
+    ],
+    "mean_step_seconds": 0.6856873740034644,
+    "peak_reserved_bytes": 9779019776,
+    "exact_initialization_and_rng": true,
+    "exact_step_probabilities_gradients_updates_rng": true,
+    "speedup_against_four_threads": 1.0675723457704063
   }
 ]

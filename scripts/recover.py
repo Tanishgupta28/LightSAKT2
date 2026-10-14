@@ -4,8 +4,10 @@ from contextlib import contextmanager
 from datetime import datetime, timezone
 import fcntl
 import hashlib
+import importlib.metadata
 import json
 import os
+import platform
 from pathlib import Path
 import subprocess
 import sys
@@ -68,8 +70,21 @@ def configure():
             'cuda_visible_devices':os.environ.get('CUDA_VISIBLE_DEVICES'),
             'interval_seconds':30,'retry_cooldown_seconds':120,'max_attempts_without_progress':3,
             'automatic_platform_restart':False,'scope':'Complete existing manifest; completed runs skipped',
+            'python_version':platform.python_version(),
+            'package_versions':{name:importlib.metadata.version(name) for name in
+                                ['torch','numpy','pandas','scikit-learn','scipy']},
             'training_env':{k:os.environ[k] for k in ['OMP_NUM_THREADS','MKL_NUM_THREADS','CUBLAS_WORKSPACE_CONFIG'] if k in os.environ}}
     write_json(POLICY,policy);return policy
+
+
+def validate_completed_results():
+    from scripts.coordinator import refreshed_jobs
+    from scripts.verify_artifacts import verify_stored_result
+    checked=set();count=0
+    for job in refreshed_jobs():
+        if job['status']!='completed':continue
+        verify_stored_result(Path('results/raw')/job['run_id']/'metrics.json',checked);count+=1
+    return count
 
 
 def gpu_environment(policy):
@@ -98,6 +113,10 @@ def validate_resume_states(policy):
     from scripts.verify_checkpoint_states import verify
     from src.datasets.preprocess import sha256
     assert code_fingerprint()==policy['training_code_sha256'], 'Training code changed: automatic resume blocked'
+    if 'python_version' in policy:
+        assert platform.python_version()==policy['python_version'], 'Python version changed: automatic resume blocked'
+    for name,version in policy.get('package_versions',{}).items():
+        assert importlib.metadata.version(name)==version, f'{name} version changed: automatic resume blocked'
     states=[];data_checked=set()
     for job in refreshed_jobs():
         if job['status']=='completed':continue
@@ -168,7 +187,9 @@ def ensure(policy,attempts):
     check=subprocess.run([sys.executable,'-c','import torch; raise SystemExit(0 if torch.cuda.is_available() else 1)'],
                          env=env,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
     if check.returncode:result['blocked']='CUDA unavailable; full research training is not silently moved to CPU';return result
-    try:result['resume_states']=validate_resume_states(policy)
+    try:
+        result['resume_states']=validate_resume_states(policy)
+        result['completed_artifacts_verified']=validate_completed_results()
     except Exception as error:
         result['blocked']=str(error);return result
     result['launched'].append(launch(module,['--retry-failed'],env))
@@ -214,7 +235,8 @@ def main():
     from scripts.progress import snapshot
     policy=configure();progress=snapshot();result={**plan(processes(),progress['completed'],progress['total_slots']),
         'training_code_matches':code_fingerprint()==policy['training_code_sha256'],
-        'resume_states':validate_resume_states(policy),'automatic_platform_restart':False,'read_only_training_check':True}
+        'resume_states':validate_resume_states(policy),'completed_artifacts_verified':validate_completed_results(),
+        'automatic_platform_restart':False,'read_only_training_check':True}
     write_json('reports/recovery/preflight.json',result);print(json.dumps(result,indent=2))
 
 

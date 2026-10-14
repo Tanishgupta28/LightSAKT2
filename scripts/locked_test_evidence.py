@@ -33,6 +33,14 @@ class LockedTestEvidence:
         identities, targets, split_sha, processed_sha = self.datasets[key]
         assert result['split_sha256'] == split_sha and result['processed_sha256'] == processed_sha
         identity_path = Path('results/raw') / result['run_id'] / 'prediction_identity.json'
+        identity_source_run = result['run_id']
+        if not identity_path.exists() and result.get('reused_training_run'):
+            from scripts.reuse_training import physical_source
+            identity_source_run, source = physical_source(result['run_id'])
+            assert result.get('checkpoint_sha256'), 'Alias has no checkpoint proof'
+            for name in ['dataset','split_sha256','processed_sha256','checkpoint_sha256','prediction_sha256']:
+                assert source.get(name)==result.get(name), 'Alias inference source differs: '+name
+            identity_path=Path('results/raw')/identity_source_run/'prediction_identity.json'
         assert json.load(open(identity_path)) == identities, 'Inference identity mismatch with locked test sequences'
         with np.load(result['prediction_path']) as saved:
             np.testing.assert_array_equal(saved['target'], targets, err_msg='Saved labels differ from locked test targets')
@@ -41,4 +49,5 @@ class LockedTestEvidence:
         assert result['test']['n_targets'] == len(targets)
         return {'locked_test_identity_verified': True, 'locked_test_labels_verified': True,
                 'locked_test_targets': len(targets), 'prediction_identity_sha256': sha256(identity_path),
+                'prediction_identity_source_run':identity_source_run,
                 'split_manifest': str(split_path), 'processed_data': str(processed_path)}

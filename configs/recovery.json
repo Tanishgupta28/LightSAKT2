@@ -10,5 +10,13 @@
   "scope": "Complete existing manifest; completed runs skipped",
   "training_env": {
     "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "python_version": "3.10.12",
+  "package_versions": {
+    "torch": "2.4.0a0+f70bd71a48.nv24.6",
+    "numpy": "1.24.4",
+    "pandas": "2.2.1",
+    "scikit-learn": "1.5.0",
+    "scipy": "1.13.1"
   }
 }

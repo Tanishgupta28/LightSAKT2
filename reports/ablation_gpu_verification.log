@@ -25,3 +25,23 @@ Traceback (most recent call last):
   File "/workspace/LightSAKT2/scripts/locked_test_evidence.py", line 36, in check
     assert json.load(open(identity_path)) == identities, 'Inference identity mismatch with locked test sequences'
 FileNotFoundError: [Errno 2] No such file or directory: 'results/raw/ASSIST2009-LightSAKT-no_regularization-123/prediction_identity.json'
+ASSIST2009-LightSAKT-single_head-123: cuda validation/test verified in 0.950s
+ASSIST2009-LightSAKT-single_head-2026: cuda validation/test verified in 0.143s
+ASSIST2009-LightSAKT-single_head-3407: cuda validation/test verified in 0.141s
+ASSIST2009-LightSAKT-single_head-42: cuda validation/test verified in 0.139s
+ASSIST2009-LightSAKT-single_head-7777: cuda validation/test verified in 0.142s
+ASSIST2015-LightSAKT-no_attention-123: cuda validation/test verified in 0.469s
+ASSIST2015-LightSAKT-no_attention-2026: cuda validation/test verified in 0.287s
+ASSIST2015-LightSAKT-no_attention-3407: cuda validation/test verified in 0.288s
+ASSIST2015-LightSAKT-no_attention-42: cuda validation/test verified in 0.286s
+ASSIST2015-LightSAKT-no_attention-7777: cuda validation/test verified in 0.291s
+ASSIST2015-LightSAKT-no_dropout-123: cuda validation/test verified in 0.508s
+ASSIST2015-LightSAKT-no_dropout-2026: cuda validation/test verified in 0.580s
+ASSIST2015-LightSAKT-no_dropout-3407: cuda validation/test verified in 0.507s
+ASSIST2015-LightSAKT-no_dropout-42: cuda validation/test verified in 0.598s
+ASSIST2015-LightSAKT-no_dropout-7777: cuda validation/test verified in 0.625s
+ASSIST2015-LightSAKT-no_position-123: cuda validation/test verified in 0.621s
+ASSIST2015-LightSAKT-no_position-2026: cuda validation/test verified in 0.505s
+ASSIST2015-LightSAKT-no_position-3407: cuda validation/test verified in 0.505s
+ASSIST2015-LightSAKT-no_position-42: cuda validation/test verified in 0.585s
+ASSIST2015-LightSAKT-no_position-7777: cuda validation/test verified in 0.507s
