@@ -1,6 +1,6 @@
 # Experiment status
 
-Updated UTC: 2026-10-15T16:17:37.172895+00:00
+Updated UTC: 2026-10-15T16:18:02.866082+00:00
 
 Completed: **745**. Remaining: **212**. Total schedule slots: 957.
 
@@ -38,7 +38,7 @@ Measured-reference serial equivalent: 460.4 training hours; scenario envelope 95
 
 Process existence alone is not a health guarantee. Last independently sampled CPU/checkpoint progress and checkpoint integrity are recorded in reports/EXECUTION_HEALTH.md. A detached scheduler survives a terminal disconnect, but no automatic restart after environment shutdown is configured.
 
-Private draft recovery assets independently download/checksum verified: 747. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md and reports/offsite_backup.json.
+Private draft recovery assets independently download/checksum verified: 747. All available completed archives synchronized: False. See reports/OFFSITE_RECOVERY.md and reports/offsite_backup.json.
 
 The 108 LightSAKT grid configurations, equal baseline tuning budgets, and five matched final seeds use the frozen student splits. See experiments/manifest.json and per-run status files.
 

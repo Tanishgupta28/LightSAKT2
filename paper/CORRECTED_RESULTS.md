@@ -67,7 +67,7 @@ Algebra2005: LightSAKT mean test AUC minus SAKT was -0.002784 across the five pr
 
 ## Comparison with the best completed baseline
 
-Generated UTC: 2026-10-15T15:51:39.582076+00:00
+Generated UTC: 2026-10-15T16:17:44.659123+00:00
 
 This comparison includes only completed selected five-seed DKT, DKT+, DKVMN and SAKT results on the same locked splits. It excludes historical manuscript scores, primary single-seed runs, partial seed sets and both GKT variants. Best means highest completed five-seed mean test AUC among these four baselines. This is a descriptive leaderboard after evaluation; it does not select hyperparameters, checkpoints or future experiments.
 
@@ -129,8 +129,6 @@ Primary model widths differ, so these counts cannot be attributed solely to the 
 Benchmark weights were newly initialized, and forward/backward used a squared-output surrogate. These timings are distinct from dataset epoch times, which include training and validation. Ten timing repetitions measure engineering variability on one recorded device, not independent student or training-seed uncertainty. Scope-specific numerical results, complete raw repetitions and hardware metadata are preserved in results/tables/efficiency.csv, results/tables/efficiency_paired_comparisons.csv, results/tables/parameters.csv, experiments/efficiency/raw_timings.json and experiments/efficiency/environment.json. The full measured discussion is in paper/EFFICIENCY_RESULTS.md.
 
 ## Matched SAKT grid appendix
-
-**Verification status:** All 108 published validation AUCs passed independent CPU reproduction at the original tolerances; all selected final test results have existing independent inference proofs. Full original-device validation metrics remain queued. The failed strict CPU accuracy check is preserved and is not declared passed. The additional workflow is not yet fully verified.
 
 # LightSAKT versus SAKT: two distinct comparisons
 

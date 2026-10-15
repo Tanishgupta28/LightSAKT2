@@ -7,7 +7,7 @@ Archived corrected-rebuild ETA snapshots were read from Git objects; these are e
 |183|183|2026-10-14T01:52:25.176860+00:00|501.140|391.106|3b53f28278b8237fc2dbd55e711e6e407335c1c1|
 |254|255|2026-10-14T02:30:33.484506+00:00|500.585|390.551|1be758a7379d01102f07b54e3434c524f49ed7e4|
 |551|551|2026-10-14T05:03:39.739302+00:00|499.323|389.289|ee6996362af625ed7dba9769e34a77b9cb590a5f|
-|current|745|2026-10-15T16:17:12.768023+00:00|460.407|350.373|live saved artifacts|
+|current|745|2026-10-15T16:17:35.576973+00:00|460.407|350.373|live saved artifacts|
 
 The earlier approximately 391-hour number was a continuously refreshed, model/dataset-weighted forecast of remaining work. It was not a global average multiplied by total pending entries. Its small changes were obscured by rounding and by the fact that short prioritized jobs and evidence-reuse entries contributed little remaining time. The expensive GKT configurations remained untrained; new fast-model timings updated their own strata without removing those costs.
 
@@ -18,7 +18,7 @@ Current GKT contribution: 350.373/350.373 occupied MIG hours (100.00% of the cen
 |baseline_tuning|182|411.731|312.701|
 |repeated_seeds|30|48.675|37.672|
 
-Isolated serial training work is 460.407 hours. With the admitted independent GKT-MHA concurrency, occupied-device time is 350.373 MIG hours. On the one available MIG partition, continuous-availability wall-clock training time is therefore 14.60 days, with conditional finish 2026-10-30T06:39:34.610787+00:00. These are separate quantities; actual hardware-active utilization is unavailable.
+Isolated serial training work is 460.407 hours. With the admitted independent GKT-MHA concurrency, occupied-device time is 350.373 MIG hours. On the one available MIG partition, continuous-availability wall-clock training time is therefore 14.60 days, with conditional finish 2026-10-30T06:39:57.419737+00:00. These are separate quantities; actual hardware-active utilization is unavailable.
 
 Planning envelope: 76.8–1324.5 occupied hours. This is an early-stop/maximum-epoch scenario envelope, not a confidence interval or guaranteed bound. The upper scenario does not assume sustained concurrency benefit. Unselected baseline configurations, GKT stopping counts, contention and environment availability dominate uncertainty.
 
