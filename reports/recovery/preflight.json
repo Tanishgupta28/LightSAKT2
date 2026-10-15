@@ -7,8 +7,8 @@
   "training_code_matches": true,
   "resume_states": [
     {
-      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-5abd556796ed/latest.pt",
-      "sha256": "4bf0a23c694515eba95d7811c703af2a27d94e7f5b91bb26b6e60d8137629525",
+      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-5bed0aeb890d/latest.pt",
+      "sha256": "56b582dd324555688771ceb752528dd212de08e9cc2f0d8e821e7002c1c02853",
       "epoch": 1,
       "strict_state_load": true,
       "finite_parameters": true,
@@ -16,8 +16,8 @@
       "optimizer_rng_verified": true
     },
     {
-      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-5abd556796ed/best.pt",
-      "sha256": "aec8be2c807e3eb889eef6cf0e4d1d19ebdacf1ab49a1bd20f2af25fcb7a1da4",
+      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-5bed0aeb890d/best.pt",
+      "sha256": "2fcdb343e7ec8bb15d6e30dc8795259ba45c81b6c4547dcfaa1ef7db5669ef1d",
       "epoch": 1,
       "strict_state_load": true,
       "finite_parameters": true,
@@ -25,7 +25,7 @@
       "optimizer_rng_verified": false
     }
   ],
-  "completed_artifacts_verified": 725,
+  "completed_artifacts_verified": 726,
   "automatic_platform_restart": false,
   "read_only_training_check": true
 }

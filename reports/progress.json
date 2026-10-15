@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-15T04:12:21.570769+00:00",
+  "updated_utc": "2026-10-15T04:21:39.602160+00:00",
   "total_slots": 957,
   "completed": 726,
   "remaining": 231,
@@ -45,7 +45,7 @@
   "running_jobs": [
     {
       "run_id": "ASSIST2009-GKT-baseline_tuning-42-5bed0aeb890d",
-      "last_completed_epoch": 0,
+      "last_completed_epoch": 3,
       "best_checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-5bed0aeb890d/best.pt",
       "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT-baseline_tuning-42-5bed0aeb890d/config.json"
     }

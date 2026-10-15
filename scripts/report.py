@@ -102,4 +102,9 @@ def main():
         with Path('FINAL_RESEARCH_REPORT.md').open('a') as output:
             output.write(f'\n## Finished LightSAKT outputs and recovery\n\nAll {record["grid_rows"]} LightSAKT grid rows and {record["ablation_slots"]} ablation slots are independently verified; {record["numerical_plot_sets"]} grid/ablation plot sets retain source CSVs and PNG/SVG/PDF files. Reports: LIGHTSAKT_GRID_ABLATION_RESULTS.md and light_outputs_verification.json. Original-device ablation test probabilities reproduced bit-for-bit; 15 regularization aliases reuse dropout-removal evidence. A measured CPU/GPU AUC rank-sensitivity diagnosis is preserved without relaxing the strict CPU check or changing experimental metrics.\n\nThe CPU recovery supervisor protects existing training, recovers missing processes with lock/source/version/data/checkpoint checks, and resumes latest optimizer/RNG states. Automatic platform shutdown recovery is not installed: controller/startup permissions are unavailable. The tested manual bootstrap, raw-data reconstruction and non-destructive offsite restoration commands are in reports/RECOVERY_PROCEDURE.md. Additional exact GKT thread-count probes showed no consistent speedup; four threads remain active. Stable publication serialization reduces NFS/Git churn while retaining numerical observations. No architecture, gradient or scientific-scope change was made.\n')
 
+    findings=Path('reports/LIGHTSAKT_COMPLETED_BASELINE_FINDINGS.md')
+    if findings.exists():
+        with Path('FINAL_RESEARCH_REPORT.md').open('a') as output:
+            output.write('\n## Comparison against completed baselines\n\n'+findings.read_text().split('\n',2)[-1])
+
 if __name__=='__main__':main()

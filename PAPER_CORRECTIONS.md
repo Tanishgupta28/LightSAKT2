@@ -60,6 +60,22 @@ Replace historical LightSAKT scores with the following fresh five-seed results u
 |ASSIST2015|0.726088 ± 0.000315|0.749526 ± 0.000419|0.846282 ± 0.000392|0.171233 ± 0.000106|0.516098 ± 0.000340|
 |Algebra2005|0.810590 ± 0.000422|0.795574 ± 0.000639|0.870356 ± 0.000350|0.144069 ± 0.000364|0.445272 ± 0.001018|
 
-Numbers are mean ± sample SD on one fixed split. A complete baseline superiority statement still requires the matched selected five-seed comparisons. Fresh primary seed-42 comparisons remain descriptive, with different replication and tuning stages. Source: results/tables/LightSAKT_final_summary.csv, LightSAKT_final_individual_seeds.csv, LightSAKT_completed_baseline_comparisons.csv and reports/light_final_summary_verification.json. All original efficiency findings remain preserved.
+Numbers are mean ± sample SD on one fixed split. Matched completed baseline comparisons and differences from the best completed baseline are reported in reports/LIGHTSAKT_COMPLETED_BASELINE_FINDINGS.md; pending models supply no final evidence. Fresh primary seed-42 comparisons remain descriptive, with different replication and tuning stages. Source: results/tables/LightSAKT_final_summary.csv, LightSAKT_final_individual_seeds.csv, LightSAKT_completed_baseline_comparisons.csv and reports/light_final_summary_verification.json. All original efficiency findings remain preserved.
 
 <!-- selected-light-results:end -->
+
+<!-- completed-baseline-findings:start -->
+
+## Completed baseline amendment — pages 17–19 and 23–24
+
+The general claim that LightSAKT consistently outperforms the compared models is unsupported by the completed matched evidence. Replace it with the following generated mean-AUC differences; pending GKT runs do not enter this comparison.
+
+|dataset|best_completed_baseline|light_auc_mean|baseline_auc_mean|light_minus_best_auc|
+|---|---|---|---|---|
+|ASSIST2009|DKT|0.751056|0.757165|-0.006109|
+|ASSIST2015|DKT|0.726088|0.728235|-0.002146|
+|Algebra2005|DKT+|0.810590|0.823456|-0.012866|
+
+The best baseline is defined descriptively by highest completed mean test AUC among DKT, DKT+, DKVMN and SAKT; test data are not used to revise training or validation selection. Five-seed comparisons are conditional on one frozen student split. Full source evidence and qualified manuscript interpretation: reports/LIGHTSAKT_COMPLETED_BASELINE_FINDINGS.md and results/tables/LightSAKT_vs_best_completed_baseline.csv.
+
+<!-- completed-baseline-findings:end -->

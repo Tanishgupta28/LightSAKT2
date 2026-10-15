@@ -1,0 +1,9 @@
+{
+  "verified_utc": "2026-10-15T04:18:28.462768+00:00",
+  "command": "CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m pytest -q tests/test_final_summary.py tests/test_eta_history.py tests/test_progressive_results.py",
+  "exit_code": 0,
+  "passed": 7,
+  "seconds": 1.73,
+  "scope": "Current reporting tests, including exclusion of single-seed, partial-seed and GKT results from requested baseline ranking; duplicate final rows rejected; empty comparisons produce no winner",
+  "training_code_changed": false
+}

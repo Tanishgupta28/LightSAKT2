@@ -1,5 +1,5 @@
 {
-  "verified_utc": "2026-10-15T03:41:00.626065+00:00",
+  "verified_utc": "2026-10-15T04:16:41.809433+00:00",
   "verified": true,
   "checkpoints": [
     {
@@ -2445,6 +2445,24 @@
       "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-4d57c219c66d/latest.pt",
       "sha256": "b70bac7179049fe9234b72ce12e86222e0df44b6c31138db80e3d5a6e5b52f44",
       "epoch": 22,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-5abd556796ed/best.pt",
+      "sha256": "324da18ee96d4c8b83649254c0e8dd90dcc72b46f529c66b32ba33d01580421b",
+      "epoch": 7,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-5abd556796ed/latest.pt",
+      "sha256": "bfeec9e27b5c2e84d5ed6a6a3969e6eef38b84a74654a16644e54c4fb8d0da6d",
+      "epoch": 12,
       "strict_state_load": true,
       "finite_parameters": true,
       "split_data_match": true,

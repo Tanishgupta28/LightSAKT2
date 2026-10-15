@@ -55,6 +55,31 @@ def table(frame, columns):
     return '\n'.join(lines)
 
 
+def best_completed_baselines(summary, comparison):
+    """Describe final results for the four requested baselines; never select training settings."""
+    columns = ['dataset', 'completed_baselines', 'best_completed_baseline', 'light_auc_mean',
+               'light_auc_std', 'baseline_auc_mean', 'baseline_auc_std', 'light_minus_best_auc']
+    if comparison.empty:
+        return pd.DataFrame(columns=columns)
+    allowed = {'DKT', 'DKT+', 'DKVMN', 'SAKT'}
+    final = comparison[(comparison.evidence_scope == 'selected five-seed final') &
+                       (comparison.baseline_seed_count == 5) & comparison.baseline.isin(allowed)]
+    assert not final.duplicated(['dataset', 'baseline']).any(), 'Duplicate final baseline evidence'
+    rows = []
+    for light in summary.to_dict('records'):
+        group = final[final.dataset == light['dataset']]
+        if group.empty:
+            continue
+        assert np.isfinite(group[['baseline_auc_mean', 'baseline_auc_std']].to_numpy()).all()
+        best = group.sort_values(['baseline_auc_mean', 'baseline'], ascending=[False, True]).iloc[0]
+        rows.append({'dataset': light['dataset'], 'completed_baselines': len(group),
+                     'best_completed_baseline': best.baseline, 'light_auc_mean': light['auc_mean'],
+                     'light_auc_std': light['auc_std'], 'baseline_auc_mean': best.baseline_auc_mean,
+                     'baseline_auc_std': best.baseline_auc_std,
+                     'light_minus_best_auc': light['auc_mean'] - best.baseline_auc_mean})
+    return pd.DataFrame(rows, columns=columns)
+
+
 def generate(eta_dir=Path('reports'), refresh_eta=False):
     eta_dir = Path(eta_dir)
     if refresh_eta:
@@ -224,7 +249,7 @@ def generate(eta_dir=Path('reports'), refresh_eta=False):
     wording=[begin,'','## Verified selected LightSAKT results (Tables 4–7; pages 14–19)','',
              'Replace historical LightSAKT scores with the following fresh five-seed results under the corrected causal, student-disjoint protocol. The original PDF is preserved. Hyperparameters were selected using all 36 validation candidates per dataset; historical numbers and pending baseline runs are excluded from these final LightSAKT measurements.','',
              table(formatted,['dataset']+[m.upper() for m in METRICS]),'',
-             'Numbers are mean ± sample SD on one fixed split. A complete baseline superiority statement still requires the matched selected five-seed comparisons. Fresh primary seed-42 comparisons remain descriptive, with different replication and tuning stages. Source: results/tables/LightSAKT_final_summary.csv, LightSAKT_final_individual_seeds.csv, LightSAKT_completed_baseline_comparisons.csv and reports/light_final_summary_verification.json. All original efficiency findings remain preserved.','',end]
+             'Numbers are mean ± sample SD on one fixed split. Matched completed baseline comparisons and differences from the best completed baseline are reported in reports/LIGHTSAKT_COMPLETED_BASELINE_FINDINGS.md; pending models supply no final evidence. Fresh primary seed-42 comparisons remain descriptive, with different replication and tuning stages. Source: results/tables/LightSAKT_final_summary.csv, LightSAKT_final_individual_seeds.csv, LightSAKT_completed_baseline_comparisons.csv and reports/light_final_summary_verification.json. All original efficiency findings remain preserved.','',end]
     original=corrections.read_text(); replacement='\n'.join(wording)
     if begin in original:
         first,tail=original.split(begin,1); assert end in tail
@@ -291,6 +316,53 @@ def write_detailed_reports(summary, individual, comparison, results, now, checks
                  table(comparison[comparison.evidence_scope.str.startswith('fresh primary')],['dataset','baseline','baseline_auc_mean','light_minus_baseline_auc_mean']),'',
                  'All five metrics and deltas: results/tables/LightSAKT_completed_baseline_comparisons.csv. Exact per-run Git commits, checkpoint/prediction hashes, locked test verification and source paths: reports/light_final_summary_verification.json. No statistical superiority or completed research-project claim is made from pending comparisons.']
     Path('reports/BASELINE_COMPARISON.md').write_text('\n'.join(baseline)+'\n')
+    best = best_completed_baselines(summary, comparison)
+    save_csv(best, 'results/tables/LightSAKT_vs_best_completed_baseline.csv')
+    findings = ['# LightSAKT against completed baseline evidence', '', f'Generated UTC: {now}', '',
+                'This comparison includes only completed selected five-seed DKT, DKT+, DKVMN and SAKT results on the same locked splits. It excludes historical manuscript scores, primary single-seed runs, partial seed sets and both GKT variants. Best means highest completed five-seed mean test AUC among these four baselines. This is a descriptive leaderboard after evaluation; it does not select hyperparameters, checkpoints or future experiments.', '',
+                table(best, ['dataset', 'completed_baselines', 'best_completed_baseline', 'light_auc_mean',
+                             'baseline_auc_mean', 'light_minus_best_auc']), '']
+    for row in best.itertuples():
+        relation = 'higher' if row.light_minus_best_auc > 0 else 'lower' if row.light_minus_best_auc < 0 else 'equal'
+        findings.append(f'{row.dataset}: LightSAKT mean test AUC is {relation} than the best completed baseline, '
+                        f'{row.best_completed_baseline}; difference {row.light_minus_best_auc:+.6f}.')
+    findings += ['', 'Each reported model has five prespecified seeds, and SD means sample SD (ddof=1). Full baseline AUC, accuracy, F1, MSE and BCE means/SDs are in BASELINE_COMPARISON.md. All 15 LightSAKT seed values, validation-selected epochs and checkpoint references are in LIGHTSAKT_FINAL_SEED_RESULTS.md. Small positive differences against individual models are descriptive, not established statistical superiority. Five nonzero pairs permit a minimum two-sided exact signed-rank p-value of 0.0625; multiplicity adjustment cannot lower it.', '',
+                 'The original general superiority claim must be replaced by dataset- and metric-specific observations. Causal ELU+1 prefix attention retains theoretical O(L) sequence-length work at fixed head dimensions; that mathematical property does not imply faster measured execution, lower measured memory, better accuracy or better modelling of long histories.', '',
+                 'The preserved controlled benchmark found higher LightSAKT latency in all 60 matched comparisons and lower peak allocated memory in 7/60. Parameter savings are configuration-dependent: only Algebra2005 has fewer LightSAKT parameters than SAKT in the documented primary comparisons, whose widths differ. These primary parameter counts are separate from validation-selected final configurations. Evidence: paper/EFFICIENCY_RESULTS.md and reports/efficiency_verification.json.', '',
+                 'Completed ablations support a descriptive role for attention and dropout: removing either yields lower mean AUC on all three datasets under the controlled settings. They do not universally favor the default: single-head attention has higher mean AUC on ASSIST2015 and Algebra2005, and removing positions has higher mean AUC on Algebra2005. These are descriptive controlled observations, not significance claims. Kernel attention maps and held-out correctness trajectories support faithful model inspection; they do not directly establish student mastery or an educational intervention benefit.', '',
+                 'Evidence: LightSAKT_final_summary.csv, LightSAKT_completed_baseline_comparisons.csv, LightSAKT_vs_best_completed_baseline.csv, reports/light_final_summary_verification.json, reports/selected_final_inference_verification.json and reports/LIGHTSAKT_GRID_ABLATION_RESULTS.md. The original architecture and approved experiment schedule remain unchanged.']
+    recurrent = final[final.baseline.isin(['DKT', 'DKT+'])]
+    memory = final[final.baseline == 'DKVMN']
+    if (len(recurrent) == 2*len(DATASETS) and len(memory) == len(DATASETS) and
+        (recurrent[['light_minus_baseline_mse_mean', 'light_minus_baseline_bce_mean']] < 0).all().all() and
+        (memory[['light_minus_baseline_mse_mean', 'light_minus_baseline_bce_mean']] > 0).all().all()):
+        findings += ['', 'A narrower error-loss result is supported descriptively: LightSAKT has lower mean MSE and BCE than DKT and DKT+ on all three datasets, while DKVMN has lower mean MSE and BCE than LightSAKT on all three. Lower error losses alone do not establish probability calibration.']
+    Path('reports/LIGHTSAKT_COMPLETED_BASELINE_FINDINGS.md').write_text('\n'.join(findings)+'\n')
+    corrections = Path('PAPER_CORRECTIONS.md')
+    begin = '<!-- completed-baseline-findings:start -->'; end = '<!-- completed-baseline-findings:end -->'
+    amendment = '\n'.join([begin, '', '## Completed baseline amendment — pages 17–19 and 23–24', '',
+                            'The general claim that LightSAKT consistently outperforms the compared models is unsupported by the completed matched evidence. Replace it with the following generated mean-AUC differences; pending GKT runs do not enter this comparison.', '',
+                            table(best, ['dataset', 'best_completed_baseline', 'light_auc_mean', 'baseline_auc_mean', 'light_minus_best_auc']), '',
+                            'The best baseline is defined descriptively by highest completed mean test AUC among DKT, DKT+, DKVMN and SAKT; test data are not used to revise training or validation selection. Five-seed comparisons are conditional on one frozen student split. Full source evidence and qualified manuscript interpretation: reports/LIGHTSAKT_COMPLETED_BASELINE_FINDINGS.md and results/tables/LightSAKT_vs_best_completed_baseline.csv.', '', end])
+    original = corrections.read_text()
+    if begin in original:
+        first, tail = original.split(begin, 1); assert end in tail
+        _, last = tail.split(end, 1); corrections.write_text(first+amendment+last)
+    else:
+        corrections.write_text(original+'\n'+amendment+'\n')
+    write_json('reports/completed_baseline_findings_verification.json', {
+        'verified': True, 'verified_utc': now, 'datasets': len(best),
+        'allowed_baselines': ['DKT', 'DKT+', 'DKVMN', 'SAKT'],
+        'comparison': 'Descriptive difference from highest completed mean test AUC; no training selection',
+        'required_seeds_per_reported_model': 5, 'primary_partial_historical_and_gkt_excluded': True,
+        'source_tables': [{'path': p, 'sha256': sha256(p)} for p in [
+            'results/tables/LightSAKT_final_summary.csv',
+            'results/tables/LightSAKT_completed_baseline_comparisons.csv']],
+        'result_table': {'path': 'results/tables/LightSAKT_vs_best_completed_baseline.csv',
+                         'sha256': sha256('results/tables/LightSAKT_vs_best_completed_baseline.csv')},
+        'source_verification': 'reports/light_final_summary_verification.json',
+        'independent_inference': 'reports/selected_final_inference_verification.json',
+        'training_architecture_changed': False, 'approved_schedule_changed': False})
 
 
 if __name__ == '__main__':

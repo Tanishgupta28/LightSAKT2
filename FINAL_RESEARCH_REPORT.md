@@ -124,14 +124,42 @@ Independent CPU rederivation verified 1200 original timing repetitions across 12
 
 ## Execution optimization and unchanged scientific scope
 
-Latest schedule audit: 224 fresh trainings remain plus 8 reuse/evaluation entries. All 108 LightSAKT candidates are retained, with one seed per grid candidate and five matched seeds only for selected final configurations and ablations. The author chose the complete schedule with execution improvements only; all 162 GKT configurations discussed in the archived reduction proposal remain scheduled. Evidence: experiments/schedule_decision.json. Full inventory and proposal: reports/optimization/SCHEDULE_AUDIT.md and PROPOSED_DIFFERENCES.csv.
+Latest schedule audit: 223 fresh trainings remain plus 8 reuse/evaluation entries. All 108 LightSAKT candidates are retained, with one seed per grid candidate and five matched seeds only for selected final configurations and ablations. The author chose the complete schedule with execution improvements only; all 162 GKT configurations discussed in the archived reduction proposal remain scheduled. Evidence: experiments/schedule_decision.json. Full inventory and proposal: reports/optimization/SCHEDULE_AUDIT.md and PROPOSED_DIFFERENCES.csv.
 
 Exact immutable sequence caches preserve every tensor, identity, batch order and RNG sequence; CPU training/resume equivalence is tested. Inter-run GPU probes and CPU/CUDA gates verify independent worker updates before two-worker GKT execution. Full required scope, FP32, batch sizes, Adam, stopping criteria, LightSAKT architecture, splits and untouched final test selections remain unchanged. Prioritization runs LightSAKT grid/finals/ablations before slow remaining baseline tuning. See reports/optimization/EXECUTION_OPTIMIZATION.md and reports/profiling/.
 
-Independent private GitHub draft recovery artifacts: 728 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
+Independent private GitHub draft recovery artifacts: 729 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
 
 ## Finished LightSAKT outputs and recovery
 
 All 108 LightSAKT grid rows and 75 ablation slots are independently verified; 18 grid/ablation plot sets retain source CSVs and PNG/SVG/PDF files. Reports: LIGHTSAKT_GRID_ABLATION_RESULTS.md and light_outputs_verification.json. Original-device ablation test probabilities reproduced bit-for-bit; 15 regularization aliases reuse dropout-removal evidence. A measured CPU/GPU AUC rank-sensitivity diagnosis is preserved without relaxing the strict CPU check or changing experimental metrics.
 
 The CPU recovery supervisor protects existing training, recovers missing processes with lock/source/version/data/checkpoint checks, and resumes latest optimizer/RNG states. Automatic platform shutdown recovery is not installed: controller/startup permissions are unavailable. The tested manual bootstrap, raw-data reconstruction and non-destructive offsite restoration commands are in reports/RECOVERY_PROCEDURE.md. Additional exact GKT thread-count probes showed no consistent speedup; four threads remain active. Stable publication serialization reduces NFS/Git churn while retaining numerical observations. No architecture, gradient or scientific-scope change was made.
+
+## Comparison against completed baselines
+
+Generated UTC: 2026-10-15T04:20:05.844719+00:00
+
+This comparison includes only completed selected five-seed DKT, DKT+, DKVMN and SAKT results on the same locked splits. It excludes historical manuscript scores, primary single-seed runs, partial seed sets and both GKT variants. Best means highest completed five-seed mean test AUC among these four baselines. This is a descriptive leaderboard after evaluation; it does not select hyperparameters, checkpoints or future experiments.
+
+|dataset|completed_baselines|best_completed_baseline|light_auc_mean|baseline_auc_mean|light_minus_best_auc|
+|---|---|---|---|---|---|
+|ASSIST2009|4|DKT|0.751056|0.757165|-0.006109|
+|ASSIST2015|4|DKT|0.726088|0.728235|-0.002146|
+|Algebra2005|4|DKT+|0.810590|0.823456|-0.012866|
+
+ASSIST2009: LightSAKT mean test AUC is lower than the best completed baseline, DKT; difference -0.006109.
+ASSIST2015: LightSAKT mean test AUC is lower than the best completed baseline, DKT; difference -0.002146.
+Algebra2005: LightSAKT mean test AUC is lower than the best completed baseline, DKT+; difference -0.012866.
+
+Each reported model has five prespecified seeds, and SD means sample SD (ddof=1). Full baseline AUC, accuracy, F1, MSE and BCE means/SDs are in BASELINE_COMPARISON.md. All 15 LightSAKT seed values, validation-selected epochs and checkpoint references are in LIGHTSAKT_FINAL_SEED_RESULTS.md. Small positive differences against individual models are descriptive, not established statistical superiority. Five nonzero pairs permit a minimum two-sided exact signed-rank p-value of 0.0625; multiplicity adjustment cannot lower it.
+
+The original general superiority claim must be replaced by dataset- and metric-specific observations. Causal ELU+1 prefix attention retains theoretical O(L) sequence-length work at fixed head dimensions; that mathematical property does not imply faster measured execution, lower measured memory, better accuracy or better modelling of long histories.
+
+The preserved controlled benchmark found higher LightSAKT latency in all 60 matched comparisons and lower peak allocated memory in 7/60. Parameter savings are configuration-dependent: only Algebra2005 has fewer LightSAKT parameters than SAKT in the documented primary comparisons, whose widths differ. These primary parameter counts are separate from validation-selected final configurations. Evidence: paper/EFFICIENCY_RESULTS.md and reports/efficiency_verification.json.
+
+Completed ablations support a descriptive role for attention and dropout: removing either yields lower mean AUC on all three datasets under the controlled settings. They do not universally favor the default: single-head attention has higher mean AUC on ASSIST2015 and Algebra2005, and removing positions has higher mean AUC on Algebra2005. These are descriptive controlled observations, not significance claims. Kernel attention maps and held-out correctness trajectories support faithful model inspection; they do not directly establish student mastery or an educational intervention benefit.
+
+Evidence: LightSAKT_final_summary.csv, LightSAKT_completed_baseline_comparisons.csv, LightSAKT_vs_best_completed_baseline.csv, reports/light_final_summary_verification.json, reports/selected_final_inference_verification.json and reports/LIGHTSAKT_GRID_ABLATION_RESULTS.md. The original architecture and approved experiment schedule remain unchanged.
+
+A narrower error-loss result is supported descriptively: LightSAKT has lower mean MSE and BCE than DKT and DKT+ on all three datasets, while DKVMN has lower mean MSE and BCE than LightSAKT on all three. Lower error losses alone do not establish probability calibration.

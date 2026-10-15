@@ -62,6 +62,10 @@ def main():
                     difference=light.auc_mean-row.auc_mean
                     lines.append(f'{dataset}: LightSAKT mean test AUC minus {row.model} was {difference:+.6f} across the five prespecified seeds (Table 7).')
         lines.append('')
+    comparison_findings=Path('reports/LIGHTSAKT_COMPLETED_BASELINE_FINDINGS.md')
+    if comparison_findings.exists():
+        lines += ['## Comparison with the best completed baseline', '',
+                  comparison_findings.read_text().split('\n', 2)[-1], '']
     inference_path=Path('reports/selected_final_inference_verification.json')
     if inference_path.exists():
         proof=json.load(open(inference_path));finals=[r for r in proof['runs'] if r.get('group','final')=='final']
@@ -93,7 +97,7 @@ def main():
             n=len(runs[(runs.dataset==dataset)&(runs.model=='LightSAKT')&(runs.group=='grid')]);state=f'{n}/36 configurations completed'
         elif item=='Table 7':
             state=f'{len(runs[runs.group=="final"])}/105 final seed slots completed (21 checkpoint reuse slots)'
-            trace.loc[index,'source_artifacts']='results/tables/Table_7.csv; LightSAKT_final_summary.csv; LightSAKT_final_individual_seeds.csv; reports/light_final_summary_verification.json; all_verified_runs.csv'
+            trace.loc[index,'source_artifacts']='results/tables/Table_7.csv; LightSAKT_final_summary.csv; LightSAKT_final_individual_seeds.csv; LightSAKT_vs_best_completed_baseline.csv; reports/light_final_summary_verification.json; reports/completed_baseline_findings_verification.json; all_verified_runs.csv'
         elif item=='Table 8':state=f'{len(runs[runs.group=="ablation"])}/75 ablation slots completed (15 equivalent aliases); default reuses final LightSAKT'
         elif item in ['Figure 5','Figure 6','Figure 7']:
             dataset={'Figure 5':'Algebra2005','Figure 6':'ASSIST2009','Figure 7':'ASSIST2015'}[item]

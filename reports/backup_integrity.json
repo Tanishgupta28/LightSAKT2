@@ -1,11 +1,11 @@
 {
-  "verified_utc": "2026-10-15T03:44:20.180603+00:00",
+  "verified_utc": "2026-10-15T04:19:58.175897+00:00",
   "verified": true,
-  "completed_run_references": 726,
-  "scheduled_completed_references": 725,
-  "unique_archives": 726,
+  "completed_run_references": 727,
+  "scheduled_completed_references": 726,
+  "unique_archives": 727,
   "local_and_downloaded_archive_sha256_verified": true,
-  "offsite_assets": 728,
+  "offsite_assets": 729,
   "all_available_completed_archives_synced": true,
   "storage": "Private GitHub draft assets independently downloaded and hashed; NFS retention after environment deprovisioning remains unverified.",
   "archives": [
@@ -853,6 +853,12 @@
       "path": "backups/completed_runs/ASSIST2009-GKT-baseline_tuning-42-4d57c219c66d.tar.gz",
       "sha256": "bfca7c117c33ebe828db43750fa3203f19eb818a50e75a65a408e2c1f302cf4e",
       "asset_id": 642554464,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-GKT-baseline_tuning-42-5abd556796ed.tar.gz",
+      "sha256": "8f7796e6a4fc1ff5bb572bf2e41c7c10269c24fec0fc1a59e3d30dd2516b518b",
+      "asset_id": 642629549,
       "local_and_downloaded_bytes_verified": true
     },
     {

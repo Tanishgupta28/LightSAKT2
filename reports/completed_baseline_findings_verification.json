@@ -1,0 +1,32 @@
+{
+  "verified": true,
+  "verified_utc": "2026-10-15T04:20:05.844719+00:00",
+  "datasets": 3,
+  "allowed_baselines": [
+    "DKT",
+    "DKT+",
+    "DKVMN",
+    "SAKT"
+  ],
+  "comparison": "Descriptive difference from highest completed mean test AUC; no training selection",
+  "required_seeds_per_reported_model": 5,
+  "primary_partial_historical_and_gkt_excluded": true,
+  "source_tables": [
+    {
+      "path": "results/tables/LightSAKT_final_summary.csv",
+      "sha256": "5f598c8845420e0879deea95af4c93f7cb2561e8093929a6559ba6a59af929d3"
+    },
+    {
+      "path": "results/tables/LightSAKT_completed_baseline_comparisons.csv",
+      "sha256": "327cf93789804a1a3142cb1bdeffb94c4de472a2628d4a2eeb8275831e511491"
+    }
+  ],
+  "result_table": {
+    "path": "results/tables/LightSAKT_vs_best_completed_baseline.csv",
+    "sha256": "2bfce4e45b60bdefe3d7e2b2edd5dd671f4b83db39738b791cbb2d38abf9f156"
+  },
+  "source_verification": "reports/light_final_summary_verification.json",
+  "independent_inference": "reports/selected_final_inference_verification.json",
+  "training_architecture_changed": false,
+  "approved_schedule_changed": false
+}
