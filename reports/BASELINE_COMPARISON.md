@@ -1,6 +1,6 @@
 # Verified baseline comparison
 
-Generated UTC: 2026-10-15T00:51:51.832571+00:00
+Generated UTC: 2026-10-15T01:22:59.573831+00:00
 
 Only completed artifacts on the same locked data/splits and context lengths are used. Matched final comparisons require all five prespecified seeds. Incomplete rows are pending, with no historical-paper substitution.
 

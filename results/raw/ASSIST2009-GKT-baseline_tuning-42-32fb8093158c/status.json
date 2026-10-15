@@ -1,7 +1,7 @@
 {
   "run_id": "ASSIST2009-GKT-baseline_tuning-42-32fb8093158c",
-  "status": "running",
-  "last_completed_epoch": 0,
+  "status": "completed",
+  "last_completed_epoch": 7,
   "config": "results/raw/ASSIST2009-GKT-baseline_tuning-42-32fb8093158c/config.json",
   "seed": 42,
   "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT-baseline_tuning-42-32fb8093158c/config.json",
