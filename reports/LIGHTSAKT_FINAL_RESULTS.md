@@ -1,6 +1,6 @@
 # Verified final LightSAKT results and ongoing comparisons
 
-Generated UTC: 2026-10-15T16:17:44.659123+00:00
+Generated UTC: 2026-10-15T16:22:14.977267+00:00
 
 All numbers below are generated from fresh completed experiment files. Five selected seeds per dataset are complete; the overall research schedule remains incomplete. The three fixed-configuration LightSAKT primary runs are outside this selected-final summary; baseline primary runs are labelled separately.
 
@@ -72,18 +72,18 @@ All five baseline metrics, deltas and evidence scope are in LightSAKT_completed_
 
 ## Recalculated remaining training time
 
-ETA measurements refreshed: 2026-10-15T16:17:35.576973+00:00. Serial isolated-equivalent remaining training: 460.407 hours. Current execution forecast: 350.373 occupied MIG wall hours (14.60 continuous days), applying the measured 1.512 two-worker throughput factor only to GKT-MHA.
+ETA measurements refreshed: 2026-10-15T16:22:06.387841+00:00. Serial isolated-equivalent remaining training: 460.320 hours. Current execution forecast: 350.286 occupied MIG wall hours (14.60 continuous days), applying the measured 1.512 two-worker throughput factor only to GKT-MHA.
 
 |model|remaining_entries|fresh_training_runs|serial_equivalent_hours|occupied_mig_hours|
 |---|---|---|---|---|
-|GKT|89|84|135.584062|135.584062|
+|GKT|89|84|135.497395|135.497395|
 |GKT_MHA|123|120|324.822509|214.788672|
 
-GKT-PAM and GKT-MHA account for 350.373 of 350.373 remaining occupied MIG hours (100.00%). Completion count is a poor proxy for compute progress. The priority order completed short LightSAKT grids, selected seeds, ablations and fast baseline tuning first. Reuse/alias entries add no training; the current category table identifies remaining GKT work.
+GKT-PAM and GKT-MHA account for 350.286 of 350.286 remaining occupied MIG hours (100.00%). Completion count is a poor proxy for compute progress. The priority order completed short LightSAKT grids, selected seeds, ablations and fast baseline tuning first. Reuse/alias entries add no training; the current category table identifies remaining GKT work.
 
 The GKT forecast is calibrated by six completed primary model/dataset runs plus real primary/wide engineering profiles, rather than multiplying the global mean runtime by remaining entries. Recent fast-model completions refine those strata but add little evidence about the still-untrained slow GKT configurations. One GKT epoch has measured durations of minutes, whereas many DKT/SAKT/LightSAKT epochs take seconds or less; planned configuration widths and stopping counts also differ.
 
-The occupied-MIG planning envelope is 76.8–1324.5 hours. It is an early-stop/maximum-epoch scenario envelope, not a confidence interval or guarantee. Most future GKT stopping counts and sustained concurrency performance are unknown. Startup, selected test inference and final artifact verification are additional; the completed controlled efficiency benchmark is reused.
+The occupied-MIG planning envelope is 76.7–1324.4 hours. It is an early-stop/maximum-epoch scenario envelope, not a confidence interval or guarantee. Most future GKT stopping counts and sustained concurrency performance are unknown. Startup, selected test inference and final artifact verification are additional; the completed controlled efficiency benchmark is reused.
 
 ## Continuing execution and preserved findings
 
