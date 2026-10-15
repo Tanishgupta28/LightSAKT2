@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-15T21:34:57.682407+00:00",
-  "sample_time": 1792100097.009627,
+  "updated_utc": "2026-10-15T22:35:34.699484+00:00",
+  "sample_time": 1792103733.9575,
   "counts": {
-    "completed": 749,
-    "pending": 206,
+    "completed": 750,
+    "pending": 205,
     "running": 2
   },
   "scheduler": {
@@ -12,49 +12,49 @@
   },
   "training_processes": [
     {
-      "pid": 1219183,
-      "cpu_seconds": 9443.84,
+      "pid": 1227849,
+      "cpu_seconds": 11116.23,
       "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.88086557388306,
-      "cpu_seconds_advanced": 62.88999999999942
+      "observed_seconds": 62.86784911155701,
+      "cpu_seconds_advanced": 62.85999999999876
     },
     {
-      "pid": 1227849,
-      "cpu_seconds": 7480.84,
+      "pid": 1258441,
+      "cpu_seconds": 3599.49,
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.88086557388306,
-      "cpu_seconds_advanced": 62.900000000000546
+      "observed_seconds": 62.86784911155701,
+      "cpu_seconds_advanced": 62.86999999999989
     }
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
-      "last_completed_epoch": 42,
-      "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4/config.json",
-      "recent_mean_epoch_seconds": 228.73833606339758,
-      "seconds_since_last_epoch": 196.03089809417725,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+      "last_completed_epoch": 50,
+      "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2/config.json",
+      "recent_mean_epoch_seconds": 223.87443542361726,
+      "seconds_since_last_epoch": 2.333972930908203,
       "startup_epoch_seconds_extrapolated": null,
       "first_checkpoint_startup_grace_seconds": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 686.2150081901927,
+      "stall_threshold_seconds": 671.6233062708518,
       "checkpoint_stalled": false
     },
     {
-      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
-      "last_completed_epoch": 33,
-      "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2/config.json",
-      "recent_mean_epoch_seconds": 229.21805050120457,
-      "seconds_since_last_epoch": 152.5249559879303,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2eb1271b5879",
+      "last_completed_epoch": 16,
+      "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-2eb1271b5879/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-2eb1271b5879/config.json",
+      "recent_mean_epoch_seconds": 223.44526819320163,
+      "seconds_since_last_epoch": 27.792043924331665,
       "startup_epoch_seconds_extrapolated": null,
       "first_checkpoint_startup_grace_seconds": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 687.6541515036138,
+      "stall_threshold_seconds": 670.3358045796049,
       "checkpoint_stalled": false
     }
   ],
@@ -65,5 +65,5 @@
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 752 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 753 independently downloaded/checksum verified; completed-archive synchronization True."
 }
