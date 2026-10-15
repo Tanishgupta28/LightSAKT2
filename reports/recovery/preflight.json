@@ -7,25 +7,25 @@
   "training_code_matches": true,
   "resume_states": [
     {
-      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-e146d637887e/latest.pt",
-      "sha256": "f1e5635b5b9da43109198736f9864e7c80de4f602dc2001601b75df9a32305f5",
-      "epoch": 17,
+      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-30db8df014cb/latest.pt",
+      "sha256": "e23acbbdd856fe1545eea936babbf24b8c8670da2c1cc2ad6b52ead94c989a10",
+      "epoch": 13,
       "strict_state_load": true,
       "finite_parameters": true,
       "split_data_match": true,
       "optimizer_rng_verified": true
     },
     {
-      "path": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-e146d637887e/best.pt",
-      "sha256": "549c9f9c4283c068c00756308b92ebb1f9531f7b13e604a1986c1c88d609f8cd",
-      "epoch": 17,
+      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-30db8df014cb/best.pt",
+      "sha256": "c89c86f51b4d74384fa922e4964770e543463949b0e3790b4a26fa6c131385cb",
+      "epoch": 12,
       "strict_state_load": true,
       "finite_parameters": true,
       "split_data_match": true,
       "optimizer_rng_verified": false
     }
   ],
-  "completed_artifacts_verified": 702,
+  "completed_artifacts_verified": 720,
   "automatic_platform_restart": false,
   "read_only_training_check": true
 }

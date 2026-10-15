@@ -1,17 +1,17 @@
 # Execution health
 
-Observed UTC: 2026-10-15T00:14:13.302744+00:00
+Observed UTC: 2026-10-15T00:52:41.916127+00:00
 
 Scheduler PID 78472; healthy progress sampled: True; failed/interrupted/blocked slots: 0.
 
-Child PID 925435: CPU seconds advanced 6.220000000000001 over 62.10242009162903 observed seconds. Session 78472, parent 191761.
+Child PID 925435: CPU seconds advanced 62.84999999999991 over 62.8626823425293 observed seconds. Session 78472, parent 191761.
 
-Child PID 931229: CPU seconds advanced 0.0 over 0.2 observed seconds. Session 78472, parent 191761.
+Child PID 931229: CPU seconds advanced 0.0 over 62.8626823425293 observed seconds. Session 78472, parent 191761.
 
-Run `ASSIST2009-GKT-baseline_tuning-42-30db8df014cb`: epoch 0; measured recent epoch average None; extrapolated first-epoch duration 173.94354788449488; progress age 5.480924129486084 seconds (initial running status; first checkpoint not yet saved); stall flag False. Threshold uses three measured epoch durations; before the first checkpoint it also allows a minimum 30-second setup grace. This diagnostic grace is separate from the measured training ETA.
+Run `ASSIST2009-GKT-baseline_tuning-42-30db8df014cb`: epoch 13; measured recent epoch average 169.79920521180028; extrapolated first-epoch duration None; progress age 112.4430501461029 seconds (history checkpoint); stall flag False. Threshold uses three measured epoch durations; before the first checkpoint it also allows a minimum 30-second setup grace. This diagnostic grace is separate from the measured training ETA.
 
-MIG memory allocation: 1690 / 40320 MiB. Utilization percentage is unavailable; no percentage is inferred from board power or PID existence.
+MIG memory allocation: 1692 / 40320 MiB. Utilization percentage is unavailable; no percentage is inferred from board power or PID existence.
 
 Best/latest state loads, finite parameters and optimizer/RNG integrity are independently recorded in reports/active_checkpoint_verification.json; saved result verification is in reports/stored_artifact_verification.json. Archive and recovery evidence is in reports/backup_integrity.json and reports/recovery_validation.json.
 
-Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured. /workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 722 independently downloaded/checksum verified; completed-archive synchronization True.
+Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured. /workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 723 independently downloaded/checksum verified; completed-archive synchronization True.

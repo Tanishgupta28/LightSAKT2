@@ -1,6 +1,6 @@
 {
   "verified": true,
-  "verified_utc": "2026-10-14T23:51:47.802798+00:00",
+  "verified_utc": "2026-10-15T00:51:51.832571+00:00",
   "light_final_seed_slots": 15,
   "summary_method": "Five prespecified seeds; arithmetic mean and sample SD; saved metrics independently recomputed",
   "completed_five_seed_baseline_comparisons": 12,
@@ -1723,8 +1723,8 @@
       "strict_checkpoint_load": true,
       "test_metrics_recomputed_from_saved_predictions": true,
       "git_commit": "1bef80496557264c46b902a0eb8022c9d1f5ecde",
-      "validation_inference_recomputed": false,
-      "test_probabilities_recomputed": false,
+      "validation_inference_recomputed": true,
+      "test_probabilities_recomputed": true,
       "locked_test_identity_verified": true,
       "locked_test_labels_verified": true,
       "locked_test_targets": 113704,
@@ -1746,8 +1746,8 @@
       "strict_checkpoint_load": true,
       "test_metrics_recomputed_from_saved_predictions": true,
       "git_commit": "c5d370f4ef6dde754c1006d1456ce4dd6a6d99d0",
-      "validation_inference_recomputed": false,
-      "test_probabilities_recomputed": false,
+      "validation_inference_recomputed": true,
+      "test_probabilities_recomputed": true,
       "locked_test_identity_verified": true,
       "locked_test_labels_verified": true,
       "locked_test_targets": 113704,
@@ -1769,8 +1769,8 @@
       "strict_checkpoint_load": true,
       "test_metrics_recomputed_from_saved_predictions": true,
       "git_commit": "6e8a9b05245492b409064cb791f1f20e1b87185f",
-      "validation_inference_recomputed": false,
-      "test_probabilities_recomputed": false,
+      "validation_inference_recomputed": true,
+      "test_probabilities_recomputed": true,
       "locked_test_identity_verified": true,
       "locked_test_labels_verified": true,
       "locked_test_targets": 113704,
@@ -1792,8 +1792,8 @@
       "strict_checkpoint_load": true,
       "test_metrics_recomputed_from_saved_predictions": true,
       "git_commit": "524061f1e5b49c9ce74dac22cd698430fbbc4ac8",
-      "validation_inference_recomputed": false,
-      "test_probabilities_recomputed": false,
+      "validation_inference_recomputed": true,
+      "test_probabilities_recomputed": true,
       "locked_test_identity_verified": true,
       "locked_test_labels_verified": true,
       "locked_test_targets": 113704,
@@ -1815,8 +1815,8 @@
       "strict_checkpoint_load": true,
       "test_metrics_recomputed_from_saved_predictions": true,
       "git_commit": "04cbb036fb7d95eb66e1aa48c78a152a713764ff",
-      "validation_inference_recomputed": false,
-      "test_probabilities_recomputed": false,
+      "validation_inference_recomputed": true,
+      "test_probabilities_recomputed": true,
       "locked_test_identity_verified": true,
       "locked_test_labels_verified": true,
       "locked_test_targets": 113704,
@@ -2150,9 +2150,9 @@
   ],
   "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
   "eta_source": "reports/summary_eta/progressive/ETA.json",
-  "eta_source_sha256": "e3738155528421162cb28c72346e24aca6658a98a289abd6abebb9d20a1f36f0",
-  "remaining_occupied_mig_hours": 367.289118383167,
-  "gkt_remaining_occupied_mig_hours": 367.289118383167,
+  "eta_source_sha256": "8a41715fc2aa0dce003a368a49ed6a397b0c768850e7c4e83ebc689f85d7b293",
+  "remaining_occupied_mig_hours": 365.3919945200333,
+  "gkt_remaining_occupied_mig_hours": 365.3919945200332,
   "artifacts": [
     {
       "path": "results/tables/LightSAKT_final_summary.csv",
@@ -2168,7 +2168,7 @@
     },
     {
       "path": "reports/LightSAKT_summary_ETA_by_model.csv",
-      "sha256": "4894cfaf44ada8cb0a2946bedbd54476dd55db948beaa540bd9548be950d2dd7"
+      "sha256": "d8fefe579ddee6daa92984ded661e7a88f08400ff2b0fb61c0ded627d2fd7cb5"
     }
   ]
 }

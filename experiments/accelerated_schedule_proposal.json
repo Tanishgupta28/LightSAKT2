@@ -1239,32 +1239,53 @@
       "observed_status": "pending"
     },
     {
+      "config": "configs/runs/ASSIST2009-GKT-baseline_tuning-42-30db8df014cb.json",
+      "run_id": "ASSIST2009-GKT-baseline_tuning-42-30db8df014cb",
+      "phase": 6,
+      "status": "pending",
+      "observed_status": "running"
+    },
+    {
       "config": "configs/runs/ASSIST2009-GKT-baseline_tuning-42-1bc295eb0703.json",
       "run_id": "ASSIST2009-GKT-baseline_tuning-42-1bc295eb0703",
       "phase": 6,
       "status": "pending",
-      "observed_status": "pending"
+      "observed_status": "completed"
+    },
+    {
+      "config": "configs/runs/ASSIST2009-GKT-baseline_tuning-42-1a4405f45bd7.json",
+      "run_id": "ASSIST2009-GKT-baseline_tuning-42-1a4405f45bd7",
+      "phase": 6,
+      "status": "pending",
+      "observed_status": "completed"
+    },
+    {
+      "config": "configs/runs/ASSIST2009-GKT-baseline_tuning-42-1fd788004646.json",
+      "run_id": "ASSIST2009-GKT-baseline_tuning-42-1fd788004646",
+      "phase": 6,
+      "status": "pending",
+      "observed_status": "completed"
     },
     {
       "config": "configs/runs/ASSIST2009-GKT-baseline_tuning-42-2372efe8779d.json",
       "run_id": "ASSIST2009-GKT-baseline_tuning-42-2372efe8779d",
       "phase": 6,
       "status": "pending",
-      "observed_status": "pending"
+      "observed_status": "completed"
     },
     {
       "config": "configs/runs/ASSIST2009-GKT-baseline_tuning-42-1d9e4935301d.json",
       "run_id": "ASSIST2009-GKT-baseline_tuning-42-1d9e4935301d",
       "phase": 6,
       "status": "pending",
-      "observed_status": "pending"
+      "observed_status": "completed"
     },
     {
       "config": "configs/runs/ASSIST2009-GKT-baseline_tuning-42-07dec7ef0623.json",
       "run_id": "ASSIST2009-GKT-baseline_tuning-42-07dec7ef0623",
       "phase": 6,
       "status": "pending",
-      "observed_status": "pending"
+      "observed_status": "completed"
     },
     {
       "config": "configs/runs/ASSIST2009-GKT-baseline_tuning-42-6b0a3052e13a.json",
@@ -1281,11 +1302,32 @@
       "observed_status": "pending"
     },
     {
+      "config": "configs/runs/ASSIST2009-GKT-baseline_tuning-42-2bf0f4278139.json",
+      "run_id": "ASSIST2009-GKT-baseline_tuning-42-2bf0f4278139",
+      "phase": 6,
+      "status": "pending",
+      "observed_status": "completed"
+    },
+    {
       "config": "configs/runs/ASSIST2009-GKT-baseline_tuning-42-32fb8093158c.json",
       "run_id": "ASSIST2009-GKT-baseline_tuning-42-32fb8093158c",
       "phase": 6,
       "status": "pending",
       "observed_status": "pending"
+    },
+    {
+      "config": "configs/runs/ASSIST2009-GKT-baseline_tuning-42-19094af02366.json",
+      "run_id": "ASSIST2009-GKT-baseline_tuning-42-19094af02366",
+      "phase": 6,
+      "status": "pending",
+      "observed_status": "completed"
+    },
+    {
+      "config": "configs/runs/ASSIST2009-GKT-baseline_tuning-42-22040414b977.json",
+      "run_id": "ASSIST2009-GKT-baseline_tuning-42-22040414b977",
+      "phase": 6,
+      "status": "pending",
+      "observed_status": "completed"
     },
     {
       "config": "configs/runs/ASSIST2009-SAKT-baseline_tuning-42-3701b171c5a5.json",
@@ -3770,7 +3812,7 @@
       "run_id": "Algebra2005-DKVMN-baseline_tuning-42-f7fe09adb459",
       "phase": 6,
       "status": "pending",
-      "observed_status": "pending"
+      "observed_status": "completed"
     },
     {
       "config": "configs/runs/Algebra2005-DKVMN-baseline_tuning-42-9ec020471e4b.json",
@@ -3791,7 +3833,7 @@
       "run_id": "Algebra2005-DKVMN-baseline_tuning-42-fb21d59f0296",
       "phase": 6,
       "status": "pending",
-      "observed_status": "pending"
+      "observed_status": "completed"
     },
     {
       "config": "configs/runs/Algebra2005-DKVMN-baseline_tuning-42-30c93a04e0b7.json",
@@ -3812,7 +3854,7 @@
       "run_id": "Algebra2005-DKVMN-baseline_tuning-42-e146d637887e",
       "phase": 6,
       "status": "pending",
-      "observed_status": "running"
+      "observed_status": "completed"
     },
     {
       "config": "configs/runs/Algebra2005-DKVMN-baseline_tuning-42-3227216e345e.json",
@@ -3980,7 +4022,7 @@
       "run_id": "Algebra2005-DKVMN-baseline_tuning-42-ef9a162d42a0",
       "phase": 6,
       "status": "pending",
-      "observed_status": "pending"
+      "observed_status": "completed"
     },
     {
       "config": "configs/runs/Algebra2005-DKVMN-baseline_tuning-42-de0a23dea5b8.json",
@@ -5506,7 +5548,9 @@
       "seed": 42,
       "status": "pending",
       "dependency": "all 36 tuning runs for this dataset/model",
-      "observed_status": "pending"
+      "reuse_selected_run": "Algebra2005-DKVMN-baseline_tuning-42-c5f966a0d50a",
+      "selection_path": "experiments/selections/Algebra2005-DKVMN.json",
+      "observed_status": "completed"
     },
     {
       "run_id": "Algebra2005-DKVMN-final-123",
@@ -5516,7 +5560,8 @@
       "seed": 123,
       "status": "pending",
       "dependency": "all 36 tuning runs for this dataset/model",
-      "observed_status": "pending"
+      "config": "configs/runs/Algebra2005-DKVMN-final-123.json",
+      "observed_status": "completed"
     },
     {
       "run_id": "Algebra2005-DKVMN-final-2026",
@@ -5526,7 +5571,8 @@
       "seed": 2026,
       "status": "pending",
       "dependency": "all 36 tuning runs for this dataset/model",
-      "observed_status": "pending"
+      "config": "configs/runs/Algebra2005-DKVMN-final-2026.json",
+      "observed_status": "completed"
     },
     {
       "run_id": "Algebra2005-DKVMN-final-3407",
@@ -5536,7 +5582,8 @@
       "seed": 3407,
       "status": "pending",
       "dependency": "all 36 tuning runs for this dataset/model",
-      "observed_status": "pending"
+      "config": "configs/runs/Algebra2005-DKVMN-final-3407.json",
+      "observed_status": "completed"
     },
     {
       "run_id": "Algebra2005-DKVMN-final-7777",
@@ -5546,7 +5593,8 @@
       "seed": 7777,
       "status": "pending",
       "dependency": "all 36 tuning runs for this dataset/model",
-      "observed_status": "pending"
+      "config": "configs/runs/Algebra2005-DKVMN-final-7777.json",
+      "observed_status": "completed"
     },
     {
       "run_id": "Algebra2005-GKT-final-42",
@@ -6738,14 +6786,11 @@
   ],
   "deferred_run_ids": [
     "ASSIST2009-GKT-baseline_tuning-42-c4c5a83f48bf",
-    "ASSIST2009-GKT-baseline_tuning-42-30db8df014cb",
     "ASSIST2009-GKT-baseline_tuning-42-4d57c219c66d",
     "ASSIST2009-GKT-baseline_tuning-42-747a0b3fa5a4",
     "ASSIST2009-GKT-baseline_tuning-42-fb735e9a5f35",
     "ASSIST2009-GKT-baseline_tuning-42-75fd6ddfe9f9",
     "ASSIST2009-GKT-baseline_tuning-42-5c0cb72780a0",
-    "ASSIST2009-GKT-baseline_tuning-42-1a4405f45bd7",
-    "ASSIST2009-GKT-baseline_tuning-42-1fd788004646",
     "ASSIST2009-GKT-baseline_tuning-42-e009b6d8e305",
     "ASSIST2009-GKT-baseline_tuning-42-a2c296fe7dcc",
     "ASSIST2009-GKT-baseline_tuning-42-f3faddfac38b",
@@ -6756,13 +6801,10 @@
     "ASSIST2009-GKT-baseline_tuning-42-5abd556796ed",
     "ASSIST2009-GKT-baseline_tuning-42-f753429eba44",
     "ASSIST2009-GKT-baseline_tuning-42-4a391f5533c0",
-    "ASSIST2009-GKT-baseline_tuning-42-2bf0f4278139",
     "ASSIST2009-GKT-baseline_tuning-42-a312abe1923b",
     "ASSIST2009-GKT-baseline_tuning-42-bc366cdc8a40",
     "ASSIST2009-GKT-baseline_tuning-42-cbda1b099475",
-    "ASSIST2009-GKT-baseline_tuning-42-19094af02366",
     "ASSIST2009-GKT-baseline_tuning-42-d5bfc8a602c8",
-    "ASSIST2009-GKT-baseline_tuning-42-22040414b977",
     "ASSIST2009-GKT-baseline_tuning-42-ad2733ac2d3b",
     "ASSIST2009-GKT_MHA-baseline_tuning-42-93c479230290",
     "ASSIST2009-GKT_MHA-baseline_tuning-42-759c6f96ea2e",

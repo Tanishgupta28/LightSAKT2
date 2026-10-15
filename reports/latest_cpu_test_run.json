@@ -1,7 +1,7 @@
 {
-  "log": "reports/test_runs/20261014T191821-recovery-hook-final-cpu.log",
+  "log": "reports/test_runs/20261015T005034-continued-baseline-cpu.log",
   "exit_code": 0,
   "tests_passed": true,
-  "scope": "Full CPU suite including recovery, publication hashes and inter-run hook idempotence; CUDA deferred during healthy training",
-  "verified_utc": "2026-10-14T19:18:42.986794+00:00"
+  "scope": "Full CPU suite during uninterrupted GKT training; CUDA tests deferred to exclusive execution gate",
+  "verified_utc": "2026-10-15T00:50:58.429041+00:00"
 }

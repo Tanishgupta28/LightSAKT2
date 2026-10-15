@@ -5780,7 +5780,9 @@
       "model": "DKVMN",
       "seed": 42,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "reuse_selected_run": "Algebra2005-DKVMN-baseline_tuning-42-c5f966a0d50a",
+      "selection_path": "experiments/selections/Algebra2005-DKVMN.json"
     },
     {
       "run_id": "Algebra2005-DKVMN-final-123",
@@ -5789,7 +5791,8 @@
       "model": "DKVMN",
       "seed": 123,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/Algebra2005-DKVMN-final-123.json"
     },
     {
       "run_id": "Algebra2005-DKVMN-final-2026",
@@ -5798,7 +5801,8 @@
       "model": "DKVMN",
       "seed": 2026,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/Algebra2005-DKVMN-final-2026.json"
     },
     {
       "run_id": "Algebra2005-DKVMN-final-3407",
@@ -5807,7 +5811,8 @@
       "model": "DKVMN",
       "seed": 3407,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/Algebra2005-DKVMN-final-3407.json"
     },
     {
       "run_id": "Algebra2005-DKVMN-final-7777",
@@ -5816,7 +5821,8 @@
       "model": "DKVMN",
       "seed": 7777,
       "status": "pending",
-      "dependency": "all 36 tuning runs for this dataset/model"
+      "dependency": "all 36 tuning runs for this dataset/model",
+      "config": "configs/runs/Algebra2005-DKVMN-final-7777.json"
     },
     {
       "run_id": "Algebra2005-GKT-final-42",
