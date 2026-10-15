@@ -10601,5 +10601,1643 @@
     "draft": true,
     "download_sha256_verified": true,
     "verified_utc": "2026-10-15T19:29:03.969268+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 10,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch10.tar.gz",
+    "sha256": "cce8af61fc269819d14ac4c2cb8473d1eeae52831e4ce035d176d8080edc95d8",
+    "captured_time": 1792092924.9040585,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 644941347,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T19:35:29.695927+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 1,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch1.tar.gz",
+    "sha256": "cac2567cbc68ff5b3633f9b9b0db5c0b5147151428a0e10374bf031de7aeffbd",
+    "captured_time": 1792093008.5357113,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 644944906,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T19:36:54.598241+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 12,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch12.tar.gz",
+    "sha256": "054da22cabe7ae9eff47d86c10f4921366f7780bd65cb2e4f16e86a9da267278",
+    "captured_time": 1792093255.5202172,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 644959214,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T19:41:04.788824+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 3,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch3.tar.gz",
+    "sha256": "6c1cdc7443e5a0bdcaa07a353112071b8304832d859c4be85e950ab73ce3b7c0",
+    "captured_time": 1792093325.0607631,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 644961865,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T19:42:14.630235+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 13,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch13.tar.gz",
+    "sha256": "d4a41a40f87daf3993ab23515fb44ad3e51bc61613cbe1707ce8ac848a2caf35",
+    "captured_time": 1792093575.492829,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 644973304,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T19:46:26.882033+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 4,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch4.tar.gz",
+    "sha256": "9b2b26b523c39e6af626aada1b917d7bd90c887b3b37cbc9416391f62031ea9d",
+    "captured_time": 1792093647.1433852,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 644976894,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T19:47:38.479063+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 15,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch15.tar.gz",
+    "sha256": "0c58d05efcf934a8789334e574e208fc1667cac0230bca33af1074bda69b423a",
+    "captured_time": 1792093899.399742,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 644988586,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T19:51:51.688040+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 6,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch6.tar.gz",
+    "sha256": "0d23de53241c0323273f213a379feb5a44d248742ffe1bba16256b11fe48ac4c",
+    "captured_time": 1792094051.6976702,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 644991556,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T19:54:17.034803+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 16,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch16.tar.gz",
+    "sha256": "beece8153646c35ba4b7de060c57e3b25900d6eda90e92cdf07f711a7c7fb2fc",
+    "captured_time": 1792094317.0753565,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645002505,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T19:58:41.371274+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 8,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch8.tar.gz",
+    "sha256": "de2d5f15697f99c664ac97ad45ab3bbc2b5b2da460ec4b2b03a16def9732d8e1",
+    "captured_time": 1792094381.6672032,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645008628,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T19:59:51.701362+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 18,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch18.tar.gz",
+    "sha256": "5933036e6fa7ad9ce51f58c5fdc6308b06ed5a99bca9198fc941216936a468ca",
+    "captured_time": 1792094712.2342563,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645019103,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:05:16.698965+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 10,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch10.tar.gz",
+    "sha256": "7ef5c0e8954fc24e9d51eb5c23fe70accc81913fc41310afb791967c85e71224",
+    "captured_time": 1792094795.1277597,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645025739,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:06:44.902979+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 20,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch20.tar.gz",
+    "sha256": "c522e40143bdffc2db825a9d22c3640b3c398261f2583488bdaeab0d5d370c91",
+    "captured_time": 1792095045.8376837,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645035035,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:10:55.859098+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 11,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch11.tar.gz",
+    "sha256": "af2de20406923a803cf75d514bf9ea526d98bc5df6dc68e45d3e308bd54e3272",
+    "captured_time": 1792095116.1273305,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645037433,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:12:04.641106+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 22,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch22.tar.gz",
+    "sha256": "01e3fc401dacc364659736ded9454a6474ebecf10067a6a308993d648febc833",
+    "captured_time": 1792095445.2521791,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645049491,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:17:35.994612+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 13,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch13.tar.gz",
+    "sha256": "ed609e3e16f36640a9934f79d727b2c1b13234b4d2a3543b750247afbe102841",
+    "captured_time": 1792095456.0396287,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645049827,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:17:44.623154+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 23,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch23.tar.gz",
+    "sha256": "c7bd905b6f9ab0015819cf7d5bd1ec1728deac6e528f00713ed95758fb1e6fad",
+    "captured_time": 1792095765.8492804,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645063290,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:22:56.096891+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 14,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch14.tar.gz",
+    "sha256": "6c5fe4ef65edaddc44342b4b1a6494938b9f8c75064299b27bfb9db446fc4498",
+    "captured_time": 1792095776.141612,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645063798,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:23:05.460294+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 25,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch25.tar.gz",
+    "sha256": "4245a5cc2517e9bbfc4113cab6db925d6da06393010788cf1b42be25e5370a2d",
+    "captured_time": 1792096086.6284168,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645078192,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:28:16.668144+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 16,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch16.tar.gz",
+    "sha256": "81555c15fe14923fea31b60b4ff7834afac9121d1cee7eaf738a966122a1e20f",
+    "captured_time": 1792096096.710566,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645078596,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:28:25.996199+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 26,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch26.tar.gz",
+    "sha256": "b8268ce52da9794b0425eca8e2606f1f45b212a68c544215d59a46a6ff3084c4",
+    "captured_time": 1792096407.1950705,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645091936,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:33:36.435125+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 17,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch17.tar.gz",
+    "sha256": "6d37e82ba17af45fa5b72eee3ea5adea4b497a6a30f02ea26c7548c3f1195c41",
+    "captured_time": 1792096495.8030765,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645092458,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:35:01.457427+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 28,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch28.tar.gz",
+    "sha256": "e2cd654b31a6fa9cee3679e3e727f859be32b193ee50bf05017fb0c621d8c1ce",
+    "captured_time": 1792096828.7359858,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645106681,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:40:34.188267+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 19,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch19.tar.gz",
+    "sha256": "200edcb22167b0e31235d179b287a1e36ed84fad10692ad3cb1cffa70bbda480",
+    "captured_time": 1792096834.2334495,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645110129,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:40:45.535429+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 30,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch30.tar.gz",
+    "sha256": "a3f2cf51b587a93c97dc546f57a306b4e842c4073631a3e10e2caaebbe77c008",
+    "captured_time": 1792097225.518053,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645125644,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:47:15.616029+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 21,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch21.tar.gz",
+    "sha256": "446450a9e644dec6ad25ef31002d9c1fe0447544a268eb3b527f3065476136e0",
+    "captured_time": 1792097235.663718,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645126112,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:47:26.115734+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 31,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch31.tar.gz",
+    "sha256": "d42b0c28b0fda2867672099d7b0d6328cbc94b5cee63d9e5109e47831fbc28d2",
+    "captured_time": 1792097547.2852092,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645138447,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:52:36.131702+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 22,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch22.tar.gz",
+    "sha256": "9e4e37a929bad4c1c2ec415d8892383ff70b1db39a438c5ab2fdfdc83c1c3754",
+    "captured_time": 1792097556.1788878,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645138821,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:52:47.348093+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 33,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch33.tar.gz",
+    "sha256": "f9f325ffa8f95912ea76a55e6df0ea36b46c45347b570f6a2a1a34d475ea50d7",
+    "captured_time": 1792097947.5628812,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645151937,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:59:12.657377+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 24,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch24.tar.gz",
+    "sha256": "6665b2eccce5ee326c9fe6201fa152b5e2198437daa4e8d18c3901ce18cb8489",
+    "captured_time": 1792097952.6991596,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645155189,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T20:59:21.523330+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 34,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch34.tar.gz",
+    "sha256": "9a441fc7f4dfbd059fe6deb119968092b6d4cf288db016a84b47e64a4711d07c",
+    "captured_time": 1792098262.6391613,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645166822,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T21:04:32.750740+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 26,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch26.tar.gz",
+    "sha256": "70571e8156cd96bceb7dc72c0748ff8ea1fab91b5c8bb954a6a0c31dfb76a4d4",
+    "captured_time": 1792098434.6163542,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645170665,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T21:07:20.817262+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 36,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch36.tar.gz",
+    "sha256": "b4d1c299d6927b67296eeef0dfd94e2b80f08344006968ba81dd4d63ab806a36",
+    "captured_time": 1792098621.3867168,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645180992,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T21:10:31.502400+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 27,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch27.tar.gz",
+    "sha256": "76b086f6e004a5bbe1b367a4f3b3f4d5741c8c2f9836e234c8929bd02f59df71",
+    "captured_time": 1792098751.997219,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645185407,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T21:12:41.308129+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 37,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch37.tar.gz",
+    "sha256": "2ff0e4d5eceadf4edb5231283e11be91bf3d00f2246b0ce14a365c4498d01beb",
+    "captured_time": 1792098941.9728005,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645192683,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T21:15:53.068421+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 29,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch29.tar.gz",
+    "sha256": "9e8b64589eb456a33ef560092483b261586ed836a5e27e0fa374234b6ef1c942",
+    "captured_time": 1792099152.9635565,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645197564,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T21:19:17.976584+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 39,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch39.tar.gz",
+    "sha256": "c457fa302ad84c9a69a7b823e2db095f00512593afdfd4c8f0f87d879c348a37",
+    "captured_time": 1792099358.4617195,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645205987,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T21:22:44.139815+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 30,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch30.tar.gz",
+    "sha256": "0034f1562513f50830c362c4c58be45b3c34ea47deaa8786766f91f6f3f3908b",
+    "captured_time": 1792099484.6372273,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645214404,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T21:24:55.688892+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 41,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch41.tar.gz",
+    "sha256": "31e918bc529bfd6e2e98dd184c0313b5148b1626bb8f8170c584e9a38f7831e7",
+    "captured_time": 1792099676.4016404,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645222309,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T21:28:06.523432+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 32,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch32.tar.gz",
+    "sha256": "4286886273c2842dc9f41e1e0b093f312b5b095b4796f32b76d30c8d6754e190",
+    "captured_time": 1792099807.0297048,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645227522,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T21:30:18.329490+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+    "epoch": 42,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4-epoch42.tar.gz",
+    "sha256": "7d8282f50de376c96570b7eae7b58ace47ee81a48d53e1b373952d3494a6a488",
+    "captured_time": 1792099999.0719137,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 2,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4"
+    },
+    "asset_id": 645234674,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T21:33:28.164113+00:00"
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+    "epoch": 33,
+    "path": "backups/active_runs/ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2-epoch33.tar.gz",
+    "sha256": "c732d93f5f79a7a860e17f39b4051780cf61c2a31f15de27c95863b3b36d8796",
+    "captured_time": 1792100128.67922,
+    "verified_contents": true,
+    "live_run_interrupted": false,
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 16,
+        "num_attn_heads": 1,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2"
+    },
+    "asset_id": 645239795,
+    "release_tag": "research-active-recovery-20261015",
+    "private": true,
+    "draft": true,
+    "download_sha256_verified": true,
+    "verified_utc": "2026-10-15T21:35:39.040062+00:00"
   }
 ]
