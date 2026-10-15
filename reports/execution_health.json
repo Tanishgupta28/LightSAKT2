@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-10-15T00:53:44.111579+00:00",
-  "sample_time": 1792025623.6448047,
+  "updated_utc": "2026-10-15T01:21:45.286686+00:00",
+  "sample_time": 1792027304.6915581,
   "counts": {
     "completed": 720,
     "pending": 236,
@@ -13,12 +13,12 @@
   "training_processes": [
     {
       "pid": 925435,
-      "cpu_seconds": 2383.29,
+      "cpu_seconds": 4063.78,
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 27.111587524414062,
-      "cpu_seconds_advanced": 27.090000000000146
+      "observed_seconds": 62.45769762992859,
+      "cpu_seconds_advanced": 62.470000000000255
     },
     {
       "pid": 931229,
@@ -26,22 +26,22 @@
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 27.111587524414062,
+      "observed_seconds": 62.45769762992859,
       "cpu_seconds_advanced": 0.0
     }
   ],
   "active_runs": [
     {
       "run_id": "ASSIST2009-GKT-baseline_tuning-42-30db8df014cb",
-      "last_completed_epoch": 14,
+      "last_completed_epoch": 23,
       "best_checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-30db8df014cb/best.pt",
       "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT-baseline_tuning-42-30db8df014cb/config.json",
-      "recent_mean_epoch_seconds": 170.07638244520058,
-      "seconds_since_last_epoch": 2.9489176273345947,
+      "recent_mean_epoch_seconds": 169.1868231594097,
+      "seconds_since_last_epoch": 164.94466423988342,
       "startup_epoch_seconds_extrapolated": null,
       "first_checkpoint_startup_grace_seconds": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 510.22914733560174,
+      "stall_threshold_seconds": 507.5604694782291,
       "checkpoint_stalled": false
     }
   ],
