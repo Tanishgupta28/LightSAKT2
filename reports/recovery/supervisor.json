@@ -1,8 +1,8 @@
 {
-  "observed_utc": "2026-10-15T12:28:20.801991+00:00",
+  "observed_utc": "2026-10-15T12:45:27.210174+00:00",
   "supervisor_pid": 818850,
-  "completed": 739,
-  "remaining": 218,
+  "completed": 740,
+  "remaining": 217,
   "processes": [
     {
       "pid": 49211,
@@ -50,8 +50,18 @@
       "watchdog": false
     },
     {
-      "pid": 1111471,
+      "pid": 1117299,
       "module": "scripts.run",
+      "watchdog": false
+    },
+    {
+      "pid": 1123212,
+      "module": "scripts.run",
+      "watchdog": false
+    },
+    {
+      "pid": 1123505,
+      "module": "scripts.summarize",
       "watchdog": false
     }
   ],

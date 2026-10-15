@@ -1,0 +1,200 @@
+{
+  "verified": false,
+  "runs": [
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-12f8bfd8870e",
+      "verified": true,
+      "device": "cpu",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7931161399223643,
+        "auc_reason": null,
+        "accuracy": 0.794010311684454,
+        "f1": 0.8723346899594328,
+        "mse": 0.14544514632329475,
+        "bce": 0.4498268532125889,
+        "n_targets": 94262
+      },
+      "training_git_commit": "ef1428ea8d4048e387954933827d77da3a629b82",
+      "metrics_sha256": "bcd1e7bb459d50b56cebc752216965984d8502e64478066035a36793fe7c624e",
+      "config_sha256": "3ea01e5afa688db1fcb33bc5e2f444772250b6395867ad387234218af425f102",
+      "checkpoint_sha256": "82d9f2844f997ae0af33eac6e866cff1a32c80bac3daf7638b1ac0068f5ee10f"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-9e7eaa31d265",
+      "verified": true,
+      "device": "cpu",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7922793873334624,
+        "auc_reason": null,
+        "accuracy": 0.793723876005177,
+        "f1": 0.8722369700633427,
+        "mse": 0.14564161742111667,
+        "bce": 0.4505034083360129,
+        "n_targets": 94262
+      },
+      "training_git_commit": "0ec605d1e07cdc24cb3fd46377695bac77f89d95",
+      "metrics_sha256": "39c9523910c99bd10ba129c6274269695b6b70e7a45a59a11cdebf574b2d17c3",
+      "config_sha256": "1e4cc7a4873df19b9eb6f881a4f2224e46f2805f11e457c1686f0cea336a4314",
+      "checkpoint_sha256": "e065b845f80b543282a193d998abb46092ad835e2384cfe789eb6f269a0931af"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-d7aa8aba0d2a",
+      "verified": true,
+      "device": "cpu",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7942317769101311,
+        "auc_reason": null,
+        "accuracy": 0.794498313212111,
+        "f1": 0.8727325287273253,
+        "mse": 0.14514080190857057,
+        "bce": 0.44906465669938106,
+        "n_targets": 94262
+      },
+      "training_git_commit": "ca316f58b39c712e3db5a63f324d664e9680397e",
+      "metrics_sha256": "f1eb41ea9d5abf89d4052d0cd8279d1491e883a18aa78493a5a3d2bc435b3623",
+      "config_sha256": "1423099a30e9d9aadccbac7e30480785e5b2530cd47f7dc2ad952236becb1d94",
+      "checkpoint_sha256": "e81d6977842d07a6415d91bc8ed2dbc91381c5a7a60886cd9a1f77329d9e30b5"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-60d431ed47b1",
+      "verified": true,
+      "device": "cpu",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7931566625231402,
+        "auc_reason": null,
+        "accuracy": 0.7940315291421782,
+        "f1": 0.8723881136577254,
+        "mse": 0.1454683295728641,
+        "bce": 0.4499802924932289,
+        "n_targets": 94262
+      },
+      "training_git_commit": "ee1fe9dbc26785d80e31dce25b833d19becb2a87",
+      "metrics_sha256": "60040791e1f7da92c2c33641df128ceaf8a89aa300d56e05c6044d8023db92d4",
+      "config_sha256": "6f68d1a4c41093921be9bcdb1bb56007e93d3e4a91242a692915b15d5ca317da",
+      "checkpoint_sha256": "ace1f0d56ecdded6ead4b2f1cb60565989f709368b33c6940c14ebaf88698d46"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-0408fbfb5e53",
+      "verified": true,
+      "device": "cpu",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8031973998767679,
+        "auc_reason": null,
+        "accuracy": 0.798052237380917,
+        "f1": 0.8747466771943677,
+        "mse": 0.1423980698512397,
+        "bce": 0.44104574911062877,
+        "n_targets": 94262
+      },
+      "training_git_commit": "719dfedb5282f96af4d5b4af75c83ffc4a6ab160",
+      "metrics_sha256": "75e79c9c71a15c501aa04a38327ec82e63474d0dfd817df2b282c6b524a7b86f",
+      "config_sha256": "77adfd76389c82feaae1fce9c3ab980b4029006e04da88fc04304c6d16eb14c6",
+      "checkpoint_sha256": "15a81dd620b7a4e8de6cf9a6ee9d581ed5cc3a7fdcb18ff153c84ae2dfa29b29"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-b30e8d7585f4",
+      "verified": true,
+      "device": "cpu",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8026412353422973,
+        "auc_reason": null,
+        "accuracy": 0.7976278882264327,
+        "f1": 0.8746055952881784,
+        "mse": 0.14254394591469405,
+        "bce": 0.44158971400646957,
+        "n_targets": 94262
+      },
+      "training_git_commit": "3c3a09f479c7c15734c3a4da6594fcca7810a71d",
+      "metrics_sha256": "f9ec1fe6fa344eaf781a8f86dd5fc6ce5456f02b9ae90945b3eb3e63f0351754",
+      "config_sha256": "b8656ba6495521941d7df207e770dd24627b6d1eb7b6da6c53b70027ba807701",
+      "checkpoint_sha256": "b0c27a67a1658c2fdb49fc4791b6014c76aae39353f7d82202dca12b731f8d91"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-0cbf22fe27be",
+      "verified": true,
+      "device": "cpu",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.804624734115981,
+        "auc_reason": null,
+        "accuracy": 0.7988797182321614,
+        "f1": 0.8750296638101516,
+        "mse": 0.14204650369105246,
+        "bce": 0.44030002093512266,
+        "n_targets": 94262
+      },
+      "training_git_commit": "e8abbb8668e07d03b322dadbba5ae5698d34cd31",
+      "metrics_sha256": "63c04aaba38f0b388f81dbd6300a9cd32448bb8d48c731848d7bc41e00f347d8",
+      "config_sha256": "92b164a0e39e2eaed8ec8ce864b78bd8775b0673b3b8184ce294e04c28634167",
+      "checkpoint_sha256": "05571cbf056271cfe05baa21cdf78481ebada723813cd4a14ed32817ff4f7292"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-df36f3e1d67f",
+      "verified": true,
+      "device": "cpu",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8043951828210107,
+        "auc_reason": null,
+        "accuracy": 0.7990494578939551,
+        "f1": 0.8752239671163575,
+        "mse": 0.1420685743117526,
+        "bce": 0.44043520193761077,
+        "n_targets": 94262
+      },
+      "training_git_commit": "ee6996362af625ed7dba9769e34a77b9cb590a5f",
+      "metrics_sha256": "23e647b6813a0e67b55e53350b8125b989c4f76e7646045872124904a709928b",
+      "config_sha256": "5cdb2333d51c4aaf35b56e43e99da3c2c55661deb38ab72e97e495aff3962412",
+      "checkpoint_sha256": "c580764816cfbd4ed773cca9e7f27014da1a75cf263ff8ae0659411670d9d296"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-c8977b8be751",
+      "verified": true,
+      "device": "cpu",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8102867207561943,
+        "auc_reason": null,
+        "accuracy": 0.8021365979928285,
+        "f1": 0.8761611346086171,
+        "mse": 0.14016260548594478,
+        "bce": 0.43512583699191726,
+        "n_targets": 94262
+      },
+      "training_git_commit": "ca316f58b39c712e3db5a63f324d664e9680397e",
+      "metrics_sha256": "45a3d3413330e966f145eed65c192e99430b311cdbd2be0ce7c0192a8ec47963",
+      "config_sha256": "25a677370783d84aadad75540a5f0c441735f5a40eb594f23acaa7af0e633623",
+      "checkpoint_sha256": "221431d4c680db62595b52ecc2cf72a2cff652d3e70dd52ae971d48749567d07"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-6aa156e936e3",
+      "verified": true,
+      "device": "cpu",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8109223434886998,
+        "auc_reason": null,
+        "accuracy": 0.8031444272347288,
+        "f1": 0.8771760282767842,
+        "mse": 0.13978701752663789,
+        "bce": 0.4341207032212968,
+        "n_targets": 94262
+      },
+      "training_git_commit": "a25a5227f42d7258da665da099b211f0164f1431",
+      "metrics_sha256": "5d9dd1cfc3e20074c4a54a8c257b13fa9bcfcdf7e6748365c2a789ccd9541387",
+      "config_sha256": "d7047c7341d1c778724c686fea58f7de7e332afc5c6e2d9dc4a547157dbb8837",
+      "checkpoint_sha256": "0420adc72834ffa11722acbd302aaa58824bdecf6819859316d3b864a0d5bb57"
+    }
+  ],
+  "verified_utc": "2026-10-15T12:41:07.073199+00:00",
+  "retrained_runs": 0,
+  "metric_atol": 1e-07,
+  "metric_rtol": 1e-06,
+  "verification_cpu_threads": 1
+}

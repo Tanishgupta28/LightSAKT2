@@ -107,4 +107,10 @@ def main():
         with Path('FINAL_RESEARCH_REPORT.md').open('a') as output:
             output.write('\n## Comparison against completed baselines\n\n'+findings.read_text().split('\n',2)[-1])
 
+    sakt_extension=Path('reports/sakt_matched_grid_verification.json')
+    if sakt_extension.exists() and json.load(open(sakt_extension)).get('verified'):
+        with Path('FINAL_RESEARCH_REPORT.md').open('a') as output:
+            output.write('\n## Complete matched SAKT grid extension\n\n'+Path('reports/SAKT_LIGHTSAKT_COMPARISON.md').read_text().split('\n',2)[-1])
+            output.write('\nAll 108 matched grid slots and 15 selected SAKT seed slots reused verified, exactly matching existing results. Additional GPU training: zero. The approved main schedule and original model architectures remain unchanged. Detailed audit, runtime, source runs and per-seed checkpoints: reports/SAKT_GRID_SEARCH_REPORT.md and experiments/sakt_matched_grid_manifest.json.\n')
+
 if __name__=='__main__':main()
