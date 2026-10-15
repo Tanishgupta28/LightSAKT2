@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-15T10:03:56.885244+00:00",
-  "reason": "CalledProcessError: Command '['gh', 'api', 'repos/Tanishgupta28/LightSAKT2']' returned non-zero exit status 1.",
+  "updated_utc": "2026-10-15T23:02:25.800428+00:00",
+  "reason": "CalledProcessError: Command '['gh', 'api', 'repos/Tanishgupta28/LightSAKT2/releases', '--paginate', '--jq', '.[] | select(.tag_name==\"research-recovery-20261013\") | .id']' returned non-zero exit status 1.",
   "local_backups_retained": true
 }
