@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-14T23:51:20.148566+00:00",
-  "sample_time": 1792021879.010072,
+  "updated_utc": "2026-10-15T00:14:13.302744+00:00",
+  "sample_time": 1792023252.3811321,
   "counts": {
-    "completed": 719,
-    "pending": 237,
+    "completed": 720,
+    "pending": 236,
     "running": 1
   },
   "scheduler": {
@@ -12,17 +12,17 @@
   },
   "training_processes": [
     {
-      "pid": 911792,
-      "cpu_seconds": 16.32,
+      "pid": 925435,
+      "cpu_seconds": 14.05,
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.52623152732849,
-      "cpu_seconds_advanced": 7.76
+      "observed_seconds": 62.10242009162903,
+      "cpu_seconds_advanced": 6.220000000000001
     },
     {
-      "pid": 925435,
-      "cpu_seconds": 7.83,
+      "pid": 931229,
+      "cpu_seconds": 7.21,
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
@@ -32,16 +32,16 @@
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2009-GKT-baseline_tuning-42-2bf0f4278139",
+      "run_id": "ASSIST2009-GKT-baseline_tuning-42-30db8df014cb",
       "last_completed_epoch": 0,
-      "best_checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-2bf0f4278139/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT-baseline_tuning-42-2bf0f4278139/config.json",
+      "best_checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-30db8df014cb/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT-baseline_tuning-42-30db8df014cb/config.json",
       "recent_mean_epoch_seconds": null,
-      "seconds_since_last_epoch": 7.442071914672852,
-      "startup_epoch_seconds_extrapolated": 173.92332804646188,
+      "seconds_since_last_epoch": 5.480924129486084,
+      "startup_epoch_seconds_extrapolated": 173.94354788449488,
       "first_checkpoint_startup_grace_seconds": 30.0,
       "age_reference": "initial running status; first checkpoint not yet saved",
-      "stall_threshold_seconds": 521.7699841393857,
+      "stall_threshold_seconds": 521.8306436534847,
       "checkpoint_stalled": false
     }
   ],
@@ -52,5 +52,5 @@
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 721 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 722 independently downloaded/checksum verified; completed-archive synchronization True."
 }
