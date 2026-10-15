@@ -1,6 +1,10 @@
 {
-  "status": "waiting_for_original_device_verification",
+  "status": "running",
   "pid": 1126964,
-  "checked_utc": "2026-10-15T15:47:16.655888+00:00",
+  "step": [
+    "python",
+    "-m",
+    "scripts.manuscript"
+  ],
   "healthy_training_interrupted": false
 }

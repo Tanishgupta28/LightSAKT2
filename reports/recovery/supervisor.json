@@ -1,8 +1,8 @@
 {
-  "observed_utc": "2026-10-15T15:47:06.639661+00:00",
+  "observed_utc": "2026-10-15T16:17:18.158464+00:00",
   "supervisor_pid": 818850,
-  "completed": 744,
-  "remaining": 213,
+  "completed": 745,
+  "remaining": 212,
   "processes": [
     {
       "pid": 49211,
@@ -50,22 +50,17 @@
       "watchdog": false
     },
     {
-      "pid": 1124408,
-      "module": "scripts.sakt_matched_grid",
-      "watchdog": false
-    },
-    {
       "pid": 1126964,
       "module": "scripts.publish_sakt_grid",
       "watchdog": false
     },
     {
-      "pid": 1162592,
+      "pid": 1171076,
       "module": "scripts.run",
       "watchdog": false
     },
     {
-      "pid": 1171076,
+      "pid": 1178796,
       "module": "scripts.run",
       "watchdog": false
     }

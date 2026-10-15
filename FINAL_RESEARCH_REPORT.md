@@ -66,9 +66,9 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 ## Experiment schedule status
 
 {
-  "completed": 744,
-  "pending": 212,
-  "running": 1
+  "completed": 745,
+  "running": 1,
+  "pending": 211
 }
 
 Total requested schedule slots: 957. Counts include 21 seed-42 checkpoint reuse slots, 15 regularization aliases, and 9 verified primary/grid reuse slots, which are not new independent trainings. Distinct planned trainings: 912. Every required grid row is retained. The five-seed primary result is the mean, never the best seed. All remaining pending slots have no experimental result yet.
@@ -128,7 +128,7 @@ Latest schedule audit: 223 fresh trainings remain plus 8 reuse/evaluation entrie
 
 Exact immutable sequence caches preserve every tensor, identity, batch order and RNG sequence; CPU training/resume equivalence is tested. Inter-run GPU probes and CPU/CUDA gates verify independent worker updates before two-worker GKT execution. Full required scope, FP32, batch sizes, Adam, stopping criteria, LightSAKT architecture, splits and untouched final test selections remain unchanged. Prioritization runs LightSAKT grid/finals/ablations before slow remaining baseline tuning. See reports/optimization/EXECUTION_OPTIMIZATION.md and reports/profiling/.
 
-Independent private GitHub draft recovery artifacts: 746 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
+Independent private GitHub draft recovery artifacts: 747 assets have been downloaded and SHA256 verified. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md for recovery commands and reports/offsite_backup.json for immutable asset IDs/checksums. Running checkpoints are saved on NFS until their completed-run archive is uploaded. Cloud artifacts preserve evidence after workspace loss; they do not keep GPU training alive after shutdown.
 
 ## Finished LightSAKT outputs and recovery
 
@@ -138,7 +138,7 @@ The CPU recovery supervisor protects existing training, recovers missing process
 
 ## Comparison against completed baselines
 
-Generated UTC: 2026-10-15T15:16:03.884982+00:00
+Generated UTC: 2026-10-15T15:51:39.582076+00:00
 
 This comparison includes only completed selected five-seed DKT, DKT+, DKVMN and SAKT results on the same locked splits. It excludes historical manuscript scores, primary single-seed runs, partial seed sets and both GKT variants. Best means highest completed five-seed mean test AUC among these four baselines. This is a descriptive leaderboard after evaluation; it does not select hyperparameters, checkpoints or future experiments.
 
@@ -164,11 +164,7 @@ Evidence: LightSAKT_final_summary.csv, LightSAKT_completed_baseline_comparisons.
 
 A narrower error-loss result is supported descriptively: LightSAKT has lower mean MSE and BCE than DKT and DKT+ on all three datasets, while DKVMN has lower mean MSE and BCE than LightSAKT on all three. Lower error losses alone do not establish probability calibration.
 
-## Matched SAKT grid extension — final verification pending
-
-**Verification status:** All 108 published validation AUCs passed independent CPU reproduction at the original tolerances; all selected final test results have existing independent inference proofs. Full original-device validation metrics remain queued. The failed strict CPU accuracy check is preserved and is not declared passed. The additional workflow is not yet fully verified.
-
-# LightSAKT versus SAKT: two distinct comparisons
+## Complete matched SAKT grid extension
 
 ## A. Identical hyperparameters — validation only
 
@@ -222,4 +218,4 @@ Algebra2005: highest SAKT marginal means occur at learning_rate=0.001 (marginal 
 ASSIST2009: highest SAKT marginal means occur at learning_rate=0.0005 (marginal mean validation AUC 0.747139); embedding_dim=64 (marginal mean validation AUC 0.747212); heads=4 (marginal mean validation AUC 0.745634); dropout=0.1 (marginal mean validation AUC 0.745454). Interactions can make the jointly selected configuration differ.
 ASSIST2015: highest SAKT marginal means occur at learning_rate=0.0005 (marginal mean validation AUC 0.727923); embedding_dim=64 (marginal mean validation AUC 0.727062); heads=4 (marginal mean validation AUC 0.725498); dropout=0.2 (marginal mean validation AUC 0.725622). Interactions can make the jointly selected configuration differ.
 
-All requested trainings already exist; no new training is required. The complete AUC tables have independent CPU selection-metric checks. Full original-device validation metrics remain queued through existing GPU admission, with a detached CPU publication worker ready to finish and back up outputs. The additional workflow is not declared complete.
+All 108 matched grid slots and 15 selected SAKT seed slots reused verified, exactly matching existing results. Additional GPU training: zero. The approved main schedule and original model architectures remain unchanged. Detailed audit, runtime, source runs and per-seed checkpoints: reports/SAKT_GRID_SEARCH_REPORT.md and experiments/sakt_matched_grid_manifest.json.

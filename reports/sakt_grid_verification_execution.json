@@ -1,6 +1,7 @@
 {
-  "status": "waiting_for_gpu_admission",
+  "status": "completed",
   "pid": 1124408,
   "healthy_training_interrupted": false,
-  "resume_command": "python -m scripts.sakt_matched_grid verify --device cuda"
+  "actual_gpu_occupied_seconds": 9.792624510009773,
+  "completed_utc": "2026-10-15T16:17:14.629493+00:00"
 }

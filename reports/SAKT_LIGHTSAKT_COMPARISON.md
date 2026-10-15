@@ -1,5 +1,3 @@
-**Verification status:** All 108 published validation AUCs passed independent CPU reproduction at the original tolerances; all selected final test results have existing independent inference proofs. Full original-device validation metrics remain queued. The failed strict CPU accuracy check is preserved and is not declared passed. The additional workflow is not yet fully verified.
-
 # LightSAKT versus SAKT: two distinct comparisons
 
 ## A. Identical hyperparameters — validation only

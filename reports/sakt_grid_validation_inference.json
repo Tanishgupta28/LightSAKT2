@@ -1,0 +1,2065 @@
+{
+  "verified": true,
+  "runs": [
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-12f8bfd8870e",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7931161318876567,
+        "auc_reason": null,
+        "accuracy": 0.794010311684454,
+        "f1": 0.8723346899594328,
+        "mse": 0.14544514637189424,
+        "bce": 0.4498268531773605,
+        "n_targets": 94262
+      },
+      "training_git_commit": "ef1428ea8d4048e387954933827d77da3a629b82",
+      "metrics_sha256": "bcd1e7bb459d50b56cebc752216965984d8502e64478066035a36793fe7c624e",
+      "config_sha256": "3ea01e5afa688db1fcb33bc5e2f444772250b6395867ad387234218af425f102",
+      "checkpoint_sha256": "82d9f2844f997ae0af33eac6e866cff1a32c80bac3daf7638b1ac0068f5ee10f"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-9e7eaa31d265",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7922793834648993,
+        "auc_reason": null,
+        "accuracy": 0.793723876005177,
+        "f1": 0.8722369700633427,
+        "mse": 0.14564161720808,
+        "bce": 0.4505034072284265,
+        "n_targets": 94262
+      },
+      "training_git_commit": "0ec605d1e07cdc24cb3fd46377695bac77f89d95",
+      "metrics_sha256": "39c9523910c99bd10ba129c6274269695b6b70e7a45a59a11cdebf574b2d17c3",
+      "config_sha256": "1e4cc7a4873df19b9eb6f881a4f2224e46f2805f11e457c1686f0cea336a4314",
+      "checkpoint_sha256": "e065b845f80b543282a193d998abb46092ad835e2384cfe789eb6f269a0931af"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-d7aa8aba0d2a",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7942317691730054,
+        "auc_reason": null,
+        "accuracy": 0.794498313212111,
+        "f1": 0.8727325287273253,
+        "mse": 0.14514080149024414,
+        "bce": 0.4490646551022865,
+        "n_targets": 94262
+      },
+      "training_git_commit": "ca316f58b39c712e3db5a63f324d664e9680397e",
+      "metrics_sha256": "f1eb41ea9d5abf89d4052d0cd8279d1491e883a18aa78493a5a3d2bc435b3623",
+      "config_sha256": "1423099a30e9d9aadccbac7e30480785e5b2530cd47f7dc2ad952236becb1d94",
+      "checkpoint_sha256": "e81d6977842d07a6415d91bc8ed2dbc91381c5a7a60886cd9a1f77329d9e30b5"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-60d431ed47b1",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.793156662820722,
+        "auc_reason": null,
+        "accuracy": 0.7940315291421782,
+        "f1": 0.8723881136577254,
+        "mse": 0.14546832939288915,
+        "bce": 0.4499802916862664,
+        "n_targets": 94262
+      },
+      "training_git_commit": "ee1fe9dbc26785d80e31dce25b833d19becb2a87",
+      "metrics_sha256": "60040791e1f7da92c2c33641df128ceaf8a89aa300d56e05c6044d8023db92d4",
+      "config_sha256": "6f68d1a4c41093921be9bcdb1bb56007e93d3e4a91242a692915b15d5ca317da",
+      "checkpoint_sha256": "ace1f0d56ecdded6ead4b2f1cb60565989f709368b33c6940c14ebaf88698d46"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-0408fbfb5e53",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8031973954130416,
+        "auc_reason": null,
+        "accuracy": 0.798052237380917,
+        "f1": 0.8747466771943677,
+        "mse": 0.14239806970107474,
+        "bce": 0.44104574831373583,
+        "n_targets": 94262
+      },
+      "training_git_commit": "719dfedb5282f96af4d5b4af75c83ffc4a6ab160",
+      "metrics_sha256": "75e79c9c71a15c501aa04a38327ec82e63474d0dfd817df2b282c6b524a7b86f",
+      "config_sha256": "77adfd76389c82feaae1fce9c3ab980b4029006e04da88fc04304c6d16eb14c6",
+      "checkpoint_sha256": "15a81dd620b7a4e8de6cf9a6ee9d581ed5cc3a7fdcb18ff153c84ae2dfa29b29"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-b30e8d7585f4",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.802641241889096,
+        "auc_reason": null,
+        "accuracy": 0.7976278882264327,
+        "f1": 0.8746055952881784,
+        "mse": 0.14254394584636818,
+        "bce": 0.44158971372957456,
+        "n_targets": 94262
+      },
+      "training_git_commit": "3c3a09f479c7c15734c3a4da6594fcca7810a71d",
+      "metrics_sha256": "f9ec1fe6fa344eaf781a8f86dd5fc6ce5456f02b9ae90945b3eb3e63f0351754",
+      "config_sha256": "b8656ba6495521941d7df207e770dd24627b6d1eb7b6da6c53b70027ba807701",
+      "checkpoint_sha256": "b0c27a67a1658c2fdb49fc4791b6014c76aae39353f7d82202dca12b731f8d91"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-0cbf22fe27be",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8046247293546729,
+        "auc_reason": null,
+        "accuracy": 0.7988797182321614,
+        "f1": 0.8750296638101516,
+        "mse": 0.142046503247729,
+        "bce": 0.4403000192568585,
+        "n_targets": 94262
+      },
+      "training_git_commit": "e8abbb8668e07d03b322dadbba5ae5698d34cd31",
+      "metrics_sha256": "63c04aaba38f0b388f81dbd6300a9cd32448bb8d48c731848d7bc41e00f347d8",
+      "config_sha256": "92b164a0e39e2eaed8ec8ce864b78bd8775b0673b3b8184ce294e04c28634167",
+      "checkpoint_sha256": "05571cbf056271cfe05baa21cdf78481ebada723813cd4a14ed32817ff4f7292"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-df36f3e1d67f",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8043951893678094,
+        "auc_reason": null,
+        "accuracy": 0.7990494578939551,
+        "f1": 0.8752239671163575,
+        "mse": 0.14206857422867492,
+        "bce": 0.44043520158333066,
+        "n_targets": 94262
+      },
+      "training_git_commit": "ee6996362af625ed7dba9769e34a77b9cb590a5f",
+      "metrics_sha256": "23e647b6813a0e67b55e53350b8125b989c4f76e7646045872124904a709928b",
+      "config_sha256": "5cdb2333d51c4aaf35b56e43e99da3c2c55661deb38ab72e97e495aff3962412",
+      "checkpoint_sha256": "c580764816cfbd4ed773cca9e7f27014da1a75cf263ff8ae0659411670d9d296"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-c8977b8be751",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8102867171852134,
+        "auc_reason": null,
+        "accuracy": 0.8021365979928285,
+        "f1": 0.8761611346086171,
+        "mse": 0.14016260449059317,
+        "bce": 0.43512583349792494,
+        "n_targets": 94262
+      },
+      "training_git_commit": "ca316f58b39c712e3db5a63f324d664e9680397e",
+      "metrics_sha256": "45a3d3413330e966f145eed65c192e99430b311cdbd2be0ce7c0192a8ec47963",
+      "config_sha256": "25a677370783d84aadad75540a5f0c441735f5a40eb594f23acaa7af0e633623",
+      "checkpoint_sha256": "221431d4c680db62595b52ecc2cf72a2cff652d3e70dd52ae971d48749567d07"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-6aa156e936e3",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.810922350630662,
+        "auc_reason": null,
+        "accuracy": 0.8031444272347288,
+        "f1": 0.8771760282767842,
+        "mse": 0.13978701669928137,
+        "bce": 0.43412070078434833,
+        "n_targets": 94262
+      },
+      "training_git_commit": "a25a5227f42d7258da665da099b211f0164f1431",
+      "metrics_sha256": "5d9dd1cfc3e20074c4a54a8c257b13fa9bcfcdf7e6748365c2a789ccd9541387",
+      "config_sha256": "d7047c7341d1c778724c686fea58f7de7e332afc5c6e2d9dc4a547157dbb8837",
+      "checkpoint_sha256": "0420adc72834ffa11722acbd302aaa58824bdecf6819859316d3b864a0d5bb57"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-479b386836d4",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8102698797117456,
+        "auc_reason": null,
+        "accuracy": 0.8025185122318643,
+        "f1": 0.8763936015511391,
+        "mse": 0.13993713760578816,
+        "bce": 0.4348159739331878,
+        "n_targets": 94262
+      },
+      "training_git_commit": "e44c76ecc7f39df06a502734e36e89c2bf811537",
+      "metrics_sha256": "1a26afcfcb19a51343dbb927a87a11ba8670e0e6a1953df29504cac6fa37dd55",
+      "config_sha256": "e2e2ade7130587a0a7b7f5dc5e782784c0ed4580bfb68d4498cf6b5dcfb0f442",
+      "checkpoint_sha256": "800b57de8f22c6ffd9d210c09b95cb8d564aa3c7e08d98dc2443909df9ec87d2"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-375fd6a0dfae",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8108910453272683,
+        "auc_reason": null,
+        "accuracy": 0.8031019923192803,
+        "f1": 0.876908384289902,
+        "mse": 0.13966003983218805,
+        "bce": 0.4339736538934843,
+        "n_targets": 94262
+      },
+      "training_git_commit": "b9885764159280ac4adf66a6452a7ebc16a214c5",
+      "metrics_sha256": "4fc6af21fc1b257c1d5dc76d414330148b449cd516999d1d029f57269b5b5f74",
+      "config_sha256": "45e6785f0ec4c63c3947b06a504ea155ab03091326d13018f58f3d693f48f56d",
+      "checkpoint_sha256": "56ad99b550c667bd4395dcf27546a74327f84d3b9d8f3a613136eedc11869fa5"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-1bc9f03a23b7",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7997304331240536,
+        "auc_reason": null,
+        "accuracy": 0.7973944961914663,
+        "f1": 0.8742460557852872,
+        "mse": 0.1433405978571213,
+        "bce": 0.44390490880447553,
+        "n_targets": 94262
+      },
+      "training_git_commit": "ef1428ea8d4048e387954933827d77da3a629b82",
+      "metrics_sha256": "141c9728b330284c2f127d846979260b70b55a0cdabb1efd4725c6092c506907",
+      "config_sha256": "584f3db5c42770b9ee7bdbf970cfbfee64c326d50e9b1b6022db58046f87c5e2",
+      "checkpoint_sha256": "ed31a4707ea2b37501c873a2ca63d3c7116bf32744e3a05c567ea383aa91ac55"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-72c76e8136e3",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.799432116933952,
+        "auc_reason": null,
+        "accuracy": 0.7971398866987758,
+        "f1": 0.8743412146621631,
+        "mse": 0.14344259144170288,
+        "bce": 0.4441657685398941,
+        "n_targets": 94262
+      },
+      "training_git_commit": "a25a5227f42d7258da665da099b211f0164f1431",
+      "metrics_sha256": "eed5cea0e3089d1ac65a1931e0028b2c4cb22cbdae3e89b426e24bf9400a7935",
+      "config_sha256": "1f20ec7579ded6163446926299cc5d095da4180e069b92f2bc1cdc570875de51",
+      "checkpoint_sha256": "116d9cb3692207da7490afeced5d064113414ed47345a7aab64f5bfa550e0ec2"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-597f3d08ea42",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8003465109842542,
+        "auc_reason": null,
+        "accuracy": 0.7975642358532601,
+        "f1": 0.8744671333087732,
+        "mse": 0.14334361199106802,
+        "bce": 0.44410211417516143,
+        "n_targets": 94262
+      },
+      "training_git_commit": "a0d2be50d8a3904570ba42ce6453f3e2202c6250",
+      "metrics_sha256": "0f51a0e1ae3fc11c700e9db37be520ac617401bbacb96eefc5f430477037f473",
+      "config_sha256": "f33808acd3c4dd0ff7b1dd55c78704cd262d3b462e1c8270d4d7b668b1f6f426",
+      "checkpoint_sha256": "b115ff57701d53d7eac7f5f9180794a72e79fab09a4f3a16ca6907a27d422d55"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-8f17dc6355d5",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8001732886427351,
+        "auc_reason": null,
+        "accuracy": 0.796970147036982,
+        "f1": 0.8741848111917534,
+        "mse": 0.14341203088357354,
+        "bce": 0.44417934017581173,
+        "n_targets": 94262
+      },
+      "training_git_commit": "57e679fa9c1a9b2f748e4721219fab33b91cdb86",
+      "metrics_sha256": "beae3add21ee945d4a2dd3dc041cf304f64ed5c34a09d36895c0e2c5220a761d",
+      "config_sha256": "7ed3d37e2503710233b8bebbfa4ad80d14b951073c2584ee1f302b4920438ea3",
+      "checkpoint_sha256": "8e4e21d69e87f3537fe083efc51ba26ca91749b6051175ade0730a2fad0dc144"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-a94b2bcee87c",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8054623740936864,
+        "auc_reason": null,
+        "accuracy": 0.7998875474740617,
+        "f1": 0.875227379464079,
+        "mse": 0.1417108266018892,
+        "bce": 0.43931717358548167,
+        "n_targets": 94262
+      },
+      "training_git_commit": "0ec605d1e07cdc24cb3fd46377695bac77f89d95",
+      "metrics_sha256": "aedb469bae094486da761c2901b6cea75a79f35110167fe81d366676207c9b36",
+      "config_sha256": "9947f34e6c8682c29a60e67abe5469a8e3dbbe8f2a0e955ae3281579b237a5c5",
+      "checkpoint_sha256": "63bf9545032c2f40cea11dcc06de22bb79eba9d047b5e2d5c853435abe9f0948"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-4af562bb01dc",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8054400748046264,
+        "auc_reason": null,
+        "accuracy": 0.7991767626403005,
+        "f1": 0.8752783670887744,
+        "mse": 0.1416659101554882,
+        "bce": 0.43903741378699884,
+        "n_targets": 94262
+      },
+      "training_git_commit": "e44c76ecc7f39df06a502734e36e89c2bf811537",
+      "metrics_sha256": "254c6470df8813badac983d68033fe0e77a8888c369fcc1fe81f30650c5654f2",
+      "config_sha256": "24564e5667dbded1cceef2b582701920b9b7e3e2e2c64b78fd9916c26d119c64",
+      "checkpoint_sha256": "eb3de27764ac029c36b02a575b2e871e0ec5bc5103e7a79fc527aa3804b92f34"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-eaa8e65a5f01",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8054596690755031,
+        "auc_reason": null,
+        "accuracy": 0.8001315482378901,
+        "f1": 0.8752218719368426,
+        "mse": 0.14162382100251836,
+        "bce": 0.43935551646760485,
+        "n_targets": 94262
+      },
+      "training_git_commit": "a1f921be797d8b31984588cdab63c0037db96030",
+      "metrics_sha256": "12afe09119e16560e315bbe5bcff2ae4f99967cac997ed462054d38beca4ca4c",
+      "config_sha256": "095281e46644244a16e15ca98e42763b2d6f8b2d42ce89c828db26446c3ad320",
+      "checkpoint_sha256": "db74134106dddd11072506353905fadd0a0f1e18dfd37891b6cce144cda52857"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-905badc24c4f",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8064649475706144,
+        "auc_reason": null,
+        "accuracy": 0.8004710275614776,
+        "f1": 0.875680820686373,
+        "mse": 0.1412192835677515,
+        "bce": 0.43813717324610046,
+        "n_targets": 94262
+      },
+      "training_git_commit": "966c2cc04620df2058a084eb86d263caa05a5d8c",
+      "metrics_sha256": "cb9611236760fc88292baed368eddf84910afa35db76d38a9aa16668a60dd5be",
+      "config_sha256": "c33bf78c72511031a4f4b961a507bce975f3bb29c21184a8f2cfaa917335dc75",
+      "checkpoint_sha256": "50ec17579360f797cbfead4fcc9858a43599225b9ae17091ff2e3af30403adbd"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-08a66f4d34d8",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8095696451351281,
+        "auc_reason": null,
+        "accuracy": 0.8019668583310348,
+        "f1": 0.8764290395397947,
+        "mse": 0.1405339813239961,
+        "bce": 0.4364098553657727,
+        "n_targets": 94262
+      },
+      "training_git_commit": "e8abbb8668e07d03b322dadbba5ae5698d34cd31",
+      "metrics_sha256": "80fb70dd7c53b0e317a6d85f2de353ef927b732ce224fd0c68784c30a7859608",
+      "config_sha256": "d3738d8a4d199853a1c3d6e56687d31875f03a36e6e30f44b27e715377b40868",
+      "checkpoint_sha256": "abd1576d2c5fb560f7a551d09680ff3caba59c39fba78fcee4149fe5a751b582"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-24a4f6b65971",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8100258138665133,
+        "auc_reason": null,
+        "accuracy": 0.8023063376546222,
+        "f1": 0.8773262588294154,
+        "mse": 0.14075671257747535,
+        "bce": 0.43765824983325957,
+        "n_targets": 94262
+      },
+      "training_git_commit": "c502bd9119c7bd7e5bcf522e399e2e09093c8568",
+      "metrics_sha256": "12d486edbac9fdcfe51090564f09fdfd6f10af8fd641294cdd3babbdc1b35b74",
+      "config_sha256": "b3b377f88c78572d39d70ad6b86fb9ec33da88652fa1cc51950c0b1c1e36ca63",
+      "checkpoint_sha256": "d08995db162ba4408025832d0f00cfb87e5af7fdad70ae8ef98b69d12b3e5230"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-a962767db9fe",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8098104783497198,
+        "auc_reason": null,
+        "accuracy": 0.8027625129956929,
+        "f1": 0.8765422261179064,
+        "mse": 0.13987215930637809,
+        "bce": 0.4343379925720665,
+        "n_targets": 94262
+      },
+      "training_git_commit": "3c3a09f479c7c15734c3a4da6594fcca7810a71d",
+      "metrics_sha256": "d1eb89e39472b1331d0274edb83ce3a6cb415fe3c0df6530d7473b42ccbc7359",
+      "config_sha256": "3f13b8efa36a00fc7e37f7ae5a068f82001730cfc2df8ca71d94b6f66997ad05",
+      "checkpoint_sha256": "3bc3b7a9293c34a8b2f82927f0f8cce43f7ee772e6f53c647803633338e4bfff"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-1bda04f7ba96",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8103510394822746,
+        "auc_reason": null,
+        "accuracy": 0.8034839065583161,
+        "f1": 0.8775952528843485,
+        "mse": 0.14003218945641607,
+        "bce": 0.43532210844786196,
+        "n_targets": 94262
+      },
+      "training_git_commit": "c502bd9119c7bd7e5bcf522e399e2e09093c8568",
+      "metrics_sha256": "a2ce395a514cc59b6292fd29ac7aae6fccb43898d1c02230341a93c545fdbcec",
+      "config_sha256": "69c548e6b8936c04dc753b9afdbe7c5b7873955433d0f17f413f83c9d54b8542",
+      "checkpoint_sha256": "1983da7062d14984bcf45809dcca618cb6855745a2f86180014a98ba78360ab3"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-7c996dfcf946",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8005540114709329,
+        "auc_reason": null,
+        "accuracy": 0.7976491056841569,
+        "f1": 0.8743991255218554,
+        "mse": 0.14317985599448865,
+        "bce": 0.44342751907865485,
+        "n_targets": 94262
+      },
+      "training_git_commit": "57e679fa9c1a9b2f748e4721219fab33b91cdb86",
+      "metrics_sha256": "497f36d03f55692cf0448244493025bd7a85f82f7af47f65745fcecd4316ea13",
+      "config_sha256": "29ca7425a330ba935f50a329e652c813f83eeb90b429a3a35eaa61b1e41fa647",
+      "checkpoint_sha256": "9d1dfd66b078f33dcd5c7ac9829874a2f2aeca2382bc9a2829536c99a9a99be5"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-6109000bcd11",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8017877562779235,
+        "auc_reason": null,
+        "accuracy": 0.7984978039931255,
+        "f1": 0.8747362034399071,
+        "mse": 0.1429205840464551,
+        "bce": 0.4427503164267536,
+        "n_targets": 94262
+      },
+      "training_git_commit": "ee1fe9dbc26785d80e31dce25b833d19becb2a87",
+      "metrics_sha256": "f64854eee7e9b8b785c6733c9dbc1112d4d7793abc4fdb4bd4cb9951381cdbb0",
+      "config_sha256": "85286e4d2416714eec8041d4b7bde4ce86b605c3bd2baf7b19f0a885fdc8d43c",
+      "checkpoint_sha256": "4b365195b79d7834f83d4a0dd0f99bf283547461db06038267abd245db969eda"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-8fb871252e75",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8014743586443103,
+        "auc_reason": null,
+        "accuracy": 0.796269970932083,
+        "f1": 0.8714626114427994,
+        "mse": 0.14334870419733767,
+        "bce": 0.44350518094206964,
+        "n_targets": 94262
+      },
+      "training_git_commit": "966c2cc04620df2058a084eb86d263caa05a5d8c",
+      "metrics_sha256": "9ac6bc19929b97a9f5d05a7bd64e70846a5662083d6a7f928b9f0fc02bfbb5ca",
+      "config_sha256": "1dc1e580a40635239f4f93a8c697ece0da6cdc73ca13a108fa74e15346886465",
+      "checkpoint_sha256": "70cbae807acd0c2f5316676c51f0852aa89c35b8701db87b50307b517490982e"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-50bb53bb8f83",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8027094619120279,
+        "auc_reason": null,
+        "accuracy": 0.7977870191593643,
+        "f1": 0.874785681909254,
+        "mse": 0.14275300620511727,
+        "bce": 0.44263206738510563,
+        "n_targets": 94262
+      },
+      "training_git_commit": "a0d2be50d8a3904570ba42ce6453f3e2202c6250",
+      "metrics_sha256": "145664108330faa9964ac42f2a45cfac4223325536716ecb83c898b157ba3df1",
+      "config_sha256": "2da5f202cf63e899a496f6fc02a4ae75ff074b0b9506735a0585aab04d71db64",
+      "checkpoint_sha256": "94fea9b3d666974493b1eb3801f433bc634ffff5c4ad2be2ca4d01f77d95637f"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-866723813d04",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8034208034301931,
+        "auc_reason": null,
+        "accuracy": 0.7989009356898856,
+        "f1": 0.8748613678373383,
+        "mse": 0.14194912469050044,
+        "bce": 0.43990806086549117,
+        "n_targets": 94262
+      },
+      "training_git_commit": "57e679fa9c1a9b2f748e4721219fab33b91cdb86",
+      "metrics_sha256": "c8e240566ca4ab4c1e229a8bead011f10b24e29b6f8b2169a4c21c8d83b53b85",
+      "config_sha256": "f3e066ef3a61c312e423cf908edc066d5e56b7b2784c10723631e85a6e69d95a",
+      "checkpoint_sha256": "49fb94ff542767ce11840dd94e6402512660ed0d0bba2ca77dc3bc416258c7ab"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-370ef7291393",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8037803637316479,
+        "auc_reason": null,
+        "accuracy": 0.798731196028092,
+        "f1": 0.8742726875107688,
+        "mse": 0.14231633050851372,
+        "bce": 0.4409709761613671,
+        "n_targets": 94262
+      },
+      "training_git_commit": "b9885764159280ac4adf66a6452a7ebc16a214c5",
+      "metrics_sha256": "46b8e5058da153164986a2ba7aff829c093c242cdccb472796405331119dc2ac",
+      "config_sha256": "036af8d60d2a6c714f45bddf399af4679329559ec3a6e0f3dded1edcb6765162",
+      "checkpoint_sha256": "3cf8adec6ca3d828adfe7afa1264cf376eec24eff7364d37ac7201b22a90b71c"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-a7c313040171",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8039389024964663,
+        "auc_reason": null,
+        "accuracy": 0.8003437228151323,
+        "f1": 0.8758280330421472,
+        "mse": 0.14174559534713144,
+        "bce": 0.439218326091067,
+        "n_targets": 94262
+      },
+      "training_git_commit": "0ec605d1e07cdc24cb3fd46377695bac77f89d95",
+      "metrics_sha256": "6cc2c32ca73a923866a0624ca2e7343a4f2b9ef875805674028ca0d898bc391e",
+      "config_sha256": "a15b10ca7008d7d8781a4c2df00d8f6fe97db56d80f7cc6a778b2eb9e8350e35",
+      "checkpoint_sha256": "650edcda7ccc3f3fbcacd150c48cdaaf506ed8cc2c5ccb40d0d925df9c34a7c4"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-4c385a071fc0",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8039452668775314,
+        "auc_reason": null,
+        "accuracy": 0.7994419808618531,
+        "f1": 0.8757582329475628,
+        "mse": 0.1421516928067701,
+        "bce": 0.4408810871956487,
+        "n_targets": 94262
+      },
+      "training_git_commit": "a0d2be50d8a3904570ba42ce6453f3e2202c6250",
+      "metrics_sha256": "047be513b81ed0e0b1ede138e7edba269997e392f9fb0ec607e5fc1a32f736a8",
+      "config_sha256": "0cc8b5ec069429a6166238d1e6959abe6ccc47e4fcb2689e4e1014185a072da2",
+      "checkpoint_sha256": "60b3c0bb58a96291e4f6578b5891c0cb034a05b70e78e0a1d511e299f1729ab2"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-e39854c39aa8",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8050588603713638,
+        "auc_reason": null,
+        "accuracy": 0.8001103307801659,
+        "f1": 0.8756287211712366,
+        "mse": 0.141623677694706,
+        "bce": 0.4393378077023788,
+        "n_targets": 94262
+      },
+      "training_git_commit": "a1f921be797d8b31984588cdab63c0037db96030",
+      "metrics_sha256": "e478c8efd7a1f990437bbb6ab7abf16176df3399c0e5f1bc49bd471eb57c9ca8",
+      "config_sha256": "4552fe470debda528b41a61ea0dab80235afd73b8d720291b2c05c4a7b16a1b0",
+      "checkpoint_sha256": "31ad201debf72fbf071a88c472036b6304a96cb1cf478a0113318ec16860db4b"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-add61cc6e891",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8061913985150946,
+        "auc_reason": null,
+        "accuracy": 0.8008847679870997,
+        "f1": 0.8768963368641983,
+        "mse": 0.14167608922418695,
+        "bce": 0.43997954166089315,
+        "n_targets": 94262
+      },
+      "training_git_commit": "3c3a09f479c7c15734c3a4da6594fcca7810a71d",
+      "metrics_sha256": "fa56ee91fa63aea753f8dbadfdd498ee8f97d91321dcbecb3b53ae397ec359fe",
+      "config_sha256": "d61fbc64c604d71f54e8d4206933dedef9d3e7bfc2dd1a3f1c47e48d98470bf9",
+      "checkpoint_sha256": "70ce8a580e271d71e941ef1d0c96a8b8362779aab5b4f5ec1c7e1f5cc424534f"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-20610f5937d4",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.8075848438460882,
+        "auc_reason": null,
+        "accuracy": 0.8016485964651715,
+        "f1": 0.8766973324100636,
+        "mse": 0.14080891423544914,
+        "bce": 0.437506421684752,
+        "n_targets": 94262
+      },
+      "training_git_commit": "c502bd9119c7bd7e5bcf522e399e2e09093c8568",
+      "metrics_sha256": "a5db3a50c021e22ed0a9c611931c9776d7648fb5023fd569f987aea1b1a373f5",
+      "config_sha256": "8d7185afaaeb0fc6c7dd023524079fde8dc5bd2def2ba4da477afcc6d8d240c6",
+      "checkpoint_sha256": "7f414e028eea0cee3f17b3228503efeccc78d562b58b9ef7e36c56035ecb7c5a"
+    },
+    {
+      "run_id": "Algebra2005-SAKT-baseline_tuning-42-dd330b0a382c",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.807294783169126,
+        "auc_reason": null,
+        "accuracy": 0.8016698139228957,
+        "f1": 0.8768761648851744,
+        "mse": 0.1409091375260558,
+        "bce": 0.4383276021094257,
+        "n_targets": 94262
+      },
+      "training_git_commit": "ee6996362af625ed7dba9769e34a77b9cb590a5f",
+      "metrics_sha256": "42f51a77326e760d187c07a211e8b1621aaa6592888c33ba97fcb3f65d86fa68",
+      "config_sha256": "8572d1d3aef674a030998fce135f4b25d28adc108815c9cd6f7e47fb0c205c5a",
+      "checkpoint_sha256": "e36abca62152761b158489da9b0a0b7ca0d3d96670a75f3ec50173073d2e2e18"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-3701b171c5a5",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7450219868365454,
+        "auc_reason": null,
+        "accuracy": 0.7296765734265734,
+        "f1": 0.814644623145697,
+        "mse": 0.18333425849221707,
+        "bce": 0.5469974248351082,
+        "n_targets": 27456
+      },
+      "training_git_commit": "cc2fd3eedca5a0824e25b890ad9207ee368ce46d",
+      "metrics_sha256": "9168bfce4bf951d851a45b217c21b535462438d1463461928e3a12de973a2c2e",
+      "config_sha256": "b33bc606379f37f59b0feccd808b59561f8b0b7e6c4b7ee55b0282c6bba8f914",
+      "checkpoint_sha256": "fd92bda59292e2ff1f1e7350a54134299222433fff10437ba20086caef0a5020"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-b8ef7520224e",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7442902471310879,
+        "auc_reason": null,
+        "accuracy": 0.7286931818181818,
+        "f1": 0.8157054850441624,
+        "mse": 0.18349071423096305,
+        "bce": 0.5473789062976474,
+        "n_targets": 27456
+      },
+      "training_git_commit": "68de5d880dca0d04d3f988b14f4ab2b36b04335d",
+      "metrics_sha256": "ed7e41c9fd590650ad0b0c3e2e90ecb4fffb3deb7cc7dde57ef5f180a248e1f0",
+      "config_sha256": "6efb19f554bce87f3e91a96f9f93dffd0d98b0daae6132a54879aa3974b707be",
+      "checkpoint_sha256": "808422cdf07857875b05cf6db3e0d15e6bcae90b91b26e978608344f8b30d2dc"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-df4a58765f45",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.744575488138806,
+        "auc_reason": null,
+        "accuracy": 0.7285474941724942,
+        "f1": 0.8154421414951836,
+        "mse": 0.18367293857990555,
+        "bce": 0.5476173386838958,
+        "n_targets": 27456
+      },
+      "training_git_commit": "d8a7dc9f04358843ad67c958b40a58328c5eb0dd",
+      "metrics_sha256": "2cda3314cea64c44bb80a418372602b8dcae0652714576f67499098fccf739f4",
+      "config_sha256": "ac832a0338d723a6f537d0f0ba59a5bdaf4648f99a0dbaf40ab7cd7dfbb5f510",
+      "checkpoint_sha256": "8b9145b68e054b3a56c1bffcd808f82e46ae66361af84ba4ab5ae3386de9f2b4"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-1ea6d0e3af0c",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.744387830130799,
+        "auc_reason": null,
+        "accuracy": 0.7288752913752914,
+        "f1": 0.8156330493362394,
+        "mse": 0.18368291933299133,
+        "bce": 0.5477055963156411,
+        "n_targets": 27456
+      },
+      "training_git_commit": "f59824a322d2390abea151591d653f2d3a078851",
+      "metrics_sha256": "8b580cfda724db06c458a62075fc19aa49f96d98fda1074b51db09d53a3ce9b8",
+      "config_sha256": "faa552472ff100447e922c5ff0464e9e727133c548bb85dbc7f72cf466972d1b",
+      "checkpoint_sha256": "6658b7e75bda589666e68023209c6228512e77ba788e0785c26368c216db8257"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-5ba93d0a563a",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7479041125649638,
+        "auc_reason": null,
+        "accuracy": 0.7289117132867133,
+        "f1": 0.8144954265633177,
+        "mse": 0.18258988436718138,
+        "bce": 0.5450550530984465,
+        "n_targets": 27456
+      },
+      "training_git_commit": "cbf5a3be7152230ce5e4ee73aa20b59f2f51cb93",
+      "metrics_sha256": "7cfa92474a15f09df1e128748c57b42dcac2f449a4e4547ae7291087b0f9cf67",
+      "config_sha256": "4020c7045244beebd58581bd0791f314d440ee9095250cf58317896d83bf0211",
+      "checkpoint_sha256": "473d6e5f79c4e0b31af5b1349ff72a80ad7cc4d80aa436f645b8c426e7d3fe96"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-a3e6a37c86a1",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7480954917435968,
+        "auc_reason": null,
+        "accuracy": 0.7286567599067599,
+        "f1": 0.8147319208196558,
+        "mse": 0.18276875837715217,
+        "bce": 0.54537216639603,
+        "n_targets": 27456
+      },
+      "training_git_commit": "e94af02566b330fdc239e6d732dfc592a5e4d779",
+      "metrics_sha256": "9b9c1a04c5e5f3adb095079e0d3e87d404c73c6839d1522b06911c32c4a7864c",
+      "config_sha256": "3729502f64d4eb2ec3bd03457100f9c6dd18e2c866b0abf6b0d51bc01eea611d",
+      "checkpoint_sha256": "4c8f436e0ac820c9a1fa52fd5a6dd78938af8505665529e0e8b9b8730d9ed814"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-b4f026d32fa0",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7489914165395442,
+        "auc_reason": null,
+        "accuracy": 0.7303321678321678,
+        "f1": 0.8150294793644449,
+        "mse": 0.18227991481027572,
+        "bce": 0.544052153800375,
+        "n_targets": 27456
+      },
+      "training_git_commit": "3a4e155e4eb56e830a3034b3f79f7e803fade2ef",
+      "metrics_sha256": "b05c982e87c7e2c6f735687355833e54e369dbbf1f37e883fd35d82f08d659b0",
+      "config_sha256": "c0e0a094453dc59377c6458fb340052b8411eeeb96da6077d8833e36762d0209",
+      "checkpoint_sha256": "c79d30d133ecf4261de6dd61ab690853d90fb11e1503569b6164f734027499e5"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-bc0a2a560ce1",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.749442606239869,
+        "auc_reason": null,
+        "accuracy": 0.730259324009324,
+        "f1": 0.8150996155190493,
+        "mse": 0.1821337596233671,
+        "bce": 0.5437521041498752,
+        "n_targets": 27456
+      },
+      "training_git_commit": "68de5d880dca0d04d3f988b14f4ab2b36b04335d",
+      "metrics_sha256": "6a83a945870a36dd3dd22b43b27a7e58e76c032fa2b6ec5049316a70e844ac93",
+      "config_sha256": "080a16e11535bd16075e569d59fe1d074bdb50dd8faf721141207c2bfdde6fe1",
+      "checkpoint_sha256": "6fce0569bc2405231c11ae8ab6da3ab20d9b57d731e4d5f8448b172295ac7378"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-5a04d6fcd0ab",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7486078494916291,
+        "auc_reason": null,
+        "accuracy": 0.728583916083916,
+        "f1": 0.8131581586601143,
+        "mse": 0.1826347225300155,
+        "bce": 0.5448107166035905,
+        "n_targets": 27456
+      },
+      "training_git_commit": "0419784f83e0c2ba3c5455a2a19ce5d8f76e288f",
+      "metrics_sha256": "3e3fd8e82b91a660861ac16f97d8049cade2395b2e003c43978cd61a873e1f9e",
+      "config_sha256": "950100b9052f55ba582abfe977ff114d7f6d6e45e6a4d75da851f058b2a8c2d0",
+      "checkpoint_sha256": "4809f1c3a5b2f96e8b7c6e9987615ae80a8c1bb5872568dcd26339904fb11082"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-e00d42a652e7",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7484482241033978,
+        "auc_reason": null,
+        "accuracy": 0.7293123543123543,
+        "f1": 0.8131630549550003,
+        "mse": 0.18259616273446708,
+        "bce": 0.5447911982962951,
+        "n_targets": 27456
+      },
+      "training_git_commit": "d8a7dc9f04358843ad67c958b40a58328c5eb0dd",
+      "metrics_sha256": "d2ba95f0f8a31345622a74f79449c2ffac85e09063e606c0ac88cbe65d39867d",
+      "config_sha256": "eba4353fae4b01ea777b8e3487a171827b82e8b8e316282c51631ff6fddde634",
+      "checkpoint_sha256": "6bc888b720d1a154c8618163fda54da9df9992c251bd470e61ca45da40bd5133"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-dd880fef9848",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7475856346699707,
+        "auc_reason": null,
+        "accuracy": 0.7276005244755245,
+        "f1": 0.8137838308891268,
+        "mse": 0.18311796931260643,
+        "bce": 0.5458175414748857,
+        "n_targets": 27456
+      },
+      "training_git_commit": "d323d5474994268ecd18359f2f8eb00e0b1eef25",
+      "metrics_sha256": "f5baf86ca28dc2bf1eca97f67477176f5c0d965a14f8e16cd09aa3df3b557b90",
+      "config_sha256": "5bf22a7f0534dbd18c63fb52afc2714eedeb735d2825d12d202980c228bfc2dd",
+      "checkpoint_sha256": "3173a4f848b609ed71edb9cb74463c37f727f9a2bc3f7da29a6eb45abf282e58"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-20cb259b8453",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7483199645727845,
+        "auc_reason": null,
+        "accuracy": 0.7288388694638694,
+        "f1": 0.8133757802120672,
+        "mse": 0.182868346688934,
+        "bce": 0.5450245324627608,
+        "n_targets": 27456
+      },
+      "training_git_commit": "48433ce12c1b6d6c5d37e3770a9356cf86f02fe2",
+      "metrics_sha256": "4079d824c4a84688198feb295eceac5e1aaa166f7a8e99cc00101c6cf8ff8cbd",
+      "config_sha256": "a1b2033b06edaf70413d3df1d73676d4f0f49bde3589bfb8ddf427d17289a370",
+      "checkpoint_sha256": "b5f7add542745aea7af60a3c5ff8f18f1b9315e68fc5d0279b7619b48b40554d"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-8a33fe73d195",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7458329961302212,
+        "auc_reason": null,
+        "accuracy": 0.7286567599067599,
+        "f1": 0.8141959297685555,
+        "mse": 0.18309765977953313,
+        "bce": 0.5464730185658407,
+        "n_targets": 27456
+      },
+      "training_git_commit": "6cceebbe39b8018346df7e9cb826f4fd36cc69bc",
+      "metrics_sha256": "6603f6534563eace91dfa6dea56b2d5f2364d2ef0790d1ea821e4468962c76f9",
+      "config_sha256": "fbf03787f716cd70a237d606259176f3b32df9b35d28517c86c1e4c6bf1f2d8f",
+      "checkpoint_sha256": "067021590e0760368dbf13ccefefdcfec1f18c115b72c04a572f74974f895a01"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-9a38aaa6950a",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7458421782008036,
+        "auc_reason": null,
+        "accuracy": 0.72942162004662,
+        "f1": 0.8149181593960986,
+        "mse": 0.18298188380834815,
+        "bce": 0.5462059567456788,
+        "n_targets": 27456
+      },
+      "training_git_commit": "6cceebbe39b8018346df7e9cb826f4fd36cc69bc",
+      "metrics_sha256": "50cea01b3fc0acaa9cfa0c33cba6fb438da1f2d8d6057a06b7578213ef57a2d1",
+      "config_sha256": "1f27fdd930efc1dd400464208bdb86928ba12a276a6f74f852008ba381f4d7ea",
+      "checkpoint_sha256": "1f02526865dc4b9345bf33d398ed7a11a48732cbd319b18e3c323797b9940fdb"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-cbf1a3de9206",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7443669712834249,
+        "auc_reason": null,
+        "accuracy": 0.7293851981351981,
+        "f1": 0.8145282076884673,
+        "mse": 0.18353774079048343,
+        "bce": 0.5473241744906135,
+        "n_targets": 27456
+      },
+      "training_git_commit": "eae1dac980f1687a3919139bbda9117596c681c8",
+      "metrics_sha256": "51db789a91944c9e45d470aa18d38a8beb3bd158ec882f17112f3b4d07513c20",
+      "config_sha256": "d2eff41f2172c6023b2884b0700f663e9ee90a06b23ded68db60efef6cd48584",
+      "checkpoint_sha256": "8a1e13531fce574974f3bd26685047d048fe26e99cd292ac061cbc1aef820b1c"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-18927de5abcf",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7451425712662365,
+        "auc_reason": null,
+        "accuracy": 0.7301864801864801,
+        "f1": 0.8157672220840587,
+        "mse": 0.18327458553772003,
+        "bce": 0.5467683315385113,
+        "n_targets": 27456
+      },
+      "training_git_commit": "f59824a322d2390abea151591d653f2d3a078851",
+      "metrics_sha256": "eeea400d2c4a138bb275da6ad86e80781acd6f24ec89e513163df84378e23a11",
+      "config_sha256": "34f89c356fec09809d624a52939a1bd32e12092dd89ff8c20b0c73ec04dbaca2",
+      "checkpoint_sha256": "967ee3de89bf425ba21124ee536568da7ab6b248b783cf55a4b729b6eb675c76"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-c296afbeddce",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7482069120072954,
+        "auc_reason": null,
+        "accuracy": 0.7284018065268065,
+        "f1": 0.8144055352298465,
+        "mse": 0.18260413478914458,
+        "bce": 0.5450056174832473,
+        "n_targets": 27456
+      },
+      "training_git_commit": "b03ae1fb9b8e52c541951cdb080c6e5a42cb7e27",
+      "metrics_sha256": "6d79c9167f73023da93d73a61a4aeb4bac05e7de619978f586bfb286609dc205",
+      "config_sha256": "46b57af012a08676de0c831732219ed5a213c10b09bca743c18ff968ccfd84b1",
+      "checkpoint_sha256": "fd886489920615e159e24900efac91200ffb277df8dcc32441ced651c1596022"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-fb98a2007115",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7475422637847438,
+        "auc_reason": null,
+        "accuracy": 0.7297858391608392,
+        "f1": 0.8145296367590811,
+        "mse": 0.18311181445506491,
+        "bce": 0.546576610552807,
+        "n_targets": 27456
+      },
+      "training_git_commit": "06e4d78f64a7f0d71bedff2d8973a35736289493",
+      "metrics_sha256": "431f320c3b2363687c123befdfe8ecbfa45c7bd160e9b355fc72dad18c0f53f0",
+      "config_sha256": "9d231309f29737ceff3cbd9dd63ea0e8de367aee82f5a7717ceb46921f55e7c4",
+      "checkpoint_sha256": "845e7ce2bb839a751cce51526bde5aaa185d5d6c7f333c128b10dd7bac5d72d4"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-d108682ad990",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.749225751813735,
+        "auc_reason": null,
+        "accuracy": 0.7293123543123543,
+        "f1": 0.8145801107729155,
+        "mse": 0.18233469844420053,
+        "bce": 0.5440610127962806,
+        "n_targets": 27456
+      },
+      "training_git_commit": "d323d5474994268ecd18359f2f8eb00e0b1eef25",
+      "metrics_sha256": "c3c8e523718c935fa906da9c1ea0084330853e5bc2dcae7a448aaa8b0559a40b",
+      "config_sha256": "c98770baa2334ad1d1ac37124f95c73ad5ced0d73ac2824a855d3c98956566b1",
+      "checkpoint_sha256": "c6e439afc948a2849726d588c79c16648e26406949196a64b1b2aee7e12f411c"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-46fe905cecba",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7484189530828123,
+        "auc_reason": null,
+        "accuracy": 0.7285474941724942,
+        "f1": 0.8148092930798857,
+        "mse": 0.18240076657202609,
+        "bce": 0.5442893317819039,
+        "n_targets": 27456
+      },
+      "training_git_commit": "0419784f83e0c2ba3c5455a2a19ce5d8f76e288f",
+      "metrics_sha256": "b8f3c54be1b8a3d1abcf2e3e5067829a98c9e14567db453ab662636cf044d071",
+      "config_sha256": "f1878b56b4ac4462f34a20314a2c66dd719181468949c2192e860166042c9786",
+      "checkpoint_sha256": "7bce7851afd0390e3e83204881871dd7a4f693e9910e49722a7b7e3c821f094e"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-3e46b3721a2b",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7461971456502589,
+        "auc_reason": null,
+        "accuracy": 0.7284018065268065,
+        "f1": 0.8147651340139603,
+        "mse": 0.18365733587716657,
+        "bce": 0.5476737731088126,
+        "n_targets": 27456
+      },
+      "training_git_commit": "cc2fd3eedca5a0824e25b890ad9207ee368ce46d",
+      "metrics_sha256": "cb7350a800a26e554fb712df0f9150406bc1ebb3741eb3def39a07b4d93661b6",
+      "config_sha256": "4f2c76748fb0bbd32b33345dd64aa11766c5edece3688a3644f6d6a13c051bc3",
+      "checkpoint_sha256": "0b2b02840a645fbd59811f1462eabf7b96758ac262c4f774295c37c262816fed"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-a7a39eed4d33",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7467571027508613,
+        "auc_reason": null,
+        "accuracy": 0.7288388694638694,
+        "f1": 0.812803298886123,
+        "mse": 0.18332792484145433,
+        "bce": 0.5464757415927419,
+        "n_targets": 27456
+      },
+      "training_git_commit": "e94af02566b330fdc239e6d732dfc592a5e4d779",
+      "metrics_sha256": "108d68cda918f97b040b8e8a3041c85e489eec9d47575ec576e641fe8fe2968d",
+      "config_sha256": "480a5117a5bef58032971755c11b7d4f6cfb3ae30c0bdf729d25c2ba451215a0",
+      "checkpoint_sha256": "02059c0f36d4f47c1f45b96a3644c6b274fdc83e2bf79a557d235a94a6c87402"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-86ecdf28f694",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7463576662679912,
+        "auc_reason": null,
+        "accuracy": 0.7279647435897436,
+        "f1": 0.8122564914662042,
+        "mse": 0.1833269846716363,
+        "bce": 0.5464154974214513,
+        "n_targets": 27456
+      },
+      "training_git_commit": "6cceebbe39b8018346df7e9cb826f4fd36cc69bc",
+      "metrics_sha256": "f42676eca95e42a44c45c6fa8d9696297a390c7540cab12b39ec1ba43eb0af71",
+      "config_sha256": "9423f7fa09f224d756fb8bfdd615f3931e8d9e38a8af26c183b142d4b8ab0783",
+      "checkpoint_sha256": "964233e124ccf0063b30fb9b79a945f0fd6900f243ea55ec353419a4c1c5d2a0"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-fc6de5467e47",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7468860814491737,
+        "auc_reason": null,
+        "accuracy": 0.7284746503496503,
+        "f1": 0.8150445332076315,
+        "mse": 0.18353472444146612,
+        "bce": 0.5470329236448682,
+        "n_targets": 27456
+      },
+      "training_git_commit": "06e4d78f64a7f0d71bedff2d8973a35736289493",
+      "metrics_sha256": "95e9899585d9dbe0cdf74ed0a49c30affc2ca7baed167741b40363755063fb34",
+      "config_sha256": "bfc623d5951743ebe5c296f37af57b7e4789a7a2f357f01292343d7b409860b9",
+      "checkpoint_sha256": "0d8ce13bfdb9a99d3debb56fb41415a8f1a3d9de6b9f2a668026d995d7994ab8"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-b783977b82fe",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7446996863115829,
+        "auc_reason": null,
+        "accuracy": 0.7277097902097902,
+        "f1": 0.8139835780044787,
+        "mse": 0.18344845679452995,
+        "bce": 0.5472252103738661,
+        "n_targets": 27456
+      },
+      "training_git_commit": "68de5d880dca0d04d3f988b14f4ab2b36b04335d",
+      "metrics_sha256": "9fd1c39d6c7d096a222d60b62eaca7eb75b0b829338d3751616a3b8b29fd71e8",
+      "config_sha256": "b4e6b667cde1ee382d6eaa6aa1ab534fa561187e3fc4bcdcb569680874475e12",
+      "checkpoint_sha256": "2032e2ecc13417209e6e4ff0744e8e0c9207b920f659b1367d37dc9557206144"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-f6e2cf5d03b8",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7438198279010807,
+        "auc_reason": null,
+        "accuracy": 0.7278554778554779,
+        "f1": 0.8140831052500622,
+        "mse": 0.18359038709943554,
+        "bce": 0.5476493964219994,
+        "n_targets": 27456
+      },
+      "training_git_commit": "06e4d78f64a7f0d71bedff2d8973a35736289493",
+      "metrics_sha256": "48d10626e592bd56a0fd6fc5cefe0411bf6846da06005b649839270e50e609d1",
+      "config_sha256": "ee46d4abdae2147faacfb301de974bea516d3c4927a255c4cd09706504bb5185",
+      "checkpoint_sha256": "fca5a94220b0848b4bd48c02d42d884d74ddbaa23c95897016e819788754dd57"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-ab8296ffc06d",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7444891760785128,
+        "auc_reason": null,
+        "accuracy": 0.7259251165501166,
+        "f1": 0.8139816577262502,
+        "mse": 0.18375731381435342,
+        "bce": 0.547676765449351,
+        "n_targets": 27456
+      },
+      "training_git_commit": "3a4e155e4eb56e830a3034b3f79f7e803fade2ef",
+      "metrics_sha256": "6ecc2969bca161388db2c63452b0f28bc24415cb4594557bd6bfc8c62b8b46d8",
+      "config_sha256": "e971b5ca61430cec6287a017495510acfdf368ca3ff07db3ccd16bdde723f253",
+      "checkpoint_sha256": "568a5d4ae71a3feb890dceace62fd717a8176cadbd64fc7c4106e48bf4baefff"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-4899b744bd08",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7449807227247444,
+        "auc_reason": null,
+        "accuracy": 0.7290574009324009,
+        "f1": 0.8148811745676248,
+        "mse": 0.18353078543164117,
+        "bce": 0.5476637365224373,
+        "n_targets": 27456
+      },
+      "training_git_commit": "0419784f83e0c2ba3c5455a2a19ce5d8f76e288f",
+      "metrics_sha256": "b78b30a08d88cf8b49c026c095f1fb71e284998b9251a891ad9914cd863293f3",
+      "config_sha256": "5f3da50e57f69ea6769f719377ba796e2ca09b451dcce22a581aeac7266ceefb",
+      "checkpoint_sha256": "f0b8f2892016f9c228d384c29bb74c45569ac594e6da2c5e0d24d968ab16b3e3"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-6cc761d1569d",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7436717091960361,
+        "auc_reason": null,
+        "accuracy": 0.7261800699300699,
+        "f1": 0.8137633769322236,
+        "mse": 0.1844400601425887,
+        "bce": 0.5491833357247982,
+        "n_targets": 27456
+      },
+      "training_git_commit": "cbf5a3be7152230ce5e4ee73aa20b59f2f51cb93",
+      "metrics_sha256": "ce40c7027c7ab65eedbe98ba9888078991872a844ed254e3da59fb2434e0a174",
+      "config_sha256": "cf655c707d87166026b07707e17e8a04774cbf17099ccecee29a83962544bc07",
+      "checkpoint_sha256": "147427c254ed30857d1c5fdce78d7fdfdcf76c81fd47772b2312c92493377810"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-c9c00f287550",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7434047249019425,
+        "auc_reason": null,
+        "accuracy": 0.7277097902097902,
+        "f1": 0.8157985512245602,
+        "mse": 0.18474530279034695,
+        "bce": 0.5509488119933134,
+        "n_targets": 27456
+      },
+      "training_git_commit": "eae1dac980f1687a3919139bbda9117596c681c8",
+      "metrics_sha256": "b5c92cdd37f958af4938e553d6934dbfd35f735af0c2cf226c8f6a556c2f62c3",
+      "config_sha256": "a062b20300fa9224b9874815c8b3fa36ffdd322352e9e5cb24a5a24efb1c6f0c",
+      "checkpoint_sha256": "074252a1bb740b3c8b37706cd9d6c362753a3deaba648fad9d24514e7aa9ae08"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-c8b0b836e93b",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7463914731180485,
+        "auc_reason": null,
+        "accuracy": 0.7279283216783217,
+        "f1": 0.8139662300144443,
+        "mse": 0.18343223884640894,
+        "bce": 0.5464855340802394,
+        "n_targets": 27456
+      },
+      "training_git_commit": "b03ae1fb9b8e52c541951cdb080c6e5a42cb7e27",
+      "metrics_sha256": "916420989afc8347a9523c957b3fcbc2ea948197f19be395cad35ec0f271e978",
+      "config_sha256": "d19ca6e7bcfa1fbd7dbfc442e3d518e56b5bfab067d2cb14fac667a7a1f73be9",
+      "checkpoint_sha256": "58ef863e464a3de72d4fb372b099c907aac8754e92676daebb42c43136a58373"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-2871c55fcfef",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7452505717532414,
+        "auc_reason": null,
+        "accuracy": 0.7271634615384616,
+        "f1": 0.8152149781691704,
+        "mse": 0.1844258944626188,
+        "bce": 0.5494983125702538,
+        "n_targets": 27456
+      },
+      "training_git_commit": "48433ce12c1b6d6c5d37e3770a9356cf86f02fe2",
+      "metrics_sha256": "dc62cd663c7446785317fdeb1098674d2cb22738149e63a0755958f95adade9a",
+      "config_sha256": "0954cbb3d84880f6eaf361e4237c6d29b08e95a4a4b3ef52529fe143455d8886",
+      "checkpoint_sha256": "fddc51b2413058e6cbd9e7fa79e6a112bc58138bf418d7a6ab4776f653e8bb25"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-d3d205330b77",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7372950133329513,
+        "auc_reason": null,
+        "accuracy": 0.7212995337995338,
+        "f1": 0.8068164604897753,
+        "mse": 0.18673231210572355,
+        "bce": 0.5546961460403492,
+        "n_targets": 27456
+      },
+      "training_git_commit": "d323d5474994268ecd18359f2f8eb00e0b1eef25",
+      "metrics_sha256": "c9359b06617ddb33d3b46abaa8362298fcfedf77800dc4cb2e1bbce6aeb65720",
+      "config_sha256": "287ca7ac64e8e1eb2ab02a7b0a0e0efe6db7f5c6ec2b1ecfbe43740e01dcb36d",
+      "checkpoint_sha256": "f2b6944cc4f5736bd914517e21995d57ba12bfd40bcf8082991041e546b7775a"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-5ffd7705aaa2",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7369653092600152,
+        "auc_reason": null,
+        "accuracy": 0.7174388111888111,
+        "f1": 0.8087561011684662,
+        "mse": 0.18852213539341212,
+        "bce": 0.5596259497140506,
+        "n_targets": 27456
+      },
+      "training_git_commit": "cbf5a3be7152230ce5e4ee73aa20b59f2f51cb93",
+      "metrics_sha256": "dfd078ef0f30737a7d75fad303f9bc6e43b1dfbe2616e86e92a4b6157ff310cc",
+      "config_sha256": "6498ca1d5e18ebb4af0112696f9ac5123f289c9809ca8ac2201bf3b2a1e036d6",
+      "checkpoint_sha256": "8a32bab874d76dd0d01a8aa322f57feb0a486632309fe88a854b2f075ca89bfa"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-d9c58f8bb413",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7387492480072191,
+        "auc_reason": null,
+        "accuracy": 0.7215180652680653,
+        "f1": 0.8113496175672341,
+        "mse": 0.18593184988441439,
+        "bce": 0.552411745329317,
+        "n_targets": 27456
+      },
+      "training_git_commit": "d323d5474994268ecd18359f2f8eb00e0b1eef25",
+      "metrics_sha256": "dd70566f22f3453a37e3ada91b12c24ab74bd0c10dfc0486f89b16b042314ff1",
+      "config_sha256": "93262a357355906121c21f0f93c4be0b401043a240d85d2985b540b3a5b6405e",
+      "checkpoint_sha256": "3133ce7211803a1fe27ef234149be539cbe74ece41872bb1547fef1287c1f826"
+    },
+    {
+      "run_id": "ASSIST2009-SAKT-baseline_tuning-42-cb815133c07f",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.737855504587156,
+        "auc_reason": null,
+        "accuracy": 0.7227199883449883,
+        "f1": 0.8125384747974687,
+        "mse": 0.18661408443731473,
+        "bce": 0.5538207144461481,
+        "n_targets": 27456
+      },
+      "training_git_commit": "eae1dac980f1687a3919139bbda9117596c681c8",
+      "metrics_sha256": "f35a3cafbc7587f2bea5a9873414d93c8ade546c278abab1b96107c0da050cbb",
+      "config_sha256": "e77786e1d55ca93c4e5eb7660a8b06f679250af8eba6b2e11b2843539830df15",
+      "checkpoint_sha256": "15656e5c5426251d6db45f498e28aa42d0a11aafe831fc2f1ec631f8bed95539"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-16f1e00c1516",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7266155373964132,
+        "auc_reason": null,
+        "accuracy": 0.7562607332188457,
+        "f1": 0.8515480045112235,
+        "mse": 0.16891765384620105,
+        "bce": 0.5112100414260788,
+        "n_targets": 66965
+      },
+      "training_git_commit": "0ed6bf3942f6fe6aa10477db1c8a56ebd616f84a",
+      "metrics_sha256": "054f1a516b73230486474e8c3e3dbf5ead43627eeca3d967a152987720612805",
+      "config_sha256": "a87dcd6c3abf2d79e7e2bd830ef986efe319807a84ccadca9ac446cb167cc183",
+      "checkpoint_sha256": "b514fae8cedd088120530e2480bcfb9b1a5a8180e375b56af03831ef385bdd02"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-7278df8e612f",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7261425563138384,
+        "auc_reason": null,
+        "accuracy": 0.7549914134249235,
+        "f1": 0.850930830524336,
+        "mse": 0.1690351608766789,
+        "bce": 0.5114963991398407,
+        "n_targets": 66965
+      },
+      "training_git_commit": "ea325ec4f0e8f803a8cdebef8bf52777cc4bf974",
+      "metrics_sha256": "f20b831553bda93d8928d3821bf9eb4ea63b7594a6d92f889b046465640e3c9a",
+      "config_sha256": "efe985700dadcbc57ed963a3a94ef6659fc5d9c28c6e6c2cf960581199b3b2af",
+      "checkpoint_sha256": "f17f574ec058bb8f3f02e8d931cfc91e894a2da6d26c521940d43c6d4a14ad54"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-cd59a9db41c2",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7257510559889417,
+        "auc_reason": null,
+        "accuracy": 0.7556036735608154,
+        "f1": 0.8510475635728197,
+        "mse": 0.16907519240206453,
+        "bce": 0.5113996156314774,
+        "n_targets": 66965
+      },
+      "training_git_commit": "0f6bf686ac7b1b8db7d15c0919c3cfad76558452",
+      "metrics_sha256": "66269c94a5159816f5ccdbf5d5bc7ba67c64febc6158cd80851870ff9ba222f1",
+      "config_sha256": "8b6da12df5a5bbeced932919225b59b19386e94dec636f951d3cfe4d8ed36b09",
+      "checkpoint_sha256": "7366646021dea61887744c72965fb3d41e54c8c52a83c74bfcd97ff9a4b18700"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-99ea7a53ea76",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7260039352513339,
+        "auc_reason": null,
+        "accuracy": 0.7560367356081535,
+        "f1": 0.8516827206783538,
+        "mse": 0.16900247585680633,
+        "bce": 0.5113053688397708,
+        "n_targets": 66965
+      },
+      "training_git_commit": "2a38e35f76e91ca40278e074617061c6b28a38a4",
+      "metrics_sha256": "282ebce4bf2710d268bf58369ed0dc7bdc8299e1405e975692c6b2eca2dc3905",
+      "config_sha256": "d3ca3b1a20bbf98e99f975bcb9a5728a4a1a64a4191a824af407231cb5e6ea8d",
+      "checkpoint_sha256": "bf8e35817ee8ef2683eec1526abf9e4653dace26d086b314952074cca947666e"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-c942c211f56c",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7290606306958858,
+        "auc_reason": null,
+        "accuracy": 0.7565593966997686,
+        "f1": 0.8516462515698087,
+        "mse": 0.1683791942288312,
+        "bce": 0.5095412651981435,
+        "n_targets": 66965
+      },
+      "training_git_commit": "19895ab24c5de9b273b778f0c80576c4f1b9ddbd",
+      "metrics_sha256": "ecf7d678537ee161ba5a42fcbdfe4cecf22167dc9690738858b95d384d05cc51",
+      "config_sha256": "45f53a5d877f850d0abbbd6dca6f47b33b1c047babc133f5427a08f12ddd9575",
+      "checkpoint_sha256": "2b3ba498708da0f7704c87e3f9aa15d440740dbb40dccaeb53c0a3698ed83c5b"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-d7e81d4048b1",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7289231306962592,
+        "auc_reason": null,
+        "accuracy": 0.7569625923990144,
+        "f1": 0.8522563250633187,
+        "mse": 0.16846282727252387,
+        "bce": 0.5099162501534074,
+        "n_targets": 66965
+      },
+      "training_git_commit": "c9ba33579fbf2ba078b4dc38393ce3783e1c5847",
+      "metrics_sha256": "5f26b4d4172396767001c9a4480f40b3967abe507fbc0365df18dd35a4523324",
+      "config_sha256": "f5d3ba38e0eab64cd5294fb1ab99ccda3d02a882c2080294f0abd91c4634b175",
+      "checkpoint_sha256": "bc112cee9944faceb3ba08d1e29a16789e0148b25304d297e06ec73128964fdd"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-6c40e900aaeb",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7279458362314619,
+        "auc_reason": null,
+        "accuracy": 0.7567983274845068,
+        "f1": 0.8516217201166181,
+        "mse": 0.16863491094656727,
+        "bce": 0.510315792611997,
+        "n_targets": 66965
+      },
+      "training_git_commit": "7610050ba4731a61f72e23a982573abde6dc78a9",
+      "metrics_sha256": "0b7d88d4e4bd6a2e73ca768b2ab09431aeb5cb52bf2a598f35946286b34c85e7",
+      "config_sha256": "83ecabadd96eafecda35d5f481d526bd36cd21835a8bfe961c0631ec85412948",
+      "checkpoint_sha256": "eb7a1cc8e388bebb37917509055a47eb4668c4903d8367df272e6bc1a43bf603"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-f617b0c5117f",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7291334308298332,
+        "auc_reason": null,
+        "accuracy": 0.7568132606585529,
+        "f1": 0.8508549396001429,
+        "mse": 0.16828774535608798,
+        "bce": 0.5095741595530959,
+        "n_targets": 66965
+      },
+      "training_git_commit": "920403a79c6438f0cee694ebfab8b6fc944f97ee",
+      "metrics_sha256": "8008df7c22fd32c63a594384827326643a0989a13d1368f540a77bc4d14d5d20",
+      "config_sha256": "f3d542afdd81a83a657936767ab0f0860b490b815a4ecbf2b6e2ecaf1dedfe1b",
+      "checkpoint_sha256": "aa43c73425e6699a366c361ccfe3cce1e0d58117e84c581a7963017e5a87bea3"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-b5f012c01c5e",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7288148139572422,
+        "auc_reason": null,
+        "accuracy": 0.7562756663928918,
+        "f1": 0.8515071284948731,
+        "mse": 0.1686479296531596,
+        "bce": 0.5105195691340172,
+        "n_targets": 66965
+      },
+      "training_git_commit": "2ad663d98471b11ec1d4bded85182ef9f30bdf73",
+      "metrics_sha256": "58d49c3c7d32934c8748309be7faa726949d8a0aba9f90c886d998abdf5c2523",
+      "config_sha256": "a1620a735d46b53181b352bf186b152e87a8df42fc607b5c587f7a0d4b6debe0",
+      "checkpoint_sha256": "dc8046923071a9904c84173b34c06730c03dd85e68bd0febfac4df85cffe0437"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-53392b2ba114",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7288581900692548,
+        "auc_reason": null,
+        "accuracy": 0.7565444635257224,
+        "f1": 0.8518622845356328,
+        "mse": 0.16857969751521762,
+        "bce": 0.5105327100130079,
+        "n_targets": 66965
+      },
+      "training_git_commit": "55aacd0e87e69119cd2e02f25bcad79968356540",
+      "metrics_sha256": "bec13db79caca40caa3a967bc38cd9b2bf4da322e13a519c502fc4023739aef6",
+      "config_sha256": "8d09bc4143c3bd6c3a7d741f78635e4a45b682f1e092c5651f424e729eae48f1",
+      "checkpoint_sha256": "f66caab819c8ef6c4427843a1d225aef85ac454cb2f64ddddebbff3503ab0bb0"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-028d32988eaa",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7285590932515225,
+        "auc_reason": null,
+        "accuracy": 0.7562159336967073,
+        "f1": 0.8508001498853012,
+        "mse": 0.16852671265999167,
+        "bce": 0.5100980004071567,
+        "n_targets": 66965
+      },
+      "training_git_commit": "6aa2ba98cd2e040871d687963e568de58a684428",
+      "metrics_sha256": "ad7eab22581ec21e2264e2df2e3f3f109669d486f1d5ae013dd0d0a8685ceae7",
+      "config_sha256": "eb7199bbe1570e356c58e6d9d7ee180b01c97b459b31a665e870530d2fdcf562",
+      "checkpoint_sha256": "c033d7bad6541861874ce8b63535165259a9ca33cf342f8b12cee3ec14c5d718"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-4cc38d7c6af6",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7292646819525768,
+        "auc_reason": null,
+        "accuracy": 0.7565743298738147,
+        "f1": 0.8519288938949395,
+        "mse": 0.1685980401744206,
+        "bce": 0.5105166707217492,
+        "n_targets": 66965
+      },
+      "training_git_commit": "55aacd0e87e69119cd2e02f25bcad79968356540",
+      "metrics_sha256": "dae25b78e676ad5355de513222662435fc672e3607262f6563d3b3230bba5050",
+      "config_sha256": "85028588be2d92c430f594fa04e545f31363d1846b17ad1637a634f8255fd5cd",
+      "checkpoint_sha256": "d5a6980a25bb9dc689f4298a476757d5c3808dcecf650619d38b0f4dc3fe1c1c"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-3f50a672d3be",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.726305810305363,
+        "auc_reason": null,
+        "accuracy": 0.7554991413424923,
+        "f1": 0.8511369525489376,
+        "mse": 0.16920060857203603,
+        "bce": 0.5123444677088353,
+        "n_targets": 66965
+      },
+      "training_git_commit": "2bc2b598962db8ad2fe5988cdb0ad2092a0f0d82",
+      "metrics_sha256": "27456ba72cff5ae3c2cce65d65192cc1a1e8c72c0aac1f2a25310ced2fac7957",
+      "config_sha256": "c5c1cbfd937e9378162d821e3ce8d8749390852ab19e858e7e3b4378413e3573",
+      "checkpoint_sha256": "fa4ca28fc5727d9a7bb36cdfca9de894ffe69e81567d40079d41e326d11c3035"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-69254dc601ce",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7267875478601049,
+        "auc_reason": null,
+        "accuracy": 0.7546330172478161,
+        "f1": 0.850788692232948,
+        "mse": 0.16913362684454233,
+        "bce": 0.5119863627996636,
+        "n_targets": 66965
+      },
+      "training_git_commit": "cc150d11768c2308bd7bffaa429d25ba1516977c",
+      "metrics_sha256": "4592cb766582e07d9f7f5b6fc7670b3907647ffb59ff88a082ca26b9c0092fee",
+      "config_sha256": "4ec1b4ad337fe2585b2fecaffd1840d89cf635275b4b08d7dd9c1611e3e8f060",
+      "checkpoint_sha256": "ac09bde25acf8532a1cec19e555da18dbfdc6606ab2d3ada206f8a52addff38f"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-31e3bb118996",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7255099705838387,
+        "auc_reason": null,
+        "accuracy": 0.7561711341745688,
+        "f1": 0.8516876793954148,
+        "mse": 0.1691913081042346,
+        "bce": 0.5117645981813006,
+        "n_targets": 66965
+      },
+      "training_git_commit": "ba524313cc56be6131cd163df3169dad76ec7753",
+      "metrics_sha256": "4d78b0b1e757d17f3d20dada4203da994c48507fd83f0d46daa0f212265e5c29",
+      "config_sha256": "b2733b29102d3cbe31f9feca4c2b3c468115ef18298f9657b31a9a09c406b647",
+      "checkpoint_sha256": "273b4bf3a610867ab4f638e7e41ff8ae686562f948ff79b0930d9da0803afa5b"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-380a89874a7b",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.72691938910667,
+        "auc_reason": null,
+        "accuracy": 0.7546628835959083,
+        "f1": 0.8495085601223791,
+        "mse": 0.16894649445577536,
+        "bce": 0.5111459633635095,
+        "n_targets": 66965
+      },
+      "training_git_commit": "e1b9e005179299426a7fd028a319808b9fb923f9",
+      "metrics_sha256": "959b77ace46ee8bd5dd648305dfa716596fb7325ede6936da13b8a38c4f799ee",
+      "config_sha256": "2a49d8b2daa7fa64dce3ee848b19736dbb8c7aa819c07c64c3ea4435c6866bf3",
+      "checkpoint_sha256": "6684244d1e2590643caba5607901444bae56517e0d761e13b620a84052d45f7b"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-9591f5a0d289",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7290082090831936,
+        "auc_reason": null,
+        "accuracy": 0.7569327260509221,
+        "f1": 0.8526047939437296,
+        "mse": 0.1685198205077149,
+        "bce": 0.5102034470784219,
+        "n_targets": 66965
+      },
+      "training_git_commit": "2a38e35f76e91ca40278e074617061c6b28a38a4",
+      "metrics_sha256": "f23dc7e8143153a3b5e3175efceb18c79521ddcaa70a0bb24616491aad3edc99",
+      "config_sha256": "cd4f23ac62292a7ec2e0dfec7f87fb6003c2cfee8ed2493c39b0268479aeb5e7",
+      "checkpoint_sha256": "adba114be5f6d6fe00cd66974d6c12dbe3d27422c7d00ea38228510f2186ba8a"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-5cf89a653a6f",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7289118993815418,
+        "auc_reason": null,
+        "accuracy": 0.7577988501455984,
+        "f1": 0.8521364949994986,
+        "mse": 0.1683221815982606,
+        "bce": 0.5095318808857464,
+        "n_targets": 66965
+      },
+      "training_git_commit": "a33f81ae0db4bd3753308fe5457d56a3199f3189",
+      "metrics_sha256": "24a310138d8c5a7dc95ab9bef17ccb13e283b68f76b155becd4ee3c0289b88fb",
+      "config_sha256": "7b6e99cd03a70cd2dbe61c34e085e205ab362ef777d90b374ad3d8f4f7b99a22",
+      "checkpoint_sha256": "d662df1a1d62437746ce21fc7a0f5abb7020e88db2dc32e24632f814d1b492d3"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-06da83df8033",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7282382101195821,
+        "auc_reason": null,
+        "accuracy": 0.7569327260509221,
+        "f1": 0.8525460425593594,
+        "mse": 0.16863015973446516,
+        "bce": 0.51045560663059,
+        "n_targets": 66965
+      },
+      "training_git_commit": "6aa2ba98cd2e040871d687963e568de58a684428",
+      "metrics_sha256": "3425eacceb87e2528cbb4d45e5bf74c8588b0fa1bd34d64be6ae3ad9f13ebd5d",
+      "config_sha256": "5bd225bfed033cfa1c5c7195ac66700839d040127bdd2df878764558b1f2a1dc",
+      "checkpoint_sha256": "584b227511ef95d8692db88f44b81b5ce4662a015f2c35b0353bb61ad2f92771"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-adb0a37c45ee",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7284885725929402,
+        "auc_reason": null,
+        "accuracy": 0.7573060554020757,
+        "f1": 0.852800521701326,
+        "mse": 0.16855348739080736,
+        "bce": 0.5103999485260124,
+        "n_targets": 66965
+      },
+      "training_git_commit": "2ad663d98471b11ec1d4bded85182ef9f30bdf73",
+      "metrics_sha256": "363fcdbd47ce25e115e845ba9016ebe034af23dcd7bbd9e364fe519b197d5adf",
+      "config_sha256": "32238c71702e607f08778f8d5e51d55c2763ad1bb96de95a0670e17295f5bd68",
+      "checkpoint_sha256": "30970676b150c89f90894e0a6966dd84306252eb3f05c3b1a2f1b18d1aaa53ce"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-17c8d100b617",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7279513093856972,
+        "auc_reason": null,
+        "accuracy": 0.7557380721272307,
+        "f1": 0.8508729543693303,
+        "mse": 0.16881556664706143,
+        "bce": 0.5106528624335561,
+        "n_targets": 66965
+      },
+      "training_git_commit": "a33153fce1c9692944dc034866f9019163bfac62",
+      "metrics_sha256": "5185c905bc5deb9b3d3a0b50691c661213c1af97c6644cadc0a6eb32c4980927",
+      "config_sha256": "f227c72e4c900b24af222b89899494047aa3a4279f5e105be2b13484c40ca656",
+      "checkpoint_sha256": "442e344153bfed0ada11d1788e2f1f30482deb53034f4af29c8dd8dff54133dd"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-e1d26e292242",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.728118930983032,
+        "auc_reason": null,
+        "accuracy": 0.7559919360860151,
+        "f1": 0.8507408151707254,
+        "mse": 0.16873624078349966,
+        "bce": 0.5106643864012336,
+        "n_targets": 66965
+      },
+      "training_git_commit": "c0b26bc7f3ca00582e6388232f3ba8b97a6b2e79",
+      "metrics_sha256": "3f32a8f19c573a5b8bf61eb5e7f70839b39d439cfe28fd01273a32c14a392046",
+      "config_sha256": "8e2ee9faa578fbd5b5b591e8bdc4f869b4421b47ae693fdf1d1013379ba238ac",
+      "checkpoint_sha256": "fad73ee362d614c8bcbea5691483d1c5cdaf143bd9a98a7a9b65a5d63f407453"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-7ef5102469c2",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7288082002034104,
+        "auc_reason": null,
+        "accuracy": 0.755887403867692,
+        "f1": 0.8510890259343943,
+        "mse": 0.1685596122591904,
+        "bce": 0.5101765049269155,
+        "n_targets": 66965
+      },
+      "training_git_commit": "086045178888625b78bb0e345dbe6f364f1054c7",
+      "metrics_sha256": "c4114d9f02cea7eecaa27d893523fb87ad744a1a745d48042ac2a9f44e2c9718",
+      "config_sha256": "505857f33a9a63de2a5144bd2cdb0de7b47797d279d14681ca369624d5e97feb",
+      "checkpoint_sha256": "a1901519a340a3dbc1647bfecb3631ba9dbd271cc37d220d4e3b551db2d09bf6"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-a1500ade638d",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7290732042980882,
+        "auc_reason": null,
+        "accuracy": 0.7564697976554917,
+        "f1": 0.851120159214154,
+        "mse": 0.1684904912537195,
+        "bce": 0.5100254425345935,
+        "n_targets": 66965
+      },
+      "training_git_commit": "55cda391f6b3da99eb7778ab63180effc15789e9",
+      "metrics_sha256": "8ba97fcd58aa05b0c2324b7b2ff5ee11df822baaddd7bf734c6b90772a34cfe3",
+      "config_sha256": "500ba2ac4827d562edc319bebf872a41153bdaa2e3c3f05a43a05f2b94ec3549",
+      "checkpoint_sha256": "73671c9e9bd5bde08f5c7f509a87f3fb38ab25ac9b888ddeac08ac3f517eacc5"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-ac68ae9e46a8",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7242658304013372,
+        "auc_reason": null,
+        "accuracy": 0.7551855446875233,
+        "f1": 0.8518792916516083,
+        "mse": 0.16962832418834226,
+        "bce": 0.5132712624571245,
+        "n_targets": 66965
+      },
+      "training_git_commit": "fd24c81a77d276260ce1e97f5c830839c41acb25",
+      "metrics_sha256": "7a3214da2957345354e53eb193bac69bf391a006eceefd530448d28446f73ddf",
+      "config_sha256": "b1343079877de01aa33b35e2c892a5b983e66d92ad239ea80fa97b91ccd29155",
+      "checkpoint_sha256": "637f97877059757dad588a474ecd1a9dc5e763612e8368607f756393bd0a7cb0"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-be65c6ce2c83",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7263915696043992,
+        "auc_reason": null,
+        "accuracy": 0.7555290076905846,
+        "f1": 0.8523925019610672,
+        "mse": 0.16924223113973286,
+        "bce": 0.5122796714582696,
+        "n_targets": 66965
+      },
+      "training_git_commit": "ed828803026ff01fe2b6851e05e2b45eb38a4b42",
+      "metrics_sha256": "06ebff647c68c7910d05022f04738a2369ba617138e1bc4fe701238b8a494997",
+      "config_sha256": "b360f0ce050a224ee8e9046dd725a14dec8a8b5657a8e54233a60e874d6fa292",
+      "checkpoint_sha256": "b4156633b1a18f9cb138cf6c2056cda871008e7280abba8a2caa66f7039d07ff"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-41d62d453e78",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7255334525702936,
+        "auc_reason": null,
+        "accuracy": 0.7555140745165385,
+        "f1": 0.8525151340443932,
+        "mse": 0.16966611839423432,
+        "bce": 0.513371000250441,
+        "n_targets": 66965
+      },
+      "training_git_commit": "0cb4338a773ca3e391e1776a5ecb4dd644a2531a",
+      "metrics_sha256": "f23c495a685f969110f5ea10c7dced494acfef496e9fd5a75e1b5818003cfbf3",
+      "config_sha256": "ae3c11a630d75628a8373428fe49f58051514250f19073442b11957d0357ab8e",
+      "checkpoint_sha256": "28f5221de1a64a2a7f1b36ddb952dd7bf53dfe7b0480a17b9eb1956444ecb6cd"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-0c98a51b8b8a",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.725926617538531,
+        "auc_reason": null,
+        "accuracy": 0.755245277383708,
+        "f1": 0.8518940215426878,
+        "mse": 0.16945659962771187,
+        "bce": 0.5131860423293829,
+        "n_targets": 66965
+      },
+      "training_git_commit": "c50e8dda48657f2f764c08cbaa138c7d6a8ae321",
+      "metrics_sha256": "340e075674d9c83af49168b59798fd88d8bfd35467ce1ddc580d1ca060512bb0",
+      "config_sha256": "38a2e911ca0afc4f4838d3ed679f2a3a22d16ab717634bf3368d2d45890b9d16",
+      "checkpoint_sha256": "ca0b68536180130439381a9a6210b95acee66eca934d46b688720de6864dec4b"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-53ed4a3c5ca5",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7235672467630949,
+        "auc_reason": null,
+        "accuracy": 0.7553796759501232,
+        "f1": 0.8507113107986184,
+        "mse": 0.1697152508767261,
+        "bce": 0.5136419571953811,
+        "n_targets": 66965
+      },
+      "training_git_commit": "58773f7a055fdbd01e8c6f6a4f129436059b61f2",
+      "metrics_sha256": "e92c9a9727bc2e462fd7932b6049858e6c9424c4368335205ab4d7d5df44f742",
+      "config_sha256": "5e5ce9a8f0ec04cb8e68391ffccdb38f15d42f9cf4f37166d9a233e2671a33d1",
+      "checkpoint_sha256": "c5438a9333a43f74280777e29e6f7c9436b03a83eaec5723833a4e0bca6ae2f7"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-1cfc050207bb",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7244701919470874,
+        "auc_reason": null,
+        "accuracy": 0.7537818263271858,
+        "f1": 0.8516225409909829,
+        "mse": 0.1698750060398385,
+        "bce": 0.5143313431430251,
+        "n_targets": 66965
+      },
+      "training_git_commit": "b7453d55242473a94171b5488591b0f533f740d4",
+      "metrics_sha256": "2fa16f8931a5c0c0294ded2727c4f29abd00f4e6cbf0f01c3558a3c8191ad374",
+      "config_sha256": "0211218eaa5114c62e7329631ff969c6cd31c2268d35eb0c23b9c23dbda61120",
+      "checkpoint_sha256": "f76d7fff51617973bd622a70b930b6ab5bc4d95e91b8ad225bc2ac5b19089db5"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-94e59fd4ef76",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7231574882255127,
+        "auc_reason": null,
+        "accuracy": 0.7535279623684014,
+        "f1": 0.8509477752792753,
+        "mse": 0.1702133439868989,
+        "bce": 0.5145012182120111,
+        "n_targets": 66965
+      },
+      "training_git_commit": "a8fbf7648c4c26f586320ea51954aa4070fd855d",
+      "metrics_sha256": "87c92b0e6cc2299990d2e308afeb941d7ab0be4d4c0d58895728f7c72c384e82",
+      "config_sha256": "664a1705dc2459eab7466520f4c4000b8fb8b0b24fe4b806cad03367fae15fcd",
+      "checkpoint_sha256": "79b84ac472289a961debeb86885f3546bc4d64636dab5928487f94adf35d9afd"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-01bab1af4afb",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7238412262561094,
+        "auc_reason": null,
+        "accuracy": 0.7554991413424923,
+        "f1": 0.8511477794445202,
+        "mse": 0.16991310870435467,
+        "bce": 0.5144012284973966,
+        "n_targets": 66965
+      },
+      "training_git_commit": "2e9ae00b7a54895a80b1e09b85ec198f756f6dd6",
+      "metrics_sha256": "5f29b4c3a05d92e3fb46338dc5524fb884f09ec2a8a0b9a44a5e076beed73811",
+      "config_sha256": "c45853fa2155214d6bad1a949b26b1cf53e85f314680e5538738746c9c07e09f",
+      "checkpoint_sha256": "7f60aad9aaaa3179f068f319de5bbe003a4b896cc2522e0e601714392ad65746"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-75c8b222ba86",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7115068034795025,
+        "auc_reason": null,
+        "accuracy": 0.7487493466736355,
+        "f1": 0.8479728203413722,
+        "mse": 0.17265991775443879,
+        "bce": 0.5206242235151213,
+        "n_targets": 66965
+      },
+      "training_git_commit": "411b851d47e5c1f138cc491e0280bf5288c2b0c1",
+      "metrics_sha256": "9b025d4e3daf9263bdea3e3ff4c8319cb444ac8791108d8c706ce5a3b0d70e3d",
+      "config_sha256": "53700030f052396c4eef0fe806c4a0abb8ef29d76b570825901b58c94cf4a7df",
+      "checkpoint_sha256": "b357c0ce7b1de7dda2a7a28ed64d7adb0a1e564ffb554f4d8c06ac18e98fbb96"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-a34280090ab6",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7108866264388164,
+        "auc_reason": null,
+        "accuracy": 0.7491674755469275,
+        "f1": 0.8497652162246769,
+        "mse": 0.1733076188184051,
+        "bce": 0.5230783917437118,
+        "n_targets": 66965
+      },
+      "training_git_commit": "b98024c26772f339d6ecd8dcfc0eeb454b4a43a8",
+      "metrics_sha256": "51a94ef5a31ed6bcc4212de11eb5205bad880a8f3d023fb0a765f8695e7afa89",
+      "config_sha256": "c8b8acbce9c8ed766c04746968fccffbcab9edca070ce05a978fcf373a9da38e",
+      "checkpoint_sha256": "f60454f96c7584c4e8af0e4125a707a06d7ff48783f5ea95649c7b6814555d92"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-26dad4632b04",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7137455292719195,
+        "auc_reason": null,
+        "accuracy": 0.7499888001194653,
+        "f1": 0.8503682253682253,
+        "mse": 0.17216952306561467,
+        "bce": 0.519555108237697,
+        "n_targets": 66965
+      },
+      "training_git_commit": "ba524313cc56be6131cd163df3169dad76ec7753",
+      "metrics_sha256": "f3f057d86fd72154e7b1cff7f5242012f37d4fbaec02d79b757155e22edd5596",
+      "config_sha256": "c3a63fe6657fccd65d44d748dd0027ad53d8762a100ac06d500fd0419c81315a",
+      "checkpoint_sha256": "7f972631b70213ded58785956ef8322802e87d32c996f7017709100582c80c0b"
+    },
+    {
+      "run_id": "ASSIST2015-SAKT-baseline_tuning-42-a90cacaaa73b",
+      "verified": true,
+      "device": "cuda",
+      "test_evaluated": false,
+      "regenerated_validation": {
+        "auc": 0.7130610080487534,
+        "auc_reason": null,
+        "accuracy": 0.7494810722018965,
+        "f1": 0.8504812834224599,
+        "mse": 0.1739039510439472,
+        "bce": 0.5258324009266906,
+        "n_targets": 66965
+      },
+      "training_git_commit": "fd24c81a77d276260ce1e97f5c830839c41acb25",
+      "metrics_sha256": "9e29d2fc3fb6e4ff82b762843fa81acbbb99a64fcc42bd3249872455a2ea3eab",
+      "config_sha256": "ab032a2eb9ced910e7801326bf7895ee709b8a980c1816af3b8aae2b7391851f",
+      "checkpoint_sha256": "781d1fae975c28eea7436d0af2e5487fc978573b3d27d307cbafc6db7d95bbc2"
+    }
+  ],
+  "verified_utc": "2026-10-15T16:17:14.624623+00:00",
+  "retrained_runs": 0,
+  "metric_atol": 1e-07,
+  "metric_rtol": 1e-06,
+  "verification_cpu_threads": 1,
+  "last_invocation_seconds": 9.721909611020237,
+  "test_evaluated": false,
+  "device": "cuda"
+}

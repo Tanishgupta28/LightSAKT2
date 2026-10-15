@@ -1,5 +1,3 @@
-**Verification status:** All 108 published validation AUCs passed independent CPU reproduction at the original tolerances; all selected final test results have existing independent inference proofs. Full original-device validation metrics remain queued. The failed strict CPU accuracy check is preserved and is not declared passed. The additional workflow is not yet fully verified.
-
 # SAKT grid search: verified reuse and complete tables
 
 All 108 requested configurations and 15 independently selected five-seed SAKT slots already existed in the approved schedule. Their checkpoints, configurations, histories, split/data hashes, code compatibility and validation-only selections were checked. No duplicate jobs were added, no completed training was repeated and no healthy worker was signalled. The main manifest is unchanged; experiments/sakt_matched_grid_manifest.json is a reference view of its existing jobs.
