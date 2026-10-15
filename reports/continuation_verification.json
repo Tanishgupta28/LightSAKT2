@@ -1,8 +1,14 @@
 {
-  "verified_utc": "2026-10-15T00:54:01.359450+00:00",
-  "completed": 720,
+  "verified_utc": "2026-10-15T03:46:47.226981+00:00",
+  "completed": 725,
+  "running": 1,
+  "pending": 231,
+  "failed": 0,
+  "interrupted": 0,
   "total_entries": 957,
-  "remaining": 237,
+  "remaining": 232,
+  "fresh_remaining": 224,
+  "reuse_remaining": 8,
   "processes": {
     "scheduler": {
       "pid": 78472,
@@ -13,7 +19,7 @@
       "alive": true
     },
     "eta": {
-      "pid": 508657,
+      "pid": 986001,
       "alive": true
     },
     "offsite": {
@@ -39,57 +45,47 @@
   },
   "running_jobs": [
     {
-      "run_id": "ASSIST2009-GKT-baseline_tuning-42-30db8df014cb",
-      "last_completed_epoch": 14,
-      "best_checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-30db8df014cb/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT-baseline_tuning-42-30db8df014cb/config.json"
+      "run_id": "ASSIST2009-GKT-baseline_tuning-42-5abd556796ed",
+      "last_completed_epoch": 3,
+      "best_checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-5abd556796ed/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT-baseline_tuning-42-5abd556796ed/config.json"
     }
   ],
   "healthy_progress_observed": true,
-  "failed_or_interrupted_runs": 0,
   "remaining_serial_equivalent_hours": {
-    "low": 101.93919156826843,
-    "central": 475.48853895902903,
-    "high": 1400.0435280746901
+    "low": 100.7362116826145,
+    "central": 473.5810325729812,
+    "high": 1386.0863699005206
   },
   "remaining_occupied_mig_hours": {
-    "low": 82.84431110097228,
-    "central": 365.4547017816245,
-    "high": 1400.0435280746901
+    "low": 81.64133121531833,
+    "central": 363.54719539557675,
+    "high": 1386.08636990052
   },
   "training_finish_utc_conditional": {
-    "low": "2026-10-18T11:44:22.802631+00:00",
-    "central": "2026-10-30T06:21:00.209081+00:00",
-    "high": "2026-12-12T08:56:19.983736+00:00"
+    "low": "2026-10-18T13:24:27.017347+00:00",
+    "central": "2026-10-30T07:18:48.128396+00:00",
+    "high": "2026-12-11T21:51:09.156614+00:00"
   },
-  "five_seed_final_inference_verified": 75,
-  "baseline_final_inference_verified": 60,
-  "local_and_downloaded_completed_archives_verified": 721,
-  "active_snapshots": [
-    {
-      "run_id": "ASSIST2009-GKT-baseline_tuning-42-30db8df014cb",
-      "last_completed_epoch": 14,
-      "latest_verified_offsite_epoch": 13,
-      "offsite_verified_utc": "2026-10-15T00:52:36.673486+00:00",
-      "asset_id": 642196935,
-      "snapshot_bytes_rechecked": true
-    }
-  ],
-  "latest_recorded_upload_failure_resolved_by_newer_verified_snapshot": true,
-  "automatic_worker_recovery_running": true,
-  "automatic_platform_restart": false,
-  "cpu_test_log": "reports/test_runs/20261015T005034-continued-baseline-cpu.log",
-  "source_git_commit": "f5924a01a4ea3235817e590610dc113ec8414b0d",
-  "research_complete": false,
+  "eta_source": "reports/ETA.json",
+  "eta_source_sha256": "ee56a35963f0802ba16f1acf2e86ea2a587a823a92b6a0c45535f7fedfedb055",
+  "measured_gkt_full_runs": {
+    "ASSIST2009/GKT": 14,
+    "ASSIST2009/GKT_MHA": 1,
+    "ASSIST2015/GKT": 1,
+    "ASSIST2015/GKT_MHA": 1,
+    "Algebra2005/GKT": 1,
+    "Algebra2005/GKT_MHA": 1
+  },
   "measured_gkt_timings": [
     {
       "dataset": "ASSIST2009",
       "model": "GKT",
-      "measured_runs": 10,
-      "completed_runs": 9,
-      "measured_epochs": 125,
-      "average_epoch_seconds": 169.10273373431292,
-      "average_completed_run_seconds": 2090.8687100514426
+      "measured_runs": 15,
+      "completed_runs": 14,
+      "measured_epochs": 184,
+      "average_epoch_seconds": 170.08536224162052,
+      "average_completed_run_seconds": 2216.7803683224315
     },
     {
       "dataset": "ASSIST2009",
@@ -137,5 +133,25 @@
       "average_completed_run_seconds": 9808.80258228199
     }
   ],
-  "timings_source": "reports/ETA_MEASURED_TIMINGS.csv"
+  "five_seed_final_inference_verified": 75,
+  "baseline_final_inference_verified": 60,
+  "local_and_downloaded_completed_archives_verified": 726,
+  "active_snapshots": [
+    {
+      "run_id": "ASSIST2009-GKT-baseline_tuning-42-5abd556796ed",
+      "epoch": 1,
+      "asset_id": 642561810,
+      "release_tag": "research-active-recovery-20261015",
+      "verified_utc": "2026-10-15T03:41:34.741060+00:00",
+      "sha256": "296e63063828f57b1ae978d17041aedc4988ae3fb86ab6ac1d811674239cce71"
+    }
+  ],
+  "automatic_worker_recovery_running": true,
+  "automatic_platform_restart": false,
+  "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "training_processes_signalled": 0,
+  "training_architecture_changed": false,
+  "experimental_scope_changed": false,
+  "source_git_commit": "3ad460ee40a3b4e43d9b315e1d1a5358b3d7bb84",
+  "research_complete": false
 }

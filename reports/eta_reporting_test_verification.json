@@ -1,0 +1,9 @@
+{
+  "verified_utc": "2026-10-15T03:45:29.673518+00:00",
+  "command": "CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m pytest -q tests/test_eta_history.py tests/test_final_summary.py tests/test_execution_observers.py",
+  "exit_code": 0,
+  "tests_passed": 7,
+  "elapsed_seconds": 2.17,
+  "scope": "Existing ETA/history/final-summary/report-isolation tests executed after reporting-only change; training code and numeric forecast algorithm unchanged",
+  "source": "Executed pytest process, session 71404"
+}

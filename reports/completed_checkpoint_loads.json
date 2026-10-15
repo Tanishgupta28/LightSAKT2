@@ -1,5 +1,5 @@
 {
-  "verified_utc": "2026-10-15T00:49:32.770842+00:00",
+  "verified_utc": "2026-10-15T03:41:00.626065+00:00",
   "verified": true,
   "checkpoints": [
     {
@@ -2355,6 +2355,96 @@
       "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-2bf0f4278139/latest.pt",
       "sha256": "08e8cda632561eece61231d050b6bd762ff5c83be000a6e3d0e2d67a830f41cc",
       "epoch": 8,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-30db8df014cb/best.pt",
+      "sha256": "cea19db8a973bac9680ded812666fff0827271cd3fe13b66c3e6eaa95a8d4d6b",
+      "epoch": 19,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-30db8df014cb/latest.pt",
+      "sha256": "491009c78c98b2c4708aa6947d599e51e3634633c1eee18a4b78ab7b54165eea",
+      "epoch": 24,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-32fb8093158c/best.pt",
+      "sha256": "bc60323c570235ac88b2e16f8109f85087a1d995bc714c68f5056d4c7df29979",
+      "epoch": 2,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-32fb8093158c/latest.pt",
+      "sha256": "b800f7478b7080e92002c95ef2a4db749c22f505949854fae9dacd248942b092",
+      "epoch": 7,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-455c84d8627a/best.pt",
+      "sha256": "652c75b1cc433c12866ddddb22c030f931e84ca71c4216339fbe59e00f63f42d",
+      "epoch": 5,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-455c84d8627a/latest.pt",
+      "sha256": "5045d94cf4edf1bdc3b2530f8e06915c669f359d01d6f0d183fa7048e869c4f6",
+      "epoch": 10,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-4a391f5533c0/best.pt",
+      "sha256": "70a2645eb684c7b47de8b97b896533c6d545a88ce77e304bffc50c9c8190a305",
+      "epoch": 3,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-4a391f5533c0/latest.pt",
+      "sha256": "de67e1488dc856d4e1c01918d9882c5429545dad36b18fe47b7bcd1cce436ac2",
+      "epoch": 8,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    },
+    {
+      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-4d57c219c66d/best.pt",
+      "sha256": "029480e66cf260aa6003d70b546eed145ec19100e37364d229ae5907f462d311",
+      "epoch": 17,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-4d57c219c66d/latest.pt",
+      "sha256": "b70bac7179049fe9234b72ce12e86222e0df44b6c31138db80e3d5a6e5b52f44",
+      "epoch": 22,
       "strict_state_load": true,
       "finite_parameters": true,
       "split_data_match": true,

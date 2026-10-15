@@ -1,5 +1,40 @@
 [
   {
+    "run_id": "ASSIST2009-DKT+-final-123",
+    "checkpoint": "checkpoints/ASSIST2009-DKT+-final-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-DKT+-final-2026",
+    "checkpoint": "checkpoints/ASSIST2009-DKT+-final-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-DKT+-final-3407",
+    "checkpoint": "checkpoints/ASSIST2009-DKT+-final-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-DKT+-final-42",
+    "checkpoint": "checkpoints/ASSIST2009-DKTplus-baseline_tuning-42-4991434183d5/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-DKT+-final-7777",
+    "checkpoint": "checkpoints/ASSIST2009-DKT+-final-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
     "run_id": "ASSIST2009-DKT-baseline_tuning-42-0e47a08205e9",
     "checkpoint": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-0e47a08205e9/best.pt",
     "checksum_verified": true,
@@ -250,6 +285,41 @@
     "checksum_verified": true,
     "validation_recomputed": false,
     "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKT-final-123",
+    "checkpoint": "checkpoints/ASSIST2009-DKT-final-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-DKT-final-2026",
+    "checkpoint": "checkpoints/ASSIST2009-DKT-final-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-DKT-final-3407",
+    "checkpoint": "checkpoints/ASSIST2009-DKT-final-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-DKT-final-42",
+    "checkpoint": "checkpoints/ASSIST2009-DKT-baseline_tuning-42-26b33e957e76/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-DKT-final-7777",
+    "checkpoint": "checkpoints/ASSIST2009-DKT-final-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
   },
   {
     "run_id": "ASSIST2009-DKT-primary-42-26e196b6a6d5",
@@ -518,6 +588,13 @@
     "test_prediction_metrics_recomputed": true
   },
   {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-036693a698a9",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-036693a698a9/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
     "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-0528aee387d0",
     "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-0528aee387d0/best.pt",
     "checksum_verified": true,
@@ -525,8 +602,57 @@
     "test_prediction_metrics_recomputed": false
   },
   {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-16ef95a7df97",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-16ef95a7df97/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-211fa0b0f79a",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-211fa0b0f79a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-2a7e728e4d1c",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-2a7e728e4d1c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
     "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-3259bb3a9360",
     "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-3259bb3a9360/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-35063687bb25",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-primary-42-902c00823fa6/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-3977d6c17fb6",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-3977d6c17fb6/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-45cabcf53b7f",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-45cabcf53b7f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-4679cbce5955",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-4679cbce5955/best.pt",
     "checksum_verified": true,
     "validation_recomputed": false,
     "test_prediction_metrics_recomputed": false
@@ -541,6 +667,20 @@
   {
     "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-4ecdd8e0d80d",
     "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-4ecdd8e0d80d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-50c21f195a5d",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-50c21f195a5d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-5394980bc2b6",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-5394980bc2b6/best.pt",
     "checksum_verified": true,
     "validation_recomputed": false,
     "test_prediction_metrics_recomputed": false
@@ -567,6 +707,13 @@
     "test_prediction_metrics_recomputed": false
   },
   {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-815ff6fa790d",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-815ff6fa790d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
     "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-91251f1314cd",
     "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-91251f1314cd/best.pt",
     "checksum_verified": true,
@@ -581,8 +728,22 @@
     "test_prediction_metrics_recomputed": false
   },
   {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-a707870d87dd",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-a707870d87dd/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
     "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-a8cfc6e8b2e1",
     "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-a8cfc6e8b2e1/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-ac08ff86df04",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-ac08ff86df04/best.pt",
     "checksum_verified": true,
     "validation_recomputed": false,
     "test_prediction_metrics_recomputed": false
@@ -602,8 +763,71 @@
     "test_prediction_metrics_recomputed": false
   },
   {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-cf55c749459e",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-cf55c749459e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-cffba717b98b",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-cffba717b98b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
     "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-d2e6bef77fc8",
     "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-d2e6bef77fc8/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-d308354eeb8b",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-d308354eeb8b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-d4c8f3eddd8e",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-d4c8f3eddd8e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-d813a6987bf2",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-d813a6987bf2/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-e041fd6a4c5a",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-e041fd6a4c5a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-ea0228840259",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-ea0228840259/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-efca17b0b55b",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-efca17b0b55b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-baseline_tuning-42-fb3461972e79",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-fb3461972e79/best.pt",
     "checksum_verified": true,
     "validation_recomputed": false,
     "test_prediction_metrics_recomputed": false
@@ -616,11 +840,144 @@
     "test_prediction_metrics_recomputed": false
   },
   {
+    "run_id": "ASSIST2009-DKVMN-final-123",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-final-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-final-2026",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-final-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-final-3407",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-final-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-final-42",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-baseline_tuning-42-d813a6987bf2/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-DKVMN-final-7777",
+    "checkpoint": "checkpoints/ASSIST2009-DKVMN-final-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
     "run_id": "ASSIST2009-DKVMN-primary-42-902c00823fa6",
     "checkpoint": "checkpoints/ASSIST2009-DKVMN-primary-42-902c00823fa6/best.pt",
     "checksum_verified": true,
     "validation_recomputed": false,
     "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-GKT-baseline_tuning-42-07dec7ef0623",
+    "checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-07dec7ef0623/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-GKT-baseline_tuning-42-19094af02366",
+    "checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-19094af02366/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-GKT-baseline_tuning-42-1a4405f45bd7",
+    "checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-1a4405f45bd7/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-GKT-baseline_tuning-42-1bc295eb0703",
+    "checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-1bc295eb0703/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-GKT-baseline_tuning-42-1d9e4935301d",
+    "checkpoint": "checkpoints/ASSIST2009-GKT-primary-42-bf2b95e7f1ff/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-GKT-baseline_tuning-42-1fd788004646",
+    "checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-1fd788004646/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-GKT-baseline_tuning-42-22040414b977",
+    "checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-22040414b977/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-GKT-baseline_tuning-42-2372efe8779d",
+    "checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-2372efe8779d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-GKT-baseline_tuning-42-2bf0f4278139",
+    "checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-2bf0f4278139/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-GKT-baseline_tuning-42-30db8df014cb",
+    "checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-30db8df014cb/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-GKT-baseline_tuning-42-32fb8093158c",
+    "checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-32fb8093158c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-GKT-baseline_tuning-42-455c84d8627a",
+    "checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-455c84d8627a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-GKT-baseline_tuning-42-4a391f5533c0",
+    "checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-4a391f5533c0/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-GKT-baseline_tuning-42-4d57c219c66d",
+    "checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-4d57c219c66d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
   },
   {
     "run_id": "ASSIST2009-GKT-primary-42-bf2b95e7f1ff",
@@ -632,6 +989,41 @@
   {
     "run_id": "ASSIST2009-GKT_MHA-primary-42-e63b12ce3815",
     "checkpoint": "checkpoints/ASSIST2009-GKT_MHA-primary-42-e63b12ce3815/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-final-123",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-final-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-final-2026",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-final-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-final-3407",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-final-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-final-42",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-f08e9494d270/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-final-7777",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-final-7777/best.pt",
     "checksum_verified": true,
     "validation_recomputed": false,
     "test_prediction_metrics_recomputed": true
@@ -686,8 +1078,386 @@
     "test_prediction_metrics_recomputed": false
   },
   {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-4462e183cff2",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-4462e183cff2/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-48c411be10b6",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-primary-42-440d619b7547/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-519f6ddfded5",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-519f6ddfded5/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-5225105f3bce",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-5225105f3bce/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-5367c646f7fc",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-5367c646f7fc/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-548bf9305dcd",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-548bf9305dcd/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-54eb65d6bac2",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-54eb65d6bac2/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-5cac52478aa9",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-5cac52478aa9/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-657c24e26014",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-657c24e26014/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-6a5b69a81950",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-6a5b69a81950/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-78e7030a9c88",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-78e7030a9c88/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-7ec15e323ab3",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-7ec15e323ab3/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-8488d393eb74",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-8488d393eb74/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-876374e581c1",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-876374e581c1/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-a22be35657b2",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-a22be35657b2/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-bc44304c7e6a",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-bc44304c7e6a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-bc7909e3ec64",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-bc7909e3ec64/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-cbb203a49770",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-cbb203a49770/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-cbc759c49f4b",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-cbc759c49f4b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-cddb73383e58",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-cddb73383e58/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-ce7ac2d04d8c",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-ce7ac2d04d8c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-d61c17bff6d2",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-d61c17bff6d2/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-da59e9e82672",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-da59e9e82672/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-dbc981c680af",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-dbc981c680af/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-dc60492cb0c6",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-dc60492cb0c6/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-e4d9677fea31",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-e4d9677fea31/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-e8619daa8cf3",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-e8619daa8cf3/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-ee695dce7311",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-ee695dce7311/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-grid-42-f08e9494d270",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-f08e9494d270/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_attention-123",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_attention-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_attention-2026",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_attention-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_attention-3407",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_attention-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_attention-42",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_attention-42/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_attention-7777",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_attention-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_dropout-123",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_dropout-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_dropout-2026",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_dropout-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_dropout-3407",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_dropout-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_dropout-42",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_dropout-42/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_dropout-7777",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_dropout-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_position-123",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_position-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_position-2026",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_position-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_position-3407",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_position-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_position-42",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_position-42/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_position-7777",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_position-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_regularization-123",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_dropout-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_regularization-2026",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_dropout-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_regularization-3407",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_dropout-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_regularization-42",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_dropout-42/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-no_regularization-7777",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-no_dropout-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
     "run_id": "ASSIST2009-LightSAKT-primary-42-440d619b7547",
     "checkpoint": "checkpoints/ASSIST2009-LightSAKT-primary-42-440d619b7547/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-single_head-123",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-single_head-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-single_head-2026",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-single_head-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-single_head-3407",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-single_head-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-single_head-42",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-single_head-42/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-LightSAKT-single_head-7777",
+    "checkpoint": "checkpoints/ASSIST2009-LightSAKT-single_head-7777/best.pt",
     "checksum_verified": true,
     "validation_recomputed": false,
     "test_prediction_metrics_recomputed": true
@@ -700,8 +1470,617 @@
     "test_prediction_metrics_recomputed": false
   },
   {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-18927de5abcf",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-18927de5abcf/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-1ea6d0e3af0c",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-1ea6d0e3af0c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-20cb259b8453",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-20cb259b8453/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-2871c55fcfef",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-2871c55fcfef/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-3701b171c5a5",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-3701b171c5a5/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-3e46b3721a2b",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-3e46b3721a2b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-46fe905cecba",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-46fe905cecba/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-4899b744bd08",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-4899b744bd08/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-5a04d6fcd0ab",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-5a04d6fcd0ab/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-5ba93d0a563a",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-5ba93d0a563a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-5ffd7705aaa2",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-5ffd7705aaa2/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-6cc761d1569d",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-6cc761d1569d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-86ecdf28f694",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-86ecdf28f694/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-8a33fe73d195",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-8a33fe73d195/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-9a38aaa6950a",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-9a38aaa6950a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-a3e6a37c86a1",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-a3e6a37c86a1/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-a7a39eed4d33",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-a7a39eed4d33/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-ab8296ffc06d",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-ab8296ffc06d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-b4f026d32fa0",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-b4f026d32fa0/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-b783977b82fe",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-b783977b82fe/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-b8ef7520224e",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-b8ef7520224e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-bc0a2a560ce1",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-bc0a2a560ce1/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-c296afbeddce",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-c296afbeddce/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-c8b0b836e93b",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-c8b0b836e93b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-c9c00f287550",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-c9c00f287550/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-cb815133c07f",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-cb815133c07f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-cbf1a3de9206",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-cbf1a3de9206/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-d108682ad990",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-d108682ad990/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-d3d205330b77",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-d3d205330b77/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-d9c58f8bb413",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-d9c58f8bb413/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-dd880fef9848",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-dd880fef9848/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-df4a58765f45",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-df4a58765f45/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-e00d42a652e7",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-e00d42a652e7/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-f6e2cf5d03b8",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-f6e2cf5d03b8/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-fb98a2007115",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-fb98a2007115/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-baseline_tuning-42-fc6de5467e47",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-fc6de5467e47/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-final-123",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-final-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-final-2026",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-final-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-final-3407",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-final-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-final-42",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-bc0a2a560ce1/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2009-SAKT-final-7777",
+    "checkpoint": "checkpoints/ASSIST2009-SAKT-final-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
     "run_id": "ASSIST2009-SAKT-primary-42-3c4dd6ec486d",
     "checkpoint": "checkpoints/ASSIST2009-SAKT-primary-42-3c4dd6ec486d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-DKT+-final-123",
+    "checkpoint": "checkpoints/ASSIST2015-DKT+-final-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-DKT+-final-2026",
+    "checkpoint": "checkpoints/ASSIST2015-DKT+-final-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-DKT+-final-3407",
+    "checkpoint": "checkpoints/ASSIST2015-DKT+-final-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-DKT+-final-42",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-1f3ce9740385/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-DKT+-final-7777",
+    "checkpoint": "checkpoints/ASSIST2015-DKT+-final-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-00b0fcf26ac9",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-00b0fcf26ac9/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-04de9c142796",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-04de9c142796/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-15f6cecd55d9",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-15f6cecd55d9/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-187dbe3a8ba1",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-187dbe3a8ba1/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-249d0f91d06e",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-249d0f91d06e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-261eee84f275",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-261eee84f275/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-2b31dfbca2fa",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-2b31dfbca2fa/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-41c42c4513df",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-41c42c4513df/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-4b472a8218c8",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-4b472a8218c8/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-4f9e7133907b",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-4f9e7133907b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-50942d98fd6a",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-50942d98fd6a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-50d04205247f",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-50d04205247f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-601bd30af00b",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-601bd30af00b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-69d98363a460",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-69d98363a460/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-753b64e7216a",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-753b64e7216a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-790c13df1ebb",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-790c13df1ebb/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-7a6f5c7c3ced",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-7a6f5c7c3ced/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-7ca4674b0ba0",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-7ca4674b0ba0/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-9e9bd5908f87",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-9e9bd5908f87/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-9ee19ba5b525",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-9ee19ba5b525/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-a2e526224ff0",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-a2e526224ff0/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-adcee081cfa6",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-adcee081cfa6/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-bd32a6ebc8db",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-bd32a6ebc8db/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-c165349b4354",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-c165349b4354/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-c1ec86655557",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-c1ec86655557/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-c7fe0d9fa42d",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-c7fe0d9fa42d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-ca05dc8f793c",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-ca05dc8f793c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-ca6ad671ed75",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-ca6ad671ed75/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-cf795e143f37",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-cf795e143f37/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-d3c167468095",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-d3c167468095/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-e1c6873255a2",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-e1c6873255a2/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-e3a33a98a83b",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-e3a33a98a83b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-ead3518c9e9c",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-ead3518c9e9c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-eaf342277b81",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-eaf342277b81/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-ed21b4b69d3f",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-ed21b4b69d3f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-baseline_tuning-42-f5e8079dffb8",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-f5e8079dffb8/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKT-final-123",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-final-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-DKT-final-2026",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-final-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-DKT-final-3407",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-final-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-DKT-final-42",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-baseline_tuning-42-753b64e7216a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-DKT-final-7777",
+    "checkpoint": "checkpoints/ASSIST2015-DKT-final-7777/best.pt",
     "checksum_verified": true,
     "validation_recomputed": false,
     "test_prediction_metrics_recomputed": true
@@ -714,8 +2093,547 @@
     "test_prediction_metrics_recomputed": true
   },
   {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-08fdb282128d",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-08fdb282128d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-098d81f09fe4",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-098d81f09fe4/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-0a3e79ad386d",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-0a3e79ad386d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-11d76d0bb941",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-11d76d0bb941/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-12ca12c38e29",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-12ca12c38e29/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-14846cc69a9d",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-14846cc69a9d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-169270b0ab91",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-169270b0ab91/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-1a8d927944bf",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-1a8d927944bf/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-1f3ce9740385",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-1f3ce9740385/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-28275ff8a99f",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-28275ff8a99f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-3a9936df0310",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-3a9936df0310/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-425f5ac5e127",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-425f5ac5e127/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-486d723b88f7",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-486d723b88f7/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-5b37061f9295",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-5b37061f9295/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-5f0bd9deddc8",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-5f0bd9deddc8/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-65b7eddb78cb",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-65b7eddb78cb/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-688451f4142e",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-688451f4142e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-7c73faf36701",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-7c73faf36701/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-7d21b2506b5c",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-7d21b2506b5c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-86c7ed3aac97",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-86c7ed3aac97/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-8b776c0183fa",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-8b776c0183fa/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-8cb23341ce7f",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-8cb23341ce7f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-a5158643e963",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-a5158643e963/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-b3821db49319",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-b3821db49319/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-b8ffe2a20712",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-b8ffe2a20712/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-c4ab17a14f1c",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-c4ab17a14f1c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-c5a11aa4b096",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-c5a11aa4b096/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-d8bf1106bb5d",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-d8bf1106bb5d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-dafb2b3e152a",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-dafb2b3e152a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-e61bc73e7dd9",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-e61bc73e7dd9/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-eaa61ab94f1b",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-eaa61ab94f1b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-ee6af30822d2",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-ee6af30822d2/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-f0e949a00a8c",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-f0e949a00a8c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-f1a35cdaa176",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-f1a35cdaa176/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-f252c9e66ebb",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-f252c9e66ebb/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKTplus-baseline_tuning-42-fbe730e1d871",
+    "checkpoint": "checkpoints/ASSIST2015-DKTplus-baseline_tuning-42-fbe730e1d871/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
     "run_id": "ASSIST2015-DKTplus-primary-42-3bf5cb94131c",
     "checkpoint": "checkpoints/ASSIST2015-DKTplus-primary-42-3bf5cb94131c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-047a5f4ce889",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-047a5f4ce889/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-0a5d05893267",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-0a5d05893267/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-0b02861738a5",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-0b02861738a5/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-1cf7bd2a7ab6",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-1cf7bd2a7ab6/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-1fd4a1335151",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-1fd4a1335151/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-29e53cd0859a",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-29e53cd0859a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-3982d37828fa",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-primary-42-c91ed69c5400/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-423cf83838e1",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-423cf83838e1/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-452e178d23ff",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-452e178d23ff/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-48cf87dfa0ef",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-48cf87dfa0ef/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-520623824044",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-520623824044/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-53dce185492d",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-53dce185492d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-60683f8e88d1",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-60683f8e88d1/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-61711846e097",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-61711846e097/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-64c2d5059a73",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-64c2d5059a73/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-6b174d033540",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-6b174d033540/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-6e60c939f5b9",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-6e60c939f5b9/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-74ec9172397d",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-74ec9172397d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-765cb8ab742e",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-765cb8ab742e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-8a460c69719d",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-8a460c69719d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-92af7cba3fd3",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-92af7cba3fd3/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-9b89089e454f",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-9b89089e454f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-a1812d767a89",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-a1812d767a89/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-b80aae38647b",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-b80aae38647b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-bac21a5a4764",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-bac21a5a4764/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-beae628fc78a",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-beae628fc78a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-c6fc141f800f",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-c6fc141f800f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-c9e6d97f1b4b",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-c9e6d97f1b4b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-cee9b38cefe3",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-cee9b38cefe3/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-cf0ba53d7b6d",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-cf0ba53d7b6d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-d2dc815dee5e",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-d2dc815dee5e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-df2be8408873",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-df2be8408873/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-e8423ad3f7f0",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-e8423ad3f7f0/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-f45d5f355d9e",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-f45d5f355d9e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-f4fa388a714b",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-f4fa388a714b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-baseline_tuning-42-ffc49f271f93",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-ffc49f271f93/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-final-123",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-final-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-final-2026",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-final-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-final-3407",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-final-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-final-42",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-baseline_tuning-42-d2dc815dee5e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-DKVMN-final-7777",
+    "checkpoint": "checkpoints/ASSIST2015-DKVMN-final-7777/best.pt",
     "checksum_verified": true,
     "validation_recomputed": false,
     "test_prediction_metrics_recomputed": true
@@ -742,8 +2660,757 @@
     "test_prediction_metrics_recomputed": true
   },
   {
+    "run_id": "ASSIST2015-LightSAKT-final-123",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-final-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-final-2026",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-final-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-final-3407",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-final-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-final-42",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-64640d03b0d3/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-final-7777",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-final-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-081855fbb02d",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-081855fbb02d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-08c3ea752993",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-primary-42-301d9bff60e9/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-131e9e879505",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-131e9e879505/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-13899ec8cbe4",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-13899ec8cbe4/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-1512d57add2f",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-1512d57add2f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-355019985ef3",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-355019985ef3/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-3769d3cd7356",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-3769d3cd7356/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-37c34205659f",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-37c34205659f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-39138de678ce",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-39138de678ce/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-397bcc602116",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-397bcc602116/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-3de8a446858c",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-3de8a446858c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-445182637f37",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-445182637f37/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-5d0c2dacb4af",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-5d0c2dacb4af/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-61850ea7cf03",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-61850ea7cf03/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-64640d03b0d3",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-64640d03b0d3/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-6aad389a9ff2",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-6aad389a9ff2/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-6bd53e61d1a0",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-6bd53e61d1a0/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-6cbd6e38b46e",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-6cbd6e38b46e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-7f6c59d24a33",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-7f6c59d24a33/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-8a618101270c",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-8a618101270c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-9349926da302",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-9349926da302/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-9b758c5a3448",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-9b758c5a3448/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-a0f261d0be90",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-a0f261d0be90/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-a540855228ac",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-a540855228ac/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-a5627c7ce7bc",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-a5627c7ce7bc/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-a628603467cc",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-a628603467cc/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-a69da8e923df",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-a69da8e923df/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-b0aeca4e3190",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-b0aeca4e3190/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-b39fa45105b4",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-b39fa45105b4/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-b529d6901c60",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-b529d6901c60/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-b7a847dd2b34",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-b7a847dd2b34/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-b95f4b0e409b",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-b95f4b0e409b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-ca3f37a65ba6",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-ca3f37a65ba6/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-e1f81f69cd99",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-e1f81f69cd99/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-f53e52b77c73",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-f53e52b77c73/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-grid-42-f8bde96560d6",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-f8bde96560d6/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_attention-123",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_attention-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_attention-2026",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_attention-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_attention-3407",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_attention-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_attention-42",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_attention-42/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_attention-7777",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_attention-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_dropout-123",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_dropout-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_dropout-2026",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_dropout-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_dropout-3407",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_dropout-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_dropout-42",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_dropout-42/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_dropout-7777",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_dropout-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_position-123",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_position-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_position-2026",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_position-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_position-3407",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_position-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_position-42",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_position-42/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_position-7777",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_position-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_regularization-123",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_dropout-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_regularization-2026",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_dropout-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_regularization-3407",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_dropout-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_regularization-42",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_dropout-42/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-no_regularization-7777",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-no_dropout-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
     "run_id": "ASSIST2015-LightSAKT-primary-42-301d9bff60e9",
     "checkpoint": "checkpoints/ASSIST2015-LightSAKT-primary-42-301d9bff60e9/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-single_head-123",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-single_head-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-single_head-2026",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-single_head-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-single_head-3407",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-single_head-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-single_head-42",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-single_head-42/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-LightSAKT-single_head-7777",
+    "checkpoint": "checkpoints/ASSIST2015-LightSAKT-single_head-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-01bab1af4afb",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-01bab1af4afb/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-028d32988eaa",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-028d32988eaa/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-06da83df8033",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-06da83df8033/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-0c98a51b8b8a",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-0c98a51b8b8a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-16f1e00c1516",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-16f1e00c1516/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-17c8d100b617",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-17c8d100b617/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-1cfc050207bb",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-1cfc050207bb/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-26dad4632b04",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-26dad4632b04/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-31e3bb118996",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-31e3bb118996/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-380a89874a7b",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-380a89874a7b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-3f50a672d3be",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-3f50a672d3be/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-41d62d453e78",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-41d62d453e78/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-4cc38d7c6af6",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-4cc38d7c6af6/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-53392b2ba114",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-53392b2ba114/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-53ed4a3c5ca5",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-53ed4a3c5ca5/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-5cf89a653a6f",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-5cf89a653a6f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-69254dc601ce",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-69254dc601ce/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-6c40e900aaeb",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-6c40e900aaeb/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-7278df8e612f",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-7278df8e612f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-75c8b222ba86",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-75c8b222ba86/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-7ef5102469c2",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-7ef5102469c2/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-94e59fd4ef76",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-94e59fd4ef76/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-9591f5a0d289",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-9591f5a0d289/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-99ea7a53ea76",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-99ea7a53ea76/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-a1500ade638d",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-a1500ade638d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-a34280090ab6",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-a34280090ab6/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-a90cacaaa73b",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-a90cacaaa73b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-ac68ae9e46a8",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-ac68ae9e46a8/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-adb0a37c45ee",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-adb0a37c45ee/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-b5f012c01c5e",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-b5f012c01c5e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-be65c6ce2c83",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-be65c6ce2c83/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-c942c211f56c",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-c942c211f56c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-cd59a9db41c2",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-cd59a9db41c2/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-d7e81d4048b1",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-d7e81d4048b1/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-e1d26e292242",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-e1d26e292242/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-baseline_tuning-42-f617b0c5117f",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-f617b0c5117f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-final-123",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-final-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-final-2026",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-final-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-final-3407",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-final-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-final-42",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-baseline_tuning-42-4cc38d7c6af6/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "ASSIST2015-SAKT-final-7777",
+    "checkpoint": "checkpoints/ASSIST2015-SAKT-final-7777/best.pt",
     "checksum_verified": true,
     "validation_recomputed": false,
     "test_prediction_metrics_recomputed": true
@@ -756,6 +3423,328 @@
     "test_prediction_metrics_recomputed": true
   },
   {
+    "run_id": "Algebra2005-DKT+-final-123",
+    "checkpoint": "checkpoints/Algebra2005-DKT+-final-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-DKT+-final-2026",
+    "checkpoint": "checkpoints/Algebra2005-DKT+-final-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-DKT+-final-3407",
+    "checkpoint": "checkpoints/Algebra2005-DKT+-final-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-DKT+-final-42",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-da8b7c84fd0d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-DKT+-final-7777",
+    "checkpoint": "checkpoints/Algebra2005-DKT+-final-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-026868bd5f71",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-026868bd5f71/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-0ab2906ef07e",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-0ab2906ef07e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-0f35021e6a2a",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-0f35021e6a2a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-0fe87503e8ba",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-0fe87503e8ba/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-10f38b00e5a3",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-10f38b00e5a3/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-16c901f1ddcd",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-16c901f1ddcd/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-234efe0c1bfc",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-234efe0c1bfc/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-2440a97e1466",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-2440a97e1466/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-2ee789b1628e",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-2ee789b1628e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-306f31d01f96",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-306f31d01f96/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-308d6e6c64d0",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-308d6e6c64d0/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-40e0ca4d6e37",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-40e0ca4d6e37/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-522c69541bd9",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-522c69541bd9/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-59d1ca0daf2a",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-59d1ca0daf2a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-5bd91877fc05",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-5bd91877fc05/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-5e533f9aba4e",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-5e533f9aba4e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-5f8fa5b5da96",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-5f8fa5b5da96/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-69f97aeea9ea",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-69f97aeea9ea/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-757c1cfb2b44",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-757c1cfb2b44/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-7675e36dcc92",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-7675e36dcc92/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-91da215e7de9",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-91da215e7de9/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-9804a1293d63",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-9804a1293d63/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-9c665f296c80",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-9c665f296c80/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-9cb8e8e37cba",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-9cb8e8e37cba/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-a11e2bee0625",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-a11e2bee0625/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-a2c589815887",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-a2c589815887/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-af1929e55770",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-af1929e55770/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-b61a7509c04b",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-b61a7509c04b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-b69082194c3a",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-b69082194c3a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-cdd715485ce3",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-cdd715485ce3/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-cf5b31b217c8",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-cf5b31b217c8/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-e157ac96ae94",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-e157ac96ae94/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-e701974ae072",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-e701974ae072/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-f6ce8308d663",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-f6ce8308d663/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-f94a1fd705c4",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-f94a1fd705c4/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-baseline_tuning-42-f9ee25136615",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-f9ee25136615/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKT-final-123",
+    "checkpoint": "checkpoints/Algebra2005-DKT-final-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-DKT-final-2026",
+    "checkpoint": "checkpoints/Algebra2005-DKT-final-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-DKT-final-3407",
+    "checkpoint": "checkpoints/Algebra2005-DKT-final-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-DKT-final-42",
+    "checkpoint": "checkpoints/Algebra2005-DKT-baseline_tuning-42-e701974ae072/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-DKT-final-7777",
+    "checkpoint": "checkpoints/Algebra2005-DKT-final-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
     "run_id": "Algebra2005-DKT-primary-42-0a42097f8641",
     "checkpoint": "checkpoints/Algebra2005-DKT-primary-42-0a42097f8641/best.pt",
     "checksum_verified": true,
@@ -763,8 +3752,547 @@
     "test_prediction_metrics_recomputed": true
   },
   {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-06bc96365128",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-06bc96365128/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-0807500c38b1",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-0807500c38b1/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-0e2c05ebb594",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-0e2c05ebb594/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-19115c166b2a",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-19115c166b2a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-234e06f56453",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-234e06f56453/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-3c75b69dfca9",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-3c75b69dfca9/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-4aea3aadd2c6",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-4aea3aadd2c6/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-52325a945ba4",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-52325a945ba4/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-59f8972dd2de",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-59f8972dd2de/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-6019ec24c551",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-6019ec24c551/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-61f3de158125",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-61f3de158125/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-629ff03d3408",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-629ff03d3408/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-7e3d1172100e",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-7e3d1172100e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-814ead8d9f6f",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-814ead8d9f6f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-86b4519350e2",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-86b4519350e2/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-86ce13ec874d",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-86ce13ec874d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-88c51666bc3a",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-88c51666bc3a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-88de18e60154",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-88de18e60154/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-8e13f7f0f52f",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-8e13f7f0f52f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-9d9120c61e83",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-9d9120c61e83/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-a1aae8b926b6",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-a1aae8b926b6/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-ac6d7c1ab73c",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-ac6d7c1ab73c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-b73f114bab15",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-b73f114bab15/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-bc4edd4b85fd",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-bc4edd4b85fd/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-c3c6df50e4e8",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-c3c6df50e4e8/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-cda0ce5a3714",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-cda0ce5a3714/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-d0a09fc5d7bb",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-d0a09fc5d7bb/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-d7a58b9bc3af",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-d7a58b9bc3af/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-da15603794f1",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-da15603794f1/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-da8b7c84fd0d",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-da8b7c84fd0d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-dd63c0463c73",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-dd63c0463c73/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-ddfa5bd32dd9",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-ddfa5bd32dd9/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-e2b18198aa5b",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-e2b18198aa5b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-ec3c27c14e44",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-ec3c27c14e44/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-ec9ead5456ca",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-ec9ead5456ca/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKTplus-baseline_tuning-42-ecaf0972ec89",
+    "checkpoint": "checkpoints/Algebra2005-DKTplus-baseline_tuning-42-ecaf0972ec89/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
     "run_id": "Algebra2005-DKTplus-primary-42-8c85af12bd21",
     "checkpoint": "checkpoints/Algebra2005-DKTplus-primary-42-8c85af12bd21/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-07e13b8356b9",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-07e13b8356b9/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-0aecd459f4c2",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-primary-42-7f8a895e7d8e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-0c7d75af9bf6",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-0c7d75af9bf6/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-1536d8dd9e47",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-1536d8dd9e47/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-15ff363872ee",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-15ff363872ee/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-18b844be66f0",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-18b844be66f0/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-194fd6d5c1ad",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-194fd6d5c1ad/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-216a8c2bd5a5",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-216a8c2bd5a5/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-21987a9529b6",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-21987a9529b6/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-30c93a04e0b7",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-30c93a04e0b7/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-3227216e345e",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-3227216e345e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-3242f4da6a60",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-3242f4da6a60/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-3786db01d014",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-3786db01d014/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-4458f0a482d3",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-4458f0a482d3/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-49d270171757",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-49d270171757/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-5c06bb237f85",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-5c06bb237f85/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-60f0daf0d978",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-60f0daf0d978/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-83acc2738ec2",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-83acc2738ec2/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-9ac8dfcdf0d4",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-9ac8dfcdf0d4/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-9ec020471e4b",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-9ec020471e4b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-9fad707aa8e1",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-9fad707aa8e1/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-b331a62ce441",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-b331a62ce441/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-bc6cb4053755",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-bc6cb4053755/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-c39dbeb9467b",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-c39dbeb9467b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-c5f966a0d50a",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-c5f966a0d50a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-cc1aecad2385",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-cc1aecad2385/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-cd1b0675a7b7",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-cd1b0675a7b7/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-ce41e9ef641e",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-ce41e9ef641e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-de0a23dea5b8",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-de0a23dea5b8/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-dec46446fe09",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-dec46446fe09/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-dfe7bc247ce0",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-dfe7bc247ce0/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-e0e6b73fff12",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-e0e6b73fff12/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-e146d637887e",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-e146d637887e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-ef9a162d42a0",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-ef9a162d42a0/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-f7fe09adb459",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-f7fe09adb459/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-baseline_tuning-42-fb21d59f0296",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-fb21d59f0296/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-final-123",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-final-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-final-2026",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-final-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-final-3407",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-final-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-final-42",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-baseline_tuning-42-c5f966a0d50a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-DKVMN-final-7777",
+    "checkpoint": "checkpoints/Algebra2005-DKVMN-final-7777/best.pt",
     "checksum_verified": true,
     "validation_recomputed": false,
     "test_prediction_metrics_recomputed": true
@@ -791,8 +4319,757 @@
     "test_prediction_metrics_recomputed": true
   },
   {
+    "run_id": "Algebra2005-LightSAKT-final-123",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-final-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-final-2026",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-final-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-final-3407",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-final-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-final-42",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-06884c8943b2/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-final-7777",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-final-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-06884c8943b2",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-06884c8943b2/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-09240f4e7b64",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-09240f4e7b64/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-0d79ab6430b7",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-0d79ab6430b7/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-0ecd7ce70f64",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-0ecd7ce70f64/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-1070ef8912e9",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-1070ef8912e9/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-152abd80a946",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-152abd80a946/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-15db10686e87",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-15db10686e87/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-1c1163efe639",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-1c1163efe639/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-1ea403e8809d",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-1ea403e8809d/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-20a36e0471b8",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-20a36e0471b8/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-21f5ed213eb1",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-21f5ed213eb1/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-23f0fff3ef23",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-23f0fff3ef23/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-284988a0a2ec",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-284988a0a2ec/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-3366bcbcf17e",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-3366bcbcf17e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-3a9d31d0a0d5",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-3a9d31d0a0d5/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-4faf97b35b89",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-primary-42-dca5e1830530/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-57249c130ef5",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-57249c130ef5/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-57c33f26d242",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-57c33f26d242/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-69acf3f16996",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-69acf3f16996/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-6c8a4bab15f1",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-6c8a4bab15f1/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-8930ef5a2a35",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-8930ef5a2a35/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-893445b0fab3",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-893445b0fab3/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-9337e03ea1cc",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-9337e03ea1cc/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-a697ea4034ab",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-a697ea4034ab/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-c18b6004e26c",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-c18b6004e26c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-cc537d7e1c4b",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-cc537d7e1c4b/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-d377782dabe8",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-d377782dabe8/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-d6bf5e5ea8bb",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-d6bf5e5ea8bb/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-e58e3f7d95a8",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-e58e3f7d95a8/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-e70b10a66385",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-e70b10a66385/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-e807df10d3a6",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-e807df10d3a6/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-ed1d54fdc077",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-ed1d54fdc077/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-f3c14818b7d3",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-f3c14818b7d3/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-fbb9d4e5119c",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-fbb9d4e5119c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-fea98a03a2bd",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-fea98a03a2bd/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-grid-42-feeec30289e8",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-feeec30289e8/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_attention-123",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_attention-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_attention-2026",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_attention-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_attention-3407",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_attention-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_attention-42",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_attention-42/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_attention-7777",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_attention-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_dropout-123",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_dropout-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_dropout-2026",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_dropout-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_dropout-3407",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_dropout-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_dropout-42",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_dropout-42/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_dropout-7777",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_dropout-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_position-123",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_position-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_position-2026",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_position-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_position-3407",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_position-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_position-42",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_position-42/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_position-7777",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_position-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_regularization-123",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_dropout-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_regularization-2026",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_dropout-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_regularization-3407",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_dropout-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_regularization-42",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_dropout-42/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-no_regularization-7777",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-no_dropout-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
     "run_id": "Algebra2005-LightSAKT-primary-42-dca5e1830530",
     "checkpoint": "checkpoints/Algebra2005-LightSAKT-primary-42-dca5e1830530/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-single_head-123",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-single_head-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-single_head-2026",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-single_head-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-single_head-3407",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-single_head-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-single_head-42",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-single_head-42/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-LightSAKT-single_head-7777",
+    "checkpoint": "checkpoints/Algebra2005-LightSAKT-single_head-7777/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-0408fbfb5e53",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-0408fbfb5e53/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-08a66f4d34d8",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-08a66f4d34d8/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-0cbf22fe27be",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-0cbf22fe27be/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-12f8bfd8870e",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-12f8bfd8870e/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-1bc9f03a23b7",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-1bc9f03a23b7/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-1bda04f7ba96",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-1bda04f7ba96/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-20610f5937d4",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-20610f5937d4/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-24a4f6b65971",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-24a4f6b65971/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-370ef7291393",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-370ef7291393/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-375fd6a0dfae",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-375fd6a0dfae/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-479b386836d4",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-479b386836d4/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-4af562bb01dc",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-4af562bb01dc/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-4c385a071fc0",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-4c385a071fc0/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-50bb53bb8f83",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-50bb53bb8f83/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-597f3d08ea42",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-597f3d08ea42/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-60d431ed47b1",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-60d431ed47b1/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-6109000bcd11",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-6109000bcd11/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-6aa156e936e3",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-6aa156e936e3/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-72c76e8136e3",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-72c76e8136e3/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-7c996dfcf946",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-7c996dfcf946/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-866723813d04",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-866723813d04/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-8f17dc6355d5",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-8f17dc6355d5/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-8fb871252e75",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-8fb871252e75/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-905badc24c4f",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-905badc24c4f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-9e7eaa31d265",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-9e7eaa31d265/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-a7c313040171",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-a7c313040171/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-a94b2bcee87c",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-a94b2bcee87c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-a962767db9fe",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-a962767db9fe/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-add61cc6e891",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-add61cc6e891/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-b30e8d7585f4",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-b30e8d7585f4/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-c8977b8be751",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-c8977b8be751/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-d7aa8aba0d2a",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-d7aa8aba0d2a/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-dd330b0a382c",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-dd330b0a382c/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-df36f3e1d67f",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-df36f3e1d67f/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-e39854c39aa8",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-e39854c39aa8/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-baseline_tuning-42-eaa8e65a5f01",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-eaa8e65a5f01/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": false
+  },
+  {
+    "run_id": "Algebra2005-SAKT-final-123",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-final-123/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-SAKT-final-2026",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-final-2026/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-SAKT-final-3407",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-final-3407/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-SAKT-final-42",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-baseline_tuning-42-6aa156e936e3/best.pt",
+    "checksum_verified": true,
+    "validation_recomputed": false,
+    "test_prediction_metrics_recomputed": true
+  },
+  {
+    "run_id": "Algebra2005-SAKT-final-7777",
+    "checkpoint": "checkpoints/Algebra2005-SAKT-final-7777/best.pt",
     "checksum_verified": true,
     "validation_recomputed": false,
     "test_prediction_metrics_recomputed": true

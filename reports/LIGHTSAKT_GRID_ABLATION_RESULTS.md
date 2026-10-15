@@ -1,6 +1,6 @@
 # Verified LightSAKT grids and ablations
 
-Generated UTC: 2026-10-15T00:50:11.799077+00:00
+Generated UTC: 2026-10-15T03:42:28.276195+00:00
 
 All 108 unique validation-grid rows and their checkpoint inference are verified. Selection remains validation-only. Tables 4–6 retain all 36 candidates per dataset; no test result selected a configuration.
 

@@ -1,13 +1,13 @@
 {
-  "verified_utc": "2026-10-15T00:53:06.375517+00:00",
+  "verified_utc": "2026-10-15T03:44:20.180603+00:00",
   "verified": true,
-  "completed_run_references": 721,
-  "scheduled_completed_references": 720,
-  "unique_archives": 721,
+  "completed_run_references": 726,
+  "scheduled_completed_references": 725,
+  "unique_archives": 726,
   "local_and_downloaded_archive_sha256_verified": true,
-  "offsite_assets": 723,
+  "offsite_assets": 728,
   "all_available_completed_archives_synced": true,
-  "storage": "Private draft GitHub assets independently downloaded and hashed; NFS retention after environment deprovisioning remains unverified.",
+  "storage": "Private GitHub draft assets independently downloaded and hashed; NFS retention after environment deprovisioning remains unverified.",
   "archives": [
     {
       "path": "backups/completed_runs/ASSIST2009-DKT+-final-123.tar.gz",
@@ -823,6 +823,36 @@
       "path": "backups/completed_runs/ASSIST2009-GKT-baseline_tuning-42-2bf0f4278139.tar.gz",
       "sha256": "c37eac070a179935bdb39e4638c746da33e347befb0e1743459a024a6c0a1cd5",
       "asset_id": 642110463,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-GKT-baseline_tuning-42-30db8df014cb.tar.gz",
+      "sha256": "096954f3d5fb04d3e74367b40fd30d44ef198da17eaad842658fd5c2163140bc",
+      "asset_id": 642263039,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-GKT-baseline_tuning-42-32fb8093158c.tar.gz",
+      "sha256": "835ed500149b4da4e43d19fdc3402bcd83821e5fb509b9b0b9ce154146843de2",
+      "asset_id": 642302895,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-GKT-baseline_tuning-42-455c84d8627a.tar.gz",
+      "sha256": "c5203ecd504f65efbba588aba89300e60c79bc989ae7fc6ec3b1b98b243a0430",
+      "asset_id": 642363130,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-GKT-baseline_tuning-42-4a391f5533c0.tar.gz",
+      "sha256": "8b8e59b249cafd14398189f08aaaed3355a57bcd838ffe2e585f17728258010b",
+      "asset_id": 642413757,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-GKT-baseline_tuning-42-4d57c219c66d.tar.gz",
+      "sha256": "bfca7c117c33ebe828db43750fa3203f19eb818a50e75a65a408e2c1f302cf4e",
+      "asset_id": 642554464,
       "local_and_downloaded_bytes_verified": true
     },
     {
