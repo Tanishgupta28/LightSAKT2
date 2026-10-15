@@ -112,5 +112,9 @@ def main():
         with Path('FINAL_RESEARCH_REPORT.md').open('a') as output:
             output.write('\n## Complete matched SAKT grid extension\n\n'+Path('reports/SAKT_LIGHTSAKT_COMPARISON.md').read_text().split('\n',2)[-1])
             output.write('\nAll 108 matched grid slots and 15 selected SAKT seed slots reused verified, exactly matching existing results. Additional GPU training: zero. The approved main schedule and original model architectures remain unchanged. Detailed audit, runtime, source runs and per-seed checkpoints: reports/SAKT_GRID_SEARCH_REPORT.md and experiments/sakt_matched_grid_manifest.json.\n')
+    elif sakt_extension.exists() and json.load(open(sakt_extension)).get('auc_tables_verified'):
+        with Path('FINAL_RESEARCH_REPORT.md').open('a') as output:
+            output.write('\n## Matched SAKT grid extension — final verification pending\n\n'+Path('reports/SAKT_LIGHTSAKT_COMPARISON.md').read_text())
+            output.write('\nAll requested trainings already exist; no new training is required. The complete AUC tables have independent CPU selection-metric checks. Full original-device validation metrics remain queued through existing GPU admission, with a detached CPU publication worker ready to finish and back up outputs. The additional workflow is not declared complete.\n')
 
 if __name__=='__main__':main()

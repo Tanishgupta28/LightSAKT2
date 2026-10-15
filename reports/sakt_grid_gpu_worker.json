@@ -1,0 +1,6 @@
+{
+  "pid": 1124408,
+  "command": "python -m scripts.sakt_matched_grid verify --device cuda",
+  "admission": "existing exclusive GPU lock; no CUDA tensors before admission",
+  "live_training_signalled": false
+}

@@ -1,0 +1,26 @@
+{
+  "run_id": "Algebra2005-SAKT-baseline_tuning-42-479b386836d4",
+  "verified": false,
+  "saved_validation": {
+    "auc": 0.8102698797117456,
+    "auc_reason": null,
+    "accuracy": 0.8025185122318643,
+    "f1": 0.8763936015511391,
+    "mse": 0.13993713760578816,
+    "bce": 0.4348159739331878,
+    "n_targets": 94262
+  },
+  "regenerated_validation": {
+    "auc": 0.8102698841754721,
+    "auc_reason": null,
+    "accuracy": 0.8025291209607265,
+    "f1": 0.8763994209750462,
+    "mse": 0.139937138439926,
+    "bce": 0.4348159762785138,
+    "n_targets": 94262
+  },
+  "metric_atol": 1e-07,
+  "metric_rtol": 1e-06,
+  "original_metrics_modified": false,
+  "checkpoint_sha256": "800b57de8f22c6ffd9d210c09b95cb8d564aa3c7e08d98dc2443909df9ec87d2"
+}

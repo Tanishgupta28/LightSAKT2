@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-10-15T12:45:27.210174+00:00",
+  "observed_utc": "2026-10-15T13:12:37.470191+00:00",
   "supervisor_pid": 818850,
   "completed": 740,
   "remaining": 217,
@@ -60,8 +60,13 @@
       "watchdog": false
     },
     {
-      "pid": 1123505,
-      "module": "scripts.summarize",
+      "pid": 1124408,
+      "module": "scripts.sakt_matched_grid",
+      "watchdog": false
+    },
+    {
+      "pid": 1126964,
+      "module": "scripts.publish_sakt_grid",
       "watchdog": false
     }
   ],

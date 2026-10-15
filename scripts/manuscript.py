@@ -81,11 +81,11 @@ def main():
     else:
         lines += ['The ELU+1 prefix mechanism has linear sequence-length work at fixed head dimensions. Controlled runtime, memory and parameter measurements remain pending; no measured efficiency advantage is established.', '']
     sakt_extension=Path('reports/sakt_matched_grid_verification.json')
-    if sakt_extension.exists() and json.load(open(sakt_extension)).get('verified'):
+    if sakt_extension.exists() and json.load(open(sakt_extension)).get('auc_tables_verified'):
         from scripts.sakt_matched_grid import render as sakt_grid_results
-        sakt_grid_results()
+        sakt_grid_results(preliminary=not json.load(open(sakt_extension)).get('verified'))
         lines += ['## Matched SAKT grid appendix', '',
-                  Path('reports/SAKT_LIGHTSAKT_COMPARISON.md').read_text().split('\n',2)[-1], '',
+                  Path('reports/SAKT_LIGHTSAKT_COMPARISON.md').read_text(), '',
                   'The three complete 36-row SAKT tables and three matched comparison tables are in paper/sakt_grid/ as CSV, Markdown and LaTeX. Source checkpoints were reused only after protocol, code, split, integrity and independent inference verification; no existing training was interrupted or repeated.', '']
     lines += [
               'Kernel heatmaps reconstruct normalized causal ELU+1 weights from selected trained checkpoints and genuine held-out sequences; requesting weights leaves predictions unchanged. Skill trajectories are predicted next-response correctness conditional on observed history, rather than directly observed mastery. Historical TransDKT/TransDKT+ figures are not relabelled as LightSAKT.','',

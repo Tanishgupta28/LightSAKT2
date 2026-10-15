@@ -1,0 +1,6 @@
+{
+  "status": "waiting_for_gpu_admission",
+  "pid": 1124408,
+  "healthy_training_interrupted": false,
+  "resume_command": "python -m scripts.sakt_matched_grid verify --device cuda"
+}

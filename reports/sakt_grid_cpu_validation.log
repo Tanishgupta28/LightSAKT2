@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/workspace/LightSAKT2/scripts/sakt_matched_grid.py", line 442, in <module>
+    if __name__=='__main__':main()
+  File "/workspace/LightSAKT2/scripts/sakt_matched_grid.py", line 438, in main
+    if args.stage in ['verify','all']:verify_grid()
+  File "/workspace/LightSAKT2/scripts/sakt_matched_grid.py", line 233, in verify_grid
+    for m in METRICS:np.testing.assert_allclose(measured[m],r['validation'][m],atol=1e-7,rtol=1e-6,err_msg=rid+' '+m)
+  File "/usr/local/lib/python3.10/dist-packages/numpy/testing/_private/utils.py", line 1592, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "/usr/lib/python3.10/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.10/dist-packages/numpy/testing/_private/utils.py", line 862, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=1e-06, atol=1e-07
+Algebra2005-SAKT-baseline_tuning-42-479b386836d4 accuracy
+Mismatched elements: 1 / 1 (100%)
+Max absolute difference: 1.06087289e-05
+Max relative difference: 1.32192949e-05
+ x: array(0.802529)
+ y: array(0.802519)

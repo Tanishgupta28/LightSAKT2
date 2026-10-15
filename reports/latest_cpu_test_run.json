@@ -1,7 +1,8 @@
 {
-  "log": "reports/test_runs/20261015T005034-continued-baseline-cpu.log",
+  "log": "reports/test_runs/20261015T1312-sakt-grid-full-cpu.log",
   "exit_code": 0,
-  "tests_passed": true,
-  "scope": "Full CPU suite during uninterrupted GKT training; CUDA tests deferred to exclusive execution gate",
-  "verified_utc": "2026-10-15T00:50:58.429041+00:00"
+  "passed": 128,
+  "skipped": 15,
+  "scope": "Full CPU suite with matched SAKT grid verification; CUDA deferred while GKT remains active",
+  "utc": "2026-10-15T13:12:49.713135+00:00"
 }

@@ -1,0 +1,7 @@
+{
+  "pid": 1126964,
+  "cpu_only": true,
+  "resume_command": "CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m scripts.publish_sakt_grid",
+  "purpose": "Wait for GPU validation proof, generate tables/plots/paper, verify and upload archive, commit and push",
+  "environment_shutdown_survival": false
+}

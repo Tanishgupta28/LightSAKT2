@@ -4,10 +4,13 @@ from types import SimpleNamespace
 import numpy as np
 import pandas as pd
 import pytest
+import torch
 
 from scripts.sakt_matched_grid import GRID, matched_protocol, mask_supplement, publication_table, winner
 from scripts.make_schedule import config
 from src.datasets.preprocess import sha256
+from src.models.factory import build_model
+from src.evaluation.metrics import masked_bce
 
 
 def pair():
@@ -51,3 +54,45 @@ def test_explicit_mask_reconstructs_valid_predictions_without_overwriting_source
         np.testing.assert_array_equal(arrays['target_padded'][arrays['valid_mask']],target)
         np.testing.assert_array_equal(arrays['probability_padded'][arrays['valid_mask']],probability)
         assert np.isnan(arrays['probability_padded'][~arrays['valid_mask']]).all()
+
+
+@pytest.mark.parametrize('dimension',[32,64,128])
+@pytest.mark.parametrize('heads',[2,4])
+@pytest.mark.parametrize('dropout',[.1,.2])
+def test_requested_sakt_shapes_keep_causality_padding_and_finite_gradients(dimension,heads,dropout):
+    torch.manual_seed(42)
+    model=build_model('SAKT',7,{'n':12,'d':dimension,'num_attn_heads':heads,'dropout':dropout}).eval()
+    q=torch.randint(7,(2,8));r=torch.randint(2,(2,8));query=torch.randint(7,(2,8))
+    valid=torch.ones(2,8,dtype=torch.bool);valid[1,5:]=False
+    probability,_=model(q,r,query,valid)
+    future_q=q.clone();future_q[:,4:]=(future_q[:,4:]+1)%7
+    future_r=r.clone();future_r[:,4:]=1-future_r[:,4:]
+    changed,_=model(future_q,future_r,query,valid)
+    torch.testing.assert_close(probability[:,:4],changed[:,:4],atol=1e-7,rtol=1e-6)
+    padded_q=q.clone();padded_q[~valid]=10000
+    padded_r=r.clone();padded_r[~valid]=-9
+    padded,_=model(padded_q,padded_r,query,valid)
+    torch.testing.assert_close(probability[valid],padded[valid],atol=1e-7,rtol=1e-6)
+    masked_bce(probability,torch.randint(2,q.shape),valid).backward()
+    assert isinstance(model.attn,torch.nn.MultiheadAttention)
+    assert all(p.grad is None or torch.isfinite(p.grad).all() for p in model.parameters())
+
+
+def test_gpu_verification_enters_existing_admission_before_device_work(tmp_path,monkeypatch):
+    import sys
+    from contextlib import contextmanager
+    from scripts import sakt_matched_grid
+    from scripts import gpu_admission
+    monkeypatch.chdir(tmp_path);(tmp_path/'experiments').mkdir();events=[]
+    @contextmanager
+    def admitted(model):
+        assert model=='sakt_grid_validation';events.append('admitted')
+        yield
+        events.append('released')
+    def verify(device):
+        assert device=='cuda' and events==['admitted'];events.append('verified')
+    monkeypatch.setattr(gpu_admission,'admission',admitted)
+    monkeypatch.setattr(sakt_matched_grid,'verify_grid',verify)
+    monkeypatch.setattr(sys,'argv',['sakt_matched_grid','verify','--device','cuda'])
+    sakt_matched_grid.main()
+    assert events==['admitted','verified','released']

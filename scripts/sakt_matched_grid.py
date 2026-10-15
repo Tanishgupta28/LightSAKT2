@@ -1,6 +1,7 @@
 """Reuse and verify the already scheduled matched SAKT/LightSAKT experiments.
 
-No scheduler mutation, training, CUDA allocation, or test-based selection occurs here.
+No scheduler mutation, retraining, or test-based selection occurs here. Original-device
+validation acquires the existing GPU admission lock; auditing and reporting run on CPU.
 """
 import argparse
 import hashlib
@@ -32,6 +33,7 @@ DATASETS = [('Algebra2005', 'A', 4), ('ASSIST2009', 'B', 5), ('ASSIST2015', 'C',
 GRID = list(itertools.product([.0005, .001, .005], [32, 64, 128], [2, 4], [.1, .2]))
 AUDIT = Path('experiments/sakt_matched_grid_manifest.json')
 INFERENCE = Path('reports/sakt_grid_validation_inference.json')
+AUC_INFERENCE = Path('reports/sakt_grid_auc_cpu_validation.json')
 
 
 def fingerprint():
@@ -209,29 +211,36 @@ def audit():
     return value
 
 
-def verify_grid():
-    assert not torch.cuda.is_available(), 'CPU-only validation verification required'
+def verify_grid(device='cpu'):
+    assert not torch.cuda.is_available() if device=='cpu' else torch.cuda.is_available()
+    output=Path('reports/sakt_grid_cpu_validation_inference.json') if device=='cpu' else INFERENCE
     audit_data=json.load(open(AUDIT));assert audit_data['training_code_sha256']==fingerprint()
-    old=json.load(open(INFERENCE)) if INFERENCE.exists() else {'runs':[]}
+    old=json.load(open(output)) if output.exists() else {'runs':[]}
     records={r['run_id']:r for r in old['runs']};datasets={};started=time.perf_counter()
     for row in audit_data['rows']:
         rid=row['SAKT_run_id'];root=Path('results/raw')/rid
         identity={'metrics_sha256':sha256(root/'metrics.json'),'config_sha256':sha256(root/'config.json'),
                   'checkpoint_sha256':sha256(row['SAKT_checkpoint'])}
         previous=records.get(rid,{})
-        if previous.get('verified') and all(previous.get(k)==v for k,v in identity.items()):continue
+        if previous.get('verified') and previous.get('device')==device and all(previous.get(k)==v for k,v in identity.items()):continue
         c=json.load(open(root/'config.json'));r=json.load(open(root/'metrics.json'));s=json.load(open(f"reports/{row['dataset']}_statistics.json"))
         seed_everything(c['seed']);torch.set_num_threads(1)
-        model=build_model('SAKT',s['num_q'],c['model_config']).eval()
+        model=build_model('SAKT',s['num_q'],c['model_config']).to(device).eval()
         state=torch.load(r['checkpoint'],map_location='cpu',weights_only=False);model.load_state_dict(state['model'],strict=True)
         dkey=(c['dataset'],c['seq_len'])
         if dkey not in datasets:datasets[dkey]=CachedSequences(f"data/processed/{c['dataset']}/interactions.csv",'validation',c['seq_len'])
-        measured,y,_=evaluate(model,'SAKT',DataLoader(datasets[dkey],batch_size=c['batch_size'],shuffle=False),'cpu')
+        measured,y,_=evaluate(model,'SAKT',DataLoader(datasets[dkey],batch_size=c['batch_size'],shuffle=False),device)
         assert len(y)==r['validation']['n_targets']==datasets[dkey].n_targets
-        for m in METRICS:np.testing.assert_allclose(measured[m],r['validation'][m],atol=1e-7,rtol=1e-6,err_msg=rid+' '+m)
-        records[rid]={'run_id':rid,'verified':True,'device':'cpu','test_evaluated':False,
+        try:
+            for m in METRICS:np.testing.assert_allclose(measured[m],r['validation'][m],atol=1e-7,rtol=1e-6,err_msg=rid+' '+m)
+        except AssertionError:
+            write_json(f'reports/sakt_grid_{device}_validation_failure.json',{'run_id':rid,'verified':False,
+                'saved_validation':r['validation'],'regenerated_validation':measured,'metric_atol':1e-7,'metric_rtol':1e-6,
+                'original_metrics_modified':False,'checkpoint_sha256':identity['checkpoint_sha256']})
+            raise
+        records[rid]={'run_id':rid,'verified':True,'device':device,'test_evaluated':False,
                       'regenerated_validation':measured,'training_git_commit':r['git_commit'],**identity}
-        write_json(INFERENCE,{'verified':len(records)==108,'runs':list(records.values()),
+        write_json(output,{'verified':len(records)==108,'runs':list(records.values()),
                              'verified_utc':datetime.now(timezone.utc).isoformat(),'retrained_runs':0,
                              'metric_atol':1e-7,'metric_rtol':1e-6,'verification_cpu_threads':1})
         print('Validation verified',rid,flush=True)
@@ -239,13 +248,14 @@ def verify_grid():
     value={'verified':True,'runs':list(records.values()),'verified_utc':datetime.now(timezone.utc).isoformat(),
            'retrained_runs':0,'metric_atol':1e-7,'metric_rtol':1e-6,'verification_cpu_threads':1,
            'last_invocation_seconds':time.perf_counter()-started,'test_evaluated':False}
-    write_json(INFERENCE,value);return value
+    value['device']=device
+    write_json(output,value);return value
 
 
 def publication_table(name, frame, columns, bold=(), caption=''):
     maxima={c:frame[c].max() for c in bold}
     markdown=['# '+caption,'','|'+'|'.join(columns)+'|','|'+'|'.join(['---']*len(columns))+'|']
-    latex=[r'\begin{table}[htbp]',r'\centering\small',r'\caption{'+caption+'}',r'\label{tab:'+name+'}',r'\resizebox{\textwidth}{!}{%',
+    latex=[r'\begin{table}[htbp]',r'\centering\small',r'\caption{'+caption+'; training seed 42, split seed 42.}',r'\label{tab:'+name+'}',r'\resizebox{\textwidth}{!}{%',
            r'\begin{tabular}{'+'r'*len(columns)+'}',r'\hline',' & '.join(c.replace('_',r'\_') for c in columns)+r' \\',r'\hline']
     for row in frame.to_dict('records'):
         md=[];tex=[]
@@ -267,8 +277,48 @@ def publication_table(name, frame, columns, bold=(), caption=''):
         text_file(folder/(name+'.tex'),'\n'.join(latex)+'\n')
 
 
-def render(plots=False):
-    a=json.load(open(AUDIT));proof=json.load(open(INFERENCE));assert a['verified'] and proof['verified']
+def verify_auc_cpu():
+    """Validate the published selection metric without relabelling failed full checks."""
+    assert not torch.cuda.is_available()
+    a=json.load(open(AUDIT));assert a['training_code_sha256']==fingerprint()
+    prior=json.load(open(AUC_INFERENCE)) if AUC_INFERENCE.exists() else {'runs':[]}
+    records={r['run_id']:r for r in prior['runs']};datasets={};started=time.perf_counter()
+    for row in a['rows']:
+        rid=row['SAKT_run_id'];root=Path('results/raw')/rid
+        identity={'metrics_sha256':sha256(root/'metrics.json'),'config_sha256':sha256(root/'config.json'),
+                  'checkpoint_sha256':sha256(row['SAKT_checkpoint'])}
+        old=records.get(rid,{})
+        if old.get('auc_verified') and all(old.get(k)==v for k,v in identity.items()):continue
+        c=json.load(open(root/'config.json'));r=json.load(open(root/'metrics.json'));s=json.load(open(f"reports/{c['dataset']}_statistics.json"))
+        seed_everything(c['seed']);torch.set_num_threads(1)
+        model=build_model('SAKT',s['num_q'],c['model_config']).eval()
+        state=torch.load(r['checkpoint'],map_location='cpu',weights_only=False);model.load_state_dict(state['model'],strict=True)
+        k=(c['dataset'],c['seq_len'])
+        if k not in datasets:datasets[k]=CachedSequences(f"data/processed/{c['dataset']}/interactions.csv",'validation',c['seq_len'])
+        measured,y,_=evaluate(model,'SAKT',DataLoader(datasets[k],batch_size=c['batch_size'],shuffle=False),'cpu')
+        assert len(y)==r['validation']['n_targets']==datasets[k].n_targets
+        np.testing.assert_allclose(measured['auc'],r['validation']['auc'],atol=1e-7,rtol=1e-6,err_msg=rid)
+        records[rid]={'run_id':rid,'verified':True,'auc_verified':True,'device':'cpu',
+                      'selection_metric_only':True,'test_evaluated':False,'regenerated_validation_auc':measured['auc'],**identity}
+        write_json(AUC_INFERENCE,{'verified':len(records)==108,'selection_metric_only':True,'runs':list(records.values()),
+            'metric_atol':1e-7,'metric_rtol':1e-6,'failed_full_metric_cpu_check_preserved':True})
+        if len(records)%12==0:print('CPU validation AUCs independently verified:',len(records),flush=True)
+    write_json(AUC_INFERENCE,{'verified':True,'selection_metric_only':True,'runs':list(records.values()),
+        'metric_atol':1e-7,'metric_rtol':1e-6,'cpu_seconds':time.perf_counter()-started,
+        'failed_full_metric_cpu_check_preserved':True,'original_device_full_verification_pending':True})
+
+
+def render(plots=False, preliminary=False):
+    import fcntl
+    with open('experiments/sakt_matched_grid_render.lock','a') as owner:
+        fcntl.flock(owner,fcntl.LOCK_EX)
+        return _render(plots,preliminary)
+
+
+def _render(plots=False, preliminary=False):
+    if preliminary and INFERENCE.exists() and json.load(open(INFERENCE)).get('verified'):
+        preliminary=False
+    a=json.load(open(AUDIT));proof=json.load(open(AUC_INFERENCE if preliminary else INFERENCE));assert a['verified'] and proof['verified']
     assert a['training_code_sha256']==fingerprint() and len(proof['runs'])==108
     inferred={r['run_id']:r for r in proof['runs']};rows=pd.DataFrame(a['rows']);counts=[];selected=[]
     for dataset,letter,_ in DATASETS:
@@ -336,8 +386,8 @@ def render(plots=False):
         'Selection maximizes full-precision validation AUC among all 36 candidates for each model/dataset. Exact ties select the lexically smallest run ID. Bold table cells include all exact maxima. Test results never select these configurations. Identical search spaces do not require identical selected configurations.','',
         'Tables A/B/C and their paired comparison tables are in results/tables/SAKT_Table_*.{csv,md,tex}, LightSAKT_vs_SAKT_grid_*.{csv,md,tex}, and paper/sakt_grid/. CSVs retain every source run ID, checkpoint and metrics-file hash. Original LightSAKT Tables 4–6 and the original paper are preserved.','',
         '## Measured execution budget','',table(pd.DataFrame(a['runtime']),list(a['runtime'][0])),'',
-        'Genuinely new grid trainings: 0. Reused grid configurations: 108. Additional final-seed trainings: 0; all 15 final slots are verified, including three selected seed-42 checkpoint reuses. Additional training GPU hours: 0. CPU validation verification has been executed without allocating GPU memory. There is no new GPU workload to overlap with GKT; existing scheduling priorities and recovery remain in force. Current overall forecast remains in reports/ETA_REPORT.md.','',
-        'Proof: reports/sakt_grid_validation_inference.json; experiments/sakt_matched_grid_manifest.json; reports/selected_final_inference_verification.json. One historical global LightSAKT fingerprint differs only through the audited Algebra preprocessing correction; the unchanged ASSIST2009 model/data equivalence is documented in reports/training_code_equivalence.json. SAKT code fingerprints match the current frozen source exactly. Explicit non-padding test masks and original valid-target predictions are preserved as additional artifacts under results/predictions/sakt_matched_grid/.']
+        'Genuinely new grid trainings: 0. Reused grid configurations: 108. Additional final-seed trainings: 0; all 15 final slots are verified, including three selected seed-42 checkpoint reuses. Additional training GPU hours: 0. Independent original-device validation verification is serialized through the existing GPU admission lock between completed runs. No active training is stopped; measured verification duration is recorded in reports/sakt_grid_verification_execution.json. Current overall forecast remains in reports/ETA_REPORT.md.','',
+        'AUC proof: reports/sakt_grid_auc_cpu_validation.json. Checkpoint/protocol audit: experiments/sakt_matched_grid_manifest.json. Final test inference proof: reports/selected_final_inference_verification.json. The separate original-device full-metric proof is reports/sakt_grid_validation_inference.json when completed. One strict CPU validation-accuracy check differed from the saved GPU metric by the equivalent of one correct prediction; its failure remains preserved in sakt_grid_cpu_validation_failure.json. The original-device validation check uses the unchanged metric tolerances and original metrics; neither checkpoints nor scores are rewritten. One historical global LightSAKT fingerprint differs only through the audited Algebra preprocessing correction; the unchanged ASSIST2009 model/data equivalence is documented in reports/training_code_equivalence.json. SAKT code fingerprints match the current frozen source exactly. Explicit non-padding test masks and original valid-target predictions are preserved as additional artifacts under results/predictions/sakt_matched_grid/. Continuation commands and publication status are documented in reports/SAKT_GRID_CONTINUATION.md.']
     comparison=['# LightSAKT versus SAKT: two distinct comparisons','',
         '## A. Identical hyperparameters — validation only','',table(counts,list(counts.columns)),'',
         'Difference is LightSAKT validation AUC minus SAKT validation AUC. The 36 rows are a deterministic hyperparameter sweep at one seed, not 36 independent random trials; no configuration-level significance test is performed. Mean/median/range/SD describe that specified grid. This comparison covers the complete architectures, including their attention and FFN differences, and does not isolate the attention kernel alone.','',
@@ -348,7 +398,7 @@ def render(plots=False):
     display['SAKT']=display.apply(lambda r:f'{r.SAKT_mean:.6f} ± {r.SAKT_sd:.6f}',axis=1)
     comparison += [table(display,['dataset','metric','LightSAKT','SAKT','difference']),'',
         'Positive differences favor LightSAKT for AUC, accuracy and F1; negative differences favor LightSAKT for MSE and BCE. These are descriptive differences conditional on one student split. Five seeds cannot support a two-sided exact signed-rank p<0.05; grid rows are not used to inflate that sample size. Individual metrics, selected epochs and checkpoint references are in SAKT_matched_grid_individual_seeds.csv.','',
-        'The existing efficiency evidence remains unchanged: LightSAKT was slower in all 60 matched latency comparisons on the recorded H100 MIG partition; lower peak allocated memory occurred in 7/60. Theoretical O(L) attention work, measured latency, memory and configuration-specific parameter counts remain separate. This completed additional analysis does not imply the remaining GKT research schedule is complete.']
+        'The existing efficiency evidence remains unchanged: LightSAKT was slower in all 60 matched latency comparisons on the recorded H100 MIG partition; lower peak allocated memory occurred in 7/60. Theoretical O(L) attention work, measured latency, memory and configuration-specific parameter counts remain separate. These additional outputs do not imply the remaining GKT research schedule is complete.']
     sensitivity_frame=pd.DataFrame(sensitivity)
     comparison += ['', '## Hyperparameter effects within the specified grid', '',
         'SAKT_grid_hyperparameter_sensitivity.csv reports balanced marginal means over all other coordinates, with counts and observed minima/maxima. These are descriptive averages of the fixed grid, not independent replications or confidence intervals. They do not replace joint validation-based selection.']
@@ -362,6 +412,10 @@ def render(plots=False):
     text_file('reports/SAKT_GRID_SEARCH_REPORT.md','\n'.join(report)+'\n')
     text_file('reports/SAKT_LIGHTSAKT_COMPARISON.md','\n'.join(comparison)+'\n')
     text_file('paper/SAKT_GRID_RESULTS.md','\n'.join(report+['']+comparison)+'\n')
+    if preliminary:
+        note='**Verification status:** All 108 published validation AUCs passed independent CPU reproduction at the original tolerances; all selected final test results have existing independent inference proofs. Full original-device validation metrics remain queued. The failed strict CPU accuracy check is preserved and is not declared passed. The additional workflow is not yet fully verified.\n\n'
+        for p in ['reports/SAKT_GRID_SEARCH_REPORT.md','reports/SAKT_LIGHTSAKT_COMPARISON.md','paper/SAKT_GRID_RESULTS.md']:
+            path=Path(p);text_file(path,note+path.read_text())
     names=[f'SAKT_Table_{letter}_{dataset}' for dataset,letter,_ in DATASETS]+[f'LightSAKT_vs_SAKT_grid_{dataset}' for dataset,_,_ in DATASETS]
     text_file('paper/sakt_grid/README.md','# Matched SAKT grid appendix\n\n'+
         '\n'.join(f'- [{name}]({name}.md): [CSV]({name}.csv), [LaTeX]({name}.tex).' for name in names)+
@@ -370,7 +424,8 @@ def render(plots=False):
         '\n'.join(r'\input{'+name+'.tex}'+r'\clearpage' for name in names)+'\n'+r'\end{document}'+'\n')
     if plots:plot(rows,counts,pd.DataFrame(summaries))
     artifacts=[p for folder in ['results/tables','paper/sakt_grid'] for p in Path(folder).glob('*') if p.is_file() and ('SAKT_' in p.name or 'LightSAKT_vs_SAKT_grid_' in p.name)]
-    write_json('reports/sakt_matched_grid_verification.json',{'verified':True,'grid_configurations':108,
+    write_json('reports/sakt_matched_grid_verification.json',{'verified':not preliminary,'auc_tables_verified':True,
+               'full_original_device_verification_pending':preliminary,'grid_configurations':108,
                'paired_configurations':108,'final_seed_slots':15,'new_trainings':0,'additional_gpu_training_hours':0,
                'verified_utc':datetime.now(timezone.utc).isoformat(),
                'artifacts':[{'path':str(p),'sha256':sha256(p)} for p in sorted(artifacts)],
@@ -407,10 +462,25 @@ def plot(rows,counts,summary):
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('stage',choices=['audit','verify','render','all']);parser.add_argument('--plots',action='store_true');args=parser.parse_args()
-    assert not torch.cuda.is_available(),'Use CUDA_VISIBLE_DEVICES empty; healthy training must stay untouched'
+    parser=argparse.ArgumentParser();parser.add_argument('stage',choices=['audit','verify','render','all']);parser.add_argument('--plots',action='store_true');parser.add_argument('--device',choices=['cpu','cuda'],default='cpu');args=parser.parse_args()
     import fcntl
     lock=open('experiments/sakt_matched_grid.lock','a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+    if args.device=='cuda':
+        assert args.stage=='verify', 'GPU mode is validation-only'
+        status='reports/sakt_grid_verification_execution.json'
+        write_json(status,{'status':'waiting_for_gpu_admission','pid':os.getpid(),
+            'healthy_training_interrupted':False,'resume_command':'python -m scripts.sakt_matched_grid verify --device cuda'})
+        from scripts.gpu_admission import admission
+        with admission('sakt_grid_validation'):
+            start=time.perf_counter();write_json(status,{'status':'running','pid':os.getpid(),'healthy_training_interrupted':False})
+            try:
+                verify_grid('cuda')
+            except BaseException:
+                write_json(status,{'status':'failed','pid':os.getpid(),'healthy_training_interrupted':False});raise
+            write_json(status,{'status':'completed','pid':os.getpid(),'healthy_training_interrupted':False,
+                'actual_gpu_occupied_seconds':time.perf_counter()-start,'completed_utc':datetime.now(timezone.utc).isoformat()})
+        return
+    assert not torch.cuda.is_available(),'Use CUDA_VISIBLE_DEVICES empty; healthy training must stay untouched'
     if args.stage in ['audit','all']:audit()
     if args.stage in ['verify','all']:verify_grid()
     if args.stage in ['render','all']:render(args.plots)
