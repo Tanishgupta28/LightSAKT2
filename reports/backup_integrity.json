@@ -1,83 +1,4339 @@
 {
-  "verified_utc": "2026-10-13T15:30:37.352980+00:00",
+  "verified_utc": "2026-10-15T00:53:06.375517+00:00",
   "verified": true,
-  "completed_run_references": 14,
+  "completed_run_references": 721,
+  "scheduled_completed_references": 720,
+  "unique_archives": 721,
+  "local_and_downloaded_archive_sha256_verified": true,
+  "offsite_assets": 723,
+  "all_available_completed_archives_synced": true,
+  "storage": "Private draft GitHub assets independently downloaded and hashed; NFS retention after environment deprovisioning remains unverified.",
   "archives": [
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT+-final-123.tar.gz",
+      "sha256": "952ef81b2fc807c31c2a65b6d0beed4899a7016c112ffe3171142a431e8cf0d7",
+      "asset_id": 639295302,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT+-final-2026.tar.gz",
+      "sha256": "9bb881c1e60118b1b4ea5334994d6c386d0d2512709af38bbe60f297a25537cc",
+      "asset_id": 639295569,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT+-final-3407.tar.gz",
+      "sha256": "98220f3bab39c9810041da256a11c39e3234cb59cf18e2b3b176baeba51d80fc",
+      "asset_id": 639295786,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-4991434183d5.tar.gz",
+      "sha256": "12d01ecb87294926aa6666bf3181ffb1be34a41d553ba9d456f017c642c11588",
+      "asset_id": 638541574,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2009-DKT+-final-42.tar.gz",
+      "sha256": "b8954a0bc218c45ed9ab0997c9ebfaea20de0374efa98c088bdd41dba1e4d7bd",
+      "asset_id": 639296012,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT+-final-7777.tar.gz",
+      "sha256": "0e15b0bb8a63a8cec3f62ae75bb39115fe9f8837aad960e0236679ebdea0822b",
+      "asset_id": 639296641,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-0e47a08205e9.tar.gz",
+      "sha256": "5a41fcc2f2abb357eb0d9ac5b44c86ddac920319a15b46ee30827ff7f08a3896",
+      "asset_id": 638531703,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-1066e5c4d690.tar.gz",
+      "sha256": "5f8d8c6140c439983f1934582d1059bda4e3156012619328e13f50ebae0dd9e1",
+      "asset_id": 638525327,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-14462678e129.tar.gz",
+      "sha256": "1f6d350b83fd177f019d22755f392aeb395b56c3f5223cbaca511be821f3a987",
+      "asset_id": 638525482,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-184a035ed5d0.tar.gz",
+      "sha256": "c60060c52a827bd645bb2df84af5149ae94d688422b988b40470a86c9a38a770",
+      "asset_id": 638531910,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-26b33e957e76.tar.gz",
+      "sha256": "206de1832753e60cf485283074c6bf23bc03dbb44da55315858d0ed7f4fe845a",
+      "asset_id": 638520678,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-2ade21c644d1.tar.gz",
+      "sha256": "b7d678353933c5e6f0d669bd5706cc9a07cf6338c24ad52635c0d8876ea5b389",
+      "asset_id": 638525673,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-2b140d19cee1.tar.gz",
+      "sha256": "bc353c79e406f3457e5e544381810a561abd755ea5eea5819a65d5dcf1f9ad01",
+      "asset_id": 638526203,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-2e4c53dbf603.tar.gz",
+      "sha256": "ab7b9c717cb928c8887163c09a8b302b1d741f68268e226b2e2411c37a57e997",
+      "asset_id": 638526359,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-32e8064bf9da.tar.gz",
+      "sha256": "fd1591011a66cecd1b8e6f1f3134f5dd689d585912edc6680ba5d062bc7ffc11",
+      "asset_id": 638526674,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-372c06f0fe27.tar.gz",
+      "sha256": "61eb93f207abc0213e7935e4fd28f3a105f63a94ddcf626a535428607affc3ca",
+      "asset_id": 638516418,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-39234fd23781.tar.gz",
+      "sha256": "a330d68a1b008c5ade7dc054f3d7575c1e2e4d7a09262dc64523d1fdfafa709e",
+      "asset_id": 638520949,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-56a3642e16ad.tar.gz",
+      "sha256": "9d658ebf46ed28c614b7f2b2f454d956312d9e09129d34cc3d8b774cc74d2e3e",
+      "asset_id": 638532111,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-5941ee9fa5d7.tar.gz",
+      "sha256": "913e515aa6bc21d1547db37fe0b0da455fe25cafe9dc3f89078e4626be72fd11",
+      "asset_id": 638532516,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-5d0ce623502d.tar.gz",
+      "sha256": "9c1dab9a3ca496b146b25927a1b9fddfa63b349884d6d2b42d19f645aa367cd6",
+      "asset_id": 638516550,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-62c255ec6dfd.tar.gz",
+      "sha256": "dd4891cffb35240245c76d1ae5b21138640b68e94c70cb508da8ec3eea543735",
+      "asset_id": 638526882,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-6bd0e6ba13b5.tar.gz",
+      "sha256": "c18a977975658921b3b2bc229f93c26bd68393aed2d3109f030abc2261951ca6",
+      "asset_id": 638527063,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-7106c5dd86d8.tar.gz",
+      "sha256": "e6ac6385e5ab926120b93684f7e0fd8948926ae94af9db529d28655b613dbb4d",
+      "asset_id": 638521225,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-7172ac284808.tar.gz",
+      "sha256": "87b4bf1d9d75e8314ffab25b2148e8b2bfc7c240cc7cf344c01252d0d05f3b15",
+      "asset_id": 638532712,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-84dbf5c38384.tar.gz",
+      "sha256": "71de543f3fecfb98da98b10675b3038518300c4fa8772bf15572de2108e8b8d5",
+      "asset_id": 638521369,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-85a14611c8a9.tar.gz",
+      "sha256": "b8bbca0fc6d5fa0ae4652636dcd5caa242db7756f5c48d8fb6e2d0bc1297fecf",
+      "asset_id": 638527817,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-91f38d121182.tar.gz",
+      "sha256": "f603e77befee90252d82702bf692ee3b85624d49f61efff2f8e6b6c74d5fa8ab",
+      "asset_id": 638516710,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-a3e2135b6af6.tar.gz",
+      "sha256": "d1216faf331992d7308b4c26a7fbdd05969b653dced4be1016d5c23763df2997",
+      "asset_id": 638527999,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-a689fd4db376.tar.gz",
+      "sha256": "ff038144a1340e8098b500e818375028d19623bd8c9b336bf08de10da7e626d6",
+      "asset_id": 638521609,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-afc3b66054ff.tar.gz",
+      "sha256": "b6a4225650b28d39bb010abd8bd2eca63a3ef27f642dec69095b367e5f63e7d5",
+      "asset_id": 638533476,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-b465f0b1e09d.tar.gz",
+      "sha256": "d020aab8a1490c8ee1b03e6f42f592362f9e0533b1d2d1a3bed0a81205c89db8",
+      "asset_id": 638521826,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-b78da99cc256.tar.gz",
+      "sha256": "0ad834b26b087e2283d20fea93e06d4d7fda1407ae2948c8c71a0d1cc4af67be",
+      "asset_id": 638533691,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-ba9272f0beda.tar.gz",
+      "sha256": "eb24d8f5f3db969059c90d39c830b283fba071f17f826cb87c35ca54edcf568a",
+      "asset_id": 638534319,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-bd76c07b1a53.tar.gz",
+      "sha256": "a1c27627731651e6075fb4b057b794dc4600fc41a0da4d67633bf7b7cb3b56a0",
+      "asset_id": 638522020,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-bfffd3cbcdc9.tar.gz",
+      "sha256": "e6dce266cc026e47d445204e12501000a813423e7ac54192614ff6ef1f3c8bd4",
+      "asset_id": 638534449,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-c8ade6039db7.tar.gz",
+      "sha256": "c3fe476bf4b799f0f522e897a533375dfc4ffe15cb7297113b64630828c3c260",
+      "asset_id": 638528601,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-ca560b6de796.tar.gz",
+      "sha256": "c65df013922128f35c4a49e45cb730eea736a835eacacf6ab51d30ec31a43a50",
+      "asset_id": 638534632,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-cb2b9afa6715.tar.gz",
+      "sha256": "259ec46545190439d9f72b0cba18f169f1febaa0cf3e338a369b7f0ec1ca4f32",
+      "asset_id": 638517326,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-ce5f32fa723a.tar.gz",
+      "sha256": "89a4be47b591def4e1fd140bce7ab8b1d4be0f01979c9921b0df204f6f22599e",
+      "asset_id": 638522172,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-d18331e9e1ae.tar.gz",
+      "sha256": "abee1e6f478c7430e80ddcedc09ba90b3df4e790af508974353b198484fe4e98",
+      "asset_id": 638517913,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-f600f590ec58.tar.gz",
+      "sha256": "c5f96bfe0c58561cfe923ae4b9ef463c86c512d4b9f2b522c6d1e113ef94254f",
+      "asset_id": 638522725,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-baseline_tuning-42-fcf4cdf340d2.tar.gz",
+      "sha256": "b0eb6f2731a9149d56b420204d56d9f4e5791d1e1ad748ba0b4db6840f21ec4b",
+      "asset_id": 638518062,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-final-123.tar.gz",
+      "sha256": "5c80dcbcc60a19c10f6d17bd232144ce0a0ea25bf3d4963a70c99d59879c442d",
+      "asset_id": 639301646,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-final-2026.tar.gz",
+      "sha256": "4801ae6d65c90b95510399e0206cec6768de6177f2ca083cb2c792ea03396a38",
+      "asset_id": 639302261,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-final-3407.tar.gz",
+      "sha256": "62a8174e81f1c79a8230b4ec9f3a9732e9a4203304b6d6cc19b61e6e34388974",
+      "asset_id": 639302500,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2009-DKT-final-42.tar.gz",
+      "sha256": "608c75c228aa3cbba55f025099e96f1ba5ed382032be8c8b928d43094918557f",
+      "asset_id": 639302859,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKT-final-7777.tar.gz",
+      "sha256": "8bd314714340021e00b912606a07e72e6a5d927cdc35b5dbdfc1cdc5e45b8331",
+      "asset_id": 639303104,
+      "local_and_downloaded_bytes_verified": true
+    },
     {
       "path": "backups/completed_runs/ASSIST2009-DKT-primary-42-26e196b6a6d5.tar.gz",
       "sha256": "c8b2cdcd224860c545adeaf4bd72f6788de20d22cd886fd9bf1ae83fbb3ebfc6",
-      "archive_contents_matching_workspace": 10
+      "asset_id": 637433664,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-00e2e0c04695.tar.gz",
+      "sha256": "a3aef1f0805fb2609bd9b8fa48f5b85d213a44a8f8cfa9bb6fbd79e939a3224d",
+      "asset_id": 638550825,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-070f28dad9c7.tar.gz",
+      "sha256": "2898ebf8ceb525a48b16f4b95b66bbf356e1f5f38fb70ebfa6720f3a2a745681",
+      "asset_id": 638544915,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-0bc7596d9685.tar.gz",
+      "sha256": "4327658078bfc025d6659ebff651d624afbf1f5296956f29cb0ed3257acd4697",
+      "asset_id": 638555967,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-0d818cb40971.tar.gz",
+      "sha256": "6b6403d64fb70d9ccdf213b3d5970722f13187fd0ccb6ca135862f09b7f34249",
+      "asset_id": 638534810,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-1be9921150e0.tar.gz",
+      "sha256": "be4a5ffb4444ca34057e142753074f7bc64948d3ebdc77de9ad76b54f40ae13a",
+      "asset_id": 638541278,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-2a4e3157414c.tar.gz",
+      "sha256": "154b942756c25ff9f411fb201eebd4a69bd2c767d26c58a089c74a58f2c52222",
+      "asset_id": 638551018,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-2f40bc1d810a.tar.gz",
+      "sha256": "e7d948af3fd513651fadfe4bf929ac64ef769ffd8d48db5af340a2b311e4e9f0",
+      "asset_id": 638537704,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-30200807d1a5.tar.gz",
+      "sha256": "7b66d7cf882c1ebf3903e2cdee0e06958bce14479e0f4ce3fcbfd5aaaf5f5b39",
+      "asset_id": 638541414,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-46524ecb157b.tar.gz",
+      "sha256": "0dec488b1b5064f9695a8e079a483596b82f34c8d00a29ce321a36987853e760",
+      "asset_id": 638538192,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-4cdf7a55f563.tar.gz",
+      "sha256": "ba204e638aed192cc7e9c205f72328800cfd7056bd82f4ee9bf969b53502cc3e",
+      "asset_id": 638538395,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-4fa58ee8f7eb.tar.gz",
+      "sha256": "e3456cd22661a04378fd51282a0d11f8696d713d36043c9b7bab052743c2f946",
+      "asset_id": 638551217,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-5065e110634f.tar.gz",
+      "sha256": "4b5525b041d5bdf3e4f40a869ebbcd2e0a067e5e4f9c707b58d844d63346bf4c",
+      "asset_id": 638551361,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-51588a1209a6.tar.gz",
+      "sha256": "b99b243c7d0a8ac34b21de94d8ec140652ebe2e4eeb31d3d68b6463f473c84a5",
+      "asset_id": 638551529,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-56bdb69f0f89.tar.gz",
+      "sha256": "fd3b6ad9e121a4cf1d31079d64f4f12517b440363e7c6a2c0f37449fa156891e",
+      "asset_id": 638551702,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-5dde574022b9.tar.gz",
+      "sha256": "1f00108ad03a35a8e8176bcc7bf9c9ef6ba97f6ac6631c05015f670b709619fa",
+      "asset_id": 638551842,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-63104ac58064.tar.gz",
+      "sha256": "c0f8f5bc91febe3fa19f409020228d0e3920726cfc2165c4abf16afbc15de2bd",
+      "asset_id": 638551983,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-697f05c7d5f7.tar.gz",
+      "sha256": "45de19028376b996f1d2a2374a5aaad4dcbe8c43c6603d7dcc118e05d55620db",
+      "asset_id": 638545097,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-6ca3440d8a20.tar.gz",
+      "sha256": "bb8275d95f5d07a0c62285e0995c2261ff2e2a81c3417f34c32a493c2db3c74e",
+      "asset_id": 638538548,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-72c77847b0a0.tar.gz",
+      "sha256": "28013af83b7349bf167599f0d23fdef653c41807d4bf151dcbd02f2183ecc92d",
+      "asset_id": 638545279,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-750e8107942a.tar.gz",
+      "sha256": "c080a85a0de877b9dabcdf1ddd28cce65efd0c73da54b2d2b9bae4dc2858837f",
+      "asset_id": 638552147,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-82ada0fb6742.tar.gz",
+      "sha256": "b14e4fa310a70d312acb5ce6cf7c60368598e3127e3a7f18e0cc72c3bb23805c",
+      "asset_id": 638545927,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-8d4cd9f8848c.tar.gz",
+      "sha256": "a820ea454e43f0701660509cd369690fe1a55d8723a2bba40fe7219f34786a3f",
+      "asset_id": 638538729,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-8e037827c6da.tar.gz",
+      "sha256": "2e1799d06373e172d8d7500660aab2dab0abf2838246b864ec8034c954f50d31",
+      "asset_id": 638546379,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-91028b814ba6.tar.gz",
+      "sha256": "ccfdeb1349f6bf64b33581bcd5bf7d08e007031829323ee255ed8a955d0bd419",
+      "asset_id": 638546580,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-9ab23382c523.tar.gz",
+      "sha256": "7648115d6e1266ad9ccf63df741d581397d80d8bfb59852733b5d422137348f6",
+      "asset_id": 638547652,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-9c00270e1694.tar.gz",
+      "sha256": "402ae819b93be5b093be5dbc8d88aa5a32fc5e67ba303387c82a568b3c8845e5",
+      "asset_id": 638552702,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-a3223be06c80.tar.gz",
+      "sha256": "18f2ce4edc3d4ada28311fd199b5f11a4c0b94af5b4fa1ff9db836d66e06bdea",
+      "asset_id": 638552916,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-a5363bef6c4e.tar.gz",
+      "sha256": "55732ce3f8631c38046c86b1d2caf534c23a551bf0460449a2a10545493632b2",
+      "asset_id": 638547822,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-a812c533e6cf.tar.gz",
+      "sha256": "f0610329172c16903cd5e39a72774b042f63be7c547bebd2e1b847ddea0112a0",
+      "asset_id": 638548026,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-ab83d1fbeaf8.tar.gz",
+      "sha256": "0bb2519cc28f09491457ddb3a5e16cd7f2dd0d7ec41dc3958db2fb48c970e850",
+      "asset_id": 638538894,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-bd671f6a5624.tar.gz",
+      "sha256": "b63657295d9ea80d428907d2b56fdf7cb8b13eec8a45b1e22e52bb338b2b6675",
+      "asset_id": 638534952,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-c3a4bf8e0416.tar.gz",
+      "sha256": "b8128e0ccdb8a3ec810d73d7dd8d9871f65cbb5a9ee6ef9ee8845e2d1da165be",
+      "asset_id": 638553468,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-c3d39e22ff10.tar.gz",
+      "sha256": "c7a476700e3373e9f818392eb3a507030329414814d7abdb7ec95c4ba7133dfb",
+      "asset_id": 638553705,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-c9cf47be45f9.tar.gz",
+      "sha256": "13b0b517d3374c963c87f7b6ff9e585331fee6b0f666b51d807fc07f0f011e6d",
+      "asset_id": 638539018,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKTplus-baseline_tuning-42-cb8f88b97a2a.tar.gz",
+      "sha256": "eb5cf45370f30a75c944ce83e1715fbac41bf47a3b05dc3dbcae5d0dffea91bb",
+      "asset_id": 638548411,
+      "local_and_downloaded_bytes_verified": true
     },
     {
       "path": "backups/completed_runs/ASSIST2009-DKTplus-primary-42-21f9b124f6e4.tar.gz",
       "sha256": "f59e41c13b98ce6bda4da11427a9f8ca3bba722d07654e6a918d2db0e7d95d5f",
-      "archive_contents_matching_workspace": 10
+      "asset_id": 637439695,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-036693a698a9.tar.gz",
+      "sha256": "ae9e1d8059d46ef8641373cca407a8603014960974f914059a5c368fbabc1681",
+      "asset_id": 639331810,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-0528aee387d0.tar.gz",
+      "sha256": "37f4f3ed388dcc668341549408d45153e4af9f0fccab39de8f5d869056c7eda5",
+      "asset_id": 638656735,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-16ef95a7df97.tar.gz",
+      "sha256": "8b417d40763c594601a2d8fc727886e46882de9491a637ea282e9f5d130980b9",
+      "asset_id": 639334830,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-211fa0b0f79a.tar.gz",
+      "sha256": "f386c4cf3592641946c019cb09d5385d483bd3e275ff8b940629d123fe2d3499",
+      "asset_id": 639347772,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-2a7e728e4d1c.tar.gz",
+      "sha256": "9d33cfa645c392f24b590d08d42ea26ae83b5ff016fb5c09d38ae462756dd84a",
+      "asset_id": 639357202,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-3259bb3a9360.tar.gz",
+      "sha256": "05d6a4c3f5654fb662b4c2c986a21726ffc01268c2caeb2fc8d467fe60b3e0d3",
+      "asset_id": 638618377,
+      "local_and_downloaded_bytes_verified": true
     },
     {
       "path": "backups/completed_runs/ASSIST2009-DKVMN-primary-42-902c00823fa6.tar.gz",
       "sha256": "e5a160ab43267a5630df3fd89dfa1e6b455a24210c43c8190449fbf1e58cc50d",
-      "archive_contents_matching_workspace": 10
+      "asset_id": 637440624,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2009-DKVMN-baseline_tuning-42-35063687bb25.tar.gz",
+      "sha256": "a8e4e13800f4f2bfa3da40304e292bd73df9281511f950bf706d29c699bce4d6",
+      "asset_id": 639357584,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-3977d6c17fb6.tar.gz",
+      "sha256": "f29b1a4278f47f7e6944e62af434a6fdcb13eac0f79ffba74e983e9033050656",
+      "asset_id": 639364712,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-45cabcf53b7f.tar.gz",
+      "sha256": "98b7ff1526d3ef1ae10f790b3681b1368fb82eac71bac407c285d62fda7a2992",
+      "asset_id": 639378368,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-4679cbce5955.tar.gz",
+      "sha256": "e7b16a98e3e19eda05ecae54cbf5f3f4a589d0d229303c0ced1a6d7ac288232c",
+      "asset_id": 639386560,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-4be7dc9b13b5.tar.gz",
+      "sha256": "8c03fdf3eafca59d517786f886e0665244c5ff7ad2a6917054154546e67148bd",
+      "asset_id": 638562287,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-4ecdd8e0d80d.tar.gz",
+      "sha256": "7b79a5bf5f70482919b83c01646075a96eb96d586b51a8b0053f673e1262ffae",
+      "asset_id": 638693978,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-50c21f195a5d.tar.gz",
+      "sha256": "e0f831063ceba6096bc857e2af87c952a135a1a456a75d0a547b97a23b7180fb",
+      "asset_id": 639396085,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-5394980bc2b6.tar.gz",
+      "sha256": "559633e7d9583c3f0d7c3393a8315e9ad72b9f9a2017f4c3872b45b53fb588c4",
+      "asset_id": 639403037,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-5e4b7351be03.tar.gz",
+      "sha256": "f592f85536c0e91dfd9b99e9bb7335d5ec2d9a13f31647a1cb298c3a813ab150",
+      "asset_id": 638574353,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-66bfb02b2930.tar.gz",
+      "sha256": "27d179074fa3d4f81df40f04457f7de42996445bfa2035683821eab9edda3e83",
+      "asset_id": 638598015,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-6e81291d1906.tar.gz",
+      "sha256": "060cd51faa75201d81c7955836fabfab90f22e670b4e78ff43eb4b6ea5efa22d",
+      "asset_id": 638585238,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-815ff6fa790d.tar.gz",
+      "sha256": "b8cb075035fc03054c71faec1a083cb1101807d8e35f930a13e1f79b6c345392",
+      "asset_id": 639408611,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-91251f1314cd.tar.gz",
+      "sha256": "f3286dac02b3067b415c7102971f673ecb0da284c97463b3e1267baec963e266",
+      "asset_id": 638673730,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-91a36a8e71d1.tar.gz",
+      "sha256": "1fd24e4fb83b0ae3e574e59c6720f2fb78d7ce597016eb4cb071afa25590001d",
+      "asset_id": 638637997,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-a707870d87dd.tar.gz",
+      "sha256": "a4493e1433bac5adc89c4a26d09d52fbd92bec4d52a13b4a52df0301489e7319",
+      "asset_id": 639420023,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-a8cfc6e8b2e1.tar.gz",
+      "sha256": "2bb8342d8b826d6ff3e6ddd371bd8289f6124e7251fc6c7f22e0e0307c534d91",
+      "asset_id": 638608408,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-ac08ff86df04.tar.gz",
+      "sha256": "1c4f42ddcf64a5658eda2d3bfb93b2e05bc31852bf98901540a21ecd399d6c01",
+      "asset_id": 639431632,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-be841b2268f5.tar.gz",
+      "sha256": "170cce82cd8718cfedac9c6cbf859799029bd17d1c428901d25811eef3a7cc8b",
+      "asset_id": 638684814,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-c26faf3381fa.tar.gz",
+      "sha256": "98b521e7ec58c95c618aebce287a6d097dd2fbc1f7f47597c046a3e3f1b81702",
+      "asset_id": 638646306,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-cf55c749459e.tar.gz",
+      "sha256": "080de74529f3d65318f66cf9194d936a4a17482002f3cdcbf753f281b84cff75",
+      "asset_id": 639436222,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-cffba717b98b.tar.gz",
+      "sha256": "f518553829afe25fc5298f5e57e39f5f44a58f98c728f7f0a4df8231101c7ee6",
+      "asset_id": 639441006,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-d2e6bef77fc8.tar.gz",
+      "sha256": "a32d0830c01f23265886cdb96848271a9f533c24262a21dcf15539a9b527f6b8",
+      "asset_id": 638629141,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-d308354eeb8b.tar.gz",
+      "sha256": "191612b9ac38a96df06aac894b6a31af550bf53163663056e3002463168dd7f0",
+      "asset_id": 639450436,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-d4c8f3eddd8e.tar.gz",
+      "sha256": "ee3c6d9408a1e408171a724f9e4f40ee5f9348cc684a98234debf5fc6f9e298c",
+      "asset_id": 639460746,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-d813a6987bf2.tar.gz",
+      "sha256": "36353ec3bbaebd70469f3a92acf8ef47c7e7df4643d0c59d618b93355aede53c",
+      "asset_id": 639466428,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-e041fd6a4c5a.tar.gz",
+      "sha256": "70b5826fcdd20612a03e966d5d3e8647427081991d78ae65997481f7062b7578",
+      "asset_id": 639479702,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-ea0228840259.tar.gz",
+      "sha256": "d449d5154d05496d1d342ddd1f65bb32763082a4c3b0310e76bf17104b1f0b53",
+      "asset_id": 639490173,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-efca17b0b55b.tar.gz",
+      "sha256": "857194d0edb6f5c9c22e167ba091c78d656b9c8c5f230e17fc20438fd6710b6a",
+      "asset_id": 639495071,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-fb3461972e79.tar.gz",
+      "sha256": "ea4b3b6325755fed30a676556ae303a67150835cf7f2e202e12cf3a67a2f22ed",
+      "asset_id": 639498280,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-baseline_tuning-42-fd56ddf71417.tar.gz",
+      "sha256": "e8c8263436bc495e3d9750f8562cd67ec04f48cfa34e1d26ab5de736798980a3",
+      "asset_id": 638705585,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-final-123.tar.gz",
+      "sha256": "f009039ab4727addf59cf87b0c71eba2c76f22c4664a2b69e3bccef795ce6142",
+      "asset_id": 639500956,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-final-2026.tar.gz",
+      "sha256": "7212314d31f30ca20a0eb9a8972c4c1aa15e2f17757c229e74830a5a075c2334",
+      "asset_id": 639506247,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-final-3407.tar.gz",
+      "sha256": "cb3cf91defbd53433eea9d505e38751d219e4d4bed11befd49bd98955b99e8ec",
+      "asset_id": 639513218,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2009-DKVMN-final-42.tar.gz",
+      "sha256": "a361f1194a1ae33b120a54a0a571f21af8846849f0b8a16d7992da8a59920cea",
+      "asset_id": 639513485,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-DKVMN-final-7777.tar.gz",
+      "sha256": "236cdedf1b9ffc37f4ad098a950b413e8741b912924a3042c51d8fcadc987cc9",
+      "asset_id": 639518418,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-GKT-baseline_tuning-42-07dec7ef0623.tar.gz",
+      "sha256": "f63f22dfec1ec3ad53730e5e3f2df419d3885d713d0d4493cd409fa310013dfb",
+      "asset_id": 641577754,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-GKT-baseline_tuning-42-19094af02366.tar.gz",
+      "sha256": "05e26da1084cbec8562ca6720c31fa25072998fda19e61d8e61ed7fb2f3894cf",
+      "asset_id": 641482292,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-GKT-baseline_tuning-42-1a4405f45bd7.tar.gz",
+      "sha256": "ebf0d7dc14fe5209af811a1aa9ecb73644c00ae8272854817a867babb78fb862",
+      "asset_id": 641669113,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-GKT-baseline_tuning-42-1bc295eb0703.tar.gz",
+      "sha256": "7086bcaabace41f6ea1dd1b79aa411d4ca2355694e566277ca3a118e5e80018a",
+      "asset_id": 641786831,
+      "local_and_downloaded_bytes_verified": true
     },
     {
       "path": "backups/completed_runs/ASSIST2009-GKT-primary-42-bf2b95e7f1ff.tar.gz",
       "sha256": "1f3080341f69adcde6100750dc86dcfb1ddcc9c7323b31a575a0333199ff5ee0",
-      "archive_contents_matching_workspace": 10
+      "asset_id": 637441520,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2009-GKT-baseline_tuning-42-1d9e4935301d.tar.gz",
+      "sha256": "7e8ef5eee00134b0e8898b446aaf8b28bee469dc9e1452a1aaa87978fbae7ab4",
+      "asset_id": 641788083,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-GKT-baseline_tuning-42-1fd788004646.tar.gz",
+      "sha256": "9bffdfaf75641d455ef2861724b72e81df9cddbe0d273bb1592f70f361fe7d8f",
+      "asset_id": 641886938,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-GKT-baseline_tuning-42-22040414b977.tar.gz",
+      "sha256": "09e4c2183eaa84b31d90927f588caf322996a3cfd379d1d65af7f9aa1722a2ce",
+      "asset_id": 641925227,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-GKT-baseline_tuning-42-2372efe8779d.tar.gz",
+      "sha256": "f5040fd79e19b13d4df96eb11ff8fcb55ebeb05bfca9781cc7ca8637b5035926",
+      "asset_id": 642060385,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-GKT-baseline_tuning-42-2bf0f4278139.tar.gz",
+      "sha256": "c37eac070a179935bdb39e4638c746da33e347befb0e1743459a024a6c0a1cd5",
+      "asset_id": 642110463,
+      "local_and_downloaded_bytes_verified": true
     },
     {
       "path": "backups/completed_runs/ASSIST2009-GKT_MHA-primary-42-e63b12ce3815.tar.gz",
       "sha256": "bad250ddbb7c7bb70a6c7a4c0d284067ebcff10a035265c7da1ee1a42636fa5e",
-      "archive_contents_matching_workspace": 10
+      "asset_id": 637442914,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-final-123.tar.gz",
+      "sha256": "7bd325d407f1d853a8d0fb687b9dfd8df24811743bf11aee55f325d7ca15710f",
+      "asset_id": 638923576,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-final-2026.tar.gz",
+      "sha256": "bb8aa5593ad2710d5aff0f0788321a276d01f0082059668afe713c6786ded570",
+      "asset_id": 638924235,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-final-3407.tar.gz",
+      "sha256": "9a51a8475a594cae085e19f71308c1202efbd06eaeb2220996c65a781b6472e8",
+      "asset_id": 638924412,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-f08e9494d270.tar.gz",
+      "sha256": "a30eb7483630cfe5babe382446ff6dae028ed50a4596866ac675dff0bb9d232d",
+      "asset_id": 638754156,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2009-LightSAKT-final-42.tar.gz",
+      "sha256": "d41c142b79ca1ec4e79f9cd5893dafc031fd7d03cd8fa8fdd7b7aac4dfdcaf79",
+      "asset_id": 638924595,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-final-7777.tar.gz",
+      "sha256": "956a5dd8319dd5cff474c4297339d58cb2fe845f4a6be7192b61a13de5ed5660",
+      "asset_id": 638927412,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-119c315c04ba.tar.gz",
+      "sha256": "53dd0c078f88a8240c84af8836b40b9a90210d21059c912b53f63ef5f03d0b87",
+      "asset_id": 638712345,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-1d03fd716dc4.tar.gz",
+      "sha256": "8ada927c9f77410867a288fa571d1e32e9892d9f051dea468fadf678c8841b16",
+      "asset_id": 638712507,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-1dabce6d364e.tar.gz",
+      "sha256": "4d0e6c4319b40e48e3c3c461d9ab525d91601e89e308e36f63206954646dde32",
+      "asset_id": 638715005,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-2052f5169d22.tar.gz",
+      "sha256": "7a91651f9bceade99e988da4340ebc83ae93382c40b1f35093a20ce23e3989a3",
+      "asset_id": 638715647,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-398feff49fe4.tar.gz",
+      "sha256": "dc63bed073202ef128b3a65ecdecc4e205a5da6975fb968bdca6e7f4397de9fd",
+      "asset_id": 638718174,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-3c973f2400ea.tar.gz",
+      "sha256": "8186f77182feb1cc46f5ed19210d7f52af90515af9acf23c10832466d05d4d86",
+      "asset_id": 638718760,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-3d82f7b69e9e.tar.gz",
+      "sha256": "1e7060442268e0fb717e78ff8b6fe35d702b47c41c014da17d978507b7f3d416",
+      "asset_id": 638718900,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-4462e183cff2.tar.gz",
+      "sha256": "723a386d0c62aac38dc0d0fcc1850915c14dbcc476dec04c9c3e5083377a8185",
+      "asset_id": 638722762,
+      "local_and_downloaded_bytes_verified": true
     },
     {
       "path": "backups/completed_runs/ASSIST2009-LightSAKT-primary-42-440d619b7547.tar.gz",
       "sha256": "fda9fd6268121f545e5d20211a4760148ca51a3a16d280b9233ba3c3cac2c099",
-      "archive_contents_matching_workspace": 10
+      "asset_id": 637443126,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2009-LightSAKT-grid-42-48c411be10b6.tar.gz",
+      "sha256": "c3d1294d19de6acda2d5c911a4dc37c50ed196900e45d0a5c2fba5bdb00bd917",
+      "asset_id": 638722988,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-519f6ddfded5.tar.gz",
+      "sha256": "63883f864cc1f5274342bc977249fecbdd3cee2a43137f3e3bddd98bf5765bd5",
+      "asset_id": 638723138,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-5225105f3bce.tar.gz",
+      "sha256": "7cdf700fda0c52b2a77d17875d749c850548daa281a7f043ad134e897d04e18e",
+      "asset_id": 638723360,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-5367c646f7fc.tar.gz",
+      "sha256": "cc3dc33414852184d17faa37e7afc9fee0a4afd32acbd5b064b48d3c3078069e",
+      "asset_id": 638726177,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-548bf9305dcd.tar.gz",
+      "sha256": "57d197a85fbc788a14791346900bf274e20d173a40a6afb2a5fc161d72bdcbee",
+      "asset_id": 638726385,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-54eb65d6bac2.tar.gz",
+      "sha256": "cf0f63d52c6795427f37a2d8925dffaba26f63bcc5c952df6a97c8fdfe2e6dea",
+      "asset_id": 638727074,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-5cac52478aa9.tar.gz",
+      "sha256": "f07dfe81ea3e97c2bcd47e3771c2b8f1b77c02b06c6cc73b38cebf4e8194c1cc",
+      "asset_id": 638729620,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-657c24e26014.tar.gz",
+      "sha256": "a9d196b71ce19f0ba87e3ca2fce708d46e5a71cad4409d088b09f46dd20b5c71",
+      "asset_id": 638729744,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-6a5b69a81950.tar.gz",
+      "sha256": "452f4a408552fdc6a29a52955dac8465bcf7c22666a0ed21000ee9b0ee85fa09",
+      "asset_id": 638730675,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-78e7030a9c88.tar.gz",
+      "sha256": "db1191cd31a8c3482f44bcf906eea2a964cafea15969b12f41cb7d3eb40d0187",
+      "asset_id": 638732835,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-7ec15e323ab3.tar.gz",
+      "sha256": "fe1346d5234e2e466a45144df7bd1c418048759356d5db59efac3aa974024574",
+      "asset_id": 638733002,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-8488d393eb74.tar.gz",
+      "sha256": "fc8093407129c70fd12dcb9ea940e4872d051f42c229fec07930f2dc9824958e",
+      "asset_id": 638735259,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-876374e581c1.tar.gz",
+      "sha256": "a462b472ee7eba739432d3139cb3a15ebcdb383036983631c7e03cf50d863aff",
+      "asset_id": 638735942,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-a22be35657b2.tar.gz",
+      "sha256": "107bce4310fc538cf1fd4c76749d229cd6028c5a9f9d39e83bb2f1b678e38dbc",
+      "asset_id": 638736163,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-bc44304c7e6a.tar.gz",
+      "sha256": "d8eaf66bb1b1ecb3bccf71b754e42b278f50bf05026119d63d3664af2f92c0f0",
+      "asset_id": 638738943,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-bc7909e3ec64.tar.gz",
+      "sha256": "60be972c2f0521fd13e5da22beef25322fcec11b74e60c7f758f7989d2648c68",
+      "asset_id": 638739115,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-cbb203a49770.tar.gz",
+      "sha256": "c3ec7f19190fe7a87452900691c5283652f331a4d9d12a8f11d4c32ae6e8204c",
+      "asset_id": 638741828,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-cbc759c49f4b.tar.gz",
+      "sha256": "e4121ec834a2df51b63dc9c6fbe183995ea665b137161a46083d92342cd9eb2a",
+      "asset_id": 638741981,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-cddb73383e58.tar.gz",
+      "sha256": "bec4d46968b6c1a9e5693b6811deafcb01e02032d075a8e4d3c2e241674c4af7",
+      "asset_id": 638744726,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-ce7ac2d04d8c.tar.gz",
+      "sha256": "c23d1e60a83b9183988f554dcd92074c563aadee2bc0152985e14919572aabca",
+      "asset_id": 638744889,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-d61c17bff6d2.tar.gz",
+      "sha256": "000151c676ab1fef3b9cf196170225dee7e773d3629d710d7ee3044d5d193356",
+      "asset_id": 638748384,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-da59e9e82672.tar.gz",
+      "sha256": "91d39875ab2a44177be38de894ad39253ce5801246b373726b6ac7eb21eac212",
+      "asset_id": 638748672,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-dbc981c680af.tar.gz",
+      "sha256": "9b33b1c28924d58de39f69b4c653ef0e4395a3baa162f48be5727b00f2538ead",
+      "asset_id": 638750143,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-dc60492cb0c6.tar.gz",
+      "sha256": "55987337e69738ece1e0a267b986e2a7fde9875e5bd3fcbb18d3d9e06e107a5d",
+      "asset_id": 638750336,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-e4d9677fea31.tar.gz",
+      "sha256": "c5cedf677b256d7d69b1d674b2615a7829e82e7c45263c8e94342ac6c0b0ca5d",
+      "asset_id": 638753474,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-e8619daa8cf3.tar.gz",
+      "sha256": "b4858b76d7f6b2c8e19d2c8147e9f30507e3767411532ebc7e9f75e069edd5c6",
+      "asset_id": 638753663,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-grid-42-ee695dce7311.tar.gz",
+      "sha256": "d93692f870164f9006e37413adf5c1c4d5874659fd1b092633c21fda469fbebd",
+      "asset_id": 638753902,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_attention-123.tar.gz",
+      "sha256": "8293767cef0525984f2ddeade2c94815f06293644b89d1c11e526c54e07c3851",
+      "asset_id": 638942467,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_attention-2026.tar.gz",
+      "sha256": "0a63ccb6e9810ccdce258dcc91bdbeb471282756181c12fc756bfe4d2c58a8ab",
+      "asset_id": 638946049,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_attention-3407.tar.gz",
+      "sha256": "0a1e961ad0e0f4231350855a3c4febda221f7d1751fc94e639d21fce35f410a6",
+      "asset_id": 638946319,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_attention-42.tar.gz",
+      "sha256": "8746f655a4ec72c0b5090a90aa2debff15272e66cb5081b77c4d90724b1a9102",
+      "asset_id": 638947007,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_attention-7777.tar.gz",
+      "sha256": "0011ea479444448e7a307a33e987fcceefda2c409dc514eefa31e28b87040ace",
+      "asset_id": 638947628,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_dropout-123.tar.gz",
+      "sha256": "f720984b2f7d7dd5cd17ccbcf88d2f3708b0e585eeb5c66ddfb5e3aa63e9e600",
+      "asset_id": 638947867,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_dropout-2026.tar.gz",
+      "sha256": "f2c68352df9055d1f5a7c8167584e88e8c21a979d30ef94301e41c50d53b2bd3",
+      "asset_id": 638950636,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_dropout-3407.tar.gz",
+      "sha256": "72f1e8d6d5ab992c7031271f8edd59a9212f6ba112c6da90c42ed4a0e40e0e9b",
+      "asset_id": 638950835,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_dropout-42.tar.gz",
+      "sha256": "a889743184496b8a3067eb15912ac292a2cb194a00a1163d4df3ab5935a1295a",
+      "asset_id": 638951054,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_dropout-7777.tar.gz",
+      "sha256": "8eb9dcbf90676aad5d3bb9347d641213fdd0303c5ed70a8f69a34fdfd361d1d3",
+      "asset_id": 638951728,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_position-123.tar.gz",
+      "sha256": "de6c86e4e7d60af5a4ac972017a337301374fde84bc1be75857b8e11075c8704",
+      "asset_id": 638952020,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_position-2026.tar.gz",
+      "sha256": "c615fc3547e33fba57dcdb65ff922c4a66403cda8cca37bf08c21fb3658b478c",
+      "asset_id": 638954365,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_position-3407.tar.gz",
+      "sha256": "c438e0e7fbb65e2fcf046ab63d9ea2cf969b244ed6244f1307d583dbfbf390eb",
+      "asset_id": 638954537,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_position-42.tar.gz",
+      "sha256": "03941b765d4541955165ffe14a9d084ac1b11c95fb053415b0fd53004faa6425",
+      "asset_id": 638954729,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-no_position-7777.tar.gz",
+      "sha256": "e40ccbcf15c5a2453fdceb16c5f7ccee0d3691a3eb9eb991749fc82d75223ed8",
+      "asset_id": 638955316,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2009-LightSAKT-no_regularization-123.tar.gz",
+      "sha256": "7c69cc07b1e6ebb7fcc3b69e492109cdc74236dcf9afa9d2d61b7885b9921a39",
+      "asset_id": 638957921,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2009-LightSAKT-no_regularization-2026.tar.gz",
+      "sha256": "b9a7fd0fba7d407e9cb56cf7171643f3d14a35f7402f90adb00527b3ec24bc23",
+      "asset_id": 638958103,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2009-LightSAKT-no_regularization-3407.tar.gz",
+      "sha256": "84574d6910d11ef8620cd8c4a8029fcd59900b9ec7aaa50845aac7430d527bc7",
+      "asset_id": 638958337,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2009-LightSAKT-no_regularization-42.tar.gz",
+      "sha256": "3459c6c131d75de580508045179231a37537fb7c5dbd4fba1173c4627c25b31f",
+      "asset_id": 638958690,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2009-LightSAKT-no_regularization-7777.tar.gz",
+      "sha256": "afdd494c2d9806cd856f0704f796d5f67eb211e5c70abdfb0b8c5ea8932d70df",
+      "asset_id": 638958906,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-single_head-123.tar.gz",
+      "sha256": "a7061139aa144cd97a66a9c90f4355a101c12f765fb9488f1fc7c52124ea81ff",
+      "asset_id": 638962519,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-single_head-2026.tar.gz",
+      "sha256": "dcf887d9fcdf9f8b4a2264e573bee07c43e11b2fbcf672f794f8e45c45f17e79",
+      "asset_id": 638962729,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-single_head-3407.tar.gz",
+      "sha256": "f754f21415533a78a47fd57e0cad6c1de104243d6dd41e8e97eef82faa5d679e",
+      "asset_id": 638962936,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-single_head-42.tar.gz",
+      "sha256": "c53cc4cd143f8eb88e23ec5246de6c0d420342d5e4274ff918d3c145c5e49203",
+      "asset_id": 638963622,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-LightSAKT-single_head-7777.tar.gz",
+      "sha256": "35108c939b0f354f9358de41939cbad589a5390207483aea359ab3939fdba21e",
+      "asset_id": 638966457,
+      "local_and_downloaded_bytes_verified": true
     },
     {
       "path": "backups/completed_runs/ASSIST2009-LightSAKT-smoke-42.tar.gz",
       "sha256": "6cbdbd96c7ebd6c3e22442ff6f87962f0b2136531e5c6ce71f83c62b000bc033",
-      "archive_contents_matching_workspace": 7
+      "asset_id": 637443848,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-18927de5abcf.tar.gz",
+      "sha256": "158168cea66b8fd85dcf35c298002cbdca0de4bcb6ee738633e812fbc8c9c7f4",
+      "asset_id": 639078802,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-1ea6d0e3af0c.tar.gz",
+      "sha256": "a01dc7e2379fe12baf9695ab66fdb5804ebf58e093a6aed5b0bd20c55924f106",
+      "asset_id": 639081925,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-20cb259b8453.tar.gz",
+      "sha256": "fc91feb1257cc67216b9947d3c7dfa476c2866a4d489f9b34bdfa6199466e196",
+      "asset_id": 639082081,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-2871c55fcfef.tar.gz",
+      "sha256": "f47cbe577a0f776a461569965064bf62d4d9ec9b0dab6c4f014e0c925d0cadbe",
+      "asset_id": 639082646,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-3701b171c5a5.tar.gz",
+      "sha256": "eca0571efc2949f4e1e5853fe9a297b829681caeeb913555a8bf74be36cb7792",
+      "asset_id": 639082819,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-3e46b3721a2b.tar.gz",
+      "sha256": "4d66ca4e057d559a7b48e5fe75e4276783f9d1bbe403eea898340ec48710da4f",
+      "asset_id": 639084898,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-46fe905cecba.tar.gz",
+      "sha256": "3e8d0c1d6453677351bd1599851c533c2e89881c0b0f1b605693be00de3b5c4b",
+      "asset_id": 639085231,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-4899b744bd08.tar.gz",
+      "sha256": "b19806398c8204596dc831ee99abb2714507a8675908b997950be68e6a0e8fa6",
+      "asset_id": 639085528,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-5a04d6fcd0ab.tar.gz",
+      "sha256": "7dc7405882eab4b952be21fdbedb5e4ea00a0649573220f934c884078511bf30",
+      "asset_id": 639085768,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-5ba93d0a563a.tar.gz",
+      "sha256": "443c10752270867c4d2ddb8b1abc114db10de65a1d43735b5b002ac8a6ee58da",
+      "asset_id": 639086049,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-5ffd7705aaa2.tar.gz",
+      "sha256": "b95d24cf9f8791394017bf1652a26b27f7edde17d16bb9a2b8a2ddbfc188208e",
+      "asset_id": 639086233,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-6cc761d1569d.tar.gz",
+      "sha256": "b8eb4879ad03b12b3aded3530f9f3329ea29e7a30717e314b1e5045c44188838",
+      "asset_id": 639087059,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-86ecdf28f694.tar.gz",
+      "sha256": "55f80e8be9482336994a8793fb50a65e839aadb0041c2cf4d206296ce693db48",
+      "asset_id": 639087308,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-8a33fe73d195.tar.gz",
+      "sha256": "3cbb2592215f59c6183124a1463e2f7c77744bcd6149dfb3e50e29104a22fd9a",
+      "asset_id": 639087556,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-9a38aaa6950a.tar.gz",
+      "sha256": "56a5c3d07d9fae6f7a66a1e7af93bdd7242560af56f2bb5ba6b92967af460b11",
+      "asset_id": 639091061,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-a3e6a37c86a1.tar.gz",
+      "sha256": "8be59e8207ccaee6ad467a7c772d444d2aee8d3d1c339bb7e7a598e6c3fb76cb",
+      "asset_id": 639091807,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-a7a39eed4d33.tar.gz",
+      "sha256": "86d8b01dfb7fd5e7c3f3fe584a5f8efc3fc141a99d0a3a11391200ca1c09200b",
+      "asset_id": 639092109,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-ab8296ffc06d.tar.gz",
+      "sha256": "30b367adf2bef78122fc7274c381b4c215373b5a5d02e6826e7ffc76e6211196",
+      "asset_id": 639092428,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-b4f026d32fa0.tar.gz",
+      "sha256": "55d453606d36d276be0939f1da6efc8235fa8bdff5012231b5d0f0c81d75c7b3",
+      "asset_id": 639093932,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-b783977b82fe.tar.gz",
+      "sha256": "8b85cf67613b13a51a65d139bf4f30d56315f9fda2a9b5ec4295f770e5954346",
+      "asset_id": 639094219,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-b8ef7520224e.tar.gz",
+      "sha256": "ebdb10113fd13d07439dea53b0b550cdcf932e86add50faf303469b825cf9c41",
+      "asset_id": 639094515,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-bc0a2a560ce1.tar.gz",
+      "sha256": "4de2c02d57fe1a4e18e9e72928c6a1fcdd77572c479a536af74e2bf216c0d07a",
+      "asset_id": 639098129,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-c296afbeddce.tar.gz",
+      "sha256": "2d9cf156f09b199f68852cb697a04ffdf3c89dc32ed0e6d817af64385412f038",
+      "asset_id": 639098851,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-c8b0b836e93b.tar.gz",
+      "sha256": "fd5c63bcc67c160593436134587be9c17f6043fbdebc2c76d6f6f80e8095f510",
+      "asset_id": 639099051,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-c9c00f287550.tar.gz",
+      "sha256": "7a56baa86cba40d825e4f8bfd0e026cb39cd37cb507ac713eba654dff018e941",
+      "asset_id": 639099288,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-cb815133c07f.tar.gz",
+      "sha256": "f19a685c11a3195697eb4a3e81bd638d2a33e1b0a15e50c358db25cd362f1a12",
+      "asset_id": 639099537,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-cbf1a3de9206.tar.gz",
+      "sha256": "9816a5869c342accbd8cee02c2003edf3a9ce7b3f0d08b7c036ab26f40a8abe2",
+      "asset_id": 639099813,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-d108682ad990.tar.gz",
+      "sha256": "d30da9f827d078dacc7f95fdc0ef2bbcfc56c18eea6da88ec0c171e6b9bdf776",
+      "asset_id": 639099929,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-d3d205330b77.tar.gz",
+      "sha256": "d069026ebdfe406cdad1fd1863dcd225bc2a4635b45e99d62e9f734adf9b22ef",
+      "asset_id": 639100120,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-d9c58f8bb413.tar.gz",
+      "sha256": "866de782cd4ed0a7d90ad677116fbb18d8e463cece92595144732063634c6013",
+      "asset_id": 639100305,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-dd880fef9848.tar.gz",
+      "sha256": "72eece7c4069308384b31da59d7d49fe2ca198847b7b3fcade096f51b1589ac8",
+      "asset_id": 639100827,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-df4a58765f45.tar.gz",
+      "sha256": "ac968fe6e1338d5ee50d7639d76aac311d100114de133ffcce9f24a22efb4ff6",
+      "asset_id": 639101388,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-e00d42a652e7.tar.gz",
+      "sha256": "e8f2b939254e3c8b82f3b19fb7b10809229123bf9bf03b1b09e8c83887c8c196",
+      "asset_id": 639104138,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-f6e2cf5d03b8.tar.gz",
+      "sha256": "b509f9644f127e9ae392ceeab3096bedc6db7897df9512013d75bfa5414b5962",
+      "asset_id": 639104350,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-fb98a2007115.tar.gz",
+      "sha256": "1216e370e6356d00a414c3c28d64dc1c334d0528cdbe4fd9895d71e63d9d546a",
+      "asset_id": 639104571,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-baseline_tuning-42-fc6de5467e47.tar.gz",
+      "sha256": "44e0eec224ce465c86bf31163d85033d1a1ed93c74d33e1aa1c16a93fb6879fd",
+      "asset_id": 639104744,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-final-123.tar.gz",
+      "sha256": "371336e1a1971b28280db1bf0cbbe352d95916a3eb0fd3a4963be3b10a548b6e",
+      "asset_id": 639303429,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-final-2026.tar.gz",
+      "sha256": "38613b7d5d36010dda83b5dc92606ac4289d65ef60526015b85353c00c2e46c1",
+      "asset_id": 639303701,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-final-3407.tar.gz",
+      "sha256": "d11fa5cc4e1a70bf502b22418347cab1e808320cef5bc47fe5bdfe878430b23a",
+      "asset_id": 639303964,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2009-SAKT-final-42.tar.gz",
+      "sha256": "d866d9c126de885d58dc1c93e6a44429fb4baaef950c4e4277ce0e7d78377597",
+      "asset_id": 639304620,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2009-SAKT-final-7777.tar.gz",
+      "sha256": "2338173b7c015482e61f772253cbafcd8e9e48c23528c69b5df186960c72b488",
+      "asset_id": 639304814,
+      "local_and_downloaded_bytes_verified": true
     },
     {
       "path": "backups/completed_runs/ASSIST2009-SAKT-primary-42-3c4dd6ec486d.tar.gz",
       "sha256": "67e9a22f7e7725fa2171512db2b8c2418e9381ce30b67c0ae96f10806703fea1",
-      "archive_contents_matching_workspace": 10
+      "asset_id": 637444449,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT+-final-123.tar.gz",
+      "sha256": "e20b364c9571b44978b657ca5263ecc9e8d93f7e9fcbe142bc545511e8670c6c",
+      "asset_id": 639307561,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT+-final-2026.tar.gz",
+      "sha256": "d7c0f9b270de6df7e7f9f190d4500a42e888b4b0d627402173c705f055769df2",
+      "asset_id": 639307810,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT+-final-3407.tar.gz",
+      "sha256": "57ec60d6c50f31f40105b362821d5e03edef5e5a3fc2396527c86dc33b41fc38",
+      "asset_id": 639308649,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-1f3ce9740385.tar.gz",
+      "sha256": "bf5f22259642463590f20aaed6c518273e572aa476176913dbe5123d5d235da6",
+      "asset_id": 639141198,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2015-DKT+-final-42.tar.gz",
+      "sha256": "bada12949c589edded6aef4f0d14bf86a92558c0614443d5f3d889c47330bd5e",
+      "asset_id": 639309620,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT+-final-7777.tar.gz",
+      "sha256": "18324a69bf1b557418868c4a26109b58554a5437591a071cb6f1428d245104e5",
+      "asset_id": 639309934,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-00b0fcf26ac9.tar.gz",
+      "sha256": "921bc09fc7fb51ef5d79cff912aadb634e8a13015d0abddafe6a5985ac760123",
+      "asset_id": 639104920,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-04de9c142796.tar.gz",
+      "sha256": "139705e604e4eda5ced80fac15d85099a82abc33cd4a82705dbde59c0fd3ab03",
+      "asset_id": 639105120,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-15f6cecd55d9.tar.gz",
+      "sha256": "51627eac318e437995fd9a7225ca5c4626b45a1b73a63587e413fe77b2692c0c",
+      "asset_id": 639105308,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-187dbe3a8ba1.tar.gz",
+      "sha256": "056efb20aecafee3607a9aad16dbcd03431c05ced28ed9415c4f209a6e723aa7",
+      "asset_id": 639105558,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-249d0f91d06e.tar.gz",
+      "sha256": "d1094c9bacf0b96f2b6cf1631c5af400c4d4b212c3d46cff09eb4b5785ccabd5",
+      "asset_id": 639105761,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-261eee84f275.tar.gz",
+      "sha256": "aacd807d09cb2cc5390a66f499e69bbb45fd8b9b8c901c35380fdfdf81225138",
+      "asset_id": 639106345,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-2b31dfbca2fa.tar.gz",
+      "sha256": "cfb773e0ece641c9c428bd45037c3563429f56a359e5712083ce7bfccf3c4ac1",
+      "asset_id": 639108546,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-41c42c4513df.tar.gz",
+      "sha256": "14a38e3350f262bc734f8578a85555cc9619b50ef8449f6dfe5ff492611830f2",
+      "asset_id": 639108716,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-4b472a8218c8.tar.gz",
+      "sha256": "32de809b436a5c887f41f66b6fff8779cba2c18d727854ee6b11d6a70ea63fc6",
+      "asset_id": 639108940,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-4f9e7133907b.tar.gz",
+      "sha256": "b5e4d46a92f8e78782d5d14aa7838c63de9c403f66b0fb0048e4c76374f4ae55",
+      "asset_id": 639109139,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-50942d98fd6a.tar.gz",
+      "sha256": "0b0950aeaf7995611ce8b56aeec98e68592fe61b0dd369777117d7086921fab9",
+      "asset_id": 639109364,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-50d04205247f.tar.gz",
+      "sha256": "725947df0d60d63df29782f17dfbb076b3138ae532fbadc609ebfa692c597469",
+      "asset_id": 639111613,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-601bd30af00b.tar.gz",
+      "sha256": "60eb159f53bcf966712dbc824effcf5aef9f2bebb0f8ac90213fce70b0cd0e5e",
+      "asset_id": 639111754,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-69d98363a460.tar.gz",
+      "sha256": "2071ca136ebb4d45861b1a3785d983931717a284c2d3bd62bdd0de49127f9483",
+      "asset_id": 639111955,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-753b64e7216a.tar.gz",
+      "sha256": "1dc36a50e2dae7a8c7fc132a4996e724e0f17cf9f20392d43cd457f82a104b0a",
+      "asset_id": 639112138,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-790c13df1ebb.tar.gz",
+      "sha256": "064e54eca3098c38b0a39a463713b3fb617154b9b141b27835d13386f333621d",
+      "asset_id": 639114264,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-7a6f5c7c3ced.tar.gz",
+      "sha256": "1b837be9e6b8fc67d761188ca8dce141ed1d59a98636f9b8ca7365c8f06441ef",
+      "asset_id": 639114986,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-7ca4674b0ba0.tar.gz",
+      "sha256": "0c68f0b29c2a8206086c23f14a6f1e8d5bb331237635836e70b72c3fb2e68897",
+      "asset_id": 639115215,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-9e9bd5908f87.tar.gz",
+      "sha256": "278811bdee429a1c4792a664981b3f371938662d2753502cac8d97502e9a7d7f",
+      "asset_id": 639115406,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-9ee19ba5b525.tar.gz",
+      "sha256": "4b502ae7461b306e03ef8f43c68101a44469cf91b570a2c1560bca5e95161410",
+      "asset_id": 639117506,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-a2e526224ff0.tar.gz",
+      "sha256": "4f76631313d5a9eb2a8d5c05343306a0b55569d20234a008a93613dd879c2bb8",
+      "asset_id": 639117661,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-adcee081cfa6.tar.gz",
+      "sha256": "2812baaaa938c3a0ef0ebd439d90060c33e978778eb961b5b908d4019f8689f2",
+      "asset_id": 639117914,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-bd32a6ebc8db.tar.gz",
+      "sha256": "edaa4b20ea521757c812398d1cff9f407872e3e917a969fc85ebb21a5b9dcab4",
+      "asset_id": 639120358,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-c165349b4354.tar.gz",
+      "sha256": "6c1b37379288ac3f32c91b0a4f31d008204c253a3c0f45fff3fe79a2ffd0f1be",
+      "asset_id": 639121062,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-c1ec86655557.tar.gz",
+      "sha256": "a219fd09effdac8fd9c2b0b2a7ad728bdb11ff7df9b727420411fce056d2d57b",
+      "asset_id": 639121806,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-c7fe0d9fa42d.tar.gz",
+      "sha256": "be9731f441f8272ebcf6180d8a44f530ad2ef3bbf8cb09997e31f4b94ec3ab9d",
+      "asset_id": 639122621,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-ca05dc8f793c.tar.gz",
+      "sha256": "fd17c16c63d4592ccfdded1eff9d69996240bb7954560c6a8fbed95ab03587d0",
+      "asset_id": 639125595,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-ca6ad671ed75.tar.gz",
+      "sha256": "3d1c42206062661925fc0432e1f0fcc23a8593f93be3cc50cf83c645b63ede51",
+      "asset_id": 639126158,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-cf795e143f37.tar.gz",
+      "sha256": "829b207dc7cbb9bb3b1ab84aedb604c7e1f8d4ebd29690905b4b1531cb52f20b",
+      "asset_id": 639126365,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-d3c167468095.tar.gz",
+      "sha256": "174b66c37f4bfef1bfa36f91443e8891c668da176d95fcd333a535f06b7a3109",
+      "asset_id": 639126546,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-e1c6873255a2.tar.gz",
+      "sha256": "ba75ade30c79023486f4810d28dd4cc308094ab74a3447cd9d11cf601c5e0ec7",
+      "asset_id": 639127040,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-e3a33a98a83b.tar.gz",
+      "sha256": "e69eb5c5c9b8f9de7e53eecc31f25d633a9ad4ce30a38b14d32ec437655c1b0f",
+      "asset_id": 639127180,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-ead3518c9e9c.tar.gz",
+      "sha256": "755e665ffe5ed2a931bac4b84b5d81b9073697888c5f21c6e58baa5d21fbe071",
+      "asset_id": 639127784,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-eaf342277b81.tar.gz",
+      "sha256": "f80420802de3989090c7712cddaa6c7feb03f8c8214f6874856c05166d0fe34b",
+      "asset_id": 639129978,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-ed21b4b69d3f.tar.gz",
+      "sha256": "28df1c35abbceb04b4e46fb729daf9be25f2bd5e8a1b4ed4b316b5cc2928f738",
+      "asset_id": 639130097,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-baseline_tuning-42-f5e8079dffb8.tar.gz",
+      "sha256": "815b0e1e1a08185c7934264a869789117b80b52fbb2683cfd4ddb21c0455301d",
+      "asset_id": 639131061,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-final-123.tar.gz",
+      "sha256": "2fa8917d8dfc6a3d93b46c6adb7a188858ba47b8b2fa538f5bc5d4391be1000d",
+      "asset_id": 639310484,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-final-2026.tar.gz",
+      "sha256": "38215ae2728946e018c40d65e50318052dd262044d4821a8b33521b277af9e6f",
+      "asset_id": 639312816,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-final-3407.tar.gz",
+      "sha256": "719a6be1a5bd5ebf68ccefc8f610bc741761fcb732900a4b4d534d2abebece5f",
+      "asset_id": 639313080,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2015-DKT-final-42.tar.gz",
+      "sha256": "c907119fa5b89d88349689a3be52b0e263fd25945ab4cf3f838c6899f198448a",
+      "asset_id": 639313352,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKT-final-7777.tar.gz",
+      "sha256": "0b5f915e08ecdf20500f51029cccec38675d5b84b9bdae3d47ff3414d5c756d9",
+      "asset_id": 639313553,
+      "local_and_downloaded_bytes_verified": true
     },
     {
       "path": "backups/completed_runs/ASSIST2015-DKT-primary-42-1b12a9ba9ffd.tar.gz",
       "sha256": "f34203416193f1d6c42c6e2b8793d66b0005b67a69ca5ecf3926ecba33d973f5",
-      "archive_contents_matching_workspace": 10
+      "asset_id": 637444675,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-08fdb282128d.tar.gz",
+      "sha256": "dcee4b6abbc0dc950e9017d080c61ce0c0eb926717f927c25a2334a6b9649033",
+      "asset_id": 639131310,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-098d81f09fe4.tar.gz",
+      "sha256": "22e85c275da63fd8eef9f4c1fe8a0db61df826d7b50b647dfb828b4f04c9f146",
+      "asset_id": 639131465,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-0a3e79ad386d.tar.gz",
+      "sha256": "557162a40c2c038b471a7b64ab112242e320d9ceb80b4e3dffc1011b17290f42",
+      "asset_id": 639134541,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-11d76d0bb941.tar.gz",
+      "sha256": "5d639b906cb32012c28e8be84f63412518b5e13dc3b8b81c9aade2309b485e21",
+      "asset_id": 639134754,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-12ca12c38e29.tar.gz",
+      "sha256": "6a9ac6276c248c4791668f7c76ce0ac550bd4fccdbcb43c3823f3ec06606c174",
+      "asset_id": 639134986,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-14846cc69a9d.tar.gz",
+      "sha256": "64de07d715c056bb359adce8d0c9236f1cb02891b86595c27d517934c50df804",
+      "asset_id": 639137788,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-169270b0ab91.tar.gz",
+      "sha256": "aace8090e6564ed338bc790a76c47e5013a240deebbeaf8dde25b1ff23982d2b",
+      "asset_id": 639137980,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-1a8d927944bf.tar.gz",
+      "sha256": "e910ec987fed1a0c9e11dec510941d6f1cb5c9a840fb97c67591dc2ce6a24c3f",
+      "asset_id": 639140596,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-28275ff8a99f.tar.gz",
+      "sha256": "67fa01007e7efff48146d3049f59e55e05955a46cab8bba8dadd7aa294a22ac4",
+      "asset_id": 639145297,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-3a9936df0310.tar.gz",
+      "sha256": "0dda91db4e4982fd9a92d03dedcf8e07bb6cb55f14ea1eb608f5828342e7d9f8",
+      "asset_id": 639145487,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-425f5ac5e127.tar.gz",
+      "sha256": "13791190674897c6592c77be75e7b3b4f4f60e41f5d59eca75f4c875f1f4bdca",
+      "asset_id": 639148608,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-486d723b88f7.tar.gz",
+      "sha256": "e21683b9f91a07cebc54c2ed185f641e19674aea062a11e0e7ee6232676605f3",
+      "asset_id": 639149321,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-5b37061f9295.tar.gz",
+      "sha256": "5a0e23ef6e594595b425d32386bdcff6aef3ae01b62a38bbeea572fd22628246",
+      "asset_id": 639149512,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-5f0bd9deddc8.tar.gz",
+      "sha256": "dc3c44ddf85c925f24485cacfcd4d3ea274d1a0f13fa267bcc74d76073119841",
+      "asset_id": 639149673,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-65b7eddb78cb.tar.gz",
+      "sha256": "183351a42b42cebf1bde599db85dd59d3d86c07269357015468ff99c45301175",
+      "asset_id": 639152086,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-688451f4142e.tar.gz",
+      "sha256": "f913e9cb7822e37db2889f1b4e6ad6729db16ab25886ea5ef1d0dbaab8bf9b88",
+      "asset_id": 639152289,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-7c73faf36701.tar.gz",
+      "sha256": "a31f68cd6e4898023089122712ce0f04e4f9ad532f1f1a3e50ea6c5905cac39e",
+      "asset_id": 639152516,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-7d21b2506b5c.tar.gz",
+      "sha256": "c5ecc65d0053a21c54cf19a9a0be63ebd9f6ed840808af930aafc802b2d9b82f",
+      "asset_id": 639154861,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-86c7ed3aac97.tar.gz",
+      "sha256": "ceda6b99c222fa03813b14ed662ced79a9706f503268b88f50e654879a147055",
+      "asset_id": 639155223,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-8b776c0183fa.tar.gz",
+      "sha256": "251badeb861752d96cf0e7599798369809521c67dcaefc460144dffc27d23581",
+      "asset_id": 639157839,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-8cb23341ce7f.tar.gz",
+      "sha256": "a130196ca82ac0d1c2c3e3436365a9c0c43a8a074ce7d149d87738f8b3c5877c",
+      "asset_id": 639160282,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-a5158643e963.tar.gz",
+      "sha256": "96e8da80802bb7d582550cac5bb827de974047536df7831465c6a794aa10eb55",
+      "asset_id": 639160547,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-b3821db49319.tar.gz",
+      "sha256": "2184da8023391028edcd8280cf88227bdf6c2316e905a544196cbde651449f75",
+      "asset_id": 639161207,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-b8ffe2a20712.tar.gz",
+      "sha256": "ac1ec775a75e42317e622b0cd17f70ebe66c4fd93b8caea7bb901c4349dc8a26",
+      "asset_id": 639163517,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-c4ab17a14f1c.tar.gz",
+      "sha256": "917196f96472cd1093f431e0a3c03e15d194e84be31a75b8951a344188ddc24f",
+      "asset_id": 639165855,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-c5a11aa4b096.tar.gz",
+      "sha256": "5dc3812a831e2e9b7df999798faf4bed4c688d7291426c7e778c186a952f83bd",
+      "asset_id": 639167944,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-d8bf1106bb5d.tar.gz",
+      "sha256": "aeeac1fa5bb3b98bd9ada0a127f05cfc4baae48e9796b216b49bc42581a9f142",
+      "asset_id": 639168178,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-dafb2b3e152a.tar.gz",
+      "sha256": "029ed987f830173447291724f46f01f7258cf2dd1a655775b80be9362ae42df3",
+      "asset_id": 639170524,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-e61bc73e7dd9.tar.gz",
+      "sha256": "8e92f3a420b4179a0f2d05ae6c6cd7223615f3ac758eca381324e9a2725c8b7c",
+      "asset_id": 639170768,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-eaa61ab94f1b.tar.gz",
+      "sha256": "5394f00f80a5d03e194b86472c04533eee77d5e15782dc3b1447f38834d352c2",
+      "asset_id": 639171408,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-ee6af30822d2.tar.gz",
+      "sha256": "4f4aa01eecab4ea3ba7c6823863adb510ea0138bb228b6bc3c3e8af91ca9f02d",
+      "asset_id": 639173507,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-f0e949a00a8c.tar.gz",
+      "sha256": "4b17bb4088e69ca409d171024f66b9338fe60fbf8f9eb2c6dcfd7de29d19a14b",
+      "asset_id": 639174064,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-f1a35cdaa176.tar.gz",
+      "sha256": "75373c93777598664a613034de09d2411c90003f55132ed40640d22f8fe45ef2",
+      "asset_id": 639176696,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-f252c9e66ebb.tar.gz",
+      "sha256": "a919546a3dfcd010d00b2d30b17fc97e456cc240573516e8be5047b1f83f17d0",
+      "asset_id": 639176858,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKTplus-baseline_tuning-42-fbe730e1d871.tar.gz",
+      "sha256": "443d89d5652f12f38ef092e695fcf6f935828d9b395296c2531cb84dbf13b916",
+      "asset_id": 639177056,
+      "local_and_downloaded_bytes_verified": true
     },
     {
       "path": "backups/completed_runs/ASSIST2015-DKTplus-primary-42-3bf5cb94131c.tar.gz",
       "sha256": "5a0fad751dd133765d60e1edcae63e708032a5fa2a3cbb176c74d7ceaa8d78c8",
-      "archive_contents_matching_workspace": 10
+      "asset_id": 637444898,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-047a5f4ce889.tar.gz",
+      "sha256": "3ff7f28a3e07bce13e75d3e5b9a72861629d847fb79e6e94b8fdaa816007603e",
+      "asset_id": 639563426,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-0a5d05893267.tar.gz",
+      "sha256": "9e8cc79c4832e099451c3adbc56b059fd1842b2ba4a109d54f586ce570377959",
+      "asset_id": 639602858,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-0b02861738a5.tar.gz",
+      "sha256": "708779b1b2cc0d121a365549881713659d47991456a0320cac57584cf214cc27",
+      "asset_id": 639623017,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-1cf7bd2a7ab6.tar.gz",
+      "sha256": "ac87b06a0ec1dacd880b3e61b8cfd02e0f135b7416f907193e87dd5477b6b278",
+      "asset_id": 639645280,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-1fd4a1335151.tar.gz",
+      "sha256": "4d2d1bce75e000ef8ce988fda254de21b5465c8ef689c2d10944f04bd61cfcab",
+      "asset_id": 639688768,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-29e53cd0859a.tar.gz",
+      "sha256": "66761a163e85247620ce2d35418e7f055c5fe3a0b01358a062b50e3a0b76c680",
+      "asset_id": 639732228,
+      "local_and_downloaded_bytes_verified": true
     },
     {
       "path": "backups/completed_runs/ASSIST2015-DKVMN-primary-42-c91ed69c5400.tar.gz",
       "sha256": "e9c298957dad09944c867a650079176560ee7dce30793f6ae0dfea107b77583d",
-      "archive_contents_matching_workspace": 10
+      "asset_id": 637445162,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2015-DKVMN-baseline_tuning-42-3982d37828fa.tar.gz",
+      "sha256": "cffe7ee78e0bc4b3e02efa4d48b1eb9771ecb0e407cbf54805dda849ef386752",
+      "asset_id": 639732676,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-423cf83838e1.tar.gz",
+      "sha256": "497c9d6a48cd1bd907d82894868cf1d0a0fb32ea6bfa8ef4672fe9423b1c40a4",
+      "asset_id": 639784161,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-452e178d23ff.tar.gz",
+      "sha256": "16a9262b9aa7ff93475485ba2e21a877601e11dc3d13ab641297519a4a85772e",
+      "asset_id": 639830575,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-48cf87dfa0ef.tar.gz",
+      "sha256": "8a50e67653078e0199d0294c486711e2f772d5077be9cf3c42e81968a8a65698",
+      "asset_id": 639868876,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-520623824044.tar.gz",
+      "sha256": "65449fcaa1f722013741f65e232cf10e6ccdc7a49c6e063e0272203c7fdc06fe",
+      "asset_id": 639913344,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-53dce185492d.tar.gz",
+      "sha256": "b6087a93a29e31b9084391244741697e954ffd51e6051956fa606ad5bee48968",
+      "asset_id": 639936898,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-60683f8e88d1.tar.gz",
+      "sha256": "4a15a638b0ee00c112d9ad4b4440b458f9b7b6121b6c0846e554466604ccaca4",
+      "asset_id": 639979064,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-61711846e097.tar.gz",
+      "sha256": "bde61b0c8e3adc5c87a82d56a265ba97c77ebeefbed2e7f0ad052ed1cf0c41ee",
+      "asset_id": 640016152,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-64c2d5059a73.tar.gz",
+      "sha256": "b59adc822f9b8fd016e079cbaa78a7a221363d3bae64f3180a3c749a9de121f5",
+      "asset_id": 640059792,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-6b174d033540.tar.gz",
+      "sha256": "764064d2eae328a93b08248a11ac6b24a9dcc447748b8a379e64b59e708c732e",
+      "asset_id": 640081732,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-6e60c939f5b9.tar.gz",
+      "sha256": "56f3e6f59e814c86b158cae614080616e8de9714973983de5eb7f5639bb0e0ee",
+      "asset_id": 640095040,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-74ec9172397d.tar.gz",
+      "sha256": "daea8ad8fc2b78fa08cf9d19dcf13c299c76aa1213fa755c51820fe770725406",
+      "asset_id": 640115181,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-765cb8ab742e.tar.gz",
+      "sha256": "7266d55febee7d074700136dd7807fbe8d4efabada9026c9f1b58d1c131a539a",
+      "asset_id": 640139067,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-8a460c69719d.tar.gz",
+      "sha256": "d9bf08674f61ba7b46520f6f263974e23ee263d7f72ae8a5bb20702f606cce4c",
+      "asset_id": 640182000,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-92af7cba3fd3.tar.gz",
+      "sha256": "12a7b91062fc26bd3dce873edf56a0ba131e86a10074bdeedd7ebdea9a433ec9",
+      "asset_id": 640207266,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-9b89089e454f.tar.gz",
+      "sha256": "272471431001a69bcfbe375e70324fd14d43e978e3fd53d53265a84d7a988599",
+      "asset_id": 640226677,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-a1812d767a89.tar.gz",
+      "sha256": "038f80b012e9b35205a1b20e3f08cf073df83977fef0efa8b96e4f56fcf82094",
+      "asset_id": 640274279,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-b80aae38647b.tar.gz",
+      "sha256": "e4eb92e7d1fd1f8cc33661ca66a0a946f00223042c39db8fbb0542dec620c000",
+      "asset_id": 640307039,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-bac21a5a4764.tar.gz",
+      "sha256": "62763f282707f409b70158639c39a0e55c4a27ebc6357c4676192d1ac3b887fc",
+      "asset_id": 640324171,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-beae628fc78a.tar.gz",
+      "sha256": "47ffe8caf8b245ddc7bc39772a4a6c53cd340904a6f21c5a0086832f64a712a1",
+      "asset_id": 640367970,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-c6fc141f800f.tar.gz",
+      "sha256": "a6c1e313cbc658197082527596113ad6eb3959ad8c59680b3e5c2d5124430dce",
+      "asset_id": 640396195,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-c9e6d97f1b4b.tar.gz",
+      "sha256": "ef557db113ce97e163a6e560c9da05d7c1c3f56c1c289002430e2a3d352e56c2",
+      "asset_id": 640444798,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-cee9b38cefe3.tar.gz",
+      "sha256": "b4a34bd32bc4b37fe2f04bb71b0853bf425a1054cfdcb61b668162601aac6f9e",
+      "asset_id": 640467663,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-cf0ba53d7b6d.tar.gz",
+      "sha256": "8268fbb2c044469171961c5f4d9de3b9fd703a93a4d6824de8a3a972be8651a5",
+      "asset_id": 640500250,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-d2dc815dee5e.tar.gz",
+      "sha256": "4cc188b75dca87e41348f5f17d6e00f50dad0fe3ec62889eddf38f7111490ec2",
+      "asset_id": 640536976,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-df2be8408873.tar.gz",
+      "sha256": "5b6e8273371896874c9e2be36372edd600d5b8bbf12df41390129cee8ddf7aaf",
+      "asset_id": 640565169,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-e8423ad3f7f0.tar.gz",
+      "sha256": "ea9ccb4caf53c2afc5e9faef5fd9580c6ecf636d02e8826de24e0f809e7dca9e",
+      "asset_id": 640612101,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-f45d5f355d9e.tar.gz",
+      "sha256": "fb1272a42989fcedafdd96e37a32fcca9655a627006444ce53a8921c18d81a02",
+      "asset_id": 640638759,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-f4fa388a714b.tar.gz",
+      "sha256": "e296880b08c2afdade55ce64fbe901635e1bb6bcf7d781077aae5c0ef01edc3c",
+      "asset_id": 640688721,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-baseline_tuning-42-ffc49f271f93.tar.gz",
+      "sha256": "8de500c09b72ce63f6a0438c6e246070891f992f2b5468fc716dbd8d7950ce14",
+      "asset_id": 640718378,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-final-123.tar.gz",
+      "sha256": "fcb2c3ac00faccd94207068fff214b7b18a9091d0339ec6859e80304e1ba3f93",
+      "asset_id": 640744332,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-final-2026.tar.gz",
+      "sha256": "cc7feb94c0cde26d615292961dd3575b093a3025d0f4cc8590d274aa97b52e4e",
+      "asset_id": 640787618,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-final-3407.tar.gz",
+      "sha256": "9b25a3210b00108542a1a58a8384960fa794ac9d77677d7f8dfb6cbda8c4dfe6",
+      "asset_id": 640829722,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2015-DKVMN-final-42.tar.gz",
+      "sha256": "739935da328a6644066dbd8df6edadf30f2fee3edcfc8909d0fafd8d71da2db6",
+      "asset_id": 640830261,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-DKVMN-final-7777.tar.gz",
+      "sha256": "7abb111068f9acc2dab1db608ea642db627f7bedb10944f85348d2f39441d5d7",
+      "asset_id": 640876313,
+      "local_and_downloaded_bytes_verified": true
     },
     {
       "path": "backups/completed_runs/ASSIST2015-GKT-primary-42-c3a67383f961.tar.gz",
       "sha256": "e7b4d10f0cbd112881359d904c3f3fb2a5dc21882f7b16043769678947e774cb",
-      "archive_contents_matching_workspace": 10
+      "asset_id": 637445395,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-GKT_MHA-primary-42-6a6d36ebb3d6.tar.gz",
+      "sha256": "83c14a4674c990c38996ef1a4168254e37d4fd6fec4e9132b8d0f12bd28185ee",
+      "asset_id": 637998130,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-final-123.tar.gz",
+      "sha256": "d7b2ba3de415b7106f59b01ec641a902e90c8e842b3dca1616e8e12e67f7201d",
+      "asset_id": 638927601,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-final-2026.tar.gz",
+      "sha256": "4f282148feed8851b0d17a4bea2524b29a87d362ddf07c556f5cf1030e30f169",
+      "asset_id": 638930238,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-final-3407.tar.gz",
+      "sha256": "e155a8c4a83b848938b34133711c4f8665e7a6885ff828630dbbe0f9577418c7",
+      "asset_id": 638932951,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-64640d03b0d3.tar.gz",
+      "sha256": "ddd7984a5879d753903e1d307d78d808d63753a853d53bce191fc08dc7afbc0b",
+      "asset_id": 638809710,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2015-LightSAKT-final-42.tar.gz",
+      "sha256": "5630bb704430482bc62fd827ac43246bcdb3830f65b5eae99cff9527bce382ba",
+      "asset_id": 638933564,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-final-7777.tar.gz",
+      "sha256": "098669ce2fb65531a0d1f7d34354a00bb4abd372be10c6c89954c16a2dcbbb37",
+      "asset_id": 638936711,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-081855fbb02d.tar.gz",
+      "sha256": "39efff01954cdb951826193abfb65c97c6cf7fcc527df2dc8590ff77dfe40dfb",
+      "asset_id": 638757294,
+      "local_and_downloaded_bytes_verified": true
     },
     {
       "path": "backups/completed_runs/ASSIST2015-LightSAKT-primary-42-301d9bff60e9.tar.gz",
       "sha256": "565d592ed5b9a626b3ad5bccfa2297651048547ef0767d2240c45b7ee7d3286d",
-      "archive_contents_matching_workspace": 10
+      "asset_id": 637446358,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2015-LightSAKT-grid-42-08c3ea752993.tar.gz",
+      "sha256": "6aae4d7e4a88092ce309cd9065998713c3f8564296556ff53a54066ea919ed96",
+      "asset_id": 638757917,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-131e9e879505.tar.gz",
+      "sha256": "4fee865b1e79bce61a2b85192f46c3dea35324a9fc2c39ee379c1ce737e027f8",
+      "asset_id": 638763253,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-13899ec8cbe4.tar.gz",
+      "sha256": "fa048993517e716f2c99fabb6518d8a7c7807db7f6709d70a35650880e1c0a2e",
+      "asset_id": 638766123,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-1512d57add2f.tar.gz",
+      "sha256": "4c218deb951d9d484a74b8e5bc7e93492cc1d1c1bf83ea6258809621de09a75a",
+      "asset_id": 638768768,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-355019985ef3.tar.gz",
+      "sha256": "9fa91273f13588acf382cad43cc8adc9fc9903afba9e669fd2af9ed616303b3f",
+      "asset_id": 638771568,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-3769d3cd7356.tar.gz",
+      "sha256": "ec62c38776d71a062917c380059f3e8facc763a8557c00943479edc0c0a17153",
+      "asset_id": 638774139,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-37c34205659f.tar.gz",
+      "sha256": "b7c357acbb1dd81d49c3ccf900a80faf173628b6beee65c44a07f8c24a7d769e",
+      "asset_id": 638779090,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-39138de678ce.tar.gz",
+      "sha256": "f657aae43917730a96f335ad0bfa0d3603aa9984345f69c54bb80a9b8c2129af",
+      "asset_id": 638782087,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-397bcc602116.tar.gz",
+      "sha256": "4ea2d5cb94e065ec2cb58a78c820b9a0e3db253fbf63fcf5caf43a916b224e31",
+      "asset_id": 638788676,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-3de8a446858c.tar.gz",
+      "sha256": "23941add34fdbee2dd201e1a69ea2eb5885637bdb0a4a4e8c3b8292008882611",
+      "asset_id": 638793461,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-445182637f37.tar.gz",
+      "sha256": "73a43006c97dca9ab2ce6c9b7ea110f49dab5c82618d251860716cedd539402c",
+      "asset_id": 638796503,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-5d0c2dacb4af.tar.gz",
+      "sha256": "8fe75ef71d476b7cc43a5c7a0dd81e7ede3dbaeca4ac40504ee268d4e67e7a34",
+      "asset_id": 638802242,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-61850ea7cf03.tar.gz",
+      "sha256": "8dce4b18d52f81f5503fc7a75e82e77e02caab2cb64315403a55e1dc41a857af",
+      "asset_id": 638806587,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-6aad389a9ff2.tar.gz",
+      "sha256": "bfb9d2a23ac9fbed701efdf3136388bed097095bf95f81b3ec80f2ff5f845fb6",
+      "asset_id": 638812884,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-6bd53e61d1a0.tar.gz",
+      "sha256": "54eb58e833cdb6907019b28f5a35707bde1572c3a72a1213ed6a3f5ef2fb9a7b",
+      "asset_id": 638815732,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-6cbd6e38b46e.tar.gz",
+      "sha256": "3e7fd27fb201ec437ba9a18a7c13b65820f252627d1df17f9c76c180b371e278",
+      "asset_id": 638818629,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-7f6c59d24a33.tar.gz",
+      "sha256": "d30a3edabe02af33ac25925b3b22f5e8ee04ef08204ab5773aec06c416d1c568",
+      "asset_id": 638823147,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-8a618101270c.tar.gz",
+      "sha256": "09d7b9f9ff071087f0a884f925b3ac48b8559108a561fe03f11441d47f9960a5",
+      "asset_id": 638823329,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-9349926da302.tar.gz",
+      "sha256": "e78df41e4ad1003b59b9b9924b580a64d37fea6c4f209e22e76a1aba9394863c",
+      "asset_id": 638828162,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-9b758c5a3448.tar.gz",
+      "sha256": "ca171d99af469f0a416211be175047ca6733fccdc003a9d8e322f0f81678f082",
+      "asset_id": 638831912,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-a0f261d0be90.tar.gz",
+      "sha256": "0bdc6fc3f6ebada820ffecfad9ec1b5c059065b1eaa15e2a7a3f25c49f4de2aa",
+      "asset_id": 638837265,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-a540855228ac.tar.gz",
+      "sha256": "8dffa32569077e3a8691d1890f578f31757a5d5989158db8d04e4fe46c7f7868",
+      "asset_id": 638839942,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-a5627c7ce7bc.tar.gz",
+      "sha256": "5abbce21c177875e39ae447ef7f4bc49b23fd38ff322bec594f19c6969c25a00",
+      "asset_id": 638840532,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-a628603467cc.tar.gz",
+      "sha256": "49d2ce484961223ebc59c69a17d6d4aaff0206c99141907a8b765cb99250bc9e",
+      "asset_id": 638843019,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-a69da8e923df.tar.gz",
+      "sha256": "ba04772a15868c5376afa61a3691d91627473be9ddf524bd718b23939bfed0ce",
+      "asset_id": 638845867,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-b0aeca4e3190.tar.gz",
+      "sha256": "3cc0b3e6afeaa1c50fe2861b2076e87e57d290174e2de4f444506a08377f65b6",
+      "asset_id": 638851086,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-b39fa45105b4.tar.gz",
+      "sha256": "30d62bfc244220f50cc4a00f9812c7d519f32bf8892326d4cbf2506f6c7bc45f",
+      "asset_id": 638854252,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-b529d6901c60.tar.gz",
+      "sha256": "d4357e15ff53a335ba72c2c6f5293fd4e0f511bd8e4c2b6db8d4b165b1349970",
+      "asset_id": 638857218,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-b7a847dd2b34.tar.gz",
+      "sha256": "1b1243444865120e3df781007f6745c5857f2ad8299c319659dc8255dd25e738",
+      "asset_id": 638860361,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-b95f4b0e409b.tar.gz",
+      "sha256": "53d14990781f13048223f5d3e0bd6bc51930b4ec1bbb996e9f149d6bcdba67b6",
+      "asset_id": 638863161,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-ca3f37a65ba6.tar.gz",
+      "sha256": "8e2081552916ad791360caa74de314d7f6316cd3cf8c23c4693b04390bbd4a81",
+      "asset_id": 638866192,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-e1f81f69cd99.tar.gz",
+      "sha256": "3465dd89d769371034ef77f4f7bb41f4c44ce411d436dd3952b98066e136d3e5",
+      "asset_id": 638868863,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-f53e52b77c73.tar.gz",
+      "sha256": "db1551d86876bb6050164b3af46a5ea85ebb3793e6d6edf7203980a10e803c1d",
+      "asset_id": 638872002,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-grid-42-f8bde96560d6.tar.gz",
+      "sha256": "1be64735c9571b26155d988731266a93250d3e0f9084ee3d81ef76c56f4843dd",
+      "asset_id": 638874604,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_attention-123.tar.gz",
+      "sha256": "db41353dd2e7eb6ecf83e60bbf6d911fef701d16b5d6d57c375ae2a964dd4504",
+      "asset_id": 638966657,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_attention-2026.tar.gz",
+      "sha256": "7037e440686a94e20d481a3a236d8148623191c83c0be2cd21b9d1e7bebf97c5",
+      "asset_id": 638966847,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_attention-3407.tar.gz",
+      "sha256": "a90a10bb9b391ee439afbc417bc532467660a22cd3d344e0dd2d9e64034d8445",
+      "asset_id": 638969176,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_attention-42.tar.gz",
+      "sha256": "a789d0097071205629a34352a5ee827dde87bb300438e0c6ccca74ae1c30ec98",
+      "asset_id": 638969646,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_attention-7777.tar.gz",
+      "sha256": "0fcb2340578ae3d8efd649c58a1e211c50f534071a0e22c9f57651892b0f18b0",
+      "asset_id": 638969870,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_dropout-123.tar.gz",
+      "sha256": "c6cd7182435b4ecaa702adb8a2e5a5b6d0218f2c51a5ab70df7dc23b8233ff0f",
+      "asset_id": 638972313,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_dropout-2026.tar.gz",
+      "sha256": "606c66b2d036035b2b6a78c79196a476602a0a3a545804766d5ede61c5d2e3c3",
+      "asset_id": 638974640,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_dropout-3407.tar.gz",
+      "sha256": "9cea435fb0a123b428c9f374dc552d405091474b91c0395da209b003e591e931",
+      "asset_id": 638976965,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_dropout-42.tar.gz",
+      "sha256": "c2fdc2ca0afcab82f49a05e8b341910c48e2e5c283e7f200c537b72c8307e903",
+      "asset_id": 638979137,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_dropout-7777.tar.gz",
+      "sha256": "f7f6fcef1d5998bf31bd5d4f486876b33b4c5ee240b17524c3888f83865b8a36",
+      "asset_id": 638981591,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_position-123.tar.gz",
+      "sha256": "e9c1b1c592c36ac376b6191855203aec040358b160f695ec52498de97f0dcf23",
+      "asset_id": 638984048,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_position-2026.tar.gz",
+      "sha256": "1ed936ec89f3dacbc03ad8cdfc605457d5a63e69db768bf24f20da971ddc8712",
+      "asset_id": 638986165,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_position-3407.tar.gz",
+      "sha256": "9836536d89d59692b9e66dcba1d44bfa0b06e1d218ea6c9ce6c54e3071016503",
+      "asset_id": 638989423,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_position-42.tar.gz",
+      "sha256": "dcb5f6d6b02b1543e19779ac7986c75511e80fed414dc99e11cafe857b8a5db3",
+      "asset_id": 638991659,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-no_position-7777.tar.gz",
+      "sha256": "24e30602253356dc701d4e1d4ff6940c8ad556889f0f76afb54c16e3a8ce052a",
+      "asset_id": 638994243,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2015-LightSAKT-no_regularization-123.tar.gz",
+      "sha256": "9734f7574ad0556f5fa313ff74f8067e2e04f8ae4530aa455f7bcb675245cb99",
+      "asset_id": 638994439,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2015-LightSAKT-no_regularization-2026.tar.gz",
+      "sha256": "7304f31ec88d128a352676066aea7c04cefcaf83a457839d0b8e1cf34114943c",
+      "asset_id": 638994590,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2015-LightSAKT-no_regularization-3407.tar.gz",
+      "sha256": "39c988b23e85f3641ddc49f609870e17deddaaa678351f4680073185ab3c1b72",
+      "asset_id": 638994780,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2015-LightSAKT-no_regularization-42.tar.gz",
+      "sha256": "e5e17f8e5f6872c12de626bb081990a52abd3ee740967f2c38e4df3c3e22149e",
+      "asset_id": 638998345,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2015-LightSAKT-no_regularization-7777.tar.gz",
+      "sha256": "443d085e7e297e8bd8d2c0b640d1ff945e464bdbdbb0bcc7e4ee1cd5d8cb6068",
+      "asset_id": 638999244,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-single_head-123.tar.gz",
+      "sha256": "7ffd0001db684ea2a69c1fff3f8d34de3b70728cd63b3284409fa38a18c9e47e",
+      "asset_id": 639006082,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-single_head-2026.tar.gz",
+      "sha256": "9c42cc1506bcd16840c2cda7edc450f68780d5a1604b6366ccb53db503aa236e",
+      "asset_id": 639012825,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-single_head-3407.tar.gz",
+      "sha256": "2e9a3a5cb287e93394c2143c2da949587acbbc82542dd101c5f35c0d709b6fcd",
+      "asset_id": 639020585,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-single_head-42.tar.gz",
+      "sha256": "13752c83d2d282a5271556435e849bda999f9b5fc3c7e3ed49e16113d77f5f9a",
+      "asset_id": 639029724,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-LightSAKT-single_head-7777.tar.gz",
+      "sha256": "0b13c347537c4bb856fe54037fcdfd56bf36093e0b48b1d38c4b85c269d47ad2",
+      "asset_id": 639039876,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-01bab1af4afb.tar.gz",
+      "sha256": "26bc605eeb29e4b2a49f6ae872b6418043257f837b227aa21d1d24e211d42eb2",
+      "asset_id": 639179084,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-028d32988eaa.tar.gz",
+      "sha256": "cc5bff98a3234b893c8d596270b856687d1354008b2e1776f6fee91bffe23fb8",
+      "asset_id": 639179292,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-06da83df8033.tar.gz",
+      "sha256": "051038870d7d0429eecc9e4505b1f38e24940352b778bcc3e87288efc6a92885",
+      "asset_id": 639179962,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-0c98a51b8b8a.tar.gz",
+      "sha256": "248bdede8942abe03690e766a298627af0ad1fb64c49eb6e1a101a96e91ce3df",
+      "asset_id": 639182614,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-16f1e00c1516.tar.gz",
+      "sha256": "6b6219273a164f373772c3c48238612188969168a8d81af9d88beb4f2f74bb0e",
+      "asset_id": 639182839,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-17c8d100b617.tar.gz",
+      "sha256": "ba8f80765067b1121598536f217728954254b868124c99a3fe1c966676e923c7",
+      "asset_id": 639185293,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-1cfc050207bb.tar.gz",
+      "sha256": "0dcfeb635b1db818c2cf70b2411e9419d353b403b9ecbb649caf2a8405fe7890",
+      "asset_id": 639185486,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-26dad4632b04.tar.gz",
+      "sha256": "4f9a7e5142402ddaf88491bba7adc112a642337a214841f48f30b6d55c3afb19",
+      "asset_id": 639185640,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-31e3bb118996.tar.gz",
+      "sha256": "7263d506b9d8e9830e6830d0d0b376ea8d2d1bbf562463abba2f58cdd07a0072",
+      "asset_id": 639188328,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-380a89874a7b.tar.gz",
+      "sha256": "c3a9cb2a141171d795b64087dcb16028b6f9c7b0d585cd84a0c5b0fe2451f017",
+      "asset_id": 639188570,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-3f50a672d3be.tar.gz",
+      "sha256": "837566536cceffba248723e6db9f32a5e130a3bd1a296dc2e8de742591da0e3b",
+      "asset_id": 639191127,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-41d62d453e78.tar.gz",
+      "sha256": "f895c26f1d8f932cc4b6e165191d9597a1c02554757bd515682de9b87438a389",
+      "asset_id": 639193629,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-4cc38d7c6af6.tar.gz",
+      "sha256": "64187621ae5c41fe9c4d983663ca546bdb49adc3aa93f93a22e988cd9211f965",
+      "asset_id": 639193841,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-53392b2ba114.tar.gz",
+      "sha256": "e81dcf2f1624407a9e9b6e0766786d6e10e6638f858762bc826c79aded55a311",
+      "asset_id": 639194071,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-53ed4a3c5ca5.tar.gz",
+      "sha256": "f16b072774197f8d693f3ab1f6eb541162d56bf2d88fdfc004cf35af21b7d71d",
+      "asset_id": 639196975,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-5cf89a653a6f.tar.gz",
+      "sha256": "f3537363929fe8a6f6a623c7629000ac9422cc76e1484aceda52bd0a654044f4",
+      "asset_id": 639197230,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-69254dc601ce.tar.gz",
+      "sha256": "6b2756bdd17ef1e4d075b80d0d04b600e177d7e126128e460949e6b3b6f6d22f",
+      "asset_id": 639200117,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-6c40e900aaeb.tar.gz",
+      "sha256": "93c959509d146a992757c651f7a8eb4b9d64e6e0f92fcdb8f6c3cf2f0996400f",
+      "asset_id": 639200356,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-7278df8e612f.tar.gz",
+      "sha256": "67a973726842a87ac282cd89b52936ee4d7ac8ea54b97f9019863c6b77161468",
+      "asset_id": 639203332,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-75c8b222ba86.tar.gz",
+      "sha256": "6e847423b9ee20c1683544f916d3e4c266bfa32792ab8ecdc08e610e2c5c595d",
+      "asset_id": 639206362,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-7ef5102469c2.tar.gz",
+      "sha256": "b23862b1c208d508a32d11c2af5c4d3553f1f3524c65d5f97f60aa6fa012833a",
+      "asset_id": 639206588,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-94e59fd4ef76.tar.gz",
+      "sha256": "b2a89ee74c280b1ec16dd3505289dc02eaa817b2b877859383ad136fb405d5b1",
+      "asset_id": 639209677,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-9591f5a0d289.tar.gz",
+      "sha256": "f08949fd56ad25a894089605452c3b4e7225423379d92f92fbd5cba3ef4324bc",
+      "asset_id": 639209935,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-99ea7a53ea76.tar.gz",
+      "sha256": "504131feb18d3277979434fff5ace1b993c52bc11be99c8d12c62f71db898899",
+      "asset_id": 639212331,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-a1500ade638d.tar.gz",
+      "sha256": "2075b7ff42f2d9dfc2c532e34a55d469eeaab46013b9065f6cd349ee740f61da",
+      "asset_id": 639213029,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-a34280090ab6.tar.gz",
+      "sha256": "5ee2953254c1055b8251190cce41ed993de05b221bfa9c8e8d624cb7f73a9d3c",
+      "asset_id": 639213303,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-a90cacaaa73b.tar.gz",
+      "sha256": "c0b3b65d8aade2fcf9b113f0743e35824fe6ce47ec21befb1926d66310838fd6",
+      "asset_id": 639213583,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-ac68ae9e46a8.tar.gz",
+      "sha256": "1f00be715c33d66bfd77e893041cf82e4779de9afdc3f4bf201625e008629e84",
+      "asset_id": 639216375,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-adb0a37c45ee.tar.gz",
+      "sha256": "573826efbf6555b3ee3ca41385ff7507c8ffd2f135d11f1f98256aa3819955e0",
+      "asset_id": 639216575,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-b5f012c01c5e.tar.gz",
+      "sha256": "114e375742cc7fdf783e3c57a4aac6895506812769289aa330ac34e28ff3d91c",
+      "asset_id": 639216977,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-be65c6ce2c83.tar.gz",
+      "sha256": "e49c5b4cf958bd2702de21cc17dba425c65b65c60e10f16178851df6754da8d3",
+      "asset_id": 639219721,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-c942c211f56c.tar.gz",
+      "sha256": "0f090334d9c7c76d0c628862336035315b48a59c6a5c5f0c49584ed8b47a9610",
+      "asset_id": 639219937,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-cd59a9db41c2.tar.gz",
+      "sha256": "3c2677a59abd78596e3ec6212e0cca3d16f86a71e9dea5df536115ad3c943b33",
+      "asset_id": 639222527,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-d7e81d4048b1.tar.gz",
+      "sha256": "e580e2354473da3e590b1c89101803b7980fab15906c6ad90790f0183519c5cc",
+      "asset_id": 639222646,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-e1d26e292242.tar.gz",
+      "sha256": "745de739acf2512c5954935b1a18173f55d1d01720a126fd30913d8c8c20db25",
+      "asset_id": 639225183,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-baseline_tuning-42-f617b0c5117f.tar.gz",
+      "sha256": "b0fd060ff26952a57996ab6d32bfbfd3bbdc27600daffa6beb2fad1d0221d581",
+      "asset_id": 639225415,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-final-123.tar.gz",
+      "sha256": "e6083fca31a9da1f3ae03eecab3d6a8a7af391498e2814536316249405ac43bf",
+      "asset_id": 639314259,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-final-2026.tar.gz",
+      "sha256": "0c853e72ff03d60a499de286f7dd924e29e991c858834af7b1b195ca93aac9d0",
+      "asset_id": 639316705,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-final-3407.tar.gz",
+      "sha256": "89b16e703ea2d79196ad51dc7f3bd634f22055d6716e15be0e98a9a50aeaf6b1",
+      "asset_id": 639317000,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/ASSIST2015-SAKT-final-42.tar.gz",
+      "sha256": "0e640c132dcbbd8d82199f9d10a764a6468c022823f28c8a764e8442110911ba",
+      "asset_id": 639317322,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/ASSIST2015-SAKT-final-7777.tar.gz",
+      "sha256": "7ca9e7cd766f78149ea2e39bac38477baeef7e63b17b0a2ab2c9ffd0f7d7269d",
+      "asset_id": 639317592,
+      "local_and_downloaded_bytes_verified": true
     },
     {
       "path": "backups/completed_runs/ASSIST2015-SAKT-primary-42-c67b62d42456.tar.gz",
       "sha256": "a61b657c5d1214fa34163dc6af9ecc2493f14bdd42f4e0740f5070c06fb9cb3f",
-      "archive_contents_matching_workspace": 10
+      "asset_id": 637447228,
+      "local_and_downloaded_bytes_verified": true
     },
     {
-      "path": "backups/original_and_raw_20261013.tar.gz",
-      "sha256": "9ced67f7ca565cc70069b02fba0d7c9b626c047eed4af8085f0afb408abfa0ee",
-      "archive_contents_matching_workspace": 1619
+      "path": "backups/completed_runs/Algebra2005-DKT+-final-123.tar.gz",
+      "sha256": "962fff65231af0ef49a9565374a0d1a47235ab41e3f2417214daad126f4a0ce7",
+      "asset_id": 639317982,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT+-final-2026.tar.gz",
+      "sha256": "85899bcd1ee327098a03ca9106e405dac5495cc83ed1e74ecea55e2f91f1d15d",
+      "asset_id": 639318372,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT+-final-3407.tar.gz",
+      "sha256": "1b55a0079e0036609347e412e8d733426a7a43cbf2d511ba0b8ca86c1fb32682",
+      "asset_id": 639318654,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-da8b7c84fd0d.tar.gz",
+      "sha256": "27eafdc0866eff40b6a33f588af531d38d6080db93422f3406dfe0043ac2cf25",
+      "asset_id": 639269345,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/Algebra2005-DKT+-final-42.tar.gz",
+      "sha256": "69c1cab2eaa8f5b583b40fb57500e7bbc49f3bb7b695ac805f0cc07b53e84d49",
+      "asset_id": 639321340,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT+-final-7777.tar.gz",
+      "sha256": "1f1f0c6e3b8ebb1bec77d65007e75431fcab9d1a252422e33993481877f7a271",
+      "asset_id": 639321559,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-026868bd5f71.tar.gz",
+      "sha256": "6e6c9f1f28451af338beebcaa2e3423a4295cfade97b9dfc8411dab9abd495dd",
+      "asset_id": 639228088,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-0ab2906ef07e.tar.gz",
+      "sha256": "c5a1676645e402e86fdafe42995bbc33b97b1fd25cece55f4576a1068876ecea",
+      "asset_id": 639228441,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-0f35021e6a2a.tar.gz",
+      "sha256": "e137f51097b0363403a28c6b9d4aa835f2efe4ed10c3e5dba0367d453289832c",
+      "asset_id": 639228615,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-0fe87503e8ba.tar.gz",
+      "sha256": "d6ab409daabcf9cdcf952faa906eeec378c4c53391929c7dfe44297f2a8b150f",
+      "asset_id": 639228888,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-10f38b00e5a3.tar.gz",
+      "sha256": "aeb05d3d1cb1f6e3985a949bf7098b574beb3661d21d93c98bce4549d4234d39",
+      "asset_id": 639229488,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-16c901f1ddcd.tar.gz",
+      "sha256": "c6dfcad29d4f260fbb9a37dda9e17948eb30a24f4f22a4144c9a3fe24b77c6d7",
+      "asset_id": 639231686,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-234efe0c1bfc.tar.gz",
+      "sha256": "30671b466ac935dd31b7f298c8cae856177f449d167fbbbe1fa375124f16f211",
+      "asset_id": 639231914,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-2440a97e1466.tar.gz",
+      "sha256": "603d5687794f837a05edcbe555c9d1d0d201d075109c816be91a30c06f701a88",
+      "asset_id": 639232102,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-2ee789b1628e.tar.gz",
+      "sha256": "96022846a755ec771372d56136b88af261404bec190c05b26c19104279d0903a",
+      "asset_id": 639232261,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-306f31d01f96.tar.gz",
+      "sha256": "2ef64e612e02f1c295f40beaef9bffa0fe9cb4c1d8fb6ac6a49003c1949d2270",
+      "asset_id": 639232494,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-308d6e6c64d0.tar.gz",
+      "sha256": "a32a2d51feeb5aeac6751aa3a1aee247172b65a96ce7a90eaa1cf5d391bd837a",
+      "asset_id": 639232819,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-40e0ca4d6e37.tar.gz",
+      "sha256": "556cc42cc4f46bfbbe43d27cc25376d727f9797646b52e7f2a1446924b6fb057",
+      "asset_id": 639233055,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-522c69541bd9.tar.gz",
+      "sha256": "edcf18903c71a09e9996616b36fff3e80b0c859f336379edec2736b86ea90cae",
+      "asset_id": 639233256,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-59d1ca0daf2a.tar.gz",
+      "sha256": "24868e003919e26bd48ba3fb5fd351678252299106bae621a72f9382e92c6736",
+      "asset_id": 639235714,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-5bd91877fc05.tar.gz",
+      "sha256": "d932fa69b53d3ea71ba89a7d4239d117433ed77bfcf98af1ad44f63d30aa5962",
+      "asset_id": 639236585,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-5e533f9aba4e.tar.gz",
+      "sha256": "5a0063ebae6601cf9a8bc8d398d6130cfb65e3d58c4ce2155916377c3a1c5dfb",
+      "asset_id": 639236776,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-5f8fa5b5da96.tar.gz",
+      "sha256": "bd0804c41f43cafb62310a88fbbff72a5bf342e9c229f7bec07566b4f8a116ca",
+      "asset_id": 639237224,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-69f97aeea9ea.tar.gz",
+      "sha256": "e1f8634c6c6e23cd7682f09c6a591ba40291491389b12aa371bd53d01877eac4",
+      "asset_id": 639237472,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-757c1cfb2b44.tar.gz",
+      "sha256": "b1ed294cc7bfd99e1bc63cf153e7be3924d48c3d261621b8211fe4787bcb3cc6",
+      "asset_id": 639239989,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-7675e36dcc92.tar.gz",
+      "sha256": "a843575f736e0ee3c157db631d790b8f881bdb4e896344b07c4abe932490c7f0",
+      "asset_id": 639240718,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-91da215e7de9.tar.gz",
+      "sha256": "9b96c19ce2b94c69de9204419dfd9983ad2417395b1af8651c1417ee9f1b322b",
+      "asset_id": 639241504,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-9804a1293d63.tar.gz",
+      "sha256": "9e2b0d78685c991e084c094d96fd1df4b04b4845860a76a8122bd67cdd141c53",
+      "asset_id": 639241796,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-9c665f296c80.tar.gz",
+      "sha256": "9b50324cdec7faeb504aa9f59a28ccce54703807b845276604e9d26c059b642d",
+      "asset_id": 639242393,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-9cb8e8e37cba.tar.gz",
+      "sha256": "d5a07f0e9bc40a70d1bf2bbd0a23cfc694d2a244c9cf5991fc9293e4fe5698b6",
+      "asset_id": 639242743,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-a11e2bee0625.tar.gz",
+      "sha256": "e5485cf1deb27c3047fa3d6177611e2e448f71f966593992aa1c482f6cfa079e",
+      "asset_id": 639243291,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-a2c589815887.tar.gz",
+      "sha256": "8dd56ad2c4d803058bfe2a5a36882e8e5b5042fe1746fd3e092ce058f1f6a38d",
+      "asset_id": 639243466,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-af1929e55770.tar.gz",
+      "sha256": "c167cb1028743dc431fc66125bbecf726c73d8119dfb8b10ae38ab7cb810a428",
+      "asset_id": 639243648,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-b61a7509c04b.tar.gz",
+      "sha256": "9000e55b50f310a2bb82d0c8035e22fff5cb75c3830bfae806937b25e5be06ef",
+      "asset_id": 639243864,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-b69082194c3a.tar.gz",
+      "sha256": "8905d193016153c36d3750d1842c908f4ed74aae6165e20ca4f6c3ed34033e21",
+      "asset_id": 639244117,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-cdd715485ce3.tar.gz",
+      "sha256": "cb7ead97fbef9dfbb7515b7d4c33358a4f175d1dcaa39ab45daa331f43776e71",
+      "asset_id": 639244361,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-cf5b31b217c8.tar.gz",
+      "sha256": "8245cc18a6bd1c1aa4b044c178268026ded09b24f2f416aab10e59252018070e",
+      "asset_id": 639246830,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-e157ac96ae94.tar.gz",
+      "sha256": "4c3654e14a7e816a3d7bded01de2ad8c3778c71d337c2ae54fc4ffb830dec519",
+      "asset_id": 639247139,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-e701974ae072.tar.gz",
+      "sha256": "b132bd1a10867ce0e4dfe6d0fa98b8bf282b2b5cbec16cb1d2e884b3480fca7a",
+      "asset_id": 639247807,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-f6ce8308d663.tar.gz",
+      "sha256": "3cd103b73b5b1a1037e730149083ea1f11bdb2b1511b3ee1ac65f6178c0920f0",
+      "asset_id": 639248074,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-f94a1fd705c4.tar.gz",
+      "sha256": "7a1e79134f53ec5962c4e41d0cfbb1606530262888af450bb098a84f3d5b5965",
+      "asset_id": 639248309,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-baseline_tuning-42-f9ee25136615.tar.gz",
+      "sha256": "5106801431c82c43c3d159174a258a3779bae9d2f892edbfc02f92dcc2132efd",
+      "asset_id": 639248550,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-final-123.tar.gz",
+      "sha256": "133c7be2b4499a4257e62848b11cae3ccc34ad82a8f14fd7f3bd6ddf46035a91",
+      "asset_id": 639321837,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-final-2026.tar.gz",
+      "sha256": "42c407f730014c9a410224c791ef475f74a019923317910c1b029b58cafbf1dd",
+      "asset_id": 639322108,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-final-3407.tar.gz",
+      "sha256": "6ff315852e772241da126c1ef7c7fd029621c09abb1e1fb96f19cf2d4b37cd5e",
+      "asset_id": 639322395,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/Algebra2005-DKT-final-42.tar.gz",
+      "sha256": "436cc6967fc699326f05fe22ec182b4478c8fb38bb3ed9601dffbdcae1e3872a",
+      "asset_id": 639322675,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-final-7777.tar.gz",
+      "sha256": "672b2cef326e24c3ff566b7a207f299a2aa9fd4259e44fdd8f808a0fb1b042b7",
+      "asset_id": 639322974,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKT-primary-42-0a42097f8641.tar.gz",
+      "sha256": "18c041289e1e28cb0a68793ac86eca47bfb7739941634db5c26240b42d5e1e56",
+      "asset_id": 638000469,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-06bc96365128.tar.gz",
+      "sha256": "ab4d3090c5b444cbd20ff4c2e745b37b4f87789a8f7a950b9f0e7a5a8a32c775",
+      "asset_id": 639248762,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-0807500c38b1.tar.gz",
+      "sha256": "bd0889a8073cdcbba75e03050aad98c11ab8b3cf1382938737163bd7d59472fe",
+      "asset_id": 639249011,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-0e2c05ebb594.tar.gz",
+      "sha256": "f9d5b32a9576acbb97a1ff12cdde92b989c96e837d6bde2cfc7c6f3ee059975a",
+      "asset_id": 639249270,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-19115c166b2a.tar.gz",
+      "sha256": "60b790d663952059f035aba51d5fc6804bbe08d859c1110e9d4e74464e3a2621",
+      "asset_id": 639251990,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-234e06f56453.tar.gz",
+      "sha256": "f1a727e505f7b0091b259bf7b1d95bca1262db33618a554af9135cbcf04c84ec",
+      "asset_id": 639252628,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-3c75b69dfca9.tar.gz",
+      "sha256": "a24b905142e424f4290782f9da48ed27c359dc1682945de9f6f7829d8eb11722",
+      "asset_id": 639252907,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-4aea3aadd2c6.tar.gz",
+      "sha256": "1301871decb7cc2453fcf446f8610a60761ab6b80b3d1a0e185cb80bc70ef4f0",
+      "asset_id": 639253187,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-52325a945ba4.tar.gz",
+      "sha256": "2168db892f4b5182a281a60251507c8f0a381f24c0439dbc8c092de2b9fbbb4b",
+      "asset_id": 639253460,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-59f8972dd2de.tar.gz",
+      "sha256": "1ed2a3736ce587d8b2264e434635559737d7685ea4158dd95f87134aacbb1957",
+      "asset_id": 639254096,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-6019ec24c551.tar.gz",
+      "sha256": "ca88e0c6fbf8005d1e4fcaf086996ae84ae42a9f93573674e7908c32f9187309",
+      "asset_id": 639254355,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-61f3de158125.tar.gz",
+      "sha256": "033557a37085fc1b83ab08afef8577ffa463023238a60c0b4b2b6d403be40769",
+      "asset_id": 639254708,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-629ff03d3408.tar.gz",
+      "sha256": "3813796fda68e4c50008885010e8ac9844cbd9027939a1b10917d699de3190f8",
+      "asset_id": 639257109,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-7e3d1172100e.tar.gz",
+      "sha256": "bc84bfde0f3017008a1bfd24bec402afe3a650f0b7848994c9e19bed2e863e9e",
+      "asset_id": 639257812,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-814ead8d9f6f.tar.gz",
+      "sha256": "f115257fab88029a4709d3d9893251042815bf2f2a1a468eab37e94d57531b0f",
+      "asset_id": 639258105,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-86b4519350e2.tar.gz",
+      "sha256": "95d7ae165151e1745663c17a381e60b7c68a5c9568247d6a7752e227b99dc6c7",
+      "asset_id": 639258364,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-86ce13ec874d.tar.gz",
+      "sha256": "4eb8d6f5da8c9729b2634e2bc42fba8e7394735bb1deb5e48be3abdf8718a6e2",
+      "asset_id": 639258698,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-88c51666bc3a.tar.gz",
+      "sha256": "1c43aa3e93902a89b48a82b12a74b05d015c2568ef427764ce41906028942f2d",
+      "asset_id": 639258934,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-88de18e60154.tar.gz",
+      "sha256": "35eb5072549caea74a67d14ea8d5f9586b21374382237adb618676458d2b3799",
+      "asset_id": 639259205,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-8e13f7f0f52f.tar.gz",
+      "sha256": "2e98be98bf895267f19a0d3e1cab10a18affcc87d2431c9e36763e9871f20fe6",
+      "asset_id": 639259962,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-9d9120c61e83.tar.gz",
+      "sha256": "cfa1f65b4bbd991ad258cabcbb221aa0542391e4747b0ea9aee6f80c1caa4b63",
+      "asset_id": 639260235,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-a1aae8b926b6.tar.gz",
+      "sha256": "e836c00729f0ee8457fe4fec553dbec73625cc0dffff59f4f7f16837e8c1c069",
+      "asset_id": 639262974,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-ac6d7c1ab73c.tar.gz",
+      "sha256": "9842a841d7e1db863c284f4a704e38fbb09be34d241bbae0488bc6875db63dda",
+      "asset_id": 639263245,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-b73f114bab15.tar.gz",
+      "sha256": "81f500812dafa2e6a9cbec8897edd49f390fdc7097e70335985aa78d654645fc",
+      "asset_id": 639263471,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-bc4edd4b85fd.tar.gz",
+      "sha256": "518860fa2266061e5812a0f75226836c4ecf387985efe8140c7ebdaf8e819969",
+      "asset_id": 639263733,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-c3c6df50e4e8.tar.gz",
+      "sha256": "9f002bfd25510bf832cbf4c2b2ca02e38554d59c77bfdff644e4ebcb9326af87",
+      "asset_id": 639264019,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-cda0ce5a3714.tar.gz",
+      "sha256": "0585517aef8c4cdfaec674b5af25e4d7b1aa43d3b3e56ed7354f7f21a3dae554",
+      "asset_id": 639264669,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-d0a09fc5d7bb.tar.gz",
+      "sha256": "b8a619d5575c3848b5172b2a3e1fbcb46df1531dda473f9a2d550de98ca70f94",
+      "asset_id": 639268240,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-d7a58b9bc3af.tar.gz",
+      "sha256": "3d5dd002a2b6358256891aca020f84e1e366299bb61ab5fb1f6b8d1468fa462b",
+      "asset_id": 639268613,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-da15603794f1.tar.gz",
+      "sha256": "708f237562312f66d2ebacad36b2903cc6aec15ae543c274a8762fa85d36663b",
+      "asset_id": 639269034,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-dd63c0463c73.tar.gz",
+      "sha256": "9728b5679e8fec9f0ded512c0f0942a181a59e061de3655ca2d29e5b6faded78",
+      "asset_id": 639269719,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-ddfa5bd32dd9.tar.gz",
+      "sha256": "6e3c68ded1a22ec64f84416433bd95df47a00049fcebe876bc4bedc151263b98",
+      "asset_id": 639269991,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-e2b18198aa5b.tar.gz",
+      "sha256": "5ecdee862edac9a99d7dafab2c9c6ab866c9e2f4de41bd90116083e1078d316c",
+      "asset_id": 639270346,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-ec3c27c14e44.tar.gz",
+      "sha256": "80c860f7171752d0bd84d13969e4762484bd91273eddca78dcb0445de2efb9f1",
+      "asset_id": 639270637,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-ec9ead5456ca.tar.gz",
+      "sha256": "32ae2fecbecbc0bc24c9a671c3580ef0cd3b91cc4233bc0b39059ef64b07bd8e",
+      "asset_id": 639270962,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-baseline_tuning-42-ecaf0972ec89.tar.gz",
+      "sha256": "509e0518331939a8a4d9f1166efc7edda432fb6e1d833cea601d84265aa4c5da",
+      "asset_id": 639271806,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKTplus-primary-42-8c85af12bd21.tar.gz",
+      "sha256": "2a885067a06fd37ee6b37b6776d374ce06c7acd0f2656f96c0b3d1064ba5fc65",
+      "asset_id": 638000884,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-07e13b8356b9.tar.gz",
+      "sha256": "740f7d178063f1241f6c0ae0f6dd1b0e76332560098fdb3cff4a2648b01e350f",
+      "asset_id": 640891393,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-primary-42-7f8a895e7d8e.tar.gz",
+      "sha256": "53cf755105cfbc6c4fdf3194658697a3ff5f4b8d7e5453b996d4950b1026f41d",
+      "asset_id": 638013618,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/Algebra2005-DKVMN-baseline_tuning-42-0aecd459f4c2.tar.gz",
+      "sha256": "c4e9b8153586cf88e309c7314cf2d4a44dca96dc1feba579d3e6d85bff79bac6",
+      "asset_id": 640891804,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-0c7d75af9bf6.tar.gz",
+      "sha256": "d7a3b3be8e0164fa926c466ac1b06c58dc50642a88c19d8f91961213f9ab6218",
+      "asset_id": 640904438,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-1536d8dd9e47.tar.gz",
+      "sha256": "371fd15946c41509731f096e8859996f641740f60a0a5af27080b6eb5f51c74e",
+      "asset_id": 640919584,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-15ff363872ee.tar.gz",
+      "sha256": "52c7c58bafc9e76af25f70f35ecb21b49d25e0de60540943dcef7ba0bf10b53d",
+      "asset_id": 640934460,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-18b844be66f0.tar.gz",
+      "sha256": "59e38449b0c1b3ace248a886178e0f8e175330aaf798d7ed3e369279685389cc",
+      "asset_id": 640946041,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-194fd6d5c1ad.tar.gz",
+      "sha256": "6eef0c31ec3184eb97828dd8372c4f2d3e92d6b07bdfa76fbcdb7952a8d0c719",
+      "asset_id": 640961391,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-216a8c2bd5a5.tar.gz",
+      "sha256": "93b1ef6282690117fa3e7bab423eb40fe58b9534036b53f93aef2f5acd07c671",
+      "asset_id": 640977226,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-21987a9529b6.tar.gz",
+      "sha256": "a57e9948624d0ed751bed1fd7d97b67a552ddba85d9ecbf9521f5cc6ef8767af",
+      "asset_id": 640994572,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-30c93a04e0b7.tar.gz",
+      "sha256": "2179d9e0ca9937925115a992d4fa77690202bb6003c93e692aab5380d3880c2b",
+      "asset_id": 641010549,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-3227216e345e.tar.gz",
+      "sha256": "873fa878dcb93bdc287a1eeeb78b6c939d3b3de4edca28391e18dee213205f44",
+      "asset_id": 641025407,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-3242f4da6a60.tar.gz",
+      "sha256": "7b62f0611b201f51637029e3252c894cdc46ecbf45915074a64f308e45cca68a",
+      "asset_id": 641041250,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-3786db01d014.tar.gz",
+      "sha256": "5cd6ef2512d4617a950655a34f631eab6e5b2e3900be4d12945392d059ce1ce7",
+      "asset_id": 641057627,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-4458f0a482d3.tar.gz",
+      "sha256": "1d18aedb518d1cfd87d735cfa3a2242863513c9dae2235e98f83f15c734718c4",
+      "asset_id": 641073833,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-49d270171757.tar.gz",
+      "sha256": "927a7a075c0521294f442d4ec8a8bcdacd3f31b7e8d5e9bd469d7ce9604ee47b",
+      "asset_id": 641090067,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-5c06bb237f85.tar.gz",
+      "sha256": "8e6ccea7e62db7aaf87ebb1b6ae0d6b6b993789b9b495e21a9978f26d0e303a4",
+      "asset_id": 641105857,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-60f0daf0d978.tar.gz",
+      "sha256": "12fc91cf542d3de4bedaf34856ec38ace4a11832cf7f6818c33f7d12fcebf0a1",
+      "asset_id": 641121574,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-83acc2738ec2.tar.gz",
+      "sha256": "561822dad1062679ca750aea4c7001850a6379d6b6aace7666046d624292512c",
+      "asset_id": 641140129,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-9ac8dfcdf0d4.tar.gz",
+      "sha256": "c92ecc7bbaf35d5ae28d1ba9f9ea2814a5d6454b405c0bd565c828baa1f90d04",
+      "asset_id": 641157371,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-9ec020471e4b.tar.gz",
+      "sha256": "7cff9d5b1b093c9dbb01db16bd2e8da13de5863a132c4c6aacd87fb249178ac3",
+      "asset_id": 641178194,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-9fad707aa8e1.tar.gz",
+      "sha256": "c9bd91c983743c297ca678f582c881c27ad2eadde15535c3960eb69f37f15709",
+      "asset_id": 641189985,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-b331a62ce441.tar.gz",
+      "sha256": "8574d474b6535410b4fb6431c4bda46567ad782628cb63b437877b5035043c8f",
+      "asset_id": 641204869,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-bc6cb4053755.tar.gz",
+      "sha256": "1958e40b987cbe043144c7b0392a4f145749be2dbadf086afe9646c0bc19253c",
+      "asset_id": 641219103,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-c39dbeb9467b.tar.gz",
+      "sha256": "300d67aeedca3f9e57db1ea22c230119df7e9f90cebbc8532319bc18ca09bfe4",
+      "asset_id": 641230911,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-c5f966a0d50a.tar.gz",
+      "sha256": "1134cf56f7a4eec17f965f0a0138475b215c7ac358c29ca3659ae78986406821",
+      "asset_id": 641243088,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-cc1aecad2385.tar.gz",
+      "sha256": "2d1091c6019e4cd4aa2f34e9b820ffaa867f4d88d4376b5fd0584e8d14742629",
+      "asset_id": 641258982,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-cd1b0675a7b7.tar.gz",
+      "sha256": "6ef6c1df5c7719e238604913515d269500acfd69ebce531b75c5d755b6b11a25",
+      "asset_id": 641275496,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-ce41e9ef641e.tar.gz",
+      "sha256": "3910890fbb492f17264b558d2f9c44a0198f25eeada471136c69ac0aa172b8ad",
+      "asset_id": 641287014,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-de0a23dea5b8.tar.gz",
+      "sha256": "3732ecb3685638d49fef58cdba010fc4590b16d95dadd28b832df5e66ed77159",
+      "asset_id": 641299397,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-dec46446fe09.tar.gz",
+      "sha256": "9c4e63158fa628e3c2346b9ef7d9715a05d2229b568049375d4f751d3479353e",
+      "asset_id": 641315126,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-dfe7bc247ce0.tar.gz",
+      "sha256": "5fd610ce1352d9cede7aeff85f704efcf42e757a0a81c186a50666b5e38547aa",
+      "asset_id": 641331780,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-e0e6b73fff12.tar.gz",
+      "sha256": "ba164212268406e6c6de257d342b35df825d7356ba86f9a29ed618c2ffa62358",
+      "asset_id": 641343885,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-e146d637887e.tar.gz",
+      "sha256": "e798ac9d71cb7a02ff54aa1aece579c674b26ae611992c90be43887d61f651bf",
+      "asset_id": 641357417,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-ef9a162d42a0.tar.gz",
+      "sha256": "dab5d30067067e5d74b426e65473d9e00ca096978503fe88002e81530c3f143e",
+      "asset_id": 641369700,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-f7fe09adb459.tar.gz",
+      "sha256": "32729a025522b63c25fe3a0fdeaf60739dff74ed2c90b55135da19ee1fe4f746",
+      "asset_id": 641384426,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-baseline_tuning-42-fb21d59f0296.tar.gz",
+      "sha256": "444bb061aa0c0d5570f039991b6ca719e0b9955b534292417acfa72f8b0c694b",
+      "asset_id": 641398675,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-final-123.tar.gz",
+      "sha256": "e511278c7bc9f962ef314f294ab6ed1f878ecbda5a779ffe7b1feca29f941f7f",
+      "asset_id": 641411616,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-final-2026.tar.gz",
+      "sha256": "574812f1dfb05eba5b0816c948e6deb4df47b4cd1d8b0530567eba4b919e05fc",
+      "asset_id": 641419159,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-final-3407.tar.gz",
+      "sha256": "7a0456eab1779bfa3673a25f800429f5faa9d1fe54413fc77ec5f81440c25c12",
+      "asset_id": 641434014,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/Algebra2005-DKVMN-final-42.tar.gz",
+      "sha256": "2fe5e2a6d4efe222b345cb2cc984697739d1bc839125ff7a83f844445c8ddebc",
+      "asset_id": 641434413,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-DKVMN-final-7777.tar.gz",
+      "sha256": "fd6784f2dd26961a9015842315a48cc8ce5307321180be8e3d15e06c4f09b54e",
+      "asset_id": 641443796,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-GKT-primary-42-b5d7512cd82b.tar.gz",
+      "sha256": "2f8d4d264c9c27a7728b20bf0c4a9f4ccc8b451c41a3401076fcfeed80ccd4e2",
+      "asset_id": 638144449,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-GKT_MHA-primary-42-8718ee768a1d.tar.gz",
+      "sha256": "81bb408057549dc5aa2dc849539c6e33ba974e69e67a63af9a573a67af48533e",
+      "asset_id": 638514019,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-final-123.tar.gz",
+      "sha256": "7ae5c3e283f7c6bd5d1b2d490305279eb3fac8550468273441be4cb8074da1ec",
+      "asset_id": 638937037,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-final-2026.tar.gz",
+      "sha256": "004d49b3d8c2bdd88c3cb5322cc8fb8a5a833c02a6198cecabe8259bb3abd7ac",
+      "asset_id": 638940000,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-final-3407.tar.gz",
+      "sha256": "7c5a5c655d6ec7fbf5de5469f93e38f99cab9705e18904fed5b3a09e916a7eef",
+      "asset_id": 638943121,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-06884c8943b2.tar.gz",
+      "sha256": "cc28f3bf8dc2d907996505f565d7685a5bbc643688c5b7d742b0aad192f503cf",
+      "asset_id": 638877632,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/Algebra2005-LightSAKT-final-42.tar.gz",
+      "sha256": "618d035097f2c90dfcae2c5c5154005ba36d9b6a5283566dcd523c9bbfd2030b",
+      "asset_id": 638943381,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-final-7777.tar.gz",
+      "sha256": "e52382b5f5549d22802e1c2476658f56434af6364522a4e7e031f819cdc4a842",
+      "asset_id": 638943608,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-09240f4e7b64.tar.gz",
+      "sha256": "687abe13708263293f33c21083953efac28dc0d666116944e55a045a30806fde",
+      "asset_id": 638878304,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-0d79ab6430b7.tar.gz",
+      "sha256": "03d28a9bcd26f871f680bc852d600ba77a1680f8e8174c65b8a95c0728ec888c",
+      "asset_id": 638878483,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-0ecd7ce70f64.tar.gz",
+      "sha256": "d761bd020ae81fd9881d73fe1afa1560a2fa03a2e02512ecbf09173aed10e815",
+      "asset_id": 638881147,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-1070ef8912e9.tar.gz",
+      "sha256": "51c7231a6a7db4266336a65bcbfa12205f709d9dbb4a38b6309204623c49d89e",
+      "asset_id": 638881369,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-152abd80a946.tar.gz",
+      "sha256": "439bf6777fd7941abe12e0370b0936b5eaf63d618d225069ea1568eab56fd70f",
+      "asset_id": 638883906,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-15db10686e87.tar.gz",
+      "sha256": "64d88d4145fc145eace4e39e0319a1ba61f6ae390646d4def8b3b1a643952d41",
+      "asset_id": 638884067,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-1c1163efe639.tar.gz",
+      "sha256": "80ea6f897b61fb81de30cfdb1202965c8e33dcd16592865b49449d96cf19ce51",
+      "asset_id": 638884214,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-1ea403e8809d.tar.gz",
+      "sha256": "19f94c09acebf1b5d254ed64280bc817ea97a118268555eab1418195fc18eb9a",
+      "asset_id": 638886869,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-20a36e0471b8.tar.gz",
+      "sha256": "cef58c3f9729608d6a27ab5255675239ff359698e4f282c0973ca29725a51839",
+      "asset_id": 638887117,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-21f5ed213eb1.tar.gz",
+      "sha256": "4e51869dc039852193bd42a8f946b1a175e32fe2fdf1b22ed0c56e406833b544",
+      "asset_id": 638889468,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-23f0fff3ef23.tar.gz",
+      "sha256": "87931c8fa3876ea2efa1e11b285caf171f0aed44c74bbab7fc923e3e522f57f2",
+      "asset_id": 638889822,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-284988a0a2ec.tar.gz",
+      "sha256": "0a59fd85babd22b257f394372b622b3dc50989b9a1904773f003ee42add0ea3f",
+      "asset_id": 638892773,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-3366bcbcf17e.tar.gz",
+      "sha256": "e3d680d44bd0b832c4c6a61fdd218fb5b753ad54095a2c0021d32bb8a3c2d404",
+      "asset_id": 638892971,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-3a9d31d0a0d5.tar.gz",
+      "sha256": "20d095326aea4a6da9a587a79d3e4cfd96fd32574f7dffa272100d3502cc28a3",
+      "asset_id": 638893166,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-primary-42-dca5e1830530.tar.gz",
+      "sha256": "68663309e5b741fba177a00cbb9fe4923427a24118164185f76e33bc20833459",
+      "asset_id": 638145072,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/Algebra2005-LightSAKT-grid-42-4faf97b35b89.tar.gz",
+      "sha256": "6812544648814dc71f69dc388883b2d28fbf0eec3c61085c32efc253e617fc63",
+      "asset_id": 638893338,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-57249c130ef5.tar.gz",
+      "sha256": "57dce01abe5e69fde883fb53a2d00bcf0a6c2c650a8572a2de57d3c880f59fe5",
+      "asset_id": 638896018,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-57c33f26d242.tar.gz",
+      "sha256": "0fab7b4d3be8d2bbb71820586ee91cd9d68f90b5c768587f09dfe6c681c6a2c8",
+      "asset_id": 638896745,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-69acf3f16996.tar.gz",
+      "sha256": "436a6eb280d45421c28f43204061ba87364ad5cfe2420af65ac5452d6fa3a980",
+      "asset_id": 638897019,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-6c8a4bab15f1.tar.gz",
+      "sha256": "8c496a80ebf1c51adae1de1f045f5c1e58c97334d8009fe967de4850ed4953fd",
+      "asset_id": 638899636,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-8930ef5a2a35.tar.gz",
+      "sha256": "ca37d674f7512b40c20bc1ea48a3c2594a46ae1f7d5f6228468fd3eaa9100842",
+      "asset_id": 638899815,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-893445b0fab3.tar.gz",
+      "sha256": "c9d8eb80f89dd9dbba0641d5737d058336d1bdcab7dbe2e3392a27132f98eeee",
+      "asset_id": 638902230,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-9337e03ea1cc.tar.gz",
+      "sha256": "a2b49557f797f2441a0a3d288bed8ddd0642bc5b823d8d4865264012ba166d5d",
+      "asset_id": 638902453,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-a697ea4034ab.tar.gz",
+      "sha256": "acb65676fd8da84b1d706b3d71b1f8ba944f2e5e99e0fad01c107085a8190adf",
+      "asset_id": 638904752,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-c18b6004e26c.tar.gz",
+      "sha256": "4d98812d3b6f54767b3add6e473e27f99c9cbbbaa28a148bc822afead04c2d1d",
+      "asset_id": 638904909,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-cc537d7e1c4b.tar.gz",
+      "sha256": "21b050c14d41a6fac738d280a29c98ae32ab27007cf6b3539b6842203dfe1a09",
+      "asset_id": 638907683,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-d377782dabe8.tar.gz",
+      "sha256": "355bddde0bc70498c6f493e16d81b52c409fa67cf801034220874e5edbf114bc",
+      "asset_id": 638907859,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-d6bf5e5ea8bb.tar.gz",
+      "sha256": "cae8feeab193a0a743d9bb2c8d6c6e0d83192fb235139107685e1b2b07da711d",
+      "asset_id": 638910427,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-e58e3f7d95a8.tar.gz",
+      "sha256": "87df1fc8ceb2956761bdf55aee81be7c755a6a4d6e3b710136b8233c57645d24",
+      "asset_id": 638911267,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-e70b10a66385.tar.gz",
+      "sha256": "1787879f63cc8b37fd5abd81b5726a749e3fd42a8b9b4288af36c6a3e162b5bf",
+      "asset_id": 638913250,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-e807df10d3a6.tar.gz",
+      "sha256": "2b5e0f5c2f27030bb0118358c775f747391bb26ed9b901912dde749ae3b7509a",
+      "asset_id": 638913455,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-ed1d54fdc077.tar.gz",
+      "sha256": "d844c51dfc8d5678a3be31d839e5bb7285f2ea58099c6d66756efabd41a85b50",
+      "asset_id": 638915927,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-f3c14818b7d3.tar.gz",
+      "sha256": "01506b6365c421a11d33c504a2561d17edf1e44dea4a7f370d7b177f8ed8c8c6",
+      "asset_id": 638918199,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-fbb9d4e5119c.tar.gz",
+      "sha256": "2a15bdbefe03f6a49117a0d0d39ac6651c3a5f53b9fbd403fb87581297cfc7c7",
+      "asset_id": 638918382,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-fea98a03a2bd.tar.gz",
+      "sha256": "143b24ed5873e37b70390d27317956263fa9227d7ca9308c2108700b61bdcb23",
+      "asset_id": 638921043,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-grid-42-feeec30289e8.tar.gz",
+      "sha256": "30293b2a6fee387295939cb5c8e5493f0449f73173a7d784117cd034e2bab37f",
+      "asset_id": 638921248,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-no_attention-123.tar.gz",
+      "sha256": "8bf363cc30064713fd47477ec92ef6ac5a391c8ed2a86d3dce0cb16a960f6cb5",
+      "asset_id": 639040053,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-no_attention-2026.tar.gz",
+      "sha256": "ab8a909e724e42b4029cdb2a33d2d8cec80967a957e4d763855ff350b259c71d",
+      "asset_id": 639040296,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-no_attention-3407.tar.gz",
+      "sha256": "1209c6ce2aa6fa3d0cc06ee8a41d74cc97ea02a6ab6f3f62c0ad48b6c7198978",
+      "asset_id": 639040486,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-no_attention-42.tar.gz",
+      "sha256": "1c65ef125ed16a76b8ae8fb33d0dd9ae8d49760859979ccc8e1aee0657bd2366",
+      "asset_id": 639040730,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-no_attention-7777.tar.gz",
+      "sha256": "4097d48c41896b4afde08ef883489ba101cf45f946ef3df646de8eec1056fa7e",
+      "asset_id": 639043945,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-no_dropout-123.tar.gz",
+      "sha256": "b3c0eec88a5c7b75b15448239c05a8f5326ff2f4e6ac922db09684a59876bdb4",
+      "asset_id": 639044142,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-no_dropout-2026.tar.gz",
+      "sha256": "5a48fbf498d6d695d1d5525030dfdbdab2c0dd202cac26299621bf451c69e7b3",
+      "asset_id": 639044409,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-no_dropout-3407.tar.gz",
+      "sha256": "cd91189d4ae0905db4d195afa12891c0e835c4a31d6466e7145afe32ee22bd74",
+      "asset_id": 639046958,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-no_dropout-42.tar.gz",
+      "sha256": "3461c1eca84d2f36e5334cca3cb265680a76d450e066a7324ba221a5fee8f52d",
+      "asset_id": 639047658,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-no_dropout-7777.tar.gz",
+      "sha256": "7277ea9b1ba4d1b2a6e6decd55f7bf83babf04a9a30ac94504fe32bece11d867",
+      "asset_id": 639048329,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-no_position-123.tar.gz",
+      "sha256": "ac260f74323ab1bfd84728ab981d108dc79b68a60c8b05d6df307b6e4ab00e89",
+      "asset_id": 639050881,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-no_position-2026.tar.gz",
+      "sha256": "31c44ded175675f701bd479afade182bf07d064e44a55f28a2702ec1f58c1b5b",
+      "asset_id": 639051119,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-no_position-3407.tar.gz",
+      "sha256": "520f0871d958e265b80d49b0cbe25862d3593114f694127f0a1a817986961a11",
+      "asset_id": 639053587,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-no_position-42.tar.gz",
+      "sha256": "78faa3a8735c8b7f4af2df89a1e82bd9e55eb40fde00aef7900002d23db9fb69",
+      "asset_id": 639054258,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-no_position-7777.tar.gz",
+      "sha256": "bd6a96d30fb6e0b5fb714c404a9609529e022586b7e4613fb05a508823d1eb83",
+      "asset_id": 639056971,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/Algebra2005-LightSAKT-no_regularization-123.tar.gz",
+      "sha256": "2fadf4d674cc57ce5689a62796c0c1d5dc6b8fb32cb88cc77f45984d97bfd645",
+      "asset_id": 639057473,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/Algebra2005-LightSAKT-no_regularization-2026.tar.gz",
+      "sha256": "bfe697c4ed30f7ca57f80e186beff3538922dfc7dde8774bc308bf3907045e50",
+      "asset_id": 639057648,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/Algebra2005-LightSAKT-no_regularization-3407.tar.gz",
+      "sha256": "a207de007f31a9980253f1ac3baebbce17a2224b927ce5c6fbf71752fda99a8c",
+      "asset_id": 639057842,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/Algebra2005-LightSAKT-no_regularization-42.tar.gz",
+      "sha256": "eba9f8fa464e6488dc2270554d21b8002e64e58481b4b0576d773ce900d04f99",
+      "asset_id": 639058084,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/Algebra2005-LightSAKT-no_regularization-7777.tar.gz",
+      "sha256": "91c600153e0273b7a66f96d0df38d3b4d29388006970579c94abaab208aadbd1",
+      "asset_id": 639058800,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-single_head-123.tar.gz",
+      "sha256": "55442f3bd2d48dd4d900b9ee8b9dc06a3326fca0ee50c1e955eee06bc3fdf1db",
+      "asset_id": 639061211,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-single_head-2026.tar.gz",
+      "sha256": "75592e770a3888deac753fa77739efdf70df247ff029e8b07221ae3a09c60f7a",
+      "asset_id": 639066432,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-single_head-3407.tar.gz",
+      "sha256": "663baaebb10bd2d49377128f10d23938580a974ee06f37e903333c1619fbfbb9",
+      "asset_id": 639069200,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-single_head-42.tar.gz",
+      "sha256": "085584beffd7a746f14fa64b211414f32582e9016a19c29858f5ca9512ba5044",
+      "asset_id": 639073985,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-LightSAKT-single_head-7777.tar.gz",
+      "sha256": "9b12f32bba988940b99a5a59154873a2d54aa2afcf5e6304f6321f1dcecaf4b2",
+      "asset_id": 639078995,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-0408fbfb5e53.tar.gz",
+      "sha256": "a5421ae53437c8a0f7ca9566b8fd78e78b51e14d22f02136d5134a666bce9dfe",
+      "asset_id": 639274552,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-08a66f4d34d8.tar.gz",
+      "sha256": "3802ce81b0f77d006acf876d95df84a938b61aaed1a690f7ae9af0f0f72b490f",
+      "asset_id": 639274827,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-0cbf22fe27be.tar.gz",
+      "sha256": "99fbc04d2c69fd02e22cf2d4f67def00dad7876e3d54d0396e2a56ff8a4d7d0d",
+      "asset_id": 639275073,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-12f8bfd8870e.tar.gz",
+      "sha256": "3f606c8a6a0ef1101acdac362362f3c525ef85547997792feba873e9cf72a09a",
+      "asset_id": 639275367,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-1bc9f03a23b7.tar.gz",
+      "sha256": "041ab0471c84eaef1cd830aba24e8e98907ff08df9b9af42959b54595e1fdfd6",
+      "asset_id": 639276226,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-1bda04f7ba96.tar.gz",
+      "sha256": "5da14827d889589b2fa73e81d346bbd6d6e4c11142258bf4c289d53e82688e15",
+      "asset_id": 639276542,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-20610f5937d4.tar.gz",
+      "sha256": "8fbdceabd9bbecbae7b4adaad34894ed74aa77331aa043ca5b9e78ae0fd03ff1",
+      "asset_id": 639277401,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-24a4f6b65971.tar.gz",
+      "sha256": "eb5730e84cb340c38bd5fd3348f0204130863b2c635138d8d82541302302cb29",
+      "asset_id": 639278003,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-370ef7291393.tar.gz",
+      "sha256": "8e307c743e8f62042fe371db277d95207931b4baa11326abc2a48d9eb5d5f332",
+      "asset_id": 639278230,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-375fd6a0dfae.tar.gz",
+      "sha256": "1443758bc4ceb27600394e630f3d9bb254a18652df380b8dbc6ea8a6fcdfc7da",
+      "asset_id": 639281045,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-479b386836d4.tar.gz",
+      "sha256": "33bb00770bb079b401bc46cdb400d33c70a9fa40b953ebd4b1d606f3dbbe72f7",
+      "asset_id": 639281577,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-4af562bb01dc.tar.gz",
+      "sha256": "01e707a70f77098f763d2250faa889d57f7b9e94b08f42319502df6f322bb7be",
+      "asset_id": 639281925,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-4c385a071fc0.tar.gz",
+      "sha256": "c75fbeea4a6e1c4c7d159ecdc0ac5afab001d761ffe921371f61e2d223237795",
+      "asset_id": 639282317,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-50bb53bb8f83.tar.gz",
+      "sha256": "cb4a80472340a9d67ec293f8c5ee06cc2016c9097ab432aa9abf366829e2588e",
+      "asset_id": 639283410,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-597f3d08ea42.tar.gz",
+      "sha256": "b8a790815de0220bf0d163a39d512d004d0252bdc4960e62052487abb91e826a",
+      "asset_id": 639284224,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-60d431ed47b1.tar.gz",
+      "sha256": "b537eb90a2a64086e1a7019d1e4e11de2f663eb4c5685a691111decb79f542d4",
+      "asset_id": 639284546,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-6109000bcd11.tar.gz",
+      "sha256": "a95a9f36153ad20d663ba53d9a9e388c0eb2ce4c0b8d0be71f006b9fd1a458e2",
+      "asset_id": 639285217,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-6aa156e936e3.tar.gz",
+      "sha256": "49aed739bec1061f0b818b022ff9b6833a6f22070994b8a0906b42a34a460a6a",
+      "asset_id": 639285439,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-72c76e8136e3.tar.gz",
+      "sha256": "94199f3b6e9d0eb646ab89a3c644e26570ff84ef91cee9f997ef1e4eb99a9b1b",
+      "asset_id": 639288679,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-7c996dfcf946.tar.gz",
+      "sha256": "88e772436dec3bd6a6267c7f9e6f270dd4695fad8a152fc2ba71c219f849ad29",
+      "asset_id": 639289051,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-866723813d04.tar.gz",
+      "sha256": "b230c921925621ff99fc52bd6d9916582028cbe9c36497d1b6498b93385638a4",
+      "asset_id": 639289358,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-8f17dc6355d5.tar.gz",
+      "sha256": "0b312a4c7f7c9b3c93475e0d07455f887568fff0bf89314f37f7c6ac900ec388",
+      "asset_id": 639289609,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-8fb871252e75.tar.gz",
+      "sha256": "bee63ce99bafc6e1195682418943a04f4c2d1c45254ab61f645465a118420149",
+      "asset_id": 639289835,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-905badc24c4f.tar.gz",
+      "sha256": "7be5a3dfa6878eb4be563c4dca018b69b9092d406a80fefd14d276afec60ff55",
+      "asset_id": 639290155,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-9e7eaa31d265.tar.gz",
+      "sha256": "bb52060a49d0a3e2f77e769c8ec2c4fc26286f1750bce46ca4017e5bfda7dc66",
+      "asset_id": 639290478,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-a7c313040171.tar.gz",
+      "sha256": "c36fdcd7d634934795f0c1682c92e3dae7dc0cdb9aaeb03658e6735555a1b42d",
+      "asset_id": 639291374,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-a94b2bcee87c.tar.gz",
+      "sha256": "2f5515abfae3e02e1c955ffe25cae44eb4fe54adce8e152748e3cf6e076d37f7",
+      "asset_id": 639292318,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-a962767db9fe.tar.gz",
+      "sha256": "ef1ce70fd1633b345273b55b1dd90ad6eb2c0dca54dfb328049957bf01420596",
+      "asset_id": 639292534,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-add61cc6e891.tar.gz",
+      "sha256": "90cc6bcad2cae43d8f2f94e3b9840e6258019944c3fd1f7266bc15f78456d5a9",
+      "asset_id": 639292733,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-b30e8d7585f4.tar.gz",
+      "sha256": "f1ab137e115c4d6a2c0fd3b8bab9a00a9de1f7c645feb4fb4be12b50897b4960",
+      "asset_id": 639296885,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-c8977b8be751.tar.gz",
+      "sha256": "be2f3cae04a32ccca47bbed6a82b7b4e1a64d03088176b58a661c064de86f04b",
+      "asset_id": 639297107,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-d7aa8aba0d2a.tar.gz",
+      "sha256": "865e3cdb9e19e3abede9d346a6d589969560636ea9d3f5eee52f4f81fa391628",
+      "asset_id": 639297303,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-dd330b0a382c.tar.gz",
+      "sha256": "b28a9dbf22bc4225780676d89a26f42f5442cb2263af1b63c89f44d27dcbb3ae",
+      "asset_id": 639297550,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-df36f3e1d67f.tar.gz",
+      "sha256": "0f7eea9216e05a9ba071124cd6c7200ef26d51787bde48905b36bb4520e8a9e3",
+      "asset_id": 639297916,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-e39854c39aa8.tar.gz",
+      "sha256": "77d6dd61b5a601f21c9a10850723bb5cad6146ff68768a2bc9c88c9024463490",
+      "asset_id": 639298669,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-baseline_tuning-42-eaa8e65a5f01.tar.gz",
+      "sha256": "c8593cda361a14de16db30d0b7309dd774d558d48a47461b95dd675f0e01d4f6",
+      "asset_id": 639299027,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-final-123.tar.gz",
+      "sha256": "95b7adfbb169156b51dc27db5d18031b69c849140fdc4e8c7e2ff6f8c837ebb4",
+      "asset_id": 639323329,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-final-2026.tar.gz",
+      "sha256": "15a0715acbb18e143120b474122fcd5edce63894713465f46e39cfa0338e01e0",
+      "asset_id": 639324031,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-final-3407.tar.gz",
+      "sha256": "8e4cf1db2880b582ca7bf03775ca72929d0917ecc5aac4d9154a54b0bd6cc3b4",
+      "asset_id": 639327601,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/reused_results/Algebra2005-SAKT-final-42.tar.gz",
+      "sha256": "af705a9ad82368b21885b04aa4badba9a70d60beb75bff00dd645356d65c0cad",
+      "asset_id": 639328367,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-final-7777.tar.gz",
+      "sha256": "e359fa79d15ed4b4ca8dc781cc249549cd0f79ce7a094df32b1201abdba23057",
+      "asset_id": 639329090,
+      "local_and_downloaded_bytes_verified": true
+    },
+    {
+      "path": "backups/completed_runs/Algebra2005-SAKT-primary-42-67291648991d.tar.gz",
+      "sha256": "237267b2bcb6e9df4f0c00e35f19b8d580dfb53cc6470b517b5a821a83fae224",
+      "asset_id": 638145253,
+      "local_and_downloaded_bytes_verified": true
     }
-  ],
-  "storage": "NFS /workspace; independent private release asset status is in reports/offsite_backup.json."
+  ]
 }

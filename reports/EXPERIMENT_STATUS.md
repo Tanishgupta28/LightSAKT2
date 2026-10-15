@@ -1,6 +1,6 @@
 # Experiment status
 
-Updated UTC: 2026-10-15T00:52:42.764124+00:00
+Updated UTC: 2026-10-15T00:54:25.103151+00:00
 
 Completed: **720**. Remaining: **237**. Total schedule slots: 957.
 
@@ -26,22 +26,18 @@ Progressive process: running (PID 185610).
 
 Active_recovery process: running (PID 818712).
 
-Recovery_supervisor process: running (PID 818850).
-
-Current run: `ASSIST2009-GKT-baseline_tuning-42-30db8df014cb`; last completed epoch: 13.
+Current run: `ASSIST2009-GKT-baseline_tuning-42-30db8df014cb`; last completed epoch: 14.
 
 The 45 reuse/alias slots are not independent new training experiments. Default ablation reuses final LightSAKT evidence. The separate smoke run is excluded from schedule counts.
 
 Distinct planned trainings: 912. The live manifest plus experiments/reuse_plan.json form the effective schedule; 9 exact primary/grid duplicates reuse verified evidence without removing grid rows. See reports/SCHEDULE_AUDIT.md.
 
-Measured-reference serial equivalent: 475.4 training hours; scenario envelope 101.9–1,400.1 hours. Current execution forecast: 365.4 occupied MIG wall hours; scenario envelope 82.8–1,400.1 hours, using independently verified two-worker GKT-MHA throughput only. Estimate updated 2026-10-15T00:52:40.642238+00:00; startup, test inference and final verification add time. This is a planning scenario, not a confidence interval or guarantee. See reports/ETA_REPORT.md.
+Measured-reference training ETA: 475.5 GPU reserved hours; scenario envelope 101.9–1,400.0 hours. Estimate updated 2026-10-15T00:53:43.282667+00:00; unmeasured final GPU analysis adds time. See reports/ETA_REPORT.md.
 
 Process existence alone is not a health guarantee. Last independently sampled CPU/checkpoint progress and checkpoint integrity are recorded in reports/EXECUTION_HEALTH.md. A detached scheduler survives a terminal disconnect, but no automatic restart after environment shutdown is configured.
 
 Private draft recovery assets independently download/checksum verified: 723. All available completed archives synchronized: True. See reports/OFFSITE_RECOVERY.md and reports/offsite_backup.json.
 
 The 108 LightSAKT grid configurations, equal baseline tuning budgets, and five matched final seeds use the frozen student splits. See experiments/manifest.json and per-run status files.
-
-Verified existing efficiency evidence: 120 cases and 1200 raw timed repetitions. LightSAKT was slower in 60/60 matched latency comparisons and used lower peak allocated memory in 7/60. Original measurements are preserved; theoretical scaling, latency, memory and parameters are discussed separately in paper/CORRECTED_RESULTS.md and paper/EFFICIENCY_RESULTS.md.
 
 Research completion requires every scheduled slot and all dependent analyses, plots, checkpoints, and traceability checks to pass. Raw-data provenance limitations and the historical simplified GKT label remain disclosed.

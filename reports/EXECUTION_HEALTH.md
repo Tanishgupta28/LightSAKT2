@@ -1,14 +1,14 @@
 # Execution health
 
-Observed UTC: 2026-10-15T00:52:41.916127+00:00
+Observed UTC: 2026-10-15T00:53:44.111579+00:00
 
 Scheduler PID 78472; healthy progress sampled: True; failed/interrupted/blocked slots: 0.
 
-Child PID 925435: CPU seconds advanced 62.84999999999991 over 62.8626823425293 observed seconds. Session 78472, parent 191761.
+Child PID 925435: CPU seconds advanced 27.090000000000146 over 27.111587524414062 observed seconds. Session 78472, parent 191761.
 
-Child PID 931229: CPU seconds advanced 0.0 over 62.8626823425293 observed seconds. Session 78472, parent 191761.
+Child PID 931229: CPU seconds advanced 0.0 over 27.111587524414062 observed seconds. Session 78472, parent 191761.
 
-Run `ASSIST2009-GKT-baseline_tuning-42-30db8df014cb`: epoch 13; measured recent epoch average 169.79920521180028; extrapolated first-epoch duration None; progress age 112.4430501461029 seconds (history checkpoint); stall flag False. Threshold uses three measured epoch durations; before the first checkpoint it also allows a minimum 30-second setup grace. This diagnostic grace is separate from the measured training ETA.
+Run `ASSIST2009-GKT-baseline_tuning-42-30db8df014cb`: epoch 14; measured recent epoch average 170.07638244520058; extrapolated first-epoch duration None; progress age 2.9489176273345947 seconds (history checkpoint); stall flag False. Threshold uses three measured epoch durations; before the first checkpoint it also allows a minimum 30-second setup grace. This diagnostic grace is separate from the measured training ETA.
 
 MIG memory allocation: 1692 / 40320 MiB. Utilization percentage is unavailable; no percentage is inferred from board power or PID existence.
 

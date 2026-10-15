@@ -1,0 +1,141 @@
+{
+  "verified_utc": "2026-10-15T00:54:01.359450+00:00",
+  "completed": 720,
+  "total_entries": 957,
+  "remaining": 237,
+  "processes": {
+    "scheduler": {
+      "pid": 78472,
+      "alive": true
+    },
+    "preservation": {
+      "pid": 212401,
+      "alive": true
+    },
+    "eta": {
+      "pid": 508657,
+      "alive": true
+    },
+    "offsite": {
+      "pid": 49211,
+      "alive": true
+    },
+    "coordinator": {
+      "pid": 191761,
+      "alive": true
+    },
+    "progressive": {
+      "pid": 185610,
+      "alive": true
+    },
+    "active_recovery": {
+      "pid": 818712,
+      "alive": true
+    },
+    "recovery_supervisor": {
+      "pid": 818850,
+      "alive": true
+    }
+  },
+  "running_jobs": [
+    {
+      "run_id": "ASSIST2009-GKT-baseline_tuning-42-30db8df014cb",
+      "last_completed_epoch": 14,
+      "best_checkpoint": "checkpoints/ASSIST2009-GKT-baseline_tuning-42-30db8df014cb/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT-baseline_tuning-42-30db8df014cb/config.json"
+    }
+  ],
+  "healthy_progress_observed": true,
+  "failed_or_interrupted_runs": 0,
+  "remaining_serial_equivalent_hours": {
+    "low": 101.93919156826843,
+    "central": 475.48853895902903,
+    "high": 1400.0435280746901
+  },
+  "remaining_occupied_mig_hours": {
+    "low": 82.84431110097228,
+    "central": 365.4547017816245,
+    "high": 1400.0435280746901
+  },
+  "training_finish_utc_conditional": {
+    "low": "2026-10-18T11:44:22.802631+00:00",
+    "central": "2026-10-30T06:21:00.209081+00:00",
+    "high": "2026-12-12T08:56:19.983736+00:00"
+  },
+  "five_seed_final_inference_verified": 75,
+  "baseline_final_inference_verified": 60,
+  "local_and_downloaded_completed_archives_verified": 721,
+  "active_snapshots": [
+    {
+      "run_id": "ASSIST2009-GKT-baseline_tuning-42-30db8df014cb",
+      "last_completed_epoch": 14,
+      "latest_verified_offsite_epoch": 13,
+      "offsite_verified_utc": "2026-10-15T00:52:36.673486+00:00",
+      "asset_id": 642196935,
+      "snapshot_bytes_rechecked": true
+    }
+  ],
+  "latest_recorded_upload_failure_resolved_by_newer_verified_snapshot": true,
+  "automatic_worker_recovery_running": true,
+  "automatic_platform_restart": false,
+  "cpu_test_log": "reports/test_runs/20261015T005034-continued-baseline-cpu.log",
+  "source_git_commit": "f5924a01a4ea3235817e590610dc113ec8414b0d",
+  "research_complete": false,
+  "measured_gkt_timings": [
+    {
+      "dataset": "ASSIST2009",
+      "model": "GKT",
+      "measured_runs": 10,
+      "completed_runs": 9,
+      "measured_epochs": 125,
+      "average_epoch_seconds": 169.10273373431292,
+      "average_completed_run_seconds": 2090.8687100514426
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "measured_runs": 1,
+      "completed_runs": 1,
+      "measured_epochs": 21,
+      "average_epoch_seconds": 175.6223938582379,
+      "average_completed_run_seconds": 3695.89897024
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "GKT",
+      "measured_runs": 1,
+      "completed_runs": 1,
+      "measured_epochs": 14,
+      "average_epoch_seconds": 605.8061424039988,
+      "average_completed_run_seconds": 8502.348841358995
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "GKT_MHA",
+      "measured_runs": 1,
+      "completed_runs": 1,
+      "measured_epochs": 23,
+      "average_epoch_seconds": 633.1928474512603,
+      "average_completed_run_seconds": 14591.295948797995
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "GKT",
+      "measured_runs": 1,
+      "completed_runs": 1,
+      "measured_epochs": 16,
+      "average_epoch_seconds": 200.81482279018385,
+      "average_completed_run_seconds": 3223.880916954018
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "GKT_MHA",
+      "measured_runs": 1,
+      "completed_runs": 1,
+      "measured_epochs": 48,
+      "average_epoch_seconds": 204.0523920637667,
+      "average_completed_run_seconds": 9808.80258228199
+    }
+  ],
+  "timings_source": "reports/ETA_MEASURED_TIMINGS.csv"
+}
