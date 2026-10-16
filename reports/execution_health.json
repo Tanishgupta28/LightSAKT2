@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-16T13:40:22.670112+00:00",
-  "sample_time": 1792158021.9693744,
+  "updated_utc": "2026-10-16T14:03:24.223615+00:00",
+  "sample_time": 1792159403.2201517,
   "counts": {
-    "completed": 767,
-    "pending": 188,
+    "completed": 769,
+    "pending": 186,
     "running": 2
   },
   "scheduler": {
@@ -12,53 +12,53 @@
   },
   "training_processes": [
     {
-      "pid": 1458522,
-      "cpu_seconds": 10876.32,
-      "process_state": "R",
+      "pid": 1501076,
+      "cpu_seconds": 1351.8,
+      "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.74401521682739,
-      "cpu_seconds_advanced": 62.5
+      "observed_seconds": 62.94929361343384,
+      "cpu_seconds_advanced": 62.659999999999854
     },
     {
-      "pid": 1499048,
-      "cpu_seconds": 191.51,
-      "process_state": "R",
+      "pid": 1507127,
+      "cpu_seconds": 15.83,
+      "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.74401521682739,
-      "cpu_seconds_advanced": 62.48999999999998
+      "observed_seconds": 0.2,
+      "cpu_seconds_advanced": 0.20000000000000107
     }
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-977ded40ea38",
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-aa62dd7e5cf3",
       "last_completed_epoch": 0,
-      "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-977ded40ea38/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-977ded40ea38/config.json",
+      "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-aa62dd7e5cf3/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-aa62dd7e5cf3/config.json",
       "recent_mean_epoch_seconds": null,
-      "seconds_since_last_epoch": 183.84673953056335,
-      "startup_epoch_seconds_extrapolated": 175.88585969727166,
+      "seconds_since_last_epoch": 6.630581617355347,
+      "startup_epoch_seconds_extrapolated": 175.88679926497957,
       "first_checkpoint_startup_grace_seconds": 30.0,
       "age_reference": "initial running status; first checkpoint not yet saved",
-      "stall_threshold_seconds": 527.657579091815,
+      "stall_threshold_seconds": 527.6603977949387,
       "checkpoint_stalled": false
     },
     {
-      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-95f5091bf8d3",
-      "last_completed_epoch": 49,
-      "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-95f5091bf8d3/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-95f5091bf8d3/config.json",
-      "recent_mean_epoch_seconds": 219.17191811620722,
-      "seconds_since_last_epoch": 194.6376223564148,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-9da9bb89b7bd",
+      "last_completed_epoch": 6,
+      "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-9da9bb89b7bd/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-9da9bb89b7bd/config.json",
+      "recent_mean_epoch_seconds": 218.4887072677957,
+      "seconds_since_last_epoch": 30.62233877182007,
       "startup_epoch_seconds_extrapolated": null,
       "first_checkpoint_startup_grace_seconds": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 657.5157543486216,
+      "stall_threshold_seconds": 655.4661218033871,
       "checkpoint_stalled": false
     }
   ],
-  "gpu_memory_mib": 2279,
+  "gpu_memory_mib": 2277,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
