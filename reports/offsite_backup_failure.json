@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-16T02:57:49.988612+00:00",
-  "reason": "CalledProcessError: Command '['gh', 'api', 'repos/Tanishgupta28/LightSAKT2/releases', '--paginate', '--jq', '.[] | select(.tag_name==\"research-recovery-20261013\") | .id']' returned non-zero exit status 1.",
+  "updated_utc": "2026-10-16T12:01:41.410210+00:00",
+  "reason": "AssertionError: Expected exactly one recovery release",
   "local_backups_retained": true
 }
