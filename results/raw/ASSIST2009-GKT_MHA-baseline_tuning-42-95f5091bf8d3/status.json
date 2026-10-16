@@ -1,0 +1,10 @@
+{
+  "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-95f5091bf8d3",
+  "status": "running",
+  "last_completed_epoch": 0,
+  "config": "results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-95f5091bf8d3/config.json",
+  "seed": 42,
+  "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-95f5091bf8d3/config.json",
+  "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-95f5091bf8d3/best.pt",
+  "failure_reason": null
+}
