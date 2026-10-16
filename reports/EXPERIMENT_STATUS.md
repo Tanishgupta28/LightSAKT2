@@ -1,14 +1,14 @@
 # Experiment status
 
-Updated UTC: 2026-10-16T21:26:40.394259+00:00
+Updated UTC: 2026-10-16T21:59:52.082208+00:00
 
-Completed: **778**. Remaining: **179**. Total schedule slots: 957.
+Completed: **779**. Remaining: **178**. Total schedule slots: 957.
 
 ```json
 {
-  "completed": 778,
+  "completed": 779,
   "running": 2,
-  "pending": 177
+  "pending": 176
 }
 ```
 
@@ -28,15 +28,15 @@ Active_recovery process: running (PID 818712).
 
 Recovery_supervisor process: running (PID 818850).
 
-Current run: `ASSIST2009-GKT_MHA-baseline_tuning-42-e425b8bef403`; last completed epoch: 1.
+Current run: `ASSIST2009-GKT_MHA-baseline_tuning-42-e425b8bef403`; last completed epoch: 10.
 
-Current run: `ASSIST2009-GKT_MHA-baseline_tuning-42-e45efdb2a3e7`; last completed epoch: 0.
+Current run: `ASSIST2009-GKT_MHA-baseline_tuning-42-ee92fac4b260`; last completed epoch: 0.
 
 The 45 reuse/alias slots are not independent new training experiments. Default ablation reuses final LightSAKT evidence. The separate smoke run is excluded from schedule counts.
 
 Distinct planned trainings: 912. The live manifest plus experiments/reuse_plan.json form the effective schedule; 9 exact primary/grid duplicates reuse verified evidence without removing grid rows. See reports/SCHEDULE_AUDIT.md.
 
-Measured-reference serial equivalent: 429.4 training hours; scenario envelope 87.6–1,223.2 hours. Current execution forecast: 329.4 occupied MIG wall hours; scenario envelope 71.1–1,223.2 hours, using independently verified two-worker GKT-MHA throughput only. Estimate updated 2026-10-16T21:25:45.621670+00:00; startup, test inference and final verification add time. This is a planning scenario, not a confidence interval or guarantee. See reports/ETA_REPORT.md.
+Measured-reference serial equivalent: 427.9 training hours; scenario envelope 87.3–1,220.4 hours. Current execution forecast: 328.4 occupied MIG wall hours; scenario envelope 70.9–1,220.4 hours, using independently verified two-worker GKT-MHA throughput only. Estimate updated 2026-10-16T21:59:11.158199+00:00; startup, test inference and final verification add time. This is a planning scenario, not a confidence interval or guarantee. See reports/ETA_REPORT.md.
 
 Process existence alone is not a health guarantee. Last independently sampled CPU/checkpoint progress and checkpoint integrity are recorded in reports/EXECUTION_HEALTH.md. A detached scheduler survives a terminal disconnect, but no automatic restart after environment shutdown is configured.
 
