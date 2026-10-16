@@ -1,6 +1,6 @@
 # LightSAKT against completed baseline evidence
 
-Generated UTC: 2026-10-16T17:28:45.590046+00:00
+Generated UTC: 2026-10-16T19:34:24.586967+00:00
 
 This comparison includes only completed selected five-seed DKT, DKT+, DKVMN and SAKT results on the same locked splits. It excludes historical manuscript scores, primary single-seed runs, partial seed sets and both GKT variants. Best means highest completed five-seed mean test AUC among these four baselines. This is a descriptive leaderboard after evaluation; it does not select hyperparameters, checkpoints or future experiments.
 
