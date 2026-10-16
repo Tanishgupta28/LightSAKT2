@@ -1,12 +1,12 @@
 {
-  "updated_utc": "2026-10-16T08:00:25.490008+00:00",
+  "updated_utc": "2026-10-16T09:07:28.704164+00:00",
   "total_slots": 957,
-  "completed": 762,
-  "remaining": 195,
+  "completed": 763,
+  "remaining": 194,
   "counts": {
-    "completed": 762,
-    "pending": 193,
-    "running": 2
+    "completed": 763,
+    "running": 2,
+    "pending": 192
   },
   "processes": {
     "scheduler": {
@@ -44,16 +44,16 @@
   },
   "running_jobs": [
     {
-      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-8dcb424e13b9",
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-93c479230290",
       "last_completed_epoch": 0,
-      "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-8dcb424e13b9/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-8dcb424e13b9/config.json"
+      "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-93c479230290/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-93c479230290/config.json"
     },
     {
-      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-7cb79b8af71b",
-      "last_completed_epoch": 2,
-      "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-7cb79b8af71b/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-7cb79b8af71b/config.json"
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-8dcb424e13b9",
+      "last_completed_epoch": 18,
+      "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-8dcb424e13b9/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-8dcb424e13b9/config.json"
     }
   ],
   "phase_counts": {
@@ -61,9 +61,9 @@
       "completed": 21
     },
     "6": {
-      "completed": 591,
-      "pending": 163,
-      "running": 2
+      "completed": 592,
+      "running": 2,
+      "pending": 162
     },
     "7": {
       "completed": 75,
