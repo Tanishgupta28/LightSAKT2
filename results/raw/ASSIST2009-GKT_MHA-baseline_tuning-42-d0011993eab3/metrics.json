@@ -1,0 +1,29 @@
+{
+  "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-d0011993eab3",
+  "dataset": "ASSIST2009",
+  "model": "GKT_MHA",
+  "seed": 42,
+  "group": "baseline_tuning",
+  "validation": {
+    "auc": 0.7610944120968184,
+    "auc_reason": null,
+    "accuracy": 0.7352491258741258,
+    "f1": 0.8197932419366835,
+    "mse": 0.17822015205318767,
+    "bce": 0.5344925736510074,
+    "n_targets": 27456
+  },
+  "best_epoch": 28,
+  "epochs_trained": 33,
+  "training_seconds": 7470.7926808059565,
+  "checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-d0011993eab3/best.pt",
+  "checkpoint_sha256": "9e44b45f9510eab94cc5c577c9d55153e850d5c88346527d701890b7543b9d76",
+  "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+  "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+  "git_commit": "f4a3cd52d03d27110aea322084a04694b8c8108d",
+  "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "parameters": 42665,
+  "peak_allocated_bytes": 404775936,
+  "peak_reserved_bytes": 432013312,
+  "test": null
+}
