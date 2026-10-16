@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-10-16T05:15:25.710845+00:00",
+  "updated_utc": "2026-10-16T06:46:44.687314+00:00",
   "total_slots": 957,
-  "completed": 758,
-  "remaining": 199,
+  "completed": 759,
+  "remaining": 198,
   "counts": {
-    "completed": 758,
-    "pending": 197,
+    "completed": 759,
+    "pending": 196,
     "running": 2
   },
   "processes": {
@@ -45,15 +45,15 @@
   "running_jobs": [
     {
       "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-68142e511b62",
-      "last_completed_epoch": 0,
+      "last_completed_epoch": 25,
       "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-68142e511b62/best.pt",
       "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-68142e511b62/config.json"
     },
     {
-      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-65fc8f38c131",
-      "last_completed_epoch": 25,
-      "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-65fc8f38c131/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-65fc8f38c131/config.json"
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-73e17803a3fa",
+      "last_completed_epoch": 0,
+      "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-73e17803a3fa/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-73e17803a3fa/config.json"
     }
   ],
   "phase_counts": {
@@ -61,8 +61,8 @@
       "completed": 21
     },
     "6": {
-      "completed": 587,
-      "pending": 167,
+      "completed": 588,
+      "pending": 166,
       "running": 2
     },
     "7": {
