@@ -1,14 +1,14 @@
 # Measured runtime estimate
 
-Updated UTC: 2026-10-16T00:37:37.511965+00:00
+Updated UTC: 2026-10-16T01:43:14.930796+00:00
 
-Remaining training: **464.3 GPU reserved hours**; scenario range **93.5–1,295.4 hours**. Serial wall time: 19.3 days; continuous-availability training finish 2026-11-04T08:55:01.352626+00:00.
+Remaining training: **463.2 GPU reserved hours**; scenario range **93.2–1,292.3 hours**. Serial wall time: 19.3 days; continuous-availability training finish 2026-11-04T08:58:14.095728+00:00.
 
-Two-worker execution forecast: **352.5 MIG occupied wall hours** (14.7 continuous days), with measured GKT throughput factor 1.512. Scenario envelope 75.0–1,295.4 hours; the high scenario assumes no sustained concurrency benefit. Serial isolated-equivalent hours differ from MIG occupied wall hours. Two independent GKT-MHA workers only; PAM and other models remain serial. Use the smallest measured MHA throughput factor across tested datasets/widths. Wide PAM measured 0.90x and was rejected for parallel execution. Short-step throughput is extrapolated, not guaranteed. High scenario assumes no sustained benefit. Startup/test/analysis excluded. Aggregate worker elapsed-hours may increase under contention.
+Two-worker execution forecast: **351.8 MIG occupied wall hours** (14.7 continuous days), with measured GKT throughput factor 1.512. Scenario envelope 74.9–1,292.3 hours; the high scenario assumes no sustained concurrency benefit. Serial isolated-equivalent hours differ from MIG occupied wall hours. Two independent GKT-MHA workers only; PAM and other models remain serial. Use the smallest measured MHA throughput factor across tested datasets/widths. Wide PAM measured 0.90x and was rejected for parallel execution. Short-step throughput is extrapolated, not guaranteed. High scenario assumes no sustained benefit. Startup/test/analysis excluded. Aggregate worker elapsed-hours may increase under contention.
 
 This is a provisional measured-reference extrapolation, not a validated confidence interval. Hardware-active GPU utilization is unavailable. Epochs include training and validation, and reserved hours include their CPU work. Startup, final test inference and artifact verification add time beyond this training-only date; completed efficiency benchmarking is reused.
 
-Overall mean completed-run duration: 5.55 minutes, over 717 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
+Overall mean completed-run duration: 5.71 minutes, over 718 actual independent completed runs. This global average is reported descriptively and is not multiplied by the remaining count.
 
 Saved cumulative training_seconds include training and validation through checkpoint restoration, excluding subprocess initialization and post-selection test inference. Epoch_seconds directly measure complete train/validation epochs; resumed histories are included once.
 
@@ -20,7 +20,7 @@ Saved cumulative training_seconds include training and validation through checkp
 |ASSIST2009|DKT+|41|1198|0.348|0.175|
 |ASSIST2009|DKVMN|40|1570|6.179|4.052|
 |ASSIST2009|GKT|36|478|169.363|37.580|
-|ASSIST2009|GKT_MHA|8|248|218.524|105.481|
+|ASSIST2009|GKT_MHA|9|283|219.015|107.014|
 |ASSIST2009|SAKT|41|1061|0.421|0.187|
 |ASSIST2009|LightSAKT|60|1726|0.864|0.420|
 |ASSIST2015|DKT|41|645|1.167|0.310|
@@ -42,8 +42,8 @@ Saved cumulative training_seconds include training and validation through checkp
 
 |Phase|Low hours|Central hours|High hours|
 |---|---|---|---|
-|baseline_tuning|83.38|413.95|1,141.86|
-|repeated_seeds|10.09|50.34|153.58|
+|baseline_tuning|83.13|412.84|1,138.70|
+|repeated_seeds|10.09|50.41|153.58|
 
 ## Longest forecast runs
 
@@ -80,20 +80,20 @@ Archived corrected-rebuild ETA snapshots were read from Git objects; these are e
 |183|183|2026-10-14T01:52:25.176860+00:00|501.140|391.106|3b53f28278b8237fc2dbd55e711e6e407335c1c1|
 |254|255|2026-10-14T02:30:33.484506+00:00|500.585|390.551|1be758a7379d01102f07b54e3434c524f49ed7e4|
 |551|551|2026-10-14T05:03:39.739302+00:00|499.323|389.289|ee6996362af625ed7dba9769e34a77b9cb590a5f|
-|current|754|2026-10-16T00:37:37.511965+00:00|464.290|352.458|live saved artifacts|
+|current|755|2026-10-16T01:43:14.930796+00:00|463.250|351.770|live saved artifacts|
 
 The earlier approximately 391-hour number was a continuously refreshed, model/dataset-weighted forecast of remaining work. It was not a global average multiplied by total pending entries. Its small changes were obscured by rounding and by the fact that short prioritized jobs and evidence-reuse entries contributed little remaining time. The expensive GKT configurations remained untrained; new fast-model timings updated their own strata without removing those costs.
 
-Current GKT contribution: 352.458/352.458 occupied MIG hours (100.00% of the central forecast). Six completed primary GKT dataset/variant runs and real primary/wide engineering profiles still anchor this dominant term. Most future GKT stopping epochs are unknown. The forecast is refreshed rather than stale, but the slow configurations have limited full-run timing evidence.
+Current GKT contribution: 351.770/351.770 occupied MIG hours (100.00% of the central forecast). Six completed primary GKT dataset/variant runs and real primary/wide engineering profiles still anchor this dominant term. Most future GKT stopping epochs are unknown. The forecast is refreshed rather than stale, but the slow configurations have limited full-run timing evidence.
 
 |Remaining category|Entries|Serial equivalent hours|Occupied MIG hours|
 |---|---|---|---|
-|baseline_tuning|173|413.945|313.679|
-|repeated_seeds|30|50.345|38.779|
+|baseline_tuning|172|412.836|312.946|
+|repeated_seeds|30|50.414|38.825|
 
-Isolated serial training work is 464.290 hours. With the admitted independent GKT-MHA concurrency, occupied-device time is 352.458 MIG hours. On the one available MIG partition, continuous-availability wall-clock training time is therefore 14.69 days, with conditional finish 2026-10-30T17:05:06.484540+00:00. These are separate quantities; actual hardware-active utilization is unavailable.
+Isolated serial training work is 463.250 hours. With the admitted independent GKT-MHA concurrency, occupied-device time is 351.770 MIG hours. On the one available MIG partition, continuous-availability wall-clock training time is therefore 14.66 days, with conditional finish 2026-10-30T17:29:27.738992+00:00. These are separate quantities; actual hardware-active utilization is unavailable.
 
-Planning envelope: 75.0–1295.4 occupied hours. This is an early-stop/maximum-epoch scenario envelope, not a confidence interval or guaranteed bound. The upper scenario does not assume sustained concurrency benefit. Unselected baseline configurations, GKT stopping counts, contention and environment availability dominate uncertainty.
+Planning envelope: 74.9–1292.3 occupied hours. This is an early-stop/maximum-epoch scenario envelope, not a confidence interval or guaranteed bound. The upper scenario does not assume sustained concurrency benefit. Unselected baseline configurations, GKT stopping counts, contention and environment availability dominate uncertainty.
 
 Startup, selected test evaluation and independent final artifact/checkpoint verification add wall time beyond this training-only estimate. Completed LightSAKT grids, selected seeds, ablations, controlled efficiency measurements and trained case figures are retained; they are not scheduled for fresh training again. Remaining numerical graphs and paired statistics are generated progressively on CPU.
 
