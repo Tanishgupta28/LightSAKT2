@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-16T06:46:03.643190+00:00",
-  "sample_time": 1792133162.9047165,
+  "updated_utc": "2026-10-16T06:50:15.004159+00:00",
+  "sample_time": 1792133414.2742112,
   "counts": {
-    "completed": 758,
-    "pending": 197,
+    "completed": 759,
+    "pending": 196,
     "running": 2
   },
   "scheduler": {
@@ -12,58 +12,58 @@
   },
   "training_processes": [
     {
-      "pid": 1351764,
-      "cpu_seconds": 11099.77,
-      "process_state": "R",
+      "pid": 1374951,
+      "cpu_seconds": 5716.62,
+      "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.745551109313965,
-      "cpu_seconds_advanced": 62.72999999999956
+      "observed_seconds": 63.40037441253662,
+      "cpu_seconds_advanced": 63.399999999999636
     },
     {
-      "pid": 1374951,
-      "cpu_seconds": 5466.13,
+      "pid": 1397316,
+      "cpu_seconds": 232.16,
       "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.745551109313965,
-      "cpu_seconds_advanced": 62.73000000000047
+      "observed_seconds": 63.40037441253662,
+      "cpu_seconds_advanced": 63.41
     }
   ],
   "active_runs": [
     {
       "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-68142e511b62",
-      "last_completed_epoch": 24,
+      "last_completed_epoch": 25,
       "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-68142e511b62/best.pt",
       "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-68142e511b62/config.json",
-      "recent_mean_epoch_seconds": 221.28160441420042,
-      "seconds_since_last_epoch": 178.66323256492615,
+      "recent_mean_epoch_seconds": 221.11816007280723,
+      "seconds_since_last_epoch": 211.52583718299866,
       "startup_epoch_seconds_extrapolated": null,
       "first_checkpoint_startup_grace_seconds": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 663.8448132426013,
+      "stall_threshold_seconds": 663.3544802184217,
       "checkpoint_stalled": false
     },
     {
-      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-65fc8f38c131",
-      "last_completed_epoch": 49,
-      "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-65fc8f38c131/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-65fc8f38c131/config.json",
-      "recent_mean_epoch_seconds": 222.46955051219555,
-      "seconds_since_last_epoch": 204.34834456443787,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-73e17803a3fa",
+      "last_completed_epoch": 0,
+      "best_checkpoint": "checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-73e17803a3fa/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-73e17803a3fa/config.json",
+      "recent_mean_epoch_seconds": 223.63895448599942,
+      "seconds_since_last_epoch": 0.0,
       "startup_epoch_seconds_extrapolated": null,
       "first_checkpoint_startup_grace_seconds": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 667.4086515365866,
+      "stall_threshold_seconds": 670.9168634579983,
       "checkpoint_stalled": false
     }
   ],
-  "gpu_memory_mib": 2425,
+  "gpu_memory_mib": 2717,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 761 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 762 independently downloaded/checksum verified; completed-archive synchronization True."
 }
