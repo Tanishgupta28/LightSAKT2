@@ -1,6 +1,6 @@
 {
   "verified": true,
-  "verified_utc": "2026-10-16T01:43:23.852994+00:00",
+  "verified_utc": "2026-10-16T02:14:00.260792+00:00",
   "light_final_seed_slots": 15,
   "summary_method": "Five prespecified seeds; arithmetic mean and sample SD; saved metrics independently recomputed",
   "completed_five_seed_baseline_comparisons": 12,
@@ -2150,9 +2150,9 @@
   ],
   "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
   "eta_source": "reports/summary_eta/progressive/ETA.json",
-  "eta_source_sha256": "e19e27b90c86c5c465af05f2d73f74b57d3228318199d6253d53f19ccd9e991f",
-  "remaining_occupied_mig_hours": 351.7702244990182,
-  "gkt_remaining_occupied_mig_hours": 351.7702244990182,
+  "eta_source_sha256": "3d8ed9622e39d1b96a9e82515f7dd763fe325f0af5207be2e34f94f57cbf321e",
+  "remaining_occupied_mig_hours": 350.76326521269937,
+  "gkt_remaining_occupied_mig_hours": 350.76326521269937,
   "artifacts": [
     {
       "path": "results/tables/LightSAKT_final_summary.csv",
@@ -2168,7 +2168,7 @@
     },
     {
       "path": "reports/LightSAKT_summary_ETA_by_model.csv",
-      "sha256": "2d1465aac4a53823789d14df2f4462fc6d808b2be468017af07911928e5f28ca"
+      "sha256": "48d7016f655ca8c3f865719f47b610e83a94ecae9239d767760eaf5efbdab8e7"
     }
   ]
 }
