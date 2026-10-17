@@ -1,8 +1,6 @@
 {
-  "log": "reports/test_runs/20261015T1312-sakt-grid-full-cpu.log",
+  "log": "reports/test_runs/20261017T063340-recovery-release-cpu.log",
   "exit_code": 0,
-  "passed": 128,
-  "skipped": 15,
-  "scope": "Full CPU suite with matched SAKT grid verification; CUDA deferred while GKT remains active",
-  "utc": "2026-10-15T13:12:49.713135+00:00"
+  "scope": "Full CPU suite after duplicate-draft recovery fix; CUDA skipped during healthy training",
+  "utc": "2026-10-17T06:34:02.901435+00:00"
 }

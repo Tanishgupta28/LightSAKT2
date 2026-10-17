@@ -1,0 +1,16 @@
+{
+  "observed_utc": "2026-10-17T06:34:19.507144+00:00",
+  "old_failing_backup_pid": 49211,
+  "replacement": {
+    "module": "scripts.offsite",
+    "pid": 1722517,
+    "log": "reports/recovery/offsite.log"
+  },
+  "reason": "AssertionError: Expected exactly one recovery release",
+  "training_processes_signalled": false,
+  "existing_releases_deleted": false,
+  "completed_checkpoints_retrained": false,
+  "cpu_tests": "132 passed; 15 CUDA skips",
+  "test_log": "reports/test_runs/20261017T063340-recovery-release-cpu.log",
+  "status": "replacement backup worker started; catch-up in progress"
+}

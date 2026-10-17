@@ -61,7 +61,7 @@ def preserve_preview():
     assert archive.stat().st_size < 2 * 1024**3
     offsite.TAG = 'research-sakt-grid-' + datetime.now(timezone.utc).strftime('%Y%m%d')
     release = offsite.release()
-    offsite.command(['gh', 'release', 'upload', offsite.TAG, str(archive), '--repo', offsite.REPO])
+    offsite.upload_asset(release,archive)
     asset = offsite.load_assets(release['id'])[archive.name]
     downloaded = Path('backups/remote_verification') / archive.name
     downloaded.parent.mkdir(parents=True, exist_ok=True)

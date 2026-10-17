@@ -47,7 +47,7 @@ def upload(record):
     offsite.TAG='research-active-recovery-'+datetime.now(timezone.utc).strftime('%Y%m%d')
     release=offsite.release();assets=offsite.load_assets(release['id']);path=Path(record['path'])
     if path.name not in assets:
-        offsite.command(['gh','release','upload',offsite.TAG,str(path),'--repo',offsite.REPO]);assets=offsite.load_assets(release['id'])
+        offsite.upload_asset(release,path);assets=offsite.load_assets(release['id'])
     asset=assets[path.name];dest=Path('backups/remote_verification')/path.name
     with dest.open('wb') as stream:
         subprocess.run(['gh','api','-H','Accept: application/octet-stream',f'repos/{offsite.REPO}/releases/assets/{asset["id"]}'],stdout=stream,stderr=subprocess.PIPE,check=True)

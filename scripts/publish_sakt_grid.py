@@ -95,7 +95,7 @@ def publish():
     offsite.TAG='research-sakt-grid-'+datetime.now(timezone.utc).strftime('%Y%m%d')
     release=offsite.release();assets=offsite.load_assets(release['id'])
     if archive.name not in assets:
-        offsite.command(['gh','release','upload',offsite.TAG,str(archive),'--repo',offsite.REPO]);assets=offsite.load_assets(release['id'])
+        offsite.upload_asset(release,archive);assets=offsite.load_assets(release['id'])
     asset=assets[archive.name];download=Path('backups/remote_verification')/archive.name
     with download.open('wb') as output:
         subprocess.run(['gh','api','-H','Accept: application/octet-stream',f'repos/{offsite.REPO}/releases/assets/{asset["id"]}'],stdout=output,stderr=subprocess.PIPE,check=True)

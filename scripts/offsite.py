@@ -7,6 +7,7 @@ import subprocess
 import time
 from datetime import datetime,timezone
 from pathlib import Path
+from urllib.parse import urlencode
 from src.datasets.preprocess import sha256
 from src.training.engine import write_json
 
@@ -23,19 +24,41 @@ def release():
     repository=json.loads(command(['gh','api',f'repos/{REPO}']))
     assert repository['private'],'Artifact backups require the existing private repository'
     lookup=['gh','api',f'repos/{REPO}/releases','--paginate','--jq',f'.[] | select(.tag_name=="{TAG}") | .id']
-    identity=command(lookup)
-    if not identity:
+    identities={int(value) for value in command(lookup).splitlines() if value.strip()}
+    if not identities:
         notes=Path('reports/OFFSITE_RECOVERY.md')
         command(['gh','release','create',TAG,'--repo',REPO,'--draft','--target','research-rebuild',
                  '--title','Verified research recovery artifacts — experiments incomplete','--notes-file',str(notes)])
         for _ in range(5):
-            identity=command(lookup)
-            if identity:break
+            identities={int(value) for value in command(lookup).splitlines() if value.strip()}
+            if identities:break
             time.sleep(1)
-    assert identity.isdigit(),'Expected exactly one recovery release'
+    assert identities,'Recovery release lookup returned no IDs'
+    # GitHub permits duplicate unpublished drafts with the same tag. Preserve
+    # every draft, but continue the container bound to the verified asset ledger.
+    ledger=Path('reports/offsite_backup.json')
+    prior=json.load(open(ledger)) if ledger.exists() else {}
+    pinned=prior.get('release_id') if prior.get('repository')==REPO and prior.get('tag')==TAG else None
+    identity=pinned if pinned in identities else min(identities)
     result=json.loads(command(['gh','api',f'repos/{REPO}/releases/{identity}']))
     assert result['draft'],'Recovery artifact container must remain a draft'
+    assert result['tag_name']==TAG,'Recovery release tag differs from requested container'
+    if len(identities)>1:
+        write_json('reports/offsite_release_resolution.json',{
+            'updated_utc':datetime.now(timezone.utc).isoformat(),'repository':REPO,'tag':TAG,
+            'matching_release_ids':sorted(identities),'selected_release_id':identity,
+            'selection':'verified asset ledger' if identity==pinned else 'oldest release ID',
+            'existing_releases_modified_or_deleted':False,'uploads_address_release_id':True})
     return result
+
+
+def upload_asset(remote,path):
+    """Address the selected private draft by ID, avoiding ambiguous tag uploads."""
+    assert remote['draft'],'Recovery artifact container must remain a draft'
+    query=urlencode({'name':Path(path).name})
+    endpoint=f'https://uploads.github.com/repos/{REPO}/releases/{remote["id"]}/assets?{query}'
+    return json.loads(command(['gh','api','--method','POST','-H',
+        'Content-Type: application/octet-stream','--input',str(path),endpoint]))
 
 
 def sync():
@@ -61,7 +84,7 @@ def sync():
         asset=assets.get(name)
         if asset is None:
             print('Uploading private recovery asset:',name,flush=True)
-            command(['gh','release','upload',TAG,path,'--repo',REPO])
+            upload_asset(remote,source)
             assets=load_assets(remote['id']);asset=assets[name]
         assert asset['state']=='uploaded' and asset['size']==source.stat().st_size
         if asset.get('digest'):assert asset['digest']=='sha256:'+expected
