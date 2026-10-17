@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-17T11:18:23.878652+00:00",
-  "sample_time": 1792235903.4109132,
+  "updated_utc": "2026-10-17T12:19:02.774546+00:00",
+  "sample_time": 1792239542.0108876,
   "counts": {
-    "completed": 787,
-    "pending": 169,
+    "completed": 788,
+    "pending": 168,
     "running": 1
   },
   "scheduler": {
@@ -12,36 +12,36 @@
   },
   "training_processes": [
     {
-      "pid": 1722080,
-      "cpu_seconds": 9770.34,
+      "pid": 1751747,
+      "cpu_seconds": 3636.48,
       "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.496267557144165,
-      "cpu_seconds_advanced": 62.51000000000022
+      "observed_seconds": 62.781169176101685,
+      "cpu_seconds_advanced": 62.7800000000002
     },
     {
-      "pid": 1751747,
-      "cpu_seconds": 7.24,
+      "pid": 1785854,
+      "cpu_seconds": 7.71,
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.496267557144165,
+      "observed_seconds": 62.781169176101685,
       "cpu_seconds_advanced": 0.0
     }
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2015-GKT-baseline_tuning-42-3025c257d8b1",
-      "last_completed_epoch": 16,
-      "best_checkpoint": "checkpoints/ASSIST2015-GKT-baseline_tuning-42-3025c257d8b1/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-GKT-baseline_tuning-42-3025c257d8b1/config.json",
-      "recent_mean_epoch_seconds": 608.7278543495922,
-      "seconds_since_last_epoch": 14.700590133666992,
+      "run_id": "ASSIST2015-GKT-baseline_tuning-42-363ba53c53d3",
+      "last_completed_epoch": 5,
+      "best_checkpoint": "checkpoints/ASSIST2015-GKT-baseline_tuning-42-363ba53c53d3/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-GKT-baseline_tuning-42-363ba53c53d3/config.json",
+      "recent_mean_epoch_seconds": 607.1240370946005,
+      "seconds_since_last_epoch": 594.2146465778351,
       "startup_epoch_seconds_extrapolated": null,
       "first_checkpoint_startup_grace_seconds": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 1826.1835630487767,
+      "stall_threshold_seconds": 1821.3721112838014,
       "checkpoint_stalled": false
     }
   ],
