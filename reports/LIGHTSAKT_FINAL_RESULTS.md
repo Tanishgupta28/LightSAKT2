@@ -1,6 +1,6 @@
 # Verified final LightSAKT results and ongoing comparisons
 
-Generated UTC: 2026-10-17T04:46:35.049462+00:00
+Generated UTC: 2026-10-17T06:37:12.811574+00:00
 
 All numbers below are generated from fresh completed experiment files. Five selected seeds per dataset are complete; the overall research schedule remains incomplete. The three fixed-configuration LightSAKT primary runs are outside this selected-final summary; baseline primary runs are labelled separately.
 
@@ -72,22 +72,22 @@ All five baseline metrics, deltas and evidence scope are in LightSAKT_completed_
 
 ## Recalculated remaining training time
 
-ETA measurements refreshed: 2026-10-17T04:46:26.721855+00:00. Serial isolated-equivalent remaining training: 403.192 hours. Current execution forecast: 305.960 occupied MIG wall hours (12.75 continuous days), applying the measured 1.512 two-worker throughput factor only to GKT-MHA.
+ETA measurements refreshed: 2026-10-17T06:37:04.311803+00:00. Serial isolated-equivalent remaining training: 399.433 hours. Current execution forecast: 302.200 occupied MIG wall hours (12.59 continuous days), applying the measured 1.512 two-worker throughput factor only to GKT-MHA.
 
 |model|remaining_entries|fresh_training_runs|serial_equivalent_hours|occupied_mig_hours|
 |---|---|---|---|---|
-|GKT|85|80|116.160384|116.160384|
+|GKT|84|79|112.400997|112.400997|
 |GKT_MHA|87|84|287.031630|189.799478|
 
-GKT-PAM and GKT-MHA account for 305.960 of 305.960 remaining occupied MIG hours (100.00%). Completion count is a poor proxy for compute progress. The priority order completed short LightSAKT grids, selected seeds, ablations and fast baseline tuning first. Reuse/alias entries add no training; the current category table identifies remaining GKT work.
+GKT-PAM and GKT-MHA account for 302.200 of 302.200 remaining occupied MIG hours (100.00%). Completion count is a poor proxy for compute progress. The priority order completed short LightSAKT grids, selected seeds, ablations and fast baseline tuning first. Reuse/alias entries add no training; the current category table identifies remaining GKT work.
 
 The GKT forecast is calibrated by six completed primary model/dataset runs plus real primary/wide engineering profiles, rather than multiplying the global mean runtime by remaining entries. Recent fast-model completions refine those strata but add little evidence about the still-untrained slow GKT configurations. One GKT epoch has measured durations of minutes, whereas many DKT/SAKT/LightSAKT epochs take seconds or less; planned configuration widths and stopping counts also differ.
 
-The occupied-MIG planning envelope is 68.9–1182.5 hours. It is an early-stop/maximum-epoch scenario envelope, not a confidence interval or guarantee. Most future GKT stopping counts and sustained concurrency performance are unknown. Startup, selected test inference and final artifact verification are additional; the completed controlled efficiency benchmark is reused.
+The occupied-MIG planning envelope is 68.2–1170.5 hours. It is an early-stop/maximum-epoch scenario envelope, not a confidence interval or guarantee. Most future GKT stopping counts and sustained concurrency performance are unknown. Startup, selected test inference and final artifact verification are additional; the completed controlled efficiency benchmark is reused.
 
 ## Continuing execution and preserved findings
 
-Live schedule snapshot: 785/957 entries complete; 172 remain. Phase counts: {"5": {"completed": 21}, "6": {"completed": 614, "pending": 141, "running": 1}, "7": {"completed": 75, "pending": 30}, "8": {"completed": 75}}.
+Live schedule snapshot: 786/957 entries complete; 171 remain. Phase counts: {"5": {"completed": 21}, "6": {"completed": 615, "pending": 140, "running": 1}, "7": {"completed": 75, "pending": 30}, "8": {"completed": 75}}.
 
 Scheduler and independent CPU reporting, Git preservation, checkpoint recovery and offsite workers remain active. No completed training was restarted and no experimental scope was removed. Detached execution survives client disconnect while the environment stays up; no automatic restart after environment shutdown is configured.
 

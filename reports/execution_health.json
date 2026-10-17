@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-10-17T06:34:04.818897+00:00",
-  "sample_time": 1792218844.1101608,
+  "updated_utc": "2026-10-17T06:39:19.385536+00:00",
+  "sample_time": 1792219158.6625032,
   "counts": {
     "completed": 786,
     "pending": 170,
@@ -13,12 +13,12 @@
   "training_processes": [
     {
       "pid": 1700038,
-      "cpu_seconds": 18.38,
+      "cpu_seconds": 331.23,
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.592623472213745,
-      "cpu_seconds_advanced": 10.719999999999999
+      "observed_seconds": 62.54111933708191,
+      "cpu_seconds_advanced": 62.39000000000004
     },
     {
       "pid": 1722080,
@@ -26,7 +26,7 @@
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 0.2,
+      "observed_seconds": 62.54111933708191,
       "cpu_seconds_advanced": 0.0
     }
   ],
@@ -37,7 +37,7 @@
       "best_checkpoint": "checkpoints/ASSIST2015-GKT-baseline_tuning-42-2eca384538bb/best.pt",
       "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-GKT-baseline_tuning-42-2eca384538bb/config.json",
       "recent_mean_epoch_seconds": null,
-      "seconds_since_last_epoch": 9.421619892120361,
+      "seconds_since_last_epoch": 323.9739623069763,
       "startup_epoch_seconds_extrapolated": 630.7615282248273,
       "first_checkpoint_startup_grace_seconds": 30.0,
       "age_reference": "initial running status; first checkpoint not yet saved",
@@ -52,5 +52,5 @@
   "healthy_progress_observed": true,
   "failed_or_interrupted_runs": 0,
   "restart_policy": "Detached session survives terminal/client disconnect; no process restart after environment shutdown is configured.",
-  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 768 independently downloaded/checksum verified; completed-archive synchronization True."
+  "storage": "/workspace is an NFS mount; retention after deprovisioning is not verified. Private GitHub draft assets: 786 independently downloaded/checksum verified; completed-archive synchronization False."
 }

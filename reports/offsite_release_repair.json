@@ -12,5 +12,11 @@
   "completed_checkpoints_retrained": false,
   "cpu_tests": "132 passed; 15 CUDA skips",
   "test_log": "reports/test_runs/20261017T063340-recovery-release-cpu.log",
-  "status": "replacement backup worker started; catch-up in progress"
+  "status": "lookup repaired; live worker retries remaining unverified downloads",
+  "verified_catchup_assets": 786,
+  "pending_archives_observed": 3,
+  "pending_bytes_observed": 23653978,
+  "checked_utc": "2026-10-17T06:40:05.711119+00:00",
+  "lookup_repaired": true,
+  "latest_failure_type": "CalledProcessError"
 }
