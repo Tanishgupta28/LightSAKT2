@@ -1,6 +1,10 @@
 {
   "run_id": "ASSIST2015-GKT-baseline_tuning-42-363ba53c53d3",
-  "status": "pending",
-  "execution_coordinator_pid": 191761,
-  "waiting_for_gpu_admission": true
+  "status": "running",
+  "last_completed_epoch": 0,
+  "config": "results/raw/ASSIST2015-GKT-baseline_tuning-42-363ba53c53d3/config.json",
+  "seed": 42,
+  "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-GKT-baseline_tuning-42-363ba53c53d3/config.json",
+  "best_checkpoint": "checkpoints/ASSIST2015-GKT-baseline_tuning-42-363ba53c53d3/best.pt",
+  "failure_reason": null
 }
