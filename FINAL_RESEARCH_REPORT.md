@@ -66,8 +66,8 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 ## Experiment schedule status
 
 {
-  "completed": 790,
-  "pending": 166,
+  "completed": 791,
+  "pending": 165,
   "running": 1
 }
 
@@ -138,7 +138,7 @@ The CPU recovery supervisor protects existing training, recovers missing process
 
 ## Comparison against completed baselines
 
-Generated UTC: 2026-10-17T12:24:03.777370+00:00
+Generated UTC: 2026-10-17T14:04:41.847315+00:00
 
 This comparison includes only completed selected five-seed DKT, DKT+, DKVMN and SAKT results on the same locked splits. It excludes historical manuscript scores, primary single-seed runs, partial seed sets and both GKT variants. Best means highest completed five-seed mean test AUC among these four baselines. This is a descriptive leaderboard after evaluation; it does not select hyperparameters, checkpoints or future experiments.
 
