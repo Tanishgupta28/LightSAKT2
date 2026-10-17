@@ -1,0 +1,12 @@
+<!doctype html><meta charset="utf-8"><title>Table 8: Ablation study</title>
+<style>body{font-family:"Times New Roman",serif;margin:40px;color:#111}h2,header{text-align:center}table{border-collapse:collapse;width:100%;margin:24px 0}th,td{padding:7px 12px;text-align:center;white-space:nowrap}thead{border-top:2px solid;border-bottom:1px solid}tbody{border-bottom:2px solid}.group{border-top:1px solid}.notes{font-size:13px;line-height:1.5}td:first-child{text-align:left}</style>
+<h2>Table 8: Ablation study</h2><header>Corrected LightSAKT · five-seed test AUC</header>
+<table><thead><tr><th>Architecture</th><th>ASSIST2009</th><th>ASSIST2015</th><th>Algebra 2005–2006</th></tr></thead><tbody>
+<tr><td>Default</td><td><strong>0.751056 ± 0.000766</strong></td><td>0.726088 ± 0.000315</td><td>0.810590 ± 0.000422</td></tr>
+<tr><td>No Dropout</td><td>0.749340 ± 0.000716</td><td>0.725149 ± 0.000593</td><td>0.809160 ± 0.000459</td></tr>
+<tr><td>No Position Encoding</td><td>0.750798 ± 0.000583</td><td>0.725749 ± 0.000183</td><td>0.811410 ± 0.000603</td></tr>
+<tr><td>Single Head</td><td>0.750791 ± 0.000765</td><td><strong>0.726622 ± 0.000426</strong></td><td><strong>0.811755 ± 0.000448</strong></td></tr>
+<tr><td>Without attention</td><td>0.708307 ± 0.001107</td><td>0.699283 ± 0.000443</td><td>0.772550 ± 0.000515</td></tr>
+<tr><td>No layer normalization*</td><td>Not run</td><td>Not run</td><td>Not run</td></tr>
+<tr><td>Without regularization†</td><td>0.749340 ± 0.000716</td><td>0.725149 ± 0.000593</td><td>0.809160 ± 0.000459</td></tr>
+</tbody></table><div class="notes">Held-out test AUC: mean ± sample SD over five seeds. Bold marks the highest measured mean in each dataset.<br>* Not run: the original image includes layer-normalization removal, but no verified experiment exists for it.<br>† Without regularization equals No Dropout (same evidence); it is not an independent ablation.</div>

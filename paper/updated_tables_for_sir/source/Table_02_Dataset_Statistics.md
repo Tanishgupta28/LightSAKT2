@@ -1,0 +1,13 @@
+# Table 2: Overview of datasets
+
+Verified corrected dataset variants
+
+|Dataset|Students|Skill identifiers|Records|Raw columns|
+|---|---|---|---|---|
+|ASSIST2009|4,151|136|274,590|30|
+|ASSIST2015|19,840|100|683,801|4|
+|Algebra 2005–2006|574|436|607,025|19|
+
+Records, students and skill identifiers are counted after cleaning; raw columns count source-file columns.
+Skill identifiers are composite tags (ASSIST2009/Algebra) or sequence IDs (ASSIST2015), not uniformly atomic skills.
+Algebra: labelled training subset; 436 observed composite identifiers, with 387 training IDs plus UNK.

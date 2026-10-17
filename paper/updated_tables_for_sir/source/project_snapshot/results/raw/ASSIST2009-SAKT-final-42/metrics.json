@@ -1,0 +1,42 @@
+{
+  "run_id": "ASSIST2009-SAKT-final-42",
+  "dataset": "ASSIST2009",
+  "model": "SAKT",
+  "seed": 42,
+  "group": "final",
+  "validation": {
+    "auc": 0.749442606239869,
+    "auc_reason": null,
+    "accuracy": 0.730259324009324,
+    "f1": 0.8150996155190493,
+    "mse": 0.1821337596233671,
+    "bce": 0.5437521041498752,
+    "n_targets": 27456
+  },
+  "best_epoch": 36,
+  "epochs_trained": 41,
+  "training_seconds": 17.756528850994073,
+  "checkpoint": "checkpoints/ASSIST2009-SAKT-baseline_tuning-42-bc0a2a560ce1/best.pt",
+  "checkpoint_sha256": "6fce0569bc2405231c11ae8ab6da3ab20d9b57d731e4d5f8448b172295ac7378",
+  "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+  "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+  "git_commit": "68de5d880dca0d04d3f988b14f4ab2b36b04335d",
+  "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "parameters": 57985,
+  "peak_allocated_bytes": 139499008,
+  "peak_reserved_bytes": 155189248,
+  "test": {
+    "auc": 0.7491985566290496,
+    "auc_reason": null,
+    "accuracy": 0.7326076769053806,
+    "f1": 0.8169556278160953,
+    "mse": 0.18074291408554463,
+    "bce": 0.5402525820480606,
+    "n_targets": 46946
+  },
+  "reused_training_run": "ASSIST2009-SAKT-baseline_tuning-42-bc0a2a560ce1",
+  "selection_path": "experiments/selections/ASSIST2009-SAKT.json",
+  "selected_logical_run": "ASSIST2009-SAKT-baseline_tuning-42-bc0a2a560ce1",
+  "prediction_path": "results/predictions/ASSIST2009-SAKT-final-42.npz",
+  "prediction_sha256": "64af6b7b7969e6f28d67d6e3b74785cf501ac7394aa34696470af000ce133123"
+}

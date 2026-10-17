@@ -1,0 +1,41 @@
+<!doctype html><meta charset="utf-8"><title>Table 4: Hyperparameter tuning results for Algebra 2005–2006</title>
+<style>body{font-family:"Times New Roman",serif;margin:40px;color:#111}h2,header{text-align:center}table{border-collapse:collapse;width:100%;margin:24px 0}th,td{padding:7px 12px;text-align:center;white-space:nowrap}thead{border-top:2px solid;border-bottom:1px solid}tbody{border-bottom:2px solid}.group{border-top:1px solid}.notes{font-size:13px;line-height:1.5}td:first-child{text-align:left}</style>
+<h2>Table 4: Hyperparameter tuning results for Algebra 2005–2006</h2><header>Corrected causal LightSAKT · validation results</header>
+<table><thead><tr><th>Learning Rate</th><th>Embedding</th><th>Heads</th><th>Dropout</th><th>Best validation AUC</th></tr></thead><tbody>
+<tr><td>0.000500</td><td>32</td><td>2</td><td>0.1</td><td>0.788834</td></tr>
+<tr><td>0.000500</td><td>32</td><td>2</td><td>0.2</td><td>0.787610</td></tr>
+<tr><td>0.000500</td><td>32</td><td>4</td><td>0.1</td><td>0.789701</td></tr>
+<tr><td>0.000500</td><td>32</td><td>4</td><td>0.2</td><td>0.788728</td></tr>
+<tr><td>0.000500</td><td>64</td><td>2</td><td>0.1</td><td>0.800535</td></tr>
+<tr><td>0.000500</td><td>64</td><td>2</td><td>0.2</td><td>0.799574</td></tr>
+<tr><td>0.000500</td><td>64</td><td>4</td><td>0.1</td><td>0.801017</td></tr>
+<tr><td>0.000500</td><td>64</td><td>4</td><td>0.2</td><td>0.800187</td></tr>
+<tr><td>0.000500</td><td>128</td><td>2</td><td>0.1</td><td>0.807181</td></tr>
+<tr><td>0.000500</td><td>128</td><td>2</td><td>0.2</td><td>0.807049</td></tr>
+<tr><td>0.000500</td><td>128</td><td>4</td><td>0.1</td><td>0.807573</td></tr>
+<tr><td>0.000500</td><td>128</td><td>4</td><td>0.2</td><td>0.807942</td></tr>
+<tr><td>0.001000</td><td>32</td><td>2</td><td>0.1</td><td>0.797397</td></tr>
+<tr><td>0.001000</td><td>32</td><td>2</td><td>0.2</td><td>0.796752</td></tr>
+<tr><td>0.001000</td><td>32</td><td>4</td><td>0.1</td><td>0.797403</td></tr>
+<tr><td>0.001000</td><td>32</td><td>4</td><td>0.2</td><td>0.796880</td></tr>
+<tr><td>0.001000</td><td>64</td><td>2</td><td>0.1</td><td>0.803621</td></tr>
+<tr><td>0.001000</td><td>64</td><td>2</td><td>0.2</td><td>0.803011</td></tr>
+<tr><td>0.001000</td><td>64</td><td>4</td><td>0.1</td><td>0.804018</td></tr>
+<tr><td>0.001000</td><td>64</td><td>4</td><td>0.2</td><td>0.803866</td></tr>
+<tr><td>0.001000</td><td>128</td><td>2</td><td>0.1</td><td>0.807105</td></tr>
+<tr><td>0.001000</td><td>128</td><td>2</td><td>0.2</td><td>0.807842</td></tr>
+<tr><td>0.001000</td><td>128</td><td>4</td><td>0.1</td><td>0.807769</td></tr>
+<tr><td><strong>0.001000</strong></td><td><strong>128</strong></td><td><strong>4</strong></td><td><strong>0.2</strong></td><td><strong>0.808127</strong></td></tr>
+<tr><td>0.005000</td><td>32</td><td>2</td><td>0.1</td><td>0.801522</td></tr>
+<tr><td>0.005000</td><td>32</td><td>2</td><td>0.2</td><td>0.801106</td></tr>
+<tr><td>0.005000</td><td>32</td><td>4</td><td>0.1</td><td>0.801053</td></tr>
+<tr><td>0.005000</td><td>32</td><td>4</td><td>0.2</td><td>0.800365</td></tr>
+<tr><td>0.005000</td><td>64</td><td>2</td><td>0.1</td><td>0.803593</td></tr>
+<tr><td>0.005000</td><td>64</td><td>2</td><td>0.2</td><td>0.802481</td></tr>
+<tr><td>0.005000</td><td>64</td><td>4</td><td>0.1</td><td>0.804632</td></tr>
+<tr><td>0.005000</td><td>64</td><td>4</td><td>0.2</td><td>0.803808</td></tr>
+<tr><td>0.005000</td><td>128</td><td>2</td><td>0.1</td><td>0.807475</td></tr>
+<tr><td>0.005000</td><td>128</td><td>2</td><td>0.2</td><td>0.807133</td></tr>
+<tr><td>0.005000</td><td>128</td><td>4</td><td>0.1</td><td>0.807367</td></tr>
+<tr><td>0.005000</td><td>128</td><td>4</td><td>0.2</td><td>0.807673</td></tr>
+</tbody></table><div class="notes">LightSAKT; all 36 configurations. Training seed 42, split seed 42; validation AUC only.<br>Bold marks the highest full-precision validation AUC. Exact ties select the lexically smallest run ID.<br>Selected: LR 0.001, dimension 128, heads 4, dropout 0.2; epoch 26.</div>

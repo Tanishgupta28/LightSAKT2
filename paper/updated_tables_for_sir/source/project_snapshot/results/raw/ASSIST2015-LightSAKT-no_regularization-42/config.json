@@ -1,0 +1,29 @@
+{
+  "dataset": "ASSIST2015",
+  "model": "LightSAKT",
+  "group": "ablation",
+  "seed": 42,
+  "seq_len": 100,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "patience": 5,
+  "learning_rate": 0.0005,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.0,
+  "epsilon": 1e-08,
+  "model_config": {
+    "max_seq_len": 100,
+    "embed_dim": 128,
+    "num_heads": 4,
+    "dropout": 0.1,
+    "variant": "no_dropout"
+  },
+  "evaluate_test": true,
+  "run_id": "ASSIST2015-LightSAKT-no_regularization-42",
+  "selection_path": "experiments/selections/ASSIST2015-LightSAKT.json",
+  "scientific_variant": "no_regularization",
+  "equivalent_to": "no_dropout"
+}

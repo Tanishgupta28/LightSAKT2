@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\setcounter{table}{2}
+\caption{Training network configurations for different datasets}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llll}
+\toprule
+Setting & ASSIST2009 & ASSIST2015 & Algebra 2005--2006 \\
+\midrule
+train\_ratio & 0.7 & 0.7 & 0.7 \\
+validation\_ratio & 0.1 & 0.1 & 0.1 \\
+test\_ratio & 0.2 & 0.2 & 0.2 \\
+learning\_rate & 0.0010 & 0.0005 & 0.0010 \\
+seq\_len & 100 & 100 & 200 \\
+optimizer & Adam & Adam & Adam \\
+embedding\_dimension & 64 & 128 & 128 \\
+num\_heads & 2 & 4 & 4 \\
+dropout & 0.1 & 0.1 & 0.2 \\
+batch\_size & 64 & 64 & 64 \\
+max\_epochs & 50 & 50 & 50 \\
+early\_stopping\_patience & 5 & 5 & 5 \\
+\bottomrule
+\end{tabular}}
+\begin{minipage}{\textwidth}\footnotesize
+LightSAKT configurations selected independently by validation AUC; target student-disjoint ratios are 70/10/20.\par Adam: betas (0.9, 0.999), epsilon 1e-8, weight decay 0. Early stopping monitors validation AUC.\par Split/grid seed 42; final training seeds: 42, 123, 2026, 3407, 7777. Test data do not select configurations.
+\end{minipage}
+\end{table}

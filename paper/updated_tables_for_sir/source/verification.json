@@ -1,0 +1,98 @@
+{
+  "verified": true,
+  "verified_utc": "2026-10-17T18:59:07.492618+00:00",
+  "original_images": 7,
+  "updated_tables": 7,
+  "combined_pdf": "All_Updated_Tables.pdf",
+  "combined_pdf_sha256": "ee7ed5350b210c49a154a8099e120d41810b75aaa7f9dd00214452392953cf04",
+  "tables": [
+    {
+      "table": 2,
+      "name": "Table_02_Dataset_Statistics",
+      "rows": 3,
+      "columns": 5,
+      "pdf_cells_and_notes_checked": true,
+      "png_sha256": "1e98061e04274b7998aaa3ec57bea5993cea937ca0bcfdfa29edeed5ceed6566",
+      "pdf_sha256": "1dcfc3014770d7b3e267169c4329edba52da7901f44c8435aadeca92aaaa294b",
+      "gkt_status": "not present in original table",
+      "unavailable": []
+    },
+    {
+      "table": 3,
+      "name": "Table_03_Training_Configurations",
+      "rows": 12,
+      "columns": 4,
+      "pdf_cells_and_notes_checked": true,
+      "png_sha256": "bd9fdfcd432371f36ca53dc5416da1d0919a1ed9b1daee73076e94128455f1f7",
+      "pdf_sha256": "90fecbff857b0c31afbf0d34502e037ec66ad01c73f4e3b6f82a017a2f9a9f6d",
+      "gkt_status": "not present in original table",
+      "unavailable": []
+    },
+    {
+      "table": 4,
+      "name": "Table_04_LightSAKT_Grid_Algebra2005",
+      "rows": 36,
+      "columns": 5,
+      "pdf_cells_and_notes_checked": true,
+      "png_sha256": "6d17aceb9b8f164827220516b6f13db10721b8d45ed67ee5faf37d75276d6dc7",
+      "pdf_sha256": "f41440d688b7af2f252050e5084921dcb4a18f6bacef5f938c8d556316fc938f",
+      "gkt_status": "not present in original table",
+      "unavailable": []
+    },
+    {
+      "table": 5,
+      "name": "Table_05_LightSAKT_Grid_ASSIST2009",
+      "rows": 36,
+      "columns": 5,
+      "pdf_cells_and_notes_checked": true,
+      "png_sha256": "a422c323725c9512e485c7323c4a96e3e8ee8ceeca052fb48d902ef0e987e503",
+      "pdf_sha256": "c9f8fa4cd4c68620d57a54189770699f90d4c54f64c4478d6bbe9084aa8beefa",
+      "gkt_status": "not present in original table",
+      "unavailable": []
+    },
+    {
+      "table": 6,
+      "name": "Table_06_LightSAKT_Grid_ASSIST2015",
+      "rows": 36,
+      "columns": 5,
+      "pdf_cells_and_notes_checked": true,
+      "png_sha256": "6eb6ea8c5b02b116b6a3a73f3dad6412de52bb7ca694c2f2123c0781ab623af0",
+      "pdf_sha256": "afc641fe627063319538a96fdeeb013b41ffcf6132599760be78de5ba4d60cfd",
+      "gkt_status": "not present in original table",
+      "unavailable": []
+    },
+    {
+      "table": 7,
+      "name": "Table_07_Verified_Model_Comparison",
+      "rows": 15,
+      "columns": 8,
+      "pdf_cells_and_notes_checked": true,
+      "png_sha256": "b34192cd145f62914339228123818e8491afa979252239e2cb6d9740caea54f2",
+      "pdf_sha256": "3c31e9d7d3d89bd3b1f2004356e71b71a00d05b297f20c265f8773da0e84f2da",
+      "gkt_status": "Pending in all 15 metric rows; neither PAM nor MHA final values are inserted",
+      "unavailable": []
+    },
+    {
+      "table": 8,
+      "name": "Table_08_LightSAKT_Ablation_Study",
+      "rows": 7,
+      "columns": 4,
+      "pdf_cells_and_notes_checked": true,
+      "png_sha256": "9b79bb2eb7f8845b86beb93e5dceb3a3b8d5fcfe820b80d6cf5ac39626d52b4c",
+      "pdf_sha256": "e5737d20a5dbaa51ebb29be1fb85fe69a080407c63603456926020615f4f6485",
+      "gkt_status": "not present in original table",
+      "unavailable": [
+        "No layer normalization: not run; all three cells explicitly labelled Not run"
+      ]
+    }
+  ],
+  "model_source_fingerprint_unchanged": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "schedule_run_ids_unchanged": true,
+  "training_invoked": false,
+  "inference_invoked": false,
+  "processes_signalled": false,
+  "gkt_final_values_excluded": true,
+  "all_original_image_checksums_verified": true,
+  "original_zip_checksum_checked": true,
+  "original_zip_sha256": "2dfefe17b210158ee3369ee4aff923fd9979ee15b2f7456263cd0dc00395882a"
+}

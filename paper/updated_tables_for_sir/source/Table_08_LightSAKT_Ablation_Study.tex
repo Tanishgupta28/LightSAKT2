@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\setcounter{table}{7}
+\caption{Ablation study}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llll}
+\toprule
+Architecture & ASSIST2009 & ASSIST2015 & Algebra 2005--2006 \\
+\midrule
+Default & \textbf{0.751056 $\pm$ 0.000766} & 0.726088 $\pm$ 0.000315 & 0.810590 $\pm$ 0.000422 \\
+No Dropout & 0.749340 $\pm$ 0.000716 & 0.725149 $\pm$ 0.000593 & 0.809160 $\pm$ 0.000459 \\
+No Position Encoding & 0.750798 $\pm$ 0.000583 & 0.725749 $\pm$ 0.000183 & 0.811410 $\pm$ 0.000603 \\
+Single Head & 0.750791 $\pm$ 0.000765 & \textbf{0.726622 $\pm$ 0.000426} & \textbf{0.811755 $\pm$ 0.000448} \\
+Without attention & 0.708307 $\pm$ 0.001107 & 0.699283 $\pm$ 0.000443 & 0.772550 $\pm$ 0.000515 \\
+No layer normalization\textasteriskcentered{} & Not run & Not run & Not run \\
+Without regularization$\dagger$ & 0.749340 $\pm$ 0.000716 & 0.725149 $\pm$ 0.000593 & 0.809160 $\pm$ 0.000459 \\
+\bottomrule
+\end{tabular}}
+\begin{minipage}{\textwidth}\footnotesize
+Held-out test AUC: mean $\pm$ sample SD over five seeds. Bold marks the highest measured mean in each dataset.\par \textasteriskcentered{} Not run: the original image includes layer-normalization removal, but no verified experiment exists for it.\par $\dagger$ Without regularization equals No Dropout (same evidence); it is not an independent ablation.
+\end{minipage}
+\end{table}

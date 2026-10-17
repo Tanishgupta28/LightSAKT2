@@ -1,0 +1,24 @@
+{
+  "dataset": "ASSIST2015",
+  "model": "DKT",
+  "group": "final",
+  "seed": 3407,
+  "seq_len": 100,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "patience": 5,
+  "learning_rate": 0.0005,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.0,
+  "epsilon": 1e-08,
+  "model_config": {
+    "emb_size": 64,
+    "hidden_size": 100
+  },
+  "evaluate_test": true,
+  "run_id": "ASSIST2015-DKT-final-3407",
+  "selection_path": "experiments/selections/ASSIST2015-DKT.json"
+}

@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering
+\setcounter{table}{6}
+\caption{Performance comparison of knowledge-tracing models across datasets}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llllllll}
+\toprule
+Dataset & Metric & DKT & DKT+ & GKT & DKVMN & SAKT & LightSAKT \\
+\midrule
+ & AUC $\uparrow$ & \textbf{0.757165 $\pm$ 0.000527} & 0.751202 $\pm$ 0.000876 & Pending & 0.755016 $\pm$ 0.001395 & 0.750322 $\pm$ 0.000648 & 0.751056 $\pm$ 0.000766 \\
+ & F1 $\uparrow$ & 0.818332 $\pm$ 0.000993 & 0.816546 $\pm$ 0.002508 & Pending & \textbf{0.819802 $\pm$ 0.001518} & 0.817401 $\pm$ 0.000943 & 0.816533 $\pm$ 0.001517 \\
+ASSIST2009 & Accuracy $\uparrow$ & 0.736135 $\pm$ 0.001022 & 0.733004 $\pm$ 0.001809 & Pending & \textbf{0.736225 $\pm$ 0.001179} & 0.732718 $\pm$ 0.000669 & 0.732229 $\pm$ 0.000801 \\
+ & MSE $\downarrow$ & 0.189594 $\pm$ 0.000669 & 0.194971 $\pm$ 0.000512 & Pending & \textbf{0.178742 $\pm$ 0.000262} & 0.180373 $\pm$ 0.000252 & 0.180233 $\pm$ 0.000319 \\
+ & BCE $\downarrow$ & 0.564732 $\pm$ 0.001604 & 0.577168 $\pm$ 0.001301 & Pending & \textbf{0.535401 $\pm$ 0.000548} & 0.539191 $\pm$ 0.000666 & 0.538615 $\pm$ 0.000886 \\
+\midrule
+ & AUC $\uparrow$ & \textbf{0.728235 $\pm$ 0.000327} & 0.720802 $\pm$ 0.001036 & Pending & 0.727605 $\pm$ 0.000989 & 0.725180 $\pm$ 0.000258 & 0.726088 $\pm$ 0.000315 \\
+ & F1 $\uparrow$ & 0.845662 $\pm$ 0.000528 & 0.842588 $\pm$ 0.000766 & Pending & \textbf{0.847155 $\pm$ 0.000456} & 0.846664 $\pm$ 0.000609 & 0.846282 $\pm$ 0.000392 \\
+ASSIST2015 & Accuracy $\uparrow$ & 0.749869 $\pm$ 0.000281 & 0.745974 $\pm$ 0.000619 & Pending & \textbf{0.751034 $\pm$ 0.000445} & 0.749418 $\pm$ 0.000386 & 0.749526 $\pm$ 0.000419 \\
+ & MSE $\downarrow$ & 0.182124 $\pm$ 0.000394 & 0.187262 $\pm$ 0.000415 & Pending & \textbf{0.170776 $\pm$ 0.000228} & 0.171635 $\pm$ 0.000129 & 0.171233 $\pm$ 0.000106 \\
+ & BCE $\downarrow$ & 0.547349 $\pm$ 0.001032 & 0.559082 $\pm$ 0.001053 & Pending & \textbf{0.515011 $\pm$ 0.000615} & 0.517255 $\pm$ 0.000332 & 0.516098 $\pm$ 0.000340 \\
+\midrule
+ & AUC $\uparrow$ & 0.822181 $\pm$ 0.000683 & \textbf{0.823456 $\pm$ 0.000649} & Pending & 0.817725 $\pm$ 0.001099 & 0.813373 $\pm$ 0.000367 & 0.810590 $\pm$ 0.000422 \\
+ & F1 $\uparrow$ & 0.872422 $\pm$ 0.000891 & \textbf{0.872982 $\pm$ 0.000347} & Pending & 0.872047 $\pm$ 0.000572 & 0.871012 $\pm$ 0.000372 & 0.870356 $\pm$ 0.000350 \\
+Algebra 2005--2006 & Accuracy $\uparrow$ & 0.800524 $\pm$ 0.001175 & \textbf{0.801094 $\pm$ 0.000253} & Pending & 0.798950 $\pm$ 0.000818 & 0.796382 $\pm$ 0.000504 & 0.795574 $\pm$ 0.000639 \\
+ & MSE $\downarrow$ & 0.149683 $\pm$ 0.000862 & 0.152382 $\pm$ 0.000488 & Pending & \textbf{0.141806 $\pm$ 0.000514} & 0.143309 $\pm$ 0.000206 & 0.144069 $\pm$ 0.000364 \\
+ & BCE $\downarrow$ & 0.466820 $\pm$ 0.002433 & 0.474735 $\pm$ 0.001334 & Pending & \textbf{0.439274 $\pm$ 0.001405} & 0.443098 $\pm$ 0.000598 & 0.445272 $\pm$ 0.001018 \\
+\bottomrule
+\end{tabular}}
+\begin{minipage}{\textwidth}\footnotesize
+Final held-out test results: mean $\pm$ sample SD over seeds 42, 123, 2026, 3407, 7777, on the same locked split.\par Bold marks the best completed mean per metric: higher AUC/F1/accuracy; lower MSE/BCE. Differences are descriptive.\par GKT final five-seed results are pending; no partial, primary or historical GKT scores are shown. Loss\_mean is labelled BCE.
+\end{minipage}
+\end{table}

@@ -1,0 +1,17 @@
+# Table 8: Ablation study
+
+Corrected LightSAKT · five-seed test AUC
+
+|Architecture|ASSIST2009|ASSIST2015|Algebra 2005–2006|
+|---|---|---|---|
+|Default|**0.751056 ± 0.000766**|0.726088 ± 0.000315|0.810590 ± 0.000422|
+|No Dropout|0.749340 ± 0.000716|0.725149 ± 0.000593|0.809160 ± 0.000459|
+|No Position Encoding|0.750798 ± 0.000583|0.725749 ± 0.000183|0.811410 ± 0.000603|
+|Single Head|0.750791 ± 0.000765|**0.726622 ± 0.000426**|**0.811755 ± 0.000448**|
+|Without attention|0.708307 ± 0.001107|0.699283 ± 0.000443|0.772550 ± 0.000515|
+|No layer normalization*|Not run|Not run|Not run|
+|Without regularization†|0.749340 ± 0.000716|0.725149 ± 0.000593|0.809160 ± 0.000459|
+
+Held-out test AUC: mean ± sample SD over five seeds. Bold marks the highest measured mean in each dataset.
+* Not run: the original image includes layer-normalization removal, but no verified experiment exists for it.
+† Without regularization equals No Dropout (same evidence); it is not an independent ablation.

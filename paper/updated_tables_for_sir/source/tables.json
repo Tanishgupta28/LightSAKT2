@@ -1,0 +1,4361 @@
+[
+  {
+    "number": 2,
+    "name": "Table_02_Dataset_Statistics",
+    "title": "Table 2: Overview of datasets",
+    "original_filename": "allTables/Screenshot 2026-10-17 234727.png",
+    "columns": [
+      "Dataset",
+      "Students",
+      "Skill identifiers",
+      "Records",
+      "Raw columns"
+    ],
+    "body": [
+      [
+        "ASSIST2009",
+        "4,151",
+        "136",
+        "274,590",
+        "30"
+      ],
+      [
+        "ASSIST2015",
+        "19,840",
+        "100",
+        "683,801",
+        "4"
+      ],
+      [
+        "Algebra 2005–2006",
+        "574",
+        "436",
+        "607,025",
+        "19"
+      ]
+    ],
+    "row_evidence": [
+      {
+        "statistics": "reports/ASSIST2009_statistics.json",
+        "fields": [
+          "students",
+          "unique_skill_identifiers",
+          "clean_interactions",
+          "len(columns)"
+        ]
+      },
+      {
+        "statistics": "reports/ASSIST2015_statistics.json",
+        "fields": [
+          "students",
+          "unique_skill_identifiers",
+          "clean_interactions",
+          "len(columns)"
+        ]
+      },
+      {
+        "statistics": "reports/Algebra2005_statistics.json",
+        "fields": [
+          "students",
+          "unique_skill_identifiers",
+          "clean_interactions",
+          "len(columns)"
+        ]
+      }
+    ],
+    "notes": [
+      "Records, students and skill identifiers are counted after cleaning; raw columns count source-file columns.",
+      "Skill identifiers are composite tags (ASSIST2009/Algebra) or sequence IDs (ASSIST2015), not uniformly atomic skills.",
+      "Algebra: labelled training subset; 436 observed composite identifiers, with 387 training IDs plus UNK."
+    ],
+    "bold_cells": [],
+    "bold_rows": [],
+    "groups": [],
+    "grid": false,
+    "gkt": "not present in original table",
+    "partially_unavailable": [],
+    "size": [
+      11.2,
+      3.6
+    ],
+    "font": 13.4,
+    "widths": [
+      2.5,
+      1.4,
+      2.0,
+      1.8,
+      1.6
+    ],
+    "subtitle": "Verified corrected dataset variants",
+    "table_top": 0.79,
+    "table_bottom": 0.41
+  },
+  {
+    "number": 3,
+    "name": "Table_03_Training_Configurations",
+    "title": "Table 3: Training network configurations for different datasets",
+    "original_filename": "allTables/Screenshot 2026-10-17 235129.png",
+    "columns": [
+      "Setting",
+      "ASSIST2009",
+      "ASSIST2015",
+      "Algebra 2005–2006"
+    ],
+    "body": [
+      [
+        "train_ratio",
+        "0.7",
+        "0.7",
+        "0.7"
+      ],
+      [
+        "validation_ratio",
+        "0.1",
+        "0.1",
+        "0.1"
+      ],
+      [
+        "test_ratio",
+        "0.2",
+        "0.2",
+        "0.2"
+      ],
+      [
+        "learning_rate",
+        "0.0010",
+        "0.0005",
+        "0.0010"
+      ],
+      [
+        "seq_len",
+        "100",
+        "100",
+        "200"
+      ],
+      [
+        "optimizer",
+        "Adam",
+        "Adam",
+        "Adam"
+      ],
+      [
+        "embedding_dimension",
+        "64",
+        "128",
+        "128"
+      ],
+      [
+        "num_heads",
+        "2",
+        "4",
+        "4"
+      ],
+      [
+        "dropout",
+        "0.1",
+        "0.1",
+        "0.2"
+      ],
+      [
+        "batch_size",
+        "64",
+        "64",
+        "64"
+      ],
+      [
+        "max_epochs",
+        "50",
+        "50",
+        "50"
+      ],
+      [
+        "early_stopping_patience",
+        "5",
+        "5",
+        "5"
+      ]
+    ],
+    "row_evidence": [
+      {
+        "field": "train_ratio",
+        "protocol": "configs/protocol.json",
+        "selected_final_configs": [
+          "results/raw/ASSIST2009-LightSAKT-final-42/config.json",
+          "results/raw/ASSIST2015-LightSAKT-final-42/config.json",
+          "results/raw/Algebra2005-LightSAKT-final-42/config.json"
+        ]
+      },
+      {
+        "field": "validation_ratio",
+        "protocol": "configs/protocol.json",
+        "selected_final_configs": [
+          "results/raw/ASSIST2009-LightSAKT-final-42/config.json",
+          "results/raw/ASSIST2015-LightSAKT-final-42/config.json",
+          "results/raw/Algebra2005-LightSAKT-final-42/config.json"
+        ]
+      },
+      {
+        "field": "test_ratio",
+        "protocol": "configs/protocol.json",
+        "selected_final_configs": [
+          "results/raw/ASSIST2009-LightSAKT-final-42/config.json",
+          "results/raw/ASSIST2015-LightSAKT-final-42/config.json",
+          "results/raw/Algebra2005-LightSAKT-final-42/config.json"
+        ]
+      },
+      {
+        "field": "learning_rate",
+        "protocol": "configs/protocol.json",
+        "selected_final_configs": [
+          "results/raw/ASSIST2009-LightSAKT-final-42/config.json",
+          "results/raw/ASSIST2015-LightSAKT-final-42/config.json",
+          "results/raw/Algebra2005-LightSAKT-final-42/config.json"
+        ]
+      },
+      {
+        "field": "seq_len",
+        "protocol": "configs/protocol.json",
+        "selected_final_configs": [
+          "results/raw/ASSIST2009-LightSAKT-final-42/config.json",
+          "results/raw/ASSIST2015-LightSAKT-final-42/config.json",
+          "results/raw/Algebra2005-LightSAKT-final-42/config.json"
+        ]
+      },
+      {
+        "field": "optimizer",
+        "protocol": "configs/protocol.json",
+        "selected_final_configs": [
+          "results/raw/ASSIST2009-LightSAKT-final-42/config.json",
+          "results/raw/ASSIST2015-LightSAKT-final-42/config.json",
+          "results/raw/Algebra2005-LightSAKT-final-42/config.json"
+        ]
+      },
+      {
+        "field": "embed_dim",
+        "protocol": "configs/protocol.json",
+        "selected_final_configs": [
+          "results/raw/ASSIST2009-LightSAKT-final-42/config.json",
+          "results/raw/ASSIST2015-LightSAKT-final-42/config.json",
+          "results/raw/Algebra2005-LightSAKT-final-42/config.json"
+        ]
+      },
+      {
+        "field": "num_heads",
+        "protocol": "configs/protocol.json",
+        "selected_final_configs": [
+          "results/raw/ASSIST2009-LightSAKT-final-42/config.json",
+          "results/raw/ASSIST2015-LightSAKT-final-42/config.json",
+          "results/raw/Algebra2005-LightSAKT-final-42/config.json"
+        ]
+      },
+      {
+        "field": "dropout",
+        "protocol": "configs/protocol.json",
+        "selected_final_configs": [
+          "results/raw/ASSIST2009-LightSAKT-final-42/config.json",
+          "results/raw/ASSIST2015-LightSAKT-final-42/config.json",
+          "results/raw/Algebra2005-LightSAKT-final-42/config.json"
+        ]
+      },
+      {
+        "field": "batch_size",
+        "protocol": "configs/protocol.json",
+        "selected_final_configs": [
+          "results/raw/ASSIST2009-LightSAKT-final-42/config.json",
+          "results/raw/ASSIST2015-LightSAKT-final-42/config.json",
+          "results/raw/Algebra2005-LightSAKT-final-42/config.json"
+        ]
+      },
+      {
+        "field": "max_epochs",
+        "protocol": "configs/protocol.json",
+        "selected_final_configs": [
+          "results/raw/ASSIST2009-LightSAKT-final-42/config.json",
+          "results/raw/ASSIST2015-LightSAKT-final-42/config.json",
+          "results/raw/Algebra2005-LightSAKT-final-42/config.json"
+        ]
+      },
+      {
+        "field": "patience",
+        "protocol": "configs/protocol.json",
+        "selected_final_configs": [
+          "results/raw/ASSIST2009-LightSAKT-final-42/config.json",
+          "results/raw/ASSIST2015-LightSAKT-final-42/config.json",
+          "results/raw/Algebra2005-LightSAKT-final-42/config.json"
+        ]
+      }
+    ],
+    "notes": [
+      "LightSAKT configurations selected independently by validation AUC; target student-disjoint ratios are 70/10/20.",
+      "Adam: betas (0.9, 0.999), epsilon 1e−8, weight decay 0. Early stopping monitors validation AUC.",
+      "Split/grid seed 42; final training seeds: 42, 123, 2026, 3407, 7777. Test data do not select configurations."
+    ],
+    "bold_cells": [],
+    "bold_rows": [],
+    "groups": [],
+    "grid": true,
+    "gkt": "not present in original table",
+    "partially_unavailable": [],
+    "size": [
+      11.5,
+      6.3
+    ],
+    "font": 12.5,
+    "widths": [
+      2.6,
+      2.0,
+      2.0,
+      2.4
+    ],
+    "subtitle": "Validation-selected LightSAKT settings",
+    "table_top": 0.85,
+    "table_bottom": 0.23
+  },
+  {
+    "number": 4,
+    "name": "Table_04_LightSAKT_Grid_Algebra2005",
+    "title": "Table 4: Hyperparameter tuning results for Algebra 2005–2006",
+    "original_filename": "allTables/Screenshot 2026-10-17 234747.png",
+    "columns": [
+      "Learning Rate",
+      "Embedding",
+      "Heads",
+      "Dropout",
+      "Best validation AUC"
+    ],
+    "body": [
+      [
+        "0.000500",
+        "32",
+        "2",
+        "0.1",
+        "0.788834"
+      ],
+      [
+        "0.000500",
+        "32",
+        "2",
+        "0.2",
+        "0.787610"
+      ],
+      [
+        "0.000500",
+        "32",
+        "4",
+        "0.1",
+        "0.789701"
+      ],
+      [
+        "0.000500",
+        "32",
+        "4",
+        "0.2",
+        "0.788728"
+      ],
+      [
+        "0.000500",
+        "64",
+        "2",
+        "0.1",
+        "0.800535"
+      ],
+      [
+        "0.000500",
+        "64",
+        "2",
+        "0.2",
+        "0.799574"
+      ],
+      [
+        "0.000500",
+        "64",
+        "4",
+        "0.1",
+        "0.801017"
+      ],
+      [
+        "0.000500",
+        "64",
+        "4",
+        "0.2",
+        "0.800187"
+      ],
+      [
+        "0.000500",
+        "128",
+        "2",
+        "0.1",
+        "0.807181"
+      ],
+      [
+        "0.000500",
+        "128",
+        "2",
+        "0.2",
+        "0.807049"
+      ],
+      [
+        "0.000500",
+        "128",
+        "4",
+        "0.1",
+        "0.807573"
+      ],
+      [
+        "0.000500",
+        "128",
+        "4",
+        "0.2",
+        "0.807942"
+      ],
+      [
+        "0.001000",
+        "32",
+        "2",
+        "0.1",
+        "0.797397"
+      ],
+      [
+        "0.001000",
+        "32",
+        "2",
+        "0.2",
+        "0.796752"
+      ],
+      [
+        "0.001000",
+        "32",
+        "4",
+        "0.1",
+        "0.797403"
+      ],
+      [
+        "0.001000",
+        "32",
+        "4",
+        "0.2",
+        "0.796880"
+      ],
+      [
+        "0.001000",
+        "64",
+        "2",
+        "0.1",
+        "0.803621"
+      ],
+      [
+        "0.001000",
+        "64",
+        "2",
+        "0.2",
+        "0.803011"
+      ],
+      [
+        "0.001000",
+        "64",
+        "4",
+        "0.1",
+        "0.804018"
+      ],
+      [
+        "0.001000",
+        "64",
+        "4",
+        "0.2",
+        "0.803866"
+      ],
+      [
+        "0.001000",
+        "128",
+        "2",
+        "0.1",
+        "0.807105"
+      ],
+      [
+        "0.001000",
+        "128",
+        "2",
+        "0.2",
+        "0.807842"
+      ],
+      [
+        "0.001000",
+        "128",
+        "4",
+        "0.1",
+        "0.807769"
+      ],
+      [
+        "0.001000",
+        "128",
+        "4",
+        "0.2",
+        "0.808127"
+      ],
+      [
+        "0.005000",
+        "32",
+        "2",
+        "0.1",
+        "0.801522"
+      ],
+      [
+        "0.005000",
+        "32",
+        "2",
+        "0.2",
+        "0.801106"
+      ],
+      [
+        "0.005000",
+        "32",
+        "4",
+        "0.1",
+        "0.801053"
+      ],
+      [
+        "0.005000",
+        "32",
+        "4",
+        "0.2",
+        "0.800365"
+      ],
+      [
+        "0.005000",
+        "64",
+        "2",
+        "0.1",
+        "0.803593"
+      ],
+      [
+        "0.005000",
+        "64",
+        "2",
+        "0.2",
+        "0.802481"
+      ],
+      [
+        "0.005000",
+        "64",
+        "4",
+        "0.1",
+        "0.804632"
+      ],
+      [
+        "0.005000",
+        "64",
+        "4",
+        "0.2",
+        "0.803808"
+      ],
+      [
+        "0.005000",
+        "128",
+        "2",
+        "0.1",
+        "0.807475"
+      ],
+      [
+        "0.005000",
+        "128",
+        "2",
+        "0.2",
+        "0.807133"
+      ],
+      [
+        "0.005000",
+        "128",
+        "4",
+        "0.1",
+        "0.807367"
+      ],
+      [
+        "0.005000",
+        "128",
+        "4",
+        "0.2",
+        "0.807673"
+      ]
+    ],
+    "row_evidence": [
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-20a36e0471b8",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-20a36e0471b8/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7888340398954901,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-20a36e0471b8/best.pt",
+        "checkpoint_sha256": "b5e9f8d5f028a3c87776d1386e6e07bf2333a4acf2867e89d527ec2b3290a624",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-d6bf5e5ea8bb",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-d6bf5e5ea8bb/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7876098971590952,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-d6bf5e5ea8bb/best.pt",
+        "checkpoint_sha256": "aded2b54a77ec00647eec0d0deda5759f0e55e5f3aa1d021756fa22e2d575783",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-f3c14818b7d3",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-f3c14818b7d3/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7897005705982021,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-f3c14818b7d3/best.pt",
+        "checkpoint_sha256": "8b3b9b1e0667213d00bcd5d32c67134074c8ec5daf4a102116bf9a5f4a0b0055",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-e58e3f7d95a8",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-e58e3f7d95a8/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7887282989789786,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-e58e3f7d95a8/best.pt",
+        "checkpoint_sha256": "2fdcbc41f4e48b31ba222fda0ed1e02e7e79a4579f14271b308714b3552ba146",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-15db10686e87",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-15db10686e87/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8005345487311932,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-15db10686e87/best.pt",
+        "checkpoint_sha256": "e6bdf7f41963e77b612ecb04c3f45cce29962bae12dc4c576069f8bd1f2ade52",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-57249c130ef5",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-57249c130ef5/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7995744470155581,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-57249c130ef5/best.pt",
+        "checkpoint_sha256": "bccd55af69642d259954f61153fd28fa3ceb1bf4cb7f6f4821f9ab8a53d79546",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-893445b0fab3",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-893445b0fab3/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8010172995483041,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-893445b0fab3/best.pt",
+        "checkpoint_sha256": "8326389ae2d77a74dda85bab118e336796b83c525729c60582f0a7268f55c8f9",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-9337e03ea1cc",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-9337e03ea1cc/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8001869598462941,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-9337e03ea1cc/best.pt",
+        "checkpoint_sha256": "af04d09143e0f6c793621e6af246ab92397ef81cd15d2c7ac6fd04141d5cdd0b",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-e70b10a66385",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-e70b10a66385/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8071814973647138,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-e70b10a66385/best.pt",
+        "checkpoint_sha256": "f41d508eb6ac95bcdac36add8521782397b73158d2fa56b7b8020a23ce7bd08a",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-ed1d54fdc077",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-ed1d54fdc077/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8070491954907815,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-ed1d54fdc077/best.pt",
+        "checkpoint_sha256": "691b7a237516bc560c6e510bfc1798d15eefa338ec856f50e4e571c4af674223",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-69acf3f16996",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-69acf3f16996/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8075729655726229,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-69acf3f16996/best.pt",
+        "checkpoint_sha256": "a9e9fc82514164d2501440e49a9d175fd95a404e8fa9df1f920282c1d784c7d6",
+        "best_epoch": 44
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-3366bcbcf17e",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-3366bcbcf17e/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8079421416334344,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-3366bcbcf17e/best.pt",
+        "checkpoint_sha256": "016f301f69057220207b4ccf0f26f3598cddcfdf182db0c77f6d8aa0d1ce1258",
+        "best_epoch": 44
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-feeec30289e8",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-feeec30289e8/metrics.json",
+        "field": "validation.auc",
+        "value": 0.797396782691368,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-feeec30289e8/best.pt",
+        "checkpoint_sha256": "843ee2439c51aa9d9f834693e3b603cfbcd71f6158e0576039b4ff0577b8d445",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-cc537d7e1c4b",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-cc537d7e1c4b/metrics.json",
+        "field": "validation.auc",
+        "value": 0.796752148588057,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-cc537d7e1c4b/best.pt",
+        "checkpoint_sha256": "fdb13d694e93b10580abd5afa90e3a6f4ea5d1e51b8c255e82b413545e38d7b8",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-0d79ab6430b7",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-0d79ab6430b7/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7974030003646264,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-0d79ab6430b7/best.pt",
+        "checkpoint_sha256": "1d760f29a297e581f4cc62f5b3eeff9ccb29b171b30722673a6efa55392ad730",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-0ecd7ce70f64",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-0ecd7ce70f64/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7968802759850837,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-0ecd7ce70f64/best.pt",
+        "checkpoint_sha256": "4ec4e51875e2d9f91ac284a88b78d903effbe1ad9a1997905f18bde94feed6b4",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-6c8a4bab15f1",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-6c8a4bab15f1/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8036210134613745,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-6c8a4bab15f1/best.pt",
+        "checkpoint_sha256": "aad06bd64da7bb56d9f1434af5288557914559aeae07ecea7cbd902148e3a863",
+        "best_epoch": 43
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-a697ea4034ab",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-a697ea4034ab/metrics.json",
+        "field": "validation.auc",
+        "value": 0.803010614056286,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-a697ea4034ab/best.pt",
+        "checkpoint_sha256": "25ea9a865da7329cb49053990aea54842913d6c4b413f5265d0a47b0911d87b5",
+        "best_epoch": 46
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-fbb9d4e5119c",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-fbb9d4e5119c/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8040184083075823,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-fbb9d4e5119c/best.pt",
+        "checkpoint_sha256": "56d10194d778ad3eb5eb9aec471e75820449c58d84b1e8dddce5b2d4b84331b9",
+        "best_epoch": 43
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-1c1163efe639",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-1c1163efe639/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8038664338987708,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-1c1163efe639/best.pt",
+        "checkpoint_sha256": "56770e2669f458ba08ba7bec5e5b72c5ee3b0e2f47b3cfc566e9b34bfc376e92",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-fea98a03a2bd",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-fea98a03a2bd/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8071048051891225,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-fea98a03a2bd/best.pt",
+        "checkpoint_sha256": "c1d0420117607030a7d478cfb37ba835a9bafdab83cdb3e337269e3710d8ef11",
+        "best_epoch": 28
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-1070ef8912e9",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-1070ef8912e9/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8078423550303251,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-1070ef8912e9/best.pt",
+        "checkpoint_sha256": "691b823c61b1cb0aa0b40de5401399e13f19151a60f4d358f8054a419872dc7f",
+        "best_epoch": 36
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-21f5ed213eb1",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-21f5ed213eb1/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8077690859376998,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-21f5ed213eb1/best.pt",
+        "checkpoint_sha256": "c70d581677616ce0c9573cd3713b82a1fce235fc53c9e5e9cbe403b21ee3ed5e",
+        "best_epoch": 28
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-06884c8943b2",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-06884c8943b2/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8081265101972933,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-06884c8943b2/best.pt",
+        "checkpoint_sha256": "14b64e7450e0610c300913e933a7dd2ab0d6d3881951e3475557a8e673ee1390",
+        "best_epoch": 26
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-1ea403e8809d",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-1ea403e8809d/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8015221431327346,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-1ea403e8809d/best.pt",
+        "checkpoint_sha256": "2735481c12f48a18ec9f16b2e56d15221d6be7cab78ce62dba9d406ebe39bb97",
+        "best_epoch": 25
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-c18b6004e26c",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-c18b6004e26c/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8011056265754822,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-c18b6004e26c/best.pt",
+        "checkpoint_sha256": "88d796a07ea2d6370b2aa106f7e26c8e8cd160de43cf20efdbc6eaadf4d90b76",
+        "best_epoch": 29
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-23f0fff3ef23",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-23f0fff3ef23/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8010529757325641,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-23f0fff3ef23/best.pt",
+        "checkpoint_sha256": "752ff055f45beefde084e5edf8db1439e7f44e971ab3e05450cedb010efa5d08",
+        "best_epoch": 27
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-3a9d31d0a0d5",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-3a9d31d0a0d5/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8003651056780048,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-3a9d31d0a0d5/best.pt",
+        "checkpoint_sha256": "79ec6eadac5d3e1cea32126520c5b0f32cf4cdfb075b8e7c8280936b0ef9ed01",
+        "best_epoch": 18
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-4faf97b35b89",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-4faf97b35b89/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8035926964739979,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-primary-42-dca5e1830530/best.pt",
+        "checkpoint_sha256": "e42d80da8c7bc2b2b9c7c18152f74442f32b10b9175cbce4cc883ad7ed36a3bc",
+        "best_epoch": 17
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-e807df10d3a6",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-e807df10d3a6/metrics.json",
+        "field": "validation.auc",
+        "value": 0.80248097387668,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-e807df10d3a6/best.pt",
+        "checkpoint_sha256": "396a1a468a0e7393975fe02e278bd16778a65bf41b33e55b5480385ec9186480",
+        "best_epoch": 14
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-09240f4e7b64",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-09240f4e7b64/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8046320221908241,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-09240f4e7b64/best.pt",
+        "checkpoint_sha256": "4e8b0c716cfa68c33b5377b1141a3988fbf39de555aa66a422e800fb6f35315e",
+        "best_epoch": 17
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-152abd80a946",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-152abd80a946/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8038082855304494,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-152abd80a946/best.pt",
+        "checkpoint_sha256": "2d602e902b9f95652d191615fcc54476b8975f9ed1c4e57e5f7cd886762cf43d",
+        "best_epoch": 17
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-8930ef5a2a35",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-8930ef5a2a35/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8074747156817137,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-8930ef5a2a35/best.pt",
+        "checkpoint_sha256": "1006bddc50e35f47887efef88fb43e48077a505fb07d212918f407d9b887244d",
+        "best_epoch": 9
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-d377782dabe8",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-d377782dabe8/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8071333007255543,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-d377782dabe8/best.pt",
+        "checkpoint_sha256": "6475036d7665c17c4bb7044fe24324870c277f6dcf43d5d4e50423f15235f994",
+        "best_epoch": 14
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-284988a0a2ec",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-284988a0a2ec/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8073669916803645,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-284988a0a2ec/best.pt",
+        "checkpoint_sha256": "987f1ee6f7fb2089140718e0b235ebb2e211b139b5e497cbb1edd4b0e147bb1e",
+        "best_epoch": 9
+      },
+      {
+        "run_id": "Algebra2005-LightSAKT-grid-42-57c33f26d242",
+        "metrics": "results/raw/Algebra2005-LightSAKT-grid-42-57c33f26d242/metrics.json",
+        "field": "validation.auc",
+        "value": 0.8076729220949164,
+        "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-57c33f26d242/best.pt",
+        "checkpoint_sha256": "086ed1f0f157c3acce63e07eb27e1380ee8da0cdb10962d2e485d31688858063",
+        "best_epoch": 17
+      }
+    ],
+    "notes": [
+      "LightSAKT; all 36 configurations. Training seed 42, split seed 42; validation AUC only.",
+      "Bold marks the highest full-precision validation AUC. Exact ties select the lexically smallest run ID.",
+      "Selected: LR 0.001, dimension 128, heads 4, dropout 0.2; epoch 26."
+    ],
+    "bold_cells": [],
+    "bold_rows": [
+      23
+    ],
+    "groups": [],
+    "grid": false,
+    "gkt": "not present in original table",
+    "partially_unavailable": [],
+    "size": [
+      8.7,
+      12.5
+    ],
+    "font": 13.2,
+    "widths": [
+      1.6,
+      1.4,
+      0.8,
+      1.0,
+      2.3
+    ],
+    "subtitle": "Corrected causal LightSAKT · validation results",
+    "table_top": 0.9,
+    "table_bottom": 0.12,
+    "selected_run_id": "Algebra2005-LightSAKT-grid-42-06884c8943b2"
+  },
+  {
+    "number": 5,
+    "name": "Table_05_LightSAKT_Grid_ASSIST2009",
+    "title": "Table 5: Hyperparameter tuning results for ASSIST2009",
+    "original_filename": "allTables/Screenshot 2026-10-17 234803.png",
+    "columns": [
+      "Learning Rate",
+      "Embedding",
+      "Heads",
+      "Dropout",
+      "Best validation AUC"
+    ],
+    "body": [
+      [
+        "0.000500",
+        "32",
+        "2",
+        "0.1",
+        "0.743801"
+      ],
+      [
+        "0.000500",
+        "32",
+        "2",
+        "0.2",
+        "0.743286"
+      ],
+      [
+        "0.000500",
+        "32",
+        "4",
+        "0.1",
+        "0.744715"
+      ],
+      [
+        "0.000500",
+        "32",
+        "4",
+        "0.2",
+        "0.744041"
+      ],
+      [
+        "0.000500",
+        "64",
+        "2",
+        "0.1",
+        "0.750194"
+      ],
+      [
+        "0.000500",
+        "64",
+        "2",
+        "0.2",
+        "0.750272"
+      ],
+      [
+        "0.000500",
+        "64",
+        "4",
+        "0.1",
+        "0.749702"
+      ],
+      [
+        "0.000500",
+        "64",
+        "4",
+        "0.2",
+        "0.749725"
+      ],
+      [
+        "0.000500",
+        "128",
+        "2",
+        "0.1",
+        "0.750494"
+      ],
+      [
+        "0.000500",
+        "128",
+        "2",
+        "0.2",
+        "0.750732"
+      ],
+      [
+        "0.000500",
+        "128",
+        "4",
+        "0.1",
+        "0.750508"
+      ],
+      [
+        "0.000500",
+        "128",
+        "4",
+        "0.2",
+        "0.750191"
+      ],
+      [
+        "0.001000",
+        "32",
+        "2",
+        "0.1",
+        "0.745476"
+      ],
+      [
+        "0.001000",
+        "32",
+        "2",
+        "0.2",
+        "0.744907"
+      ],
+      [
+        "0.001000",
+        "32",
+        "4",
+        "0.1",
+        "0.745685"
+      ],
+      [
+        "0.001000",
+        "32",
+        "4",
+        "0.2",
+        "0.745398"
+      ],
+      [
+        "0.001000",
+        "64",
+        "2",
+        "0.1",
+        "0.750804"
+      ],
+      [
+        "0.001000",
+        "64",
+        "2",
+        "0.2",
+        "0.750408"
+      ],
+      [
+        "0.001000",
+        "64",
+        "4",
+        "0.1",
+        "0.750640"
+      ],
+      [
+        "0.001000",
+        "64",
+        "4",
+        "0.2",
+        "0.750068"
+      ],
+      [
+        "0.001000",
+        "128",
+        "2",
+        "0.1",
+        "0.749276"
+      ],
+      [
+        "0.001000",
+        "128",
+        "2",
+        "0.2",
+        "0.750502"
+      ],
+      [
+        "0.001000",
+        "128",
+        "4",
+        "0.1",
+        "0.750434"
+      ],
+      [
+        "0.001000",
+        "128",
+        "4",
+        "0.2",
+        "0.750732"
+      ],
+      [
+        "0.005000",
+        "32",
+        "2",
+        "0.1",
+        "0.747109"
+      ],
+      [
+        "0.005000",
+        "32",
+        "2",
+        "0.2",
+        "0.746947"
+      ],
+      [
+        "0.005000",
+        "32",
+        "4",
+        "0.1",
+        "0.745964"
+      ],
+      [
+        "0.005000",
+        "32",
+        "4",
+        "0.2",
+        "0.745198"
+      ],
+      [
+        "0.005000",
+        "64",
+        "2",
+        "0.1",
+        "0.748094"
+      ],
+      [
+        "0.005000",
+        "64",
+        "2",
+        "0.2",
+        "0.748185"
+      ],
+      [
+        "0.005000",
+        "64",
+        "4",
+        "0.1",
+        "0.749193"
+      ],
+      [
+        "0.005000",
+        "64",
+        "4",
+        "0.2",
+        "0.748850"
+      ],
+      [
+        "0.005000",
+        "128",
+        "2",
+        "0.1",
+        "0.748437"
+      ],
+      [
+        "0.005000",
+        "128",
+        "2",
+        "0.2",
+        "0.748855"
+      ],
+      [
+        "0.005000",
+        "128",
+        "4",
+        "0.1",
+        "0.748005"
+      ],
+      [
+        "0.005000",
+        "128",
+        "4",
+        "0.2",
+        "0.748094"
+      ]
+    ],
+    "row_evidence": [
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-8488d393eb74",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-8488d393eb74/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7438014786804079,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-8488d393eb74/best.pt",
+        "checkpoint_sha256": "9f8494463352bd8606b639ce6f831ca337cc4d1e78f1d3db834a4f7d04461b9e",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-a22be35657b2",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-a22be35657b2/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7432857011556816,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-a22be35657b2/best.pt",
+        "checkpoint_sha256": "552ad5aa360980e040307ab2c0548bacc392637ffdf1c171efb7763f6d50a2a7",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-d61c17bff6d2",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-d61c17bff6d2/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7447147679445769,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-d61c17bff6d2/best.pt",
+        "checkpoint_sha256": "351968163337bba33bfe0d8ad817e68809fe6b32751c101523fad9af62bdd411",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-bc44304c7e6a",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-bc44304c7e6a/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7440409585401313,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-bc44304c7e6a/best.pt",
+        "checkpoint_sha256": "0340b5afbbfdad2ee1a051494f4ad783fb3bbabab884b345acc764aec0a96425",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-1dabce6d364e",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-1dabce6d364e/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7501942319766428,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-1dabce6d364e/best.pt",
+        "checkpoint_sha256": "d188e0fc180c19f3c0d8492bfb0a7d5b47c0e16c624685e0a91dc54f0b78388a",
+        "best_epoch": 42
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-cddb73383e58",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-cddb73383e58/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7502720602453645,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-cddb73383e58/best.pt",
+        "checkpoint_sha256": "1b1d588d54a657fd73dc56e48b132c5e4942cbbf8464a9f91ec7acd40da79353",
+        "best_epoch": 42
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-ee695dce7311",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-ee695dce7311/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7497016140391084,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-ee695dce7311/best.pt",
+        "checkpoint_sha256": "925339309dba0756aa87e81a3d67470b8b37845e2c019c7af004fb872ebbe344",
+        "best_epoch": 38
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-dbc981c680af",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-dbc981c680af/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7497246453100717,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-dbc981c680af/best.pt",
+        "checkpoint_sha256": "1d8a11b5ce231ba8088f282eb0b9a43cbf8d849a53a6b04be07528250f9886bc",
+        "best_epoch": 42
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-78e7030a9c88",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-78e7030a9c88/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7504941457958828,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-78e7030a9c88/best.pt",
+        "checkpoint_sha256": "28c4f055dec62b0dcb4e4c1b50bcdd563b29f6755e01947cd2bb7968bd23a938",
+        "best_epoch": 26
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-548bf9305dcd",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-548bf9305dcd/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7507320440834879,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-548bf9305dcd/best.pt",
+        "checkpoint_sha256": "5a84800e9065ef8a5bcb7132530eaa4fd726dd4d6f5f11c0018c01ddbff9be7f",
+        "best_epoch": 21
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-4462e183cff2",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-4462e183cff2/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7505079442665922,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-4462e183cff2/best.pt",
+        "checkpoint_sha256": "5022e6fe4b7cbd1fd7709d85bf53f2588e2c222b18bc80bf4b5cfa1403a1d1cf",
+        "best_epoch": 16
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-ce7ac2d04d8c",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-ce7ac2d04d8c/metrics.json",
+        "field": "validation.auc",
+        "value": 0.750190955436669,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-ce7ac2d04d8c/best.pt",
+        "checkpoint_sha256": "28a40baa8305bd6be728005760710c07e7cb1e362a9777c8b6c8569c39a367ee",
+        "best_epoch": 21
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-5225105f3bce",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-5225105f3bce/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7454758383525868,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-5225105f3bce/best.pt",
+        "checkpoint_sha256": "13d99a03b1eccd0ec1548c68164c1b60db730930d277a4aebbaec8fe3ccc12b4",
+        "best_epoch": 35
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-cbb203a49770",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-cbb203a49770/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7449074481900846,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-cbb203a49770/best.pt",
+        "checkpoint_sha256": "ca578f4d68c6769f536d36c887d76f2052591e5b5e371737f76c277afbdbb9f8",
+        "best_epoch": 35
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-3c973f2400ea",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-3c973f2400ea/metrics.json",
+        "field": "validation.auc",
+        "value": 0.74568479983862,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-3c973f2400ea/best.pt",
+        "checkpoint_sha256": "74dfcc1594926df766a5563b5e0e463a031ca73ed56e2e05be06e02c11212d14",
+        "best_epoch": 32
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-2052f5169d22",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-2052f5169d22/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7453976639284581,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-2052f5169d22/best.pt",
+        "checkpoint_sha256": "320aa08bc9c7d767bfee1a437518da618125c42713fd321c6ba5f14d9b74fbae",
+        "best_epoch": 36
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-f08e9494d270",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-f08e9494d270/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7508035371114405,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-f08e9494d270/best.pt",
+        "checkpoint_sha256": "d0af3a20f40cf3734883634c23053dbfbf187dee9e7a556c85fcb27b4841197d",
+        "best_epoch": 24
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-7ec15e323ab3",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-7ec15e323ab3/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7504082694139469,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-7ec15e323ab3/best.pt",
+        "checkpoint_sha256": "11c37efdb85f2af2610114b2b5e78d94f6f497fac147f9ee5b7cac59ec640625",
+        "best_epoch": 24
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-e4d9677fea31",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-e4d9677fea31/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7506402353140584,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-e4d9677fea31/best.pt",
+        "checkpoint_sha256": "2fc6fe062658078f47a34d87c2c6b7829d46df7d1d494d588b12126db4fba58e",
+        "best_epoch": 24
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-519f6ddfded5",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-519f6ddfded5/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7500682851222407,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-519f6ddfded5/best.pt",
+        "checkpoint_sha256": "73bb6f24c39f93cd69d1e9d8c0a32e63407377e97105b47ca29223d1cc1e6fa7",
+        "best_epoch": 24
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-657c24e26014",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-657c24e26014/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7492756101287459,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-657c24e26014/best.pt",
+        "checkpoint_sha256": "cc42bafb36521725950de0b01764bcf0542767da3b60997be486d09ed88e71e6",
+        "best_epoch": 10
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-5cac52478aa9",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-5cac52478aa9/metrics.json",
+        "field": "validation.auc",
+        "value": 0.750502334161719,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-5cac52478aa9/best.pt",
+        "checkpoint_sha256": "10c21986e42bfd74571d30dfd45025744b73da58941e8f870356c17c153fdb9b",
+        "best_epoch": 16
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-e8619daa8cf3",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-e8619daa8cf3/metrics.json",
+        "field": "validation.auc",
+        "value": 0.750433947580135,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-e8619daa8cf3/best.pt",
+        "checkpoint_sha256": "95d03d73cc925999e5fb39e59f05c6aa2040318aafa29c14a0b1ac92843a7dc5",
+        "best_epoch": 16
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-1d03fd716dc4",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-1d03fd716dc4/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7507321037654546,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-1d03fd716dc4/best.pt",
+        "checkpoint_sha256": "4b7aeaa831de4cd17a5b7a6ad6b02f75d1f0393c8a935e7fcdb5e6e72d109da3",
+        "best_epoch": 16
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-cbc759c49f4b",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-cbc759c49f4b/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7471094382255836,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-cbc759c49f4b/best.pt",
+        "checkpoint_sha256": "2c2821d6c44c34832edeb1b574c9ef36dbccb2b1772e7d7910d429fec3ecd7aa",
+        "best_epoch": 14
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-119c315c04ba",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-119c315c04ba/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7469472435286844,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-119c315c04ba/best.pt",
+        "checkpoint_sha256": "56af84832a0a555c1aa7808ad2cdc503de7e58c1a88f5c5e1f5357a9b64f19ee",
+        "best_epoch": 16
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-bc7909e3ec64",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-bc7909e3ec64/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7459642457273681,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-bc7909e3ec64/best.pt",
+        "checkpoint_sha256": "b637a056037016dd0488c952d560a34d574931dbc711dd8d4c271bafabe191c2",
+        "best_epoch": 12
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-da59e9e82672",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-da59e9e82672/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7451976517533367,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-da59e9e82672/best.pt",
+        "checkpoint_sha256": "91a885bff6ec653b7fe8341eadd49668e967e6d7230982ae984c086146abe2dc",
+        "best_epoch": 14
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-6a5b69a81950",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-6a5b69a81950/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7480939459806583,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-6a5b69a81950/best.pt",
+        "checkpoint_sha256": "c4e279246a45abe23f487640ba8fb005a72597cc7867f54f2ffd49768f0bb28c",
+        "best_epoch": 8
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-876374e581c1",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-876374e581c1/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7481846685382931,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-876374e581c1/best.pt",
+        "checkpoint_sha256": "0dfd9161c03fba46ae4d91a5a73f6a5fcc6f580687a777e44cd9b0afd78ff492",
+        "best_epoch": 8
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-dc60492cb0c6",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-dc60492cb0c6/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7491933952354692,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-dc60492cb0c6/best.pt",
+        "checkpoint_sha256": "2dff567a6ab6cc4f938c765511efbd21ad11c496ac4248c6815a2e92e4c49479",
+        "best_epoch": 8
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-54eb65d6bac2",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-54eb65d6bac2/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7488495286318266,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-54eb65d6bac2/best.pt",
+        "checkpoint_sha256": "36ad3280f85fc63cc08b4108a57caf11af28390ee80fb54d9a0341650e5ccba9",
+        "best_epoch": 8
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-48c411be10b6",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-48c411be10b6/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7484366666905395,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-primary-42-440d619b7547/best.pt",
+        "checkpoint_sha256": "3cd1be71efd7acd6cb046b338e5698c041b36f8149be7c505b5b36b96296973a",
+        "best_epoch": 6
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-398feff49fe4",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-398feff49fe4/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7488550969593232,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-398feff49fe4/best.pt",
+        "checkpoint_sha256": "33a4c860d929758b1b43b60b1f4b72223468d5be5ce89fe1e69c84090542aa62",
+        "best_epoch": 6
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-5367c646f7fc",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-5367c646f7fc/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7480048139474369,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-5367c646f7fc/best.pt",
+        "checkpoint_sha256": "95011160ae84defb1af02c3d05d96e65c26413e7e06484a2ccecf97380786f53",
+        "best_epoch": 6
+      },
+      {
+        "run_id": "ASSIST2009-LightSAKT-grid-42-3d82f7b69e9e",
+        "metrics": "results/raw/ASSIST2009-LightSAKT-grid-42-3d82f7b69e9e/metrics.json",
+        "field": "validation.auc",
+        "value": 0.748093757982463,
+        "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-3d82f7b69e9e/best.pt",
+        "checkpoint_sha256": "28f168ff08599ef6b2a86e3ca64a6cdfc5f88bc5b79da34067356ff2f4bdafe0",
+        "best_epoch": 6
+      }
+    ],
+    "notes": [
+      "LightSAKT; all 36 configurations. Training seed 42, split seed 42; validation AUC only.",
+      "Bold marks the highest full-precision validation AUC. Exact ties select the lexically smallest run ID.",
+      "Selected: LR 0.001, dimension 64, heads 2, dropout 0.1; epoch 24."
+    ],
+    "bold_cells": [],
+    "bold_rows": [
+      16
+    ],
+    "groups": [],
+    "grid": false,
+    "gkt": "not present in original table",
+    "partially_unavailable": [],
+    "size": [
+      8.7,
+      12.5
+    ],
+    "font": 13.2,
+    "widths": [
+      1.6,
+      1.4,
+      0.8,
+      1.0,
+      2.3
+    ],
+    "subtitle": "Corrected causal LightSAKT · validation results",
+    "table_top": 0.9,
+    "table_bottom": 0.12,
+    "selected_run_id": "ASSIST2009-LightSAKT-grid-42-f08e9494d270"
+  },
+  {
+    "number": 6,
+    "name": "Table_06_LightSAKT_Grid_ASSIST2015",
+    "title": "Table 6: Hyperparameter tuning results for ASSIST2015",
+    "original_filename": "allTables/Screenshot 2026-10-17 234809.png",
+    "columns": [
+      "Learning Rate",
+      "Embedding",
+      "Heads",
+      "Dropout",
+      "Best validation AUC"
+    ],
+    "body": [
+      [
+        "0.000500",
+        "32",
+        "2",
+        "0.1",
+        "0.726650"
+      ],
+      [
+        "0.000500",
+        "32",
+        "2",
+        "0.2",
+        "0.726148"
+      ],
+      [
+        "0.000500",
+        "32",
+        "4",
+        "0.1",
+        "0.726869"
+      ],
+      [
+        "0.000500",
+        "32",
+        "4",
+        "0.2",
+        "0.726163"
+      ],
+      [
+        "0.000500",
+        "64",
+        "2",
+        "0.1",
+        "0.729393"
+      ],
+      [
+        "0.000500",
+        "64",
+        "2",
+        "0.2",
+        "0.729126"
+      ],
+      [
+        "0.000500",
+        "64",
+        "4",
+        "0.1",
+        "0.727812"
+      ],
+      [
+        "0.000500",
+        "64",
+        "4",
+        "0.2",
+        "0.727373"
+      ],
+      [
+        "0.000500",
+        "128",
+        "2",
+        "0.1",
+        "0.729697"
+      ],
+      [
+        "0.000500",
+        "128",
+        "2",
+        "0.2",
+        "0.729193"
+      ],
+      [
+        "0.000500",
+        "128",
+        "4",
+        "0.1",
+        "0.730065"
+      ],
+      [
+        "0.000500",
+        "128",
+        "4",
+        "0.2",
+        "0.729873"
+      ],
+      [
+        "0.001000",
+        "32",
+        "2",
+        "0.1",
+        "0.727456"
+      ],
+      [
+        "0.001000",
+        "32",
+        "2",
+        "0.2",
+        "0.726489"
+      ],
+      [
+        "0.001000",
+        "32",
+        "4",
+        "0.1",
+        "0.726776"
+      ],
+      [
+        "0.001000",
+        "32",
+        "4",
+        "0.2",
+        "0.726751"
+      ],
+      [
+        "0.001000",
+        "64",
+        "2",
+        "0.1",
+        "0.729135"
+      ],
+      [
+        "0.001000",
+        "64",
+        "2",
+        "0.2",
+        "0.728457"
+      ],
+      [
+        "0.001000",
+        "64",
+        "4",
+        "0.1",
+        "0.728532"
+      ],
+      [
+        "0.001000",
+        "64",
+        "4",
+        "0.2",
+        "0.727659"
+      ],
+      [
+        "0.001000",
+        "128",
+        "2",
+        "0.1",
+        "0.729060"
+      ],
+      [
+        "0.001000",
+        "128",
+        "2",
+        "0.2",
+        "0.729033"
+      ],
+      [
+        "0.001000",
+        "128",
+        "4",
+        "0.1",
+        "0.729663"
+      ],
+      [
+        "0.001000",
+        "128",
+        "4",
+        "0.2",
+        "0.729658"
+      ],
+      [
+        "0.005000",
+        "32",
+        "2",
+        "0.1",
+        "0.726523"
+      ],
+      [
+        "0.005000",
+        "32",
+        "2",
+        "0.2",
+        "0.727004"
+      ],
+      [
+        "0.005000",
+        "32",
+        "4",
+        "0.1",
+        "0.725988"
+      ],
+      [
+        "0.005000",
+        "32",
+        "4",
+        "0.2",
+        "0.725784"
+      ],
+      [
+        "0.005000",
+        "64",
+        "2",
+        "0.1",
+        "0.728144"
+      ],
+      [
+        "0.005000",
+        "64",
+        "2",
+        "0.2",
+        "0.727962"
+      ],
+      [
+        "0.005000",
+        "64",
+        "4",
+        "0.1",
+        "0.726952"
+      ],
+      [
+        "0.005000",
+        "64",
+        "4",
+        "0.2",
+        "0.726402"
+      ],
+      [
+        "0.005000",
+        "128",
+        "2",
+        "0.1",
+        "0.725796"
+      ],
+      [
+        "0.005000",
+        "128",
+        "2",
+        "0.2",
+        "0.725489"
+      ],
+      [
+        "0.005000",
+        "128",
+        "4",
+        "0.1",
+        "0.726073"
+      ],
+      [
+        "0.005000",
+        "128",
+        "4",
+        "0.2",
+        "0.725331"
+      ]
+    ],
+    "row_evidence": [
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-397bcc602116",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-397bcc602116/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7266495588679057,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-397bcc602116/best.pt",
+        "checkpoint_sha256": "5f2dcc9a700b835325887827a22b233dd566c96cc667b083254c4e942ff6800c",
+        "best_epoch": 42
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-a0f261d0be90",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-a0f261d0be90/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7261479478735434,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-a0f261d0be90/best.pt",
+        "checkpoint_sha256": "a7b5bcac31e6ab3de0263b0602c198e34190a74bf1a16d9300e7619c96a2e6e6",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-a628603467cc",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-a628603467cc/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7268694860068403,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-a628603467cc/best.pt",
+        "checkpoint_sha256": "6337c6676eb89e701ead4eaff99c998cf745fbd3e2a01e9e1eda9ec0cc966b80",
+        "best_epoch": 42
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-b7a847dd2b34",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-b7a847dd2b34/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7261632853468085,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-b7a847dd2b34/best.pt",
+        "checkpoint_sha256": "e6ea0c6bceddb798fd29798c985b947f6bd97007b21d6bc1e8191477f56c456d",
+        "best_epoch": 50
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-9349926da302",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-9349926da302/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7293926135569984,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-9349926da302/best.pt",
+        "checkpoint_sha256": "27541bc05c60370dee047ec999c4a6f5270c0ec854fcc47c1ff9f8f99fa8b9dd",
+        "best_epoch": 33
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-3de8a446858c",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-3de8a446858c/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7291257207213261,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-3de8a446858c/best.pt",
+        "checkpoint_sha256": "6264e7fc726ca101c7f86104ea1fb0f237532924c816b46fbcad3a1970a0fb9c",
+        "best_epoch": 33
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-f53e52b77c73",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-f53e52b77c73/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7278121751970266,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-f53e52b77c73/best.pt",
+        "checkpoint_sha256": "ae03dff05540109d466492168788ca8a85497df999e4f111da0f70c0d67dcc3e",
+        "best_epoch": 18
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-081855fbb02d",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-081855fbb02d/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7273733299332088,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-081855fbb02d/best.pt",
+        "checkpoint_sha256": "95a6518715f59fa4cbce69f2efb5932314dffd2e7517add5ead4344cefd6f6ce",
+        "best_epoch": 24
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-b0aeca4e3190",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-b0aeca4e3190/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7296967037301432,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-b0aeca4e3190/best.pt",
+        "checkpoint_sha256": "e2639d37ab4f07cab0c1161468e0d1e2c1750eb117f398d7ab432225653f4633",
+        "best_epoch": 18
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-5d0c2dacb4af",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-5d0c2dacb4af/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7291934493529867,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-5d0c2dacb4af/best.pt",
+        "checkpoint_sha256": "e05522938257c869a964edb49785f56ebb39d3a15f445b85e7870aa2bb7a6c63",
+        "best_epoch": 18
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-64640d03b0d3",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-64640d03b0d3/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7300652943795162,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-64640d03b0d3/best.pt",
+        "checkpoint_sha256": "c08f06c27d9bd31c155dcaff06bbe17b8464578df7e058930233ffbea68d7136",
+        "best_epoch": 18
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-6cbd6e38b46e",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-6cbd6e38b46e/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7298726008516037,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-6cbd6e38b46e/best.pt",
+        "checkpoint_sha256": "1603b46aebaad5a97823c44677ebd351d1bff10f0445aa2984915b94b0f9c939",
+        "best_epoch": 15
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-39138de678ce",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-39138de678ce/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7274556036518154,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-39138de678ce/best.pt",
+        "checkpoint_sha256": "b3e4a9d7d3bada8d410b986f73e5ba9735242dc8421d7ac18d59eafcb783a823",
+        "best_epoch": 34
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-131e9e879505",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-131e9e879505/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7264890612775221,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-131e9e879505/best.pt",
+        "checkpoint_sha256": "2350baa572df4c745bd175e22b75918f4d61c9570039bb583725cfb83ba4a59f",
+        "best_epoch": 35
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-7f6c59d24a33",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-7f6c59d24a33/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7267761947282013,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-7f6c59d24a33/best.pt",
+        "checkpoint_sha256": "b5eefb7a20b6c2f0e485a05c97f9fb10fae62fccacb01e5d46affab98c4c7cb8",
+        "best_epoch": 25
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-355019985ef3",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-355019985ef3/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7267506682816132,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-355019985ef3/best.pt",
+        "checkpoint_sha256": "99b55e4b139eb93ef23e7f0c539d8686c442fa065729853640eb2f6b7d312719",
+        "best_epoch": 35
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-1512d57add2f",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-1512d57add2f/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7291345306321646,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-1512d57add2f/best.pt",
+        "checkpoint_sha256": "e7b41b19d1fa601b6e4f02e9b99869879c383144889a02ec1fbcf69302761cc1",
+        "best_epoch": 18
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-a5627c7ce7bc",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-a5627c7ce7bc/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7284570587167318,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-a5627c7ce7bc/best.pt",
+        "checkpoint_sha256": "a71abad6721ffde2c9ad9b143a88a540816572cf83a6d9ed219e577ad5ee5b22",
+        "best_epoch": 20
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-b529d6901c60",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-b529d6901c60/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7285315257924575,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-b529d6901c60/best.pt",
+        "checkpoint_sha256": "a1163daba4bd3655a01ec23a6d81e9491dfe6170f5b14c0c49730d528fa83021",
+        "best_epoch": 13
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-ca3f37a65ba6",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-ca3f37a65ba6/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7276588516046092,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-ca3f37a65ba6/best.pt",
+        "checkpoint_sha256": "5b09049497430b5bc2f5d026cde2dd07aece69c6a6bd099ad25d185821ef7ca4",
+        "best_epoch": 13
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-f8bde96560d6",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-f8bde96560d6/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7290596257041001,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-f8bde96560d6/best.pt",
+        "checkpoint_sha256": "48c92f232aced0c4eee1fe58a0fb6360ebd2370d698028a7f1fc2c0c59dc43ce",
+        "best_epoch": 10
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-37c34205659f",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-37c34205659f/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7290327403063555,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-37c34205659f/best.pt",
+        "checkpoint_sha256": "b6281211bfc76c094ee6ebf1e514514fdeff6bf18142e6e651045aa3bce7be67",
+        "best_epoch": 13
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-b95f4b0e409b",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-b95f4b0e409b/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7296634970547351,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-b95f4b0e409b/best.pt",
+        "checkpoint_sha256": "cb53e44031a33914df5b13dab61c461d5938be521384ed4ec6b480859b47fc83",
+        "best_epoch": 7
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-445182637f37",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-445182637f37/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7296578773751108,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-445182637f37/best.pt",
+        "checkpoint_sha256": "fa544b203623fea74ca0d957a93ca23899ea609b214b4fa6c75a94859cbcf3ff",
+        "best_epoch": 7
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-8a618101270c",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-8a618101270c/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7265228270478458,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-8a618101270c/best.pt",
+        "checkpoint_sha256": "483a8bdcd1db571ac23a9dce4e996288a9165c759f52706ca698a3a4f9d7c65a",
+        "best_epoch": 10
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-6aad389a9ff2",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-6aad389a9ff2/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7270037159045504,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-6aad389a9ff2/best.pt",
+        "checkpoint_sha256": "eba085fcae24fcf7f197971a6e5fbefdada0539e855f4b310cbe4a9e07b0b9b5",
+        "best_epoch": 13
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-a540855228ac",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-a540855228ac/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7259875232585496,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-a540855228ac/best.pt",
+        "checkpoint_sha256": "a6526eb7cb4945b18c1bc258a41a2d0e912967cffca875310c95e0700011922f",
+        "best_epoch": 7
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-e1f81f69cd99",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-e1f81f69cd99/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7257836587499034,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-e1f81f69cd99/best.pt",
+        "checkpoint_sha256": "5368bd78bcba2d20eaa7561b49541a3e932461ed4370b3ed673d93eb5cc052a9",
+        "best_epoch": 13
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-b39fa45105b4",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-b39fa45105b4/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7281435351815837,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-b39fa45105b4/best.pt",
+        "checkpoint_sha256": "26285d3aba3e60495fb24355227877b4b199984db9bae32235939d3ee08799f0",
+        "best_epoch": 7
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-6bd53e61d1a0",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-6bd53e61d1a0/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7279616954500336,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-6bd53e61d1a0/best.pt",
+        "checkpoint_sha256": "cf907ea48a5fe0f34985350806af8b185295a3e587ed89bcd84b17c7097fa9e4",
+        "best_epoch": 10
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-13899ec8cbe4",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-13899ec8cbe4/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7269515327547463,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-13899ec8cbe4/best.pt",
+        "checkpoint_sha256": "33624de73f8537f5ea24a240cfd91ffba205404083d0c1b7755ce5032a830832",
+        "best_epoch": 7
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-9b758c5a3448",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-9b758c5a3448/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7264018143148309,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-9b758c5a3448/best.pt",
+        "checkpoint_sha256": "996b46ab28f65976b4ada674e225ba1761caff137e991cd1bc0f70923e640e44",
+        "best_epoch": 10
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-08c3ea752993",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-08c3ea752993/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7257955008743797,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-primary-42-301d9bff60e9/best.pt",
+        "checkpoint_sha256": "1a3133ab28882d02ee985cb18848caae3c703160e43b80a6c79d6ff532e7b6ab",
+        "best_epoch": 7
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-61850ea7cf03",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-61850ea7cf03/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7254892294840718,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-61850ea7cf03/best.pt",
+        "checkpoint_sha256": "a2e9ce6461cccd116dce17326793fa2ecdbe5f60f913c5f139048c865238570e",
+        "best_epoch": 8
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-a69da8e923df",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-a69da8e923df/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7260727062243891,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-a69da8e923df/best.pt",
+        "checkpoint_sha256": "38a55f8be30dd78e42d197b3cdb481b5c661b0a05aa73e63ff59f08d39164599",
+        "best_epoch": 5
+      },
+      {
+        "run_id": "ASSIST2015-LightSAKT-grid-42-3769d3cd7356",
+        "metrics": "results/raw/ASSIST2015-LightSAKT-grid-42-3769d3cd7356/metrics.json",
+        "field": "validation.auc",
+        "value": 0.7253306097171046,
+        "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-3769d3cd7356/best.pt",
+        "checkpoint_sha256": "ad54d135e07b0e16289882c9bcfb26a0051d7936790e24a45f8dc65859d77694",
+        "best_epoch": 4
+      }
+    ],
+    "notes": [
+      "LightSAKT; all 36 configurations. Training seed 42, split seed 42; validation AUC only.",
+      "Bold marks the highest full-precision validation AUC. Exact ties select the lexically smallest run ID.",
+      "Selected: LR 0.0005, dimension 128, heads 4, dropout 0.1; epoch 18."
+    ],
+    "bold_cells": [],
+    "bold_rows": [
+      10
+    ],
+    "groups": [],
+    "grid": false,
+    "gkt": "not present in original table",
+    "partially_unavailable": [],
+    "size": [
+      8.7,
+      12.5
+    ],
+    "font": 13.2,
+    "widths": [
+      1.6,
+      1.4,
+      0.8,
+      1.0,
+      2.3
+    ],
+    "subtitle": "Corrected causal LightSAKT · validation results",
+    "table_top": 0.9,
+    "table_bottom": 0.12,
+    "selected_run_id": "ASSIST2015-LightSAKT-grid-42-64640d03b0d3"
+  },
+  {
+    "number": 7,
+    "name": "Table_07_Verified_Model_Comparison",
+    "title": "Table 7: Performance comparison of knowledge-tracing models across datasets",
+    "original_filename": "allTables/Screenshot 2026-10-17 234818.png",
+    "columns": [
+      "Dataset",
+      "Metric",
+      "DKT",
+      "DKT+",
+      "GKT",
+      "DKVMN",
+      "SAKT",
+      "LightSAKT"
+    ],
+    "body": [
+      [
+        "",
+        "AUC ↑",
+        "0.757165 ± 0.000527",
+        "0.751202 ± 0.000876",
+        "Pending",
+        "0.755016 ± 0.001395",
+        "0.750322 ± 0.000648",
+        "0.751056 ± 0.000766"
+      ],
+      [
+        "",
+        "F1 ↑",
+        "0.818332 ± 0.000993",
+        "0.816546 ± 0.002508",
+        "Pending",
+        "0.819802 ± 0.001518",
+        "0.817401 ± 0.000943",
+        "0.816533 ± 0.001517"
+      ],
+      [
+        "ASSIST2009",
+        "Accuracy ↑",
+        "0.736135 ± 0.001022",
+        "0.733004 ± 0.001809",
+        "Pending",
+        "0.736225 ± 0.001179",
+        "0.732718 ± 0.000669",
+        "0.732229 ± 0.000801"
+      ],
+      [
+        "",
+        "MSE ↓",
+        "0.189594 ± 0.000669",
+        "0.194971 ± 0.000512",
+        "Pending",
+        "0.178742 ± 0.000262",
+        "0.180373 ± 0.000252",
+        "0.180233 ± 0.000319"
+      ],
+      [
+        "",
+        "BCE ↓",
+        "0.564732 ± 0.001604",
+        "0.577168 ± 0.001301",
+        "Pending",
+        "0.535401 ± 0.000548",
+        "0.539191 ± 0.000666",
+        "0.538615 ± 0.000886"
+      ],
+      [
+        "",
+        "AUC ↑",
+        "0.728235 ± 0.000327",
+        "0.720802 ± 0.001036",
+        "Pending",
+        "0.727605 ± 0.000989",
+        "0.725180 ± 0.000258",
+        "0.726088 ± 0.000315"
+      ],
+      [
+        "",
+        "F1 ↑",
+        "0.845662 ± 0.000528",
+        "0.842588 ± 0.000766",
+        "Pending",
+        "0.847155 ± 0.000456",
+        "0.846664 ± 0.000609",
+        "0.846282 ± 0.000392"
+      ],
+      [
+        "ASSIST2015",
+        "Accuracy ↑",
+        "0.749869 ± 0.000281",
+        "0.745974 ± 0.000619",
+        "Pending",
+        "0.751034 ± 0.000445",
+        "0.749418 ± 0.000386",
+        "0.749526 ± 0.000419"
+      ],
+      [
+        "",
+        "MSE ↓",
+        "0.182124 ± 0.000394",
+        "0.187262 ± 0.000415",
+        "Pending",
+        "0.170776 ± 0.000228",
+        "0.171635 ± 0.000129",
+        "0.171233 ± 0.000106"
+      ],
+      [
+        "",
+        "BCE ↓",
+        "0.547349 ± 0.001032",
+        "0.559082 ± 0.001053",
+        "Pending",
+        "0.515011 ± 0.000615",
+        "0.517255 ± 0.000332",
+        "0.516098 ± 0.000340"
+      ],
+      [
+        "",
+        "AUC ↑",
+        "0.822181 ± 0.000683",
+        "0.823456 ± 0.000649",
+        "Pending",
+        "0.817725 ± 0.001099",
+        "0.813373 ± 0.000367",
+        "0.810590 ± 0.000422"
+      ],
+      [
+        "",
+        "F1 ↑",
+        "0.872422 ± 0.000891",
+        "0.872982 ± 0.000347",
+        "Pending",
+        "0.872047 ± 0.000572",
+        "0.871012 ± 0.000372",
+        "0.870356 ± 0.000350"
+      ],
+      [
+        "Algebra 2005–2006",
+        "Accuracy ↑",
+        "0.800524 ± 0.001175",
+        "0.801094 ± 0.000253",
+        "Pending",
+        "0.798950 ± 0.000818",
+        "0.796382 ± 0.000504",
+        "0.795574 ± 0.000639"
+      ],
+      [
+        "",
+        "MSE ↓",
+        "0.149683 ± 0.000862",
+        "0.152382 ± 0.000488",
+        "Pending",
+        "0.141806 ± 0.000514",
+        "0.143309 ± 0.000206",
+        "0.144069 ± 0.000364"
+      ],
+      [
+        "",
+        "BCE ↓",
+        "0.466820 ± 0.002433",
+        "0.474735 ± 0.001334",
+        "Pending",
+        "0.439274 ± 0.001405",
+        "0.443098 ± 0.000598",
+        "0.445272 ± 0.001018"
+      ]
+    ],
+    "row_evidence": [
+      {
+        "dataset": "ASSIST2009",
+        "field": "test.auc",
+        "models": {
+          "DKT": {
+            "run_ids": [
+              "ASSIST2009-DKT-final-42",
+              "ASSIST2009-DKT-final-123",
+              "ASSIST2009-DKT-final-2026",
+              "ASSIST2009-DKT-final-3407",
+              "ASSIST2009-DKT-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7571647563090654,
+            "sample_sd": 0.0005271268282561372,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKT+": {
+            "run_ids": [
+              "ASSIST2009-DKT+-final-42",
+              "ASSIST2009-DKT+-final-123",
+              "ASSIST2009-DKT+-final-2026",
+              "ASSIST2009-DKT+-final-3407",
+              "ASSIST2009-DKT+-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7512024251286045,
+            "sample_sd": 0.0008761641106402276,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKVMN": {
+            "run_ids": [
+              "ASSIST2009-DKVMN-final-42",
+              "ASSIST2009-DKVMN-final-123",
+              "ASSIST2009-DKVMN-final-2026",
+              "ASSIST2009-DKVMN-final-3407",
+              "ASSIST2009-DKVMN-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7550157733802237,
+            "sample_sd": 0.0013949604586892194,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "SAKT": {
+            "run_ids": [
+              "ASSIST2009-SAKT-final-42",
+              "ASSIST2009-SAKT-final-123",
+              "ASSIST2009-SAKT-final-2026",
+              "ASSIST2009-SAKT-final-3407",
+              "ASSIST2009-SAKT-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7503223886734086,
+            "sample_sd": 0.0006475612993528491,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "LightSAKT": {
+            "run_ids": [
+              "ASSIST2009-LightSAKT-final-42",
+              "ASSIST2009-LightSAKT-final-123",
+              "ASSIST2009-LightSAKT-final-2026",
+              "ASSIST2009-LightSAKT-final-3407",
+              "ASSIST2009-LightSAKT-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7510559411533763,
+            "sample_sd": 0.0007657191763665232,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          }
+        },
+        "aggregation": "Arithmetic mean and sample SD (ddof=1) across all five seeds",
+        "GKT": "Pending; final results deliberately excluded"
+      },
+      {
+        "dataset": "ASSIST2009",
+        "field": "test.f1",
+        "models": {
+          "DKT": {
+            "run_ids": [
+              "ASSIST2009-DKT-final-42",
+              "ASSIST2009-DKT-final-123",
+              "ASSIST2009-DKT-final-2026",
+              "ASSIST2009-DKT-final-3407",
+              "ASSIST2009-DKT-final-7777"
+            ],
+            "metric": "test.f1",
+            "mean": 0.8183320364290998,
+            "sample_sd": 0.0009930758750918251,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKT+": {
+            "run_ids": [
+              "ASSIST2009-DKT+-final-42",
+              "ASSIST2009-DKT+-final-123",
+              "ASSIST2009-DKT+-final-2026",
+              "ASSIST2009-DKT+-final-3407",
+              "ASSIST2009-DKT+-final-7777"
+            ],
+            "metric": "test.f1",
+            "mean": 0.81654645640871,
+            "sample_sd": 0.00250777235351808,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKVMN": {
+            "run_ids": [
+              "ASSIST2009-DKVMN-final-42",
+              "ASSIST2009-DKVMN-final-123",
+              "ASSIST2009-DKVMN-final-2026",
+              "ASSIST2009-DKVMN-final-3407",
+              "ASSIST2009-DKVMN-final-7777"
+            ],
+            "metric": "test.f1",
+            "mean": 0.8198017633970875,
+            "sample_sd": 0.0015179467122229731,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "SAKT": {
+            "run_ids": [
+              "ASSIST2009-SAKT-final-42",
+              "ASSIST2009-SAKT-final-123",
+              "ASSIST2009-SAKT-final-2026",
+              "ASSIST2009-SAKT-final-3407",
+              "ASSIST2009-SAKT-final-7777"
+            ],
+            "metric": "test.f1",
+            "mean": 0.8174007791433396,
+            "sample_sd": 0.0009430779536264103,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "LightSAKT": {
+            "run_ids": [
+              "ASSIST2009-LightSAKT-final-42",
+              "ASSIST2009-LightSAKT-final-123",
+              "ASSIST2009-LightSAKT-final-2026",
+              "ASSIST2009-LightSAKT-final-3407",
+              "ASSIST2009-LightSAKT-final-7777"
+            ],
+            "metric": "test.f1",
+            "mean": 0.8165329377472638,
+            "sample_sd": 0.001516902505945253,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          }
+        },
+        "aggregation": "Arithmetic mean and sample SD (ddof=1) across all five seeds",
+        "GKT": "Pending; final results deliberately excluded"
+      },
+      {
+        "dataset": "ASSIST2009",
+        "field": "test.accuracy",
+        "models": {
+          "DKT": {
+            "run_ids": [
+              "ASSIST2009-DKT-final-42",
+              "ASSIST2009-DKT-final-123",
+              "ASSIST2009-DKT-final-2026",
+              "ASSIST2009-DKT-final-3407",
+              "ASSIST2009-DKT-final-7777"
+            ],
+            "metric": "test.accuracy",
+            "mean": 0.736135133983726,
+            "sample_sd": 0.00102229599496043,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKT+": {
+            "run_ids": [
+              "ASSIST2009-DKT+-final-42",
+              "ASSIST2009-DKT+-final-123",
+              "ASSIST2009-DKT+-final-2026",
+              "ASSIST2009-DKT+-final-3407",
+              "ASSIST2009-DKT+-final-7777"
+            ],
+            "metric": "test.accuracy",
+            "mean": 0.7330038767946151,
+            "sample_sd": 0.0018085598859310477,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKVMN": {
+            "run_ids": [
+              "ASSIST2009-DKVMN-final-42",
+              "ASSIST2009-DKVMN-final-123",
+              "ASSIST2009-DKVMN-final-2026",
+              "ASSIST2009-DKVMN-final-3407",
+              "ASSIST2009-DKVMN-final-7777"
+            ],
+            "metric": "test.accuracy",
+            "mean": 0.7362245984748435,
+            "sample_sd": 0.0011794138746047272,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "SAKT": {
+            "run_ids": [
+              "ASSIST2009-SAKT-final-42",
+              "ASSIST2009-SAKT-final-123",
+              "ASSIST2009-SAKT-final-2026",
+              "ASSIST2009-SAKT-final-3407",
+              "ASSIST2009-SAKT-final-7777"
+            ],
+            "metric": "test.accuracy",
+            "mean": 0.732718442465812,
+            "sample_sd": 0.0006687653814943949,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "LightSAKT": {
+            "run_ids": [
+              "ASSIST2009-LightSAKT-final-42",
+              "ASSIST2009-LightSAKT-final-123",
+              "ASSIST2009-LightSAKT-final-2026",
+              "ASSIST2009-LightSAKT-final-3407",
+              "ASSIST2009-LightSAKT-final-7777"
+            ],
+            "metric": "test.accuracy",
+            "mean": 0.7322285178715972,
+            "sample_sd": 0.0008010448304147329,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          }
+        },
+        "aggregation": "Arithmetic mean and sample SD (ddof=1) across all five seeds",
+        "GKT": "Pending; final results deliberately excluded"
+      },
+      {
+        "dataset": "ASSIST2009",
+        "field": "test.mse",
+        "models": {
+          "DKT": {
+            "run_ids": [
+              "ASSIST2009-DKT-final-42",
+              "ASSIST2009-DKT-final-123",
+              "ASSIST2009-DKT-final-2026",
+              "ASSIST2009-DKT-final-3407",
+              "ASSIST2009-DKT-final-7777"
+            ],
+            "metric": "test.mse",
+            "mean": 0.18959387377256326,
+            "sample_sd": 0.0006689582896053293,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKT+": {
+            "run_ids": [
+              "ASSIST2009-DKT+-final-42",
+              "ASSIST2009-DKT+-final-123",
+              "ASSIST2009-DKT+-final-2026",
+              "ASSIST2009-DKT+-final-3407",
+              "ASSIST2009-DKT+-final-7777"
+            ],
+            "metric": "test.mse",
+            "mean": 0.19497129152728535,
+            "sample_sd": 0.0005115656197255476,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKVMN": {
+            "run_ids": [
+              "ASSIST2009-DKVMN-final-42",
+              "ASSIST2009-DKVMN-final-123",
+              "ASSIST2009-DKVMN-final-2026",
+              "ASSIST2009-DKVMN-final-3407",
+              "ASSIST2009-DKVMN-final-7777"
+            ],
+            "metric": "test.mse",
+            "mean": 0.17874175846247284,
+            "sample_sd": 0.0002620352773846103,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "SAKT": {
+            "run_ids": [
+              "ASSIST2009-SAKT-final-42",
+              "ASSIST2009-SAKT-final-123",
+              "ASSIST2009-SAKT-final-2026",
+              "ASSIST2009-SAKT-final-3407",
+              "ASSIST2009-SAKT-final-7777"
+            ],
+            "metric": "test.mse",
+            "mean": 0.18037336616390715,
+            "sample_sd": 0.0002521997839527801,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "LightSAKT": {
+            "run_ids": [
+              "ASSIST2009-LightSAKT-final-42",
+              "ASSIST2009-LightSAKT-final-123",
+              "ASSIST2009-LightSAKT-final-2026",
+              "ASSIST2009-LightSAKT-final-3407",
+              "ASSIST2009-LightSAKT-final-7777"
+            ],
+            "metric": "test.mse",
+            "mean": 0.18023348241307488,
+            "sample_sd": 0.00031883374648746383,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          }
+        },
+        "aggregation": "Arithmetic mean and sample SD (ddof=1) across all five seeds",
+        "GKT": "Pending; final results deliberately excluded"
+      },
+      {
+        "dataset": "ASSIST2009",
+        "field": "test.bce",
+        "models": {
+          "DKT": {
+            "run_ids": [
+              "ASSIST2009-DKT-final-42",
+              "ASSIST2009-DKT-final-123",
+              "ASSIST2009-DKT-final-2026",
+              "ASSIST2009-DKT-final-3407",
+              "ASSIST2009-DKT-final-7777"
+            ],
+            "metric": "test.bce",
+            "mean": 0.5647322969944127,
+            "sample_sd": 0.001603681418983857,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKT+": {
+            "run_ids": [
+              "ASSIST2009-DKT+-final-42",
+              "ASSIST2009-DKT+-final-123",
+              "ASSIST2009-DKT+-final-2026",
+              "ASSIST2009-DKT+-final-3407",
+              "ASSIST2009-DKT+-final-7777"
+            ],
+            "metric": "test.bce",
+            "mean": 0.577167652695274,
+            "sample_sd": 0.0013014851019946304,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKVMN": {
+            "run_ids": [
+              "ASSIST2009-DKVMN-final-42",
+              "ASSIST2009-DKVMN-final-123",
+              "ASSIST2009-DKVMN-final-2026",
+              "ASSIST2009-DKVMN-final-3407",
+              "ASSIST2009-DKVMN-final-7777"
+            ],
+            "metric": "test.bce",
+            "mean": 0.5354006691710669,
+            "sample_sd": 0.0005483133594899464,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "SAKT": {
+            "run_ids": [
+              "ASSIST2009-SAKT-final-42",
+              "ASSIST2009-SAKT-final-123",
+              "ASSIST2009-SAKT-final-2026",
+              "ASSIST2009-SAKT-final-3407",
+              "ASSIST2009-SAKT-final-7777"
+            ],
+            "metric": "test.bce",
+            "mean": 0.5391911741180578,
+            "sample_sd": 0.0006663609448382656,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "LightSAKT": {
+            "run_ids": [
+              "ASSIST2009-LightSAKT-final-42",
+              "ASSIST2009-LightSAKT-final-123",
+              "ASSIST2009-LightSAKT-final-2026",
+              "ASSIST2009-LightSAKT-final-3407",
+              "ASSIST2009-LightSAKT-final-7777"
+            ],
+            "metric": "test.bce",
+            "mean": 0.538615462422268,
+            "sample_sd": 0.0008855285990044389,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          }
+        },
+        "aggregation": "Arithmetic mean and sample SD (ddof=1) across all five seeds",
+        "GKT": "Pending; final results deliberately excluded"
+      },
+      {
+        "dataset": "ASSIST2015",
+        "field": "test.auc",
+        "models": {
+          "DKT": {
+            "run_ids": [
+              "ASSIST2015-DKT-final-42",
+              "ASSIST2015-DKT-final-123",
+              "ASSIST2015-DKT-final-2026",
+              "ASSIST2015-DKT-final-3407",
+              "ASSIST2015-DKT-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7282345356225713,
+            "sample_sd": 0.0003266219730431652,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKT+": {
+            "run_ids": [
+              "ASSIST2015-DKT+-final-42",
+              "ASSIST2015-DKT+-final-123",
+              "ASSIST2015-DKT+-final-2026",
+              "ASSIST2015-DKT+-final-3407",
+              "ASSIST2015-DKT+-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.720801674146441,
+            "sample_sd": 0.001035878190062349,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKVMN": {
+            "run_ids": [
+              "ASSIST2015-DKVMN-final-42",
+              "ASSIST2015-DKVMN-final-123",
+              "ASSIST2015-DKVMN-final-2026",
+              "ASSIST2015-DKVMN-final-3407",
+              "ASSIST2015-DKVMN-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7276052651714042,
+            "sample_sd": 0.0009888435155275305,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "SAKT": {
+            "run_ids": [
+              "ASSIST2015-SAKT-final-42",
+              "ASSIST2015-SAKT-final-123",
+              "ASSIST2015-SAKT-final-2026",
+              "ASSIST2015-SAKT-final-3407",
+              "ASSIST2015-SAKT-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7251797899278627,
+            "sample_sd": 0.00025822588292540033,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "LightSAKT": {
+            "run_ids": [
+              "ASSIST2015-LightSAKT-final-42",
+              "ASSIST2015-LightSAKT-final-123",
+              "ASSIST2015-LightSAKT-final-2026",
+              "ASSIST2015-LightSAKT-final-3407",
+              "ASSIST2015-LightSAKT-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7260883549405079,
+            "sample_sd": 0.00031486252624865653,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          }
+        },
+        "aggregation": "Arithmetic mean and sample SD (ddof=1) across all five seeds",
+        "GKT": "Pending; final results deliberately excluded"
+      },
+      {
+        "dataset": "ASSIST2015",
+        "field": "test.f1",
+        "models": {
+          "DKT": {
+            "run_ids": [
+              "ASSIST2015-DKT-final-42",
+              "ASSIST2015-DKT-final-123",
+              "ASSIST2015-DKT-final-2026",
+              "ASSIST2015-DKT-final-3407",
+              "ASSIST2015-DKT-final-7777"
+            ],
+            "metric": "test.f1",
+            "mean": 0.8456622190215487,
+            "sample_sd": 0.0005282646006728592,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKT+": {
+            "run_ids": [
+              "ASSIST2015-DKT+-final-42",
+              "ASSIST2015-DKT+-final-123",
+              "ASSIST2015-DKT+-final-2026",
+              "ASSIST2015-DKT+-final-3407",
+              "ASSIST2015-DKT+-final-7777"
+            ],
+            "metric": "test.f1",
+            "mean": 0.842587550484299,
+            "sample_sd": 0.0007659117703615977,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKVMN": {
+            "run_ids": [
+              "ASSIST2015-DKVMN-final-42",
+              "ASSIST2015-DKVMN-final-123",
+              "ASSIST2015-DKVMN-final-2026",
+              "ASSIST2015-DKVMN-final-3407",
+              "ASSIST2015-DKVMN-final-7777"
+            ],
+            "metric": "test.f1",
+            "mean": 0.8471554396556475,
+            "sample_sd": 0.00045554511208067337,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "SAKT": {
+            "run_ids": [
+              "ASSIST2015-SAKT-final-42",
+              "ASSIST2015-SAKT-final-123",
+              "ASSIST2015-SAKT-final-2026",
+              "ASSIST2015-SAKT-final-3407",
+              "ASSIST2015-SAKT-final-7777"
+            ],
+            "metric": "test.f1",
+            "mean": 0.8466644745469687,
+            "sample_sd": 0.0006085655313816796,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "LightSAKT": {
+            "run_ids": [
+              "ASSIST2015-LightSAKT-final-42",
+              "ASSIST2015-LightSAKT-final-123",
+              "ASSIST2015-LightSAKT-final-2026",
+              "ASSIST2015-LightSAKT-final-3407",
+              "ASSIST2015-LightSAKT-final-7777"
+            ],
+            "metric": "test.f1",
+            "mean": 0.8462822811634144,
+            "sample_sd": 0.00039227251255622,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          }
+        },
+        "aggregation": "Arithmetic mean and sample SD (ddof=1) across all five seeds",
+        "GKT": "Pending; final results deliberately excluded"
+      },
+      {
+        "dataset": "ASSIST2015",
+        "field": "test.accuracy",
+        "models": {
+          "DKT": {
+            "run_ids": [
+              "ASSIST2015-DKT-final-42",
+              "ASSIST2015-DKT-final-123",
+              "ASSIST2015-DKT-final-2026",
+              "ASSIST2015-DKT-final-3407",
+              "ASSIST2015-DKT-final-7777"
+            ],
+            "metric": "test.accuracy",
+            "mean": 0.7498692161991521,
+            "sample_sd": 0.0002813651259549843,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKT+": {
+            "run_ids": [
+              "ASSIST2015-DKT+-final-42",
+              "ASSIST2015-DKT+-final-123",
+              "ASSIST2015-DKT+-final-2026",
+              "ASSIST2015-DKT+-final-3407",
+              "ASSIST2015-DKT+-final-7777"
+            ],
+            "metric": "test.accuracy",
+            "mean": 0.7459742641532123,
+            "sample_sd": 0.000619049274244785,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKVMN": {
+            "run_ids": [
+              "ASSIST2015-DKVMN-final-42",
+              "ASSIST2015-DKVMN-final-123",
+              "ASSIST2015-DKVMN-final-2026",
+              "ASSIST2015-DKVMN-final-3407",
+              "ASSIST2015-DKVMN-final-7777"
+            ],
+            "metric": "test.accuracy",
+            "mean": 0.751034244310153,
+            "sample_sd": 0.0004454515846897978,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "SAKT": {
+            "run_ids": [
+              "ASSIST2015-SAKT-final-42",
+              "ASSIST2015-SAKT-final-123",
+              "ASSIST2015-SAKT-final-2026",
+              "ASSIST2015-SAKT-final-3407",
+              "ASSIST2015-SAKT-final-7777"
+            ],
+            "metric": "test.accuracy",
+            "mean": 0.7494182375755389,
+            "sample_sd": 0.0003862900947469943,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "LightSAKT": {
+            "run_ids": [
+              "ASSIST2015-LightSAKT-final-42",
+              "ASSIST2015-LightSAKT-final-123",
+              "ASSIST2015-LightSAKT-final-2026",
+              "ASSIST2015-LightSAKT-final-3407",
+              "ASSIST2015-LightSAKT-final-7777"
+            ],
+            "metric": "test.accuracy",
+            "mean": 0.749526472445206,
+            "sample_sd": 0.00041946803734968464,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          }
+        },
+        "aggregation": "Arithmetic mean and sample SD (ddof=1) across all five seeds",
+        "GKT": "Pending; final results deliberately excluded"
+      },
+      {
+        "dataset": "ASSIST2015",
+        "field": "test.mse",
+        "models": {
+          "DKT": {
+            "run_ids": [
+              "ASSIST2015-DKT-final-42",
+              "ASSIST2015-DKT-final-123",
+              "ASSIST2015-DKT-final-2026",
+              "ASSIST2015-DKT-final-3407",
+              "ASSIST2015-DKT-final-7777"
+            ],
+            "metric": "test.mse",
+            "mean": 0.1821240580959768,
+            "sample_sd": 0.00039361074411024577,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKT+": {
+            "run_ids": [
+              "ASSIST2015-DKT+-final-42",
+              "ASSIST2015-DKT+-final-123",
+              "ASSIST2015-DKT+-final-2026",
+              "ASSIST2015-DKT+-final-3407",
+              "ASSIST2015-DKT+-final-7777"
+            ],
+            "metric": "test.mse",
+            "mean": 0.1872619305126791,
+            "sample_sd": 0.0004154102974510501,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKVMN": {
+            "run_ids": [
+              "ASSIST2015-DKVMN-final-42",
+              "ASSIST2015-DKVMN-final-123",
+              "ASSIST2015-DKVMN-final-2026",
+              "ASSIST2015-DKVMN-final-3407",
+              "ASSIST2015-DKVMN-final-7777"
+            ],
+            "metric": "test.mse",
+            "mean": 0.17077555273698355,
+            "sample_sd": 0.0002282955344181801,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "SAKT": {
+            "run_ids": [
+              "ASSIST2015-SAKT-final-42",
+              "ASSIST2015-SAKT-final-123",
+              "ASSIST2015-SAKT-final-2026",
+              "ASSIST2015-SAKT-final-3407",
+              "ASSIST2015-SAKT-final-7777"
+            ],
+            "metric": "test.mse",
+            "mean": 0.17163520920534153,
+            "sample_sd": 0.00012853365450354398,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "LightSAKT": {
+            "run_ids": [
+              "ASSIST2015-LightSAKT-final-42",
+              "ASSIST2015-LightSAKT-final-123",
+              "ASSIST2015-LightSAKT-final-2026",
+              "ASSIST2015-LightSAKT-final-3407",
+              "ASSIST2015-LightSAKT-final-7777"
+            ],
+            "metric": "test.mse",
+            "mean": 0.17123312227360746,
+            "sample_sd": 0.0001060591791269375,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          }
+        },
+        "aggregation": "Arithmetic mean and sample SD (ddof=1) across all five seeds",
+        "GKT": "Pending; final results deliberately excluded"
+      },
+      {
+        "dataset": "ASSIST2015",
+        "field": "test.bce",
+        "models": {
+          "DKT": {
+            "run_ids": [
+              "ASSIST2015-DKT-final-42",
+              "ASSIST2015-DKT-final-123",
+              "ASSIST2015-DKT-final-2026",
+              "ASSIST2015-DKT-final-3407",
+              "ASSIST2015-DKT-final-7777"
+            ],
+            "metric": "test.bce",
+            "mean": 0.547349365783207,
+            "sample_sd": 0.0010316202641826413,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKT+": {
+            "run_ids": [
+              "ASSIST2015-DKT+-final-42",
+              "ASSIST2015-DKT+-final-123",
+              "ASSIST2015-DKT+-final-2026",
+              "ASSIST2015-DKT+-final-3407",
+              "ASSIST2015-DKT+-final-7777"
+            ],
+            "metric": "test.bce",
+            "mean": 0.5590821057736098,
+            "sample_sd": 0.0010531008752491956,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKVMN": {
+            "run_ids": [
+              "ASSIST2015-DKVMN-final-42",
+              "ASSIST2015-DKVMN-final-123",
+              "ASSIST2015-DKVMN-final-2026",
+              "ASSIST2015-DKVMN-final-3407",
+              "ASSIST2015-DKVMN-final-7777"
+            ],
+            "metric": "test.bce",
+            "mean": 0.5150112583014248,
+            "sample_sd": 0.0006148161170675504,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "SAKT": {
+            "run_ids": [
+              "ASSIST2015-SAKT-final-42",
+              "ASSIST2015-SAKT-final-123",
+              "ASSIST2015-SAKT-final-2026",
+              "ASSIST2015-SAKT-final-3407",
+              "ASSIST2015-SAKT-final-7777"
+            ],
+            "metric": "test.bce",
+            "mean": 0.5172554805008234,
+            "sample_sd": 0.00033224959099958527,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "LightSAKT": {
+            "run_ids": [
+              "ASSIST2015-LightSAKT-final-42",
+              "ASSIST2015-LightSAKT-final-123",
+              "ASSIST2015-LightSAKT-final-2026",
+              "ASSIST2015-LightSAKT-final-3407",
+              "ASSIST2015-LightSAKT-final-7777"
+            ],
+            "metric": "test.bce",
+            "mean": 0.5160981099563449,
+            "sample_sd": 0.00034033862396036594,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          }
+        },
+        "aggregation": "Arithmetic mean and sample SD (ddof=1) across all five seeds",
+        "GKT": "Pending; final results deliberately excluded"
+      },
+      {
+        "dataset": "Algebra2005",
+        "field": "test.auc",
+        "models": {
+          "DKT": {
+            "run_ids": [
+              "Algebra2005-DKT-final-42",
+              "Algebra2005-DKT-final-123",
+              "Algebra2005-DKT-final-2026",
+              "Algebra2005-DKT-final-3407",
+              "Algebra2005-DKT-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.8221811404058821,
+            "sample_sd": 0.0006833698125271093,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKT+": {
+            "run_ids": [
+              "Algebra2005-DKT+-final-42",
+              "Algebra2005-DKT+-final-123",
+              "Algebra2005-DKT+-final-2026",
+              "Algebra2005-DKT+-final-3407",
+              "Algebra2005-DKT+-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.8234555596842255,
+            "sample_sd": 0.0006486465337205856,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKVMN": {
+            "run_ids": [
+              "Algebra2005-DKVMN-final-42",
+              "Algebra2005-DKVMN-final-123",
+              "Algebra2005-DKVMN-final-2026",
+              "Algebra2005-DKVMN-final-3407",
+              "Algebra2005-DKVMN-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.8177246943631739,
+            "sample_sd": 0.0010985356206563034,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "SAKT": {
+            "run_ids": [
+              "Algebra2005-SAKT-final-42",
+              "Algebra2005-SAKT-final-123",
+              "Algebra2005-SAKT-final-2026",
+              "Algebra2005-SAKT-final-3407",
+              "Algebra2005-SAKT-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.813373451738834,
+            "sample_sd": 0.00036682824846677556,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "LightSAKT": {
+            "run_ids": [
+              "Algebra2005-LightSAKT-final-42",
+              "Algebra2005-LightSAKT-final-123",
+              "Algebra2005-LightSAKT-final-2026",
+              "Algebra2005-LightSAKT-final-3407",
+              "Algebra2005-LightSAKT-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.810589501606818,
+            "sample_sd": 0.00042168974505793326,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          }
+        },
+        "aggregation": "Arithmetic mean and sample SD (ddof=1) across all five seeds",
+        "GKT": "Pending; final results deliberately excluded"
+      },
+      {
+        "dataset": "Algebra2005",
+        "field": "test.f1",
+        "models": {
+          "DKT": {
+            "run_ids": [
+              "Algebra2005-DKT-final-42",
+              "Algebra2005-DKT-final-123",
+              "Algebra2005-DKT-final-2026",
+              "Algebra2005-DKT-final-3407",
+              "Algebra2005-DKT-final-7777"
+            ],
+            "metric": "test.f1",
+            "mean": 0.8724215735134033,
+            "sample_sd": 0.0008906800993036936,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKT+": {
+            "run_ids": [
+              "Algebra2005-DKT+-final-42",
+              "Algebra2005-DKT+-final-123",
+              "Algebra2005-DKT+-final-2026",
+              "Algebra2005-DKT+-final-3407",
+              "Algebra2005-DKT+-final-7777"
+            ],
+            "metric": "test.f1",
+            "mean": 0.8729816582537037,
+            "sample_sd": 0.00034741165957636434,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKVMN": {
+            "run_ids": [
+              "Algebra2005-DKVMN-final-42",
+              "Algebra2005-DKVMN-final-123",
+              "Algebra2005-DKVMN-final-2026",
+              "Algebra2005-DKVMN-final-3407",
+              "Algebra2005-DKVMN-final-7777"
+            ],
+            "metric": "test.f1",
+            "mean": 0.8720473318493316,
+            "sample_sd": 0.0005716893652885082,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "SAKT": {
+            "run_ids": [
+              "Algebra2005-SAKT-final-42",
+              "Algebra2005-SAKT-final-123",
+              "Algebra2005-SAKT-final-2026",
+              "Algebra2005-SAKT-final-3407",
+              "Algebra2005-SAKT-final-7777"
+            ],
+            "metric": "test.f1",
+            "mean": 0.8710115513818366,
+            "sample_sd": 0.00037206835345732827,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "LightSAKT": {
+            "run_ids": [
+              "Algebra2005-LightSAKT-final-42",
+              "Algebra2005-LightSAKT-final-123",
+              "Algebra2005-LightSAKT-final-2026",
+              "Algebra2005-LightSAKT-final-3407",
+              "Algebra2005-LightSAKT-final-7777"
+            ],
+            "metric": "test.f1",
+            "mean": 0.8703561345744213,
+            "sample_sd": 0.00035024919572977057,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          }
+        },
+        "aggregation": "Arithmetic mean and sample SD (ddof=1) across all five seeds",
+        "GKT": "Pending; final results deliberately excluded"
+      },
+      {
+        "dataset": "Algebra2005",
+        "field": "test.accuracy",
+        "models": {
+          "DKT": {
+            "run_ids": [
+              "Algebra2005-DKT-final-42",
+              "Algebra2005-DKT-final-123",
+              "Algebra2005-DKT-final-2026",
+              "Algebra2005-DKT-final-3407",
+              "Algebra2005-DKT-final-7777"
+            ],
+            "metric": "test.accuracy",
+            "mean": 0.8005241680151973,
+            "sample_sd": 0.0011754657117283196,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKT+": {
+            "run_ids": [
+              "Algebra2005-DKT+-final-42",
+              "Algebra2005-DKT+-final-123",
+              "Algebra2005-DKT+-final-2026",
+              "Algebra2005-DKT+-final-3407",
+              "Algebra2005-DKT+-final-7777"
+            ],
+            "metric": "test.accuracy",
+            "mean": 0.801094068810244,
+            "sample_sd": 0.00025280935077125286,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKVMN": {
+            "run_ids": [
+              "Algebra2005-DKVMN-final-42",
+              "Algebra2005-DKVMN-final-123",
+              "Algebra2005-DKVMN-final-2026",
+              "Algebra2005-DKVMN-final-3407",
+              "Algebra2005-DKVMN-final-7777"
+            ],
+            "metric": "test.accuracy",
+            "mean": 0.7989499050165342,
+            "sample_sd": 0.0008177334803344691,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "SAKT": {
+            "run_ids": [
+              "Algebra2005-SAKT-final-42",
+              "Algebra2005-SAKT-final-123",
+              "Algebra2005-SAKT-final-2026",
+              "Algebra2005-SAKT-final-3407",
+              "Algebra2005-SAKT-final-7777"
+            ],
+            "metric": "test.accuracy",
+            "mean": 0.7963818335326813,
+            "sample_sd": 0.0005042400313260019,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "LightSAKT": {
+            "run_ids": [
+              "Algebra2005-LightSAKT-final-42",
+              "Algebra2005-LightSAKT-final-123",
+              "Algebra2005-LightSAKT-final-2026",
+              "Algebra2005-LightSAKT-final-3407",
+              "Algebra2005-LightSAKT-final-7777"
+            ],
+            "metric": "test.accuracy",
+            "mean": 0.7955744740730317,
+            "sample_sd": 0.0006393921434361666,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          }
+        },
+        "aggregation": "Arithmetic mean and sample SD (ddof=1) across all five seeds",
+        "GKT": "Pending; final results deliberately excluded"
+      },
+      {
+        "dataset": "Algebra2005",
+        "field": "test.mse",
+        "models": {
+          "DKT": {
+            "run_ids": [
+              "Algebra2005-DKT-final-42",
+              "Algebra2005-DKT-final-123",
+              "Algebra2005-DKT-final-2026",
+              "Algebra2005-DKT-final-3407",
+              "Algebra2005-DKT-final-7777"
+            ],
+            "metric": "test.mse",
+            "mean": 0.14968312302780376,
+            "sample_sd": 0.0008621404737315282,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKT+": {
+            "run_ids": [
+              "Algebra2005-DKT+-final-42",
+              "Algebra2005-DKT+-final-123",
+              "Algebra2005-DKT+-final-2026",
+              "Algebra2005-DKT+-final-3407",
+              "Algebra2005-DKT+-final-7777"
+            ],
+            "metric": "test.mse",
+            "mean": 0.1523816530019792,
+            "sample_sd": 0.00048767781313558843,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKVMN": {
+            "run_ids": [
+              "Algebra2005-DKVMN-final-42",
+              "Algebra2005-DKVMN-final-123",
+              "Algebra2005-DKVMN-final-2026",
+              "Algebra2005-DKVMN-final-3407",
+              "Algebra2005-DKVMN-final-7777"
+            ],
+            "metric": "test.mse",
+            "mean": 0.1418057102025492,
+            "sample_sd": 0.0005136062426931273,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "SAKT": {
+            "run_ids": [
+              "Algebra2005-SAKT-final-42",
+              "Algebra2005-SAKT-final-123",
+              "Algebra2005-SAKT-final-2026",
+              "Algebra2005-SAKT-final-3407",
+              "Algebra2005-SAKT-final-7777"
+            ],
+            "metric": "test.mse",
+            "mean": 0.14330907956436395,
+            "sample_sd": 0.00020571059657623072,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "LightSAKT": {
+            "run_ids": [
+              "Algebra2005-LightSAKT-final-42",
+              "Algebra2005-LightSAKT-final-123",
+              "Algebra2005-LightSAKT-final-2026",
+              "Algebra2005-LightSAKT-final-3407",
+              "Algebra2005-LightSAKT-final-7777"
+            ],
+            "metric": "test.mse",
+            "mean": 0.14406899093730313,
+            "sample_sd": 0.0003639621016469393,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          }
+        },
+        "aggregation": "Arithmetic mean and sample SD (ddof=1) across all five seeds",
+        "GKT": "Pending; final results deliberately excluded"
+      },
+      {
+        "dataset": "Algebra2005",
+        "field": "test.bce",
+        "models": {
+          "DKT": {
+            "run_ids": [
+              "Algebra2005-DKT-final-42",
+              "Algebra2005-DKT-final-123",
+              "Algebra2005-DKT-final-2026",
+              "Algebra2005-DKT-final-3407",
+              "Algebra2005-DKT-final-7777"
+            ],
+            "metric": "test.bce",
+            "mean": 0.46681999005470215,
+            "sample_sd": 0.002433224360993992,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKT+": {
+            "run_ids": [
+              "Algebra2005-DKT+-final-42",
+              "Algebra2005-DKT+-final-123",
+              "Algebra2005-DKT+-final-2026",
+              "Algebra2005-DKT+-final-3407",
+              "Algebra2005-DKT+-final-7777"
+            ],
+            "metric": "test.bce",
+            "mean": 0.47473483998623645,
+            "sample_sd": 0.0013338894153325893,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "DKVMN": {
+            "run_ids": [
+              "Algebra2005-DKVMN-final-42",
+              "Algebra2005-DKVMN-final-123",
+              "Algebra2005-DKVMN-final-2026",
+              "Algebra2005-DKVMN-final-3407",
+              "Algebra2005-DKVMN-final-7777"
+            ],
+            "metric": "test.bce",
+            "mean": 0.43927377028398285,
+            "sample_sd": 0.001404873058407128,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "SAKT": {
+            "run_ids": [
+              "Algebra2005-SAKT-final-42",
+              "Algebra2005-SAKT-final-123",
+              "Algebra2005-SAKT-final-2026",
+              "Algebra2005-SAKT-final-3407",
+              "Algebra2005-SAKT-final-7777"
+            ],
+            "metric": "test.bce",
+            "mean": 0.4430984706198876,
+            "sample_sd": 0.0005975494050319316,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          },
+          "LightSAKT": {
+            "run_ids": [
+              "Algebra2005-LightSAKT-final-42",
+              "Algebra2005-LightSAKT-final-123",
+              "Algebra2005-LightSAKT-final-2026",
+              "Algebra2005-LightSAKT-final-3407",
+              "Algebra2005-LightSAKT-final-7777"
+            ],
+            "metric": "test.bce",
+            "mean": 0.4452719125811898,
+            "sample_sd": 0.0010179404126194299,
+            "seeds": [
+              42,
+              123,
+              2026,
+              3407,
+              7777
+            ]
+          }
+        },
+        "aggregation": "Arithmetic mean and sample SD (ddof=1) across all five seeds",
+        "GKT": "Pending; final results deliberately excluded"
+      }
+    ],
+    "notes": [
+      "Final held-out test results: mean ± sample SD over seeds 42, 123, 2026, 3407, 7777, on the same locked split.",
+      "Bold marks the best completed mean per metric: higher AUC/F1/accuracy; lower MSE/BCE. Differences are descriptive.",
+      "GKT final five-seed results are pending; no partial, primary or historical GKT scores are shown. Loss_mean is labelled BCE."
+    ],
+    "bold_cells": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        9,
+        5
+      ],
+      [
+        10,
+        3
+      ],
+      [
+        11,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        13,
+        5
+      ],
+      [
+        14,
+        5
+      ]
+    ],
+    "bold_rows": [],
+    "groups": [
+      5,
+      10
+    ],
+    "grid": false,
+    "gkt": "Pending in all 15 metric rows; neither PAM nor MHA final values are inserted",
+    "partially_unavailable": [],
+    "size": [
+      16.4,
+      8.0
+    ],
+    "font": 11.4,
+    "widths": [
+      1.75,
+      1.2,
+      2.1,
+      2.1,
+      1.15,
+      2.1,
+      2.1,
+      2.1
+    ],
+    "subtitle": "Verified final five-seed results · GKT pending",
+    "table_top": 0.85,
+    "table_bottom": 0.24
+  },
+  {
+    "number": 8,
+    "name": "Table_08_LightSAKT_Ablation_Study",
+    "title": "Table 8: Ablation study",
+    "original_filename": "allTables/Screenshot 2026-10-17 234828.png",
+    "columns": [
+      "Architecture",
+      "ASSIST2009",
+      "ASSIST2015",
+      "Algebra 2005–2006"
+    ],
+    "body": [
+      [
+        "Default",
+        "0.751056 ± 0.000766",
+        "0.726088 ± 0.000315",
+        "0.810590 ± 0.000422"
+      ],
+      [
+        "No Dropout",
+        "0.749340 ± 0.000716",
+        "0.725149 ± 0.000593",
+        "0.809160 ± 0.000459"
+      ],
+      [
+        "No Position Encoding",
+        "0.750798 ± 0.000583",
+        "0.725749 ± 0.000183",
+        "0.811410 ± 0.000603"
+      ],
+      [
+        "Single Head",
+        "0.750791 ± 0.000765",
+        "0.726622 ± 0.000426",
+        "0.811755 ± 0.000448"
+      ],
+      [
+        "Without attention",
+        "0.708307 ± 0.001107",
+        "0.699283 ± 0.000443",
+        "0.772550 ± 0.000515"
+      ],
+      [
+        "No layer normalization*",
+        "Not run",
+        "Not run",
+        "Not run"
+      ],
+      [
+        "Without regularization†",
+        "0.749340 ± 0.000716",
+        "0.725149 ± 0.000593",
+        "0.809160 ± 0.000459"
+      ]
+    ],
+    "row_evidence": [
+      {
+        "variant": "default",
+        "models": {
+          "ASSIST2009": {
+            "run_ids": [
+              "ASSIST2009-LightSAKT-final-42",
+              "ASSIST2009-LightSAKT-final-123",
+              "ASSIST2009-LightSAKT-final-2026",
+              "ASSIST2009-LightSAKT-final-3407",
+              "ASSIST2009-LightSAKT-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7510559411533763,
+            "sample_sd": 0.0007657191763665232,
+            "equivalent_to": null
+          },
+          "ASSIST2015": {
+            "run_ids": [
+              "ASSIST2015-LightSAKT-final-42",
+              "ASSIST2015-LightSAKT-final-123",
+              "ASSIST2015-LightSAKT-final-2026",
+              "ASSIST2015-LightSAKT-final-3407",
+              "ASSIST2015-LightSAKT-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7260883549405079,
+            "sample_sd": 0.00031486252624865653,
+            "equivalent_to": null
+          },
+          "Algebra2005": {
+            "run_ids": [
+              "Algebra2005-LightSAKT-final-42",
+              "Algebra2005-LightSAKT-final-123",
+              "Algebra2005-LightSAKT-final-2026",
+              "Algebra2005-LightSAKT-final-3407",
+              "Algebra2005-LightSAKT-final-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.810589501606818,
+            "sample_sd": 0.00042168974505793326,
+            "equivalent_to": null
+          }
+        },
+        "status": "Five verified seeds"
+      },
+      {
+        "variant": "no_dropout",
+        "models": {
+          "ASSIST2009": {
+            "run_ids": [
+              "ASSIST2009-LightSAKT-no_dropout-42",
+              "ASSIST2009-LightSAKT-no_dropout-123",
+              "ASSIST2009-LightSAKT-no_dropout-2026",
+              "ASSIST2009-LightSAKT-no_dropout-3407",
+              "ASSIST2009-LightSAKT-no_dropout-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.74934025888673,
+            "sample_sd": 0.0007161455084215511,
+            "equivalent_to": null
+          },
+          "ASSIST2015": {
+            "run_ids": [
+              "ASSIST2015-LightSAKT-no_dropout-42",
+              "ASSIST2015-LightSAKT-no_dropout-123",
+              "ASSIST2015-LightSAKT-no_dropout-2026",
+              "ASSIST2015-LightSAKT-no_dropout-3407",
+              "ASSIST2015-LightSAKT-no_dropout-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7251491368002796,
+            "sample_sd": 0.0005926635712711029,
+            "equivalent_to": null
+          },
+          "Algebra2005": {
+            "run_ids": [
+              "Algebra2005-LightSAKT-no_dropout-42",
+              "Algebra2005-LightSAKT-no_dropout-123",
+              "Algebra2005-LightSAKT-no_dropout-2026",
+              "Algebra2005-LightSAKT-no_dropout-3407",
+              "Algebra2005-LightSAKT-no_dropout-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.8091598428032591,
+            "sample_sd": 0.0004590510799686734,
+            "equivalent_to": null
+          }
+        },
+        "status": "Five verified seeds"
+      },
+      {
+        "variant": "no_position",
+        "models": {
+          "ASSIST2009": {
+            "run_ids": [
+              "ASSIST2009-LightSAKT-no_position-42",
+              "ASSIST2009-LightSAKT-no_position-123",
+              "ASSIST2009-LightSAKT-no_position-2026",
+              "ASSIST2009-LightSAKT-no_position-3407",
+              "ASSIST2009-LightSAKT-no_position-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.750798359841135,
+            "sample_sd": 0.0005831468147117948,
+            "equivalent_to": null
+          },
+          "ASSIST2015": {
+            "run_ids": [
+              "ASSIST2015-LightSAKT-no_position-42",
+              "ASSIST2015-LightSAKT-no_position-123",
+              "ASSIST2015-LightSAKT-no_position-2026",
+              "ASSIST2015-LightSAKT-no_position-3407",
+              "ASSIST2015-LightSAKT-no_position-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7257488514654831,
+            "sample_sd": 0.00018319295906264415,
+            "equivalent_to": null
+          },
+          "Algebra2005": {
+            "run_ids": [
+              "Algebra2005-LightSAKT-no_position-42",
+              "Algebra2005-LightSAKT-no_position-123",
+              "Algebra2005-LightSAKT-no_position-2026",
+              "Algebra2005-LightSAKT-no_position-3407",
+              "Algebra2005-LightSAKT-no_position-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.8114095395655341,
+            "sample_sd": 0.000602583313254385,
+            "equivalent_to": null
+          }
+        },
+        "status": "Five verified seeds"
+      },
+      {
+        "variant": "single_head",
+        "models": {
+          "ASSIST2009": {
+            "run_ids": [
+              "ASSIST2009-LightSAKT-single_head-42",
+              "ASSIST2009-LightSAKT-single_head-123",
+              "ASSIST2009-LightSAKT-single_head-2026",
+              "ASSIST2009-LightSAKT-single_head-3407",
+              "ASSIST2009-LightSAKT-single_head-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.750791009712085,
+            "sample_sd": 0.0007654686707128631,
+            "equivalent_to": null
+          },
+          "ASSIST2015": {
+            "run_ids": [
+              "ASSIST2015-LightSAKT-single_head-42",
+              "ASSIST2015-LightSAKT-single_head-123",
+              "ASSIST2015-LightSAKT-single_head-2026",
+              "ASSIST2015-LightSAKT-single_head-3407",
+              "ASSIST2015-LightSAKT-single_head-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7266221202363885,
+            "sample_sd": 0.0004255637203112726,
+            "equivalent_to": null
+          },
+          "Algebra2005": {
+            "run_ids": [
+              "Algebra2005-LightSAKT-single_head-42",
+              "Algebra2005-LightSAKT-single_head-123",
+              "Algebra2005-LightSAKT-single_head-2026",
+              "Algebra2005-LightSAKT-single_head-3407",
+              "Algebra2005-LightSAKT-single_head-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.8117549348507385,
+            "sample_sd": 0.0004475656604604889,
+            "equivalent_to": null
+          }
+        },
+        "status": "Five verified seeds"
+      },
+      {
+        "variant": "no_attention",
+        "models": {
+          "ASSIST2009": {
+            "run_ids": [
+              "ASSIST2009-LightSAKT-no_attention-42",
+              "ASSIST2009-LightSAKT-no_attention-123",
+              "ASSIST2009-LightSAKT-no_attention-2026",
+              "ASSIST2009-LightSAKT-no_attention-3407",
+              "ASSIST2009-LightSAKT-no_attention-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7083067490947051,
+            "sample_sd": 0.0011074942519050462,
+            "equivalent_to": null
+          },
+          "ASSIST2015": {
+            "run_ids": [
+              "ASSIST2015-LightSAKT-no_attention-42",
+              "ASSIST2015-LightSAKT-no_attention-123",
+              "ASSIST2015-LightSAKT-no_attention-2026",
+              "ASSIST2015-LightSAKT-no_attention-3407",
+              "ASSIST2015-LightSAKT-no_attention-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.6992834838215772,
+            "sample_sd": 0.00044342040826893687,
+            "equivalent_to": null
+          },
+          "Algebra2005": {
+            "run_ids": [
+              "Algebra2005-LightSAKT-no_attention-42",
+              "Algebra2005-LightSAKT-no_attention-123",
+              "Algebra2005-LightSAKT-no_attention-2026",
+              "Algebra2005-LightSAKT-no_attention-3407",
+              "Algebra2005-LightSAKT-no_attention-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7725501113622579,
+            "sample_sd": 0.0005154214382234003,
+            "equivalent_to": null
+          }
+        },
+        "status": "Five verified seeds"
+      },
+      {
+        "variant": null,
+        "models": {},
+        "status": "Not run; no number available"
+      },
+      {
+        "variant": "no_regularization",
+        "models": {
+          "ASSIST2009": {
+            "run_ids": [
+              "ASSIST2009-LightSAKT-no_regularization-42",
+              "ASSIST2009-LightSAKT-no_regularization-123",
+              "ASSIST2009-LightSAKT-no_regularization-2026",
+              "ASSIST2009-LightSAKT-no_regularization-3407",
+              "ASSIST2009-LightSAKT-no_regularization-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.74934025888673,
+            "sample_sd": 0.0007161455084215511,
+            "equivalent_to": "no_dropout"
+          },
+          "ASSIST2015": {
+            "run_ids": [
+              "ASSIST2015-LightSAKT-no_regularization-42",
+              "ASSIST2015-LightSAKT-no_regularization-123",
+              "ASSIST2015-LightSAKT-no_regularization-2026",
+              "ASSIST2015-LightSAKT-no_regularization-3407",
+              "ASSIST2015-LightSAKT-no_regularization-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.7251491368002796,
+            "sample_sd": 0.0005926635712711029,
+            "equivalent_to": "no_dropout"
+          },
+          "Algebra2005": {
+            "run_ids": [
+              "Algebra2005-LightSAKT-no_regularization-42",
+              "Algebra2005-LightSAKT-no_regularization-123",
+              "Algebra2005-LightSAKT-no_regularization-2026",
+              "Algebra2005-LightSAKT-no_regularization-3407",
+              "Algebra2005-LightSAKT-no_regularization-7777"
+            ],
+            "metric": "test.auc",
+            "mean": 0.8091598428032591,
+            "sample_sd": 0.0004590510799686734,
+            "equivalent_to": "no_dropout"
+          }
+        },
+        "status": "Five verified seeds"
+      }
+    ],
+    "notes": [
+      "Held-out test AUC: mean ± sample SD over five seeds. Bold marks the highest measured mean in each dataset.",
+      "* Not run: the original image includes layer-normalization removal, but no verified experiment exists for it.",
+      "† Without regularization equals No Dropout (same evidence); it is not an independent ablation."
+    ],
+    "bold_cells": [
+      [
+        0,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "bold_rows": [],
+    "groups": [],
+    "grid": false,
+    "gkt": "not present in original table",
+    "partially_unavailable": [
+      "No layer normalization: not run; all three cells explicitly labelled Not run"
+    ],
+    "size": [
+      12.1,
+      4.8
+    ],
+    "font": 12.1,
+    "widths": [
+      3.4,
+      2.5,
+      2.5,
+      2.6
+    ],
+    "subtitle": "Corrected LightSAKT · five-seed test AUC",
+    "table_top": 0.82,
+    "table_bottom": 0.32
+  }
+]
