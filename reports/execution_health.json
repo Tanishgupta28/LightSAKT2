@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-10-17T20:15:57.698381+00:00",
-  "sample_time": 1792268156.9362307,
+  "updated_utc": "2026-10-17T23:04:05.109197+00:00",
+  "sample_time": 1792278244.463292,
   "counts": {
     "completed": 793,
     "pending": 163,
@@ -13,12 +13,12 @@
   "training_processes": [
     {
       "pid": 1859996,
-      "cpu_seconds": 11.05,
-      "process_state": "S",
+      "cpu_seconds": 10095.68,
+      "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.70102405548096,
-      "cpu_seconds_advanced": 2.8100000000000005
+      "observed_seconds": 62.36223864555359,
+      "cpu_seconds_advanced": 62.340000000000146
     },
     {
       "pid": 1889622,
@@ -26,22 +26,22 @@
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 0.2,
+      "observed_seconds": 62.36223864555359,
       "cpu_seconds_advanced": 0.0
     }
   ],
   "active_runs": [
     {
       "run_id": "ASSIST2015-GKT-baseline_tuning-42-46e2b35f2589",
-      "last_completed_epoch": 0,
+      "last_completed_epoch": 16,
       "best_checkpoint": "checkpoints/ASSIST2015-GKT-baseline_tuning-42-46e2b35f2589/best.pt",
       "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-GKT-baseline_tuning-42-46e2b35f2589/config.json",
-      "recent_mean_epoch_seconds": null,
-      "seconds_since_last_epoch": 1.512939691543579,
-      "startup_epoch_seconds_extrapolated": 637.9060502353293,
-      "first_checkpoint_startup_grace_seconds": 30.0,
-      "age_reference": "initial running status; first checkpoint not yet saved",
-      "stall_threshold_seconds": 1913.718150705988,
+      "recent_mean_epoch_seconds": 590.5245092009893,
+      "seconds_since_last_epoch": 557.9187598228455,
+      "startup_epoch_seconds_extrapolated": null,
+      "first_checkpoint_startup_grace_seconds": null,
+      "age_reference": "history checkpoint",
+      "stall_threshold_seconds": 1771.573527602968,
       "checkpoint_stalled": false
     }
   ],
