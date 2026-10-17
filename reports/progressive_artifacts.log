@@ -2228,3 +2228,19 @@ Algebra2005              36                 6           30           0        -0
 Algebra2005              36                 6           30           0        -0.002002          -0.002387           -0.004669            0.002416        0.001774
  ASSIST2009              36                31            5           0         0.002803           0.002287           -0.001221            0.011890        0.003232
  ASSIST2015              36                29            7           0         0.002192           0.000610           -0.001760            0.014603        0.004215
+{
+  "remaining_training_hours": {
+    "low": 85.71222226579185,
+    "central": 412.12128843550215,
+    "high": 1194.7322508406783
+  },
+  "finish_utc": {
+    "low": "2026-10-20T16:48:34.509338+00:00",
+    "central": "2026-11-03T07:13:07.147549+00:00",
+    "high": "2026-12-05T21:49:46.612207+00:00"
+  }
+}
+    dataset  configurations  LightSAKT_higher  SAKT_higher  exact_ties  mean_difference  median_difference  minimum_difference  maximum_difference  descriptive_sd
+Algebra2005              36                 6           30           0        -0.002002          -0.002387           -0.004669            0.002416        0.001774
+ ASSIST2009              36                31            5           0         0.002803           0.002287           -0.001221            0.011890        0.003232
+ ASSIST2015              36                29            7           0         0.002192           0.000610           -0.001760            0.014603        0.004215

@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-10-17T03:01:59.787159+00:00",
-  "sample_time": 1792206118.640257,
+  "updated_utc": "2026-10-17T04:42:16.892814+00:00",
+  "sample_time": 1792212136.0564463,
   "counts": {
     "completed": 784,
     "pending": 172,
@@ -13,12 +13,12 @@
   "training_processes": [
     {
       "pid": 1658285,
-      "cpu_seconds": 16.09,
-      "process_state": "S",
+      "cpu_seconds": 6031.54,
+      "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.47365212440491,
-      "cpu_seconds_advanced": 8.66
+      "observed_seconds": 62.78963112831116,
+      "cpu_seconds_advanced": 62.8100000000004
     },
     {
       "pid": 1680852,
@@ -26,22 +26,22 @@
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 0.2,
+      "observed_seconds": 62.78963112831116,
       "cpu_seconds_advanced": 0.0
     }
   ],
   "active_runs": [
     {
       "run_id": "ASSIST2015-GKT-baseline_tuning-42-1651c86ef2c2",
-      "last_completed_epoch": 0,
+      "last_completed_epoch": 9,
       "best_checkpoint": "checkpoints/ASSIST2015-GKT-baseline_tuning-42-1651c86ef2c2/best.pt",
       "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-GKT-baseline_tuning-42-1651c86ef2c2/config.json",
-      "recent_mean_epoch_seconds": null,
-      "seconds_since_last_epoch": 7.957777976989746,
-      "startup_epoch_seconds_extrapolated": 666.2242460919678,
-      "first_checkpoint_startup_grace_seconds": 30.0,
-      "age_reference": "initial running status; first checkpoint not yet saved",
-      "stall_threshold_seconds": 1998.6727382759032,
+      "recent_mean_epoch_seconds": 602.0671064933995,
+      "seconds_since_last_epoch": 598.1813492774963,
+      "startup_epoch_seconds_extrapolated": null,
+      "first_checkpoint_startup_grace_seconds": null,
+      "age_reference": "history checkpoint",
+      "stall_threshold_seconds": 1806.2013194801984,
       "checkpoint_stalled": false
     }
   ],
