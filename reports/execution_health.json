@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-17T23:04:05.109197+00:00",
-  "sample_time": 1792278244.463292,
+  "updated_utc": "2026-10-18T00:43:13.948732+00:00",
+  "sample_time": 1792284193.301241,
   "counts": {
-    "completed": 793,
-    "pending": 163,
+    "completed": 794,
+    "pending": 162,
     "running": 1
   },
   "scheduler": {
@@ -12,40 +12,40 @@
   },
   "training_processes": [
     {
-      "pid": 1859996,
-      "cpu_seconds": 10095.68,
+      "pid": 1889622,
+      "cpu_seconds": 5903.04,
       "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.36223864555359,
+      "observed_seconds": 62.359150648117065,
       "cpu_seconds_advanced": 62.340000000000146
     },
     {
-      "pid": 1889622,
-      "cpu_seconds": 8.13,
+      "pid": 1921832,
+      "cpu_seconds": 7.73,
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.36223864555359,
+      "observed_seconds": 62.359150648117065,
       "cpu_seconds_advanced": 0.0
     }
   ],
   "active_runs": [
     {
-      "run_id": "ASSIST2015-GKT-baseline_tuning-42-46e2b35f2589",
-      "last_completed_epoch": 16,
-      "best_checkpoint": "checkpoints/ASSIST2015-GKT-baseline_tuning-42-46e2b35f2589/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-GKT-baseline_tuning-42-46e2b35f2589/config.json",
-      "recent_mean_epoch_seconds": 590.5245092009893,
-      "seconds_since_last_epoch": 557.9187598228455,
+      "run_id": "ASSIST2015-GKT-baseline_tuning-42-5b829b50228b",
+      "last_completed_epoch": 10,
+      "best_checkpoint": "checkpoints/ASSIST2015-GKT-baseline_tuning-42-5b829b50228b/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-GKT-baseline_tuning-42-5b829b50228b/config.json",
+      "recent_mean_epoch_seconds": 583.6683420949848,
+      "seconds_since_last_epoch": 12.987151861190796,
       "startup_epoch_seconds_extrapolated": null,
       "first_checkpoint_startup_grace_seconds": null,
       "age_reference": "history checkpoint",
-      "stall_threshold_seconds": 1771.573527602968,
+      "stall_threshold_seconds": 1751.0050262849545,
       "checkpoint_stalled": false
     }
   ],
-  "gpu_memory_mib": 1710,
+  "gpu_memory_mib": 2048,
   "gpu_capacity_mib": 40320,
   "gpu_utilization_percent": null,
   "gpu_utilization_reason": "Unavailable for this MIG device; process/epoch evidence is used instead.",
