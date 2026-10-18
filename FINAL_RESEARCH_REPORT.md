@@ -66,9 +66,9 @@ Completed smoke runs: 1. Smoke validation is not a final research comparison.
 ## Experiment schedule status
 
 {
-  "completed": 797,
-  "pending": 159,
-  "running": 1
+  "completed": 798,
+  "running": 1,
+  "pending": 158
 }
 
 Total requested schedule slots: 957. Counts include 21 seed-42 checkpoint reuse slots, 15 regularization aliases, and 9 verified primary/grid reuse slots, which are not new independent trainings. Distinct planned trainings: 912. Every required grid row is retained. The five-seed primary result is the mean, never the best seed. All remaining pending slots have no experimental result yet.
@@ -138,7 +138,7 @@ The CPU recovery supervisor protects existing training, recovers missing process
 
 ## Comparison against completed baselines
 
-Generated UTC: 2026-10-18T03:53:28.261874+00:00
+Generated UTC: 2026-10-18T05:14:04.378141+00:00
 
 This comparison includes only completed selected five-seed DKT, DKT+, DKVMN and SAKT results on the same locked splits. It excludes historical manuscript scores, primary single-seed runs, partial seed sets and both GKT variants. Best means highest completed five-seed mean test AUC among these four baselines. This is a descriptive leaderboard after evaluation; it does not select hyperparameters, checkpoints or future experiments.
 
