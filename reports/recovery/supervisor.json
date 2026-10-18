@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-10-18T16:19:03.966490+00:00",
+  "observed_utc": "2026-10-18T18:29:01.253725+00:00",
   "supervisor_pid": 818850,
   "completed": 801,
   "remaining": 156,
@@ -57,11 +57,6 @@
     {
       "pid": 2137070,
       "module": "scripts.run",
-      "watchdog": false
-    },
-    {
-      "pid": 2137232,
-      "module": "scripts.eta",
       "watchdog": false
     }
   ],
