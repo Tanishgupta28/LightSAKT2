@@ -1,6 +1,6 @@
 # Verified selected LightSAKT final-seed results
 
-Generated UTC: 2026-10-19T14:12:31.391236+00:00
+Generated UTC: 2026-10-19T16:08:09.484570+00:00
 
 Completion and integrity were rechecked from saved artifacts. There are five distinct initialization seeds per dataset; seed 42 reuses the selected tuning checkpoint without retraining. Split seed is 42 for every run. All reported test labels and inference sequence identities match the locked student-disjoint test records.
 
