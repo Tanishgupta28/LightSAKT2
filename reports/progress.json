@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-10-19T01:36:59.436975+00:00",
+  "updated_utc": "2026-10-19T02:56:43.197966+00:00",
   "total_slots": 957,
-  "completed": 805,
-  "remaining": 152,
+  "completed": 807,
+  "remaining": 150,
   "counts": {
-    "completed": 805,
-    "pending": 151,
+    "completed": 807,
+    "pending": 149,
     "running": 1
   },
   "processes": {
@@ -44,10 +44,10 @@
   },
   "running_jobs": [
     {
-      "run_id": "ASSIST2015-GKT-baseline_tuning-42-b5ab999a1945",
+      "run_id": "ASSIST2015-GKT-baseline_tuning-42-c217ebb4917d",
       "last_completed_epoch": 0,
-      "best_checkpoint": "checkpoints/ASSIST2015-GKT-baseline_tuning-42-b5ab999a1945/best.pt",
-      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-GKT-baseline_tuning-42-b5ab999a1945/config.json"
+      "best_checkpoint": "checkpoints/ASSIST2015-GKT-baseline_tuning-42-c217ebb4917d/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-GKT-baseline_tuning-42-c217ebb4917d/config.json"
     }
   ],
   "phase_counts": {
@@ -55,8 +55,8 @@
       "completed": 21
     },
     "6": {
-      "completed": 634,
-      "pending": 121,
+      "completed": 636,
+      "pending": 119,
       "running": 1
     },
     "7": {

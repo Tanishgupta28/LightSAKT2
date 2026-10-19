@@ -1,6 +1,8 @@
 {
   "run_id": "ASSIST2015-GKT-baseline_tuning-42-bc5df7d0769a",
-  "status": "pending",
-  "execution_coordinator_pid": 191761,
-  "waiting_for_gpu_admission": true
+  "status": "completed",
+  "last_completed_epoch": 14,
+  "reused_training_run": "ASSIST2015-GKT-primary-42-c3a67383f961",
+  "best_checkpoint": "checkpoints/ASSIST2015-GKT-primary-42-c3a67383f961/best.pt",
+  "failure_reason": null
 }
