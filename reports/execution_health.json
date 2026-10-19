@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-10-19T08:10:11.731822+00:00",
-  "sample_time": 1792397410.9501822,
+  "updated_utc": "2026-10-19T14:11:14.162564+00:00",
+  "sample_time": 1792419073.4418952,
   "counts": {
     "completed": 810,
     "pending": 146,
@@ -13,35 +13,35 @@
   "training_processes": [
     {
       "pid": 2291492,
-      "cpu_seconds": 26.34,
+      "cpu_seconds": 21683.02,
       "process_state": "R",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 62.604334115982056,
-      "cpu_seconds_advanced": 18.64
+      "observed_seconds": 62.70934748649597,
+      "cpu_seconds_advanced": 62.70999999999913
     },
     {
       "pid": 2325921,
-      "cpu_seconds": 7.62,
+      "cpu_seconds": 7.63,
       "process_state": "S",
       "ppid": 191761,
       "session_id": 78472,
-      "observed_seconds": 0.2,
+      "observed_seconds": 62.70934748649597,
       "cpu_seconds_advanced": 0.0
     }
   ],
   "active_runs": [
     {
       "run_id": "ASSIST2015-GKT-baseline_tuning-42-c7c1bf974011",
-      "last_completed_epoch": 0,
+      "last_completed_epoch": 36,
       "best_checkpoint": "checkpoints/ASSIST2015-GKT-baseline_tuning-42-c7c1bf974011/best.pt",
       "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-GKT-baseline_tuning-42-c7c1bf974011/config.json",
-      "recent_mean_epoch_seconds": null,
-      "seconds_since_last_epoch": 17.433924198150635,
-      "startup_epoch_seconds_extrapolated": 623.509661931662,
-      "first_checkpoint_startup_grace_seconds": 30.0,
-      "age_reference": "initial running status; first checkpoint not yet saved",
-      "stall_threshold_seconds": 1870.528985794986,
+      "recent_mean_epoch_seconds": 603.7766356928041,
+      "seconds_since_last_epoch": 3.0821661949157715,
+      "startup_epoch_seconds_extrapolated": null,
+      "first_checkpoint_startup_grace_seconds": null,
+      "age_reference": "history checkpoint",
+      "stall_threshold_seconds": 1811.3299070784124,
       "checkpoint_stalled": false
     }
   ],

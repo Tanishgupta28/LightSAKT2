@@ -67,7 +67,7 @@ Algebra2005: LightSAKT mean test AUC minus SAKT was -0.002784 across the five pr
 
 ## Comparison with the best completed baseline
 
-Generated UTC: 2026-10-19T05:11:06.693900+00:00
+Generated UTC: 2026-10-19T08:11:47.367119+00:00
 
 This comparison includes only completed selected five-seed DKT, DKT+, DKVMN and SAKT results on the same locked splits. It excludes historical manuscript scores, primary single-seed runs, partial seed sets and both GKT variants. Best means highest completed five-seed mean test AUC among these four baselines. This is a descriptive leaderboard after evaluation; it does not select hyperparameters, checkpoints or future experiments.
 
