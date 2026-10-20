@@ -1,5 +1,11 @@
 # Next checkpoint
 
+Latest user clarification: preserve all work; do not stop LightSAKT2 solely to
+free the GPU before HiTSKT allocation is confirmed. No CUDA/training without
+verified authorization, no hold release/restart. No new process/GPU observation
+was made in this documentation-only clarification. Prior handoff below remains
+historical evidence; allocation-first sequencing supersedes earlier ordering.
+
 Preservation/hold complete; stop operational work. Leave
 `experiments/USER_TRAINING_HOLD.json` present, all scientific artifacts and older
 dirty state intact. Publish scoped controls/evidence/memory to `research-rebuild`

@@ -1,5 +1,11 @@
 # Current state
 
+Latest user clarification: preserve all work; do not stop LightSAKT2 solely to
+free the GPU before HiTSKT allocation is confirmed. No CUDA/training without
+verified authorization, no hold release/restart. No new process/GPU observation
+was made in this documentation-only clarification. Prior handoff below remains
+historical evidence; allocation-first sequencing supersedes earlier ordering.
+
 20 October 2026 UTC. Base `34eeefb7d6b99ad079eab4da340877e46e48a8ec`,
 `research-rebuild`. No live training or known local controller/recovery worker;
 old PIDs absent/zombie and stale heartbeat are not activity. **813 completed,
