@@ -1,6 +1,19 @@
 # User directives
 
-## Latest clarification — allocation first, 20 October2026
+## Latest authorization — verified shutdown and existing-reservation reuse
+
+20 October2026: user again authorizes stopping only verified owned LightSAKT2
+training and disabling its restart/submissions, preserving all checkpoints/results/
+configs/logs. They do not want LightSAKT2 continued now. This supersedes the prior
+allocation-first no-stop instruction for verified LightSAKT2 only. No unrelated
+termination or reservation override. One bounded status/allocation check, no
+polling/redundant audits. HiTSKT may reuse an existing allocation if its actual
+permissions allow transfer under the same account/project/reservation without
+conflicts; do not unnecessarily request a new allocation. Otherwise stop before
+CUDA and explain missing permission. Staged CUDA then <=5 ASSIST train-only
+updates authorized conditionally; no full training/test evaluation/DKT changes.
+
+## Earlier clarification — allocation first, 20 October2026
 
 User has no exclusive MIG assignment evidence. Preserve all checkpoints/results;
 do not stop LightSAKT2 solely for GPU release before HiTSKT allocation is confirmed.

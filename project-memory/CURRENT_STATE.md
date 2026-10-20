@@ -1,5 +1,18 @@
 # Current state
 
+Latest09:24UTC,20 October2026: renewed user authorization permits stopping
+verified owned LightSAKT2 now and disabling restarts. Single fresh check found
+no live trainer/controller/recovery or GPU handles; persistent hold intact,
+813 completed/142 pending/2 interrupted, zero signals needed/sent. All7915 old
+files present/same size;8 key hashes and local recovery archive unchanged. No
+repeated full audit or tests. Sole MIG nearly empty with no visible GPU owners,
+but existing allocation owner/account/transfer/window/conflicts are unverified
+(no scheduler evidence, Kubernetes403). A new allocation is not required if the
+existing one authorizes HiTSKT. Stop before CUDA; do not resume LightSAKT2,
+bypass the hold, poll automatically or change artifacts. HiTSKT evidence/report:
+`/workspace/capstone/reports/favor_plus_v1/EXISTING_ALLOCATION_REUSE_STATUS_20261020.md`.
+Earlier conclusions/instructions below are historical where superseded.
+
 Latest user clarification: preserve all work; do not stop LightSAKT2 solely to
 free the GPU before HiTSKT allocation is confirmed. No CUDA/training without
 verified authorization, no hold release/restart. No new process/GPU observation

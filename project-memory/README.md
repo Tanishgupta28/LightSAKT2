@@ -10,8 +10,9 @@ Read [USER_DIRECTIVES.md](USER_DIRECTIVES.md), [CURRENT_STATE.md](CURRENT_STATE.
 [DECISION_LOG.md](DECISION_LOG.md), then [NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md).
 The current conclusion is **user hold active; no live LightSAKT2 training;
 813 completed /142 pending /2 interrupted**. Completed artifacts and epoch-2
-recovery state verified. GPU is still blocked by unrelated work and missing
-exclusive assignment. No automatic resume or watcher.
+recovery state verified. At the latest09:24UTC recheck no visible GPU handles remain; reuse is still blocked
+by missing existing-reservation owner/transfer/window/no-conflict evidence. No
+automatic resume or watcher. Earlier busy snapshots are historical.
 
 Primary evidence: `reports/LIGHTSAKT2_HITSKT_PRIORITY_HANDOFF_20261020.md` and
 `reports/priority_handoff_20261020/`. Preserve the substantial pre-existing
