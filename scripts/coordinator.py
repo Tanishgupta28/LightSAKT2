@@ -45,6 +45,8 @@ def eligible(job,jobs):
 
 
 def main():
+    from scripts.user_training_hold import require_training_enabled,training_is_held
+    require_training_enabled()
     if not json.load(open('experiments/optimization_request.json')).get('coordinate_complete_schedule'):return
     lock=open('experiments/coordinator.lock','w')
     try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
@@ -60,6 +62,7 @@ def main():
             if process.poll() is None:process.send_signal(signal.SIGINT)
     signal.signal(signal.SIGINT,interrupted);signal.signal(signal.SIGTERM,interrupted)
     while True:
+        if training_is_held():stop=True
         for run_id,(process,job) in list(processes.items()):
             rc=process.poll()
             if rc is None:continue

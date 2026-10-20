@@ -9,6 +9,8 @@ from src.training.engine import write_json
 
 
 def after_run():
+    from scripts.user_training_hold import training_is_held
+    if training_is_held():return
     if os.environ.get('LIGHTSAKT_COORDINATED_CHILD'):
         required_efficiency();additional_gkt_probe();verify_ablations_between_runs();return
     request=Path('experiments/optimization_request.json')

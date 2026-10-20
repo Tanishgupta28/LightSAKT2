@@ -28,6 +28,8 @@ def commands(manifest):
 
 
 def main(retry_failed=False):
+    from scripts.user_training_hold import require_training_enabled
+    require_training_enabled()
     progress=snapshot()
     if not progress['all_training_slots_completed']:
         raise SystemExit(f"Final analyses pending: {progress['remaining']} experiment slots remain; no completion claim.")

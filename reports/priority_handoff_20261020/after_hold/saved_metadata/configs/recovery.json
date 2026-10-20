@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "project_root": "/workspace/LightSAKT2",
+  "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "cuda_visible_devices": null,
+  "interval_seconds": 30,
+  "retry_cooldown_seconds": 120,
+  "max_attempts_without_progress": 3,
+  "automatic_platform_restart": false,
+  "scope": "Complete existing manifest; completed runs skipped",
+  "training_env": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "python_version": "3.10.12",
+  "package_versions": {
+    "torch": "2.4.0a0+f70bd71a48.nv24.6",
+    "numpy": "1.24.4",
+    "pandas": "2.2.1",
+    "scikit-learn": "1.5.0",
+    "scipy": "1.13.1"
+  }
+}

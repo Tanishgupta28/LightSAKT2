@@ -56,6 +56,8 @@ def materialize(job,manifest):
 
 
 def main():
+    from scripts.user_training_hold import require_training_enabled
+    require_training_enabled()
     parser=argparse.ArgumentParser();parser.add_argument('--retry-failed',action='store_true');parser.add_argument('--max-jobs',type=int)
     args=parser.parse_args()
     lock=open('experiments/scheduler.lock','w')
@@ -90,6 +92,7 @@ def main():
     attempted=set()
     for phase in [5,6,7,8]:
         while True:
+            require_training_enabled()
             status(manifest)
             jobs=[j for j in manifest['jobs'] if j['phase']==phase and j['run_id'] not in attempted and j['status'] in (['pending','interrupted','failed'] if args.retry_failed else ['pending','interrupted'])]
             runnable=next((j for j in jobs if materialize(j,manifest)),None)

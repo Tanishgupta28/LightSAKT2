@@ -1,0 +1,71 @@
+{
+  "updated_utc": "2026-10-19T18:11:05.485329+00:00",
+  "total_slots": 957,
+  "completed": 813,
+  "remaining": 144,
+  "counts": {
+    "completed": 813,
+    "pending": 143,
+    "running": 1
+  },
+  "processes": {
+    "scheduler": {
+      "pid": 78472,
+      "alive": true
+    },
+    "preservation": {
+      "pid": 212401,
+      "alive": true
+    },
+    "eta": {
+      "pid": 986001,
+      "alive": true
+    },
+    "offsite": {
+      "pid": 1722517,
+      "alive": true
+    },
+    "coordinator": {
+      "pid": 191761,
+      "alive": true
+    },
+    "progressive": {
+      "pid": 185610,
+      "alive": true
+    },
+    "active_recovery": {
+      "pid": 818712,
+      "alive": true
+    }
+  },
+  "running_jobs": [
+    {
+      "run_id": "ASSIST2015-GKT-baseline_tuning-42-e01b589e46cc",
+      "last_completed_epoch": 2,
+      "best_checkpoint": "checkpoints/ASSIST2015-GKT-baseline_tuning-42-e01b589e46cc/best.pt",
+      "resume_command": "python -m scripts.run --config results/raw/ASSIST2015-GKT-baseline_tuning-42-e01b589e46cc/config.json"
+    }
+  ],
+  "phase_counts": {
+    "5": {
+      "completed": 21
+    },
+    "6": {
+      "completed": 642,
+      "pending": 113,
+      "running": 1
+    },
+    "7": {
+      "completed": 75,
+      "pending": 30
+    },
+    "8": {
+      "completed": 75
+    }
+  },
+  "reused_slots": 45,
+  "additional_primary_grid_reuses": 9,
+  "distinct_training_runs_planned": 912,
+  "all_training_slots_completed": false,
+  "research_verified_complete": false
+}

@@ -7,9 +7,12 @@ from pathlib import Path
 
 @contextmanager
 def admission(model,path='experiments/gpu_admission.lock'):
+    from scripts.user_training_hold import require_training_enabled
+    require_training_enabled()
     Path(path).parent.mkdir(parents=True,exist_ok=True)
     with open(path,'a') as lock:
         fcntl.flock(lock,fcntl.LOCK_SH if model=='GKT_MHA' else fcntl.LOCK_EX)
+        require_training_enabled()
         slot=None
         try:
             if model=='GKT_MHA':

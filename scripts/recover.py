@@ -152,6 +152,12 @@ def plan(observed,completed,total):
 
 
 def ensure(policy,attempts):
+    from scripts.user_training_hold import training_is_held
+    if training_is_held():
+        return {'observed_utc':datetime.now(timezone.utc).isoformat(),
+                'blocked':'Explicit user training hold for HiTSKT priority',
+                'launched':[],'signals_sent':0,'completed_training_restarted':False,
+                'automatic_platform_restart':False}
     from scripts.progress import snapshot
     progress=snapshot();observed=processes();decision=plan(observed,progress['completed'],progress['total_slots'])
     result={'observed_utc':datetime.now(timezone.utc).isoformat(),'supervisor_pid':os.getpid(),
@@ -198,6 +204,8 @@ def ensure(policy,attempts):
 
 
 def start():
+    from scripts.user_training_hold import require_training_enabled
+    require_training_enabled()
     policy=configure()
     with available_lock('experiments/recovery_start.lock') as free:
         if not free:return {'status':'Startup already being checked'}
@@ -209,15 +217,20 @@ def start():
 
 
 def watch():
+    from scripts.user_training_hold import require_training_enabled
+    require_training_enabled()
     policy=configure();attempts={};previous_completed=None
     with available_lock('experiments/recovery_supervisor.lock') as free:
         if not free:raise SystemExit('A recovery supervisor already exists')
         Path('experiments/recovery_supervisor.pid').write_text(str(os.getpid())+'\n')
         while True:
+            require_training_enabled()
             try:
                 with available_lock('experiments/recovery_action.lock') as action:
                     if not action:time.sleep(1);continue
                     result=ensure(policy,attempts)
+                if result.get('blocked')=='Explicit user training hold for HiTSKT priority':
+                    return
                 if previous_completed is not None and result['completed']>previous_completed:attempts={}
                 previous_completed=result['completed'];write_json('reports/recovery/supervisor.json',result)
             except Exception as error:

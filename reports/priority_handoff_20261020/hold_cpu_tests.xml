@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="6" skipped="0" tests="9" time="11.998" timestamp="2026-10-20T06:48:24.235551" hostname="dgxhnode3"><testcase classname="tests.test_user_training_hold" name="test_absent_marker_allows_metadata_gate_and_malformed_marker_blocks" time="0.395" /><testcase classname="tests.test_user_training_hold" name="test_recovery_hold_returns_before_snapshot_or_any_launch" time="1.447" /><testcase classname="tests.test_user_training_hold" name="test_actual_entrypoints_refuse_before_cuda_or_child_creation[scripts.schedule-args0]" time="1.655"><failure message="assert 'explicit user hold' in 'Traceback (most recent call last):\n  File &quot;&lt;string&gt;&quot;, line 8, in &lt;module&gt;\n  File &quot;/usr/lib/python3.10/runpy.py&quot;, li...'-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n'&#10; +  where 'Traceback (most recent call last):\n  File &quot;&lt;string&gt;&quot;, line 8, in &lt;module&gt;\n  File &quot;/usr/lib/python3.10/runpy.py&quot;, li...'-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n' = CompletedProcess(args=['/usr/bin/python', '-c', &quot;\nimport runpy,sys,torch,subprocess\ndef forbidden(*a,**k):raise Asse...-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n').stderr">module = 'scripts.schedule', args = []
+
+    @pytest.mark.parametrize('module,args',[
+        ('scripts.schedule',[]),('scripts.coordinator',[]),('scripts.recover',['--start']),
+        ('scripts.recover',['--watch']),('scripts.run',['--config','DO_NOT_READ.json']),
+        ('scripts.finalize',[]),
+    ])
+    def test_actual_entrypoints_refuse_before_cuda_or_child_creation(module,args):
+        # Existing real user hold is intentionally kept in place. GPU APIs and
+        # subprocess launches are trapped before importing the selected entry point.
+        code='''
+    import runpy,sys,torch,subprocess
+    def forbidden(*a,**k):raise AssertionError('held entrypoint cannot probe CUDA or spawn a child')
+    for name in ['is_available','init','_lazy_init','manual_seed','manual_seed_all','get_device_properties']:
+     setattr(torch.cuda,name,forbidden)
+    subprocess.Popen=forbidden
+    sys.argv=sys.argv[1:]
+    runpy.run_module(sys.argv[0],run_name='__main__')
+    '''
+        result=subprocess.run([sys.executable,'-c',code,module,*args],text=True,capture_output=True)
+        assert result.returncode!=0
+&gt;       assert 'explicit user hold' in result.stderr
+E       assert 'explicit user hold' in 'Traceback (most recent call last):\n  File "&lt;string&gt;", line 8, in &lt;module&gt;\n  File "/usr/lib/python3.10/runpy.py", li...'-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n'
+E        +  where 'Traceback (most recent call last):\n  File "&lt;string&gt;", line 8, in &lt;module&gt;\n  File "/usr/lib/python3.10/runpy.py", li...'-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n' = CompletedProcess(args=['/usr/bin/python', '-c', "\nimport runpy,sys,torch,subprocess\ndef forbidden(*a,**k):raise Asse...-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n').stderr
+
+tests/test_user_training_hold.py:49: AssertionError</failure></testcase><testcase classname="tests.test_user_training_hold" name="test_actual_entrypoints_refuse_before_cuda_or_child_creation[scripts.coordinator-args1]" time="1.728"><failure message="assert 'explicit user hold' in 'Traceback (most recent call last):\n  File &quot;&lt;string&gt;&quot;, line 8, in &lt;module&gt;\n  File &quot;/usr/lib/python3.10/runpy.py&quot;, li...'-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n'&#10; +  where 'Traceback (most recent call last):\n  File &quot;&lt;string&gt;&quot;, line 8, in &lt;module&gt;\n  File &quot;/usr/lib/python3.10/runpy.py&quot;, li...'-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n' = CompletedProcess(args=['/usr/bin/python', '-c', &quot;\nimport runpy,sys,torch,subprocess\ndef forbidden(*a,**k):raise Asse...-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n').stderr">module = 'scripts.coordinator', args = []
+
+    @pytest.mark.parametrize('module,args',[
+        ('scripts.schedule',[]),('scripts.coordinator',[]),('scripts.recover',['--start']),
+        ('scripts.recover',['--watch']),('scripts.run',['--config','DO_NOT_READ.json']),
+        ('scripts.finalize',[]),
+    ])
+    def test_actual_entrypoints_refuse_before_cuda_or_child_creation(module,args):
+        # Existing real user hold is intentionally kept in place. GPU APIs and
+        # subprocess launches are trapped before importing the selected entry point.
+        code='''
+    import runpy,sys,torch,subprocess
+    def forbidden(*a,**k):raise AssertionError('held entrypoint cannot probe CUDA or spawn a child')
+    for name in ['is_available','init','_lazy_init','manual_seed','manual_seed_all','get_device_properties']:
+     setattr(torch.cuda,name,forbidden)
+    subprocess.Popen=forbidden
+    sys.argv=sys.argv[1:]
+    runpy.run_module(sys.argv[0],run_name='__main__')
+    '''
+        result=subprocess.run([sys.executable,'-c',code,module,*args],text=True,capture_output=True)
+        assert result.returncode!=0
+&gt;       assert 'explicit user hold' in result.stderr
+E       assert 'explicit user hold' in 'Traceback (most recent call last):\n  File "&lt;string&gt;", line 8, in &lt;module&gt;\n  File "/usr/lib/python3.10/runpy.py", li...'-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n'
+E        +  where 'Traceback (most recent call last):\n  File "&lt;string&gt;", line 8, in &lt;module&gt;\n  File "/usr/lib/python3.10/runpy.py", li...'-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n' = CompletedProcess(args=['/usr/bin/python', '-c', "\nimport runpy,sys,torch,subprocess\ndef forbidden(*a,**k):raise Asse...-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n').stderr
+
+tests/test_user_training_hold.py:49: AssertionError</failure></testcase><testcase classname="tests.test_user_training_hold" name="test_actual_entrypoints_refuse_before_cuda_or_child_creation[scripts.recover-args2]" time="1.681"><failure message="assert 'explicit user hold' in 'Traceback (most recent call last):\n  File &quot;&lt;string&gt;&quot;, line 8, in &lt;module&gt;\n  File &quot;/usr/lib/python3.10/runpy.py&quot;, li...'-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n'&#10; +  where 'Traceback (most recent call last):\n  File &quot;&lt;string&gt;&quot;, line 8, in &lt;module&gt;\n  File &quot;/usr/lib/python3.10/runpy.py&quot;, li...'-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n' = CompletedProcess(args=['/usr/bin/python', '-c', &quot;\nimport runpy,sys,torch,subprocess\ndef forbidden(*a,**k):raise Asse...-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n').stderr">module = 'scripts.recover', args = ['--start']
+
+    @pytest.mark.parametrize('module,args',[
+        ('scripts.schedule',[]),('scripts.coordinator',[]),('scripts.recover',['--start']),
+        ('scripts.recover',['--watch']),('scripts.run',['--config','DO_NOT_READ.json']),
+        ('scripts.finalize',[]),
+    ])
+    def test_actual_entrypoints_refuse_before_cuda_or_child_creation(module,args):
+        # Existing real user hold is intentionally kept in place. GPU APIs and
+        # subprocess launches are trapped before importing the selected entry point.
+        code='''
+    import runpy,sys,torch,subprocess
+    def forbidden(*a,**k):raise AssertionError('held entrypoint cannot probe CUDA or spawn a child')
+    for name in ['is_available','init','_lazy_init','manual_seed','manual_seed_all','get_device_properties']:
+     setattr(torch.cuda,name,forbidden)
+    subprocess.Popen=forbidden
+    sys.argv=sys.argv[1:]
+    runpy.run_module(sys.argv[0],run_name='__main__')
+    '''
+        result=subprocess.run([sys.executable,'-c',code,module,*args],text=True,capture_output=True)
+        assert result.returncode!=0
+&gt;       assert 'explicit user hold' in result.stderr
+E       assert 'explicit user hold' in 'Traceback (most recent call last):\n  File "&lt;string&gt;", line 8, in &lt;module&gt;\n  File "/usr/lib/python3.10/runpy.py", li...'-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n'
+E        +  where 'Traceback (most recent call last):\n  File "&lt;string&gt;", line 8, in &lt;module&gt;\n  File "/usr/lib/python3.10/runpy.py", li...'-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n' = CompletedProcess(args=['/usr/bin/python', '-c', "\nimport runpy,sys,torch,subprocess\ndef forbidden(*a,**k):raise Asse...-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n').stderr
+
+tests/test_user_training_hold.py:49: AssertionError</failure></testcase><testcase classname="tests.test_user_training_hold" name="test_actual_entrypoints_refuse_before_cuda_or_child_creation[scripts.recover-args3]" time="1.695"><failure message="assert 'explicit user hold' in 'Traceback (most recent call last):\n  File &quot;&lt;string&gt;&quot;, line 8, in &lt;module&gt;\n  File &quot;/usr/lib/python3.10/runpy.py&quot;, li...'-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n'&#10; +  where 'Traceback (most recent call last):\n  File &quot;&lt;string&gt;&quot;, line 8, in &lt;module&gt;\n  File &quot;/usr/lib/python3.10/runpy.py&quot;, li...'-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n' = CompletedProcess(args=['/usr/bin/python', '-c', &quot;\nimport runpy,sys,torch,subprocess\ndef forbidden(*a,**k):raise Asse...-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n').stderr">module = 'scripts.recover', args = ['--watch']
+
+    @pytest.mark.parametrize('module,args',[
+        ('scripts.schedule',[]),('scripts.coordinator',[]),('scripts.recover',['--start']),
+        ('scripts.recover',['--watch']),('scripts.run',['--config','DO_NOT_READ.json']),
+        ('scripts.finalize',[]),
+    ])
+    def test_actual_entrypoints_refuse_before_cuda_or_child_creation(module,args):
+        # Existing real user hold is intentionally kept in place. GPU APIs and
+        # subprocess launches are trapped before importing the selected entry point.
+        code='''
+    import runpy,sys,torch,subprocess
+    def forbidden(*a,**k):raise AssertionError('held entrypoint cannot probe CUDA or spawn a child')
+    for name in ['is_available','init','_lazy_init','manual_seed','manual_seed_all','get_device_properties']:
+     setattr(torch.cuda,name,forbidden)
+    subprocess.Popen=forbidden
+    sys.argv=sys.argv[1:]
+    runpy.run_module(sys.argv[0],run_name='__main__')
+    '''
+        result=subprocess.run([sys.executable,'-c',code,module,*args],text=True,capture_output=True)
+        assert result.returncode!=0
+&gt;       assert 'explicit user hold' in result.stderr
+E       assert 'explicit user hold' in 'Traceback (most recent call last):\n  File "&lt;string&gt;", line 8, in &lt;module&gt;\n  File "/usr/lib/python3.10/runpy.py", li...'-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n'
+E        +  where 'Traceback (most recent call last):\n  File "&lt;string&gt;", line 8, in &lt;module&gt;\n  File "/usr/lib/python3.10/runpy.py", li...'-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n' = CompletedProcess(args=['/usr/bin/python', '-c', "\nimport runpy,sys,torch,subprocess\ndef forbidden(*a,**k):raise Asse...-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n').stderr
+
+tests/test_user_training_hold.py:49: AssertionError</failure></testcase><testcase classname="tests.test_user_training_hold" name="test_actual_entrypoints_refuse_before_cuda_or_child_creation[scripts.run-args4]" time="1.667"><failure message="assert 'explicit user hold' in 'Traceback (most recent call last):\n  File &quot;&lt;string&gt;&quot;, line 8, in &lt;module&gt;\n  File &quot;/usr/lib/python3.10/runpy.py&quot;, li...'-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n'&#10; +  where 'Traceback (most recent call last):\n  File &quot;&lt;string&gt;&quot;, line 8, in &lt;module&gt;\n  File &quot;/usr/lib/python3.10/runpy.py&quot;, li...'-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n' = CompletedProcess(args=['/usr/bin/python', '-c', &quot;\nimport runpy,sys,torch,subprocess\ndef forbidden(*a,**k):raise Asse...-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n').stderr">module = 'scripts.run', args = ['--config', 'DO_NOT_READ.json']
+
+    @pytest.mark.parametrize('module,args',[
+        ('scripts.schedule',[]),('scripts.coordinator',[]),('scripts.recover',['--start']),
+        ('scripts.recover',['--watch']),('scripts.run',['--config','DO_NOT_READ.json']),
+        ('scripts.finalize',[]),
+    ])
+    def test_actual_entrypoints_refuse_before_cuda_or_child_creation(module,args):
+        # Existing real user hold is intentionally kept in place. GPU APIs and
+        # subprocess launches are trapped before importing the selected entry point.
+        code='''
+    import runpy,sys,torch,subprocess
+    def forbidden(*a,**k):raise AssertionError('held entrypoint cannot probe CUDA or spawn a child')
+    for name in ['is_available','init','_lazy_init','manual_seed','manual_seed_all','get_device_properties']:
+     setattr(torch.cuda,name,forbidden)
+    subprocess.Popen=forbidden
+    sys.argv=sys.argv[1:]
+    runpy.run_module(sys.argv[0],run_name='__main__')
+    '''
+        result=subprocess.run([sys.executable,'-c',code,module,*args],text=True,capture_output=True)
+        assert result.returncode!=0
+&gt;       assert 'explicit user hold' in result.stderr
+E       assert 'explicit user hold' in 'Traceback (most recent call last):\n  File "&lt;string&gt;", line 8, in &lt;module&gt;\n  File "/usr/lib/python3.10/runpy.py", li...'-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n'
+E        +  where 'Traceback (most recent call last):\n  File "&lt;string&gt;", line 8, in &lt;module&gt;\n  File "/usr/lib/python3.10/runpy.py", li...'-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n' = CompletedProcess(args=['/usr/bin/python', '-c', "\nimport runpy,sys,torch,subprocess\ndef forbidden(*a,**k):raise Asse...-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n').stderr
+
+tests/test_user_training_hold.py:49: AssertionError</failure></testcase><testcase classname="tests.test_user_training_hold" name="test_actual_entrypoints_refuse_before_cuda_or_child_creation[scripts.finalize-args5]" time="1.613"><failure message="assert 'explicit user hold' in 'Traceback (most recent call last):\n  File &quot;&lt;string&gt;&quot;, line 8, in &lt;module&gt;\n  File &quot;/usr/lib/python3.10/runpy.py&quot;, li...'-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n'&#10; +  where 'Traceback (most recent call last):\n  File &quot;&lt;string&gt;&quot;, line 8, in &lt;module&gt;\n  File &quot;/usr/lib/python3.10/runpy.py&quot;, li...'-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n' = CompletedProcess(args=['/usr/bin/python', '-c', &quot;\nimport runpy,sys,torch,subprocess\ndef forbidden(*a,**k):raise Asse...-p\'],\n  File &quot;&lt;string&gt;&quot;, line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n').stderr">module = 'scripts.finalize', args = []
+
+    @pytest.mark.parametrize('module,args',[
+        ('scripts.schedule',[]),('scripts.coordinator',[]),('scripts.recover',['--start']),
+        ('scripts.recover',['--watch']),('scripts.run',['--config','DO_NOT_READ.json']),
+        ('scripts.finalize',[]),
+    ])
+    def test_actual_entrypoints_refuse_before_cuda_or_child_creation(module,args):
+        # Existing real user hold is intentionally kept in place. GPU APIs and
+        # subprocess launches are trapped before importing the selected entry point.
+        code='''
+    import runpy,sys,torch,subprocess
+    def forbidden(*a,**k):raise AssertionError('held entrypoint cannot probe CUDA or spawn a child')
+    for name in ['is_available','init','_lazy_init','manual_seed','manual_seed_all','get_device_properties']:
+     setattr(torch.cuda,name,forbidden)
+    subprocess.Popen=forbidden
+    sys.argv=sys.argv[1:]
+    runpy.run_module(sys.argv[0],run_name='__main__')
+    '''
+        result=subprocess.run([sys.executable,'-c',code,module,*args],text=True,capture_output=True)
+        assert result.returncode!=0
+&gt;       assert 'explicit user hold' in result.stderr
+E       assert 'explicit user hold' in 'Traceback (most recent call last):\n  File "&lt;string&gt;", line 8, in &lt;module&gt;\n  File "/usr/lib/python3.10/runpy.py", li...'-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n'
+E        +  where 'Traceback (most recent call last):\n  File "&lt;string&gt;", line 8, in &lt;module&gt;\n  File "/usr/lib/python3.10/runpy.py", li...'-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n' = CompletedProcess(args=['/usr/bin/python', '-c', "\nimport runpy,sys,torch,subprocess\ndef forbidden(*a,**k):raise Asse...-p\'],\n  File "&lt;string&gt;", line 3, in forbidden\nAssertionError: held entrypoint cannot probe CUDA or spawn a child\n').stderr
+
+tests/test_user_training_hold.py:49: AssertionError</failure></testcase><testcase classname="tests.test_user_training_hold" name="test_gpu_admission_and_post_run_hooks_refuse_without_probes" time="0.009" /></testsuite></testsuites>

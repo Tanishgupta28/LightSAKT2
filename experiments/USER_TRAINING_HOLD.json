@@ -1,0 +1,17 @@
+{
+  "authorization": "Explicit user request2026-10-20 to stop only verified LightSAKT2 training and prevent future automatic launches",
+  "created_utc": "2026-10-20T06:49:36.136417+00:00",
+  "gpu_reassignment_status": "BLOCKED: unrelated live GPU owner and no authoritative exclusive assignment",
+  "observation": "Workers/controllers already exited or zombies before this turn; prior interruption preserved epoch2",
+  "preservation_snapshot": "reports/priority_handoff_20261020/before_hold/snapshot.json",
+  "project_root": "/workspace/LightSAKT2",
+  "resume_policy": "Requires a later explicit user decision; preserve all configs/checkpoints/optimizer/RNG",
+  "status": "USER_TRAINING_HOLD_ACTIVE",
+  "training_signals_sent": 0,
+  "verified_counts": {
+    "completed": 813,
+    "interrupted": 2,
+    "pending": 142
+  },
+  "verified_live_training_processes": 0
+}

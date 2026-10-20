@@ -1,0 +1,43 @@
+{
+  "observed_utc": "2026-10-20T06:54:07.913347+00:00",
+  "status": "PASS",
+  "verified_checkpoints": [
+    {
+      "path": "/workspace/LightSAKT2/checkpoints/ASSIST2015-GKT-baseline_tuning-42-e01b589e46cc/best.pt",
+      "sha256": "a36930ca8a0a5d9e0325405de50dc83c82584408080bf2f0f56cd321fb455608",
+      "epoch": 2,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": false
+    },
+    {
+      "path": "/workspace/LightSAKT2/checkpoints/ASSIST2015-GKT-baseline_tuning-42-e01b589e46cc/latest.pt",
+      "sha256": "1a508b505f07f48491e489d06cb837e660cb6dd5378c7ba33ab8ff61a8a0e551",
+      "epoch": 2,
+      "strict_state_load": true,
+      "finite_parameters": true,
+      "split_data_match": true,
+      "optimizer_rng_verified": true
+    }
+  ],
+  "epoch": 2,
+  "best_epoch": 2,
+  "best_validation_auc": 0.7327774052048939,
+  "bad_epochs": 0,
+  "history_epochs": [
+    1,
+    2
+  ],
+  "model_optimizer_rng_loader_state_verified_on_cpu": true,
+  "processed_and_split_hashes_verified": true,
+  "cuda_calls": 0,
+  "optimizer_updates": 0,
+  "local_archive": "backups/priority_handoff_20261020/interrupted_gkt_epoch2.tar.gz",
+  "local_archive_sha256": "6e3b03248307f609059a4bec7ea0ac203cbbb35054360a871b3b5920bf0a45c0",
+  "local_archive_bytes": 3869675,
+  "local_archive_members": 1155,
+  "local_archive_content_hashes_verified": true,
+  "scope": "Epoch-boundary state preserved; incomplete epoch3 work is not a resumable checkpoint; no training or inference",
+  "offsite_verification": "Not rerun; local recovery archive only"
+}
