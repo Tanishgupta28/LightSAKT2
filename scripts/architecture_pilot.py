@@ -12,7 +12,7 @@ import json
 import math
 import os
 import time
-from contextlib import contextmanager
+from contextlib import contextmanager, nullcontext
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -22,11 +22,13 @@ from scripts.architecture_study import ARMS, digest, read_json
 PROJECT = Path(__file__).resolve().parents[1]
 SOURCE = Path("/workspace/LightSAKT2")
 PILOT = Path("reports/architecture_study/pilot")
+SOFTMAX_PILOT = Path("reports/architecture_study/softmax_pilot")
 CONTROL = Path("experiments/architecture_study/pilot")
 DATASET = "ASSIST2009"
 SEED = 42
 STAGES = {"depth": ("baseline", "two_layer_linear"),
-          "attention": ("one_layer_softmax", "one_layer_recency_softmax")}
+          "attention": ("one_layer_softmax", "one_layer_recency_softmax"),
+          "softmax": ("one_layer_softmax",)}
 
 
 class PilotBlocked(RuntimeError):
@@ -47,7 +49,7 @@ def check_holds(source=SOURCE, project=PROJECT, grant=None, stage="depth"):
         if marker.exists():
             permitted = False
             try:
-                permitted = (stage == "depth" and exception["stage"] == stage
+                permitted = (stage in {"depth", "softmax"} and exception["stage"] == stage
                              and exception["dataset"] == DATASET and exception["seed"] == SEED
                              and exception["user_authorization_evidence"]
                              and exception["hold_marker_sha256"][str(marker)] == digest(marker))
@@ -87,7 +89,7 @@ def validate_inputs(source, project=PROJECT):
     return plan, metadata, config, ref
 
 
-def prepare(source=SOURCE, project=PROJECT):
+def prepare(source=SOURCE, project=PROJECT, persist=True):
     source, project = Path(source), Path(project)
     plan, metadata, selected, ref = validate_inputs(source, project)
     configurations = {}
@@ -103,7 +105,8 @@ def prepare(source=SOURCE, project=PROJECT):
         path = project / CONTROL / "configs" / f"{arm}.json"
         if path.exists() and read_json(path) != config:
             raise PilotBlocked(f"Refusing to change an existing pilot configuration: {path}")
-        write_json(path, config)
+        if persist:
+            write_json(path, config)
         configurations[arm] = config
     record = {"dataset": DATASET, "seed": SEED, "stages": STAGES,
               "choice": "Smallest selected width (64), L=100, shortest recorded baseline runtime; depth can be screened with low resource use.",
@@ -118,7 +121,8 @@ def prepare(source=SOURCE, project=PROJECT):
               "baseline_retraining_tolerance": .001,
               "success_rule": "Screening signal: validation-AUC delta >= 0.001 over the fresh same-seed baseline, matching baseline replay and all correctness/resource gates; not statistical significance.",
               "promotion": "Evaluate qualifying arms on all five original seeds and all three datasets; negative one-seed results remain preliminary."}
-    write_json(project / CONTROL / "pilot.json", record)
+    if persist:
+        write_json(project / CONTROL / "pilot.json", record)
     return record
 
 
@@ -186,9 +190,15 @@ def write_epochs(history, destination, measured=True):
     rows = []
     for row in history:
         resources = row.get("resources", {})
+        training = resources.get("online_training_metrics", {})
         rows.append({"epoch": row["epoch"], "validation_auc": row["validation"]["auc"],
                      "validation_accuracy": row["validation"].get("accuracy"),
+                     "validation_precision": row["validation"].get("precision"),
+                     "validation_recall": row["validation"].get("recall"),
                      "validation_f1": row["validation"]["f1"], "validation_bce": row["validation"]["bce"],
+                     "online_training_auc": training.get("auc"), "online_training_accuracy": training.get("accuracy"),
+                     "online_training_precision": training.get("precision"), "online_training_recall": training.get("recall"),
+                     "online_training_f1": training.get("f1"),
                      "training_bce": row["train_objective"], "epoch_seconds": row["epoch_seconds"],
                      "peak_allocated_bytes": resources.get("peak_allocated_bytes"),
                      "peak_reserved_bytes": resources.get("peak_reserved_bytes"),
@@ -248,13 +258,13 @@ def reference(source=SOURCE, project=PROJECT):
     return result
 
 
-def summarize(work, record, project=PROJECT):
+def summarize(work, record, project=PROJECT, report_dir=PILOT):
     rows = []
     for arm, config in record["configurations"].items():
         directory = Path(work) / "results/raw" / config["run_id"]
         row = {"arm": arm, "status": "not_run", "validation_auc": None}
         if (directory / "history.json").exists():
-            write_epochs(read_json(directory / "history.json"), Path(project) / PILOT / f"{arm}_epochs.csv")
+            write_epochs(read_json(directory / "history.json"), Path(project) / report_dir / f"{arm}_epochs.csv")
         if (directory / "status.json").exists():
             row["status"] = read_json(directory / "status.json")["status"]
         if row["status"] == "completed":
@@ -272,6 +282,8 @@ def summarize(work, record, project=PROJECT):
                 raise PilotBlocked("Pilot checkpoint hash mismatch")
             row.update(validation_auc=result["validation"]["auc"], validation_f1=result["validation"]["f1"],
                        validation_accuracy=result["validation"].get("accuracy"),
+                       validation_precision=result["validation"].get("precision"),
+                       validation_recall=result["validation"].get("recall"),
                        validation_bce=result["validation"]["bce"], best_epoch=result["best_epoch"],
                        epochs_trained=result["epochs_trained"], training_seconds=result["training_seconds"],
                        peak_allocated_bytes=result["peak_allocated_bytes"], peak_reserved_bytes=result["peak_reserved_bytes"],
@@ -289,14 +301,15 @@ def summarize(work, record, project=PROJECT):
     result = {"dataset": DATASET, "seed": SEED, "test_evaluation": False, "rows": rows,
               "baseline_retraining_within_tolerance": baseline_reproduced,
               "interpretation": "One-seed validation screening only; resource/replay checks and five seeds required before a performance claim."}
-    write_json(Path(project) / PILOT / "comparison.json", result)
+    write_json(Path(project) / report_dir / "comparison.json", result)
     return result
 
 
 def execute(stage, source, work, authorization_path, project=PROJECT):
     # Keep every hold/authorization/config check before importing torch or probing CUDA.
     source, project, work = Path(source).resolve(), Path(project).resolve(), Path(work).resolve()
-    # The general hold remains active; only a user-authorized depth exception
+    report_dir = SOFTMAX_PILOT if stage == "softmax" else PILOT
+    # The general hold remains active; only a user-authorized bounded exception
     # bound to both marker hashes and exact pilot configurations can pass it.
     provisional = read_json(authorization_path) if authorization_path and Path(authorization_path).is_file() else None
     check_holds(source, project, provisional, stage)
@@ -304,9 +317,9 @@ def execute(stage, source, work, authorization_path, project=PROJECT):
         raise PilotBlocked("Pilot output must be outside the original checkout")
     grant = authorization(authorization_path, stage)
     authorization_digest = digest(authorization_path)
-    record = prepare(source, project)
-    if stage == "attention":
-        existing = summarize(work, record, project)
+    record = prepare(source, project, persist=stage != "softmax")
+    if stage in {"attention", "softmax"}:
+        existing = summarize(work, record, project, report_dir)
         if any(row["status"] != "completed" for row in existing["rows"][:2]):
             raise PilotBlocked("Complete the one-layer versus two-layer stage first")
         if not existing["baseline_retraining_within_tolerance"]:
@@ -322,9 +335,10 @@ def execute(stage, source, work, authorization_path, project=PROJECT):
         for _ in range(2):
             sample = observe(grant["gpu_uuid"])
             assess(sample, admission=True)
-            write_json(project / PILOT / "resource_admission.json", {"sample": sample, "policy": POLICY})
+            write_json(project / report_dir / "resource_admission.json", {"sample": sample, "policy": POLICY})
             time.sleep(.2)
         import torch
+        from src.training import engine
         from src.training.engine import run
         if not torch.cuda.is_available() or torch.cuda.device_count() != 1:
             raise PilotBlocked("Exactly one authorized CUDA device must be visible")
@@ -359,10 +373,14 @@ def execute(stage, source, work, authorization_path, project=PROJECT):
                     assess(sample)
                 except RuntimeError as error:
                     raise PilotPause(str(error)) from error
-                with (project / PILOT / "resource_samples.jsonl").open("a") as stream:
+                with (project / report_dir / "resource_samples.jsonl").open("a") as stream:
                     stream.write(json.dumps(sample) + "\n")
                 last_probe = now
-        observer = PilotObserver(guard, {"stage": stage, "gpu_authorization_sha256": authorization_digest,
+        observer_class = PilotObserver
+        if stage == "softmax":
+            from scripts.pilot_metric_extensions import MetricsObserver, record_metrics
+            observer_class = MetricsObserver
+        observer = observer_class(guard, {"stage": stage, "gpu_authorization_sha256": authorization_digest,
                                          "launcher_sha256": digest(__file__), "memory_cap_bytes": cap,
                                          "inter_update_pause_seconds": POLICY["inter_update_pause_seconds"],
                                          "max_step_seconds": POLICY["max_step_seconds"],
@@ -373,16 +391,17 @@ def execute(stage, source, work, authorization_path, project=PROJECT):
             for arm in STAGES[stage]:
                 guard()
                 invoked = True
-                write_json(project / PILOT / "launch_status.json", {
+                write_json(project / report_dir / "launch_status.json", {
                     "status": "running", "stage": stage, "current_arm": arm,
                     "trainer_invoked": True, "gpu_uuid": grant["gpu_uuid"],
                     "observed_utc": datetime.now(timezone.utc).isoformat()})
-                run(record["configurations"][arm], root=work, observer=observer)
-                summarize(work, record, project)
+                with record_metrics(engine, observer) if stage == "softmax" else nullcontext():
+                    run(record["configurations"][arm], root=work, observer=observer)
+                summarize(work, record, project, report_dir)
                 # Reclaim only this process's unused cache between sequential models.
                 torch.cuda.empty_cache()
         except BaseException as error:
-            write_json(project / PILOT / "launch_status.json", {
+            write_json(project / report_dir / "launch_status.json", {
                 "status": "interrupted", "stage": stage, "trainer_invoked": invoked,
                 "reason": f"{type(error).__name__}: {error}", "automatic_retry": False,
                 "observed_utc": datetime.now(timezone.utc).isoformat()})
@@ -390,11 +409,11 @@ def execute(stage, source, work, authorization_path, project=PROJECT):
                 error.training_started = invoked
             raise
         finally:
-            summarize(work, record, project)
-    write_json(project / PILOT / "launch_status.json", {
+            summarize(work, record, project, report_dir)
+    write_json(project / report_dir / "launch_status.json", {
         "status": "completed", "stage": stage, "trainer_invoked": invoked,
         "automatic_retry": False, "observed_utc": datetime.now(timezone.utc).isoformat()})
-    return summarize(work, record, project)
+    return summarize(work, record, project, report_dir)
 
 
 if __name__ == "__main__":
@@ -420,6 +439,6 @@ if __name__ == "__main__":
         record = {"status": "blocked", "reason": str(error), "stage": args.stage,
                   "training_started": getattr(error, "training_started", False), "automatic_retry": False,
                   "observed_utc": datetime.now(timezone.utc).isoformat()}
-        write_json(PROJECT / PILOT / "launch_status.json", record)
+        write_json(PROJECT / (SOFTMAX_PILOT if args.stage == "softmax" else PILOT) / "launch_status.json", record)
         print(json.dumps(record, indent=2))
         raise SystemExit(2)
