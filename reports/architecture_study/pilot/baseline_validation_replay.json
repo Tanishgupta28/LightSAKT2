@@ -1,0 +1,33 @@
+{
+  "dataset": "ASSIST2009",
+  "seed": 42,
+  "device": "cpu",
+  "inference_only": true,
+  "split": "validation",
+  "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-f08e9494d270/best.pt",
+  "checkpoint_sha256": "d0af3a20f40cf3734883634c23053dbfbf187dee9e7a556c85fcb27b4841197d",
+  "checkpoint_epoch": 24,
+  "validation": {
+    "auc": 0.7508035221909489,
+    "auc_reason": null,
+    "accuracy": 0.7321168414918415,
+    "f1": 0.8148054891099081,
+    "mse": 0.1815333940578288,
+    "bce": 0.542363721270053,
+    "n_targets": 27456
+  },
+  "saved_validation_auc": 0.7508035371114405,
+  "auc_absolute_difference": 1.4920491619996312e-08,
+  "auc_tolerance": 2e-06,
+  "matches_saved_validation_auc": true,
+  "elapsed_seconds": 1.0022230739705265,
+  "process_peak_rss_bytes": 764387328,
+  "test_loader_constructed": false,
+  "test_predictions_accessed": false,
+  "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+  "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+  "torch_version": "2.4.0a0+f70bd71a48.nv24.06",
+  "python_version": "3.10.12",
+  "model_source_sha256": "b918a99c2f073cefbea54a9654b547e4398fd3fff884bc97f3ec5c48008a123e",
+  "attention_source_sha256": "38087be72b424c2abc324f90531a51762e73510cb421a8a9cbc6b1e19d3ebb69"
+}

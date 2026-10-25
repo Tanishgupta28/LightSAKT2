@@ -56,7 +56,7 @@ def update_early_stop(auc,best,bad,patience=5):
     return (auc if improved else best), (0 if improved else bad+1), improved, (not improved and bad+1>=patience)
 
 
-def run(config, root=".", resume=True, stop_after_epoch=None):
+def run(config, root=".", resume=True, stop_after_epoch=None, observer=None):
     root=Path(root);run_id=config["run_id"]
     directory=root/"results/raw"/run_id;directory.mkdir(parents=True,exist_ok=True)
     cfg_path=directory/"config.json";status_path=directory/"status.json"
@@ -84,13 +84,21 @@ def run(config, root=".", resume=True, stop_after_epoch=None):
     ckpt=root/"checkpoints"/run_id;ckpt.mkdir(parents=True,exist_ok=True)
     latest=ckpt/"latest.pt";best_path=ckpt/"best.pt"
     history=[];epoch=0;best=-float("inf");bad=0;best_epoch=None;elapsed=0.
-    env=environment();write_json(directory/"environment.json",env)
+    env=environment()
+    if observer is not None:env["observer"]=observer.provenance()
+    write_json(directory/"environment.json",env)
     if resume and latest.exists():
         state=torch.load(latest,map_location=device,weights_only=False)
         if state["config"]!=config or state["processed_sha256"]!=stats["processed_sha256"]:
             raise ValueError("Resume metadata mismatch")
         if state["environment"]["training_code_sha256"]!=env["training_code_sha256"]:
             raise ValueError("Training source changed; cannot mix implementations inside one run")
+        previous_observer=state["environment"].get("observer")
+        current_observer=env.get("observer")
+        previous_identity=previous_observer.get("resume_identity",previous_observer) if previous_observer else None
+        current_identity=current_observer.get("resume_identity",current_observer) if current_observer else None
+        if previous_identity!=current_identity:
+            raise ValueError("Training observer changed; cannot mix instrumentation inside one run")
         model.load_state_dict(state["model"]);optimizer.load_state_dict(state["optimizer"])
         epoch,best,bad,best_epoch=state["epoch"],state["best_auc"],state["bad_epochs"],state["best_epoch"]
         history,elapsed=state["history"],state["elapsed_seconds"]
@@ -105,7 +113,9 @@ def run(config, root=".", resume=True, stop_after_epoch=None):
         for epoch in range(epoch+1,config["max_epochs"]+1):
             if bad>=config["patience"]:break
             started=time.perf_counter();model.train();loss_sum=0.;count=0
+            if observer is not None:observer.start_epoch(epoch,device)
             for batch in train:
+                if observer is not None:observer.before_batch(epoch)
                 batch=[x.to(device) for x in batch];optimizer.zero_grad(set_to_none=True)
                 p,all_p=predict(model,config["model"],batch)
                 loss=training_loss(model,config["model"],batch,p,all_p)
@@ -121,8 +131,10 @@ def run(config, root=".", resume=True, stop_after_epoch=None):
                 save_state(best_path,{"model":model.state_dict(),"config":config,"epoch":epoch,
                                       "validation":validation_metrics,"processed_sha256":stats["processed_sha256"],
                                       "split_sha256":stats["split_sha256"],"git_commit":env["git_commit"]})
-            history.append({"epoch":epoch,"train_objective":loss_sum/count,"validation":validation_metrics,
-                            "epoch_seconds":time.perf_counter()-started})
+            row={"epoch":epoch,"train_objective":loss_sum/count,"validation":validation_metrics,
+                 "epoch_seconds":time.perf_counter()-started}
+            if observer is not None:row["resources"]=observer.end_epoch(epoch,device)
+            history.append(row)
             state={"model":model.state_dict(),"optimizer":optimizer.state_dict(),"epoch":epoch,
                    "rng":rng_state(),"loader_rng":generator.get_state(),"config":config,"best_auc":best,
                    "best_epoch":best_epoch,"bad_epochs":bad,"history":history,"environment":env,
@@ -147,6 +159,11 @@ def run(config, root=".", resume=True, stop_after_epoch=None):
                 "peak_allocated_bytes":torch.cuda.max_memory_allocated() if device.type=="cuda" else None,
                 "peak_reserved_bytes":torch.cuda.max_memory_reserved() if device.type=="cuda" else None,
                 "test":None}
+        if observer is not None and history:
+            for key in ("peak_allocated_bytes","peak_reserved_bytes"):
+                peaks=[row.get("resources",{}).get(key) for row in history]
+                peaks=[value for value in peaks+[result[key]] if value is not None]
+                result[key]=max(peaks) if peaks else None
         if config.get("evaluate_test",False):
             test_loader=loader("test")
             result["test"],y,p=evaluate(model,config["model"],test_loader,device)

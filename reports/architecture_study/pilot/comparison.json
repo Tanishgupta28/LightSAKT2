@@ -1,0 +1,37 @@
+{
+  "dataset": "ASSIST2009",
+  "seed": 42,
+  "test_evaluation": false,
+  "rows": [
+    {
+      "arm": "baseline",
+      "status": "not_run",
+      "validation_auc": null,
+      "validation_auc_delta": null,
+      "screening_signal": null
+    },
+    {
+      "arm": "two_layer_linear",
+      "status": "not_run",
+      "validation_auc": null,
+      "validation_auc_delta": null,
+      "screening_signal": null
+    },
+    {
+      "arm": "one_layer_softmax",
+      "status": "not_run",
+      "validation_auc": null,
+      "validation_auc_delta": null,
+      "screening_signal": null
+    },
+    {
+      "arm": "one_layer_recency_softmax",
+      "status": "not_run",
+      "validation_auc": null,
+      "validation_auc_delta": null,
+      "screening_signal": null
+    }
+  ],
+  "baseline_retraining_within_tolerance": null,
+  "interpretation": "One-seed validation screening only; resource/replay checks and five seeds required before a performance claim."
+}

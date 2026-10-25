@@ -1,0 +1,34 @@
+{
+  "dataset": "ASSIST2009",
+  "model": "LightSAKTResearch",
+  "group": "architecture_pilot",
+  "seed": 42,
+  "seq_len": 100,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "patience": 5,
+  "learning_rate": 0.001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.0,
+  "epsilon": 1e-08,
+  "model_config": {
+    "max_seq_len": 100,
+    "embed_dim": 64,
+    "num_heads": 2,
+    "dropout": 0.1,
+    "num_layers": 2,
+    "attention_type": "linear"
+  },
+  "evaluate_test": false,
+  "run_id": "ASSIST2009-LightSAKT-pilot-two_layer_linear-42-v1",
+  "device": "cuda",
+  "pilot": {
+    "arm": "two_layer_linear",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "baseline_reference": "ASSIST2009-LightSAKT-final-42"
+  }
+}

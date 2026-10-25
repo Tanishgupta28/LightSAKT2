@@ -1,0 +1,53 @@
+{
+  "original_root": "/workspace/LightSAKT2",
+  "original_checked_files_unchanged": true,
+  "changed_paths": [],
+  "content_hashes_checked": 42,
+  "selected_checkpoints_checked": 15,
+  "selected_checkpoint_hashes_match": true,
+  "datasets": {
+    "ASSIST2009": {
+      "processed_matches": true,
+      "split_matches": true,
+      "student_disjoint": true,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 64,
+        "num_heads": 2,
+        "dropout": 0.1
+      },
+      "learning_rate": 0.001
+    },
+    "ASSIST2015": {
+      "processed_matches": true,
+      "split_matches": true,
+      "student_disjoint": true,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.1
+      },
+      "learning_rate": 0.0005
+    },
+    "Algebra2005": {
+      "processed_matches": true,
+      "split_matches": true,
+      "student_disjoint": true,
+      "model_config": {
+        "max_seq_len": 200,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.2
+      },
+      "learning_rate": 0.001
+    }
+  },
+  "hold_markers": [
+    "/workspace/LightSAKT2/experiments/USER_TRAINING_HOLD.json",
+    "/tmp/lightsakt-architecture-20261025/experiments/USER_TRAINING_HOLD.json"
+  ],
+  "current_gpu_probe_performed": false,
+  "new_real_dataset_training_runs": 0,
+  "test_evaluation_performed": false
+}
