@@ -1,0 +1,46 @@
+{
+  "status": "closed_completed",
+  "project": "LightSAKT2",
+  "dataset": "ASSIST2009",
+  "seed": 42,
+  "stages": [
+    "depth"
+  ],
+  "sharing": "shared",
+  "gpu_uuid": "MIG-d2fcfd79-720e-5218-82c9-0a132be68920",
+  "valid_from_utc": "2026-10-25T07:18:29.120283+00:00",
+  "valid_until_utc": "2026-10-25T07:33:29.120283+00:00",
+  "window_scope": "operator-imposed 15-minute ceiling; not a scheduler lease",
+  "authorized_by": "User: current LightSAKT2 bounded depth request, 2026-10-25",
+  "allocation_reference": "Existing shared research MIG; /workspace/capstone/reports/favor_plus_v1/shared_gpu_v1/USER_SHARED_AUTHORIZATION.md plus present LightSAKT execution scope",
+  "execution_evidence": "/tmp/lightsakt-architecture-20261025/reports/architecture_study/pilot/EXECUTION_AUTHORIZATION_20261025.md",
+  "execution_evidence_sha256": "407b6bd726e64ba3cd6ce6f28d79b85f04af65c68940b05cd82722d4494d94cc",
+  "shared_policy": {
+    "allocator_cap_bytes": 4294967296,
+    "admission_free_bytes": 10737418240,
+    "runtime_free_bytes": 6442450944,
+    "host_rss_cap_bytes": 4294967296,
+    "host_headroom_bytes": 2147483648,
+    "admission_utilization_max": 75,
+    "allow_unsupported_mig_utilization": true,
+    "inter_update_pause_seconds": 0.1,
+    "max_step_seconds": 30,
+    "wall_time_limit_seconds": 900
+  },
+  "hold_exception": {
+    "stage": "depth",
+    "dataset": "ASSIST2009",
+    "seed": 42,
+    "user_authorization_evidence": "/tmp/lightsakt-architecture-20261025/reports/architecture_study/pilot/EXECUTION_AUTHORIZATION_20261025.md",
+    "hold_marker_sha256": {
+      "/workspace/LightSAKT2/experiments/USER_TRAINING_HOLD.json": "65214c2c53852024e970fd0a176f71968f204ec0748635a7e6f46de3ed64c234",
+      "/tmp/lightsakt-architecture-20261025/experiments/USER_TRAINING_HOLD.json": "65214c2c53852024e970fd0a176f71968f204ec0748635a7e6f46de3ed64c234"
+    },
+    "configuration_sha256": {
+      "baseline": "8bcd383d00999944f942061adcedbdfee34452c30fec8b6d7926cbc76ceff5d2",
+      "two_layer_linear": "17ae5de6123f797e1251f951bc58d4645e9062d31373c7a9c6f9a7aa296b5214"
+    }
+  },
+  "closed_utc": "2026-10-25T07:27:18.179659+00:00",
+  "closure_reason": "Both authorized fresh depth runs completed; no remaining execution scope"
+}

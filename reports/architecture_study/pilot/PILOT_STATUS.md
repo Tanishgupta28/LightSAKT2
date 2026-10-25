@@ -1,137 +1,113 @@
-# ASSIST2009 seed-42 architecture pilot
+# Completed LightSAKT depth experiment — 25 October 2026
 
-The depth-stage launch was attempted and **blocked before PyTorch/CUDA import**
-by the persistent user training hold. Both the original checkout and the research
-worktree still contain `experiments/USER_TRAINING_HOLD.json`. The current request
-allows training conditional on an already lifted hold and GPU authorization; it
-does not lift that hold. Neither marker was removed or modified. No GPU
-authorization record for this pilot has been supplied or inferred from free
-memory. No current GPU probe, training run, scheduling action, process signal,
-automatic retry or test evaluation was performed.
+The actual ASSIST2009 seed-42 GPU comparison completed successfully. Both models
+trained from fresh initialization, completed 29 epochs, and selected epoch 24 by
+validation AUC. The two-layer model did **not improve AUC in this pilot**:
+delta = −0.0000126048313747. This is an extremely small difference on one seed,
+not evidence of a statistically significant disadvantage. F1 and accuracy were
+slightly higher and BCE slightly lower for the two-layer model.
 
-The executable launcher is `scripts/architecture_pilot.py`. Its default depth
-stage runs a fresh original LightSAKT baseline followed by the two-layer linear
-variant. It cannot dispatch the 45-run study. Each invocation permits at most
-two sequential runs on one dataset and one seed. A later attention stage runs
-causal softmax and recency softmax, after the depth pair is complete and baseline
-retraining is within the prespecified tolerance.
+|Selected-checkpoint validation metric|Original one layer|Two layers|Two minus one|
+|---|---:|---:|---:|
+|AUC|0.750803537111|0.750790932280|−0.000012604831|
+|F1, threshold 0.5|0.814805489110|0.816262117682|+0.001456628573|
+|Accuracy, threshold 0.5|0.732116841492|0.732845279720|+0.000728438228|
+|BCE|0.542363721265|0.542330543346|−0.000033177919|
+|Selected epoch|24|24|0|
+|Epochs completed before patience stop|29|29|0|
+|Run time, seconds|215.2315|231.0228|+15.7913|
+|Peak allocated GPU memory, MiB|254.5771|327.8369|+73.2598|
+|Peak reserved GPU memory, MiB|368|460|+92|
 
-ASSIST2009, seed 42 was chosen before examining new variant outcomes: it uses the
-smallest selected embedding width (64), L=100 and two heads, and has the shortest
-recorded selected baseline training time. This gives a low-cost depth screening
-case with 198,942 training interactions and 27,456 validation next-response
-targets. It does not establish that improvements will transfer to ASSIST2015 or
-Algebra2005. Dataset choice was not based on their test scores.
+Run time includes validation, checkpointing and the shared-GPU pacing delay.
+The two runs consumed 446.25 seconds in this measured scope, below the 900-second
+invocation ceiling. Timing under pacing is not an isolated GPU throughput
+benchmark. Allocated/reserved memory is this process's PyTorch allocator usage;
+driver/context memory and other users are outside those counters. Both models
+stayed well below the unchanged 4 GiB allocator cap.
 
-Actual validation-only inference was completed on CPU using the immutable saved
-seed-42 baseline checkpoint. This establishes a verified reference, not a newly
-trained baseline or a measured architecture improvement:
+Both used the exact existing student-disjoint 70/10/20 split, split seed 42,
+training seed 42, training-fitted vocabulary, full chronological chunks of length
+100, batch 64, d=64, 2 heads, dropout 0.1, Adam lr=0.001/betas=(0.9,0.999)/eps=1e-8,
+zero weight decay, float32, disabled AMP/TF32, maximum 50 epochs and validation-AUC
+patience 5. The complete training and validation data were retained. Evaluation
+pooled all 27,456 validation targets. AUC alone selected checkpoints; F1 and
+accuracy used the fixed 0.5 threshold. No test loader, test predictions, test
+evaluation or test-based selection was used.
 
-|Measurement|CPU checkpoint replay|Saved validation record|
-|---|---:|---:|
-|Validation AUC|0.750803522191|0.750803537111|
-|Validation F1|0.814805489110|0.814805489110|
-|Validation BCE|0.542363721270|0.542363721265|
-|Validation targets|27,456|27,456|
-|Selected epoch|24|24|
+No earlier checkpoint initialized either model. `fresh_start_record.json` records
+the absence of prior pilot checkpoints. The immutable configs are under
+`experiments/architecture_study/pilot/configs/`; the actual training source commit
+is `f46e7d81`. The baseline's entire 29-epoch validation-AUC trajectory exactly
+matches its original recorded seed-42 trajectory, including the selected AUC.
+The one-layer versus two-layer comparison uses their newly trained validation
+metrics, never old test AUC.
 
-AUC absolute difference is 1.49e-8, below the 2e-6 replay tolerance. The replay
-took 1.00 seconds inside the measured inference/data-loading scope, excluding
-interpreter and library startup. Process lifetime peak RSS was 764,387,328 bytes
-(approximately 729 MiB); this is CPU process memory, not training/GPU memory.
-Exact versions, source/data/split/checkpoint hashes and metrics are in
-`baseline_validation_replay.json`. No test loader or saved test predictions were
-accessed. The common CSV loader reads the checksum-pinned processed file and
-selects only the validation students for inference.
+The user explicitly authorized a bounded hold release. Existing documented
+intentional shared-H100 permission and that new scope are recorded in
+`EXECUTION_AUTHORIZATION_20261025.md`. The narrow exception was bound to both
+hold-marker hashes, exactly two depth configuration hashes, seed 42 and the
+15-minute window. General hold markers stayed byte-identical, so automatic
+scheduling/recovery and all other experiments stayed blocked. Execution used
+the original project's nonblocking admission lock, a pilot lock and only the
+exposed H100 MIG `MIG-d2fcfd79-720e-5218-82c9-0a132be68920`.
 
-The fresh comparison is still pending:
+The shared safeguards retained a 4 GiB allocator cap, 10 GiB admission free floor,
+6 GiB runtime free floor, 4 GiB host RSS cap, 2 GiB host headroom, 0.1-second
+inter-batch pause and 30-second step/time-between-batches stop. There were 218
+runtime telemetry samples. Minimum observed free GPU memory was 41,371,893,760
+bytes; minimum host headroom was 21,069,332,480 bytes. Maximum observed process
+peak RSS was 1,573,945,344 bytes. MIG utilization was explicitly unsupported,
+not assumed zero; the pre-existing cap/headroom/pacing fallback applied. PID
+namespace attribution remains unresolved. No other job was signalled, stopped,
+rescheduled or reassigned. A post-exit observation records an unattributed
+compute PID and about 5.1 GB device usage, without claiming ownership or that
+the GPU became exclusive or idle.
 
-|Pilot arm|Status|New validation AUC|
-|---|---|---|
-|Original one-layer, fresh retraining|Blocked by hold|Unmeasured|
-|Two-layer linear|Blocked by hold|Unmeasured|
-|Causal softmax|Deferred until depth stage completes|Unmeasured|
-|Recency-biased softmax|Deferred until depth stage completes|Unmeasured|
+Both `best.pt` and `latest.pt` files were saved for both arms under
+`pilot-workspace/checkpoints/<pilot run ID>/`. Latest state includes finite model
+and Adam state, complete-epoch history, Python/NumPy/Torch/CUDA RNG, loader RNG,
+patience state and source/data/config identities. Epoch CSVs contain validation
+AUC, F1, accuracy, BCE, training BCE, runtime, allocated/reserved GPU peaks and
+process lifetime peak RSS. Their measured numerical series are in
+`baseline_epochs.csv` and `two_layer_linear_epochs.csv`; selected results are in
+`selected_validation_results.csv` and `comparison.json`.
 
-`comparison.json` deliberately leaves these cells null. It never subtracts a new
-validation score from an old test score. New deltas will be measured against the
-fresh same-seed one-layer validation result. Repeated initialization under the
-same seed, independent first/second blocks, masked targets, dropout, split seed
-42 and student-disjoint 70/10/20 assignments remain fixed. The selected protocol
-uses batch 64, Adam lr=0.001, betas=(0.9,0.999), epsilon=1e-8, zero weight decay,
-float32, no AMP/TF32, at most 50 epochs per arm and validation-AUC patience 5.
-Both depth arms receive the same budget; no early truncated baseline is compared
-with a full-budget variant.
+An independent fresh CPU process loaded both selected checkpoints and replayed
+validation inference. Absolute AUC differences from the saved GPU results were
+1.49e-8 and 8.95e-9; F1 and accuracy matched exactly. This verification also
+checked finite optimizer state, source/data/split/grant hashes, correct selected
+epochs and complete resume-state fields. It performed zero optimizer updates
+and no test evaluation. Evidence: `checkpoint_replay_verification.json`;
+reproduce with `CUDA_VISIBLE_DEVICES='' python -m scripts.verify_depth_pilot`.
+The scoped-release/resource changes passed 36 targeted CPU tests, with the
+unavailable real-data test skipped in the isolated checkout. Earlier architecture
+and trainer CPU evidence remains preserved.
 
-For this screening, a validation AUC increase of at least 0.001 is a promotion
-signal, conditional on correct execution, memory bounds and a fresh baseline
-within 0.001 of its saved validation result. That retraining tolerance is distinct
-from the tighter checkpoint-inference tolerance above. A single-seed increase
-does not establish statistical significance. Qualifying two-layer results should
-receive the original five-seed evaluation on ASSIST2009, ASSIST2015 and
-Algebra2005. Softmax and recency should first complete the separate attention
-stage, then follow the same promotion rule. A negative depth result is still a
-valid outcome and does not prevent screening the attention alternatives.
+A persistent recovery archive contains the four new checkpoints, raw run
+records/configs and execution controls at
+`/workspace/LightSAKT2/backups/architecture_depth_20261025/pilot_checkpoints_and_records.tar.gz`.
+All 22 members were read back and checked against SHA256 values. Archive SHA256:
+`1899e200690f6897bfe9af27a003a1f91f324b3f48e63c8b09996c8487aca8d6`.
+It contains no original dataset/test files. `recovery_archive.json` lists every
+member hash. The archive supplements the local ignored weights; a Git commit
+alone does not contain the checkpoint binaries.
 
-Shared-GPU execution requires an existing, scoped authorization identifying the
-device, sharing terms, permitted stage and valid time window. The example JSON
-under `experiments/architecture_study/pilot/` is explicitly unverified and cannot
-authorize execution. The launcher requires the exact authorized UUID in
-`CUDA_VISIBLE_DEVICES`, checks both holds, and acquires the original project's
-nonblocking admission lock plus a pilot lock. It exits instead of waiting for or
-displacing another LightSAKT2 worker. It caps its own PyTorch allocation at 4 GiB,
-requires 5 GiB free before starting, and preserves a 1 GiB free-memory floor.
-Hold and 15-minute invocation-budget checks occur before each batch; resource
-and authorization checks occur at most every two seconds. A breach stops only
-the pilot worker. It does not reduce batch size, alter precision, signal other
-jobs, or modify their allocations. This bounds memory use and execution scope;
-allowed compute sharing must come from the actual authorization.
+The 42 previously recorded original content hashes still match, including the
+original baseline results, selected checkpoints, split/protocol files, manifest
+and hold. The original checkout remains on `research-rebuild`; research changes
+and new numerical artifacts are on `research/architecture-variants-20261025`.
+See `final_preservation.json`. The executed grant was preserved byte-for-byte for
+provenance, and the live grant is now **closed_completed**. The depth execution
+scope is exhausted; nothing is queued or waiting to run automatically.
 
-The common trainer gained an optional observer; its default optimization and
-evaluation path is unchanged. New pilot histories persist each epoch's validation
-AUC/F1/BCE, training BCE, runtime, CUDA allocated/reserved peaks and process RSS.
-The epoch CUDA peak is reset each epoch, and the final result retains the maximum
-across all saved epochs. RSS is explicitly labelled as a lifetime high-water
-mark. Epoch CSVs are exported on completion or cooperative interruption.
-`historical_baseline_epochs.csv` exports all 29 existing baseline epochs as
-historical evidence; its unavailable per-epoch memory values stay empty.
+There is no remaining blocker to reporting this completed comparison. The next
+recommended experiment is the **prepared one-layer causal softmax variant** on
+ASSIST2009, seed 42, with the same optimizer/data/budget and validation selection.
+The primary objective is AUC, and this depth pilot supplied no improvement signal
+for prioritizing a full three-dataset five-seed depth campaign. If softmax improves
+AUC, evaluate that hypothesis across seeds 42,123,2026,3407,7777 and all three
+datasets; recency-biased softmax is the subsequent isolated attention comparison.
+No additional variant training was launched under the completed depth grant.
 
-Pilot `best.pt` and `latest.pt` are written only under the ignored
-`pilot-workspace/checkpoints/<new pilot run ID>/`. Latest state retains optimizer,
-Python/NumPy/Torch/CUDA RNG, loader RNG, patience and complete-epoch history.
-Hold/resource interruption retains the last complete epoch, discarding any
-partial epoch on resume. Source or instrumentation changes reject mixed resumes;
-renewing an otherwise compatible allocation is audited without changing model
-updates. No legacy checkpoint is resumed or overwritten.
-
-CPU verification: **115 passed, 16 skipped**, with the historical archive test
-deselected because its ignored binaries are only in the original checkout and
-were verified in the earlier stage. The added tests cover both hold locations
-before Torch import, malformed/expired/out-of-scope authorizations, nonblocking
-lock conflicts, isolated input links, epoch exports, full versus interrupted
-resume, unchanged parameters/validation under instrumentation, resource-stop
-checkpoint preservation, and fresh validation-pair comparison. GPU behavior has
-not been claimed as tested while the hold is active. Evidence: `cpu_tests.xml`.
-
-`preflight.json` verifies all three existing processed/split hashes, student
-disjointness, 15 selected checkpoint references and 42 original content hashes.
-All match; the original hold, manifest, baseline architecture and results remain
-unchanged. The observer exists only on the isolated research branch; the original
-checkout's trainer is unchanged as well. No old experiment/recovery state was
-reset, re-labelled or continued.
-
-Once the existing hold has actually been lifted through an explicit project
-decision and GPU execution is authorized, the bounded launch is:
-
-```bash
-cd /tmp/lightsakt-architecture-20261025
-CUDA_VISIBLE_DEVICES='<authorized GPU or MIG UUID>' python -m scripts.architecture_pilot run --stage depth --authorization /path/to/existing-authorization.json
-```
-
-The same command with `--stage attention` is separate and checks completion of
-the depth pair first. CPU-only replay remains available through
-`CUDA_VISIBLE_DEVICES='' python -m scripts.architecture_pilot reference`.
-No background process is waiting for authorization and nothing will start
-automatically. The remaining blocker is the active hold; GPU execution permission
-must also be established before a later launch. A new two-layer AUC cannot be
-reported until that condition permits actual training.
+![Validation AUC and BCE across all completed epochs](validation_curves.png)

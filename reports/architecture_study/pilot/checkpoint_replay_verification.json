@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "optimizer_updates_performed": 0,
+  "split": "validation",
+  "test_loader_constructed": false,
+  "test_predictions_accessed": false,
+  "baseline_epoch_auc_maximum_difference_from_original": 0.0,
+  "training_code_sha256": "c833544fd43923c2ebe11306d3dddcbb779a0af273f8cc288e5b50d482de91f0",
+  "rows": [
+    {
+      "arm": "baseline",
+      "status": "PASS",
+      "validation_replay": {
+        "auc": 0.7508035221909489,
+        "auc_reason": null,
+        "accuracy": 0.7321168414918415,
+        "f1": 0.8148054891099081,
+        "mse": 0.1815333940578288,
+        "bce": 0.542363721270053,
+        "n_targets": 27456
+      },
+      "absolute_differences": {
+        "auc": 1.4920491619996312e-08,
+        "f1": 0.0,
+        "accuracy": 0.0,
+        "bce": 4.667599640129083e-12
+      },
+      "best_checkpoint_sha256": "75b6663b8db55e6255b877c7bfd6c472edb99ec7169b188bdf9beda57e0f67f9",
+      "latest_checkpoint_sha256": "591299dde5368910e06e175b9fa420ec25df707db775429a74ca0f9d48a1fb4a",
+      "selected_epoch": 24,
+      "completed_epochs": 29,
+      "complete_resume_state_present": true
+    },
+    {
+      "arm": "two_layer_linear",
+      "status": "PASS",
+      "validation_replay": {
+        "auc": 0.750790941232361,
+        "auc_reason": null,
+        "accuracy": 0.7328452797202797,
+        "f1": 0.8162621176824227,
+        "mse": 0.1815902823101648,
+        "bce": 0.5423305431330043,
+        "n_targets": 27456
+      },
+      "absolute_differences": {
+        "auc": 8.95229512742901e-09,
+        "f1": 0.0,
+        "accuracy": 0.0,
+        "bce": 2.1294610519362323e-10
+      },
+      "best_checkpoint_sha256": "d5f097f81be73a0191a8754ddb79e514ffcff84ddd92f3092e64236b77c985a7",
+      "latest_checkpoint_sha256": "b36f0c32a7b6714a61a25919d7f3da6998b6d57370a5523826a76055a5ed953a",
+      "selected_epoch": 24,
+      "completed_epochs": 29,
+      "complete_resume_state_present": true
+    }
+  ]
+}
