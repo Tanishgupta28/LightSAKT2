@@ -1,0 +1,34 @@
+{
+  "dataset": "Algebra2005",
+  "model": "LightSAKTResearch",
+  "group": "architecture_study",
+  "seed": 3407,
+  "seq_len": 200,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "patience": 5,
+  "learning_rate": 0.001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.0,
+  "epsilon": 1e-08,
+  "model_config": {
+    "max_seq_len": 200,
+    "embed_dim": 128,
+    "num_heads": 4,
+    "dropout": 0.2,
+    "num_layers": 1,
+    "attention_type": "recency_softmax"
+  },
+  "evaluate_test": false,
+  "run_id": "Algebra2005-LightSAKTResearch-one_layer_recency_softmax-3407-v1",
+  "device": "cuda",
+  "architecture_study": {
+    "arm": "one_layer_recency_softmax",
+    "baseline_reference": "Algebra2005-LightSAKT-final-3407",
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643"
+  }
+}

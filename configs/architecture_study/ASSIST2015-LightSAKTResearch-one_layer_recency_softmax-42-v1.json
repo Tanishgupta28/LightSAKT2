@@ -1,0 +1,34 @@
+{
+  "dataset": "ASSIST2015",
+  "model": "LightSAKTResearch",
+  "group": "architecture_study",
+  "seed": 42,
+  "seq_len": 100,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "patience": 5,
+  "learning_rate": 0.0005,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.0,
+  "epsilon": 1e-08,
+  "model_config": {
+    "max_seq_len": 100,
+    "embed_dim": 128,
+    "num_heads": 4,
+    "dropout": 0.1,
+    "num_layers": 1,
+    "attention_type": "recency_softmax"
+  },
+  "evaluate_test": false,
+  "run_id": "ASSIST2015-LightSAKTResearch-one_layer_recency_softmax-42-v1",
+  "device": "cuda",
+  "architecture_study": {
+    "arm": "one_layer_recency_softmax",
+    "baseline_reference": "ASSIST2015-LightSAKT-final-42",
+    "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+    "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce"
+  }
+}

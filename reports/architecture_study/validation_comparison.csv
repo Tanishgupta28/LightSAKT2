@@ -1,0 +1,13 @@
+dataset,arm,status,completed_seeds,required_seeds,validation_auc_mean,validation_auc_std,paired_validation_auc_delta_mean,paired_validation_auc_delta_std,checkpoint_replay
+ASSIST2009,original_one_layer_linear,complete_recorded_validation,5,5,0.7494537052952228,0.0015700384359898724,0.0,0.0,required before performance claim for new variants
+ASSIST2009,two_layer_linear,pending,0,5,,,,,required before performance claim for new variants
+ASSIST2009,one_layer_softmax,pending,0,5,,,,,required before performance claim for new variants
+ASSIST2009,one_layer_recency_softmax,pending,0,5,,,,,required before performance claim for new variants
+ASSIST2015,original_one_layer_linear,complete_recorded_validation,5,5,0.7299220850612038,0.00081854818837782,0.0,0.0,required before performance claim for new variants
+ASSIST2015,two_layer_linear,pending,0,5,,,,,required before performance claim for new variants
+ASSIST2015,one_layer_softmax,pending,0,5,,,,,required before performance claim for new variants
+ASSIST2015,one_layer_recency_softmax,pending,0,5,,,,,required before performance claim for new variants
+Algebra2005,original_one_layer_linear,complete_recorded_validation,5,5,0.8075484395982983,0.0007658155599832816,0.0,0.0,required before performance claim for new variants
+Algebra2005,two_layer_linear,pending,0,5,,,,,required before performance claim for new variants
+Algebra2005,one_layer_softmax,pending,0,5,,,,,required before performance claim for new variants
+Algebra2005,one_layer_recency_softmax,pending,0,5,,,,,required before performance claim for new variants

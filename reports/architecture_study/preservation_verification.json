@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "changed_content_paths": [],
+  "content_hashes_checked": 42,
+  "checkpoint_files": 1554,
+  "checkpoint_inventory_unchanged": true,
+  "selected_checkpoint_hashes_match_saved_results": true,
+  "selected_checkpoint_references": 15,
+  "baseline_source_files_equal": {
+    "src/models/light_sakt.py": true,
+    "src/attention/linear.py": true,
+    "src/training/engine.py": true,
+    "src/datasets/sequences.py": true,
+    "configs/protocol.json": true
+  },
+  "original_branch": "research-rebuild",
+  "training_hold_unchanged": true,
+  "no_real_dataset_evaluation_performed": true,
+  "no_gpu_training_launched": true
+}

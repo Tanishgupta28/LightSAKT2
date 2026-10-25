@@ -1,0 +1,262 @@
+{
+  "basis": "Historical selected baseline GPU training/epoch records; serial execution",
+  "factors_are_assumptions": true,
+  "gpu_profile_performed": false,
+  "excludes": "Startup, data loading, final heldout inference, artifact verification, queue and contention",
+  "memory_planning": "Request at least 4 GiB dedicated accelerator memory for a later bounded profile; actual variant peak must be measured before full training.",
+  "rows": [
+    {
+      "dataset": "ASSIST2009",
+      "arm": "two_layer_linear",
+      "runs": 5,
+      "recorded_baseline_seconds_five_runs": 123.95433684799355,
+      "recorded_baseline_epoch_seconds_mean": 0.8428325876892657,
+      "recorded_baseline_epochs": [
+        29,
+        34,
+        31,
+        26,
+        25
+      ],
+      "recorded_baseline_peak_allocated_bytes": 266944000,
+      "assumed_runtime_factor_interval": [
+        1.5,
+        3.0
+      ],
+      "same_stopping_minutes_interval": [
+        3.0988584211998385,
+        6.197716842399677
+      ],
+      "fifty_epoch_minutes_interval": [
+        5.26770367305791,
+        10.53540734611582
+      ]
+    },
+    {
+      "dataset": "ASSIST2009",
+      "arm": "one_layer_softmax",
+      "runs": 5,
+      "recorded_baseline_seconds_five_runs": 123.95433684799355,
+      "recorded_baseline_epoch_seconds_mean": 0.8428325876892657,
+      "recorded_baseline_epochs": [
+        29,
+        34,
+        31,
+        26,
+        25
+      ],
+      "recorded_baseline_peak_allocated_bytes": 266944000,
+      "assumed_runtime_factor_interval": [
+        0.5,
+        2.0
+      ],
+      "same_stopping_minutes_interval": [
+        1.032952807066613,
+        4.131811228266452
+      ],
+      "fifty_epoch_minutes_interval": [
+        1.7559012243526368,
+        7.023604897410547
+      ]
+    },
+    {
+      "dataset": "ASSIST2009",
+      "arm": "one_layer_recency_softmax",
+      "runs": 5,
+      "recorded_baseline_seconds_five_runs": 123.95433684799355,
+      "recorded_baseline_epoch_seconds_mean": 0.8428325876892657,
+      "recorded_baseline_epochs": [
+        29,
+        34,
+        31,
+        26,
+        25
+      ],
+      "recorded_baseline_peak_allocated_bytes": 266944000,
+      "assumed_runtime_factor_interval": [
+        0.5,
+        2.5
+      ],
+      "same_stopping_minutes_interval": [
+        1.032952807066613,
+        5.164764035333064
+      ],
+      "fifty_epoch_minutes_interval": [
+        1.7559012243526368,
+        8.779506121763184
+      ]
+    },
+    {
+      "dataset": "ASSIST2015",
+      "arm": "two_layer_linear",
+      "runs": 5,
+      "recorded_baseline_seconds_five_runs": 372.5661430800101,
+      "recorded_baseline_epoch_seconds_mean": 4.026838047650412,
+      "recorded_baseline_epochs": [
+        23,
+        16,
+        17,
+        18,
+        18
+      ],
+      "recorded_baseline_peak_allocated_bytes": 462413824,
+      "assumed_runtime_factor_interval": [
+        1.5,
+        3.0
+      ],
+      "same_stopping_minutes_interval": [
+        9.314153577000251,
+        18.628307154000503
+      ],
+      "fifty_epoch_minutes_interval": [
+        25.167737797815075,
+        50.33547559563015
+      ]
+    },
+    {
+      "dataset": "ASSIST2015",
+      "arm": "one_layer_softmax",
+      "runs": 5,
+      "recorded_baseline_seconds_five_runs": 372.5661430800101,
+      "recorded_baseline_epoch_seconds_mean": 4.026838047650412,
+      "recorded_baseline_epochs": [
+        23,
+        16,
+        17,
+        18,
+        18
+      ],
+      "recorded_baseline_peak_allocated_bytes": 462413824,
+      "assumed_runtime_factor_interval": [
+        0.5,
+        2.0
+      ],
+      "same_stopping_minutes_interval": [
+        3.104717859000084,
+        12.418871436000336
+      ],
+      "fifty_epoch_minutes_interval": [
+        8.389245932605025,
+        33.5569837304201
+      ]
+    },
+    {
+      "dataset": "ASSIST2015",
+      "arm": "one_layer_recency_softmax",
+      "runs": 5,
+      "recorded_baseline_seconds_five_runs": 372.5661430800101,
+      "recorded_baseline_epoch_seconds_mean": 4.026838047650412,
+      "recorded_baseline_epochs": [
+        23,
+        16,
+        17,
+        18,
+        18
+      ],
+      "recorded_baseline_peak_allocated_bytes": 462413824,
+      "assumed_runtime_factor_interval": [
+        0.5,
+        2.5
+      ],
+      "same_stopping_minutes_interval": [
+        3.104717859000084,
+        15.52358929500042
+      ],
+      "fifty_epoch_minutes_interval": [
+        8.389245932605025,
+        41.94622966302513
+      ]
+    },
+    {
+      "dataset": "Algebra2005",
+      "arm": "two_layer_linear",
+      "runs": 5,
+      "recorded_baseline_seconds_five_runs": 164.52612348098774,
+      "recorded_baseline_epoch_seconds_mean": 1.015796387064748,
+      "recorded_baseline_epochs": [
+        31,
+        31,
+        38,
+        31,
+        28
+      ],
+      "recorded_baseline_peak_allocated_bytes": 857596928,
+      "assumed_runtime_factor_interval": [
+        1.5,
+        3.0
+      ],
+      "same_stopping_minutes_interval": [
+        4.113153087024694,
+        8.226306174049387
+      ],
+      "fifty_epoch_minutes_interval": [
+        6.348727419154674,
+        12.697454838309348
+      ]
+    },
+    {
+      "dataset": "Algebra2005",
+      "arm": "one_layer_softmax",
+      "runs": 5,
+      "recorded_baseline_seconds_five_runs": 164.52612348098774,
+      "recorded_baseline_epoch_seconds_mean": 1.015796387064748,
+      "recorded_baseline_epochs": [
+        31,
+        31,
+        38,
+        31,
+        28
+      ],
+      "recorded_baseline_peak_allocated_bytes": 857596928,
+      "assumed_runtime_factor_interval": [
+        0.5,
+        2.0
+      ],
+      "same_stopping_minutes_interval": [
+        1.3710510290082312,
+        5.484204116032925
+      ],
+      "fifty_epoch_minutes_interval": [
+        2.116242473051558,
+        8.464969892206232
+      ]
+    },
+    {
+      "dataset": "Algebra2005",
+      "arm": "one_layer_recency_softmax",
+      "runs": 5,
+      "recorded_baseline_seconds_five_runs": 164.52612348098774,
+      "recorded_baseline_epoch_seconds_mean": 1.015796387064748,
+      "recorded_baseline_epochs": [
+        31,
+        31,
+        38,
+        31,
+        28
+      ],
+      "recorded_baseline_peak_allocated_bytes": 857596928,
+      "assumed_runtime_factor_interval": [
+        0.5,
+        2.5
+      ],
+      "same_stopping_minutes_interval": [
+        1.3710510290082312,
+        6.855255145041156
+      ],
+      "fifty_epoch_minutes_interval": [
+        2.116242473051558,
+        10.581212365257791
+      ]
+    }
+  ],
+  "all_45_runs_totals": {
+    "same_stopping_minutes_interval": [
+      27.54360847537464,
+      82.63082542612392
+    ],
+    "fifty_epoch_minutes_interval": [
+      61.30694815004608,
+      183.92084445013828
+    ]
+  }
+}

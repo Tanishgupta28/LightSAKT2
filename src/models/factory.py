@@ -1,4 +1,5 @@
 from src.models.light_sakt import LightSAKT
+from src.models.light_sakt_research import LightSAKTResearch
 from src.models.sakt import SAKT
 from src.models.dkt import DKT
 from src.models.dkt_plus import DKTPlus
@@ -7,7 +8,8 @@ from src.models.gkt import PAM, MHA
 
 
 def build_model(name, num_q, config):
-    constructors = {"LightSAKT": LightSAKT, "SAKT": SAKT, "DKT": DKT,
+    constructors = {"LightSAKT": LightSAKT, "LightSAKTResearch": LightSAKTResearch,
+                    "SAKT": SAKT, "DKT": DKT,
                     "DKT+": DKTPlus, "DKVMN": DKVMN, "GKT": PAM, "GKT_MHA": MHA}
     return constructors[name](num_q=num_q, **config)
 

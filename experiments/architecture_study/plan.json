@@ -1,0 +1,2069 @@
+{
+  "schema_version": 1,
+  "status": "prepared_not_submitted",
+  "launches_jobs": false,
+  "selection_metric": "validation_auc",
+  "test_evaluation": false,
+  "training_seeds": [
+    42,
+    123,
+    2026,
+    3407,
+    7777
+  ],
+  "split_seed": 42,
+  "split_unit": "student",
+  "split_ratios": [
+    0.7,
+    0.1,
+    0.2
+  ],
+  "protocol_sha256": "7718f3b90dbd1983f7b5ef81f2a16c2508357508f9c165dfe84a6a52bc898bae",
+  "selection_rule": "mean paired validation-AUC delta over all five seeds; never choose a best seed",
+  "screening": "seed 42 is a diagnostic; complete all prespecified seeds before ranking arms",
+  "tie_break": "higher mean validation AUC, then fewer parameters, then lexical arm name",
+  "test_policy": "Existing baseline test reports are historical context only. Freeze architecture and settings before any later authorized final test evaluation.",
+  "datasets": {
+    "ASSIST2009": {
+      "selected_grid_run": "ASSIST2009-LightSAKT-grid-42-f08e9494d270",
+      "selected_config_sha256": "961573cddf4efaceb5aaeddcb6535efde9bb815734ea5dfc922a39790f1f92d2",
+      "statistics_sha256": "dc5c279b3f6470656fabc166a7e6f74be80e5f3e8b5a22123ed26156e89a9b94",
+      "selection_sha256": "5d62a9ca711d06787283ded9097e8b33a3ecce7d0e05e6e9d39e3bf6bfd8116e",
+      "num_q": 137,
+      "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "identifier_semantics": "skill_name; simultaneous tags collapsed to sorted composite",
+      "split_students": {
+        "train": 2905,
+        "validation": 415,
+        "test": 831
+      },
+      "split_interactions": {
+        "test": 47777,
+        "train": 198942,
+        "validation": 27871
+      },
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 64,
+        "num_heads": 2,
+        "dropout": 0.1
+      },
+      "learning_rate": 0.001,
+      "baseline_validation_auc_mean": 0.7494537052952228,
+      "baseline_validation_auc_std": 0.0015700384359898724
+    },
+    "ASSIST2015": {
+      "selected_grid_run": "ASSIST2015-LightSAKT-grid-42-64640d03b0d3",
+      "selected_config_sha256": "baa6f8b39de759a41a2da1aa6930068e738a4e6861b50988ddbbe8725f74683e",
+      "statistics_sha256": "5391495cbcff0e972f6dfceb49597a63ae64b7c84828bf043283ed6d0148efd9",
+      "selection_sha256": "487b183be7849046092cc8382f04672d949191b9a03e11c33a73de658ec850f8",
+      "num_q": 101,
+      "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+      "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+      "identifier_semantics": "sequence_id (skill-builder); no exercise ID in four-column release",
+      "split_students": {
+        "train": 13888,
+        "validation": 1984,
+        "test": 3968
+      },
+      "split_interactions": {
+        "test": 137012,
+        "train": 477840,
+        "validation": 68949
+      },
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.1
+      },
+      "learning_rate": 0.0005,
+      "baseline_validation_auc_mean": 0.7299220850612038,
+      "baseline_validation_auc_std": 0.00081854818837782
+    },
+    "Algebra2005": {
+      "selected_grid_run": "Algebra2005-LightSAKT-grid-42-06884c8943b2",
+      "selected_config_sha256": "8058fbff2c813686e627f1d04f31b28c28f05eddf9317cd8250878d82f4166a1",
+      "statistics_sha256": "db90d4bf8779a3a47dc571c893b84da22aedbec03c5313dcacef7eed0c040d5e",
+      "selection_sha256": "2eeac0425bc3149a979d01a545b704af0dba53b6254d2caa9da37f1356c5ae74",
+      "num_q": 388,
+      "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "identifier_semantics": "KC(Default) full composite string; original training subset only",
+      "split_students": {
+        "train": 401,
+        "validation": 57,
+        "test": 116
+      },
+      "split_interactions": {
+        "test": 113820,
+        "train": 398886,
+        "validation": 94319
+      },
+      "model_config": {
+        "max_seq_len": 200,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.2
+      },
+      "learning_rate": 0.001,
+      "baseline_validation_auc_mean": 0.8075484395982983,
+      "baseline_validation_auc_std": 0.0007658155599832816
+    }
+  },
+  "baseline_references": [
+    {
+      "dataset": "ASSIST2009",
+      "seed": 42,
+      "arm": "original_one_layer_linear",
+      "status": "existing_completed_reference_no_new_training",
+      "run_id": "ASSIST2009-LightSAKT-final-42",
+      "metrics_path": "results/raw/ASSIST2009-LightSAKT-final-42/metrics.json",
+      "metrics_sha256": "644f89aa8b75b2a61075b978e244a742613e4a6cb5c35ce25d736a210c743b67",
+      "validation_auc": 0.7508035371114405,
+      "checkpoint": "checkpoints/ASSIST2009-LightSAKT-grid-42-f08e9494d270/best.pt",
+      "checkpoint_sha256": "d0af3a20f40cf3734883634c23053dbfbf187dee9e7a556c85fcb27b4841197d",
+      "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6"
+    },
+    {
+      "dataset": "ASSIST2009",
+      "seed": 123,
+      "arm": "original_one_layer_linear",
+      "status": "existing_completed_reference_no_new_training",
+      "run_id": "ASSIST2009-LightSAKT-final-123",
+      "metrics_path": "results/raw/ASSIST2009-LightSAKT-final-123/metrics.json",
+      "metrics_sha256": "c20823077d7f5c6f69cf57a14cea58a2e098ddc58c92d87576771e5ecb6a9b0c",
+      "validation_auc": 0.7497947328277077,
+      "checkpoint": "checkpoints/ASSIST2009-LightSAKT-final-123/best.pt",
+      "checkpoint_sha256": "aef075f40bf25d3f59fb8b65930c6f361c80adb72920809d09b5c60a0e1b97a9",
+      "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6"
+    },
+    {
+      "dataset": "ASSIST2009",
+      "seed": 2026,
+      "arm": "original_one_layer_linear",
+      "status": "existing_completed_reference_no_new_training",
+      "run_id": "ASSIST2009-LightSAKT-final-2026",
+      "metrics_path": "results/raw/ASSIST2009-LightSAKT-final-2026/metrics.json",
+      "metrics_sha256": "6fb90bb752279e078dfc17505d0a5eeea57a00d25843e44b7ac8c03676b12b2d",
+      "validation_auc": 0.7496313952211456,
+      "checkpoint": "checkpoints/ASSIST2009-LightSAKT-final-2026/best.pt",
+      "checkpoint_sha256": "2a8f9d128b5f019f7da897d6faefef988dcd5790087cd3f14ba1fb194b58cae8",
+      "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6"
+    },
+    {
+      "dataset": "ASSIST2009",
+      "seed": 3407,
+      "arm": "original_one_layer_linear",
+      "status": "existing_completed_reference_no_new_training",
+      "run_id": "ASSIST2009-LightSAKT-final-3407",
+      "metrics_path": "results/raw/ASSIST2009-LightSAKT-final-3407/metrics.json",
+      "metrics_sha256": "23b3e8075b85f0ea6ffa8d0fcc7034bbdc907f3c8b185a11e6049ef1e54dd1f7",
+      "validation_auc": 0.7467666578337355,
+      "checkpoint": "checkpoints/ASSIST2009-LightSAKT-final-3407/best.pt",
+      "checkpoint_sha256": "d306739251bd3471081b2d5703e218456696ffd3cbc3cf10668a227070a783ef",
+      "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6"
+    },
+    {
+      "dataset": "ASSIST2009",
+      "seed": 7777,
+      "arm": "original_one_layer_linear",
+      "status": "existing_completed_reference_no_new_training",
+      "run_id": "ASSIST2009-LightSAKT-final-7777",
+      "metrics_path": "results/raw/ASSIST2009-LightSAKT-final-7777/metrics.json",
+      "metrics_sha256": "41a46e54ac59b91ebb7be07d22f91e927979fba325514c310c2b0c364e59ec9c",
+      "validation_auc": 0.7502722034820846,
+      "checkpoint": "checkpoints/ASSIST2009-LightSAKT-final-7777/best.pt",
+      "checkpoint_sha256": "4bdf2c3fde63c4e885c1c400fde2af7f88fd6e4ed2151d3c1bdedce2166162d8",
+      "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6"
+    },
+    {
+      "dataset": "ASSIST2015",
+      "seed": 42,
+      "arm": "original_one_layer_linear",
+      "status": "existing_completed_reference_no_new_training",
+      "run_id": "ASSIST2015-LightSAKT-final-42",
+      "metrics_path": "results/raw/ASSIST2015-LightSAKT-final-42/metrics.json",
+      "metrics_sha256": "c1b94ea7b96b9aac95c6c69268680abcbb24666ce74a77e5020f107306a1539f",
+      "validation_auc": 0.7300652943795162,
+      "checkpoint": "checkpoints/ASSIST2015-LightSAKT-grid-42-64640d03b0d3/best.pt",
+      "checkpoint_sha256": "c08f06c27d9bd31c155dcaff06bbe17b8464578df7e058930233ffbea68d7136",
+      "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6"
+    },
+    {
+      "dataset": "ASSIST2015",
+      "seed": 123,
+      "arm": "original_one_layer_linear",
+      "status": "existing_completed_reference_no_new_training",
+      "run_id": "ASSIST2015-LightSAKT-final-123",
+      "metrics_path": "results/raw/ASSIST2015-LightSAKT-final-123/metrics.json",
+      "metrics_sha256": "a7816d1bc237b2b2ec1d4acac6c203431203d41026bb6e80e8599bda221b959a",
+      "validation_auc": 0.7305251795399724,
+      "checkpoint": "checkpoints/ASSIST2015-LightSAKT-final-123/best.pt",
+      "checkpoint_sha256": "3e3a98cc956129faf1407b041c0ed65dfa1d5abf082c85dd498872fd63377331",
+      "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6"
+    },
+    {
+      "dataset": "ASSIST2015",
+      "seed": 2026,
+      "arm": "original_one_layer_linear",
+      "status": "existing_completed_reference_no_new_training",
+      "run_id": "ASSIST2015-LightSAKT-final-2026",
+      "metrics_path": "results/raw/ASSIST2015-LightSAKT-final-2026/metrics.json",
+      "metrics_sha256": "bb7b0e03f08cea3049f9fb7ce2909c67216b6483febf3a74d55a4612ab38bce9",
+      "validation_auc": 0.7308591494002814,
+      "checkpoint": "checkpoints/ASSIST2015-LightSAKT-final-2026/best.pt",
+      "checkpoint_sha256": "8377a4cf83ff90054638cafa1cedfeb514ac6a34311cce313b711b95b54f308e",
+      "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6"
+    },
+    {
+      "dataset": "ASSIST2015",
+      "seed": 3407,
+      "arm": "original_one_layer_linear",
+      "status": "existing_completed_reference_no_new_training",
+      "run_id": "ASSIST2015-LightSAKT-final-3407",
+      "metrics_path": "results/raw/ASSIST2015-LightSAKT-final-3407/metrics.json",
+      "metrics_sha256": "d84aa89c5dbf9305a6899366c9a0cd9aacbb9e15936eeb91c726a17bcdfb5a33",
+      "validation_auc": 0.7291016020676908,
+      "checkpoint": "checkpoints/ASSIST2015-LightSAKT-final-3407/best.pt",
+      "checkpoint_sha256": "e468362d0ab14f7e16342a472c2c796a1456bf3519c521bfe98632ed18f29ba3",
+      "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6"
+    },
+    {
+      "dataset": "ASSIST2015",
+      "seed": 7777,
+      "arm": "original_one_layer_linear",
+      "status": "existing_completed_reference_no_new_training",
+      "run_id": "ASSIST2015-LightSAKT-final-7777",
+      "metrics_path": "results/raw/ASSIST2015-LightSAKT-final-7777/metrics.json",
+      "metrics_sha256": "4feb385ad291dc1e34ace3910d752e31d477bec46d3edd981d7f623d668f1a4d",
+      "validation_auc": 0.729059199918558,
+      "checkpoint": "checkpoints/ASSIST2015-LightSAKT-final-7777/best.pt",
+      "checkpoint_sha256": "9b8260ac274f98826818a72ca0d6060ac7a057585cf7748834128cf3e0323beb",
+      "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6"
+    },
+    {
+      "dataset": "Algebra2005",
+      "seed": 42,
+      "arm": "original_one_layer_linear",
+      "status": "existing_completed_reference_no_new_training",
+      "run_id": "Algebra2005-LightSAKT-final-42",
+      "metrics_path": "results/raw/Algebra2005-LightSAKT-final-42/metrics.json",
+      "metrics_sha256": "d3221a0716e4af95043598a81f192af1d323571104105e265798f2ed36c845d5",
+      "validation_auc": 0.8081265101972933,
+      "checkpoint": "checkpoints/Algebra2005-LightSAKT-grid-42-06884c8943b2/best.pt",
+      "checkpoint_sha256": "14b64e7450e0610c300913e933a7dd2ab0d6d3881951e3475557a8e673ee1390",
+      "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6"
+    },
+    {
+      "dataset": "Algebra2005",
+      "seed": 123,
+      "arm": "original_one_layer_linear",
+      "status": "existing_completed_reference_no_new_training",
+      "run_id": "Algebra2005-LightSAKT-final-123",
+      "metrics_path": "results/raw/Algebra2005-LightSAKT-final-123/metrics.json",
+      "metrics_sha256": "ed365e2da729f0f66493d63e16a64d3f5fa1e5b0b26986fa1d67bceca448e3e3",
+      "validation_auc": 0.8078991797549855,
+      "checkpoint": "checkpoints/Algebra2005-LightSAKT-final-123/best.pt",
+      "checkpoint_sha256": "e096183fb960c4cd0ba6c89ef8f5715f72e6c759b1c22b513f334fda45c87845",
+      "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6"
+    },
+    {
+      "dataset": "Algebra2005",
+      "seed": 2026,
+      "arm": "original_one_layer_linear",
+      "status": "existing_completed_reference_no_new_training",
+      "run_id": "Algebra2005-LightSAKT-final-2026",
+      "metrics_path": "results/raw/Algebra2005-LightSAKT-final-2026/metrics.json",
+      "metrics_sha256": "9cd8e48156d0995840203bddf39b5ddceca70ee15fa6fcd57ad51fb32b36108c",
+      "validation_auc": 0.8081870276139927,
+      "checkpoint": "checkpoints/Algebra2005-LightSAKT-final-2026/best.pt",
+      "checkpoint_sha256": "257e8e410c0a4e7153b9d3b358f3c52b1f5f47147bc265eba2fa4948551ed15f",
+      "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6"
+    },
+    {
+      "dataset": "Algebra2005",
+      "seed": 3407,
+      "arm": "original_one_layer_linear",
+      "status": "existing_completed_reference_no_new_training",
+      "run_id": "Algebra2005-LightSAKT-final-3407",
+      "metrics_path": "results/raw/Algebra2005-LightSAKT-final-3407/metrics.json",
+      "metrics_sha256": "01b99ae23e3283dbac95a13604af29b134bfded12ccc98e14e11fd6897cbd585",
+      "validation_auc": 0.8064093914369899,
+      "checkpoint": "checkpoints/Algebra2005-LightSAKT-final-3407/best.pt",
+      "checkpoint_sha256": "65ec77b47c35ae06039c357b7da2edf6e030abfbdbcfe7fbf764d546328bfede",
+      "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6"
+    },
+    {
+      "dataset": "Algebra2005",
+      "seed": 7777,
+      "arm": "original_one_layer_linear",
+      "status": "existing_completed_reference_no_new_training",
+      "run_id": "Algebra2005-LightSAKT-final-7777",
+      "metrics_path": "results/raw/Algebra2005-LightSAKT-final-7777/metrics.json",
+      "metrics_sha256": "620d2c309c95aaa573a3d29870e43fde1d4c49ba3b3a0c2fb506163d3d58466a",
+      "validation_auc": 0.80712008898823,
+      "checkpoint": "checkpoints/Algebra2005-LightSAKT-final-7777/best.pt",
+      "checkpoint_sha256": "a3da82abe09e86df4fa76c5ddd2c7edc0069d0f5166cc8677ec94d09a059cd77",
+      "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6"
+    }
+  ],
+  "proposed_runs": [
+    {
+      "arm": "two_layer_linear",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2009-LightSAKTResearch-two_layer_linear-42-v1.json",
+      "config": {
+        "dataset": "ASSIST2009",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 42,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 64,
+          "num_heads": 2,
+          "dropout": 0.1,
+          "num_layers": 2,
+          "attention_type": "linear"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2009-LightSAKTResearch-two_layer_linear-42-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "two_layer_linear",
+          "baseline_reference": "ASSIST2009-LightSAKT-final-42",
+          "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+          "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2009-LightSAKTResearch-one_layer_softmax-42-v1.json",
+      "config": {
+        "dataset": "ASSIST2009",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 42,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 64,
+          "num_heads": 2,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2009-LightSAKTResearch-one_layer_softmax-42-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_softmax",
+          "baseline_reference": "ASSIST2009-LightSAKT-final-42",
+          "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+          "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_recency_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2009-LightSAKTResearch-one_layer_recency_softmax-42-v1.json",
+      "config": {
+        "dataset": "ASSIST2009",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 42,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 64,
+          "num_heads": 2,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "recency_softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2009-LightSAKTResearch-one_layer_recency_softmax-42-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_recency_softmax",
+          "baseline_reference": "ASSIST2009-LightSAKT-final-42",
+          "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+          "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0"
+        }
+      }
+    },
+    {
+      "arm": "two_layer_linear",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2009-LightSAKTResearch-two_layer_linear-123-v1.json",
+      "config": {
+        "dataset": "ASSIST2009",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 123,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 64,
+          "num_heads": 2,
+          "dropout": 0.1,
+          "num_layers": 2,
+          "attention_type": "linear"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2009-LightSAKTResearch-two_layer_linear-123-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "two_layer_linear",
+          "baseline_reference": "ASSIST2009-LightSAKT-final-123",
+          "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+          "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2009-LightSAKTResearch-one_layer_softmax-123-v1.json",
+      "config": {
+        "dataset": "ASSIST2009",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 123,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 64,
+          "num_heads": 2,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2009-LightSAKTResearch-one_layer_softmax-123-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_softmax",
+          "baseline_reference": "ASSIST2009-LightSAKT-final-123",
+          "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+          "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_recency_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2009-LightSAKTResearch-one_layer_recency_softmax-123-v1.json",
+      "config": {
+        "dataset": "ASSIST2009",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 123,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 64,
+          "num_heads": 2,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "recency_softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2009-LightSAKTResearch-one_layer_recency_softmax-123-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_recency_softmax",
+          "baseline_reference": "ASSIST2009-LightSAKT-final-123",
+          "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+          "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0"
+        }
+      }
+    },
+    {
+      "arm": "two_layer_linear",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2009-LightSAKTResearch-two_layer_linear-2026-v1.json",
+      "config": {
+        "dataset": "ASSIST2009",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 2026,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 64,
+          "num_heads": 2,
+          "dropout": 0.1,
+          "num_layers": 2,
+          "attention_type": "linear"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2009-LightSAKTResearch-two_layer_linear-2026-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "two_layer_linear",
+          "baseline_reference": "ASSIST2009-LightSAKT-final-2026",
+          "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+          "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2009-LightSAKTResearch-one_layer_softmax-2026-v1.json",
+      "config": {
+        "dataset": "ASSIST2009",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 2026,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 64,
+          "num_heads": 2,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2009-LightSAKTResearch-one_layer_softmax-2026-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_softmax",
+          "baseline_reference": "ASSIST2009-LightSAKT-final-2026",
+          "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+          "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_recency_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2009-LightSAKTResearch-one_layer_recency_softmax-2026-v1.json",
+      "config": {
+        "dataset": "ASSIST2009",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 2026,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 64,
+          "num_heads": 2,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "recency_softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2009-LightSAKTResearch-one_layer_recency_softmax-2026-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_recency_softmax",
+          "baseline_reference": "ASSIST2009-LightSAKT-final-2026",
+          "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+          "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0"
+        }
+      }
+    },
+    {
+      "arm": "two_layer_linear",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2009-LightSAKTResearch-two_layer_linear-3407-v1.json",
+      "config": {
+        "dataset": "ASSIST2009",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 3407,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 64,
+          "num_heads": 2,
+          "dropout": 0.1,
+          "num_layers": 2,
+          "attention_type": "linear"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2009-LightSAKTResearch-two_layer_linear-3407-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "two_layer_linear",
+          "baseline_reference": "ASSIST2009-LightSAKT-final-3407",
+          "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+          "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2009-LightSAKTResearch-one_layer_softmax-3407-v1.json",
+      "config": {
+        "dataset": "ASSIST2009",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 3407,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 64,
+          "num_heads": 2,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2009-LightSAKTResearch-one_layer_softmax-3407-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_softmax",
+          "baseline_reference": "ASSIST2009-LightSAKT-final-3407",
+          "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+          "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_recency_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2009-LightSAKTResearch-one_layer_recency_softmax-3407-v1.json",
+      "config": {
+        "dataset": "ASSIST2009",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 3407,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 64,
+          "num_heads": 2,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "recency_softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2009-LightSAKTResearch-one_layer_recency_softmax-3407-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_recency_softmax",
+          "baseline_reference": "ASSIST2009-LightSAKT-final-3407",
+          "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+          "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0"
+        }
+      }
+    },
+    {
+      "arm": "two_layer_linear",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2009-LightSAKTResearch-two_layer_linear-7777-v1.json",
+      "config": {
+        "dataset": "ASSIST2009",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 7777,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 64,
+          "num_heads": 2,
+          "dropout": 0.1,
+          "num_layers": 2,
+          "attention_type": "linear"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2009-LightSAKTResearch-two_layer_linear-7777-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "two_layer_linear",
+          "baseline_reference": "ASSIST2009-LightSAKT-final-7777",
+          "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+          "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2009-LightSAKTResearch-one_layer_softmax-7777-v1.json",
+      "config": {
+        "dataset": "ASSIST2009",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 7777,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 64,
+          "num_heads": 2,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2009-LightSAKTResearch-one_layer_softmax-7777-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_softmax",
+          "baseline_reference": "ASSIST2009-LightSAKT-final-7777",
+          "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+          "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_recency_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2009-LightSAKTResearch-one_layer_recency_softmax-7777-v1.json",
+      "config": {
+        "dataset": "ASSIST2009",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 7777,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 64,
+          "num_heads": 2,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "recency_softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2009-LightSAKTResearch-one_layer_recency_softmax-7777-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_recency_softmax",
+          "baseline_reference": "ASSIST2009-LightSAKT-final-7777",
+          "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+          "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0"
+        }
+      }
+    },
+    {
+      "arm": "two_layer_linear",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2015-LightSAKTResearch-two_layer_linear-42-v1.json",
+      "config": {
+        "dataset": "ASSIST2015",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 42,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.0005,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.1,
+          "num_layers": 2,
+          "attention_type": "linear"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2015-LightSAKTResearch-two_layer_linear-42-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "two_layer_linear",
+          "baseline_reference": "ASSIST2015-LightSAKT-final-42",
+          "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+          "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2015-LightSAKTResearch-one_layer_softmax-42-v1.json",
+      "config": {
+        "dataset": "ASSIST2015",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 42,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.0005,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2015-LightSAKTResearch-one_layer_softmax-42-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_softmax",
+          "baseline_reference": "ASSIST2015-LightSAKT-final-42",
+          "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+          "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_recency_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2015-LightSAKTResearch-one_layer_recency_softmax-42-v1.json",
+      "config": {
+        "dataset": "ASSIST2015",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 42,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.0005,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "recency_softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2015-LightSAKTResearch-one_layer_recency_softmax-42-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_recency_softmax",
+          "baseline_reference": "ASSIST2015-LightSAKT-final-42",
+          "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+          "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce"
+        }
+      }
+    },
+    {
+      "arm": "two_layer_linear",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2015-LightSAKTResearch-two_layer_linear-123-v1.json",
+      "config": {
+        "dataset": "ASSIST2015",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 123,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.0005,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.1,
+          "num_layers": 2,
+          "attention_type": "linear"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2015-LightSAKTResearch-two_layer_linear-123-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "two_layer_linear",
+          "baseline_reference": "ASSIST2015-LightSAKT-final-123",
+          "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+          "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2015-LightSAKTResearch-one_layer_softmax-123-v1.json",
+      "config": {
+        "dataset": "ASSIST2015",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 123,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.0005,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2015-LightSAKTResearch-one_layer_softmax-123-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_softmax",
+          "baseline_reference": "ASSIST2015-LightSAKT-final-123",
+          "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+          "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_recency_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2015-LightSAKTResearch-one_layer_recency_softmax-123-v1.json",
+      "config": {
+        "dataset": "ASSIST2015",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 123,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.0005,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "recency_softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2015-LightSAKTResearch-one_layer_recency_softmax-123-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_recency_softmax",
+          "baseline_reference": "ASSIST2015-LightSAKT-final-123",
+          "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+          "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce"
+        }
+      }
+    },
+    {
+      "arm": "two_layer_linear",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2015-LightSAKTResearch-two_layer_linear-2026-v1.json",
+      "config": {
+        "dataset": "ASSIST2015",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 2026,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.0005,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.1,
+          "num_layers": 2,
+          "attention_type": "linear"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2015-LightSAKTResearch-two_layer_linear-2026-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "two_layer_linear",
+          "baseline_reference": "ASSIST2015-LightSAKT-final-2026",
+          "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+          "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2015-LightSAKTResearch-one_layer_softmax-2026-v1.json",
+      "config": {
+        "dataset": "ASSIST2015",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 2026,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.0005,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2015-LightSAKTResearch-one_layer_softmax-2026-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_softmax",
+          "baseline_reference": "ASSIST2015-LightSAKT-final-2026",
+          "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+          "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_recency_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2015-LightSAKTResearch-one_layer_recency_softmax-2026-v1.json",
+      "config": {
+        "dataset": "ASSIST2015",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 2026,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.0005,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "recency_softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2015-LightSAKTResearch-one_layer_recency_softmax-2026-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_recency_softmax",
+          "baseline_reference": "ASSIST2015-LightSAKT-final-2026",
+          "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+          "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce"
+        }
+      }
+    },
+    {
+      "arm": "two_layer_linear",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2015-LightSAKTResearch-two_layer_linear-3407-v1.json",
+      "config": {
+        "dataset": "ASSIST2015",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 3407,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.0005,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.1,
+          "num_layers": 2,
+          "attention_type": "linear"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2015-LightSAKTResearch-two_layer_linear-3407-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "two_layer_linear",
+          "baseline_reference": "ASSIST2015-LightSAKT-final-3407",
+          "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+          "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2015-LightSAKTResearch-one_layer_softmax-3407-v1.json",
+      "config": {
+        "dataset": "ASSIST2015",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 3407,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.0005,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2015-LightSAKTResearch-one_layer_softmax-3407-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_softmax",
+          "baseline_reference": "ASSIST2015-LightSAKT-final-3407",
+          "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+          "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_recency_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2015-LightSAKTResearch-one_layer_recency_softmax-3407-v1.json",
+      "config": {
+        "dataset": "ASSIST2015",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 3407,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.0005,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "recency_softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2015-LightSAKTResearch-one_layer_recency_softmax-3407-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_recency_softmax",
+          "baseline_reference": "ASSIST2015-LightSAKT-final-3407",
+          "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+          "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce"
+        }
+      }
+    },
+    {
+      "arm": "two_layer_linear",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2015-LightSAKTResearch-two_layer_linear-7777-v1.json",
+      "config": {
+        "dataset": "ASSIST2015",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 7777,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.0005,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.1,
+          "num_layers": 2,
+          "attention_type": "linear"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2015-LightSAKTResearch-two_layer_linear-7777-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "two_layer_linear",
+          "baseline_reference": "ASSIST2015-LightSAKT-final-7777",
+          "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+          "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2015-LightSAKTResearch-one_layer_softmax-7777-v1.json",
+      "config": {
+        "dataset": "ASSIST2015",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 7777,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.0005,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2015-LightSAKTResearch-one_layer_softmax-7777-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_softmax",
+          "baseline_reference": "ASSIST2015-LightSAKT-final-7777",
+          "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+          "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_recency_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/ASSIST2015-LightSAKTResearch-one_layer_recency_softmax-7777-v1.json",
+      "config": {
+        "dataset": "ASSIST2015",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 7777,
+        "seq_len": 100,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.0005,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 100,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.1,
+          "num_layers": 1,
+          "attention_type": "recency_softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "ASSIST2015-LightSAKTResearch-one_layer_recency_softmax-7777-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_recency_softmax",
+          "baseline_reference": "ASSIST2015-LightSAKT-final-7777",
+          "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+          "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce"
+        }
+      }
+    },
+    {
+      "arm": "two_layer_linear",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/Algebra2005-LightSAKTResearch-two_layer_linear-42-v1.json",
+      "config": {
+        "dataset": "Algebra2005",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 42,
+        "seq_len": 200,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 200,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.2,
+          "num_layers": 2,
+          "attention_type": "linear"
+        },
+        "evaluate_test": false,
+        "run_id": "Algebra2005-LightSAKTResearch-two_layer_linear-42-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "two_layer_linear",
+          "baseline_reference": "Algebra2005-LightSAKT-final-42",
+          "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+          "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/Algebra2005-LightSAKTResearch-one_layer_softmax-42-v1.json",
+      "config": {
+        "dataset": "Algebra2005",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 42,
+        "seq_len": 200,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 200,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.2,
+          "num_layers": 1,
+          "attention_type": "softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "Algebra2005-LightSAKTResearch-one_layer_softmax-42-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_softmax",
+          "baseline_reference": "Algebra2005-LightSAKT-final-42",
+          "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+          "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_recency_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/Algebra2005-LightSAKTResearch-one_layer_recency_softmax-42-v1.json",
+      "config": {
+        "dataset": "Algebra2005",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 42,
+        "seq_len": 200,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 200,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.2,
+          "num_layers": 1,
+          "attention_type": "recency_softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "Algebra2005-LightSAKTResearch-one_layer_recency_softmax-42-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_recency_softmax",
+          "baseline_reference": "Algebra2005-LightSAKT-final-42",
+          "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+          "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643"
+        }
+      }
+    },
+    {
+      "arm": "two_layer_linear",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/Algebra2005-LightSAKTResearch-two_layer_linear-123-v1.json",
+      "config": {
+        "dataset": "Algebra2005",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 123,
+        "seq_len": 200,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 200,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.2,
+          "num_layers": 2,
+          "attention_type": "linear"
+        },
+        "evaluate_test": false,
+        "run_id": "Algebra2005-LightSAKTResearch-two_layer_linear-123-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "two_layer_linear",
+          "baseline_reference": "Algebra2005-LightSAKT-final-123",
+          "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+          "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/Algebra2005-LightSAKTResearch-one_layer_softmax-123-v1.json",
+      "config": {
+        "dataset": "Algebra2005",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 123,
+        "seq_len": 200,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 200,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.2,
+          "num_layers": 1,
+          "attention_type": "softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "Algebra2005-LightSAKTResearch-one_layer_softmax-123-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_softmax",
+          "baseline_reference": "Algebra2005-LightSAKT-final-123",
+          "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+          "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_recency_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/Algebra2005-LightSAKTResearch-one_layer_recency_softmax-123-v1.json",
+      "config": {
+        "dataset": "Algebra2005",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 123,
+        "seq_len": 200,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 200,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.2,
+          "num_layers": 1,
+          "attention_type": "recency_softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "Algebra2005-LightSAKTResearch-one_layer_recency_softmax-123-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_recency_softmax",
+          "baseline_reference": "Algebra2005-LightSAKT-final-123",
+          "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+          "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643"
+        }
+      }
+    },
+    {
+      "arm": "two_layer_linear",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/Algebra2005-LightSAKTResearch-two_layer_linear-2026-v1.json",
+      "config": {
+        "dataset": "Algebra2005",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 2026,
+        "seq_len": 200,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 200,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.2,
+          "num_layers": 2,
+          "attention_type": "linear"
+        },
+        "evaluate_test": false,
+        "run_id": "Algebra2005-LightSAKTResearch-two_layer_linear-2026-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "two_layer_linear",
+          "baseline_reference": "Algebra2005-LightSAKT-final-2026",
+          "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+          "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/Algebra2005-LightSAKTResearch-one_layer_softmax-2026-v1.json",
+      "config": {
+        "dataset": "Algebra2005",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 2026,
+        "seq_len": 200,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 200,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.2,
+          "num_layers": 1,
+          "attention_type": "softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "Algebra2005-LightSAKTResearch-one_layer_softmax-2026-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_softmax",
+          "baseline_reference": "Algebra2005-LightSAKT-final-2026",
+          "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+          "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_recency_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/Algebra2005-LightSAKTResearch-one_layer_recency_softmax-2026-v1.json",
+      "config": {
+        "dataset": "Algebra2005",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 2026,
+        "seq_len": 200,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 200,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.2,
+          "num_layers": 1,
+          "attention_type": "recency_softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "Algebra2005-LightSAKTResearch-one_layer_recency_softmax-2026-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_recency_softmax",
+          "baseline_reference": "Algebra2005-LightSAKT-final-2026",
+          "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+          "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643"
+        }
+      }
+    },
+    {
+      "arm": "two_layer_linear",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/Algebra2005-LightSAKTResearch-two_layer_linear-3407-v1.json",
+      "config": {
+        "dataset": "Algebra2005",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 3407,
+        "seq_len": 200,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 200,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.2,
+          "num_layers": 2,
+          "attention_type": "linear"
+        },
+        "evaluate_test": false,
+        "run_id": "Algebra2005-LightSAKTResearch-two_layer_linear-3407-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "two_layer_linear",
+          "baseline_reference": "Algebra2005-LightSAKT-final-3407",
+          "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+          "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/Algebra2005-LightSAKTResearch-one_layer_softmax-3407-v1.json",
+      "config": {
+        "dataset": "Algebra2005",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 3407,
+        "seq_len": 200,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 200,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.2,
+          "num_layers": 1,
+          "attention_type": "softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "Algebra2005-LightSAKTResearch-one_layer_softmax-3407-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_softmax",
+          "baseline_reference": "Algebra2005-LightSAKT-final-3407",
+          "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+          "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_recency_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/Algebra2005-LightSAKTResearch-one_layer_recency_softmax-3407-v1.json",
+      "config": {
+        "dataset": "Algebra2005",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 3407,
+        "seq_len": 200,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 200,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.2,
+          "num_layers": 1,
+          "attention_type": "recency_softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "Algebra2005-LightSAKTResearch-one_layer_recency_softmax-3407-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_recency_softmax",
+          "baseline_reference": "Algebra2005-LightSAKT-final-3407",
+          "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+          "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643"
+        }
+      }
+    },
+    {
+      "arm": "two_layer_linear",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/Algebra2005-LightSAKTResearch-two_layer_linear-7777-v1.json",
+      "config": {
+        "dataset": "Algebra2005",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 7777,
+        "seq_len": 200,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 200,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.2,
+          "num_layers": 2,
+          "attention_type": "linear"
+        },
+        "evaluate_test": false,
+        "run_id": "Algebra2005-LightSAKTResearch-two_layer_linear-7777-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "two_layer_linear",
+          "baseline_reference": "Algebra2005-LightSAKT-final-7777",
+          "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+          "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/Algebra2005-LightSAKTResearch-one_layer_softmax-7777-v1.json",
+      "config": {
+        "dataset": "Algebra2005",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 7777,
+        "seq_len": 200,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 200,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.2,
+          "num_layers": 1,
+          "attention_type": "softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "Algebra2005-LightSAKTResearch-one_layer_softmax-7777-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_softmax",
+          "baseline_reference": "Algebra2005-LightSAKT-final-7777",
+          "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+          "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643"
+        }
+      }
+    },
+    {
+      "arm": "one_layer_recency_softmax",
+      "status": "not_submitted",
+      "config_path": "configs/architecture_study/Algebra2005-LightSAKTResearch-one_layer_recency_softmax-7777-v1.json",
+      "config": {
+        "dataset": "Algebra2005",
+        "model": "LightSAKTResearch",
+        "group": "architecture_study",
+        "seed": 7777,
+        "seq_len": 200,
+        "batch_size": 64,
+        "max_epochs": 50,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0,
+        "epsilon": 1e-08,
+        "model_config": {
+          "max_seq_len": 200,
+          "embed_dim": 128,
+          "num_heads": 4,
+          "dropout": 0.2,
+          "num_layers": 1,
+          "attention_type": "recency_softmax"
+        },
+        "evaluate_test": false,
+        "run_id": "Algebra2005-LightSAKTResearch-one_layer_recency_softmax-7777-v1",
+        "device": "cuda",
+        "architecture_study": {
+          "arm": "one_layer_recency_softmax",
+          "baseline_reference": "Algebra2005-LightSAKT-final-7777",
+          "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+          "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643"
+        }
+      }
+    }
+  ]
+}

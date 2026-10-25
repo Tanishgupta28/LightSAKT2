@@ -1,0 +1,205 @@
+{
+  "python": "3.10.12",
+  "torch": "2.4.0a0+f70bd71a48.nv24.06",
+  "threads": 1,
+  "precision": "float32",
+  "data": "synthetic only; no datasets or test records loaded",
+  "warmup_steps": 1,
+  "measured_steps": 3,
+  "timing_scope": "forward, masked BCE, backward, finite-gradient checks, Adam step",
+  "gpu_runtime_inference": "CPU ratios are diagnostic only; no GPU speedup is claimed",
+  "rows": [
+    {
+      "dataset": "ASSIST2009",
+      "arm": "original_one_layer_linear",
+      "device": "cpu",
+      "batch_size": 8,
+      "seq_len": 100,
+      "parameters": 53857,
+      "parameter_gradient_adam_bytes_fp32": 861712,
+      "step_seconds_median": 0.026202345034107566,
+      "step_seconds_samples": [
+        0.03202125709503889,
+        0.026202345034107566,
+        0.023717446019873023
+      ],
+      "finite_forward_backward": true
+    },
+    {
+      "dataset": "ASSIST2009",
+      "arm": "two_layer_linear",
+      "device": "cpu",
+      "batch_size": 8,
+      "seq_len": 100,
+      "parameters": 74945,
+      "parameter_gradient_adam_bytes_fp32": 1199120,
+      "step_seconds_median": 0.047930115135386586,
+      "step_seconds_samples": [
+        0.04730130103416741,
+        0.05270484508946538,
+        0.047930115135386586
+      ],
+      "finite_forward_backward": true
+    },
+    {
+      "dataset": "ASSIST2009",
+      "arm": "one_layer_softmax",
+      "device": "cpu",
+      "batch_size": 8,
+      "seq_len": 100,
+      "parameters": 53857,
+      "parameter_gradient_adam_bytes_fp32": 861712,
+      "step_seconds_median": 0.00622746511362493,
+      "step_seconds_samples": [
+        0.00611905800178647,
+        0.00622746511362493,
+        0.006943603046238422
+      ],
+      "finite_forward_backward": true
+    },
+    {
+      "dataset": "ASSIST2009",
+      "arm": "one_layer_recency_softmax",
+      "device": "cpu",
+      "batch_size": 8,
+      "seq_len": 100,
+      "parameters": 53859,
+      "parameter_gradient_adam_bytes_fp32": 861744,
+      "step_seconds_median": 0.00638953410089016,
+      "step_seconds_samples": [
+        0.00638953410089016,
+        0.006397382123395801,
+        0.00616153609007597
+      ],
+      "finite_forward_backward": true
+    },
+    {
+      "dataset": "ASSIST2015",
+      "arm": "original_one_layer_linear",
+      "device": "cpu",
+      "batch_size": 8,
+      "seq_len": 100,
+      "parameters": 134849,
+      "parameter_gradient_adam_bytes_fp32": 2157584,
+      "step_seconds_median": 0.05199477286078036,
+      "step_seconds_samples": [
+        0.05826197913847864,
+        0.05199477286078036,
+        0.04846098693087697
+      ],
+      "finite_forward_backward": true
+    },
+    {
+      "dataset": "ASSIST2015",
+      "arm": "two_layer_linear",
+      "device": "cpu",
+      "batch_size": 8,
+      "seq_len": 100,
+      "parameters": 217985,
+      "parameter_gradient_adam_bytes_fp32": 3487760,
+      "step_seconds_median": 0.09575837990269065,
+      "step_seconds_samples": [
+        0.10360626014880836,
+        0.08706972096115351,
+        0.09575837990269065
+      ],
+      "finite_forward_backward": true
+    },
+    {
+      "dataset": "ASSIST2015",
+      "arm": "one_layer_softmax",
+      "device": "cpu",
+      "batch_size": 8,
+      "seq_len": 100,
+      "parameters": 134849,
+      "parameter_gradient_adam_bytes_fp32": 2157584,
+      "step_seconds_median": 0.011155661894008517,
+      "step_seconds_samples": [
+        0.011487420182675123,
+        0.011155661894008517,
+        0.010872837854549289
+      ],
+      "finite_forward_backward": true
+    },
+    {
+      "dataset": "ASSIST2015",
+      "arm": "one_layer_recency_softmax",
+      "device": "cpu",
+      "batch_size": 8,
+      "seq_len": 100,
+      "parameters": 134853,
+      "parameter_gradient_adam_bytes_fp32": 2157648,
+      "step_seconds_median": 0.011095270980149508,
+      "step_seconds_samples": [
+        0.011095270980149508,
+        0.011091150110587478,
+        0.011135688051581383
+      ],
+      "finite_forward_backward": true
+    },
+    {
+      "dataset": "Algebra2005",
+      "arm": "original_one_layer_linear",
+      "device": "cpu",
+      "batch_size": 8,
+      "seq_len": 200,
+      "parameters": 257857,
+      "parameter_gradient_adam_bytes_fp32": 4125712,
+      "step_seconds_median": 0.12187512218952179,
+      "step_seconds_samples": [
+        0.13093261397443712,
+        0.12187512218952179,
+        0.1174117960035801
+      ],
+      "finite_forward_backward": true
+    },
+    {
+      "dataset": "Algebra2005",
+      "arm": "two_layer_linear",
+      "device": "cpu",
+      "batch_size": 8,
+      "seq_len": 200,
+      "parameters": 340993,
+      "parameter_gradient_adam_bytes_fp32": 5455888,
+      "step_seconds_median": 0.22033154498785734,
+      "step_seconds_samples": [
+        0.21925609395839274,
+        0.23733215616084635,
+        0.22033154498785734
+      ],
+      "finite_forward_backward": true
+    },
+    {
+      "dataset": "Algebra2005",
+      "arm": "one_layer_softmax",
+      "device": "cpu",
+      "batch_size": 8,
+      "seq_len": 200,
+      "parameters": 257857,
+      "parameter_gradient_adam_bytes_fp32": 4125712,
+      "step_seconds_median": 0.027364102890715003,
+      "step_seconds_samples": [
+        0.030665018828585744,
+        0.027364102890715003,
+        0.027359945001080632
+      ],
+      "finite_forward_backward": true
+    },
+    {
+      "dataset": "Algebra2005",
+      "arm": "one_layer_recency_softmax",
+      "device": "cpu",
+      "batch_size": 8,
+      "seq_len": 200,
+      "parameters": 257861,
+      "parameter_gradient_adam_bytes_fp32": 4125776,
+      "step_seconds_median": 0.028171729063615203,
+      "step_seconds_samples": [
+        0.027698787162080407,
+        0.028171729063615203,
+        0.029494634130969644
+      ],
+      "finite_forward_backward": true
+    }
+  ]
+}
