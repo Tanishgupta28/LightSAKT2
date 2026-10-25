@@ -193,3 +193,47 @@ def test_comparison_uses_fresh_validation_pair_and_requires_baseline_reproductio
     result["test"] = {"auc": .99}; (directory / "metrics.json").write_text(json.dumps(result))
     with pytest.raises(PilotBlocked, match="test"):
         summarize(tmp_path / "work", record, tmp_path / "project")
+
+
+def test_scoped_hold_release_cannot_enable_other_stages_or_modified_configs(tmp_path):
+    from scripts.architecture_pilot import CONTROL, digest
+    from scripts.user_training_hold import require_training_enabled
+    source, project = tmp_path / "source", tmp_path / "project"
+    markers = []
+    for root in (source, project):
+        marker = root / "experiments/USER_TRAINING_HOLD.json"
+        marker.parent.mkdir(parents=True)
+        marker.write_text('{"status":"USER_TRAINING_HOLD_ACTIVE"}')
+        markers.append(marker)
+    configs = {}
+    for arm in ("baseline", "two_layer_linear"):
+        path = project / CONTROL / "configs" / f"{arm}.json"
+        path.parent.mkdir(parents=True, exist_ok=True); path.write_text('{"frozen":true}')
+        configs[arm] = digest(path)
+    _, record = grant(tmp_path)
+    record["hold_exception"] = {"stage": "depth", "dataset": "ASSIST2009", "seed": 42,
+                                "user_authorization_evidence": "synthetic test fixture only",
+                                "hold_marker_sha256": {str(p): digest(p) for p in markers},
+                                "configuration_sha256": configs}
+    check_holds(source, project, record, "depth")
+    with pytest.raises(SystemExit):
+        require_training_enabled(markers[0])  # General training remains blocked.
+    with pytest.raises(PilotBlocked):
+        check_holds(source, project, record, "attention")
+    (project / CONTROL / "configs/baseline.json").write_text('{"changed":true}')
+    with pytest.raises(PilotBlocked):
+        check_holds(source, project, record, "depth")
+
+
+def test_shared_resources_enforce_pressure_limits_and_log_unsupported_mig():
+    from scripts.pilot_shared_resources import GIB, assess
+    sample = {"free_bytes": 20 * GIB, "host_headroom_bytes": 10 * GIB,
+              "process_peak_rss_bytes": GIB, "utilization_status": "unsupported_mig",
+              "utilization_gpu_percent": None}
+    assert "fallback" in assess(sample, admission=True)
+    with pytest.raises(RuntimeError, match="free-memory"):
+        assess({**sample, "free_bytes": 5 * GIB})
+    with pytest.raises(RuntimeError, match="Host memory"):
+        assess({**sample, "host_headroom_bytes": GIB})
+    with pytest.raises(RuntimeError, match="busy"):
+        assess({**sample, "utilization_status": "ok", "utilization_gpu_percent": 90}, admission=True)

@@ -40,11 +40,26 @@ def write_json(path, value):
     temporary.replace(path)
 
 
-def check_holds(source=SOURCE, project=PROJECT):
+def check_holds(source=SOURCE, project=PROJECT, grant=None, stage="depth"):
+    exception = (grant or {}).get("hold_exception", {})
     for root in dict.fromkeys((Path(source).resolve(), Path(project).resolve())):
         marker = root / "experiments/USER_TRAINING_HOLD.json"
         if marker.exists():
-            raise PilotBlocked(f"Active training hold: {marker}; no CUDA or training is permitted")
+            permitted = False
+            try:
+                permitted = (stage == "depth" and exception["stage"] == stage
+                             and exception["dataset"] == DATASET and exception["seed"] == SEED
+                             and exception["user_authorization_evidence"]
+                             and exception["hold_marker_sha256"][str(marker)] == digest(marker))
+                for arm in STAGES[stage]:
+                    config_path = Path(project) / CONTROL / "configs" / f"{arm}.json"
+                    permitted = permitted and exception["configuration_sha256"][arm] == digest(config_path)
+                end = datetime.fromisoformat(grant["valid_until_utc"].replace("Z", "+00:00"))
+                permitted = permitted and datetime.now(timezone.utc) < end
+            except (KeyError, TypeError, ValueError, OSError):
+                permitted = False
+            if not permitted:
+                raise PilotBlocked(f"Active training hold: {marker}; no matching bounded exception")
 
 
 def validate_inputs(source, project=PROJECT):
@@ -172,6 +187,7 @@ def write_epochs(history, destination, measured=True):
     for row in history:
         resources = row.get("resources", {})
         rows.append({"epoch": row["epoch"], "validation_auc": row["validation"]["auc"],
+                     "validation_accuracy": row["validation"].get("accuracy"),
                      "validation_f1": row["validation"]["f1"], "validation_bce": row["validation"]["bce"],
                      "training_bce": row["train_objective"], "epoch_seconds": row["epoch_seconds"],
                      "peak_allocated_bytes": resources.get("peak_allocated_bytes"),
@@ -255,6 +271,7 @@ def summarize(work, record, project=PROJECT):
             if digest(result["checkpoint"]) != result["checkpoint_sha256"]:
                 raise PilotBlocked("Pilot checkpoint hash mismatch")
             row.update(validation_auc=result["validation"]["auc"], validation_f1=result["validation"]["f1"],
+                       validation_accuracy=result["validation"].get("accuracy"),
                        validation_bce=result["validation"]["bce"], best_epoch=result["best_epoch"],
                        epochs_trained=result["epochs_trained"], training_seconds=result["training_seconds"],
                        peak_allocated_bytes=result["peak_allocated_bytes"], peak_reserved_bytes=result["peak_reserved_bytes"],
@@ -279,7 +296,10 @@ def summarize(work, record, project=PROJECT):
 def execute(stage, source, work, authorization_path, project=PROJECT):
     # Keep every hold/authorization/config check before importing torch or probing CUDA.
     source, project, work = Path(source).resolve(), Path(project).resolve(), Path(work).resolve()
-    check_holds(source, project)
+    # The general hold remains active; only a user-authorized depth exception
+    # bound to both marker hashes and exact pilot configurations can pass it.
+    provisional = read_json(authorization_path) if authorization_path and Path(authorization_path).is_file() else None
+    check_holds(source, project, provisional, stage)
     if work == source or source in work.parents:
         raise PilotBlocked("Pilot output must be outside the original checkout")
     grant = authorization(authorization_path, stage)
@@ -295,15 +315,21 @@ def execute(stage, source, work, authorization_path, project=PROJECT):
         raise PilotBlocked("CUDA_VISIBLE_DEVICES must name exactly the authorized device UUID")
     deadline = time.monotonic() + record["wall_time_limit_seconds_per_invocation"]
     from src.training.pilot_observer import PilotObserver, PilotPause
+    from scripts.pilot_shared_resources import POLICY, assess, observe
     with admission(source, work):
-        check_holds(source, project)
+        check_holds(source, project, grant, stage)
         stage_inputs(source, work)
+        for _ in range(2):
+            sample = observe(grant["gpu_uuid"])
+            assess(sample, admission=True)
+            write_json(project / PILOT / "resource_admission.json", {"sample": sample, "policy": POLICY})
+            time.sleep(.2)
         import torch
         from src.training.engine import run
         if not torch.cuda.is_available() or torch.cuda.device_count() != 1:
             raise PilotBlocked("Exactly one authorized CUDA device must be visible")
         capacity = torch.cuda.get_device_properties(0).total_memory
-        cap = record["memory_limit_bytes"]; floor = record["minimum_free_bytes"]
+        cap = record["memory_limit_bytes"]; floor = POLICY["runtime_free_bytes"]
         free, _ = torch.cuda.mem_get_info(0)
         if capacity < cap or free < cap + floor:
             raise PilotBlocked("Insufficient free GPU memory for the 4 GiB cap plus 1 GiB reserve")
@@ -312,7 +338,7 @@ def execute(stage, source, work, authorization_path, project=PROJECT):
         def guard():
             nonlocal last_probe
             try:
-                check_holds(source, project)
+                check_holds(source, project, grant, stage)
             except PilotBlocked as error:
                 raise PilotPause(str(error)) from error
             now = time.monotonic()
@@ -328,9 +354,19 @@ def execute(stage, source, work, authorization_path, project=PROJECT):
                 remaining, _ = torch.cuda.mem_get_info(0)
                 if remaining < floor:
                     raise PilotPause("Shared GPU free-memory reserve breached")
+                try:
+                    sample = observe(grant["gpu_uuid"])
+                    assess(sample)
+                except RuntimeError as error:
+                    raise PilotPause(str(error)) from error
+                with (project / PILOT / "resource_samples.jsonl").open("a") as stream:
+                    stream.write(json.dumps(sample) + "\n")
                 last_probe = now
         observer = PilotObserver(guard, {"stage": stage, "gpu_authorization_sha256": authorization_digest,
                                          "launcher_sha256": digest(__file__), "memory_cap_bytes": cap,
+                                         "inter_update_pause_seconds": POLICY["inter_update_pause_seconds"],
+                                         "max_step_seconds": POLICY["max_step_seconds"],
+                                         "resource_policy_sha256": digest(Path(__file__).with_name("pilot_shared_resources.py")),
                                          "shared_gpu": grant["sharing"] == "shared"})
         invoked = False
         try:

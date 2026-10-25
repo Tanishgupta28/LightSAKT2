@@ -18,16 +18,25 @@ class PilotObserver:
         code_hash = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
         # Renewing a resource reservation does not alter model updates. Preserve
         # its audit trail while keeping instrumentation/code/capacity bound.
-        identity = {key: self.record.get(key) for key in ("mode", "stage", "launcher_sha256", "memory_cap_bytes")}
+        identity = {key: self.record.get(key) for key in ("mode", "stage", "launcher_sha256", "memory_cap_bytes",
+                    "inter_update_pause_seconds", "max_step_seconds", "resource_policy_sha256")}
         identity["instrumentation_sha256"] = code_hash
         return {**self.record, "instrumentation_sha256": code_hash, "resume_identity": identity,
                 "metrics": "unchanged common trainer; per-epoch memory peaks are added"}
 
     def before_batch(self, epoch):
+        now = time.perf_counter()
+        if (hasattr(self, "last_batch") and self.record.get("max_step_seconds")
+                and now - self.last_batch > self.record["max_step_seconds"]):
+            raise PilotPause("Pilot step/time-between-batches limit exceeded")
+        if self.record.get("inter_update_pause_seconds"):
+            time.sleep(self.record["inter_update_pause_seconds"])
         self.guard()
+        self.last_batch = time.perf_counter()
 
     def start_epoch(self, epoch, device):
         self.guard()
+        self.last_batch = time.perf_counter()
         self.started = time.perf_counter()
         if str(device).startswith("cuda"):
             import torch
