@@ -1,159 +1,42 @@
-## Verified recency completion — 2026-10-27
+# Verified current state — 27 October 2026, gating completed
 
-Branch `research/architecture-variants-20261025`, persistent research worktree
-`/workspace/LightSAKT2-architecture`; recency execution commit `27e5a486`.
-Fresh authorized recency-softmax run completed21epochs, best16:
-validation AUC0.7482377884727862, F1 0.8134333940013463,
-accuracy0.7274548368298368, BCE0.544185487825003.
-Controls unchanged. Original linear0.7508035371114405; depth0.7507909322800659;
-softmax0.7456393788778357. Recency-baseline delta -0.0025657486386543304;
-recency-softmax delta +0.0025984095949505015. Valid negative versus baseline,
-preliminary one-seed benefit over softmax; no overall improvement/replication gate.
+Branch `research/architecture-variants-20261025`;execution commit `7026c660`.
+Worktree `/workspace/LightSAKT2-architecture`. Original main branch/dirty work kept.
+All five ASSIST2009 seed42 arms completed (validation only):
 
-82 CPU tests PASS before launch (causality/padding/dense-reference decay gradients,
-finite optimizer/save-load, scope and exact reporting/resume). Independent CPU
-validation replay PASS (AUC difference8.9523e-9); full finite model/Adam/RNG/loader/
-early-stop/history state present. All116 pre-existing source/checkpoint/raw-report/
-manifest/hold file hashes unchanged. No test loader/prediction access.
-Decay per head learned0.0381679125,0.0389851369 from0.03125.
-Runtime167.035566s; peak allocated140561408bytes (134.050MiB),reserved160MiB.
-Within4GiB/900s shared safeguards; peer compute process retained untouched.
-Grant closed_completed, no automatic retries or extra experiment.
+| Architecture | AUC | F1 |
+|---|---:|---:|
+| Original one-layer linear | 0.7508035371114405 | 0.8148054891099081 |
+| Two-layer linear | 0.7507909322800659 | 0.8162621176824227 |
+| Causal softmax | 0.7456393788778357 | 0.8125468632841789 |
+| Recency softmax | 0.7482377884727862 | 0.8134333940013463 |
+| Gated one-layer linear | 0.7506452336787726 | 0.8154588400844306 |
 
-Best/latest checkpoints:
-`/workspace/LightSAKT2-architecture/pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_recency_softmax-42-v1/`.
-Best SHA256 `988b4302c2bc0f3c3855f7c365f9bd154f2b66fefea83b3cb384e3774796355b`.
-Persistent read-back-verified archive:
-`/workspace/LightSAKT2/backups/architecture_recency_20261027/pilot_checkpoints_and_records.tar.gz`.
-Evidence `/workspace/LightSAKT2-architecture/reports/architecture_study/recency_pilot/` includes raw history/config/metrics/status/environment,
-epoch CSVs, comparison, replay, resource and archive-hash records.
-Missing Git transport authentication unchanged; retain local commits and report
-blocker rather than exposing secrets or reconstructing history remotely.
-Prior active/no-recency-scope sections below are historical and superseded.
+Gating is a valid one-seed negative versus baseline:delta AUC -0.0001583034326679833.
+F1 +0.0006533509745224597 does not replace the primary AUC criterion. Retain
+original;no tested variant has demonstrated an AUC gain on this screening.
+Gated run completed29epochs,selected24,accuracy0.7325174825174825,
+BCE0.5426217429983549. Runtime412.977059s;peak allocated254.580MiB,reserved368MiB.
+Gate65parameters,2sigmoid(w*E(next_skill)+b),identity initialization;linear
+attention,one block,residuals,FFN/head unchanged. Selected vocabulary gates
+0.4326034784..1.6664240360,mean1.0659102201;gate learned but AUC did not improve.
 
-## Publication checkpoint — 2026-10-27
+89 CPU tests PASS;independent CPU validation replay AUC difference8.9523e-9,
+all six validation metrics pass;finite full model/Adam/RNG/loader/history state.
+All146 protected prior source/checkpoint/raw-record/report/manifest/hold hashes
+unchanged. No test loader/prediction access. Shared safeguards passed;peer GPU
+workload untouched. Grant closed_completed,no retry/additional GPU scope.
 
-Verified result commit `f15b28b9a30117a9cfdcea677f398ba2b0967713` is local. Normal non-force push failed:
-shell Git has no HTTPS credentials; gh has no logged-in account and no SSH key
-is present. Connected GitHub app authentication works, but its exposed commit API
-cannot push the exact existing local commit graph. Do not recreate/rewrite local
-research history to mask this limitation. Remote research branch was absent at
-last ls-remote check. No remote update succeeded.
-
-Local Git bundle `/workspace/LightSAKT2/backups/architecture_softmax_20261027/research_commits.bundle` preserves research commits since a6bdc6c0
-(requires that base); bundle verify PASS. Model checkpoints have their separate
-verified archive. Remaining publication action after authenticated Git transport
-is available: `git push --set-upstream origin HEAD:refs/heads/research/architecture-variants-20261025`
-from /workspace/LightSAKT2-architecture, then verify remote HEAD. No force push.
-No further GPU scope; recency remains a recommendation only.
-
-## Completed and verified softmax result — 2026-10-27
-
-Research worktree `/workspace/LightSAKT2-architecture`, branch
-`research/architecture-variants-20261025`; executed from `b63ec478`.
-One authorized fresh causal-softmax run completed21epochs; selected epoch16.
-Validation AUC0.7456393788778357, F1 0.8125468632841789,
-accuracy0.7268356643356644, BCE0.5465822575284047.
-Original one-layer0.7508035371114405; two-layer0.7507909322800659.
-Softmax delta -0.005164158233604832; no improvement or promotion signal.
-Conclusion is a valid single-seed negative, not generalized inferiority.
-
-Training161.204seconds; peak allocated140479488bytes (133.972MiB),
-reserved167772160bytes (160MiB), within4GiB/900second caps. CPU replay AUC
-absolute difference1.49205e-8; all six validation metrics pass. Best/latest
-checkpoints contain verified model/Adam/RNG/loader/history state. Prior source,
-depth results/checkpoints, manifest and holds remain hash-identical. Test untouched.
-Grant closed_completed; no retry, recency training or unrelated workload changes.
-
-Run ID `ASSIST2009-LightSAKT-pilot-one_layer_softmax-42-v1`; checkpoint directory
-`/workspace/LightSAKT2-architecture/pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_softmax-42-v1/`.
-Best SHA256 `4d74a39f00e4e36a04c074649e37018cc5856557b9b3ff5b87b6fe14b9ac7816`.
-Persistent archive:
-`/workspace/LightSAKT2/backups/architecture_softmax_20261027/pilot_checkpoints_and_records.tar.gz`;
-member and archive hashes in `/workspace/LightSAKT2-architecture/reports/architecture_study/softmax_pilot/recovery_archive_20261027.json`.
-Numerical records, full comparison and verification in `/workspace/LightSAKT2-architecture/reports/architecture_study/softmax_pilot/`.
-Commit/push authorized for verified scoped results; main dirty work is retained.
-All earlier active/pending-softmax descriptions below are historical.
-
-## Verified current research state — 2026-10-27
-
-Recovered prior research HEAD `6beced52` on
-`research/architecture-variants-20261025`; persistent worktree
-`/workspace/LightSAKT2-architecture`. Main stays `research-rebuild` at `a6bdc6c0`
-with pre-existing dirty science preserved. Missing /tmp worktree registration
-retained, not pruned. Commit alone did not preserve weights: verified persistent
-archive SHA256 `1899e200690f6897bfe9af27a003a1f91f324b3f48e63c8b09996c8487aca8d6`
-at `/workspace/LightSAKT2/backups/architecture_depth_20261025/pilot_checkpoints_and_records.tar.gz`;
-all22 member hashes verified,14 immutable run files restored into persistent
-worktree `pilot-workspace/` (four best/latest checkpoints plus raw records).
-
-Verified ASSIST2009 seed42 validation AUC: one-layer0.7508035371114405,
-two-layer0.7507909322800659; both29 epochs, selected24. No depth gain.
-Execution commit `f46e7d81`, completion commit `7b650cb9`.
-Causal softmax was prepared/authorized at `6beced52`, but no surviving metrics,
-checkpoint, history or terminal marker establish execution. Lost uncommitted
-/tmp work cannot be excluded. Recency likewise has no verified result.
-
-Dataset/split/protocol/selected-baseline hashes pass; frozen seed42 config
-unchanged.80 targeted CPU tests pass. Hash-bound relocation support was added
-only to the summary reader; original models/trainer untouched this recovery.
-Main versus branch trainer already differs by observer instrumentation, checked
-by existing update-equivalence/exact-resume tests. Initial pytest temp setup
-failure and corrected assertion are documented, not experimental failures.
-
-One read-only process/GPU snapshot found no LightSAKT2 trainer/controller,
-37MiB/40320MiB MIG usage and no visible compute process; unrelated jobs untouched.
-No new GPU execution or test inference. Historical general holds and GKT
-interruptions retained. No current unexpired softmax grant exists.
-Detailed evidence and restored checkpoint paths:
-`/workspace/LightSAKT2-architecture/reports/architecture_study/recovery_20261027/{readiness,comparison}.json`;
-report `/workspace/LightSAKT2-architecture/reports/architecture_study/RECOVERY_20261027.md`.
-Skill installed at `/root/.codex/skills/durable-project-memory`, upstream
-`0a06f1bb8231ace20e4405281a263012fedb5e51`. Earlier current-state text below is historical.
-
-# Current state
-
-Latest09:24UTC,20 October2026: renewed user authorization permits stopping
-verified owned LightSAKT2 now and disabling restarts. Single fresh check found
-no live trainer/controller/recovery or GPU handles; persistent hold intact,
-813 completed/142 pending/2 interrupted, zero signals needed/sent. All7915 old
-files present/same size;8 key hashes and local recovery archive unchanged. No
-repeated full audit or tests. Sole MIG nearly empty with no visible GPU owners,
-but existing allocation owner/account/transfer/window/conflicts are unverified
-(no scheduler evidence, Kubernetes403). A new allocation is not required if the
-existing one authorizes HiTSKT. Stop before CUDA; do not resume LightSAKT2,
-bypass the hold, poll automatically or change artifacts. HiTSKT evidence/report:
-`/workspace/capstone/reports/favor_plus_v1/EXISTING_ALLOCATION_REUSE_STATUS_20261020.md`.
-Earlier conclusions/instructions below are historical where superseded.
-
-Latest user clarification: preserve all work; do not stop LightSAKT2 solely to
-free the GPU before HiTSKT allocation is confirmed. No CUDA/training without
-verified authorization, no hold release/restart. No new process/GPU observation
-was made in this documentation-only clarification. Prior handoff below remains
-historical evidence; allocation-first sequencing supersedes earlier ordering.
-
-20 October 2026 UTC. Base `34eeefb7d6b99ad079eab4da340877e46e48a8ec`,
-`research-rebuild`. No live training or known local controller/recovery worker;
-old PIDs absent/zombie and stale heartbeat are not activity. **813 completed,
-142 pending,2 interrupted**. No signals sent. Persistent user hold blocks known
-launch paths;9 targeted CPU tests pass, no CUDA or training run.
-
-Preservation PASS:7915 scientific files/1,391,693,255 bytes identical before/after;
-814 recorded selected-checkpoint references (776 unique paths), all declared
-prediction hashes/configs match.814 completed backup paths exist; no new offsite
-download verification. Epoch2 GKT interruption is CPU-validated and separately
-archived locally with optimizer/RNG/loader state. Waiting GKT has no saved epoch.
-No incomplete work marked complete, no scientific code/config/result changed.
-
-Evidence: `reports/LIGHTSAKT2_HITSKT_PRIORITY_HANDOFF_20261020.md`,
-`reports/priority_handoff_20261020/{before_hold,after_hold}/snapshot.json`,
-`preservation_comparison.json`, `interrupted_checkpoint_and_archive.json`,
-`hold_cpu_tests_final.log` in that evidence directory.
-
-HiTSKT CUDA/pilot remains BLOCKED: sole H100 MIG also has unrelated GPU handle
-owners; no authoritative exclusive HiTSKT allocation. Do not stop them. Current
-user authorization does not manufacture ownership. No automatic observer started.
-
-Substantial older dirty manifests/status/logs/reports are retained on disk and
-not included in the scoped control commit. Checkpoint binaries/new recovery
-archive remain ignored/local; the Git commit alone cannot restore epoch2.
+Run `ASSIST2009-LightSAKT-pilot-one_layer_gated_linear-42-v1`.
+Best/latest: `/workspace/LightSAKT2-architecture/pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_gated_linear-42-v1/`.
+Best SHA256 `847a042cc340f890da1616ad8718814892aa8d6ccfae932f56491782e34db7db`.
+Persistent verified archive:
+`/workspace/LightSAKT2/backups/architecture_gating_20261027/pilot_checkpoints_and_records.tar.gz`.
+Detailed config/raw metrics/history/status/resource/replay/archive records:
+`/workspace/LightSAKT2-architecture/reports/architecture_study/gating_pilot/RESULT_20261027.md` and neighboring JSON/CSV files.
+Code source SHA256 `763839be531388d44be79bd278cb49bd129c264b6820637be8e0d75285875aa4`.
+New gated model/factory entry explains changed combined source hash;baseline
+model/attention/trainer unchanged. Existing Git transport authentication blocker
+remains;local research commits/checkpoints preserved. No push claimed.
+Historical GKT interruptions and prior archive paths remain in the archive/log;
+no old pending baseline work was resumed.

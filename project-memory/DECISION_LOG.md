@@ -117,3 +117,25 @@ Next hypothesis after source/literature review: normalized recency decay inside
 ELU+1 prefix attention. AKT/RetNet motivate decay but do not establish this
 transplant's performance. No new arm implementation/training performed.
 Missing shell Git authentication remains; preserve all local commits.
+
+
+## 2026-10-27 — Minimal gated linear completed; no AUC improvement
+
+User selected gating instead of prior decayed-linear proposal. Added separate
+LightSAKTGated with g=2sigmoid(w*E(qry)+b),65new parameters,zero-initialized
+identity preserving original init/RNG/forward/gradients. Original attention,
+one block,residual/norms/FFN/head and baseline source/settings unchanged.
+89 CPU correctness/pipeline/scope/resume tests PASS. Execution7026c660,
+exactly one ASSIST2009 seed42 run,29epochs,best24: AUC0.7506452336787726,
+F1 0.8154588400844306,accuracy0.7325174825174825,BCE0.5426217429983549.
+AUC delta -0.0001583034326679833 versus original0.7508035371114405;
+valid one-seed negative,not generalized equivalence. Small F1 increase is not
+AUC success. No five-seed promotion or further architecture changes after outcome.
+Runtime412.977059s,allocated254.580MiB,reserved368MiB. CPU validation replay,
+full finite resume state and146 protected-file hashes PASS;test untouched.
+Gate parameters learned (vocabulary range0.4326..1.6664) without endpoint gain.
+Shared safeguards maintained amid visible peer workload;no signals;grant closed.
+Checkpoint/archive/raw records: /workspace/LightSAKT2-architecture/reports/architecture_study/gating_pilot/RESULT_20261027.md.
+Consolidated current memory;preserved superseded overview/directives/state/next
+text in archive/HANDOFF_BEFORE_GATING_RESULT_20261027.md and old decisions here.
+Git auth blocker retained;local scientific commits backed up without rewriting.

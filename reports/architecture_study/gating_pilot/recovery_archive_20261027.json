@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "archive": "/workspace/LightSAKT2/backups/architecture_gating_20261027/pilot_checkpoints_and_records.tar.gz",
+  "archive_sha256": "a8ee95c7a96cbe1b576d16b9fe75e6689ec10108916b6f7101f9d2df26a6878a",
+  "size_bytes": 849335,
+  "files_sha256": {
+    "pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_gated_linear-42-v1/best.pt": "847a042cc340f890da1616ad8718814892aa8d6ccfae932f56491782e34db7db",
+    "pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_gated_linear-42-v1/latest.pt": "fa798fc173fc9a06143fdac5312a023bacffab1f40c2bfbe3d4f5d171654116a",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_gated_linear-42-v1/config.json": "0f8dc24946c88a25bd3e374505633a623f9f2626b42cffda35e533dbde53a06f",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_gated_linear-42-v1/environment.json": "ccaed0e3538ea6903e7f576a456589d2fa06a165fb1c88f20c7696a00d63b5e1",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_gated_linear-42-v1/status.json": "60df6254ac039c5b66eca9838b4d3ac2162817f3b6cbdf1f867c2c808379ed38",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_gated_linear-42-v1/history.json": "64d1440c32081d99db943c13209256906a8b50c6ed688235e65fe7945d183e36",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_gated_linear-42-v1/metrics.json": "782ea2c94452a0c99194c33ae4555865e0dde2e0a22898fb2796f3634cc5440b",
+    "experiments/architecture_study/pilot/configs/one_layer_gated_linear.json": "4a1cdcd118dd34896f40d189c6377d15d43363be232582c6bff04bd9ad260542",
+    "experiments/architecture_study/pilot/gpu_authorization_gating_20261027.executed.json": "cadc2d5742992cd511945464bee008f112c0aac2cdbe4d8bae6f15d70414fb02",
+    "reports/architecture_study/gating_pilot/DESIGN_20261027.md": "d81b7da6a152c12be48bd32542c78d4fca52d65819cf9bd1901df06b55890c18",
+    "reports/architecture_study/gating_pilot/EXECUTION_AUTHORIZATION_20261027.md": "da7f710f9ef98c98c65382d277cd263258e7478349ef9a50c93eee9cf8fed357"
+  }
+}

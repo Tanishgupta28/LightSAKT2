@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "optimizer_updates_performed": 0,
+  "test_loader_constructed": false,
+  "test_predictions_accessed": false,
+  "split": "validation",
+  "validation_replay": {
+    "auc": 0.7506452247264775,
+    "auc_reason": null,
+    "accuracy": 0.7325174825174825,
+    "f1": 0.8154588400844306,
+    "mse": 0.18166271912322055,
+    "bce": 0.5426217430411423,
+    "n_targets": 27456,
+    "precision": 0.7548381094157053,
+    "recall": 0.8866666666666667
+  },
+  "absolute_differences": {
+    "auc": 8.952295016406708e-09,
+    "f1": 0.0,
+    "accuracy": 0.0,
+    "bce": 4.278744025754122e-11,
+    "precision": 0.0,
+    "recall": 0.0
+  },
+  "best_checkpoint_sha256": "847a042cc340f890da1616ad8718814892aa8d6ccfae932f56491782e34db7db",
+  "latest_checkpoint_sha256": "fa798fc173fc9a06143fdac5312a023bacffab1f40c2bfbe3d4f5d171654116a",
+  "selected_epoch": 24,
+  "completed_epochs": 29,
+  "complete_resume_state_present": true,
+  "training_code_sha256": "763839be531388d44be79bd278cb49bd129c264b6820637be8e0d75285875aa4",
+  "executed_grant_sha256": "cadc2d5742992cd511945464bee008f112c0aac2cdbe4d8bae6f15d70414fb02",
+  "pre_existing_file_hashes_unchanged": 146,
+  "initial_gate": 1.0,
+  "selected_gate_weight_l2": 0.5006672143936157,
+  "selected_gate_bias": 0.11803183704614639,
+  "vocabulary_gate_range": [
+    0.43260347843170166,
+    1.666424036026001
+  ],
+  "vocabulary_gate_mean": 1.0659102201461792
+}

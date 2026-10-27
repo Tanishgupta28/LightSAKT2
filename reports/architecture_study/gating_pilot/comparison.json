@@ -81,10 +81,22 @@
     },
     {
       "arm": "one_layer_gated_linear",
-      "status": "not_run",
-      "validation_auc": null,
-      "validation_auc_delta": null,
-      "screening_signal": null
+      "status": "completed",
+      "validation_auc": 0.7506452336787726,
+      "validation_f1": 0.8154588400844306,
+      "validation_accuracy": 0.7325174825174825,
+      "validation_precision": 0.7548381094157053,
+      "validation_recall": 0.8866666666666667,
+      "validation_bce": 0.5426217429983549,
+      "best_epoch": 24,
+      "epochs_trained": 29,
+      "training_seconds": 412.9770586259838,
+      "peak_allocated_bytes": 266946560,
+      "peak_reserved_bytes": 385875968,
+      "checkpoint": "/workspace/LightSAKT2-architecture/pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_gated_linear-42-v1/best.pt",
+      "checkpoint_sha256": "847a042cc340f890da1616ad8718814892aa8d6ccfae932f56491782e34db7db",
+      "validation_auc_delta": -0.0001583034326679833,
+      "screening_signal": false
     }
   ],
   "baseline_retraining_within_tolerance": true,

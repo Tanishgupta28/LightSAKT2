@@ -1,58 +1,20 @@
-## Latest verified outcome — recency completed, 2026-10-27
-
-All four initial ASSIST2009 seed42 arms completed. Recency AUC0.7482377884727862,
-F1 0.8134333940013463; original one-layer linear0.7508035371114405 remains best.
-Recency improved plain softmax by0.0025984095949505 but missed baseline by
-0.0025657486386543. No tested variant warrants an improvement claim or promotion.
-Next hypothesis: normalized decayed ELU+1 attention, not yet implemented/trained.
-Grant closed; no retry/additional GPU scope. CPU replay and116 protected hashes PASS.
-See [CURRENT_STATE.md](CURRENT_STATE.md), [NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md),
-and `/workspace/LightSAKT2-architecture/reports/architecture_study/recency_pilot/RESULT_20261027.md`.
-Existing missing Git-transport authentication remains; local history preserved.
-Earlier current/pending-recency descriptions below are historical.
-
-## Latest verified outcome — 2026-10-27 causal-softmax completion
-
-Softmax completed21epochs, best16: validation AUC0.7456393788778357,
-F1 0.8125468632841789. Original one-layer0.7508035371114405 remains best;
-softmax delta -0.005164158233604832 is a valid one-seed negative result.
-CPU validation replay and historical artifact preservation PASS. No test use.
-Grant closed; no active training or automatic retry. Next hypothesis is recency
-bias, not another softmax run. Read [CURRENT_STATE.md](CURRENT_STATE.md) and
-[NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md). Full evidence:
-`/workspace/LightSAKT2-architecture/reports/architecture_study/softmax_pilot/RESULT_20261027.md`.
-Current session authorizes commit and safe non-force push to the research branch.
-Earlier recovery/hold summaries below are historical where superseded.
-
-## Current handoff — 2026-10-27 (supersedes older operational summary below)
-
-Research branch `research/architecture-variants-20261025` is recovered in
-`/workspace/LightSAKT2-architecture`; main remains `research-rebuild`.
-Read [CURRENT_STATE.md](CURRENT_STATE.md), [USER_DIRECTIVES.md](USER_DIRECTIVES.md),
-[DECISION_LOG.md](DECISION_LOG.md) and [NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md).
-Canonical memory remains `/workspace/LightSAKT2/project-memory`; branch copies
-are synchronized versions. Separate older LightSAKT_Project memory is unrelated.
-Installed skill: `/root/.codex/skills/durable-project-memory/SKILL.md`.
-Current evidence: `/workspace/LightSAKT2-architecture/reports/architecture_study/RECOVERY_20261027.md`.
-Depth results recovered; softmax has no surviving valid outcome. Safe CPU
-preparation is complete; no GPU run or hold release. Older status below is history.
-
 # LightSAKT2 durable project memory
 
-Authority: `/workspace/LightSAKT2`, branch `research-rebuild`, existing
-repository `Tanishgupta28/LightSAKT2` (public in the current GitHub API). Artifacts and live process evidence take
-precedence over stale progress prose. This is separate from the older
-`/workspace/LightSAKT_Project/project-memory` (a different study); do not modify
-or publish that sibling as part of this work.
+Canonical memory: `/workspace/LightSAKT2/project-memory`.
+Active research worktree: `/workspace/LightSAKT2-architecture`,branch
+`research/architecture-variants-20261025`. Main remains `research-rebuild` with
+pre-existing dirty scientific state preserved. Actual code,Git,checkpoints and
+raw results outrank memory. Branch copies are synchronized versions of this
+same memory,not an independent study. Older LightSAKT_Project memory is unrelated.
 
-Read [USER_DIRECTIVES.md](USER_DIRECTIVES.md), [CURRENT_STATE.md](CURRENT_STATE.md),
-[DECISION_LOG.md](DECISION_LOG.md), then [NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md).
-The current conclusion is **user hold active; no live LightSAKT2 training;
-813 completed /142 pending /2 interrupted**. Completed artifacts and epoch-2
-recovery state verified. At the latest09:24UTC recheck no visible GPU handles remain; reuse is still blocked
-by missing existing-reservation owner/transfer/window/no-conflict evidence. No
-automatic resume or watcher. Earlier busy snapshots are historical.
+Read [USER_DIRECTIVES.md](USER_DIRECTIVES.md),[CURRENT_STATE.md](CURRENT_STATE.md),
+[DECISION_LOG.md](DECISION_LOG.md),then [NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md).
+The [historical handoffs](archive/HANDOFF_BEFORE_GATING_RESULT_20261027.md)
+preserve superseded recovery/progress/directive text,including interruptions.
 
-Primary evidence: `reports/LIGHTSAKT2_HITSKT_PRIORITY_HANDOFF_20261020.md` and
-`reports/priority_handoff_20261020/`. Preserve the substantial pre-existing
-uncommitted scientific state; never reset it to the base commit.
+Latest: gated linear completed29epochs,best24,AUC0.750645234 versus original
+0.750803537. No AUC improvement. Five seed42 arms completed; retain original.
+No active training/additional scope. CPU checkpoint replay and146 protected-file
+hashes PASS;89 pre-run CPU tests PASS. Grant closed;test untouched.
+Skill: `/root/.codex/skills/durable-project-memory/SKILL.md`.
+Use Resume/Update/Audit and strict structural plus manual artifact validation.
