@@ -1,3 +1,16 @@
+## Current handoff — 2026-10-27 (supersedes older operational summary below)
+
+Research branch `research/architecture-variants-20261025` is recovered in
+`/workspace/LightSAKT2-architecture`; main remains `research-rebuild`.
+Read [CURRENT_STATE.md](CURRENT_STATE.md), [USER_DIRECTIVES.md](USER_DIRECTIVES.md),
+[DECISION_LOG.md](DECISION_LOG.md) and [NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md).
+Canonical memory remains `/workspace/LightSAKT2/project-memory`; branch copies
+are synchronized versions. Separate older LightSAKT_Project memory is unrelated.
+Installed skill: `/root/.codex/skills/durable-project-memory/SKILL.md`.
+Current evidence: `/workspace/LightSAKT2-architecture/reports/architecture_study/RECOVERY_20261027.md`.
+Depth results recovered; softmax has no surviving valid outcome. Safe CPU
+preparation is complete; no GPU run or hold release. Older status below is history.
+
 # LightSAKT2 durable project memory
 
 Authority: `/workspace/LightSAKT2`, branch `research-rebuild`, existing

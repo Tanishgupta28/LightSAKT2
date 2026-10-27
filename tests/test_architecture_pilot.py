@@ -166,7 +166,8 @@ def test_observed_run_peak_includes_earlier_epoch_peaks(tmp_path):
     assert result["peak_allocated_bytes"] == 100 and result["peak_reserved_bytes"] == 200
 
 
-def test_comparison_uses_fresh_validation_pair_and_requires_baseline_reproduction(tmp_path):
+@pytest.mark.parametrize("relocated", [False, True])
+def test_comparison_uses_fresh_validation_pair_and_requires_baseline_reproduction(tmp_path, relocated):
     import hashlib
     configurations = {}
     for arm, auc in (("baseline", .75), ("two_layer_linear", .752)):
@@ -183,11 +184,20 @@ def test_comparison_uses_fresh_validation_pair_and_requires_baseline_reproductio
                   "peak_reserved_bytes": 200}
         for name, value in (("config.json", config), ("status.json", {"status": "completed"}), ("metrics.json", result)):
             (directory / name).write_text(json.dumps(value))
+        if relocated:
+            restored = tmp_path / "work/checkpoints" / arm / "best.pt"
+            restored.parent.mkdir(parents=True)
+            checkpoint.rename(restored)
     record = {"configurations": configurations, "saved_baseline_validation_auc": .75,
               "baseline_retraining_tolerance": .001, "memory_limit_bytes": 1000}
     comparison = summarize(tmp_path / "work", record, tmp_path / "project")
     assert comparison["rows"][1]["validation_auc_delta"] == pytest.approx(.002)
     assert comparison["rows"][1]["screening_signal"] is True
+    if relocated:
+        restored.write_bytes(b"wrong restored bytes")
+        with pytest.raises(PilotBlocked, match="checkpoint hash"):
+            summarize(tmp_path / "work", record, tmp_path / "project")
+        restored.write_bytes(b"synthetic unit test only")
     record["saved_baseline_validation_auc"] = .8
     assert summarize(tmp_path / "work", record, tmp_path / "project")["rows"][1]["screening_signal"] is False
     result["test"] = {"auc": .99}; (directory / "metrics.json").write_text(json.dumps(result))

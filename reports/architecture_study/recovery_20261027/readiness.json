@@ -1,0 +1,79 @@
+{
+  "status": "PREPARED_NOT_EXECUTED",
+  "branch": "research/architecture-variants-20261025",
+  "recovered_commit": "6beced521b5b65e937cb62f201369a568a2b03ee",
+  "source_root": "/workspace/LightSAKT2",
+  "research_worktree": "/workspace/LightSAKT2-architecture",
+  "archive_sha256": "1899e200690f6897bfe9af27a003a1f91f324b3f48e63c8b09996c8487aca8d6",
+  "archive_members_verified": 22,
+  "restored_immutable_files": 14,
+  "input_hash_verification": "PASS",
+  "configuration": {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKTResearch",
+    "group": "architecture_pilot",
+    "seed": 42,
+    "seq_len": 100,
+    "batch_size": 64,
+    "max_epochs": 50,
+    "patience": 5,
+    "learning_rate": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0.0,
+    "epsilon": 1e-08,
+    "model_config": {
+      "max_seq_len": 100,
+      "embed_dim": 64,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "num_layers": 1,
+      "attention_type": "softmax"
+    },
+    "evaluate_test": false,
+    "run_id": "ASSIST2009-LightSAKT-pilot-one_layer_softmax-42-v1",
+    "device": "cuda",
+    "pilot": {
+      "arm": "one_layer_softmax",
+      "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "baseline_reference": "ASSIST2009-LightSAKT-final-42"
+    }
+  },
+  "protected_sources": {
+    "src/models/light_sakt.py": {
+      "source_sha256": "b918a99c2f073cefbea54a9654b547e4398fd3fff884bc97f3ec5c48008a123e",
+      "worktree_sha256": "b918a99c2f073cefbea54a9654b547e4398fd3fff884bc97f3ec5c48008a123e"
+    },
+    "src/models/sakt.py": {
+      "source_sha256": "5e76b373f3712b269f38c021d087448443734413ef2de787993c60da67f3c647",
+      "worktree_sha256": "5e76b373f3712b269f38c021d087448443734413ef2de787993c60da67f3c647"
+    },
+    "src/attention/linear.py": {
+      "source_sha256": "38087be72b424c2abc324f90531a51762e73510cb421a8a9cbc6b1e19d3ebb69",
+      "worktree_sha256": "38087be72b424c2abc324f90531a51762e73510cb421a8a9cbc6b1e19d3ebb69"
+    },
+    "configs/protocol.json": {
+      "source_sha256": "7718f3b90dbd1983f7b5ef81f2a16c2508357508f9c165dfe84a6a52bc898bae",
+      "worktree_sha256": "7718f3b90dbd1983f7b5ef81f2a16c2508357508f9c165dfe84a6a52bc898bae"
+    },
+    "experiments/USER_TRAINING_HOLD.json": {
+      "source_sha256": "65214c2c53852024e970fd0a176f71968f204ec0748635a7e6f46de3ed64c234",
+      "worktree_sha256": "65214c2c53852024e970fd0a176f71968f204ec0748635a7e6f46de3ed64c234"
+    }
+  },
+  "trainer_review": "Existing research observer hooks differ from research-rebuild; inspected diff and CPU equivalence/resume tests pass. Trainer unchanged in recovery.",
+  "softmax_evidence": "Prepared at 6beced52; no surviving completed result, checkpoint, history or launch marker found. Lost uncommitted /tmp execution cannot be excluded.",
+  "test_evaluation": false,
+  "gpu_training_started": false,
+  "next_stage": "softmax",
+  "budget_required": {
+    "wall_seconds": 900,
+    "allocator_cap_bytes": 4294967296,
+    "admission_free_bytes": 10737418240,
+    "runtime_free_bytes": 6442450944
+  },
+  "authorization": "Prior softmax execution scope documented, but no surviving current unexpired grant. No new grant created."
+}

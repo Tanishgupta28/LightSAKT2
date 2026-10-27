@@ -1,3 +1,15 @@
+## Current research authorization — 2026-10-27
+
+User requests LightSAKT2 recovery and architecture research continuation;
+safe preparation is authorized, replacing the older instruction to stop all
+project work. User grants full tool access and asks not to repeat permission
+questions. Maintain all original code/results/checkpoints, use existing memory,
+verify memory against artifacts, and avoid duplicate experiments. No test
+inference while selecting models. Do not automatically launch expensive GPU
+experiments: check workloads and applicable execution scope; report any required
+new budget for approval. General hold remains active; no automatic recovery or
+peer termination. Earlier HiTSKT-only next steps below are historical.
+
 # User directives
 
 ## Latest authorization — verified shutdown and existing-reservation reuse

@@ -1,3 +1,26 @@
+## Exact next research checkpoint — 2026-10-27
+
+Safe preparation is complete. Next uncompleted experiment is one-layer causal
+softmax on ASSIST2009 seed42 against the restored same-seed baseline. No baseline
+or depth retraining needed. Use the unchanged config in
+`/workspace/LightSAKT2-architecture/experiments/architecture_study/pilot/configs/one_layer_softmax.json`.
+
+Before GPU execution, obtain a current bounded execution budget/window (one run,
+<=900seconds,4GiB allocator cap) and recheck shared admission (>=10GiB free at
+entry,>=6GiB during execution), exact MIG UUID, unchanged hold/config hashes.
+Do not reuse expired grants or remove the general hold. Command and full policy
+are in `/workspace/LightSAKT2-architecture/reports/architecture_study/RECOVERY_20261027.md`.
+Use `--stage softmax`; `attention` also launches recency and exceeds this scope.
+
+After running: verify terminal status/config/data/checkpoint hashes, replay only
+validation, export all six epoch metrics, compare against0.7508035371114405;
+promotion screening needs >=0.001 AUC gain. Preserve negative/interrupted outcomes,
+close grant, archive new checkpoints outside /tmp, update and validate memory.
+If softmax fails, investigate prepared recency bias under separately bounded
+scope. Promising changes: five seeds42/123/2026/3407/7777 over ASSIST2009,
+ASSIST2015 and Algebra2005 with paired validation deltas. Keep test locked.
+Earlier HiTSKT next steps below are historical, superseded for this request.
+
 # Next checkpoint
 
 Latest09:24UTC,20 October2026: renewed user authorization permits stopping

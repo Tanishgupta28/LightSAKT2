@@ -1,0 +1,39 @@
+{
+  "structural_checks": [
+    {
+      "root": "/workspace/LightSAKT2/project-memory",
+      "ok": true,
+      "markdown_files": 5,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "root": "/workspace/LightSAKT2-architecture/project-memory",
+      "ok": true,
+      "markdown_files": 5,
+      "errors": [],
+      "warnings": []
+    }
+  ],
+  "manual_audit": {
+    "status": "PASS",
+    "canonical_memory_synchronized": true,
+    "claims_checked_against": [
+      "restored raw metrics/config/status/history",
+      "all22 archive member hashes",
+      "checkpoint hash verification through summary",
+      "frozen input and configuration hashes",
+      "80 CPU tests",
+      "branch/reflog and missing-worktree observation"
+    ],
+    "limitations": [
+      "No exhaustive15-run baseline re-audit",
+      "Unknown lost uncommitted /tmp softmax execution cannot be excluded",
+      "Historical absolute paths retained in immutable artifacts",
+      "No current GPU grant created"
+    ],
+    "memory_contains_model_binaries_or_raw_data": false,
+    "memory_sensitive_content_review": "New text manually reviewed; no credentials or raw transcripts included"
+  },
+  "git_publication": "Local research-branch checkpoint only; no push"
+}

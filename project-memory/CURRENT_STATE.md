@@ -1,3 +1,39 @@
+## Verified current research state — 2026-10-27
+
+Recovered prior research HEAD `6beced52` on
+`research/architecture-variants-20261025`; persistent worktree
+`/workspace/LightSAKT2-architecture`. Main stays `research-rebuild` at `a6bdc6c0`
+with pre-existing dirty science preserved. Missing /tmp worktree registration
+retained, not pruned. Commit alone did not preserve weights: verified persistent
+archive SHA256 `1899e200690f6897bfe9af27a003a1f91f324b3f48e63c8b09996c8487aca8d6`
+at `/workspace/LightSAKT2/backups/architecture_depth_20261025/pilot_checkpoints_and_records.tar.gz`;
+all22 member hashes verified,14 immutable run files restored into persistent
+worktree `pilot-workspace/` (four best/latest checkpoints plus raw records).
+
+Verified ASSIST2009 seed42 validation AUC: one-layer0.7508035371114405,
+two-layer0.7507909322800659; both29 epochs, selected24. No depth gain.
+Execution commit `f46e7d81`, completion commit `7b650cb9`.
+Causal softmax was prepared/authorized at `6beced52`, but no surviving metrics,
+checkpoint, history or terminal marker establish execution. Lost uncommitted
+/tmp work cannot be excluded. Recency likewise has no verified result.
+
+Dataset/split/protocol/selected-baseline hashes pass; frozen seed42 config
+unchanged.80 targeted CPU tests pass. Hash-bound relocation support was added
+only to the summary reader; original models/trainer untouched this recovery.
+Main versus branch trainer already differs by observer instrumentation, checked
+by existing update-equivalence/exact-resume tests. Initial pytest temp setup
+failure and corrected assertion are documented, not experimental failures.
+
+One read-only process/GPU snapshot found no LightSAKT2 trainer/controller,
+37MiB/40320MiB MIG usage and no visible compute process; unrelated jobs untouched.
+No new GPU execution or test inference. Historical general holds and GKT
+interruptions retained. No current unexpired softmax grant exists.
+Detailed evidence and restored checkpoint paths:
+`/workspace/LightSAKT2-architecture/reports/architecture_study/recovery_20261027/{readiness,comparison}.json`;
+report `/workspace/LightSAKT2-architecture/reports/architecture_study/RECOVERY_20261027.md`.
+Skill installed at `/root/.codex/skills/durable-project-memory`, upstream
+`0a06f1bb8231ace20e4405281a263012fedb5e51`. Earlier current-state text below is historical.
+
 # Current state
 
 Latest09:24UTC,20 October2026: renewed user authorization permits stopping

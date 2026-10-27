@@ -47,3 +47,25 @@ metrics, model/data/DKT edits, watcher or allocation change. Fresh report/eviden
 under reports/favor_plus_v1/EXISTING_ALLOCATION_REUSE_STATUS_20261020.md and
 existing_allocation_reuse_20261020_v1/inspection.json in HiTSKT. Preserve all
 original artifacts and scoped branch publication; later full training needs approval.
+
+
+## 2026-10-27 — Architecture recovery, memory installation and bounded preparation
+
+Recovered research commit6beced52 from missing /tmp worktree into persistent
+/workspace/LightSAKT2-architecture without resetting main or pruning history.
+Verified depth archive and all22 recorded member hashes; restored14 immutable
+files. Baseline0.7508035371114405 versus depth0.7507909322800659 is a valid
+single-seed null result,29 epochs each/selected24. Softmax preparation survives;
+no valid completed run survives. Unknown lost execution is not claimed absent.
+Hash-bound summary checkpoint relocation implemented and80 CPU checks pass.
+Original models/trainer, archived metrics and holds preserved. Initial pytest
+setup errors and overly broad trainer-equality assertion were corrected and
+recorded in the recovery report. No GPU training or test evaluation.
+
+Installed reviewed durable-project-memory upstream0a06f1bb8231ace20e4405281a263012fedb5e51
+through standard installer. Resume/Update/Audit use canonical existing memory.
+New user research scope supersedes old documentation-only HiTSKT priority,
+while retaining explicit GPU budget boundaries. Next: current budget/window for
+one900s/4GiB seed42 softmax pilot, then validation-only replay/comparison.
+Full evidence: /workspace/LightSAKT2-architecture/reports/architecture_study/RECOVERY_20261027.md.
+No push or external message is authorized by this checkpoint.

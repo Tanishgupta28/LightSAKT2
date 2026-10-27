@@ -278,7 +278,12 @@ def summarize(work, record, project=PROJECT, report_dir=PILOT):
             for key in ("processed_sha256", "split_sha256"):
                 if result[key] != config["pilot"][key]:
                     raise PilotBlocked("Pilot result data binding mismatch")
-            if digest(result["checkpoint"]) != result["checkpoint_sha256"]:
+            checkpoint = Path(result["checkpoint"])
+            if not checkpoint.is_file():
+                # Recover archived runs after a temporary worktree disappears.
+                # Keep raw metrics immutable and accept only the identical bytes.
+                checkpoint = Path(work) / "checkpoints" / config["run_id"] / "best.pt"
+            if not checkpoint.is_file() or digest(checkpoint) != result["checkpoint_sha256"]:
                 raise PilotBlocked("Pilot checkpoint hash mismatch")
             row.update(validation_auc=result["validation"]["auc"], validation_f1=result["validation"]["f1"],
                        validation_accuracy=result["validation"].get("accuracy"),
@@ -287,7 +292,7 @@ def summarize(work, record, project=PROJECT, report_dir=PILOT):
                        validation_bce=result["validation"]["bce"], best_epoch=result["best_epoch"],
                        epochs_trained=result["epochs_trained"], training_seconds=result["training_seconds"],
                        peak_allocated_bytes=result["peak_allocated_bytes"], peak_reserved_bytes=result["peak_reserved_bytes"],
-                       checkpoint=result["checkpoint"], checkpoint_sha256=result["checkpoint_sha256"])
+                       checkpoint=str(checkpoint), checkpoint_sha256=result["checkpoint_sha256"])
         rows.append(row)
     baseline = rows[0]["validation_auc"]
     baseline_reproduced = (abs(baseline - record["saved_baseline_validation_auc"]) <= record["baseline_retraining_tolerance"]
