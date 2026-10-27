@@ -1,0 +1,45 @@
+{
+  "status": "closed_completed",
+  "project": "LightSAKT2",
+  "dataset": "ASSIST2009",
+  "seed": 42,
+  "stages": [
+    "recency"
+  ],
+  "sharing": "shared",
+  "gpu_uuid": "MIG-d2fcfd79-720e-5218-82c9-0a132be68920",
+  "valid_from_utc": "2026-10-27T13:11:24.315125+00:00",
+  "valid_until_utc": "2026-10-27T13:26:24.315125+00:00",
+  "authorized_by": "User explicit one bounded recency-softmax run instruction2026-10-27",
+  "allocation_reference": "Existing shared-GPU permissions and current explicit execution scope",
+  "window_scope": "One operator-imposed900second window; not an exclusive lease",
+  "execution_evidence": "/workspace/LightSAKT2-architecture/reports/architecture_study/recency_pilot/EXECUTION_AUTHORIZATION_20261027.md",
+  "execution_evidence_sha256": "2ded8d3b13f12a24ed6bda0f21519ef195bf561d647db766598ff09fbb2d9b5b",
+  "shared_policy": {
+    "allocator_cap_bytes": 4294967296,
+    "admission_free_bytes": 10737418240,
+    "runtime_free_bytes": 6442450944,
+    "host_rss_cap_bytes": 4294967296,
+    "host_headroom_bytes": 2147483648,
+    "admission_utilization_max": 75,
+    "allow_unsupported_mig_utilization": true,
+    "inter_update_pause_seconds": 0.1,
+    "max_step_seconds": 30,
+    "wall_time_limit_seconds": 900
+  },
+  "hold_exception": {
+    "stage": "recency",
+    "dataset": "ASSIST2009",
+    "seed": 42,
+    "user_authorization_evidence": "/workspace/LightSAKT2-architecture/reports/architecture_study/recency_pilot/EXECUTION_AUTHORIZATION_20261027.md",
+    "hold_marker_sha256": {
+      "/workspace/LightSAKT2/experiments/USER_TRAINING_HOLD.json": "65214c2c53852024e970fd0a176f71968f204ec0748635a7e6f46de3ed64c234",
+      "/workspace/LightSAKT2-architecture/experiments/USER_TRAINING_HOLD.json": "65214c2c53852024e970fd0a176f71968f204ec0748635a7e6f46de3ed64c234"
+    },
+    "configuration_sha256": {
+      "one_layer_recency_softmax": "b1ce0177ee98d4b56b4a48df0ee34b8d8b24b29955cba6b1d0a4c9471a12da51"
+    }
+  },
+  "closed_utc": "2026-10-27T13:14:46.455859+00:00",
+  "closure_reason": "Single authorized recency run completed; no retry or extra scope"
+}

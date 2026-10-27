@@ -97,3 +97,23 @@ but exposed commit/tree APIs cannot transfer exact local commits. No remote
 mutation or reconstructed history. Preserved a verified local Git bundle at
 /workspace/LightSAKT2/backups/architecture_softmax_20261027/research_commits.bundle; checkpoint archive remains separate. Publish existing branch with
 ordinary push when authenticated Git transport is available; no training retry.
+
+
+## 2026-10-27 — Single recency pilot completed; original still best
+
+User authorized exactly one bounded recency-softmax ASSIST2009 seed42 run.
+Added single-recency launch stage without scientific config/model/trainer edits;
+82 CPU tests PASS. Three prior arms verified and no prior recency artifacts.
+Execution from27e5a486 completed21epochs,best16: AUC0.7482377884727862,
+F1 0.8134333940013463,accuracy0.7274548368298368,BCE0.544185487825003.
+Delta-baseline -0.0025657486386543304,delta-softmax +0.0025984095949505015.
+Valid one-seed negative against original; no overall improvement or automatic
+five-seed promotion. CPU replay/full resume/116 historical file hashes PASS.
+Learned head decays0.0381679125/0.0389851369 versus initial0.03125.
+Runtime167.035566s,allocated134.050MiB,reserved160MiB. No test use or peer signals;
+shared headroom/cap/pacing respected; exact grant closed_completed, no retry.
+Archived checkpoints/raw records and epoch metrics: /workspace/LightSAKT2-architecture/reports/architecture_study/recency_pilot/RESULT_20261027.md.
+Next hypothesis after source/literature review: normalized recency decay inside
+ELU+1 prefix attention. AKT/RetNet motivate decay but do not establish this
+transplant's performance. No new arm implementation/training performed.
+Missing shell Git authentication remains; preserve all local commits.

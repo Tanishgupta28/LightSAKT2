@@ -1,3 +1,31 @@
+## Next research action after all four initial arms — 2026-10-27
+
+Do not repeat baseline/depth/softmax/recency seed42 runs; all are complete.
+Original one-layer ELU+1 remains best, AUC0.7508035371114405.
+Recency-softmax0.7482377884727862 is below baseline, so no five-seed promotion
+of that arm based on this screening. Exact result: `/workspace/LightSAKT2-architecture/reports/architecture_study/recency_pilot/RESULT_20261027.md`.
+
+Next hypothesis: retain normalized ELU+1 and add learned per-head exponential
+decay to both KV and K prefix states. Recency recovered0.00259841 over softmax,
+while ELU+1 still leads; combining those factors is untested, not proven useful.
+AKT/RetNet primary-source motivation, equations, numerical hazards and verification
+requirements are recorded in the result report. No implementation or training
+of this new arm exists yet. Preserve baseline source, settings and data.
+
+Next bounded development action: implement a separate normalized decayed-linear
+attention arm; verify dense-vs-recurrent/scan forward and gradients, lambda1
+baseline limit, causality/padding/finite gradients/determinism. Initialize decay
+at1/32 per head without a new tuning sweep; decay numerator and denominator
+identically. Recheck original-state mapping/initialization. Only then propose a
+separately authorized seed42 ASSIST2009 comparison with4GiB/900s shared safeguards.
+No further GPU authorization in current task. Promote only credible improvements
+to five seeds42/123/2026/3407/7777 over ASSIST2009/ASSIST2015/Algebra2005, reporting
+paired validation deltas and mean/sample SD. Test stays locked during selection.
+
+Publication remains blocked by existing missing Git transport authentication.
+Keep local commits/bundles; no force push or rewrite. Earlier next-recency,
+recency-not-authorized and softmax-pending text below is historical.
+
 ## Publication checkpoint — 2026-10-27
 
 Verified result commit `f15b28b9a30117a9cfdcea677f398ba2b0967713` is local. Normal non-force push failed:

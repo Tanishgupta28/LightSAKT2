@@ -1,0 +1,32 @@
+{
+  "sample": {
+    "observed_utc": "2026-10-27T13:11:24.695830+00:00",
+    "gpu_uuid": "MIG-d2fcfd79-720e-5218-82c9-0a132be68920",
+    "total_bytes": 42278584320,
+    "free_bytes": 40501641216,
+    "used_bytes": 1776943104,
+    "compute_processes": [
+      {
+        "pid": 829592,
+        "used_gpu_memory_bytes": 1728053248
+      }
+    ],
+    "pid_attribution": "unresolved; shared use; no exclusive claim",
+    "utilization_gpu_percent": null,
+    "utilization_status": "unsupported_mig",
+    "host_headroom_bytes": 41822953472,
+    "process_peak_rss_bytes": 34086912
+  },
+  "policy": {
+    "allocator_cap_bytes": 4294967296,
+    "admission_free_bytes": 10737418240,
+    "runtime_free_bytes": 6442450944,
+    "host_rss_cap_bytes": 4294967296,
+    "host_headroom_bytes": 2147483648,
+    "admission_utilization_max": 75,
+    "allow_unsupported_mig_utilization": true,
+    "inter_update_pause_seconds": 0.1,
+    "max_step_seconds": 30,
+    "wall_time_limit_seconds": 900
+  }
+}

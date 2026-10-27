@@ -1,3 +1,9 @@
+## Execution scope consumed — 2026-10-27
+
+The authorized single recency run completed and its grant is closed_completed.
+No additional GPU run is authorized; original controls and general holds remain.
+Previous authorization text is retained below as historical provenance.
+
 ## Latest authorization — single recency run, 2026-10-27
 
 User authorizes one fresh ASSIST2009 seed42 recency-biased softmax training run,

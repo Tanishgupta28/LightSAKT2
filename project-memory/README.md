@@ -1,3 +1,16 @@
+## Latest verified outcome — recency completed, 2026-10-27
+
+All four initial ASSIST2009 seed42 arms completed. Recency AUC0.7482377884727862,
+F1 0.8134333940013463; original one-layer linear0.7508035371114405 remains best.
+Recency improved plain softmax by0.0025984095949505 but missed baseline by
+0.0025657486386543. No tested variant warrants an improvement claim or promotion.
+Next hypothesis: normalized decayed ELU+1 attention, not yet implemented/trained.
+Grant closed; no retry/additional GPU scope. CPU replay and116 protected hashes PASS.
+See [CURRENT_STATE.md](CURRENT_STATE.md), [NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md),
+and `/workspace/LightSAKT2-architecture/reports/architecture_study/recency_pilot/RESULT_20261027.md`.
+Existing missing Git-transport authentication remains; local history preserved.
+Earlier current/pending-recency descriptions below are historical.
+
 ## Latest verified outcome — 2026-10-27 causal-softmax completion
 
 Softmax completed21epochs, best16: validation AUC0.7456393788778357,

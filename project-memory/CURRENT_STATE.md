@@ -1,3 +1,36 @@
+## Verified recency completion — 2026-10-27
+
+Branch `research/architecture-variants-20261025`, persistent research worktree
+`/workspace/LightSAKT2-architecture`; recency execution commit `27e5a486`.
+Fresh authorized recency-softmax run completed21epochs, best16:
+validation AUC0.7482377884727862, F1 0.8134333940013463,
+accuracy0.7274548368298368, BCE0.544185487825003.
+Controls unchanged. Original linear0.7508035371114405; depth0.7507909322800659;
+softmax0.7456393788778357. Recency-baseline delta -0.0025657486386543304;
+recency-softmax delta +0.0025984095949505015. Valid negative versus baseline,
+preliminary one-seed benefit over softmax; no overall improvement/replication gate.
+
+82 CPU tests PASS before launch (causality/padding/dense-reference decay gradients,
+finite optimizer/save-load, scope and exact reporting/resume). Independent CPU
+validation replay PASS (AUC difference8.9523e-9); full finite model/Adam/RNG/loader/
+early-stop/history state present. All116 pre-existing source/checkpoint/raw-report/
+manifest/hold file hashes unchanged. No test loader/prediction access.
+Decay per head learned0.0381679125,0.0389851369 from0.03125.
+Runtime167.035566s; peak allocated140561408bytes (134.050MiB),reserved160MiB.
+Within4GiB/900s shared safeguards; peer compute process retained untouched.
+Grant closed_completed, no automatic retries or extra experiment.
+
+Best/latest checkpoints:
+`/workspace/LightSAKT2-architecture/pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_recency_softmax-42-v1/`.
+Best SHA256 `988b4302c2bc0f3c3855f7c365f9bd154f2b66fefea83b3cb384e3774796355b`.
+Persistent read-back-verified archive:
+`/workspace/LightSAKT2/backups/architecture_recency_20261027/pilot_checkpoints_and_records.tar.gz`.
+Evidence `/workspace/LightSAKT2-architecture/reports/architecture_study/recency_pilot/` includes raw history/config/metrics/status/environment,
+epoch CSVs, comparison, replay, resource and archive-hash records.
+Missing Git transport authentication unchanged; retain local commits and report
+blocker rather than exposing secrets or reconstructing history remotely.
+Prior active/no-recency-scope sections below are historical and superseded.
+
 ## Publication checkpoint — 2026-10-27
 
 Verified result commit `f15b28b9a30117a9cfdcea677f398ba2b0967713` is local. Normal non-force push failed:
