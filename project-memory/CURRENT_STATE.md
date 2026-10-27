@@ -1,3 +1,19 @@
+## Publication checkpoint — 2026-10-27
+
+Verified result commit `f15b28b9a30117a9cfdcea677f398ba2b0967713` is local. Normal non-force push failed:
+shell Git has no HTTPS credentials; gh has no logged-in account and no SSH key
+is present. Connected GitHub app authentication works, but its exposed commit API
+cannot push the exact existing local commit graph. Do not recreate/rewrite local
+research history to mask this limitation. Remote research branch was absent at
+last ls-remote check. No remote update succeeded.
+
+Local Git bundle `/workspace/LightSAKT2/backups/architecture_softmax_20261027/research_commits.bundle` preserves research commits since a6bdc6c0
+(requires that base); bundle verify PASS. Model checkpoints have their separate
+verified archive. Remaining publication action after authenticated Git transport
+is available: `git push --set-upstream origin HEAD:refs/heads/research/architecture-variants-20261025`
+from /workspace/LightSAKT2-architecture, then verify remote HEAD. No force push.
+No further GPU scope; recency remains a recommendation only.
+
 ## Completed and verified softmax result — 2026-10-27
 
 Research worktree `/workspace/LightSAKT2-architecture`, branch

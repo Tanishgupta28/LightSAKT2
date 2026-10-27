@@ -87,3 +87,13 @@ Archived best/latest and raw records persist outside /tmp. Report and hashes:
 /workspace/LightSAKT2-architecture/reports/architecture_study/softmax_pilot/RESULT_20261027.md and recovery_archive_20261027.json.
 Next prepared hypothesis: recency bias, separately authorized and single-arm
 runner needed to avoid repeating completed softmax. No recency run in this task.
+
+
+## 2026-10-27 — Verified result committed; exact-history push blocked
+
+Result commit f15b28b9a30117a9cfdcea677f398ba2b0967713. Non-force push failed because shell Git has no
+HTTPS credential; gh logged out/no SSH key. Connected GitHub app profile works,
+but exposed commit/tree APIs cannot transfer exact local commits. No remote
+mutation or reconstructed history. Preserved a verified local Git bundle at
+/workspace/LightSAKT2/backups/architecture_softmax_20261027/research_commits.bundle; checkpoint archive remains separate. Publish existing branch with
+ordinary push when authenticated Git transport is available; no training retry.
