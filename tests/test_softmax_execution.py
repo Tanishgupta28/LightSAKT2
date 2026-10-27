@@ -20,8 +20,10 @@ def test_softmax_precision_recall_are_fixed_threshold_metrics():
     assert result["precision"] == result["recall"] == result["f1"] == 0
 
 
-def test_softmax_scope_is_single_arm_and_cannot_start_recency(tmp_path):
-    assert STAGES["softmax"] == ("one_layer_softmax",)
+@pytest.mark.parametrize("stage,arm", [("softmax", "one_layer_softmax"),
+                                      ("recency", "one_layer_recency_softmax")])
+def test_single_arm_scope_cannot_start_other_stages(tmp_path, stage, arm):
+    assert STAGES[stage] == (arm,)
     source, project = tmp_path / "source", tmp_path / "project"
     markers = []
     for root in (source, project):
@@ -29,29 +31,30 @@ def test_softmax_scope_is_single_arm_and_cannot_start_recency(tmp_path):
         marker.parent.mkdir(parents=True)
         marker.write_text('{"status":"USER_TRAINING_HOLD_ACTIVE"}')
         markers.append(marker)
-    config = project / CONTROL / "configs/one_layer_softmax.json"
+    config = project / CONTROL / "configs" / f"{arm}.json"
     config.parent.mkdir(parents=True); config.write_text('{"attention_type":"softmax"}')
     _, record = grant(tmp_path)
-    record["stages"] = ["softmax"]
-    record["hold_exception"] = {"stage": "softmax", "dataset": "ASSIST2009", "seed": 42,
+    record["stages"] = [stage]
+    record["hold_exception"] = {"stage": stage, "dataset": "ASSIST2009", "seed": 42,
                                 "user_authorization_evidence": "synthetic test only",
                                 "hold_marker_sha256": {str(p): digest(p) for p in markers},
-                                "configuration_sha256": {"one_layer_softmax": digest(config)}}
-    check_holds(source, project, record, "softmax")
-    for forbidden in ("depth", "attention"):
+                                "configuration_sha256": {arm: digest(config)}}
+    check_holds(source, project, record, stage)
+    for forbidden in set(STAGES) - {stage}:
         with pytest.raises(PilotBlocked):
             check_holds(source, project, record, forbidden)
     config.write_text('{"attention_type":"recency_softmax"}')
     with pytest.raises(PilotBlocked):
-        check_holds(source, project, record, "softmax")
+        check_holds(source, project, record, stage)
 
 
-def test_softmax_extended_reporting_preserves_updates_and_exact_resume(tmp_path):
+@pytest.mark.parametrize("attention", ["softmax", "recency_softmax"])
+def test_softmax_extended_reporting_preserves_updates_and_exact_resume(tmp_path, attention):
     roots = [tmp_path / name for name in ("plain", "reported", "resumed")]
     configs = [fixture(root) for root in roots]
     for config in configs:
         config["model"] = "LightSAKTResearch"
-        config["model_config"].update(num_layers=1, attention_type="softmax")
+        config["model_config"].update(num_layers=1, attention_type=attention)
     plain = engine.run(configs[0], roots[0])
     original_metrics, original_loss = engine.metrics, engine.training_loss
     observer = MetricsObserver()

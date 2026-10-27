@@ -23,12 +23,15 @@ PROJECT = Path(__file__).resolve().parents[1]
 SOURCE = Path("/workspace/LightSAKT2")
 PILOT = Path("reports/architecture_study/pilot")
 SOFTMAX_PILOT = Path("reports/architecture_study/softmax_pilot")
+RECENCY_PILOT = Path("reports/architecture_study/recency_pilot")
+SINGLE_ATTENTION_STAGES = {"softmax": SOFTMAX_PILOT, "recency": RECENCY_PILOT}
 CONTROL = Path("experiments/architecture_study/pilot")
 DATASET = "ASSIST2009"
 SEED = 42
 STAGES = {"depth": ("baseline", "two_layer_linear"),
           "attention": ("one_layer_softmax", "one_layer_recency_softmax"),
-          "softmax": ("one_layer_softmax",)}
+          "softmax": ("one_layer_softmax",),
+          "recency": ("one_layer_recency_softmax",)}
 
 
 class PilotBlocked(RuntimeError):
@@ -49,7 +52,7 @@ def check_holds(source=SOURCE, project=PROJECT, grant=None, stage="depth"):
         if marker.exists():
             permitted = False
             try:
-                permitted = (stage in {"depth", "softmax"} and exception["stage"] == stage
+                permitted = (stage in {"depth", *SINGLE_ATTENTION_STAGES} and exception["stage"] == stage
                              and exception["dataset"] == DATASET and exception["seed"] == SEED
                              and exception["user_authorization_evidence"]
                              and exception["hold_marker_sha256"][str(marker)] == digest(marker))
@@ -313,7 +316,7 @@ def summarize(work, record, project=PROJECT, report_dir=PILOT):
 def execute(stage, source, work, authorization_path, project=PROJECT):
     # Keep every hold/authorization/config check before importing torch or probing CUDA.
     source, project, work = Path(source).resolve(), Path(project).resolve(), Path(work).resolve()
-    report_dir = SOFTMAX_PILOT if stage == "softmax" else PILOT
+    report_dir = SINGLE_ATTENTION_STAGES.get(stage, PILOT)
     # The general hold remains active; only a user-authorized bounded exception
     # bound to both marker hashes and exact pilot configurations can pass it.
     provisional = read_json(authorization_path) if authorization_path and Path(authorization_path).is_file() else None
@@ -322,8 +325,8 @@ def execute(stage, source, work, authorization_path, project=PROJECT):
         raise PilotBlocked("Pilot output must be outside the original checkout")
     grant = authorization(authorization_path, stage)
     authorization_digest = digest(authorization_path)
-    record = prepare(source, project, persist=stage != "softmax")
-    if stage in {"attention", "softmax"}:
+    record = prepare(source, project, persist=stage not in SINGLE_ATTENTION_STAGES)
+    if stage in {"attention", *SINGLE_ATTENTION_STAGES}:
         existing = summarize(work, record, project, report_dir)
         if any(row["status"] != "completed" for row in existing["rows"][:2]):
             raise PilotBlocked("Complete the one-layer versus two-layer stage first")
@@ -382,7 +385,7 @@ def execute(stage, source, work, authorization_path, project=PROJECT):
                     stream.write(json.dumps(sample) + "\n")
                 last_probe = now
         observer_class = PilotObserver
-        if stage == "softmax":
+        if stage in SINGLE_ATTENTION_STAGES:
             from scripts.pilot_metric_extensions import MetricsObserver, record_metrics
             observer_class = MetricsObserver
         observer = observer_class(guard, {"stage": stage, "gpu_authorization_sha256": authorization_digest,
@@ -400,7 +403,7 @@ def execute(stage, source, work, authorization_path, project=PROJECT):
                     "status": "running", "stage": stage, "current_arm": arm,
                     "trainer_invoked": True, "gpu_uuid": grant["gpu_uuid"],
                     "observed_utc": datetime.now(timezone.utc).isoformat()})
-                with record_metrics(engine, observer) if stage == "softmax" else nullcontext():
+                with record_metrics(engine, observer) if stage in SINGLE_ATTENTION_STAGES else nullcontext():
                     run(record["configurations"][arm], root=work, observer=observer)
                 summarize(work, record, project, report_dir)
                 # Reclaim only this process's unused cache between sequential models.
@@ -444,6 +447,6 @@ if __name__ == "__main__":
         record = {"status": "blocked", "reason": str(error), "stage": args.stage,
                   "training_started": getattr(error, "training_started", False), "automatic_retry": False,
                   "observed_utc": datetime.now(timezone.utc).isoformat()}
-        write_json(PROJECT / (SOFTMAX_PILOT if args.stage == "softmax" else PILOT) / "launch_status.json", record)
+        write_json(PROJECT / SINGLE_ATTENTION_STAGES.get(args.stage, PILOT) / "launch_status.json", record)
         print(json.dumps(record, indent=2))
         raise SystemExit(2)

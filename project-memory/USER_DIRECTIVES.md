@@ -1,3 +1,13 @@
+## Latest authorization — single recency run, 2026-10-27
+
+User authorizes one fresh ASSIST2009 seed42 recency-biased softmax training run,
+4GiB allocator/900second invocation limit, unchanged scientific controls and
+shared safeguards. No baseline/depth/softmax rerun, tuning, test evaluation,
+automatic retry or additional experiment. Verify checkpoints and record outcome.
+Preserve local commits; report existing missing Git authentication without
+exposing secrets or rewriting history. Supersedes older recency-not-authorized
+text below for this one invocation only. General holds remain active.
+
 ## Latest bounded execution authorization — 2026-10-27
 
 User explicitly authorizes one ASSIST2009 seed42 causal-softmax GPU run,4GiB cap,

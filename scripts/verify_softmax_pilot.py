@@ -1,5 +1,6 @@
 """Replay only validation and verify the bounded seed-42 softmax artifacts."""
 import hashlib
+import math
 import os
 from pathlib import Path
 
@@ -16,11 +17,12 @@ from src.models.factory import build_model
 from src.training.engine import evaluate
 
 
-def verify():
+def verify(arm="one_layer_softmax", report_dir=SOFTMAX_PILOT,
+           grant_name="gpu_authorization_softmax_20261027.executed.json"):
     torch.set_num_threads(1)
     torch.use_deterministic_algorithms(True)
     work = PROJECT / "pilot-workspace"
-    config = read_json(PROJECT / CONTROL / "configs/one_layer_softmax.json")
+    config = read_json(PROJECT / CONTROL / "configs" / f"{arm}.json")
     directory = work / "results/raw" / config["run_id"]
     result = read_json(directory / "metrics.json")
     history = read_json(directory / "history.json")
@@ -41,7 +43,7 @@ def verify():
         str(p).encode() + p.read_bytes() for p in sorted(Path("src").rglob("*.py"))
         if "visualization" not in p.parts)).hexdigest()
     assert latest["environment"]["training_code_sha256"] == result["training_code_sha256"] == code_hash
-    grant = PROJECT / CONTROL / "gpu_authorization_softmax_20261027.executed.json"
+    grant = PROJECT / CONTROL / grant_name
     assert latest["environment"]["observer"]["gpu_authorization_sha256"] == digest(grant)
     assert all(key in latest for key in ("optimizer", "rng", "loader_rng", "bad_epochs", "history"))
     assert latest["bad_epochs"] >= config["patience"] or len(history) == config["max_epochs"]
@@ -66,7 +68,7 @@ def verify():
     assert differences["auc"] <= 2e-6 and differences["bce"] <= 2e-6
     assert all(differences[key] <= 1e-4 for key in ("f1", "accuracy", "precision", "recall"))
     assert replay["n_targets"] == result["validation"]["n_targets"] == 27456
-    preservation = read_json(PROJECT / SOFTMAX_PILOT / "preflight_20261027.json")
+    preservation = read_json(PROJECT / report_dir / "preflight_20261027.json")
     for path, expected in preservation["existing_file_sha256"].items():
         assert digest(path) == expected, f"Pre-existing artifact changed: {path}"
     record = {"status": "PASS", "device": "cpu", "optimizer_updates_performed": 0,
@@ -77,8 +79,17 @@ def verify():
               "completed_epochs": latest["epoch"], "complete_resume_state_present": True,
               "training_code_sha256": code_hash, "executed_grant_sha256": digest(grant),
               "pre_existing_file_hashes_unchanged": len(preservation["existing_file_sha256"])}
-    write_json(PROJECT / SOFTMAX_PILOT / "checkpoint_replay_verification_20261027.json", record)
-    print("PASS: softmax validation replay, resume-state checks and historical artifact preservation.")
+    if arm == "one_layer_recency_softmax":
+        initial_raw = torch.full_like(best["model"]["attn.raw_decay"],
+                                      math.log(math.expm1(1 / 32)))
+        assert not torch.equal(best["model"]["attn.raw_decay"], initial_raw)
+        slopes = torch.nn.functional.softplus(best["model"]["attn.raw_decay"])
+        assert torch.isfinite(slopes).all() and (slopes > 0).all()
+        record["initial_decay_per_head"] = 1 / 32
+        record["selected_decay_per_head"] = slopes.tolist()
+        record["selected_decay_changed_from_initial"] = True
+    write_json(PROJECT / report_dir / "checkpoint_replay_verification_20261027.json", record)
+    print(f"PASS: {arm} validation replay, resume-state checks and historical artifact preservation.")
 
 
 if __name__ == "__main__":
