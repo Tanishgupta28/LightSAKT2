@@ -1,3 +1,12 @@
+## Latest bounded execution authorization — 2026-10-27
+
+User explicitly authorizes one ASSIST2009 seed42 causal-softmax GPU run,4GiB cap,
+15-minute limit, existing shared admission safeguards, unchanged training controls,
+validation-only evaluation. Also authorizes local commit and safe non-force push
+to research/architecture-variants-20261025. No recency or multi-seed execution.
+General holds remain active with only an exact expiring single-arm exception.
+This supersedes the preparation-only budget boundary below for this run only.
+
 ## Current research authorization — 2026-10-27
 
 User requests LightSAKT2 recovery and architecture research continuation;

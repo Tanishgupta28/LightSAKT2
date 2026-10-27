@@ -1,3 +1,31 @@
+## Completed and verified softmax result — 2026-10-27
+
+Research worktree `/workspace/LightSAKT2-architecture`, branch
+`research/architecture-variants-20261025`; executed from `b63ec478`.
+One authorized fresh causal-softmax run completed21epochs; selected epoch16.
+Validation AUC0.7456393788778357, F1 0.8125468632841789,
+accuracy0.7268356643356644, BCE0.5465822575284047.
+Original one-layer0.7508035371114405; two-layer0.7507909322800659.
+Softmax delta -0.005164158233604832; no improvement or promotion signal.
+Conclusion is a valid single-seed negative, not generalized inferiority.
+
+Training161.204seconds; peak allocated140479488bytes (133.972MiB),
+reserved167772160bytes (160MiB), within4GiB/900second caps. CPU replay AUC
+absolute difference1.49205e-8; all six validation metrics pass. Best/latest
+checkpoints contain verified model/Adam/RNG/loader/history state. Prior source,
+depth results/checkpoints, manifest and holds remain hash-identical. Test untouched.
+Grant closed_completed; no retry, recency training or unrelated workload changes.
+
+Run ID `ASSIST2009-LightSAKT-pilot-one_layer_softmax-42-v1`; checkpoint directory
+`/workspace/LightSAKT2-architecture/pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_softmax-42-v1/`.
+Best SHA256 `4d74a39f00e4e36a04c074649e37018cc5856557b9b3ff5b87b6fe14b9ac7816`.
+Persistent archive:
+`/workspace/LightSAKT2/backups/architecture_softmax_20261027/pilot_checkpoints_and_records.tar.gz`;
+member and archive hashes in `/workspace/LightSAKT2-architecture/reports/architecture_study/softmax_pilot/recovery_archive_20261027.json`.
+Numerical records, full comparison and verification in `/workspace/LightSAKT2-architecture/reports/architecture_study/softmax_pilot/`.
+Commit/push authorized for verified scoped results; main dirty work is retained.
+All earlier active/pending-softmax descriptions below are historical.
+
 ## Verified current research state — 2026-10-27
 
 Recovered prior research HEAD `6beced52` on

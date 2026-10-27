@@ -1,0 +1,45 @@
+{
+  "status": "closed_completed",
+  "project": "LightSAKT2",
+  "dataset": "ASSIST2009",
+  "seed": 42,
+  "stages": [
+    "softmax"
+  ],
+  "sharing": "shared",
+  "gpu_uuid": "MIG-d2fcfd79-720e-5218-82c9-0a132be68920",
+  "valid_from_utc": "2026-10-27T12:43:33.461630+00:00",
+  "valid_until_utc": "2026-10-27T12:58:33.461630+00:00",
+  "window_scope": "Operator-imposed single900-second invocation window; not scheduler lease",
+  "authorized_by": "User explicit bounded causal-softmax instruction2026-10-27",
+  "allocation_reference": "Existing shared-GPU permissions plus current user execution authorization",
+  "execution_evidence": "/workspace/LightSAKT2-architecture/reports/architecture_study/softmax_pilot/EXECUTION_AUTHORIZATION_20261027.md",
+  "execution_evidence_sha256": "7dc85b3acdf0037fa0538d37fa17921cec9e749915544768ed918cc037606c10",
+  "shared_policy": {
+    "allocator_cap_bytes": 4294967296,
+    "admission_free_bytes": 10737418240,
+    "runtime_free_bytes": 6442450944,
+    "host_rss_cap_bytes": 4294967296,
+    "host_headroom_bytes": 2147483648,
+    "admission_utilization_max": 75,
+    "allow_unsupported_mig_utilization": true,
+    "inter_update_pause_seconds": 0.1,
+    "max_step_seconds": 30,
+    "wall_time_limit_seconds": 900
+  },
+  "hold_exception": {
+    "stage": "softmax",
+    "dataset": "ASSIST2009",
+    "seed": 42,
+    "user_authorization_evidence": "/workspace/LightSAKT2-architecture/reports/architecture_study/softmax_pilot/EXECUTION_AUTHORIZATION_20261027.md",
+    "hold_marker_sha256": {
+      "/workspace/LightSAKT2/experiments/USER_TRAINING_HOLD.json": "65214c2c53852024e970fd0a176f71968f204ec0748635a7e6f46de3ed64c234",
+      "/workspace/LightSAKT2-architecture/experiments/USER_TRAINING_HOLD.json": "65214c2c53852024e970fd0a176f71968f204ec0748635a7e6f46de3ed64c234"
+    },
+    "configuration_sha256": {
+      "one_layer_softmax": "879a65d7f564f244da7e828a4edda0af2862c32bb109ee91efa91c7ef9600c92"
+    }
+  },
+  "closed_utc": "2026-10-27T12:46:30.351845+00:00",
+  "closure_reason": "Single authorized softmax run completed; no further execution scope"
+}

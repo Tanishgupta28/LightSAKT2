@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "optimizer_updates_performed": 0,
+  "test_loader_constructed": false,
+  "test_predictions_accessed": false,
+  "split": "validation",
+  "validation_replay": {
+    "auc": 0.7456393937983274,
+    "auc_reason": null,
+    "accuracy": 0.7268356643356644,
+    "f1": 0.8125468632841789,
+    "mse": 0.18325216072540257,
+    "bce": 0.5465822568653963,
+    "n_targets": 27456,
+    "precision": 0.7487333026255182,
+    "recall": 0.8882513661202186
+  },
+  "absolute_differences": {
+    "auc": 1.4920491731018615e-08,
+    "f1": 0.0,
+    "accuracy": 0.0,
+    "bce": 6.630084259384716e-10,
+    "precision": 0.0,
+    "recall": 0.0
+  },
+  "best_checkpoint_sha256": "4d74a39f00e4e36a04c074649e37018cc5856557b9b3ff5b87b6fe14b9ac7816",
+  "latest_checkpoint_sha256": "5f1443f5d40878fa60671047bd913c81619dd04de053b52461de2df66bddec0f",
+  "selected_epoch": 16,
+  "completed_epochs": 21,
+  "complete_resume_state_present": true,
+  "training_code_sha256": "c833544fd43923c2ebe11306d3dddcbb779a0af273f8cc288e5b50d482de91f0",
+  "executed_grant_sha256": "6c4e1a26f15d292b865f5e59f7ea2db61d546c0ceef2e118262debbd68e59d47",
+  "pre_existing_file_hashes_unchanged": 60
+}

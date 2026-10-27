@@ -1,0 +1,31 @@
+{
+  "run_id": "ASSIST2009-LightSAKT-pilot-one_layer_softmax-42-v1",
+  "dataset": "ASSIST2009",
+  "model": "LightSAKTResearch",
+  "seed": 42,
+  "group": "architecture_pilot",
+  "validation": {
+    "auc": 0.7456393788778357,
+    "auc_reason": null,
+    "accuracy": 0.7268356643356644,
+    "f1": 0.8125468632841789,
+    "mse": 0.18325216093308094,
+    "bce": 0.5465822575284047,
+    "n_targets": 27456,
+    "precision": 0.7487333026255182,
+    "recall": 0.8882513661202186
+  },
+  "best_epoch": 16,
+  "epochs_trained": 21,
+  "training_seconds": 161.20430494699394,
+  "checkpoint": "/workspace/LightSAKT2-architecture/pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_softmax-42-v1/best.pt",
+  "checkpoint_sha256": "4d74a39f00e4e36a04c074649e37018cc5856557b9b3ff5b87b6fe14b9ac7816",
+  "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+  "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+  "git_commit": "b63ec4782e5657ab23a64c388c0a6fbc4b063087",
+  "training_code_sha256": "c833544fd43923c2ebe11306d3dddcbb779a0af273f8cc288e5b50d482de91f0",
+  "parameters": 53857,
+  "peak_allocated_bytes": 140479488,
+  "peak_reserved_bytes": 167772160,
+  "test": null
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "archive": "/workspace/LightSAKT2/backups/architecture_softmax_20261027/pilot_checkpoints_and_records.tar.gz",
+  "archive_sha256": "2506e870027fed28b047b134824341ce20cceb212ebc95720fa6b1808c216d57",
+  "size_bytes": 844844,
+  "files_sha256": {
+    "pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_softmax-42-v1/best.pt": "4d74a39f00e4e36a04c074649e37018cc5856557b9b3ff5b87b6fe14b9ac7816",
+    "pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_softmax-42-v1/latest.pt": "5f1443f5d40878fa60671047bd913c81619dd04de053b52461de2df66bddec0f",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_softmax-42-v1/config.json": "fa4922b3c3c8996de6a414d2db971c503e85d9984de3b46331b5049daae1ba82",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_softmax-42-v1/environment.json": "7a5e8ad7aeaeb97e884feddb9cc2a8a08fcdd0717df3d6b0510ebf52390a80a9",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_softmax-42-v1/status.json": "b5334fd5d2315eb7358b0b3ea1c50f001b9ba28155605321bca56c82836f5379",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_softmax-42-v1/history.json": "eb92ed3c1290726c44318c3b9c993ca2f3a1bc76cd944e823716e8b393a980ea",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_softmax-42-v1/metrics.json": "9e5ed394164e446b9e8eabea101ca810f301774d79bb821abe9e6209e223aa17",
+    "experiments/architecture_study/pilot/configs/one_layer_softmax.json": "879a65d7f564f244da7e828a4edda0af2862c32bb109ee91efa91c7ef9600c92",
+    "experiments/architecture_study/pilot/gpu_authorization_softmax_20261027.executed.json": "6c4e1a26f15d292b865f5e59f7ea2db61d546c0ceef2e118262debbd68e59d47",
+    "reports/architecture_study/softmax_pilot/EXECUTION_AUTHORIZATION_20261027.md": "7dc85b3acdf0037fa0538d37fa17921cec9e749915544768ed918cc037606c10"
+  }
+}

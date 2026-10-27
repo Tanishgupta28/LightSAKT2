@@ -1,3 +1,27 @@
+## Exact next checkpoint after softmax — 2026-10-27
+
+Do not rerun baseline, depth or causal softmax: all three have valid completed
+seed42 ASSIST2009 results. Original linear remains best at0.7508035371114405;
+softmax0.7456393788778357 failed the +0.001 screening gate.
+
+Recommend the already prepared one-layer recency-biased softmax experiment on
+ASSIST2009 seed42 under identical controls, comparing both original and plain
+softmax. Its learned per-head nonnegative distance penalty tests recency bias.
+No recency execution scope was granted in this task. Obtain separate bounded
+scope before any GPU run; keep general holds, shared admission and4GiB/900s caps.
+No automatic launch or retry. Exact config:
+`/workspace/LightSAKT2-architecture/experiments/architecture_study/pilot/configs/one_layer_recency_softmax.json`.
+Current runner supports recency only in two-arm attention stage; before future
+execution add a single-recency stage so plain softmax is not launched again.
+Do not use --stage attention unmodified. This preparation is future work.
+
+After a promising screening result, propose five seeds42/123/2026/3407/7777 on
+ASSIST2009/ASSIST2015/Algebra2005 and report paired validation deltas and mean±SD.
+No test selection. Completed softmax evidence: `/workspace/LightSAKT2-architecture/reports/architecture_study/softmax_pilot/RESULT_20261027.md`.
+End current task by validating memory, scoped commit and safe non-force push;
+verify remote branch HEAD rather than assuming publication succeeded.
+Earlier softmax preparation or in-progress instructions below are historical.
+
 ## Exact next research checkpoint — 2026-10-27
 
 Safe preparation is complete. Next uncompleted experiment is one-layer causal

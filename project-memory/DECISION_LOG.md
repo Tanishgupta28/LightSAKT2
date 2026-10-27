@@ -69,3 +69,21 @@ while retaining explicit GPU budget boundaries. Next: current budget/window for
 one900s/4GiB seed42 softmax pilot, then validation-only replay/comparison.
 Full evidence: /workspace/LightSAKT2-architecture/reports/architecture_study/RECOVERY_20261027.md.
 No push or external message is authorized by this checkpoint.
+
+
+## 2026-10-27 — Authorized softmax completed; valid negative result
+
+User explicitly authorized exactly one ASSIST2009 seed42 causal-softmax run,
+4GiB/900s cap and shared safeguards, plus safe commit/push. No valid prior softmax
+artifacts existed; existing controls and recovered depth checkpoints passed
+preflight. Fresh run from b63ec478 completed21epochs, selected16:
+AUC0.7456393788778357/F1 0.8125468632841789/accuracy0.7268356643356644/
+BCE0.5465822575284047, versus original AUC0.7508035371114405.
+Delta -0.005164158233604832: retain original; no softmax promotion.
+Runtime161.204s, allocated133.972MiB/reserved160MiB. CPU validation replay,
+finite full resume state and original-file preservation checks PASS.
+No test evaluation; unchanged general holds; grant closed; no retry or peer signals.
+Archived best/latest and raw records persist outside /tmp. Report and hashes:
+/workspace/LightSAKT2-architecture/reports/architecture_study/softmax_pilot/RESULT_20261027.md and recovery_archive_20261027.json.
+Next prepared hypothesis: recency bias, separately authorized and single-arm
+runner needed to avoid repeating completed softmax. No recency run in this task.

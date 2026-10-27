@@ -1,3 +1,16 @@
+## Latest verified outcome — 2026-10-27 causal-softmax completion
+
+Softmax completed21epochs, best16: validation AUC0.7456393788778357,
+F1 0.8125468632841789. Original one-layer0.7508035371114405 remains best;
+softmax delta -0.005164158233604832 is a valid one-seed negative result.
+CPU validation replay and historical artifact preservation PASS. No test use.
+Grant closed; no active training or automatic retry. Next hypothesis is recency
+bias, not another softmax run. Read [CURRENT_STATE.md](CURRENT_STATE.md) and
+[NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md). Full evidence:
+`/workspace/LightSAKT2-architecture/reports/architecture_study/softmax_pilot/RESULT_20261027.md`.
+Current session authorizes commit and safe non-force push to the research branch.
+Earlier recovery/hold summaries below are historical where superseded.
+
 ## Current handoff — 2026-10-27 (supersedes older operational summary below)
 
 Research branch `research/architecture-variants-20261025` is recovered in
