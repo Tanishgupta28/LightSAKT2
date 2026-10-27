@@ -21,7 +21,8 @@ def test_softmax_precision_recall_are_fixed_threshold_metrics():
 
 
 @pytest.mark.parametrize("stage,arm", [("softmax", "one_layer_softmax"),
-                                      ("recency", "one_layer_recency_softmax")])
+                                      ("recency", "one_layer_recency_softmax"),
+                                      ("gating", "one_layer_gated_linear")])
 def test_single_arm_scope_cannot_start_other_stages(tmp_path, stage, arm):
     assert STAGES[stage] == (arm,)
     source, project = tmp_path / "source", tmp_path / "project"
@@ -48,13 +49,14 @@ def test_single_arm_scope_cannot_start_other_stages(tmp_path, stage, arm):
         check_holds(source, project, record, stage)
 
 
-@pytest.mark.parametrize("attention", ["softmax", "recency_softmax"])
+@pytest.mark.parametrize("attention", ["softmax", "recency_softmax", "gated_linear"])
 def test_softmax_extended_reporting_preserves_updates_and_exact_resume(tmp_path, attention):
     roots = [tmp_path / name for name in ("plain", "reported", "resumed")]
     configs = [fixture(root) for root in roots]
     for config in configs:
-        config["model"] = "LightSAKTResearch"
-        config["model_config"].update(num_layers=1, attention_type=attention)
+        config["model"] = "LightSAKTGated" if attention == "gated_linear" else "LightSAKTResearch"
+        if attention != "gated_linear":
+            config["model_config"].update(num_layers=1, attention_type=attention)
     plain = engine.run(configs[0], roots[0])
     original_metrics, original_loss = engine.metrics, engine.training_loss
     observer = MetricsObserver()

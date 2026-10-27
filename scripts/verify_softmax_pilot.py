@@ -88,6 +88,18 @@ def verify(arm="one_layer_softmax", report_dir=SOFTMAX_PILOT,
         record["initial_decay_per_head"] = 1 / 32
         record["selected_decay_per_head"] = slopes.tolist()
         record["selected_decay_changed_from_initial"] = True
+    if arm == "one_layer_gated_linear":
+        weight = best["model"]["history_gate_weight"]
+        bias = best["model"]["history_gate_bias"]
+        assert weight.abs().sum() + bias.abs().sum() > 0
+        # Summarize all training-vocabulary skill gates, without loading test data.
+        gates = model.history_gate(model.E.weight).detach()
+        assert torch.isfinite(gates).all() and ((gates >= 0) & (gates <= 2)).all()
+        record["initial_gate"] = 1.0
+        record["selected_gate_weight_l2"] = weight.norm().item()
+        record["selected_gate_bias"] = bias.item()
+        record["vocabulary_gate_range"] = [gates.min().item(), gates.max().item()]
+        record["vocabulary_gate_mean"] = gates.mean().item()
     write_json(PROJECT / report_dir / "checkpoint_replay_verification_20261027.json", record)
     print(f"PASS: {arm} validation replay, resume-state checks and historical artifact preservation.")
 

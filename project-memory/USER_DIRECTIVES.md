@@ -1,3 +1,15 @@
+## Current authorization — gated linear pilot, 2026-10-27
+
+User supersedes the prior decayed-linear next step with a separate minimal gating
+variant retaining one-block causal ELU+1 attention. Authorizes implementation,
+correctness validation and exactly one controlled ASSIST2009 seed42 GPU run under
+existing shared permissions,4GiB allocator/900second cap,unchanged scientific
+controls and validation-only selection. No test use or further architecture
+change/run after a negative result. Preserve originals, prior results,local
+commits and backups; update/validate canonical memory. Gate design is frozen in
+/workspace/LightSAKT2-architecture/reports/architecture_study/gating_pilot/DESIGN_20261027.md.
+Earlier no-additional-GPU/decay priority statements below are historical.
+
 ## Execution scope consumed — 2026-10-27
 
 The authorized single recency run completed and its grant is closed_completed.

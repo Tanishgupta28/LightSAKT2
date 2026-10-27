@@ -24,14 +24,17 @@ SOURCE = Path("/workspace/LightSAKT2")
 PILOT = Path("reports/architecture_study/pilot")
 SOFTMAX_PILOT = Path("reports/architecture_study/softmax_pilot")
 RECENCY_PILOT = Path("reports/architecture_study/recency_pilot")
-SINGLE_ATTENTION_STAGES = {"softmax": SOFTMAX_PILOT, "recency": RECENCY_PILOT}
+GATING_PILOT = Path("reports/architecture_study/gating_pilot")
+SINGLE_ATTENTION_STAGES = {"softmax": SOFTMAX_PILOT, "recency": RECENCY_PILOT,
+                           "gating": GATING_PILOT}
 CONTROL = Path("experiments/architecture_study/pilot")
 DATASET = "ASSIST2009"
 SEED = 42
 STAGES = {"depth": ("baseline", "two_layer_linear"),
           "attention": ("one_layer_softmax", "one_layer_recency_softmax"),
           "softmax": ("one_layer_softmax",),
-          "recency": ("one_layer_recency_softmax",)}
+          "recency": ("one_layer_recency_softmax",),
+          "gating": ("one_layer_gated_linear",)}
 
 
 class PilotBlocked(RuntimeError):
@@ -126,6 +129,23 @@ def prepare(source=SOURCE, project=PROJECT, persist=True):
               "promotion": "Evaluate qualifying arms on all five original seeds and all three datasets; negative one-seed results remain preliminary."}
     if persist:
         write_json(project / CONTROL / "pilot.json", record)
+    return record
+
+
+def prepare_gated(source=SOURCE, project=PROJECT, persist=True):
+    """Freeze only the added gate; never rewrite the four historical configs."""
+    project = Path(project)
+    record = prepare(source, project, persist=False)
+    arm = "one_layer_gated_linear"
+    config = copy.deepcopy(record["configurations"]["baseline"])
+    config.update(model="LightSAKTGated", run_id=f"{DATASET}-LightSAKT-pilot-{arm}-{SEED}-v1")
+    config["pilot"]["arm"] = arm
+    path = project / CONTROL / "configs" / f"{arm}.json"
+    if path.exists() and read_json(path) != config:
+        raise PilotBlocked("Refusing to change the frozen gating configuration")
+    if persist:
+        write_json(path, config)
+    record["configurations"][arm] = config
     return record
 
 
@@ -325,7 +345,8 @@ def execute(stage, source, work, authorization_path, project=PROJECT):
         raise PilotBlocked("Pilot output must be outside the original checkout")
     grant = authorization(authorization_path, stage)
     authorization_digest = digest(authorization_path)
-    record = prepare(source, project, persist=stage not in SINGLE_ATTENTION_STAGES)
+    record = (prepare_gated(source, project, persist=False) if stage == "gating"
+              else prepare(source, project, persist=stage not in SINGLE_ATTENTION_STAGES))
     if stage in {"attention", *SINGLE_ATTENTION_STAGES}:
         existing = summarize(work, record, project, report_dir)
         if any(row["status"] != "completed" for row in existing["rows"][:2]):
