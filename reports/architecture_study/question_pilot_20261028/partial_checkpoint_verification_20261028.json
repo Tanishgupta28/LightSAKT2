@@ -1,0 +1,50 @@
+{
+  "status": "PASS_PARTIAL_CHECKPOINT_VERIFICATION",
+  "training_status": "interrupted",
+  "interruption_cause": "PilotPause: Host memory headroom floor breached",
+  "epochs_completed": 18,
+  "selected_epoch": 18,
+  "selected_partial_validation": {
+    "auc": 0.7784249958819442,
+    "auc_reason": null,
+    "accuracy": 0.744208916083916,
+    "f1": 0.8239629026193759,
+    "mse": 0.17280791136048854,
+    "bce": 0.5198850343652965,
+    "n_targets": 27456,
+    "precision": 0.7611021069692059,
+    "recall": 0.8981420765027323
+  },
+  "validation_replay": {
+    "auc": 0.7784249749932559,
+    "auc_reason": null,
+    "accuracy": 0.744208916083916,
+    "f1": 0.8239629026193759,
+    "mse": 0.1728079112783745,
+    "bce": 0.5198850343119127,
+    "n_targets": 27456,
+    "precision": 0.7611021069692059,
+    "recall": 0.8981420765027323
+  },
+  "absolute_differences": {
+    "auc": 2.088868833460822e-08,
+    "f1": 0.0,
+    "accuracy": 0.0,
+    "bce": 5.3383852893773565e-11,
+    "precision": 0.0,
+    "recall": 0.0
+  },
+  "elapsed_seconds_at_last_saved_epoch": 214.2038177359791,
+  "bad_epochs": 0,
+  "early_stopping_complete": false,
+  "full_resume_state_present": true,
+  "best_checkpoint_sha256": "80a2ccc0b7f81d99f459bec3a1b8094f934d4d0df9b89123f78939643323eb03",
+  "latest_checkpoint_sha256": "e134577a436c125274e00629b510739482b77b443b3db8d49d7c79092aca2c24",
+  "learned_difficulty_scale": 0.7901802659034729,
+  "training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+  "question_feature_sha256": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464",
+  "protected_file_hashes_unchanged": 180,
+  "test_evaluation": false,
+  "optimizer_updates_during_verification": 0,
+  "no_metrics_json_completion_claim": true
+}

@@ -110,6 +110,10 @@ def verify(arm="one_layer_softmax", report_dir=SOFTMAX_PILOT,
     if arm == "one_layer_question_difficulty":
         record["learned_difficulty_scale"] = best["model"]["difficulty_scale"].item()
         record["question_feature_sha256"] = digest(feature_path)
+        import numpy as np
+        local = PROJECT / ".tools/diagnostics_20261028"
+        local.mkdir(parents=True, exist_ok=True)
+        np.savez_compressed(local / "question_validation.npz", target=target, prediction=prediction)
     write_json(PROJECT / report_dir / ("checkpoint_replay_verification_20261028.json" if arm == "one_layer_question_difficulty" else "checkpoint_replay_verification_20261027.json"), record)
     print(f"PASS: {arm} validation replay, resume-state checks and historical artifact preservation.")
 

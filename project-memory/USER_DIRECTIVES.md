@@ -1,41 +1,29 @@
-## Current diagnostic and pilot scope — 28 October 2026
+# Current durable directives — 28 October 2026
 
-User authorizes train/validation failure analysis and one strongest defensible
-ASSIST2009 seed42 pilot,conditional on CPU correctness and existing shared GPU
-checks,4GiB/900s caps. Diagnostics selected a known-question difficulty correction
-with train-student exclusion;practice-count correction remains a deferred
-independent hypothesis. Preserve original data/splits/models/results;no test
-inference or tuning on test. Richer known problem-ID input is explicitly disclosed.
-Same optimizer/budget/selection. No arbitrary second pilot. This supersedes the
-previous task's consumed-scope statement for this one new invocation only.
+User requested evidence-led failure diagnostics using train and existing
+validation only,then one strongest scientifically defensible ASSIST2009 seed42
+pilot if shared permissions/resource checks pass. This task superseded the older
+closed gating scope. Diagnostics selected known-question difficulty over weaker
+practice-count direction. Preserve original implementations,data/splits,all
+results/checkpoints/Git and dirty main state. No test inference or test-based
+selection,credential exposure,force push or interference with HiTSKT/peers.
 
-# Durable user directives — current through 27 October 2026
+One pilot was executed and INTERRUPTED by host headroom guard after18saved
+epochs. Current grant is closed_interrupted;no automatic retry,new candidate,
+resume or policy relaxation. Saved validation gain is provisional and richer-input
+nature must be disclosed. New execution window/scope plus restored resources
+are needed before completing same run. No completion/general gain claim from
+one seed/reused validation. Future replication proposals are conditional.
 
-Objective: improve LightSAKT validation AUC with reproducible isolated architecture
-experiments. Artifacts,checkpoints,Git and reports are truth;memory is an index.
-Preserve professor-shared original LightSAKT/SAKT,prior results and dirty main work.
-Do not rerun completed investigations without a specific new justification.
+Existing shared-GPU safeguards:4GiB allocator,900second invocation,10GiB admission/
+6GiB runtime-free,4GiB RSS/2GiB host headroom,0.1s pacing,30s step-stop,documented
+unsupported-MIG headroom/cap fallback. Keep general holds byte-identical with
+only expiring exact-config/hold exception when authorized. Never displace peers.
 
-Latest user instruction authorized one minimal gating variant preserving causal
-ELU+1 linear attention and one encoder block,plus exactly one controlled
-ASSIST2009 seed42 run. This scope was consumed successfully;grant closed.
-Same splits,vocabulary,seed,Adam,hyperparameters,epoch budget,early stopping and
-validation-AUC checkpoint selection. No test evaluation or settings changes to
-obtain better scores. The gate did not improve AUC;no further unapproved
-architecture changes or GPU experiments. Future research needs a new decision.
-
-Existing intentional shared-GPU permission is conditional on scoped current
-execution and admission. Preserve4GiB allocator/900s invocation limit,10GiB
-admission/6GiB runtime-free floors,4GiB RSS/2GiB host headroom,0.1s pacing,30s step
-stop and recorded unsupported-MIG-utilization fallback. Never displace peers,
-remove general holds or retry automatically. Free memory is not exclusivity.
-
-User grants autonomous tools for authorized work and asks not to repeat permission
-questions. Preserve local commits and verified backups. Existing Git transport
-credentials are missing;report without exposing secrets,reset,force push or
-reconstructing history. Do not message others. Future publication needs working
-authenticated transport and applicable user scope.
-
-Earlier instructions/reversals are retained in the historical handoff archive
-and append-only decision log. Existing general hold markers remain byte-identical;
-latest scope used only an expiring exact-config/hold-hash exception.
+Use installed durable memory Resume/Update/Audit;actual artifacts outrank memory.
+Retain compact current state and append-only decision history,archiving obsolete
+handoffs within this existing memory. User prefers autonomous authorized action
+and no repeated permission questions. Do not message others or publish externally
+without applicable authorization. Existing Git transport auth is unavailable;
+retain verified local commits/bundles rather than exposing secrets or rewriting.
+Earlier instructions/decisions remain in archive and decision log.

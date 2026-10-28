@@ -1,0 +1,14 @@
+{
+  "training_status": "interrupted",
+  "cause": "PilotPause: Host memory headroom floor breached",
+  "seconds_at_last_saved_epoch": 214.2038177359791,
+  "grant_start_to_stop_seconds": 223.965409,
+  "recorded_completed_epoch_peak_allocated_bytes": 266995712,
+  "recorded_completed_epoch_peak_reserved_bytes": 385875968,
+  "maximum_recorded_host_rss_bytes": 1498136576,
+  "minimum_successfully_logged_host_headroom_bytes": 5989453824,
+  "minimum_successfully_logged_gpu_free_bytes": 29221912576,
+  "runtime_samples": 106,
+  "failing_host_value": "Guard reports below2GiB; numeric failing sample not logged. Do not infer it from after-exit sample.",
+  "automatic_retry": false
+}

@@ -1,0 +1,18 @@
+{
+  "observed_utc": "2026-10-28T15:54:46.466890+00:00",
+  "gpu_uuid": "MIG-d2fcfd79-720e-5218-82c9-0a132be68920",
+  "total_bytes": 42278584320,
+  "free_bytes": 30762401792,
+  "used_bytes": 11516182528,
+  "compute_processes": [
+    {
+      "pid": 962900,
+      "used_gpu_memory_bytes": 11467227136
+    }
+  ],
+  "pid_attribution": "unresolved; shared use; no exclusive claim",
+  "utilization_gpu_percent": null,
+  "utilization_status": "unsupported_mig",
+  "host_headroom_bytes": 13621719040,
+  "process_peak_rss_bytes": 25518080
+}

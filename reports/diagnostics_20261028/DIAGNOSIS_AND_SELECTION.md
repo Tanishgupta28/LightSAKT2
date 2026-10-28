@@ -102,8 +102,7 @@ This is a richer-input representation comparison;matched-input SAKT and other
 controls will be needed before claims about model superiority. Historical selected
 SAKT seed42 validation AUC0.749442606 uses the older skill-only input.
 
-Literature supports the direction without proving this transplant: [AKT]
-(https://arxiv.org/abs/2007.12324) explicitly models within-concept question
+Literature supports the direction without proving this transplant: [AKT](https://arxiv.org/abs/2007.12324) explicitly models within-concept question
 differences;[PFA](https://files.eric.ed.gov/fulltext/ED506305.pdf) separates prior
 correct/incorrect counts for skill mastery. Our normalized empirical difficulty
 feature and two-parameter diagnostic count probe are different models.

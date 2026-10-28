@@ -139,3 +139,37 @@ Checkpoint/archive/raw records: /workspace/LightSAKT2-architecture/reports/archi
 Consolidated current memory;preserved superseded overview/directives/state/next
 text in archive/HANDOFF_BEFORE_GATING_RESULT_20261027.md and old decisions here.
 Git auth blocker retained;local scientific commits backed up without rewriting.
+
+
+## 2026-10-28 — Diagnostics select question representation; pilot interrupted
+
+Current user authorized diagnostics and one strongest conditional pilot. Audited
+five completed checkpoint pairs/curves and36-grid settings,CPU train/validation
+inference,error/frequency/history and response interventions. Baseline uses
+history (zero attention AUC0.688005) and modest gap(train0.765195,val0.750804);
+composite-skill input hides problem differences. Question difficulty probe0.780203,
+stable training-student subsets;weaker count probe0.751670 deferred. All exploratory
+on reused validation,no test. Whole-chunk shuffle is noncausal corruption and is
+excluded from valid alternate-prediction/selection claims. Full diagnostic report:
+/workspace/LightSAKT2-architecture/reports/diagnostics_20261028/DIAGNOSIS_AND_SELECTION.md.
+
+Implemented LightSAKTQuestion:one zero-init neural scale on frozen known-problem
+relative difficulty;training target encoding removes whole own student from BOTH
+rates,validation uses training labels only;fixed smoothing10,no sweep. Richer
+input,not a same-input attention superiority claim.93 CPU tests PASS,including
+leakage,causality,padding,gradients,adapter/reporting/exact-resume and test refusal.
+Executed fromb24e154a with unchanged baseline split/Adam/settings/budget/selection.
+Host headroom guard stopped it after18complete epochs,best18,bad_epochs0. Saved
+AUC0.7784249958819442/F1 0.8239629026193759/accuracy0.744208916083916/
+BCE0.5198850343652965;delta original+0.027621458770503704. Promising PARTIAL
+endpoint,not completed early stopping. Saved elapsed214.203818s,recorded epoch
+allocated254.627MiB/reserved368MiB. Grant closed_interrupted;no retry/resume.
+
+Independent CPU partial replay AUC difference2.08887e-8,full finite checkpoint
+state/source/data/feature/grant bindings and180 protected-file hashes PASS.
+No metrics.json fabricated;separate partial records and raw interrupted status.
+Archive contains best/latest AND required feature sidecar;member hashes verified.
+Evidence /workspace/LightSAKT2-architecture/reports/architecture_study/question_pilot_20261028/PARTIAL_RESULT_20261028.md. Next: finish same run with new scope and
+headroom before five seeds/matched-input controls. ASSIST2015 current release
+lacks problem IDs;do not promise an exact transplant or silently change schema.
+Canonical memory consolidated;prior handoff archived,local history/bundles kept.

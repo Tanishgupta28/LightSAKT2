@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "archive": "/workspace/LightSAKT2/backups/question_pilot_20261028/interrupted_epoch18_checkpoints_features_records.tar.gz",
+  "archive_sha256": "5816478a9270d4b8b9a46a2a9cb5c809d8f50c046c580a1661b2c86d0537c839",
+  "size_bytes": 2765727,
+  "files_sha256": {
+    "pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/best.pt": "80a2ccc0b7f81d99f459bec3a1b8094f934d4d0df9b89123f78939643323eb03",
+    "pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/latest.pt": "e134577a436c125274e00629b510739482b77b443b3db8d49d7c79092aca2c24",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/config.json": "0b6d390a2125c1784c6c07c9bc498e1ce590c97f0b3e4f51e9bd5677346ef6d6",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/environment.json": "10b4b1f1ff55f8afeed3ef4636d447c0dfd0acc588f022cb23134bd3a22dfda8",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/status.json": "d7696368c10c0e5a4e27640159adab3bcf6a0749f829895113a29901aae92b11",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/history.json": "104c2ec163efb3a1e8ba4f86d70d123e04142319f9e3215742bb682c817e8c7d",
+    "pilot-workspace/data/auxiliary/ASSIST2009-question-difficulty.json": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464",
+    "experiments/architecture_study/pilot/configs/one_layer_question_difficulty.json": "78f925798bf0bd229eb3a42c080f3553684ce5e5cd6ffff501bea7e7e85e2c85",
+    "experiments/architecture_study/pilot/gpu_authorization_question_20261028.executed.json": "f862f4478f040bdbf8581abb8ce3019428d3a6ef618d754c4d932d0fde660d91",
+    "reports/architecture_study/question_pilot_20261028/DESIGN_AND_AUTHORIZATION_20261028.md": "b520fd7703fc45403454e1381f64e2234d2f0464f7b6fa9ec5d1f168bd7c61c9",
+    "reports/architecture_study/question_pilot_20261028/partial_checkpoint_verification_20261028.json": "8b21ceaecdc3c10d4577ddde9b53244b74737410cd2ef2a556e13543a6c4aa46",
+    "scripts/question_difficulty_inputs.py": "1ba5fb56204793e970e1c970c4e2d3feb249f4a989631b07e64a7b32828ccf8a"
+  },
+  "training_completion_claim": false
+}

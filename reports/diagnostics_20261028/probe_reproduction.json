@@ -1,0 +1,21 @@
+{
+  "validation": {
+    "auc": 0.7802025456746091,
+    "auc_reason": null,
+    "accuracy": 0.7482881701631702,
+    "f1": 0.8241252067693091,
+    "mse": 0.17206042592385748,
+    "bce": 0.5182276083548929,
+    "n_targets": 27456
+  },
+  "coefficients": [
+    [
+      1.04202714563271,
+      1.0258808482897042
+    ]
+  ],
+  "intercept": [
+    0.03365260238711577
+  ],
+  "role": "Exploratory frozen-checkpoint diagnostic, not a completed neural training run."
+}

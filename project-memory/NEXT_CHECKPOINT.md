@@ -1,21 +1,28 @@
-# Exact next checkpoint — gating result recorded
+# Exact next checkpoint — finish the interrupted frozen pilot
 
-Current task's authorized experiment is complete. Retain original one-layer
-linear LightSAKT:AUC0.7508035371114405;gated0.7506452336787726 did not improve.
-Do not launch another variant,initialization sweep or retry under the consumed
-scope. Do not repeat the five completed seed42 architecture comparisons.
+No training is active or currently authorized after the resource stop. Do not
+retry the closed grant or start another candidate. Do not retrain five completed
+architecture arms. Preserve interrupted status18,raw history and checkpoint archive.
 
-Next action is a user research decision,with the measured comparison at
-`/workspace/LightSAKT2-architecture/reports/architecture_study/gating_pilot/RESULT_20261027.md`.
-No new architecture is approved or required to finish this experiment. A later
-credible positive AUC result would justify proposing five seeds42/123/2026/3407/
-7777 on ASSIST2009/ASSIST2015/Algebra2005,using paired validation deltas and mean/
-sample SD. This gating result does not meet that criterion. Keep test locked.
+Next recommended experiment is completion of the SAME question-difficulty pilot,
+from latest.pt epoch18 under separately authorized bounded scope and sufficient
+shared host/GPU headroom. Recheck source execution commitb24e154a,observer/adapter,
+config/data/feature hashes;retain optimizer/RNG/loader state and interruption
+history. Do not reset weights/change smoothing/settings or mark current state
+complete. Shared safeguards and4GiB/900s limits remain. Current source files
+used for model/input updates are unchanged from execution;new verification/report
+scripts record partial results without modifying training state.
 
-On resume,check branch/current terminal statuses and checkpoint/archive hashes,
-read current directives and decision-log tail before any work. General holds stay
-active;no automatic scheduling. Use exact execution commit7026c660 for source
-reconstruction and the verified checkpoint archive above;Git alone has no weights.
-Preserve local result commits and Git bundles. Publication remains blocked by
-missing authenticated Git transport;no reset/force push/secret exposure. No
-repeated authentication probing is needed unless credentials actually change.
+After actual completion,propose seeds42/123/2026/3407/7777 on ASSIST2009 and a SAKT
+control with the SAME question feature before model-superiority claims. Algebra2005
+Problem Name/Step Name semantics/mapping must be verified before analogous work.
+ASSIST2015 four-column release has no separate problem ID;exact replication needs
+verified additional metadata and cannot be claimed from sequence_id relabelling.
+A practice-count feature is a deferred independent candidate,not a substitute
+replication. No additional implementation/training authorized now. Keep test locked.
+
+Resume with `/workspace/LightSAKT2-architecture/reports/architecture_study/question_pilot_20261028/PARTIAL_RESULT_20261028.md`,partial verification and
+recovery_archive_20261028.json. To replay CPU only:
+CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m scripts.verify_question_pilot --partial
+Original data/config/archive bytes and180 protected hashes are the truth.
+Local research commits/Git bundles preserved;no force push or credential exposure.

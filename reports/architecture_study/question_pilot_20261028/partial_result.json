@@ -1,0 +1,20 @@
+{
+  "training_status": "interrupted",
+  "epochs_completed": 18,
+  "selected_epoch": 18,
+  "validation": {
+    "auc": 0.7784249958819442,
+    "auc_reason": null,
+    "accuracy": 0.744208916083916,
+    "f1": 0.8239629026193759,
+    "mse": 0.17280791136048854,
+    "bce": 0.5198850343652965,
+    "n_targets": 27456,
+    "precision": 0.7611021069692059,
+    "recall": 0.8981420765027323
+  },
+  "validation_auc_delta_vs_baseline": 0.027621458770503704,
+  "test": null,
+  "not_a_completed_early_stopped_comparison": true,
+  "checkpoint_sha256": "80a2ccc0b7f81d99f459bec3a1b8094f934d4d0df9b89123f78939643323eb03"
+}
