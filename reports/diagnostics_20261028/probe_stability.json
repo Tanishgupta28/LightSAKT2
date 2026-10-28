@@ -1,0 +1,27 @@
+{
+  "fits": [
+    {
+      "fit_subset": "all",
+      "calibration_only_auc": 0.7508035221909489,
+      "plus_counts_auc": 0.7516700655546722,
+      "delta": 0.0008665433637232711
+    },
+    {
+      "fit_subset": "even_training_students",
+      "calibration_only_auc": 0.7508035221909489,
+      "plus_counts_auc": 0.7516339102192238,
+      "delta": 0.0008303880282748421
+    },
+    {
+      "fit_subset": "odd_training_students",
+      "calibration_only_auc": 0.7508035221909489,
+      "plus_counts_auc": 0.7516976445915008,
+      "delta": 0.0008941224005518666
+    }
+  ],
+  "student_bootstrap_300_percentiles_2_5_97_5": [
+    0.00035167305520300286,
+    0.0013787344203740335
+  ],
+  "limitation": "Repeated exploratory validation on one fixed student split; no independent replication. Baseline train logits are in-sample."
+}

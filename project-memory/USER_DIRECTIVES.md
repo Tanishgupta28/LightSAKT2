@@ -1,3 +1,14 @@
+## Current diagnostic and pilot scope — 28 October 2026
+
+User authorizes train/validation failure analysis and one strongest defensible
+ASSIST2009 seed42 pilot,conditional on CPU correctness and existing shared GPU
+checks,4GiB/900s caps. Diagnostics selected a known-question difficulty correction
+with train-student exclusion;practice-count correction remains a deferred
+independent hypothesis. Preserve original data/splits/models/results;no test
+inference or tuning on test. Richer known problem-ID input is explicitly disclosed.
+Same optimizer/budget/selection. No arbitrary second pilot. This supersedes the
+previous task's consumed-scope statement for this one new invocation only.
+
 # Durable user directives — current through 27 October 2026
 
 Objective: improve LightSAKT validation AUC with reproducible isolated architecture

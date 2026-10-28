@@ -1,0 +1,21 @@
+{
+  "fits": [
+    {
+      "fit_subset": "all",
+      "validation_auc": 0.7802025397064125
+    },
+    {
+      "fit_subset": "even_training_students",
+      "validation_auc": 0.7802083646663658
+    },
+    {
+      "fit_subset": "odd_training_students",
+      "validation_auc": 0.7802002598552832
+    }
+  ],
+  "diagnostic_student_bootstrap_300_auc_delta_interval": [
+    0.021937716885612545,
+    0.037223919921824486
+  ],
+  "not_independent_confirmation": true
+}

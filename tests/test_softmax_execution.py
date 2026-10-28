@@ -22,7 +22,8 @@ def test_softmax_precision_recall_are_fixed_threshold_metrics():
 
 @pytest.mark.parametrize("stage,arm", [("softmax", "one_layer_softmax"),
                                       ("recency", "one_layer_recency_softmax"),
-                                      ("gating", "one_layer_gated_linear")])
+                                      ("gating", "one_layer_gated_linear"),
+                                      ("question", "one_layer_question_difficulty")])
 def test_single_arm_scope_cannot_start_other_stages(tmp_path, stage, arm):
     assert STAGES[stage] == (arm,)
     source, project = tmp_path / "source", tmp_path / "project"

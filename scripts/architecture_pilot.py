@@ -25,8 +25,9 @@ PILOT = Path("reports/architecture_study/pilot")
 SOFTMAX_PILOT = Path("reports/architecture_study/softmax_pilot")
 RECENCY_PILOT = Path("reports/architecture_study/recency_pilot")
 GATING_PILOT = Path("reports/architecture_study/gating_pilot")
+QUESTION_PILOT = Path("reports/architecture_study/question_pilot_20261028")
 SINGLE_ATTENTION_STAGES = {"softmax": SOFTMAX_PILOT, "recency": RECENCY_PILOT,
-                           "gating": GATING_PILOT}
+                           "gating": GATING_PILOT, "question": QUESTION_PILOT}
 CONTROL = Path("experiments/architecture_study/pilot")
 DATASET = "ASSIST2009"
 SEED = 42
@@ -34,7 +35,8 @@ STAGES = {"depth": ("baseline", "two_layer_linear"),
           "attention": ("one_layer_softmax", "one_layer_recency_softmax"),
           "softmax": ("one_layer_softmax",),
           "recency": ("one_layer_recency_softmax",),
-          "gating": ("one_layer_gated_linear",)}
+          "gating": ("one_layer_gated_linear",),
+          "question": ("one_layer_question_difficulty",)}
 
 
 class PilotBlocked(RuntimeError):
@@ -143,6 +145,30 @@ def prepare_gated(source=SOURCE, project=PROJECT, persist=True):
     path = project / CONTROL / "configs" / f"{arm}.json"
     if path.exists() and read_json(path) != config:
         raise PilotBlocked("Refusing to change the frozen gating configuration")
+    if persist:
+        write_json(path, config)
+    record["configurations"][arm] = config
+    return record
+
+
+def prepare_question(source, work, project=PROJECT, persist=True):
+    project, work = Path(project), Path(work)
+    record = prepare_gated(source, project, persist=False)
+    feature_path = work / "data/auxiliary/ASSIST2009-question-difficulty.json"
+    feature = read_json(feature_path)
+    for key in ("processed_sha256", "split_sha256"):
+        if feature[key] != record["configurations"]["baseline"]["pilot"][key]:
+            raise PilotBlocked("Question feature data binding changed")
+    config = copy.deepcopy(record["configurations"]["baseline"])
+    arm = "one_layer_question_difficulty"
+    config.update(model="LightSAKTQuestion", run_id=f"{DATASET}-LightSAKT-pilot-{arm}-{SEED}-v1")
+    config["pilot"]["arm"] = arm
+    config["question_difficulty"] = {k: feature[k] for k in (
+        "algorithm", "smoothing", "processed_sha256", "raw_sha256", "split_sha256")}
+    config["question_difficulty"]["feature_sha256"] = digest(feature_path)
+    path = project / CONTROL / "configs" / f"{arm}.json"
+    if path.exists() and read_json(path) != config:
+        raise PilotBlocked("Refusing to change question pilot configuration")
     if persist:
         write_json(path, config)
     record["configurations"][arm] = config
@@ -345,7 +371,8 @@ def execute(stage, source, work, authorization_path, project=PROJECT):
         raise PilotBlocked("Pilot output must be outside the original checkout")
     grant = authorization(authorization_path, stage)
     authorization_digest = digest(authorization_path)
-    record = (prepare_gated(source, project, persist=False) if stage == "gating"
+    record = (prepare_question(source, work, project, persist=False) if stage == "question"
+              else prepare_gated(source, project, persist=False) if stage == "gating"
               else prepare(source, project, persist=stage not in SINGLE_ATTENTION_STAGES))
     if stage in {"attention", *SINGLE_ATTENTION_STAGES}:
         existing = summarize(work, record, project, report_dir)
@@ -425,7 +452,9 @@ def execute(stage, source, work, authorization_path, project=PROJECT):
                     "trainer_invoked": True, "gpu_uuid": grant["gpu_uuid"],
                     "observed_utc": datetime.now(timezone.utc).isoformat()})
                 with record_metrics(engine, observer) if stage in SINGLE_ATTENTION_STAGES else nullcontext():
-                    run(record["configurations"][arm], root=work, observer=observer)
+                    from scripts.question_difficulty_inputs import question_inputs
+                    with question_inputs(engine, work, record["configurations"][arm]) if stage == "question" else nullcontext():
+                        run(record["configurations"][arm], root=work, observer=observer)
                 summarize(work, record, project, report_dir)
                 # Reclaim only this process's unused cache between sequential models.
                 torch.cuda.empty_cache()

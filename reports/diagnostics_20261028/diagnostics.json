@@ -1,0 +1,237 @@
+{
+  "checkpoint_sha256": "75b6663b8db55e6255b877c7bfd6c472edb99ec7169b188bdf9beda57e0f67f9",
+  "test_evaluation": false,
+  "train": {
+    "metrics": {
+      "auc": 0.7651950605912102,
+      "auc_reason": null,
+      "accuracy": 0.7404673607533272,
+      "f1": 0.8202825856587778,
+      "mse": 0.1767177590228652,
+      "bce": 0.5300583443633877,
+      "n_targets": 196037
+    },
+    "positive_rate": 0.6613598453353193,
+    "uncertain_fraction_04_06": 0.18359289317832858,
+    "confident_wrong_fraction_09": 0.004856226120579278,
+    "negative_recall": 0.4375621365950652,
+    "positive_recall": 0.8955657881543528
+  },
+  "validation": {
+    "metrics": {
+      "auc": 0.7508035221909489,
+      "auc_reason": null,
+      "accuracy": 0.7321168414918415,
+      "f1": 0.8148054891099081,
+      "mse": 0.1815333940578288,
+      "bce": 0.542363721270053,
+      "n_targets": 27456
+    },
+    "positive_rate": 0.6665209790209791,
+    "uncertain_fraction_04_06": 0.18797348484848486,
+    "confident_wrong_fraction_09": 0.006046037296037296,
+    "negative_recall": 0.42824377457404983,
+    "positive_recall": 0.8841530054644808
+  },
+  "attention_means": {
+    "same_skill_mass": 0.3172096908092499,
+    "uniform_same_skill_mass": 0.28498175740242004,
+    "recent5_mass": 0.2925691306591034,
+    "effective_keys": 34.55760955810547,
+    "entropy": 3.219658851623535
+  },
+  "checkpoint_interventions_OOD_not_retrained": {
+    "zero_attention": {
+      "auc": 0.6880052168007122,
+      "auc_reason": null,
+      "accuracy": 0.6839670745920746,
+      "f1": 0.7758054931142289,
+      "mse": 0.2048002736220379,
+      "bce": 0.5962011170946495,
+      "n_targets": 27456,
+      "mean_absolute_prediction_change": 0.12328741699457169
+    },
+    "flip_responses": {
+      "auc": 0.4188117171218013,
+      "auc_reason": null,
+      "accuracy": 0.40344551282051283,
+      "f1": 0.4295615226552433,
+      "mse": 0.35621210301999184,
+      "bce": 0.9641296860765229,
+      "n_targets": 27456,
+      "mean_absolute_prediction_change": 0.35037103295326233
+    },
+    "shuffle_responses": {
+      "auc": 0.7282022717343818,
+      "auc_reason": null,
+      "accuracy": 0.7194784382284383,
+      "f1": 0.8087599940408203,
+      "mse": 0.18842048974938858,
+      "bce": 0.5591381903495987,
+      "n_targets": 27456,
+      "mean_absolute_prediction_change": 0.08288794755935669
+    }
+  },
+  "training_fitted_probes": {
+    "skill_prior": {
+      "validation": {
+        "auc": 0.6398216046332305,
+        "auc_reason": null,
+        "accuracy": 0.6813082750582751,
+        "f1": 0.797331727428545,
+        "mse": 0.20924993306941672,
+        "bce": 0.6067796884337947,
+        "n_targets": 27456
+      },
+      "coefficients": [
+        [
+          1.0081402505350072
+        ]
+      ],
+      "intercept": [
+        0.004460385735880871
+      ],
+      "limitation": "Frozen-checkpoint train logits are in-sample; exploratory probe is not independent confirmation."
+    },
+    "pfa_counts": {
+      "validation": {
+        "auc": 0.7187655173113513,
+        "auc_reason": null,
+        "accuracy": 0.7144886363636364,
+        "f1": 0.8065543024948795,
+        "mse": 0.19138729542641794,
+        "bce": 0.5659220330484568,
+        "n_targets": 27456
+      },
+      "coefficients": [
+        [
+          0.6872207930334769,
+          0.7417008693863059,
+          -0.8134896168936304
+        ]
+      ],
+      "intercept": [
+        0.22699579540811904
+      ],
+      "limitation": "Frozen-checkpoint train logits are in-sample; exploratory probe is not independent confirmation."
+    },
+    "baseline_calibration": {
+      "validation": {
+        "auc": 0.7508035221909489,
+        "auc_reason": null,
+        "accuracy": 0.7326995920745921,
+        "f1": 0.8153757138185203,
+        "mse": 0.1815554740678357,
+        "bce": 0.5425024594488973,
+        "n_targets": 27456
+      },
+      "coefficients": [
+        [
+          1.050739443775339
+        ]
+      ],
+      "intercept": [
+        0.006365008485820965
+      ],
+      "limitation": "Frozen-checkpoint train logits are in-sample; exploratory probe is not independent confirmation."
+    },
+    "baseline_plus_counts": {
+      "validation": {
+        "auc": 0.7516700655546722,
+        "auc_reason": null,
+        "accuracy": 0.7329181235431236,
+        "f1": 0.8156194211862915,
+        "mse": 0.18130044493540898,
+        "bce": 0.5418126158990615,
+        "n_targets": 27456
+      },
+      "coefficients": [
+        [
+          1.0297265587918298,
+          0.05801338686502925,
+          -0.021960011781090836
+        ]
+      ],
+      "intercept": [
+        -0.021585679334879714
+      ],
+      "limitation": "Frozen-checkpoint train logits are in-sample; exploratory probe is not independent confirmation."
+    }
+  },
+  "grid_marginals_descriptive_confounded": {
+    "embed_dim": [
+      {
+        "embed_dim": 32,
+        "count": 12,
+        "mean": 0.7452106029887933,
+        "max": 0.7471094382255836
+      },
+      {
+        "embed_dim": 64,
+        "count": 12,
+        "mean": 0.7496778680765934,
+        "max": 0.7508035371114405
+      },
+      {
+        "embed_dim": 128,
+        "count": 12,
+        "mean": 0.7496882850665374,
+        "max": 0.7507321037654546
+      }
+    ],
+    "num_heads": [
+      {
+        "num_heads": 2,
+        "count": 18,
+        "mean": 0.7482099866232819,
+        "max": 0.7508035371114405
+      },
+      {
+        "num_heads": 4,
+        "count": 18,
+        "mean": 0.7481745174646677,
+        "max": 0.7507321037654546
+      }
+    ],
+    "dropout": [
+      {
+        "dropout": 0.1,
+        "count": 18,
+        "mean": 0.7482517031575474,
+        "max": 0.7508035371114405
+      },
+      {
+        "dropout": 0.2,
+        "count": 18,
+        "mean": 0.748132800930402,
+        "max": 0.7507321037654546
+      }
+    ],
+    "learning_rate": [
+      {
+        "learning_rate": 0.0005,
+        "count": 12,
+        "mean": 0.748138378956218,
+        "max": 0.7507320440834879
+      },
+      {
+        "learning_rate": 0.001,
+        "count": 12,
+        "mean": 0.7486941727422908,
+        "max": 0.7508035371114405
+      },
+      {
+        "learning_rate": 0.005,
+        "count": 12,
+        "mean": 0.7477442044334152,
+        "max": 0.7491933952354692
+      }
+    ]
+  },
+  "joint_response_embedding_geometry": {
+    "mean_cosine_to_mean_difference": 0.13697952032089233,
+    "median_cosine": 0.14228621125221252,
+    "limitation": "Embedding geometry is not a performance endpoint or proof of identifiability."
+  },
+  "data_limitations": "Model q is composite skill, not problem_id. Problem-frequency metadata reconstructed from permitted train/validation keys only, without raw correctness. Context resets every100 targets. No test dataset constructed or predictions used."
+}

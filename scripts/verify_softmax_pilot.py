@@ -57,7 +57,14 @@ def verify(arm="one_layer_softmax", report_dir=SOFTMAX_PILOT,
     for state in latest["optimizer"]["state"].values():
         assert all(not isinstance(value, torch.Tensor) or torch.isfinite(value).all()
                    for value in state.values())
-    loader = DataLoader(Sequences(data, "validation", config["seq_len"]),
+    if arm == "one_layer_question_difficulty":
+        from scripts.question_difficulty_inputs import QuestionDifficultySequences
+        feature_path = work / "data/auxiliary/ASSIST2009-question-difficulty.json"
+        assert digest(feature_path) == config["question_difficulty"]["feature_sha256"]
+        dataset = QuestionDifficultySequences(data, "validation", config["seq_len"], feature_path)
+    else:
+        dataset = Sequences(data, "validation", config["seq_len"])
+    loader = DataLoader(dataset,
                         batch_size=config["batch_size"], shuffle=False, num_workers=0)
     model = build_model(config["model"], stats["num_q"], config["model_config"]).cpu()
     model.load_state_dict(best["model"], strict=True)
@@ -68,7 +75,7 @@ def verify(arm="one_layer_softmax", report_dir=SOFTMAX_PILOT,
     assert differences["auc"] <= 2e-6 and differences["bce"] <= 2e-6
     assert all(differences[key] <= 1e-4 for key in ("f1", "accuracy", "precision", "recall"))
     assert replay["n_targets"] == result["validation"]["n_targets"] == 27456
-    preservation = read_json(PROJECT / report_dir / "preflight_20261027.json")
+    preservation = read_json(PROJECT / report_dir / ("preflight_20261028.json" if arm == "one_layer_question_difficulty" else "preflight_20261027.json"))
     for path, expected in preservation["existing_file_sha256"].items():
         assert digest(path) == expected, f"Pre-existing artifact changed: {path}"
     record = {"status": "PASS", "device": "cpu", "optimizer_updates_performed": 0,
@@ -100,7 +107,10 @@ def verify(arm="one_layer_softmax", report_dir=SOFTMAX_PILOT,
         record["selected_gate_bias"] = bias.item()
         record["vocabulary_gate_range"] = [gates.min().item(), gates.max().item()]
         record["vocabulary_gate_mean"] = gates.mean().item()
-    write_json(PROJECT / report_dir / "checkpoint_replay_verification_20261027.json", record)
+    if arm == "one_layer_question_difficulty":
+        record["learned_difficulty_scale"] = best["model"]["difficulty_scale"].item()
+        record["question_feature_sha256"] = digest(feature_path)
+    write_json(PROJECT / report_dir / ("checkpoint_replay_verification_20261028.json" if arm == "one_layer_question_difficulty" else "checkpoint_replay_verification_20261027.json"), record)
     print(f"PASS: {arm} validation replay, resume-state checks and historical artifact preservation.")
 
 

@@ -1,0 +1,12 @@
+{
+  "question_difficulty_probe_validation_auc": 0.7802025397064125,
+  "delta_vs_baseline": 0.029399017515463588,
+  "coefficients": [
+    [
+      1.0420271456081729,
+      1.0258808479342676
+    ]
+  ],
+  "training_features": "Question/skill correctness rates leave out all observations from the same training student; validation lookup uses training only.10 fixed pseudo-observations toward skill rate,no sweep.",
+  "limitation": "Exploratory validation and in-sample baseline logits; not a new full neural training result."
+}
