@@ -1,3 +1,15 @@
+## Latest scope — audited same-run continuation, 29 October 2026
+
+User authorizes rigorous leakage/state verification and continuation from the
+exact epoch18 state IF valid,with identical settings and shared safeguards.
+Audit passes for offline student-disjoint benchmark only;global training
+statistics are not a forward-time deployment result. Validation/test labels and
+own-student outcomes do not enter a row's fitted feature. Current continuation
+has a new<=900s window/4GiB cap;general holds remain and no automatic retry.
+Prepare five-seed ASSIST2009 and feature-matched SAKT if gain survives;do NOT
+launch that campaign without separate budget. Preserve old artifacts/Git/test.
+This supersedes older no-resume scope for this one continuation only.
+
 # Current durable directives — 28 October 2026
 
 User requested evidence-led failure diagnostics using train and existing

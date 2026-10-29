@@ -1,0 +1,68 @@
+{
+  "status": "PASS_FOR_OFFLINE_STUDENT_DISJOINT_PROTOCOL",
+  "scientifically_valid_to_resume": true,
+  "validation_label_perturbation": "all numerical features invariant",
+  "own_training_student_all_labels_perturbation": "own features invariant",
+  "feature_reconstruction": "all stored numerical features exactly match recomputation",
+  "test_policy": "No actual test dataset, predictions, statistics or labels analyzed; full-builder synthetic test-label perturbation is separate.",
+  "timing": {
+    "validation_fraction_with_later_training_problem_observation_order_proxy": 0.9504502888306843,
+    "training_order_range": [
+      20225413,
+      38307654
+    ],
+    "validation_order_range": [
+      20352085,
+      38257318
+    ],
+    "interpretation": "Full-training-partition fitted statistics, valid for offline student-disjoint evaluation; not a forward-time deployment claim. Baseline fitting also uses the complete training partition. order_id is only an ordering proxy."
+  },
+  "checkpoint_epoch": 18,
+  "best_epoch": 18,
+  "bad_epochs": 0,
+  "latest_checkpoint_sha256": "e134577a436c125274e00629b510739482b77b443b3db8d49d7c79092aca2c24",
+  "best_checkpoint_sha256": "80a2ccc0b7f81d99f459bec3a1b8094f934d4d0df9b89123f78939643323eb03",
+  "training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+  "feature_sha256": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464",
+  "next_epoch": 19,
+  "next_epoch_train_chunks": 3993,
+  "next_epoch_batches": 63,
+  "next_epoch_index_order_sha256": "2b0b05474cbf7d1a5c59d61f724f97fd0baf87689e6c7f52fe78b8cd1453ba3f",
+  "next_epoch_first_16_indices": [
+    880,
+    2513,
+    318,
+    15,
+    2864,
+    846,
+    3735,
+    3572,
+    3502,
+    323,
+    266,
+    1881,
+    3179,
+    2908,
+    1959,
+    3162
+  ],
+  "rng_states": "Python/NumPy/CPU Torch states reconstruct; one CUDA state present, restored only after GPU authorization",
+  "optimizer": "finite full Adam state, unchanged learning rate/betas/epsilon/weight decay",
+  "observer_resume_identity": {
+    "mode": null,
+    "stage": "question",
+    "launcher_sha256": "8ef391d356a3d29e3a59bdf10632a94f6189c25bf92c2f3974ae9c06450339cb",
+    "memory_cap_bytes": 4294967296,
+    "inter_update_pause_seconds": 0.1,
+    "max_step_seconds": 30,
+    "resource_policy_sha256": "bd3580be4676f8482e9ed80967653628caf17227d7ebbdc8911836d085c8b2b0",
+    "instrumentation_sha256": "8d989cb97fccf5247166d40a586ceb3805d60f69e65cb365c3614b41657d1aa8",
+    "evaluation_extension_sha256": "9ddd0df2b7b1ffbdc27e4a641709ffb1d6827fdaa5e619fda576d388ad61e55d"
+  },
+  "original_environment": {
+    "python": "3.10.12",
+    "torch": "2.4.0a0+f70bd71a48.nv24.06",
+    "cuda": "12.5",
+    "gpu": "NVIDIA H100 80GB HBM3 MIG 3g.40gb"
+  }
+}
