@@ -1,0 +1,45 @@
+{
+  "status": "closed_completed",
+  "project": "LightSAKT2",
+  "dataset": "ASSIST2009",
+  "seed": 42,
+  "stages": [
+    "question"
+  ],
+  "sharing": "shared",
+  "gpu_uuid": "MIG-d2fcfd79-720e-5218-82c9-0a132be68920",
+  "valid_from_utc": "2026-10-29T00:35:41.736747+00:00",
+  "valid_until_utc": "2026-10-29T00:50:41.736747+00:00",
+  "authorized_by": "User exact audited epoch18 continuation2026-10-29",
+  "allocation_reference": "Existing shared-GPU permission and current continuation scope",
+  "window_scope": "Operator-imposed900second continuation;not exclusive lease",
+  "execution_evidence": "/workspace/LightSAKT2-architecture/reports/architecture_study/question_completion_20261029/EXECUTION_AUTHORIZATION_20261029.md",
+  "execution_evidence_sha256": "5f4f07ba5d929476f31b17b266da0496360b73cdf92ef68dc44d73226da85061",
+  "shared_policy": {
+    "allocator_cap_bytes": 4294967296,
+    "admission_free_bytes": 10737418240,
+    "runtime_free_bytes": 6442450944,
+    "host_rss_cap_bytes": 4294967296,
+    "host_headroom_bytes": 2147483648,
+    "admission_utilization_max": 75,
+    "allow_unsupported_mig_utilization": true,
+    "inter_update_pause_seconds": 0.1,
+    "max_step_seconds": 30,
+    "wall_time_limit_seconds": 900
+  },
+  "hold_exception": {
+    "stage": "question",
+    "dataset": "ASSIST2009",
+    "seed": 42,
+    "user_authorization_evidence": "/workspace/LightSAKT2-architecture/reports/architecture_study/question_completion_20261029/EXECUTION_AUTHORIZATION_20261029.md",
+    "hold_marker_sha256": {
+      "/workspace/LightSAKT2-architecture/experiments/USER_TRAINING_HOLD.json": "65214c2c53852024e970fd0a176f71968f204ec0748635a7e6f46de3ed64c234",
+      "/workspace/LightSAKT2/experiments/USER_TRAINING_HOLD.json": "65214c2c53852024e970fd0a176f71968f204ec0748635a7e6f46de3ed64c234"
+    },
+    "configuration_sha256": {
+      "one_layer_question_difficulty": "78f925798bf0bd229eb3a42c080f3553684ce5e5cd6ffff501bea7e7e85e2c85"
+    }
+  },
+  "closed_utc": "2026-10-29T00:39:04.220220+00:00",
+  "closure_reason": "Exact continuation completed planned validation-based early stopping;no campaign scope remains"
+}

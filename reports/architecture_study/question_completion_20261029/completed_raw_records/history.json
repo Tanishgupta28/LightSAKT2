@@ -1,0 +1,988 @@
+[
+  {
+    "epoch": 1,
+    "train_objective": 0.6288994910378459,
+    "validation": {
+      "auc": 0.6875685745797793,
+      "auc_reason": null,
+      "accuracy": 0.7035256410256411,
+      "f1": 0.8075559128091163,
+      "mse": 0.199167739973685,
+      "bce": 0.5851838741598387,
+      "n_targets": 27456,
+      "precision": 0.7116843070255855,
+      "recall": 0.9332786885245902
+    },
+    "epoch_seconds": 8.457663256995147,
+    "resources": {
+      "epoch_wall_seconds": 8.45659059699392,
+      "process_peak_rss_bytes": 1477853184,
+      "peak_allocated_bytes": 266995200,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.601786705325345,
+        "auc_reason": null,
+        "accuracy": 0.661839346653948,
+        "f1": 0.7820403224745848,
+        "mse": 0.21877320271503586,
+        "bce": 0.6288994895923233,
+        "n_targets": 196037,
+        "precision": 0.6815475337684889,
+        "recall": 0.9172933490678823
+      }
+    }
+  },
+  {
+    "epoch": 2,
+    "train_objective": 0.5811220586244864,
+    "validation": {
+      "auc": 0.7211430320110197,
+      "auc_reason": null,
+      "accuracy": 0.7157998251748252,
+      "f1": 0.8116354858177429,
+      "mse": 0.190869217946506,
+      "bce": 0.5651554091508606,
+      "n_targets": 27456,
+      "precision": 0.7269621621621621,
+      "recall": 0.9186338797814207
+    },
+    "epoch_seconds": 7.868486694002058,
+    "resources": {
+      "epoch_wall_seconds": 7.867376748996321,
+      "process_peak_rss_bytes": 1497223168,
+      "peak_allocated_bytes": 266995200,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.6984174391380018,
+        "auc_reason": null,
+        "accuracy": 0.7049281513183736,
+        "f1": 0.8046338044818211,
+        "mse": 0.19754947960808072,
+        "bce": 0.5811220583599347,
+        "n_targets": 196037,
+        "precision": 0.7157191439249192,
+        "recall": 0.9187742477882932
+      }
+    }
+  },
+  {
+    "epoch": 3,
+    "train_objective": 0.5652038204440518,
+    "validation": {
+      "auc": 0.7352355438340172,
+      "auc_reason": null,
+      "accuracy": 0.7206439393939394,
+      "f1": 0.8091754988306712,
+      "mse": 0.18723181515342577,
+      "bce": 0.5563265087441385,
+      "n_targets": 27456,
+      "precision": 0.7427605736731525,
+      "recall": 0.8886338797814207
+    },
+    "epoch_seconds": 12.307325083995238,
+    "resources": {
+      "epoch_wall_seconds": 12.21968784899218,
+      "process_peak_rss_bytes": 1497288704,
+      "peak_allocated_bytes": 266995712,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.722861997418322,
+        "auc_reason": null,
+        "accuracy": 0.716058703203987,
+        "f1": 0.8094117969314419,
+        "mse": 0.19084356927736465,
+        "bce": 0.565203822051984,
+        "n_targets": 196037,
+        "precision": 0.727784345598739,
+        "recall": 0.9116628487246531
+      }
+    }
+  },
+  {
+    "epoch": 4,
+    "train_objective": 0.5563831184764829,
+    "validation": {
+      "auc": 0.7457903593331854,
+      "auc_reason": null,
+      "accuracy": 0.7276369463869464,
+      "f1": 0.8153306662715464,
+      "mse": 0.18411660374771308,
+      "bce": 0.5486277498905264,
+      "n_targets": 27456,
+      "precision": 0.7438046318824908,
+      "recall": 0.9020765027322404
+    },
+    "epoch_seconds": 14.846085771016078,
+    "resources": {
+      "epoch_wall_seconds": 14.845033245015657,
+      "process_peak_rss_bytes": 1497387008,
+      "peak_allocated_bytes": 266994688,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.735770766247372,
+        "auc_reason": null,
+        "accuracy": 0.720940434713855,
+        "f1": 0.8107163617239184,
+        "mse": 0.18727542801972005,
+        "bce": 0.556383109233327,
+        "n_targets": 196037,
+        "precision": 0.7351363222790449,
+        "recall": 0.9036181749465874
+      }
+    }
+  },
+  {
+    "epoch": 5,
+    "train_objective": 0.5498984109213556,
+    "validation": {
+      "auc": 0.7513758334586655,
+      "auc_reason": null,
+      "accuracy": 0.7301864801864801,
+      "f1": 0.8139908602420529,
+      "mse": 0.18236659281038228,
+      "bce": 0.5444414666049385,
+      "n_targets": 27456,
+      "precision": 0.7529963764749605,
+      "recall": 0.8857377049180328
+    },
+    "epoch_seconds": 14.278624854021473,
+    "resources": {
+      "epoch_wall_seconds": 14.123555444006342,
+      "process_peak_rss_bytes": 1497620480,
+      "peak_allocated_bytes": 266995200,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7446025641821146,
+        "auc_reason": null,
+        "accuracy": 0.7257711554451456,
+        "f1": 0.8132816977232864,
+        "mse": 0.1846304114001891,
+        "bce": 0.5498984022014312,
+        "n_targets": 196037,
+        "precision": 0.7397639387352778,
+        "recall": 0.9030242728555893
+      }
+    }
+  },
+  {
+    "epoch": 6,
+    "train_objective": 0.5451755479412261,
+    "validation": {
+      "auc": 0.7569401473428394,
+      "auc_reason": null,
+      "accuracy": 0.7321896853146853,
+      "f1": 0.8154599071401681,
+      "mse": 0.1806119174050804,
+      "bce": 0.5401502455167984,
+      "n_targets": 27456,
+      "precision": 0.7540496634950105,
+      "recall": 0.88775956284153
+    },
+    "epoch_seconds": 14.313408658985281,
+    "resources": {
+      "epoch_wall_seconds": 14.312351077009225,
+      "process_peak_rss_bytes": 1497624576,
+      "peak_allocated_bytes": 266995200,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7508085932815401,
+        "auc_reason": null,
+        "accuracy": 0.7283420986854522,
+        "f1": 0.8143538901845132,
+        "mse": 0.18273634326576357,
+        "bce": 0.5451755483939389,
+        "n_targets": 196037,
+        "precision": 0.7429712744574205,
+        "recall": 0.9009109069733361
+      }
+    }
+  },
+  {
+    "epoch": 7,
+    "train_objective": 0.5411782512061588,
+    "validation": {
+      "auc": 0.7602110533389674,
+      "auc_reason": null,
+      "accuracy": 0.735176282051282,
+      "f1": 0.818818369838778,
+      "mse": 0.17927483474130917,
+      "bce": 0.53668707371536,
+      "n_targets": 27456,
+      "precision": 0.7525995144519262,
+      "recall": 0.8978142076502732
+    },
+    "epoch_seconds": 14.393004514015047,
+    "resources": {
+      "epoch_wall_seconds": 14.391891826991923,
+      "process_peak_rss_bytes": 1497636864,
+      "peak_allocated_bytes": 266995200,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7559734589965774,
+        "auc_reason": null,
+        "accuracy": 0.73134153246581,
+        "f1": 0.816054819973526,
+        "mse": 0.18115079912027876,
+        "bce": 0.5411782525056559,
+        "n_targets": 196037,
+        "precision": 0.7456915260295657,
+        "recall": 0.9010805932850499
+      }
+    }
+  },
+  {
+    "epoch": 8,
+    "train_objective": 0.5374737794470397,
+    "validation": {
+      "auc": 0.7631873960041728,
+      "auc_reason": null,
+      "accuracy": 0.736414627039627,
+      "f1": 0.818316471267542,
+      "mse": 0.17840205787950206,
+      "bce": 0.5343602109590837,
+      "n_targets": 27456,
+      "precision": 0.7568847814981656,
+      "recall": 0.8906010928961748
+    },
+    "epoch_seconds": 14.332626963994699,
+    "resources": {
+      "epoch_wall_seconds": 14.331660171010299,
+      "process_peak_rss_bytes": 1497960448,
+      "peak_allocated_bytes": 266994688,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7604645713833911,
+        "auc_reason": null,
+        "accuracy": 0.7337186347475222,
+        "f1": 0.8172457857055333,
+        "mse": 0.17967420699250225,
+        "bce": 0.5374737782061884,
+        "n_targets": 196037,
+        "precision": 0.7482626423222895,
+        "recall": 0.9002398747406499
+      }
+    }
+  },
+  {
+    "epoch": 9,
+    "train_objective": 0.5346529390145361,
+    "validation": {
+      "auc": 0.7669396669030072,
+      "auc_reason": null,
+      "accuracy": 0.7394376456876457,
+      "f1": 0.8221813481805528,
+      "mse": 0.17709001072529126,
+      "bce": 0.5309777679693661,
+      "n_targets": 27456,
+      "precision": 0.754103592923582,
+      "recall": 0.9037704918032787
+    },
+    "epoch_seconds": 14.462720554991392,
+    "resources": {
+      "epoch_wall_seconds": 14.461690783995437,
+      "process_peak_rss_bytes": 1497968640,
+      "peak_allocated_bytes": 266994688,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7638574879289406,
+        "auc_reason": null,
+        "accuracy": 0.7358508852920622,
+        "f1": 0.8184702323151942,
+        "mse": 0.1785546048287263,
+        "bce": 0.5346529325777019,
+        "n_targets": 196037,
+        "precision": 0.7502056449539869,
+        "recall": 0.9004018480381949
+      }
+    }
+  },
+  {
+    "epoch": 10,
+    "train_objective": 0.5316156548538965,
+    "validation": {
+      "auc": 0.7692152089943112,
+      "auc_reason": null,
+      "accuracy": 0.7407488344988346,
+      "f1": 0.821916437327996,
+      "mse": 0.1761822728542075,
+      "bce": 0.5288427723889676,
+      "n_targets": 27456,
+      "precision": 0.7580064605445316,
+      "recall": 0.8975956284153005
+    },
+    "epoch_seconds": 14.338338020985248,
+    "resources": {
+      "epoch_wall_seconds": 14.337357534008333,
+      "process_peak_rss_bytes": 1497989120,
+      "peak_allocated_bytes": 266995712,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7676879377685528,
+        "auc_reason": null,
+        "accuracy": 0.7378964175130205,
+        "f1": 0.8197691956925883,
+        "mse": 0.1773222194578652,
+        "bce": 0.5316156476102637,
+        "n_targets": 196037,
+        "precision": 0.7517675744182606,
+        "recall": 0.9012965576817764
+      }
+    }
+  },
+  {
+    "epoch": 11,
+    "train_objective": 0.5286765418261457,
+    "validation": {
+      "auc": 0.7713737803990097,
+      "auc_reason": null,
+      "accuracy": 0.7398382867132867,
+      "f1": 0.8227675359154405,
+      "mse": 0.17575057333640282,
+      "bce": 0.5276286352976707,
+      "n_targets": 27456,
+      "precision": 0.7535336090533109,
+      "recall": 0.9060109289617486
+    },
+    "epoch_seconds": 14.060281265003141,
+    "resources": {
+      "epoch_wall_seconds": 14.059274222003296,
+      "process_peak_rss_bytes": 1498009600,
+      "peak_allocated_bytes": 266995712,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7709457629378551,
+        "auc_reason": null,
+        "accuracy": 0.7384830414666619,
+        "f1": 0.819749596548778,
+        "mse": 0.1761855693630349,
+        "bce": 0.5286765362456302,
+        "n_targets": 196037,
+        "precision": 0.7532273696452801,
+        "recall": 0.8991600527570169
+      }
+    }
+  },
+  {
+    "epoch": 12,
+    "train_objective": 0.5263211966967742,
+    "validation": {
+      "auc": 0.7720851267764337,
+      "auc_reason": null,
+      "accuracy": 0.7422785547785548,
+      "f1": 0.8224252158201164,
+      "mse": 0.17533847253486756,
+      "bce": 0.5264864391021342,
+      "n_targets": 27456,
+      "precision": 0.7604418043437906,
+      "recall": 0.8954098360655738
+    },
+    "epoch_seconds": 14.281206918007229,
+    "resources": {
+      "epoch_wall_seconds": 14.224516026995843,
+      "process_peak_rss_bytes": 1498034176,
+      "peak_allocated_bytes": 266995712,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7734723013932387,
+        "auc_reason": null,
+        "accuracy": 0.740798930814081,
+        "f1": 0.8212704141033623,
+        "mse": 0.17525163129482882,
+        "bce": 0.5263211916412134,
+        "n_targets": 196037,
+        "precision": 0.7548916909149693,
+        "recall": 0.9004481261232077
+      }
+    }
+  },
+  {
+    "epoch": 13,
+    "train_objective": 0.524556764574741,
+    "validation": {
+      "auc": 0.7746023868012137,
+      "auc_reason": null,
+      "accuracy": 0.743043414918415,
+      "f1": 0.8225291172993233,
+      "mse": 0.17439137174308725,
+      "bce": 0.5242300937084967,
+      "n_targets": 27456,
+      "precision": 0.7620845569384236,
+      "recall": 0.8933879781420765
+    },
+    "epoch_seconds": 14.069041537004523,
+    "resources": {
+      "epoch_wall_seconds": 14.034794547013007,
+      "process_peak_rss_bytes": 1498050560,
+      "peak_allocated_bytes": 266994176,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7752917488157689,
+        "auc_reason": null,
+        "accuracy": 0.7417681356070538,
+        "f1": 0.8217004025767731,
+        "mse": 0.17456907526831641,
+        "bce": 0.5245567617121606,
+        "n_targets": 196037,
+        "precision": 0.756135347118688,
+        "recall": 0.899715389777171
+      }
+    }
+  },
+  {
+    "epoch": 14,
+    "train_objective": 0.5219501043460053,
+    "validation": {
+      "auc": 0.775943148152127,
+      "auc_reason": null,
+      "accuracy": 0.7435897435897436,
+      "f1": 0.8230977987737461,
+      "mse": 0.17397610686219409,
+      "bce": 0.52345620622348,
+      "n_targets": 27456,
+      "precision": 0.7619091924078898,
+      "recall": 0.8949726775956284
+    },
+    "epoch_seconds": 8.13019274699036,
+    "resources": {
+      "epoch_wall_seconds": 8.129196296998998,
+      "process_peak_rss_bytes": 1498075136,
+      "peak_allocated_bytes": 266995200,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7781776843251603,
+        "auc_reason": null,
+        "accuracy": 0.7441248335773349,
+        "f1": 0.8230883447310228,
+        "mse": 0.17354374773655967,
+        "bce": 0.5219501114518327,
+        "n_targets": 196037,
+        "precision": 0.758275606617886,
+        "recall": 0.9000161973297545
+      }
+    }
+  },
+  {
+    "epoch": 15,
+    "train_objective": 0.5207785125902497,
+    "validation": {
+      "auc": 0.7756288479948052,
+      "auc_reason": null,
+      "accuracy": 0.7438082750582751,
+      "f1": 0.8244571999001747,
+      "mse": 0.1740683044560456,
+      "bce": 0.5230185708239831,
+      "n_targets": 27456,
+      "precision": 0.7587505741846577,
+      "recall": 0.9026229508196721
+    },
+    "epoch_seconds": 7.959738322999328,
+    "resources": {
+      "epoch_wall_seconds": 7.958820312021999,
+      "process_peak_rss_bytes": 1498083328,
+      "peak_allocated_bytes": 266995712,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7795197227652387,
+        "auc_reason": null,
+        "accuracy": 0.7440330141758954,
+        "f1": 0.8228098858375736,
+        "mse": 0.17311838622283005,
+        "bce": 0.5207785142933321,
+        "n_targets": 196037,
+        "precision": 0.75879563897826,
+        "recall": 0.8986201417652004
+      }
+    }
+  },
+  {
+    "epoch": 16,
+    "train_objective": 0.5191159640657499,
+    "validation": {
+      "auc": 0.777767670636711,
+      "auc_reason": null,
+      "accuracy": 0.7453379953379954,
+      "f1": 0.8240475111983492,
+      "mse": 0.17309517463827032,
+      "bce": 0.5207392250259547,
+      "n_targets": 27456,
+      "precision": 0.7637372889262058,
+      "recall": 0.8946994535519126
+    },
+    "epoch_seconds": 8.032528398005525,
+    "resources": {
+      "epoch_wall_seconds": 8.031596332002664,
+      "process_peak_rss_bytes": 1498095616,
+      "peak_allocated_bytes": 266995712,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.781326782322056,
+        "auc_reason": null,
+        "accuracy": 0.7454715181317813,
+        "f1": 0.8236549791306622,
+        "mse": 0.17243533502312855,
+        "bce": 0.5191159631431962,
+        "n_targets": 196037,
+        "precision": 0.7601239399869537,
+        "recall": 0.8987744020485766
+      }
+    }
+  },
+  {
+    "epoch": 17,
+    "train_objective": 0.5179264793323353,
+    "validation": {
+      "auc": 0.777320706419631,
+      "auc_reason": null,
+      "accuracy": 0.7459935897435898,
+      "f1": 0.8252130325814536,
+      "mse": 0.1731422315696884,
+      "bce": 0.5209314478824469,
+      "n_targets": 27456,
+      "precision": 0.762175925925926,
+      "recall": 0.8996174863387978
+    },
+    "epoch_seconds": 8.006343087006826,
+    "resources": {
+      "epoch_wall_seconds": 8.005334716988727,
+      "process_peak_rss_bytes": 1498099712,
+      "peak_allocated_bytes": 266995200,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7822543321107944,
+        "auc_reason": null,
+        "accuracy": 0.7472926029269985,
+        "f1": 0.8247103864580458,
+        "mse": 0.17193438703938857,
+        "bce": 0.5179264778347137,
+        "n_targets": 196037,
+        "precision": 0.7618571325841521,
+        "recall": 0.8988669582186023
+      }
+    }
+  },
+  {
+    "epoch": 18,
+    "train_objective": 0.5165314267413843,
+    "validation": {
+      "auc": 0.7784249958819442,
+      "auc_reason": null,
+      "accuracy": 0.744208916083916,
+      "f1": 0.8239629026193759,
+      "mse": 0.17280791136048854,
+      "bce": 0.5198850343652965,
+      "n_targets": 27456,
+      "precision": 0.7611021069692059,
+      "recall": 0.8981420765027323
+    },
+    "epoch_seconds": 8.116198764997534,
+    "resources": {
+      "epoch_wall_seconds": 8.115293573995586,
+      "process_peak_rss_bytes": 1498132480,
+      "peak_allocated_bytes": 266994688,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7838569783188268,
+        "auc_reason": null,
+        "accuracy": 0.7471497727469815,
+        "f1": 0.8246001415428167,
+        "mse": 0.17142869478232364,
+        "bce": 0.5165314209563384,
+        "n_targets": 196037,
+        "precision": 0.7617964157987303,
+        "recall": 0.8986895588927197
+      }
+    }
+  },
+  {
+    "epoch": 19,
+    "train_objective": 0.5154651408378544,
+    "validation": {
+      "auc": 0.7782803685719537,
+      "auc_reason": null,
+      "accuracy": 0.7454472610722611,
+      "f1": 0.8246305171505282,
+      "mse": 0.17306882541359145,
+      "bce": 0.5205592699463426,
+      "n_targets": 27456,
+      "precision": 0.7623996659397764,
+      "recall": 0.8979234972677596
+    },
+    "epoch_seconds": 12.689221195003483,
+    "resources": {
+      "epoch_wall_seconds": 12.61493162199622,
+      "process_peak_rss_bytes": 1498673152,
+      "peak_allocated_bytes": 267236352,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7848076645940163,
+        "auc_reason": null,
+        "accuracy": 0.7477465988563383,
+        "f1": 0.8245939494117188,
+        "mse": 0.171053553305724,
+        "bce": 0.5154651336544731,
+        "n_targets": 196037,
+        "precision": 0.7633445413470632,
+        "recall": 0.8965299149254538
+      }
+    }
+  },
+  {
+    "epoch": 20,
+    "train_objective": 0.5143050247716211,
+    "validation": {
+      "auc": 0.7787020306192362,
+      "auc_reason": null,
+      "accuracy": 0.7463578088578089,
+      "f1": 0.8239457983618161,
+      "mse": 0.17272756725431082,
+      "bce": 0.51982186025757,
+      "n_targets": 27456,
+      "precision": 0.7666541211893112,
+      "recall": 0.8904918032786885
+    },
+    "epoch_seconds": 12.307995086011942,
+    "resources": {
+      "epoch_wall_seconds": 12.198692116013262,
+      "process_peak_rss_bytes": 1517993984,
+      "peak_allocated_bytes": 267006464,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7861777778781921,
+        "auc_reason": null,
+        "accuracy": 0.7486953993378801,
+        "f1": 0.825346630127662,
+        "mse": 0.17055780565580245,
+        "bce": 0.5143050173090985,
+        "n_targets": 196037,
+        "precision": 0.7636955295167365,
+        "recall": 0.8978257013058133
+      }
+    }
+  },
+  {
+    "epoch": 21,
+    "train_objective": 0.5132838377755881,
+    "validation": {
+      "auc": 0.7801805081083921,
+      "auc_reason": null,
+      "accuracy": 0.7482517482517482,
+      "f1": 0.8258766626360339,
+      "mse": 0.17205648485666217,
+      "bce": 0.5179448071132144,
+      "n_targets": 27456,
+      "precision": 0.7661245092540662,
+      "recall": 0.8957377049180328
+    },
+    "epoch_seconds": 12.183759943000041,
+    "resources": {
+      "epoch_wall_seconds": 12.182781888986938,
+      "process_peak_rss_bytes": 1518141440,
+      "peak_allocated_bytes": 267006464,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7872247411271722,
+        "auc_reason": null,
+        "accuracy": 0.7492055071236552,
+        "f1": 0.8254139604913195,
+        "mse": 0.17016177236421354,
+        "bce": 0.5132838397184308,
+        "n_targets": 196037,
+        "precision": 0.7648297555903605,
+        "recall": 0.8964219327270904
+      }
+    }
+  },
+  {
+    "epoch": 22,
+    "train_objective": 0.5120360499752181,
+    "validation": {
+      "auc": 0.7796412904912303,
+      "auc_reason": null,
+      "accuracy": 0.7452287296037297,
+      "f1": 0.8250156347717323,
+      "mse": 0.17262080509848227,
+      "bce": 0.5193430670151639,
+      "n_targets": 27456,
+      "precision": 0.7607843137254902,
+      "recall": 0.9010928961748634
+    },
+    "epoch_seconds": 8.001473800977692,
+    "resources": {
+      "epoch_wall_seconds": 8.000526433985215,
+      "process_peak_rss_bytes": 1518387200,
+      "peak_allocated_bytes": 267007488,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7882519732529603,
+        "auc_reason": null,
+        "accuracy": 0.7504348668873733,
+        "f1": 0.8260467629992035,
+        "mse": 0.16970797542600538,
+        "bce": 0.5120360492611133,
+        "n_targets": 196037,
+        "precision": 0.7662552689037382,
+        "recall": 0.895959151876962
+      }
+    }
+  },
+  {
+    "epoch": 23,
+    "train_objective": 0.51126791080014,
+    "validation": {
+      "auc": 0.7799401121304791,
+      "auc_reason": null,
+      "accuracy": 0.7456657925407926,
+      "f1": 0.8243756444757425,
+      "mse": 0.17241958788231923,
+      "bce": 0.5188690634157038,
+      "n_targets": 27456,
+      "precision": 0.7636643213270584,
+      "recall": 0.8955737704918033
+    },
+    "epoch_seconds": 7.420555804041214,
+    "resources": {
+      "epoch_wall_seconds": 7.419608314987272,
+      "process_peak_rss_bytes": 1518411776,
+      "peak_allocated_bytes": 267006464,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7891576485496431,
+        "auc_reason": null,
+        "accuracy": 0.7499094558680249,
+        "f1": 0.8255868970497728,
+        "mse": 0.16942128371726817,
+        "bce": 0.5112679099871092,
+        "n_targets": 196037,
+        "precision": 0.7661806848645721,
+        "recall": 0.8949795990775236
+      }
+    }
+  },
+  {
+    "epoch": 24,
+    "train_objective": 0.5108448190020899,
+    "validation": {
+      "auc": 0.7811899718778572,
+      "auc_reason": null,
+      "accuracy": 0.747960372960373,
+      "f1": 0.8240886674462352,
+      "mse": 0.17176819937658255,
+      "bce": 0.5173807926180807,
+      "n_targets": 27456,
+      "precision": 0.7704629717653769,
+      "recall": 0.8857377049180328
+    },
+    "epoch_seconds": 9.739120368030854,
+    "resources": {
+      "epoch_wall_seconds": 9.73818751500221,
+      "process_peak_rss_bytes": 1518661632,
+      "peak_allocated_bytes": 267005952,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7896002829175331,
+        "auc_reason": null,
+        "accuracy": 0.7511847253324627,
+        "f1": 0.8265021928654509,
+        "mse": 0.16926899862819544,
+        "bce": 0.5108448191462104,
+        "n_targets": 196037,
+        "precision": 0.7669320342205324,
+        "recall": 0.8961056991461693
+      }
+    }
+  },
+  {
+    "epoch": 25,
+    "train_objective": 0.5095803871176713,
+    "validation": {
+      "auc": 0.779066030934357,
+      "auc_reason": null,
+      "accuracy": 0.7454472610722611,
+      "f1": 0.8234610624163278,
+      "mse": 0.17239946343459212,
+      "bce": 0.5189108615413105,
+      "n_targets": 27456,
+      "precision": 0.7656536239372446,
+      "recall": 0.8907103825136612
+    },
+    "epoch_seconds": 7.573550814995542,
+    "resources": {
+      "epoch_wall_seconds": 7.572541261033621,
+      "process_peak_rss_bytes": 1518682112,
+      "peak_allocated_bytes": 267005952,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.790773703244799,
+        "auc_reason": null,
+        "accuracy": 0.7526334314440641,
+        "f1": 0.8271471599921582,
+        "mse": 0.16874170095241692,
+        "bce": 0.5095803830781953,
+        "n_targets": 196037,
+        "precision": 0.7689238803398412,
+        "recall": 0.8949101819500043
+      }
+    }
+  },
+  {
+    "epoch": 26,
+    "train_objective": 0.5090311588538531,
+    "validation": {
+      "auc": 0.7802942559687935,
+      "auc_reason": null,
+      "accuracy": 0.7464670745920746,
+      "f1": 0.8241061276058117,
+      "mse": 0.1719878756414889,
+      "bce": 0.5176854236082975,
+      "n_targets": 27456,
+      "precision": 0.7664864864864865,
+      "recall": 0.8910928961748634
+    },
+    "epoch_seconds": 7.465173413977027,
+    "resources": {
+      "epoch_wall_seconds": 7.464028595015407,
+      "process_peak_rss_bytes": 1518710784,
+      "peak_allocated_bytes": 267006464,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.791357637764343,
+        "auc_reason": null,
+        "accuracy": 0.7523834786290343,
+        "f1": 0.8269953168770626,
+        "mse": 0.16852845863166727,
+        "bce": 0.5090311600163391,
+        "n_targets": 196037,
+        "precision": 0.7686956291285422,
+        "recall": 0.8948639038649914
+      }
+    }
+  },
+  {
+    "epoch": 27,
+    "train_objective": 0.5083485914941517,
+    "validation": {
+      "auc": 0.7798539164500211,
+      "auc_reason": null,
+      "accuracy": 0.7477418414918415,
+      "f1": 0.8250479943417197,
+      "mse": 0.17236183707178296,
+      "bce": 0.5188943430331753,
+      "n_targets": 27456,
+      "precision": 0.7671458098459226,
+      "recall": 0.8924043715846994
+    },
+    "epoch_seconds": 7.689003294042777,
+    "resources": {
+      "epoch_wall_seconds": 7.687879588978831,
+      "process_peak_rss_bytes": 1518759936,
+      "peak_allocated_bytes": 267006976,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7919925552540978,
+        "auc_reason": null,
+        "accuracy": 0.7527303519233614,
+        "f1": 0.8269626181568952,
+        "mse": 0.16828953726737408,
+        "bce": 0.5083485894032158,
+        "n_targets": 196037,
+        "precision": 0.7697179120842609,
+        "recall": 0.8934061441870869
+      }
+    }
+  },
+  {
+    "epoch": 28,
+    "train_objective": 0.5073291810568843,
+    "validation": {
+      "auc": 0.7800468085665107,
+      "auc_reason": null,
+      "accuracy": 0.7462121212121212,
+      "f1": 0.8245543357840669,
+      "mse": 0.17235922026229097,
+      "bce": 0.5186717249689216,
+      "n_targets": 27456,
+      "precision": 0.7645685468808368,
+      "recall": 0.8947540983606558
+    },
+    "epoch_seconds": 13.516826855018735,
+    "resources": {
+      "epoch_wall_seconds": 13.51588704099413,
+      "process_peak_rss_bytes": 1518784512,
+      "peak_allocated_bytes": 267007488,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7930656854258945,
+        "auc_reason": null,
+        "accuracy": 0.7534394017455889,
+        "f1": 0.827549298387701,
+        "mse": 0.16781355157214656,
+        "bce": 0.5073291752623079,
+        "n_targets": 196037,
+        "precision": 0.7699160868872484,
+        "recall": 0.8945091052132262
+      }
+    }
+  },
+  {
+    "epoch": 29,
+    "train_objective": 0.5068607987541638,
+    "validation": {
+      "auc": 0.7802779329508913,
+      "auc_reason": null,
+      "accuracy": 0.7474868881118881,
+      "f1": 0.8240221336649999,
+      "mse": 0.17220086796430512,
+      "bce": 0.518273035929199,
+      "n_targets": 27456,
+      "precision": 0.7693984926766839,
+      "recall": 0.8869945355191257
+    },
+    "epoch_seconds": 13.666615615948103,
+    "resources": {
+      "epoch_wall_seconds": 13.66547653597081,
+      "process_peak_rss_bytes": 1518792704,
+      "peak_allocated_bytes": 267007488,
+      "peak_reserved_bytes": 385875968,
+      "memory_scope": "CUDA peak resets each epoch; RSS is process lifetime high-water mark",
+      "online_training_metrics": {
+        "auc": 0.7933861324903112,
+        "auc_reason": null,
+        "accuracy": 0.7539189030642175,
+        "f1": 0.8275869463436253,
+        "mse": 0.16767717552445527,
+        "bce": 0.5068608005150799,
+        "n_targets": 196037,
+        "precision": 0.7710991821402883,
+        "recall": 0.8930050674503089
+      }
+    }
+  }
+]

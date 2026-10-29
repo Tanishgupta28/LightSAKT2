@@ -1,0 +1,35 @@
+{
+  "dataset": "ASSIST2009",
+  "model": "SAKTQuestion",
+  "group": "question_feature_control",
+  "seed": 7777,
+  "seq_len": 100,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "patience": 5,
+  "learning_rate": 0.0005,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.0,
+  "epsilon": 1e-08,
+  "model_config": {
+    "n": 100,
+    "d": 64,
+    "num_attn_heads": 4,
+    "dropout": 0.2
+  },
+  "evaluate_test": false,
+  "run_id": "ASSIST2009-SAKTQuestion-featurematched-7777-v1",
+  "device": "cuda",
+  "question_difficulty": {
+    "algorithm": "question-vs-skill-logit-loso-v1",
+    "smoothing": 10.0,
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "raw_sha256": "f22e3fb7872c1784ce93b0f9ebabbe0cbcac4f896fd8b4a11667b9715d77dbdc",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "feature_sha256": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464"
+  },
+  "experimental_implementation_sha256": "8a03ccb39787d35feb284464d3269cd6c84c3a66293bac4ea039e8c446d62db9"
+}

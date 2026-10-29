@@ -1,28 +1,28 @@
-# Exact next checkpoint — finish the interrupted frozen pilot
+# Exact next checkpoint — authorize a defined replication budget
 
-No training is active or currently authorized after the resource stop. Do not
-retry the closed grant or start another candidate. Do not retrain five completed
-architecture arms. Preserve interrupted status18,raw history and checkpoint archive.
+Seed42 question-difficulty run is COMPLETE. Do not restart/resume/retrain it.
+Retain old epoch18 interruption record as history,not current state. To verify
+current result on CPU:python -m scripts.verify_question_completion_20261029;
+state continuity:python -m scripts.verify_question_state_continuity.
 
-Next recommended experiment is completion of the SAME question-difficulty pilot,
-from latest.pt epoch18 under separately authorized bounded scope and sufficient
-shared host/GPU headroom. Recheck source execution commitb24e154a,observer/adapter,
-config/data/feature hashes;retain optimizer/RNG/loader state and interruption
-history. Do not reset weights/change smoothing/settings or mark current state
-complete. Shared safeguards and4GiB/900s limits remain. Current source files
-used for model/input updates are unchanged from execution;new verification/report
-scripts record partial results without modifying training state.
+Prepared packet `/workspace/LightSAKT2-architecture/experiments/question_replication_20261029/plan.json` contains10configs across five seeds42/123/2026/3407/7777
+and two feature-matched families. REUSE completed LightSAKT seed42;only4new
+LightSAKT runs+5SAKT controls remain. Exact same feature SHA256 and split in all.
+SAKT retains its previously selected lr0.0005/4heads/dropout0.2;LightSAKT
+lr0.001/2heads/dropout0.1. No new tuning. Control scripts/feature_matched_sakt.py
+is CPU validated and bound by hash in configs. No real-data controls ran.
 
-After actual completion,propose seeds42/123/2026/3407/7777 on ASSIST2009 and a SAKT
-control with the SAME question feature before model-superiority claims. Algebra2005
-Problem Name/Step Name semantics/mapping must be verified before analogous work.
-ASSIST2015 four-column release has no separate problem ID;exact replication needs
-verified additional metadata and cannot be claimed from sequence_id relabelling.
-A practice-count feature is a deferred independent candidate,not a substitute
-replication. No additional implementation/training authorized now. Keep test locked.
+Campaign requires SEPARATE explicit budget approval and a seed-general budget-
+enforcing launcher (current pilot is deliberately seed42-only). Proposed maximum:
+9new sequential invocations,<=900s and4GiB per invocation,total<=8100GPU-seconds
+(135minutes);existing shared GPU/host floors,pacing,step limits remain. No automatic
+extra windows/retries. This is a ceiling,not a throughput estimate or permission.
+Do not launch based on prepared files or unused prior scope.
 
-Resume with `/workspace/LightSAKT2-architecture/reports/architecture_study/question_pilot_20261028/PARTIAL_RESULT_20261028.md`,partial verification and
-recovery_archive_20261028.json. To replay CPU only:
-CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m scripts.verify_question_pilot --partial
-Original data/config/archive bytes and180 protected hashes are the truth.
-Local research commits/Git bundles preserved;no force push or credential exposure.
+Report paired validation deltas,mean/sample SD over all seeds;never bestseed.
+Five seeds assess initialization variance,not new student cohorts. Keep test
+locked. Global train-fitted difficulty is valid offline,not a forward-time claim;
+a chronological protocol would be a new separately frozen investigation,not a
+silent change. Algebra2005 needs verified item/step mapping;ASSIST2015 current
+release lacks problem IDs. No silent schema substitution. No force push or
+credentials exposure;preserve local checkpoints,Git bundles and old artifacts.

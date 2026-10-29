@@ -173,3 +173,35 @@ Evidence /workspace/LightSAKT2-architecture/reports/architecture_study/question_
 headroom before five seeds/matched-input controls. ASSIST2015 current release
 lacks problem IDs;do not promise an exact transplant or silently change schema.
 Canonical memory consolidated;prior handoff archived,local history/bundles kept.
+
+
+## 2026-10-29 — Audited exact continuation completed; gain retained
+
+New user authorized audit and same-run completion if valid,no hyperparameter
+change. Feature rebuild matches exactly;real validation-label and whole-own-
+training-student perturbations invariant;synthetic full-builder test/validation/
+raw correctness perturbations invariant. No actual test evaluation/statistics.
+95.045% validation rows have later-order training same-question observations:
+full-training fitted statistics are valid for originaloffline student-disjoint
+protocol,NOT forward-time deployment. This boundary is explicit,no silent fix.
+Checkpoint18/optimizer/RNG/data order/source/adapter/launcher/observer verified.
+
+Continuation d958cff4 used unchanged originalengine/config/model;restored latest18,
+ran19..29,first18history entries unchanged,best24,bad_epochs5. FinalAUC
+0.7811899718778572/F1 0.8240886674462352/accuracy0.747960372960373/
+BCE0.5173807926180807;delta original+0.0303864347664167. CPU replay difference
+1.19364e-8;240protected file hashes unchanged. Adam22states1134->1827;loader
+permutation stream andCPU/Python/NumPy RNG continuity exact. Total saved training
+327.943915s,continuation113.740098s,allocated254.856MiB/reserved368MiB. Shared
+safety passed,no peer signals,grant closed_completed. Old18archive/reports kept;
+new finalcheckpoint/features/rawarchive member hashes verified. Evidence:
+/workspace/LightSAKT2-architecture/reports/architecture_study/question_completion_20261029/FINAL_RESULT_20261029.md. Five current audit tests+two control tests PASS.
+
+Prepared10configs:reusecompleted LightSAKTseed42,4new LightSAKT seeds+5new
+featurematched SAKT. Control preserves originalsource,one same feature/logit scale,
+CPU init/dropout/gradient/exactresume passes. Model-specific selected settings
+retained;matchedinput does not mean identicalhyperparameters. Proposed9serial
+900s/4GiB windows=135GPU-min ceiling NOT APPROVED;no campaign launched. Need
+budget and guardedseed-general execution. Paired5seed deltas/mean/sampleSD,
+no general/online claim yet. Source/test/history/Git preserved,current memory
+consolidated with prior state archived. Local commits/bundles only.

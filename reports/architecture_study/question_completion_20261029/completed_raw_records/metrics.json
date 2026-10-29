@@ -1,0 +1,31 @@
+{
+  "run_id": "ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1",
+  "dataset": "ASSIST2009",
+  "model": "LightSAKTQuestion",
+  "seed": 42,
+  "group": "architecture_pilot",
+  "validation": {
+    "auc": 0.7811899718778572,
+    "auc_reason": null,
+    "accuracy": 0.747960372960373,
+    "f1": 0.8240886674462352,
+    "mse": 0.17176819937658255,
+    "bce": 0.5173807926180807,
+    "n_targets": 27456,
+    "precision": 0.7704629717653769,
+    "recall": 0.8857377049180328
+  },
+  "best_epoch": 24,
+  "epochs_trained": 29,
+  "training_seconds": 327.9439153869753,
+  "checkpoint": "/workspace/LightSAKT2-architecture/pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/best.pt",
+  "checkpoint_sha256": "8be7fb4a227d6c58b7be0691aeccf10ebec29db58674675cff99a417753bffeb",
+  "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+  "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+  "git_commit": "d958cff4dbbc411d499013cf02119a9ceeebb5b1",
+  "training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+  "parameters": 53858,
+  "peak_allocated_bytes": 267236352,
+  "peak_reserved_bytes": 385875968,
+  "test": null
+}

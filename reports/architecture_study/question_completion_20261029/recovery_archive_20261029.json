@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "archive": "/workspace/LightSAKT2/backups/question_completion_20261029/completed_checkpoints_features_records.tar.gz",
+  "archive_sha256": "aa10453655b0efd4521378e2c5bb6c217b1fec8f53788915f477872f67b8e665",
+  "size_bytes": 2774656,
+  "files_sha256": {
+    "pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/best.pt": "8be7fb4a227d6c58b7be0691aeccf10ebec29db58674675cff99a417753bffeb",
+    "pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/latest.pt": "451c3d001fa35d0e21d6c32fab70bc5e5c5149e83fa8e3ef1e12ef1c614e825d",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/config.json": "0b6d390a2125c1784c6c07c9bc498e1ce590c97f0b3e4f51e9bd5677346ef6d6",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/environment.json": "7ed2c7ac955163844c2ae4de12d3b865be4d0a2d9126eec2e2afbcb930e78215",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/status.json": "e11d7985c6a07121d81b94397284b511a5c9d94abe681ec87b89fb10246a27f5",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/history.json": "11d974269048e7ecdf3af19eb2d42175664c565f44f89cffb3d52af4fc02b5a9",
+    "pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/metrics.json": "47b4271641e52079fd6e97bd1ed7caa97a5d26de0e1cca19c70ad813ccbc3d11",
+    "pilot-workspace/data/auxiliary/ASSIST2009-question-difficulty.json": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464",
+    "experiments/architecture_study/pilot/configs/one_layer_question_difficulty.json": "78f925798bf0bd229eb3a42c080f3553684ce5e5cd6ffff501bea7e7e85e2c85",
+    "experiments/architecture_study/pilot/gpu_authorization_question_20261028.executed.json": "f862f4478f040bdbf8581abb8ce3019428d3a6ef618d754c4d932d0fde660d91",
+    "experiments/architecture_study/pilot/gpu_authorization_question_20261029.executed.json": "712b622b04660586b32da16eadbd6f28fd3b4d373091711d6f76472e90e344eb",
+    "reports/architecture_study/question_completion_20261029/completion_verification.json": "03abeaba3573de6c1ffaa0a6e6dfd85b7b1d40f258b220c14720244b1411b32c",
+    "reports/architecture_study/question_completion_20261029/state_continuity_verification.json": "7bfb787d71e4e40dea454ee963847e821ad1cfa7a16f52fbf30d9c30b5855bc5",
+    "reports/architecture_study/question_completion_20261029/leakage_and_resume_audit.json": "47631bd8c218c492d4a0a79434a2846828c2b4c544376464dfe0029c458edf22",
+    "reports/architecture_study/question_completion_20261029/before_resume_records/config.json": "0b6d390a2125c1784c6c07c9bc498e1ce590c97f0b3e4f51e9bd5677346ef6d6",
+    "reports/architecture_study/question_completion_20261029/before_resume_records/environment.json": "10b4b1f1ff55f8afeed3ef4636d447c0dfd0acc588f022cb23134bd3a22dfda8",
+    "reports/architecture_study/question_completion_20261029/before_resume_records/status.json": "d7696368c10c0e5a4e27640159adab3bcf6a0749f829895113a29901aae92b11",
+    "reports/architecture_study/question_completion_20261029/before_resume_records/history.json": "104c2ec163efb3a1e8ba4f86d70d123e04142319f9e3215742bb682c817e8c7d"
+  },
+  "old_epoch18_archive_preserved": "/workspace/LightSAKT2/backups/question_pilot_20261028/interrupted_epoch18_checkpoints_features_records.tar.gz"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "resumed_epochs": 11,
+  "batches_per_epoch": 63,
+  "optimizer_states_checked": 22,
+  "adam_step_before": 1134,
+  "adam_step_after": 1827,
+  "loader_rng_after_matches_exact_permutation_stream": true,
+  "epoch19_index_order_sha256": "2b0b05474cbf7d1a5c59d61f724f97fd0baf87689e6c7f52fe78b8cd1453ba3f",
+  "cpu_global_rng_after_matches_expected_draws": true,
+  "python_numpy_rng_states_preserved": true,
+  "cuda_rng": "Original saved state present/restored by unchanged engine; no additional CUDA work performed in this audit.",
+  "optimizer_updates_performed": 0,
+  "test_evaluation": false
+}

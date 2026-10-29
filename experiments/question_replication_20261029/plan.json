@@ -1,0 +1,203 @@
+{
+  "status": "PREPARED_NOT_AUTHORIZED_FOR_GPU",
+  "launches_jobs": false,
+  "dataset": "ASSIST2009",
+  "seeds": [
+    42,
+    123,
+    2026,
+    3407,
+    7777
+  ],
+  "comparison": "Paired validation AUC deltas against original model references, feature-matched LightSAKT versus SAKT, mean/sample SD across all five; never best seed.",
+  "protocol": "Offline student-disjoint full-training-corpus fitting; not forward-time performance.",
+  "feature_spec": {
+    "algorithm": "question-vs-skill-logit-loso-v1",
+    "smoothing": 10.0,
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "raw_sha256": "f22e3fb7872c1784ce93b0f9ebabbe0cbcac4f896fd8b4a11667b9715d77dbdc",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "feature_sha256": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464"
+  },
+  "feature_controls": "Exact same frozen feature values and one zero-initialized neural scale in both model families.",
+  "model_settings": "Each model retains its own previously selected hyperparameters. SAKT control lr0.0005/4heads/dropout0.2; LightSAKT lr0.001/2heads/dropout0.1. No new tuning; feature matched, not hyperparameter identical.",
+  "completed_seed42": {
+    "run_id": "ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1",
+    "validation_auc": 0.7811899718778572,
+    "checkpoint_sha256": "8be7fb4a227d6c58b7be0691aeccf10ebec29db58674675cff99a417753bffeb"
+  },
+  "configurations": [
+    {
+      "seed": 42,
+      "model": "LightSAKTQuestion",
+      "run_id": "ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1",
+      "configuration": "configs/LightSAKTQuestion-42.json",
+      "configuration_sha256": "78f925798bf0bd229eb3a42c080f3553684ce5e5cd6ffff501bea7e7e85e2c85",
+      "action": "reuse_verified_completed_seed42"
+    },
+    {
+      "seed": 42,
+      "model": "SAKTQuestion",
+      "run_id": "ASSIST2009-SAKTQuestion-featurematched-42-v1",
+      "configuration": "configs/SAKTQuestion-42.json",
+      "configuration_sha256": "21dc03eb6e56cfc6f0e37db942f511a4f81a6e2f016f477cb31361ca98552180",
+      "action": "pending_budget"
+    },
+    {
+      "seed": 123,
+      "model": "LightSAKTQuestion",
+      "run_id": "ASSIST2009-LightSAKTQuestion-replication-123-v1",
+      "configuration": "configs/LightSAKTQuestion-123.json",
+      "configuration_sha256": "08df02db082c2e2aec9d866c374952a7e0902dca3e1ab9c3aab3e2216332aff7",
+      "action": "pending_budget"
+    },
+    {
+      "seed": 123,
+      "model": "SAKTQuestion",
+      "run_id": "ASSIST2009-SAKTQuestion-featurematched-123-v1",
+      "configuration": "configs/SAKTQuestion-123.json",
+      "configuration_sha256": "45a2c126594e37031ab12fb6fd2030b42fb0c0410633c39cecc3606a1e92e4b6",
+      "action": "pending_budget"
+    },
+    {
+      "seed": 2026,
+      "model": "LightSAKTQuestion",
+      "run_id": "ASSIST2009-LightSAKTQuestion-replication-2026-v1",
+      "configuration": "configs/LightSAKTQuestion-2026.json",
+      "configuration_sha256": "4153f8043788be596f117028a3e8b79089e6a585fdd74ec84043609410de1baf",
+      "action": "pending_budget"
+    },
+    {
+      "seed": 2026,
+      "model": "SAKTQuestion",
+      "run_id": "ASSIST2009-SAKTQuestion-featurematched-2026-v1",
+      "configuration": "configs/SAKTQuestion-2026.json",
+      "configuration_sha256": "5c4615c5926c9ebf9b3ece991945f37d755c41b3099699367293fba0cd3b10a6",
+      "action": "pending_budget"
+    },
+    {
+      "seed": 3407,
+      "model": "LightSAKTQuestion",
+      "run_id": "ASSIST2009-LightSAKTQuestion-replication-3407-v1",
+      "configuration": "configs/LightSAKTQuestion-3407.json",
+      "configuration_sha256": "c0a9d0bd046eb0c680f1fe3fbd34f73e99d0e9afb2c6e503d5a32476bc089542",
+      "action": "pending_budget"
+    },
+    {
+      "seed": 3407,
+      "model": "SAKTQuestion",
+      "run_id": "ASSIST2009-SAKTQuestion-featurematched-3407-v1",
+      "configuration": "configs/SAKTQuestion-3407.json",
+      "configuration_sha256": "eed1243e224cabb4d4a9f11c7dd2124d2857a1e253f06146ed0e10bedca167de",
+      "action": "pending_budget"
+    },
+    {
+      "seed": 7777,
+      "model": "LightSAKTQuestion",
+      "run_id": "ASSIST2009-LightSAKTQuestion-replication-7777-v1",
+      "configuration": "configs/LightSAKTQuestion-7777.json",
+      "configuration_sha256": "77bd84d25a6120a09ab2e0d1875345b03382024f0f09226e1be5ae0113335540",
+      "action": "pending_budget"
+    },
+    {
+      "seed": 7777,
+      "model": "SAKTQuestion",
+      "run_id": "ASSIST2009-SAKTQuestion-featurematched-7777-v1",
+      "configuration": "configs/SAKTQuestion-7777.json",
+      "configuration_sha256": "f60ae5abe751af947fc40b2c3b7215b586ad58cdd92ebb656d427dc981a05418",
+      "action": "pending_budget"
+    }
+  ],
+  "baseline_references": [
+    {
+      "seed": 42,
+      "model": "LightSAKT",
+      "metrics": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-42/metrics.json",
+      "metrics_sha256": "644f89aa8b75b2a61075b978e244a742613e4a6cb5c35ce25d736a210c743b67",
+      "validation_auc": 0.7508035371114405
+    },
+    {
+      "seed": 42,
+      "model": "SAKT",
+      "metrics": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-42/metrics.json",
+      "metrics_sha256": "5e85951d783e55db838933c699f3f06804d7a6132044448dad4686a52e78cde9",
+      "validation_auc": 0.749442606239869
+    },
+    {
+      "seed": 123,
+      "model": "LightSAKT",
+      "metrics": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-123/metrics.json",
+      "metrics_sha256": "c20823077d7f5c6f69cf57a14cea58a2e098ddc58c92d87576771e5ecb6a9b0c",
+      "validation_auc": 0.7497947328277077
+    },
+    {
+      "seed": 123,
+      "model": "SAKT",
+      "metrics": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-123/metrics.json",
+      "metrics_sha256": "aea55f285b39c022c2446c8645876216a7e21215c53f7fff7370e16d1808e8cd",
+      "validation_auc": 0.748615381355831
+    },
+    {
+      "seed": 2026,
+      "model": "LightSAKT",
+      "metrics": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-2026/metrics.json",
+      "metrics_sha256": "6fb90bb752279e078dfc17505d0a5eeea57a00d25843e44b7ac8c03676b12b2d",
+      "validation_auc": 0.7496313952211456
+    },
+    {
+      "seed": 2026,
+      "model": "SAKT",
+      "metrics": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-2026/metrics.json",
+      "metrics_sha256": "9811ef2d76acdc3491141755a3cff9b3f78d3f57ba6803948e533e8d4b0e1eed",
+      "validation_auc": 0.7476643909932751
+    },
+    {
+      "seed": 3407,
+      "model": "LightSAKT",
+      "metrics": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-3407/metrics.json",
+      "metrics_sha256": "23b3e8075b85f0ea6ffa8d0fcc7034bbdc907f3c8b185a11e6049ef1e54dd1f7",
+      "validation_auc": 0.7467666578337355
+    },
+    {
+      "seed": 3407,
+      "model": "SAKT",
+      "metrics": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-3407/metrics.json",
+      "metrics_sha256": "e17b2e13d03ce12effb32c12dfc69f51e5e4a2f5a12bbe1700fff813c60a6073",
+      "validation_auc": 0.7481073893436654
+    },
+    {
+      "seed": 7777,
+      "model": "LightSAKT",
+      "metrics": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-7777/metrics.json",
+      "metrics_sha256": "41a46e54ac59b91ebb7be07d22f91e927979fba325514c310c2b0c364e59ec9c",
+      "validation_auc": 0.7502722034820846
+    },
+    {
+      "seed": 7777,
+      "model": "SAKT",
+      "metrics": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-7777/metrics.json",
+      "metrics_sha256": "f00772e5b592df02e687d70df50acd3664c35c1ba073658c13b82cad0a183d1a",
+      "validation_auc": 0.7475889291145346
+    }
+  ],
+  "new_runs": 9,
+  "new_light_runs": 4,
+  "new_sakt_controls": 5,
+  "proposed_resource_budget_not_approved": {
+    "concurrency": 1,
+    "gpu_allocator_cap_bytes": 4294967296,
+    "maximum_seconds_per_run_invocation": 900,
+    "maximum_new_invocations": 9,
+    "maximum_total_gpu_seconds": 8100,
+    "maximum_total_gpu_minutes": 135,
+    "stop_on_resource_breach": true,
+    "automatic_extra_windows_or_retries": false
+  },
+  "execution_conditions": "Requires separate explicit campaign resource authorization and a budget-enforcing seed-general launcher. Current pilot launcher is deliberately seed42-only. No launch entrypoint in this preparation script.",
+  "control_implementation": "scripts/feature_matched_sakt.py (CPU-validated only; use feature_matched_control context inside record_metrics). Bound implementation digest in each control config.",
+  "test_policy": "All evaluate_test=false; no test features, loader, metrics or predictions permitted in campaign.",
+  "other_datasets": "Algebra2005 needs verified question/step semantics. ASSIST2015 current release lacks separate problem IDs; no silent transplant or dataset change.",
+  "frozen_training_source_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+  "dataset_adapter_sha256": "1ba5fb56204793e970e1c970c4e2d3feb249f4a989631b07e64a7b32828ccf8a",
+  "control_implementation_sha256": "8a03ccb39787d35feb284464d3269cd6c84c3a66293bac4ea039e8c446d62db9"
+}

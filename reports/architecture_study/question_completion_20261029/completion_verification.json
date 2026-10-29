@@ -1,0 +1,41 @@
+{
+  "status": "PASS_COMPLETED_CONTINUATION",
+  "epochs_completed": 29,
+  "resumed_at_epoch": 19,
+  "preserved_history_prefix_epochs": 18,
+  "first_18_rows_exactly_preserved": true,
+  "selected_epoch": 24,
+  "stopping_state": {
+    "bad_epochs": 5,
+    "max_epochs": 50,
+    "patience": 5
+  },
+  "validation_replay": {
+    "auc": 0.7811899599414639,
+    "auc_reason": null,
+    "accuracy": 0.747960372960373,
+    "f1": 0.8240886674462352,
+    "mse": 0.1717681993397717,
+    "bce": 0.5173807927057149,
+    "n_targets": 27456,
+    "precision": 0.7704629717653769,
+    "recall": 0.8857377049180328
+  },
+  "absolute_differences": {
+    "auc": 1.193639331820151e-08,
+    "f1": 0.0,
+    "accuracy": 0.0,
+    "bce": 8.763423320345964e-11,
+    "precision": 0.0,
+    "recall": 0.0
+  },
+  "best_checkpoint_sha256": "8be7fb4a227d6c58b7be0691aeccf10ebec29db58674675cff99a417753bffeb",
+  "latest_checkpoint_sha256": "451c3d001fa35d0e21d6c32fab70bc5e5c5149e83fa8e3ef1e12ef1c614e825d",
+  "training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+  "learned_difficulty_scale": 0.9292909502983093,
+  "resume_observer_identity_unchanged": true,
+  "protected_file_hashes_unchanged": 240,
+  "test_evaluation": false,
+  "optimizer_updates_during_verification": 0,
+  "scope": "Offline student-disjoint evaluation with fitted full-training statistics; not forward-time deployment proof."
+}
