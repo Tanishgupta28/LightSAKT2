@@ -1,0 +1,2872 @@
+[
+  {
+    "dataset": "ASSIST2009",
+    "model": "SAKT",
+    "seed": 42,
+    "run_id": "ASSIST2009-SAKT-final-42",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2009-SAKT-baseline_tuning-42-bc0a2a560ce1/best.pt",
+    "checkpoint_sha256": "6fce0569bc2405231c11ae8ab6da3ab20d9b57d731e4d5f8448b172295ac7378",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "group": "final",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 100,
+        "d": 64,
+        "num_attn_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-SAKT-final-42",
+      "selection_path": "experiments/selections/ASSIST2009-SAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-42/config.json",
+    "config_sha256": "2d453f1bdffeb297b2872cfc0cc37163828b25c7686e63205765a3f2e91f0c4f",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-42/metrics.json",
+    "recorded_metrics_sha256": "5e85951d783e55db838933c699f3f06804d7a6132044448dad4686a52e78cde9",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "68de5d880dca0d04d3f988b14f4ab2b36b04335d",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 1.1102230246251565e-16,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 2.9301009396576205e-09
+      },
+      "test": {
+        "auc": 2.051446790218847e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 9.533326350563698e-10
+      }
+    }
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "SAKT",
+    "seed": 123,
+    "run_id": "ASSIST2009-SAKT-final-123",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2009-SAKT-final-123/best.pt",
+    "checkpoint_sha256": "ea39a8abee23664de0bc5dfbdffbf830dcf776f1b10cba2626c819371c6e1f3b",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "group": "final",
+      "seed": 123,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 100,
+        "d": 64,
+        "num_attn_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-SAKT-final-123",
+      "selection_path": "experiments/selections/ASSIST2009-SAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-123/config.json",
+    "config_sha256": "af750bc448717b2c04710444f00167e8850bb46ecabde6c94a6e46c80cc93c6a",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-123/metrics.json",
+    "recorded_metrics_sha256": "aea55f285b39c022c2446c8645876216a7e21215c53f7fff7370e16d1808e8cd",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "9cc756465896ba066557da49b20483cee95adb10",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 5.968196714611906e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 8.608297408230214e-10
+      },
+      "test": {
+        "auc": 6.154340592701146e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 6.238451977225168e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-123/environment.json",
+      "sha256": "6bd3fc1f229e0a4241264cc521a7c07565d3a9ded85e186b6ccb6c8efb2bebe2"
+    }
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "SAKT",
+    "seed": 2026,
+    "run_id": "ASSIST2009-SAKT-final-2026",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2009-SAKT-final-2026/best.pt",
+    "checkpoint_sha256": "1e29e9c23b0a674a55cdc13ba9fe35a943bd3915254b4a6d6cfd4423c030bd9d",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "group": "final",
+      "seed": 2026,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 100,
+        "d": 64,
+        "num_attn_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-SAKT-final-2026",
+      "selection_path": "experiments/selections/ASSIST2009-SAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-2026/config.json",
+    "config_sha256": "bf803994aad1b1b61b5ba921dbea8596ada6c21989983b9bf90ad010c725b28e",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-2026/metrics.json",
+    "recorded_metrics_sha256": "9811ef2d76acdc3491141755a3cff9b3f78d3f57ba6803948e533e8d4b0e1eed",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "9cc756465896ba066557da49b20483cee95adb10",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 2.984098335101493e-08,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.9546612106680072e-09
+      },
+      "test": {
+        "auc": 3.077170296350573e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 4.800336794730242e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-2026/environment.json",
+      "sha256": "6bd3fc1f229e0a4241264cc521a7c07565d3a9ded85e186b6ccb6c8efb2bebe2"
+    }
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "SAKT",
+    "seed": 3407,
+    "run_id": "ASSIST2009-SAKT-final-3407",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2009-SAKT-final-3407/best.pt",
+    "checkpoint_sha256": "23d1f0c9acd2c0b1c330ca2e0e94da08999e22f54b6a6e451f9b7b0c7009306c",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "group": "final",
+      "seed": 3407,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 100,
+        "d": 64,
+        "num_attn_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-SAKT-final-3407",
+      "selection_path": "experiments/selections/ASSIST2009-SAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-3407/config.json",
+    "config_sha256": "0a34b1e45ab5e27c74f68a8666ec4d774128e71126bee2f218384d061e70a8b1",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-3407/metrics.json",
+    "recorded_metrics_sha256": "e17b2e13d03ce12effb32c12dfc69f51e5e4a2f5a12bbe1700fff813c60a6073",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "a7af9f463fc969df4aa5d9527ffa204c6b71a338",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 5.968196714611906e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.4291559047308056e-09
+      },
+      "test": {
+        "auc": 4.102893802482299e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 6.356434267829059e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-3407/environment.json",
+      "sha256": "7e3c672af7ea0340c761a629cd80dccae1153387649491da20d7074bc5e52814"
+    }
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "SAKT",
+    "seed": 7777,
+    "run_id": "ASSIST2009-SAKT-final-7777",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2009-SAKT-final-7777/best.pt",
+    "checkpoint_sha256": "5fa4d9ac3257b8f748e192783ef87b908f294dd2a90ecde5f633d260bcade13e",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "group": "final",
+      "seed": 7777,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 100,
+        "d": 64,
+        "num_attn_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-SAKT-final-7777",
+      "selection_path": "experiments/selections/ASSIST2009-SAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-7777/config.json",
+    "config_sha256": "d44cc287e2cb08172573ae5e120f2029097670b94427a3628cc9adc32fd0f98f",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-7777/metrics.json",
+    "recorded_metrics_sha256": "f00772e5b592df02e687d70df50acd3664c35c1ba073658c13b82cad0a183d1a",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "a7af9f463fc969df4aa5d9527ffa204c6b71a338",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 1.7904589921791114e-08,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 4.276970444472283e-09
+      },
+      "test": {
+        "auc": 2.0514469012411496e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 3.463749509435843e-09
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/ASSIST2009-SAKT-final-7777/environment.json",
+      "sha256": "7e3c672af7ea0340c761a629cd80dccae1153387649491da20d7074bc5e52814"
+    }
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT",
+    "seed": 42,
+    "run_id": "ASSIST2009-LightSAKT-final-42",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2009-LightSAKT-grid-42-f08e9494d270/best.pt",
+    "checkpoint_sha256": "d0af3a20f40cf3734883634c23053dbfbf187dee9e7a556c85fcb27b4841197d",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "group": "final",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 64,
+        "num_heads": 2,
+        "dropout": 0.1
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-LightSAKT-final-42",
+      "selection_path": "experiments/selections/ASSIST2009-LightSAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-42/config.json",
+    "config_sha256": "6c2b293c2c3735e06e30f9dc6ddebc4c126d04d84d7360f63e6f9b796227b427",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-42/metrics.json",
+    "recorded_metrics_sha256": "644f89aa8b75b2a61075b978e244a742613e4a6cb5c35ce25d736a210c743b67",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "2420e8e85bf8bd101fd0866a8f83a10b2818a65d",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 1.4920491619996312e-08,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 4.667599640129083e-12
+      },
+      "test": {
+        "auc": 2.6668809605112642e-08,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 2.49714915412369e-10
+      }
+    }
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT",
+    "seed": 123,
+    "run_id": "ASSIST2009-LightSAKT-final-123",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2009-LightSAKT-final-123/best.pt",
+    "checkpoint_sha256": "aef075f40bf25d3f59fb8b65930c6f361c80adb72920809d09b5c60a0e1b97a9",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "group": "final",
+      "seed": 123,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 64,
+        "num_heads": 2,
+        "dropout": 0.1
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-LightSAKT-final-123",
+      "selection_path": "experiments/selections/ASSIST2009-LightSAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-123/config.json",
+    "config_sha256": "3e434f3b558502b8a677878e9b5ae7ca2b457aab0456df4da5061cdf4225ac18",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-123/metrics.json",
+    "recorded_metrics_sha256": "c20823077d7f5c6f69cf57a14cea58a2e098ddc58c92d87576771e5ecb6a9b0c",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "1d97d8eb780579a6cf038f8c0329e81dc0e16e03",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 1.7904590032813417e-08,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.5150520837892145e-09
+      },
+      "test": {
+        "auc": 3.077170296350573e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 4.910163386995237e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-123/environment.json",
+      "sha256": "0b765d5942e9c5eaac180a2778b41f478500f56525076506b74dd95033806393"
+    }
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT",
+    "seed": 2026,
+    "run_id": "ASSIST2009-LightSAKT-final-2026",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2009-LightSAKT-final-2026/best.pt",
+    "checkpoint_sha256": "2a8f9d128b5f019f7da897d6faefef988dcd5790087cd3f14ba1fb194b58cae8",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "group": "final",
+      "seed": 2026,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 64,
+        "num_heads": 2,
+        "dropout": 0.1
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-LightSAKT-final-2026",
+      "selection_path": "experiments/selections/ASSIST2009-LightSAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-2026/config.json",
+    "config_sha256": "11f6bd95da7bb6ce72a17f011365f19a3ccbfbe5c97e8af07300e915ae556a27",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-2026/metrics.json",
+    "recorded_metrics_sha256": "6fb90bb752279e078dfc17505d0a5eeea57a00d25843e44b7ac8c03676b12b2d",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "8bd870e5774c2b83442ae95856eac05dabb110e8",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 1.4920491619996312e-08,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 6.045516309782784e-10
+      },
+      "test": {
+        "auc": 8.205787604964598e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 8.140793594790807e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-2026/environment.json",
+      "sha256": "a588a641c02df32ec76ac6f030d5f594125de10c6f001ad5438fbb46cf636266"
+    }
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT",
+    "seed": 3407,
+    "run_id": "ASSIST2009-LightSAKT-final-3407",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2009-LightSAKT-final-3407/best.pt",
+    "checkpoint_sha256": "d306739251bd3471081b2d5703e218456696ffd3cbc3cf10668a227070a783ef",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "group": "final",
+      "seed": 3407,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 64,
+        "num_heads": 2,
+        "dropout": 0.1
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-LightSAKT-final-3407",
+      "selection_path": "experiments/selections/ASSIST2009-LightSAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-3407/config.json",
+    "config_sha256": "14db619d861f0f7a1cb5859a79c5924979a6d640c9b00518f216f07c356bc68a",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-3407/metrics.json",
+    "recorded_metrics_sha256": "23b3e8075b85f0ea6ffa8d0fcc7034bbdc907f3c8b185a11e6049ef1e54dd1f7",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "8bd870e5774c2b83442ae95856eac05dabb110e8",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 2.984098301794802e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 8.745030255496999e-10
+      },
+      "test": {
+        "auc": 1.025723506131726e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 5.930065327675038e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-3407/environment.json",
+      "sha256": "a588a641c02df32ec76ac6f030d5f594125de10c6f001ad5438fbb46cf636266"
+    }
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT",
+    "seed": 7777,
+    "run_id": "ASSIST2009-LightSAKT-final-7777",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2009-LightSAKT-final-7777/best.pt",
+    "checkpoint_sha256": "4bdf2c3fde63c4e885c1c400fde2af7f88fd6e4ed2151d3c1bdedce2166162d8",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "group": "final",
+      "seed": 7777,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 64,
+        "num_heads": 2,
+        "dropout": 0.1
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2009-LightSAKT-final-7777",
+      "selection_path": "experiments/selections/ASSIST2009-LightSAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-7777/config.json",
+    "config_sha256": "ebb46b19eecb50e7c61f88a13306e30e4da836c64c4a88ff5662cdcf7acfbc2e",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-7777/metrics.json",
+    "recorded_metrics_sha256": "41a46e54ac59b91ebb7be07d22f91e927979fba325514c310c2b0c364e59ec9c",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "2ae4fae1508b68bf9052255543ca97b64136c655",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 8.952294905384406e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 5.339163555717619e-10
+      },
+      "test": {
+        "auc": 6.154340592701146e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.0661693750080303e-11
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/ASSIST2009-LightSAKT-final-7777/environment.json",
+      "sha256": "81a60609d139dd5b3c779ad42eab52750b9ae802292ac4b85aca3b85eccad6fa"
+    }
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT+Difficulty",
+    "seed": 42,
+    "run_id": "ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1",
+    "checkpoint": "/workspace/LightSAKT2-architecture/pilot-workspace/checkpoints/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/best.pt",
+    "checkpoint_sha256": "8be7fb4a227d6c58b7be0691aeccf10ebec29db58674675cff99a417753bffeb",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKTQuestion",
+      "group": "architecture_pilot",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 64,
+        "num_heads": 2,
+        "dropout": 0.1
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1",
+      "device": "cuda",
+      "pilot": {
+        "arm": "one_layer_question_difficulty",
+        "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+        "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+        "baseline_reference": "ASSIST2009-LightSAKT-final-42"
+      },
+      "question_difficulty": {
+        "algorithm": "question-vs-skill-logit-loso-v1",
+        "smoothing": 10.0,
+        "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+        "raw_sha256": "f22e3fb7872c1784ce93b0f9ebabbe0cbcac4f896fd8b4a11667b9715d77dbdc",
+        "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+        "feature_sha256": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464"
+      }
+    },
+    "config_file": "/workspace/LightSAKT2-architecture/pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/config.json",
+    "config_sha256": "0b6d390a2125c1784c6c07c9bc498e1ce590c97f0b3e4f51e9bd5677346ef6d6",
+    "recorded_metrics_path": "/workspace/LightSAKT2-architecture/pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/metrics.json",
+    "recorded_metrics_sha256": "47b4271641e52079fd6e97bd1ed7caa97a5d26de0e1cca19c70ad813ccbc3d11",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "d958cff4dbbc411d499013cf02119a9ceeebb5b1",
+    "recorded_training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 1.193639331820151e-08,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 8.763423320345964e-11
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2-architecture/pilot-workspace/results/raw/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/environment.json",
+      "sha256": "7ed2c7ac955163844c2ae4de12d3b865be4d0a2d9126eec2e2afbcb930e78215"
+    },
+    "feature_specification": {
+      "algorithm": "question-vs-skill-logit-loso-v1",
+      "smoothing": 10.0,
+      "dataset": "ASSIST2009",
+      "question_identity": "problem_id",
+      "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "raw_sha256": "f22e3fb7872c1784ce93b0f9ebabbe0cbcac4f896fd8b4a11667b9715d77dbdc",
+      "train_validation_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/data/auxiliary/ASSIST2009-train_validation.json",
+      "train_validation_feature_sha256": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464",
+      "test_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/data/auxiliary/ASSIST2009-test.json",
+      "test_feature_sha256": "c3844c6590c2e07304842529a4ebdd8f0150bdfe00124c7a9f41fdb58de2106c",
+      "numerical_feature_variation": {
+        "test": {
+          "rows": 47777,
+          "std": 0.5201196545911776,
+          "nonzero_fraction": 0.993134771961404
+        },
+        "train": {
+          "rows": 198942,
+          "std": 0.5272912710514488,
+          "nonzero_fraction": 0.9908164188557469
+        },
+        "validation": {
+          "rows": 27871,
+          "std": 0.5333620052774174,
+          "nonzero_fraction": 0.992788202791432
+        }
+      }
+    },
+    "frozen_campaign_plan_sha256": "df4570438c8a7899268928cc13a8e0cd50419aaf0ca93a8864c8e6860f7e24be",
+    "prediction_artifacts": {
+      "validation": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/ASSIST2009-LightSAKT+Difficulty-42-validation.npz",
+        "sha256": "2b5382d8160e97844d6fa7f82a41c0fd29ff52772ff94f7958116d139e9332fb"
+      },
+      "test": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/ASSIST2009-LightSAKT+Difficulty-42-test.npz",
+        "sha256": "54f799b680dc5177acbefddc17b8857b0728d1866230fdaee4c7eeee3a89c6c3"
+      }
+    }
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT+Difficulty",
+    "seed": 123,
+    "run_id": "ASSIST2009-LightSAKTQuestion-replication-123-v1",
+    "checkpoint": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/checkpoints/ASSIST2009-LightSAKTQuestion-replication-123-v1/best.pt",
+    "checkpoint_sha256": "ee6d735d1907a9b7157a11a3c1266a0cfeba3ae49a35f3afd94dc2b272595a8a",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKTQuestion",
+      "group": "question_replication",
+      "seed": 123,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 64,
+        "num_heads": 2,
+        "dropout": 0.1
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-LightSAKTQuestion-replication-123-v1",
+      "device": "cuda",
+      "feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/data/auxiliary/ASSIST2009-train_validation.json",
+      "question_difficulty": {
+        "algorithm": "question-vs-skill-logit-loso-v1",
+        "smoothing": 10.0,
+        "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+        "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+        "raw_sha256": "f22e3fb7872c1784ce93b0f9ebabbe0cbcac4f896fd8b4a11667b9715d77dbdc",
+        "feature_sha256": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464"
+      },
+      "question_identity": "problem_id"
+    },
+    "config_file": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/results/raw/ASSIST2009-LightSAKTQuestion-replication-123-v1/config.json",
+    "config_sha256": "e88d340fc1a0a26de526ccfe2efc62170050fc1e277df3092061e122c857d14d",
+    "recorded_metrics_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/results/raw/ASSIST2009-LightSAKTQuestion-replication-123-v1/metrics.json",
+    "recorded_metrics_sha256": "edb7712b3beafb48cee4a3f3c64c83c37e4b4eca7ff552c68ac723c663accd96",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "a37b17ed83c9920c4c7a256625f241588c72124f",
+    "recorded_training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 5.968196603589604e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 5.741296327244072e-12
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/results/raw/ASSIST2009-LightSAKTQuestion-replication-123-v1/environment.json",
+      "sha256": "e32b56248151158982c38ed6b8789b95706f0e7db88b67ed5b37258cfa7169f6"
+    },
+    "feature_specification": {
+      "algorithm": "question-vs-skill-logit-loso-v1",
+      "smoothing": 10.0,
+      "dataset": "ASSIST2009",
+      "question_identity": "problem_id",
+      "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "raw_sha256": "f22e3fb7872c1784ce93b0f9ebabbe0cbcac4f896fd8b4a11667b9715d77dbdc",
+      "train_validation_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/data/auxiliary/ASSIST2009-train_validation.json",
+      "train_validation_feature_sha256": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464",
+      "test_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/data/auxiliary/ASSIST2009-test.json",
+      "test_feature_sha256": "c3844c6590c2e07304842529a4ebdd8f0150bdfe00124c7a9f41fdb58de2106c",
+      "numerical_feature_variation": {
+        "test": {
+          "rows": 47777,
+          "std": 0.5201196545911776,
+          "nonzero_fraction": 0.993134771961404
+        },
+        "train": {
+          "rows": 198942,
+          "std": 0.5272912710514488,
+          "nonzero_fraction": 0.9908164188557469
+        },
+        "validation": {
+          "rows": 27871,
+          "std": 0.5333620052774174,
+          "nonzero_fraction": 0.992788202791432
+        }
+      }
+    },
+    "frozen_campaign_plan_sha256": "df4570438c8a7899268928cc13a8e0cd50419aaf0ca93a8864c8e6860f7e24be",
+    "prediction_artifacts": {
+      "validation": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/ASSIST2009-LightSAKT+Difficulty-123-validation.npz",
+        "sha256": "86ee1860c9d4ed40d6b184a9e1af7afd478630f80a3813a889e815d729e60638"
+      },
+      "test": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/ASSIST2009-LightSAKT+Difficulty-123-test.npz",
+        "sha256": "d31eb21ec21da44df52b7f6264eba00994d36c19331b7cd270b7f6a24869ee1b"
+      }
+    }
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT+Difficulty",
+    "seed": 2026,
+    "run_id": "ASSIST2009-LightSAKTQuestion-replication-2026-v1",
+    "checkpoint": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/checkpoints/ASSIST2009-LightSAKTQuestion-replication-2026-v1/best.pt",
+    "checkpoint_sha256": "3b9c11339cb506d3b280c40c2eb7c0e62659fff07d77e68fe2c2e97198b20568",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKTQuestion",
+      "group": "question_replication",
+      "seed": 2026,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 64,
+        "num_heads": 2,
+        "dropout": 0.1
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-LightSAKTQuestion-replication-2026-v1",
+      "device": "cuda",
+      "feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/data/auxiliary/ASSIST2009-train_validation.json",
+      "question_difficulty": {
+        "algorithm": "question-vs-skill-logit-loso-v1",
+        "smoothing": 10.0,
+        "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+        "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+        "raw_sha256": "f22e3fb7872c1784ce93b0f9ebabbe0cbcac4f896fd8b4a11667b9715d77dbdc",
+        "feature_sha256": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464"
+      },
+      "question_identity": "problem_id"
+    },
+    "config_file": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/results/raw/ASSIST2009-LightSAKTQuestion-replication-2026-v1/config.json",
+    "config_sha256": "bd878edc58884ca801bd39ddaa7a62c4c2217598a3f8b372173db35fc7a2876b",
+    "recorded_metrics_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/results/raw/ASSIST2009-LightSAKTQuestion-replication-2026-v1/metrics.json",
+    "recorded_metrics_sha256": "f33eab3da5693f29ff203ce22ad8c462ace5b7c02a7da4793e73dfec31ddbe7a",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "a37b17ed83c9920c4c7a256625f241588c72124f",
+    "recorded_training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 2.984098301794802e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 4.406911502385924e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/results/raw/ASSIST2009-LightSAKTQuestion-replication-2026-v1/environment.json",
+      "sha256": "514a72e243a6a821b1fd2ed57ffddb799375d37165cbdb2f315886b2c4a4b2d4"
+    },
+    "feature_specification": {
+      "algorithm": "question-vs-skill-logit-loso-v1",
+      "smoothing": 10.0,
+      "dataset": "ASSIST2009",
+      "question_identity": "problem_id",
+      "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "raw_sha256": "f22e3fb7872c1784ce93b0f9ebabbe0cbcac4f896fd8b4a11667b9715d77dbdc",
+      "train_validation_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/data/auxiliary/ASSIST2009-train_validation.json",
+      "train_validation_feature_sha256": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464",
+      "test_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/data/auxiliary/ASSIST2009-test.json",
+      "test_feature_sha256": "c3844c6590c2e07304842529a4ebdd8f0150bdfe00124c7a9f41fdb58de2106c",
+      "numerical_feature_variation": {
+        "test": {
+          "rows": 47777,
+          "std": 0.5201196545911776,
+          "nonzero_fraction": 0.993134771961404
+        },
+        "train": {
+          "rows": 198942,
+          "std": 0.5272912710514488,
+          "nonzero_fraction": 0.9908164188557469
+        },
+        "validation": {
+          "rows": 27871,
+          "std": 0.5333620052774174,
+          "nonzero_fraction": 0.992788202791432
+        }
+      }
+    },
+    "frozen_campaign_plan_sha256": "df4570438c8a7899268928cc13a8e0cd50419aaf0ca93a8864c8e6860f7e24be",
+    "prediction_artifacts": {
+      "validation": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/ASSIST2009-LightSAKT+Difficulty-2026-validation.npz",
+        "sha256": "17d51cc6824804772690ee231b57256230a80769d57fb425d5a94ee3c723ad52"
+      },
+      "test": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/ASSIST2009-LightSAKT+Difficulty-2026-test.npz",
+        "sha256": "3232fcd22ddca770570796779409e4e46002d2e1bc64b4bb8c6815b552db0b51"
+      }
+    }
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT+Difficulty",
+    "seed": 3407,
+    "run_id": "ASSIST2009-LightSAKTQuestion-replication-3407-v1",
+    "checkpoint": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/checkpoints/ASSIST2009-LightSAKTQuestion-replication-3407-v1/best.pt",
+    "checkpoint_sha256": "3b9aeb4da174c8a6274ad837ea28b2896428da0f2d1b47ded2ca041a95146581",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKTQuestion",
+      "group": "question_replication",
+      "seed": 3407,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 64,
+        "num_heads": 2,
+        "dropout": 0.1
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-LightSAKTQuestion-replication-3407-v1",
+      "device": "cuda",
+      "feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/data/auxiliary/ASSIST2009-train_validation.json",
+      "question_difficulty": {
+        "algorithm": "question-vs-skill-logit-loso-v1",
+        "smoothing": 10.0,
+        "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+        "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+        "raw_sha256": "f22e3fb7872c1784ce93b0f9ebabbe0cbcac4f896fd8b4a11667b9715d77dbdc",
+        "feature_sha256": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464"
+      },
+      "question_identity": "problem_id"
+    },
+    "config_file": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/results/raw/ASSIST2009-LightSAKTQuestion-replication-3407-v1/config.json",
+    "config_sha256": "b070525615802ab4dc612699cbdf198bef867a7da1b7e5e11f213f21f9844b11",
+    "recorded_metrics_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/results/raw/ASSIST2009-LightSAKTQuestion-replication-3407-v1/metrics.json",
+    "recorded_metrics_sha256": "dc4e8554c9f0eccbaa33863da9565f484d5dfa44b76601c6959d8948efca5a49",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "a37b17ed83c9920c4c7a256625f241588c72124f",
+    "recorded_training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 5.968196825634209e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.0470069256030001e-11
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/results/raw/ASSIST2009-LightSAKTQuestion-replication-3407-v1/environment.json",
+      "sha256": "522d875c893616d63d264563732ebba34daf685b38e49875adf002fe7645542d"
+    },
+    "feature_specification": {
+      "algorithm": "question-vs-skill-logit-loso-v1",
+      "smoothing": 10.0,
+      "dataset": "ASSIST2009",
+      "question_identity": "problem_id",
+      "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "raw_sha256": "f22e3fb7872c1784ce93b0f9ebabbe0cbcac4f896fd8b4a11667b9715d77dbdc",
+      "train_validation_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/data/auxiliary/ASSIST2009-train_validation.json",
+      "train_validation_feature_sha256": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464",
+      "test_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/data/auxiliary/ASSIST2009-test.json",
+      "test_feature_sha256": "c3844c6590c2e07304842529a4ebdd8f0150bdfe00124c7a9f41fdb58de2106c",
+      "numerical_feature_variation": {
+        "test": {
+          "rows": 47777,
+          "std": 0.5201196545911776,
+          "nonzero_fraction": 0.993134771961404
+        },
+        "train": {
+          "rows": 198942,
+          "std": 0.5272912710514488,
+          "nonzero_fraction": 0.9908164188557469
+        },
+        "validation": {
+          "rows": 27871,
+          "std": 0.5333620052774174,
+          "nonzero_fraction": 0.992788202791432
+        }
+      }
+    },
+    "frozen_campaign_plan_sha256": "df4570438c8a7899268928cc13a8e0cd50419aaf0ca93a8864c8e6860f7e24be",
+    "prediction_artifacts": {
+      "validation": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/ASSIST2009-LightSAKT+Difficulty-3407-validation.npz",
+        "sha256": "4cd7876d229f77fd5601351c349a9a30594ca9644f7489e08455041bd3431eab"
+      },
+      "test": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/ASSIST2009-LightSAKT+Difficulty-3407-test.npz",
+        "sha256": "38d85856c027e70441d053e03922592cb3459edaab427520376f0775da2795f6"
+      }
+    }
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT+Difficulty",
+    "seed": 7777,
+    "run_id": "ASSIST2009-LightSAKTQuestion-replication-7777-v1",
+    "checkpoint": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/checkpoints/ASSIST2009-LightSAKTQuestion-replication-7777-v1/best.pt",
+    "checkpoint_sha256": "0d7ec9dabc6b0b2306f3f7bf2047844fe5703cb752e98569c133703270afcdc8",
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKTQuestion",
+      "group": "question_replication",
+      "seed": 7777,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 64,
+        "num_heads": 2,
+        "dropout": 0.1
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-LightSAKTQuestion-replication-7777-v1",
+      "device": "cuda",
+      "feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/data/auxiliary/ASSIST2009-train_validation.json",
+      "question_difficulty": {
+        "algorithm": "question-vs-skill-logit-loso-v1",
+        "smoothing": 10.0,
+        "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+        "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+        "raw_sha256": "f22e3fb7872c1784ce93b0f9ebabbe0cbcac4f896fd8b4a11667b9715d77dbdc",
+        "feature_sha256": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464"
+      },
+      "question_identity": "problem_id"
+    },
+    "config_file": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/results/raw/ASSIST2009-LightSAKTQuestion-replication-7777-v1/config.json",
+    "config_sha256": "a2476c76ae0bb81a68c9160eb96d6e907e43e2b554ad7f814e38fc816bb38dc1",
+    "recorded_metrics_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/results/raw/ASSIST2009-LightSAKTQuestion-replication-7777-v1/metrics.json",
+    "recorded_metrics_sha256": "a2e8dccc593d620beb39386846531f82991778f8915b292c5d202947b2b57c0a",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "a37b17ed83c9920c4c7a256625f241588c72124f",
+    "recorded_training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 8.952294905384406e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.1720533432679758e-09
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/results/raw/ASSIST2009-LightSAKTQuestion-replication-7777-v1/environment.json",
+      "sha256": "edc42342990a209ccb6a375c728373f668dc07ab4fdb646c0cf6a037d5dad3a0"
+    },
+    "feature_specification": {
+      "algorithm": "question-vs-skill-logit-loso-v1",
+      "smoothing": 10.0,
+      "dataset": "ASSIST2009",
+      "question_identity": "problem_id",
+      "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "raw_sha256": "f22e3fb7872c1784ce93b0f9ebabbe0cbcac4f896fd8b4a11667b9715d77dbdc",
+      "train_validation_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/data/auxiliary/ASSIST2009-train_validation.json",
+      "train_validation_feature_sha256": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464",
+      "test_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/data/auxiliary/ASSIST2009-test.json",
+      "test_feature_sha256": "c3844c6590c2e07304842529a4ebdd8f0150bdfe00124c7a9f41fdb58de2106c",
+      "numerical_feature_variation": {
+        "test": {
+          "rows": 47777,
+          "std": 0.5201196545911776,
+          "nonzero_fraction": 0.993134771961404
+        },
+        "train": {
+          "rows": 198942,
+          "std": 0.5272912710514488,
+          "nonzero_fraction": 0.9908164188557469
+        },
+        "validation": {
+          "rows": 27871,
+          "std": 0.5333620052774174,
+          "nonzero_fraction": 0.992788202791432
+        }
+      }
+    },
+    "frozen_campaign_plan_sha256": "df4570438c8a7899268928cc13a8e0cd50419aaf0ca93a8864c8e6860f7e24be",
+    "prediction_artifacts": {
+      "validation": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/ASSIST2009-LightSAKT+Difficulty-7777-validation.npz",
+        "sha256": "6747b00719f241490bd737eef3068d992a8f9a7bb10db719b39ab520c22afb10"
+      },
+      "test": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/ASSIST2009-LightSAKT+Difficulty-7777-test.npz",
+        "sha256": "4764c54d989b76fb9cbfa2ea73586065325c51ec606fad0d4b9335b87854b690"
+      }
+    }
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "SAKT",
+    "seed": 42,
+    "run_id": "ASSIST2015-SAKT-final-42",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2015-SAKT-baseline_tuning-42-4cc38d7c6af6/best.pt",
+    "checkpoint_sha256": "d5a6980a25bb9dc689f4298a476757d5c3808dcecf650619d38b0f4dc3fe1c1c",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "group": "final",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 100,
+        "d": 128,
+        "num_attn_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-SAKT-final-42",
+      "selection_path": "experiments/selections/ASSIST2015-SAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2015-SAKT-final-42/config.json",
+    "config_sha256": "09d4f6126956ce043fd609efc8a658ae978ff9aadf25d1704e313828ab2b5611",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2015-SAKT-final-42/metrics.json",
+    "recorded_metrics_sha256": "6e54a995373f27d3a95f0bb231c5bfed59cc72f7981cc06e1b4d5a9db8a3a6b2",
+    "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+    "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "55aacd0e87e69119cd2e02f25bcad79968356540",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 1.149218742391156e-08,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.691728201969056e-09
+      },
+      "test": {
+        "auc": 5.6030796669048755e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.5344684411999765e-09
+      }
+    }
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "SAKT",
+    "seed": 123,
+    "run_id": "ASSIST2015-SAKT-final-123",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2015-SAKT-final-123/best.pt",
+    "checkpoint_sha256": "a0e5da3f33969c3cbfd67685d573f3562e5f75286bca39fc0d2adb7bf17fb3c8",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "group": "final",
+      "seed": 123,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 100,
+        "d": 128,
+        "num_attn_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-SAKT-final-123",
+      "selection_path": "experiments/selections/ASSIST2015-SAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2015-SAKT-final-123/config.json",
+    "config_sha256": "901177e23532ead2e9516384c484b409e78168bb30b430f06a5c39b8ebaea704",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2015-SAKT-final-123/metrics.json",
+    "recorded_metrics_sha256": "7396d68e405e5e4936176b6fda168697e4ae5dd97088d075548b69a547ff4277",
+    "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+    "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "b954a53fac5a139875e63abb3e1d51c881b35a29",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 6.895312432142475e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 2.92443014249244e-09
+      },
+      "test": {
+        "auc": 6.8960980259547e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.8239022514521253e-09
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/ASSIST2015-SAKT-final-123/environment.json",
+      "sha256": "51e67e9fe677a7459f16e9d68335dd6685727cc25e9abebfc5acc7817e88328b"
+    }
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "SAKT",
+    "seed": 2026,
+    "run_id": "ASSIST2015-SAKT-final-2026",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2015-SAKT-final-2026/best.pt",
+    "checkpoint_sha256": "4bb9a9fdbbe0a5b574387d674a4b4b2117a8cd7b235a3da2cebb98c377610ca4",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "group": "final",
+      "seed": 2026,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 100,
+        "d": 128,
+        "num_attn_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-SAKT-final-2026",
+      "selection_path": "experiments/selections/ASSIST2015-SAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2015-SAKT-final-2026/config.json",
+    "config_sha256": "01e29cdb8afc5c89b91505e6ee1cadb1d5be09571886d9060a14a4d9089ccd4e",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2015-SAKT-final-2026/metrics.json",
+    "recorded_metrics_sha256": "88f0aaf3c78e736d60904bac03eb5e2294b0e75eb00375c05870961f61cb21d3",
+    "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+    "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "3c46fd9008836d1dfff09506f5005a9d157a22b2",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 2.298437662417996e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 8.068082868462056e-10
+      },
+      "test": {
+        "auc": 6.321423384747504e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.100382673868694e-09
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/ASSIST2015-SAKT-final-2026/environment.json",
+      "sha256": "c7d5fd0daeaebfb1bf08b425c982170b0bbef7f6f95316ba609fecc5f7231e93"
+    }
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "SAKT",
+    "seed": 3407,
+    "run_id": "ASSIST2015-SAKT-final-3407",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2015-SAKT-final-3407/best.pt",
+    "checkpoint_sha256": "095bdf2de11bd7f0a947973ffe9dfb6dd754606be555edc541fd2a8abb0d7685",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "group": "final",
+      "seed": 3407,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 100,
+        "d": 128,
+        "num_attn_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-SAKT-final-3407",
+      "selection_path": "experiments/selections/ASSIST2015-SAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2015-SAKT-final-3407/config.json",
+    "config_sha256": "91a4e9425baf8a537f5f2b045086a4eea7d44eed25e068e41e522d095fa1d809",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2015-SAKT-final-3407/metrics.json",
+    "recorded_metrics_sha256": "53bc6e1f195ffca6dde8d1f0aea876c591389f6c772778618862d6f5afa8de69",
+    "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+    "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "56dd4a50bfd24e9febd78a42928ac1a3d7e6d9dc",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 1.7238281913023457e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 9.31781873880766e-10
+      },
+      "test": {
+        "auc": 1.867693222301625e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 8.440096399553454e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/ASSIST2015-SAKT-final-3407/environment.json",
+      "sha256": "5b5dfb3542ced86a79eeb220d4c3847dc8e6b106313bbfe2c19c2e7b43b85582"
+    }
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "SAKT",
+    "seed": 7777,
+    "run_id": "ASSIST2015-SAKT-final-7777",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2015-SAKT-final-7777/best.pt",
+    "checkpoint_sha256": "a057445f3eeeb02f771f17433bab119dd526bbec92a34970d22e2a0c1b7a908a",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "group": "final",
+      "seed": 7777,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 100,
+        "d": 128,
+        "num_attn_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-SAKT-final-7777",
+      "selection_path": "experiments/selections/ASSIST2015-SAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2015-SAKT-final-7777/config.json",
+    "config_sha256": "adc7d2aaf907f37ab55ce7ab369860093444be4a8bcc42ce3149c46648bf4186",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2015-SAKT-final-7777/metrics.json",
+    "recorded_metrics_sha256": "53d4b92432df92ac9e712dfa41ae66be8d8304c8eadf492024156ed50fe5a05f",
+    "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+    "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "56dd4a50bfd24e9febd78a42928ac1a3d7e6d9dc",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 1.608906230465834e-08,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 7.165121829189047e-10
+      },
+      "test": {
+        "auc": 6.034085897610453e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 2.113615726884177e-09
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/ASSIST2015-SAKT-final-7777/environment.json",
+      "sha256": "5b5dfb3542ced86a79eeb220d4c3847dc8e6b106313bbfe2c19c2e7b43b85582"
+    }
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "LightSAKT",
+    "seed": 42,
+    "run_id": "ASSIST2015-LightSAKT-final-42",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2015-LightSAKT-grid-42-64640d03b0d3/best.pt",
+    "checkpoint_sha256": "c08f06c27d9bd31c155dcaff06bbe17b8464578df7e058930233ffbea68d7136",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "group": "final",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.1
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-LightSAKT-final-42",
+      "selection_path": "experiments/selections/ASSIST2015-LightSAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2015-LightSAKT-final-42/config.json",
+    "config_sha256": "27aefdde7a26a531bc411a9067c7777c1e0e91f03190adf5d25762961721e93a",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2015-LightSAKT-final-42/metrics.json",
+    "recorded_metrics_sha256": "c1b94ea7b96b9aac95c6c69268680abcbb24666ce74a77e5020f107306a1539f",
+    "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+    "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "6130a79ff0d2986c116ceddb04398d19127f2afe",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 5.171484351862432e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 4.3298309382322486e-10
+      },
+      "test": {
+        "auc": 3.879055188171776e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 3.1507585429579876e-10
+      }
+    }
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "LightSAKT",
+    "seed": 123,
+    "run_id": "ASSIST2015-LightSAKT-final-123",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2015-LightSAKT-final-123/best.pt",
+    "checkpoint_sha256": "3e3a98cc956129faf1407b041c0ed65dfa1d5abf082c85dd498872fd63377331",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "group": "final",
+      "seed": 123,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.1
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-LightSAKT-final-123",
+      "selection_path": "experiments/selections/ASSIST2015-LightSAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2015-LightSAKT-final-123/config.json",
+    "config_sha256": "3688b5421abf6384f0ab793a50184f95eb0956f58dd0dc5792cab512c6f50f81",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2015-LightSAKT-final-123/metrics.json",
+    "recorded_metrics_sha256": "a7816d1bc237b2b2ec1d4acac6c203431203d41026bb6e80e8599bda221b959a",
+    "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+    "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "8dbeb81b48a0bcba7fcc9ed493856ad43d387a59",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 1.149218831208998e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.857094478197041e-10
+      },
+      "test": {
+        "auc": 4.741067538560628e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.490052525809915e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/ASSIST2015-LightSAKT-final-123/environment.json",
+      "sha256": "0f3a533d75c9545bd24f339cc0a5eeee1a693c7681f24a616130141d28c05c44"
+    }
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "LightSAKT",
+    "seed": 2026,
+    "run_id": "ASSIST2015-LightSAKT-final-2026",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2015-LightSAKT-final-2026/best.pt",
+    "checkpoint_sha256": "8377a4cf83ff90054638cafa1cedfeb514ac6a34311cce313b711b95b54f308e",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "group": "final",
+      "seed": 2026,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.1
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-LightSAKT-final-2026",
+      "selection_path": "experiments/selections/ASSIST2015-LightSAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2015-LightSAKT-final-2026/config.json",
+    "config_sha256": "8c1fbf8524219697436c70b0e88ef0dc930f5073549502b4f9c5c03d4342b7ec",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2015-LightSAKT-final-2026/metrics.json",
+    "recorded_metrics_sha256": "bb7b0e03f08cea3049f9fb7ce2909c67216b6483febf3a74d55a4612ab38bce9",
+    "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+    "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "51fc627601e56d833c438b01c8f7b08d46dd60f8",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 0.0,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 9.479779183863002e-10
+      },
+      "test": {
+        "auc": 4.310061418877353e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 4.019465871252237e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/ASSIST2015-LightSAKT-final-2026/environment.json",
+      "sha256": "950b67234fa0a0cc27997667ed1233bb366303c0229d38717e36a1f47de6cf38"
+    }
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "LightSAKT",
+    "seed": 3407,
+    "run_id": "ASSIST2015-LightSAKT-final-3407",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2015-LightSAKT-final-3407/best.pt",
+    "checkpoint_sha256": "e468362d0ab14f7e16342a472c2c796a1456bf3519c521bfe98632ed18f29ba3",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "group": "final",
+      "seed": 3407,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.1
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-LightSAKT-final-3407",
+      "selection_path": "experiments/selections/ASSIST2015-LightSAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2015-LightSAKT-final-3407/config.json",
+    "config_sha256": "efb04b09a5ce8171903ca637061d7efe84bf0b508648b8c09f174560042514ca",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2015-LightSAKT-final-3407/metrics.json",
+    "recorded_metrics_sha256": "d84aa89c5dbf9305a6899366c9a0cd9aacbb9e15936eeb91c726a17bcdfb5a33",
+    "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+    "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "f82780d9497e6359f88454c6fc84e4a28fba78a4",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 1.3216015615213905e-08,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 6.514079275987683e-10
+      },
+      "test": {
+        "auc": 3.3043803249199755e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 5.627045496225946e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/ASSIST2015-LightSAKT-final-3407/environment.json",
+      "sha256": "845b7bdc26571cbf4cef5036a7cbb2d1d457f81fe6f4a2c213d1a626143c27fb"
+    }
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "LightSAKT",
+    "seed": 7777,
+    "run_id": "ASSIST2015-LightSAKT-final-7777",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2015-LightSAKT-final-7777/best.pt",
+    "checkpoint_sha256": "9b8260ac274f98826818a72ca0d6060ac7a057585cf7748834128cf3e0323beb",
+    "config": {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "group": "final",
+      "seed": 7777,
+      "seq_len": 100,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 100,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.1
+      },
+      "evaluate_test": true,
+      "run_id": "ASSIST2015-LightSAKT-final-7777",
+      "selection_path": "experiments/selections/ASSIST2015-LightSAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2015-LightSAKT-final-7777/config.json",
+    "config_sha256": "5ba3f3a08098790604b7e7d6b84e4ca91645ec6e6077aa4bd262d6703b658b1a",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2015-LightSAKT-final-7777/metrics.json",
+    "recorded_metrics_sha256": "4feb385ad291dc1e34ace3910d752e31d477bec46d3edd981d7f623d668f1a4d",
+    "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+    "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "f35230055cb3eacc28f4b11c80bc28f19ef4e3f6",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 4.0222656316757366e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 2.955335975940443e-11
+      },
+      "test": {
+        "auc": 6.465092017293728e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 4.648359475112329e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/ASSIST2015-LightSAKT-final-7777/environment.json",
+      "sha256": "80941b0e0d8659a5556919ca0b2651843d6fa89af32bfaae41830b5888f31e9a"
+    }
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "SAKT",
+    "seed": 42,
+    "run_id": "Algebra2005-SAKT-final-42",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/Algebra2005-SAKT-baseline_tuning-42-6aa156e936e3/best.pt",
+    "checkpoint_sha256": "0420adc72834ffa11722acbd302aaa58824bdecf6819859316d3b864a0d5bb57",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "group": "final",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 200,
+        "d": 128,
+        "num_attn_heads": 2,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-SAKT-final-42",
+      "selection_path": "experiments/selections/Algebra2005-SAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/Algebra2005-SAKT-final-42/config.json",
+    "config_sha256": "bced6cf42b70711ecafbe77f3b27b125731e485ad41f71ce5c4220c5d14ed3fd",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/Algebra2005-SAKT-final-42/metrics.json",
+    "recorded_metrics_sha256": "70a71d6b51778d2693c3abb68d70312df363b6ab0b109629ac7655ec882158f6",
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "a25a5227f42d7258da665da099b211f0164f1431",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 7.141962132806157e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 2.436948476347567e-09
+      },
+      "test": {
+        "auc": 5.709519967922461e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 2.264100906756994e-09
+      }
+    }
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "SAKT",
+    "seed": 123,
+    "run_id": "Algebra2005-SAKT-final-123",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/Algebra2005-SAKT-final-123/best.pt",
+    "checkpoint_sha256": "8791975938e063f83c26698d4f1e55142f1485ee8759058c233c50fa341f604c",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "group": "final",
+      "seed": 123,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 200,
+        "d": 128,
+        "num_attn_heads": 2,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-SAKT-final-123",
+      "selection_path": "experiments/selections/Algebra2005-SAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/Algebra2005-SAKT-final-123/config.json",
+    "config_sha256": "5b957615e5f5d6fc03540107c11ef3fa7e7d17605ebdceb622c0ec1ca98df764",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/Algebra2005-SAKT-final-123/metrics.json",
+    "recorded_metrics_sha256": "3656ed3fba8741eeb21fee0ee0d47e78a0d696ea9a5fb8dd7ebb610370018004",
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "07d2c7639768a4457ae6370c8ca6f082a62f76cb",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 2.6782357442911575e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.4453421792737231e-09
+      },
+      "test": {
+        "auc": 2.7563200610813965e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 9.384075738694264e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/Algebra2005-SAKT-final-123/environment.json",
+      "sha256": "73d1889b98ec82f9942c8e57c54ecac50a51febb7012b821e39a48d9173884d7"
+    }
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "SAKT",
+    "seed": 2026,
+    "run_id": "Algebra2005-SAKT-final-2026",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/Algebra2005-SAKT-final-2026/best.pt",
+    "checkpoint_sha256": "e8a522c23975aababc190817cd7465aefdb63655a445c68c43bedbf9448fa429",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "group": "final",
+      "seed": 2026,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 200,
+        "d": 128,
+        "num_attn_heads": 2,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-SAKT-final-2026",
+      "selection_path": "experiments/selections/Algebra2005-SAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/Algebra2005-SAKT-final-2026/config.json",
+    "config_sha256": "96664e4afec79457a69b801a188fec30c8583a35e9e674561bf9393f24345c26",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/Algebra2005-SAKT-final-2026/metrics.json",
+    "recorded_metrics_sha256": "96efc70b739947ca3e3b584db884d8e9dc16ce7dad6018aa62cb1015ac1fe971",
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "7d5d7783e481576ccbbcf827c5dcf4464d0d1b51",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 3.868562692410649e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.849943198628523e-09
+      },
+      "test": {
+        "auc": 2.3625601475174562e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.6746100617304194e-09
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/Algebra2005-SAKT-final-2026/environment.json",
+      "sha256": "bf8bb894f408e1de9c8c62e8162274e6037ea53e52936daa79f95c3910aa80a1"
+    }
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "SAKT",
+    "seed": 3407,
+    "run_id": "Algebra2005-SAKT-final-3407",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/Algebra2005-SAKT-final-3407/best.pt",
+    "checkpoint_sha256": "2dff8a22f77c6a05e7c55a2419f67c1a6fab31b39a821e27699a12577c88794f",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "group": "final",
+      "seed": 3407,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 200,
+        "d": 128,
+        "num_attn_heads": 2,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-SAKT-final-3407",
+      "selection_path": "experiments/selections/Algebra2005-SAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/Algebra2005-SAKT-final-3407/config.json",
+    "config_sha256": "82b62ed9bd832a26d628a51472d6cc45d8c3f7afda90d537200d35913d832bc5",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/Algebra2005-SAKT-final-3407/metrics.json",
+    "recorded_metrics_sha256": "6f7a369188f6f5524f63103a370f01e79c9c4dd5a1f6389acefaf22ca6f1c7f0",
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "7d5d7783e481576ccbbcf827c5dcf4464d0d1b51",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 2.67823585531346e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 6.532573926243401e-10
+      },
+      "test": {
+        "auc": 7.087679998463159e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.604669730426167e-09
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/Algebra2005-SAKT-final-3407/environment.json",
+      "sha256": "bf8bb894f408e1de9c8c62e8162274e6037ea53e52936daa79f95c3910aa80a1"
+    }
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "SAKT",
+    "seed": 7777,
+    "run_id": "Algebra2005-SAKT-final-7777",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/Algebra2005-SAKT-final-7777/best.pt",
+    "checkpoint_sha256": "f956adbdae3e28c335d8749631df9496eadf2a7d55944e0584436fe47c2de7fc",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "group": "final",
+      "seed": 7777,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "n": 200,
+        "d": 128,
+        "num_attn_heads": 2,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-SAKT-final-7777",
+      "selection_path": "experiments/selections/Algebra2005-SAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/Algebra2005-SAKT-final-7777/config.json",
+    "config_sha256": "686480117679d6c844e7d17c90bbbba1de59163808b2c7e24bb85cdd6055b049",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/Algebra2005-SAKT-final-7777/metrics.json",
+    "recorded_metrics_sha256": "7f057302443a466e594d30599b00db7d8b56172a72200b24fc351127c773fb11",
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "98a84eeb807c65a8b4ff7bf44b5a0c45668f753b",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 5.951634740597456e-10,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.048820141846818e-09
+      },
+      "test": {
+        "auc": 3.937600245862427e-10,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.843017072289399e-09
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/Algebra2005-SAKT-final-7777/environment.json",
+      "sha256": "719be8260576d8eaf151f95498e0d09cc5825cc591bebf5769410f4fb1056d34"
+    }
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT",
+    "seed": 42,
+    "run_id": "Algebra2005-LightSAKT-final-42",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/Algebra2005-LightSAKT-grid-42-06884c8943b2/best.pt",
+    "checkpoint_sha256": "14b64e7450e0610c300913e933a7dd2ab0d6d3881951e3475557a8e673ee1390",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "group": "final",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 200,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-LightSAKT-final-42",
+      "selection_path": "experiments/selections/Algebra2005-LightSAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/Algebra2005-LightSAKT-final-42/config.json",
+    "config_sha256": "3a788f1383bcaa0881272b4f85cd61d376ecb92809132cd3f361288c4cfca511",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/Algebra2005-LightSAKT-final-42/metrics.json",
+    "recorded_metrics_sha256": "d3221a0716e4af95043598a81f192af1d323571104105e265798f2ed36c845d5",
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "29a355135480044e6e8634311678eaaeab39165c",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 6.249216921716538e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 2.621606820518707e-10
+      },
+      "test": {
+        "auc": 2.5594401042994264e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 3.458835440284247e-10
+      }
+    }
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT",
+    "seed": 123,
+    "run_id": "Algebra2005-LightSAKT-final-123",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/Algebra2005-LightSAKT-final-123/best.pt",
+    "checkpoint_sha256": "e096183fb960c4cd0ba6c89ef8f5715f72e6c759b1c22b513f334fda45c87845",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "group": "final",
+      "seed": 123,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 200,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-LightSAKT-final-123",
+      "selection_path": "experiments/selections/Algebra2005-LightSAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/Algebra2005-LightSAKT-final-123/config.json",
+    "config_sha256": "32330458e85ff139a92ea75812c3b7f3edfaa3da68574d23850c6cfaea79fcae",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/Algebra2005-LightSAKT-final-123/metrics.json",
+    "recorded_metrics_sha256": "ed365e2da729f0f66493d63e16a64d3f5fa1e5b0b26986fa1d67bceca448e3e3",
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "7875a6bfc7b9d6e2ee008df31296a1c355baee64",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 3.8685629144552536e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.1152224144161949e-09
+      },
+      "test": {
+        "auc": 1.1812799627364257e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 3.7557795762310775e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/Algebra2005-LightSAKT-final-123/environment.json",
+      "sha256": "cb14a57e4ff9ab50683ce27339d18b46ce78801335b39fb662f475ca0a70def0"
+    }
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT",
+    "seed": 2026,
+    "run_id": "Algebra2005-LightSAKT-final-2026",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/Algebra2005-LightSAKT-final-2026/best.pt",
+    "checkpoint_sha256": "257e8e410c0a4e7153b9d3b358f3c52b1f5f47147bc265eba2fa4948551ed15f",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "group": "final",
+      "seed": 2026,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 200,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-LightSAKT-final-2026",
+      "selection_path": "experiments/selections/Algebra2005-LightSAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/Algebra2005-LightSAKT-final-2026/config.json",
+    "config_sha256": "910402e0f1141e82af3991af5001a1fcabca7b8a582cdb31661a36770921f984",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/Algebra2005-LightSAKT-final-2026/metrics.json",
+    "recorded_metrics_sha256": "9cd8e48156d0995840203bddf39b5ddceca70ee15fa6fcd57ad51fb32b36108c",
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "7b8e3466643053e29745d59df55d1e9b2b6ce5d1",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 1.4879087961716664e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.8707763116410092e-10
+      },
+      "test": {
+        "auc": 3.1500799746453367e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.3197715142965194e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/Algebra2005-LightSAKT-final-2026/environment.json",
+      "sha256": "2ca34a52cbe42afacd804deb38c4714df391b4cbd3b027894cd7e7c2987f6900"
+    }
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT",
+    "seed": 3407,
+    "run_id": "Algebra2005-LightSAKT-final-3407",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/Algebra2005-LightSAKT-final-3407/best.pt",
+    "checkpoint_sha256": "65ec77b47c35ae06039c357b7da2edf6e030abfbdbcfe7fbf764d546328bfede",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "group": "final",
+      "seed": 3407,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 200,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-LightSAKT-final-3407",
+      "selection_path": "experiments/selections/Algebra2005-LightSAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/Algebra2005-LightSAKT-final-3407/config.json",
+    "config_sha256": "372bb2021a1f6cf606a368e8818ff48799ea3a158f72298d58ca5106fa0d67e3",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/Algebra2005-LightSAKT-final-3407/metrics.json",
+    "recorded_metrics_sha256": "01b99ae23e3283dbac95a13604af29b134bfded12ccc98e14e11fd6897cbd585",
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "b90b88a0cb18206c82e6399014b5fbee216efd33",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 2.975817370298728e-10,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 5.000870828553161e-10
+      },
+      "test": {
+        "auc": 2.559439993277124e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 7.972533744293742e-11
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/Algebra2005-LightSAKT-final-3407/environment.json",
+      "sha256": "cb50cf2f61b03c86b64d1def15633ea8533451c869002515bba5a0d0400fdaa2"
+    }
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT",
+    "seed": 7777,
+    "run_id": "Algebra2005-LightSAKT-final-7777",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/Algebra2005-LightSAKT-final-7777/best.pt",
+    "checkpoint_sha256": "a3da82abe09e86df4fa76c5ddd2c7edc0069d0f5166cc8677ec94d09a059cd77",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "group": "final",
+      "seed": 7777,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 200,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": true,
+      "run_id": "Algebra2005-LightSAKT-final-7777",
+      "selection_path": "experiments/selections/Algebra2005-LightSAKT.json"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/Algebra2005-LightSAKT-final-7777/config.json",
+    "config_sha256": "fdcf2bdbeffe526cf38d36bd2d69e777bcd2330b7e2fe412afa317b04006b167",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/Algebra2005-LightSAKT-final-7777/metrics.json",
+    "recorded_metrics_sha256": "620d2c309c95aaa573a3d29870e43fde1d4c49ba3b3a0c2fb506163d3d58466a",
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "e597749acb3ee051fdac7744fef88702587ba692",
+    "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 2.9758177033656352e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 5.047781082012648e-10
+      },
+      "test": {
+        "auc": 1.3781601415630007e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 2.19613882634917e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2/results/raw/Algebra2005-LightSAKT-final-7777/environment.json",
+      "sha256": "1cd0b0632a45dab8a0d1d2e5c93349df8c9387593e6a141c18903c2f5daa1f85"
+    }
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT+Difficulty",
+    "seed": 42,
+    "run_id": "Algebra2005-LightSAKTQuestion-replication-42-v1",
+    "checkpoint": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/checkpoints/Algebra2005-LightSAKTQuestion-replication-42-v1/best.pt",
+    "checkpoint_sha256": "c64af0dd77d705c90670ce051b8046297a4b46efcda2c3fe97020c6e5e7eae85",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "LightSAKTQuestion",
+      "group": "question_replication",
+      "seed": 42,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 200,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": false,
+      "run_id": "Algebra2005-LightSAKTQuestion-replication-42-v1",
+      "device": "cuda",
+      "feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-train_validation.json",
+      "question_difficulty": {
+        "algorithm": "question-vs-skill-logit-loso-v1",
+        "smoothing": 10.0,
+        "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+        "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+        "raw_sha256": "19528668530108555e344e5bfcc68c762f63a458a32038599d189667e4f10407",
+        "feature_sha256": "0e5f803ad1287ae9eeeaeaead6a32a8dff6d9ca5a14e5abbfac8691a7d482ab1"
+      },
+      "question_identity": "lossless composite (Problem Name, Step Name), target tutor-step identity"
+    },
+    "config_file": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-42-v1/config.json",
+    "config_sha256": "de8f0ce07d61192327954a5f46f14e306541cebf7851eeeaf5ef951c17ef0f08",
+    "recorded_metrics_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-42-v1/metrics.json",
+    "recorded_metrics_sha256": "1e99d4acaac0511b57277a875e10fd81046f23484988d7cea3eddedad331fcaa",
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "a37b17ed83c9920c4c7a256625f241588c72124f",
+    "recorded_training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 3.273399218350903e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 3.19356541211846e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-42-v1/environment.json",
+      "sha256": "7b9a18bd5ea5b71ef2a2e94d68c867b002ac58c41c778b7229b577c180edcfd3"
+    },
+    "feature_specification": {
+      "algorithm": "question-vs-skill-logit-loso-v1",
+      "smoothing": 10.0,
+      "dataset": "Algebra2005",
+      "question_identity": "lossless composite (Problem Name, Step Name), target tutor-step identity",
+      "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "raw_sha256": "19528668530108555e344e5bfcc68c762f63a458a32038599d189667e4f10407",
+      "train_validation_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-train_validation.json",
+      "train_validation_feature_sha256": "0e5f803ad1287ae9eeeaeaead6a32a8dff6d9ca5a14e5abbfac8691a7d482ab1",
+      "test_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-test.json",
+      "test_feature_sha256": "ff017ebbc312455d0e66b728d157327ed051e3245d371150ab0012e055ccbe5c",
+      "numerical_feature_variation": {
+        "test": {
+          "rows": 113820,
+          "std": 0.75521986120622,
+          "nonzero_fraction": 0.7370057986294148
+        },
+        "train": {
+          "rows": 398886,
+          "std": 0.7767235508830981,
+          "nonzero_fraction": 0.7419011948275949
+        },
+        "validation": {
+          "rows": 94319,
+          "std": 0.7583774412126576,
+          "nonzero_fraction": 0.7337439964376212
+        }
+      }
+    },
+    "frozen_campaign_plan_sha256": "df4570438c8a7899268928cc13a8e0cd50419aaf0ca93a8864c8e6860f7e24be",
+    "prediction_artifacts": {
+      "validation": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/Algebra2005-LightSAKT+Difficulty-42-validation.npz",
+        "sha256": "b72d262dffb9afb47239203434e26fb422f55c7bbe59572d29ca1361dd529f12"
+      },
+      "test": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/Algebra2005-LightSAKT+Difficulty-42-test.npz",
+        "sha256": "7fbad2b3617fb8e11664a1fef0a8988b702573defa41bb7fc561b1ac744bc22b"
+      }
+    }
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT+Difficulty",
+    "seed": 123,
+    "run_id": "Algebra2005-LightSAKTQuestion-replication-123-v1",
+    "checkpoint": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/checkpoints/Algebra2005-LightSAKTQuestion-replication-123-v1/best.pt",
+    "checkpoint_sha256": "81291f92368d62982305b46a3a351d89cb1dd448dfbd0f34a880f1660b213a7e",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "LightSAKTQuestion",
+      "group": "question_replication",
+      "seed": 123,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 200,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": false,
+      "run_id": "Algebra2005-LightSAKTQuestion-replication-123-v1",
+      "device": "cuda",
+      "feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-train_validation.json",
+      "question_difficulty": {
+        "algorithm": "question-vs-skill-logit-loso-v1",
+        "smoothing": 10.0,
+        "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+        "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+        "raw_sha256": "19528668530108555e344e5bfcc68c762f63a458a32038599d189667e4f10407",
+        "feature_sha256": "0e5f803ad1287ae9eeeaeaead6a32a8dff6d9ca5a14e5abbfac8691a7d482ab1"
+      },
+      "question_identity": "lossless composite (Problem Name, Step Name), target tutor-step identity"
+    },
+    "config_file": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-123-v1/config.json",
+    "config_sha256": "e301eaa3d812a3fa3fd09efb199b02d9966a65de6778152c38f99efe69abfd4a",
+    "recorded_metrics_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-123-v1/metrics.json",
+    "recorded_metrics_sha256": "d7fb809bc694b772f42fc5428a1e5fe0f3ad3914f7fcecf2188a3712bd72ec19",
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "a37b17ed83c9920c4c7a256625f241588c72124f",
+    "recorded_training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 1.4879087961716664e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.5467355174436648e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-123-v1/environment.json",
+      "sha256": "79db64c1da174162ee83c82ac3c1c12c1ab37a464fee5b79121d8c00cc0b2715"
+    },
+    "feature_specification": {
+      "algorithm": "question-vs-skill-logit-loso-v1",
+      "smoothing": 10.0,
+      "dataset": "Algebra2005",
+      "question_identity": "lossless composite (Problem Name, Step Name), target tutor-step identity",
+      "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "raw_sha256": "19528668530108555e344e5bfcc68c762f63a458a32038599d189667e4f10407",
+      "train_validation_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-train_validation.json",
+      "train_validation_feature_sha256": "0e5f803ad1287ae9eeeaeaead6a32a8dff6d9ca5a14e5abbfac8691a7d482ab1",
+      "test_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-test.json",
+      "test_feature_sha256": "ff017ebbc312455d0e66b728d157327ed051e3245d371150ab0012e055ccbe5c",
+      "numerical_feature_variation": {
+        "test": {
+          "rows": 113820,
+          "std": 0.75521986120622,
+          "nonzero_fraction": 0.7370057986294148
+        },
+        "train": {
+          "rows": 398886,
+          "std": 0.7767235508830981,
+          "nonzero_fraction": 0.7419011948275949
+        },
+        "validation": {
+          "rows": 94319,
+          "std": 0.7583774412126576,
+          "nonzero_fraction": 0.7337439964376212
+        }
+      }
+    },
+    "frozen_campaign_plan_sha256": "df4570438c8a7899268928cc13a8e0cd50419aaf0ca93a8864c8e6860f7e24be",
+    "prediction_artifacts": {
+      "validation": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/Algebra2005-LightSAKT+Difficulty-123-validation.npz",
+        "sha256": "a3e07c61ff5f4f202d8c2f4210a5699e01c82c7723215860a96b42eebb333df6"
+      },
+      "test": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/Algebra2005-LightSAKT+Difficulty-123-test.npz",
+        "sha256": "26c64ec1a48ec0f627a45673b4ca89d0070c0bb19ee37f93701b09df98184803"
+      }
+    }
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT+Difficulty",
+    "seed": 2026,
+    "run_id": "Algebra2005-LightSAKTQuestion-replication-2026-v1",
+    "checkpoint": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/checkpoints/Algebra2005-LightSAKTQuestion-replication-2026-v1/best.pt",
+    "checkpoint_sha256": "edf08faa750cffdd2d2f87f5c86a9ce2bfee629ad307276936aa5f265da9f7ab",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "LightSAKTQuestion",
+      "group": "question_replication",
+      "seed": 2026,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 200,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": false,
+      "run_id": "Algebra2005-LightSAKTQuestion-replication-2026-v1",
+      "device": "cuda",
+      "feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-train_validation.json",
+      "question_difficulty": {
+        "algorithm": "question-vs-skill-logit-loso-v1",
+        "smoothing": 10.0,
+        "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+        "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+        "raw_sha256": "19528668530108555e344e5bfcc68c762f63a458a32038599d189667e4f10407",
+        "feature_sha256": "0e5f803ad1287ae9eeeaeaead6a32a8dff6d9ca5a14e5abbfac8691a7d482ab1"
+      },
+      "question_identity": "lossless composite (Problem Name, Step Name), target tutor-step identity"
+    },
+    "config_file": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-2026-v1/config.json",
+    "config_sha256": "2284357144ac45e2340ed8621cfde74e4081c67e09af198f370b1d87a2a41947",
+    "recorded_metrics_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-2026-v1/metrics.json",
+    "recorded_metrics_sha256": "e57595ab9be7801c55caf494689e26c880531caa8a73da547678750b230ce876",
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "a37b17ed83c9920c4c7a256625f241588c72124f",
+    "recorded_training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 1.1903270591417936e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 2.59879173736266e-10
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-2026-v1/environment.json",
+      "sha256": "c8d1c0a9c6299aea4855af631f276f2f25a03547764598b0ca9fcf7a8b664b46"
+    },
+    "feature_specification": {
+      "algorithm": "question-vs-skill-logit-loso-v1",
+      "smoothing": 10.0,
+      "dataset": "Algebra2005",
+      "question_identity": "lossless composite (Problem Name, Step Name), target tutor-step identity",
+      "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "raw_sha256": "19528668530108555e344e5bfcc68c762f63a458a32038599d189667e4f10407",
+      "train_validation_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-train_validation.json",
+      "train_validation_feature_sha256": "0e5f803ad1287ae9eeeaeaead6a32a8dff6d9ca5a14e5abbfac8691a7d482ab1",
+      "test_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-test.json",
+      "test_feature_sha256": "ff017ebbc312455d0e66b728d157327ed051e3245d371150ab0012e055ccbe5c",
+      "numerical_feature_variation": {
+        "test": {
+          "rows": 113820,
+          "std": 0.75521986120622,
+          "nonzero_fraction": 0.7370057986294148
+        },
+        "train": {
+          "rows": 398886,
+          "std": 0.7767235508830981,
+          "nonzero_fraction": 0.7419011948275949
+        },
+        "validation": {
+          "rows": 94319,
+          "std": 0.7583774412126576,
+          "nonzero_fraction": 0.7337439964376212
+        }
+      }
+    },
+    "frozen_campaign_plan_sha256": "df4570438c8a7899268928cc13a8e0cd50419aaf0ca93a8864c8e6860f7e24be",
+    "prediction_artifacts": {
+      "validation": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/Algebra2005-LightSAKT+Difficulty-2026-validation.npz",
+        "sha256": "723a077deb006b60a8c1056f9906f309539fc2f3147bf581afc4acc06fdc7469"
+      },
+      "test": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/Algebra2005-LightSAKT+Difficulty-2026-test.npz",
+        "sha256": "f8e12568f6150d53cc4178bf075fdceb2fbff67c1bf681d932f8c541f964a2ce"
+      }
+    }
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT+Difficulty",
+    "seed": 3407,
+    "run_id": "Algebra2005-LightSAKTQuestion-replication-3407-v1",
+    "checkpoint": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/checkpoints/Algebra2005-LightSAKTQuestion-replication-3407-v1/best.pt",
+    "checkpoint_sha256": "978b4c30454a4ee927ea78b2752a0006abfb0ba3ee9a75719eb2208beacb5d32",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "LightSAKTQuestion",
+      "group": "question_replication",
+      "seed": 3407,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 200,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": false,
+      "run_id": "Algebra2005-LightSAKTQuestion-replication-3407-v1",
+      "device": "cuda",
+      "feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-train_validation.json",
+      "question_difficulty": {
+        "algorithm": "question-vs-skill-logit-loso-v1",
+        "smoothing": 10.0,
+        "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+        "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+        "raw_sha256": "19528668530108555e344e5bfcc68c762f63a458a32038599d189667e4f10407",
+        "feature_sha256": "0e5f803ad1287ae9eeeaeaead6a32a8dff6d9ca5a14e5abbfac8691a7d482ab1"
+      },
+      "question_identity": "lossless composite (Problem Name, Step Name), target tutor-step identity"
+    },
+    "config_file": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-3407-v1/config.json",
+    "config_sha256": "c8602bc7cdb75d989aff74ec65bffbee57d4ae1379bc408e3091e5b7de89b681",
+    "recorded_metrics_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-3407-v1/metrics.json",
+    "recorded_metrics_sha256": "0d9b73042e3953114f87d24d76a0dfdd515cd72c63cec83ef37835ecc7e1d8a1",
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "a37b17ed83c9920c4c7a256625f241588c72124f",
+    "recorded_training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 6.546798658746411e-09,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 7.95795096486529e-11
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-3407-v1/environment.json",
+      "sha256": "21c60130ec06770dfa30dd144c8b6951c18ae48370b6d12ec7a338a6bc65fa6a"
+    },
+    "feature_specification": {
+      "algorithm": "question-vs-skill-logit-loso-v1",
+      "smoothing": 10.0,
+      "dataset": "Algebra2005",
+      "question_identity": "lossless composite (Problem Name, Step Name), target tutor-step identity",
+      "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "raw_sha256": "19528668530108555e344e5bfcc68c762f63a458a32038599d189667e4f10407",
+      "train_validation_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-train_validation.json",
+      "train_validation_feature_sha256": "0e5f803ad1287ae9eeeaeaead6a32a8dff6d9ca5a14e5abbfac8691a7d482ab1",
+      "test_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-test.json",
+      "test_feature_sha256": "ff017ebbc312455d0e66b728d157327ed051e3245d371150ab0012e055ccbe5c",
+      "numerical_feature_variation": {
+        "test": {
+          "rows": 113820,
+          "std": 0.75521986120622,
+          "nonzero_fraction": 0.7370057986294148
+        },
+        "train": {
+          "rows": 398886,
+          "std": 0.7767235508830981,
+          "nonzero_fraction": 0.7419011948275949
+        },
+        "validation": {
+          "rows": 94319,
+          "std": 0.7583774412126576,
+          "nonzero_fraction": 0.7337439964376212
+        }
+      }
+    },
+    "frozen_campaign_plan_sha256": "df4570438c8a7899268928cc13a8e0cd50419aaf0ca93a8864c8e6860f7e24be",
+    "prediction_artifacts": {
+      "validation": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/Algebra2005-LightSAKT+Difficulty-3407-validation.npz",
+        "sha256": "7560d50220421cbc7b8825e33fa6b618a9b3d75cfef0ff86481c80432ee22611"
+      },
+      "test": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/Algebra2005-LightSAKT+Difficulty-3407-test.npz",
+        "sha256": "daf7d30fba66e9875dcd871f3e53fba01afb96eca4b3b8347f897a3a16951058"
+      }
+    }
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT+Difficulty",
+    "seed": 7777,
+    "run_id": "Algebra2005-LightSAKTQuestion-replication-7777-v1",
+    "checkpoint": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/checkpoints/Algebra2005-LightSAKTQuestion-replication-7777-v1/best.pt",
+    "checkpoint_sha256": "6b98c151c2cb6ddceba1fea89f652b7a68bd712fb84db094971eb9a7f86d32fe",
+    "config": {
+      "dataset": "Algebra2005",
+      "model": "LightSAKTQuestion",
+      "group": "question_replication",
+      "seed": 7777,
+      "seq_len": 200,
+      "batch_size": 64,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "max_seq_len": 200,
+        "embed_dim": 128,
+        "num_heads": 4,
+        "dropout": 0.2
+      },
+      "evaluate_test": false,
+      "run_id": "Algebra2005-LightSAKTQuestion-replication-7777-v1",
+      "device": "cuda",
+      "feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-train_validation.json",
+      "question_difficulty": {
+        "algorithm": "question-vs-skill-logit-loso-v1",
+        "smoothing": 10.0,
+        "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+        "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+        "raw_sha256": "19528668530108555e344e5bfcc68c762f63a458a32038599d189667e4f10407",
+        "feature_sha256": "0e5f803ad1287ae9eeeaeaead6a32a8dff6d9ca5a14e5abbfac8691a7d482ab1"
+      },
+      "question_identity": "lossless composite (Problem Name, Step Name), target tutor-step identity"
+    },
+    "config_file": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-7777-v1/config.json",
+    "config_sha256": "901a2c2393c7622ded32b44fc0ee8767ee668ac8f9c1297e0cceec23c8104d50",
+    "recorded_metrics_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-7777-v1/metrics.json",
+    "recorded_metrics_sha256": "3cf24b14dd8fa6fd53e9441568de28cb15b0b7703fcddbfeae4fa0303ffdae1f",
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+    "selected_git_commit": "a37b17ed83c9920c4c7a256625f241588c72124f",
+    "recorded_training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+    "recorded_comparison_absolute_differences": {
+      "validation": {
+        "auc": 8.927452110896184e-10,
+        "accuracy": 0.0,
+        "f1": 0.0,
+        "bce": 1.2343949751247862e-09
+      }
+    },
+    "training_environment": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-7777-v1/environment.json",
+      "sha256": "00ee4da090c105ae5721098cdd2efe0accecda895737c87e01379d2b55cd35a3"
+    },
+    "feature_specification": {
+      "algorithm": "question-vs-skill-logit-loso-v1",
+      "smoothing": 10.0,
+      "dataset": "Algebra2005",
+      "question_identity": "lossless composite (Problem Name, Step Name), target tutor-step identity",
+      "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "raw_sha256": "19528668530108555e344e5bfcc68c762f63a458a32038599d189667e4f10407",
+      "train_validation_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-train_validation.json",
+      "train_validation_feature_sha256": "0e5f803ad1287ae9eeeaeaead6a32a8dff6d9ca5a14e5abbfac8691a7d482ab1",
+      "test_feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-test.json",
+      "test_feature_sha256": "ff017ebbc312455d0e66b728d157327ed051e3245d371150ab0012e055ccbe5c",
+      "numerical_feature_variation": {
+        "test": {
+          "rows": 113820,
+          "std": 0.75521986120622,
+          "nonzero_fraction": 0.7370057986294148
+        },
+        "train": {
+          "rows": 398886,
+          "std": 0.7767235508830981,
+          "nonzero_fraction": 0.7419011948275949
+        },
+        "validation": {
+          "rows": 94319,
+          "std": 0.7583774412126576,
+          "nonzero_fraction": 0.7337439964376212
+        }
+      }
+    },
+    "frozen_campaign_plan_sha256": "df4570438c8a7899268928cc13a8e0cd50419aaf0ca93a8864c8e6860f7e24be",
+    "prediction_artifacts": {
+      "validation": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/Algebra2005-LightSAKT+Difficulty-7777-validation.npz",
+        "sha256": "1d7c6a190d124cc9084ecf377c2a451c9d5a69cd4401bb01f3055e43b3ddfdca"
+      },
+      "test": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/Algebra2005-LightSAKT+Difficulty-7777-test.npz",
+        "sha256": "5f68692aed2f5b252fe7f3592057bb5daca6f2acf16c7debba73ec39aea3d210"
+      }
+    }
+  }
+]

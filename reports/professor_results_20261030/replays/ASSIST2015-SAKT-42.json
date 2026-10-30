@@ -1,0 +1,121 @@
+{
+  "status": "VERIFIED_CPU_REPLAY",
+  "dataset": "ASSIST2015",
+  "model": "SAKT",
+  "seed": 42,
+  "run_id": "ASSIST2015-SAKT-final-42",
+  "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2015-SAKT-baseline_tuning-42-4cc38d7c6af6/best.pt",
+  "checkpoint_sha256": "d5a6980a25bb9dc689f4298a476757d5c3808dcecf650619d38b0f4dc3fe1c1c",
+  "config": {
+    "dataset": "ASSIST2015",
+    "model": "SAKT",
+    "group": "final",
+    "seed": 42,
+    "seq_len": 100,
+    "batch_size": 64,
+    "max_epochs": 50,
+    "patience": 5,
+    "learning_rate": 0.0005,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0.0,
+    "epsilon": 1e-08,
+    "model_config": {
+      "n": 100,
+      "d": 128,
+      "num_attn_heads": 4,
+      "dropout": 0.2
+    },
+    "evaluate_test": true,
+    "run_id": "ASSIST2015-SAKT-final-42",
+    "selection_path": "experiments/selections/ASSIST2015-SAKT.json"
+  },
+  "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2015-SAKT-final-42/config.json",
+  "config_sha256": "09d4f6126956ce043fd609efc8a658ae978ff9aadf25d1704e313828ab2b5611",
+  "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2015-SAKT-final-42/metrics.json",
+  "recorded_metrics_sha256": "6e54a995373f27d3a95f0bb231c5bfed59cc72f7981cc06e1b4d5a9db8a3a6b2",
+  "validation": {
+    "auc": 0.7292646819525768,
+    "auc_reason": null,
+    "accuracy": 0.7565743298738147,
+    "f1": 0.8519288938949395,
+    "mse": 0.1685980401744206,
+    "bce": 0.5105166707217492,
+    "n_targets": 66965
+  },
+  "test": {
+    "auc": 0.7251955045552113,
+    "auc_reason": null,
+    "accuracy": 0.7491356243047413,
+    "f1": 0.8468513114182405,
+    "mse": 0.17180317974130443,
+    "bce": 0.5178306535555032,
+    "n_targets": 133044,
+    "precision": 0.7647136819424878,
+    "recall": 0.9487569657214534
+  },
+  "cpu_replay": {
+    "validation": {
+      "auc": 0.7292646704603893,
+      "auc_reason": null,
+      "accuracy": 0.7565743298738147,
+      "f1": 0.8519288938949395,
+      "mse": 0.16859804054206057,
+      "bce": 0.5105166724134774,
+      "n_targets": 66965,
+      "precision": 0.7717144455781193,
+      "recall": 0.9507531983050503
+    },
+    "test": {
+      "auc": 0.7251955045552113,
+      "auc_reason": null,
+      "accuracy": 0.7491356243047413,
+      "f1": 0.8468513114182405,
+      "mse": 0.17180317974130443,
+      "bce": 0.5178306535555032,
+      "n_targets": 133044,
+      "precision": 0.7647136819424878,
+      "recall": 0.9487569657214534
+    }
+  },
+  "recorded_comparison_absolute_differences": {
+    "validation": {
+      "auc": 1.149218742391156e-08,
+      "accuracy": 0.0,
+      "f1": 0.0,
+      "bce": 1.691728201969056e-09
+    },
+    "test": {
+      "auc": 5.6030796669048755e-09,
+      "accuracy": 0.0,
+      "f1": 0.0,
+      "bce": 1.5344684411999765e-09
+    }
+  },
+  "parameters": 151297,
+  "best_epoch": 13,
+  "epochs_trained": 18,
+  "training_seconds": 29.820756410976173,
+  "peak_allocated_bytes": 161373184,
+  "processed_sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab",
+  "split_sha256": "1c1a89044daf1071a8d34d889b02bb7b4fc9ebad4061ea9de75bdd1fb57c25ce",
+  "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+  "recorded_training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+  "selected_git_commit": "55aacd0e87e69119cd2e02f25bcad79968356540",
+  "precision_recall": "CPU replay,threshold0.5,globally pooled masked targets",
+  "prediction_artifacts": {
+    "validation": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/ASSIST2015-SAKT-42-validation.npz",
+      "sha256": "e4c1c8b58a97123b5933d76121ce485359049f41ed12bcb37d93cd089ad00694"
+    },
+    "test": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/ASSIST2015-SAKT-42-test.npz",
+      "sha256": "6ac9a976b83bf26d700c215a072766a9c438e34e696d36b2c6c05af606a930bc"
+    }
+  },
+  "verification_utc": "2026-10-30T10:31:17.500169+00:00",
+  "inference_device": "cpu",
+  "inference_batch_size": 8
+}

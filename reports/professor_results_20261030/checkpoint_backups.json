@@ -1,0 +1,287 @@
+{
+  "status": "READBACK_VERIFIED",
+  "updated_utc": "2026-10-30T11:39:23.150738+00:00",
+  "records": [
+    {
+      "component": "ASSIST2009-features",
+      "path": "/workspace/LightSAKT2/backups/professor_results_20261030/ASSIST2009-frozen_features.tar.gz",
+      "sha256": "7e56abe9a179b11d1faf4d3ce39d730f53db4a3acde92e90b998f7868a52c5d8",
+      "size_bytes": 2235457,
+      "member_sha256": {
+        "ASSIST2009/features/ASSIST2009-train_validation.json": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464",
+        "ASSIST2009/features/ASSIST2009-test.json": "c3844c6590c2e07304842529a4ebdd8f0150bdfe00124c7a9f41fdb58de2106c"
+      },
+      "archive_readback_verified": true
+    },
+    {
+      "component": "Algebra2005-features",
+      "path": "/workspace/LightSAKT2/backups/professor_results_20261030/Algebra2005-frozen_features.tar.gz",
+      "sha256": "15e6bc62d1f2a130bbdf543cecf5d74bc585eebb20ddb89614a2f9d8eb7e94c8",
+      "size_bytes": 3700689,
+      "member_sha256": {
+        "Algebra2005/features/Algebra2005-train_validation.json": "0e5f803ad1287ae9eeeaeaead6a32a8dff6d9ca5a14e5abbfac8691a7d482ab1",
+        "Algebra2005/features/Algebra2005-test.json": "ff017ebbc312455d0e66b728d157327ed051e3245d371150ab0012e055ccbe5c"
+      },
+      "archive_readback_verified": true
+    },
+    {
+      "component": "ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1",
+      "training_status": "completed",
+      "path": "/workspace/LightSAKT2/backups/professor_results_20261030/ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1.tar.gz",
+      "sha256": "2931f0a2a00ee41dfa207f2a3463d387d0968bc927cab6977657f111b94ed06b",
+      "size_bytes": 848765,
+      "member_sha256": {
+        "ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/raw/config.json": "0b6d390a2125c1784c6c07c9bc498e1ce590c97f0b3e4f51e9bd5677346ef6d6",
+        "ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/raw/environment.json": "7ed2c7ac955163844c2ae4de12d3b865be4d0a2d9126eec2e2afbcb930e78215",
+        "ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/raw/history.json": "11d974269048e7ecdf3af19eb2d42175664c565f44f89cffb3d52af4fc02b5a9",
+        "ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/raw/metrics.json": "47b4271641e52079fd6e97bd1ed7caa97a5d26de0e1cca19c70ad813ccbc3d11",
+        "ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/raw/status.json": "e11d7985c6a07121d81b94397284b511a5c9d94abe681ec87b89fb10246a27f5",
+        "ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/checkpoints/best.pt": "8be7fb4a227d6c58b7be0691aeccf10ebec29db58674675cff99a417753bffeb",
+        "ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1/checkpoints/latest.pt": "451c3d001fa35d0e21d6c32fab70bc5e5c5149e83fa8e3ef1e12ef1c614e825d"
+      },
+      "archive_readback_verified": true
+    },
+    {
+      "component": "ASSIST2009-LightSAKTQuestion-replication-123-v1",
+      "training_status": "completed",
+      "path": "/workspace/LightSAKT2/backups/professor_results_20261030/ASSIST2009-LightSAKTQuestion-replication-123-v1.tar.gz",
+      "sha256": "2d9d02a099a6ca282fd0da19f99b1a5f929261b7ccdbddfda6c62b515dcfa734",
+      "size_bytes": 850374,
+      "member_sha256": {
+        "ASSIST2009-LightSAKTQuestion-replication-123-v1/raw/config.json": "e88d340fc1a0a26de526ccfe2efc62170050fc1e277df3092061e122c857d14d",
+        "ASSIST2009-LightSAKTQuestion-replication-123-v1/raw/environment.json": "e32b56248151158982c38ed6b8789b95706f0e7db88b67ed5b37258cfa7169f6",
+        "ASSIST2009-LightSAKTQuestion-replication-123-v1/raw/history.json": "99d946e64f68f49eb1755446bb394e9ddd132d0c77e3f6f5a82de4e1dafa2ca9",
+        "ASSIST2009-LightSAKTQuestion-replication-123-v1/raw/metrics.json": "edb7712b3beafb48cee4a3f3c64c83c37e4b4eca7ff552c68ac723c663accd96",
+        "ASSIST2009-LightSAKTQuestion-replication-123-v1/raw/status.json": "55cca9b188823f3b1edacaff4953d5b1dfe4497f77ccf71dd9f49766635f7404",
+        "ASSIST2009-LightSAKTQuestion-replication-123-v1/checkpoints/best.pt": "ee6d735d1907a9b7157a11a3c1266a0cfeba3ae49a35f3afd94dc2b272595a8a",
+        "ASSIST2009-LightSAKTQuestion-replication-123-v1/checkpoints/latest.pt": "8d6b8192faf579289b7b45e124bdaea62abde47bcc551aadfc94b32d08ae21e0"
+      },
+      "archive_readback_verified": true
+    },
+    {
+      "component": "ASSIST2009-LightSAKTQuestion-replication-2026-v1",
+      "training_status": "completed",
+      "path": "/workspace/LightSAKT2/backups/professor_results_20261030/ASSIST2009-LightSAKTQuestion-replication-2026-v1.tar.gz",
+      "sha256": "a90720c674d6da5abc774a424ba023db84beb14b8fb3efef47371d2c3c23c5b4",
+      "size_bytes": 850455,
+      "member_sha256": {
+        "ASSIST2009-LightSAKTQuestion-replication-2026-v1/raw/config.json": "bd878edc58884ca801bd39ddaa7a62c4c2217598a3f8b372173db35fc7a2876b",
+        "ASSIST2009-LightSAKTQuestion-replication-2026-v1/raw/environment.json": "514a72e243a6a821b1fd2ed57ffddb799375d37165cbdb2f315886b2c4a4b2d4",
+        "ASSIST2009-LightSAKTQuestion-replication-2026-v1/raw/history.json": "8527218a8bc581a5517ee4fb158f1e6fcbf4e681243daa11dcd51bd13744902f",
+        "ASSIST2009-LightSAKTQuestion-replication-2026-v1/raw/metrics.json": "f33eab3da5693f29ff203ce22ad8c462ace5b7c02a7da4793e73dfec31ddbe7a",
+        "ASSIST2009-LightSAKTQuestion-replication-2026-v1/raw/status.json": "ddc6c5467384dc0a4c8b76fbe415b63ecf72448daeb73699097ddd53461ac756",
+        "ASSIST2009-LightSAKTQuestion-replication-2026-v1/checkpoints/best.pt": "3b9c11339cb506d3b280c40c2eb7c0e62659fff07d77e68fe2c2e97198b20568",
+        "ASSIST2009-LightSAKTQuestion-replication-2026-v1/checkpoints/latest.pt": "a5a56735adeeb4b7365fa8c4fb64f26478e9ddc817ef5c1f6080281b4ba370d7"
+      },
+      "archive_readback_verified": true
+    },
+    {
+      "component": "ASSIST2009-LightSAKTQuestion-replication-3407-v1",
+      "training_status": "completed",
+      "path": "/workspace/LightSAKT2/backups/professor_results_20261030/ASSIST2009-LightSAKTQuestion-replication-3407-v1.tar.gz",
+      "sha256": "b193aa73ddf860e20d8fe179c7df80835abb8a20cbd3fa21a59ab2f7d7be4386",
+      "size_bytes": 849805,
+      "member_sha256": {
+        "ASSIST2009-LightSAKTQuestion-replication-3407-v1/raw/config.json": "b070525615802ab4dc612699cbdf198bef867a7da1b7e5e11f213f21f9844b11",
+        "ASSIST2009-LightSAKTQuestion-replication-3407-v1/raw/environment.json": "522d875c893616d63d264563732ebba34daf685b38e49875adf002fe7645542d",
+        "ASSIST2009-LightSAKTQuestion-replication-3407-v1/raw/history.json": "ec2c765a8bdcf606f13cec423d2138208122715124e8c4b7d218ce869e33395b",
+        "ASSIST2009-LightSAKTQuestion-replication-3407-v1/raw/metrics.json": "dc4e8554c9f0eccbaa33863da9565f484d5dfa44b76601c6959d8948efca5a49",
+        "ASSIST2009-LightSAKTQuestion-replication-3407-v1/raw/status.json": "51472ca649ed0207bd81da323d3d9cc6eb25275e0bfdc4696761a5071a964bbd",
+        "ASSIST2009-LightSAKTQuestion-replication-3407-v1/checkpoints/best.pt": "3b9aeb4da174c8a6274ad837ea28b2896428da0f2d1b47ded2ca041a95146581",
+        "ASSIST2009-LightSAKTQuestion-replication-3407-v1/checkpoints/latest.pt": "b7b454dd55f317f5828d2a95020ce04084a1daf51612737631c43069b8a5c2a9"
+      },
+      "archive_readback_verified": true
+    },
+    {
+      "component": "ASSIST2009-LightSAKTQuestion-replication-7777-v1",
+      "training_status": "completed",
+      "path": "/workspace/LightSAKT2/backups/professor_results_20261030/ASSIST2009-LightSAKTQuestion-replication-7777-v1.tar.gz",
+      "sha256": "cfe8cc4c9b1b704606af6f137729d04692b577710a19330661847edaf5b0f84c",
+      "size_bytes": 851598,
+      "member_sha256": {
+        "ASSIST2009-LightSAKTQuestion-replication-7777-v1/raw/config.json": "a2476c76ae0bb81a68c9160eb96d6e907e43e2b554ad7f814e38fc816bb38dc1",
+        "ASSIST2009-LightSAKTQuestion-replication-7777-v1/raw/environment.json": "edc42342990a209ccb6a375c728373f668dc07ab4fdb646c0cf6a037d5dad3a0",
+        "ASSIST2009-LightSAKTQuestion-replication-7777-v1/raw/history.json": "530de564886854072c724ff7049cd979e92bb045c56fae52c34a5ced7bc8c2f3",
+        "ASSIST2009-LightSAKTQuestion-replication-7777-v1/raw/metrics.json": "a2e8dccc593d620beb39386846531f82991778f8915b292c5d202947b2b57c0a",
+        "ASSIST2009-LightSAKTQuestion-replication-7777-v1/raw/status.json": "3a7fc61997c425d9ec02c7291680a648a63bc11ca8afdbb5daffa7969498fd77",
+        "ASSIST2009-LightSAKTQuestion-replication-7777-v1/checkpoints/best.pt": "0d7ec9dabc6b0b2306f3f7bf2047844fe5703cb752e98569c133703270afcdc8",
+        "ASSIST2009-LightSAKTQuestion-replication-7777-v1/checkpoints/latest.pt": "104a62c55e3b52a191dde35fc23c2dffdf721b8254debb75c2c3d3209784f4c3"
+      },
+      "archive_readback_verified": true
+    },
+    {
+      "component": "Algebra2005-LightSAKTQuestion-replication-42-v1",
+      "training_status": "completed",
+      "path": "/workspace/LightSAKT2/backups/professor_results_20261030/Algebra2005-LightSAKTQuestion-replication-42-v1.tar.gz",
+      "sha256": "14ccb5fc6d8b3add8e0a27e4c354ce311544dd480f4e2b60ccd459d0d97a4311",
+      "size_bytes": 3799028,
+      "member_sha256": {
+        "Algebra2005-LightSAKTQuestion-replication-42-v1/raw/config.json": "de8f0ce07d61192327954a5f46f14e306541cebf7851eeeaf5ef951c17ef0f08",
+        "Algebra2005-LightSAKTQuestion-replication-42-v1/raw/environment.json": "7b9a18bd5ea5b71ef2a2e94d68c867b002ac58c41c778b7229b577c180edcfd3",
+        "Algebra2005-LightSAKTQuestion-replication-42-v1/raw/history.json": "d6e6aa3119e9a26a4fa19f3848e101dc2906d869ccd5173c58bb695559aaffe7",
+        "Algebra2005-LightSAKTQuestion-replication-42-v1/raw/metrics.json": "1e99d4acaac0511b57277a875e10fd81046f23484988d7cea3eddedad331fcaa",
+        "Algebra2005-LightSAKTQuestion-replication-42-v1/raw/status.json": "2876c0b9cf4af8e8b13ca035e90ecd10f9a3289a043a7a191e01f4fb1806f16d",
+        "Algebra2005-LightSAKTQuestion-replication-42-v1/checkpoints/best.pt": "c64af0dd77d705c90670ce051b8046297a4b46efcda2c3fe97020c6e5e7eae85",
+        "Algebra2005-LightSAKTQuestion-replication-42-v1/checkpoints/latest.pt": "f9a7d45b07a41f4d66aac2afdebfd0233997eea24cea30146a66d4323316fbaf"
+      },
+      "archive_readback_verified": true
+    },
+    {
+      "component": "Algebra2005-LightSAKTQuestion-replication-123-v1",
+      "training_status": "completed",
+      "path": "/workspace/LightSAKT2/backups/professor_results_20261030/Algebra2005-LightSAKTQuestion-replication-123-v1.tar.gz",
+      "sha256": "691742c701d0c24e61a0a7efc69f3ec95ab42dcd828d1afa55c948ed652f08da",
+      "size_bytes": 3797378,
+      "member_sha256": {
+        "Algebra2005-LightSAKTQuestion-replication-123-v1/raw/config.json": "e301eaa3d812a3fa3fd09efb199b02d9966a65de6778152c38f99efe69abfd4a",
+        "Algebra2005-LightSAKTQuestion-replication-123-v1/raw/environment.json": "79db64c1da174162ee83c82ac3c1c12c1ab37a464fee5b79121d8c00cc0b2715",
+        "Algebra2005-LightSAKTQuestion-replication-123-v1/raw/history.json": "a71b77cc04c13ce874b181481c958b8301e50bdd62a5ca50ba80ea9c376b2dd3",
+        "Algebra2005-LightSAKTQuestion-replication-123-v1/raw/metrics.json": "d7fb809bc694b772f42fc5428a1e5fe0f3ad3914f7fcecf2188a3712bd72ec19",
+        "Algebra2005-LightSAKTQuestion-replication-123-v1/raw/status.json": "d90c58b2373e3cee0189bc72aa86507188b9b0f5bdddf837c68b770e5026c7e2",
+        "Algebra2005-LightSAKTQuestion-replication-123-v1/checkpoints/best.pt": "81291f92368d62982305b46a3a351d89cb1dd448dfbd0f34a880f1660b213a7e",
+        "Algebra2005-LightSAKTQuestion-replication-123-v1/checkpoints/latest.pt": "fd586e79b8ce71625b1818365f597e21510b626c911f93de896637742171b94d"
+      },
+      "archive_readback_verified": true
+    },
+    {
+      "component": "Algebra2005-LightSAKTQuestion-replication-2026-v1",
+      "training_status": "completed",
+      "path": "/workspace/LightSAKT2/backups/professor_results_20261030/Algebra2005-LightSAKTQuestion-replication-2026-v1.tar.gz",
+      "sha256": "68df72a7be6d8372c621fab0d012f081e63e109fd61fd1aea51b9b89180e185a",
+      "size_bytes": 3798985,
+      "member_sha256": {
+        "Algebra2005-LightSAKTQuestion-replication-2026-v1/raw/config.json": "2284357144ac45e2340ed8621cfde74e4081c67e09af198f370b1d87a2a41947",
+        "Algebra2005-LightSAKTQuestion-replication-2026-v1/raw/environment.json": "c8d1c0a9c6299aea4855af631f276f2f25a03547764598b0ca9fcf7a8b664b46",
+        "Algebra2005-LightSAKTQuestion-replication-2026-v1/raw/history.json": "31de12dbf90c934b9fba900f2e7c3786fb6167ed33bcdd08969d3c07bee01ef2",
+        "Algebra2005-LightSAKTQuestion-replication-2026-v1/raw/metrics.json": "e57595ab9be7801c55caf494689e26c880531caa8a73da547678750b230ce876",
+        "Algebra2005-LightSAKTQuestion-replication-2026-v1/raw/status.json": "6ffacc7717c52ab33ab6ef0b7b7707523a6871525289dcd2f75e202805e4cff8",
+        "Algebra2005-LightSAKTQuestion-replication-2026-v1/checkpoints/best.pt": "edf08faa750cffdd2d2f87f5c86a9ce2bfee629ad307276936aa5f265da9f7ab",
+        "Algebra2005-LightSAKTQuestion-replication-2026-v1/checkpoints/latest.pt": "c8a8b2d9c85f9f286193b525ee6bb6965e5e99279a7208ddebb3b8e5f7c49607"
+      },
+      "archive_readback_verified": true
+    },
+    {
+      "component": "Algebra2005-LightSAKTQuestion-replication-3407-v1",
+      "training_status": "completed",
+      "path": "/workspace/LightSAKT2/backups/professor_results_20261030/Algebra2005-LightSAKTQuestion-replication-3407-v1.tar.gz",
+      "sha256": "c6bc4d1104f0c80791c035569d6858c85029454f07a3f98fb7302453600ec09f",
+      "size_bytes": 3799379,
+      "member_sha256": {
+        "Algebra2005-LightSAKTQuestion-replication-3407-v1/raw/config.json": "c8602bc7cdb75d989aff74ec65bffbee57d4ae1379bc408e3091e5b7de89b681",
+        "Algebra2005-LightSAKTQuestion-replication-3407-v1/raw/environment.json": "21c60130ec06770dfa30dd144c8b6951c18ae48370b6d12ec7a338a6bc65fa6a",
+        "Algebra2005-LightSAKTQuestion-replication-3407-v1/raw/history.json": "6d321877e26577b3d0d4fad1310608675f49b308e0b3837964ca840660ae788e",
+        "Algebra2005-LightSAKTQuestion-replication-3407-v1/raw/metrics.json": "0d9b73042e3953114f87d24d76a0dfdd515cd72c63cec83ef37835ecc7e1d8a1",
+        "Algebra2005-LightSAKTQuestion-replication-3407-v1/raw/status.json": "c143ae7b70a6984db1893fadddaff23436696a87e495734a33b45c8a39b4f924",
+        "Algebra2005-LightSAKTQuestion-replication-3407-v1/checkpoints/best.pt": "978b4c30454a4ee927ea78b2752a0006abfb0ba3ee9a75719eb2208beacb5d32",
+        "Algebra2005-LightSAKTQuestion-replication-3407-v1/checkpoints/latest.pt": "a5733f9639d38c92540261e32af8a9343f1cc2dd46341ed1ac7de5bc9e5dee53"
+      },
+      "archive_readback_verified": true
+    },
+    {
+      "component": "Algebra2005-LightSAKTQuestion-replication-7777-v1",
+      "training_status": "completed",
+      "path": "/workspace/LightSAKT2/backups/professor_results_20261030/Algebra2005-LightSAKTQuestion-replication-7777-v1.tar.gz",
+      "sha256": "155670655c1afb4103acb46cf3729432063b2c3c65e425b73e96553cab2c7a72",
+      "size_bytes": 3798476,
+      "member_sha256": {
+        "Algebra2005-LightSAKTQuestion-replication-7777-v1/raw/config.json": "901a2c2393c7622ded32b44fc0ee8767ee668ac8f9c1297e0cceec23c8104d50",
+        "Algebra2005-LightSAKTQuestion-replication-7777-v1/raw/environment.json": "00ee4da090c105ae5721098cdd2efe0accecda895737c87e01379d2b55cd35a3",
+        "Algebra2005-LightSAKTQuestion-replication-7777-v1/raw/history.json": "72e5479018e8eca83ef1c4e97e44bb04e0b3871a1b1d0bda3b0dbca3a8c4b2c0",
+        "Algebra2005-LightSAKTQuestion-replication-7777-v1/raw/metrics.json": "3cf24b14dd8fa6fd53e9441568de28cb15b0b7703fcddbfeae4fa0303ffdae1f",
+        "Algebra2005-LightSAKTQuestion-replication-7777-v1/raw/status.json": "6e46fbd3ebe15fe9a722a171e92584b30e982014e324765a96f159df09310e5c",
+        "Algebra2005-LightSAKTQuestion-replication-7777-v1/checkpoints/best.pt": "6b98c151c2cb6ddceba1fea89f652b7a68bd712fb84db094971eb9a7f86d32fe",
+        "Algebra2005-LightSAKTQuestion-replication-7777-v1/checkpoints/latest.pt": "1ed83ff9df37d156dabf46f87d23d0893dd8dc812466e036e1f8fa22b255cdf7"
+      },
+      "archive_readback_verified": true
+    },
+    {
+      "component": "verified_validation_test_predictions",
+      "path": "/workspace/LightSAKT2/backups/professor_results_20261030/verified_validation_test_predictions.tar.gz",
+      "sha256": "d0efb29043c584860366c8b03c22dc5e4398edadcf2fcd215e596a9a3191e832",
+      "size_bytes": 22721562,
+      "member_sha256": {
+        "predictions/ASSIST2009-LightSAKT+Difficulty-123-validation.npz": "86ee1860c9d4ed40d6b184a9e1af7afd478630f80a3813a889e815d729e60638",
+        "predictions/ASSIST2009-LightSAKT+Difficulty-123-test.npz": "d31eb21ec21da44df52b7f6264eba00994d36c19331b7cd270b7f6a24869ee1b",
+        "predictions/ASSIST2009-LightSAKT+Difficulty-2026-validation.npz": "17d51cc6824804772690ee231b57256230a80769d57fb425d5a94ee3c723ad52",
+        "predictions/ASSIST2009-LightSAKT+Difficulty-2026-test.npz": "3232fcd22ddca770570796779409e4e46002d2e1bc64b4bb8c6815b552db0b51",
+        "predictions/ASSIST2009-LightSAKT+Difficulty-3407-validation.npz": "4cd7876d229f77fd5601351c349a9a30594ca9644f7489e08455041bd3431eab",
+        "predictions/ASSIST2009-LightSAKT+Difficulty-3407-test.npz": "38d85856c027e70441d053e03922592cb3459edaab427520376f0775da2795f6",
+        "predictions/ASSIST2009-LightSAKT+Difficulty-42-validation.npz": "2b5382d8160e97844d6fa7f82a41c0fd29ff52772ff94f7958116d139e9332fb",
+        "predictions/ASSIST2009-LightSAKT+Difficulty-42-test.npz": "54f799b680dc5177acbefddc17b8857b0728d1866230fdaee4c7eeee3a89c6c3",
+        "predictions/ASSIST2009-LightSAKT+Difficulty-7777-validation.npz": "6747b00719f241490bd737eef3068d992a8f9a7bb10db719b39ab520c22afb10",
+        "predictions/ASSIST2009-LightSAKT+Difficulty-7777-test.npz": "4764c54d989b76fb9cbfa2ea73586065325c51ec606fad0d4b9335b87854b690",
+        "predictions/ASSIST2009-LightSAKT-123-validation.npz": "efe85c5581c305600e8517bbf535cad9e6ea87bcae8845097ed97e7bccf6a9e1",
+        "predictions/ASSIST2009-LightSAKT-123-test.npz": "efbe4aacbe043b060b9df65d52ea1892fe6f11cbe49195a45412ff73fb430d56",
+        "predictions/ASSIST2009-LightSAKT-2026-validation.npz": "a62479cd83d54e79523ed540f587c6defac3bea638cfd104c8a408733a2e8b29",
+        "predictions/ASSIST2009-LightSAKT-2026-test.npz": "afe165df4e05bd34f6ba0167486a7cb36189f010e3350b504e36fb4fbf6d492d",
+        "predictions/ASSIST2009-LightSAKT-3407-validation.npz": "2d5a995191a709d00f76bfddc5d743619174bd8a4d404e679310f3a5744a5868",
+        "predictions/ASSIST2009-LightSAKT-3407-test.npz": "caf21121a5fcb4c1c08cd53fb42e6a04cf85fe799a2f0e478e01eba5cfdbccde",
+        "predictions/ASSIST2009-LightSAKT-42-validation.npz": "f29b42fa50fb1c6cc9544c6f454b475f24e5100c2ca629d63b85f894b94b4a4f",
+        "predictions/ASSIST2009-LightSAKT-42-test.npz": "db63cb9d98793a46e79a64caff5a04f58eab8d9696dda749c475d7cad86a6a7d",
+        "predictions/ASSIST2009-LightSAKT-7777-validation.npz": "42be74ba362b6537637ef111cec786f1f15acad7adeb918fbde293aa3f612faa",
+        "predictions/ASSIST2009-LightSAKT-7777-test.npz": "71d1c516dfa6de1d2146f704d5c3ba554844be3500989864b7a39eb0a4e1629c",
+        "predictions/ASSIST2009-SAKT-123-validation.npz": "6bbb6957533cc3234ab95392b60ebe35b78889fc4965d9b4eea186cee2385684",
+        "predictions/ASSIST2009-SAKT-123-test.npz": "a361a1c48cb1aa2addceb67dd1a69ddc147c5d8e607e1ed13306cd6d767f61ab",
+        "predictions/ASSIST2009-SAKT-2026-validation.npz": "06fb65400441657691c6bd837eae535e63c6565aa6c405ac389bdeb1e8bbe5f9",
+        "predictions/ASSIST2009-SAKT-2026-test.npz": "2a65a0ea57d711763e171454ed6471ae551f6ecea99d82f5bd772054e67ade2d",
+        "predictions/ASSIST2009-SAKT-3407-validation.npz": "7ea8cc8c71440058db3057576e2082e75d5a73705e2c9a3717699b05d2fcefb8",
+        "predictions/ASSIST2009-SAKT-3407-test.npz": "10455b9854d292448255bdebebdb1c472c4cce85644f3cdb23d414ce4f93342f",
+        "predictions/ASSIST2009-SAKT-42-validation.npz": "7f0879a7c2f8feb1178a3b3f0fe34b9da7f765d850b6ba4d1ab410187de4d1bf",
+        "predictions/ASSIST2009-SAKT-42-test.npz": "3144b7173069cb2ce55677bdc85b8be6fb99db7523f19f7bb05ac2125448452f",
+        "predictions/ASSIST2009-SAKT-7777-validation.npz": "943baeb7df54ded21a3de954e800dc5fb14737cbb133479c83a33c4bfd7dfd25",
+        "predictions/ASSIST2009-SAKT-7777-test.npz": "de565a0fc270d94ea54e9ade6dde753d7f3a4034cfc5d83f2450e3333c66535f",
+        "predictions/ASSIST2015-LightSAKT-123-validation.npz": "1e664414e20e97359dcc2441f9d1c4abd75f9e89fd92fbef3e3a817c7ddd563a",
+        "predictions/ASSIST2015-LightSAKT-123-test.npz": "d95cba4c6b6be3fd049dcf14dee62d7175b2382c09f076fae8e6afae190b4b8e",
+        "predictions/ASSIST2015-LightSAKT-2026-validation.npz": "0ee202929a1e8284c50aa1737c96632593ab8d3f7faecfd94c3f8241c9663da1",
+        "predictions/ASSIST2015-LightSAKT-2026-test.npz": "1df785e911f3dd623cfe02474a84e178bcb1bdbc03ef19fdf28266b4ac6f000f",
+        "predictions/ASSIST2015-LightSAKT-3407-validation.npz": "58a91510be6fd14bad8b4c29b2ca43bdffdc522b98e418c1fe10046fb3cf9d0b",
+        "predictions/ASSIST2015-LightSAKT-3407-test.npz": "3d39c80d6ce23d2d2d5703bc73339b4838bde7453abb78003a6077287068cf47",
+        "predictions/ASSIST2015-LightSAKT-42-validation.npz": "1160382239ebbbb043f54c2017ca80641e9edb79aa8ba1d2d42426196e1da008",
+        "predictions/ASSIST2015-LightSAKT-42-test.npz": "1b3de2119c35c417f052323499dad9d44dde0f3c82a9cb594a6dcceea612e4a6",
+        "predictions/ASSIST2015-LightSAKT-7777-validation.npz": "82c7b8670fd80d83c3746e875bb0aa6236908104916269e906e723d41a2803f3",
+        "predictions/ASSIST2015-LightSAKT-7777-test.npz": "d6abc54a5f91d3ebae613c31fb0669d952f5a620459bc914515c47f318d476b7",
+        "predictions/ASSIST2015-SAKT-123-validation.npz": "4d3312a58809e457bcf7f8c23a7d53ff00547cf558fae95a97d41653bdf94abc",
+        "predictions/ASSIST2015-SAKT-123-test.npz": "2288f001c308acf083fbf60b4d49c9e54689cd099c661a8f67f5b04fea7f6bca",
+        "predictions/ASSIST2015-SAKT-2026-validation.npz": "eceb15e93edcbf0a549a8689dda6ed5d95000863cccad4867b90975f6daf83ef",
+        "predictions/ASSIST2015-SAKT-2026-test.npz": "e688af6aef04dcf265bf155271cfd36af627115e1f11f9a7bc15bd848297bb16",
+        "predictions/ASSIST2015-SAKT-3407-validation.npz": "00c9168ba419b063ad65c030d6f0148fb3d271012772a41a0c8fee365ec8b349",
+        "predictions/ASSIST2015-SAKT-3407-test.npz": "403acec98ce0657ff725fbe535e4834a8cbcdcc3b908ba3d391864015c603e43",
+        "predictions/ASSIST2015-SAKT-42-validation.npz": "e4c1c8b58a97123b5933d76121ce485359049f41ed12bcb37d93cd089ad00694",
+        "predictions/ASSIST2015-SAKT-42-test.npz": "6ac9a976b83bf26d700c215a072766a9c438e34e696d36b2c6c05af606a930bc",
+        "predictions/ASSIST2015-SAKT-7777-validation.npz": "cf3f6782cf094d28c498f5eeb9f23747394b68603f7e220265f057665303b9a1",
+        "predictions/ASSIST2015-SAKT-7777-test.npz": "6ff83db5586e25bd67869f3d35cfd33a413025fcbe5983d8af54423a8a59ac89",
+        "predictions/Algebra2005-LightSAKT+Difficulty-123-validation.npz": "a3e07c61ff5f4f202d8c2f4210a5699e01c82c7723215860a96b42eebb333df6",
+        "predictions/Algebra2005-LightSAKT+Difficulty-123-test.npz": "26c64ec1a48ec0f627a45673b4ca89d0070c0bb19ee37f93701b09df98184803",
+        "predictions/Algebra2005-LightSAKT+Difficulty-2026-validation.npz": "723a077deb006b60a8c1056f9906f309539fc2f3147bf581afc4acc06fdc7469",
+        "predictions/Algebra2005-LightSAKT+Difficulty-2026-test.npz": "f8e12568f6150d53cc4178bf075fdceb2fbff67c1bf681d932f8c541f964a2ce",
+        "predictions/Algebra2005-LightSAKT+Difficulty-3407-validation.npz": "7560d50220421cbc7b8825e33fa6b618a9b3d75cfef0ff86481c80432ee22611",
+        "predictions/Algebra2005-LightSAKT+Difficulty-3407-test.npz": "daf7d30fba66e9875dcd871f3e53fba01afb96eca4b3b8347f897a3a16951058",
+        "predictions/Algebra2005-LightSAKT+Difficulty-42-validation.npz": "b72d262dffb9afb47239203434e26fb422f55c7bbe59572d29ca1361dd529f12",
+        "predictions/Algebra2005-LightSAKT+Difficulty-42-test.npz": "7fbad2b3617fb8e11664a1fef0a8988b702573defa41bb7fc561b1ac744bc22b",
+        "predictions/Algebra2005-LightSAKT+Difficulty-7777-validation.npz": "1d7c6a190d124cc9084ecf377c2a451c9d5a69cd4401bb01f3055e43b3ddfdca",
+        "predictions/Algebra2005-LightSAKT+Difficulty-7777-test.npz": "5f68692aed2f5b252fe7f3592057bb5daca6f2acf16c7debba73ec39aea3d210",
+        "predictions/Algebra2005-LightSAKT-123-validation.npz": "cafd1429e5e68187e8a3e93ac677e2f591b92b700336918d0828eff322882d70",
+        "predictions/Algebra2005-LightSAKT-123-test.npz": "165cc0531cb5e64b99f9424ca64591b5b9a5e772c44fc68031552740e30815a1",
+        "predictions/Algebra2005-LightSAKT-2026-validation.npz": "a86b28d5a55093e6074d8effa32488da539116ce9db74a59293a2140c3cee255",
+        "predictions/Algebra2005-LightSAKT-2026-test.npz": "e6ed0af0468f1911dfd8de3e5434934b64fa9ffa16b1d2894fa177f65b59c3cf",
+        "predictions/Algebra2005-LightSAKT-3407-validation.npz": "b071cf40deea89e6b65c79a2700d1b358f9df17bcde3865c0fa6e9f4e3047a82",
+        "predictions/Algebra2005-LightSAKT-3407-test.npz": "cedd726693595f0fdecc83edb5eaf0f610ee99ad78fffd282fabdf6e2845eacd",
+        "predictions/Algebra2005-LightSAKT-42-validation.npz": "4b5f20b0fc2bd0a7edcae50da0973cee6ee3f743cea81c8ff5cd43a0d553f657",
+        "predictions/Algebra2005-LightSAKT-42-test.npz": "d2fd99673ef45ca33ad39d292ee7dd859268da25eb80dcf03bc53a1f650cfe50",
+        "predictions/Algebra2005-LightSAKT-7777-validation.npz": "234477d02fcdef389b6c78ac161e3b976ee569aaa1351568fabbe12abe499586",
+        "predictions/Algebra2005-LightSAKT-7777-test.npz": "6f5399bb5ceaf4c51ab3a99b428422d515ccb340b5ef985d066213f3b4e79db3",
+        "predictions/Algebra2005-SAKT-123-validation.npz": "d4404d4df7cd5a533c934644cd400043290c2298a05b69a36f46c43474280d77",
+        "predictions/Algebra2005-SAKT-123-test.npz": "15bcb5cb5c36137093e5491343d727aea3494ba0a9e57afc25563affcd454a9b",
+        "predictions/Algebra2005-SAKT-2026-validation.npz": "a5e69b17f72e5dbd6daeeb683e94b0aafd558349c18cbf151d320af5460c1654",
+        "predictions/Algebra2005-SAKT-2026-test.npz": "de8f52173e0e76a724d3c41ed7b2b465ecafb70688a7c3ae19b2c5997bf02b43",
+        "predictions/Algebra2005-SAKT-3407-validation.npz": "0ac88beeeb082a0e07ff22236b3295d80347050a607e3a1f9caba39f1b5fb9da",
+        "predictions/Algebra2005-SAKT-3407-test.npz": "d2a8f286390ce27998fcf047bcb762610486c418fc78cdb1c1d12de9e804cd2a",
+        "predictions/Algebra2005-SAKT-42-validation.npz": "9dc648d5d9d7a2088adbcb25ece0cc24a2406e7e34d50ae34f308b57d5845cb0",
+        "predictions/Algebra2005-SAKT-42-test.npz": "584e28bc7ba8eab2eaeda7223dcd90c7cd6d3f49d19f71d04a80b22a1073ecac",
+        "predictions/Algebra2005-SAKT-7777-validation.npz": "675f9a1d3777f148a541deeb78ea0d287220e1eade6d3685e3f90ca8c2c43428",
+        "predictions/Algebra2005-SAKT-7777-test.npz": "f6ec94454e5a3cb1da4eeade5ef032568e778926e07e16276c7ea141486887a2"
+      },
+      "archive_readback_verified": true
+    }
+  ]
+}

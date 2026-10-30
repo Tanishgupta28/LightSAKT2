@@ -1,0 +1,127 @@
+{
+  "status": "VERIFIED_CPU_REPLAY",
+  "dataset": "Algebra2005",
+  "model": "LightSAKT+Difficulty",
+  "seed": 3407,
+  "run_id": "Algebra2005-LightSAKTQuestion-replication-3407-v1",
+  "checkpoint": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/checkpoints/Algebra2005-LightSAKTQuestion-replication-3407-v1/best.pt",
+  "checkpoint_sha256": "978b4c30454a4ee927ea78b2752a0006abfb0ba3ee9a75719eb2208beacb5d32",
+  "config": {
+    "dataset": "Algebra2005",
+    "model": "LightSAKTQuestion",
+    "group": "question_replication",
+    "seed": 3407,
+    "seq_len": 200,
+    "batch_size": 64,
+    "max_epochs": 50,
+    "patience": 5,
+    "learning_rate": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0.0,
+    "epsilon": 1e-08,
+    "model_config": {
+      "max_seq_len": 200,
+      "embed_dim": 128,
+      "num_heads": 4,
+      "dropout": 0.2
+    },
+    "evaluate_test": false,
+    "run_id": "Algebra2005-LightSAKTQuestion-replication-3407-v1",
+    "device": "cuda",
+    "feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-train_validation.json",
+    "question_difficulty": {
+      "algorithm": "question-vs-skill-logit-loso-v1",
+      "smoothing": 10.0,
+      "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+      "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+      "raw_sha256": "19528668530108555e344e5bfcc68c762f63a458a32038599d189667e4f10407",
+      "feature_sha256": "0e5f803ad1287ae9eeeaeaead6a32a8dff6d9ca5a14e5abbfac8691a7d482ab1"
+    },
+    "question_identity": "lossless composite (Problem Name, Step Name), target tutor-step identity"
+  },
+  "config_file": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-3407-v1/config.json",
+  "config_sha256": "c8602bc7cdb75d989aff74ec65bffbee57d4ae1379bc408e3091e5b7de89b681",
+  "recorded_metrics_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/results/raw/Algebra2005-LightSAKTQuestion-replication-3407-v1/metrics.json",
+  "recorded_metrics_sha256": "0d9b73042e3953114f87d24d76a0dfdd515cd72c63cec83ef37835ecc7e1d8a1",
+  "validation": {
+    "auc": 0.8345336672476025,
+    "auc_reason": null,
+    "accuracy": 0.8123846300736246,
+    "f1": 0.8818487316359458,
+    "mse": 0.13186139925460338,
+    "bce": 0.41315567352122345,
+    "n_targets": 94262,
+    "precision": 0.8323832105741096,
+    "recall": 0.9375648146832781
+  },
+  "test": {
+    "auc": 0.8367989299310571,
+    "auc_reason": null,
+    "accuracy": 0.8076496869063533,
+    "f1": 0.8766851414362958,
+    "mse": 0.1351114231954662,
+    "bce": 0.42170141910375486,
+    "n_targets": 113704,
+    "precision": 0.8253867142295973,
+    "recall": 0.9347826086956522
+  },
+  "cpu_replay": {
+    "validation": {
+      "auc": 0.8345336607008038,
+      "auc_reason": null,
+      "accuracy": 0.8123846300736246,
+      "f1": 0.8818487316359458,
+      "mse": 0.13186139928344826,
+      "bce": 0.41315567360080296,
+      "n_targets": 94262,
+      "precision": 0.8323832105741096,
+      "recall": 0.9375648146832781
+    },
+    "test": {
+      "auc": 0.8367989299310571,
+      "auc_reason": null,
+      "accuracy": 0.8076496869063533,
+      "f1": 0.8766851414362958,
+      "mse": 0.1351114231954662,
+      "bce": 0.42170141910375486,
+      "n_targets": 113704,
+      "precision": 0.8253867142295973,
+      "recall": 0.9347826086956522
+    }
+  },
+  "recorded_comparison_absolute_differences": {
+    "validation": {
+      "auc": 6.546798658746411e-09,
+      "accuracy": 0.0,
+      "f1": 0.0,
+      "bce": 7.95795096486529e-11
+    }
+  },
+  "parameters": 257858,
+  "best_epoch": 39,
+  "epochs_trained": 44,
+  "training_seconds": 403.83948043797864,
+  "peak_allocated_bytes": 857700864,
+  "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+  "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+  "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+  "recorded_training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+  "selected_git_commit": "a37b17ed83c9920c4c7a256625f241588c72124f",
+  "precision_recall": "CPU replay,threshold0.5,globally pooled masked targets",
+  "prediction_artifacts": {
+    "validation": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/Algebra2005-LightSAKT+Difficulty-3407-validation.npz",
+      "sha256": "7560d50220421cbc7b8825e33fa6b618a9b3d75cfef0ff86481c80432ee22611"
+    },
+    "test": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/Algebra2005-LightSAKT+Difficulty-3407-test.npz",
+      "sha256": "daf7d30fba66e9875dcd871f3e53fba01afb96eca4b3b8347f897a3a16951058"
+    }
+  },
+  "verification_utc": "2026-10-30T11:30:07.315859+00:00",
+  "inference_device": "cpu",
+  "inference_batch_size": 8
+}

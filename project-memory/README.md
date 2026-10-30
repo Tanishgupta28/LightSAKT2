@@ -1,19 +1,25 @@
 # LightSAKT2 durable project memory
 
-Canonical memory `/workspace/LightSAKT2/project-memory`;research worktree
-`/workspace/LightSAKT2-architecture`,branch `research/architecture-variants-20261025`.
-Main remains research-rebuild with dirty scientific state preserved. Branch
-memory copies are synchronized versions,not a new study. Artifacts are truth.
-Read [USER_DIRECTIVES.md](USER_DIRECTIVES.md),[CURRENT_STATE.md](CURRENT_STATE.md),
-[DECISION_LOG.md](DECISION_LOG.md),then [NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md).
+Canonical directory: `/workspace/LightSAKT2/project-memory`.
+Research worktree: `/workspace/LightSAKT2-architecture`, branch
+`research/architecture-variants-20261025`. Main checkout remains research-rebuild
+with prior dirty scientific work preserved. Memory copies are synchronized views
+of the same tracked project memory; code, Git and artifacts remain authoritative.
 
-Latest:question-difficulty pilot COMPLETED29epochs,best24,AUC0.781189972 versus
-original0.750803537,+0.030386435. Exact continuation from18verified by history,
-Adam counters,RNG/permutation stream and CPU checkpoint replay. Valid only for
-offline student-disjoint fitted-training-corpus protocol;not forward-time proof.
-Richer known question input is disclosed. Test untouched;grant closed,no training.
-Five-seed/control packet prepared,9new runs pending a SEPARATE budget;not launched.
-Evidence `/workspace/LightSAKT2-architecture/reports/architecture_study/question_completion_20261029/FINAL_RESULT_20261029.md`.
-Skill `/root/.codex/skills/durable-project-memory/SKILL.md`:Resume/Update/Audit,
-strict structural+manual evidence checks. Prior handoffs in
-[completion archive](archive/BEFORE_QUESTION_COMPLETION_20261029.md) and older log/archive.
+Read [USER_DIRECTIVES.md](USER_DIRECTIVES.md), [CURRENT_STATE.md](CURRENT_STATE.md),
+[DECISION_LOG.md](DECISION_LOG.md), then [NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md).
+
+Latest: professor campaign COMPLETE. Thirty verified baseline seeds and original
+ASSIST2009 difficulty42 were reused; nine missing difficulty runs completed.
+Five-seed validation/test gains survive leakage and checkpoint replay checks on
+ASSIST2009 and Algebra2005. ASSIST2015 difficulty remains PENDING: independent
+question identity absent. Forty verified model-seed results; five missing slots.
+Scope consumed; no active campaign GPU job or further automatic training.
+Test was explicitly released only for frozen validation-selected scoring.
+
+Evidence/report: `/workspace/LightSAKT2-architecture/reports/professor_results_20261030/`.
+Plan: `/workspace/LightSAKT2-architecture/experiments/professor_campaign_20261030/plan.json`.
+Read actual campaign status before acting; never duplicate completed runs.
+Skill: `/root/.codex/skills/durable-project-memory/SKILL.md`.
+Use Resume/Update/Audit, strict validator and manual claim reconciliation.
+Prior conclusions and scopes remain under [archive](archive) and in the dated log.

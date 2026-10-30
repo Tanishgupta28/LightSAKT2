@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "expected_model_seed_slots": 45,
+  "verified_model_seed_slots": 40,
+  "pending_model_seed_slots": 5,
+  "complete_comparison_rows": 8,
+  "pending_row": "ASSIST2015 LightSAKT+Difficulty; no independent question identity",
+  "checkpoint_state_audits": 10,
+  "validation_test_prediction_audits": 80,
+  "baseline_replays": 30,
+  "new_trainings_completed": 9,
+  "old_modified_seed42_reused": true,
+  "cpu_unit_tests": 7,
+  "sample_sd_ddof": 1,
+  "all_aggregate_metrics_independently_checked": true,
+  "positive_auc_deltas_all_5_seeds_vs_both_baselines_on_both_completed_datasets": true
+}

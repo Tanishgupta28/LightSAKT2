@@ -1,51 +1,68 @@
-# Verified current state — 29 October 2026, completed audited pilot
+# Verified current state — 30 October 2026, professor campaign complete
 
-Branch research/architecture-variants-20261025;worktree /workspace/LightSAKT2-architecture.
-Question initial execution b24e154a,exact continuation d958cff4. Original sources,
-main dirty state,old epoch18 archive and28October partial reports preserved.
+Worktree `/workspace/LightSAKT2-architecture`, branch
+`research/architecture-variants-20261025`. Frozen execution commit a37b17ed.
+All nine new runs completed; owned GPU controller exited0. No training remains
+active under this campaign and its scope is consumed. Do not launch more runs.
+Reused30baseline seeds plus completed ASSIST2009 difficulty seed42; executed four
+remaining ASSIST2009 difficulty seeds and five Algebra2005 difficulty seeds.
+All use seeds42,123,2026,3407,7777 and unchanged per-dataset LightSAKT settings.
 
-| Variant | Validation AUC | F1 | Status |
-|---|---:|---:|---|
-| Original one-layer linear | 0.7508035371114405 | 0.8148054891099081 | completed29,best24 |
-| Two-layer linear | 0.7507909322800659 | 0.8162621176824227 | completed29,best24 |
-| Causal softmax | 0.7456393788778357 | 0.8125468632841789 | completed21,best16 |
-| Recency softmax | 0.7482377884727862 | 0.8134333940013463 | completed21,best16 |
-| Gated linear | 0.7506452336787726 | 0.8154588400844306 | completed29,best24 |
-| Question-difficulty correction | 0.7811899718778572 | 0.8240886674462352 | completed29,best24 |
+| Dataset | Model | Mean validation AUC | Mean test AUC |
+|---|---|---:|---:|
+| ASSIST2009 | SAKT | 0.748283739 | 0.750322388 |
+| ASSIST2009 | LightSAKT | 0.749453705 | 0.751055935 |
+| ASSIST2009 | LightSAKT+Difficulty | 0.780247982 | 0.779358708 |
+| ASSIST2015 | SAKT | 0.728969794 | 0.725179788 |
+| ASSIST2015 | LightSAKT | 0.729922085 | 0.726088355 |
+| ASSIST2015 | LightSAKT+Difficulty | PENDING | PENDING |
+| Algebra2005 | SAKT | 0.809998581 | 0.813373449 |
+| Algebra2005 | LightSAKT | 0.807548440 | 0.810589502 |
+| Algebra2005 | LightSAKT+Difficulty | 0.835215474 | 0.836870733 |
 
-Question accuracy0.747960372960373,BCE0.5173807926180807,AUCdelta+0.0303864347664167.
-Resumed epochs19..29;first18history rows identical,early stop bad_epochs5.
-All22Adam counters1134->1827 (63batches/epoch);loader RNG matches exact11epoch
-permutation stream andCPU/Python/NumPy RNG continuity passes. Source/config/
-feature/observer unchanged. CPU replay AUCdifference1.19364e-8;240protected hashes
-unchanged. Five audit/pipeline CPU tests and two SAKT preparation tests PASS.
+All non-PENDING rows have five seeds; exact sample SD, F1, accuracy, precision,
+recall, BCE, epochs, runtime, neural parameters and provenance are in
+`/workspace/LightSAKT2-architecture/reports/professor_results_20261030/`.
+Primary report `PROFESSOR_REPORT.md`, concise `PROFESSOR_SUMMARY.md`, actual
+`individual_seed_results.csv`, `summary_results.csv`, `absolute_auc_improvements.csv`.
 
-Leakage scope:validation/test labels do NOT enter fitted difficulty rates;whole
-own-student labels excluded for training rows. Real recomputation/perturbations
-and synthetic full-builder tests pass. However FULL training-corpus statistics
-are used;95.045% of validation rows have later-order training observations of
-same problem(order_id proxy). Valid retrospective student-disjoint benchmark,
-NOT forward-time causal deployment proof. Observed validation history is allowed
-as in originalKT;future validation responses do not enter feature/attention.
-Validation reuse/one seed/richer problem-ID input limit claims. No general
-architecture superiority or matched-input competitor win established yet.
+Both completed difficulty datasets improve validation AND test AUC in all five
+matched seeds versus BOTH original LightSAKT and SAKT. Mean test gains versus
+LightSAKT: ASSIST2009 +0.028302772; Algebra2005 +0.026281231. Test F1/accuracy
+means also improve. This supports the item-information modification on these
+fixed offline student-disjoint partitions, not attention-kernel superiority,
+forward-time deployment or all-three-dataset generality.
 
-Saved totaltraining327.943915s;continuation113.740098s;peakallocated254.856MiB,
-reserved368MiB. Shared guards passed;no peer interference. Grant closed_completed.
-Run ASSIST2009-LightSAKT-pilot-one_layer_question_difficulty-42-v1.
-Best/latest under pilot-workspace/checkpoints/<run>/;best SHA256
-8be7fb4a227d6c58b7be0691aeccf10ebec29db58674675cff99a417753bffeb;
-latest451c3d001fa35d0e21d6c32fab70bc5e5c5149e83fa8e3ef1e12ef1c614e825d.
-Source SHA256cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0;
-feature6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464.
-Completed archive/checkpoints/features/raw records:
-/workspace/LightSAKT2/backups/question_completion_20261029/completed_checkpoints_features_records.tar.gz.
-Full report,verification,epochCSV,PNG/PDF,archive hashes in `/workspace/LightSAKT2-architecture/reports/architecture_study/question_completion_20261029/`.
+ASSIST2015 difficulty: five slots PENDING because the available four-column
+source has no independent question ID. Do not substitute skill IDs or another
+release silently. Algebra target identity (Problem Name,Step Name) is aligned
+row-for-row and confirmed by the official SIGKDD format; its local test is a
+student partition of the original training subset, not official challenge test.
 
-Replication packet `/workspace/LightSAKT2-architecture/experiments/question_replication_20261029/plan.json`:reuse this seed42;4new LightSAKT seeds+5feature-matched
-SAKT controls. Control implemented outside protected src,preserves nativeSAKT,
-adds same one-scalar feature;CPU initialization/dropout/gradient/resume tests pass.
-Each model retains own original selected hyperparameters;featurematched,not
-hyperparameter-identical.9new runs not authorized/launched. Proposed ceiling
-9sequential900s windows,4GiB each,total135GPU-minutes. Existing Git transport auth
-blocker retained;local commits/bundles only. Test remains untouched.
+Verification:40checkpoints independently CPU-replayed on validation/test;
+80prediction-array checks reproduce every student's n-1targets and independent
+rank-sum AUC/confusion metrics. Ten difficulty best/latest checkpoint states,
+finite Adam tensors/counters and exact seeded shuffle/RNG states PASS. All338
+protected original files unchanged. Real held-out-label and whole-own-student
+label perturbations PASS on both feature datasets. Seven pre-GPU CPU tests PASS.
+
+Question scalar formula/smoothing10 and causal linear encoder unchanged.
+Training estimates exclude whole own student; held-out estimates use training
+labels only. ASSIST2009 original numerical features reused exactly. Full training
+corpus timing, richer item inputs, reused validation and one fixed split per
+dataset are disclosed limitations. Seed42 headline0.750803537->0.781189972 is
+reproduced, best24/completed29 after prior exact epoch18 continuation; no restart.
+Historical original_snapshot defects are disclosed; corrected causal baselines
+retain original architecture/parameter shapes. Original artifacts are preserved.
+
+Resource summary:9new admitted windows3850.931233s (64.18min), native training
+3832.883621s; each<900s. Maximum allocated818MiB, workerRSS1.584GiB;
+minimum GPUfree18.818GiB/hostheadroom32.568GiB. No sampled guard breach or peer
+interference. FourGiB cap and original holds remain. Test scoring was explicitly
+authorized only after validation selection; all training has evaluate_test=false.
+
+Local recovery archives/checksums: checkpoint_backups.json under report folder,
+pointing to `/workspace/LightSAKT2/backups/professor_results_20261030/`.
+Old Git/checkpoint archives remain preserved. Results are to be committed only
+on research branch and bundled locally; existing Git-auth blocker is retained,
+no external push or force-push. See next checkpoint for exact follow-up.

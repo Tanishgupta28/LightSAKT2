@@ -1,48 +1,44 @@
-## Current professor-report scope — 30 October 2026
+# Current durable directives — 30 October 2026
 
-User explicitly requests complete three-dataset SAKT/LightSAKT/difficulty
-comparisons,prefer5seeds,reuse verified baselines,final TEST metrics,CPU/GPU
-execution where permissions/resources permit. This supersedes old test-locked
-and preparation-only scope for frozen validation-selected models in this task.
-Test release is evaluation only;no test tuning/feature selection. Existing
-shared-GPU permission and all4GiB/900s/headroom/ownership/noninterference guards
-remain. Current Phase3request authorizes nine necessary bounded new runs:
-4remaining ASSIST2009 difficulty seeds+5Algebra2005 difficulty seeds,serial,
-<=135GPU-minute ceiling;no repeats of30existing baseline runs or completed
-modifiedseed42. No feature-matched SAKT augmentation runs in this scope.
-ASSIST2015 difficulty blocked:independent question IDs absent;do not substitute
-another feature/dataset or manufacture results. Mark PENDING and explain.
-Algebra target identity is explicit(Problem Name,Step Name),row alignment to
-frozen source_row/student/time/skill verified. Same model/formula/smoothing10.
-Preserve all old artifacts/holds and other workloads;halt campaign on unsafe
-resource stop,with no automatic retry. No push to main/forcepush/credentials.
+Campaign scope is now CONSUMED:9/9new runs completed. No additional GPU run is
+authorized by this completed campaign. Missing ASSIST2015 metadata and optional
+feature-matched SAKT controls are next separately scoped actions, not automatic
+continuations. Test is released for reporting only; no further tuning against it.
 
-# Durable current directives — 29 October 2026
+The current user requests professor-ready SAKT, LightSAKT and LightSAKT with
+question difficulty comparisons on ASSIST2009, ASSIST2015 and Algebra2005.
+Prefer the existing five training seeds:42,123,2026,3407,7777. Reuse verified
+results and checkpoints; independently replay validation and final test metrics.
+Report all actual means/sample SD and individual seeds; missing values PENDING.
 
-Latest user authorized rigorous leakage/state verification and SAME-run exact
-continuation from18if scientifically valid. Audit passed for existing offline
-student-disjoint protocol;new window completed planned early stopping at29.
-Scope is consumed;grant closed_completed. No further GPU training is authorized.
-User requires unchanged hyperparameters/splits,evaluation method,best validation
-selection and preservation of originals/historical results/test/Git.
+Current explicit final-test request supersedes the prior test-locked scope ONLY
+for frozen validation-selected checkpoints. No tuning or architecture/feature
+changes after test release. Preserve original architectures and established
+student-disjoint splits, preprocessing, loss/masks, stopping and selection.
+Disclose corrected causal baselines versus the flawed historical snapshot,
+richer item inputs, offline full-training-corpus fitting and validation reuse.
+Exclude whole own student from training target encoding; use training labels
+only for held-out estimates. Do not claim forward-time deployment validity.
 
-Full training-corpus statistics are permitted under the established retrospective
-benchmark;do not claim forward-time deployment validity. Explicitly disclose
-later-order training observations,richer known problem input,validation reuse
-and one-seed limits. Own-student targets/future responses and validation/test
-labels must not enter fitted predictor features. Observed prior responses in
-validation follow originalKT evaluation and are not future labels.
+Current Phase3 scope authorizes nine necessary new bounded serial runs, frozen
+in a37b17ed:four remaining ASSIST2009 difficulty seeds and five Algebra2005
+seeds. Reuse completed difficulty42 and30existing baseline seeds. Existing shared
+GPU permission applies only with exact-device/resource admission. Each run has
+4GiB allocator cap/900s maximum; total<=8100GPU-seconds, concurrency1. Admission
+free>=10GiB, runtimefree>=6GiB, workerRSS<=4GiB, hostheadroom>=2GiB, pacing0.1s,
+stepstop30s; pre-existing unsupported-MIG-utilization fallback applies. Stop the
+whole campaign on unsafe interruption; no automatic retry/extra window. Never
+signal or modify peer/HiTSKT work. Preserve hold markers and their original bytes.
 
-User requests preparation of five-seed ASSIST2009 and feature-matched SAKT if
-gain survives. Packet prepared;campaign MUST NOT launch without a separately
-defined/approved resource budget. No automatic retries/new windows or peer
-interference. Existing shared guards:4GiB allocator,900s windows,10GiB admission/
-6GiB runtime-free,4GiB RSS/2GiB host headroom,0.1s pacing,30s stepstop,and recorded
-unsupported-MIG headroom/cap fallback. General holds remain byte-identical.
+ASSIST2015 difficulty is blocked by missing independent question identity. Do not
+substitute another feature or dataset. Algebra identity is the verified lossless
+(Problem Name,Step Name) tutor-step composite; same numerical formula/smoothing10.
+No feature-matched SAKT augmentation campaign or new architecture is launched in
+this scope. The older optional control plan is a different, still-unlaunched plan.
 
-Use existing durable memory Resume/Update/Audit. Actual code/configs/checkpoints/
-raw evidence outrank prose;archive superseded handoffs and append decisions.
-User prefers autonomous authorized work,no repeated permission questions. Keep
-local verified commits/bundles;do not expose credentials,reset,force push or
-message others. Existing missing Git transport auth remains;no push claimed.
-Earlier instructions/history remain in archive/decision log.
+Preserve existing checkpoints, raw results, original dirty state and Git history.
+Commit validated changes only on intended research branch if safe. Keep verified
+local bundles and artifact archives. No push to main, force push or credentials
+exposure. Report unavailable Git authentication without discarding local work.
+Update/synchronize canonical memory after material milestones and validate it.
+Earlier user directives remain preserved in archive and decision log.

@@ -1,0 +1,127 @@
+{
+  "status": "VERIFIED_CPU_REPLAY",
+  "dataset": "ASSIST2009",
+  "model": "LightSAKT+Difficulty",
+  "seed": 7777,
+  "run_id": "ASSIST2009-LightSAKTQuestion-replication-7777-v1",
+  "checkpoint": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/checkpoints/ASSIST2009-LightSAKTQuestion-replication-7777-v1/best.pt",
+  "checkpoint_sha256": "0d7ec9dabc6b0b2306f3f7bf2047844fe5703cb752e98569c133703270afcdc8",
+  "config": {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKTQuestion",
+    "group": "question_replication",
+    "seed": 7777,
+    "seq_len": 100,
+    "batch_size": 64,
+    "max_epochs": 50,
+    "patience": 5,
+    "learning_rate": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0.0,
+    "epsilon": 1e-08,
+    "model_config": {
+      "max_seq_len": 100,
+      "embed_dim": 64,
+      "num_heads": 2,
+      "dropout": 0.1
+    },
+    "evaluate_test": false,
+    "run_id": "ASSIST2009-LightSAKTQuestion-replication-7777-v1",
+    "device": "cuda",
+    "feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/data/auxiliary/ASSIST2009-train_validation.json",
+    "question_difficulty": {
+      "algorithm": "question-vs-skill-logit-loso-v1",
+      "smoothing": 10.0,
+      "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+      "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+      "raw_sha256": "f22e3fb7872c1784ce93b0f9ebabbe0cbcac4f896fd8b4a11667b9715d77dbdc",
+      "feature_sha256": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464"
+    },
+    "question_identity": "problem_id"
+  },
+  "config_file": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/results/raw/ASSIST2009-LightSAKTQuestion-replication-7777-v1/config.json",
+  "config_sha256": "a2476c76ae0bb81a68c9160eb96d6e907e43e2b554ad7f814e38fc816bb38dc1",
+  "recorded_metrics_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/results/raw/ASSIST2009-LightSAKTQuestion-replication-7777-v1/metrics.json",
+  "recorded_metrics_sha256": "a2e8dccc593d620beb39386846531f82991778f8915b292c5d202947b2b57c0a",
+  "validation": {
+    "auc": 0.7805788106338941,
+    "auc_reason": null,
+    "accuracy": 0.7456657925407926,
+    "f1": 0.8229327788624895,
+    "mse": 0.1724800680077007,
+    "bce": 0.5189632940040079,
+    "n_targets": 27456,
+    "precision": 0.7677059185314851,
+    "recall": 0.8867213114754099
+  },
+  "test": {
+    "auc": 0.7795402746094292,
+    "auc_reason": null,
+    "accuracy": 0.7448344906914327,
+    "f1": 0.8224412658415474,
+    "mse": 0.1720585841935312,
+    "bce": 0.5179813430386734,
+    "n_targets": 46946,
+    "precision": 0.7701682305257898,
+    "recall": 0.8823267499920491
+  },
+  "cpu_replay": {
+    "validation": {
+      "auc": 0.7805788016815992,
+      "auc_reason": null,
+      "accuracy": 0.7456657925407926,
+      "f1": 0.8229327788624895,
+      "mse": 0.17248006834571136,
+      "bce": 0.5189632951760612,
+      "n_targets": 27456,
+      "precision": 0.7677059185314851,
+      "recall": 0.8867213114754099
+    },
+    "test": {
+      "auc": 0.7795402746094292,
+      "auc_reason": null,
+      "accuracy": 0.7448344906914327,
+      "f1": 0.8224412658415474,
+      "mse": 0.1720585841935312,
+      "bce": 0.5179813430386734,
+      "n_targets": 46946,
+      "precision": 0.7701682305257898,
+      "recall": 0.8823267499920491
+    }
+  },
+  "recorded_comparison_absolute_differences": {
+    "validation": {
+      "auc": 8.952294905384406e-09,
+      "accuracy": 0.0,
+      "f1": 0.0,
+      "bce": 1.1720533432679758e-09
+    }
+  },
+  "parameters": 53858,
+  "best_epoch": 33,
+  "epochs_trained": 38,
+  "training_seconds": 528.1335409699823,
+  "peak_allocated_bytes": 266996736,
+  "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+  "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+  "selection": "maximum validation AUC,strict improvement,patience5,max50;test only after selection",
+  "recorded_training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+  "selected_git_commit": "a37b17ed83c9920c4c7a256625f241588c72124f",
+  "precision_recall": "CPU replay,threshold0.5,globally pooled masked targets",
+  "prediction_artifacts": {
+    "validation": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/ASSIST2009-LightSAKT+Difficulty-7777-validation.npz",
+      "sha256": "6747b00719f241490bd737eef3068d992a8f9a7bb10db719b39ab520c22afb10"
+    },
+    "test": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/predictions/ASSIST2009-LightSAKT+Difficulty-7777-test.npz",
+      "sha256": "4764c54d989b76fb9cbfa2ea73586065325c51ec606fad0d4b9335b87854b690"
+    }
+  },
+  "verification_utc": "2026-10-30T11:04:31.601970+00:00",
+  "inference_device": "cpu",
+  "inference_batch_size": 8
+}

@@ -1,0 +1,8 @@
+{
+  "accessed_utc_date": "2026-10-30",
+  "source_title": "SIGKDD KDD Cup 2010 student performance evaluation: Data",
+  "source_url": "https://kdd.org/kdd-cup/view/kdd-cup-2010-student-performance-evaluation/Data",
+  "verified_semantics": "The official format defines unique step identity as the pair Problem Name and Step Name. Those columns remain supplied in prediction/test records; correctness, hints and response-timing fields are withheld.",
+  "scope": "Supports known target-step metadata in the benchmark. Does not establish chronological deployment validity or equivalence of local student partition to the official challenge split.",
+  "implementation_change": "None; confirms the already frozen composite identity."
+}

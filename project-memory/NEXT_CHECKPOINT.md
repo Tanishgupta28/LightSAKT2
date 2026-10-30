@@ -1,28 +1,39 @@
-# Exact next checkpoint — authorize a defined replication budget
+# Exact next checkpoint — completed comparison, metadata gap
 
-Seed42 question-difficulty run is COMPLETE. Do not restart/resume/retrain it.
-Retain old epoch18 interruption record as history,not current state. To verify
-current result on CPU:python -m scripts.verify_question_completion_20261029;
-state continuity:python -m scripts.verify_question_state_continuity.
+No active campaign job. Scope for nine new runs is consumed. Inspect actual
+`/workspace/LightSAKT2-architecture/reports/professor_results_20261030/campaign_status.json`
+(status completed,9completed/9launched) and branch Git HEAD before any recovery.
+Never restart the completed controller or any of its runs. Forty model-seed
+checkpoints are verified; five ASSIST2015 difficulty slots are metadata-blocked.
 
-Prepared packet `/workspace/LightSAKT2-architecture/experiments/question_replication_20261029/plan.json` contains10configs across five seeds42/123/2026/3407/7777
-and two feature-matched families. REUSE completed LightSAKT seed42;only4new
-LightSAKT runs+5SAKT controls remain. Exact same feature SHA256 and split in all.
-SAKT retains its previously selected lr0.0005/4heads/dropout0.2;LightSAKT
-lr0.001/2heads/dropout0.1. No new tuning. Control scripts/feature_matched_sakt.py
-is CPU validated and bound by hash in configs. No real-data controls ran.
+Deliver/review the professor report and tables in
+`/workspace/LightSAKT2-architecture/reports/professor_results_20261030/`.
+Use existing checkpoint/source/config/feature hashes, archive manifests and
+CPU audits as ground truth; no fresh baseline training is needed.
+Report generation: python -m scripts.professor_report_20261030.
+Read-only audit: CUDA_VISIBLE_DEVICES='' python -m scripts.audit_professor_campaign_20261030 --leakage.
+Prediction arrays and checkpoint/features/raw records have local archive backups.
+If artifacts are absent, restore verified archives before replay rather than
+silently trusting cache JSON or discarding historical records.
 
-Campaign requires SEPARATE explicit budget approval and a seed-general budget-
-enforcing launcher (current pilot is deliberately seed42-only). Proposed maximum:
-9new sequential invocations,<=900s and4GiB per invocation,total<=8100GPU-seconds
-(135minutes);existing shared GPU/host floors,pacing,step limits remain. No automatic
-extra windows/retries. This is a ceiling,not a throughput estimate or permission.
-Do not launch based on prepared files or unused prior scope.
+ASSIST2015 requires an authoritative mapping to independent question/exercise
+identity, aligned to existing log/student records. Validate mapping and absence
+of outcome-dependent metadata before defining a frozen experiment. Preserve
+current splits and preprocessing; do not substitute skill as question or report
+an invented equivalent result. Alternative dataset releases require an explicitly
+new, disclosed protocol if exact partitions cannot be maintained.
 
-Report paired validation deltas,mean/sample SD over all seeds;never bestseed.
-Five seeds assess initialization variance,not new student cohorts. Keep test
-locked. Global train-fitted difficulty is valid offline,not a forward-time claim;
-a chronological protocol would be a new separately frozen investigation,not a
-silent change. Algebra2005 needs verified item/step mapping;ASSIST2015 current
-release lacks problem IDs. No silent schema substitution. No force push or
-credentials exposure;preserve local checkpoints,Git bundles and old artifacts.
+Next scientifically justified control: already implemented feature-matched SAKT
+augmentation, five ASSIST2009 seeds with unchanged native SAKT settings. It is
+NOT authorized under consumed campaign scope. Define a separate bounded budget
+(e.g. five serial900s windows /4GiB,75GPU-minute ceiling with existing guards)
+before execution. The old question_replication_20261029 plan's LightSAKT slots
+are now fulfilled; DO NOT repeat them. Verified equivalence mapping is in
+older_replication_plan_equivalence.json in the report folder. Only its five SAKT
+augmentation controls remain unexecuted.
+
+Do not tune against the released test split. A chronological/deployment study or
+new student-cohort partitions would require a separately frozen protocol and
+resource scope. Current evidence is retrospective, richer-input, fixed-split
+replication; no all-three-dataset or attention superiority claim. Keep all prior
+checkpoints, original dirty state, holds, peers and Git history untouched.

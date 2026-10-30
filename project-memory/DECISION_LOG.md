@@ -205,3 +205,72 @@ retained;matchedinput does not mean identicalhyperparameters. Proposed9serial
 budget and guardedseed-general execution. Paired5seed deltas/mean/sampleSD,
 no general/online claim yet. Source/test/history/Git preserved,current memory
 consolidated with prior state archived. Local commits/bundles only.
+
+## 30 October 2026 — checkpoint replay and feature perturbations verified
+
+All 30 existing SAKT/LightSAKT baseline seeds passed independent CPU validation/test
+replay. Reused modified ASSIST2009 seed42 reproduces validation AUC 0.781189972
+and test AUC 0.778555249. First new seed123 completed with validation AUC
+0.780341551 and passed CPU held-out replay; remaining frozen campaign is active.
+Evidence: reports/professor_results_20261030/replays/ in research worktree.
+Real-data validation-label and entire-own-student-label flip invariance passed
+for ASSIST2009 and Algebra2005, with responsive other-student positive control.
+Saved optimizer/RNG and exact data-order stream verified for completed runs.
+Evidence: real_data_leakage_audit.json and checkpoint_state_audit.json in that
+report directory. No forward-time or equal-input attention superiority claim.
+Current user explicitly requests final test scores and missing seed runs; this
+supersedes older preparation-only/test-locked instructions for frozen campaign.
+ASSIST2015 modified row stays PENDING because its source lacks item metadata.
+
+## 30 October 2026 — ASSIST2009 five-seed difficulty replication complete
+
+All five frozen seeds passed CPU validation/test replay and independent target/
+rank-AUC/confusion-metric audit. Modified validation AUC 0.780247982153
+(sampleSD 0.001153303456); test AUC 0.779358707815
+(sampleSD 0.000778165242). Paired mean test AUC gain over LightSAKT
+0.028302772406, positive5/5seeds. Both AUC and F1 improve on
+this fixed student split; no broader deployment/kernel-superiority claim. All
+completed checkpoints, optimizer/RNG/data order and backups verified. Evidence:
+reports/professor_results_20261030/summary_results.json, paired_seed_auc_deltas.csv,
+masking_and_metrics_audit.json, checkpoint_state_audit.json, checkpoint_backups.json.
+Algebra2005 campaign active; ASSIST2015 missing question metadata stays PENDING.
+
+## 30 October 2026 — first Algebra2005 difficulty seed verified
+
+Seed42 completed43/selected38 with validation AUC0.8352874266647624; independent
+CPU validation/test replay passed, test AUC0.836898773. Original matched LightSAKT
+test AUC0.811009501. Other four seeds remain the active frozen campaign, not a
+completed cross-seed claim. Checkpoint archive readback passed. Official SIGKDD
+format confirms the frozen (Problem Name,Step Name) identity as supplied predictor
+metadata; no feature/configuration change. Evidence: replays/Algebra2005-LightSAKT+Difficulty-42.json,
+external_field_provenance.json and checkpoint_backups.json in professor report folder.
+
+## 30 October 2026 — second Algebra2005 seed verified
+
+Seed123 completed40/selected35: validation AUC 0.835734920590, test AUC 0.837020732773. CPU replay, checkpoint/optimizer/RNG/data-order, independent mask/metric and archive readback audits PASS. Evidence: professor_results_20261030/replays/Algebra2005-LightSAKT+Difficulty-123.json and current audit manifests. Three remaining frozen Algebra seeds are active/pending; no all-seed or all-three-dataset claim.
+
+## 30 October 2026 — third Algebra2005 seed verified
+
+Seed2026 completed39/selected34: validation AUC 0.835612277030, test AUC 0.836540566670. CPU replay, checkpoint/optimizer/RNG/data-order, independent mask/metric, real-data perturbation and archive readback audits PASS for all eight completed difficulty runs. Evidence: professor_results_20261030/replays/Algebra2005-LightSAKT+Difficulty-2026.json and audit manifests. Two prescribed Algebra seeds remain active/pending. No configuration changes.
+
+## 30 October 2026 — fourth Algebra2005 seed verified
+
+Seed3407 completed44/selected39: validation AUC 0.834533667248, test AUC 0.836798929931. CPU replay, checkpoint/optimizer/RNG/data-order, independent mask/metric and archive readback audits PASS for all nine completed difficulty runs. Resource summary confirms no sampled runtime-floor/RSS breach. Evidence: professor_results_20261030/replays/Algebra2005-LightSAKT+Difficulty-3407.json and audit manifests. Final prescribed seed7777 is active; no extra run or settings change.
+
+## 30 October 2026 — final professor comparison verified
+
+All9new runs completed, no retries/settings changes/unsafe stops. Final forty
+model-seed checkpoints passed CPU validation/test replay;80prediction arrays
+passed exact target/mask and independent metric checks. Ten difficulty checkpoint
+optimizer/RNG/data-order audits PASS;338original fingerprints unchanged;7CPUtests
+PASS. Complete five-seed difficulty results on ASSIST2009 and Algebra2005 have
+positive validation/test AUC deltas in every matched seed versus both baselines.
+Mean test gains versus LightSAKT:+0.028302772 and+0.026281231. Mean F1/accuracy
+also improve. ASSIST2015 difficulty remains5PENDING slots because item identity
+is absent, with no substitute or fabricated observation. All limitations are in
+PROFESSOR_REPORT.md. Native training3832.883621s, admitted windows3850.931233s;
+max allocated818MiB;no sampled floor/RSS breach. Scope consumed, controller exited0.
+Evidence: summary_results.json, paired_seed_auc_deltas.csv, delivery_checks.json,
+checkpoint_state_audit.json, masking_and_metrics_audit.json, resource_summary.json,
+checkpoint_backups.json in reports/professor_results_20261030/. Final validation,
+research-branch result commit and verified incremental Git bundle follow.

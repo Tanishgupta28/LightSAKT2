@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "datasets": [
+    {
+      "dataset": "ASSIST2009",
+      "question_identity": "problem_id",
+      "training_question_aggregates": 16511,
+      "training_skill_aggregates": 136,
+      "unseen_question_fraction": {
+        "validation": 0.007175917620465717,
+        "test": 0.006781505745442368
+      },
+      "student_disjoint": true,
+      "validation_label_flip_invariant": true,
+      "entire_own_student_label_flip_invariant": true,
+      "own_student_test_rows": 1040,
+      "other_training_students_positive_control_maximum_change": 3.9263470922939465,
+      "validation_and_test_sidecars_reproduced_from_train_labels_only": true,
+      "scope": "Offline full-training-corpus fitting; no chronological deployment claim"
+    },
+    {
+      "dataset": "Algebra2005",
+      "question_identity": "lossless composite (Problem Name, Step Name), target tutor-step identity",
+      "training_question_aggregates": 119581,
+      "training_skill_aggregates": 387,
+      "unseen_question_fraction": {
+        "validation": 0.26613937806804566,
+        "test": 0.26289755754700406
+      },
+      "student_disjoint": true,
+      "validation_label_flip_invariant": true,
+      "entire_own_student_label_flip_invariant": true,
+      "own_student_test_rows": 5084,
+      "other_training_students_positive_control_maximum_change": 7.082918364932633,
+      "validation_and_test_sidecars_reproduced_from_train_labels_only": true,
+      "scope": "Offline full-training-corpus fitting; no chronological deployment claim"
+    }
+  ]
+}

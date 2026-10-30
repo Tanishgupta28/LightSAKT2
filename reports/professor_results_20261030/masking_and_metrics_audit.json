@@ -1,0 +1,808 @@
+{
+  "status": "PASS",
+  "split_replays": [
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT+Difficulty",
+      "seed": 123,
+      "split": "validation",
+      "targets": 27456,
+      "positive_targets": 18300,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT+Difficulty",
+      "seed": 123,
+      "split": "test",
+      "targets": 46946,
+      "positive_targets": 31443,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT+Difficulty",
+      "seed": 2026,
+      "split": "validation",
+      "targets": 27456,
+      "positive_targets": 18300,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT+Difficulty",
+      "seed": 2026,
+      "split": "test",
+      "targets": 46946,
+      "positive_targets": 31443,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT+Difficulty",
+      "seed": 3407,
+      "split": "validation",
+      "targets": 27456,
+      "positive_targets": 18300,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT+Difficulty",
+      "seed": 3407,
+      "split": "test",
+      "targets": 46946,
+      "positive_targets": 31443,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT+Difficulty",
+      "seed": 42,
+      "split": "validation",
+      "targets": 27456,
+      "positive_targets": 18300,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT+Difficulty",
+      "seed": 42,
+      "split": "test",
+      "targets": 46946,
+      "positive_targets": 31443,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT+Difficulty",
+      "seed": 7777,
+      "split": "validation",
+      "targets": 27456,
+      "positive_targets": 18300,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT+Difficulty",
+      "seed": 7777,
+      "split": "test",
+      "targets": 46946,
+      "positive_targets": 31443,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "seed": 123,
+      "split": "validation",
+      "targets": 27456,
+      "positive_targets": 18300,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "seed": 123,
+      "split": "test",
+      "targets": 46946,
+      "positive_targets": 31443,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "seed": 2026,
+      "split": "validation",
+      "targets": 27456,
+      "positive_targets": 18300,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "seed": 2026,
+      "split": "test",
+      "targets": 46946,
+      "positive_targets": 31443,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "seed": 3407,
+      "split": "validation",
+      "targets": 27456,
+      "positive_targets": 18300,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "seed": 3407,
+      "split": "test",
+      "targets": 46946,
+      "positive_targets": 31443,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "seed": 42,
+      "split": "validation",
+      "targets": 27456,
+      "positive_targets": 18300,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "seed": 42,
+      "split": "test",
+      "targets": 46946,
+      "positive_targets": 31443,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "seed": 7777,
+      "split": "validation",
+      "targets": 27456,
+      "positive_targets": 18300,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "seed": 7777,
+      "split": "test",
+      "targets": 46946,
+      "positive_targets": 31443,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "seed": 123,
+      "split": "validation",
+      "targets": 27456,
+      "positive_targets": 18300,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "seed": 123,
+      "split": "test",
+      "targets": 46946,
+      "positive_targets": 31443,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "seed": 2026,
+      "split": "validation",
+      "targets": 27456,
+      "positive_targets": 18300,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "seed": 2026,
+      "split": "test",
+      "targets": 46946,
+      "positive_targets": 31443,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "seed": 3407,
+      "split": "validation",
+      "targets": 27456,
+      "positive_targets": 18300,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "seed": 3407,
+      "split": "test",
+      "targets": 46946,
+      "positive_targets": 31443,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "seed": 42,
+      "split": "validation",
+      "targets": 27456,
+      "positive_targets": 18300,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "seed": 42,
+      "split": "test",
+      "targets": 46946,
+      "positive_targets": 31443,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "seed": 7777,
+      "split": "validation",
+      "targets": 27456,
+      "positive_targets": 18300,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "seed": 7777,
+      "split": "test",
+      "targets": 46946,
+      "positive_targets": 31443,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "seed": 123,
+      "split": "validation",
+      "targets": 66965,
+      "positive_targets": 49323,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "seed": 123,
+      "split": "test",
+      "targets": 133044,
+      "positive_targets": 97262,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "seed": 2026,
+      "split": "validation",
+      "targets": 66965,
+      "positive_targets": 49323,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "seed": 2026,
+      "split": "test",
+      "targets": 133044,
+      "positive_targets": 97262,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "seed": 3407,
+      "split": "validation",
+      "targets": 66965,
+      "positive_targets": 49323,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "seed": 3407,
+      "split": "test",
+      "targets": 133044,
+      "positive_targets": 97262,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "seed": 42,
+      "split": "validation",
+      "targets": 66965,
+      "positive_targets": 49323,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "seed": 42,
+      "split": "test",
+      "targets": 133044,
+      "positive_targets": 97262,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "seed": 7777,
+      "split": "validation",
+      "targets": 66965,
+      "positive_targets": 49323,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "LightSAKT",
+      "seed": 7777,
+      "split": "test",
+      "targets": 133044,
+      "positive_targets": 97262,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "seed": 123,
+      "split": "validation",
+      "targets": 66965,
+      "positive_targets": 49323,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "seed": 123,
+      "split": "test",
+      "targets": 133044,
+      "positive_targets": 97262,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "seed": 2026,
+      "split": "validation",
+      "targets": 66965,
+      "positive_targets": 49323,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "seed": 2026,
+      "split": "test",
+      "targets": 133044,
+      "positive_targets": 97262,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "seed": 3407,
+      "split": "validation",
+      "targets": 66965,
+      "positive_targets": 49323,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "seed": 3407,
+      "split": "test",
+      "targets": 133044,
+      "positive_targets": 97262,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "seed": 42,
+      "split": "validation",
+      "targets": 66965,
+      "positive_targets": 49323,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "seed": 42,
+      "split": "test",
+      "targets": 133044,
+      "positive_targets": 97262,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "seed": 7777,
+      "split": "validation",
+      "targets": 66965,
+      "positive_targets": 49323,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2015",
+      "model": "SAKT",
+      "seed": 7777,
+      "split": "test",
+      "targets": 133044,
+      "positive_targets": 97262,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT+Difficulty",
+      "seed": 123,
+      "split": "validation",
+      "targets": 94262,
+      "positive_targets": 70393,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT+Difficulty",
+      "seed": 123,
+      "split": "test",
+      "targets": 113704,
+      "positive_targets": 83168,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT+Difficulty",
+      "seed": 2026,
+      "split": "validation",
+      "targets": 94262,
+      "positive_targets": 70393,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT+Difficulty",
+      "seed": 2026,
+      "split": "test",
+      "targets": 113704,
+      "positive_targets": 83168,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT+Difficulty",
+      "seed": 3407,
+      "split": "validation",
+      "targets": 94262,
+      "positive_targets": 70393,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT+Difficulty",
+      "seed": 3407,
+      "split": "test",
+      "targets": 113704,
+      "positive_targets": 83168,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT+Difficulty",
+      "seed": 42,
+      "split": "validation",
+      "targets": 94262,
+      "positive_targets": 70393,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT+Difficulty",
+      "seed": 42,
+      "split": "test",
+      "targets": 113704,
+      "positive_targets": 83168,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT+Difficulty",
+      "seed": 7777,
+      "split": "validation",
+      "targets": 94262,
+      "positive_targets": 70393,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT+Difficulty",
+      "seed": 7777,
+      "split": "test",
+      "targets": 113704,
+      "positive_targets": 83168,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "seed": 123,
+      "split": "validation",
+      "targets": 94262,
+      "positive_targets": 70393,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "seed": 123,
+      "split": "test",
+      "targets": 113704,
+      "positive_targets": 83168,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "seed": 2026,
+      "split": "validation",
+      "targets": 94262,
+      "positive_targets": 70393,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "seed": 2026,
+      "split": "test",
+      "targets": 113704,
+      "positive_targets": 83168,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "seed": 3407,
+      "split": "validation",
+      "targets": 94262,
+      "positive_targets": 70393,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "seed": 3407,
+      "split": "test",
+      "targets": 113704,
+      "positive_targets": 83168,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "seed": 42,
+      "split": "validation",
+      "targets": 94262,
+      "positive_targets": 70393,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "seed": 42,
+      "split": "test",
+      "targets": 113704,
+      "positive_targets": 83168,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "seed": 7777,
+      "split": "validation",
+      "targets": 94262,
+      "positive_targets": 70393,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "seed": 7777,
+      "split": "test",
+      "targets": 113704,
+      "positive_targets": 83168,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "seed": 123,
+      "split": "validation",
+      "targets": 94262,
+      "positive_targets": 70393,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "seed": 123,
+      "split": "test",
+      "targets": 113704,
+      "positive_targets": 83168,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "seed": 2026,
+      "split": "validation",
+      "targets": 94262,
+      "positive_targets": 70393,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "seed": 2026,
+      "split": "test",
+      "targets": 113704,
+      "positive_targets": 83168,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "seed": 3407,
+      "split": "validation",
+      "targets": 94262,
+      "positive_targets": 70393,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "seed": 3407,
+      "split": "test",
+      "targets": 113704,
+      "positive_targets": 83168,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "seed": 42,
+      "split": "validation",
+      "targets": 94262,
+      "positive_targets": 70393,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "seed": 42,
+      "split": "test",
+      "targets": 113704,
+      "positive_targets": 83168,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "seed": 7777,
+      "split": "validation",
+      "targets": 94262,
+      "positive_targets": 70393,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "seed": 7777,
+      "split": "test",
+      "targets": 113704,
+      "positive_targets": 83168,
+      "every_expected_n_minus_one_target_in_order": true,
+      "independent_metric_maximum_difference": 0.0
+    }
+  ],
+  "auc_method": "Independent Mann-Whitney rank-sum with tied ranks",
+  "classification": "Manual confusion counts, threshold0.5",
+  "mask_check": "Exact array equality to per-student original labels[1:], no padding, duplication or dropped targets"
+}

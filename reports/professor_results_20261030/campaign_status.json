@@ -1,0 +1,56 @@
+{
+  "status": "completed",
+  "completed": [
+    {
+      "run_id": "ASSIST2009-LightSAKTQuestion-replication-123-v1",
+      "validation_auc": 0.7803415509433331
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKTQuestion-replication-2026-v1",
+      "validation_auc": 0.7808650542986533
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKTQuestion-replication-3407-v1",
+      "validation_auc": 0.7782645230097855
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKTQuestion-replication-7777-v1",
+      "validation_auc": 0.7805788106338941
+    },
+    {
+      "run_id": "Algebra2005-LightSAKTQuestion-replication-42-v1",
+      "validation_auc": 0.8352874266647624
+    },
+    {
+      "run_id": "Algebra2005-LightSAKTQuestion-replication-123-v1",
+      "validation_auc": 0.8357349205903107
+    },
+    {
+      "run_id": "Algebra2005-LightSAKTQuestion-replication-2026-v1",
+      "validation_auc": 0.8356122770299265
+    },
+    {
+      "run_id": "Algebra2005-LightSAKTQuestion-replication-3407-v1",
+      "validation_auc": 0.8345336672476025
+    },
+    {
+      "run_id": "Algebra2005-LightSAKTQuestion-replication-7777-v1",
+      "validation_auc": 0.8349090791341596
+    }
+  ],
+  "launched": [
+    "ASSIST2009-LightSAKTQuestion-replication-123-v1",
+    "ASSIST2009-LightSAKTQuestion-replication-2026-v1",
+    "ASSIST2009-LightSAKTQuestion-replication-3407-v1",
+    "ASSIST2009-LightSAKTQuestion-replication-7777-v1",
+    "Algebra2005-LightSAKTQuestion-replication-42-v1",
+    "Algebra2005-LightSAKTQuestion-replication-123-v1",
+    "Algebra2005-LightSAKTQuestion-replication-2026-v1",
+    "Algebra2005-LightSAKTQuestion-replication-3407-v1",
+    "Algebra2005-LightSAKTQuestion-replication-7777-v1"
+  ],
+  "new_test_evaluations_in_training": false,
+  "current": null,
+  "gpu_window_seconds_consumed": 3850.931232837087,
+  "completed_utc": "2026-10-30T11:35:11.590217+00:00"
+}
