@@ -23,3 +23,6 @@ Read actual campaign status before acting; never duplicate completed runs.
 Skill: `/root/.codex/skills/durable-project-memory/SKILL.md`.
 Use Resume/Update/Audit, strict validator and manual claim reconciliation.
 Prior conclusions and scopes remain under [archive](archive) and in the dated log.
+
+Verified result commit: `c286bcbcee46a5317dbb3071c1f6c3a66335d04a`; verified local incremental
+bundle: `/workspace/LightSAKT2/backups/professor_results_20261030/research_results-c286bcbc.bundle` (prerequisite a4414cf2 retained).

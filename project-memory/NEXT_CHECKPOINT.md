@@ -37,3 +37,6 @@ new student-cohort partitions would require a separately frozen protocol and
 resource scope. Current evidence is retrospective, richer-input, fixed-split
 replication; no all-three-dataset or attention superiority claim. Keep all prior
 checkpoints, original dirty state, holds, peers and Git history untouched.
+
+Verified result commit: `c286bcbcee46a5317dbb3071c1f6c3a66335d04a`; verified local incremental
+bundle: `/workspace/LightSAKT2/backups/professor_results_20261030/research_results-c286bcbc.bundle` (prerequisite a4414cf2 retained).

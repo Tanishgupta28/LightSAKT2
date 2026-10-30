@@ -16,6 +16,12 @@
       "warnings": []
     }
   ],
-  "manual_claim_audit": "PASS: current scope consumed; 9 completed new runs, 40 verified seeds, 5 ASSIST2015 metadata-blocked slots; metrics checked against checkpoint replays, independent metrics audit and actual sample-SD tables. Canonical/worktree texts synchronized.",
+  "verified_results_commit": "c286bcbcee46a5317dbb3071c1f6c3a66335d04a",
+  "verified_incremental_bundle": {
+    "path": "/workspace/LightSAKT2/backups/professor_results_20261030/research_results-c286bcbc.bundle",
+    "sha256": "f58fc155b658adc0f18fe7ff4ffd9b3e75acaf828b3f8ddb12cedfbe2310a1bb",
+    "prerequisite": "a4414cf28703446bc33d1dab7a6b67546b26903d"
+  },
+  "manual_claim_audit": "PASS: synchronized final state;40verified seeds/5metadata-blocked slots/9new runs/10checkpoint-state audits/80independent mask-metric checks/338protected hashes. Reports, raw records, checkpoints and archive manifests are primary evidence.",
   "credential_or_binary_content_in_memory": "None stored; artifact paths and aggregate measurements only."
 }

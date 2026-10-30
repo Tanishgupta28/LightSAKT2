@@ -61,8 +61,14 @@ minimum GPUfree18.818GiB/hostheadroom32.568GiB. No sampled guard breach or peer
 interference. FourGiB cap and original holds remain. Test scoring was explicitly
 authorized only after validation selection; all training has evaluate_test=false.
 
+Verified result commit `c286bcbcee46a5317dbb3071c1f6c3a66335d04a` on intended research branch.
 Local recovery archives/checksums: checkpoint_backups.json under report folder,
 pointing to `/workspace/LightSAKT2/backups/professor_results_20261030/`.
-Old Git/checkpoint archives remain preserved. Results are to be committed only
-on research branch and bundled locally; existing Git-auth blocker is retained,
-no external push or force-push. See next checkpoint for exact follow-up.
+Thirteen readback-verified archives retain10difficulty best/latest checkpoints,
+raw run records, both datasets' frozen features and all80prediction arrays.
+Incremental Git bundle `/workspace/LightSAKT2/backups/professor_results_20261030/research_results-c286bcbc.bundle` verifies and requires preserved a4414cf2.
+The prior verified bundle in backups/question_completion_20261029 retains that
+predecessor and requires preserved baseline a6bdc6c0. No bundle/history overwritten.
+Git results are local only; existing authentication blocker retained, no external
+push or force-push. A following memory-only handoff may advance HEAD; scientific
+results are anchored at c286bcbc. See Git log for latest handoff commit.

@@ -274,3 +274,14 @@ Evidence: summary_results.json, paired_seed_auc_deltas.csv, delivery_checks.json
 checkpoint_state_audit.json, masking_and_metrics_audit.json, resource_summary.json,
 checkpoint_backups.json in reports/professor_results_20261030/. Final validation,
 research-branch result commit and verified incremental Git bundle follow.
+
+## 30 October 2026 — verified results committed and locally bundled
+
+Result commit c286bcbcee46a5317dbb3071c1f6c3a66335d04a on research/architecture-variants-20261025.
+Incremental bundle /workspace/LightSAKT2/backups/professor_results_20261030/research_results-c286bcbc.bundle verifies; prerequisite a4414cf2 and its earlier bundle
+are preserved. Thirteen checkpoint/feature/rawrecord/prediction archives passed
+readback. Both memory roots passed strict validation without errors/warnings;
+manual claims agree with40replays/80mask-metric checks/10state audits/338protected
+hashes. No push or credential access. Current next action is to resolve ASSIST2015
+metadata or separately scope the five feature-matched SAKT controls; current
+nine-run GPU grant is consumed. No active campaign job or automatic continuation.
