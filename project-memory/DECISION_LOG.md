@@ -310,3 +310,12 @@ Three existing incremental bundles verify;no remote push. Suitable to send as
 verified progress,not publication readiness;feature-matched SAKT remains missing.
 Evidence:/workspace/LightSAKT2-architecture/reports/professor_release_20261031/verification_summary.json,assist2015_official_release_audit.json,
 ASSIST2015_LIMITATION.md,archive_verification.json and main/concise reports.
+
+## 31 October 2026 — release committed and safely backed up
+
+Commit 2103a6e3e2ff79fa09af3b01406b02f404b58733 records the verified new reports/tables/provenance/checkpoint
+references and portable archive SHA. Bundle /workspace/LightSAKT2/backups/professor_release_20261031/research_release-2103a6e3.bundle verifies against preserved
+49982fa7. All three preceding bundles also verify;no full-history/self-contained
+bundle claim. Portable ZIP SHAabf2feec4c31669006f6731ef7689742f7e549063d699e620e74cf83c4ffe8f0
+and184payload checks PASS. Original77report files remain byte-identical. Canonical
+and worktree memory both strict PASS;zero GPU/inference or remote publication.

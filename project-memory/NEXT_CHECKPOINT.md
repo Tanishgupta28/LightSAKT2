@@ -33,3 +33,8 @@ missing dataset and richer-input/offline/fixed-split/validation-reuse limits;
 do not claim publication readiness,all-three improvement or attention superiority.
 Preserve main dirty work,original reports/checkpoints,holds,Git/bundle history,
 HiTSKT and peer jobs. Inspect Git HEAD and local delivery manifest on recovery.
+
+Verified portable-release commit: `2103a6e3e2ff79fa09af3b01406b02f404b58733`. Local incremental
+Git bundle `/workspace/LightSAKT2/backups/professor_release_20261031/research_release-2103a6e3.bundle` verifies;requires preserved49982fa7.
+Scientific measurements remain anchored at c286bcbc. A following memory-only
+handoff may advance Git HEAD;no remote push was attempted.

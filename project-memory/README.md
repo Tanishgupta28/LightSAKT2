@@ -25,3 +25,8 @@ Prior conclusions and scopes remain under [archive](archive) and in the dated lo
 
 Verified result commit: `c286bcbcee46a5317dbb3071c1f6c3a66335d04a`; verified local incremental
 bundle: `/workspace/LightSAKT2/backups/professor_results_20261030/research_results-c286bcbc.bundle` (prerequisite a4414cf2 retained).
+
+Verified portable-release commit: `2103a6e3e2ff79fa09af3b01406b02f404b58733`. Local incremental
+Git bundle `/workspace/LightSAKT2/backups/professor_release_20261031/research_release-2103a6e3.bundle` verifies;requires preserved49982fa7.
+Scientific measurements remain anchored at c286bcbc. A following memory-only
+handoff may advance Git HEAD;no remote push was attempted.

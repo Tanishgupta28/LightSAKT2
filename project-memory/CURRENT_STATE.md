@@ -67,3 +67,8 @@ preserved. No remote push attempted/claimed;recorded CLI auth blocker remains.
 Existing raw/checkpoint archives and main dirty scientific state are preserved.
 These results are sufficient to share as verified research progress,not complete
 three-dataset evidence or publication readiness. See NEXT_CHECKPOINT.md.
+
+Verified portable-release commit: `2103a6e3e2ff79fa09af3b01406b02f404b58733`. Local incremental
+Git bundle `/workspace/LightSAKT2/backups/professor_release_20261031/research_release-2103a6e3.bundle` verifies;requires preserved49982fa7.
+Scientific measurements remain anchored at c286bcbc. A following memory-only
+handoff may advance Git HEAD;no remote push was attempted.
