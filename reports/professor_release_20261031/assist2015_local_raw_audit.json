@@ -1,0 +1,37 @@
+{
+  "archives": [
+    {
+      "archive": "/workspace/LightSAKT2/backups/original_and_raw_20261013.tar.gz",
+      "matching_dataset_members": [
+        {
+          "member": "data/raw/ASSIST2015.csv",
+          "bytes": 18334729,
+          "header": "user_id,log_id,sequence_id,correct",
+          "sha256": "75e1f46131d5897a388c82411bc3032279899cb1f1e66a9043354d41234407a0"
+        }
+      ]
+    },
+    {
+      "archive": "/workspace/LightSAKT2/backups/completed_runs_20261013.tar.gz",
+      "matching_dataset_members": [
+        {
+          "member": "data/processed/ASSIST2015/interactions.csv",
+          "bytes": 27744451,
+          "header": "student,q,label,order,source_row,split,skill",
+          "sha256": "ce131b7f4acf35a374f5d96247c4e7311a1faabf9f3ddbbb6f57e6502eff14ab"
+        }
+      ]
+    }
+  ],
+  "local_raw": {
+    "path": "/workspace/LightSAKT2/data/raw/ASSIST2015.csv",
+    "bytes": 18334729,
+    "header": [
+      "user_id",
+      "log_id",
+      "sequence_id",
+      "correct"
+    ],
+    "sha256": "75e1f46131d5897a388c82411bc3032279899cb1f1e66a9043354d41234407a0"
+  }
+}

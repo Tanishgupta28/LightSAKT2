@@ -9,17 +9,16 @@ of the same tracked project memory; code, Git and artifacts remain authoritative
 Read [USER_DIRECTIVES.md](USER_DIRECTIVES.md), [CURRENT_STATE.md](CURRENT_STATE.md),
 [DECISION_LOG.md](DECISION_LOG.md), then [NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md).
 
-Latest: professor campaign COMPLETE. Thirty verified baseline seeds and original
-ASSIST2009 difficulty42 were reused; nine missing difficulty runs completed.
-Five-seed validation/test gains survive leakage and checkpoint replay checks on
-ASSIST2009 and Algebra2005. ASSIST2015 difficulty remains PENDING: independent
-question identity absent. Forty verified model-seed results; five missing slots.
-Scope consumed; no active campaign GPU job or further automatic training.
-Test was explicitly released only for frozen validation-selected scoring.
+Latest:31October CPU re-verification and portable package COMPLETE. Forty
+measured model-seed results agree with actual checkpoints/replay arrays;five
+ASSIST2015 difficulty slots are unavailable under this protocol. Official2015
+CSV is byte-identical to local/raw backup and lacks independent question IDs.
+No new GPU/inference run,no remote push;all77old report files remain unchanged.
+Suitable as verified research progress,not publication-ready three-dataset evidence.
 
-Evidence/report: `/workspace/LightSAKT2-architecture/reports/professor_results_20261030/`.
-Plan: `/workspace/LightSAKT2-architecture/experiments/professor_campaign_20261030/plan.json`.
-Read actual campaign status before acting; never duplicate completed runs.
+Current report:`/workspace/LightSAKT2-architecture/reports/professor_release_20261031/PROFESSOR_REPORT.md`.
+Portable archive:`/workspace/LightSAKT2/backups/professor_release_20261031/LightSAKT_question_difficulty_verified_results_20261031.zip`.
+Historical measurements:`/workspace/LightSAKT2-architecture/reports/professor_results_20261030/`.
 Skill: `/root/.codex/skills/durable-project-memory/SKILL.md`.
 Use Resume/Update/Audit, strict validator and manual claim reconciliation.
 Prior conclusions and scopes remain under [archive](archive) and in the dated log.

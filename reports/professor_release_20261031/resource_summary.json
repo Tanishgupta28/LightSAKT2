@@ -1,0 +1,69 @@
+{
+  "campaign_status": "completed",
+  "completed_new_runs": [
+    {
+      "run_id": "ASSIST2009-LightSAKTQuestion-replication-123-v1",
+      "training_seconds": 475.3133824780234,
+      "peak_allocated_bytes": 266996224,
+      "peak_reserved_bytes": 385875968
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKTQuestion-replication-2026-v1",
+      "training_seconds": 475.2034572000266,
+      "peak_allocated_bytes": 266996736,
+      "peak_reserved_bytes": 419430400
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKTQuestion-replication-3407-v1",
+      "training_seconds": 444.60795926698484,
+      "peak_allocated_bytes": 266996224,
+      "peak_reserved_bytes": 419430400
+    },
+    {
+      "run_id": "ASSIST2009-LightSAKTQuestion-replication-7777-v1",
+      "training_seconds": 528.1335409699823,
+      "peak_allocated_bytes": 266996736,
+      "peak_reserved_bytes": 419430400
+    },
+    {
+      "run_id": "Algebra2005-LightSAKTQuestion-replication-42-v1",
+      "training_seconds": 394.0854500839487,
+      "peak_allocated_bytes": 857700864,
+      "peak_reserved_bytes": 1400897536
+    },
+    {
+      "run_id": "Algebra2005-LightSAKTQuestion-replication-123-v1",
+      "training_seconds": 367.5931406620075,
+      "peak_allocated_bytes": 857700864,
+      "peak_reserved_bytes": 1400897536
+    },
+    {
+      "run_id": "Algebra2005-LightSAKTQuestion-replication-2026-v1",
+      "training_seconds": 358.17239392804913,
+      "peak_allocated_bytes": 857700864,
+      "peak_reserved_bytes": 1400897536
+    },
+    {
+      "run_id": "Algebra2005-LightSAKTQuestion-replication-3407-v1",
+      "training_seconds": 403.83948043797864,
+      "peak_allocated_bytes": 857700864,
+      "peak_reserved_bytes": 1400897536
+    },
+    {
+      "run_id": "Algebra2005-LightSAKTQuestion-replication-7777-v1",
+      "training_seconds": 385.93481606798014,
+      "peak_allocated_bytes": 857700864,
+      "peak_reserved_bytes": 1400897536
+    }
+  ],
+  "resource_samples": 1717,
+  "gpu_uuid": "MIG-d2fcfd79-720e-5218-82c9-0a132be68920",
+  "gpu_window_wall_seconds": 3850.931232837087,
+  "new_training_seconds_sum": 3832.883621094981,
+  "minimum_shared_gpu_free_bytes": 20205797376,
+  "minimum_host_headroom_bytes": 34969837568,
+  "maximum_worker_rss_bytes": 1701003264,
+  "maximum_allocator_peak_bytes": 857700864,
+  "runtime_floor_or_rss_breach_sample_indices": [],
+  "timing_scope": "Admitted GPU-window wall time including pacing; not kernel-active profiling or exclusive GPU time"
+}

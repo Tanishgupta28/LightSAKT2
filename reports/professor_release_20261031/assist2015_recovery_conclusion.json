@@ -1,0 +1,21 @@
+{
+  "accessed_utc_date": "2026-10-31",
+  "official_dataset_page": "https://sites.google.com/site/assistmentsdata/datasets/2015-assistments-skill-builder-data",
+  "official_data_dictionary": "https://sites.google.com/site/assistmentsdata/an-explanation-on-how-to-interpret-our-data-sets",
+  "primary_toolkit_source": "https://api.github.com/repos/pykt-team/pykt-toolkit/contents/pykt/preprocess/assist2015_preprocess.py",
+  "primary_toolkit_source_sha256": "f78fe6c28dad775f6c8b976aab11108462eee262fb8f7f2a73adffad15eff63d",
+  "official_semantics": "sequence_id is a problem-set/skill-builder identity, used as the existing pipeline skill proxy; log_id is an interaction-record identity, not a repeated question identity. Neither is substituted for problem_id.",
+  "toolkit_observation": "The maintained ASSIST2015 preprocessor reads sequence_id as concepts and writes question sequence as unavailable (NA).",
+  "scope_of_search": "Publisher-linked original CSV, retained raw archive, processed archive, project-local CSV/TSV headers, official field documentation and maintained preprocessing source. No provider database access or correspondence.",
+  "recovery_result": "No authentic event-to-question crosswalk found in inspected accessible sources; no unique reconstruction from released fields. This does not prove no mapping exists in the provider database.",
+  "needed_to_unblock": "Authoritative log_id to problem_id mapping for the exact 708631 original records; verify one-to-one event mapping, student alignment, complete retained-row coverage and absence of outcome-dependent inference. Keep existing 683801 cleaned rows and splits.",
+  "status": "UNAVAILABLE_CURRENT_PROTOCOL",
+  "affected_model_seed_slots": 5,
+  "rejected_substitutes": [
+    "sequence_id as question",
+    "log_id as question",
+    "row number or invented hash as question",
+    "correctness or temporal heuristics to infer question",
+    "replacement with a different-year dataset"
+  ]
+}

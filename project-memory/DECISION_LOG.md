@@ -285,3 +285,28 @@ manual claims agree with40replays/80mask-metric checks/10state audits/338protect
 hashes. No push or credential access. Current next action is to resolve ASSIST2015
 metadata or separately scope the five feature-matched SAKT controls; current
 nine-run GPU grant is consumed. No active campaign job or automatic continuation.
+
+## 31 October 2026 — verified portable professor release; ASSIST2015 bounded blocker
+
+Fresh read-only checks pass:40best checkpoints/configs/shapes/selectedepochs,
+80saved prediction arrays and independent metrics,10difficulty optimizer/RNG
+states,338protected files,and every mean/sample SD/paired difference. All77old
+report files are unchanged. Zero new training/inference,GPU use or HiTSKT edits.
+Official publisher CSV fetched through Drive matches local raw AND preserved
+raw archive exactly (SHA75e1f46131d5897a388c82411bc3032279899cb1f1e66a9043354d41234407a0).
+Only user_id/log_id/sequence_id/correct;100skill-builder sets and708631unique
+events. Official semantics and pyKT primary source corroborate no independent
+item identity;no authentic mapping found. Mark5modified slots unavailable under
+current protocol. Provider database mapping might exist;do not claim otherwise.
+Configuration clarification:baseline final evaluate_test=true means post-training
+scoring,modified trainingfalse;alltabletest values use saved CPU replay and
+validation-only selection. This corrects earlier broad 'all training false'
+wording without changing any configuration or metric. Paired gain columns are
+modified minus named comparator,separate validation/test,absolute AUC units.
+Portable ZIP /workspace/LightSAKT2/backups/professor_release_20261031/LightSAKT_question_difficulty_verified_results_20261031.zip (SHAabf2feec4c31669006f6731ef7689742f7e549063d699e620e74cf83c4ffe8f0)
+passes CRC,safe extraction,184payload SHA checks and standalone verification.
+40checkpoint references/configs included;no weights/rawstudentdata/credentials.
+Three existing incremental bundles verify;no remote push. Suitable to send as
+verified progress,not publication readiness;feature-matched SAKT remains missing.
+Evidence:/workspace/LightSAKT2-architecture/reports/professor_release_20261031/verification_summary.json,assist2015_official_release_audit.json,
+ASSIST2015_LIMITATION.md,archive_verification.json and main/concise reports.

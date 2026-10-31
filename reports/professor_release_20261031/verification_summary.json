@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "source_files_read_and_unchanged": 77,
+  "parsed_report_types": {
+    "json": 58,
+    "csv": 5,
+    "jsonl": 1,
+    "xml": 1,
+    "text": 8,
+    "binary_figures": 4
+  },
+  "per_seed_results_verified": 40,
+  "unavailable_model_seed_slots": 5,
+  "independent_validation_test_metric_arrays": 80,
+  "best_checkpoint_hash_config_parameter_checks": 40,
+  "difficulty_optimizer_rng_data_order_checks": 10,
+  "protected_original_files_unchanged": 338,
+  "gpu_experiments_executed_this_task": 0,
+  "new_model_inference_this_task": 0,
+  "metrics_recalculated_from_saved_predictions": true,
+  "sample_standard_deviation_ddof": 1,
+  "evaluation_flag_clarification": "Baseline final configs enable post-training test scoring; difficulty training configs disable it and use separate CPU scoring. Best epoch selection is validation-only for all. Published test table uses CPU replay consistently.",
+  "current_scope": "Verification, authentic metadata search and packaging; no new training or feature-matched controls."
+}

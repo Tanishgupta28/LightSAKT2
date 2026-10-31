@@ -1,3 +1,17 @@
+# Verification and portable-release scope — 31 October 2026
+
+Current user requests fresh per-seed result verification,authentic ASSIST2015
+question-ID recovery research,final mean/sample-SD tables,professor summary and
+portable archive verification. ZERO new GPU experiments;do not repeat completed
+runs or modify HiTSKT. Preserve all original artifacts. Current task is not new
+training authorization. Existing test release remains reporting-only,no tuning.
+No remote push/publication/provider email was requested. Keep local Git bundles
+verified,record authentication blocker honestly,and preserve all existing history.
+ASSIST2015 recovery failed within inspected authentic sources;mark unavailable
+under CURRENT protocol,without inventing IDs or silently changing dataset/feature.
+Maintain/synchronize/audit the existing memory. Older dated grants below are
+preserved history and remain consumed,not permission for automatic continuation.
+
 # Current durable directives — 30 October 2026
 
 Campaign scope is now CONSUMED:9/9new runs completed. No additional GPU run is

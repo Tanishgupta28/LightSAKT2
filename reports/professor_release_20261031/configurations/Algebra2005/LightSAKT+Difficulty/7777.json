@@ -1,0 +1,36 @@
+{
+  "dataset": "Algebra2005",
+  "model": "LightSAKTQuestion",
+  "group": "question_replication",
+  "seed": 7777,
+  "seq_len": 200,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "patience": 5,
+  "learning_rate": 0.001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.0,
+  "epsilon": 1e-08,
+  "model_config": {
+    "max_seq_len": 200,
+    "embed_dim": 128,
+    "num_heads": 4,
+    "dropout": 0.2
+  },
+  "evaluate_test": false,
+  "run_id": "Algebra2005-LightSAKTQuestion-replication-7777-v1",
+  "device": "cuda",
+  "feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-train_validation.json",
+  "question_difficulty": {
+    "algorithm": "question-vs-skill-logit-loso-v1",
+    "smoothing": 10.0,
+    "processed_sha256": "93077061fa3b39db9b7ac8cc45aeeb4fba6533b9bc18a26d8b369fff2c889395",
+    "split_sha256": "e501ba970774126323e7ae892005d4c38d177bb73b611fe9c90790b3cc9c5643",
+    "raw_sha256": "19528668530108555e344e5bfcc68c762f63a458a32038599d189667e4f10407",
+    "feature_sha256": "0e5f803ad1287ae9eeeaeaead6a32a8dff6d9ca5a14e5abbfac8691a7d482ab1"
+  },
+  "question_identity": "lossless composite (Problem Name, Step Name), target tutor-step identity"
+}

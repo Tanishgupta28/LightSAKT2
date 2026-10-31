@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "archive": "/workspace/LightSAKT2/backups/professor_release_20261031/LightSAKT_question_difficulty_verified_results_20261031.zip",
+  "bytes": 844874,
+  "sha256": "abf2feec4c31669006f6731ef7689742f7e549063d699e620e74cf83c4ffe8f0",
+  "payload_check": {
+    "status": "PASS",
+    "verified_payload_files": 184,
+    "measured_model_seed_results": 40,
+    "unavailable_model_seed_slots": 5,
+    "sample_standard_deviation_ddof": 1,
+    "scope": "File integrity, metric aggregation, CSV/JSON consistency, paired differences and configuration/checkpoint references. External weights/data not included or executed."
+  },
+  "crc_readback": "PASS",
+  "safe_extraction": "PASS",
+  "standalone_verifier_from_unrelated_cwd": "PASS",
+  "original_report_files_unchanged": 77,
+  "weights_and_raw_data_included": false,
+  "remote_push_or_publication": "None"
+}

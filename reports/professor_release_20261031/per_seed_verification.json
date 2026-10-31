@@ -1,0 +1,402 @@
+[
+  {
+    "dataset": "ASSIST2009",
+    "model": "SAKT",
+    "seed": 42,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 36,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "SAKT",
+    "seed": 123,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 31,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "SAKT",
+    "seed": 2026,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 29,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "SAKT",
+    "seed": 3407,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 27,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "SAKT",
+    "seed": 7777,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 37,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT",
+    "seed": 42,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 24,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT",
+    "seed": 123,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 29,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT",
+    "seed": 2026,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 26,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT",
+    "seed": 3407,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 21,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT",
+    "seed": 7777,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 20,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT+Difficulty",
+    "seed": 42,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 24,
+    "baseline_final_evaluate_test_flag": false,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT+Difficulty",
+    "seed": 123,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 29,
+    "baseline_final_evaluate_test_flag": false,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT+Difficulty",
+    "seed": 2026,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 29,
+    "baseline_final_evaluate_test_flag": false,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT+Difficulty",
+    "seed": 3407,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 27,
+    "baseline_final_evaluate_test_flag": false,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2009",
+    "model": "LightSAKT+Difficulty",
+    "seed": 7777,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 33,
+    "baseline_final_evaluate_test_flag": false,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "SAKT",
+    "seed": 42,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 13,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "SAKT",
+    "seed": 123,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 11,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "SAKT",
+    "seed": 2026,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 12,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "SAKT",
+    "seed": 3407,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 10,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "SAKT",
+    "seed": 7777,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 10,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "LightSAKT",
+    "seed": 42,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 18,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "LightSAKT",
+    "seed": 123,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 11,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "LightSAKT",
+    "seed": 2026,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 12,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "LightSAKT",
+    "seed": 3407,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 13,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "ASSIST2015",
+    "model": "LightSAKT",
+    "seed": 7777,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 13,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "SAKT",
+    "seed": 42,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 46,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "SAKT",
+    "seed": 123,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 41,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "SAKT",
+    "seed": 2026,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 39,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "SAKT",
+    "seed": 3407,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 36,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "SAKT",
+    "seed": 7777,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 39,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT",
+    "seed": 42,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 26,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT",
+    "seed": 123,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 26,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT",
+    "seed": 2026,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 33,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT",
+    "seed": 3407,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 26,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT",
+    "seed": 7777,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 23,
+    "baseline_final_evaluate_test_flag": true,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT+Difficulty",
+    "seed": 42,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 38,
+    "baseline_final_evaluate_test_flag": false,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT+Difficulty",
+    "seed": 123,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 35,
+    "baseline_final_evaluate_test_flag": false,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT+Difficulty",
+    "seed": 2026,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 34,
+    "baseline_final_evaluate_test_flag": false,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT+Difficulty",
+    "seed": 3407,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 39,
+    "baseline_final_evaluate_test_flag": false,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  },
+  {
+    "dataset": "Algebra2005",
+    "model": "LightSAKT+Difficulty",
+    "seed": 7777,
+    "checkpoint_hash_config_state_shape_and_parameter_count": "PASS",
+    "validation_selected_epoch": 37,
+    "baseline_final_evaluate_test_flag": false,
+    "test_metrics_source": "2026-10-30 CPU replay, batch8, all valid targets pooled",
+    "current_verification": "fresh checkpoint/record/config hashes and saved prediction-array metrics; no new model inference or GPU training"
+  }
+]

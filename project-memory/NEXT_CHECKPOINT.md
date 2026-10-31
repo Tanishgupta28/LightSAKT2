@@ -1,42 +1,35 @@
-# Exact next checkpoint — completed comparison, metadata gap
+# Exact next checkpoint — deliver verified report; provider metadata required
 
-No active campaign job. Scope for nine new runs is consumed. Inspect actual
-`/workspace/LightSAKT2-architecture/reports/professor_results_20261030/campaign_status.json`
-(status completed,9completed/9launched) and branch Git HEAD before any recovery.
-Never restart the completed controller or any of its runs. Forty model-seed
-checkpoints are verified; five ASSIST2015 difficulty slots are metadata-blocked.
+No GPU/model inference is authorized by this verification/package task. The old
+nine-run scope is consumed. Do not repeat40completed model-seed results or the
+four LightSAKT replications already fulfilled in the older control packet.
 
-Deliver/review the professor report and tables in
-`/workspace/LightSAKT2-architecture/reports/professor_results_20261030/`.
-Use existing checkpoint/source/config/feature hashes, archive manifests and
-CPU audits as ground truth; no fresh baseline training is needed.
-Report generation: python -m scripts.professor_report_20261030.
-Read-only audit: CUDA_VISIBLE_DEVICES='' python -m scripts.audit_professor_campaign_20261030 --leakage.
-Prediction arrays and checkpoint/features/raw records have local archive backups.
-If artifacts are absent, restore verified archives before replay rather than
-silently trusting cache JSON or discarding historical records.
+Deliver/review `/workspace/LightSAKT2-architecture/reports/professor_release_20261031/PROFESSOR_REPORT.md` and PROFESSOR_SUMMARY.md.
+Portable ZIP `/workspace/LightSAKT2/backups/professor_release_20261031/LightSAKT_question_difficulty_verified_results_20261031.zip`;verify against archive_verification.json and
+its .zip.sha256 sidecar. After extraction run `python verify_package.py` from
+its root. It checks integrity,CSV/JSON metrics/aggregations and references,NOT
+checkpoint inference. Original weights/data remain external and preserved.
+All77original professor_results_20261030 files are unchanged historical evidence.
 
-ASSIST2015 requires an authoritative mapping to independent question/exercise
-identity, aligned to existing log/student records. Validate mapping and absence
-of outcome-dependent metadata before defining a frozen experiment. Preserve
-current splits and preprocessing; do not substitute skill as question or report
-an invented equivalent result. Alternative dataset releases require an explicitly
-new, disclosed protocol if exact partitions cannot be maintained.
+ASSIST2015 modified results are UNAVAILABLE_CURRENT_PROTOCOL,not queued runs.
+Do not repeat the same release search without new evidence:publisher CSV/raw
+archive/working CSV are identical and lack question IDs. Request/obtain an
+AUTHENTIC provider log_id->problem_id mapping for the exact708631rows before
+new scientific preparation. No outgoing provider message was sent or authorized.
+Check event uniqueness,student alignment,coverage for all683801retained binary
+rows and label-independent mapping;preserve existing preprocessing/splits.
+Do not substitute sequence/log/skill/row/hash IDs or another year's release.
 
-Next scientifically justified control: already implemented feature-matched SAKT
-augmentation, five ASSIST2009 seeds with unchanged native SAKT settings. It is
-NOT authorized under consumed campaign scope. Define a separate bounded budget
-(e.g. five serial900s windows /4GiB,75GPU-minute ceiling with existing guards)
-before execution. The old question_replication_20261029 plan's LightSAKT slots
-are now fulfilled; DO NOT repeat them. Verified equivalence mapping is in
-older_replication_plan_equivalence.json in the report folder. Only its five SAKT
-augmentation controls remain unexecuted.
+Most useful next experiment is the already prepared SAKT plus identical
+question-success correction,feature-matched to modified LightSAKT. Keep SAKT's
+native selected hyperparameters and same five seeds/splits/loss/masks/budget/
+validation checkpoint selection. It remains UNEXECUTED and requires separately
+defined resource scope (proposed5serial900s/4GiB windows,75minuteceiling,existing
+shared floors/pacing/ownership checks). No automatic new run or window.
 
-Do not tune against the released test split. A chronological/deployment study or
-new student-cohort partitions would require a separately frozen protocol and
-resource scope. Current evidence is retrospective, richer-input, fixed-split
-replication; no all-three-dataset or attention superiority claim. Keep all prior
-checkpoints, original dirty state, holds, peers and Git history untouched.
-
-Verified result commit: `c286bcbcee46a5317dbb3071c1f6c3a66335d04a`; verified local incremental
-bundle: `/workspace/LightSAKT2/backups/professor_results_20261030/research_results-c286bcbc.bundle` (prerequisite a4414cf2 retained).
+The released test must not be tuned against. Chronological/cross-cohort studies
+need new frozen protocols. Share current evidence as research progress with the
+missing dataset and richer-input/offline/fixed-split/validation-reuse limits;
+do not claim publication readiness,all-three improvement or attention superiority.
+Preserve main dirty work,original reports/checkpoints,holds,Git/bundle history,
+HiTSKT and peer jobs. Inspect Git HEAD and local delivery manifest on recovery.

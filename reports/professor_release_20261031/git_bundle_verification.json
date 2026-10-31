@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "bundles": [
+    {
+      "file": "/workspace/LightSAKT2/backups/question_completion_20261029/research_results.bundle",
+      "sha256": "5a4b66c1a75531e01d43c76d8c715c4d938018bdcb71d6a6e6505eb71ea00614",
+      "bytes": 844188,
+      "verification": "The bundle contains this ref:\na4414cf28703446bc33d1dab7a6b67546b26903d refs/heads/research/architecture-variants-20261025\nThe bundle requires this ref:\na6bdc6c0f1f9a564f1a27751cfbc9be49f65df1e \n/workspace/LightSAKT2/backups/question_completion_20261029/research_results.bundle is okay",
+      "status": "PASS"
+    },
+    {
+      "file": "/workspace/LightSAKT2/backups/professor_results_20261030/research_results-c286bcbc.bundle",
+      "sha256": "f58fc155b658adc0f18fe7ff4ffd9b3e75acaf828b3f8ddb12cedfbe2310a1bb",
+      "bytes": 584219,
+      "verification": "The bundle contains this ref:\nc286bcbcee46a5317dbb3071c1f6c3a66335d04a refs/heads/research/architecture-variants-20261025\nThe bundle requires this ref:\na4414cf28703446bc33d1dab7a6b67546b26903d \n/workspace/LightSAKT2/backups/professor_results_20261030/research_results-c286bcbc.bundle is okay",
+      "status": "PASS"
+    },
+    {
+      "file": "/workspace/LightSAKT2/backups/professor_results_20261030/research_handoff-49982fa7.bundle",
+      "sha256": "aac759014add9bb5b954a4a1027b4da6453040c7f0defb40696dbde3ed71920f",
+      "bytes": 2988,
+      "verification": "The bundle contains this ref:\n49982fa7b20c33dc344ef3501b29a03fc35b8bfc refs/heads/research/architecture-variants-20261025\nThe bundle requires this ref:\nc286bcbcee46a5317dbb3071c1f6c3a66335d04a \n/workspace/LightSAKT2/backups/professor_results_20261030/research_handoff-49982fa7.bundle is okay",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Incremental chain; preserved baseline a6bdc6c0 prerequisite is required. Not a self-contained full-history backup.",
+  "remote_status": "No remote push attempted or claimed; previously recorded CLI authentication blocker remains."
+}

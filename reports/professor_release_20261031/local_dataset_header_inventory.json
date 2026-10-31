@@ -1,0 +1,167 @@
+[
+  {
+    "path": "/workspace/LightSAKT2/original_snapshot/train/results/.ipynb_checkpoints/Algebra2005_summary-checkpoint.csv",
+    "bytes": 1,
+    "header": ""
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/updated_tables_for_sir/source/Table_08_LightSAKT_Ablation_Study.csv",
+    "bytes": 585,
+    "header": "Architecture,ASSIST2009,ASSIST2015,Algebra 2005\u20132006"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/updated_tables_for_sir/source/Table_07_Verified_Model_Comparison.csv",
+    "bytes": 1946,
+    "header": "Dataset,Metric,DKT,DKT+,GKT,DKVMN,SAKT,LightSAKT"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/updated_tables_for_sir/source/Table_06_LightSAKT_Grid_ASSIST2015.csv",
+    "bytes": 1079,
+    "header": "Learning Rate,Embedding,Heads,Dropout,Best validation AUC"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/updated_tables_for_sir/source/Table_05_LightSAKT_Grid_ASSIST2009.csv",
+    "bytes": 1079,
+    "header": "Learning Rate,Embedding,Heads,Dropout,Best validation AUC"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/updated_tables_for_sir/source/Table_04_LightSAKT_Grid_Algebra2005.csv",
+    "bytes": 1079,
+    "header": "Learning Rate,Embedding,Heads,Dropout,Best validation AUC"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/updated_tables_for_sir/source/Table_03_Training_Configurations.csv",
+    "bytes": 356,
+    "header": "Setting,ASSIST2009,ASSIST2015,Algebra 2005\u20132006"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/updated_tables_for_sir/source/Table_02_Dataset_Statistics.csv",
+    "bytes": 172,
+    "header": "Dataset,Students,Skill identifiers,Records,Raw columns"
+  },
+  {
+    "path": "/workspace/LightSAKT2/data/processed/Algebra2005/interactions.csv",
+    "bytes": 113327605,
+    "header": "student,q,label,order,source_row,split,skill"
+  },
+  {
+    "path": "/workspace/LightSAKT2/data/processed/ASSIST2015/interactions.csv",
+    "bytes": 27744451,
+    "header": "student,q,label,order,source_row,split,skill"
+  },
+  {
+    "path": "/workspace/LightSAKT2/data/processed/ASSIST2009/interactions.csv",
+    "bytes": 17091743,
+    "header": "student,q,label,order,source_row,split,skill"
+  },
+  {
+    "path": "/workspace/LightSAKT2/data/raw/Algebra2005.tsv",
+    "bytes": 226670310,
+    "header": "Row\tAnon Student Id\tProblem Hierarchy\tProblem Name\tProblem View\tStep Name\tStep Start Time\tFirst Transaction Time\tCorrect Transaction Time\tStep End Time\tStep Duration (sec)\tCorrect Step Duration (sec)\tError Step Duration (sec)\tCorrect First Attempt\tIncorrects\tHints\tCorrects\tKC(Default)\tOpportunity(Default)"
+  },
+  {
+    "path": "/workspace/LightSAKT2/data/raw/ASSIST2015.csv",
+    "bytes": 18334729,
+    "header": "user_id,log_id,sequence_id,correct"
+  },
+  {
+    "path": "/workspace/LightSAKT2/data/raw/ASSIST2009.csv",
+    "bytes": 83201940,
+    "header": "order_id,assignment_id,user_id,assistment_id,problem_id,original,correct,attempt_count,ms_first_response,tutor_mode,answer_type,sequence_id,student_class_id,position,type,base_sequence_id,skill_id,skill_name,teacher_id,school_id,hint_count,hint_total,overlap_time,template_id,answer_id,answer_text,first_action,bottom_hint,opportunity,opportunity_original"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/updated_tables_for_sir/source/project_snapshot/results/tables/Table_8.csv",
+    "bytes": 6862,
+    "header": "dataset,variant,completed_seeds,required_seeds,auc_mean,auc_std,accuracy_mean,accuracy_std,f1_mean,f1_std,mse_mean,mse_std,bce_mean,bce_std,equivalent_to,auc_relative_change,accuracy_relative_change,f1_relative_change,mse_relative_change,bce_relative_change,model,auc_ci95_halfwidth,accuracy_ci95_halfwidth,f1_ci95_halfwidth,mse_ci95_halfwidth,bce_ci95_halfwidth,evidence_reused_from"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/updated_tables_for_sir/source/project_snapshot/results/tables/Table_7.csv",
+    "bytes": 5295,
+    "header": "dataset,model,completed_seeds,required_seeds,auc_mean,auc_std,auc_ci95_halfwidth,accuracy_mean,accuracy_std,accuracy_ci95_halfwidth,f1_mean,f1_std,f1_ci95_halfwidth,mse_mean,mse_std,mse_ci95_halfwidth,bce_mean,bce_std,bce_ci95_halfwidth"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/updated_tables_for_sir/source/project_snapshot/results/tables/Table_6.csv",
+    "bytes": 21950,
+    "header": "run_id,dataset,learning_rate,max_seq_len,embed_dim,num_heads,dropout,seed,status,model,group,best_epoch,epochs_trained,training_seconds,parameters,checkpoint,checkpoint_sha256,split_sha256,git_commit,training_code_sha256,peak_allocated_bytes,peak_reserved_bytes,reused_training_run,independent_observation,prediction_path,prediction_sha256,fresh_training,additional_training_seconds,variant,equivalent_to,validation_auc,validation_accuracy,validation_f1,validation_mse,validation_bce,validation_n_targets,test_auc,test_accuracy,test_f1,test_mse,test_bce,test_n_targets"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/updated_tables_for_sir/source/project_snapshot/results/tables/Table_5.csv",
+    "bytes": 21946,
+    "header": "run_id,dataset,learning_rate,max_seq_len,embed_dim,num_heads,dropout,seed,status,model,group,best_epoch,epochs_trained,training_seconds,parameters,checkpoint,checkpoint_sha256,split_sha256,git_commit,training_code_sha256,peak_allocated_bytes,peak_reserved_bytes,reused_training_run,independent_observation,prediction_path,prediction_sha256,fresh_training,additional_training_seconds,variant,equivalent_to,validation_auc,validation_accuracy,validation_f1,validation_mse,validation_bce,validation_n_targets,test_auc,test_accuracy,test_f1,test_mse,test_bce,test_n_targets"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/updated_tables_for_sir/source/project_snapshot/results/tables/Table_4.csv",
+    "bytes": 22114,
+    "header": "run_id,dataset,learning_rate,max_seq_len,embed_dim,num_heads,dropout,seed,status,model,group,best_epoch,epochs_trained,training_seconds,parameters,checkpoint,checkpoint_sha256,split_sha256,git_commit,training_code_sha256,peak_allocated_bytes,peak_reserved_bytes,reused_training_run,independent_observation,prediction_path,prediction_sha256,fresh_training,additional_training_seconds,variant,equivalent_to,validation_auc,validation_accuracy,validation_f1,validation_mse,validation_bce,validation_n_targets,test_auc,test_accuracy,test_f1,test_mse,test_bce,test_n_targets"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/updated_tables_for_sir/source/project_snapshot/results/tables/Table_2.csv",
+    "bytes": 817,
+    "header": "dataset,raw_rows,clean_interactions,students,unique_skill_identifiers,num_q,raw_sha256,processed_sha256,split_sha256"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/sakt_grid/SAKT_matched_grid_runtime.csv",
+    "bytes": 386,
+    "header": "dataset,grid_runs,measured_grid_training_seconds,mean_run_seconds,mean_epoch_seconds,new_grid_runs,new_final_seed_runs,additional_training_gpu_hours"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/sakt_grid/SAKT_grid_hyperparameter_sensitivity.csv",
+    "bytes": 5793,
+    "header": "dataset,model,parameter,level,configurations,mean_validation_auc,minimum_validation_auc,maximum_validation_auc"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/sakt_grid/LightSAKT_SAKT_final_comparison.csv",
+    "bytes": 1895,
+    "header": "dataset,metric,LightSAKT_mean,LightSAKT_sd,SAKT_mean,SAKT_sd,difference"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/sakt_grid/SAKT_matched_grid_final_summary.csv",
+    "bytes": 1488,
+    "header": "dataset,model,completed_seeds,auc_mean,auc_std,accuracy_mean,accuracy_std,f1_mean,f1_std,mse_mean,mse_std,bce_mean,bce_std"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/sakt_grid/SAKT_matched_grid_individual_seeds.csv",
+    "bytes": 14281,
+    "header": "dataset,model,seed,run_id,best_epoch,checkpoint,checkpoint_sha256,git_commit,split_sha256,original_predictions,explicit_mask,auc,auc_reason,accuracy,f1,mse,bce,n_targets"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/sakt_grid/SAKT_grid_win_counts.csv",
+    "bytes": 542,
+    "header": "dataset,configurations,LightSAKT_higher,SAKT_higher,exact_ties,mean_difference,median_difference,minimum_difference,maximum_difference,descriptive_sd"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/sakt_grid/LightSAKT_vs_SAKT_grid_ASSIST2015.csv",
+    "bytes": 48388,
+    "header": "dataset,learning_rate,embedding_dim,heads,dropout,seed,split_seed,seq_len,batch_size,LightSAKT_validation_auc,SAKT_validation_auc,difference,LightSAKT_run_id,LightSAKT_checkpoint,LightSAKT_checkpoint_sha256,LightSAKT_best_epoch,LightSAKT_git_commit,LightSAKT_training_code_sha256,LightSAKT_processed_sha256,LightSAKT_split_sha256,LightSAKT_metrics_path,LightSAKT_metrics_sha256,LightSAKT_config_sha256,SAKT_run_id,SAKT_checkpoint,SAKT_checkpoint_sha256,SAKT_best_epoch,SAKT_git_commit,SAKT_training_code_sha256,SAKT_processed_sha256,SAKT_split_sha256,SAKT_metrics_path,SAKT_metrics_sha256,SAKT_config_sha256"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/sakt_grid/SAKT_Table_C_ASSIST2015.csv",
+    "bytes": 48388,
+    "header": "dataset,learning_rate,embedding_dim,heads,dropout,seed,split_seed,seq_len,batch_size,LightSAKT_validation_auc,Best Validation AUC,difference,LightSAKT_run_id,LightSAKT_checkpoint,LightSAKT_checkpoint_sha256,LightSAKT_best_epoch,LightSAKT_git_commit,LightSAKT_training_code_sha256,LightSAKT_processed_sha256,LightSAKT_split_sha256,LightSAKT_metrics_path,LightSAKT_metrics_sha256,LightSAKT_config_sha256,SAKT_run_id,SAKT_checkpoint,SAKT_checkpoint_sha256,SAKT_best_epoch,SAKT_git_commit,SAKT_training_code_sha256,SAKT_processed_sha256,SAKT_split_sha256,SAKT_metrics_path,SAKT_metrics_sha256,SAKT_config_sha256"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/sakt_grid/LightSAKT_vs_SAKT_grid_ASSIST2009.csv",
+    "bytes": 48367,
+    "header": "dataset,learning_rate,embedding_dim,heads,dropout,seed,split_seed,seq_len,batch_size,LightSAKT_validation_auc,SAKT_validation_auc,difference,LightSAKT_run_id,LightSAKT_checkpoint,LightSAKT_checkpoint_sha256,LightSAKT_best_epoch,LightSAKT_git_commit,LightSAKT_training_code_sha256,LightSAKT_processed_sha256,LightSAKT_split_sha256,LightSAKT_metrics_path,LightSAKT_metrics_sha256,LightSAKT_config_sha256,SAKT_run_id,SAKT_checkpoint,SAKT_checkpoint_sha256,SAKT_best_epoch,SAKT_git_commit,SAKT_training_code_sha256,SAKT_processed_sha256,SAKT_split_sha256,SAKT_metrics_path,SAKT_metrics_sha256,SAKT_config_sha256"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/sakt_grid/SAKT_Table_B_ASSIST2009.csv",
+    "bytes": 48367,
+    "header": "dataset,learning_rate,embedding_dim,heads,dropout,seed,split_seed,seq_len,batch_size,LightSAKT_validation_auc,Best Validation AUC,difference,LightSAKT_run_id,LightSAKT_checkpoint,LightSAKT_checkpoint_sha256,LightSAKT_best_epoch,LightSAKT_git_commit,LightSAKT_training_code_sha256,LightSAKT_processed_sha256,LightSAKT_split_sha256,LightSAKT_metrics_path,LightSAKT_metrics_sha256,LightSAKT_config_sha256,SAKT_run_id,SAKT_checkpoint,SAKT_checkpoint_sha256,SAKT_best_epoch,SAKT_git_commit,SAKT_training_code_sha256,SAKT_processed_sha256,SAKT_split_sha256,SAKT_metrics_path,SAKT_metrics_sha256,SAKT_config_sha256"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/sakt_grid/LightSAKT_vs_SAKT_grid_Algebra2005.csv",
+    "bytes": 48661,
+    "header": "dataset,learning_rate,embedding_dim,heads,dropout,seed,split_seed,seq_len,batch_size,LightSAKT_validation_auc,SAKT_validation_auc,difference,LightSAKT_run_id,LightSAKT_checkpoint,LightSAKT_checkpoint_sha256,LightSAKT_best_epoch,LightSAKT_git_commit,LightSAKT_training_code_sha256,LightSAKT_processed_sha256,LightSAKT_split_sha256,LightSAKT_metrics_path,LightSAKT_metrics_sha256,LightSAKT_config_sha256,SAKT_run_id,SAKT_checkpoint,SAKT_checkpoint_sha256,SAKT_best_epoch,SAKT_git_commit,SAKT_training_code_sha256,SAKT_processed_sha256,SAKT_split_sha256,SAKT_metrics_path,SAKT_metrics_sha256,SAKT_config_sha256"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/sakt_grid/SAKT_Table_A_Algebra2005.csv",
+    "bytes": 48661,
+    "header": "dataset,learning_rate,embedding_dim,heads,dropout,seed,split_seed,seq_len,batch_size,LightSAKT_validation_auc,Best Validation AUC,difference,LightSAKT_run_id,LightSAKT_checkpoint,LightSAKT_checkpoint_sha256,LightSAKT_best_epoch,LightSAKT_git_commit,LightSAKT_training_code_sha256,LightSAKT_processed_sha256,LightSAKT_split_sha256,LightSAKT_metrics_path,LightSAKT_metrics_sha256,LightSAKT_config_sha256,SAKT_run_id,SAKT_checkpoint,SAKT_checkpoint_sha256,SAKT_best_epoch,SAKT_git_commit,SAKT_training_code_sha256,SAKT_processed_sha256,SAKT_split_sha256,SAKT_metrics_path,SAKT_metrics_sha256,SAKT_config_sha256"
+  },
+  {
+    "path": "/workspace/LightSAKT2/paper/sakt_grid/SAKT_matched_grid_selected_configurations.csv",
+    "bytes": 1536,
+    "header": "dataset,model,learning_rate,embedding_dim,heads,dropout,validation_auc,best_epoch,seed,run_id,checkpoint,checkpoint_sha256"
+  }
+]
