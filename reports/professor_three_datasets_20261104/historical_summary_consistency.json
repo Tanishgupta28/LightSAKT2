@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "groups": [
+    {
+      "dataset": "ASSIST2009",
+      "model": "SAKT",
+      "status": "PASS",
+      "maximum_absolute_summary_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT",
+      "status": "PASS",
+      "maximum_absolute_summary_difference": 0.0
+    },
+    {
+      "dataset": "ASSIST2009",
+      "model": "LightSAKT+Difficulty",
+      "status": "PASS",
+      "maximum_absolute_summary_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "SAKT",
+      "status": "PASS",
+      "maximum_absolute_summary_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT",
+      "status": "PASS",
+      "maximum_absolute_summary_difference": 0.0
+    },
+    {
+      "dataset": "Algebra2005",
+      "model": "LightSAKT+Difficulty",
+      "status": "PASS",
+      "maximum_absolute_summary_difference": 0.0
+    }
+  ],
+  "original_published_tables_unchanged": true
+}

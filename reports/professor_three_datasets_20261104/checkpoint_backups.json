@@ -1,0 +1,325 @@
+{
+  "status": "PASS_COMPLETED_REPLAYED_RUNS",
+  "completed_backups": 15,
+  "runs": [
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/EdNetKT1_5k_first-SAKT-seed42-20261104-v1.tar.gz",
+      "sha256": "02873317439fd02a8dd435ed5d76a6c5483dbd3b4ed5784fb3ec53f91d36d130",
+      "bytes": 5177960,
+      "verified_members": {
+        "checkpoints/best.pt": "d4e75ae28240b9fa44f8ecd379a77da1d6966d7ba4fa2b08d2c8b6a5c539175b",
+        "checkpoints/latest.pt": "13250bd0afddff0b107181094bdc0123588593a3c255720e659d963447b03f84",
+        "results/config.json": "e6dc2243e6452bfc1dd464220e202fc40618bd1df81b1a624b2becc18e567b70",
+        "results/environment.json": "9597da89647ae120195399e858514e5e9c0188d48949a7da729ab09dc019a0e2",
+        "results/status.json": "a21e8f20dd082897128dea02e2a0333fe743df9b554139dfddab480f6acd24e5",
+        "results/history.json": "307cb19f05f181e4cc9e4c2bc75d5217730cbbad959ef79f1bba937cabae0575",
+        "results/metrics.json": "923cb281ca14408f65f87aa3fcd1882f156dfeb4bb6b47aeb354faf2bc44b468",
+        "predictions/EdNetKT1_5k_first-SAKT-seed42-20261104-v1-validation.npz": "91715543fc0042b9872fd7305eada6da2bcb7ce7c153b21cb477c6f4d23b06d5",
+        "predictions/EdNetKT1_5k_first-SAKT-seed42-20261104-v1-test.npz": "261ba047d115aab55283ef5cf7603b32021d5be9552c5bdb837df74f1a24324f"
+      },
+      "status": "PASS_READBACK",
+      "run_id": "EdNetKT1_5k_first-SAKT-seed42-20261104-v1",
+      "seed": 42,
+      "model": "SAKT"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/EdNetKT1_5k_first-LightSAKT-seed42-20261104-v1.tar.gz",
+      "sha256": "dbf5427d8849420e2f5e63d14d20cb7b6e9563d8f034eea71c352b2ecbb9ef62",
+      "bytes": 5118636,
+      "verified_members": {
+        "checkpoints/best.pt": "16e00a68d02e6cee9277fc5c7293ff60a63dd2c728895cef974eb6b21deb549d",
+        "checkpoints/latest.pt": "52138b8312ea132cd3921614bf3903a7d7357ee4aece3d73ed8c75fd4ef8fbc3",
+        "results/config.json": "4e53571e918b19bd91bb1498aa5faa3b49d98bf29a2f0d80dbdb710aa71a100e",
+        "results/environment.json": "ad616e049b1c0a8a5f807550d838890d40c6a663e7439a74923677239e98193e",
+        "results/status.json": "6156ecfcbfe5e4d3a56a5b345a20717f654bb3ee3aaa6aa4ab3b7738476fd3a9",
+        "results/history.json": "c0affa81b875d4549d79cef5d9ce62d6f9b3c8e3556e8e2e6cefc9db0d409834",
+        "results/metrics.json": "90761ce9ae2e06d01da8d40924df2568792464775dfac3191cbd51f611fadf2e",
+        "predictions/EdNetKT1_5k_first-LightSAKT-seed42-20261104-v1-validation.npz": "8e359d8830161f30a3b82f3f155638a776c6d6c82c13474445d73df341be8639",
+        "predictions/EdNetKT1_5k_first-LightSAKT-seed42-20261104-v1-test.npz": "b06c198dedf440e7ee14f72b7e319e733d10671d7e687e5e5b4e2783999b7f32"
+      },
+      "status": "PASS_READBACK",
+      "run_id": "EdNetKT1_5k_first-LightSAKT-seed42-20261104-v1",
+      "seed": 42,
+      "model": "LightSAKT"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/EdNetKT1_5k_first-LightSAKTQuestion-seed42-20261104-v1.tar.gz",
+      "sha256": "cc289b2292e7a1b36f2bf0500455ac32a7c4a9341c1071e48bcd96eccf639714",
+      "bytes": 5126726,
+      "verified_members": {
+        "checkpoints/best.pt": "adf646bc4cb0878ec665e16b8bf4748e22b2ea9002dd2164d6f28920dfe0db08",
+        "checkpoints/latest.pt": "10e5c23e11fdb0d3f2c8b6e0a641b1aa9df6160997ddbb576b2f0ab7a8075d09",
+        "results/config.json": "c740ae2443b29b813d510870f685ca84857772e0c131fdd757985cfd17c8c05e",
+        "results/environment.json": "43b9809ca523477fe70a7244bf1a89e02002c25f7157c319669039f16b0fa7c7",
+        "results/status.json": "af536d369b25741e5346bf6ca9a692ba1ed7d5a96f23dc15926f4d8a954d419a",
+        "results/history.json": "3ec9f53b21cf36731524171e1869c817e9c20448aec452e25b250cf187ee1ca9",
+        "results/metrics.json": "92b434d72c994d97e0e13317981e86e9de69ed8d8b2a7d55b0ce836a38187a70",
+        "predictions/EdNetKT1_5k_first-LightSAKTQuestion-seed42-20261104-v1-validation.npz": "3c4eae433bc50f35b27d787e8ef65f0e8f40a3c66e62e5fe83d40456be0fd727",
+        "predictions/EdNetKT1_5k_first-LightSAKTQuestion-seed42-20261104-v1-test.npz": "26908bc975f596e6043d99edc509fa8afb88ff8f43231c1bf06c79f12bc44614"
+      },
+      "status": "PASS_READBACK",
+      "run_id": "EdNetKT1_5k_first-LightSAKTQuestion-seed42-20261104-v1",
+      "seed": 42,
+      "model": "LightSAKTQuestion"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/EdNetKT1_5k_first-SAKT-seed123-20261104-v1.tar.gz",
+      "sha256": "d5578b290e99bdc5e9f24a957a1c711b8ea4d449b0ca4517b994136df98f49a3",
+      "bytes": 5175126,
+      "verified_members": {
+        "checkpoints/best.pt": "dbbac99a2289a28d54a41ec1c2cc5cc89158e9d4cd6c47cb21e927f0bb037704",
+        "checkpoints/latest.pt": "e6806ea75b60e08547b93e03c3bd9ea1baf162c58c51da494a534df00461fd99",
+        "results/config.json": "f045cc65c0192fc7573975ef8b33ea0d7de745a453fffd921c45be5ecd4cacd7",
+        "results/environment.json": "2f4f58c3457038f9f326aafe3bf9c898f6074ae0b060ba927687340bbe3b799d",
+        "results/status.json": "5f07ea7e0fa3155f9044f4a79ae0f030e02d9ad0bcc0308c0e89a0a6407fd7c1",
+        "results/history.json": "22a62a6a880812318051db2fe4d792f306a70b692c959f1564dd188e6c601a1f",
+        "results/metrics.json": "45aabe8452cf06a0998f56714ef6729069ba18196081de33001e80177ce0fc5c",
+        "predictions/EdNetKT1_5k_first-SAKT-seed123-20261104-v1-validation.npz": "e6973e87d25b81b0a6fbcc047f8d96294f4aea012a80539d6c48f238e7db5762",
+        "predictions/EdNetKT1_5k_first-SAKT-seed123-20261104-v1-test.npz": "d658bd743d86821ef2dcf32efe6d5398d83e0ebf8c2fb73fc68bbb6ecf42a29f"
+      },
+      "status": "PASS_READBACK",
+      "run_id": "EdNetKT1_5k_first-SAKT-seed123-20261104-v1",
+      "seed": 123,
+      "model": "SAKT"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/EdNetKT1_5k_first-LightSAKT-seed123-20261104-v1.tar.gz",
+      "sha256": "80fafde31ece79157d7bc9b8f5d5690146b35a0ca868623bef6b89444508233e",
+      "bytes": 5121125,
+      "verified_members": {
+        "checkpoints/best.pt": "9da2c52a4eda9440297708715ccf12612c0996bb856b0b662141d7a02b1ffe97",
+        "checkpoints/latest.pt": "314b125c193e560ee0f67ca9e474074d360aff7b9d8b8a7402d256286c58fe10",
+        "results/config.json": "e3dd0688dd83306d9b78fc87a83199dbe2ff35b0cffccd20c6e79cbf47f7d607",
+        "results/environment.json": "13dd8b4499bd4387cbf03aa4e086808a4689fc41b9dfa0b62fbbb38d898df710",
+        "results/status.json": "6ca8bb81d43a1c936d43e6b4a8c45e09a73e8fb100956483c8e93222ad97be7c",
+        "results/history.json": "aff94d988d867812be3ac38b9dc201530507fafef44ba4c4cdace4a9395ec67e",
+        "results/metrics.json": "2d351745f0328f74ff8305397ac54db4522c4564f13ee7fb6a98305656468b02",
+        "predictions/EdNetKT1_5k_first-LightSAKT-seed123-20261104-v1-validation.npz": "eccecff42930264ae6390d6078b95e05b856bba9c94706655fdd5c0cd391c0e6",
+        "predictions/EdNetKT1_5k_first-LightSAKT-seed123-20261104-v1-test.npz": "07a7a816dc4f3545923701ff91d6c08e472c5c47a16efeb8d2a3e86de71f2abb"
+      },
+      "status": "PASS_READBACK",
+      "run_id": "EdNetKT1_5k_first-LightSAKT-seed123-20261104-v1",
+      "seed": 123,
+      "model": "LightSAKT"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/EdNetKT1_5k_first-LightSAKTQuestion-seed123-20261104-v1.tar.gz",
+      "sha256": "0768f681123f75060cdb66462548d61fa091eaefd8dbc3315e539be40fa60f9c",
+      "bytes": 5132096,
+      "verified_members": {
+        "checkpoints/best.pt": "61fc9e285eaac6856f0811d6cf5b88808dac03ef5ee1edd5bc4df09efb9370dd",
+        "checkpoints/latest.pt": "4b0025829f7eefd2e9948bef7128361e011f6bedb2e47b48ba436338b12ac68c",
+        "results/config.json": "5d23af27b992491759fee04dae4d399a3e4f88e1dd92e8222c4d371c3e09f26d",
+        "results/environment.json": "22ca61582513a9348596331b8e40d9cb6e1240438836d5766925f59a3b1ce2ec",
+        "results/status.json": "1ebcb1576f032d6722ce3df42bbe210af4c0e50173a2e6b60a3a080c56e9e17d",
+        "results/history.json": "4ce2de48e6963b64f988d60aa78f67c6b13d812bb310059cfd357169fbe21892",
+        "results/metrics.json": "2b783f1918719a8297f052d35ed1437a63ae5f2d4cc7c68726461de1bf7a54df",
+        "predictions/EdNetKT1_5k_first-LightSAKTQuestion-seed123-20261104-v1-validation.npz": "dc7856591e75b09e792084a49a0049a0915800a754b30d3f5d72af4474532db7",
+        "predictions/EdNetKT1_5k_first-LightSAKTQuestion-seed123-20261104-v1-test.npz": "00a2792ab4748432dd0c0a45b83b3e473288a845dfd8ddd78df0b89453919e0a"
+      },
+      "status": "PASS_READBACK",
+      "run_id": "EdNetKT1_5k_first-LightSAKTQuestion-seed123-20261104-v1",
+      "seed": 123,
+      "model": "LightSAKTQuestion"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/EdNetKT1_5k_first-SAKT-seed2026-20261104-v1.tar.gz",
+      "sha256": "6657aab74f70e313ad54716672677d5a1e178faf61e852884cd9c74db7ba3285",
+      "bytes": 5177643,
+      "verified_members": {
+        "checkpoints/best.pt": "4827e5be9ced6a24fc217309a153215af1ed85b6d4dc54d511c7642b8f68d504",
+        "checkpoints/latest.pt": "969d923b8604fa9578b3f4cf4a5571da9b078c73b1bbb5d6cc5ee0a40db6f380",
+        "results/config.json": "ea96553c924a2fcc411faa1bcbaee2edc86aab317904442a11c0fc0840b97cb4",
+        "results/environment.json": "f72f35a0a7adf2f550910d80bb22d23bdec2f5bf86462246012286f934177a69",
+        "results/status.json": "281c36fe69b30943c24450bcd9d979234f136c17c1fe42816a6b2b8d5d815d1d",
+        "results/history.json": "1beccc8aaa2a301a6f9f24e2f99d3b3a53daf372a32c9c6f3de98bd07b49ff08",
+        "results/metrics.json": "f0345549353b3ee2eb51ea4b6b9e96c26013c9595863d329469159937b9c78a2",
+        "predictions/EdNetKT1_5k_first-SAKT-seed2026-20261104-v1-validation.npz": "a49bc5265bbb9c25621a0862a284c45b35a8960ff09c4b38a7ce85e193193da4",
+        "predictions/EdNetKT1_5k_first-SAKT-seed2026-20261104-v1-test.npz": "9154509a4b3149bff2322a7f9b7c892b57977015cbd6395c0535e39b5539f520"
+      },
+      "status": "PASS_READBACK",
+      "run_id": "EdNetKT1_5k_first-SAKT-seed2026-20261104-v1",
+      "seed": 2026,
+      "model": "SAKT"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/EdNetKT1_5k_first-LightSAKT-seed2026-20261104-v1.tar.gz",
+      "sha256": "eff781b53fa2afbc660dbe2828677152f823e4cde38a02a559c0929b35488dca",
+      "bytes": 5121162,
+      "verified_members": {
+        "checkpoints/best.pt": "6c5241bab360342025918cdaf4328b12b958ed6fec414f8211528255e724443f",
+        "checkpoints/latest.pt": "43b79d064420423525dee4800bbb3cb9cb0ea7b4c66768c36a717d7e9a84eb92",
+        "results/config.json": "d79ed66337ffe03cec404769a1959a4edeef6bb6af8af05bfde1e93d35006cba",
+        "results/environment.json": "4eab2157f8959045501d839cd79920271d739beddbf8eb786566a152cf3b2788",
+        "results/status.json": "e3899b95e7fe1208717454d4fc0fc51a682f9c9635286e322aa439e103c0cafd",
+        "results/history.json": "f78acb0edcf4b8b1acbc9eca0955adae08c4d58300d88371287adb1326edea8a",
+        "results/metrics.json": "4cd3060a8913eff69bce14fbf94f03f494d6247dcb7db011b71c03a9a0ac7806",
+        "predictions/EdNetKT1_5k_first-LightSAKT-seed2026-20261104-v1-validation.npz": "5bdfae30fd1bddb4d6c4b84148860ca4cd6276e8fcc28882d17a20d45bc41841",
+        "predictions/EdNetKT1_5k_first-LightSAKT-seed2026-20261104-v1-test.npz": "20c37617583fef2c95b1657ceeee54d7d07b953c0d4b93a86bc01b143d8daeb0"
+      },
+      "status": "PASS_READBACK",
+      "run_id": "EdNetKT1_5k_first-LightSAKT-seed2026-20261104-v1",
+      "seed": 2026,
+      "model": "LightSAKT"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/EdNetKT1_5k_first-LightSAKTQuestion-seed2026-20261104-v1.tar.gz",
+      "sha256": "4d3d62aa069726eab6a7b8341bf1803f5870d3fc3713d133d9ccec41719c019f",
+      "bytes": 5131056,
+      "verified_members": {
+        "checkpoints/best.pt": "1265af1520347f7fda95bceedb6664384c73dbd2ed6ef346bcfb45dfd1b6c431",
+        "checkpoints/latest.pt": "1037d1945e8aefea0f7299a98c03fa29df4f4d54692a6761a14784b93a9756db",
+        "results/config.json": "bfa3d657dff05feb8f44a7017d1dc8ada972945f1dd583e9273769b63e46526e",
+        "results/environment.json": "6e06ad8403bc72c8460c2361bcee842b061610a3c678f7c39eecccd21f353c98",
+        "results/status.json": "ba786e04f943eb99d3b10d80997b6fbddad3ef90a64bc9bc742ea7fd777825a8",
+        "results/history.json": "3b272c4b592438a3b27c39895e177ae8e776381510fa7d56f04f522973f25e64",
+        "results/metrics.json": "85ad520ae373015e30ce49aa7cfa8f57130c5b6e85a355d603c1ee33d48da351",
+        "predictions/EdNetKT1_5k_first-LightSAKTQuestion-seed2026-20261104-v1-validation.npz": "896e19f3589a4febcd430fa6c1822d3b59a1d6d87ba35ecaf7d79d4d769b1cab",
+        "predictions/EdNetKT1_5k_first-LightSAKTQuestion-seed2026-20261104-v1-test.npz": "a89d1acb2909bce12fda63396180089216df1b82786534902e7add54ede03ee2"
+      },
+      "status": "PASS_READBACK",
+      "run_id": "EdNetKT1_5k_first-LightSAKTQuestion-seed2026-20261104-v1",
+      "seed": 2026,
+      "model": "LightSAKTQuestion"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/EdNetKT1_5k_first-SAKT-seed3407-20261104-v1.tar.gz",
+      "sha256": "670efd0a728c6ba99d9dcfdd131362a7c85ecd899f45ef13c441de1bf74c5ba1",
+      "bytes": 5176420,
+      "verified_members": {
+        "checkpoints/best.pt": "28bf6eb0a4781e1bb7d7825636ec3d4592b95b6457335b3a90520d73c6fc90e0",
+        "checkpoints/latest.pt": "475df01237c2f24f903f1301835beb905549482a5a4ca7143d84913d69ea9306",
+        "results/config.json": "71d73933c2d4a76d9d75e82cca72d769c7f3efb6633f0eb8e4d6cdefb662feee",
+        "results/environment.json": "6dd26a41ecce01309b50389d80d13b3e6754755174431d1480c2ecfcb916c1e6",
+        "results/status.json": "a71ffdf3a9b5614d96a061bbab880e8260f7a3cb1aa94c6aaa3bd5183a0fdd15",
+        "results/history.json": "0eabe2101098757e1d888ea05417e7012ac0967d3131d9d6101ea720620d0a77",
+        "results/metrics.json": "eda8208947fa8788dfbb49d8f29b9c9aeccf4eb5add4058ecb355f411a185074",
+        "predictions/EdNetKT1_5k_first-SAKT-seed3407-20261104-v1-validation.npz": "e1b5f50ab84862c359c2b607ca197479cbe13e1ab3ee448e497fc96404b927b5",
+        "predictions/EdNetKT1_5k_first-SAKT-seed3407-20261104-v1-test.npz": "112b2c613e454c5c6480929cd7cca4094cfb9dd8af4b8848eb4d38a058610de9"
+      },
+      "status": "PASS_READBACK",
+      "run_id": "EdNetKT1_5k_first-SAKT-seed3407-20261104-v1",
+      "seed": 3407,
+      "model": "SAKT"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/EdNetKT1_5k_first-LightSAKT-seed3407-20261104-v1.tar.gz",
+      "sha256": "d8b126ddd9a57040e63ed3197273b85f81f2cbcaa82a2eb932a66507037bfb81",
+      "bytes": 5121248,
+      "verified_members": {
+        "checkpoints/best.pt": "b585b1f116d866cf99edf3187a9d0d449113517d1ab7ed5c3b06a11aa7496a6d",
+        "checkpoints/latest.pt": "4bd66f3f65e987e1c0e8cffec467fc0d05df8539d85469e2acd5594a33d9b6e1",
+        "results/config.json": "c80786980c3641ba7cf07f629a45330782adbdb23f775db9832a22432ea59299",
+        "results/environment.json": "54e695781ba17e8c670f48e115268f2e2629badb2e4dde523edab822f52c0893",
+        "results/status.json": "fb832786548a52becbea180ba0a6903c74806db75b86ba4c7b9dd1bf0bb9b999",
+        "results/history.json": "1be086371a3c3c6ef52eb02972b3e64d41afca0efbeeae9719023776071bed46",
+        "results/metrics.json": "39344d06d8de85891629e9fe562117b261a7b97b7b04db369cc7a025c66230e4",
+        "predictions/EdNetKT1_5k_first-LightSAKT-seed3407-20261104-v1-validation.npz": "40013adb0490506b39e1c6b38eb82d21c6d8e8dcf5b81a7e8542c44f149f6020",
+        "predictions/EdNetKT1_5k_first-LightSAKT-seed3407-20261104-v1-test.npz": "edac6486d1b4cb035417df035950360751899d9c323ea7691a02e699755d24f5"
+      },
+      "status": "PASS_READBACK",
+      "run_id": "EdNetKT1_5k_first-LightSAKT-seed3407-20261104-v1",
+      "seed": 3407,
+      "model": "LightSAKT"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/EdNetKT1_5k_first-LightSAKTQuestion-seed3407-20261104-v1.tar.gz",
+      "sha256": "35a87a53ef53a066608237c77c92968be50c6abc8f927a9fe1bd3eb4023a4ad7",
+      "bytes": 5128226,
+      "verified_members": {
+        "checkpoints/best.pt": "4181c079b0fb7816aec588733746224965374250b38cf6cc208eea2ffeaeaf93",
+        "checkpoints/latest.pt": "2b5300d4c23c3bdcaa64e311fbeb257e4e238ead7d9b32ebcc133e507b41ab06",
+        "results/config.json": "5a6086d5c38d53755dbbf42c98b5bcf7bafc2d8cf7f893f6886a7667e4180daa",
+        "results/environment.json": "7e8b08a16caa5c0326367d94c0f3548032f9e9a3f895fb133b69ea5be60bcade",
+        "results/status.json": "8e4a44e81f9ec2fb79c2e60582bfb180b356b62cbd8f56ec5a94ba6b3b0639d7",
+        "results/history.json": "e5a56562a4f96530102e4e8aea72ecddd26f812169d3d3989dd715360b06d9bc",
+        "results/metrics.json": "56a4b7e41c38303b48fb35cda9f12cb1ac938856cfa1e0fd6bc14400a64c7828",
+        "predictions/EdNetKT1_5k_first-LightSAKTQuestion-seed3407-20261104-v1-validation.npz": "feb55cba6fda204cf929b59f7c0b2c0e7c709410847a3fbde0a4d758388c2953",
+        "predictions/EdNetKT1_5k_first-LightSAKTQuestion-seed3407-20261104-v1-test.npz": "edc693050b937a1d13ca97bed4546704ccdfe3f3c26adc3765fab6d0059bf576"
+      },
+      "status": "PASS_READBACK",
+      "run_id": "EdNetKT1_5k_first-LightSAKTQuestion-seed3407-20261104-v1",
+      "seed": 3407,
+      "model": "LightSAKTQuestion"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/EdNetKT1_5k_first-SAKT-seed7777-20261104-v1.tar.gz",
+      "sha256": "cf5629bcff015451fdea77d9a1bfece9a03f61de95b4b286ff51b94d9373e8d3",
+      "bytes": 5175647,
+      "verified_members": {
+        "checkpoints/best.pt": "dc94baadc6b4cf2c8664682a08493830b6117d30b6ee1d76d21f02b5dffa2bff",
+        "checkpoints/latest.pt": "623be1bae5f8430d95a649422034351b429cbc27385716fae86530866ea570f9",
+        "results/config.json": "34e9392e2be58ada348f04e69d693062230e9c9dd2e138443e2967baf54c8701",
+        "results/environment.json": "49c3fe61443aeb35a8f45b7b67a3d28ada9037f191c00f9e2e31a597926439c0",
+        "results/status.json": "baf2a0dad1d68a17ccc5a074183d9f9ef3600a703992881589ab3363f2e4cc99",
+        "results/history.json": "940b2335e3ba5b8cd09b05fbabc8882d394cdaf9ec6e6eadf681516333e2d10d",
+        "results/metrics.json": "bed020aa9e2d450358c525038fc57dffd759e04bfbade41552f7be0c6f0da075",
+        "predictions/EdNetKT1_5k_first-SAKT-seed7777-20261104-v1-validation.npz": "2a88ef6360f0d75bfb30cf278ccf049ba4304ae1f6b457ed359cb73eb5936e12",
+        "predictions/EdNetKT1_5k_first-SAKT-seed7777-20261104-v1-test.npz": "3f1ddf97d11369d8382d3fab0b12c733489b0a114bc04cc599c041a0de4a19f4"
+      },
+      "status": "PASS_READBACK",
+      "run_id": "EdNetKT1_5k_first-SAKT-seed7777-20261104-v1",
+      "seed": 7777,
+      "model": "SAKT"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/EdNetKT1_5k_first-LightSAKT-seed7777-20261104-v1.tar.gz",
+      "sha256": "da313e1799c981ca7588cd7fa1961134e280cdaee824669c8beac9764b539d52",
+      "bytes": 5121072,
+      "verified_members": {
+        "checkpoints/best.pt": "fd15391ae379712ced26d66383121e03071b955e398a0e3a2465345c4ff5e0ff",
+        "checkpoints/latest.pt": "0f4937d8e11588a40ad7e640397de02de5db7dc68f3d4ce14f8f2054986b3481",
+        "results/config.json": "931bf498583783b31b24a50448b11ed782b81c419f80444b3d586da4ccd6a2c9",
+        "results/environment.json": "19568665ee7a697d9e871b9b0e272347dfb08486d826e17bd0a7db34156b9925",
+        "results/status.json": "1746674eb2a50039f4381d9dbf4d2bd6f8467bbd1fc9601e4ef62d378784c1db",
+        "results/history.json": "4a141d1bef3fc524a9fa1cbccb9bdb1162faefe4e0897ae1ebf459185d7cfb63",
+        "results/metrics.json": "15652b9df32823c434c76dff18b2130586bd75673dcc038d0f2f01ddb2194996",
+        "predictions/EdNetKT1_5k_first-LightSAKT-seed7777-20261104-v1-validation.npz": "c3fc8584ff0e221eb1c1e2de8c1f86987d06e172fa13eb86a53970d83b6d04f0",
+        "predictions/EdNetKT1_5k_first-LightSAKT-seed7777-20261104-v1-test.npz": "494701a1ad2f455926b957c13d40ecdc92baeec75aff80efdff6752c625f783e"
+      },
+      "status": "PASS_READBACK",
+      "run_id": "EdNetKT1_5k_first-LightSAKT-seed7777-20261104-v1",
+      "seed": 7777,
+      "model": "LightSAKT"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/EdNetKT1_5k_first-LightSAKTQuestion-seed7777-20261104-v1.tar.gz",
+      "sha256": "65f24fc682a82b95796933615e76d1ef4b73f27163b63e607672079914465e38",
+      "bytes": 5129063,
+      "verified_members": {
+        "checkpoints/best.pt": "d7625c31c42156617784533cd37fc73bf684dd88f27dc5764f27af6f1658d945",
+        "checkpoints/latest.pt": "505cba2be9a7636f5b9cf60dc75405306b7a6f84963c4ac3473d34791e42c71f",
+        "results/config.json": "410d543c02f303cca86b5bda31c1a76c56e56c39e362593d9c54e60bf7adb8d8",
+        "results/environment.json": "a04b362206986d5680e65e4bcf0a5820fcd67214217fa96e41672782a9b54fc6",
+        "results/status.json": "d84a1999cc315afe96f6741b80569ba67e03f5cd1791d2b09ffec4229c1ddd22",
+        "results/history.json": "e39cebcc6611fc16a146233f608821d1d532f3602305364a8b789be39cda0ae1",
+        "results/metrics.json": "538c7b8abed789910ac2ae63f9988e3ec6fccfca80340cb85dabccd985165c1d",
+        "predictions/EdNetKT1_5k_first-LightSAKTQuestion-seed7777-20261104-v1-validation.npz": "6eab669c2a465856a0a2d616318cea2967e902afaa88436967cff1e1195b467b",
+        "predictions/EdNetKT1_5k_first-LightSAKTQuestion-seed7777-20261104-v1-test.npz": "ac7e1db230b5c442ca0a3f1826c6732fdecbeb9a99ab96c386f0f3d8215a09a5"
+      },
+      "status": "PASS_READBACK",
+      "run_id": "EdNetKT1_5k_first-LightSAKTQuestion-seed7777-20261104-v1",
+      "seed": 7777,
+      "model": "LightSAKTQuestion"
+    }
+  ],
+  "dataset_processed_population_splits_features": {
+    "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/ednet_frozen_population_splits_features.tar.gz",
+    "sha256": "4885cf6120c608458e1f0dcff98bdb2c7da2e0a2830c8ece58b16cf0eeac4f97",
+    "bytes": 13920680,
+    "verified_members": {
+      "data/selection/selected_students.json": "14815bfd9992e4d05878e3b8d882b2106bd183503791b1b68db60dc07c5880b7",
+      "data/selection/source_members.json": "f3197d22bde643a07c6d846400d620d95e5c53a7b0993dcff5fd9d2765c30fd6",
+      "data/processed/EdNetKT1_5k_first/interactions.csv": "e31e9e9cefd36d2d671ff7d3e3baad8355a97afc7e3996eb987fc09c2444e25a",
+      "data/processed/EdNetKT1_5k_first/vocabulary.json": "86029e6d16fdccecd4b4926c0660cc183b8eb5286dfa1fb358f31cdad6812cb7",
+      "data/splits/EdNetKT1_5k_first.json": "a31a01019f204e314e90ee3b192f1a1b5d4d02b348f405ceb1a75bc94972ef9a",
+      "data/auxiliary/EdNetKT1_5k_first-train_validation.json": "f91e9f381c56e542ae00784adbb85c2616ff9d6d75d4fcb8c4ab2c009561de57",
+      "data/auxiliary/EdNetKT1_5k_first-test.json": "03d95fb3d22a46bb05396eb27320fe09ab181fee95c5dede6b77bd7b87694e8b",
+      "data/auxiliary/feature_spec.json": "02e8f3ea2e48d62c4586d55c4108e347307cb9942832725dc5cc60b41fc137c4",
+      "reports/EdNetKT1_5k_first_statistics.json": "1e9ec946a6e02eaed91c121beb198fbd705540d0b0a6704f1c6b01f006395061"
+    },
+    "status": "PASS_READBACK"
+  },
+  "raw_archives_preserved_at": "/workspace/LightSAKT2-architecture/.tools/ednet_replacement_20261104/raw",
+  "original_artifacts_unchanged": true
+}

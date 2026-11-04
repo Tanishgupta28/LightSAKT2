@@ -9,12 +9,14 @@ of the same tracked project memory; code, Git and artifacts remain authoritative
 Read [USER_DIRECTIVES.md](USER_DIRECTIVES.md), [CURRENT_STATE.md](CURRENT_STATE.md),
 [DECISION_LOG.md](DECISION_LOG.md), then [NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md).
 
-Latest:4November replacement approved. EdNet-KT1 authentic files obtained;
-5000student first-question-per-session subset preprocessed andverified. Fifteen
-coreconfigs frozen; sixCPUtests/realfeatureleakage checks PASS. Next:guarded
-five-seed SAKT/LightSAKT/Difficulty training after finalcommit/admission. Check
-actual campaign_status before any execution. HiTSKT strictly ONHOLD/untouched.
-Historical two-dataset results remain verified andunchanged;ASSIST2015 replaced.
+Latest: 4 November core comparison COMPLETE: all15 new EdNet runs,45 verified
+relevant model-seed measurements across the final three datasets. Difficulty
+improves test AUC/accuracy/F1 versus both baselines in allfive seeds per dataset.
+Explicit OFFLINE, known-item, 5k-first/session EdNet scope; no attention-superiority
+or online/publication claim. No GPU run remains; never duplicate the campaign.
+Final report: reports/professor_three_datasets_20261104/PROFESSOR_REPORT.md.
+Archive/commit/bundle/push verification delivery steps are tracked in NEXT_CHECKPOINT.
+HiTSKT remains strictly ON HOLD; old results and ASSIST2015 history preserved.
 
 Current evidence:`/workspace/LightSAKT2-architecture/reports/ednet_replacement_20261104/`.
 Frozen plan:`/workspace/LightSAKT2-architecture/experiments/ednet_replacement_20261104/plan.json`.

@@ -1,0 +1,212 @@
+[
+  {
+    "dataset": "ASSIST2009",
+    "comparator": "SAKT",
+    "seed": 42,
+    "validation_auc_delta": 0.03174736563798819,
+    "test_auc_delta": 0.029356694217577917
+  },
+  {
+    "dataset": "ASSIST2009",
+    "comparator": "SAKT",
+    "seed": 123,
+    "validation_auc_delta": 0.03172616958750207,
+    "test_auc_delta": 0.02843681004776688
+  },
+  {
+    "dataset": "ASSIST2009",
+    "comparator": "SAKT",
+    "seed": 2026,
+    "validation_auc_delta": 0.033200663305378186,
+    "test_auc_delta": 0.029837584139504325
+  },
+  {
+    "dataset": "ASSIST2009",
+    "comparator": "SAKT",
+    "seed": 3407,
+    "validation_auc_delta": 0.03015713366612016,
+    "test_auc_delta": 0.028622548048881313
+  },
+  {
+    "dataset": "ASSIST2009",
+    "comparator": "SAKT",
+    "seed": 7777,
+    "validation_auc_delta": 0.032989881519359554,
+    "test_auc_delta": 0.02892796233274375
+  },
+  {
+    "dataset": "ASSIST2009",
+    "comparator": "LightSAKT",
+    "seed": 42,
+    "validation_auc_delta": 0.03038643476641667,
+    "test_auc_delta": 0.02804690076953864
+  },
+  {
+    "dataset": "ASSIST2009",
+    "comparator": "LightSAKT",
+    "seed": 123,
+    "validation_auc_delta": 0.03054681811562543,
+    "test_auc_delta": 0.027579519625360427
+  },
+  {
+    "dataset": "ASSIST2009",
+    "comparator": "LightSAKT",
+    "seed": 2026,
+    "validation_auc_delta": 0.031233659077507636,
+    "test_auc_delta": 0.028505900727461286
+  },
+  {
+    "dataset": "ASSIST2009",
+    "comparator": "LightSAKT",
+    "seed": 3407,
+    "validation_auc_delta": 0.03149786517605002,
+    "test_auc_delta": 0.028753531906868468
+  },
+  {
+    "dataset": "ASSIST2009",
+    "comparator": "LightSAKT",
+    "seed": 7777,
+    "validation_auc_delta": 0.03030660715180955,
+    "test_auc_delta": 0.02862800900049345
+  },
+  {
+    "dataset": "Algebra2005",
+    "comparator": "SAKT",
+    "seed": 42,
+    "validation_auc_delta": 0.02436507603410043,
+    "test_auc_delta": 0.023355868039570682
+  },
+  {
+    "dataset": "Algebra2005",
+    "comparator": "SAKT",
+    "seed": 123,
+    "validation_auc_delta": 0.025467141508197066,
+    "test_auc_delta": 0.023434090825928733
+  },
+  {
+    "dataset": "Algebra2005",
+    "comparator": "SAKT",
+    "seed": 2026,
+    "validation_auc_delta": 0.026209683580977083,
+    "test_auc_delta": 0.022921428104451858
+  },
+  {
+    "dataset": "Algebra2005",
+    "comparator": "SAKT",
+    "seed": 3407,
+    "validation_auc_delta": 0.02540189819559391,
+    "test_auc_delta": 0.024060838813191432
+  },
+  {
+    "dataset": "Algebra2005",
+    "comparator": "SAKT",
+    "seed": 7777,
+    "validation_auc_delta": 0.024640666798064204,
+    "test_auc_delta": 0.023714190229286003
+  },
+  {
+    "dataset": "Algebra2005",
+    "comparator": "LightSAKT",
+    "seed": 42,
+    "validation_auc_delta": 0.0271609164674691,
+    "test_auc_delta": 0.025889271834313332
+  },
+  {
+    "dataset": "Algebra2005",
+    "comparator": "LightSAKT",
+    "seed": 123,
+    "validation_auc_delta": 0.02783574083532525,
+    "test_auc_delta": 0.02640738557233624
+  },
+  {
+    "dataset": "Algebra2005",
+    "comparator": "LightSAKT",
+    "seed": 2026,
+    "validation_auc_delta": 0.027425249415933717,
+    "test_auc_delta": 0.02637457099218099
+  },
+  {
+    "dataset": "Algebra2005",
+    "comparator": "LightSAKT",
+    "seed": 3407,
+    "validation_auc_delta": 0.02812427581061261,
+    "test_auc_delta": 0.025798439671507634
+  },
+  {
+    "dataset": "Algebra2005",
+    "comparator": "LightSAKT",
+    "seed": 7777,
+    "validation_auc_delta": 0.027788990145929615,
+    "test_auc_delta": 0.026936486001850835
+  },
+  {
+    "dataset": "EdNetKT1_5k_first",
+    "comparator": "SAKT",
+    "seed": 42,
+    "validation_auc_delta": 0.06285741134850453,
+    "test_auc_delta": 0.06647745339868116
+  },
+  {
+    "dataset": "EdNetKT1_5k_first",
+    "comparator": "SAKT",
+    "seed": 123,
+    "validation_auc_delta": 0.06489184518175084,
+    "test_auc_delta": 0.07167723802535675
+  },
+  {
+    "dataset": "EdNetKT1_5k_first",
+    "comparator": "SAKT",
+    "seed": 2026,
+    "validation_auc_delta": 0.06520839527126643,
+    "test_auc_delta": 0.07054911725102586
+  },
+  {
+    "dataset": "EdNetKT1_5k_first",
+    "comparator": "SAKT",
+    "seed": 3407,
+    "validation_auc_delta": 0.06396730682444973,
+    "test_auc_delta": 0.07218057586833893
+  },
+  {
+    "dataset": "EdNetKT1_5k_first",
+    "comparator": "SAKT",
+    "seed": 7777,
+    "validation_auc_delta": 0.06370021676693005,
+    "test_auc_delta": 0.07169721222498904
+  },
+  {
+    "dataset": "EdNetKT1_5k_first",
+    "comparator": "LightSAKT",
+    "seed": 42,
+    "validation_auc_delta": 0.058612618088692,
+    "test_auc_delta": 0.06393303274718631
+  },
+  {
+    "dataset": "EdNetKT1_5k_first",
+    "comparator": "LightSAKT",
+    "seed": 123,
+    "validation_auc_delta": 0.05804158232380363,
+    "test_auc_delta": 0.06537853739457189
+  },
+  {
+    "dataset": "EdNetKT1_5k_first",
+    "comparator": "LightSAKT",
+    "seed": 2026,
+    "validation_auc_delta": 0.05846614317798393,
+    "test_auc_delta": 0.06460441499622105
+  },
+  {
+    "dataset": "EdNetKT1_5k_first",
+    "comparator": "LightSAKT",
+    "seed": 3407,
+    "validation_auc_delta": 0.058913679046406875,
+    "test_auc_delta": 0.0646287429301513
+  },
+  {
+    "dataset": "EdNetKT1_5k_first",
+    "comparator": "LightSAKT",
+    "seed": 7777,
+    "validation_auc_delta": 0.060172095606954135,
+    "test_auc_delta": 0.06374740571600446
+  }
+]

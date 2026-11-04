@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/workspace/LightSAKT2-architecture/scripts/report_three_datasets_20261104.py", line 312, in <module>
+    main()
+  File "/workspace/LightSAKT2-architecture/scripts/report_three_datasets_20261104.py", line 303, in main
+    individual, summary, gains = write_tables(records)
+  File "/workspace/LightSAKT2-architecture/scripts/report_three_datasets_20261104.py", line 68, in write_tables
+    row.update({f"{split}_{k}": r[split][k] for k in METRICS})
+  File "/workspace/LightSAKT2-architecture/scripts/report_three_datasets_20261104.py", line 68, in <dictcomp>
+    row.update({f"{split}_{k}": r[split][k] for k in METRICS})
+KeyError: 'precision'
+GENERATED actual measurements=32/45, nine summary slots; no training/inference
+GENERATED actual measurements=35/45, nine summary slots; no training/inference
+GENERATED actual measurements=45/45, nine summary slots; no training/inference
+GENERATED actual measurements=45/45, nine summary slots; no training/inference

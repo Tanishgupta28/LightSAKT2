@@ -345,3 +345,61 @@ model scores;15configs andfivepreparedoptionalcontrols boundinnewplan. Native
 models/splits/loss/metrics unchanged;previous datasets not rerun. Exactexisting
 sharedMIG currently passesadmission;source/config/hold/data fingerprints retained.
 Next safe action:commit andstartguarded15corewindowsunder currentuserscope.
+
+## 2026-11-04 — EdNet execution milestone
+
+Preparation commit5f1b830d and prerequisite-bound ednet_preparation.bundle verified.
+Same approved shared-MIG admission passed before CUDA; launched core ONCE, PID1082738.
+SAKT seed42 completed13epochs, best8 validation AUC0.6655735410712708;
+next LightSAKT seed42 is running. All15configs frozen;independent CPU replay
+started for completed checkpoints without test-guided changes. No HiTSKT access.
+
+## 2026-11-04 — First complete matched EdNet seed
+
+SAKT seed42: epochs13, best8, validationAUC0.665573541, CPUtestAUC0.639857916; exact checkpoint/config/Adam/RNG/loader/masks/metrics PASS.
+LightSAKT seed42: epochs19, best14, validationAUC0.669818334, CPUtestAUC0.642402337; exact checkpoint/config/Adam/RNG/loader/masks/metrics PASS.
+LightSAKT+Difficulty seed42: epochs19, best14, validationAUC0.728430952, CPUtestAUC0.706335369; exact checkpoint/config/Adam/RNG/loader/masks/metrics PASS.
+Other four seeds remain running, allconfigsunchanged; no generalizationclaimyet.
+CPU replay initial formatting assertion was corrected: frozen JSON SHA stays bound,
+native config parsed equality allows trailing-newline difference. No training/data
+change or repeated completed inference; successful replays cached withhashes.
+
+## 2026-11-04 — Full raw-row and temporal audit
+
+Independently aligned all563469retained rows to officialZIP/user source rows and
+correct_answer metadata;source IDs/chronology/labels/first-session-selection
+exact,without reusing clean_student. Offline temporal limitation quantified:
+99.6012%validation and99.5887%testtargets have later-dated training observations
+in their item/skill aggregates;item-only96.8%/95.3930%. These rates are not
+available at historical prediction time in a forward-time deployment. Current
+experiment explicitly preserves offline student-disjoint full-training-corpus
+fitting;no held-out labels enter fitting. Do not claim online improvement.
+See raw_row_alignment_audit.json and offline_temporal_availability_audit.json.
+
+## 2026-11-04 — Two matched EdNet seeds completed
+
+Six core runs complete; native validation and CPUtest metrics recorded in
+reports/ednet_replacement_20261104/replays/. Second difficulty seed123
+completed under unchanged protocol;all490protected originalfiles stillmatch.
+Corecontinues withseed2026;no guardfailure,no HiTSKT access. Completion/replay
+checkpoint/Adam/RNG/loader/mask audits and compressed backups current.
+
+## 2026-11-04 — Four matched EdNet seeds verified
+
+Twelve core runs complete and CPU-replayed/backed up. Difficulty seed3407
+selected validation AUC0.730579894; see replay JSON for exact test/metrics.
+All completed runs passed state/mask/metric checks. Seed7777 coregroup nowactive.
+No model/config/data change or guardfailure; no HiTSKT access.
+
+## 2026-11-04 — Core three-dataset completion, verified offline gains
+
+All15 new EdNet runs complete:265epochs,total3416.978429s windows,peakTorch
+270028800bytes,longestnative298.61s,zero guardfailures/retries. Controller exited.
+All45 relevant records verified,90prediction arrays,15new optimizer/RNG/data-order
+audits;extra six fresh CPU split predictions bitwise match. 15checkpoint archives
+andfrozendata backup member-hash readback PASS;490old protectedfilesunchanged.
+EdNettestmeans±sampleSD:SAKT0.636359±0.001981,Light0.642417±0.000980,
+Difficulty0.706876±0.000691. Newdiff gain+0.064458427vsLight/+0.070516319vsSAKT;
+AUC/accuracy/F1 improve5/5seeds vsboth on each ofthree datasets. Preserve offline/
+known-item/subset/long-history/fixedsplit caveats. NoHiTSKT access. Nextdelivery:
+commit/bundle/archive/pushcheck;nextscience separatelybudgeted featurematchedcontrol.

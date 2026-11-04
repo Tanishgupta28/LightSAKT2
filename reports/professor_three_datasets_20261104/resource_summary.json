@@ -1,0 +1,170 @@
+{
+  "campaign_status": "completed",
+  "gpu_uuid": "MIG-d2fcfd79-720e-5218-82c9-0a132be68920",
+  "completed_runs": [
+    {
+      "run_id": "EdNetKT1_5k_first-SAKT-seed42-20261104-v1",
+      "model": "SAKT",
+      "seed": 42,
+      "training_seconds": 160.04998698993586,
+      "peak_allocated_bytes": 134067712,
+      "peak_reserved_bytes": 150994944,
+      "best_epoch": 8,
+      "epochs": 13
+    },
+    {
+      "run_id": "EdNetKT1_5k_first-LightSAKT-seed42-20261104-v1",
+      "model": "LightSAKT",
+      "seed": 42,
+      "training_seconds": 246.23594348400366,
+      "peak_allocated_bytes": 269975552,
+      "peak_reserved_bytes": 417333248,
+      "best_epoch": 14,
+      "epochs": 19
+    },
+    {
+      "run_id": "EdNetKT1_5k_first-LightSAKTQuestion-seed42-20261104-v1",
+      "model": "LightSAKTQuestion",
+      "seed": 42,
+      "training_seconds": 246.71480345306918,
+      "peak_allocated_bytes": 270028288,
+      "peak_reserved_bytes": 417333248,
+      "best_epoch": 14,
+      "epochs": 19
+    },
+    {
+      "run_id": "EdNetKT1_5k_first-SAKT-seed123-20261104-v1",
+      "model": "SAKT",
+      "seed": 123,
+      "training_seconds": 171.5274913419271,
+      "peak_allocated_bytes": 134067712,
+      "peak_reserved_bytes": 150994944,
+      "best_epoch": 9,
+      "epochs": 14
+    },
+    {
+      "run_id": "EdNetKT1_5k_first-LightSAKT-seed123-20261104-v1",
+      "model": "LightSAKT",
+      "seed": 123,
+      "training_seconds": 220.1099198689917,
+      "peak_allocated_bytes": 269975552,
+      "peak_reserved_bytes": 417333248,
+      "best_epoch": 12,
+      "epochs": 17
+    },
+    {
+      "run_id": "EdNetKT1_5k_first-LightSAKTQuestion-seed123-20261104-v1",
+      "model": "LightSAKTQuestion",
+      "seed": 123,
+      "training_seconds": 298.6060600170167,
+      "peak_allocated_bytes": 270028800,
+      "peak_reserved_bytes": 417333248,
+      "best_epoch": 18,
+      "epochs": 23
+    },
+    {
+      "run_id": "EdNetKT1_5k_first-SAKT-seed2026-20261104-v1",
+      "model": "SAKT",
+      "seed": 2026,
+      "training_seconds": 158.92548178194556,
+      "peak_allocated_bytes": 134067712,
+      "peak_reserved_bytes": 150994944,
+      "best_epoch": 8,
+      "epochs": 13
+    },
+    {
+      "run_id": "EdNetKT1_5k_first-LightSAKT-seed2026-20261104-v1",
+      "model": "LightSAKT",
+      "seed": 2026,
+      "training_seconds": 232.95954899699427,
+      "peak_allocated_bytes": 269975552,
+      "peak_reserved_bytes": 417333248,
+      "best_epoch": 13,
+      "epochs": 18
+    },
+    {
+      "run_id": "EdNetKT1_5k_first-LightSAKTQuestion-seed2026-20261104-v1",
+      "model": "LightSAKTQuestion",
+      "seed": 2026,
+      "training_seconds": 285.70014694996644,
+      "peak_allocated_bytes": 270028288,
+      "peak_reserved_bytes": 417333248,
+      "best_epoch": 17,
+      "epochs": 22
+    },
+    {
+      "run_id": "EdNetKT1_5k_first-SAKT-seed3407-20261104-v1",
+      "model": "SAKT",
+      "seed": 3407,
+      "training_seconds": 171.6686508890707,
+      "peak_allocated_bytes": 134067200,
+      "peak_reserved_bytes": 150994944,
+      "best_epoch": 9,
+      "epochs": 14
+    },
+    {
+      "run_id": "EdNetKT1_5k_first-LightSAKT-seed3407-20261104-v1",
+      "model": "LightSAKT",
+      "seed": 3407,
+      "training_seconds": 233.81120105995797,
+      "peak_allocated_bytes": 269975040,
+      "peak_reserved_bytes": 417333248,
+      "best_epoch": 13,
+      "epochs": 18
+    },
+    {
+      "run_id": "EdNetKT1_5k_first-LightSAKTQuestion-seed3407-20261104-v1",
+      "model": "LightSAKTQuestion",
+      "seed": 3407,
+      "training_seconds": 285.338896258967,
+      "peak_allocated_bytes": 270027776,
+      "peak_reserved_bytes": 417333248,
+      "best_epoch": 17,
+      "epochs": 22
+    },
+    {
+      "run_id": "EdNetKT1_5k_first-SAKT-seed7777-20261104-v1",
+      "model": "SAKT",
+      "seed": 7777,
+      "training_seconds": 171.35645091498736,
+      "peak_allocated_bytes": 134068224,
+      "peak_reserved_bytes": 150994944,
+      "best_epoch": 9,
+      "epochs": 14
+    },
+    {
+      "run_id": "EdNetKT1_5k_first-LightSAKT-seed7777-20261104-v1",
+      "model": "LightSAKT",
+      "seed": 7777,
+      "training_seconds": 233.3053301019827,
+      "peak_allocated_bytes": 269976064,
+      "peak_reserved_bytes": 417333248,
+      "best_epoch": 13,
+      "epochs": 18
+    },
+    {
+      "run_id": "EdNetKT1_5k_first-LightSAKTQuestion-seed7777-20261104-v1",
+      "model": "LightSAKTQuestion",
+      "seed": 7777,
+      "training_seconds": 273.5304989529541,
+      "peak_allocated_bytes": 270028800,
+      "peak_reserved_bytes": 417333248,
+      "best_epoch": 16,
+      "epochs": 21
+    }
+  ],
+  "gpu_window_wall_seconds": 3416.9784285068745,
+  "new_training_seconds_sum": 3389.8404110617703,
+  "resource_samples": 1571,
+  "minimum_shared_gpu_free_bytes": 41439002624,
+  "minimum_host_headroom_bytes": 74678337536,
+  "maximum_worker_rss_bytes": 1724444672,
+  "maximum_allocator_peak_bytes": 270028800,
+  "breach_sample_indices": [],
+  "allocator_cap_bytes": 4294967296,
+  "per_invocation_limit_seconds": 900,
+  "shared_not_exclusive": true,
+  "maximum_total_window_seconds": 13500,
+  "timing_scope": "Admitted window wall time includes pacing; not exclusive time or kernel-active profiling",
+  "unsupported_MIG_utilization": "Existing memory/CPU telemetry fallback; peer ownership unresolved and no signals sent"
+}

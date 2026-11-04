@@ -1,0 +1,133 @@
+{
+  "status": "VERIFIED_CPU_REPLAY",
+  "dataset": "EdNetKT1_5k_first",
+  "model": "LightSAKT",
+  "seed": 2026,
+  "run_id": "EdNetKT1_5k_first-LightSAKT-seed2026-20261104-v1",
+  "config": {
+    "run_id": "EdNetKT1_5k_first-LightSAKT-seed2026-20261104-v1",
+    "dataset": "EdNetKT1_5k_first",
+    "model": "LightSAKT",
+    "group": "replacement_three_model_20261104",
+    "seed": 2026,
+    "device": "cuda",
+    "seq_len": 100,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "weight_decay": 0.0,
+    "max_epochs": 50,
+    "patience": 5,
+    "evaluate_test": false,
+    "model_config": {
+      "max_seq_len": 100,
+      "embed_dim": 64,
+      "num_heads": 2,
+      "dropout": 0.1
+    }
+  },
+  "config_file": "/workspace/LightSAKT2-architecture/.tools/ednet_replacement_20261104/workspace/results/raw/EdNetKT1_5k_first-LightSAKT-seed2026-20261104-v1/config.json",
+  "config_sha256": "d79ed66337ffe03cec404769a1959a4edeef6bb6af8af05bfde1e93d35006cba",
+  "checkpoint": "/workspace/LightSAKT2-architecture/.tools/ednet_replacement_20261104/workspace/checkpoints/EdNetKT1_5k_first-LightSAKT-seed2026-20261104-v1/best.pt",
+  "checkpoint_sha256": "6c5241bab360342025918cdaf4328b12b958ed6fec414f8211528255e724443f",
+  "recorded_metrics_path": "/workspace/LightSAKT2-architecture/.tools/ednet_replacement_20261104/workspace/results/raw/EdNetKT1_5k_first-LightSAKT-seed2026-20261104-v1/metrics.json",
+  "recorded_metrics_sha256": "4cd3060a8913eff69bce14fbf94f03f494d6247dcb7db011b71c03a9a0ac7806",
+  "validation": {
+    "auc": 0.6698898854400077,
+    "auc_reason": null,
+    "accuracy": 0.6822390670553936,
+    "f1": 0.7898244423189658,
+    "mse": 0.20406821151173174,
+    "bce": 0.5939112432001786,
+    "n_targets": 42875,
+    "precision": 0.7073110079575596,
+    "recall": 0.8941320293398533
+  },
+  "test": {
+    "auc": 0.641390304175959,
+    "auc_reason": null,
+    "accuracy": 0.6632872009441048,
+    "f1": 0.7762529407571113,
+    "mse": 0.2143881400297554,
+    "bce": 0.6179801973401672,
+    "n_targets": 111852,
+    "precision": 0.6835860250494397,
+    "recall": 0.8979835883056368
+  },
+  "cpu_replay": {
+    "validation": {
+      "auc": 0.6698898829880318,
+      "auc_reason": null,
+      "accuracy": 0.6822390670553936,
+      "f1": 0.7898244423189658,
+      "mse": 0.20406821166768024,
+      "bce": 0.5939112435158214,
+      "n_targets": 42875,
+      "precision": 0.7073110079575596,
+      "recall": 0.8941320293398533
+    },
+    "test": {
+      "auc": 0.641390304175959,
+      "auc_reason": null,
+      "accuracy": 0.6632872009441048,
+      "f1": 0.7762529407571113,
+      "mse": 0.2143881400297554,
+      "bce": 0.6179801973401672,
+      "n_targets": 111852,
+      "precision": 0.6835860250494397,
+      "recall": 0.8979835883056368
+    }
+  },
+  "recorded_comparison_absolute_differences": {
+    "validation": {
+      "auc": 2.451975955608532e-09,
+      "accuracy": 0.0,
+      "f1": 0.0,
+      "bce": 3.1564273417217237e-10
+    }
+  },
+  "prediction_artifacts": {
+    "validation": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/ednet_replacement_20261104/workspace/results/predictions/EdNetKT1_5k_first-LightSAKT-seed2026-20261104-v1-validation.npz",
+      "sha256": "5bdfae30fd1bddb4d6c4b84148860ca4cd6276e8fcc28882d17a20d45bc41841"
+    },
+    "test": {
+      "path": "/workspace/LightSAKT2-architecture/.tools/ednet_replacement_20261104/workspace/results/predictions/EdNetKT1_5k_first-LightSAKT-seed2026-20261104-v1-test.npz",
+      "sha256": "20c37617583fef2c95b1657ceeee54d7d07b953c0d4b93a86bc01b143d8daeb0"
+    }
+  },
+  "parameters": 306337,
+  "best_epoch": 13,
+  "epochs_trained": 18,
+  "training_seconds": 232.95954899699427,
+  "peak_allocated_bytes": 269975552,
+  "peak_reserved_bytes": 417333248,
+  "processed_sha256": "e31e9e9cefd36d2d671ff7d3e3baad8355a97afc7e3996eb987fc09c2444e25a",
+  "split_sha256": "a31a01019f204e314e90ee3b192f1a1b5d4d02b348f405ceb1a75bc94972ef9a",
+  "selected_git_commit": "5f1b830d3aff3cce146fb5cce215d1e93283cac7",
+  "recorded_training_code_sha256": "cf083a73dc0dce9a875c296b4450c7b6f591bb2df6124566dc50078f3113adc0",
+  "checkpoint_state_audit": {
+    "run_id": "EdNetKT1_5k_first-LightSAKT-seed2026-20261104-v1",
+    "status": "PASS",
+    "best_sha256": "6c5241bab360342025918cdaf4328b12b958ed6fec414f8211528255e724443f",
+    "latest_sha256": "43b79d064420423525dee4800bbb3cb9cb0ea7b4c66768c36a717d7e9a84eb92",
+    "epochs": 18,
+    "best_epoch": 13,
+    "optimizer_finite": true,
+    "saved_rng_states_valid": true,
+    "loader_rng_matches_seeded_epochs": true,
+    "adam_steps": 1890,
+    "no_test_selection": true,
+    "difficulty_scale": null,
+    "training_git_commit": "5f1b830d3aff3cce146fb5cce215d1e93283cac7"
+  },
+  "verification_utc": "2026-11-04T17:12:53.826715+00:00",
+  "inference_device": "cpu",
+  "inference_batch_size": 8,
+  "selection": "strict validation AUC maximum;patience5,max50;test after frozen selection",
+  "mask_and_metrics": "exact original per-student labels[1:]; independent rank-sum AUC and confusion/BCE match <1e-12"
+}

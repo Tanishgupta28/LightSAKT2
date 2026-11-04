@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "unique_checkpoints": 3,
+  "split_reproductions": [
+    {
+      "model": "SAKT",
+      "seed": 42,
+      "split": "validation",
+      "targets": 42875,
+      "fresh_restore_predictions_bitwise_equal": true,
+      "saved_file_unchanged": true
+    },
+    {
+      "model": "SAKT",
+      "seed": 42,
+      "split": "test",
+      "targets": 111852,
+      "fresh_restore_predictions_bitwise_equal": true,
+      "saved_file_unchanged": true
+    },
+    {
+      "model": "LightSAKT",
+      "seed": 42,
+      "split": "validation",
+      "targets": 42875,
+      "fresh_restore_predictions_bitwise_equal": true,
+      "saved_file_unchanged": true
+    },
+    {
+      "model": "LightSAKT",
+      "seed": 42,
+      "split": "test",
+      "targets": 111852,
+      "fresh_restore_predictions_bitwise_equal": true,
+      "saved_file_unchanged": true
+    },
+    {
+      "model": "LightSAKTQuestion",
+      "seed": 42,
+      "split": "validation",
+      "targets": 42875,
+      "fresh_restore_predictions_bitwise_equal": true,
+      "saved_file_unchanged": true
+    },
+    {
+      "model": "LightSAKTQuestion",
+      "seed": 42,
+      "split": "test",
+      "targets": 111852,
+      "fresh_restore_predictions_bitwise_equal": true,
+      "saved_file_unchanged": true
+    }
+  ],
+  "purpose": "Explicit independent repeat CPU inference to check saved-prediction reproducibility; no extra training or GPU inference"
+}

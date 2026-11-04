@@ -1,0 +1,20 @@
+{
+  "status": "PASS_COMPLETE",
+  "verified_model_seed_results": 45,
+  "expected": 45,
+  "historical_training_runs_reused": 30,
+  "new_completed_training_runs": 15,
+  "new_CPU_checkpoint_replays": 15,
+  "independently_recalculated_validation_test_arrays": 90,
+  "new_finite_optimizer_RNG_exact_loader_order_audits": 15,
+  "extra_fresh_CPU_reproductions": "Three seed42 model-family checkpoints, six splits, bitwise-equal predictions; no extra training",
+  "unchanged_protected_historical_files": 490,
+  "matched_per_dataset_data_split_masks_targets": true,
+  "new_training_test_evaluation_disabled": true,
+  "raw_source_labels_independently_checked": 563469,
+  "sample_standard_deviation_ddof": 1,
+  "optional_SAKT_difficulty_controls": "Five CPU-prepared configurations, not GPU-executed",
+  "temporal_limit": "Offline full-training-corpus fitting includes later other-training-student observations; no online claim",
+  "attention_superiority_established": false,
+  "publication_readiness_claimed": false
+}

@@ -1,0 +1,26 @@
+{
+  "run_id": "EdNetKT1_5k_first-SAKT-seed7777-20261104-v1",
+  "dataset": "EdNetKT1_5k_first",
+  "model": "SAKT",
+  "group": "replacement_three_model_20261104",
+  "seed": 7777,
+  "device": "cuda",
+  "seq_len": 100,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "epsilon": 1e-08,
+  "weight_decay": 0.0,
+  "max_epochs": 50,
+  "patience": 5,
+  "evaluate_test": false,
+  "model_config": {
+    "n": 100,
+    "d": 64,
+    "num_attn_heads": 2,
+    "dropout": 0.1
+  }
+}

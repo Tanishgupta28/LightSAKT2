@@ -1,0 +1,9 @@
+{
+  "status": "RESOLVED_CPU_HELPER_SERIALIZATION_ONLY",
+  "notes": [
+    "Initial replay helper rejected native config JSON byte hash because native trainer omits the preparation trailing newline. Frozen file SHA and parsed configuration identity are now both checked. No training configuration or source changed; successful cached inference was not repeated.",
+    "Historical native baseline validation logs omit precision/recall. The result builder correctly uses their existing CPU replay for those two auxiliary validation metrics; AUC/accuracy/F1/BCE remain original selected scores.",
+    "Neither issue affected training, checkpoint selection, labels, model weights or test protocol."
+  ],
+  "new_native_model_changes": false
+}

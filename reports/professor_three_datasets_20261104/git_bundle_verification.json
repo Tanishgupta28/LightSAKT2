@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "bundles": [
+    {
+      "path": "/workspace/LightSAKT2/backups/question_completion_20261029/research_results.bundle",
+      "sha256": "5a4b66c1a75531e01d43c76d8c715c4d938018bdcb71d6a6e6505eb71ea00614",
+      "bytes": 844188,
+      "status": "PASS",
+      "verification": "The bundle contains this ref:\na4414cf28703446bc33d1dab7a6b67546b26903d refs/heads/research/architecture-variants-20261025\nThe bundle requires this ref:\na6bdc6c0f1f9a564f1a27751cfbc9be49f65df1e \n/workspace/LightSAKT2/backups/question_completion_20261029/research_results.bundle is okay"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/professor_results_20261030/research_results-c286bcbc.bundle",
+      "sha256": "f58fc155b658adc0f18fe7ff4ffd9b3e75acaf828b3f8ddb12cedfbe2310a1bb",
+      "bytes": 584219,
+      "status": "PASS",
+      "verification": "The bundle contains this ref:\nc286bcbcee46a5317dbb3071c1f6c3a66335d04a refs/heads/research/architecture-variants-20261025\nThe bundle requires this ref:\na4414cf28703446bc33d1dab7a6b67546b26903d \n/workspace/LightSAKT2/backups/professor_results_20261030/research_results-c286bcbc.bundle is okay"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/professor_results_20261030/research_handoff-49982fa7.bundle",
+      "sha256": "aac759014add9bb5b954a4a1027b4da6453040c7f0defb40696dbde3ed71920f",
+      "bytes": 2988,
+      "status": "PASS",
+      "verification": "The bundle contains this ref:\n49982fa7b20c33dc344ef3501b29a03fc35b8bfc refs/heads/research/architecture-variants-20261025\nThe bundle requires this ref:\nc286bcbcee46a5317dbb3071c1f6c3a66335d04a \n/workspace/LightSAKT2/backups/professor_results_20261030/research_handoff-49982fa7.bundle is okay"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/professor_release_20261031/research_release-2103a6e3.bundle",
+      "sha256": "94800eaf369909431a1e9ed41111b542cefb417abd6d53d1346da8400d434ad3",
+      "bytes": 191918,
+      "status": "PASS",
+      "verification": "The bundle contains this ref:\n2103a6e3e2ff79fa09af3b01406b02f404b58733 refs/heads/research/architecture-variants-20261025\nThe bundle requires this ref:\n49982fa7b20c33dc344ef3501b29a03fc35b8bfc \n/workspace/LightSAKT2/backups/professor_release_20261031/research_release-2103a6e3.bundle is okay"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/professor_release_20261031/research_handoff-cf866961.bundle",
+      "sha256": "64f4a5b448c79e77673f8e9ce600563aade529f9af931a3c8bdf1b2ff4341e58",
+      "bytes": 2514,
+      "status": "PASS",
+      "verification": "The bundle contains this ref:\ncf866961496b400733d8c8ee8420b06e24c4120c refs/heads/research/architecture-variants-20261025\nThe bundle requires this ref:\n2103a6e3e2ff79fa09af3b01406b02f404b58733 \n/workspace/LightSAKT2/backups/professor_release_20261031/research_handoff-cf866961.bundle is okay"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/ednet_preparation.bundle",
+      "sha256": "fcf6fef0654fa7b19f158bfdb4a1106b9e0de26140e61a6bc8db74f938312599",
+      "bytes": 63423,
+      "status": "PASS",
+      "verification": "The bundle contains this ref:\n5f1b830d3aff3cce146fb5cce215d1e93283cac7 refs/heads/research/architecture-variants-20261025\nThe bundle requires this ref:\ncf866961496b400733d8c8ee8420b06e24c4120c \n/workspace/LightSAKT2/backups/ednet_replacement_20261104/ednet_preparation.bundle is okay"
+    }
+  ],
+  "prerequisites_preserved_in_local_repository": true,
+  "incremental_not_independent_full_history": true,
+  "remote_push_claimed": false
+}

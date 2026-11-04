@@ -1,0 +1,22 @@
+{
+  "status": "OFFLINE_LIMITATION_QUANTIFIED",
+  "heldout_labels_used_for_fitting": false,
+  "entire_own_student_excluded_from_training_features": true,
+  "heldout_target_rows": [
+    {
+      "split": "validation",
+      "targets": 42875,
+      "fraction_with_later_training_observation_same_item": 0.968,
+      "fraction_with_later_training_observation_same_skill": 0.9960116618075802,
+      "fraction_with_later_training_observation_in_either_feature_aggregate": 0.9960116618075802
+    },
+    {
+      "split": "test",
+      "targets": 111852,
+      "fraction_with_later_training_observation_same_item": 0.9539301934699425,
+      "fraction_with_later_training_observation_same_skill": 0.9958874226656653,
+      "fraction_with_later_training_observation_in_either_feature_aggregate": 0.9958874226656653
+    }
+  ],
+  "interpretation": "Later timestamps of other training students contribute to fitted item/skill rates. Valid under stated offline student-disjoint protocol; forward-time availability and online-deployment benefit NOT established. No settings changed."
+}

@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/workspace/LightSAKT2-architecture/scripts/replay_ednet_campaign_20261104.py", line 171, in <module>
+    main()
+  File "/workspace/LightSAKT2-architecture/scripts/replay_ednet_campaign_20261104.py", line 162, in main
+    rows = [verify(entry, plan, frame) for entry in plan["entries"]]
+  File "/workspace/LightSAKT2-architecture/scripts/replay_ednet_campaign_20261104.py", line 162, in <listcomp>
+    rows = [verify(entry, plan, frame) for entry in plan["entries"]]
+  File "/workspace/LightSAKT2-architecture/scripts/replay_ednet_campaign_20261104.py", line 93, in verify
+    assert digest(raw / "config.json") == entry["config_sha256"]
+AssertionError
+VERIFIED SAKT seed42: val=0.665573541 test=0.639857916
+VERIFIED LightSAKT seed42: val=0.669818334 test=0.642402337
+VERIFIED LightSAKT+Difficulty seed42: val=0.728430952 test=0.706335369
+VERIFIED SAKT seed123: val=0.664315887 test=0.635434537
+VERIFIED LightSAKT seed123: val=0.671166150 test=0.641733238
+VERIFIED LightSAKT+Difficulty seed123: val=0.729207732 test=0.707111775
+VERIFIED SAKT seed2026: val=0.663147633 test=0.635445602
+VERIFIED LightSAKT seed2026: val=0.669889885 test=0.641390304
+VERIFIED LightSAKT+Difficulty seed2026: val=0.728356029 test=0.705994719
+VERIFIED SAKT seed3407: val=0.666612587 test=0.635084398
+VERIFIED LightSAKT seed3407: val=0.671666214 test=0.642636231
+VERIFIED LightSAKT+Difficulty seed3407: val=0.730579894 test=0.707264974
+VERIFIED SAKT seed7777: val=0.665460554 test=0.635974661
+VERIFIED LightSAKT seed7777: val=0.668988675 test=0.643924468
+VERIFIED LightSAKT+Difficulty seed7777: val=0.729160771 test=0.707671874

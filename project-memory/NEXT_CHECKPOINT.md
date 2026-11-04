@@ -1,34 +1,25 @@
-# Exact next checkpoint — approved EdNet core campaign
+# Next checkpoint — core training is complete, never repeat it
 
-Current user approved replacement and fifteen missing five-seed core trainings.
-CPU/data checks pass;prepared fixed manifest is
-/workspace/LightSAKT2-architecture/experiments/ednet_replacement_20261104/plan.json.
-First inspect reports/ednet_replacement_20261104/campaign_status.json and owned
-processes. If absent and prepared commit/admission pass, launch ONCE:
-CUDA_VISIBLE_DEVICES=MIG-d2fcfd79-720e-5218-82c9-0a132be68920 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -u -m scripts.run_ednet_campaign_20261104
-Redirect output to that report folder/training.log. Do not restart ifexisting.
-Corebudget15serialwindows<=900s/4GiB each,total<=13500s,noautomaticretry. Stop if
-unsafe;preserve latest/best and report reason. Latest checkpoints includeoptimizer,
-all RNG and loaderorder state. Any continuation needs exact config/source identity
-and remaining applicable budget;never reset or silently replace a run.
+All15 EdNet core trainings and CPU replays completed;45 relevant measured model-seed
+results across ASSIST2009,Algebra2005,EdNetKT1_5k_first. No GPU process remains.
+First read actual reports/professor_three_datasets_20261104/verification_summary.json,
+reports/ednet_replacement_20261104/campaign_status.json and CURRENT_STATE.md.
+No retry, duplicate, new architecture, old campaign or HiTSKT operation.
 
-Data/protocol:EdNetKT1_5k_first,5000randomstudentfiles(seed20261104),firstpresented
-question per solving session before answer filtering;authenticquestions/keys,tags
-composites,studentsplit42,common d64/h2/dropout.1/lr.001/b64/L100/50max/patience5.
-SixCPUtests andrealselflabel/heldoutleakage audit PASS. No test in training.
-All15configs frozen. TestonlyCPU after each validation-selected checkpoint and
-onlywith unchanged configs/splits. No furthermodelchanges/newsearch basedontest.
+Delivery steps remaining at this checkpoint:
+1. Commit verified result/report/helper/memory changes on the research branch.
+2. Verify local result Git bundle; attempt safe noninteractive research-branch push.
+   Report auth/non-fast-forward failure without tokens, resets or force-push.
+3. Build portable reporting archive ONCE via scripts/archive_three_datasets_20261104.py
+   --package. Verify ZIP CRC, extracted manifest/aggregates and checkpoint references.
+   Do not overwrite an existing archive. Raw data/student arrays/weights excluded;
+   exact split/population manifests and local checkpoint backup references included.
+4. Update memory with final commit/archive verification/push receipt, synchronize
+   canonical files and run strict validator in both roots. Commit final handoff and
+   preserve its verified incremental Git bundle; report allactual paths.
 
-Aftercompleted runs:CPU replaybest validation ANDtest;verifycheckpointSHA/config,
-allactual metrics,exactmask/targets,finiteoptimizer/RNG/dataorder andfeature/data
-hashes. Preservepredictions andcheckpointbackups. Combine new results withunchanged
-ASSIST2009/Algebra2005 five-seed records;omitASSIST2015 from finalthree,retainhistory.
-MakeCSV means/sampleSD,individuals,pairedabsoluteAUCdeltas,graphs,professorreport,
-preprocessing/source/split/reprodocs andverifiedportablearchive. Reportnegatives.
-Use EdNet subset name explicitly;offline/richer-input/first-question limitations.
-
-Prepared optionalSAKTQuestion controls are five configs underprepared_controls/;
-CPU preparegenericadapter,do notdelaycoreorchargecore15 budgetforcontrols.
-HiTSKT isONHOLD:do notread,modify,resume,run orsignalanystuff there. NopeerGPU
-interference. Keepoldscopeholdbytes,oldresults/main dirtywork/Githistory intact.
-Updateandstrictlyvalidatecanonicalmemory after milestones andbeforeending.
+Scientific next: separately budget feature-matched SAKT+Difficulty; five configs
+and CPU adapter prepared, no control GPU training. Broader cohort/split and
+chronological evaluation needed before attention/online/publication claims.
+Released tests must not guide tuning. All originals/ASSIST2015 history preserved.
+HiTSKT remains strictly ON HOLD, untouched.

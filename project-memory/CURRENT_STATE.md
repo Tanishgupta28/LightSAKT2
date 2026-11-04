@@ -1,62 +1,97 @@
-# Current research state — 4 November 2026, EdNet prepared for approved training
+# Current state — 4 November 2026: three-dataset core complete
 
-Worktree /workspace/LightSAKT2-architecture;branch research/architecture-variants-20261025.
-Latest measured results remain c286bcbc,portable release2103a6e3,handoffcf866961.
-Current user approves replacing ASSIST2015 with EdNet-KT1/Junyi and executing
-missing five-seed SAKT/LightSAKT/LightSAKT+Difficulty comparison once data/resources
-are verified. HiTSKT+FAVOR+ is strictly ON HOLD;no access/changes/jobs there.
+Research worktree `/workspace/LightSAKT2-architecture`, branch
+`research/architecture-variants-20261025`. Canonical memory remains
+`/workspace/LightSAKT2/project-memory`; synchronized worktree view, one system.
+Training/source preparation commit `5f1b830d3aff3cce146fb5cce215d1e93283cac7`.
+Prior results c286bcbc, release2103a6e3, handoffcf866961 remain preserved.
 
-Selected EdNet-KT1. Genuine publisher-linked fullZIP1201163816bytes SHA
-0d13933f90201c5101c7fe8659e44474fa049e3fb93181a8ba6fb3e63267b535;
-Contents173976bytes,13169uniquequestionIDs with official answer key andtags.
-All5000selected source student files passed ZIP memberCRC. No invented IDs.
-Junyi inspected as alternative:exercise/template granularity is not established
-as individual generated-question identity;not selected. Do not relabel exercises.
+## Completed research
 
-Frozen protocol experiments/ednet_replacement_20261104/protocol.json and plan.json.
-Population:uniform5000authentic student filenames,subsetseed20261104,beforelabels;
-first presented question per solving session,chosen before answer validation,
-to exclude other current-bundle responses from history. Explicit reduced EdNet
-protocol,not fullKT1/officialleaderboard claim. Original student/item IDs remain.
-721760rawselectedrows;34duplicatesremoved;158161other-sessionquestions excluded;
-96invalidanswers excluded;563469retained,5000students,11893authenticitems.
-3500/500/1000student splits(seed42),407242/43375/112852interactions and
-403742/42875/111852validnextresponse targets.1452inputskillcodes includingUNK0;
-fullsortedunique tagsets,training-only vocabulary. Allrepeateditems acrosssessions
-retained. Test/current answers and official answer key are label-only,not inputs.
+All fifteen approved EdNet core runs completed normally, without retries or
+resource breaches: five seeds42,123,2026,3407,7777 x SAKT/LightSAKT/Difficulty.
+Owned controller PID1082738 exited normally; terminal session90383 closed.
+No LightSAKT GPU run remains. Never duplicate the completed campaign.
+Reused thirty matching ASSIST2009/Algebra2005 runs; no old training/inference
+repeated. Historical ASSIST2015 baselines and unavailable difficulty slots
+are retained, but ASSIST2015 is replaced in the final three datasets.
 
-Real data audit PASS:whole-own-student label flip and validationlabel flip leave
-features unchanged;independent held-out train-only transform matches frozen
-features,positivecontrolresponds. SixCPUtests PASS includingfirst-per-session
-selection,labelvalidity,causality,padding,gradients,zero-alpha equivalence forboth
-LightSAKT andpreparedSAKTQuestion. Original one-scalar formula/smoothing10unchanged.
-Global rate fitting remains OFFLINE full-training-corpus,not chronologicaldeployment.
+Final table test AUC (mean ± sampleSD, five matched seeds):
 
-Core configs15(five seeds42,123,2026,3407,7777 x3models) frozen before new model
-scores. Common d64/2heads/dropout0.1/lr0.001/batch64/Adam betas0.9,0.999/eps1e-8/
-decay0,max50epochs/patience5;L100 andoriginalmask/chunk/evaluation. No EdNet tuning
-search. Existing datasets retain own prior selected settings;do not claim equal
-hyperparameter search acrossdatasets. Allnewtrainingevaluate_test=false.
+| Dataset | SAKT | LightSAKT | LightSAKT+Difficulty |
+|---|---|---|---|
+| ASSIST2009 | 0.750322 ± 0.000648 | 0.751056 ± 0.000766 | 0.779359 ± 0.000778 |
+| Algebra2005 | 0.813373 ± 0.000367 | 0.810590 ± 0.000422 | 0.836871 ± 0.000217 |
+| EdNet-KT1 5k first/session | 0.636359 ± 0.001981 | 0.642417 ± 0.000980 | 0.706876 ± 0.000691 |
 
-Same previously authorized shared MIG-d2fcfd79-720e-5218-82c9-0a132be68920 is
-present,finite~39GiBfree,no listedcomputeprocess;sharedfallbackadmission PASS.
-No exclusiveclaim or peeroperations. Currentuser authorizes15serial900s windows,
-4GiBallocator,total<=13500s(225minceiling),original10GiBadmission/6GiBruntimefree/
-4GiBRSS/2GiBhostheadroom/.1spacing/30sstep limits. Guardedlauncherexists and
-source/config/data/hold hashes bound. Preserve general holdbytes. Noautomaticretry.
-Five feature-matched SAKT control configs are prepared,NOT launched/corebudget.
+Difficulty increases test AUC/accuracy/F1 over BOTH baselines in ALL five seeds
+on EACH dataset. Absolute test AUC gains versus LightSAKT:
++0.028302772/+0.026281231/+0.064458427 respectively; versus SAKT:
++0.029036320/+0.023497283/+0.070516319. This is descriptive offline evidence,
+not attention superiority, online deployment or publication readiness.
+Earlier 0.750803537→0.781189972 is ASSIST2009 seed42 VALIDATION, not test/mean.
 
-New workspaces/raw/checkpoints local ignored under
-/workspace/LightSAKT2-architecture/.tools/ednet_replacement_20261104/.
-Current evidence reports/ednet_replacement_20261104/;real_data_feature_audit.json,
-dataset_statistics.json,cpu_tests.xml,feature_specification.json andpreparation.log.
-Before launch/continuation read actual campaign_status.json and training.log;
-DO NOT duplicate if a run/controller exists. NewGPUtraining not yet launched at
-this memory checkpoint. Exactnextaction:commit/freshadmission/startguarded core.
+## EdNet protocol and verification
 
-Old ASSIST2009/Algebra2005 five-seed measurements stay fixed;testmeans:
-SAKT0.750322/0.813373,Light0.751056/0.810590,Difficulty0.779359/0.836871.
-ASSIST2015 documented replaced/unavailable,historical reports retained. All338
-oldprotected hashes and152report/config fingerprints unchanged. No original
-models,data/checkpoints/reports or HiTSKT modified. LocalGitpush only ifauthworks;
-otherwisepreserveverifiedcommits/bundles,no forcepush or claimedunverifiedpush.
+Authentic publisher-linked KT1/Contents downloaded, official question IDs/answer
+keys/tags verified. Junyi individual generated-item identity was not established;
+EdNet chosen with actual files available. 5000 user filenames sampled uniformly
+from784309, seed20261104, before labels/length/performance. First question of each
+solving session chosen before answer validity; no same-session response history.
+Explicit reduced EdNet protocol, not fullKT1. Full tagsets are composite skills;
+original student/item IDs preserved. 721760raw rows,34exact duplicates removed,
+158161additional within-session questions and96invalid first answers excluded;
+563469retained,5000students,11893observed authentic items (metadata13169).
+Student splits3500/500/1000, seed42; targets403742/42875/111852.
+Training-only1451tagsets+UNK; L100/native n−1 overlapping chunks/masks.
+Common fixed d64,h2,dropout.1,lr.001,b64,Adam(.9,.999),eps1e-8,decay0,max50,
+patience5,strict validation-AUC selection. No EdNet tuning search or source/model
+change; historical datasets retain prior selected model-specific settings.
+
+Original correction unchanged: scalar alpha times logit(item success) minus
+logit(skill success), smoothing10, Beta(1,1) skill prior. Whole own student removed
+from BOTH training aggregates; held-out features fit training labels only; unseen0.
+Six CPU tests and real feature/label perturbations PASS; all563469raw source rows,
+authentic IDs, labels, chronology and first-session selection independently match.
+All15 new checkpoints CPU restored; Adam/RNG/exact loader-order checks pass.
+All90 relevant saved validation/test prediction arrays pass exact target order and
+independent AUC/confusion/BCE checks. Three seed42 families additionally restored
+fresh onCPU: allsix split arrays bitwise reproduce, no predictions overwritten.
+490 historical scientific/report hashes and frozen science/data/config/hold hashes
+unchanged. All15 best/latest checkpoint recovery archives and frozen dataset
+backup verified by member hashes; checkpoints/raw arrays remain ignored/local.
+
+Resource: same authorized SHARED MIG-d2fcfd79-720e-5218-82c9-0a132be68920.
+4GiB allocator/900s invocation/13500s total ceilings preserved with original
+shared safeguards. Actual3416.978429s admitted wall time (56.95min),265epochs,
+longest native training298.61s, peakTorch270028800bytes (0.251484GiB); zero breaches.
+No exclusive allocation claim; no unrelated workload signalled/changed.
+HiTSKT+FAVOR+ strictly ON HOLD: no files, checkpoints or jobs accessed/changed.
+
+## Limitations and next scientific step
+
+Offline full-training-corpus statistics include later OTHER training students'
+observations for99.6012%validation/99.5887%test targets. No held-out/self-label
+contamination under stated offline protocol; historical-time availability and
+online benefit NOT established. Mostly known items (unseen val0.0669%,test0.1648%).
+One fixed split; largest EdNet validation student contributes19.11%of targets.
+SD measures initialization variability, not cohort/split uncertainty. Empirical
+success rates also reflect ability/item selection, not proven intrinsic difficulty.
+
+Essential next control: SAKT+identical difficulty, with native SAKT encoder and
+matched information/protocol. Five EdNet configs and generic CPU adapter tested,
+NOT GPU-executed or charged to corebudget. Define a separate control budget first.
+Then independent cohort/split and chronological studies; no tuning on released tests.
+No additional architecture or GPU experiment is currently part of unfinished core.
+
+## Deliverables and preservation
+
+Complete report/tables/graphs/provenance: `reports/professor_three_datasets_20261104/`.
+New-run/source/feature/resource audits: `reports/ednet_replacement_20261104/`.
+Ignored raw/work/checkpoint/predictions: `.tools/ednet_replacement_20261104/`.
+Verified checkpoint/data archives: `/workspace/LightSAKT2/backups/ednet_replacement_20261104/`.
+Six relevant local incremental Git bundles verified, with prerequisites preserved.
+Portable reporting archive planned at
+`/workspace/LightSAKT2/backups/professor_three_datasets_20261104/LightSAKT_question_difficulty_three_datasets_20261104.zip`.
+Final archive verification, result commit/bundle and safe remote push check remain
+as delivery steps. No remote push attempted or claimed for this task yet.

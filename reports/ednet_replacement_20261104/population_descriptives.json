@@ -1,0 +1,32 @@
+[
+  {
+    "split": "test",
+    "students": 1000,
+    "target_correct_rate": 0.6504398669670636,
+    "authentic_items": 10450,
+    "observed_tagsets": 1367,
+    "interactions_per_student_median": 14.0,
+    "interactions_per_student_p95": 443.2999999999997,
+    "maximum_interactions_one_student": 8021
+  },
+  {
+    "split": "train",
+    "students": 3500,
+    "target_correct_rate": 0.6686151056863047,
+    "authentic_items": 11787,
+    "observed_tagsets": 1451,
+    "interactions_per_student_median": 12.0,
+    "interactions_per_student_p95": 529.3499999999981,
+    "maximum_interactions_one_student": 13501
+  },
+  {
+    "split": "validation",
+    "students": 500,
+    "target_correct_rate": 0.6677551020408163,
+    "authentic_items": 9093,
+    "observed_tagsets": 1271,
+    "interactions_per_student_median": 10.0,
+    "interactions_per_student_p95": 359.59999999999945,
+    "maximum_interactions_one_student": 8195
+  }
+]
