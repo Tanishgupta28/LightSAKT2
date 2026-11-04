@@ -1,0 +1,56 @@
+{
+  "status": "PRE_REGISTERED_BEFORE_NEW_VALIDATION_OR_TEST_SCORES",
+  "source_user_date": "2026-11-04",
+  "core_models": [
+    "SAKT",
+    "LightSAKT",
+    "LightSAKTQuestion"
+  ],
+  "training_seeds": [
+    42,
+    123,
+    2026,
+    3407,
+    7777
+  ],
+  "replacement": "EdNet-KT1",
+  "population": "5000 authentic student filenames sampled without replacement from full KT1 central directory; numpy.default_rng seed20261104; no label/length/performance selection",
+  "session_policy": "one first presented question per solving_id, before answer-validity filtering, to prevent other current-bundle responses entering history",
+  "split_seed": 42,
+  "split_unit": "student",
+  "split_ratios": [
+    0.7,
+    0.1,
+    0.2
+  ],
+  "vocabulary": "training-only full sorted unique tagset categories,UNK0",
+  "seq_len": 100,
+  "batch_size": 64,
+  "embedding_dim": 64,
+  "attention_heads": 2,
+  "dropout": 0.1,
+  "learning_rate": 0.001,
+  "optimizer": "Adam",
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "epsilon": 1e-08,
+  "weight_decay": 0,
+  "max_epochs": 50,
+  "patience": 5,
+  "selection": "strict validation AUC maximum",
+  "evaluate_test_during_training": false,
+  "difficulty": "unchanged question-vs-skill logit rates,smoothing10,whole-own-student exclusion for train,training labels only for heldout",
+  "test_release": "only frozen validation-selected checkpoints; current user explicitly requests final test metrics; no tuning after exposure",
+  "hyperparameters_reason": "common fixed compact setting chosen before any replacement-dataset model scores; comparable across the three core models,not a new validation search; historical datasets retain their existing selected configs",
+  "gpu_uuid": "MIG-d2fcfd79-720e-5218-82c9-0a132be68920",
+  "new_core_runs": 15,
+  "max_window_seconds_per_run": 900,
+  "maximum_core_window_seconds": 13500,
+  "allocator_cap_bytes": 4294967296,
+  "concurrency": 1,
+  "automatic_retry": false,
+  "control": "SAKT plus identical difficulty will be CPU prepared; not part of the fifteen-run core allocation",
+  "HiTSKT": "ON HOLD; no files,checkpoints or jobs touched"
+}

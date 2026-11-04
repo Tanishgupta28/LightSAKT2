@@ -9,16 +9,16 @@ of the same tracked project memory; code, Git and artifacts remain authoritative
 Read [USER_DIRECTIVES.md](USER_DIRECTIVES.md), [CURRENT_STATE.md](CURRENT_STATE.md),
 [DECISION_LOG.md](DECISION_LOG.md), then [NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md).
 
-Latest:31October CPU re-verification and portable package COMPLETE. Forty
-measured model-seed results agree with actual checkpoints/replay arrays;five
-ASSIST2015 difficulty slots are unavailable under this protocol. Official2015
-CSV is byte-identical to local/raw backup and lacks independent question IDs.
-No new GPU/inference run,no remote push;all77old report files remain unchanged.
-Suitable as verified research progress,not publication-ready three-dataset evidence.
+Latest:4November replacement approved. EdNet-KT1 authentic files obtained;
+5000student first-question-per-session subset preprocessed andverified. Fifteen
+coreconfigs frozen; sixCPUtests/realfeatureleakage checks PASS. Next:guarded
+five-seed SAKT/LightSAKT/Difficulty training after finalcommit/admission. Check
+actual campaign_status before any execution. HiTSKT strictly ONHOLD/untouched.
+Historical two-dataset results remain verified andunchanged;ASSIST2015 replaced.
 
-Current report:`/workspace/LightSAKT2-architecture/reports/professor_release_20261031/PROFESSOR_REPORT.md`.
-Portable archive:`/workspace/LightSAKT2/backups/professor_release_20261031/LightSAKT_question_difficulty_verified_results_20261031.zip`.
-Historical measurements:`/workspace/LightSAKT2-architecture/reports/professor_results_20261030/`.
+Current evidence:`/workspace/LightSAKT2-architecture/reports/ednet_replacement_20261104/`.
+Frozen plan:`/workspace/LightSAKT2-architecture/experiments/ednet_replacement_20261104/plan.json`.
+Prior professor report:`/workspace/LightSAKT2-architecture/reports/professor_release_20261031/PROFESSOR_REPORT.md`.
 Skill: `/root/.codex/skills/durable-project-memory/SKILL.md`.
 Use Resume/Update/Audit, strict validator and manual claim reconciliation.
 Prior conclusions and scopes remain under [archive](archive) and in the dated log.

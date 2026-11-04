@@ -1,3 +1,34 @@
+# Current replacement-dataset scope — 4 November 2026
+
+Professor approves replacing ASSIST2015 with EdNet-KT1 or Junyi. Current user
+authorizes fifteen missing core runs(five matched seeds each SAKT,LightSAKT,
+LightSAKT+Difficulty) after authentic data and shared-GPU admission pass. Existing
+ASSIST2009/Algebra2005 measurements stay fixed;do not repeat. No new architecture.
+HiTSKT+FAVOR+ is ON HOLD:do not read/modify/resume/run its code,checkpoints or jobs.
+Work exclusively in LightSAKT. Current scope supersedes earlier no-new-training
+and no-replacement instructions for the separately frozen new dataset campaign.
+
+Selected candidate EdNet-KT1;official full ZIP and metadata obtained. Pre-registered
+subset5000students,seed20261104,first presented question per solving session chosen
+before outcomes to avoid same-bundle answer history. Authentic user/item IDs,
+correctness from official answer key,composite tags,70/10/20student split42,
+length100,matchedcommon d64/2heads/dropout0.1/lr0.001/batch64/50epochs/patience5.
+Same one-scalar difficulty/smoothing10/whole-own-student exclusion;heldout fittrain
+labels only. This is an explicit subset protocol,not fullEdNet or deploymentclaim.
+
+Exact existing shared MIG UUID remains present and passes NVML memory/host checks.
+New core maximum15serial900s windows,total13500s,4GiB allocator,existing admission
+10GiB/runtime6GiB/RSS4GiB/host2GiB/.1spacing/30sstep safeguards. No exclusivity
+assumed;no peer signals or HiTSKT access. Old holds unchanged;scope/config hashes
+will be frozen separately. Stop unsafe execution,no automaticretry/extra windows.
+Feature-matched SAKT control:CPU preparation only,outsidecore15 budget.
+
+Generate actual five-seed validation/test metrics and final three-dataset reports,
+CSV,graphs,provenance,portable archive;ASSIST2015 historical only. Validate and
+commit to intended research branch,push only if credentials work,otherwise keep
+verified local commits/bundles. Never forcepush. Older dated directives below
+are historical and do not cancel this explicit new scope.
+
 # Verification and portable-release scope — 31 October 2026
 
 Current user requests fresh per-seed result verification,authentic ASSIST2015

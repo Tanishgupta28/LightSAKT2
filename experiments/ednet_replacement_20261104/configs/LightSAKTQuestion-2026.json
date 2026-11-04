@@ -1,0 +1,36 @@
+{
+  "run_id": "EdNetKT1_5k_first-LightSAKTQuestion-seed2026-20261104-v1",
+  "dataset": "EdNetKT1_5k_first",
+  "model": "LightSAKTQuestion",
+  "group": "replacement_three_model_20261104",
+  "seed": 2026,
+  "device": "cuda",
+  "seq_len": 100,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "epsilon": 1e-08,
+  "weight_decay": 0.0,
+  "max_epochs": 50,
+  "patience": 5,
+  "evaluate_test": false,
+  "model_config": {
+    "max_seq_len": 100,
+    "embed_dim": 64,
+    "num_heads": 2,
+    "dropout": 0.1
+  },
+  "feature_path": "/workspace/LightSAKT2-architecture/.tools/ednet_replacement_20261104/workspace/data/auxiliary/EdNetKT1_5k_first-train_validation.json",
+  "question_difficulty": {
+    "algorithm": "question-vs-skill-logit-loso-v1",
+    "smoothing": 10.0,
+    "processed_sha256": "e31e9e9cefd36d2d671ff7d3e3baad8355a97afc7e3996eb987fc09c2444e25a",
+    "split_sha256": "a31a01019f204e314e90ee3b192f1a1b5d4d02b348f405ceb1a75bc94972ef9a",
+    "raw_sha256": "0d13933f90201c5101c7fe8659e44474fa049e3fb93181a8ba6fb3e63267b535",
+    "metadata_sha256": "137d2936b746c98e1586ef134bf9f9bc4b5a878c96b88e630b2241fe9f15d3cd",
+    "feature_sha256": "f91e9f381c56e542ae00784adbb85c2616ff9d6d75d4fcb8c4ab2c009561de57"
+  }
+}

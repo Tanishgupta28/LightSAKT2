@@ -319,3 +319,29 @@ references and portable archive SHA. Bundle /workspace/LightSAKT2/backups/profes
 bundle claim. Portable ZIP SHAabf2feec4c31669006f6731ef7689742f7e549063d699e620e74cf83c4ffe8f0
 and184payload checks PASS. Original77report files remain byte-identical. Canonical
 and worktree memory both strict PASS;zero GPU/inference or remote publication.
+
+## 4 November 2026 — replacement scope and real EdNet sources recovered
+
+Current user approves ASSIST2015replacement and missing five-seed three-model
+comparison,conditional on safe allocation. EdNet official links resolve to Drive;
+connector256MiB limit prevents KT1fetch,so official publicusercontent endpoint
+was streamed locally without credentials. Complete1201163816byte KT1ZIP SHA
+0d13933f90201c5101c7fe8659e44474fa049e3fb93181a8ba6fb3e63267b535;
+Contents ZIP173976bytes,metadata13169uniquequestionIDs/1792tagsets/answer keys.
+Same approved shared MIG has no listed compute processes and finite~39GiBfree;
+current admission passes. No CUDA/training launched yet. EdNet subset/session/
+common-hyperparameter protocol frozen before any new model scores in
+experiments/ednet_replacement_20261104/protocol.json. Full prior338protected
+hashes and152historical report/config hashes preserved. HiTSKT remains untouched.
+
+## 4 November 2026 — real EdNet data/feature audits and core configs frozen
+
+Dataset EdNetKT1_5k_first retains563469interactions/5000students/11893authentic
+questions;seededstudentchoicebeforeoutcomes,onefirstitempersession toavoidbundle
+response leakage.3500/500/1000students,407242/43375/112852interactions. SixCPUtests
+PASS;realwholeownstudent/validationlabel perturbation and feature reproduction
+PASS. Commonnative d64/h2/dropout.1/lr.001/B64/L100/max50/patience5 fixed before
+model scores;15configs andfivepreparedoptionalcontrols boundinnewplan. Native
+models/splits/loss/metrics unchanged;previous datasets not rerun. Exactexisting
+sharedMIG currently passesadmission;source/config/hold/data fingerprints retained.
+Next safe action:commit andstartguarded15corewindowsunder currentuserscope.

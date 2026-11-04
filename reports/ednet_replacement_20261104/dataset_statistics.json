@@ -1,0 +1,67 @@
+{
+  "dataset": "EdNetKT1_5k_first",
+  "display_name": "EdNet-KT1: deterministic 5k students, first question per solving session",
+  "source_url": "https://github.com/riiid/ednet",
+  "raw_sha256": "0d13933f90201c5101c7fe8659e44474fa049e3fb93181a8ba6fb3e63267b535",
+  "metadata_sha256": "137d2936b746c98e1586ef134bf9f9bc4b5a878c96b88e630b2241fe9f15d3cd",
+  "metadata_archive_sha256": "aa910a0436d9dbac0ba232f55e27b37ad8d39da285fcf15f1c1eb5d064be98e7",
+  "selection_sha256": "14815bfd9992e4d05878e3b8d882b2106bd183503791b1b68db60dc07c5880b7",
+  "source_members_sha256": "f3197d22bde643a07c6d846400d620d95e5c53a7b0993dcff5fd9d2765c30fd6",
+  "subset_seed": 20261104,
+  "split_seed": 42,
+  "selected_student_files": 5000,
+  "active_students": 5000,
+  "students_with_at_least_two_retained_rows": 4816,
+  "clean_interactions": 563469,
+  "unique_authentic_questions": 11893,
+  "question_metadata_rows": 13169,
+  "skill_semantics": "sorted unique full tagset; no multiskill row explosion",
+  "unknown_skill_semantics": "training-only vocabulary,UNK0; missing tags explicit category; authentic item IDs retained separately",
+  "num_q": 1452,
+  "unique_skill_identifiers": 1456,
+  "split_students": {
+    "train": 3500,
+    "validation": 500,
+    "test": 1000
+  },
+  "split_interactions": {
+    "train": 407242,
+    "validation": 43375,
+    "test": 112852
+  },
+  "split_targets": {
+    "train": 403742,
+    "validation": 42875,
+    "test": 111852
+  },
+  "split_unknown_skills": {
+    "train": 0,
+    "validation": 1,
+    "test": 4
+  },
+  "split_sha256": "a31a01019f204e314e90ee3b192f1a1b5d4d02b348f405ceb1a75bc94972ef9a",
+  "processed_sha256": "e31e9e9cefd36d2d671ff7d3e3baad8355a97afc7e3996eb987fc09c2444e25a",
+  "student_overlap": 0,
+  "filter_counts": {
+    "raw_rows": 721760,
+    "exact_duplicates_removed": 34,
+    "sessions": 563565,
+    "other_questions_in_session_excluded": 158161,
+    "missing_question_metadata_excluded": 0,
+    "invalid_answer_excluded": 96,
+    "retained_rows": 563469
+  },
+  "archive_integrity": {
+    "zip_members_total": 784310,
+    "authentic_student_files": 784309,
+    "selected_student_file_crc_checks": 5000,
+    "compressed_bytes": 1201163816,
+    "all_student_uncompressed_bytes": 3072366053,
+    "central_directory_duplicate_students": 0
+  },
+  "causal_session_policy": "Keep first presented question per solving_id before inspecting answers; other same-session responses never enter model history; preserve earlier-session order",
+  "label_rule": "recorded user_answer equals official correct_answer; key and raw answers are never predictor inputs",
+  "repeated_interactions": "Authentic question repeated in different sessions retained; only exact duplicate exported rows removed",
+  "temporal_scope": "Offline student-disjoint KT on session-ordered retained events; no global chronological-deployment claim",
+  "license": "EdNet CC BY-NC4.0 research; raw data/model binaries not committed"
+}

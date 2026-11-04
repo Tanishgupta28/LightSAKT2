@@ -1,0 +1,29 @@
+{
+  "sample": {
+    "observed_utc": "2026-11-04T16:22:29.352246+00:00",
+    "gpu_uuid": "MIG-d2fcfd79-720e-5218-82c9-0a132be68920",
+    "total_bytes": 42278584320,
+    "free_bytes": 42238803968,
+    "used_bytes": 39780352,
+    "compute_processes": [],
+    "pid_attribution": "unresolved; shared use; no exclusive claim",
+    "utilization_gpu_percent": null,
+    "utilization_status": "unsupported_mig",
+    "host_headroom_bytes": 77588164608,
+    "process_peak_rss_bytes": 29224960
+  },
+  "assessment": "Shared MIG utilization unavailable; headroom/cap/pacing fallback applied",
+  "policy": {
+    "allocator_cap_bytes": 4294967296,
+    "admission_free_bytes": 10737418240,
+    "runtime_free_bytes": 6442450944,
+    "host_rss_cap_bytes": 4294967296,
+    "host_headroom_bytes": 2147483648,
+    "admission_utilization_max": 75,
+    "allow_unsupported_mig_utilization": true,
+    "inter_update_pause_seconds": 0.1,
+    "max_step_seconds": 30,
+    "wall_time_limit_seconds": 900
+  },
+  "permission": "Current user authorizes missing replacement-dataset runs after safe admission; exact prior shared-MIG UUID is unchanged. No exclusive claim and no HiTSKT files/processes inspected or modified."
+}

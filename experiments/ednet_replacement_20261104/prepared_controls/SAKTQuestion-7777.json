@@ -1,0 +1,33 @@
+{
+  "run_id": "EdNetKT1_5k_first-SAKTQuestion-seed7777-UNLAUNCHED",
+  "dataset": "EdNetKT1_5k_first",
+  "model": "SAKTQuestion",
+  "group": "prepared_feature_matched_control",
+  "seed": 7777,
+  "device": "cuda",
+  "seq_len": 100,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "epsilon": 1e-08,
+  "weight_decay": 0.0,
+  "max_epochs": 50,
+  "patience": 5,
+  "evaluate_test": false,
+  "model_config": {
+    "n": 100,
+    "d": 64,
+    "num_attn_heads": 2,
+    "dropout": 0.1
+  },
+  "feature_path": "/workspace/LightSAKT2-architecture/.tools/ednet_replacement_20261104/workspace/data/auxiliary/EdNetKT1_5k_first-train_validation.json",
+  "question_difficulty": {
+    "algorithm": "question-vs-skill-logit-loso-v1",
+    "smoothing": 10.0,
+    "feature_sha256": "f91e9f381c56e542ae00784adbb85c2616ff9d6d75d4fcb8c4ab2c009561de57"
+  },
+  "experimental_implementation_sha256": "8a03ccb39787d35feb284464d3269cd6c84c3a66293bac4ea039e8c446d62db9"
+}
