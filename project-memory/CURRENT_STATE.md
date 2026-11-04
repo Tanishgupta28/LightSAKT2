@@ -3,6 +3,7 @@
 Research worktree `/workspace/LightSAKT2-architecture`, branch
 `research/architecture-variants-20261025`. Canonical memory remains
 `/workspace/LightSAKT2/project-memory`; synchronized worktree view, one system.
+Verified result/report commit `9c6a3e71fc16541145c1842397090c8cf948945c`.
 Training/source preparation commit `5f1b830d3aff3cce146fb5cce215d1e93283cac7`.
 Prior results c286bcbc, release2103a6e3, handoffcf866961 remain preserved.
 
@@ -90,8 +91,20 @@ Complete report/tables/graphs/provenance: `reports/professor_three_datasets_2026
 New-run/source/feature/resource audits: `reports/ednet_replacement_20261104/`.
 Ignored raw/work/checkpoint/predictions: `.tools/ednet_replacement_20261104/`.
 Verified checkpoint/data archives: `/workspace/LightSAKT2/backups/ednet_replacement_20261104/`.
-Six relevant local incremental Git bundles verified, with prerequisites preserved.
-Portable reporting archive planned at
-`/workspace/LightSAKT2/backups/professor_three_datasets_20261104/LightSAKT_question_difficulty_three_datasets_20261104.zip`.
-Final archive verification, result commit/bundle and safe remote push check remain
-as delivery steps. No remote push attempted or claimed for this task yet.
+Seven historical/preparation/result local incremental bundles verified before
+packaging, with prerequisites preserved. Result/report commit9c6a3e71; final
+handoff may advance HEAD without changing measurements.
+Portable reporting archive VERIFIED: `/workspace/LightSAKT2/backups/professor_three_datasets_20261104/LightSAKT_question_difficulty_three_datasets_20261104.zip`.
+SHA256 `a4741fef489150bf50eaacd8c76f371cc51255fd31475ad9b08fa3f206999424`; 1292024bytes,374payloadfiles,45measuredslots,0pending.
+ZIP CRC, extracted manifest/means/sampleSD/paired-delta/config-reference checks PASS.
+Standalone standard-library CLI verifier also PASS. Reporting package includes
+source/configs/split-population manifests and checkpoint refs, not raw responses,
+student-level predictions or weights. These are separately backed up locally.
+
+Non-force research push attempted on result commit9c6a3e71: FAILED
+AUTHENTICATION_BLOCKED(exit128). No remote push success claimed. Local commits,
+verified result bundle and all existing checkpoints/results preserved. Final
+handoff bundle/receipt are under `/workspace/LightSAKT2/backups/ednet_replacement_20261104/`
+(`ednet_delivery_handoff.bundle`, `delivery_handoff_verification.json`).
+Canonical/worktree memory synchronized; strict validation and manual scientific
+claims audit completed. Core delivery complete; no GPU run remains.

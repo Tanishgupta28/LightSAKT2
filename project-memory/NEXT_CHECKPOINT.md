@@ -1,25 +1,33 @@
-# Next checkpoint — core training is complete, never repeat it
+# Next checkpoint — completed core, no outstanding training
 
-All15 EdNet core trainings and CPU replays completed;45 relevant measured model-seed
-results across ASSIST2009,Algebra2005,EdNetKT1_5k_first. No GPU process remains.
-First read actual reports/professor_three_datasets_20261104/verification_summary.json,
-reports/ednet_replacement_20261104/campaign_status.json and CURRENT_STATE.md.
-No retry, duplicate, new architecture, old campaign or HiTSKT operation.
+Read CURRENT_STATE.md and the final professor report at
+/workspace/LightSAKT2-architecture/reports/professor_three_datasets_20261104/PROFESSOR_REPORT.md.
+All15 EdNet trainings/CPU replays and30 reused original dataset runs complete.
+Final tables contain45verified model-seed measurements, no pending core slots.
+No owned GPU worker remains. Do not restart any completed campaign or repeat
+ASSIST2009/Algebra2005/EdNet experiments without a specific scientific reason.
 
-Delivery steps remaining at this checkpoint:
-1. Commit verified result/report/helper/memory changes on the research branch.
-2. Verify local result Git bundle; attempt safe noninteractive research-branch push.
-   Report auth/non-fast-forward failure without tokens, resets or force-push.
-3. Build portable reporting archive ONCE via scripts/archive_three_datasets_20261104.py
-   --package. Verify ZIP CRC, extracted manifest/aggregates and checkpoint references.
-   Do not overwrite an existing archive. Raw data/student arrays/weights excluded;
-   exact split/population manifests and local checkpoint backup references included.
-4. Update memory with final commit/archive verification/push receipt, synchronize
-   canonical files and run strict validator in both roots. Commit final handoff and
-   preserve its verified incremental Git bundle; report allactual paths.
+Portable archive and standalone standard-library verifier PASS. See local
+archive_verification.json and standalone_archive_verification.json. Result commit
+9c6a3e71; subsequent Git HEAD is delivery/memory handoff, no measurement change.
+Latest safe bundle/receipt: /workspace/LightSAKT2/backups/ednet_replacement_20261104/
+ednet_delivery_handoff.bundle and delivery_handoff_verification.json. Existing
+local prerequisites preserved. Remote push blocked by authentication(exit128),
+no success claimed. Preserve dirty main checkout and all old artifacts/history.
 
-Scientific next: separately budget feature-matched SAKT+Difficulty; five configs
-and CPU adapter prepared, no control GPU training. Broader cohort/split and
-chronological evaluation needed before attention/online/publication claims.
-Released tests must not guide tuning. All originals/ASSIST2015 history preserved.
-HiTSKT remains strictly ON HOLD, untouched.
+Next scientific experiment: feature-matched SAKT+Difficulty control. EdNet's five
+configs and generic adapter are CPU-prepared/tested, not GPU-executed. Define a
+separate execution budget and confirm current shared allocation/admission first.
+A possible ceiling is five900s invocations (75min),4GiB allocator,serial; this is
+a proposed control budget, not an active unspent core authorization. Other
+datasets need feature-matched controls too; do not claim all are already trained.
+
+Then independent cohort/split and chronological evaluation. Current evidence is
+offline, largely known items, one split; empirical rates include later other
+training students and do not prove intrinsic difficulty or online benefit.
+Released tests must not guide further tuning. Added information does not prove
+attention architecture superiority or publication readiness.
+
+ASSIST2015 is replaced/unavailable for difficulty, historical reports retained.
+HiTSKT+FAVOR+ remains strictly ON HOLD: do not access/modify/resume/run its files,
+checkpoints or jobs. Update/audit the existing canonical memory after milestones.

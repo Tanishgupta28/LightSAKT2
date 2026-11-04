@@ -42,9 +42,17 @@
       "bytes": 63423,
       "status": "PASS",
       "verification": "The bundle contains this ref:\n5f1b830d3aff3cce146fb5cce215d1e93283cac7 refs/heads/research/architecture-variants-20261025\nThe bundle requires this ref:\ncf866961496b400733d8c8ee8420b06e24c4120c \n/workspace/LightSAKT2/backups/ednet_replacement_20261104/ednet_preparation.bundle is okay"
+    },
+    {
+      "path": "/workspace/LightSAKT2/backups/ednet_replacement_20261104/ednet_verified_results.bundle",
+      "sha256": "4280a30118851c47a53655fef82d9574dc49bcfaca49ca31684cb26d7c4ea274",
+      "bytes": 468952,
+      "status": "PASS",
+      "verification": "The bundle contains this ref:\n9c6a3e71fc16541145c1842397090c8cf948945c refs/heads/research/architecture-variants-20261025\nThe bundle requires this ref:\n5f1b830d3aff3cce146fb5cce215d1e93283cac7 \n/workspace/LightSAKT2/backups/ednet_replacement_20261104/ednet_verified_results.bundle is okay"
     }
   ],
   "prerequisites_preserved_in_local_repository": true,
   "incremental_not_independent_full_history": true,
-  "remote_push_claimed": false
+  "remote_push_claimed": false,
+  "remote_authentication_status": "AUTHENTICATION_BLOCKED"
 }

@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "archive": "/workspace/LightSAKT2/backups/professor_three_datasets_20261104/LightSAKT_question_difficulty_three_datasets_20261104.zip",
+  "sha256": "a4741fef489150bf50eaacd8c76f371cc51255fd31475ad9b08fa3f206999424",
+  "bytes": 1292024,
+  "zip_crc_all_members": true,
+  "stage_check": {
+    "status": "PASS",
+    "verified_payload_files": 374,
+    "measured_model_seed_results": 45,
+    "pending_model_seed_slots": 0,
+    "sample_standard_deviation_ddof": 1,
+    "scope": "Portable payload hashes, tables/CSV-JSON equality, aggregation, paired deltas and checkpoint config references; external data/weights not executed."
+  },
+  "extracted_readback_check": {
+    "status": "PASS",
+    "verified_payload_files": 374,
+    "measured_model_seed_results": 45,
+    "pending_model_seed_slots": 0,
+    "sample_standard_deviation_ddof": 1,
+    "scope": "Portable payload hashes, tables/CSV-JSON equality, aggregation, paired deltas and checkpoint config references; external data/weights not executed."
+  },
+  "model_weights_in_archive": false,
+  "raw_data_or_student_arrays_in_archive": false
+}

@@ -15,7 +15,9 @@ improves test AUC/accuracy/F1 versus both baselines in allfive seeds per dataset
 Explicit OFFLINE, known-item, 5k-first/session EdNet scope; no attention-superiority
 or online/publication claim. No GPU run remains; never duplicate the campaign.
 Final report: reports/professor_three_datasets_20261104/PROFESSOR_REPORT.md.
-Archive/commit/bundle/push verification delivery steps are tracked in NEXT_CHECKPOINT.
+Portable archive and standalone verifier PASS; local resultcommit9c6a3e71/bundles
+verified. Remote push blocked by authentication, no remote success claimed.
+NEXT_CHECKPOINT describes the separately budgeted control, not unfinished core.
 HiTSKT remains strictly ON HOLD; old results and ASSIST2015 history preserved.
 
 Current evidence:`/workspace/LightSAKT2-architecture/reports/ednet_replacement_20261104/`.

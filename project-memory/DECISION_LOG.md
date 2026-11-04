@@ -403,3 +403,24 @@ Difficulty0.706876±0.000691. Newdiff gain+0.064458427vsLight/+0.070516319vsSAKT
 AUC/accuracy/F1 improve5/5seeds vsboth on each ofthree datasets. Preserve offline/
 known-item/subset/long-history/fixedsplit caveats. NoHiTSKT access. Nextdelivery:
 commit/bundle/archive/pushcheck;nextscience separatelybudgeted featurematchedcontrol.
+
+## 2026-11-04 — Verified results safely committed, remote auth blocked
+
+Result/report commit9c6a3e71fc16541145c1842397090c8cf948945c; incremental ednet_verified_results.bundle PASS,
+requires preserved5f1b830d. Seven relevant research bundles verified. Normal
+non-force push returned128 AUTHENTICATION_BLOCKED; no remote push claimed and
+no credentials exposed. Allresults/checkpoints/localcommits preserved. Next ZIP
+readback verification and final memory/delivery handoff.
+
+## 2026-11-04 — Portable release and final handoff
+
+PortableZIP /workspace/LightSAKT2/backups/professor_three_datasets_20261104/LightSAKT_question_difficulty_three_datasets_20261104.zip verified:374payloadfiles,45measuredslots,0pending,
+allZIP CRC/manifest/readback/CSV-JSON/aggregation/paired/configreference checksPASS;
+standalone standard-library CLI alsoPASS. SHA256a4741fef489150bf50eaacd8c76f371cc51255fd31475ad9b08fa3f206999424.
+Weight/raw/student-prediction arrays excluded; exact split/population manifests,
+configs/source andcheckpointrefs included. All15 modelrecovery tar members and
+frozendatasetbackup independentlyhash-verified. Report sufficientforprofessor
+controlled offline progress, notpublication/online/attention-superiority.
+Remoteauthblocked;verifiedresult9c6a3e71 andlocalbundle preserved. Finaldelivery
+commit/bundle/receipt follows;no furtherGPUexecution. Nextfeaturematchedcontrol
+requiresseparatebudget,currentallocationcheck. Strictmemoryandmanualclaim audit.
