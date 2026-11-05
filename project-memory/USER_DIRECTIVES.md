@@ -1,3 +1,15 @@
+# Current scope — 5 November 2026: report-only verification
+
+All45 core measurements and the portable archive are complete. Current user asks
+for terminal display of all nine mean/sample-SD rows, paired test-AUC gains,
+five-seed consistency, checkpoint/test/leakage confirmation, dataset differences,
+and a concise professor summary. No new training, GPU execution, model changes,
+historical experiment/result edits, HiTSKT action or claimed GitHub push.
+Read/reconcile existing artifacts. Any subsequent control/cohort/chronological
+experiment remains future separately scoped work; old grants are not fresh runs.
+Completed reports/ZIP/checkpoints must remain unchanged. A compact dated memory
+audit is maintained within this existing canonical system.
+
 # Current replacement-dataset scope — 4 November 2026
 
 Professor approves replacing ASSIST2015 with EdNet-KT1 or Junyi. Current user

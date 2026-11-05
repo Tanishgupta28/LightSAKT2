@@ -9,7 +9,13 @@ of the same tracked project memory; code, Git and artifacts remain authoritative
 Read [USER_DIRECTIVES.md](USER_DIRECTIVES.md), [CURRENT_STATE.md](CURRENT_STATE.md),
 [DECISION_LOG.md](DECISION_LOG.md), then [NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md).
 
-Latest: 4 November core comparison COMPLETE: all15 new EdNet runs,45 verified
+Latest review: 5 November read-only re-audit PASS: all45checkpoint selections,
+90saved prediction arrays, nine summary rows and original ZIP integrity verified.
+No training/inference/GPU/remote operation or historical result/report change.
+Only this durable memory records the review; future control/cohort/chronological
+studies remain separately scoped. See dated directives and decision log.
+
+4 November core comparison COMPLETE: all15 new EdNet runs,45 verified
 relevant model-seed measurements across the final three datasets. Difficulty
 improves test AUC/accuracy/F1 versus both baselines in allfive seeds per dataset.
 Explicit OFFLINE, known-item, 5k-first/session EdNet scope; no attention-superiority

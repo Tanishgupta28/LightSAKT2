@@ -424,3 +424,34 @@ controlled offline progress, notpublication/online/attention-superiority.
 Remoteauthblocked;verifiedresult9c6a3e71 andlocalbundle preserved. Finaldelivery
 commit/bundle/receipt follows;no furtherGPUexecution. Nextfeaturematchedcontrol
 requiresseparatebudget,currentallocationcheck. Strictmemoryandmanualclaim audit.
+
+## 2026-11-05 — Read-only numerical and provenance re-audit
+
+User requests terminal results/summary only; no training or historical changes.
+Recomputed all nine group means/sample SDs and six paired AUC comparisons from
+45per-seed records; all45 checkpoint hashes/scientific configs/finite weights/
+strict CPU model loads and maximum-validation-AUC epochs pass. Four documented
+seed42 selected-tuning aliases retain matching scientific settings/weights.
+All15 original/modified LightSAKT configuration pairs match. Recomputed independent
+metrics and exact n−1 targets from90existing saved arrays: maximum difference
+1.1102230246251565e-16. All6difficulty sidecar hashes and504 frozen/protected
+file hashes match. No model forward pass, training or GPU context was executed.
+
+Difficulty improves held-out test AUC/accuracy/F1 against BOTH baselines in all5
+matched seeds on EACH dataset; no negative or inconsistent modified-versus-
+baseline test comparisons found. Original LightSAKT alone remains below SAKT
+on Algebra2005; no generalized baseline-superiority claim.
+Report23410bytes andZIP1292024bytes exist/readable. ZIP allCRC/374manifest hashes
+pass; archived tables equal local tables; SHA256 remains
+`a4741fef489150bf50eaacd8c76f371cc51255fd31475ad9b08fa3f206999424`.
+Source evidence: reports/professor_three_datasets_20261104/{individual_seed_results,
+summary_results,absolute_auc_improvements,experiment_provenance}.json and audits.
+No reports/checkpoints/experiments/archive altered. No HiTSKT access or remote
+operation. Prior GitHub authentication blocker remains recorded, not re-attempted.
+
+Conclusions unchanged: EdNet-KT1 authentic5k first/session subset replaced
+ASSIST2015; difficulty fits training students only, whole-own-student exclusion,
+unseen0. Known offline future-other-training-record limitation, largely known
+items, one split/initialization SD and dataset-specific settings remain material.
+Feature-matched SAKT+Difficulty, independent cohorts/splits and chronological
+evaluation remain unexecuted future studies, not unfinished core measurements.
