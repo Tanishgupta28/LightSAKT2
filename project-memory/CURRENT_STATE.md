@@ -108,3 +108,21 @@ handoff bundle/receipt are under `/workspace/LightSAKT2/backups/ednet_replacemen
 (`ednet_delivery_handoff.bundle`, `delivery_handoff_verification.json`).
 Canonical/worktree memory synchronized; strict validation and manual scientific
 claims audit completed. Core delivery complete; no GPU run remains.
+
+## Latest synchronization checkpoint — 5 November 2026
+
+Correct target verified: Tanishgupta28/LightSAKT2 (repository ID1416825198).
+Both origin fetch/push URLs match. Live default research-rebuild tip a6bdc6c0 is
+ancestor/merge-base of audited researchfc5f6490;0remote-only/25local-only commits
+before the following memory-only synchronization note. Research target absent
+remotely. Upload payload inspected:665newblobs,8.05MB uncompressed,largest1.03MB;
+no raw datasets, weights, oversized files or high-confidence credential flags;
+all requested professor artifacts committed. No scientific artifact changed.
+
+Native Git push dry-run failed authentication(exit128); localgh unauthenticated.
+GitHub app is separately authenticated as Tanishgupta28 with repo push permission,
+but cannot be assumed to provide native Git credentials. No remote refs changed.
+Stop push attempts until native authentication supplied. Receipt and verified
+local synchronization bundle under backups/ednet_replacement_20261104/:
+github_sync_readiness_20261105.json,github_sync_ready_20261105.bundle.
+Research HEAD may advance by this memory-only note; source/result anchors unchanged.

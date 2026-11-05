@@ -1,3 +1,19 @@
+# Current scope — 5 November 2026: safe GitHub synchronization
+
+User explicitly authorizes synchronizing completed verified research to
+https://github.com/Tanishgupta28/LightSAKT2, only an appropriate research branch.
+Verify actual repository association/live history, preserve dirty work and all
+local commits, avoid force-push/default-branch/main edits. Include reports, CSVs,
+graphs, methodology/reproducibility; exclude raw data, credentials and oversized
+checkpoints. Stop synchronization if ancestry incompatible or push authentication
+unavailable. Verify remote commit/files before any success claim. No training,
+GPU execution or HiTSKT access/modification. This supersedes report-only scope
+ONLY for the explicitly requested safe synchronization, not further research runs.
+
+Native Git authentication failed the dry run; remote writes STOPPED. GitHub app
+access is authenticated but does not supply local Git transport credentials.
+Do not mistake repository push permission for a successfully authenticated push.
+
 # Current scope — 5 November 2026: report-only verification
 
 All45 core measurements and the portable archive are complete. Current user asks

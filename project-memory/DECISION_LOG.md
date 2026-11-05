@@ -455,3 +455,33 @@ unseen0. Known offline future-other-training-record limitation, largely known
 items, one split/initialization SD and dataset-specific settings remain material.
 Feature-matched SAKT+Difficulty, independent cohorts/splits and chronological
 evaluation remain unexecuted future studies, not unfinished core measurements.
+
+## 2026-11-05 — Repository identity/ancestry verified; native push blocked
+
+Ran git remote -v, branch/status/history in BOTH checkouts. Both origin URLs
+exactly https://github.com/Tanishgupta28/LightSAKT2.git; GitHub API repository
+ID1416825198, owner/authenticated-app identity Tanishgupta28. Live public ls-remote
+shows only default research-rebuild at a6bdc6c0f1f9a564f1a27751cfbc9be49f65df1e.
+That exact commit is the merge-base/ancestor of audited local research HEAD
+fc5f6490aafe5c7b6e71d725b86981cabb2110fb:0remote-only,25local-only commits.
+Research target branch absent remotely. Correct association proven by identity,
+actual live SHA and ancestry, not project name or stale tracking refs alone.
+
+New reachability payload since remote base:665blobs,8052828uncompressed bytes,
+largest1029420bytes. No raw dataset/model-weight path, >25MiB blob or high-confidence
+credential match. All requested report/summary/individualCSV/graphs/methodology/
+reproducibility/provenance/checkpoint-reference paths committed and blob IDs read.
+Main checkout's old dirty scientific work preserved; research checkout wasclean.
+
+GitHub connector has authenticated push permission, but local gh auth status1;
+git push --dry-run origin HEAD:refs/heads/research/architecture-variants-20261025
+returned128 AUTHENTICATION_UNAVAILABLE. No remote refs updated, no actualpush,
+no main/defaultbranch edit, no training or HiTSKT access. Stop remote operations
+per user instruction. Need native Git credential login/setup, then fresh remote
+comparison and normal push. No new-file GitHub URLs verified or claimed.
+
+Readiness receipt: /workspace/LightSAKT2/backups/ednet_replacement_20261104/
+github_sync_readiness_20261105.json. Local synchronization bundle to preserve
+all research commits since remote a6bdc6c0 plus this memory-only note:
+github_sync_ready_20261105.bundle (prerequisite preserved and present remotely).
+Historical completed reports, checkpoints and archive remain unchanged.

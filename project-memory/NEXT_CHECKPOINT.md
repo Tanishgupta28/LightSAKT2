@@ -1,4 +1,17 @@
-# Next checkpoint — completed core, no outstanding training
+# Next checkpoint — synchronization blocked by native Git authentication
+
+Current user authorizes safe research-branch synchronization, no new experiments.
+Repository identity and compatible ancestry proven; native Git push dry-run failed
+with authentication unavailable. No remote write performed. First authenticate
+native Git (gh auth login then gh auth setup-git, without exposing credentials),
+fetch/recheck live remote heads and ancestry, inspect any newly existing target
+branch, then dry-run and normal push of research/architecture-variants-20261025.
+Stop on divergence/rejection; no force, reset, main/default edits or dirty-work loss.
+Verify exact remote commit and required files before reporting URLs/success.
+Read github_sync_readiness_20261105.json under the existing backup directory.
+The local synchronization bundle preserves all new commits and requires a6bdc6c0.
+
+Earlier completed-research handoff and future scientific directions follow:
 
 Read CURRENT_STATE.md and the final professor report at
 /workspace/LightSAKT2-architecture/reports/professor_three_datasets_20261104/PROFESSOR_REPORT.md.
