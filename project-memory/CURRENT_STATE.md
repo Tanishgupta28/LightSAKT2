@@ -109,20 +109,30 @@ handoff bundle/receipt are under `/workspace/LightSAKT2/backups/ednet_replacemen
 Canonical/worktree memory synchronized; strict validation and manual scientific
 claims audit completed. Core delivery complete; no GPU run remains.
 
-## Latest synchronization checkpoint — 5 November 2026
+## Latest synchronization checkpoint — 5 November 2026: PUBLISHED
 
-Correct target verified: Tanishgupta28/LightSAKT2 (repository ID1416825198).
-Both origin fetch/push URLs match. Live default research-rebuild tip a6bdc6c0 is
-ancestor/merge-base of audited researchfc5f6490;0remote-only/25local-only commits
-before the following memory-only synchronization note. Research target absent
-remotely. Upload payload inspected:665newblobs,8.05MB uncompressed,largest1.03MB;
-no raw datasets, weights, oversized files or high-confidence credential flags;
-all requested professor artifacts committed. No scientific artifact changed.
+Target identity reconfirmed: Tanishgupta28/LightSAKT2 (ID1416825198); origin fetch/
+push URLs exact. Live default research-rebuild a6bdc6c0 is ancestor/merge-base of
+local research e3ee8fd32f27e0d22ca267eecb0d1e0ef76167ff,26commits ahead/0behind before publication.
+Native authentication now works. git push --dry-run PASSED(exit0),then normal
+non-force research-branch push PASSED(exit0). Remote SHA exactly e3ee8fd32f27e0d22ca267eecb0d1e0ef76167ff.
+Default research-rebuild remains a6bdc6c0; main ref unchanged. No remote work lost.
 
-Native Git push dry-run failed authentication(exit128); localgh unauthenticated.
-GitHub app is separately authenticated as Tanishgupta28 with repo push permission,
-but cannot be assumed to provide native Git credentials. No remote refs changed.
-Stop push attempts until native authentication supplied. Receipt and verified
-local synchronization bundle under backups/ednet_replacement_20261104/:
-github_sync_readiness_20261105.json,github_sync_ready_20261105.bundle.
-Research HEAD may advance by this memory-only note; source/result anchors unchanged.
+GitHub API fetched all10 requested report/summary/CSV/docs/PNG/PDF graph files at
+that exact commit; remote blob SHAs equal local Git blobs. Initial published
+source/result export is e3ee8fd32f27e0d22ca267eecb0d1e0ef76167ff; subsequent memory-only publication handoff may
+advance branch HEAD, with unchanged scientific file blobs. Use actual remote
+SHA/receipt rather than assume HEAD never advances. No remaining auth blocker.
+
+Preflight670newblobs,8108817uncompressed bytes,largest1029420bytes; no raw datasets,
+model weights, >25MiB blobs or high-confidence credential flags. Required artifacts
+committed. Research experiments/checkpoints/portable ZIP unchanged; all45 core
+measurements preserved. No training or HiTSKT access. Main checkout dirty work
+preserved; no main/default commit/push. Only this memory reflects publication.
+
+Publication receipts under /workspace/LightSAKT2/backups/ednet_replacement_20261104/:
+github_push_resumed_20261105.json (native push/liveSHA),
+github_remote_files_verified_20261105.json (10 GitHub blob checks),
+github_publication_handoff_20261105.json (final memory-only branch-tip check).
+Historical failed push receipts in frozen professor reports are intentionally
+unchanged, as records of earlier dates. Current status supersedes them.

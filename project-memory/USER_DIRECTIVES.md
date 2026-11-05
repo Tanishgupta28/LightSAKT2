@@ -1,3 +1,13 @@
+# Latest scope — 5 November 2026: resumed GitHub publication complete
+
+User reports GitHub authentication configured and authorizes rechecking ancestry,
+dry-run then normal push ONLY research/architecture-variants-20261025 to
+Tanishgupta28/LightSAKT2. Preserve all remote/local work; no force, main/default
+branch edits, experiment changes, training or HiTSKT access. Verify remote SHA
+and report/CSV/graphs before success claims. Native dry-run/push now succeeded;
+previous authentication blocker is resolved. Older blocked receipts/scopes below
+are preserved history, not current status or fresh GPU authorization.
+
 # Current scope — 5 November 2026: safe GitHub synchronization
 
 User explicitly authorizes synchronizing completed verified research to

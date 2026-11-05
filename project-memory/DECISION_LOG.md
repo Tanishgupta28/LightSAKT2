@@ -485,3 +485,21 @@ github_sync_readiness_20261105.json. Local synchronization bundle to preserve
 all research commits since remote a6bdc6c0 plus this memory-only note:
 github_sync_ready_20261105.bundle (prerequisite preserved and present remotely).
 Historical completed reports, checkpoints and archive remain unchanged.
+
+## 2026-11-05 — Native authentication repaired; research publication VERIFIED
+
+User authorizes resume after authentication setup. Fresh repo metadata confirms
+Tanishgupta28/LightSAKT2 ID1416825198. Fresh fetch/liveheads show default a6bdc6c0,
+research target absent; locale3ee8fd32f27e0d22ca267eecb0d1e0ef76167ff is26commits ahead/0behind.
+670newblobs/8108817bytes,largest1029420bytes;no prohibited data/weights/oversized
+or high-confidence secret flags. Native dry-run exit0,normal non-force push exit0;
+remote research SHA exactly e3ee8fd32f27e0d22ca267eecb0d1e0ef76167ff. Default research-rebuild and main unchanged.
+
+GitHub API fetched all10 required report/summary/summaryCSV/individualCSV/methods/
+repro/PNG/PDF graph files at exact SHA, blob IDs matchlocal. Successful receipts:
+github_push_resumed_20261105.json and github_remote_files_verified_20261105.json
+in backups/ednet_replacement_20261104/. Prior blocked receipts remain historical.
+Following memory-only handoff can advance branch without altering scientific
+files; final remote-tip receipt github_publication_handoff_20261105.json.
+All45 results/checkpoints/history/portablearchive preserved; no training/GPU or
+HiTSKT action. Canonical memory synchronized and strict/manual audit follows.
