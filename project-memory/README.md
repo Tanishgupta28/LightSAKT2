@@ -13,7 +13,8 @@ Latest milestone: 10 November master comparison verified:75existing seeds,
 15/27complete groups,12PENDING. Full CSV/report/plans under
 reports/master_comparison_20261110/. No new training; current GPU allocation and
 budget confirmation pending. TwelveCPUtests/standaloneexport/preservation PASS.
-Commit/push/remote-file verification is the current delivery checkpoint.
+Master CSV/report safely published at db8e2a5b; dry-run/push/remote SHA andseven
+file-blob checks PASS. Resource-dependent runs remain PENDING, not publication.
 
 Prior publication: 5 November GitHub synchronization SUCCEEDED after fresh
 ancestry/payload checks and successful native dry-run. Verified remote research

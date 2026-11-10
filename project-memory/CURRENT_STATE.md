@@ -70,8 +70,10 @@ REPORT.md, master_comparison.csv/JSON, individual_seed_results.csv,
 missing_experiments.csv, model_configurations.csv, checkpoint/provenance evidence,
 paired metric differences, excluded primary appendix and export/resource audits
 are under reports/master_comparison_20261110/. Builder/report/verifier scripts
-new; native source untouched. Ready for verified commit and safe research-branch
-push; remote ancestry recheck compatible with starting24a7db63.
+new; native source untouched. Published and remote-verified at result commitdb8e2a5bc57ba9aa228fbf895ce9d972aba2b6ac.
+Dry-run/push exit0; default/main refs unchanged; seven GitHub file blobs matchlocal.
+A following memory-only handoff can advance branch tip without changing results.
+Publication receipts/local bundle under /workspace/LightSAKT2/backups/master_comparison_20261110/.
 
 OriginalLightSAKT below DKT onASSIST2009 andDKT+onAlgebra; input-augmented gains do
 not establish attention superiority. Feature-matched SAKT+Difficulty remains

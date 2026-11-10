@@ -525,3 +525,17 @@ Current deliverables reports/master_comparison_20261110/ and matching experiment
 plan; commit/safe researchpush pending. No attention superiority claim; old
 LightSAKT loses to some native recurrent baselines, added iteminformation needs
 featurematched control; offline/cohort/chronological and HPO limits documented.
+
+## 2026-11-10 — Master comparison published and independently verified
+
+Result commitdb8e2a5bc57ba9aa228fbf895ce9d972aba2b6ac on research/architecture-variants-20261025.
+Fresh remote ancestry compatible with24a7db63; normaldryrun/push exit0; remoteSHA
+matcheslocal; default research-rebuilda6bdc6c0 andmain unchanged. Seven GitHub API
+fileblob checks PASS:masterCSV,REPORT,individualseeds,missingexperiments,configs,
+verification/export audits. Source/push/bundle receipts backups/master_comparison_20261110/.
+Masterdata27rows/15complete/12PENDING;75knownseeds/60missing;12CPUtestsPASS;
+504protectedfiles/originalZIP preserved. CSV CRLF check was corrected toLF ONLY
+in new exports beforecommit; independentexport verifier re-passed, no metrics change.
+No GPUtraining launched; current allocation/budgetconfirmation stillpending from
+asynchronous question. No peer/HiTSKT action. Followingmemoryonlyhandoff records
+publication; scientific CSV/report blobs unchanged. CanonicalmemorystrictPASS.
