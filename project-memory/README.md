@@ -9,7 +9,13 @@ of the same tracked project memory; code, Git and artifacts remain authoritative
 Read [USER_DIRECTIVES.md](USER_DIRECTIVES.md), [CURRENT_STATE.md](CURRENT_STATE.md),
 [DECISION_LOG.md](DECISION_LOG.md), then [NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md).
 
-Latest publication: 5 November GitHub synchronization SUCCEEDED after fresh
+Latest milestone: 10 November master comparison verified:75existing seeds,
+15/27complete groups,12PENDING. Full CSV/report/plans under
+reports/master_comparison_20261110/. No new training; current GPU allocation and
+budget confirmation pending. TwelveCPUtests/standaloneexport/preservation PASS.
+Commit/push/remote-file verification is the current delivery checkpoint.
+
+Prior publication: 5 November GitHub synchronization SUCCEEDED after fresh
 ancestry/payload checks and successful native dry-run. Verified remote research
 commit e3ee8fd32f27e0d22ca267eecb0d1e0ef76167ff; all10 report/CSV/docs/graph blobs match local Git.
 Branch research/architecture-variants-20261025; default/main unchanged. Later

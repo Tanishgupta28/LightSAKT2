@@ -1,0 +1,33 @@
+{
+  "dataset": "Algebra2005",
+  "model": "SAKTQuestion",
+  "group": "prepared_master_comparison_20261110",
+  "seed": 42,
+  "seq_len": 200,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "patience": 5,
+  "learning_rate": 0.0005,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.0,
+  "epsilon": 1e-08,
+  "model_config": {
+    "n": 200,
+    "d": 128,
+    "num_attn_heads": 2,
+    "dropout": 0.2
+  },
+  "evaluate_test": false,
+  "run_id": "Algebra2005-SAKTQuestion-master-42-20261110-UNLAUNCHED",
+  "feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/Algebra2005/data/auxiliary/Algebra2005-train_validation.json",
+  "question_difficulty": {
+    "algorithm": "question-vs-skill-logit-loso-v1",
+    "smoothing": 10.0,
+    "feature_sha256": "0e5f803ad1287ae9eeeaeaead6a32a8dff6d9ca5a14e5abbfac8691a7d482ab1"
+  },
+  "experimental_implementation_sha256": "8a03ccb39787d35feb284464d3269cd6c84c3a66293bac4ea039e8c446d62db9",
+  "device": "cuda"
+}

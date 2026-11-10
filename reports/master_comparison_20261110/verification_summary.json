@@ -1,0 +1,17 @@
+{
+  "status": "PASS_AVAILABLE_WITH_PENDING",
+  "expected_groups": 27,
+  "verified_five_seed_groups": 15,
+  "pending_groups": 12,
+  "verified_seed_records": 75,
+  "missing_verified_seed_slots": 60,
+  "checkpoints_strictly_loaded": 75,
+  "saved_prediction_arrays_checked": 120,
+  "fresh_checkpoint_prediction_passes": 0,
+  "new_GPU_training_runs": 0,
+  "sample_standard_deviation_ddof": 1,
+  "single_seed_primary_results_excluded_from_aggregates": 4,
+  "trained_GKT_seed42_reuse_candidates": 2,
+  "native_vs_prior_CPU_test_metric_difference": "within2e-6; CPU replay consistently used; native values retained per seed",
+  "test_selection": "validation-only; no new test inference or tuning performed"
+}

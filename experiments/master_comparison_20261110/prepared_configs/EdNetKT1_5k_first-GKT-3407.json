@@ -1,0 +1,25 @@
+{
+  "dataset": "EdNetKT1_5k_first",
+  "model": "GKT",
+  "group": "prepared_master_comparison_20261110",
+  "seed": 3407,
+  "seq_len": 100,
+  "batch_size": 8,
+  "max_epochs": 50,
+  "patience": 5,
+  "learning_rate": 0.001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.0,
+  "epsilon": 1e-08,
+  "model_config": {
+    "hidden_size": 30,
+    "num_attn_heads": 2,
+    "method": "PAM"
+  },
+  "evaluate_test": false,
+  "run_id": "EdNetKT1_5k_first-GKT-master-3407-20261110-UNLAUNCHED",
+  "device": "cuda"
+}

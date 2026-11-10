@@ -1,0 +1,33 @@
+{
+  "dataset": "ASSIST2009",
+  "model": "SAKTQuestion",
+  "group": "prepared_master_comparison_20261110",
+  "seed": 3407,
+  "seq_len": 100,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "patience": 5,
+  "learning_rate": 0.0005,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.0,
+  "epsilon": 1e-08,
+  "model_config": {
+    "n": 100,
+    "d": 64,
+    "num_attn_heads": 4,
+    "dropout": 0.2
+  },
+  "evaluate_test": false,
+  "run_id": "ASSIST2009-SAKTQuestion-master-3407-20261110-UNLAUNCHED",
+  "feature_path": "/workspace/LightSAKT2-architecture/.tools/professor_campaign_20261030/workspaces/ASSIST2009/data/auxiliary/ASSIST2009-train_validation.json",
+  "question_difficulty": {
+    "algorithm": "question-vs-skill-logit-loso-v1",
+    "smoothing": 10.0,
+    "feature_sha256": "6231fc5b51317ab921be89647b5101f654dbf8fdb5d841027073df0f29e1e464"
+  },
+  "experimental_implementation_sha256": "8a03ccb39787d35feb284464d3269cd6c84c3a66293bac4ea039e8c446d62db9",
+  "device": "cuda"
+}

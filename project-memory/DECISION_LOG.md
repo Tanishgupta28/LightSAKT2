@@ -503,3 +503,25 @@ Following memory-only handoff can advance branch without altering scientific
 files; final remote-tip receipt github_publication_handoff_20261105.json.
 All45 results/checkpoints/history/portablearchive preserved; no training/GPU or
 HiTSKT action. Canonical memory synchronized and strict/manual audit follows.
+
+## 2026-11-10 — Wide nine-model inventory, verified reuse and explicit gaps
+
+Reused45published core +30existing DKT/DKT+/DKVMN final seeds (old2datasets),
+75records/15five-seed groups,27-row mastercoverage. Verified75checkpointstates,
+120saved prediction arrays/exact targets/independent metrics and prior CPU cache
+bindings; no new prediction inference/training. Aggregate only full five seeds;
+all60missing slots remainPENDING; four primary singles separate/excluded.
+ASSIST2009GKT36+36grids complete:highestval checkpoints seed42 reusable(PAM.764002738,
+MHA.767020187), no test scored. Atleast58newfinal trainings remain plus unresolved
+AlgebraGKT configurationselection. Labels disclose simplified GKT implementations.
+
+Prepared50configs plus10configurationselection placeholders, allfive seeds,
+isolated ignored exact-data symlinkworkspaces, testdisabled, no executiongrants.
+12CPUtests PASS, standaloneCSV/JSON mean/sampleSD/PENDING/configverifier PASS.
+504old frozen/protectedfile hashes andoriginalZIP preserved. Resource read-only
+MIGheadroom passes;current allocation/newtotalbudget notverified and user asked
+asynchronously. Prior15runbudget consumed;zeroGPUruns/peer signals/HiTSKT access.
+Current deliverables reports/master_comparison_20261110/ and matching experiment
+plan; commit/safe researchpush pending. No attention superiority claim; old
+LightSAKT loses to some native recurrent baselines, added iteminformation needs
+featurematched control; offline/cohort/chronological and HPO limits documented.

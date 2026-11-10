@@ -1,24 +1,33 @@
-# Next checkpoint — GitHub publication complete; no research runs pending
+# Next checkpoint — expanded comparison ready; resource-dependent runs pending
 
-Completed research published to Tanishgupta28/LightSAKT2 on
-research/architecture-variants-20261025. Initial verified remote SHA:
-e3ee8fd32f27e0d22ca267eecb0d1e0ef76167ff. Required10 report/summary/CSV/docs/graph blobs verified
-through GitHub API at this exact commit. A following memory-only publication
-handoff may advance the branch; final SHA is in github_publication_handoff_20261105.json
-under /workspace/LightSAKT2/backups/ednet_replacement_20261104/.
+Read reports/master_comparison_20261110/REPORT.md, master_comparison.csv and
+GPU_READINESS.json.75existing verified seeds,15complete five-seed groups;
+12groups/60verifiedslots pending. No GPU job started by this task.
 
-No auth repair or repeated initial push is needed. Check actual local/remote
-state before any later sync; never overwrite unexpected remote changes or force.
-The remote default research-rebuild remains a6bdc6c0; main was not changed.
-Older failed receipts remain historical; latest successful receipts supersede them.
-No experiments/reports/checkpoints/archive changed by publication; all45 core
-measurements complete. Test released for reporting, not further tuning.
+Current delivery: commit verified new report/CSV/prepared plans/tests and memory,
+then recheck remote ancestry/dry-run/normal push to
+research/architecture-variants-20261025 on Tanishgupta28/LightSAKT2. Verify remote
+SHA and exact CSV/report blobs before URLs/success. No main/default changes or
+force-push. Preserve old main checkout dirty work and all historical artifacts.
 
-Next scientific step remains separately budgeted feature-matched SAKT+Difficulty,
-then independent cohorts/splits and chronological evaluation. EdNet five control
-configs/adapter are CPU-prepared, NOT GPU-trained. No new training is authorized
-by this synchronization. Preserve offline/known-item/subset/fixedsplit limitations;
-no attention superiority, online benefit or publication-readiness claim.
+Missing-run execution requires current allocation ownership and total invocation/
+window budget, requested asynchronously but not verified. Idle-looking same MIG
+and prior completed15-run budget are not enough. On an explicit new scope:
+confirm admission/current workloads, freeze config/source/data bindings and run
+only bounded authorized windows;4GiB/900s original shared safeguards retained.
+No old scheduler/HiTSKT resume, peer signals, silent scientific setting changes,
+new test-guided tuning or automated extra retries. ProfileGKT feasibility first.
 
-HiTSKT+FAVOR+ strictly ON HOLD: no files, jobs or checkpoints touched/resumed.
-Use existing canonical project memory and strict/manual evidence-backed audits.
+Use experiments/master_comparison_20261110/plan.json:50configs plus10unresolved
+AlgebraGKT slots. Reuse2ASSIST2009validation-selectedGKTseed42 checkpoints and
+all75 existing complete records. Atleast58final trainings remain, plus any
+required configuration selection. Four historical primary seeds stay excluded
+from five-seed aggregates. Generic existing SAKTQuestion adapter CPU-tested on
+all3datasets; no controls trained. Add future measured rows only after strict
+checkpoint/config/split/mask/metric audits, with five-seed aggregates only when
+complete. The current dated builder is a frozen75-record inventory; extend it
+explicitly if new authorized runs eventually complete, preserving old outputs.
+
+Maintain offline/known-item/subset/fixedsplit/HPO/GKT-variant limitations and
+feature-matched/cohort/chronological gaps. Do not claim attention superiority.
+Update and strictly validate canonical memory after material milestones.

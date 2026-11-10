@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "complete_five_seed_groups": 15,
+  "pending_groups": 12,
+  "verified_seed_records": 75,
+  "missing_seed_records": 60,
+  "configuration_snapshots_verified": 75,
+  "sample_sd_denominator": "n-1",
+  "pending_numeric_cells_empty": true,
+  "CSV_JSON_consistent": true,
+  "scope": "Export integrity, five-seed grouping, dataset bindings, copied configs and independent mean/sample-SD arithmetic; no training or inference"
+}

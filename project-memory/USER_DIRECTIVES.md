@@ -1,3 +1,21 @@
+# Current scope — 10 November 2026: expanded master comparison
+
+User requests DKT,DKT+,DKVMN,GKT,GKT-MHA(implemented variant),SAKT,LightSAKT,
+LightSAKT+Question Difficulty and feature-matched SAKT+Question Difficulty on
+ASSIST2009,Algebra2005 and EXACT EdNetKT1_5k_first subset. Reuse all completed
+verified five-seed results. Preserve data/splits/masks,seeds42/123/2026/3407/7777,
+validation-only selection and all history. New experiments are conditional on
+safe,explicitly authorized CURRENT GPU resources; do not interrupt other jobs.
+No HiTSKT access/modification/resume. No claims of attention superiority from
+additional item information. Export numeric mean/sampleSD plus PENDING gaps,
+configs/budgets/source/checkpoint refs; commit/normal safe push to research branch.
+
+Expanded execution allocation and total GPU budget were requested asynchronously;
+none verified yet. Visible idle-looking historical MIG is not a new ownership
+or budget grant. Old15-run scope consumed. CPU preparation/report publication
+proceeds; no GPU training or actual-data prediction inference launched. Future
+execution requires current confirmation/admission and a separately bounded plan.
+
 # Latest scope — 5 November 2026: resumed GitHub publication complete
 
 User reports GitHub authentication configured and authorizes rechecking ancestry,
