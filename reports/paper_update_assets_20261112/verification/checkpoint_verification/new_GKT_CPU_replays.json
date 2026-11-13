@@ -1,0 +1,234 @@
+[
+  {
+    "run_id": "ASSIST2009-GKT-baseline_tuning-42-f753429eba44",
+    "dataset": "ASSIST2009",
+    "model": "GKT",
+    "seed": 42,
+    "group": "baseline_tuning",
+    "validation": {
+      "auc": 0.7640027382086338,
+      "auc_reason": null,
+      "accuracy": 0.7388548951048951,
+      "f1": 0.8189211031417315,
+      "mse": 0.17795608339112878,
+      "bce": 0.5339617869405565,
+      "n_targets": 27456
+    },
+    "best_epoch": 7,
+    "epochs_trained": 12,
+    "training_seconds": 1988.5311756000156,
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2009-GKT-baseline_tuning-42-f753429eba44/best.pt",
+    "checkpoint_sha256": "bb1080a8984a366d9fa32f11f4c3399fa875cd95b4ecdcabfb9733fbbbf69efa",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "git_commit": "4850a0396e6c3b94efb028d0c9d7a488864564bd",
+    "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "parameters": 315202,
+    "peak_allocated_bytes": 1572912128,
+    "peak_reserved_bytes": 1656750080,
+    "test": {
+      "auc": 0.7617558917744343,
+      "accuracy": 0.7380394495803689,
+      "f1": 0.8198253633380216,
+      "precision": 0.7600304240349877,
+      "recall": 0.8898323951276914,
+      "mse": 0.17746609708976088,
+      "bce": 0.5321766710420327,
+      "n_targets": 46946,
+      "tp": 27979,
+      "tn": 6669,
+      "fp": 8834,
+      "fn": 3464
+    },
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 104,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT-baseline_tuning-42-f753429eba44"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2009-GKT-baseline_tuning-42-f753429eba44/config.json",
+    "config_sha256": "9407bb894e72a236f6d56f52b73bba0997c5edecd12909d6b9c9d7883ffefc46",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2009-GKT-baseline_tuning-42-f753429eba44/metrics.json",
+    "recorded_metrics_sha256": "06eb1c8ba80e4f29eaeb11a55c13a00d9da73e6f54c3affb79bd318ede8f4836",
+    "cpu_replay": {
+      "validation": {
+        "auc": 0.7640027531291255,
+        "accuracy": 0.7388548951048951,
+        "f1": 0.8189211031417315,
+        "precision": 0.76131667918858,
+        "recall": 0.8859562841530054,
+        "mse": 0.1779560834309567,
+        "bce": 0.5339617868974262,
+        "n_targets": 27456,
+        "tp": 16213,
+        "tn": 4073,
+        "fp": 5083,
+        "fn": 2087
+      },
+      "test": {
+        "auc": 0.7617558917744343,
+        "accuracy": 0.7380394495803689,
+        "f1": 0.8198253633380216,
+        "precision": 0.7600304240349877,
+        "recall": 0.8898323951276914,
+        "mse": 0.17746609708976088,
+        "bce": 0.5321766710420327,
+        "n_targets": 46946,
+        "tp": 27979,
+        "tn": 6669,
+        "fp": 8834,
+        "fn": 3464
+      }
+    },
+    "prediction_artifacts": {
+      "validation": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/paper_update_assets_20261112/replays/GKT-42-validation.npz",
+        "sha256": "9e2657ef9929b68e793220bba87a5f2401b72a6e5a0763fbf4ea13aefb94ab74"
+      },
+      "test": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/paper_update_assets_20261112/replays/GKT-42-test.npz",
+        "sha256": "9961adc271e821fa276c5507984e1cac45b4c8986b2c18db98205c078459f87f"
+      }
+    },
+    "inference_device": "CPU",
+    "new_training": false,
+    "selection_frozen_before_test": true,
+    "selection_inventory_commit": "db8e2a5bc57ba9aa228fbf895ce9d972aba2b6ac",
+    "selected_git_commit": "4850a0396e6c3b94efb028d0c9d7a488864564bd",
+    "new_CPU_evaluation_seconds": 106.43293831218034
+  },
+  {
+    "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-610a3cf07a3c",
+    "dataset": "ASSIST2009",
+    "model": "GKT_MHA",
+    "seed": 42,
+    "group": "baseline_tuning",
+    "validation": {
+      "auc": 0.7670201868284287,
+      "auc_reason": null,
+      "accuracy": 0.7392555361305362,
+      "f1": 0.8169662260629458,
+      "mse": 0.17679752264564574,
+      "bce": 0.5312933557062883,
+      "n_targets": 27456
+    },
+    "best_epoch": 50,
+    "epochs_trained": 50,
+    "training_seconds": 11091.963350243983,
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-610a3cf07a3c/best.pt",
+    "checkpoint_sha256": "1b280588a1691147c1130745bdc6960841694f19d98cff3b538dc6efad2ac60d",
+    "processed_sha256": "4c4b3cfb5330501f077382dee34d5a161343ea9d9aee3ab2b21d9fbe74f3c1a1",
+    "split_sha256": "134f4bc5eb56083c425f0cef042c9edd09cac43ee7198b37163660500a5f3fe0",
+    "git_commit": "0259200f8a69d46f3c01cf3b31dc6ec7c48ed110",
+    "training_code_sha256": "0a04dc026130226cf58cd1fad8e9f9a696d91088097b2190cdf9e1bcd1fa48f6",
+    "parameters": 134345,
+    "peak_allocated_bytes": 713270272,
+    "peak_reserved_bytes": 740294656,
+    "test": {
+      "auc": 0.7659203269028207,
+      "accuracy": 0.7402334597196779,
+      "f1": 0.8191806414305414,
+      "precision": 0.7673333333333333,
+      "recall": 0.8785421238431448,
+      "mse": 0.1758532086900493,
+      "bce": 0.5278213048997088,
+      "n_targets": 46946,
+      "tp": 27624,
+      "tn": 7127,
+      "fp": 8376,
+      "fn": 3819
+    },
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 64,
+        "num_attn_heads": 8,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-610a3cf07a3c"
+    },
+    "config_file": "/workspace/LightSAKT2/results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-610a3cf07a3c/config.json",
+    "config_sha256": "dc3894ac5e8ae354ec724b283e4735e84031dd2c37b3fb85eb649ba4c768aeb2",
+    "recorded_metrics_path": "/workspace/LightSAKT2/results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-610a3cf07a3c/metrics.json",
+    "recorded_metrics_sha256": "d63591200a9c13663d4eed18573170ae0a48c00df9c060848b42c15b1253b2cf",
+    "cpu_replay": {
+      "validation": {
+        "auc": 0.767020180860232,
+        "accuracy": 0.7392555361305362,
+        "f1": 0.8169662260629458,
+        "precision": 0.7676452217364147,
+        "recall": 0.8730601092896175,
+        "mse": 0.17679752278404076,
+        "bce": 0.5312933560232239,
+        "n_targets": 27456,
+        "tp": 15977,
+        "tn": 4320,
+        "fp": 4836,
+        "fn": 2323
+      },
+      "test": {
+        "auc": 0.7659203269028207,
+        "accuracy": 0.7402334597196779,
+        "f1": 0.8191806414305414,
+        "precision": 0.7673333333333333,
+        "recall": 0.8785421238431448,
+        "mse": 0.1758532086900493,
+        "bce": 0.5278213048997088,
+        "n_targets": 46946,
+        "tp": 27624,
+        "tn": 7127,
+        "fp": 8376,
+        "fn": 3819
+      }
+    },
+    "prediction_artifacts": {
+      "validation": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/paper_update_assets_20261112/replays/GKT_MHA-42-validation.npz",
+        "sha256": "6629cddd91dca5d0bd3434fd7f58e6b55b1072f0e62392ed6935f2d29fefb17e"
+      },
+      "test": {
+        "path": "/workspace/LightSAKT2-architecture/.tools/paper_update_assets_20261112/replays/GKT_MHA-42-test.npz",
+        "sha256": "daad7296ea3fd1d0033d234f20f3e1e1d24f374b70e5b1ae53addc8f0f0d13b0"
+      }
+    },
+    "inference_device": "CPU",
+    "new_training": false,
+    "selection_frozen_before_test": true,
+    "selection_inventory_commit": "db8e2a5bc57ba9aa228fbf895ce9d972aba2b6ac",
+    "selected_git_commit": "0259200f8a69d46f3c01cf3b31dc6ec7c48ed110",
+    "new_CPU_evaluation_seconds": 45.116192643065006
+  }
+]

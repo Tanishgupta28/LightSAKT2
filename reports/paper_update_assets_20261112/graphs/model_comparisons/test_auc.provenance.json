@@ -1,0 +1,26 @@
+{
+  "caption": "Held-out test AUC, fixed student split, five initializations; error bars are sample SD, not confidence intervals. No bar or numeric value for incomplete groups. AUC/accuracy/F1 panels use explicitly shown truncated axes. DKT+/DKVMN/GKT implementations/configuration-search differences are documented; difficulty adds information.",
+  "generator": "generate_model_comparison.py",
+  "input_files": [
+    {
+      "path": "source_data/verified_metric_references/master_metrics.csv",
+      "sha256": "3ad2914d524d8d3fb0cbbe26ac3839d6d4de8a0d1286f3f4cd6b0d64e9618a9a"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "graphs/model_comparisons/test_auc.png",
+      "sha256": "807bc6fe959e490b356748549e6a5c6f604911181ee598dfa313750cf9c8b45e"
+    },
+    {
+      "path": "graphs/model_comparisons/test_auc.pdf",
+      "sha256": "51dfaa40e16d401b5720af78e34da4e38869f60b299f3cc7fcac31980d945ebd"
+    },
+    {
+      "path": "graphs/model_comparisons/test_auc.svg",
+      "sha256": "0df52e611c0e0c9b04422617f9bc6c8688f35aa0b6f69d4bf519c7994f99151c"
+    }
+  ],
+  "PNG_dpi": 320,
+  "performance_data": "genuine saved experiments only; no interpolation or imputation"
+}

@@ -1,0 +1,430 @@
+[
+  {
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 104,
+        "num_attn_heads": 2,
+        "method": "PAM"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT-baseline_tuning-42-f753429eba44"
+    },
+    "source": "/workspace/LightSAKT2/results/raw/ASSIST2009-GKT-baseline_tuning-42-f753429eba44/metrics.json",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2009-GKT-baseline_tuning-42-f753429eba44/best.pt",
+    "checkpoint_sha256": "bb1080a8984a366d9fa32f11f4c3399fa875cd95b4ecdcabfb9733fbbbf69efa",
+    "best_validation_auc": 0.7640027382086338,
+    "test_evaluated": false,
+    "completed_grid_candidates": 36,
+    "candidates": [
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-07dec7ef0623",
+        "validation_auc": 0.7619282825678524,
+        "metrics_sha256": "30d6c0b8dee9ee36009698f340d89e150ade986ee1883a9b64ecad2862b390e9"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-19094af02366",
+        "validation_auc": 0.7338139522114557,
+        "metrics_sha256": "c4b6bab548b5cbd9a60b2a0fc20849a015b4ad07ac7a87213cbc17884bb639c3"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-1a4405f45bd7",
+        "validation_auc": 0.7603145896148604,
+        "metrics_sha256": "96012d264b61f41ed202f63b4b7b13c38884ce56db81881c1182e4fb02376e33"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-1bc295eb0703",
+        "validation_auc": 0.7607149869773948,
+        "metrics_sha256": "b5acff058f71535cae3e698ae4a6a23b92dc47925d61651eb6828007a9ec8307"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-1d9e4935301d",
+        "validation_auc": 0.7526868672219478,
+        "metrics_sha256": "ca303325e80701ed78925cfc86ed957a16f1899f4d83d42826c71875a1ffce82"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-1fd788004646",
+        "validation_auc": 0.7613617783554992,
+        "metrics_sha256": "25a3b0e7fd3bbb01cfc3744abf01c9bdd09ff93037824793d465ba30cc65cb9d"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-22040414b977",
+        "validation_auc": 0.7374710512620348,
+        "metrics_sha256": "275ee25ff9044ec67dce281e4860a4cc7005b12d63a52c042b3f9f8fb6297e62"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-2372efe8779d",
+        "validation_auc": 0.7505338343037622,
+        "metrics_sha256": "b9198fda0f32b16944902f39ec18c7ec78267a6099ba5373004a94834bdcc466"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-2bf0f4278139",
+        "validation_auc": 0.7518243822319624,
+        "metrics_sha256": "bc07b6c777c15ad1c879e20dcf06dc94c33c36e1e5c8bbd0b1a4f2ea4f6161cb"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-30db8df014cb",
+        "validation_auc": 0.7575598968218159,
+        "metrics_sha256": "7a2907aebbfa3244ab935f0590f395d50df5f544b9d3fe6d844b0cc8a8443c1d"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-32fb8093158c",
+        "validation_auc": 0.7447970544562137,
+        "metrics_sha256": "49649aac7e57d07d544ce54242fe2218e406142608bb200e769dd1ef4f0478aa"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-455c84d8627a",
+        "validation_auc": 0.7523062544313861,
+        "metrics_sha256": "ef1426fe5b3e81a7c438653b21a924ac4d2baa28f1ccbd13f8641d1232d0312c"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-4a391f5533c0",
+        "validation_auc": 0.7532809713598178,
+        "metrics_sha256": "d46dd4dc2cfc7b743703e59021d18c6c830a908f3a9adff2ab630f4942ea2e35"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-4d57c219c66d",
+        "validation_auc": 0.7609011827772167,
+        "metrics_sha256": "309174205e0205055dc693593ba928e24e911bcbdba6b1648d41d90477abc81b"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-5abd556796ed",
+        "validation_auc": 0.7614090673618421,
+        "metrics_sha256": "0d9c110eab846e767ead827dfa55cf7e57868f762c1a42822a3e465fe1d835ef"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-5bed0aeb890d",
+        "validation_auc": 0.7613856004125218,
+        "metrics_sha256": "ae6f89a169c6979967ecea279456dc3e4a8c326a2ac99b7983b13a58c8ef5c8d"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-5c0cb72780a0",
+        "validation_auc": 0.7601229657401638,
+        "metrics_sha256": "899b6ee207672d72ca4ba2ff7235f0f2bf1bebfbceb2142d52fd0ed91c6b284c"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-6b0a3052e13a",
+        "validation_auc": 0.7559323307956561,
+        "metrics_sha256": "d2957184e02b19b7670cc1cd7cc6d6697986825e7f6489186a2be541196f4a14"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-747a0b3fa5a4",
+        "validation_auc": 0.7584409846808328,
+        "metrics_sha256": "840837af23696ad7165b5e1e5996a553e49996548e8ff893cd7bfe27e3101c6b"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-75fd6ddfe9f9",
+        "validation_auc": 0.7593961677015519,
+        "metrics_sha256": "76ba027bed653b4a8d76ee1f39418fd3aa5f0a4f30ef41f9258fbc2faef92f8f"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-94d914b351df",
+        "validation_auc": 0.7627130109074762,
+        "metrics_sha256": "e7fea34db38fcd849d62c9796250330667821d5ae749397c6c144ec6ad36f627"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-a2c296fe7dcc",
+        "validation_auc": 0.756809769102407,
+        "metrics_sha256": "cb86f910d3fbe380d75947ff3f74bf86c2b35fae5ccb7e77565e0cdf70818fc1"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-a312abe1923b",
+        "validation_auc": 0.7518132873543462,
+        "metrics_sha256": "b963b87df22f839c9e75e6e6ff92be3bdfd237bb565895d096e7b56947e0f61b"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-ad2733ac2d3b",
+        "validation_auc": 0.7312326206112866,
+        "metrics_sha256": "a0f84325650962517b97999c0b93be99dad1a7640524c77334180cd80eaac989"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-b70046d9dac7",
+        "validation_auc": 0.7520090859826158,
+        "metrics_sha256": "134a6a012d25f61f520e24e7dc399de728a69ed1d1748e9ae62ba9984dfc69d9"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-bc366cdc8a40",
+        "validation_auc": 0.7490543183483851,
+        "metrics_sha256": "e7e8f09b69380edabe3c61915fd54d8fd72714114ddc9837b938c7744c4000f4"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-c4c5a83f48bf",
+        "validation_auc": 0.7526042793163789,
+        "metrics_sha256": "052c1b0fdfdee4cc1abff253ea3f464a1a11f58ffe6262a889e9a81fb2519607"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-cbda1b099475",
+        "validation_auc": 0.7438948690219558,
+        "metrics_sha256": "d5654b9d938d58ad61e88223622cf57e68d61b0b67a1a0ecb6856bc300abf3dc"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-d5bfc8a602c8",
+        "validation_auc": 0.7408696319055019,
+        "metrics_sha256": "367386376df095e9db00f0e9ea59b93ed5217de876bf050b04bd3d144afb4c44"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-dead3b417bf1",
+        "validation_auc": 0.7487330652419387,
+        "metrics_sha256": "05b03aff2b93761c6adad8e2542e2ff6c628093cb8b229e0d2f867daf4e36485"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-e009b6d8e305",
+        "validation_auc": 0.7548695829662893,
+        "metrics_sha256": "395c756752288b362b0632d1d2b1d47f24a9a4441d07fcfa3a76dd69797c2bfb"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-f3faddfac38b",
+        "validation_auc": 0.7609043996352238,
+        "metrics_sha256": "7880a9448d7306e527498fd6caf4ef24372a9dbd05f9bdaacdc2a53c9d9805b3"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-f753429eba44",
+        "validation_auc": 0.7640027382086338,
+        "metrics_sha256": "06eb1c8ba80e4f29eaeb11a55c13a00d9da73e6f54c3affb79bd318ede8f4836"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-f77e422364f4",
+        "validation_auc": 0.7608810311611485,
+        "metrics_sha256": "474bfaa147896fc96e37a41a6b1bee63f17811c10f9279abfd3795735d885c12"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-f8a62a9d75ea",
+        "validation_auc": 0.7616310156438371,
+        "metrics_sha256": "16723925ec557192075e52624ba451a6eab2e9ff547ed568c441be128d00788d"
+      },
+      {
+        "run_id": "ASSIST2009-GKT-baseline_tuning-42-fb735e9a5f35",
+        "validation_auc": 0.7609217014373806,
+        "metrics_sha256": "f58904cb9b5a9bbc6fb05cc7f4a4944e09f500ea106c4acf5f912ab945de1c3e"
+      }
+    ]
+  },
+  {
+    "config": {
+      "dataset": "ASSIST2009",
+      "model": "GKT_MHA",
+      "group": "baseline_tuning",
+      "seed": 42,
+      "seq_len": 100,
+      "batch_size": 8,
+      "max_epochs": 50,
+      "patience": 5,
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.0,
+      "epsilon": 1e-08,
+      "model_config": {
+        "hidden_size": 64,
+        "num_attn_heads": 8,
+        "method": "MHA"
+      },
+      "evaluate_test": false,
+      "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-610a3cf07a3c"
+    },
+    "source": "/workspace/LightSAKT2/results/raw/ASSIST2009-GKT_MHA-baseline_tuning-42-610a3cf07a3c/metrics.json",
+    "checkpoint": "/workspace/LightSAKT2/checkpoints/ASSIST2009-GKT_MHA-baseline_tuning-42-610a3cf07a3c/best.pt",
+    "checkpoint_sha256": "1b280588a1691147c1130745bdc6960841694f19d98cff3b538dc6efad2ac60d",
+    "best_validation_auc": 0.7670201868284287,
+    "test_evaluated": false,
+    "completed_grid_candidates": 36,
+    "candidates": [
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-0c45f6c6cedb",
+        "validation_auc": 0.7580316230868945,
+        "metrics_sha256": "ab31b77fe6def2000cd801c101fd8d1d2907e61ccb66a4dbfeabb5e2c59ce2ac"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-0fd63d38482d",
+        "validation_auc": 0.7620677712605071,
+        "metrics_sha256": "f3d3e43004fd6410330c6dc28842c0f7d170ec89427888a7f2c2a6dbb1676b93"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-1dc461ff29f4",
+        "validation_auc": 0.7554416913153189,
+        "metrics_sha256": "f5666fc0769cfeb6d3d257dd9c9ab9e3fb84b3eb9e8cee2b8b756f35c3f4bf14"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2a948aba1ee2",
+        "validation_auc": 0.758127418611702,
+        "metrics_sha256": "ad8555a5205a6080403b9fabf7f7e5749fa0593d02f8c337399b9750d42cc7d4"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-2eb1271b5879",
+        "validation_auc": 0.7556584502503062,
+        "metrics_sha256": "4a25da6f23d9140b9b9ce62900051dc06cac931a1778e1726fb4cd645e91bfad"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-3b6990fd903e",
+        "validation_auc": 0.6985881186334261,
+        "metrics_sha256": "5c3f7b9f869750aedea650ea43fd440e6086ca79e8173eb3e16e1c5029e588ed"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-4634d12e21c9",
+        "validation_auc": 0.7665730316290551,
+        "metrics_sha256": "fd6eaabdff8eb2e93d75c6f5690f94c7608823e4c5c9003c4cfc720cdfaa3a0f"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-48d7cf771cdb",
+        "validation_auc": 0.7617560792051317,
+        "metrics_sha256": "02bf2cca6800118f5b6b469f624ac30b831dafd2a33752f0a0d1fa8791e8f486"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-4f536da2bd19",
+        "validation_auc": 0.763054761785398,
+        "metrics_sha256": "cf42b86e9fe75ffc53578c3ca90771d66712c050e4655fa34ad988fa69a73176"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-4f6f5c3f2894",
+        "validation_auc": 0.7619398817580876,
+        "metrics_sha256": "cbe5217c8829bb85ab0981b51205464261efdc6cb908438951aa788394c0c8fa"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-610a3cf07a3c",
+        "validation_auc": 0.7670201868284287,
+        "metrics_sha256": "d63591200a9c13663d4eed18573170ae0a48c00df9c060848b42c15b1253b2cf"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-65fc8f38c131",
+        "validation_auc": 0.7563091269244451,
+        "metrics_sha256": "5e1d48d210481952555164c28e7dc1f9d80900123050f823627154eb0708accb"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-68142e511b62",
+        "validation_auc": 0.735529925134941,
+        "metrics_sha256": "6de278a96b4f207b97b11f4d0b86472622c1039bb612f4e63aaf60a066f167f2"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-73e17803a3fa",
+        "validation_auc": 0.7234507844597708,
+        "metrics_sha256": "caac20e8774d2b2cec4f534e09a2bb39f160bef631a1c8bee6ae1d401d0e1f59"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-759c6f96ea2e",
+        "validation_auc": 0.747637268523492,
+        "metrics_sha256": "bbc7551fe9be4990a03d0c34f3a2160deddc2ba1b6ac57c221cbe5ebe4cb83cd"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-7cb79b8af71b",
+        "validation_auc": 0.7523894510930156,
+        "metrics_sha256": "e0bfad4fba3e02af0135a3c846cfc6ed114b14f57bb5242cfc909849ac071fc7"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-8dcb424e13b9",
+        "validation_auc": 0.7657648930379792,
+        "metrics_sha256": "c88499e0ed2a5f4a4620c85864d46d7909605b5a6b60dbb098b4369afdbdc7cc"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-93c479230290",
+        "validation_auc": 0.7559393195539608,
+        "metrics_sha256": "9d4d72189247652af2b50d25369d8cbff7fb02e238ec0161f6d3a3366db926bf"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-943638803a47",
+        "validation_auc": 0.75956304743284,
+        "metrics_sha256": "b6e599ec1adebc678965f88777825641201534d60617932a9665a540ebe589f8"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-95f5091bf8d3",
+        "validation_auc": 0.7402281193973553,
+        "metrics_sha256": "e5e45459095ad78c2a69c40f2f5a9fc8ee40ada78b578e9566f34a679f11c2b4"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-9626762334f4",
+        "validation_auc": 0.7557469914320569,
+        "metrics_sha256": "d9d4392c50614625a3f10b22b068bf7264e3211f99c7586bab1839c1d896de25"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-977ded40ea38",
+        "validation_auc": 0.656221451131212,
+        "metrics_sha256": "0f83bf014fba1fbf3ef142c1956736fca303ca7f6225cecfcebe4e167da9ae4e"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-9da9bb89b7bd",
+        "validation_auc": 0.733535705930239,
+        "metrics_sha256": "9d72f2ce19b0f36ee5384ae3ab8528c1c8fa48de7703a286813cef997d603491"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-aa62dd7e5cf3",
+        "validation_auc": 0.7590046420633727,
+        "metrics_sha256": "8879ed2cfb2313eba1dc00948eddbd9ee8e6c78296c91e2bf40864d32211d02e"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-baa2972cdda2",
+        "validation_auc": 0.7578698222909759,
+        "metrics_sha256": "504b67fd5211d6c0afa3b43f1527261191a9371cc02663b5a9fcd32e8da10d1f"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-c03a9d9b5b0e",
+        "validation_auc": 0.7568993815754608,
+        "metrics_sha256": "f41059435c2c4d31c68b24b23b0fb4c87e288695259ddf93ac68e93c6775e45e"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-d0011993eab3",
+        "validation_auc": 0.7610944120968184,
+        "metrics_sha256": "02b3067b80c82a9199c51d5717f0b90127256b12ddeafa69aba5387f338dfb50"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-d5fbac273317",
+        "validation_auc": 0.6878296473750677,
+        "metrics_sha256": "d6a1c7414b7b26c5bb6b93d836f66900e872efdcf278f531d88b1d3e972d57e9"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-da4fb8b32275",
+        "validation_auc": 0.7483624581331003,
+        "metrics_sha256": "e7955f0b8f272ae55aefc83a2a73948881ff8951f5cf743370cd14ae2686e30b"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-db349ad4fd6b",
+        "validation_auc": 0.7641425461998104,
+        "metrics_sha256": "af427716105ffaa4aac28d9815bc73b00a3cace7145f738340095d55db65ec1b"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-dcfb47487c11",
+        "validation_auc": 0.7550362627629886,
+        "metrics_sha256": "94f9c5bf154f1c0692220b56c0a2cd496ce53c242124f17bf19d5b975d00ec65"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-e425b8bef403",
+        "validation_auc": 0.7665747922470738,
+        "metrics_sha256": "2de7a0c39f4a0d389b722158157f62ffd73992d5238c2ac9c52553dfbcf7c049"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-e45efdb2a3e7",
+        "validation_auc": 0.752141836581226,
+        "metrics_sha256": "9877c0989dff37ef8af393cf7904bf3bcaee2a495f14368f5a218780d95ba51e"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-ee92fac4b260",
+        "validation_auc": 0.7642520059109019,
+        "metrics_sha256": "4ad51040e6f95e52834aacea8a8db52e6c2702689b494b82acc295578a23435a"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-eec37e33861f",
+        "validation_auc": 0.7632726248367698,
+        "metrics_sha256": "43b57e123282994dc1a4e0f88f79572fb85b246e211406c144ce9a7a9970d78b"
+      },
+      {
+        "run_id": "ASSIST2009-GKT_MHA-baseline_tuning-42-f454797dd9aa",
+        "validation_auc": 0.6810220656167415,
+        "metrics_sha256": "8372b051e4fbb600c8a8a3e2b17b896706ca6193b2573b5824e9dfa868cf9868"
+      }
+    ]
+  }
+]

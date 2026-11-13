@@ -1,0 +1,30 @@
+{
+  "caption": "Actual five-seed component-removal experiments on ASSIST2009/Algebra2005; none on EdNet. QD adds item information and is separate from component removals. No-layer-normalization removal was never completed. Historical no_regularization aliases no_dropout and is not an independent experiment. No-attention keeps trainable inactive attention parameters; parameter count is not evidence of attention usage.",
+  "generator": "generate_ablation_graphs.py",
+  "input_files": [
+    {
+      "path": "source_data/verified_metric_references/corrected_ablation_seeds.csv",
+      "sha256": "f0e555e95126e5a3f5e55cb85fddb28311350dd109bccbbca80344516ac2d140"
+    },
+    {
+      "path": "source_data/verified_metric_references/individual_seed_metrics.csv",
+      "sha256": "a57e6750a543b2cf4f3ed33f8fd6eacf81145903122fbdda2ca8d2e78008be9b"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "graphs/ablations/corrected_ablation_test_auc.png",
+      "sha256": "32727b93bfd0d073b316049029ffc66781d5f59bbad52065bb7bb3b96e64b0b2"
+    },
+    {
+      "path": "graphs/ablations/corrected_ablation_test_auc.pdf",
+      "sha256": "33328d3a110b293110cf82435dc0e43f5801c240a6afed041dd64485cb30efdd"
+    },
+    {
+      "path": "graphs/ablations/corrected_ablation_test_auc.svg",
+      "sha256": "390ff7f230a985da273e4337aa128635b64d8519f607184abd7cfb682b083129"
+    }
+  ],
+  "PNG_dpi": 320,
+  "performance_data": "genuine saved experiments only; no interpolation or imputation"
+}

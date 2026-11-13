@@ -1,0 +1,26 @@
+\begin{table}
+\caption{Table3. Measured configurations (GKT1/5 separately marked); Adam; exact per-seed settings in source_data}
+\begin{tabular}{llrrrllllll}
+\toprule
+Dataset & Model & LR & Batch & Length & Embedding / hidden & Heads & Dropout & Epochs (actual range) & Ceiling/patience & Measured seeds \\
+\midrule
+ASSIST2009 & SAKT & 0.000500 & 64 & 100 & 64 / N/A & 4 & 0.200000 & 32–42 & 50/5 & 5/5 \\
+ASSIST2009 & LightSAKT & 0.001000 & 64 & 100 & 64 / N/A & 2 & 0.100000 & 25–34 & 50/5 & 5/5 \\
+ASSIST2009 & LightSAKT + QD & 0.001000 & 64 & 100 & 64 / N/A & 2 & 0.100000 & 29–38 & 50/5 & 5/5 \\
+Algebra2005 & SAKT & 0.000500 & 64 & 200 & 128 / N/A & 2 & 0.200000 & 41–50 & 50/5 & 5/5 \\
+Algebra2005 & LightSAKT & 0.001000 & 64 & 200 & 128 / N/A & 4 & 0.200000 & 28–38 & 50/5 & 5/5 \\
+Algebra2005 & LightSAKT + QD & 0.001000 & 64 & 200 & 128 / N/A & 4 & 0.200000 & 39–44 & 50/5 & 5/5 \\
+EdNet-KT1 (5k, first/session) & LightSAKT & 0.001000 & 64 & 100 & 64 / N/A & 2 & 0.100000 & 17–19 & 50/5 & 5/5 \\
+EdNet-KT1 (5k, first/session) & LightSAKT + QD & 0.001000 & 64 & 100 & 64 / N/A & 2 & 0.100000 & 19–23 & 50/5 & 5/5 \\
+EdNet-KT1 (5k, first/session) & SAKT & 0.001000 & 64 & 100 & 64 / N/A & 2 & 0.100000 & 13–14 & 50/5 & 5/5 \\
+ASSIST2009 & DKT & 0.000500 & 64 & 100 & 128 / 128 & N/A & 0.5 output logits & 16–21 & 50/5 & 5/5 \\
+ASSIST2009 & DKT+ & 0.001000 & 64 & 100 & 32 / 64 & N/A & 0.5 output logits & 24–45 & 50/5 & 5/5 \\
+ASSIST2009 & DKVMN & 0.005000 & 64 & 100 & 64 / N/A & N/A & none & 16–25 & 50/5 & 5/5 \\
+Algebra2005 & DKT & 0.001000 & 64 & 200 & 64 / 128 & N/A & 0.5 output logits & 27–30 & 50/5 & 5/5 \\
+Algebra2005 & DKT+ & 0.001000 & 64 & 200 & 128 / 100 & N/A & 0.5 output logits & 28–38 & 50/5 & 5/5 \\
+Algebra2005 & DKVMN & 0.005000 & 64 & 200 & 50 / N/A & N/A & none & 29–35 & 50/5 & 5/5 \\
+ASSIST2009 & GKT & 0.001000 & 8 & 100 & 104 / 104 & 2 & MLP0.5 & 12–12 & 50/5 & 1/5 \\
+ASSIST2009 & GKT-MHA (impl.) & 0.001000 & 8 & 100 & 64 / 64 & 8 & MLP0.5; MHA0 & 50–50 & 50/5 & 1/5 \\
+\bottomrule
+\end{tabular}
+\end{table}

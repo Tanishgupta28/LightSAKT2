@@ -1,0 +1,30 @@
+{
+  "caption": "Same frozen offline difficulty protocol. SAKT+QD is untrained on all datasets. Positive LightSAKT+QD gains cannot isolate attention superiority.",
+  "generator": "generate_model_comparison.py",
+  "input_files": [
+    {
+      "path": "source_data/verified_metric_references/master_metrics.csv",
+      "sha256": "3ad2914d524d8d3fb0cbbe26ac3839d6d4de8a0d1286f3f4cd6b0d64e9618a9a"
+    },
+    {
+      "path": "source_data/verified_metric_references/individual_seed_metrics.csv",
+      "sha256": "a57e6750a543b2cf4f3ed33f8fd6eacf81145903122fbdda2ca8d2e78008be9b"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "graphs/model_comparisons/question_difficulty_comparison.png",
+      "sha256": "dfdc14dbd55bba9211b6b95410852b578987214cfd11a9b90181983bb7c1a9fc"
+    },
+    {
+      "path": "graphs/model_comparisons/question_difficulty_comparison.pdf",
+      "sha256": "91ffd6e1bba248b2d9b004a3eac249d24b75fa34bdc0d6a494b90e39d5390577"
+    },
+    {
+      "path": "graphs/model_comparisons/question_difficulty_comparison.svg",
+      "sha256": "98abc67a8bb8f04c7f40b5cfded6cb96df63a82f9444c0a3b48902db2354b384"
+    }
+  ],
+  "PNG_dpi": 320,
+  "performance_data": "genuine saved experiments only; no interpolation or imputation"
+}

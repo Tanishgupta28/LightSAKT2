@@ -1,0 +1,17 @@
+{
+  "status": "PASS_OFFLINE_PROTOCOL",
+  "training_rows": 407242,
+  "own_student_rows_perturbed": 13501,
+  "whole_own_student_label_flip_invariant": true,
+  "all_validation_label_flip_invariant": true,
+  "heldout_transform_interface": "q and authentic problem_id only; no heldout labels",
+  "other_student_positive_control_maximum_change": 4.140040626747856,
+  "frozen_train_validation_test_features_reproduced": true,
+  "unseen_question_correction_zero": true,
+  "source_hashes": {
+    "/workspace/LightSAKT2-architecture/.tools/ednet_replacement_20261104/workspace/data/auxiliary/EdNetKT1_5k_first-train_validation.json": "f91e9f381c56e542ae00784adbb85c2616ff9d6d75d4fcb8c4ab2c009561de57",
+    "/workspace/LightSAKT2-architecture/.tools/ednet_replacement_20261104/workspace/data/auxiliary/EdNetKT1_5k_first-test.json": "03d95fb3d22a46bb05396eb27320fe09ab181fee95c5dede6b77bd7b87694e8b",
+    "/workspace/LightSAKT2-architecture/.tools/ednet_replacement_20261104/workspace/data/processed/EdNetKT1_5k_first/interactions.csv": "e31e9e9cefd36d2d671ff7d3e3baad8355a97afc7e3996eb987fc09c2444e25a"
+  },
+  "scope": "Offline fitted-training-corpus statistics; later OTHER training-student observations permitted. Does not validate forward-time availability."
+}

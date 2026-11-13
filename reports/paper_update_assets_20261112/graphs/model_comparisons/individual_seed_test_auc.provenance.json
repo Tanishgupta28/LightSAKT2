@@ -1,0 +1,26 @@
+{
+  "caption": "Five actual checkpoint-selected test AUCs per complete group. Horizontal offsets identify seeds, not independent cohorts.",
+  "generator": "generate_model_comparison.py",
+  "input_files": [
+    {
+      "path": "source_data/verified_metric_references/individual_seed_metrics.csv",
+      "sha256": "a57e6750a543b2cf4f3ed33f8fd6eacf81145903122fbdda2ca8d2e78008be9b"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "graphs/model_comparisons/individual_seed_test_auc.png",
+      "sha256": "3d4b2445bf3a1ac7b7a25ae2b18518d713a5ccbafd7adbf487fb7142d93d1ba1"
+    },
+    {
+      "path": "graphs/model_comparisons/individual_seed_test_auc.pdf",
+      "sha256": "2a850b9422bde79c92e0d8cc207adb91a8fdc24b639f9a94e15c33665f47ffa2"
+    },
+    {
+      "path": "graphs/model_comparisons/individual_seed_test_auc.svg",
+      "sha256": "61654e1868a55f96d43cd2ae86b3bcb242908a33124f070833e864cc25333640"
+    }
+  ],
+  "PNG_dpi": 320,
+  "performance_data": "genuine saved experiments only; no interpolation or imputation"
+}

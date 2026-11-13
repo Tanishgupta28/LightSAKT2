@@ -1,0 +1,26 @@
+{
+  "caption": "Descriptive next-response probabilities from saved test predictions, NOT validated knowledge/mastery states or a fixed-skill trajectory. First lexicographically ordered test student with \u226520 targets; first \u226450 targets. Items/skills can change; prior-history windows can reset. No selection based on outcomes or model performance. Raw student IDs withheld. Cannot replace the original latent-state Figure8 or mastery claim.",
+  "generator": "generate_model_comparison.py",
+  "input_files": [
+    {
+      "path": "source_data/verified_metric_references/anonymized_prediction_examples.csv",
+      "sha256": "8ab0b311a372d1579efbc095cec1322b47d68a3b5dc27fbbfdecae0fec0ec9b5"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "graphs/student_knowledge/Algebra2005_prediction_sequence.png",
+      "sha256": "029da2fb5156f62922daf467a9442213032a0f82cf3b1347ca92ce3fd73cc4c9"
+    },
+    {
+      "path": "graphs/student_knowledge/Algebra2005_prediction_sequence.pdf",
+      "sha256": "4af2c5866ea907501c086d92abf5185ca895deb8de2412e5bfbd382c56d21d7d"
+    },
+    {
+      "path": "graphs/student_knowledge/Algebra2005_prediction_sequence.svg",
+      "sha256": "606f80aeefef580e24ada911d499f0f7fdd5ad900618ae903be38e993d570be5"
+    }
+  ],
+  "PNG_dpi": 320,
+  "performance_data": "genuine saved experiments only; no interpolation or imputation"
+}

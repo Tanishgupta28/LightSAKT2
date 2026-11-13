@@ -1,0 +1,26 @@
+{
+  "caption": "ASSIST2009, actual seed42 training only. Every curve ends at its logged final epoch; no smoothing, extension, interpolation or five-seed averaging. DKT+ objective includes reconstruction and waviness penalties, so loss magnitudes are not directly comparable to pure BCE. Two ASSIST2009 GKT curves represent only one validation-selected seed each; five-seed groups remain incomplete. Missing model curves are omitted.",
+  "generator": "generate_training_curves.py",
+  "input_files": [
+    {
+      "path": "source_data/epoch_records/completed_final_epochs.csv",
+      "sha256": "cfe658855876f04b38bad475263dcd48e508b4cc0ee22c236ca42029986ee3fa"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "graphs/ASSIST2009/training_performance_seed42.png",
+      "sha256": "f50a996cd334c59819cd22a90e2155b3704366eaa0a8ddcedafbb312da1713a1"
+    },
+    {
+      "path": "graphs/ASSIST2009/training_performance_seed42.pdf",
+      "sha256": "83076183f9e8a6689c67f7ac0d9d260476e3c6f17784d60b8c73679db06741de"
+    },
+    {
+      "path": "graphs/ASSIST2009/training_performance_seed42.svg",
+      "sha256": "a8f8c0173d6e12cab18a98436d40603fa396b454a550d1cd8a4459d1d6c7b6e3"
+    }
+  ],
+  "PNG_dpi": 320,
+  "performance_data": "genuine saved experiments only; no interpolation or imputation"
+}

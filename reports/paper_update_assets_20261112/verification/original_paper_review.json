@@ -1,0 +1,227 @@
+{
+  "file": "research_paper/original_research_paper.pdf",
+  "title": "An Efficient Attention-Driven Framework for Adaptive Education-based Continuous Learning",
+  "pages": 25,
+  "sha256": "bcfc09657ccad41f36a9624dcbdd0d77979cb9232e32c3aed3074b23691d76cd",
+  "independent_page_counts": {
+    "PyMuPDF": 25,
+    "pypdf": 25
+  },
+  "visual_review": "All25 rendered pages reviewed as five contact sheets; pages16/17/18/19 individually enlarged. Full text all25 pages inspected. Original PDF unchanged. Older manuscript unused.",
+  "style": {
+    "figures4to6": "Two landscape axes side by side: training loss and validationAUC; light grids; thin colored lines; boxed legends just outside axes.",
+    "figure7": "Horizontal blue parameter bars; numeric annotations; model labels onvertical axis. Actual new per-dataset checkpoint vocabularies replace old fixednum_q100.",
+    "figures8to9": "Unverified latent-space clusters and apparently monotonic student mastery trajectory. New graphs only next-response probabilities; no inferred mastery."
+  },
+  "page_inventory": [
+    {
+      "page": 1,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "b6cb89884244639d767ce5cd83c09a724db5f9677b03317ed28c4f4eb7c35a08",
+      "contains_figures_or_tables": []
+    },
+    {
+      "page": 2,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "b56f9c252753ee3eee2471c30f51033adfcce741b75b622466d1d42a53e48bd6",
+      "contains_figures_or_tables": [
+        "Figure 1: An Example of Learning Process"
+      ]
+    },
+    {
+      "page": 3,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "4a099ad9af2f7ca99e7f4fc969834b4a07744e875723b36d68e26f2c828f1231",
+      "contains_figures_or_tables": [
+        "Figure 2: continuous assessment cycle with KT"
+      ]
+    },
+    {
+      "page": 4,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "d824af9728ca01f725e5e3bc73d1506fc7cf0a540bd4a1ecc1fc44de45a00840",
+      "contains_figures_or_tables": [
+        "Table 1: Some Recent Knowledge Tracing Techniques"
+      ]
+    },
+    {
+      "page": 5,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "aa5c343bea82fbb60c2f9b024b0b1ad939e931e75c70d655f453f6218c19ffd2",
+      "contains_figures_or_tables": []
+    },
+    {
+      "page": 6,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "efcbffe1868c01ec6c78f369ce82fcf25e52a7eb3069f95f27ca466e51f1c8b8",
+      "contains_figures_or_tables": []
+    },
+    {
+      "page": 7,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "4e07443382eb728bf777521f0432b77b3f7b2b8a3857f5fe42b415a5a730f340",
+      "contains_figures_or_tables": [
+        "Figure 3: Broader View of the Proposed Framework"
+      ]
+    },
+    {
+      "page": 8,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "76a5ebf78e20b7f6720069e1e5872e3d3e19e822723c4c3fd4a6bf0c3e91a20a",
+      "contains_figures_or_tables": [
+        "Table 2: Overview of Datasets"
+      ]
+    },
+    {
+      "page": 9,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "b76e6f531b8e53be6d67adc884cc719ce549e1a5253742335ede8b19615bf76e",
+      "contains_figures_or_tables": []
+    },
+    {
+      "page": 10,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "8a94a4a216a8b6b4e0a2ced65ded75185375c45866a86e26931043092c11d966",
+      "contains_figures_or_tables": []
+    },
+    {
+      "page": 11,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "fe2540304da077f74fd79b585fdab1f5a4b53496aa28204150078b71ac624fac",
+      "contains_figures_or_tables": []
+    },
+    {
+      "page": 12,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "829e63d2963400c1836807d57d729d017d5f1bf4dac4cc9ac7d1653e5e02578c",
+      "contains_figures_or_tables": []
+    },
+    {
+      "page": 13,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "62e7a1514d7792bf23d6455945008c90a215cffd59c0361dc0311bf50828f470",
+      "contains_figures_or_tables": [
+        "Table 3: Training Network configurations for different datasets."
+      ]
+    },
+    {
+      "page": 14,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "03a5150dc7f846df75907c12f4d1fb18a616fc4930d70dd5dfb02a1b7630bec2",
+      "contains_figures_or_tables": [
+        "Tables 4, 5, 6 presents the hyperparameter tuning results for the LightSAKT model for three",
+        "Table 4: Hyper parameter tuning results for Algebra 2005-2006",
+        "Table 5: Hyper parameter tuning results for ASSIST2009"
+      ]
+    },
+    {
+      "page": 15,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "14eea41e0aec5ab6c0709afe1c5f51794cee575b8352866ae6174238f07fd407",
+      "contains_figures_or_tables": [
+        "Table 6: Hyper parameter tuning results for ASSIST2015",
+        "Table 7 presents the performance comparison of six knowledge tracing models\u2014GKT, DKT,"
+      ]
+    },
+    {
+      "page": 16,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "67c2a3b2403ee0f61dd48f1dc96ac10b2e1d592cdaff642f03a104e9cd6afbc9",
+      "contains_figures_or_tables": [
+        "Figure 4: ASSIST 2009 results",
+        "Figure 5: ASSIST 2015 results"
+      ]
+    },
+    {
+      "page": 17,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "95e8103c61aae0eb10e425da7a90babd16efd74178424ad9a8708de3a1480665",
+      "contains_figures_or_tables": [
+        "Figure 6: Algebra 2005 results",
+        "Table 7: Performance comparison of different knowledge tracing models across datasets.",
+        "Figure 7 illustrates a comparative analysis of the number of parameters in four models. The"
+      ]
+    },
+    {
+      "page": 18,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "c7c02bcb5a39eee9b06e6a37db595850b75a47a5810c4cb309f8be58dac5850d",
+      "contains_figures_or_tables": [
+        "Figure 7: Comparison of Model Parameters.",
+        "Table 8 shows the performance of the proposed LightSAKT model and its variations in terms of",
+        "Table 8: Ablation Study"
+      ]
+    },
+    {
+      "page": 19,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "1be61e8a40af5a35ade93abddbce24c5b4a32e66fbf058d57904722dc6e3d2d2",
+      "contains_figures_or_tables": [
+        "Figure 8 represents the modelled knowledge space of some students and figure 9 shows a single",
+        "Figure 8: The variation in students\u2019",
+        "Figure 9: The progression of a student\u2019s"
+      ]
+    },
+    {
+      "page": 20,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "70ab25168b90510ba7690d5ee897ab38a0dce5c8b19a8ba61ca14d5ad41a140b",
+      "contains_figures_or_tables": []
+    },
+    {
+      "page": 21,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "70779bd172323d20e919ee1cf603671d5fdab96407be673b35d05d3352045e41",
+      "contains_figures_or_tables": []
+    },
+    {
+      "page": 22,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "8c3304e444cbc7b1231cd397ecdd9a22a7ed0a1b617b71d590289d315e850142",
+      "contains_figures_or_tables": []
+    },
+    {
+      "page": 23,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "51006dbe434747ba39af5f83ddba0b3fcb26e48a84a0043c6727680e3bb1bd8e",
+      "contains_figures_or_tables": []
+    },
+    {
+      "page": 24,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "60c7e94df2e5d5c719f9410cfcc49908a8a0778ec5d2b9289da5b9f23c137402",
+      "contains_figures_or_tables": []
+    },
+    {
+      "page": 25,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "text_sha256": "1eee0b05178ba007120683677f176757a724b412ead2c3a48ccc601ef7238924",
+      "contains_figures_or_tables": []
+    }
+  ]
+}

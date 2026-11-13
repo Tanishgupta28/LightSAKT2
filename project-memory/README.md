@@ -6,6 +6,13 @@ Research worktree: `/workspace/LightSAKT2-architecture`, branch
 with prior dirty scientific work preserved. Memory copies are synchronized views
 of the same tracked project memory; code, Git and artifacts remain authoritative.
 
+Latest milestone: 13 November verified paper assets under
+reports/paper_update_assets_20261112/.77seedresults,15complete/27groups,2partial,
+58missing. Two selectedGKTcheckpoints evaluatedCPU;0newtraining. Exact25pagepaper
+unchanged;15realgraphsets/45files,Tables2-8,source/checkpoint/metric/leakage audits,
+byte-reproduction/12CPUtests PASS. CurrentGPUownership/newbudget stillunverified.
+See CURRENT_STATE and externalpublication/archive receipts foractualGitstatus.
+
 Read [USER_DIRECTIVES.md](USER_DIRECTIVES.md), [CURRENT_STATE.md](CURRENT_STATE.md),
 [DECISION_LOG.md](DECISION_LOG.md), then [NEXT_CHECKPOINT.md](NEXT_CHECKPOINT.md).
 

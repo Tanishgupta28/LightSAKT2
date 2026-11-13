@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "student_disjoint": true,
+  "authentic_metadata_item_and_tag_alignment": true,
+  "vocabulary_train_only": true,
+  "own_student_label_flip_invariant": true,
+  "all_validation_label_flip_invariant": true,
+  "own_student_records_tested": 13501,
+  "other_students_positive_control_maximum_change": 4.140040626747856,
+  "frozen_features_independently_reproduced": true,
+  "training_chunks": 6713,
+  "training_batches": 105,
+  "training_question_aggregates": 11787,
+  "unseen_question_fraction": {
+    "validation": 0.0006685878962536023,
+    "test": 0.001648176372594194
+  }
+}

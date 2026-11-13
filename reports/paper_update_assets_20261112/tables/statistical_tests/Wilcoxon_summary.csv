@@ -1,0 +1,10 @@
+dataset,model_A,model_B,n_matched_seeds,W,p_two_sided_exact,p_Holm,mean_paired_difference,positive_seeds,negative_seeds
+ASSIST2009,LightSAKT,SAKT,5,1,0.125,0.5625,0.00073354735135038322,4,1
+ASSIST2009,LightSAKT + Question Difficulty,LightSAKT,5,0,0.0625,0.5625,0.02830277240594441,5,0
+ASSIST2009,LightSAKT + Question Difficulty,SAKT,5,0,0.0625,0.5625,0.029036319757294794,5,0
+Algebra2005,LightSAKT,SAKT,5,0,0.0625,0.5625,-0.0027839476119520868,0,5
+Algebra2005,LightSAKT + Question Difficulty,LightSAKT,5,0,0.0625,0.5625,0.026281230814437784,5,0
+Algebra2005,LightSAKT + Question Difficulty,SAKT,5,0,0.0625,0.5625,0.023497283202485696,5,0
+EdNetKT1_5k_first,LightSAKT,SAKT,5,0,0.0625,0.5625,0.0060578925968512998,5,0
+EdNetKT1_5k_first,LightSAKT + Question Difficulty,LightSAKT,5,0,0.0625,0.5625,0.064458426756827031,5,0
+EdNetKT1_5k_first,LightSAKT + Question Difficulty,SAKT,5,0,0.0625,0.5625,0.070516319353678331,5,0

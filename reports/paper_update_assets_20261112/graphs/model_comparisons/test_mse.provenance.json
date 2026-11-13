@@ -1,0 +1,26 @@
+{
+  "caption": "Test MSE / Brier score, fixed student split, five initializations; error bars are sample SD, not confidence intervals. No bar or numeric value for incomplete groups. AUC/accuracy/F1 panels use explicitly shown truncated axes. DKT+/DKVMN/GKT implementations/configuration-search differences are documented; difficulty adds information.",
+  "generator": "generate_model_comparison.py",
+  "input_files": [
+    {
+      "path": "source_data/verified_metric_references/master_metrics.csv",
+      "sha256": "3ad2914d524d8d3fb0cbbe26ac3839d6d4de8a0d1286f3f4cd6b0d64e9618a9a"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "graphs/model_comparisons/test_mse.png",
+      "sha256": "2740ddf6721993d11d6263643b51a3090ae038b587441ff1126498d1d9d918b6"
+    },
+    {
+      "path": "graphs/model_comparisons/test_mse.pdf",
+      "sha256": "440873385c7a3ac5375f47570e96bf5f8ff6ee26acc55b64da41d17489160900"
+    },
+    {
+      "path": "graphs/model_comparisons/test_mse.svg",
+      "sha256": "257cb602c1de872bcf0b332a7b6a0b69f87721f700d0bdd9ac1ff7042b7a6478"
+    }
+  ],
+  "PNG_dpi": 320,
+  "performance_data": "genuine saved experiments only; no interpolation or imputation"
+}

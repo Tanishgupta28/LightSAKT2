@@ -1,0 +1,26 @@
+{
+  "dataset": "ASSIST2009",
+  "model": "SAKT",
+  "group": "final",
+  "seed": 123,
+  "seq_len": 100,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "patience": 5,
+  "learning_rate": 0.0005,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.0,
+  "epsilon": 1e-08,
+  "model_config": {
+    "n": 100,
+    "d": 64,
+    "num_attn_heads": 4,
+    "dropout": 0.2
+  },
+  "evaluate_test": true,
+  "run_id": "ASSIST2009-SAKT-final-123",
+  "selection_path": "experiments/selections/ASSIST2009-SAKT.json"
+}

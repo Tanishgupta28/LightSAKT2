@@ -1,0 +1,26 @@
+{
+  "caption": "Algebra2005, actual seed42 training only. Every curve ends at its logged final epoch; no smoothing, extension, interpolation or five-seed averaging. DKT+ objective includes reconstruction and waviness penalties, so loss magnitudes are not directly comparable to pure BCE. Two ASSIST2009 GKT curves represent only one validation-selected seed each; five-seed groups remain incomplete. Missing model curves are omitted.",
+  "generator": "generate_training_curves.py",
+  "input_files": [
+    {
+      "path": "source_data/epoch_records/completed_final_epochs.csv",
+      "sha256": "cfe658855876f04b38bad475263dcd48e508b4cc0ee22c236ca42029986ee3fa"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "graphs/Algebra2005/training_performance_seed42.png",
+      "sha256": "46eee673d360e859909a62f900ddc478ee5b1f797e00563b5b10ce830df70bbb"
+    },
+    {
+      "path": "graphs/Algebra2005/training_performance_seed42.pdf",
+      "sha256": "356aa2a58db5b2c61a581f9ef3b4d9ade09d75ca5be33235c1ac7ab9bb3b9b28"
+    },
+    {
+      "path": "graphs/Algebra2005/training_performance_seed42.svg",
+      "sha256": "638dbe2ee982d0dde5c61635a80d252836c3e83296940a034a24a82a4d28eefb"
+    }
+  ],
+  "PNG_dpi": 320,
+  "performance_data": "genuine saved experiments only; no interpolation or imputation"
+}

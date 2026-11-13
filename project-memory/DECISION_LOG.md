@@ -539,3 +539,20 @@ in new exports beforecommit; independentexport verifier re-passed, no metrics ch
 No GPUtraining launched; current allocation/budgetconfirmation stillpending from
 asynchronous question. No peer/HiTSKT action. Followingmemoryonlyhandoff records
 publication; scientific CSV/report blobs unchanged. CanonicalmemorystrictPASS.
+
+## 2026-11-13 — Genuine paper assets and two CPU checkpoint evaluations
+
+User requests remainingcampaign onlyunderverifiedcurrentGPUallocation/budget;
+nonefound, soZEROnewtraining. Exact25pagePDF/title/hash verified,allpagesreviewed,
+originalunchanged. All75priorresults reused;selectedASSIST2009GKTseed42checkpoints
+CPUvalidation/testevaluatedwithoutretraining: PAMtest.7617558917744343,MHAtest
+.7659203269028207.77verifiedseeds,15/27completegroups,2partial,58missingoutputs.
+Newreports/paper_update_assets_20261112/containsTables2-8CSV/TeX/PDF,15genuine
+plotsets45files,sourceextracts/mappings/corrections/provenance andrealprediction
+examples(notmastery).77strictcheckpointloads/40ablations/72gridrecords/164arrays,
+currentactual-data leakageaudit/12CPUtests/byte-identicalgraphreproduction PASS.
+PriorCPU/nativefloatingdifferences<=1.85e-8explicit;oldresults unchanged. n5exact
+WilcoxonHolm9 doesnotreject;oldW78/p.00048notreused. Resourceownership/newtotalbudget,
+featurecontrol/cohort/chronologicalstudies remainpending. ZIP/bundle/publication
+receipts externalbackupdirectory; actualcommit/refverification required. NoHiTSKT,
+GPUcontext,peerprocesssignals,manuscript rewrite orhistoricalartifact changes.

@@ -1,3 +1,15 @@
+# Current scope — 13 November 2026: verified paper assets
+
+User requests completing the nine-model three-dataset campaign only if CURRENT
+allocation ownership and an explicit NEW total execution budget are confirmed.
+Old15-run budget consumed; no new grant inferred from idle MIG. No GPU launched.
+Complete all safe CPU work; preserve exactEdNet5k first/session/data/split/seeds.
+Inspect exact25-page original_research_paper.pdf, never edit/regenerate manuscript.
+Generate real Python plots/tables/provenance/ZIP; no fabricated curves/metrics.
+CPUevaluation of two already-selected GKT checkpoints is within current scope;
+no retraining/selection changes. HiTSKT strictly untouched. Commit validated new
+assets/memory and normal safe push to research branch after ancestry/dry-run.
+
 # Current scope — 10 November 2026: expanded master comparison
 
 User requests DKT,DKT+,DKVMN,GKT,GKT-MHA(implemented variant),SAKT,LightSAKT,

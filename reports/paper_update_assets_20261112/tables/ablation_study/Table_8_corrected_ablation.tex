@@ -1,0 +1,16 @@
+\begin{table}
+\caption{Table8. Test AUC; item-difficulty addition distinct from removals; no_regularization aliases no_dropout}
+\begin{tabular}{llll}
+\toprule
+Variant & ASSIST2009 & Algebra2005 & EdNet-KT1 (5k, first/session) \\
+\midrule
+default & 0.751056 ± 0.000766 & 0.810590 ± 0.000422 & 0.642417 ± 0.000980 \\
+no\_attention & 0.708307 ± 0.001107 & 0.772550 ± 0.000515 & UNAVAILABLE (not run) \\
+no\_dropout & 0.749340 ± 0.000716 & 0.809160 ± 0.000459 & UNAVAILABLE (not run) \\
+no\_position & 0.750798 ± 0.000583 & 0.811410 ± 0.000603 & UNAVAILABLE (not run) \\
+single\_head & 0.750791 ± 0.000765 & 0.811755 ± 0.000448 & UNAVAILABLE (not run) \\
+plus\_question\_difficulty & 0.779359 ± 0.000778 & 0.836871 ± 0.000217 & 0.706876 ± 0.000691 \\
+no\_layer\_normalization & UNAVAILABLE (not run) & UNAVAILABLE (not run) & UNAVAILABLE (not run) \\
+\bottomrule
+\end{tabular}
+\end{table}

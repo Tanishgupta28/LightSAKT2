@@ -1,0 +1,27 @@
+{
+  "status": "PASS_AVAILABLE_EVIDENCE_WITH_PENDING_GROUPS",
+  "completed_seed_records": 77,
+  "five_seed_groups": 15,
+  "pending_groups": 12,
+  "missing_seed_results": 58,
+  "new_training_runs": 0,
+  "best_checkpoints_strictly_loaded": 77,
+  "reusable_GKT_checkpoints_strictly_loaded": 2,
+  "corrected_component_ablation_checkpoints_verified": 40,
+  "real_grid_records_verified": 72,
+  "saved_prediction_arrays_recomputed": 164,
+  "metric_precision": "float64",
+  "independent_AUC": "average ranks; crosscheck sklearn ROC AUC",
+  "threshold": 0.5,
+  "BCE_probability_clamp": [
+    1e-07,
+    0.9999999
+  ],
+  "SD_ddof": 1,
+  "validation_metric_origin": "native selected epoch; 45 saved validation arrays crosschecked",
+  "test_metric_origin": "fresh arithmetic on genuine saved probabilities; two newly CPU-evaluated frozen GKT checkpoints if present",
+  "new_CPU_checkpoints_evaluated": 2,
+  "new_actual_data_inference_split_passes": 4,
+  "GPU_training_authorization": "UNVERIFIED_CURRENT_ALLOCATION_AND_BUDGET",
+  "HiTSKT": "not accessed or modified"
+}

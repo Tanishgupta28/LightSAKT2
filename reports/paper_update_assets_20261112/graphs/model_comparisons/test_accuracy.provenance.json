@@ -1,0 +1,26 @@
+{
+  "caption": "Test accuracy, fixed student split, five initializations; error bars are sample SD, not confidence intervals. No bar or numeric value for incomplete groups. AUC/accuracy/F1 panels use explicitly shown truncated axes. DKT+/DKVMN/GKT implementations/configuration-search differences are documented; difficulty adds information.",
+  "generator": "generate_model_comparison.py",
+  "input_files": [
+    {
+      "path": "source_data/verified_metric_references/master_metrics.csv",
+      "sha256": "3ad2914d524d8d3fb0cbbe26ac3839d6d4de8a0d1286f3f4cd6b0d64e9618a9a"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "graphs/model_comparisons/test_accuracy.png",
+      "sha256": "8763980ff229670e4f145ce484d32dc7cf303b6eb73f597610b65750cb9de4b8"
+    },
+    {
+      "path": "graphs/model_comparisons/test_accuracy.pdf",
+      "sha256": "199c8e6fbc0765c3a5c66d20bf16d4d8e0a51a4925dec78ee499dbb41a5dc11c"
+    },
+    {
+      "path": "graphs/model_comparisons/test_accuracy.svg",
+      "sha256": "eacae62f1a5f38adc047f1ddab5e0a0861cc3b8181f32debdae4ed4754b14245"
+    }
+  ],
+  "PNG_dpi": 320,
+  "performance_data": "genuine saved experiments only; no interpolation or imputation"
+}

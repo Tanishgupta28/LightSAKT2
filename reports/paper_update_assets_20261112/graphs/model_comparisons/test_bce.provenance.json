@@ -1,0 +1,26 @@
+{
+  "caption": "Test BCE (natural log), fixed student split, five initializations; error bars are sample SD, not confidence intervals. No bar or numeric value for incomplete groups. AUC/accuracy/F1 panels use explicitly shown truncated axes. DKT+/DKVMN/GKT implementations/configuration-search differences are documented; difficulty adds information.",
+  "generator": "generate_model_comparison.py",
+  "input_files": [
+    {
+      "path": "source_data/verified_metric_references/master_metrics.csv",
+      "sha256": "3ad2914d524d8d3fb0cbbe26ac3839d6d4de8a0d1286f3f4cd6b0d64e9618a9a"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "graphs/model_comparisons/test_bce.png",
+      "sha256": "808195e1644218b7863710de6cc8977f7c5f0a9ab84a80b86dd4acc950fd0ecd"
+    },
+    {
+      "path": "graphs/model_comparisons/test_bce.pdf",
+      "sha256": "9c7f07dc8d9cf0be2b74398efd46a36c6d0a32a566b7f379e4c0fe9a0b78bc3a"
+    },
+    {
+      "path": "graphs/model_comparisons/test_bce.svg",
+      "sha256": "08b4d71a33ffb49d5ce1fa09687171bb9632f1eff8699affffcd7ffa5075d66d"
+    }
+  ],
+  "PNG_dpi": 320,
+  "performance_data": "genuine saved experiments only; no interpolation or imputation"
+}

@@ -1,0 +1,9 @@
+# Manual manuscript replacement guide
+
+1. Preserve the original 25-page PDF and its recorded SHA256. None of these programs edits or regenerates the manuscript.
+2. Follow `PAPER_GRAPH_MAPPING.md` and `PAPER_TABLE_MAPPING.md`. Figure 4 maps to ASSIST2009 seed-42 curves; Figure 5 maps to the exact EdNet subset; Figure 6 maps to Algebra2005; Figure 7 maps to actual parameter counts. Vector PDF and SVG exports are preferred; PNG exports use 320 DPI.
+3. Update captions to state seed 42, actual early stopping, available models and the exact dataset scope. DKT+ training objective includes penalties. These curves are individual runs, not five-seed averages. Five-seed variability is shown separately in comparison tables and plots.
+4. Use Table 7's original-style metric-row/model-column export or the longer comparison table. Retain PENDING, 1/5 seed counts and the GKT implementation qualifications. Table 6 is an EdNet selection-protocol table, because no completed grid exists. Table 8 separates component removals from the addition of item information.
+5. Review `SUGGESTED_MANUSCRIPT_CORRECTIONS.md`. The old AUC, significance, universal baseline victory, mastery and efficiency claims are not supported by this protocol. No latent mastery replacement for Figures 8–9 has been certified. Student prediction examples require a new title and caption; they cannot retain a mastery interpretation.
+6. State the student-disjoint split, one-overlap windows, target masks, training-only vocabulary, independent item semantics, whole-own-student exclusion and offline availability limitations. Report sample SD across five initializations, not confidence intervals or independent cohorts.
+7. Review source and archive verification before insertion. Publishing these assets does not complete the pending training campaign. Obtain current allocation ownership and an explicit total execution budget before any GPU work.

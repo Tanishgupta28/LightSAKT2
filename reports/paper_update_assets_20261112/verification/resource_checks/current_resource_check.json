@@ -1,0 +1,41 @@
+{
+  "training_authorized": false,
+  "budget_confirmed": false,
+  "training_runs_started": 0,
+  "environment_allocation_keys": {
+    "NVIDIA_VISIBLE_DEVICES": "/var/run/nvidia-container-devices"
+  },
+  "disk": {
+    "total": 327170719744,
+    "used": 172200361984,
+    "free": 154970357760
+  },
+  "historical_policy": {
+    "allocator_cap_bytes": 4294967296,
+    "admission_free_bytes": 10737418240,
+    "runtime_free_bytes": 6442450944,
+    "host_rss_cap_bytes": 4294967296,
+    "host_headroom_bytes": 2147483648,
+    "admission_utilization_max": 75,
+    "allow_unsupported_mig_utilization": true,
+    "inter_update_pause_seconds": 0.1,
+    "max_step_seconds": 30,
+    "wall_time_limit_seconds": 900
+  },
+  "telemetry": {
+    "observed_utc": "2026-11-13T18:45:38.058053+00:00",
+    "gpu_uuid": "MIG-d2fcfd79-720e-5218-82c9-0a132be68920",
+    "total_bytes": 42278584320,
+    "free_bytes": 42238803968,
+    "used_bytes": 39780352,
+    "compute_processes": [],
+    "pid_attribution": "unresolved; shared use; no exclusive claim",
+    "utilization_gpu_percent": null,
+    "utilization_status": "unsupported_mig",
+    "host_headroom_bytes": 31579697152,
+    "process_peak_rss_bytes": 26210304
+  },
+  "technical_admission": "Shared MIG utilization unavailable; headroom/cap/pacing fallback applied",
+  "process_owners": {},
+  "blocker": "No current allocation ownership record or new total campaign execution budget; previous 15-run budget consumed. Do not launch training."
+}

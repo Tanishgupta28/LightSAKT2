@@ -1,0 +1,12 @@
+\begin{table}
+\caption{Table6 replacement: actual EdNet selection protocol; not a fabricated hyperparameter grid}
+\begin{tabular}{lllllr}
+\toprule
+Dataset & Model & Selection protocol & Checkpoint criterion & Epoch ceiling/patience & Seeds \\
+\midrule
+EdNet-KT1 (5k, first/session) & SAKT & Prespecified common d64,heads2,dropout0.1,LR0.001; no EdNet grid & maximum validation AUC & 50/5 & 5 \\
+EdNet-KT1 (5k, first/session) & LightSAKT & Prespecified common d64,heads2,dropout0.1,LR0.001; no EdNet grid & maximum validation AUC & 50/5 & 5 \\
+EdNet-KT1 (5k, first/session) & LightSAKT + QD & Prespecified common d64,heads2,dropout0.1,LR0.001; no EdNet grid & maximum validation AUC & 50/5 & 5 \\
+\bottomrule
+\end{tabular}
+\end{table}
