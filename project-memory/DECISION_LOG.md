@@ -556,3 +556,16 @@ WilcoxonHolm9 doesnotreject;oldW78/p.00048notreused. Resourceownership/newtotalb
 featurecontrol/cohort/chronologicalstudies remainpending. ZIP/bundle/publication
 receipts externalbackupdirectory; actualcommit/refverification required. NoHiTSKT,
 GPUcontext,peerprocesssignals,manuscript rewrite orhistoricalartifact changes.
+
+## Publication and portable verification — verified13November2026
+
+Resultcommit217e32f1dfaa39baf03c5c50a85f4454c4ce5ce6 safelyPUSHED afterfresh
+ancestrycheck/dry-run. RemoteSHAexact;26GitHubreport/CSV/PNG/programblobs matchlocal.
+Defaultresearch-rebuild/mainunchanged. Noforcepush/rawdatasets/weights/originalPDF.
+External push_receipt.json and remote_files.json in backups/paper_update_assets_20261112/.
+ZIPSHA2560573194492fbba1fbefc1967a8c3cf5b194fe53437e5a62c68053ddfa33842c3,
+232payloadfiles,CRC/SHA256PASS;freshZIPextraction reproducesall45graphfiles
+byte-identicallywithoutdatasets/checkpoints. verified_assets.bundlePASS(prereq9f64bfbb);
+oldNov10bundlesPASS.1060sourcefingerprintsunchanged. Memorystrict18files0errors/warnings.
+A followingmemory-onlyhandoffmayadvanceremotetip;scientificassets remain217e32f1.
+Currentallocationownership/newGPUbudget stillunverified;58missingseedsstayPENDING.

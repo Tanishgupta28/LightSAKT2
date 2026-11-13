@@ -1,3 +1,8 @@
+Latest publication: paper-update assets safely pushed at
+217e32f1dfaa39baf03c5c50a85f4454c4ce5ce6;26remote blobs verified. ZIPCRC/SHA256 and
+fresh-extractiongraphreproduction PASS.58missingGPU-dependent seeds stillpending;
+no newallocation/budget verified. See CURRENT_STATE and NEXT_CHECKPOINT.
+
 # LightSAKT2 durable project memory
 
 Canonical directory: `/workspace/LightSAKT2/project-memory`.

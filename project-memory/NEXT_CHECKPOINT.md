@@ -1,3 +1,12 @@
+# Publication complete — exact next boundary
+
+Verifiedassets published at217e32f1dfaa39baf03c5c50a85f4454c4ce5ce6;26remote
+blobs matchlocal. ZIP232payloadfiles andfresh-extraction45graphbyte-reproduction
+PASS. Externalarchive/push/remote/bundle receipts are in
+/workspace/LightSAKT2/backups/paper_update_assets_20261112/. A followingmemory-only
+handoffmayadvancetip;readfinal_handoff_receipt.jsonforcurrentSHA. Do notrepublish
+orregeneratehistoricalartifactsneedlessly. Oldandnewlocalbundlesverify.
+
 # Next checkpoint — paper assets verified, GPU campaign blocked
 
 Read reports/paper_update_assets_20261112/README.md and REPORT.md, currentcompletion
